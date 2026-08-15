@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您要去哪里啊？如果您不太忙的话，有件事我想拜托您...</p>
+          <p> </p>
+          <p>最近我因为吵闹的声音而没办法睡好觉。</p>
+          <p> </p>
+          <p>大伙儿都嘲笑我是神经过敏，但是绝对不是这样的。</p>
+          <p> </p>
+          <p>我明明听到了那个声音。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么声音。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是勒布莱恩荒地的火鸟的声音。</p>
+          <p> </p>
+          <p>不知道是不是到了发情期，它们一个劲地在那儿嗷嗷叫。</p>
+          <p> </p>
+          <p>虽然其他人没什么感觉，但是我的耳朵要比其他人灵敏，所以快被折磨死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您能帮我去除掉一些[%dic:STR_DIC_M_Crestlich_23_An]和[%dic:STR_DIC_M_Crestlich_24_An]吗？</p>
+          <p> </p>
+          <p>最近以来，队长命令我们要严密监视进入要塞的道路，所以我没办法亲自过去。</p>
+          <p> </p>
+          <p>如果可以的话，我现在就想冲过去切断它们的脖子。</p>
+          <p> </p>
+          <p>我都好几天没能好好睡觉了。请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去[%dic:STR_DIC_W_LF2_SZ_F1]的话，就能看到[%dic:STR_DIC_M_Crestlich_23_An]和[%dic:STR_DIC_M_Crestlich_24_An]。</p>
+          <p> </p>
+          <p>请您去把它们清除掉。</p>
+          <p> </p>
+          <p>它们消失了的话，我应该就会痛快很多的！</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人也觉得我是神经过敏吗？</p>
+          <p> </p>
+          <p>因为别人听不到的细小声音我就已经很痛苦了，还要受到别人的这种误会...</p>
+          <p> </p>
+          <p>别人是无法理解我的心情的。</p>
+          <p> </p>
+          <p>我还以为[%username]大人是可以体谅别人心情的人，看来是我看错人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_M_Crestlich_23_An]和[%dic:STR_DIC_M_Crestlich_24_An]清除掉了吗？</p>
+          <p> </p>
+          <p>这下应该能安心睡觉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是非常感谢。</p>
+          <p> </p>
+          <p>您想象不到这对我来说会是多大的帮助。</p>
+          <p> </p>
+          <p>来，收下吧。这是包含着我的谢意的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_LF2_SZ_F1]打猎火鸟</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Crestlich_23_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Crestlich_24_An]([%5]/14)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Herodes]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助因为吵闹的声音而无法睡觉的希洛德斯打猎火鸟。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希洛德斯说因为火鸟的声音而无法睡觉，但是谁都不把这当回事，所以很郁闷。</p>
+          <p> </p>
+          <p>于是去勒布莱恩荒地清除了火鸟。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

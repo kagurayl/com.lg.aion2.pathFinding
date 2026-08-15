@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞知道我在这里？这样的话，我的压力就更大了。</p>
+          <p> </p>
+          <p>要是传到黄昏的执政官耳朵里，那传到阿尔奎米亚城寨就只是时间问题了。</p>
+          <p> </p>
+          <p>如果真的希望我离开，[%username]你得帮帮我。</p>
+          <p> </p>
+          <p>从你拿着的[%mainslotitem]看，你应该实力不低。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问要帮什么忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次见到你的时候我没说。</p>
+          <p> </p>
+          <p>我之所以会躲在这里，是因为我不满革命团的作风，打了上司，所以才逃出来的。</p>
+          <p> </p>
+          <p>不过，上司是个很记仇的人，看样子他正在四处找我报仇呢。</p>
+          <p> </p>
+          <p>他一定不会放过我的。只要想到这个，我就害怕得不行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>与其这样天天在恐惧中度日，还不如自己先下手为强。</p>
+          <p> </p>
+          <p>派来消灭我的人，肯定是阿尔奎米亚城寨的暗杀专家。</p>
+          <p> </p>
+          <p>在那些家伙来干掉我之前，请[%username]先去干掉那些家伙们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请帮我消灭[%dic:STR_DIC_M_AeB_LehparAsD_44_Ae]、[%dic:STR_DIC_M_AeB_LehparAsG4D_43_Ae]、[%dic:STR_DIC_M_AeB_LehparAsExplorD_43_Ae]吧。</p>
+          <p> </p>
+          <p>在阿尔奎米亚城寨深处有一条铁轨。那些家伙经常在那附近出没。</p>
+          <p> </p>
+          <p>您也知道的，阿尔奎米亚城寨是雷帕尔革命团的老巢。</p>
+          <p> </p>
+          <p>所以去的话，可千万不能一个人去哦。最好是结伴前往。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？您是因为阿尔奎米亚城寨太远了不想去？</p>
+          <p> </p>
+          <p>还是因为害怕雷帕尔革命团的人？</p>
+          <p> </p>
+          <p>算了，您都说不愿意帮忙了，我还能说什么呢？</p>
+          <p> </p>
+          <p>我得看看还有什么其他地方可躲了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是[%username]。</p>
+          <p> </p>
+          <p>吓我一跳，还以为是革命团的人。</p>
+          <p> </p>
+          <p>我拜托的事情办得怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在总算是可以放心了。但是以后我该去什么地方，该干点什么呢？</p>
+          <p> </p>
+          <p>当初加入雷帕尔革命团，是为了能够对亚特雷亚做点贡献。没想到那些全都是骗人的...</p>
+          <p> </p>
+          <p>大家都知道我加入了革命团，现在是想回故乡也不成了。</p>
+          <p> </p>
+          <p>唉，慢慢想总会有办法的。我已经下定决心离开这里。总之太谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿尔奎米亚城寨，消灭暗杀专家</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeB_LehparAsD_44_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeB_LehparAsG4D_43_Ae]([%5]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeB_LehparAsExplorD_43_Ae]([%8]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Freki]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">弗雷奇成天担惊受怕，担心革命团的人会来要自己的命。所以拜托我去阿尔奎米亚城寨消灭阿尔奎米亚城寨的精锐暗杀兵和阿尔奎米亚城寨的精锐暗杀者，还有阿尔奎米亚城寨的精锐隐身兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>弗雷奇担心自己在雷帕尔革命团时的上司想找自己报仇，派兵追查自己。</p>
+          <p> </p>
+          <p>弗雷奇打算先下手为强，拜托我去阿尔奎米亚城寨消灭阿尔奎米亚城寨的精锐暗杀兵和阿尔奎米亚城寨的精锐暗杀者，还有阿尔奎米亚城寨的精锐隐身兵。</p>
+          <p> </p>
+          <p>我把结果报告给弗雷奇后，他很感激，但也发愁自己将来靠什么过日子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

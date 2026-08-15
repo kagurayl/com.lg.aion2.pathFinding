@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>《使龙族伤害最小化的方法》……好像就是这本书。</p>
+          <p> </p>
+          <p>(从书柜中把书拿出来) 首先查看一下目录吧。</p>
+          <p> </p>
+          <p>在这里，“第五章 熄灭龙火的方法”</p>
+          <p> </p>
+          <p>(看着书) 啊，还有这种事。</p>
+          <p> </p>
+          <p>嗯，原来这样就可以了，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">希望告知其中的内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是用亚特雷亚语写的，要完全理解还要花点时间，你先等一会吧。</p>
+          <p> </p>
+          <p>(看了不久后，把书合起来) 原来在大崩溃之前也有相似的事情。</p>
+          <p> </p>
+          <p>那个时候因为没有找到解决方法，辛苦了很长时间。最终，一位守护者召唤出寒冰魔法阵，才将龙火熄灭，咳咳。</p>
+          <p> </p>
+          <p>这里还写明了用来召唤寒冰魔法阵的材料，要不要告诉你呢？</p>
+          <p> </p>
+          <p>看上去这些似乎都不是天界的东西啊，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我念给你听，你好好记着。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_3082a] 5个，[%dic:STR_DIC_I_QUEST_3082b] 5个， [%dic:STR_DIC_I_QUEST_3082c] 1个。</p>
+          <p> </p>
+          <p>把这些材料混合在一起制作出召唤咒语书就可以了，不过……这本书中好象没有写出具体的制作方法，咳咳。</p>
+          <p> </p>
+          <p>制作魔法阵的守护者名字叫做 [%dic:STR_DIC_N_Seora]，搜集完材料后你去找他问问看吧。</p>
+          <p> </p>
+          <p>如果在大崩溃的时候幸存下来，应该就会在亚特雷亚的某个地方，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想的没错。</p>
+          <p> </p>
+          <p>确实没有制作这种咒语书的具体方法，所以即使搜集到材料也没有用处。</p>
+          <p> </p>
+          <p>不过现在你要怎么做呢？</p>
+          <p> </p>
+          <p>我也没什么可以再告诉你的了，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是 [%username] 吗？</p>
+          <p> </p>
+          <p>不久前我听说你去了泰奥勃莫斯，怎么来到这里了呢？</p>
+          <p> </p>
+          <p>有什么事情找我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将材料交给他，拜托他制作咒语书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么都没有，让我制作什么啊？</p>
+          <p> </p>
+          <p>还有什么咒语书？我还第一次听到这种事情。</p>
+          <p> </p>
+          <p>不要说这些无聊的话，还不如多消灭一些附近的龙蜥兽。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到还真有那种书。好吧，既然你都已经知道，我就不再装了。</p>
+          <p> </p>
+          <p>书中出现的塞奥拉不是我，是我的外婆。</p>
+          <p> </p>
+          <p>很可惜，外婆在天魔战争中牺牲了，我也没有见到过她。不过母亲说我跟外婆长得很像，所以才给我起了她的名字。</p>
+          <p> </p>
+          <p>啊，你也不用失望，外婆虽然已经去世，不过制作咒语书方法，已经通过我的母亲，传到我身上了。</p>
+          <p> </p>
+          <p>能稍等一会吗？制作咒语书的方法是我们家族的秘密，不能对外界公开。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">暂时等待着。</Act>
+    </Selects>
+   </HtmlPage>
+
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，让你久等了。很久没制作过，有点生疏了……</p>
+          <p> </p>
+          <p>不过咒语书应该没什么问题，你不用担心。</p>
+          <p> </p>
+          <p>开始我还担心材料出了问题，不过既然[%username]带来的，应该没什么问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，收下吧。这是召唤寒冰魔法阵的咒语书。</p>
+          <p> </p>
+          <p>仔细观察龙喷出的火焰会看到一个小小的火之眼，请把这个贴在上面。</p>
+          <p> </p>
+          <p>那样才能将寒冰魔法阵的效果真正发挥出来。</p>
+          <p> </p>
+          <p>记住，一定要贴在火之眼上。贴错地方就没用了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你刚才是去哪里了啊？</p>
+          <p> </p>
+          <p>感觉你走了很久，我有点担心，就跟巴托尼亚联系，他说你已经离开了……</p>
+          <p> </p>
+          <p>你是去找那个叫做达阿龙的术古族的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">向他报告这段时间内的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，我把事情看得太简单了。</p>
+          <p> </p>
+          <p>害你跑到魔界那么远的地方，真是辛苦你了。</p>
+          <p> </p>
+          <p>我真是担心，竟然用最后的方法，寒冰魔法阵都无法熄灭普雷奇温的火焰。</p>
+          <p> </p>
+          <p>看来我们太小看普雷奇温了。</p>
+          <p> </p>
+          <p>啊，内扎坎主神，请帮助我们吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_3082all]并交给 [%dic:STR_DIC_N_Seora]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_N_Seora]那里拿到咒语书</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">在[%dic:STR_DIC_OBJ_LF2a_FireCore_Q3082]上贴上咒语书，召唤出寒冰魔法阵</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">向[%dic:STR_DIC_N_Atropos]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去达阿龙那里询问熄灭普雷奇温的火焰的方法。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达阿龙找到记载着如何熄灭龙火的书，并且告知了其中的内容。</p>
+          <p> </p>
+          <p>里面记载着可以用寒冰魔法阵熄灭这种火焰。但魔法阵咒语书的制作只有一个叫做塞奥拉的守护者才知道。</p>
+          <p> </p>
+          <p>搜集全书中介绍的材料，并找到了在埃尔特内的塞奥拉，塞奥拉表示书中介绍的人是自己的外婆，不过自己也会制作方法，并答应帮忙制作。</p>
+          <p> </p>
+          <p>按照塞奥拉的话，将咒语书贴在火之眼上，并召唤出了寒冰魔法阵，可没有收到任何效果。</p>
+          <p> </p>
+          <p>向阿特洛浦斯报告了这段时间发生的事情。阿特洛浦斯表示自己小看了普雷奇温，感到非常无助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

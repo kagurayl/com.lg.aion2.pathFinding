@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>红毛马努金因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_LF4_DayQ_ShulackFi_51_An]</p>
+          <p></p>
+          <p> 2. 罪行: 间谍罪</p>
+          <p></p>
+          <p> 3. 详情: 假扮难民，接近天族，窃取军事机密。有人报告说曾经在[%dic:STR_DIC_SEN_LF4_SensoryArea_Q36500]见到过他。</p>
+          <p> </p>
+          <p>提供红毛马努金下落的决定性证据，或直接将其杀死者，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>这次您又完成了什么任务？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>红毛马努金……啊，是那个家伙啊！</p>
+          <p> </p>
+          <p>他的毛色很漂亮，外貌也很讨人喜欢，守卫们都很喜欢他。</p>
+          <p> </p>
+          <p>真不知道那些亚人种肚子里在想些什么。</p>
+          <p> </p>
+          <p>听说马努金是来窃取军事机密的，很多守卫都感到非常困惑。</p>
+          <p> </p>
+          <p>总之辛苦你了。这是酬劳，请收下。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_SEN_LF4_SensoryArea_Q36500]，找到[%dic:STR_DIC_M_LF4_DayQ_ShulackFi_51_An]并消灭([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以间谍罪而受到通缉的红毛马努金之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（是插在棕熊身上的刀）</p>
+          <p> </p>
+          <p>（活着的棕熊身上怎么会插着一把刀呢？）</p>
+          <p> </p>
+          <p>（这把刀的刀把很粗，像是切割皮革的时候用的刀。）</p>
+          <p> </p>
+          <p>（得去给村子里的皮匠诺尔内斯看看。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止观察。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前出了件新鲜事。我跟别人说，都没人相信。</p>
+          <p> </p>
+          <p>卡利尔抓来了一只巨大的棕熊，我在给它剥皮的时候，刀插在里面拔不出来了。</p>
+          <p> </p>
+          <p>那时候一直以为棕熊已经死了，可谁知道刀一插进去它就蹭的一下起来逃跑了。</p>
+          <p> </p>
+          <p>结果我的刀也就丢了。用了好几年刀刃十分顺手的好刀啊。</p>
+          <p> </p>
+          <p>虽说棕熊跑掉了很可惜，可那把刀丢了更让我伤心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_thanks;HACTION_SELECT_QUEST_REWARD">拿出刀询问是不是这把。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对，就是这把！就是那次丢的那把刀。</p>
+          <p> </p>
+          <p>您说刚才抓住一只棕熊，在它身上发现的？那就是说那家伙居然一直活到现在？</p>
+          <p> </p>
+          <p>真是吓人啊。怎么会身上插着刀还能活着。</p>
+          <p> </p>
+          <p>要是跟别人说，更不相信了。</p>
+          <p> </p>
+          <p>不管怎样，您帮我找回了吃饭的饭碗，太谢谢您了。</p>
+          <p> </p>
+          <p>这刀我用着特别顺手，就算有再多的钱，也找不到这样的好刀啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_quest_2228a]带给[%dic:STR_DIC_N_Nornes]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打猎时发现了一把切皮革用的刀插在了棕熊的背上。最好把它交给皮匠诺尔内斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打猎时打死了一只背上插着一把切皮革用的刀的棕熊。</p>
+          <p> </p>
+          <p>把刀交给村子的皮匠诺尔内斯，他说在剥一只棕熊皮的时候，它突然跳起来逃跑了。诺尔内斯非常感谢帮他找到了这把刀。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

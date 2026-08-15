@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>派执政官前去调查后发现，在布鲁斯特豪宁的天族数量着实不少。</p>
+          <p> </p>
+          <p>虽然已经向伏魔殿发出了支援请求，但是他们可能没有多余的兵力可以派到这里来。因为我听说埃雷修兰塔的情况也很危急...</p>
+          <p> </p>
+          <p>综合[%username]大人和执政官的报告来看，天族的情况似乎也不是那么乐观。</p>
+          <p> </p>
+          <p>虽然不知道他们是什么时候到布鲁斯特豪宁来的，但是，无论是天界还是这里，他们都没有收到补给，而且在这里也不可能自给自足。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，只要把这帮家伙的指挥官打倒，剩下的那些家伙就会陷入混乱、自取灭亡的。</p>
+          <p> </p>
+          <p>侦察回来的执政官说，[%dic:STR_DIC_M_LightDevaWiBossNmdD_25_Ae]好像是他们的指挥官。</p>
+          <p> </p>
+          <p>能完成这一任务的人，只有[%username]大人您。</p>
+          <p> </p>
+          <p>智慧的宝珠兵团的战斗力没那么优秀。而且，这个任务也不能交给自卫队。</p>
+          <p> </p>
+          <p>因为还要防范天族攻进来，所以也不能派遣执政官去。</p>
+          <p> </p>
+          <p>因此，[%username]大人，请您接受这项任务吧。拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您对暗杀有信心的话，独自偷偷潜入，把百夫长干掉也可以。</p>
+          <p> </p>
+          <p>如果您和同伴一起去的话，应该可以把天族的阵地夷为平地。</p>
+          <p> </p>
+          <p>您选择哪样都可以。只要帮我们把[%dic:STR_DIC_M_LightDevaWiBossNmdD_25_Ae]消灭掉就可以。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是没有勇气对抗天族的百夫长吗？</p>
+          <p> </p>
+          <p>但是，如果不除掉百夫长依凯卢斯的话，天族们最终还是会攻到定居者营地来的。</p>
+          <p> </p>
+          <p>我是认为[%username]大人您有这样的实力才拜托您的。</p> 
+          <p> </p>
+          <p>所以，请再考虑考虑吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我不知道天族来布鲁斯特豪宁的目的，但是有一点我很确信。</p>
+          <p> </p>
+          <p>要像他们对待我们那样，把他们消灭掉才行！</p>
+          <p> </p>
+          <p>只要除掉他们的指挥官，他们就会成为一群乌合之众，消灭一群惊慌失措的家伙应该很容易吧。</p>
+          <p> </p>
+          <p>如我所托，您应该是已经除掉百夫长依凯卢斯了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了！</p>
+          <p> </p>
+          <p>现在，只要消灭天族的余党就行了。</p>
+          <p> </p>
+          <p>虽然因为一些始料不及的事情慌了神儿，但是，托[%username]大人您的福，应该会相安无事地解决的。</p>
+          <p> </p>
+          <p>来，请收下。这是定居者们感谢您的一点表示。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_LightDevaWiBossNmdD_25_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Vinduer]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去比格利德西部草原，把天族的指挥官百夫长依凯卢斯除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>宾图埃尔认为，只要把指挥官干掉，就可以轻易击垮天族。</p>
+          <p> </p>
+          <p>所以，我去比格利德西部草原除掉了指挥官百夫长依凯卢斯，回来后，宾图埃尔向我表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

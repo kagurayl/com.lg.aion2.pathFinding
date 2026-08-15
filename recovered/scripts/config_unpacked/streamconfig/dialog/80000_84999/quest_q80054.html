@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得亚特雷亚能够这么和平，是由于很多人共同努力的结果。</p>
+          <p> </p>
+          <p>虽然不是一直和平，但这样就已经不错了。不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近为了纪念正直、廉洁的先代守护者，我正在准备在水上漂丝带模样的花灯的活动。</p>
+          <p> </p>
+          <p>把橘黄色的丝带和扁蜡烛放在盘子上，漂在水面上，该是多么美丽的场景啊。</p>
+          <p> </p>
+          <p>问题是丝带灯不见了。</p>
+          <p> </p>
+          <p>好像是[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]干的，但是以我的力量却无能为力。</p>
+	  <p> </p>
+          <p>如果找不到丝带，我就没脸去见先代的守护者了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助他。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您真的愿意帮我吗？</p>
+          <p> </p>
+          <p>其实[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]都很乖。只要它们不碰[%dic:STR_DIC_I_QUEST_80054A]的话。</p>
+          <p> </p>
+          <p>当然，如果说它们喜欢烛光映衬下的丝带也是一种罪的话，那就是罪。</p>
+          <p> </p>
+          <p>如果您能把[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]拿走的[%dic:STR_DIC_I_QUEST_80054A]找回来的话，我一定会酬谢您的。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼……反正只有我一个人丢脸，算了。</p>
+          <p> </p>
+          <p>看来只能我自己出去找了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您连裤脚都湿了！</p>
+          <p> </p>
+          <p>怎么样？拜托您的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出硬撅撅的丝带。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，虽然形状有点扭曲，但还可以用。</p>
+          <p> </p>
+          <p>谢谢您的帮助。</p>
+          <p> </p>
+          <p>这下漂丝带灯的活动就可以继续进行了。</p>
+          <p> </p>
+          <p>这全都是托[%username]大人的福。谢谢您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_80054A]还没找到吗？天黑之后，我就得把丝带灯点起来了……您能稍微快一点吗？</p>
+          <p> </p>
+          <p>如果您能把[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]拿走的[%dic:STR_DIC_I_QUEST_80054A]找回来的话，我一定会酬谢您的。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_I_QUEST_80054A]，然后交给[%dic:STR_DIC_N_event_Ardos]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">寻找硬撅撅的丝带，然后交给阿尔多斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在亚特雷亚正在举行漂丝带灯的活动。</p>
+          <p> </p>
+          <p>据说那是为了纪念守护和平的正直、廉洁的先代守护者而举行的活动。</p>
+          <p> </p>
+          <p>但是活动上使用的橘黄色丝带不见了，阿尔多斯向我请求帮助。</p>
+	  <p> </p>
+          <p>找到了阿尔多斯需要的东西，他非常高兴，给了我酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

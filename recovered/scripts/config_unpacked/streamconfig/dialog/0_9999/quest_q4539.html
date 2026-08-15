@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你这么脸熟，我好像经常在附近见到你，呐呐。</p>
+          <p> </p>
+          <p>看你的身体这么强壮，眼神也很锐利，应该不是普通的守护者。</p>
+          <p> </p>
+          <p>你想不想赚钱啊，呐呐？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在一个名叫比格比尔的老人那里以便宜的价格购买透明格力玛粉末，然后在城市里出售。</p>
+          <p> </p>
+          <p>那是售价非常高的东西。</p>
+          <p> </p>
+          <p>但是最近却出了点问题。</p>
+          <p> </p>
+          <p>到比格比尔那里去的路变得非常危险。</p>
+          <p> </p>
+          <p>突然出现的怪物挡住了道路，我没办法过去买东西了。</p>
+          <p> </p>
+          <p>守护者，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你！</p>
+          <p> </p>
+          <p>只要你帮我解决了这件事，我一定会重重酬谢你的。你就尽情发挥自己的实力吧。</p>
+          <p> </p>
+          <p>造成问题的怪物是[%dic:STR_DIC_M_KuillusVioletD_35_An]%和[%dic:STR_DIC_M_DrakeVioletD_36_An]。</p>
+          <p> </p>
+          <p>事情办完之后，你去把结果告诉[%dic:STR_DIC_N_Byggvir]。</p>
+          <p> </p>
+          <p>比格比尔也在等待着消息！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竟然对基纳不感兴趣，真是个愚蠢的守护者！</p>
+          <p> </p>
+          <p>害怕的话，就说出来好了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是你吗？[%dic:STR_DIC_N_Shugo_DF3_12]派来的那个人？</p>
+          <p> </p>
+          <p>切尔路斯和德雷克实在太烦人了，我都快活不下去了。</p>
+          <p> </p>
+          <p>你把它们消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还挺厉害的嘛！谢谢你帮我消灭了那些怪物。</p>
+          <p> </p>
+          <p>你好像不是很蠢，应该可以理解我的话。</p>
+          <p> </p>
+          <p>我这次破例告诉你，第十三位主神就要降临了。为了迎接那一天，你一定要努力提高实力！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭对[%dic:STR_DIC_N_Shugo_DF3_12]的交易造成妨碍的障碍</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KuillusVioletD_35_An]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DrakeVioletD_36_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Byggvir]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让胡阿灵灵可以放心进行交易，帮她消灭切尔路斯和德雷克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡阿灵灵说她在比格比尔老人那里以低价购买透明格力玛粉末，然后在城市里高价出售，赚到了很多钱。</p>
+          <p> </p>
+          <p>但是最近通往比格比尔老人的住处的路被切尔路斯和德雷克挡住了，给交易造成了很大的妨碍。</p>
+          <p> </p>
+          <p>按照胡阿灵灵的委托，消灭了切尔路斯和德雷克。把结果告诉比格比尔之后，他跟我说起了第十三位主神的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您听到了吗？那些进入黑暗的虚空，来到欧比斯探险的古代军团士兵们的呼吸声？</p>
+          <p> </p>
+          <p>我不知道我们为什么要这样和魔族对立，相互残杀。</p>
+          <p> </p>
+          <p>您知道吗？没错，谁也不知道正确的答案。</p>
+          <p> </p>
+          <p>这只能说是宿命...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗜血的古代魔族的军团士兵现在还在欧比斯徘徊。</p>
+          <p> </p>
+          <p>和活着的人战斗就已经够忙的了，还要对付死去的灵魂，真是太累了。</p>
+          <p> </p>
+          <p>因为这个原因，奥德的收集工作进行得很不顺利。</p>
+          <p> </p>
+          <p>所以我说，[%username]，你能你帮帮我吗？</p>
+          <p> </p>
+          <p>请您帮我们把魔族的冤魂清除掉，让我们可以集中精力采集奥德。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您马上去贫瘠之岛吧。</p>
+          <p> </p>
+          <p>那是[%dic:STR_DIC_M_Ab1_1251_ShadowStalker_34_An]和[%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]最多的地方。</p>
+          <p> </p>
+          <p>请您小心。那里是光明无法进入的地方，因此比起生者，对死去的人会更有利。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。虽然我没说，不过我觉得这件事让您去做还是太勉强了。</p>
+          <p> </p>
+          <p>怎么说呢？您看上去胆量不够。</p>
+          <p> </p>
+          <p>啊，您不要生气。俗话说：人无完人嘛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，您去贫瘠之岛了吗？</p>
+          <p> </p>
+          <p>您把那里的恐怖的冤魂和古代士兵全都除掉了吗？</p>
+          <p> </p>
+          <p>跟我说说您是怎么把他们除掉的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找您，还真是找对人了。</p>
+          <p> </p>
+          <p>请您收下。您帮我们解决了一件头疼的事情，这是给您的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡占据贫瘠之岛的冤魂</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_ShadowStalker_34_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Garpedo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙着搜集奥德的加尔佩多去把占据贫瘠之岛的恐怖的冤魂和古代士兵除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加尔佩多说过去来欧比斯探险而死去的魔族变成了不死族攻击天族。</p>
+          <p> </p>
+          <p>帮助忙着搜集奥德的他去贫瘠之岛除掉了恐怖的冤魂和流浪的古代士兵，加尔佩多非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

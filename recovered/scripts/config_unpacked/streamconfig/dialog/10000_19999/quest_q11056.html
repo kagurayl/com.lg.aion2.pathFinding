@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>秘密指令书</p>
+          <p> </p>
+          <p>攻击是最好的防御！</p>
+          <p> </p>
+          <p>攻击魔族关卡，除掉要塞队长。</p>
+          <p> </p>
+          <p>完成此任务的人，可以获得珍贵的项链作为奖励。</p>
+          <p> </p>
+          <p>关卡队长的名字是[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q03]、[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q04]和[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q05]。</p>
+          <p> </p>
+          <p>有很多人在执行任务时死亡，敬请注意。</p>
+          <p> </p>
+          <p>- [%dic:STR_DIC_N_Stanis] - </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很久以前，曾经发布过一个消灭关卡队长的指令书。</p>
+          <p> </p>
+          <p>但是很多去执行任务的守护者却被打得很惨。</p>
+          <p> </p>
+          <p>秘密指令书中有几张纸已经不见了。</p>
+          <p> </p>
+          <p>听说有人找到了那份秘密指令书，并想要完成任务。你来找我，是为了这件事吗？</p>
+          <p> </p>
+          <p>"不知道我有没有记错，那个任务的奖励由于已经过了有效期，需要支付制作费10,000,000基纳才能领取。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你杀死了关卡队长，我在此表示感谢。但由于是很久以前的指令书了，现在很难找到当时的奖励。</p>
+          <p> </p>
+          <p>好像是乌提斯达之发光的红晶石项链。</p>
+          <p> </p>
+          <p>"制作费用是10,000,000基纳。虽然有点贵，但想到制作中投入的费用，这样的奖励已经不错了。"</p>
+          <p> </p>
+          <p>不过这是一笔不菲的费用。如果你拒绝接受奖励，我也会尊重你的选择。</p>
+          <p> </p>
+          <p>"你的决定如何呢？你付得起10,000,000基纳吗？"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">"拿出10,000,000基纳。"</Act>
+      <Act href="HACTION_FINISH_DIALOG">再考虑一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>暗杀关卡队长，是我一直以来的夙愿。</p>
+          <p> </p>
+          <p>你完成了很多人都失败了的任务，我在此对你表示感谢。</p>
+          <p> </p>
+          <p>你消灭了关卡队长，为天界立了大功，你有资格获得奖励。</p>
+          <p> </p>
+          <p>惩罚魔界！为了天界的和平！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select9">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发放奖励的时候，我也不想收取费用。但这是极乐世界的规定，我也没有办法。</p>
+          <p> </p>
+          <p>根据规定，定做时花费的费用，需要由使用该物品的人来承担。</p>
+          <p> </p>
+          <p>"可以得到那么好的东西，请不要心疼钱，快去搜集10,000,000基纳吧。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q03]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q04]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">消灭[%dic:STR_DIC_M_LF4_Gateway_Da_Guard_Boss_Q05]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">"准备好10,000,000基纳，然后向[%dic:STR_DIC_N_Stanis]报告"</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了消灭魔族关卡队长的秘密指令书。应该执行任务，然后去见见斯塔尼斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了消灭魔族关卡队长希尔巴隆、雷博贝尔和豪拉的秘密指令书。</p>
+          <p> </p>
+          <p>"完成任务之后，见到了斯塔尼斯。他对我表示感谢，在收取了10,000,000基纳之后，给了我奖励。"</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

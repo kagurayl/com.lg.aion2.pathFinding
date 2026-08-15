@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要应付困难任务和激烈的战斗，就需要结实的身体。</p>
+          <p> </p>
+          <p>想保持结实的身体，不仅需要勤奋的锻炼，还要充分摄取营养。</p>
+          <p> </p>
+          <p>不是有这样一句话叫做“吃肉才能长力气”吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>肉确实很有营养，不过只吃动物的肉显然太单一，要适当地配合鱼类，营养摄取才能保持均衡。</p>
+          <p> </p>
+          <p>最近，我的体质有所下降。看上去就是因为缺少鱼类的营养。</p>
+          <p> </p>
+          <p>不过，也不能因此而丢下任务而去捕鱼...</p>
+          <p> </p>
+          <p>[%username] 大人能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请帮我去捕一些 [%dic:STR_DIC_DF3_fish_d_n_c_40a]来吧。</p>
+          <p> </p>
+          <p>鱼类含有丰富的脂肪，对抵抗严寒有很大的帮助。</p>
+          <p> </p>
+          <p>从村南边的入口过桥，就到达贝鲁斯兰的屋顶。</p>
+          <p> </p>
+          <p>那里有两个瀑布，东边瀑布下面有很多卡尔盘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，最近感觉身体虚寒乏力，所以打算用卡尔盘补充营养...</p>
+          <p> </p>
+          <p>可既然 [%username] 大人很忙，那也没办法了。</p>
+          <p> </p>
+          <p>只能忍一忍，用分配的食物先撑一下了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username] 大人！正等着您呢。</p>
+          <p> </p>
+          <p>刚才，我正在发呆，想象着将您带来的卡尔盘去掉内脏，撒上盐，放在火上烤熟的阵阵香味呢。</p>
+          <p> </p>
+          <p>一想到那，我就口水直流。</p>
+          <p> </p>
+          <p>您已经把[%dic:STR_DIC_DF3_fish_d_n_c_40a]带来了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将卡尔盘交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人！您是在耍我吗？</p>
+          <p> </p>
+          <p>竟然欺骗一个苦苦等待卡尔盘的人...</p>
+          <p> </p>
+          <p>身为守护者，应该遵守约定。</p>
+          <p> </p>
+          <p>请您赶快去捕捉 [%dic:STR_DIC_DF3_fish_d_n_c_40a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把鱼烤得冒出油来，肯定非常好吃。</p>
+          <p> </p>
+          <p>谢谢您帮我捕到了卡尔盘。</p>
+          <p> </p>
+          <p>我不会辜负您的好意，一定保养好身体，努力完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_DF3_fish_d_n_c_40a]，并交给 [%dic:STR_DIC_N_Bowen]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">波文表示，要应付困难的任务和激烈的战斗，就需要充分补充营养，并请求帮助捕捉卡尔盘。到贝鲁斯兰的屋顶捕卡尔盘。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>波文表示，应付困难的任务和激烈的战斗需要强健的身体，而要想保持身体健康就要均衡地摄取营养。</p>
+          <p> </p>
+          <p>并称，最近体质下降，希望用生长在贝鲁斯兰的屋顶瀑布下面的鱼类——卡尔盘来补充营养。</p>
+          <p> </p>
+          <p>接受委托，去贝鲁斯兰的屋顶，在瀑布下面捕捉卡尔盘，并交给了他。他非常高兴，并表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

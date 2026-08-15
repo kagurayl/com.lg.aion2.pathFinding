@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然这件事情不能告诉别人，但是因为找不到线索，所以我就对[%username]你直话直说了。</p>
+          <p> </p>
+          <p>我正在调查的，就是守护者失踪事件。</p>
+          <p> </p>
+          <p>失踪的守护者们除了都是有名的守护者之外，就没有其他共同点了。所以调查起来非常困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是不久之前，我好想找到了一条线索。</p>
+          <p> </p>
+          <p>在通往红色熔岩山崖的路上，发现了一段断了的长剑碎片。</p>
+          <p> </p>
+          <p>看起来做工非常不错，应该是失踪的守护者的东西。</p>
+          <p> </p>
+          <p>我想调查一下那是谁的东西，但是上面沾满了火山灰和熔岩，因此无法进行仔细查看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想临时制作一种药水来除掉火山灰和熔岩。</p>
+          <p> </p>
+          <p>但是缺少一些材料，[%username]你能帮我去搜集一点吗？</p>
+          <p> </p>
+          <p>你去打猎附近的[%dic:STR_DIC_M_FlyingEyeD_28_An]，搜集[%dic:STR_DIC_I_QUEST_2359a]交给我就行。</p>
+          <p> </p>
+          <p>用虹膜上的粘液溶解火山灰和熔岩，擦起来应该会比较容易一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>眼魔虽然看上去像个圆球，但是它们会用冲撞攻击，甚至会使用魔法。所以一定要小心。</p>
+          <p> </p>
+          <p>你帮我搜集10个[%dic:STR_DIC_I_QUEST_2359a]就行。</p>
+          <p> </p>
+          <p>有了那么多的话，应该就能把长剑上的火山灰和熔岩擦拭干净。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得断了的长剑碎片和失踪的守护者无关吗？</p>
+          <p> </p>
+          <p>那你是说我在浪费时间啦？</p>
+          <p> </p>
+          <p>不帮忙，还说些泄气的话！</p>
+          <p> </p>
+          <p>像你这样的人，我都不想和你说话。你快走吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是这段长剑碎片真的是失踪的守护者的东西就好了。</p>
+          <p> </p>
+          <p>那样的话，就说明他们是在红色熔岩山崖附近经过战斗之后才失踪的，不是吗？</p>
+          <p> </p>
+          <p>那样的话，就能以这里为中心重新开始调查。</p>
+          <p> </p>
+          <p>不过首先必须把火山灰和熔岩擦掉。你把[%dic:STR_DIC_I_QUEST_2359a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出眼魔的虹膜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还没去打猎[%dic:STR_DIC_M_FlyingEyeD_28_An]啊。</p>
+          <p> </p>
+          <p>虽然对[%username]你来说并不是急事，但是对我而言这是非常重要的事情。</p>
+          <p> </p>
+          <p>所以请你快去打猎注视的眼魔，搜集眼魔的虹膜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面有这么多粘液啊。把溶液和其他材料混合一下，效果应该会很不错。</p>
+          <p> </p>
+          <p>谢谢你帮助我。</p>
+          <p> </p>
+          <p>如果守护者失踪事件可以因此解决，那一半都是[%username]你的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_FlyingEyeD_28_An]身上获得的材料交给[%dic:STR_DIC_N_Embla]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要调查守护者失踪事件的线索的话，需要用到眼魔的虹膜。去打猎注视的眼魔，然后搜集虹膜吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃姆博拉说在红色熔岩山崖附近发现了断了的长剑碎片，说那可能是守护者失踪事件的线索。</p>
+          <p> </p>
+          <p>但是由于上面沾满了火山灰和熔岩而无法查看，她说必须要用眼魔的虹膜擦拭。</p>
+          <p> </p>
+          <p>于是从注视的眼魔身上搜集虹膜，然后交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

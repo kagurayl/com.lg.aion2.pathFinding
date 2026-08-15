@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我知道现场调查肯定不能和伏魔殿的安逸舒适相比，只是没想到自己竟然会被派到这种地方来。</p>
+          <p> </p>
+          <p>熔岩的热气和火山灰勉强还可以忍受，但恶臭却让人无法忍受。</p>
+          <p> </p>
+          <p>刚开始我还以为是熔岩中散发出的硫磺的味道。</p>
+          <p> </p>
+          <p>后来才知道是那些生活在火山地带的肮脏生物们所发出来的味道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是[%dic:STR_DIC_M_ClodwormRe2D_28_An]和[%dic:STR_DIC_M_SlimeReD_28_An]！</p>
+          <p> </p>
+          <p>闻到它们散发出的味道，很难让人相信那是活着的生物。腐烂尸体的味道也比它们要好闻得多。</p>
+          <p> </p>
+          <p>因为它们的数量太多，所以我拜托黄昏的执政官们帮我消灭掉一些。结果他们却对我嗤之以鼻，说这么一点味道算什么。</p>
+          <p> </p>
+          <p>情况就是这样，[%username]你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你！</p>
+          <p> </p>
+          <p>那就请你帮我消灭10只[%dic:STR_DIC_M_ClodwormRe2D_28_An]和20只[%dic:STR_DIC_M_SlimeReD_28_An]。</p>
+          <p> </p>
+          <p>那样的话，我就应该能喘口气了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道这么热，又不能呼吸是什么滋味吗？</p>
+          <p> </p>
+          <p>而且又和那些一抓住把柄就会把你烦死的黄昏执政官在一起...</p>
+          <p> </p>
+          <p>我知道人们都害怕沉默执行者，所以会尽量远离他们，但没想到会是因为这种原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，[%username]。</p>
+          <p> </p>
+          <p>从刚才开始，我的呼吸稍微感觉好一点了。</p>
+          <p> </p>
+          <p>看样子你应该已经把散发恶臭的噬人虫和斯莱姆消灭掉了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。这下终于可以集中精神做任务了。</p>
+          <p> </p>
+          <p>谢谢你让我找回了内心的平静。即使埃姆博拉再来嘲笑我，应该也能忍得住了。</p>
+          <p> </p>
+          <p>这是对你帮助我的报答。请你收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除恶臭的根源</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ClodwormRe2D_28_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SlimeReD_28_An]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gangleri]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">岗格雷利正在因为轻拂的噬人虫和硫磺斯莱姆的味道而痛苦。决定帮助他去把它们清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岗格雷利说必须去执行任务，但是因为噬人虫和斯莱姆的味道太臭，使他无法集中精神。</p>
+          <p> </p>
+          <p>于是为了让他安心地执行任务，帮他去清除掉了轻拂的噬人虫和硫磺斯莱姆。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

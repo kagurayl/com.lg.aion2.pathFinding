@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好，[%username]。</p>
+          <p> </p>
+          <p>刚好我有重要的事情找你。</p>
+          <p> </p>
+          <p>你的名字我一直有所耳闻。</p>
+          <p> </p>
+          <p>听说伏魔殿也对你非常关注。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看你的能力好像非常出色。我有一个建议，你愿意接受吗？</p>
+          <p> </p>
+          <p>你能去格尔克马洛斯，解决堆积如山的问题吗？</p>
+          <p> </p>
+          <p>你去多执行一些重要的任务。我会给予你奖励。</p>
+          <p> </p>
+          <p>这样的交易还算不错吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能完成要塞的重要任务，就可以得到[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]。</p>
+          <p> </p>
+          <p>如果能搜集到规定数量的功勋证书，我就会送你一件很不错的东西。</p>
+          <p> </p>
+          <p>比如说会让其他人羡慕不已的腰带之类的东西，你应该会非常有用。</p>
+          <p> </p>
+          <p>搜集到功勋证书之后，请你拿来交给我。我会很乐意把奖励送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像没什么野心嘛。</p>
+          <p> </p>
+          <p>作为奖励的腰带除了自身的价值之外，还有其他意义。</p>
+          <p> </p>
+          <p>那是完成了重要任务的优秀守护者的荣誉的象征。</p>
+          <p> </p>
+          <p>如果你不想得到那份荣誉，我也没有办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的表情，一定完成了很多任务吧？</p>
+          <p> </p>
+          <p>我选择你，看来没有选错人。</p>
+          <p> </p>
+          <p>快把搜集到的功勋证书交给我吧。</p>
+          <p> </p>
+          <p>我虽然很信任你，不过还是要看看证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出功勋证书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么说你可能会觉得有点不舒服，不过我是个很忙的人。</p>
+          <p> </p>
+          <p>没时间和人闲谈。</p>
+          <p> </p>
+          <p>等你有事情的时候再来找我，怎么样？</p>
+          <p> </p>
+          <p>比如说搜集到了[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]的时候。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集到了这么多的功勋证书，一定很辛苦吧。</p>
+          <p> </p>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>我现在知道为什么会有那么多人称赞你了。</p>
+          <p> </p>
+          <p>来，这是辛苦的报答。希望对你有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]，然后交给[%dic:STR_DIC_N_Barretta]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴雷塔说搜集功勋证书的话，可以得到不错的奖励。去执行重要的任务，搜集功勋证书吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴雷塔说听说我能力出众，如果能去执行重要的任务，就会给我相应的奖励。</p>
+          <p> </p>
+          <p>按照他的建议，去执行任务，搜集到了功勋证书。交给他之后，他给了我一条腰带作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

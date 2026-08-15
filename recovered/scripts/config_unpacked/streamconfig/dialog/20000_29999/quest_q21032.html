@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在对您拿回来的锑原石进行精气提取的时候，我发现精气已经全部泄漏光了。</p>
+          <p> </p>
+          <p>这是怎么回事呢？</p>
+          <p> </p>
+          <p>肯定是有什么东西吸走了锑的精气，不然不会这个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说明采集时看到的情景。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？原石周围有鲁萨尔卡和赞特凯尔！</p>
+          <p> </p>
+          <p>哼，它们非常可疑。</p>
+          <p> </p>
+          <p>您看这么办怎么样？</p>
+          <p> </p>
+          <p>[%username]大人您再帮我去一趟，对[%dic:STR_DIC_M_DF4_Bookie_Crk_52_An]和[%dic:STR_DIC_M_DF4_Mimic_Crk_52_An]进行调查。</p>
+          <p> </p>
+          <p>如果在它们体内发现了[%dic:STR_DIC_I_QUEST_21032a]，请拿来交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，还要麻烦您一次。不过俗话说塞翁失马，焉知祸福。</p>
+          <p> </p>
+          <p>锑原石的精气被生命体吸收之后，会积累在体内，产生变异，形成强度和纯度更高的东西。</p>
+          <p> </p>
+          <p>浓缩的锑的价值要高得多。</p>
+          <p> </p>
+          <p>请您去消灭[%dic:STR_DIC_M_DF4_Bookie_Crk_52_An]和[%dic:STR_DIC_M_DF4_Mimic_Crk_52_An]，把它们体内的浓缩锑拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经去过一次，又来麻烦您，是不是太失礼了？</p>
+          <p> </p>
+          <p>但是吸收了原石的精气的生命体体内的锑的浓度会更高。</p>
+          <p> </p>
+          <p>商用价值也更高。</p>
+          <p> </p>
+          <p>如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_DF4_Bookie_Crk_52_An]和[%dic:STR_DIC_M_DF4_Mimic_Crk_52_An]全部消灭掉了吗？</p>
+          <p> </p>
+          <p>它们体内有浓缩锑吗？</p>
+          <p> </p>
+          <p>我从来都没见到过浓缩锑，真让人期待。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出浓缩锑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去吗？要是有人先发现了浓缩锑，那就糟了……</p>
+          <p> </p>
+          <p>我是求您帮忙，所以不想催促您。不过还是希望您能抓紧时间。</p>
+          <p> </p>
+          <p>请您一定要消灭[%dic:STR_DIC_M_DF4_Bookie_Crk_52_An]和[%dic:STR_DIC_M_DF4_Mimic_Crk_52_An]搜集到浓缩锑。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然可以感觉到很强的气息。</p>
+          <p> </p>
+          <p>这一定可以卖个好价钱。</p>
+          <p> </p>
+          <p>谢谢您。这是给您的酬谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_DF4_Bookie_Crk_52_An]和[%dic:STR_DIC_M_DF4_Mimic_Crk_52_An]身上搜集锑，然后交给[%dic:STR_DIC_N_Carabel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卡拉贝尔发现锑原石的精气全部泄漏掉了，他说周围的生命体体内一定会有浓缩锑。消灭鲁萨尔卡和赞特凯尔，搜集浓缩锑吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡拉贝尔说我收集到的锑原石中的精气已经泄漏，那样的话，周围的生命体体内一定会有浓缩锑。</p>
+          <p> </p>
+          <p>按照卡拉贝尔的委托，消灭锑原石周围的鲁萨尔卡和赞特凯尔，获得了浓缩锑。</p>
+          <p> </p>
+          <p>把浓缩锑交给卡拉贝尔之后，他非常高兴，给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

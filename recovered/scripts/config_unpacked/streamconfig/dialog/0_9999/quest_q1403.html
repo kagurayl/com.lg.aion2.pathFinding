@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%username]大人对赚取外快也比较关心，我能再拜托您一件事吗？</p>
+          <p> </p>
+          <p>我是觉得您有完成我所拜托的事情的能力才跟您说的。</p>
+          <p> </p>
+          <p>怎么样，您感兴趣吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道您会感兴趣的！</p>
+          <p> </p>
+          <p>您能帮我去盖洛克火山地带搜集[%dic:STR_DIC_I_QUEST_1403a]吗？</p>
+          <p> </p>
+          <p>可能是由于它们生活在火山地带，因此阿穆特的心脏和普通的野兽不太一样。它们的心脏非常坚硬，经过加工后可以制作成装饰品。</p>
+          <p> </p>
+          <p>这是手工名人经常要购买的物品，如果送到极乐世界去的话，应该能赚到不少钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿穆特生活在盖洛克火山地带的深处。</p>
+          <p> </p>
+          <p>请您捕去捉[%dic:STR_DIC_M_Mammoth_37_An]或者它们的头目[%dic:STR_DIC_M_MammothNamed_37_An]搜集[%dic:STR_DIC_I_QUEST_1403a]。</p>
+          <p> </p>
+          <p>如果能找到的话，价钱上我不会亏待您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%username]大人也害怕阿穆特啊。</p>
+          <p> </p>
+          <p>也是，光想想它们的大个头就让人害怕了。</p>
+          <p> </p>
+          <p>如果您不愿意的话，我也不想强迫您。</p>
+          <p> </p>
+          <p>没关系，我可以找其他的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您的脸涨得通红，看来盖洛克火山地带还真的很热。</p>
+          <p> </p>
+          <p>不过话说回来，您搜集到[%dic:STR_DIC_I_QUEST_1403a]了吗？</p>
+          <p> </p>
+          <p>您不会只是去火山地带蒸桑拿了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出阿穆特的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人难道这么喜欢和人说些没用的话吗？</p>
+          <p> </p>
+          <p>我还以为您把[%dic:STR_DIC_I_QUEST_1403a]带回来了呢。这是什么啊？</p>
+          <p> </p>
+          <p>请您快点去搜集心脏吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是阿穆特的心脏啊。</p>
+          <p> </p>
+          <p>虽然听说过，但还是头一次看见。</p>
+          <p> </p>
+          <p>不过这真的是心脏吗？好像和石头没什么两样啊。</p>
+          <p> </p>
+          <p>不管怎样，真是辛苦您了。这是说好的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1403a]，然后交给[%dic:STR_DIC_N_Makis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去盖洛克火山地带搜集据说可以卖上大价钱的阿穆特的心脏。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马奇斯说既然合作过一次，想再拜托我一次，让我去帮他搜集阿穆特的心脏。</p>
+          <p> </p>
+          <p>在盖洛克火山地带捕捉阿穆特，把搜集到的心脏交给了他，他觉得很新奇，并给了我说好的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是个从来不会担心的人。人生只有一次，平静的生活难道不是很好吗？</p>
+          <p> </p>
+          <p>但是最近我很头疼。要塞的居民们听到之后一定会大吃一惊的。</p>
+          <p> </p>
+          <p>我居然也会有苦恼……这种事情怎么能跟朋友们说呢。</p>
+          <p> </p>
+          <p>既然遇到了您，请您听我把话说完。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近因为那些[%dic:STR_DIC_M_Varanus_24_An]，我一直睡不好觉。</p>
+          <p> </p>
+          <p>啊，那种可怕的叫声！而且听说它们很凶残，经常会攻击进出要塞的人们。</p>
+          <p> </p>
+          <p>我虽然厚着脸皮去向军团士兵请求帮助，但换来的只有嘲笑。</p>
+          <p> </p>
+          <p>[%username]大人，我知道您是位勇敢的守护者。请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>之前谁都没有认真地听过我的话。</p>
+          <p> </p>
+          <p>让您去那么危险的地方，我真的有点不安……但是相信您一定可以帮我把[%dic:STR_DIC_M_Varanus_24_An]消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，请您想象一下我现在是多么痛苦吧！</p>
+          <p> </p>
+          <p>只要您能稍微体谅一下我的心情，就不会就这样走开。</p>
+          <p> </p>
+          <p>一想到那种可怕的声音，我就浑身起鸡皮疙瘩。</p>
+          <p> </p>
+          <p>如果您还是要走……我也没办法。谢谢您能听完我的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我从来不知道什么叫心情沉重。</p>
+          <p> </p>
+          <p>但是现在我知道了。每次想到尖叫巴拉努斯的时候，我的心情就更沉重了。</p>
+          <p> </p>
+          <p>我希望您给我带来好消息。结果怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，您真的去啦！</p>
+          <p> </p>
+          <p>谢谢您。能遇到[%username]大人，真是我的荣幸。</p>
+          <p> </p>
+          <p>虽然它们不会全部消失，但只要能少一些，我就觉得很欣慰了。</p>
+          <p> </p>
+          <p>来，请您收下。我还不至于无耻到因为我没有工作就白白让人帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Varanus_24_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Pallas]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助痛苦的帕拉斯消灭尖叫巴拉努斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞居民帕拉斯没有固定的工作，整天无所事事。</p>
+          <p> </p>
+          <p>他最近因为尖叫巴拉努斯而睡不着觉，但是军团士兵又不愿意帮他。</p>
+          <p> </p>
+          <p>消灭了在寂静沼泽周围徘徊的尖叫巴拉努斯，回去告诉他之后，帕拉斯非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

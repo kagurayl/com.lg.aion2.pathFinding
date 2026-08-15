@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你认为什么才是治愈星的本分呢？</p>
+          <p> </p>
+          <p>对于需要帮助的我军战士给予最快速的治疗，这便是治愈星的本分。</p>
+          <p> </p>
+          <p>奔前跑后充当救火队长，还算不上是优秀的治愈星。优秀的治愈星应该随时随地都能向需要的人伸出援助之手。</p>
+          <p> </p>
+          <p>要想做到这一点，就得拓宽自己在战场上的视野。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我给你个任务吧，考察考察你这段时间以来的实力长进，怎么样？</p>
+          <p> </p>
+          <p>怎么样？要不要挑战一下，试试反复使用10次[%dic:STR_DIC_E_DP_Pr]？</p>
+          <p> </p>
+          <p>你要是一名有实力的治愈星，自然能顺利完成任务。要是实力不够，就把这次任务当作是熟练自己技能的好机会吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好在有能够补充神圣力的果冻，必要时使用应该能对你有所帮助。</p>
+          <p> </p>
+          <p>虽然作为老师很想再多帮帮你，不过很多事情还是要靠自己去磨练和体会的。</p>
+          <p> </p>
+          <p>哪怕再苦再累，只要你不放弃，总会得到好结果的。</p>
+          <p> </p>
+          <p>那么，我就等着你的好消息了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你认为自己还没准备好，那我也无能为力。</p>
+          <p> </p>
+          <p>毕竟不能拔苗助长，等你磨练磨练再来吧。</p>
+          <p> </p>
+          <p>冰冻三尺非一日之寒，这种事情不能心急的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么久才回来？</p>
+          <p> </p>
+          <p>不过我相信你肯定完成了任务。</p>
+          <p> </p>
+          <p>怎么样，已经能够熟练使用[%dic:STR_DIC_E_DP_Pr]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得很好。</p>
+          <p> </p>
+          <p>相信你也知道，治愈星在不同的阶段所应该学习的技能是不同的，这些技能的治疗效果也是不一样的。</p>
+          <p> </p>
+          <p>当你掌握了这些技能之后才能找到最适合自己的那项技能，从而成为优秀的治愈星。</p>
+          <p> </p>
+          <p>我相信你一定可以成功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Pr]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向治愈星和护法星的老师[%dic:STR_DIC_N_Thrasymedes]报告</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">完成特拉希梅德斯委派的任务，然后回去报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉希梅德斯要考验我作为治愈星的实力，给了我一个任务，要我反复使用10次免罪 I。</p>
+          <p> </p>
+          <p>完成任务后向特拉希梅德斯报告，他给予了我鼓励，希望我成为优秀的治愈星。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

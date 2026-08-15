@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命结束的日子，好像已经不远了。</p>
+          <p> </p>
+          <p>回顾一生，我没有什么后悔的事情。</p>
+          <p> </p>
+          <p>虽然有一点羞愧，伪装成了奥格林特。</p>
+          <p> </p>
+          <p>不过我还有一个遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是没能把[%dic:STR_DIC_M_LycanAssassinMNMQ_38_Ae]除掉。</p>
+          <p> </p>
+          <p>虽然不知道为什么，他煽动雾鬃莱卡恩对我们的仇恨。</p>
+          <p> </p>
+          <p>雾鬃莱卡恩看见了椰林，就会不停地折磨他。所以我才伪装成了这个样子。</p>
+          <p> </p>
+          <p>为了莫尔海姆所有的椰林，我想把[%dic:STR_DIC_M_LycanAssassinMNMQ_38_Ae]除掉。你能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LycanAssassinMNMQ_38_Ae]，不是普通的莱卡恩。</p>
+          <p> </p>
+          <p>它呆在建在空中的房子里，所以很难接近。</p>
+          <p> </p>
+          <p>帮我把它除掉，在莫尔海姆的所有椰林被雾鬃莱卡恩杀死之前。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我并不害怕死亡。</p>
+          <p> </p>
+          <p>但是害怕我死了之后，其他的椰林生活在痛苦之中。</p>
+          <p> </p>
+          <p>帮帮我吧，让我可以平静地迎接最后的日子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很长的时间里，我们和莱卡恩相安无事。</p>
+          <p> </p>
+          <p>不知道为什么，影子战士恰努帕帕会憎恨我们椰林。</p>
+          <p> </p>
+          <p>不管怎样，你把影子战士恰努帕帕除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>直到最后的瞬间，我都不会忘记你的帮助。</p>
+          <p> </p>
+          <p>我会为你祈祷，愿椰林和自然的祝福永远陪伴着你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_LycanAssassinMNMQ_38_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Temoji]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">泰莫吉说他害怕憎恶椰林的影子战士恰努帕帕。为了让他安心，必须去把影子战士恰努帕帕除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰莫吉说影子战士恰努帕帕煽动雾鬃莱卡恩，使他们憎恶椰林。他担心只要有它在，莫尔海姆的椰林就很危险。于是去帮他除掉了恰努帕帕。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

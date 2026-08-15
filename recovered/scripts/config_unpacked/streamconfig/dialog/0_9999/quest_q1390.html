@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所有生命体的皮肤组织的构成都各不相同。</p>
+          <p> </p>
+          <p>对其构成进行分析的话，就能知道是属于哪种生物，怎样变异而来的。</p>
+          <p> </p>
+          <p>当然不是那么容易就能弄明白。需要用到这副可以放大一千倍的特殊眼镜。</p>
+          <p> </p>
+          <p>[%username]带回来的普雷尔的皮肤组织很大，观察起来应该很容易。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(带上眼镜，观察组织。)</p>
+          <p> </p>
+          <p>嗯？真是奇怪？</p>
+          <p> </p>
+          <p>奇怪。我得再看一下。</p>
+          <p> </p>
+          <p>(眼镜，重新戴上，观察组织。)</p>
+          <p> </p>
+          <p>这不可能。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是亚特雷亚的东西。</p>
+          <p> </p>
+          <p>我的意思是...</p>
+          <p> </p>
+          <p>啊，不可能有这种事情！必须马上通知极乐世界大圣所！</p>
+          <p> </p>
+          <p>您能帮我把这个交给极乐世界的[%dic:STR_DIC_N_Hygea]大人吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。拿好这个。</p>
+          <p> </p>
+          <p>我把剩余的皮肤组织装在了瓶里，请您把它交给[%dic:STR_DIC_N_Hygea]大人。</p>
+          <p> </p>
+          <p>给她看看这个，并转达我的话。</p>
+          <p> </p>
+          <p>这是完全脱离了亚特雷亚的生态的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这可怎么办呢。</p>
+          <p> </p>
+          <p>我一时也离开不了...</p>
+          <p> </p>
+          <p>怎么才能通知极乐世界大圣所呢？您能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在进行有关生命和消灭的研究。</p>
+          <p> </p>
+          <p>同时也研究和生命有着密切联系的疾病和变异。</p>
+          <p> </p>
+          <p>最近我收到很多在天界各地发现奇怪生命体的报告，因此比较忙碌。</p>
+          <p> </p>
+          <p>[%username]您也是为这件事情来的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出标本，并转达埃塞奥斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在亚特雷亚不存在的生命体吗？</p>
+          <p> </p>
+          <p>这个嘛，很多情况都是看到了偏僻地区的生命体而引起的误会...确切的情况只要研究一下标本就知道了。</p>
+          <p> </p>
+          <p>谢谢您把标本送到了这里。这是对您为极乐世界操劳的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把普雷尔标本交给极乐世界大圣所的[%dic:STR_DIC_N_Hygea]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">看了普雷尔的皮肤组织之后，埃塞奥斯说必须马上把它送到极乐世界大圣所去。必须把标本交给极乐世界大圣所的希凯雅。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看了普雷尔的皮肤组织之后，埃塞奥斯说这不是亚特雷亚的生命体，必须把这件事情通知极乐世界大圣所。</p>
+          <p> </p>
+          <p>帮助无法脱身的他把标本送到了极乐世界大圣所。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

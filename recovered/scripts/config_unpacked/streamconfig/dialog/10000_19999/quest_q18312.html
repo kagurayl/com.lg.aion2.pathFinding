@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在制作有关阿图拉姆空中要塞的监视网的报告书。</p>
+          <p> </p>
+          <p>在空中要塞内部有由移动型监视装置和监视水晶球等各种设备组成的监视网。</p>
+          <p> </p>
+          <p>如果能知道那些监视装置是怎么运转的，监视哪些地方，进攻空中要塞的时候就会少很多麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据我的调查结果，在监视装置和龙族人工兵器玛拉巴塔内部都装有将捕捉到的情报立即传送给德拉坎的共鸣器。</p>
+          <p> </p>
+          <p>监视装置和玛拉巴塔监视者发现入侵者之后，会通过共鸣器发出信号，管理区域的德拉纳手上的共鸣器就会产生反应。</p>
+          <p> </p>
+          <p>我很想知道那种共鸣器的构造。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于共鸣器，我们目前还一无所知。</p>
+          <p> </p>
+          <p>如果能对他们的[%dic:STR_DIC_I_quest_18312a]进行研究，让我们也可以使用那种功能，就会在和龙族战斗的时候起到很大的作用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。</p>
+          <p> </p>
+          <p>反正这是我个人的任务，我不想强迫您。</p>
+          <p> </p>
+          <p>我也不想欠别人人情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据我所知，龙族掌握着很多高度发达的技术，监视共鸣器就是其中之一。</p>
+          <p> </p>
+          <p>根据他们的技术水平，我们的战略也必须做出相应的调整。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出监视共鸣器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望能从空中要塞多搜集一些共鸣器……</p>
+          <p> </p>
+          <p>但是因为个人的原因，我现在不能离开这里……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这不是监视共鸣器吗！看来您也对我的研究感兴趣啊！</p>
+          <p> </p>
+          <p>[%username]大人，您的热情真让人感动。</p>
+          <p> </p>
+          <p>就算是自掏腰包，我也要向您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿图拉姆空中要塞搜集 [%dic:STR_DIC_I_quest_18312a]，然后交给 [%dic:STR_DIC_N_Silion]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照西里安所说，消灭阿图拉姆空中要塞的敌人，搜集监视共鸣器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西里安说为了分析阿图拉姆空中要塞的监视网，正在搜集玛拉巴塔和德拉坎将校们身上的监视共鸣器。</p>
+          <p> </p>
+          <p>于是到空中要塞去消灭敌人，搜集到了监视共鸣器。交给西里安之后，他显得非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

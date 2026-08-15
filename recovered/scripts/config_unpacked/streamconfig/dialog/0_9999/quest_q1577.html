@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您。</p>
+          <p> </p>
+          <p>昨天晚上我梦见内扎坎大人，他说会出现一个帮助我的人，要我快做准备。</p>
+          <p> </p>
+          <p>我以为要等很久才能把您盼来，没想到您这么快就出现了。我真是太感谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">您怎么知道那个人就是我呢？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很难用语言说明，但是我就是能够知道。</p>
+          <p> </p>
+          <p>我一生下来就在奇柏隆成长。</p>
+          <p> </p>
+          <p>出生没多久就被抛弃了。上一代神官大人抚养我长大。</p>
+          <p> </p>
+          <p>从那时起我就亲眼目睹了五位主神所创下的神迹。</p>
+          <p> </p>
+          <p>也拥有了可以看到奇迹的眼光。</p>
+          <p> </p>
+          <p>我很确信[%username]大人就是内扎坎主神给我送来的人。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问需要什么帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如您所见，村里的情况不太好。</p>
+          <p> </p>
+          <p>周围的生命都被污染了，吃的东西不够，可是又不能自由出入村庄。</p>
+          <p> </p>
+          <p>最大的问题在于食用水。虽然开始之泉中也有泉水涌出，可是那水还不够用来净化周围的污染的。</p>
+          <p> </p>
+          <p>所以请您帮帮我们，能让村里人放心吃上水。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们寻水的地方就在[%dic:STR_DIC_W_LF3_SZ_D6]。</p>
+          <p> </p>
+          <p>可是不知从哪一天开始，各种生命体侵入，水被污染了。</p>
+          <p> </p>
+          <p>污染是一个问题，另外那些生命体很可怕，现在都不敢接近那附近了。</p>
+          <p> </p>
+          <p>"只要消灭了[%dic:STR_DIC_M_Mudthorn_36_An], [%dic:STR_DIC_M_Slime_36_An], [%dic:STR_DIC_M_BAT_36_An], [%dic:STR_DIC_M_CatosRE_36_An]，内扎坎主神也会赞许的。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我居然不能说服守护者大人！啊，看来我的祈祷还是不够啊。</p>
+          <p> </p>
+          <p>如果是这样的话，村里的人都会渴死的。</p>
+          <p> </p>
+          <p>请您一定要重新考虑一下。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>花费的时间比想象的要长嘛。</p>
+          <p> </p>
+          <p>有没有受伤呢？</p>
+          <p> </p>
+          <p>虽然我也知道不太可能，不过仍然一直很担心[%username]大人，怕您遇到什么麻烦。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然我想您是会成功的。内扎坎大人派来的人肯定会成功的。</p>
+          <p> </p>
+          <p>看来没什么受伤的地方。太万幸了。</p>
+          <p> </p>
+          <p>这是感谢您帮助村民们的心意。</p>
+          <p> </p>
+          <p>愿永恒之塔的光永远跟随您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭污染灰雾丘陵水质的生命体。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Mudthorn_36_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Slime_36_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BAT_36_An]([%8]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_CatosRE_36_An]([%11]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Trou]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去灰雾丘陵消灭刺魔、斯莱姆、蝠妖还有卡托斯，令村民们可以放心去找水。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神官特拉乌抱怨说因为那些污染了灰雾丘陵水质的生命体，现在帕塞尔塔村的饮用水不够了。</p>
+          <p> </p>
+          <p>去灰雾丘陵消灭刺魔、斯莱姆、蝠妖还有卡托斯。他很感谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

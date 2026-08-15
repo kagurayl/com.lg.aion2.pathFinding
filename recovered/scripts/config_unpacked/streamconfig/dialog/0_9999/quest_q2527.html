@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你有没有带食物呀？</p>
+          <p> </p>
+          <p>饿了很久，都没力气了。</p>
+          <p> </p>
+          <p>这样下去，可能很快就会死掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">答应给它寻找食物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来我自己也能去找食物，可是周围都是棕熊，活动的范围太小了，一不小心就会被那些家伙们抓住...</p>
+          <p> </p>
+          <p>所以...我能不能厚着脸皮求你一件事呀？</p>
+          <p> </p>
+          <p>在我们以前的住处，可能会有一些储备食物。</p>
+          <p> </p>
+          <p>你能帮我带一点回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那里有很多棕熊，也很危险。尽管如此，你还能答应帮助我，谢谢你了。</p>
+          <p> </p>
+          <p>看来，这都是因为上次救了那个执政官的原因。</p>
+          <p> </p>
+          <p>我们以前住的地方是一些围着栅栏的窝棚。在那里仔细找找，就会发现 [%dic:STR_DIC_OBJ_FoodPouch_Q2527]。</p>
+          <p> </p>
+          <p>我也不知道要躲到什么时候，所以请你尽量多带一些，5袋大概可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来帮助我的吗？</p>
+          <p> </p>
+          <p>现在，我最需要的就是食物。</p>
+          <p> </p>
+          <p>再过一会，我都打算不顾棕熊发不发现，直接冲出去找食物了。这样的情况下，你竟然还拒绝我...</p>
+          <p> </p>
+          <p>看来，那个执政官找错了人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来这么晚，出事了吗？</p>
+          <p> </p>
+          <p>我现在手脚发抖，头也非常晕，看来是饿的快不行了。</p>
+          <p> </p>
+          <p>带来[%dic:STR_DIC_OBJ_FoodPouch_Q2527]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将食物袋交给它。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（打开袋子，狼吞虎咽地吃起来）谢谢，总算活过来了。</p>
+          <p> </p>
+          <p>这段时间，因为害怕棕熊，我一直悄悄地躲在这里。</p>
+          <p> </p>
+          <p>现在既然得到了食物，我会加把劲，努力活下去。</p>
+          <p> </p>
+          <p>非常感谢你的帮助。如果能够活着见到同族，那一切都应该归功于 [%username] 。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么空着手回来啦？</p>
+          <p> </p>
+          <p>你不会连去也没去吧？</p>
+          <p> </p>
+          <p>要是你知道我到底饿了有多久，你就会对自己的做法感到内疚了。 </p>
+          <p> </p>
+          <p>所以，请赶紧去把 [%dic:STR_DIC_OBJ_FoodPouch_Q2527]找来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_OBJ_FoodPouch_Q2527]，并交给 [%dic:STR_DIC_N_Gark]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助饿了很久的加尔克，去被棕熊占领的史匹格聚居地寻找食物袋，并交给加尔克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加尔克表示，它已经饿了很久，询问有没有东西吃。它希望能从史匹格的聚居地拿回几袋食物。</p>
+          <p> </p>
+          <p>帮助它拿回食物后，它狼吞虎咽地吃起来，并表示会努力活下去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

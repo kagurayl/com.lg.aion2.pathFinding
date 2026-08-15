@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你觉得猎人最重要的是什么呢？</p>
+          <p> </p>
+          <p>啊，这并不是只适用于猎人的问题。不管对手是动物还是敌人，这是适合所有进行战斗的人的问题。</p>
+          <p> </p>
+          <p>那就是不管遇到什么事情都能镇定自若的胆量。</p>
+          <p> </p>
+          <p>只要有胆量，即使独自深入到处都是纳加的洞穴，最后也能生存下来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我用来锻炼胆量的动物就是大头卡托斯。</p>
+          <p> </p>
+          <p>在觉醒之前，我经常出去打猎。遇到大头卡托斯的话，我就会被吓得不知所措。</p>
+          <p> </p>
+          <p>看见那么巨大的一个东西冲过来，哪有不害怕的道理。又不是守护者，搞不好的话，马上就会去命赴黄泉。</p>
+          <p> </p>
+          <p>但是经常面对它们的话，胆量就会逐渐地变大。[%username]，你也想试试打猎[%dic:STR_DIC_M_CatosD_26_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好！[%username]，你很有锻炼和学习的决心。</p>
+          <p> </p>
+          <p>那么，请你去打猎10头[%dic:STR_DIC_M_CatosD_26_An]，然后回来找我。</p>
+          <p> </p>
+          <p>你重新站在我面前的时候，胆量一定会提高不少。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到卡托斯的名字，你就害怕了吗？</p>
+          <p> </p>
+          <p>我从来没见到你这个样子。看来[%username]你也很害怕吧。</p>
+          <p> </p>
+          <p>也是，最近的年轻守护者都这样...神庙里教的东西比以前容易多了，当然就会这样...</p>
+          <p> </p>
+          <p>不过本人要是不愿意的话，我也没办法。你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？打猎[%dic:STR_DIC_M_CatosD_26_An]之后，胆量有没有提高一点？</p>
+          <p> </p>
+          <p>只要沉着冷静，在受到敌人攻击的时候，还可以腾出精力来观察对方以及周围的变化。</p>
+          <p> </p>
+          <p>像[%username]你这样的守护者的话，只要稍微经过一点训练，就可以很快达到那种境界。</p>
+          <p> </p>
+          <p>跟我说说训练进行得怎么样吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">讲述打猎卡托斯的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得太好了。现在不管受到什么野兽或者敌人攻击，你都应该可以沉着地应对了。，</p>
+          <p> </p>
+          <p>能训练你这么有才能的守护者，真让人高兴。</p>
+          <p> </p>
+          <p>来，这是送给你的礼物，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_CatosD_26_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Legalus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莱卡尔卢斯说必须培养面对任何敌人都可以保持沉着的胆量。按照他的提议，去打猎卡托斯锻炼胆量吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱卡尔卢斯说不管是打猎还是战斗，最重要的是不能失去冷静，并说锻炼胆量最好的方法是打猎大头卡托斯。</p>
+          <p> </p>
+          <p>于是去穆斯费尔火山入口打猎了大头卡托斯，锻炼了胆量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Ammianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是搜集[%dic:STR_DIC_I_QUEST_37001A]%。</p>
+          <p> </p>
+          <p>图尔辛的火焰在贝尔特伦的图尔辛前哨基地可以搜集到，必须消灭[%dic:STR_DIC_M_37001all]%才可以获得，因此请你一定要和导师一起执行。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图尔辛的火焰是只有从图尔辛前哨基地的上级克拉尔那里才能获得的证物。</p>
+          <p> </p>
+          <p>如果觉得有导师的帮助就冒冒失失地冲过去，让克拉尔的生命完全熄灭的话，图尔辛的火焰就会消失。</p>
+          <p> </p>
+          <p>您和导师的配合怎么样？[%dic:STR_DIC_I_QUEST_37001A]%搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出图尔辛的火焰。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能问问您为什么没能获得图尔辛的火焰吗？</p>
+          <p> </p>
+          <p>是没有找到好的导师吗？还是还没到图尔辛前哨基地去啊？</p>
+          <p> </p>
+          <p>预备神庙的任务必须在当天之内完成。过了时间的话，就没用了。</p>
+          <p> </p>
+          <p>请您和导师一起到图尔辛前哨基地去，搜集[%dic:STR_DIC_I_QUEST_37001A]%。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还在熊熊地燃烧着，图尔辛的火焰!</p>
+          <p> </p>
+          <p>和导师一起打猎感觉如何？希望对[%username]大人和对担任您导师的人都有好处。</p>
+          <p> </p>
+          <p>图尔辛的火焰我会把它用在正义的事业上。</p>
+          <p> </p>
+          <p>希望您今后能继续积极地执行任务。这是这次任务的奖励。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起，从[%dic:STR_DIC_M_37001all]身上搜集 [%dic:STR_DIC_I_QUEST_37001A]%，然后交给[%dic:STR_DIC_N_Ammianus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的安米亚努斯那里收到了一封信。按照指示，和导师一起到图尔辛前哨基地去搜集图尔辛的火焰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去贝尔特伦执行任务。</p>
+          <p> </p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去图尔辛前哨基地消灭了图尔辛上级兵，把搜集到的图尔辛的火焰交给了安米亚努斯，获得了奖励</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

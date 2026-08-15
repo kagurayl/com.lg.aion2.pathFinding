@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可惜你消灭军团长阿努哈尔特后得来的浓缩元气不能立刻派上用场。</p>
+          <p> </p>
+          <p>要派上用场，得首先改变你所得到的浓缩元气的状态。</p>
+          <p> </p>
+          <p>浓缩元气是龙族浓缩出来的东西，必然存在属性不符的问题。使用不当，很可能导致中毒。</p>
+          <p> </p>
+          <p>因此，必须首先将元气的性质更改为你可以使用的状态。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我很乐意助你一臂之力，但可惜我能力有限，帮不了你。</p>
+          <p> </p>
+          <p>不过我可以介绍一个人给你认识，他可以帮你。</p>
+          <p> </p>
+          <p>你见过知识会堂的[%dic:STR_DIC_N_Kasir]吗？</p>
+          <p> </p>
+          <p>你只要把浓缩元气交给他，他会帮你处理的。</p>
+          <p> </p>
+          <p>[%username]，你一定得亲自去找他。周围眼线太多，我不方便直接去找卡希尔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Kasir]在[%dic:STR_DIC_W_DC1_12]里面的秘密书库。</p>
+          <p> </p>
+          <p>其实他是被流放发配到那里去的，所以找他的时候低调一点。</p>
+          <p> </p>
+          <p>顺便再帮我向卡希尔问好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底在想什么？</p>
+          <p> </p>
+          <p>连黑暗普埃塔那么困难的任务都做了，最后这点收尾工作你反而退却了？</p>
+          <p> </p>
+          <p>你不会是害怕再和龙族打交道吧？</p>
+          <p> </p>
+          <p>要是穆您大人知道你现在这副样子，估计会大失所望的。真是不知好歹。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海依姆达尔联系过我了。</p>
+          <p> </p>
+          <p>你带着那个东西来了吗？</p>
+          <p> </p>
+          <p>有人在监视我，你迅速地把东西给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出浓缩元气。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我会尽我所能尽快将这元气的性质改变成你能使用的状态。</p>
+          <p> </p>
+          <p>看样子，要转换这个元气的性质需要不少时间。</p>
+          <p> </p>
+          <p>不过，这点时间相对于守护者永恒的生命而言算不了什么。</p>
+          <p> </p>
+          <p>反正等时机成熟，我们还会再见面的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把浓缩元气带去给[%dic:STR_DIC_N_Kasir]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将浓缩元气带去给知识会堂的秘密书库里的卡希尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海依姆达尔说浓缩元气无法直接使用，必须首先改变元气的性质才行。</p>
+          <p> </p>
+          <p>他说被发配到知识会堂的秘密书库里的卡希尔知道怎么转换元气的性质，让我悄悄地把浓缩元气交给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

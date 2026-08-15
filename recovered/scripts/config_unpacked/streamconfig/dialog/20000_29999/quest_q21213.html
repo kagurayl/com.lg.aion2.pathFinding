@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>失败者的坟墓是龙族和天族都不怎么重视的地区。</p>
+          <p> </p>
+          <p>因为那里的元气已经被德拉纳生长器全部吸收掉，元气已经完全枯竭。</p>
+          <p> </p>
+          <p>既不适合生命体生存，也没有什么有用的资源。</p>
+          <p> </p>
+          <p>而且由于过去的激烈战斗，大地受到严重破坏，让人看了觉得很不舒服。</p>
+          <p> </p>
+          <p>但是对研究人员来说，没有比那里更有趣的地区了。</p>
+          <p> </p>
+          <p>在失败者的坟墓可以进行的研究非常多样。</p>
+          <p> </p> 
+          <p>德拉纳吸收和环境的变化、龙族的历史、龙的骨骼结构……只要有毅力，绝对可以写出十篇以上的论文。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是由于那里有很多凶恶的生命体，因此我没办法进行调查。</p>
+          <p> </p>
+          <p>我不是对自己的战斗能力没有自信，只是不管我去什么地方，哥哥总想跟在屁股后面，让我觉得很烦。</p>
+          <p> </p>
+          <p>因为哥哥喜欢干涉我的事情，所以现在我还没有像样的研究结果出来。</p>
+          <p> </p>
+          <p>[%username]大人，这件事您能帮帮我吗？</p>
+          <p> </p>
+          <p>如果您能帮我，那就太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您！</p>
+          <p> </p>
+          <p>最麻烦的家伙是[%dic:STR_DIC_M_DF4_Baku_Desert_54_An]、[%dic:STR_DIC_M_DF4_Dionaea_Red_54_An]和[%dic:STR_DIC_M_DF4_Scorpion_Rough_54_An]。</p>
+          <p> </p>
+          <p>听说它们的数量变少之后，哥哥应该就会安心了。</p>
+          <p> </p>
+          <p>[%username]大人这么强，他应该不会为您担心的。</p>         
+          <p> </p>
+          <p>请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您还有别的事，那就算了。</p>
+          <p> </p>
+          <p>看来我得想办法说服哥哥才行。</p>
+          <p> </p>
+          <p>不过他那么固执，真是让人无可奈何。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和哥哥不同，我不想埋头研究一样东西。</p>
+          <p> </p>
+          <p>地理学、生态学、历史学虽然属于不同的领域，但其实所有的学问都是相通的。</p>
+          <p> </p>
+          <p>如果能通晓所有的学问，应该就能成为和伏魔殿的大学者大人一样博学的人。</p>
+          <p> </p>
+          <p>现在的辛苦是在为将来铺路。</p>
+          <p> </p>
+          <p>对了，我拜托您的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢！</p>
+          <p> </p>
+          <p>讨厌的东西好像少了很多。</p>
+          <p> </p>
+          <p>虽然这样还不足以说服哥哥，但至少会容易说服一些。</p>
+          <p> </p>
+          <p>如果我能完成对失败者的坟墓的研究，都得感谢[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭失败者的坟墓的凶恶的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Baku_Desert_54_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Dionaea_Red_54_An]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Scorpion_Rough_54_An]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Itar]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让伊塔尔可以安心对失败者的坟墓进行研究，消灭巴库、迪欧纳埃和蝎兽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊塔尔说想对失败者的坟墓进行调查，但是因为生命体的妨碍，给他造成了困难。</p>
+          <p> </p>
+          <p>于是去失败者的坟墓，消灭了高地巴库、污染的尖刺迪欧纳埃和金眼蝎兽。回去之后，伊塔尔对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

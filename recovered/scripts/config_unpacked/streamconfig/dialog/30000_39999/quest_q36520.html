@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An]因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An] </p>
+          <p></p>
+          <p> 2. 罪行：伪装身份，非法间谍活动</p>
+          <p></p>
+          <p> 3. 详情：涉嫌伪装成塞拉图，在英吉斯温幻影要塞从事非法间谍活动。</p>
+          <p> </p>
+          <p>消灭伪装成[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An]的龙族监视兵，把证据交给[%dic:STR_DIC_I_QUEST_36520a]的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>在你身上隐约可以闻到汗水的味道，你一定是刚刚完成任务吧？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An]找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带回来的证据。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没找到吗？</p>
+          <p> </p>
+          <p>必须尽快把它除掉才行。</p>
+          <p> </p>
+          <p>这样下去的话，幻影要塞的安全就无法保障了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把它消灭掉啦。</p>
+          <p> </p>
+          <p>伪装侦察……手段越来越多了。</p>
+          <p> </p>
+          <p>真不知道那些龙族研究专家们到底在干什么。</p>
+          <p> </p>
+          <p>[%username]！有您一个人，比一百个龙族研究专家都管用。</p>
+          <p> </p>
+          <p>辛苦您了。请把准备好的证物拿走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_QUEST_36520a]交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>把伪装成刺角尼德罗格的龙族的假鳍割下来，交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

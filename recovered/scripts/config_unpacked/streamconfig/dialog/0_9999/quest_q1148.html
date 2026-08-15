@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好！我是来消灭托格和路皮里尼的。</p>
+          <p> </p>
+          <p>不知道吗？阿波尔洛斯团长正在征集讨伐志愿者，听到这消息我就来啦。</p>
+          <p> </p>
+          <p>我觉得这正是我大显身手的绝好机会！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过...我好象低估了那些家伙的实力。</p>
+          <p> </p>
+          <p>正面对抗很难，他们可是会用魔法的啊！</p>
+          <p> </p>
+          <p>哎，我真没用，就这样回去肯定会被人笑死...</p>
+          <p> </p>
+          <p>守护者大人能不能帮我去教训它们呢？我一定会报答你的。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。请您帮我去打猎[%dic:STR_DIC_MLA143]和[%dic:STR_DIC_MLA144]。</p>
+          <p> </p>
+          <p>别忘了把7个[%dic:STR_DIC_QILA77] 和5个[%dic:STR_DIC_QILA78]带回来，那可是成功的证据。</p>
+          <p> </p>
+          <p>那就拜托守护者大人啦。</p>      
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，就这样回去可能会被自卫团开除掉。</p>
+          <p> </p>
+          <p>如果那样，一辈子都要在娜娅的唠叨声中度过了。</p> 
+          <p> </p>
+          <p>拜托再考虑一下吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_MLA143]和[%dic:STR_DIC_MLA144]全都抓到了吗？</p>
+          <p> </p>
+          <p>没忘带回证据吧？</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把尾巴和爪子交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，怎么空着手回来了，莫非和我的遭遇... </p>
+          <p> </p>
+          <p>我乱猜，别介意，不过没有凭据，团长是不会相信的。 </p>
+          <p> </p>
+          <p>拜托你了，请一定帮忙拿回7个 [%dic:STR_DIC_QILA77] 和5个 [%dic:STR_DIC_QILA78] 。</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，再凶猛的托格和路皮里尼在守护者大人面前也不值一提啊。</p>
+          <p> </p>
+          <p>谢谢，这是对您慷慨相助的报答。</p>
+          <p> </p>
+          <p>还有...你也知道的，这件事千万别说出去啊。特别是对娜娅，一定要对她保密，不然我可就惨了。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_MLA143]和[%dic:STR_DIC_MLA144]，并把证物交给[%dic:STR_DIC_LA28]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">托格和路皮里尼太过凶猛，罗斯德斯很难同它们对抗。帮助罗斯德斯消灭它们，取胜后将证据交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗斯德斯接受阿波尔洛斯自卫团团长的命令，到森林里消灭托格和路皮里尼，但是它们太过凶猛，罗斯德斯对此无能为力。于是答应代替他消灭托格和路</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30509</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然夺回了兰图斯前哨基地，但是有件事我还是放心不下。</p>
+          <p> </p>
+          <p>在逃出来之前，我们和巴萨尔迪军团展开了激战，期间有个名叫埃内提亚的同伴牺牲了。</p>
+          <p> </p>
+          <p>在临死之前，她给了我一枚戒指。</p>
+          <p> </p>
+          <p>说是订婚戒指，让我帮她交给她的未婚夫。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是在和巴萨尔迪军团的战斗中，我不小心把那枚戒指弄丢了。</p>
+          <p> </p>
+          <p>当时情况非常紧急，我没来得及找回戒指，就只能逃了出来。</p>
+          <p> </p>
+          <p>必须把这件事告诉埃内提亚的未婚夫才行……但是我觉得很惭愧，没有勇气面对他。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能帮我把消息告诉[%dic:STR_DIC_N_Autiron]吗？</p>
+          <p> </p>
+          <p>埃内提亚在牺牲之前把订婚戒指作为遗物交给了我，但是我却把它弄丢了。</p>
+          <p> </p>
+          <p>她让我转告阿乌提伦，说不要因为她的死而伤心，不要忘记鸢族的骄傲，一定要好好活下去。</p>
+          <p> </p>
+          <p>拜托您了，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来这件事还得我自己去解决啊。</p>
+          <p> </p>
+          <p>本来就是我的错，没办法了。</p>
+          <p> </p>
+          <p>唉，想想我的心里就很沉重。</p>
+          <p> </p>
+          <p>阿乌提伦一定非常伤心……不知道怎样才能安慰他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我的心里就像是刀扎一样。</p>
+          <p> </p>
+          <p>我的未婚妻埃内提亚在兰图斯前哨基地牺牲了。</p>
+          <p> </p>
+          <p>真不知道该怎么做才好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达塔尼亚的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她好像是想……告诉我点什么。</p>
+          <p> </p>
+          <p>不过最后她好像去得很平静，让我稍稍感到一些安慰。</p>
+          <p> </p>
+          <p>要是我能在她身边就好了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Autiron]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔尼亚说把牺牲的埃内提亚的遗物弄丢了，不知道该怎么办才好。帮她把消息转告阿乌提伦吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔尼亚说埃内提亚在牺牲的时候给了她一枚戒指，让她交给她的未婚夫，但是戒指在战斗的时候丢失了。</p>
+          <p> </p>
+          <p>塔尼亚感到很为难，于是帮她把丢失遗物的事情和埃内提亚的遗言告诉了阿乌提伦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

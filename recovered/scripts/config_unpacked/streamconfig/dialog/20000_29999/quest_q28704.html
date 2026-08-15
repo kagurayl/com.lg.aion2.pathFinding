@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经收到了消息，说提亚马特封印的龙族苏醒了，正在组建幽灵军团？</p>
+          <p> </p>
+          <p>而且外面流传着关于塔梅斯的封印的不好的传言。据说那个封印装置的设计者是鸢族。</p>
+          <p> </p>
+          <p>啊，刚才我说过的话，请您就当没听见。我不应该说这些事情……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来大家就对统治这里的鸢族非常反感，听说塔梅斯的封印和鸢族有关之后，大家的心情都不太好。</p>
+          <p> </p>
+          <p>鸢族和天族以及魔族的关系，可以说是如履薄冰。现在天族和魔族都想攻占塔梅斯，如果塔梅斯的封印有鸢族介入的消息传出去的话……</p>
+          <p> </p>
+          <p>啊，现在不是想这些事情的时候。具体的情况，我们知之甚少。</p>
+          <p> </p>
+          <p>重要的是必须击败塔梅斯的拉克莎幽灵军团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要到塔梅斯去吗？那您就必须把拉克莎率领的幽灵军团消灭掉。</p>
+          <p> </p>
+          <p>在塔梅斯的中间层，可以看到很多幽灵军团士兵。</p>
+          <p> </p>
+          <p>虽说他们是幽灵，但在塔梅斯内部，他们可以使用很强大的力量。请一定要注意安全。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在囚禁在地底的怪物们爬出来之前，我们必须把他们消灭在塔梅斯内部。</p>
+          <p> </p>
+          <p>上次听说封印解开的消息之后，上面的人也非常担心。</p>
+          <p> </p>
+          <p>您再考虑一下，如果您想到塔梅斯去，请一定要告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说塔梅斯内部经常发生可怕的地震。最近这里也经常发生轻微的地震，好像也是受到了塔梅斯的影响。</p>
+          <p> </p>
+          <p>塔梅斯那边地震严重吗？必须尽快让塔梅斯安定下来才行，真让人担心。</p>
+          <p> </p>
+          <p>您把拉克莎幽灵军团的幽灵全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您竟然能从可怕的地下监狱塔梅斯活着回来，真是了不起。</p>
+          <p> </p>
+          <p>每次发生地震的时候，仿佛就能听到地下监狱传来的幽灵军团的脚步声，会让人禁不住蜷缩成一团。</p>
+          <p> </p>
+          <p>您的身上散发出难闻的味道，好像是收到了塔梅斯内部污浊的空气的污染。但是我们不能停止消灭幽灵军团的作战。</p>
+          <p> </p>
+          <p>我们必须继续执行任务，直到把整个塔梅斯扫荡干净为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭塔梅斯中的 [%dic:STR_DIC_M_IDRaksah_2F_DrakanFighterCBone_56_Ae]%([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Lagia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">守卫卫兵让我帮着执行消灭拉克莎幽灵军团的作战。到塔梅斯去一趟吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了消灭拉克莎幽灵军团，守卫卫兵拉吉亚让我到塔梅斯去一趟。</p>
+          <p> </p>
+          <p>消灭了塔梅斯的拉克莎幽灵军团，回去之后，她说希望我继续帮她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

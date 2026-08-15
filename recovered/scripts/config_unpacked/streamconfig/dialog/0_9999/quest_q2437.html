@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦帕吃了很多苦。</p>
+          <p> </p>
+          <p>失散之后她一直很害怕，缪缪。</p>
+          <p> </p>
+          <p>不能原谅折磨蹦蹦帕的棕熊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要向棕熊报仇，缪缪。</p>
+          <p> </p>
+          <p>蹦蹦空没有力气，打不过棕熊。</p>
+          <p> </p>
+          <p>你去帮我报仇吧，缪缪。</p>
+          <p> </p>
+          <p>帮我把棕熊清除掉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>棕熊是残忍的动物，缪缪。</p>
+          <p> </p>
+          <p>它们折磨可爱的蹦蹦帕！</p>
+          <p> </p>
+          <p>帮我把[%dic:STR_DIC_M_Mosbear_37_An]和[%dic:STR_DIC_M_MosbearBaby_36_An]全部清除掉，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不可原谅，缪！</p>
+          <p> </p>
+          <p>总有一天，我要把棕熊除掉，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦帕每天晚上都会惊醒，缪缪。</p>
+          <p> </p>
+          <p>在梦中棕熊还在折磨她。</p>
+          <p> </p>
+          <p>如果告诉她全都清除掉了的话，她就会安心一点。</p>
+          <p> </p>
+          <p>全都清除了吗，缪缪？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该死的棕熊全都死了。</p>
+          <p> </p>
+          <p>蹦蹦帕这下可以安心了，缪缪。</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>你帮了蹦蹦空这么多，现在你是蹦蹦族的朋友了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除折磨蹦蹦帕的棕熊</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Mosbear_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MosbearBaby_36_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF2_NPC_BumbumKong]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">蹦蹦空说想要教训折磨自己女儿的棕熊。去帮帮他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦空说想要向折磨自己女儿的棕熊复仇。</p>
+          <p> </p>
+          <p>于是帮他除掉了坏心眼棕熊和嚎叫棕熊幼崽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

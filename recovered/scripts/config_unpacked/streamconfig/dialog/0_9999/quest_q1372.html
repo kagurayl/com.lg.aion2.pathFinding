@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您还真是不错。对这里不满意的话马上就可以离开。</p>
+          <p> </p>
+          <p>而我在得到上面的命令之前，只能在这里一动不动。</p>
+          <p> </p>
+          <p>本来以为成为守卫之后，就能在极乐世界之类的地方轻松地工作，谁知道成了这个德行。真是太倒霉了，每天都被派到这种地方来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">给他加油鼓劲。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你不知道这里的情况，所以说起话来不腰疼。也是，您只不过暂时呆在这儿，当然不会觉得。</p>
+          <p> </p>
+          <p>如果是保护居民不受雷帕尔革命团的伤害之类的事情，我也不会抱怨。因为那是守卫应该做的事情。</p>
+          <p> </p>
+          <p>但是现在我不光要做那些事情，连居民们吃的食物都要我来操心。</p>
+          <p> </p>
+          <p>革命团、沙漠化、粮食问题...一刻都得不到安宁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？可不准后悔哦。</p>
+          <p> </p>
+          <p>那就请您帮我找一点提普里德肉回来。</p>
+          <p> </p>
+          <p>我必须为居民们准备几天的食物，所以请您多抓一点。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="PLAYEMOTION_angry;HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到村子前面的水沟附近去，就能搜集到[%dic:STR_DIC_I_QUEST_1372a]。</p>
+          <p> </p>
+          <p>那里有很多[%dic:STR_DIC_M_hippolizardCh_31_An]。不久之前我还看见它们在那附近游荡。</p>      
+          <p> </p>
+          <p>哦，对了，请你把臀部的肉带回来。其他部位的肉太老，根本咬不动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？刚才还说要帮我，现在怎么又不愿意了呢！</p>
+          <p> </p>
+          <p>您这是在耍人玩吗？不是您自己说要帮我的吗！</p>
+          <p></p>
+          <p>啊，算了，算了！不想做的话就算了。</p>
+          <p> </p>
+          <p>某些人不想做的话，我也不想求着人家去做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊。</p>
+          <p> </p>
+          <p>让您去找的[%dic:STR_DIC_I_QUEST_1372a]带回来了吗？</p>
+          <p> </p>
+          <p>您拿回来的应该是臀部的肉，不是别的部位的肉吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出提波里德的臀部肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么啊？不是说好是5块[%dic:STR_DIC_I_QUEST_1372a]吗！</p>
+          <p> </p>
+          <p>这样的话当初就别说要帮我。</p>
+          <p> </p>
+          <p>明天早上吃的东西都不够了，请您最好快点儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>肉还有热度，看来是刚抓到的吧。幸苦您了。</p>
+          <p> </p>
+          <p>这么多的话，至少两天之内不用为粮食担心了。</p>
+          <p> </p>
+          <p>这是我给您的谢意。请您拿着。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1372a]，然后交给[%dic:STR_DIC_N_Beramones]</font></p>[%collectitem]</step>              
+    </steps>
+          <p><font font_xml="quest_summary">听说阿盖伦村的粮食不足，必须搜集提波里德的臀部肉交给贝拉莫内斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝拉莫内斯抱怨说出了要保护居民不受雷帕尔革命团的伤害之外，还得准备居民们吃的粮食，情况非常困难。</p>
+          <p> </p>
+          <p>于是决定帮助贝拉莫内斯，帮他去村子前面捕捉石背提波里德，搜集到了足够量的臀部肉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

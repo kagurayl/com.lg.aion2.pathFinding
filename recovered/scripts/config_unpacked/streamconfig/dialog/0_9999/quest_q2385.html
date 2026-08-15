@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来必须去伊拉西克岔路才能看到的家伙，现在竟然开始在村子旁边活动。</p>
+          <p> </p>
+          <p>我说的是野狼。非常凶恶的家伙。</p>
+          <p> </p>
+          <p>它们一盯上猎物就决不放弃。所以很多人被它们杀害，或者受了重伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>警卫团虽然说要把它们全部扫荡干净。但是要等莱图团长做好攻击准备，不知道还要等到什么时候。</p>
+          <p> </p>
+          <p>不，我并不是在对莱图团长表示不满，只不过有时候我的意见和他会不一样。</p>
+          <p> </p>
+          <p>团长一直都很刚愎自用，完全不听别人的意见。与其去说服她，还不如来拜托守护者大人您。</p>
+          <p> </p>
+          <p>为了居民们的安全，您能帮我去把[%dic:STR_DIC_M_ZaifReD_32_An]清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您把在村子旁边游荡的[%dic:STR_DIC_M_ZaifReD_32_An]清除掉。</p>
+          <p> </p>
+          <p>它们非常凶恶，您最好是小心一点。</p>
+          <p> </p>
+          <p>全部清除掉之后，请您和我说一声。</p>
+          <p> </p>
+          <p>因为如果不把这件事情向团长报告的话，我担心她会发怒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道您是莱图团长大人的亲戚吗？</p>
+          <p> </p>
+          <p>我说莱图队长的坏话，您一定不这么想吧？</p>
+          <p> </p>
+          <p>我来拜托您，只不过是担心居民们会受伤，而且我想这样做对警卫团的任务也会有所帮助。</p>
+          <p> </p>
+          <p>所以请您最好不要误会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>应该是因为鸟妖，对吧？</p>
+          <p> </p>
+          <p>我是说野狼经常来到村子这边的原因。鸟妖要比看上去凶恶得多。</p>
+          <p> </p>
+          <p>鸟妖没有在村子旁边出现，已经是不幸中的万幸了。</p>
+          <p> </p>
+          <p>对了，那些让人头疼的野狼，已经全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就说周围怎么变安静了呢。平时野狼的叫声非常吵闹...</p>
+          <p> </p>
+          <p>真是谢谢您。多亏了您，我们才能摆脱野狼的威胁。</p>
+          <p> </p>
+          <p>这是送给您的礼物，谢谢您为村子付出这么多努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎袭击村子的[%dic:STR_DIC_M_ZaifReD_32_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Raukus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让村子里的居民可以安心地生活，必须把村子周围的野狼清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>警卫团团员拉乌库斯说团长虽然在为大规模地扫荡野狼做准备，但是不知道还要等多久。他担心在这段时间里，村里的居民们受到伤害的事件会增加。</p>
+          <p> </p>
+          <p>于是清除了村子周围的凶恶的野狼，他表示非常感谢，并送给了我礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

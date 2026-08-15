@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷帕尔革命团的规模好像在我推测的规模之上。</p>
+          <p> </p>
+          <p>看了革命团建筑基地之后，我才知道我的想法是多么短浅。</p>
+          <p> </p>
+          <p>现在雷帕尔革命团好像已经形成了庞大的组织。不再像以前一样，只是不满伏魔殿的人组成的团伙。因此绝对不能轻视他们。</p>
+          <p> </p>
+          <p>如何瓦解革命团的组织是最根本的问题，但目前必须阻止他们把基地建设起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在革命团建筑基地有建筑工人，以及保护他们的精锐兵力。</p>
+          <p> </p>
+          <p>但是要大规模地进攻建筑基地的话，必须首先把精锐兵力清除掉。</p>
+          <p> </p>
+          <p>您能帮我把他们的精锐兵力[%dic:STR_DIC_M_FeA_LehparFiD_39_Ae]、[%dic:STR_DIC_M_KeB_LehparKnD_38_Ae]和[%dic:STR_DIC_M_AeA_LehparAsD_39_Ae]清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对手是精锐兵力，因此一个人去的话太危险了。</p>
+          <p> </p>
+          <p>请您召集可以信任的同伴一起过去。</p>
+          <p> </p>
+          <p>您只要帮我把[%dic:STR_DIC_M_FeA_LehparFiD_39_Ae]、[%dic:STR_DIC_M_KeB_LehparKnD_38_Ae]和[%dic:STR_DIC_M_AeA_LehparAsD_39_Ae]各除掉10个就行了。</p>
+          <p> </p>
+          <p>顺利执行完任务之后，请您再回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是觉得这个任务有些太重了吧？</p>
+          <p> </p>
+          <p>没错，一个人做确实会很困难。但是如果有同伴的话，就应该不会那么困难。</p>
+          <p> </p>
+          <p>而且我们必须把革命团建筑基地攻下来。</p>
+          <p> </p>
+          <p>因此，如果您找到了好的同伴的话，请您再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为您召集同伴会花上一点时间呢，没想到这么快就回来啦。</p>
+          <p> </p>
+          <p>革命团建筑基地的精锐兵力全部扫荡干净了吗？</p>
+          <p> </p>
+          <p>请您向我报告一下详细的结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>取得这么大的战果的话，应该会对他们造成很大的打击。</p>
+          <p> </p>
+          <p>现在可以制定全面讨伐的计划了。</p>
+          <p> </p>
+          <p>谢谢您帮我执行了这么重要的任务。这是给您的报答，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡守卫建筑基地的革命团的精锐兵力</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeA_LehparFiD_39_Ae]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KeB_LehparKnD_38_Ae]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeA_LehparAsD_39_Ae]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mirka]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米尔卡让我去清除革命团建筑基地的精锐兵力。去革命团建筑基地执行任务吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔卡说她对雷帕尔革命团建设基地的事情非常担心，让我在讨伐他们之前，先去把精锐兵力清除掉。</p>
+          <p> </p>
+          <p>于是来到了革命团建筑基地，清除掉了精锐战斗兵、精锐前哨兵和精锐奇袭兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者带给我的黄玉原石真的很不错，呐呐。</p>
+          <p> </p>
+          <p>你是从哪里挖到这么好的原石的啊？</p>
+          <p> </p>
+          <p>你好像是位出色的宝石采集者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不知道你是从哪里找到这么好的东西的，不过海蓝宝石你能采集到吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_jewelry_n_c_20b]的价钱比黄玉更贵。</p>
+          <p> </p>
+          <p>怎么样？能再辛苦你一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。记住。</p>
+          <p> </p>
+          <p>是[%dic:STR_DIC_E_jewelry_n_c_20b]。</p>
+          <p> </p>
+          <p>帮我采集5个就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了。没关系，你帮我搜集黄玉原石，我就很感谢了。</p>
+          <p> </p>
+          <p>当然，如果能帮我采集海蓝宝石的话我就会更感谢的...</p>
+          <p> </p>
+          <p>如果我知道你能挖到这么好的原石的话，我应该让你去挖海蓝宝石的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临！我等得眼睛都快瞪出来了。</p>
+          <p> </p>
+          <p>你把那个宝贝疙瘩带回来了吗？[%dic:STR_DIC_E_jewelry_n_c_20b]！</p>
+          <p> </p>
+          <p>我想赶紧看一下。快把带来的东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出海蓝宝石原石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是去挖宝石了吗？</p>
+          <p> </p>
+          <p>对了，对了。你还需要时间。</p>
+          <p> </p>
+          <p>我没关系，你慢慢去挖吧。夏奥兰兰可以等。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐呐，果然！你的能力世界第一。</p>
+          <p> </p>
+          <p>宝石太美了，我都快感动得哭了。</p>
+          <p> </p>
+          <p>这么好的东西的话，应该能在极乐世界的那些大人那里卖个好价钱。</p>
+          <p> </p>
+          <p>拿着！我太高兴了，所以给得要比说好的多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_E_gb_source_jewelry_20b]中采集原石，然后交给[%dic:STR_DIC_N_Shugo_LF2_5]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助不会采集技术的夏奥兰兰采集海蓝宝石原石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>夏奥兰兰说之前给她采的黄玉的品质非常好，希望我能再帮她采集海蓝宝石。</p>
+          <p> </p>
+          <p>帮她采集到了海蓝宝石原石，她赞叹说太美了，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

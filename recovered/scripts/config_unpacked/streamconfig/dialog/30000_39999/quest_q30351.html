@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>我正好在找[%username]大人呢。</p>
+          <p> </p>
+          <p>有人拜托我一件事，我马上就想到了[%username]大人。</p>
+          <p> </p>
+          <p>然后您就出现了。看来[%username]大人和我还真是心有灵犀一点通啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔那边让我给他们推荐有能力的人。</p>
+          <p> </p>
+          <p>他们说希望我能给他们推荐面对陌生的地方和新的敌人也不会惊慌失措的老练的人。</p>
+          <p> </p>
+          <p>那样的人，[%username]大人当然是最合适的人选！</p>
+          <p> </p>
+          <p>怎么样？您愿意去埃雷修兰塔一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到[%dic:STR_DIC_W_AB1_3]去，见见红色中央广场上的[%dic:STR_DIC_N_Vare]。</p>
+          <p> </p>
+          <p>我只知道他们让我推荐人选，但不知道具体的任务是什么。</p>
+          <p> </p>
+          <p>详细的事情，巴雷会告诉您的。</p>
+          <p> </p>
+          <p>好像是很困难的任务，祝您好运，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀……这可太遗憾了。</p>
+          <p> </p>
+          <p>说到可以应对任何情况的老练的守护者，我就想起了[%username]大人。</p>
+          <p> </p>
+          <p>就算找别人，估计也找不到像[%username]大人这样的……</p>
+          <p> </p>
+          <p>不过我也不能勉强您。</p>
+          <p> </p>
+          <p>再见，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+          <p>该不会是来问我怎么去普利姆要塞的吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是梅尔赫恩派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，梅尔赫恩大人推荐的守护者就是[%username]大人啊。</p>
+          <p> </p>
+          <p>她可真是找了一位了不起的人。</p>
+          <p> </p>
+          <p>情报参谋果然不是吹的。</p>
+          <p> </p>
+          <p>一路辛苦了。不过您可能还得走一段路。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔和[%dic:STR_DIC_N_Vare]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说埃雷修兰塔有重要的任务。去普利姆据点见见巴雷吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格尔克马洛斯要塞的情报参谋梅尔赫恩说埃雷修兰塔有重要的任务，让我去那里一趟。</p>
+          <p> </p>
+          <p>在她的介绍下，找到了普利姆要塞的巴雷。他非常高兴，说正在等我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

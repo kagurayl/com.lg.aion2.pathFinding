@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于新学的技术还满意吗？</p>
+          <p> </p>
+          <p>[%username]，看样子是时候告诉你了。</p>
+          <p> </p>
+          <p>你现在有资格参加神圣力测试了，要不要试一试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">神圣力测试？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还什么都不知道？那我就从头开始说明一下吧。</p>
+          <p> </p>
+          <p>在永恒之塔赐予我们的力量中，最独特的要数飞翔和神圣力了。</p>
+          <p> </p>
+          <p>而神圣力比飞行更为独特。人类或莱卡恩等亚人种也会使用生命力或精神力技能，只有神圣力技能是唯独守护者才会使用的。</p>
+          <p> </p>
+          <p>不过这种技能的限制条件很多，使用起来会相对不太方便。所以守护者中有很多人都不太会用这个技能。</p>
+          <p> </p>
+          <p>总司令特别针对这一问题，举办了神圣力测试以促进守护者对神圣力技能的重视。</p>
+          <p> </p>
+          <p>请放心，不是[%username]你想像的那种测试。只要使用10次指定技能就算完成测试。因此与其说是测试，不如说是修炼。</p>
+          <p> </p>
+          <p>现在明白这是怎么回事了吧？怎么样，决定参加了吗？请给我一个答复。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是魔道星吧？最近刚学会睡眠之云？</p>
+          <p> </p>
+          <p>如果你还没开始学也没关系。现在开始熟悉也来得及。</p>
+          <p> </p>
+          <p>那么就把这个技能作为测试[%username]你的神圣力的对象吧。请使用10次[%dic:STR_DIC_E_DP_Wi]，完成后请回来找我。</p>
+          <p> </p>
+          <p>对了，神圣力是在战斗的过程中，自然而然积累起来的。如果嫌战斗积累太慢，也可以靠食用果冻来增加神圣力。</p>
+          <p> </p>
+          <p>最后我会检查任务完成的情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你有急事？我理解。</p>
+          <p> </p>
+          <p>神圣力测试不是必须现在做的，请先去处理更重要的事情。</p>
+          <p> </p>
+          <p>祝你一路顺风。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就完成了任务？</p>
+          <p> </p>
+          <p>比其他人的速度快很多嘛。确实使用了10次[%dic:STR_DIC_E_DP_Wi]吗？</p>
+          <p> </p>
+          <p>请走近一点，让我检查检查任务的完成情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">走上前去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(将手放在头上) 唔，看来您确实认真地练习过神圣力技能。</p>
+          <p> </p>
+          <p>(将手拿开) 祝贺你，通过了神圣力测试。</p>
+          <p> </p>
+          <p>现在你应该已经熟练掌握睡眠之云了吧？千万别因为测试结束了就疏忽这方面的磨练，一定要持之以恒地修炼神圣力技能。</p>
+          <p> </p>
+          <p>这是给通过测试守护者的奖励。希望在你今后的道路上起到帮助作用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Wi]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Sif]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">总司令官主办的神圣力测试正在进行，使用10次神圣力技能睡眠之云，便能通过测试。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡普表示神圣力测试是为了激励那些不太会使用神圣力的守护者熟悉相关技能，邀请我参加测试。</p>
+          <p> </p>
+          <p>按照锡普的要求，使用了10次神圣力技能睡眠之云。他对我表示祝贺，说我通过了测试。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

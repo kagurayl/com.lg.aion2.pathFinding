@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人们都以为恐龟是温顺的动物，其实是太不了解它了。</p>
+          <p> </p>
+          <p>它不知道有多厉害呢！</p>
+          <p> </p>
+          <p>我们好不容易才存起来的粮食和水果，都要被它们给吃光了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">建议消灭恐龟。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您以为我们没这么想过吗？能做的我们都做了。</p>
+          <p> </p>
+          <p>用刀或者枪去刺它，可它的皮太硬，根本没用。</p>
+          <p> </p>
+          <p>而且它的力气还特别大，被它一顶，我们差点儿丧命。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来光靠我们的力量是没法消灭它们了。</p>
+          <p> </p>
+          <p>守护者大人，您能去帮我们消灭[%dic:STR_DIC_M_ShellizardD_16_An]吗？</p>
+          <p> </p>
+          <p>要是这样下去，我们就要饿死了。</p>
+          <p> </p>
+          <p>请一定要帮帮我们！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的谢谢您了，守护者。</p>
+          <p> </p>
+          <p>请把那些大头[%dic:STR_DIC_M_ShellizardD_16_An]赶出村子。</p>
+          <p> </p>
+          <p>您也一定很忙，消灭掉5只就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来很相信守护者您的。</p>
+          <p> </p>
+          <p>要是连剩下的粮食都被它们吃掉...</p>
+          <p> </p>
+          <p>拜托您了。请一定再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭[%dic:STR_DIC_M_ShellizardD_16_An]了吗？</p>
+          <p> </p>
+          <p>它们的硬壳让您吃了不少苦吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我代表盖尔盖尔部落向守护者您表示感谢</p>
+          <p> </p>
+          <p>终于可以像守护者，不，像真正的盖尔盖尔一样的活着了。</p>
+          <p> </p>
+          <p>这是点小意思，请您收下，我们只有这些了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭偷吃盖尔盖尔部落粮食的[%dic:STR_DIC_M_ShellizardD_16_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_Gerger_1]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">恐龟偷盖尔盖尔部落的粮食。消灭恐龟，让部落居民安心。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔缪抱怨恐龟偷吃部落珍贵的粮食。为部落居民消灭了恐龟，盖尔缪非常高兴。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

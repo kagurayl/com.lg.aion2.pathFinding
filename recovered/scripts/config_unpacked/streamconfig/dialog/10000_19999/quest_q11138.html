@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究对象就在眼前，却无法进行调查！</p>
+          <p> </p>
+          <p>我的任务是调查提亚马特的呼吸对大地造成的影响，但是研究却一直没有进展。</p>
+          <p> </p>
+          <p>你知道附近最让人头疼的是什么吗？</p>
+          <p> </p>
+          <p>那就是鲁萨尔卡。</p>
+          <p> </p>
+          <p>那是地属性的生命体，不仅力量很强，而且非常狡猾！</p>
+          <p> </p>
+          <p>它们经常会躲起来，对调查队发动袭击。只要一不留神，它们就会把报告书偷走，或者把好不容易设置好的设备弄坏……非常让人头疼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看我的头发，因为它们，搞得我头发都白了！</p>
+          <p> </p>
+          <p>要塞那边一直在催我，说怎么还没有成果出来。光是这些事就很头疼了，所以我没时间陪那些捣蛋鬼玩。</p>
+          <p> </p>
+          <p>这种时候，难道没有哪个守护者肯站出来吗？</p>
+          <p> </p>
+          <p>为了让我能够进行研究，你能帮我把周围的[%dic:STR_DIC_M_LF4_B_Bookie_Stone_53_An]消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在大地的伤痕附近，可以看到很多鲁萨尔卡。</p>
+          <p> </p>
+          <p>我也亲手消灭掉了一些，但可能是因为大地的力量太强，它们还是源源不断地出现。</p>
+          <p> </p>
+          <p>现在只要一看到它们的脸，我就很头疼！</p>
+          <p> </p>
+          <p>请你帮帮我。如果你能帮我把它们消灭掉，我会跳着舞向你表示感谢的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，很好！很好！</p>
+          <p> </p>
+          <p>到这里来的时候，我就知道不能期望任何人。</p>
+          <p> </p>
+          <p>看来我只能先把书放下，自己去消灭鲁萨尔卡了！我不需要别人的帮助！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>早知道这样的话，我就请求他们多派点援军来了。</p>
+          <p> </p>
+          <p>巡查队精锐兵的主要任务是守护营地……</p>
+          <p> </p>
+          <p>说是来保护我的克罗顿每天都病泱泱的，反倒是需要我保护……有很多预想不到的问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这么快就把鲁萨尔卡消灭掉了吗？</p>
+          <p> </p>
+          <p>真的非常感谢！</p>
+          <p> </p>
+          <p>什么？让我跳着舞给你奖励？啊，我说过那样的话吗？</p>
+          <p> </p>
+          <p>你看看那边！鲁萨尔卡还没有全部消失。如果你能把这个地区的鲁萨尔卡全部消灭掉，我一定会兑现我的承诺。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_B_Bookie_Stone_53_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Philon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭妨碍皮罗恩进行研究的微笑的鲁萨尔卡。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗恩说由于狡猾的鲁萨尔卡的捣乱，研究一直没有进展，他因此很痛苦。</p>
+          <p> </p>
+          <p>于是帮他消灭了微笑的鲁萨尔卡，他对我表示感谢，说今后让我继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

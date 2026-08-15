@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不小心听到了您和拉尼尼亚大人的话，[%username]大人也做了那个梦吗？</p>
+          <p> </p>
+          <p>就是有克罗梅内和罗勃斯汀出现的那个梦。</p>
+          <p> </p>
+          <p>(环顾四周，小声说)我也梦到了相同的梦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么时候。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像是从那个时候开始的。</p>
+          <p> </p>
+          <p>自从我在赫尔希亚那里买了假烙印之石后……我也知道这样做不好。</p>
+          <p> </p>
+          <p>但是当时我手头很紧，只能买那样的烙印之石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">让他把烙印之石拿出来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我早就把它扔掉了。但是恶梦却一直没有消失。</p>
+          <p> </p>
+          <p>拉尼尼亚说是因为我的精神太弱，无法切断怨念体。要想摆脱恶梦，必须消灭那些怨念体……</p>
+          <p> </p>
+          <p>但是我不知道该怎么做。他说只要进入梦境，把造成问题的怨念体消灭掉就可以了，但是我很害怕。</p>
+          <p> </p>
+          <p>[%username]大人，听说您一直走到了梦的尽头。那么您应该不会害怕再次进入梦境吧？</p>
+          <p> </p>
+          <p>我知道这个要求有点过分，不过您能再次进入梦境，帮我把怨念体消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>梦中最让我痛苦的东西，是关在地下监狱里的罪犯们的惨叫声。</p>
+          <p> </p>
+          <p>那种充满绝望的哭嚎声，让我感觉痛不欲生。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_18605]消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我的请求太过分了吗？</p>
+          <p> </p>
+          <p>我也知道。好久没有睡过好觉，我的脑袋也许短路了。</p>
+          <p> </p>
+          <p>这件事我会自己解决。[%username]大人，您去忙自己的吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(眼圈深陷)啊，[%username]大人。</p>
+          <p> </p>
+          <p>我一点精神都没有。一直睡不着，感觉脑袋里一片空白。</p>
+          <p> </p>
+          <p>我拜托您的事情怎么样了？[%dic:STR_DIC_M_18605]全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(含着泪水)实在太感谢了。</p>
+          <p> </p>
+          <p>折磨我的东西不见了，我睡觉的时候应该可以不会做恶梦了吧？</p>
+          <p> </p>
+          <p>啊，我要好好地睡一觉！[%username]大人，您不知道我有多高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">进入[%dic:STR_DIC_W_IDCromede]，消灭折磨阿尔德尼亚的[%dic:STR_DIC_M_18605]([%2]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ardenia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为深受恶梦困扰的阿尔德尼亚进入恶梦，消灭地下监狱的罪犯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔德尼亚说自己也梦到了有克罗梅内和罗勃斯汀出现的恶梦，让我帮她从恶梦中摆脱出来。</p>
+          <p> </p>
+          <p>按照解梦的守护者拉尼尼亚的建议，消灭了最让阿尔德尼亚感到痛苦的地下监狱的罪犯。回去之后，她含着眼泪对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

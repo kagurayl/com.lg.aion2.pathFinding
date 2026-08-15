@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起，[%username]！虽然我知道您[%userclass]的名声，但是没想到您的手工手艺这么出色。</p>
+          <p> </p>
+          <p>这种程度的手艺的话，即使去制作供奉给主神的贡品也毫不逊色。</p>
+          <p> </p>
+          <p>好了，我有件事情要拜托您...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯的[%dic:STR_DIC_N_Fraiban]来了紧急联系。</p>
+          <p> </p>
+          <p>让我马上给他送点白柳法杖柄过去。</p>
+          <p> </p>
+          <p>上次给他送东西还没过多久，看来欧比斯的战斗很激烈。</p>
+          <p> </p>
+          <p>那种地方不是谁都能送过去的，所以[%username]大人您能不能帮我把东西送过去？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快就答应了。来，拿着。</p>
+          <p> </p>
+          <p>这是[%dic:STR_DIC_N_Fraiban]需要的白柳法杖柄的包裹。</p>
+          <p> </p>
+          <p>他好像要得很急，所以请您尽量快点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>完蛋了。我以为[%username]大人您一定会答应的，根本没有做好准备。</p>
+          <p> </p>
+          <p>要是可以的话我就自己去了，但是这里的事情也有一大堆，而且我又很害怕战斗。</p>
+          <p> </p>
+          <p>[%username]大人您能再考虑一下吗？拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去好像是位[%userclass]，不知有没有适合[%username]您的武器。</p>
+          <p> </p>
+          <p>伏魔殿虽然说会继续给我送武器，但是现在东西本来就不多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出兰塞的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰塞大人真是位有信用的人！</p>
+          <p> </p>
+          <p>要是其他人也像兰塞大人一样就好了。</p>
+          <p> </p>
+          <p>哎呀，我又在守护者大人面前啰嗦了。您收下这个。这是对您把东西送到这里的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把兰塞的包裹交给[%dic:STR_DIC_N_Fraiban]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把兰塞给的掠夺者之法书交给欧比斯的武器商人普莱班。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰塞说有件东西需要马上送给普利姆据点的武器商人普莱班，拜托我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把兰塞给的包裹交给了普莱班，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

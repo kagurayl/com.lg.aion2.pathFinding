@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会的亲爱的亲人们！</p>
+          <p> </p>
+          <p>您是来聆听命运的神谕的吗？</p>
+          <p> </p>
+          <p>下面是下达给[%username]大人的神谕，请您仔细听着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我来告诉您下达给您的神谕，请仔细听着。</p>
+          <p> </p>
+          <p>在那里您可以见到[%dic:STR_DIC_E_Da_45]%，他们是和[%username]大人命运相连的人，是我们马勒库坦兄弟会需要关心的人。</p>
+          <p> </p>
+          <p>请您成为他们的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_IDShip_ShulackAsFirstmateKnmd_45_Ae]、[%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]和[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情顺利完成之后，请您回来向我报告结果。</p>
+          <p> </p>
+          <p>那样的话，您就能得到兄弟会的奖励。</p>
+          <p> </p>
+          <p>请不要忘记，我们的任务，是将亚特雷亚的一切命运引上正确的道路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想听从神谕的指示吗？</p>
+          <p> </p>
+          <p>真让人不敢相信。没想到[%username]大人您竟然会这样。</p>
+          <p> </p>
+          <p>请不要忘记，我们的任务，是将亚特雷亚的一切命运引上正确的道路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请小声一点。</p>
+          <p> </p>
+          <p>这里是主神和虔诚的神官们所在的地方。</p>
+          <p> </p>
+          <p>如果是和马勒库坦兄弟会有关的事情，请快跟我说。记住，小声一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您从恶名昭著的铁耙号回来啦。</p>
+          <p> </p>
+          <p>我也曾经去过，那些黑暗术古虽然很小，但却非常狠毒，让我吃了很大的苦头。</p>
+          <p> </p>
+          <p>当然，您能顺利完成任务，对您来说一定不算什么吧。</p>
+          <p> </p>
+          <p>愿命运引导[%username]大人前进的道路！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Da_45]%的[%dic:STR_DIC_E_Mentor]，消灭铁耙号上的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackAsFirstmateKnmd_45_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Geismar]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">成为铁耙号修行员的导师，消灭黑暗术古海盗头目，然后向马勒库坦兄弟会报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖斯玛尔兄弟向我传达了命运的神谕，让我去铁耙号执行兄弟会的任务。</p>
+          <p> </p>
+          <p>按照神谕的指示，和铁耙号修行员一起消灭了黑暗术古海盗头目。回去报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

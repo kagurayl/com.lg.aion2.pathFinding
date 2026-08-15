@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这附近，危害人类的并不只有坎塔利一个。</p>
+          <p> </p>
+          <p>过了坎塔利部落，那边有一个洞穴，那里有很多的奥塔赛德。</p>
+          <p> </p>
+          <p>守护者被咬的话，当然不会受到太大的伤害，但是人类就不同了。搞不好的话，就会死掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为坎塔利和奥塔赛德，居民们根本就不能在这附近活动。</p>
+          <p> </p>
+          <p>说起来这里也是我们魔族的土地，主人反而要绕着走，听上去不有点可笑吗？</p>
+          <p> </p>
+          <p>总有一天要把它们全部赶走，让居民们可以好好生活。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，首先必须去扫荡奥克塔努的迷雾洞穴。</p>
+          <p> </p>
+          <p>一头一头不停地捕捉的话，总有一天它们会绝种的。</p>
+          <p> </p>
+          <p>[%username]大人，请您也帮帮我吧。</p>
+          <p> </p>
+          <p>有越多的守护者帮助，把它们全部清除掉的日子就会越快来到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去奥克塔努的迷雾洞穴，把[%dic:STR_DIC_M_OctasideDF2_29_An]、[%dic:STR_DIC_M_OctasideBabyDF2_28_An]、[%dic:STR_DIC_M_OctasideD_29_An]和[%dic:STR_DIC_M_OctasideBabyD_28_An]清除掉。</p>
+          <p> </p>
+          <p>那个洞穴很复杂，请您小心不要迷路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又不是那么麻烦的事，您为什么会拒绝呢？</p>
+          <p> </p>
+          <p>该不会是害怕奥塔赛德吧？</p>
+          <p> </p>
+          <p>不过既然您不愿意，我也不能勉强。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您从奥克塔努的迷雾洞穴回来了吗？</p>
+          <p> </p>
+          <p>我拜托您的那些家伙，全部都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>有像[%username]大人这样的人在努力，居民们可以在这里自由生活的日子应该不会太远了。</p>
+          <p> </p>
+          <p>来，这是您辛苦执行任务的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除奥克塔努的迷雾洞穴里的奥塔赛德</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_OctasideDF2_29_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_OctasideBabyDF2_28_An]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_OctasideD_29_An]([%8]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_OctasideBabyD_28_An]([%11]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">报告[%dic:STR_DIC_N_Gelundorf]结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去奥克塔努的迷雾洞穴把各种奥塔赛德清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖伦多普说由于坎塔利和奥塔赛德，居民们无法在该地区生活。</p>
+          <p> </p>
+          <p>于是按照他的拜托，去奥克塔努的迷雾洞穴清除掉了奥塔赛德。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30504</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您救出了罗黛里安，但是还有一件事让我放心不下。</p>
+          <p> </p>
+          <p>我本来以为你会把罗黛里安和派奥斯一起救出来的。</p>
+          <p> </p>
+          <p>但是我却没有看到派奥斯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问派奥斯是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Paios]是一名很有前途的士兵。</p>
+          <p> </p>
+          <p>不仅战斗能力出众，人品也很优秀，所以是受到大家关注的希望之星。</p>
+          <p> </p>
+          <p>要是失去了那样的人才，将是我们的巨大损失。</p>
+          <p> </p>
+          <p>你能再到[%dic:STR_DIC_W_ZONE_NAME_IDYun]去一趟，寻找派奥斯吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Paios]和罗黛里安一起值完了夜班，他也许在[%dic:STR_DIC_W_IDYun_SZ_3]的什么地方。</p>
+          <p> </p>
+          <p>我很担心他会不会出什么事。</p>
+          <p> </p>
+          <p>要是失去这样一个人才，那就太可惜了……</p>
+          <p> </p>
+          <p>请你一定要找到派奥斯。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得救出罗黛里安已经足够了吗？</p>
+          <p> </p>
+          <p>既然你这么回答，我也不便勉强。</p>
+          <p> </p>
+          <p>但是派奥斯是关乎鸢族未来的人才。</p>
+          <p> </p>
+          <p>希望你能再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>援军……终于……来……来啦……</p>
+          <p> </p>
+          <p>一……一定要……夺回基地……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">把他扶起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等你。</p>
+          <p> </p>
+          <p>派奥斯怎么样了？</p>
+          <p> </p>
+          <p>找到他了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真，真的吗？</p>
+          <p> </p>
+          <p>派奥斯真的死了？</p>
+          <p> </p>
+          <p>(翅膀颤抖着，泣不成声。)</p>
+          <p> </p>
+          <p>知道了。谢谢你为救出派奥斯而付出的努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到并救出派奥斯</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Paios]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Lition]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去兰图斯前哨基地寻找并救出派奥斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李迪安说有个名叫派奥斯的优秀人才还在兰图斯前哨基地里，让我去救他出来。</p>
+          <p> </p>
+          <p>来到基地寻找，发现派奥斯被压在巨大的柱子下面，情况非常危险。</p>
+          <p> </p>
+          <p>尽快挪开了柱子，想要救他出去，但是派奥斯实在太虚弱，最后死了。</p>
+          <p> </p>
+          <p>把派奥斯的死讯告诉李迪安之后，他非常伤感。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命进行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

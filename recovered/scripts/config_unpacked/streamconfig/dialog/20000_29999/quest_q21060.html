@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(卷轴上出现了发光的文字。)</p>
+          <p> </p>
+          <p>(“敌人的根源在大地之尖牙的深处。”)</p>
+          <p> </p>
+          <p>(“消灭生产德拉坎的亚龙帕德玛夏。”)</p>
+          <p> </p>
+          <p>(“追踪者[%dic:STR_DIC_N_Batalrion]会向你提供帮助。”)</p>
+          <p> </p>
+          <p>(发光的文字消失了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>最近有很多守护者到这里来，上面是想在近期讨伐亚龙吗？</p>
+          <p> </p>
+          <p>希望你能告诉我到底发生了什么事。</p>
+          <p> </p>
+          <p>我完全不知道格尔克马洛斯要塞那边的情况怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">把卷轴给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能帮你什么吗？</p>
+          <p> </p>
+          <p>虽然我们想自己消灭[%dic:STR_DIC_M_DF4_Dramata_57_Al]，但如果你想去，我不会拦你。</p>
+          <p> </p>
+          <p>而且既然马勒库坦主神这么说，我也只能听从。</p>
+          <p> </p>
+          <p>敏锐的帕德玛夏就在[%dic:STR_DIC_W_SZ_DF4_C6]深处的洞穴里。亚龙虽然比普通的龙要弱，但是为了保护自己产的卵，什么事情都做得出来。</p>
+          <p> </p>
+          <p>你有取胜的把握吗？最好是和信得过的部队一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>周围感觉闹哄哄的。</p>
+          <p> </p>
+          <p>我刚才一直在观察你和你的部队成员。</p>
+          <p> </p>
+          <p>大家的经验都不怎么丰富，但是实力好像还不错。</p>
+          <p> </p>
+          <p>看你安然回来，讨伐亚龙的任务一定成功了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是了不起！</p>
+          <p> </p>
+          <p>对于你的胜利，我表示真心的祝贺。</p>
+          <p> </p>
+          <p>很遗憾，我们亚龙追踪队没能在你们之前把它除掉。</p>
+          <p> </p>
+          <p>你的卷轴好像在发光。</p>
+          <p> </p>
+          <p>看来马勒库坦主神又有新的指令给你了。你最好确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Batalrion]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_DF4_Dramata_57_Al][%5]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Batalrion]对话</font></p></step>          
+    </steps>
+          <p><font font_xml="quest_summary">从卷轴中接到了命令。去巴塔利安那里了解讨伐亚龙所需的情报吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在发光的卷轴上出现了讨伐敏锐的帕德玛夏的命令。</p>
+          <p> </p>
+          <p>向亚龙追踪者巴塔利安了解情况之后，召集部队，消灭掉了敏锐的帕德玛夏。</p>
+          <p> </p>
+          <p>回到巴塔利安那里之后，他表示很惊讶，并让我接受下一个指令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

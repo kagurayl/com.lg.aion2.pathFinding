@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到上次被奥格林特惊吓的事情，我的双腿就不由自主地发抖。</p>
+          <p> </p>
+          <p>那天，正好巴乌奇不在，由我一个人放哨。</p>
+          <p> </p>
+          <p>当时内急，本来想忍忍的，可是实在憋不住了，所以跑到岩石后面办事去了。</p>
+          <p> </p>
+          <p>突然，从背后飞来一股寒气。回头一看，一个巨大的怪物正向我爬来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当时吓了一大跳，我勉强提起裤子逃跑了。</p>
+          <p> </p>
+          <p>回过神以后，我仔细看了一下，原来那个怪物是冰霜奥格林特。</p>
+          <p> </p>
+          <p>本来天黑就够让人害怕了，那些喷着冷气的家伙们还到处乱晃，吓了我不止一两次了。</p>
+          <p> </p>
+          <p>守护者大人能帮我消灭那些吓人的 [%dic:STR_DIC_M_AgrintIceD_38_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请消灭在这附近活动的 [%dic:STR_DIC_M_AgrintIceD_38_An]。</p>
+          <p> </p>
+          <p>天黑以后，遇到它们的时候可能会吓到您，请小心。</p>
+          <p> </p>
+          <p>它们会喷冷气，所以请您多穿点衣服。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是我能做到，还会拜托您吗？</p>
+          <p> </p>
+          <p>对，我是个连根木棒也没法挥舞好的懦夫加胆小鬼。</p>
+          <p> </p>
+          <p>不过就算只是放哨，我也一直在努力做好。</p>
+          <p> </p>
+          <p>难道您就不能帮助可怜的我这一点小忙？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那怪物据说原来是椰林，能看出来吗？</p>
+          <p> </p>
+          <p>就是那些奥格林特。</p>
+          <p> </p>
+          <p>真不明白这世界到底是怎么了。神圣的椰林竟然变成那种凶恶的动物。</p>
+          <p> </p>
+          <p>您消灭冰霜奥格林特了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>这样，一段时间内就可以安心地放哨了。</p>
+          <p> </p>
+          <p>谢谢您，这是我的一点心意，请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭在村子周围徘徊的 [%dic:STR_DIC_M_AgrintIceD_38_An]。([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Ocho]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭惊吓胆小鬼欧促沃的冰霜奥格林特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自卫团团员欧促沃在天黑后放哨的时候，好几次都受到了冰霜奥格林特的惊吓。</p>
+          <p> </p>
+          <p>为了帮助他，消灭了周围的奥格林特。对此，他表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

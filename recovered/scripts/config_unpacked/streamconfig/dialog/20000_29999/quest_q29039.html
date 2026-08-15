@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，麻烦你久等了。</p>
+          <p> </p>
+          <p>这么快就能有结果，真是太好了。</p>
+          <p> </p>
+          <p>你制作的很好，尝一口就能知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>祝贺你，[%username]。</p>
+          <p> </p>
+          <p>你制作的料理非常不错，献给马勒库坦主神殿完全没有问题。</p>
+          <p> </p>
+          <p>[%username]，你制作的美味的料理会和其他贡品一起，送到马勒库坦主神殿去。</p>
+          <p> </p>
+          <p>你已经充分具备了成为料理名人的资格，现在到了请求赐予[%username]你名人称号的时候了。</p>
+          <p> </p>
+          <p>[%username]，你做好接受称号的准备了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想接受名人称号，必须得到主神殿的许可。</p>
+          <p> </p>
+          <p>[%username]，你制作出了供奉给马勒库坦主神殿的料理，我想你应该去接受阿盖希亚大神官大人的许可。</p>
+          <p> </p>
+          <p>您带着这封推荐信，去马勒库坦主神殿见见阿盖希亚大神官。他会赐予您名人的称号的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？到了这个时候又不想要了吗？</p>
+          <p> </p>
+          <p>还是觉得拘泥于形式很可笑呢？</p>
+          <p> </p>
+          <p>在我看来，[%username]你是个在料理方面充满了热情的人。</p>
+          <p> </p>
+          <p>成为名人之后，就可以学习更多和料理有关的更高级的知识，因此请不要觉得这只是不必要的形式。快去举行任命仪式吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来聆听马勒库坦主神的教诲的吗？</p>
+          <p> </p>
+          <p>很遗憾，主神现在在格尔克马洛斯。</p>
+          <p> </p>
+          <p>暂时他会一直待在那里，有什么事的话，就跟我说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出莱尼塔的推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我要的料理是你制作的？不知道会是什么样子。我很期待。</p>
+          <p> </p>
+          <p>希望你不要满足于现状，做一个不断前进的人。</p>
+          <p> </p>
+          <p>再次祝贺你成为新的名人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往马勒库坦主神殿，在[%dic:STR_DIC_N_Agehia]神官那里举行名人任命仪式</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从料理名人莱尼塔那里获得了成为名人的推荐信。拿着推荐信，去阿盖希亚大神官那里举行任命仪式吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>料理名人莱尼塔说我通过了最后的验证，让我拿着推荐信去见阿盖希亚大神官。</p>
+          <p> </p>
+          <p>把莱尼塔的推荐信交给了马勒库坦主神殿的阿盖希亚大神官，他为我举行了名人任命仪式，赐予了我名人称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔的要塞是我们魔族流血战斗获得的。</p>
+          <p> </p>
+          <p>[%username]大人应该也很清楚这一点。</p>
+          <p> </p>
+          <p>以同伴的牺牲为代价，我们看到了击退天族和龙族，占领埃雷修兰塔的希望。</p>
+          <p> </p>
+          <p>在要塞战中，我一直拼尽全力战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是，听说隐藏在要塞深处的[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]有龙族存在的消息之后，我感到非常吃惊。</p>
+          <p> </p>
+          <p>我们以为自己取得了胜利，但脚下却到处都是龙族。</p>
+          <p> </p>
+          <p>而且他们还在那里堆积了宝物！听说那些宝物都是很久以前从人类和守护者手中掠夺来的东西。</p>
+          <p> </p>
+          <p>因此必须把龙族全部消灭掉，一个都不能放过！</p>
+          <p> </p>
+          <p>主神们一定也希望脚下的敌人能够被一扫而空。现在到了响应召唤的时候，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>请您潜入左翼阴影，消灭尽可能多的敌人。此外，必须把头目[%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]打倒。</p>
+          <p> </p>
+          <p>您还记得前往[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]的方法吗？只要利用那边的魔法阵就可以过去。</p>
+          <p> </p>
+          <p>对了，有一点请您记住。要向获得龙族的宝物，手脚最好快一些。龙族的宝物箱在一定时间之后就会消失。</p>
+          <p> </p>
+          <p>那就祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，这不是我个人的委托。</p>
+          <p> </p>
+          <p>这是魔族的守护者应尽的义务。</p>
+          <p> </p>
+          <p>虽然我不想强迫您，但希望您再好好考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>目前还不知道左翼阴影是什么时候、怎么形成的。</p>
+          <p> </p>
+          <p>虽然有一些假说，但都还不成熟，还不到告诉[%username]大人您的时候…</p>
+          <p> </p>
+          <p>可以确定的是，那不是龙族为了居住而创造的空间，因此必须尽快把龙族消灭掉。</p>
+          <p> </p>
+          <p>[%username]大人，任务一定已经完成了吧？请和我说说结果如何吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起！</p>
+          <p> </p>
+          <p>您消灭了左翼阴影的所有敌人，以及可憎的头目。</p>
+          <p> </p>
+          <p>主神们也会赞叹[%username]大人的功绩。</p>
+          <p> </p>
+          <p>这是我们为您准备的奖励，请您收下。</p>
+          <p> </p>
+          <p>今后还得继续借助那你的力量。虽然不知道龙族是通过什么通道过来的，但龙族一定还会继续出现。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Low_Wciel]([%2]/40)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1131_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照斯林的委托，消灭左翼阴影的敌人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯林让我去希埃尔的西部要塞下方的左翼阴影，消灭那里的敌人。</p>
+          <p> </p>
+          <p>于是前往左翼阴影，消灭了那里的头目和敌人。回去见到他之后，他说今后还要继续借助我的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

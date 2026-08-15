@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Motgar]这个家伙，不知道是不是又在变着花样想偷懒。</p>
+          <p> </p>
+          <p>最近因为树汁的供货不足，盔甲的制作总是滞后，[%dic:STR_DIC_N_Dalot]很是不满。</p>
+          <p> </p>
+          <p>可是为什么要找我说这个事情啊。我又不是抽树汁的人。</p>
+          <p> </p>
+          <p>我人在村庄里，怎么能时刻监视身在树汁采集场的摩特加尔呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也认识[%dic:STR_DIC_N_Motgar]吧？</p>
+          <p> </p>
+          <p>对，就是那个在茅斯兰森林[%dic:STR_DIC_W_DF1_13]里采集树汁的家伙。</p>
+          <p> </p>
+          <p>已是被抓做劳工了，还总是想方设法偷懒。</p>
+          <p> </p>
+          <p>他老是那个样子，怎么能按时供给树汁呢？</p>
+          <p> </p>
+          <p>旁边已经有个多比在看着他了，可他还是那样。真是...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总是要定期地去鞭策他一下才稍微变得老实一点儿，真是麻烦死了。</p>
+          <p> </p>
+          <p>什么事都要到那儿去催他，可不是一般费劲啊。</p>
+          <p> </p>
+          <p>你能替我去给[%dic:STR_DIC_N_Motgar]传个话吗？</p>
+          <p> </p>
+          <p>就说，如果到后天为止集不齐三桶树汁我绝对饶不了他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为树汁采集不及时，成员们没有护具穿，那就麻烦了。.</p>
+          <p> </p>
+          <p>所以你赶紧去催[%dic:STR_DIC_N_Motgar]一下。</p>
+          <p> </p>
+          <p>往茅斯兰森林深入一直走的话，能找到那个家伙他在[%dic:STR_DIC_W_DF1_13]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都是同事，互相帮助不是很好嘛。</p>
+          <p> </p>
+          <p>你以为我就喜欢时不时地去催他吗？何况他又那么油腔滑调的。</p>
+          <p> </p>
+          <p>本来就已经忙得不可开交了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是！少烦我好不好啊！</p>
+          <p> </p>
+          <p>旁边已经有个监视的人了，还三天两头的过来催，现如今连个路过的人都要来折磨我吗？</p>
+          <p> </p>
+          <p>世上哪儿还有比我好好干活的人啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达卡因达尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>后天为止三桶树汁？</p>
+          <p> </p>
+          <p>又想说如果集不齐的话，就想要我了命吧。</p>
+          <p> </p>
+          <p>知道了！如果我在采集树汁的过程中死掉的话，请你把我葬在风水好的地方。</p>
+          <p> </p>
+          <p>哎哟，我的命怎么这么苦啊！</p>
+          <p> </p>
+          <p>本来就已经累得够戗了，看来今后是连个睡午觉的时间都没有了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Motgar]转达卡因达尔的话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说采集树汁的摩特加尔偷懒，去他那儿转达卡因达尔的话吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为树汁采集场的摩特加尔总偷懒，所以耽误了护具的制作。</p>
+          <p> </p>
+          <p>受卡因达尔之托去了茅斯兰森林催摩特加尔赶快干活了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

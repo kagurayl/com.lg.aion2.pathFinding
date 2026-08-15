@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭贪吃鬼乌鲁鲁的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_DF4_DaQ_Owllau_Fi_51]</p>
+          <p></p>
+          <p> 2. 位置: 据有人报告，曾在[%dic:STR_DIC_SEN_DF4_SensoryArea_Q46500]见到过它。</p>
+          <p></p>
+          <p> 3. 详情: 偷窃执政官先遣队的补给粮4次，袭击炊事兵2次，罪行败露后逃走。非常能吃的阿武拉乌，需要注意。</p>
+          <p> </p>
+          <p>提供与贪吃鬼乌鲁鲁的行踪有关的情报或直接将其杀死者，将获得赏金。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦，呐呐。</p>
+          <p> </p>
+          <p>这次又完成什么任务了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贪吃鬼乌鲁鲁……啊，是那个家伙啊！ </p>
+          <p> </p>
+          <p>看起来虽然很笨，但对吃的东西非常执着，经常有执政官遭到袭击。</p>
+          <p> </p>
+          <p>在食欲面前，他就会变得很强……</p>
+          <p> </p>
+          <p>多亏了你，执政官们再也不用为粮食问题担心了，呐呐。</p>
+          <p> </p>
+          <p>辛苦你了。我把委托费给你，请收下，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_SEN_DF4_SensoryArea_Q46500]，找到并消灭[%dic:STR_DIC_M_DF4_DaQ_Owllau_Fi_51]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭涉嫌偷窃粮食的贪吃鬼乌鲁鲁的委托书。</p>
+          <p> </p>
+          <p>确认委托内容后，消灭了贪吃鬼乌鲁鲁。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

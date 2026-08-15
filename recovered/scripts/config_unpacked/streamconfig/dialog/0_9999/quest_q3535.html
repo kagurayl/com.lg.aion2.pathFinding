@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q3535</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和我过去工作的欧比斯相比，这里非常清闲。</p>
+          <p> </p>
+          <p>不过在哪儿都有麻烦的家伙。</p>
+          <p> </p>
+          <p>虽然对守卫构不成什么威胁，但却可以威胁到居民。</p>
+          <p> </p>
+          <p>尤其是结界塔周围的克鲁比埃尔。它们盘踞在那里，给来往于要塞的居民们造成了很多损失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我很想亲自去料理它们，但是我必须执行我的任务，实在抽不出时间。</p>
+          <p> </p>
+          <p>我必须先要培训好要塞里的守卫，我是为此才从埃雷修兰塔来到因特尔蒂卡的。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去处理一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我，真是太好了。事实上，我一直担心克鲁比埃尔的事情，都不能好好集中精神进行培训了。</p>
+          <p> </p>
+          <p>请您去消灭结界塔附近的[%dic:STR_DIC_M_Cherubim3_32_An]%，然后把[%dic:STR_DIC_I_QUEST_3535A]%带回来作为证据。</p>
+          <p> </p>
+          <p>它们会成群结队地冲上来，但只要小心对付，应该不会有什么困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我暂时很难离开这里。</p>
+          <p> </p>
+          <p>除了培训之外，我没有任何的权利，也不能向其他守卫下达命令。</p>
+          <p> </p>
+          <p>没办法。看来只能等培训结束后，看看有没有时间了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就回来啦。</p>
+          <p> </p>
+          <p>消灭克鲁比埃尔的事情怎么样了？不是很难吧？</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_I_QUEST_3535A]%带回来了的话，快交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克鲁比埃尔的腰带。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去结界塔吗？</p>
+          <p> </p>
+          <p>那里离要塞不是很远，一会儿就能到了。</p>
+          <p> </p>
+          <p>对了，别忘了把[%dic:STR_DIC_I_QUEST_3535A]%带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我看看……从上面的图案来看，确实是克鲁比埃尔的腰带。</p>
+          <p> </p>
+          <p>真的非常感谢。这下我终于可以放心了。</p>
+          <p> </p>
+          <p>有人说我有点强迫症，但是对于居民们的安全来说，这是非常重要的事情，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_3535A]，然后交给[%dic:STR_DIC_N_Daruka]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭在结界塔附近骚扰居民的克鲁比埃尔卫兵，搜集证据。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达卢卡说结界塔附近的克鲁比埃尔经常袭击过往的居民，让他很担心。</p>
+          <p> </p>
+          <p>帮助忙着培训其他守卫的达卢卡消灭了克鲁比埃尔卫兵，并把克鲁比埃尔的腰带作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(瞟了一眼[%mainslotitem])您的战斗经验好像很丰富嘛。</p>
+          <p> </p>
+          <p>(看着前方。)</p>
+          <p> </p>
+          <p>我能拜托您一件事吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来这里，是为了弄清楚进入帕德玛夏的洞穴的方法。</p>
+          <p> </p>
+          <p>但是……因为有帕德玛夏护卫军团在，我很难靠近那里。</p>
+          <p> </p>
+          <p>即使在高处观察，看到的东西也很有限，如果能把[%dic:STR_DIC_M_DF4_21241]消灭掉，情况就会好得多。</p>
+          <p> </p>
+          <p>我的请求就是这个，[%username]大人，您的回答是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的。</p>
+          <p> </p>
+          <p>请您快去帮我消灭[%dic:STR_DIC_M_DF4_21241]吧。</p>
+          <p> </p>
+          <p>如果您要去消灭第56德拉坎精锐兵，我也不会阻止您，但是希望您一个人的时候不要那么做。</p>
+          <p> </p>
+          <p>事实上，[%username]大人连对付上级兵都可能会有点吃力，所以一定要和同伴一起去。</p>
+          <p> </p>
+          <p>我会在这里看着[%username]大人，如果有什么危险，我会去帮您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吗？</p>
+          <p> </p>
+          <p>(看着前方)[%username]大人，您不用管我，去做您自己的事情好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了吗？</p>
+          <p> </p>
+          <p>拜托您的事情怎么样了？</p>
+          <p> </p>
+          <p>突然刮起了沙尘暴，我看不见里面的情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来如此。</p>
+          <p> </p>
+          <p>谢谢您的帮助。</p>
+          <p> </p>
+          <p>请您收下。这是我给您的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭守卫大地之尖牙的[%dic:STR_DIC_M_DF4_21241]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ducalis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让杜卡里斯能够进入帕德玛夏的洞穴侦察，消灭守卫大地之尖牙的德拉坎上级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杜卡里斯说正在寻找进入帕德玛夏的洞穴的方法，但是因为帕德玛夏护卫军团的监视，很难进入那里。</p>
+          <p> </p>
+          <p>他说如果能消灭掉第56德拉坎上级兵，情况就会好的多。于是和同伴们一起消灭了上级兵，回去之后，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

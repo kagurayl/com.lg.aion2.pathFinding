@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的活体变异报告书的内容太简单，光靠这个无法进行研究。</p>
+          <p> </p>
+          <p>其中最让人关注的是德拉纳和龙胶。</p>
+          <p> </p>
+          <p>其中我最关心的是，龙胶可以引起活体变异的内容。</p>
+          <p> </p>
+          <p>要想进行研究，必须要有标本。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，[%username]，你能帮我去搜集一些[%dic:STR_DIC_I_quest_3915a]吗？</p>
+          <p> </p>
+          <p>我不知道这份报告书你是从哪里找到的...</p>
+          <p> </p>
+          <p>如果能搜集到龙胶，对龙族的研究应该可以取得重大进展。</p>
+          <p> </p>
+          <p>请你一定要帮帮我，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你，[%username]。</p>
+          <p> </p>
+          <p>我还担心如果你拒绝，我该怎么办。看来[%username]你也知道这项研究的重要性吧？</p>
+          <p> </p>
+          <p>布洛尼和彭基因为龙胶而发生了变异，打猎他们，应该可以得到龙胶标本。</p>
+          <p> </p>
+          <p>其他的人身上好像也有标本，但由于没有确切的情报，所以我不太清楚。</p>
+          <p> </p>
+          <p>请你帮我去搜集一些[%dic:STR_DIC_I_quest_3915a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为[%username]你一定会帮我的呢...</p>
+          <p> </p>
+          <p>你把报告书送给了我，却不愿意帮我搜集标本，真让人遗憾。</p>
+          <p> </p>
+          <p>难道你不知道，搜集龙胶标本是多么重要的事情吗？</p>
+          <p> </p>
+          <p>难道要因为没有标本而放弃研究吗…真遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，自从你离开之后，我就一直在等你回来。</p>
+          <p> </p>
+          <p>我一辈子都没有这样焦急地等过谁。</p>
+          <p> </p>
+          <p>你搜集到龙胶标本了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙胶标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你把[%dic:STR_DIC_I_quest_3915a]带回来了呢。原来不是啊。</p>
+          <p> </p>
+          <p>我是求你帮我办事，所以不想催你，不过能不能请你快一点？</p>
+          <p> </p>
+          <p>没有标本的话，我就不知道龙胶到底有什么作用。</p>
+          <p> </p>
+          <p>拜托你快一点！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，真的非常感谢！</p>
+          <p> </p>
+          <p>我终于可以正式开始研究了。</p>
+          <p> </p>
+          <p>要是能因此知道龙族活体变异的原理，那就好了。</p>
+          <p> </p>
+          <p>但是那需要更多的龙胶标本。</p>
+          <p> </p>
+          <p>下次有时间的话，请你再帮我搜集一些。谢谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_3915a]，然后交给[%dic:STR_DIC_N_Creusa]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要想研究龙族的活体变异技术，必须搜集龙胶标本。搜集标本并交给克蕾莎。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克蕾莎看了龙族的活体变异计划书之后，说要研究龙胶的作用，让我去搜集龙胶标本。</p>
+          <p> </p>
+          <p>去黑暗普埃塔搜集到了龙胶标本，交给了克蕾莎。她对我表示感谢，说将对研究龙族的活体变异原理起到帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

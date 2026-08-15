@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你的努力，目前埃雷修兰塔的局势变得对天族有利了。</p>
+          <p> </p>
+          <p>越是在这种对我们有利的时候，就越应该抓住机会给他们以沉重一击。</p>
+          <p> </p>
+          <p>现在到了对他们的核心兵力进行打击的时候。</p>
+          <p> </p>
+          <p>可以完成这一任务的，我想应该只有你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次你要面对的是[%dic:STR_DIC_E_Dgrade6]。</p>
+          <p> </p>
+          <p>6级兵的话应该是在欧比斯久经沙场的老兵了，不过你也已经积累了丰富的经验，足以和他们对抗。</p>
+          <p> </p>
+          <p>而且6级兵应该是在魔族阵营里执行重要任务的兵力，应该可以给魔族造成和以前无法相比的巨大打击。</p>
+          <p> </p>
+          <p>我想把这个重要的任务交给你，你愿意执行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你不会拒绝的。</p>
+          <p> </p>
+          <p>那你就去把[%dic:STR_DIC_E_Dgrade6]除掉吧。</p>
+          <p> </p>
+          <p>这次要注意的事情和以前一样。那就是必须消灭和你实力相当的魔军。</p>
+          <p> </p>
+          <p>实力相差太大的魔军，即使消灭了也没什么用。</p>
+          <p> </p>
+          <p>希望这次你也能取得巨大的成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你听到魔军6级兵之后有点紧张啊。</p>
+          <p> </p>
+          <p>没有必要那么害怕。你的经验也不比他们差。</p>
+          <p> </p>
+          <p>我随时都愿意把任务交给你。如果你改变了主意，可以回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>展现在守护者面前的岁月似乎没有尽头。所以与人类相比，更容易失去目标和热情。</p>
+          <p> </p>
+          <p>但是在欧比斯根本没有想这些事情的时间。</p>
+          <p> </p>
+          <p>如果不能把对方击败的话，我们自己就得面对破灭。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_E_Dgrade6]怎么样了？我相信你应该顺利完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然完成得非常出色。</p>
+          <p> </p>
+          <p>只要是让你去执行任务，我就完全不必担心失败，[%username]。</p>
+          <p> </p>
+          <p>除了我麾下的内扎坎之盾军团之外，能够让我完全信任的，就只有你一个人。</p>
+          <p> </p>
+          <p>多亏了你，我们军团士兵在对抗魔族的时候变得更容易了。真是谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade6]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ascalon]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉魔族方面执行重要任务的魔军6级兵，削弱魔族的势力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯卡尔伦说现在到了给魔族沉重一击的时候，让我去除掉魔族那边执行重要任务的魔军6级兵。</p>
+          <p> </p>
+          <p>于是在除掉了魔军6级兵之后回去找到了他，他对我表示感谢，说内扎坎之盾军团的士兵在对抗魔族时更加容易了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

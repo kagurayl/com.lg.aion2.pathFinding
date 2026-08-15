@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼只相信普尔金。</p>
+          <p> </p>
+          <p>普尔金说修好车子之后就走。去避难。</p>
+          <p> </p>
+          <p>布洛尼好害怕。想快点走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想去难民村。</p>
+          <p> </p>
+          <p>普尔金说会带我去，等车子修好之后。</p>
+          <p> </p>
+          <p>去的路上有可怕的东西。</p>
+          <p> </p>
+          <p>有[%dic:STR_DIC_M_DF4_Fellial_DR_52_An]，还有[%dic:STR_DIC_M_DF4_Spakle_DR_52_n]。布洛尼很害怕。</p>
+          <p> </p>
+          <p>帮我除掉它们。消灭佩里亚和雷兽。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须经过古树精灵森林。</p>
+          <p> </p>
+          <p>布洛尼好害怕。没有什么东西也害怕。</p>
+          <p> </p>
+          <p>那里有[%dic:STR_DIC_M_DF4_Fellial_DR_52_An]和[%dic:STR_DIC_M_DF4_Spakle_DR_52_n]，我不能去。</p>
+          <p> </p>
+          <p>把它们全部除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须经过古树精灵森林。</p>
+          <p> </p>
+          <p>布洛尼好害怕。没有什么东西也害怕。</p>
+          <p> </p>
+          <p>那里有[%dic:STR_DIC_M_DF4_Fellial_DR_52_An]和[%dic:STR_DIC_M_DF4_Spakle_DR_52_n]，我不能去。</p>
+          <p> </p>
+          <p>车子修好了也不能去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在没有了吗？</p>
+          <p> </p>
+          <p>布洛尼害怕的东西。</p>
+          <p> </p>
+          <p>佩里亚、雷兽没有了吗？</p>
+          <p> </p>
+          <p>布洛尼害怕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说全都消灭掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼害怕的东西没有了。</p>
+          <p> </p>
+          <p>谢谢。现在可以走了。到安全的地方去。</p>
+          <p> </p>
+          <p>等车子修好之后，就能走了。</p>
+          <p> </p>
+          <p>拿着这个。这送给你的。为了感谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭多玛提害怕的东西</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Fellial_DR_52_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Spakle_DR_52_n]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Brauni_DF4_03]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">多玛提说等车子修好之后，就到安全的地方去。应该帮他消灭佩里亚和雷兽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多玛提是个害怕龙族会再来的胆小的布洛尼。</p>
+          <p> </p>
+          <p>他说等车子修好之后，打算穿过古树精灵森林，到隆博斯难民村去。但是他说害怕佩里亚和雷兽，让我把它们消灭掉。</p>
+          <p> </p>
+          <p>帮助可怜的多玛提消灭了佩里亚和雷兽，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

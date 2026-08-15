@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说腐木原野上除了奥格林特还有很多其他的东西。</p>
+          <p> </p>
+          <p>我本想着要说奥格林特以前偶尔也曾出现过，谁知听说这一次出现的这东西却是第一次看到。</p>
+          <p> </p>
+          <p>和奥格林特一样也能动，但是有手有脚，看着像人一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>叫什么来着...啊！说是叫绿脚趾洛特伦。说是长得像人的树...</p>
+          <p> </p>
+          <p>虽说听起来很荒唐，还是去看看确认一下比较好。</p>
+          <p> </p>
+          <p>[%username]大人是否能帮忙呢？</p>
+          <p> </p>
+          <p>请去腐木原野，看看那个所谓[%dic:STR_DIC_M_Rottentree_34_An]的东西是否存在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应去看看。</p>
+          <p> </p>
+          <p>另外也不是说信不过守护者大人，不过如果[%dic:STR_DIC_M_Rottentree_34_An]真的存在，还是请您在确认后带回证据。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1526a]就好了。用它就能揭示洛特伦的真面目了。 </p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我太杞人忧天了吗？</p>
+          <p> </p>
+          <p>可是想到这和椰林族有所关联，我不能不多想啊。</p>
+          <p> </p>
+          <p>因特尔蒂卡就像是椰林的故乡。经常会为此而感到自豪...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前有一位守护者大人来过接受了灵魂治疗。</p>
+          <p> </p>
+          <p>据他所说，奥格林特和洛特伦已经涌入腐木原野了。</p>
+          <p> </p>
+          <p>现在看来腐木原野那里椰林已经完全消失了。真是...让人心痛。</p>
+          <p> </p>
+          <p>可是该做的事情还是要做。我托您带回的树皮您带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出树皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去腐木原野吗？</p>
+          <p> </p>
+          <p>您该不会是走到半途就回来了吧？</p>
+          <p> </p>
+          <p>现在已经确认了椰林已经发生异变了，再也容不得慢慢吞吞了。</p>
+          <p> </p>
+          <p>快去带回[%dic:STR_DIC_I_QUEST_1526a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看着黑黝黝的，颜色就和椰林的树皮不一样。</p>
+          <p> </p>
+          <p>腐木人看上去发灰黑色。</p>
+          <p> </p>
+          <p>总之要拿这东西去调查一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">集齐[%dic:STR_DIC_I_QUEST_1526a]带给[%dic:STR_DIC_N_Mirborante]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">米尔布兰特希望能确认洛特伦是否真的存在。去腐木原野打败他们，把树皮带回。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔布兰特希望能确认洛特伦是否真的存在。如果确实存在，希望能拿到证据。</p>
+          <p> </p>
+          <p>去腐木原野，打败绿脚趾洛特伦，把它的树皮带回。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

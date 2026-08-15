@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我认为[%username]是成为武器制作达人的人才，但还没确认你的实力达到了怎样的水平。</p>
+          <p> </p>
+          <p>想要获得达人称号的话，就必须能够制作出稀有物品。</p>
+          <p> </p>
+          <p>只有达到那样的水平，我才能推荐[%username]你成为武器制作达人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次请你去制作[%dic:STR_DIC_E_Q1973]。</p>
+          <p> </p>
+          <p>那是稀有物品，而且也很不容易制作。如果你能制作成功，就可以很好地证明[%username]的实力。</p>
+          <p> </p>
+          <p>怎么样？你想试试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]你一定会欣然接受。</p>
+          <p> </p>
+          <p>因为你应该拥有这样的实力。</p>
+          <p> </p>
+          <p>请你快去制作[%dic:STR_DIC_E_Q1973]吧。</p>
+          <p> </p>
+          <p>图案在[%dic:STR_DIC_N_Nakia]那里可以买到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，看来我是看错你了。</p>
+          <p> </p>
+          <p>我本以为你一定具备制作稀有武器的实力...</p>
+          <p> </p>
+          <p>我知道了。既然你不愿意，我也没办法。</p>
+          <p> </p>
+          <p>我相信继续等下去的话，值得我推荐成为武器制作达人的守护者一定会重新出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者的命运就是献身。</p>
+          <p> </p>
+          <p>大家都知道自己的任务是为了保护软弱的人类和处于危机之中的亚特雷亚而献身。</p>
+          <p> </p>
+          <p>献身的方法每个人都不同。像我是通过制作出好的武器，为亚特雷亚做贡献。</p>
+          <p> </p>
+          <p>[%username]你也好像找到了战斗之外的其他贡献的道路，我真的非常高兴。</p>
+          <p> </p>
+          <p>对了，发光的帕西美达斯之大剑做好了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出发光的帕西美达斯之大剑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_Q1973]还没做好吗？</p>
+          <p> </p>
+          <p>我还在想以[%username]的实力，那种东西应该完全没有问题...</p>
+          <p> </p>
+          <p>看来是时间不够吧？</p>
+          <p> </p>
+          <p>你再去用心试试吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你制作得非常出色。</p>
+          <p> </p>
+          <p>以你的实力，就是被人称作武器制作达人，也完全不必有心理负担。</p>
+          <p> </p>
+          <p>祝贺你到达了武器制作达人的境界。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">制作[%dic:STR_DIC_E_Q1973]，然后交给[%dic:STR_DIC_N_Anteros]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">安泰洛斯说要想获得武器制作达人的称号，必须要能够制作稀有武器。去制作发光的帕西美达斯之大剑吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安泰洛斯说要想获得武器制作达人的称号，必须要能够制作稀有武器。</p>
+          <p> </p>
+          <p>于是按照他的要求，制作出了发光的帕西美达斯之大剑。他对我表示祝贺，说我已经达到了武器制作达人的境界。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

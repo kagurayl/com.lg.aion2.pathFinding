@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>烦死了，我受不了了。上次要紫色，这次又要棕色...</p>
+          <p> </p>
+          <p>我是说[%dic:STR_DIC_N_Kinot]。</p>
+          <p> </p>
+          <p>我经常去找他买染色剂，他说可以不收我染色剂的钱，但我必须得帮他找染色剂的制作材料。</p>
+          <p> </p>
+          <p>开始的时候，我还觉得挺不错的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过染色剂的材料远比我想像的复杂。</p>
+          <p> </p>
+          <p>那些材料不是随便在附近采点草就行了的。</p>
+          <p> </p>
+          <p>不同颜色的染色材料必须去不同的地区打猎不同东西之后才能得到，而且即便是一种颜色的染色材料也可能需要混合好几种其他颜色才行。不是一般的麻烦...</p>
+          <p> </p>
+          <p>现在他说棕色染色剂不够了，我就得先去阿尔特盖德，然后再去莫尔海姆。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>光是空间移动就不知道花了多少钱。看来最近得少买染色剂了。</p>
+          <p> </p>
+          <p>可是不买染色剂我又办不到。</p>
+          <p> </p>
+          <p>只要一看到染色剂，我就忍不住想买。看来连高级服装店我也得尽量不去了。所谓眼不见为净，看不到就不会想买了。</p>
+          <p> </p>
+          <p>这个染色剂的材料，能麻烦您帮我交给[%dic:STR_DIC_N_Kinot]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去帮忙把这个转交给他，告诉他我最近一段时间都不会去了。</p>
+          <p> </p>
+          <p>虽然我很喜欢呆在伏魔殿，但为了赚钱不得不去帮助那些外派的执政官做事。</p>
+          <p> </p>
+          <p>听说布鲁斯特豪宁有许多赚钱的机会，我打算去那里看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>像现在这种资金紧张的时候，去高级服装店的话对我而言简直就是一种折磨。</p>
+          <p> </p>
+          <p>要是赊账的话，只能加剧现在的窘境。</p>
+          <p> </p>
+          <p>这可怎么办才好呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人都嫌染色剂太贵，但其实要做出恰当的颜色，不知道要搜集多少材料才行。</p>
+          <p> </p>
+          <p>光是搜集那些材料就是一笔不小的花销。</p>
+          <p> </p>
+          <p>所以我常常拜托一些常客帮我搜集材料，但现在很多人也都不愿意帮忙了。</p>
+          <p> </p>
+          <p>差不多该是卢塞达大人送材料来的时候了，怎么他好像迟到了呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出染色剂材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是卢塞达大人派来的啊。</p>
+          <p> </p>
+          <p>唉，要是他亲自来的话，我还想拜托他帮忙找点其他颜色的材料呢...</p>
+          <p> </p>
+          <p>现在搜集染色剂的材料是越来越难了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把染色剂的材料转交给[%dic:STR_DIC_N_Kinot]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卢塞达虽然搜集齐了奇诺克要的制作染色剂的材料，但却认为现在不是去高级服装店的好时机，拜托我转交给奇诺克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢塞达说自己经常去高级服装店买染色剂。</p>
+          <p> </p>
+          <p>后来奇诺克答应免费提供染色剂，但卢塞达必须帮助搜集染色剂的制作材料作为交换。</p>
+          <p> </p>
+          <p>不过搜集染色剂材料的过程太繁琐，而且光是空间移动就是一笔不小的开销，因此卢塞达不愿意继续替奇诺克搜集材料了，便委托我替他转交染色剂制作材料。</p>
+          <p> </p>
+          <p>替卢塞达把材料转交给了奇诺克。奇诺克抱怨说现在搜集染色剂材料越来越难了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

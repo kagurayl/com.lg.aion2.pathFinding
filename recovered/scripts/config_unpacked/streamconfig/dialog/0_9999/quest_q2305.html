@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然清除掉了白虎，但是仅仅这样好像还不够。</p>
+          <p> </p>
+          <p>要想从根本上解决问题的话，必须让它们完全陷入恐惧，让它们不敢再到要塞周围活动。</p>
+          <p> </p>
+          <p>要想那样的话，最好是把它们的头目除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在莫尔海姆万年雪原有一个洞穴，那里生活着白虎的头目[%dic:STR_DIC_M_DireBeastDNamedQ_22_An]。</p>
+          <p> </p>
+          <p>卡尔赛克是它们的头目，只要把它除掉的话，白虎们就应该不敢再猖狂了。</p>
+          <p> </p>
+          <p>那是个很不好对付的家伙，所以这次的任务只能交给[%username]你去执行。</p>
+          <p> </p>
+          <p>怎么样？你愿意去把它除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="PLAYEMOTION_angry;HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能这么爽快地答应，真是勇气可嘉</p>
+          <p> </p>
+          <p>好的，那你就马上向莫尔海姆万年雪原出发吧。</p>
+          <p> </p>
+          <p>去除掉[%dic:STR_DIC_M_DireBeastDNamedQ_22_An]，然后把[%dic:STR_DIC_I_QUEST_2305a]带回来作为证据。</p>
+          <p> </p>
+          <p>看到自己的头目的爪子被拔了下来，白虎们一定会非常害怕的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你该不会是害怕白虎的头目吧？</p>
+          <p> </p>
+          <p>这么小的事情就害怕，真可惜了那把[%mainslotitem]了！</p>
+          <p> </p>
+          <p>拜托一个胆小鬼又能干嘛。守护者又不是只有你一个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_M_DireBeastDNamedQ_22_An]除掉了吗？</p>
+          <p> </p>
+          <p>看你安然回来，应该已经除掉了吧？</p>
+          <p> </p>
+          <p>好了，那就把[%dic:STR_DIC_I_QUEST_2305a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出卡尔赛克的爪子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没到白虎头目的洞穴去吗？</p>
+          <p> </p>
+          <p>虽然其他的事情也很重要，但是这件事情直接关系到居民们的安全。</p>
+          <p> </p>
+          <p>所以请你快一点儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>爪子真锋利啊。要是被它抓一下的话，一定会留下很大的伤口。</p>
+          <p> </p>
+          <p>真是辛苦了。这件事让你去做看来是对了。</p>
+          <p> </p>
+          <p>来，这是你为居民们辛苦执行任务的报答。虽然不多，但请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_DireBeastDNamedQ_22_An]，然后把证据交给[%dic:STR_DIC_N_Bragi]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要根除白虎的威胁的话，必须把它们的头目除掉。去除掉铁爪卡尔赛克，然后将爪子交给布拉吉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除白虎回来之后，布拉吉让我去除掉它们的头目，让它们再也不敢在要塞出现。</p>
+          <p> </p>
+          <p>于是来到卡尔赛克的洞穴，除掉了它，并把爪子作为证据交给了布拉吉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

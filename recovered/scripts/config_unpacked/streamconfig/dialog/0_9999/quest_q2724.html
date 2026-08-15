@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为军团长，除了指挥作战之外，把部下们安排到合适的岗位也同样非常重要。</p>
+          <p> </p>
+          <p>因为有些人擅长战斗，也有些人擅长指挥。</p>
+          <p> </p>
+          <p>最重要的，是要把人安排到最能发挥他能力的岗位上去。</p>
+          <p> </p>
+          <p>不过，最近我觉得我好像错误地任命了一位百夫长。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把一个名叫阿门蒂的在军团里跟了我很长时间的人升为了百夫长，但是好像有一点问题。</p>
+          <p> </p>
+          <p>我虽然知道他的性格有点好战，感觉有点担心。但是觉得他在军团里呆了这么长时间，应该也已经改掉了不少...</p>
+          <p> </p>
+          <p>把他提拔成百夫长之后，好像部下们对他稍微有些不满。现在他又向我报告，说一名军团士兵不见了。</p>
+          <p> </p>
+          <p>军团士兵不见了，这成话吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿门蒂不知道该怎么办，在那里束手无策。看来只有我出面了。</p>
+          <p> </p>
+          <p>而且失踪的军团士兵加尔夫也绝对不是会开小差的人，所以一定是出了什么问题。</p>
+          <p> </p>
+          <p>我想调查加尔夫的行踪。[%username]，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不到普利姆据点去的话，就没有办法离开埃雷修兰塔。但是如果去了那里的话，一定会被发现。</p>
+          <p> </p>
+          <p>因此，加尔夫一定还在埃雷修兰塔里面。</p>
+          <p> </p>
+          <p>那样的话，就不能不经过瞬间移动师。所以你先去问问[%dic:STR_DIC_N_Mure]有没有见到过加尔夫吧。</p>
+          <p> </p>
+          <p>打听到了加尔夫的行踪的话，你去和阿门蒂说明一下情况。那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们一般是不会向外人透露这种军团内部发生的无法启齿的事件的。</p>
+          <p> </p>
+          <p>我是因为相信[%username]你，才跟你说的...</p>
+          <p> </p>
+          <p>好像是我太轻率了。我说过的那些话，你就当没听见吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想到上面去吗？</p>
+          <p> </p>
+          <p>那您是找我有事了？</p>
+          <p> </p>
+          <p>请您说说是什么事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问有没有见到加尔夫。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，我见到了。一共看见了他两次。</p>
+          <p> </p>
+          <p>他一个人到了上面去，过了不久又和冈格勒特神官大人一起下来了。</p>
+          <p> </p>
+          <p>冈格勒特神官大人说要去钢铁的坟墓，还问我怎么走。</p>
+          <p> </p>
+          <p>虽然不知道加尔夫是不是去了别的地方，但是[%dic:STR_DIC_N_Ganglot]神官大人一定还在钢铁的坟墓。请您过去问问他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我按照布塔恩总司令官大人的命令来到了这里，但是要做的事情要比想象的多得多。</p>
+          <p> </p>
+          <p>没想到这里有这么多不死族。</p>
+          <p> </p>
+          <p>要把它们全部送归奥德的流动的话，需要花不少的时间。</p>
+          <p> </p>
+          <p>不过，你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">说阿门蒂正在寻找加尔夫。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？他刚刚还派他来护送我，怎么又来找他了啊？</p>
+          <p> </p>
+          <p>我当时正在古代城市娄进行调查，向我传达来这里的命令的就是加尔夫。也是他一路护送我来到了这里。</p>
+          <p> </p>
+          <p>我还以为在这里的这段时间，他会一直旁边护卫我呢。</p>
+          <p> </p>
+          <p>请你去告诉[%dic:STR_DIC_N_Amundi]百夫长，加尔夫正在这里执行任务，让他不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>升为百夫长之后，我就带着军团士兵来到了这里。</p>
+          <p> </p>
+          <p>要塞被天族夺走，堕落的古代魔术师又不停地攻击据点，所以忙得焦头烂额。</p>
+          <p> </p>
+          <p>好不容易应付了过去，却发现下面的军团士兵不见了……</p>
+          <p> </p>
+          <p>真不知道这件事情该怎么办才好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达冈格勒特的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(做出一副冥思苦想的表情)啊啊，没错！</p>
+          <p> </p>
+          <p>我正准备把部下们带到这里来，总司令官突然下达了指示，所以就...</p>
+          <p> </p>
+          <p>后来忙着忙那的，就把将加尔夫派到别的地方去的事情给忘了。</p>
+          <p> </p>
+          <p>因为手忙脚乱的，所以忘了给军团长大人报告，就弄出了这么一件事。</p>
+          <p> </p>
+          <p>啊啊，没想到一上任就犯下了这种错误，不知道军团长大人会怎么处罚我。</p>
+          <p> </p>
+          <p>不过不管怎样，谢谢你告诉了我加尔夫的行踪。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Mure]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Ganglot]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Amundi]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">新上任的百夫长阿门蒂送来了报告，说有名军团士兵失踪了。去层间向瞬间移动师缪尔询问军团士兵加尔夫的行踪吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>破灭之呐喊军团军团长卡尔巴盖斯说从他刚任命的百夫长阿门蒂那里收到了军团士兵加尔夫失踪的报告，正在为自己是不是任命错了百夫长而苦恼。</p>
+          <p> </p>
+          <p>他让我去问问到底是怎么回事，并向阿门蒂报告。于是首先找到了层间移动师谬尔，询问是否见到过加尔夫。</p>
+          <p> </p>
+          <p>谬尔说他看见加尔夫和冈格勒特一起去了钢铁的坟墓。到了那里一看，加尔夫正和冈格勒特在一起。</p>
+          <p> </p>
+          <p>询问了冈格勒特后得知，加尔夫是去古代城市娄向他传达去钢铁之岛的命令的。</p>
+          <p> </p>
+          <p>把事情始末告诉了阿门蒂，他说自己忘了曾经派加尔夫去护送冈格勒特了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

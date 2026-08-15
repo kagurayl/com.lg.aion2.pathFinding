@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然眼下的火灭掉了，但我们还有很多事情要做。</p>
+          <p> </p>
+          <p>其中之一就是彻底调查兵站区域。</p>
+          <p> </p>
+          <p>从龙族使用的普通补给品，到德拉纳、研究材料，那里几乎什么东西都有。</p>
+          <p> </p>
+          <p>你知道吗？</p>
+          <p> </p>
+          <p>那里可能有至今尚未发现的龙族的秘密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我们还没有完全占领空中要塞，所以不可能所有东西都一一查看。</p>
+          <p> </p>
+          <p>但是如果把尽可能多的东西搜集回来，应该就能找到一些有用的东西。</p>
+          <p> </p>
+          <p>[%username]%，你去把他们管理的补给品抢回来。</p>
+          <p> </p>
+          <p>只要消灭在那里管理和运送物品的龙族，把他们身上的东西拿回来就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>把搜集到的东西带回来的时候，一定要小心。因为有可能是未知的危险物品。</p>
+          <p> </p>
+          <p>对了，任务完成之后，不要来找我，把东西交给在萨尔潘待命的西里安就行。</p>
+          <p> </p>
+          <p>听取任务报告和给予奖励都不是我的工作。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到了这里却拒绝执行任务，我觉得这不是个明智的决定。</p>
+          <p> </p>
+          <p>既然来了，就把事情做完，这样就可以得到一个好的评价。不是很好吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从空中要塞回来吗？</p>
+          <p> </p>
+          <p>虽然我让哈里肯大人潜入了空中要塞，但我还是很担心。</p>
+          <p> </p>
+          <p>他好像在打什么别的主意，而不是为了鸢族的胜利。</p>
+          <p> </p>
+          <p>不过既然卡伦大人说他是个能干的人，他也许有什么隐藏的能力也说不定……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的物品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您要到空中要塞去的话，能帮助哈里肯大人执行任务吗？</p>
+          <p> </p>
+          <p>到现在都没有消息，看来事情的进展并不顺利。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是从空中要塞仓库拿回来的东西啊。</p>
+          <p> </p>
+          <p>哈里肯大人好像在很认真地执行任务。</p>
+          <p> </p>
+          <p>看来我是误会他了。对于[%username]大人，我会给您适当的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到阿图拉姆[%dic:STR_DIC_W_IDStation_SZ_01_A]去搜集 [%dic:STR_DIC_I_quest_18306a]然后交给[%dic:STR_DIC_N_Silion]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈里肯的指示，到阿图拉姆空中要塞兵站区域搜集龙族的补给品，然后交给西里安。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈里肯说空中要塞还有很多事情要做，让我去搜集龙族的补给品。</p>
+          <p> </p>
+          <p>到仓库区域消灭敌人，搜集到了龙族的补给品，并交给了西里安，从他那里获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

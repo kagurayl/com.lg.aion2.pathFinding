@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>你好像刚来这儿还没多久，让我告诉你一些将来会有帮助的事情。</p>
+           <p> </p>
+           <p>被人听见不太好，你过来一点。</p>
+           <p> </p>
+           <p>把耳朵凑过来。</p>
+           <p> </p>   
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+    <Act href="HACTION_ASK_QUEST_ACCEPT">把耳朵凑过去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想过做一点副业吗？</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_FLA03]的西边有一个[%dic:STR_DIC_FLA209]。那里的人们因为凯鲁宾的入侵而匆忙逃走了，所有的东西都丢在了那里。</p>
+          <p> </p>
+          <p>谁捡到了就是谁的。我因为这边的生意脱不开身，你能去帮我把那些东西拿回来吗？我会把东西价值的一半给你作为辛苦费。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你算是选对了。你去农场的话应该能看到有酒桶被扔在地上。</p>
+          <p> </p>
+          <p>把酒桶里的葡萄酒打出来，带回来给我。</p>
+          <p> </p>
+          <p>这儿的葡萄酒非常好，可以在[%dic:STR_DIC_ELA07][%dic:STR_DIC_ELA20]。得快一点儿，免得被别人捡走。</p>          
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>你一定会后悔的...我知道了。</p>
+         <p> </p>
+         <p>反正只要给钱，会有很多人愿意去干的，啧啧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到东西了吗？少一个都不会有辛苦费。</p>            
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出葡萄酒。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>商人要以信用为本。</p>
+          <p> </p>
+          <p>以后还想和我交易的话就必须遵守约定。全都带回来，一个都不能少。</p>
+                  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一点都没打破，很不错嘛。</p>
+          <p> </p>
+          <p>好，这些是辛苦费。和约定的一样，价值的一半。</p>
+          <p> </p>
+          <p>干嘛那样看着我？最近葡萄酒的价格跌得很厉害。其实是我吃亏了，快走吧。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到[%dic:STR_DIC_FLA209]去找到无主的物品，带回来交给[%dic:STR_DIC_LA70]</font></p>[%collectitem]</step>               
+    </steps>
+          <p><font font_xml="quest_summary">接受了术古族商人[%dic:STR_DIC_LA70]的秘密委托。只要去[%dic:STR_DIC_E_LIQUID_BARREL]把葡萄酒带回来给他就可以。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村里的术古族商人问有没有打算做副业，并提出了秘密的委托。</p>
+          <p> </p>          
+<p>到[%dic:STR_DIC_FLA209]去找回了遗弃的酒桶中的葡萄酒，并从米纳灵处获得了物品价值的一半作为辛苦费。</p>
+          </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

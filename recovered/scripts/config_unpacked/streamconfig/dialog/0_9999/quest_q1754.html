@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>很久没看见新面孔了，真高兴。</p>
+       <p> </p>
+       <p>您经过特米伦据点了吗？要塞里的人们都还好吗？</p>
+       <p> </p>
+       <p>不知道艾利尼埃斯百夫长大人和纳莱武斯百夫长大人现在怎么样。</p>   
+       <p> </p>
+       <p>啊，卢锡乌斯呢？我来这里的时候，他还是个一头黄毛的小孩子呢。哈，好想大家啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问在干什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，做的事情很多，所以很难跟您一一说明。</p>
+          <p> </p>
+          <p>主要有两件事情，其中之一是监视硫磺树岛的动态。</p>
+          <p> </p>
+          <p>这里不仅有魔族，龙族也经常出现。</p>
+          <p> </p>
+          <p>特别是龙族的德雷得奇安经常出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德雷得奇安里出来的龙族是很危险的。不仅对于我们，对于魔族也同样如此。</p>
+          <p> </p> 
+          <p>因为这里离特米伦据点很近，为了不让龙族渗透到那里，只要看到了龙族我就尽量把他们除掉。但是现在越来越困难了。</p>  
+          <p> </p> 
+          <p>因为不仅要对付龙族，还要留意魔族。而且您也看到了，这里的人员非常不足。</p>     
+          <p> </p> 
+          <p>看您手里拿着[%mainslotitem]，应该是位实力相当不错的[%userclass]吧。您能帮帮我吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是太谢谢了。</p>
+          <p> </p>
+          <p>[%username]大人答应帮助我，我就又有了精神。</p>
+          <p> </p>
+          <p>那就请您去硫磺树列岛，把[%dic:STR_DIC_M_Ab1_1141_LizardmanFi_29_An]和[%dic:STR_DIC_M_Ab1_1141_LizardmanRa_28_An]全部清除掉。</p>
+          <p> </p>
+          <p>那里也有魔族出没，所以请您要格外小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。我不应该拜托一个刚见面没多久的人去做这种事情的。</p>
+          <p> </p>
+          <p>可能是因为事情很多人很少，我就着急了。</p>
+         <p> </p>
+         <p>如果您回特米伦据点去的话，请顺便帮我向那里的人们问好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到那边传来了吵闹的声音，您是在那边战斗吗？</p>  
+         <p> </p>
+         <p>(看看我的身上)听声音好像战斗进行得非常激烈...</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来刚才听到的真的是[%username]大人战斗的声音啊。</p>
+          <p> </p>          
+          <p>您真了不起。和龙族作战，身上却没有一点伤痕！</p>   
+          <p> </p>   
+          <p>看来我这人还挺有福气的。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除渗透到硫磺树列岛的第30乌纳巴伦军团兵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_LizardmanFi_29_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_LizardmanRa_28_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nike]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了特米伦据点的安全，清除入侵硫磺树列岛的龙族并向尼凯报告。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尼凯说为了阻止龙族渗透到特米伦据点，他正在和入侵硫磺树列岛的龙族战斗。</p>
+          <p> </p>
+          <p>但是龙族的数量太多，一个人对付不过来，于是向我请求帮助。</p>
+          <p> </p>
+          <p>接受了他的建议，清除了袭击硫磺树列岛的龙族，并向尼凯报告了结果。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

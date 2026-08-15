@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于纽特虽然是甲壳类动物，但是智能却好像很高，所以我对此进行了调查。</p>
+          <p> </p>
+          <p>我发现，那些纽特好像是受到了纽特探索兵的操纵。</p>
+          <p> </p>
+          <p>我看见几头纽特工人走到那些家伙的面前，动作非常整齐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来如果能把[%dic:STR_DIC_M_NeutL2_32_An]除掉的话，纽特工人的问题就能自然而然地解决。</p>
+          <p> </p>
+          <p>所以，您能帮我去把纽特探索兵清除掉吗？</p>
+          <p> </p>
+          <p>要解决问题的话，釜底抽薪是最快的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃拉库斯沙漠里到处都是纽特，寻找起来应该并不困难。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_NeutL2_32_An]就混在纽特工人中间。</p>
+          <p> </p>
+          <p>请您除掉5头左右就可以了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来清除纽特工人就很困难吧。</p>
+          <p> </p>
+          <p>它们都是些很厉害的家伙，和它们战斗应该很不容易。</p>
+          <p> </p>
+          <p>这样的话，看来得让军团士兵去做了。</p>
+          <p> </p>
+          <p>虽然大家都很忙，很难抽出时间，不过怎么都得想办法调整一下时间，派人去把纽特除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦，比我想象得快多了。</p>
+          <p> </p>
+          <p>看来清除纽特探索兵的任务并没有什么困难嘛。</p>
+          <p> </p>
+          <p>这段时间我也继续进行了调查，寻找解决纽特问题的线索。</p>
+          <p> </p>
+          <p>不管怎样，5头全都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，任务完成得很出色。</p>
+          <p> </p>
+          <p>纽特工人没有了指挥，一定会彷徨一段时间。</p>
+          <p> </p>
+          <p>现在争取到了时间，必须尽快找到完全消灭它们的对策。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉操纵纽特工人的[%dic:STR_DIC_M_NeutL2_32_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Trillian]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去除掉操纵纽特工人的纽特探索兵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特里利安发现纽特工人受到纽特探索兵的操纵。</p>
+          <p> </p>
+          <p>于是按照他的拜托，除掉了纽特探索兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我先给你说明一下深渊残骸的情况吧。</p>
+          <p> </p>
+          <p>连接深渊残骸的通道其实是龙族建造的。要塞被夺走之后，龙族的残党好像至今还留在那里。</p>
+          <p> </p>
+          <p>龙族正在深渊入口和守护那里的生命体战斗。</p>
+          <p> </p>
+          <p>因此调查队无法进入深渊残骸内部进行侦察。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过调查队并没有束手待毙。</p>
+          <p> </p>
+          <p>他们想办法潜入了里面，但是越往里面走，敌人就越强，因此无法到达最里面。</p>
+          <p> </p>
+          <p>[%username]，我想让你做的，就是把那些很强的家伙消灭掉。</p>
+          <p> </p>
+          <p>其他人我不太清楚，但是[%username]你一定可以做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>侦察受到妨碍的地方，叫做卡鲁巴巢穴。</p>
+          <p> </p>
+          <p>那里有个名叫[%dic:STR_DIC_M_IDAbRe_Core_Boss_Octaside_Kn_55_Al]的巨大蜘蛛把守着，因此我们无法通过那里。</p>
+          <p> </p>
+          <p>因为卡鲁巴喷出来的蛛丝，经常会把我们变成巨大的茧。</p>
+          <p> </p>
+          <p>请你消灭掉它，看看深渊残骸深处到底有什么东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听完了我的说明，你却不愿意到深渊残骸去吗？</p>
+          <p> </p>
+          <p>也是，每个人都有自己的难处。</p>
+          <p> </p>
+          <p>我还以为你来了之后，我们就会轻松很多呢。看来不是的。</p>
+          <p> </p>
+          <p>再等等的话，应该会有人来帮助我们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到你安然无恙，我就放心了。</p>
+          <p> </p>
+          <p>对了，你把第四块碎片卡鲁巴消灭掉了吗？</p>
+          <p> </p>
+          <p>进入深渊残骸深处了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来卡鲁巴巢穴后面，并不是深渊残骸的尽头啊。</p>
+          <p> </p>
+          <p>看来要想解开深渊残骸中隐藏的谜团，还有很长的一段路要走。</p>
+          <p> </p>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>如果今后你能继续帮我，就更感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDAbRe_Core_Boss_Octaside_Kn_55_Al]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">格沃尔说由于第四块碎片卡鲁巴的阻挡，无法解开深渊残骸中埋藏的秘密。消灭卡鲁巴，看看卡鲁巴巢穴后面到底有什么吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格沃尔说想知道深渊残骸深处到底有什么东西，但是由于第四块碎片卡鲁巴的阻挡，无法继续前进。</p>
+          <p> </p>
+          <p>于是消灭了卡鲁巴，发现后面是混沌入口和明暗圆盘。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

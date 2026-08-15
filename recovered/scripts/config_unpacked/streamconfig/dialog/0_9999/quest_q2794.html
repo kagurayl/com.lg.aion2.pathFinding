@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您对拉米兰要塞感觉满意吗？</p>
+          <p> </p>
+          <p>虽然还不是完美的状态，但是比呆在外面总要好得多。</p>
+          <p> </p>
+          <p>为了现在的这份安宁，我想拜托您一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去把退却的天族残党清除掉。他们现在应该在要塞外面的什么地方露营。</p>
+          <p> </p>
+          <p>请您过去，把守卫[%dic:STR_DIC_N_Monerva]、[%dic:STR_DIC_N_Metis]、[%dic:STR_DIC_N_Baucis]、[%dic:STR_DIC_N_Belus]和[%dic:STR_DIC_N_Sarpedon]清除掉，并把神庙的纹章带回来作为证据。</p>
+          <p> </p>
+          <p>他们总是习惯把[%dic:STR_DIC_I_QUEST_2794a]别在衣服或者身体的某个地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您绝对不能太小看他们。</p>
+          <p> </p>
+          <p>因为之前发现他们正在建造天族守护塔。</p>
+          <p> </p>
+          <p>如果觉得敌人的数量很少就大意了的话，很可能会吃不了兜着走的。</p>
+          <p> </p>
+          <p>那就请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>逃跑也不失为一种策略。</p>
+          <p> </p>
+          <p>害怕失败的话，现在放弃也是一种明智的选择。</p>
+          <p> </p>
+          <p>这是您自己做出的选择，我也不会再强求您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务成功完成了吗？</p>
+          <p> </p>
+          <p>您应该不会被天族的残兵败将给打败吧？</p>
+          <p> </p>
+          <p>好了，希望您能告诉我好消息。您把[%dic:STR_DIC_I_QUEST_2794a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神庙的纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神庙的纹章的数量不对啊。</p>
+          <p> </p>
+          <p>证据虽然只是一种形式，但是要我给您奖赏的话，就必须要有证据。</p>
+          <p> </p>
+          <p>您说证据丢了，我们又怎么能知道是不是事实呢？</p>
+          <p> </p>
+          <p>所以麻烦您再去一趟吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们的反抗一定很激烈吧。真是辛苦您了。</p>
+          <p> </p>
+          <p>请您收下。这是这次事情的报酬。</p>
+          <p> </p>
+          <p>希望对你今后的战斗有帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除天族的守卫，搜集[%dic:STR_DIC_I_QUEST_2794a]，然后交给[%dic:STR_DIC_N_Ab1_1241_Quest_Da]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清除驻扎在拉米兰要塞外面的守卫米内尔巴、美提斯、巴乌奇斯、贝洛斯和沙尔佩顿，然后把神庙的纹章作为证据交给德西提内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德西提内说为了要塞的安全，让我去把驻扎在要塞外面的守卫清除掉。</p>
+          <p> </p>
+          <p>于是按照她的指示，清除掉了守卫米内尔巴、美提斯、巴乌奇斯、贝洛斯和沙尔佩顿，并把搜集到的神庙的纹章交给了她。她说辛苦了，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（大口喘气。）</p>
+          <p> </p>
+          <p>（捂着胸部，看上去非常痛苦。）</p>
+          <p> </p>
+          <p>啊啊啊...</p>
+          <p> </p>
+          <p>没...没力气了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">喂，醒醒吧！</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喘...喘不上气...</p>
+          <p> </p>
+          <p>口...口渴...</p>
+          <p> </p>
+          <p>请...给我...葡萄酒...</p>
+          <p> </p>
+          <p>啊...[%dic:STR_DIC_N_Paeru]...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否认识帕埃鲁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Paeru]...</p>
+          <p> </p>
+          <p>我的...我可怜的孩子...</p>
+          <p> </p>
+          <p>葡萄酒...只要能喝到一口...我...</p>
+          <p> </p>
+          <p>有...有葡萄酒...就...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮他喝一口葡萄酒。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（费劲地喝着葡萄酒。）</p>
+          <p> </p>
+          <p>谢...谢谢...多亏了你...好了很多...</p>
+          <p> </p>
+          <p>不过...你认识我家的...帕埃鲁？</p>
+          <p> </p>
+          <p>那么我想拜托你件事...把这封信...交给[%dic:STR_DIC_N_Paeru]...</p>
+          <p> </p>
+          <p>（费劲地将信递过来后，晕倒了。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊...</p>
+          <p> </p>
+          <p>求...求你...给我...葡萄酒...</p>
+          <p> </p>
+          <p>帕...帕埃鲁...爸爸要...</p>
+          <p> </p>
+          <p>（不说话了。）</p>
+          <p> </p>
+          <p>（好像是晕倒了。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎...好担心啊。</p>
+          <p> </p>
+          <p>爸爸出去也有一段时间了，到现在还是没有任何消息。</p>
+          <p> </p>
+          <p>马尼百夫长大人已经说过要帮我找，可也没有什么发现...</p>
+          <p> </p>
+          <p>我的爸爸...平安吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将斯泰因的信交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是爸爸写的信吗？</p>
+          <p> </p>
+          <p>（快速阅读信件。）</p>
+          <p> </p>
+          <p>呜呜，该怎么办！爸爸好像很危险。</p>
+          <p> </p>
+          <p>这件事要赶紧让马尼百夫长大人知道。</p>
+          <p> </p>
+          <p>爸爸，你一定要平安啊...爸爸，爸爸！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将斯泰因的信送给[%dic:STR_DIC_N_Paeru]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">被革命团俘虏的斯泰因非常痛苦，希望能把书信转交给他的儿子。帮助他把信交给帕埃鲁。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿尔奎米亚研究所救出一个被关在试验管里的人。那个人表示非常难受，想喝一口葡萄酒。</p>
+          <p> </p>
+          <p>喝完葡萄酒后，有了一点精神的男子恳求将信送到他的儿子帕埃鲁那，然后便失去了意识。</p>
+          <p> </p>
+          <p>遵照他的委托，将信交给了帕埃鲁。帕埃鲁称他的父亲非常危险，得赶紧把此事告诉马尼百夫长大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

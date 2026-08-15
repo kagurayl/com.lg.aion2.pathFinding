@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>为了维护永恒之塔的尊严，守护亚特雷亚的结界，我们需要更多人的帮助。</p>
+          <p> </p>
+          <p>为了对抗对布鲁斯特豪宁的结界虎视眈眈的敌对势力，我们决定从执政官百夫长那里获取情报。</p>
+          <p> </p>
+          <p>从现在的情况看，[%username]你是守护团中最合适的人选。看到本文件后，请立即开始行动。</p>
+          <p> </p>
+          <p>请秘密和[%dic:STR_DIC_N_Vinduer]接触，将他的话转告给[%dic:STR_DIC_E_45014]。</p>
+          <p> </p>
+          <p>传话的内容是绝密事项，希望你能注意保密。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有时间吗？</p>
+          <p> </p>
+          <p>如果您能帮布鲁斯特豪宁办事，我将不胜感谢。</p>
+          <p> </p>
+          <p>我们虽然努力了很久，但布鲁斯特豪宁的开拓工作仍然举步维艰。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问需要转达的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>开拓地那边还很安静。</p>
+          <p> </p>
+          <p>天族也不再出现，不死族也没有了大的举动。</p>
+          <p> </p>          
+          <p>(低声说)但是阿德玛城寨那边好像有点问题。</p>
+          <p> </p>
+          <p>详细的事情我会直接转告他们，请您先回去把我的话告诉布鲁斯特豪宁支部团员。</p>
+          <p> </p>
+          <p>我相信守护团的人一定会帮助我们的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里是个非常忙碌的地方。</p>
+          <p> </p>
+          <p>除了开拓的事情之外，来往的人也很多，因此有很多人和人之间的问题……</p>
+          <p> </p>
+          <p>大家都忙着做自己的事，连说话的时间都没有！</p>
+          <p> </p>
+          <p>对了，您来找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达听到的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>宾图埃尔大人是这么说的？</p>
+          <p> </p>
+          <p>直接来告诉我虽然不错，但是我们必须按照接到的信的指示执行，这是我们的规则。</p>
+          <p> </p>
+          <p>[%username]大人告诉我的话，我会妥善处理的。</p>
+          <p> </p>
+          <p>辛苦您了。这是守护团为您准备的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Vinduer]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_45014]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，让我去见见协助守护团执行任务的执政官百夫长，获取情报。</p>
+          <p> </p>
+          <p>见到了宾图埃尔，获得情报之后，告诉了布鲁斯特豪宁支部的职员。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

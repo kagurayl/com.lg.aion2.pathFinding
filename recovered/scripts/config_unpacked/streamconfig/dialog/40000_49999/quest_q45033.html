@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷帕尔革命团是结界守护团的敌人。</p>
+          <p> </p>
+          <p>他们几次试图破坏结界，但我们都用自己的机智阻止了他们。</p>
+          <p> </p>
+          <p>为了让他们不能再对我们的目的构成威胁，无数的同志们都在努力战斗。</p>
+          <p> </p>
+          <p>为了向同志们提供帮助，现在需要筹集武器补给所需的采集物。</p>
+          <p> </p>
+          <p>请搜集[%dic:STR_DIC_G_QUEST_45033_a]和[%dic:STR_DIC_G_QUEST_45033_b]，然后交给[%dic:STR_DIC_N_Columba]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝鲁斯兰要塞除了奥德碎片问题之外，革命团也是很让人头疼的问题。</p>
+          <p> </p>
+          <p>他们在各个地方都造成了不少问题，尤其是威胁到结界的事情，是我们无法容忍的。</p>
+          <p> </p>
+          <p>有很多同志们都在对付他们，但他们的人数实在太多了。</p>
+          <p> </p>
+          <p>我正在筹集武器支援用采集物，您拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出采集物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>白柳树可以用来制作剑鞘或把手，亚德曼金属可以用来制造剑身。</p>
+          <p> </p>
+          <p>特别是为了对付雷帕尔革命团那样敏捷的家伙，需要很多的短剑。</p>
+          <p> </p>
+          <p>为了支援正在和结界守护团的宿敌雷帕尔革命团战斗的同志们，请您去搜集[%dic:STR_DIC_G_QUEST_45033_a]和[%dic:STR_DIC_G_QUEST_45033_b]，然后交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的采集功夫很不错嘛。这些白柳树和亚德曼金属矿石，结界守护团会好好使用的。</p>
+          <p> </p>
+          <p>结界守护团还需要更多的武器。为了有足够的武器用于补给，希望您能每天都来执行任务。</p>
+          <p> </p>
+          <p>请收下这个证物。明天见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45033_a]和[%dic:STR_DIC_G_QUEST_45033_b]，然后交给[%dic:STR_DIC_N_Columba]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了写有结界守护团指令的信，内容是需要用于补给的白柳树和亚德曼金属矿石。</p>
+          <p> </p>
+          <p>搜集到了信中所说的采集物，交给了库尔伦巴，他把证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在只要把白金矿石送到极乐世界去就行了。</p>
+          <p> </p>
+          <p>哈，不过这可怎么办？当初我想让和风特急邮件送过去的，但是钱都被我花光了...</p>
+          <p> </p>
+          <p>因为除了白金矿石，还需要亚德曼金属。</p>
+          <p> </p>
+          <p>因为在这附近很难找到，所以就拜托要塞的交易中介人帮着购买。不过价钱比预想得贵得多，所以把钱花光了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您能帮忙帮到底吗？</p>
+          <p> </p>
+          <p>请您去极乐世界帮我把这个包裹交给[%dic:STR_DIC_N_Vulcanus]大人吧。</p>
+          <p> </p>
+          <p>我催了他好几次，要是送晚了的话，他也许会发火的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地答应我。</p>
+          <p> </p>
+          <p>您只要把它交给极乐世界的金属盔甲制作名人[%dic:STR_DIC_N_Vulcanus]大人就行了。</p>
+          <p> </p>
+          <p>他应该会按照约定马上帮我做的。想到马上就能收到盔甲，我的心就踏实一点了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人好不容易帮我找到了白金矿石，但却没有办法送到极乐世界去，真让人失望。</p>
+          <p> </p>
+          <p>想要叫和风特急邮件，眼下也没有可以弄到钱的方法...</p>
+          <p> </p>
+          <p>虽然有点不知廉耻，但是如果您有事要去极乐世界的话，请您顺便来找我。只有您能帮我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人都觉得当上了名人之后就出人头地了。</p>
+          <p> </p>
+          <p>谁知道我还要准备上贡的东西、送往欧比斯的东西，以及个人定做的东西，真的是一点休息的时间都没有。</p>
+          <p> </p>
+          <p>如果是为了出人头地而成为名人，保证不出三天就会后悔的。没有使命感的话，是做不来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出塔尼斯的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，埃尔特内的灵魂治愈师送来的东西吧。</p>
+          <p> </p>
+          <p>他催得我太紧，我就让他把材料送来，居然真的送来了。</p>
+          <p> </p>
+          <p>这么想要盔甲的话，我也就不好意思再推了。我马上就开始制作。</p>
+          <p> </p>
+          <p>谢谢你把材料送到这里，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把制作盔甲的材料交给[%dic:STR_DIC_N_Vulcanus]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定把制作塔尼亚定做的金属盔甲所需的材料交给布尔卡奴斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔尼斯说需要把白金矿石送到极乐世界去，但是没有钱叫和风特急邮件，他为此很忧心。</p>
+          <p> </p>
+          <p>于是帮他去极乐世界，把制作金属盔甲的材料交给了布尔卡奴斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

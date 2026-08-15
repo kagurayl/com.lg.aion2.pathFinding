@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_quest">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(似乎是进入帕休曼迪尔寺院的门。) </p>
+        </body>
+        </html>
+    </Contents>
+    <npcfuncs>
+      <instance_entry>进入帕休曼迪尔寺院</instance_entry>
+    </npcfuncs>  
+  </HtmlPage>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(出现两条岔路。) </p>
+          <p> </p>
+          <p>(一边是顺畅安全的道路，一边是危险艰难的道路。) </p>
+          <p> </p>
+          <p>(似乎得决定从哪条路走。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_select_none_1">选择顺畅安全的道路。</Act>
+      <Act href="HACTION_select_none_2">选择危险艰难的道路。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(似乎是进入帕休曼迪尔寺院的门。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="no_right">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(没有任何反应。)</p>
+          <p> </p>
+          <p>(似乎得具备特殊资格才能进入。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。 </Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

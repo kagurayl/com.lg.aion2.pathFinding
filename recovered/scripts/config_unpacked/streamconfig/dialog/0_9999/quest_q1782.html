@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里的[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]和天界的火之精灵不同。</p>
+          <p> </p>
+          <p>它们喷出的并不是纯粹的自然的气息，而是堕落的气息。性子也非常暴躁。</p>
+          <p> </p>
+          <p>嗯，也许是受到了巨神兵的残骸的影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有关巨神兵的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，在那个中央的巨大的构造物就是巨神兵。是古代城市娄的人们创造的。</p>
+          <p> </p>
+          <p>虽然不能动弹已经很久了，但是他所具有的力量还残留着，对周围造成了不良的影响。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]就是代表性的例子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅内拉乌斯百夫长说它们对战斗造成了妨碍，让我想办法把[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]处理一下。但是做起来哪有说的那么容易啊？</p>
+          <p> </p>
+          <p>但对付它们的话，就会受到龙族或者纽特的攻击，我快要疯了。</p>
+          <p> </p>
+          <p>所以我正在头疼应该怎么办呢。也许是主神的眷顾，把[%username]大人给我派了过来。</p>
+          <p> </p>
+          <p>请您一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您只要帮我把周围的[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]除掉10个左右就可以了。怎么样，不难吧？</p>
+          <p> </p>
+          <p>如果您能快一点的话，那就更好了！</p>
+          <p> </p>
+          <p>完成任务之后，请您跟我说一声。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，没想到您会拒绝我...</p>
+          <p> </p>
+          <p>您是在忙别的事情吗？是要和魔族进行战斗吗？</p>
+          <p> </p>
+          <p>[%username]大人只要稍微帮帮我就行了。实在太过分了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]全都除掉了吗？</p>
+          <p> </p>
+          <p>刚才梅内拉乌斯百夫长大人来过了。</p>
+          <p> </p>
+          <p>质问我到底什么时候才能把任务完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇，真是辛苦您了！</p>
+          <p> </p>
+          <p>这么快就帮我除掉了，我得赶紧向梅内拉乌斯百夫长大人报告才行。</p>
+          <p> </p>
+          <p>啊，您知道吧？这次的事情一定要跟百夫长大人保密哦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除妨碍天族战斗的[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Myrrha]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">黑色火花精灵对守卫克罗坦岛的守卫们的任务造成了妨碍。帮助米拉去把黑色火花精灵清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米拉说因为巨神兵的影响而变得暴躁的黑色火花精灵对战斗造成了妨碍，让我帮她完成清除精灵的任务。</p>
+          <p> </p>
+          <p>清除了在克罗坦岛游荡的黑色火花精灵之后回去找到了她，她非常高兴，叮嘱我要对其他人保密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

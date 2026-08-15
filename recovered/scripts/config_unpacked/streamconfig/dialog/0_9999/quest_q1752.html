@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>喂，[%username]，你现在有别的事吗？</p>
+       <p> </p>
+       <p>如果没什么事的话，希望你能先来帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我除掉一些[%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An]和[%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]。因为它们，我很难搜集到研究标本。</p>
+          <p> </p> 
+          <p>如果只是一两头的话，我自己想办法就可以。但是它们的数量实在太多了。</p>  
+          <p> </p> 
+          <p>你既然能帮我搜集到研究标本，对付它们应该是轻而易举。</p>
+          <p> </p>
+          <p>怎么样？你想试试吗？</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我知道你会答应的。</p>
+          <p> </p>
+          <p>请你马上过去，帮我把[%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An]和[%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]清除掉。</p>
+          <p> </p>
+          <p>各清除掉6头和14头左右的话，应该会很有帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我好不容易遇到一个有实力的人，我正高兴呢...</p>
+          <p> </p>
+          <p>难道是因为我刚开始太无礼了？</p>
+         <p> </p>
+         <p>那样的话，我在这里对你郑重地道歉，请你再考虑一下吧。</p>
+         <p> </p>
+         <p>如果你能帮我的话，我会给你相当的谢礼的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次又一眨眼的功夫就回来啦。</p>  
+         <p> </p>
+         <p>你把枯萎的根之侦察兽和怪声之树木监视者全都清除了吗？</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是谢谢你。</p>
+          <p> </p>          
+          <p>这下进行研究就方便多了。</p>   
+          <p> </p>   
+          <p>多亏了[%username]大人，枯萎的根侦察兽和怪声之树木监视者的数量大大减少了。但是一次很难把它们清除干净，希望今后你能继续来帮我。</p>
+          <p> </p>  
+          <p>当然那时候还会有报酬。</p>               
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除根之侦察兽和树木监视者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]([%5]/14)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Nemea]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">内梅亚说因为根之侦察兽和树木监视者，研究受到了很多阻碍。为了让内梅亚可以安心研究，帮她把粗糙的树人清除掉吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内梅亚说根之侦察兽和树木监视者一直在妨碍自己研究，让我顺便帮她把枯萎的根之侦察兽和怪声之树木监视者清除掉。</p>
+          <p> </p> 
+          <p>按照她的拜托，扫荡了根之侦察兽和树木监视者，然后回去找到了她。她对我表示感谢，说辛苦了。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

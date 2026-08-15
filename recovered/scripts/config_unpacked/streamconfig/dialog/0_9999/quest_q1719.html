@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从沙克密斯那里听说了你的战绩。听说你出色地消灭了魔军士兵。</p>
+          <p> </p>
+          <p>所以我想交给你一项比较困难的任务。就是对付魔军中名声比较高的人。</p>
+          <p> </p>
+          <p>你知道什么是名声吗？那就是杀死我们天军后获得的名声。</p>
+          <p> </p>
+          <p>我并不是让你一开始就去对付魔军中最厉害的人。</p>
+          <p> </p>
+          <p>我想先从魔军将校开始会比较好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔军将校有分很多级。分别是从1星将校到5星将校。</p>
+          <p> </p>
+          <p>5星将校要比1星将校更难对付。具体选择什么对象是你的自由。</p>
+          <p> </p>
+          <p>但是你不要去管他们的级别。只要把魔军将校打倒就行。当然，如果你能打倒更高级别的人更好。</p>
+          <p> </p>
+          <p>你愿意执行清除魔军将校的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔军将校们在埃雷修兰塔横行，很可能使天军士兵遇到危险。</p>
+          <p> </p>
+          <p>也有可能让埃雷修兰塔的局势倒向魔军一边。</p>
+          <p> </p>
+          <p>请你遇到魔军将校之后，见一个就除掉一个。</p>
+          <p> </p>
+          <p>魔军将军或者司令官都没关系。只要你能对付得了。</p>
+          <p> </p>
+          <p>对了，他们不会单独行动，因此你一定要和同伴一起去。那样会比较安全。</p>
+          <p> </p>
+          <p>但是，消灭实力比自己差的家伙对我们没有任何帮助。</p>
+          <p> </p>
+          <p>所以一定要消灭和自己实力相当的魔军将校。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子你还没有足够的自信。</p>
+          <p> </p>
+          <p>但是你也成长了很多。</p>
+          <p> </p>
+          <p>你要太小看自己的实力。现在到了你更上一层楼的时候了，不是吗？</p>
+          <p> </p>
+          <p>等你有了自信之后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的表情很意气风发啊，[%username]。</p>
+          <p> </p>
+          <p>看来我交给你的任务已经完成了吧？</p>
+          <p> </p>
+          <p>你把魔军将校全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，干得很不错！</p>
+          <p> </p>
+          <p>看来我对你的信任没有白费！</p>
+          <p> </p>
+          <p>而且我一眼就能感觉到，你在对付魔军将校的过程中，实力有了质的飞跃，[%username]。</p>
+          <p> </p>
+          <p>你能以这种速度成长，相信今后一定会成为天军的栋梁。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade00]%战斗并获胜([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Taranis]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔拉尼斯说为了削弱天族在欧比斯的势力，让我去清除魔军将校。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔拉尼斯说之前清除天军士兵的工作做得很好，现在到了更上一层楼的时候。</p>
+          <p> </p>
+          <p>于是按照他的命令，和威胁天族的魔军将校展开战斗。</p>
+          <p> </p>
+          <p>打倒10名魔军将校后回去向塔拉尼斯报告，他说一眼就能看到我在战斗中取得了快速的成长。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

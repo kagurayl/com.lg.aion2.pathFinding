@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近天气转凉，原来的衣服都旧了，得置办些新衣服了。</p>
+          <p> </p>
+          <p>要想抵御寒冷得要皮制衣服，可最近没法出去打猎，真难办啊。</p>
+          <p> </p>
+          <p>棕熊幼崽的毛皮倒是挺合适。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我没法去打猎，但[%username]大人是守护者，应该没关系吧？</p>
+          <p> </p>
+          <p>您能帮我弄些棕熊皮来吗？</p>
+          <p> </p>
+          <p>棕熊妈妈总是在幼崽身边，抓起来很难。不过对[%username]您来说不成问题。</p>
+          <p> </p>
+          <p>一定会好好报答您的。</p>
+          <p> </p>
+          <p>怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我。</p>
+          <p> </p>
+          <p>在巴斯佩尔特猎场有很多棕熊。</p>
+          <p> </p>
+          <p>一定要[%dic:STR_DIC_I_quest_2224a]才行。有6张就可以做衣服了。</p>
+          <p> </p>
+          <p>一定要小心旁边的棕熊妈妈。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，现在大家都为棕熊和雷帕尔革命团苦恼，哪还有心思管衣服之类的呢。</p>
+          <p> </p>
+          <p>我也真是傻呢。</p>
+          <p> </p>
+          <p>衣服去找伯古鲁特就可以了，不必费心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您都已经从猎场回来了？</p>
+          <p> </p>
+          <p>棕熊挺难缠的呢。</p>
+          <p> </p>
+          <p>跟您说的6张[%dic:STR_DIC_I_quest_2224a]拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出毛皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天啊，您好没有拿到棕熊幼崽的皮啊？</p>
+          <p> </p>
+          <p>还以为您已经拿到了呢。</p>
+          <p> </p>
+          <p>我知道您很忙，不过能不能快一点呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样就能做出好衣服了。</p>
+          <p> </p>
+          <p>托您的福，可以过一个暖暖的冬天了。</p>
+          <p> </p>
+          <p>谢谢您帮助了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_quest_2224a]交给[%dic:STR_DIC_N_Lamir]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">拉米尔的衣服旧了，为拉米尔找到棕熊幼崽的毛皮。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天气变冷，但拉米尔的衣服都旧了，他很担心。受他所托，捕捉棕熊幼崽，搜集毛皮并交给了拉米尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

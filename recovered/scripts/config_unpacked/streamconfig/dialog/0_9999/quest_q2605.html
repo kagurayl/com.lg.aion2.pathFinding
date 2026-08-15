@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，上次你帮我去调查的那个小屋。</p>
+          <p> </p>
+          <p>那里躲藏着一个逃跑的革命团员吗？</p>
+          <p> </p>
+          <p>想来想去，要是他呆在那儿的话，人们会因此很不安。</p>
+          <p> </p>
+          <p>如果人们看到他是革命团员，一定会很害怕，谁会想到他是逃出来的啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你能再去那里一次吗？</p>
+          <p> </p>
+          <p>要是逃跑的革命团员已经走了的话就好了，如果他还在那儿的话，你能帮我劝他离开那里吗？</p>
+          <p> </p>
+          <p>他不躲在其他地方，偏偏躲在那个地方，一定是有什么原因的。</p>
+          <p> </p>
+          <p>你去问问是什么原因，帮他解决问题，那个名叫弗雷奇的人应该就会离开那里了。</p>
+          <p> </p>
+          <p>那样的话，居民们也不会因为革命团员而害怕了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你答应又帮我大老远跑一趟。</p>
+          <p> </p>
+          <p>请你去确认逃跑的革命团员是否还在那里。</p>
+          <p> </p>
+          <p>如果还在那里的话，请你让他离开。说服他也好，帮他也好，不管用什么方法，都必须让他走。</p>
+          <p> </p>
+          <p>革命团员走了的话，居民们就安心了，让人们感到不安的传闻也会因此停歇。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能因为很远，就觉得没事了。</p>
+          <p> </p>
+          <p>谣言这个东西，一旦流传起来就糟了。</p>
+          <p> </p>
+          <p>消除无根无据的传言，也是一项重要的工作。</p>
+          <p> </p>
+          <p>请你再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你不是上次来的那位守护者吗？</p>
+          <p> </p>
+          <p>我以为是革命团派人来抓我了，吓了我一跳。</p>
+          <p> </p>
+          <p>你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达格纳林的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，看来是因为我，在贝鲁斯兰出现了奇怪的传言啊。</p>
+          <p> </p>
+          <p>拜托了，你就说我不在这里了。</p>
+          <p> </p>
+          <p>但是有传言出现的话，就不太好了...</p>
+          <p> </p>
+          <p>如果我在这里的消息传到阿尔奎米亚城寨的话，我就会陷入危险的境地。</p>
+          <p> </p>
+          <p>嗯…不管怎样，必须把问题解决才行...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Freki]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">弗雷奇如果继续呆在悬崖上的小屋里的话，传言就不会消失。去劝说弗雷奇离开那个地方。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格纳林说只要弗雷奇留在悬崖上的小屋里，传言就不会消失。</p>
+          <p> </p>
+          <p>于是按照格纳林的拜托，去说服弗雷奇离开那个地方。</p>
+          <p> </p>
+          <p>弗雷奇说如果自己躲在这里的消息传到革命团的耳朵里，自己就会陷入危险。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

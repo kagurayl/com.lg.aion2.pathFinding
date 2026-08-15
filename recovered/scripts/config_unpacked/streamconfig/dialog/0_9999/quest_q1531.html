@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为死了之后就再也没有痛苦了。听说死亡是主神大人赐给普通人类的礼物。</p>
+          <p> </p>
+          <p>但是我做梦也没想到肉体会陷入这样求死不得的境地。</p>
+          <p> </p>
+          <p>现在我都想不起来自己是什么时候怎么死的。总是这样围着亚特雷亚转。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我被[%dic:STR_DIC_M_TrollRE_34_An]弄得非常痛苦。</p>
+          <p> </p>
+          <p>现在一看到像我这样的阿努拜特，他就会疯了一样跑过来，抡起拳头就打。</p>
+          <p> </p>
+          <p>有的时候我也会迷迷糊糊地失去意识，可如果打起精神来，就又回复到这般模样来。</p>
+          <p> </p>
+          <p>死了之后我不想再这么痛苦了。求求您，把特洛尔消灭了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然有刀，可是那对于特洛尔一点用也没有。</p>
+          <p> </p>
+          <p>自己对他没有任何防护能力。</p>
+          <p> </p>
+          <p>求求您可怜可怜我，消灭了[%dic:STR_DIC_M_TrollRE_34_An]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是因为我已经死了，您就觉得没必要帮助我了呢？</p>
+          <p> </p>
+          <p>我原来也是因特尔蒂卡的居民。</p>
+          <p> </p>
+          <p>就请您可怜可怜我这求死不能的人吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能和人说话，偶尔也会有些想法，不是所有人都能像我一样的。</p>
+          <p> </p>
+          <p>突然碰到我们一语不发就挥刀乱砍的人不在少数。</p>
+          <p> </p>
+          <p>我好害怕自己也遇上这样的情况。</p>
+          <p> </p>
+          <p>您是否消灭了特洛尔呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说消灭了特洛尔。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，太走运了！</p>
+          <p> </p>
+          <p>现在再也不会被特洛尔欺负了。</p>
+          <p> </p>
+          <p>我这段时间向很多人请求过帮助，但是肯仔细倾听的只有您一个。</p>
+          <p> </p>
+          <p>真是谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭欺负康盖斯的[%dic:STR_DIC_M_TrollRE_34_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_LF3_GraveKnight]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">被诅咒的康盖斯说被托洛尔欺负。为了康盖斯消灭托洛尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被诅咒的康盖斯说被托洛尔欺负，感叹其求死不得的处境。</p>
+          <p> </p>
+          <p>你消灭了托洛尔，他很感谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

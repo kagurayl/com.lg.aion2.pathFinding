@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人真是贪心不足，本来觉得能有5个[%dic:STR_DIC_I_QUEST_1610a]用来做实验就已经很好了。但到手之后，就又有了更大的欲望。</p>
+          <p> </p>
+          <p>我想了想，5个结晶应该还不够用来进行实验。</p>
+          <p> </p>
+          <p>检查结晶的成分需要三个，和其他精灵的结晶进行比较需要……</p>
+          <p> </p>
+          <p>嗯，至少需要五个来进行比较。要想知道是哪种成分阻断了奥德的影响，需要的数量就更无法估计了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，您能再帮我去搜集一些大地之结晶吗？</p>
+          <p> </p>
+          <p>既然开始了研究，我希望能得出一些准确的结果。</p>
+          <p> </p>
+          <p>啊，当然我会报答你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。请您快去帮我搜集[%dic:STR_DIC_I_QUEST_1610a]吧。</p>
+          <p> </p>
+          <p>如果要勇于研究，至少需要5个。</p>
+          <p> </p>
+          <p>对了，一定要捕捉革命团研究基地附近的[%dic:STR_DIC_M_ElementalEarth3_40_An]和[%dic:STR_DIC_M_ElementalEarth4_40_An]才行。</p>
+          <p> </p>
+          <p>其他地区的精灵即使捕到了也没有用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是有急事啊。</p>
+          <p> </p>
+          <p>也是，您一定因为次元之门忙得不可开交吧。</p>
+          <p> </p>
+          <p>除了地之精灵之外，还有很多可以研究的东西，这次的实验就暂时往后放吧。</p>
+          <p> </p>
+          <p>不好意思，打扰您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>有了这么多的话，应该就可以测定成分了……</p>
+          <p> </p>
+          <p>啊，您回来啦？我让您搜集的[%dic:STR_DIC_I_QUEST_1610a]怎么样了？</p>
+          <p> </p>
+          <p>如果带回来了的话，我想看看它的状态。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出大地之结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您该不会不知道大地之结晶只能从[%dic:STR_DIC_M_ElementalEarth3_40_An]和[%dic:STR_DIC_M_ElementalEarth4_40_An]身上搜集到吧？</p>
+          <p> </p>
+          <p>还是你改变主意了？不行的话就早说啊。现在才说，让我怎么办啊？</p>
+          <p> </p>
+          <p>我相信您一定可以帮我搜集到5个大地之结晶，所以之前的结晶我已经全部用来做成分分析了。</p>
+          <p> </p>
+          <p>请您按照约定，帮我去搜集5个[%dic:STR_DIC_I_QUEST_1610a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看结晶)上次的结晶状态也还不错，不过这次的好像更好。</p>
+          <p> </p>
+          <p>啊，想到可以用它来进行研究，我就心情激动。[%username]，这全都是托您的福。</p>
+          <p> </p>
+          <p>来，请收下。这是我为您准备的报酬，希望您能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_ElementalEarth3_40_An]%和[%dic:STR_DIC_M_ElementalEarth4_40_An]然后把搜集到的结晶交给[%dic:STR_DIC_N_Kalione]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卡利奥内可以继续进行研究，去革命团研究基地附近消灭大地精灵和地之精灵，搜集大地之结晶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡利奥内说虽然得到了大地之结晶，但研究的兴致被调起来之后，希望能有更多的大地之结晶用于研究。</p>
+          <p> </p>
+          <p>按照卡利奥内的委托，消灭了革命团研究基地附近的精灵，把搜集到的大地之结晶交给了他，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

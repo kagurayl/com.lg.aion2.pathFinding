@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于情况很紧急，没有时间跟你进行详细的说明。我就简单地说一说，请你仔细听好了。</p>
+          <p> </p>
+          <p>德奇沙斯要塞是和克罗坦要塞、拉米兰要塞一起被称为埃雷修兰塔的眼睛的核心要地，所以不能看着它掌握在别人手里。</p>
+          <p> </p>
+          <p>我虽然很想展开总攻，但是上次战斗造成的损失还没有恢复，因此很难展开正面进攻。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了给总攻争取时间，我们这边会让执政官和守护者们渗透过去，展开游击战。</p>
+          <p> </p>
+          <p>但是我收到了报告，说察觉了这一事实的天族决定向要塞派遣精锐驻军。</p> 
+          <p> </p>
+          <p>精锐驻军要比普通驻军强得多，这样下去的话，局势就更危急了。</p>
+          <p> </p>
+          <p>幸运的是魔族的守护者们都聚集了起来，说要贡献自己的一份力量。怎么样？[%username]大人你也愿意和我们一起奋斗吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你这么爽快地答应我。</p>
+          <p> </p>
+          <p>你要做的事情，就是清除[%dic:STR_DIC_M_2814_all]，然后把[%dic:STR_DIC_I_QUEST_2814a]带回来。</p>
+          <p> </p>
+          <p>在天族占领德奇沙斯要塞的时候，请注意观察他们的动态。出现要塞可以占领的信号后，精锐驻军就会出现，你就可以去执行任务了。</p>
+          <p> </p>
+          <p>我们会趁这段时间对兵力进行整顿。希望你能顺利地完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近的守护者都是这样的吗？还是就你是这样呢？</p>
+          <p> </p>
+          <p>我知道了。你不是执政官，所以我也不能强迫你。</p>
+          <p> </p>
+          <p>不过，有一件事...请你好好地想一想，为什么这么多的守护者们要那么努力地战斗呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到报告，说在德奇沙斯要塞发生了战斗。</p>
+          <p> </p>
+          <p>[%username]，一定是你干的吧？</p>
+          <p> </p>
+          <p>我很想知道结果到底怎么样了。好了，把你带回来的[%dic:STR_DIC_I_QUEST_2814a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出精锐兵的纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是忘了把纹章拿回来了吗？</p>
+          <p> </p>
+          <p>你说自己除掉了几十个天族精锐驻军又有什么用？没有证据的话，就什么用都没有。</p>
+          <p> </p>
+          <p>所以，请你回去把[%dic:STR_DIC_I_QUEST_2814a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>报告的主人公果然是你。他说的天花乱坠的，我还以为是在吹牛呢。</p>
+          <p> </p>
+          <p>这下天族那帮家伙一定受到了教训。</p>
+          <p> </p>
+          <p>一定很累吧？你快去休息吧。真是太谢谢你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2814_all]，然后搜集证据交给[%dic:STR_DIC_N_Menglad]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了夺回德奇沙斯要塞，参加了游击战。清除要塞就进入可以占领状态时出现的天族精锐驻军，并搜集证据。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蒙哥拉德百夫长说他正在为夺回德奇沙斯要塞而展开游击战，邀请我一起参加。</p>
+          <p> </p>
+          <p>按照百夫长的指示去要塞除掉了天族精锐驻军，并把精锐兵的徽章作为证据带了回去。他大大地赞扬了我的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

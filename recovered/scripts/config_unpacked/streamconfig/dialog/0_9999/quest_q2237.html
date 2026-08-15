@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近很是担心啊。猎手们捕获的猎物越来越少，我的活也就越来越少了。</p>
+          <p> </p>
+          <p>要是只靠赚的那些钱，我们一家三口就无法糊口。</p>
+          <p> </p>
+          <p>所以我们只把种地当作副业，不过种地却比我想象的困难得多。</p>
+          <p> </p>
+          <p>撒下种已经很久了，可现在连芽都没发呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能还是土地太贫瘠了。要是能撒上些姆姆族的肥料会不会好些呢。</p>
+          <p> </p>
+          <p>姆克尔那些家伙好像在种植上很有天赋，再贫瘠的土地一经它们的手就马上能变肥沃。</p>
+          <p> </p>
+          <p>要是方便的话，您能不能到姆姆部落那里帮我找些[%dic:STR_DIC_I_quest_2237a]来呢？</p>
+          <p> </p>
+          <p>我对付死的东西倒是很在行，可活着的东西就没办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太谢谢您了，谢谢。</p>
+          <p> </p>
+          <p>那就拜托您找3个[%dic:STR_DIC_I_quest_2237a]。</p>
+          <p> </p>
+          <p>在姆姆部落有很多肥料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意吧？</p>
+          <p> </p>
+          <p>说的也是，让您这么高贵的守护者去[%dic:STR_DIC_I_quest_2237a]，是我太失礼了。</p>
+          <p> </p>
+          <p>看来种田肯定是不行了。只好跟着那些猎手们去打猎了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您从姆姆部落回来了？</p>
+          <p> </p>
+          <p>比我想象的要快啊。</p>
+          <p> </p>
+          <p>我拜托您的[%dic:STR_DIC_I_quest_2237a]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出肥料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您的诚意，可这些不够啊。</p>
+          <p> </p>
+          <p>必需要３袋才能有效果。</p>
+          <p> </p>
+          <p>真是不好意思，请您再帮我找一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您！</p>
+          <p> </p>
+          <p>要是撒了这个还不发芽，我就只好去学打猎了。</p>
+          <p> </p>
+          <p>还有，这个...虽少，但也是我的一点心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_2237a]%，然后交给[%dic:STR_DIC_N_Daike]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">把贫瘠的土地变肥沃需要姆姆族的肥料。到姆姆部落搜集肥料，然后交给戴克伊。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为能干的活减少了，戴克伊开始种田。但是由于土地贫瘠，连芽都发不出来。帮很沮丧的戴克伊到姆姆部落搜集到了肥料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭充满怨恨的伊努鲁斯的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。</p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_DF4_DaQ_AncientClan_ghost_Fi_52]</p>
+          <p></p>
+          <p> 2. 位置: 龙之垫脚石地区的瀑布中</p>
+          <p></p>
+          <p> 3. 详情: 掉进瀑布后淹死的鸢族的亡灵，引诱行人，使其掉入水中，造成了很大的伤害。已经准备好了招魂坛子，必须迅速将其消灭。</p>
+          <p> </p>
+          <p>使用[%dic:STR_DIC_OBJ_DF4_FOBJ_Q46505]消灭充满怨恨的伊努鲁斯，让龙之垫脚石恢复安全的人，可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体 [%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦。</p>
+          <p> </p>
+          <p>这次的事情进展顺利吗？那个水鬼……不，我是说充满怨恨的伊努鲁斯，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你顺利完成了委托，真是太好了。</p>
+          <p> </p>
+          <p>在水里勾引人的水鬼，而且还是男的……想想就让人害怕。</p>
+          <p> </p>
+          <p>给，这是委托费，请你收下，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用[%dic:STR_DIC_OBJ_DF4_FOBJ_Q46505]召唤并消灭[%dic:STR_DIC_M_DF4_DaQ_AncientClan_ghost_Fi_52]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭充满怨恨的伊努鲁斯的委托书。</p>
+          <p> </p>
+          <p>确认委托内容后，消灭了充满怨恨的伊努鲁斯。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

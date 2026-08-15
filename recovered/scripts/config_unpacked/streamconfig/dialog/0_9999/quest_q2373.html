@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火之神殿里有古代武器。</p>
+          <p> </p>
+          <p>那是阿克尼塔大人誓死保卫的东西。</p>
+          <p> </p>
+          <p>他虽然被关了起来，但是克罗梅内还在觊觎着古代武器。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须把[%dic:STR_DIC_I_QUEST_2373a]从[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2373]里拿出来。</p>
+          <p> </p>
+          <p>必须把它放在安全的地方，以防落入克罗梅内的手中。</p>
+          <p> </p>
+          <p>你能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2373]应该就在火之神殿的深处。</p>
+          <p> </p>
+          <p>那是装着古代武器的箱子。</p>
+          <p> </p>
+          <p>帮我找到[%dic:STR_DIC_I_QUEST_2373a]，然后带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古代武器如果落入克罗梅内的手中的话，也许她就可以从火之神殿中逃出来。</p>
+          <p> </p>
+          <p>如果克罗梅内逃了出来的话，魔界就会陷入混乱。</p>
+          <p> </p>
+          <p>必须在发生那样的事情之前，找到装着古代武器的箱子。</p>
+          <p> </p>
+          <p>你再好好考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_2373a]找到了吗？</p>
+          <p> </p>
+          <p>找到了的话，就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么还没拿来啊？</p>
+          <p> </p>
+          <p>我明明说过，那是很重要的东西。</p>
+          <p> </p>
+          <p>快去找到[%dic:STR_DIC_I_QUEST_2373a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。</p>
+          <p> </p>
+          <p>阿克尼塔长年的守护，总算还有意义。</p>
+          <p> </p>
+          <p>谢谢你。我不会忘记你对我的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2373]寻找武器，然后交给[%dic:STR_DIC_N_Bulagan]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说在火之神殿里，有一只装着古代兵器的陈旧的箱子。找到古代武器，然后交给布尔拉甘吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布尔拉甘说必须找到藏在火之神殿里的放着古代武器的箱子，防止武器落入克罗梅内的手中。</p>
+          <p> </p>
+          <p>于是去火之神殿找到了箱子里的武器，并把它交给了布尔拉甘。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(可能是很久没人用，斧柄有点滑。)</p>
+          <p> </p>
+          <p>(仔细察看了一下，斧柄的一端隐约有个“N”字。)</p>
+          <p> </p>
+          <p>(这个东西肯定是名字首字母为“N”的伐木工的，估计是纳姆斯丢失的。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把东西还给纳姆斯。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来这儿干嘛？</p>
+          <p> </p>
+          <p>没别的事情的话我去干活了。离完成今天的任务还差好远呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出斧柄。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这是…这不是我前些时候丢失的斧柄吗？</p>
+          <p> </p>
+          <p>斧柄刻着“N”字，是我的没错！</p>
+          <p> </p>
+          <p>谢谢。因为用了新的斧柄，手上磨起了水泡，我正在痛苦呢。</p>
+          <p> </p>
+         <p>虽然很少，但是却是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把斧柄送还给伐木工[%dic:STR_DIC_LA10]</font></p></step>
+                              
+    </steps>
+          <p><font font_xml="quest_summary">打猎的途中捡到了一个斧柄。仔细地察看了一下，好像是伐木工纳姆斯的东西。必须把斧柄送还给纳姆斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在克利奥尼湖打猎布拉斯的时候，捡到了一个斧柄。上面刻着字母“N”，应该是纳姆斯的东西。把斧柄交给纳姆斯后，他说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

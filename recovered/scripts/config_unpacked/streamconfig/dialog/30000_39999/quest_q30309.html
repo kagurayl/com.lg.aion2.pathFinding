@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我们知道了鲁德拉的身份，但封印鲁德拉的地方还是个谜。</p>
+          <p> </p>
+          <p>虽然我们知道是在帕休曼迪尔寺院。</p>
+          <p> </p>
+          <p>还好在[%username]大人上次从荒废的乌达斯神殿拿回来的龙信徒的古代文献中可以找到相关的内容。</p>
+          <p> </p>
+          <p>但是由于文件年代久远，有很多部分损坏了，所以没办法知道确切的信息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>交给伏魔殿的[%dic:STR_DIC_N_Gunter]大人的话，他应该可以帮着复原。</p>
+          <p> </p>
+          <p>他是亚特雷亚公认的最好的古书复原专家。</p>
+          <p> </p>
+          <p>虽然不知道要花多长时间，但昆泰尔大人一定可以帮着复原这本书。</p>
+          <p> </p>
+          <p>您能把龙信徒的古代文献给他送过去，拜托他进行复原吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也应该知道，[%dic:STR_DIC_N_Gunter]大人可以在伏魔殿的[%dic:STR_DIC_W_DC1_12]中见到。</p>
+          <p> </p>
+          <p>他就在知识会堂深处的秘密书库里。</p>
+          <p> </p>
+          <p>如果复原需要什么特殊的材料，希望[%username]大人能够帮着搜集。</p>
+          <p> </p>
+          <p>必须尽快把书复原，弄清楚鲁德拉的位置，想好应对措施才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在是非常重要的时刻。</p>
+          <p> </p>
+          <p>我们知道了鲁德拉的存在，现在必须弄清楚封印的位置才行。</p>
+          <p> </p>
+          <p>只有这样，我们才能消灭鲁德拉，或者采取别的措施。不是吗？</p>
+          <p> </p>
+          <p>如果您袖手旁观，格尔克马洛斯很可能又会落入龙族的手中。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有古书需要复原吧？</p>
+          <p> </p>
+          <p>请先把古书交给我吧。</p>
+          <p> </p>
+          <p>我得看看以我的能力能不能修复。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出龙信徒的古代文献。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这好像是非常古老的文件。非常非常古老。</p>
+          <p> </p>
+          <p>老实说，它的状态非常不好。</p>
+          <p> </p>
+          <p>要想复原，需要花费不少的功夫。</p>
+          <p> </p>
+          <p>不过我想应该可以复原，请不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去伏魔殿和[%dic:STR_DIC_N_Gunter]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把龙信徒的古代文献交给极乐世界的古书复原专家昆泰尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫尔卡说知道了鲁德拉的存在之后，必须找到封印的场所。</p>
+          <p> </p>
+          <p>他说只有对从荒废的乌达斯神殿找到的龙信徒的古代文献进行复原，才能知道这些。于是帮他把书交给了伏魔殿的古书复原专家昆泰尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

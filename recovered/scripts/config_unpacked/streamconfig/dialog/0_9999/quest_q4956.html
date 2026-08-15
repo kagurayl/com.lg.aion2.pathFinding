@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管有没有获得达人的称号，你的技术已经达到了相应的境界。</p>
+          <p> </p>
+          <p>不过，[%username]，你还是应该取得达人的称号。</p>
+          <p> </p>
+          <p>因为有些人只认那些称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>即使做出的料理一样，人们对于没有达人称号和有达人称号的人给出的评价是不一样的。</p>
+          <p> </p>
+          <p>因为有那些愚蠢的人存在，所以你最好还是接受料理达人的称号。</p>
+          <p> </p>
+          <p>给你写推荐信的光荣任务，就由我来负责吧。</p>
+          <p> </p>
+          <p>怎么样，你愿意接受这个称号吗？  </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要获得达人的称号，需要获得[%dic:STR_DIC_N_Vidar]总司令官的许可。</p>
+          <p> </p>
+          <p>我给你写一封推荐信，你去毕达尔大人那里接受称号，并举行任命式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是你觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>如果你以后想成为名人，最好是接受达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我有点忙。</p>
+          <p> </p>
+          <p>如果不是非得找我，你可以去找斯卡迪或者克巴西日。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>了不起的实力，[%username]。</p>
+          <p> </p>
+          <p>这种实力，在伏魔殿开一家饭店都没有问题了。</p>
+          <p> </p>
+          <p>希望以后你能用自己的料理带给人们更多的快乐。</p>
+          <p> </p>
+          <p>最后，你回去见见[%dic:STR_DIC_N_Lainita]，向名人行礼，并重新请求学习料理。</p>
+          <p> </p>
+          <p>从现在开始，你可以使用达人的称号了。</p>
+          <p> </p>
+          <p>祝贺你，新的料理达人！ </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Vidar]举行达人的任命式。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受了料理名人莱尼塔对我的推荐，去找毕达尔总司令官举行达人称号的任命式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>料理名人莱尼塔说已经没有什么可以教给我了，我有资格获得达人称号了。</p>
+          <p> </p>
+          <p>于是拿着她的推荐信去毕达尔总司令官那里举行了任命式，接受了达人称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都说守护者的使命是保护柔弱的人类，但是在我看来，人类绝对不柔弱。</p>
+          <p></p>
+          <p>别的不说，光是鼓膜就很结实。</p>
+          <p></p>
+          <p>如果不是这样的话，怎么能在这么吵闹的地方平安无事的生活呢，哎哟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_angry;HACTION_SELECT1_1">询问是否有问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，您没听到这个声音吗？简直是直捣神经的声音啊。</p>
+          <p></p>
+          <p>这是贝珀发出的声音。晚上的话会更吵，简直让人无法忍受。</p>
+          <p></p>
+          <p>到了这儿之后，我几乎就没睡过觉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">建议除掉贝珀。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个念头我已经想过一百遍了。</p>
+          <p></p>
+          <p>但是贝珀所在的地方有很多幽灵、</p>
+          <p></p>
+          <p>我虽然不害怕别的东西，但是幽灵...您明白我的意思吧？</p>
+          <p></p>
+          <p>您看来好像并不害怕这些东西似的，您能帮我去把[%dic:STR_DIC_M_Vapor_40_An]除掉吗？我一定会酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就先说声谢谢了。</p>
+          <p></p>
+          <p>对其他的东西也不必客气，直接除掉就可以了。</p>
+          <p></p>
+          <p>[%dic:STR_DIC_M_Vapor_40_An]在波特玛废墟有很多，请您过去看看。只要帮我杀掉10头就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道您也害怕幽灵吗？看上去倒是很勇敢。</p>
+          <p></p>
+          <p>也是，别人也不知道我害怕幽灵，还以为我很胆大呢。</p>
+          <p></p>
+          <p>说这些没用的，那些贝珀到底该怎么办...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。</p>
+          <p></p>
+          <p>您把那些贝珀除掉了吗?</p>
+          <p></p>
+          <p>那些家伙叫唤的声音好像小了些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然成功了。太谢谢您了。</p>
+          <p></p>
+          <p>从今晚开始终于能睡个好觉了。</p>
+          <p></p>
+          <p>这是答应您的谢礼。虽然是早就答应您的，但是我还是很有诚意的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎波特玛废墟的[%dic:STR_DIC_M_Vapor_40_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tegis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">泰奇斯为了能睡个好觉，想要除掉贝珀。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰奇斯抱怨说因为贝珀发出的声音而无法入睡。</p>
+          <p></p>
+          <p>帮助害怕幽灵的他除掉了贝珀，从他那里得到了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

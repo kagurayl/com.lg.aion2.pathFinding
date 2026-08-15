@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（查看军需品箱子）幸亏箱子都完整无缺。</p>
+          <p></p>
+          <p>希望里面的东西也都没事。</p>
+          <p></p>
+          <p>（打开箱子查看。）</p>
+          <p></p>
+          <p>啊，怎么！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问何事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来这里海水的含盐度很高，这些都生锈了。</p>
+          <p></p>
+          <p>用这个连库库勒都切不断。</p>
+          <p></p>
+          <p>不好意思，我可能又要麻烦您一次了。</p>
+          <p></p>
+          <p>我听兰提斯说，波特玛废墟是天魔战争中打得很激烈的一个地方。</p>
+          <p></p>
+          <p>因此那时死去的天人和魔人战士使用的[%dic:STR_DIC_I_OBJ_LF3_AncientWeapon_Q1624]和[%dic:STR_DIC_I_OBJ_LF3_AncientArmor_Q1624]现在还留在那里。</p>
+          <p></p>
+          <p>您能去把那些刀和盾牌带来给我吗？当然，我一定会重重地酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来我是不想这样的，但是现在事态紧急，实在是无可奈何。</p>
+          <p></p>
+          <p>请您帮我搜集3把[%dic:STR_DIC_I_OBJ_LF3_AncientWeapon_Q1624]和3个[%dic:STR_DIC_I_OBJ_LF3_AncientArmor_Q1624]就可以了。 </p>
+          <p></p>
+          <p>小心遭到幽灵和亡灵的袭击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没必要抱歉。我已经麻烦您帮我找到了军需品箱子。</p>
+          <p></p>
+          <p>您好像有什么急事吧？您去忙您的吧。</p>
+          <p></p>
+          <p>我会自己去波特玛废墟的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您。</p>
+          <p></p>
+          <p>那里有兰提斯所说的古代魔人和天人使用的[%dic:STR_DIC_I_OBJ_LF3_AncientWeapon_Q1624]和 [%dic:STR_DIC_I_OBJ_LF3_AncientArmor_Q1624]吗？</p>
+          <p></p>
+          <p>我很着急，请您快点给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出交刀和盾牌。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没去波特玛废墟吧？或者是去了没找到东西？</p>
+          <p></p>
+          <p>兰提斯说那些都是真。</p>
+          <p></p>
+          <p>即使您没看见，能麻烦您再去确认一下吗？拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这正是我听说过的古代的刀和盾牌。</p>
+          <p></p>
+          <p>天魔战争时代的武器，距今已经700多年了，刀锋还是这么锋利。</p>
+          <p></p>
+          <p>看来古代人的技术比现代更加发达。</p>
+          <p></p>
+          <p>对了，差点忘了，武器中都藏着守护者的精神。</p>
+          <p></p>
+          <p>请收下吧。这是给您的谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_OBJ_LF3_AncientWeapon_Q1624]和[%dic:STR_DIC_I_OBJ_LF3_AncientArmor_Q1624]带给[%dic:STR_DIC_N_Ekseus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">波特玛废墟有古代魔人和天人使用过的刀和盾牌，为了能让蓝色舰队使用，必须去收集这些武器交给艾克赛乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>落入海中的军需品箱子被海水浸泡而生了锈，无法继续使用。</p>
+          <p></p>
+          <p>失望的艾克赛乌斯听村里人说波特玛废墟有古代人使用的刀和盾牌，让我前去搜集。</p>
+          <p></p>
+          <p>按照他的请求搜集到了刀和盾牌，收到了他的谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(轻轻地摇着尾巴)我有一件不错的东西，你一定会喜欢的。</p>
+          <p> </p>
+          <p>你想和我做个交易吗？</p>
+          <p> </p>
+          <p>如果你能帮我进行采掘，我就把手套送给你。</p>
+          <p> </p>
+          <p>(拿出一双发出奇妙的光的手套，在我眼前晃悠)这是双神奇的手套。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问手套的来历。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我在下面的峡谷里捡到的，呐呐。</p>
+          <p> </p>
+          <p>梅伊宁把它拿在手上，就感觉浑身充满了力气，身上暖洋洋的。</p>
+          <p> </p>
+          <p>我看见几个守卫去哪里拿走了类似的防具。</p>
+          <p> </p>
+          <p>要是能快一点的话，就都归我所有了，呐呐。</p>
+          <p> </p>
+          <p>总之从外表看，应该不是普通的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？你愿意帮我吗？</p>
+          <p> </p>
+          <p>我想带很多宝石回去，但是这里太危险了。</p>
+          <p> </p>
+          <p>好几次都差点被萨里瓦多吃掉。</p>
+          <p> </p>
+          <p>这样下去的话，连天界到这里来的费用都赚不回来了。</p>
+          <p> </p>
+          <p>如果你能帮我，我就把这个神奇的手套送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我去[%dic:STR_DIC_M_LF4_B_Bookie_Fairy_53_An]和[%dic:STR_DIC_M_LF4_B_Mimic_Cristal_53_An]身上搜集[%dic:STR_DIC_I_QUEST_11052a]。</p>
+          <p> </p>
+          <p>在术古中间，那是非常受欢迎的宝石。</p>
+          <p> </p>
+          <p>故乡的咪咪灵一定会非常喜欢的。梅伊宁想带一大堆闪光的珠子回去，向他们炫耀，呐呐。</p>
+          <p> </p>
+          <p>但是……</p>
+          <p> </p>
+          <p>手套有点脏了，我尽可能地修补了一下。为了修补手套，也花掉了不少钱。</p>
+          <p> </p>
+          <p>"修补费用50,000基纳需要由你来出！"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是不知道这是什么手套吧？</p>
+          <p> </p>
+          <p>听守卫们说是帕里斯什么的。</p>
+          <p> </p>
+          <p>一定是非常珍贵的手套。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把帕里斯之手套抓在手上。)</p>
+          <p> </p>
+          <p>"[%dic:STR_DIC_I_QUEST_11052a]和50,000基纳拿来了吗？"</p>
+          <p> </p>
+          <p>快给我看看，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">"拿出闪光的珠子和50,000基纳。"</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"(怀疑的眼神)你真的要给我50,000基纳吗？"</p>
+          <p> </p>
+          <p>以后要是有什么事情，可千万不要找我啊。</p>
+          <p> </p>
+          <p>"我不是说过了吗？必须给我闪光的珠子和50,000基纳，我才能把帕里斯之手套送给你。"</p>
+          <p> </p>
+          <p>你今后不会后悔吧，呐呐？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"拿出闪光的珠子和50,000基纳。"</Act>
+      <Act href="HACTION_FINISH_DIALOG">再考虑一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(失望的表情)什么都没拿来啊。</p>
+          <p> </p>
+          <p>那我就不能把手套给你。</p>
+          <p> </p>
+          <p>"快去把[%dic:STR_DIC_I_QUEST_11052a]和50,000基纳拿来。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(掩藏起高兴的神情)嗯，还可以。</p>
+          <p> </p>
+          <p>但是忧郁的鲁萨尔卡和水晶赞特凯尔身上应该不止这些东西吧？</p>
+          <p> </p>
+          <p>这么办吧。我来丢硬币，正面的话，我就把手套给你，背面的话就不给你。怎么样？</p>
+          <p> </p>
+          <p>怎么样？应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">"从[%dic:STR_DIC_M_LF4_B_Bookie_Fairy_53_An]和[%dic:STR_DIC_M_LF4_B_Mimic_Cristal_53_An]身上搜集闪光的珠子，和准备好的50,000基纳一起交给[%dic:STR_DIC_N_Shugo_LF4_5]"</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集闪光的珠子交给梅伊宁，直到他满意，把英吉斯温之手套交给你为止。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅伊宁说在峡谷里捡到了一双手套，如果我能帮他进行采掘，并支付手套的修理费，就把手套送给我。</p>
+          <p> </p>
+          <p>帮助他从忧郁的鲁萨尔卡和水晶赞特凯尔身上搜集到了闪光的珠子，但是他还不满足，说必须继续帮他搜集闪光的珠子，才能把英吉斯温之手套送给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

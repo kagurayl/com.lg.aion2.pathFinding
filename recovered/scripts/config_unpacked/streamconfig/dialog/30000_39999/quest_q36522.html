@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_LizardFi_52_An]因犯以下罪状，现悬赏通缉。</p>
+          <p> </p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_LizardFi_52_An] </p>
+          <p></p>
+          <p> 2. 罪行：生产德拉纳</p>
+          <p></p>
+          <p> 3. 详情：重新启动了德拉纳采集器和生长器，试图秘密地扩张龙族势力。</p>
+          <p> </p>
+          <p>消灭管理德拉纳采集器和生长器的[%dic:STR_DIC_M_LF4_DayQ_LizardFi_52_An]，把[%dic:STR_DIC_I_QUEST_36522a]拿回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说希克伊伦农场发生了奇怪的事。</p>
+          <p> </p>
+          <p>据说德拉纳采集器和生长器又回来了。</p>
+          <p> </p>
+          <p>您搜集到什么情报没有？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带回来的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从普诺埃峡谷再往前走一点，就能看到希克伊伦农场了。</p>
+          <p> </p>
+          <p>虽说名叫农场，但其实不是个农场。</p>
+          <p> </p>
+          <p>请您去那里寻找发出奇异的光的巨大石像。</p>
+          <p> </p>
+          <p>那样的话，就一定可以遇到在那里巡查的[%dic:STR_DIC_M_LF4_DayQ_LizardFi_52_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就从希克伊伦农场回来啦。</p>
+          <p> </p>
+          <p>德拉纳采集器在不停地运转，这是一件很可怕的事情。</p>
+          <p> </p>
+          <p>因为这说明龙族的力量在变强。</p>
+          <p> </p>
+          <p>龙族为了继续搜集德拉纳，一定会重新启动机器。</p>
+          <p> </p>
+          <p>[%username]大人，多亏了您，终于度过了眼下的危机。真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_DayQ_LizardFi_52_An]，把角交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭管理德拉纳采集器和生长器的凶恶的拉梅波陀思，把角交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我最关心的事情有三样。</p>
+          <p> </p>
+          <p>第一是战争，第二是胜利。因此我来到了战况最激烈的英吉斯温。</p> 
+          <p> </p>
+          <p>最后一样……是可爱的纽特。</p>
+          <p> </p>
+          <p>虽然长着触角和很多条腿的东西我都喜欢，但我最喜欢小纽特。</p>
+          <p> </p>
+          <p>您仔细观察过纽特的幼虫吗？纯真的眼睛、柔软的甲壳、可爱的动作……</p>
+          <p> </p>
+          <p>去执行任务的时候，每到一个地方，我都会搜集纽特的幼虫，然后带回来养着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙界也有纽特。纽特这种生物非常了不起，在亚特雷亚的任何地方都能见到它们。</p>
+          <p> </p>
+          <p>龙界的纽特的外表和天界的不同。</p>
+          <p> </p>
+          <p>一想到那些可爱的幼虫，我就很期待。</p>
+          <p> </p>
+          <p>英吉斯温的纽特栖息在好几个地方。在红色德拉纳农场的北边，有个栖息着很多纽特的纽坎特的洞穴。</p>
+          <p> </p>
+          <p>在洞穴里，应该可以找到还没孵化的纽特卵。卵会不停地蠕动，应该很容易发现。</p>
+          <p> </p>
+          <p>您能帮我搜集一些可爱的纽特卵回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽特非常凶恶，因此必须在没有孵化的时候开始驯养。</p>
+          <p> </p>
+          <p>当卵孵化的时候，纽特看见我之后，就会把我当成妈妈，就会变得很听话。</p>
+          <p> </p>
+          <p>但是孵化很容易失败，所以请您帮我多搜集几个。</p>
+          <p> </p>
+          <p>请您帮我搜集10个[%dic:STR_DIC_OBJ_Neut_Egg]。小心不要把卵碰坏！不小心的话，它们可能会提前孵化出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么会拒绝呢？</p>
+          <p> </p>
+          <p>您该不会和别人一样，觉得纽特很可怕吧？</p>
+          <p> </p>
+          <p>真让人失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一定要随时保持警惕。</p>
+          <p> </p>
+          <p>前哨基地是天族最重要的进攻据点，也是最重要的防线。</p>
+          <p> </p>
+          <p>必须随时准备战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纽特卵。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，纽特卵还没搜集到吗？</p>
+          <p> </p>
+          <p>真想看看那些可爱的小东西。</p>
+          <p> </p>
+          <p>请一定要帮我搜集齐10个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我没白等！</p>
+          <p> </p>
+          <p>请感觉一下卵的蠕动。</p>
+          <p> </p>
+          <p>马上就有健康的小家伙孵化出来了。</p>
+          <p> </p>
+          <p>谢谢您帮助我。我会报答您的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_Neut_Egg]，然后交给[%dic:STR_DIC_N_Rollia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为搜集纽特幼虫的萝莉亚去纽坎特的洞穴搜集纽特卵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>萝莉亚说她的爱好是饲养纽特幼虫，希望能得到龙界的纽特幼虫/</p>
+          <p> </p>
+          <p>于是帮她去纽坎特的洞穴搜集到了即将孵化的纽特卵，她非常高兴，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

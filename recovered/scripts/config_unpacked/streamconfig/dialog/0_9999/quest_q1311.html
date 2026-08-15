@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！我想了一下。在告诉鲍莫娜之前，最好应该做一次实验。</p>
+          <p> </p>
+          <p>种子改良虽然成功了，但是能否在用沙漠的土改良后的土壤里正常生长还没有确认。</p>
+          <p> </p>
+          <p>只有完成这个实验，才能说最终取得了成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲍莫娜让我做的，是提高能生长在沙漠中的树的生长速度。</p>
+          <p> </p>
+          <p>在进行研究的时候，我一直对这么做究竟有没有用有些怀疑，不过我按照鲍莫娜的提议使用了神秘泉的水，结果效果非常好。</p>
+          <p> </p>
+          <p>不仅是种子，在土壤改良上也有很好的效果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>将神秘泉的水有规则地洒在变成沙漠的土上，土就会变成肥沃的土壤。</p>
+          <p> </p>
+          <p>但是还没有试着把种子种到改良后的肥沃的土壤里。</p>
+          <p> </p>
+          <p>制造出肥沃土壤的地方突然出现了龙蜥兽，我根本没办法靠近。</p>
+          <p> </p>
+          <p>[%username]大人您能帮我去[%dic:STR_DIC_E_LF2_Planting_Site_Q1311]把种子种下去吗？</p>
+          <p> </p>
+          <p>战斗我是一点都不在行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，请您拿着这个种子。这是用神秘泉的水进行过改良的。</p>
+          <p> </p>
+          <p>在前面的森林里，有三四处我营造的肥沃的土壤。请您把我给您的种子种到土壤里。</p>
+          <p> </p>
+          <p>那里周围有龙蜥兽出没，您一定要小心。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不知道这件事有多么的重要吗？</p>
+          <p> </p>
+          <p>这也许是挽救正在变成沙漠的埃尔特内的第一步。</p>
+          <p> </p>
+          <p>您应该不会是忘了守护者的使命了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把种子种到肥沃的土壤里了吗？</p>
+          <p> </p>
+          <p>长势怎么样？</p>
+          <p> </p>
+          <p>如果土壤和种子的改良成功的话，它们就会很快长出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_victory;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？种子改良和土壤改良全都成功了！</p>
+          <p> </p>
+          <p>我终于做到了。我所执着的实验终于成功了！</p>
+          <p> </p>
+          <p>现在只要用神秘泉的水持续地改良土壤、种植种子的话埃尔特内应该就会重新被绿色的森林覆盖。</p>
+          <p> </p>
+          <p>谢谢您告诉了我令人振奋的消息！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把种子种到[%dic:STR_DIC_E_LF2_Planting_Site_Q1311]里确认实验结果</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Iandeus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伊安德乌斯说想确认实验是否取得了完全的成功。去把改良的种子种到肥沃的土壤里吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯说按照鲍莫娜的拜托改良了种子，也改良了沙漠的土壤。</p>
+          <p> </p>
+          <p>于是按照他的拜托，把改良的种子种到了肥沃的土壤里，确认实验取得了成功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要去埃拉库斯地下神殿吗？</p>
+          <p> </p>
+          <p>如果是那样的话，我告诉你一个好情报。</p>
+          <p> </p>
+          <p>在埃拉库斯地下神殿的入口处，那里有飞行教官[%dic:STR_DIC_N_Marana]。</p>
+          <p> </p>
+          <p>她是在极乐世界也受到认可的拥有出众能力的教官。如果能从她那里学习飞行术，飞行的实力一定会得到质的飞跃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过马拉娜为人很谨慎，并不是所有的人她都会教。</p>
+          <p> </p>
+          <p>只有证明具有基本的飞行能力，她才会决定是否教授。</p>
+          <p> </p>
+          <p>你想向马拉娜证明飞行能力，学习飞行术吗？</p>
+          <p> </p>
+          <p>那样的话，就让我来告诉你方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去埃拉库斯地下神殿打猎[%dic:STR_DIC_M_4C_Gargoyle_30_Ae]，然后将10个[%dic:STR_DIC_I_QUEST_1351a]作为证据交给她的话，马拉娜就会认可你是值得一教的人才。</p>
+          <p> </p>
+          <p>不过这很困难。首先，在石制圆盘中寻找有[%dic:STR_DIC_M_4C_Gargoyle_30_Ae]的地方就很不容易。</p>
+          <p> </p>
+          <p>由于必须在限定的时间内去各个圆盘查看，在飞行的时候有可能遇到危险的情况。</p>
+          <p> </p>
+          <p>而且守护像是有生命的，它们会进行无差别的轰炸式攻击。所以在飞行的时候需要非常小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近的年轻守护者们即使抓到了机会也不知道那是机会。</p>
+          <p> </p>
+          <p>你以为从马拉娜那里学习飞行术是那么容易的事吗？</p>
+          <p> </p>
+          <p>我要是你的话就会放下一切冲过去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡斯特罗大人说会有一个出色的守护者过来，看来就是你了。</p>
+          <p> </p>
+          <p>他说你是个前途光明的守护者，所以我一直很期待。</p>
+          <p> </p>
+          <p>对了，你把[%dic:STR_DIC_I_QUEST_1351a]拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出黑色的石头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管卡斯特罗大人怎么称赞，如果不经过亲眼确认的话，我是不会教你飞行术的。</p>
+          <p> </p>
+          <p>请你把证明能够进行简单飞行的证据带回来。</p>
+          <p> </p>
+          <p>带10个左右[%dic:STR_DIC_I_QUEST_1351a]回来，我就会认可你的能力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能把[%dic:STR_DIC_I_QUEST_1351a]带回来，说明具有了最起码的飞行能力。</p>
+          <p> </p>
+          <p>好吧，这种程度的话就值得我一教了。</p>
+          <p> </p>
+          <p>如果你想学习飞行术的话就跟我说。我会好好教你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除蜷缩的埃拉库斯守护像，搜集[%dic:STR_DIC_I_QUEST_1351a]，然后交给[%dic:STR_DIC_N_Marana]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">想要向飞行教官马拉娜学习飞行技术的话，必须证明具备最起码的飞行实力。搜集蜷缩的埃拉库斯守护像的黑色的石头，证明自己的能力吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡斯特罗说飞行教官马拉娜来到了埃拉库斯地下神殿，如果能向她学习飞行术的话，对自己会有很大的帮助。</p>
+          <p> </p>
+          <p>于是听取了卡斯特罗的忠告，除掉了蜷缩的埃拉库斯守护像，搜集黑色的石头交给了马拉娜。她很爽快地答应教我飞行技术。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

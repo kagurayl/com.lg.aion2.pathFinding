@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，看来我不得不和你说实话了。</p>
+          <p> </p>
+          <p>事实上，那个变成石像的军团士兵，和我有着特殊的关系。更确切地说，她是我的妻子。</p>
+          <p> </p>
+          <p>所以我一开始就说，这是个人的事情。</p>
+          <p> </p>
+          <p>因为是我的妻子，所以无论如何我都要解开她的诅咒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，你能再去见见[%dic:STR_DIC_N_Telemachus]军团长，向他借用一下复苏之石吗？</p>
+          <p> </p>
+          <p>这次请你告诉他，变成石像的人是我的妻子。</p>
+          <p> </p>
+          <p>不好意思让你来回折腾，拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从[%dic:STR_DIC_N_Telemachus]军团长的反应，你也应该知道，我和他的关系不是很好。</p>
+          <p> </p>
+          <p>不，可以说关系非常不好。</p>
+          <p> </p>
+          <p>你以为我想去求他吗？如果不是发生了这样的事情，我绝不会去和他联系。</p>
+          <p> </p>
+          <p>但是现在情况紧急，这次无论如何必须借到复活之石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是因为这是个人的事情，所以不愿意去吗？</p>
+          <p> </p>
+          <p>还是觉得埃尔特内太远了呢？</p>
+          <p> </p>
+          <p>不过这是个人的事情，我也不能逼着你答应……</p>
+          <p> </p>
+          <p>看来我只能给泰雷马科斯写封信了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格力乌斯那人很固执，我知道他一定会再让你过来的。</p>
+          <p> </p>
+          <p>这次他又是怎么说的呢？</p>
+          <p> </p>
+          <p>我虽然不想把复苏之石借给他，但我想听听他这次的借口是什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说变成石像的是格力乌斯的妻子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(好像吃了一惊，一句话都不说。)</p>
+          <p> </p>
+          <p>知道了，请稍等一下。</p>
+          <p> </p>
+          <p>(拿出复苏之石)请你拿去交给格力乌斯。</p>
+          <p> </p>
+          <p>希望能解开他妻子的诅咒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次结果怎么样？</p>
+          <p> </p>
+          <p>从泰雷马科斯那里拿到复苏之石了吗？</p>
+          <p> </p>
+          <p>快跟我说说这次的结果怎么样吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出复苏之石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰雷马科斯愿意把复苏之石借给我，真是太好了。</p>
+          <p> </p>
+          <p>我的妻子这下终于可以解开诅咒了。</p>
+          <p> </p>
+          <p>[%username]，这全都是托你的福。谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往埃尔特内，和[%dic:STR_DIC_N_Telemachus]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">回到英吉斯温，和[%dic:STR_DIC_N_Gellius]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">告诉泰雷马科斯变成石像的人是格力乌斯的妻子，再去索要复活之石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格力乌斯说变成石像的军团士兵是自己的妻子，让我再去找泰雷马科斯。</p>
+          <p> </p>
+          <p>听说变成石像的人是格力乌斯的妻子之后，泰雷马科斯二话不说就把复苏之石拿了出来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

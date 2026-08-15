@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好，[%username]。</p>
+          <p> </p>
+          <p>我有点事情需要调查，正在找可以帮我执行任务的人。</p>
+          <p> </p>
+          <p>我虽然想让手下的军团兵们去，但连守卫这里的人手都不够，实在安排不出多余的人手了。</p>
+          <p> </p>
+          <p>在有困难的时候互相帮助，是每一个守护者的使命。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡兰泰拉回廊还有很多没有探明的地方。</p>
+          <p> </p>
+          <p>因为那里有巨人战士守卫着，所以直到现在还不知道那是个什么地方。</p>
+          <p> </p>
+          <p>事实上，因为巨人的缘故，我们根本都无法靠近那里。</p>
+          <p> </p>
+          <p>[%username]，如果你能帮我完成这件事，就帮了我的大忙了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要调查的地方是巨人广场北边的[%dic:STR_DIC_E_Underpass_SensoryArea_Q30057]。</p>
+          <p> </p>
+          <p>在广场北边，可以看到通往某个地方的通道。</p>
+          <p> </p>
+          <p>希望你能帮我调查一下那个通道通向哪里，里面有什么东西。</p>
+          <p> </p>
+          <p>那就拜托你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不派自己手下的士兵过去，而让其他守护者去做，看来还是不行。</p>
+          <p> </p>
+          <p>如果这里的情况能稳定一些，我就能想办法抽出人手了。</p>
+          <p> </p>
+          <p>实在不行的话，我可以请求军团长大人增派人手。你不用觉得抱歉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>我拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>就是对巨人广场北部通道的未知区域进行侦察的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说在一扇紧闭的大门后面，好像有个巨大的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，连你也没能进到里面去啊？</p>
+          <p> </p>
+          <p>不过能知道有扇巨大的门，门里面有什么东西，这样就足够了。</p>
+          <p> </p>
+          <p>如何通过那扇门，查明里面的东西，就是我应该做的工作了。</p>
+          <p> </p>
+          <p>真是辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">对[%dic:STR_DIC_E_Underpass_SensoryArea_Q30057]进行侦察[%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Vergelan]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">贝尔凯拉说，锡兰泰拉回廊还有很多没有探明的地区。去巨人广场北边的未知地区侦察吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔凯拉说，锡兰泰拉回廊还有很多没有探明的地区，让我去帮他进行侦察。</p>
+          <p> </p>
+          <p>于是按照他的委托，进入了巨人回廊北边的未知地区，看到有一扇紧闭的大门，里面可以听到什么东西咆哮的声音。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

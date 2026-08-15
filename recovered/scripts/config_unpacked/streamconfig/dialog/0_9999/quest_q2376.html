@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能接受佩佩龙的请求，看来你真是位非常亲切的守护者。</p>
+          <p> </p>
+          <p>你帮我清除掉了可怕的德雷克和德加尔比亚之后，我就安心了很多。</p>
+          <p> </p>
+          <p>但是必须告诉佩佩龙，我现在很安全。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>亲切的守护者，你能不能帮我把这个消息告诉佩佩龙啊？</p>
+          <p> </p>
+          <p>还有，去的路上，能顺便帮我教训一下那些影魔吗？</p>
+          <p> </p>
+          <p>每次过桥的时候，它们都气势汹汹地飞过来吓我。我怕会被它们推得掉下去，真是吓死我了。</p>
+          <p> </p>
+          <p>请你把[%dic:STR_DIC_M_ShadowstalkerFi_30_Ae]和[%dic:STR_DIC_M_ShadowstalkerreWi_30_Ae]清除掉，然后把消息转告给佩佩龙，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能见到你，不知道是莎拉琳琳前世什么时候修来的福。</p>
+          <p> </p>
+          <p>你先去清除[%dic:STR_DIC_M_ShadowstalkerFi_30_Ae]和[%dic:STR_DIC_M_ShadowstalkerreWi_30_Ae]吧。</p>
+          <p> </p>
+          <p>然后一定要告诉佩佩龙，我现在很安全，让他不要为我担心。</p>
+          <p> </p>
+          <p>拜托了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你是个很亲切的人呢...</p>
+          <p> </p>
+          <p>你是不愿意等到佩佩龙出来的时候吗？</p>
+          <p> </p>
+          <p>莎拉琳琳害怕影魔，也想把消息告诉佩佩龙。</p>
+          <p> </p>
+          <p>请别这样，再帮我一次嘛，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你见到莎拉琳琳了吗？</p>
+          <p> </p>
+          <p>看上去没有什么不舒服或者很累吧？</p>
+          <p> </p>
+          <p>她有没有让你传话给我啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达问候和清除影魔的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还帮了莎拉琳琳的忙啊。</p>
+          <p> </p>
+          <p>谢谢你，真是太感谢了。</p>
+          <p> </p>
+          <p>你帮了我们这么多忙，我必须报答你，呐呐。</p>
+          <p> </p>
+          <p>这是包含了莎拉琳琳和我的心意的礼物。你收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除折磨莎拉琳琳的影魔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ShadowstalkerFi_30_Ae]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ShadowstalkerreWi_30_Ae]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF2_3]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莎拉琳琳让我向佩佩龙转告消息，并让我顺便教训一下桥对面的力量之影魔和魔力之影魔。答应莎拉琳琳的请求吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>按照佩佩龙的拜托除掉了怪物，把事情告诉莎拉琳琳之后，莎拉琳琳说想把自己安全了的消息转告佩佩龙。并顺便让我把骚扰她的影魔清除掉。</p>
+          <p> </p>
+          <p>于是清除掉了桥对面的影魔，并向佩佩龙转达了莎拉琳琳的问候。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

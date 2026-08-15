@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看埃尔特内现在的情况，动物好像比人类更快地适应了环境的变化。</p>
+          <p> </p>
+          <p>它们在变成沙漠的地方也很好地生存了下来，虽然变得比以前凶残了很多。</p>
+          <p> </p>
+          <p>为了居民们的安全，我们现在向守护者们提供任务。当然只向通过考试的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务其实和考试差不多。</p>
+          <p> </p>
+          <p>就是去清除要塞附近的危险的动物。</p>
+          <p> </p>
+          <p>数量虽然有点多，但是对[%username]大人这么有能力的守护者而言，应该并不困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我除掉10头[%dic:STR_DIC_M_lupyllini_19_n]、13头[%dic:STR_DIC_M_ManduriT_21_An]和13头[%dic:STR_DIC_M_ManduriB_21_An]。</p>
+          <p> </p>
+          <p>这样的话，应该会对居民们的安全有所帮助。</p>
+          <p> </p>
+          <p>虽然完成任务需要不少时间，但是报酬也相当丰厚，决不会让您白忙活的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您不想完成任务的话，又为什么要参加考试呢？</p>
+          <p> </p>
+          <p>是因为必须除掉40头，觉得太麻烦吗？</p>
+          <p> </p>
+          <p>不过没关系。即使没有您，想要铸币的人还多着呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我想象得要快嘛。</p>
+          <p> </p>
+          <p>任务如果顺利完成了的话，周围对人们造成危害的动物应该就减少了不少。</p>
+          <p> </p>
+          <p>请您详细地报告一下任务执行的结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要除掉40头，一定很辛苦吧。真是辛苦您了。</p>
+          <p> </p>
+          <p>居民们到要塞周围去的时候可以比以前更安心了。</p>
+          <p> </p>
+          <p>这是约好的铸币。希望您能用它换到好的武器和防具。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除威胁居民安全的动物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_lupyllini_19_n]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriT_21_An]([%5]/13)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriB_21_An]([%8]/13)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ferenna]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除要塞周围威胁人类安全的动物，然后从佩兰娜那里领取铸币。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界制定了制度，如果能为了保护居民的安全而去执行危险的任务的话，就能获得铸币报酬。</p>
+          <p> </p>
+          <p>于是从佩兰娜那里接受了任务，清除了要塞周围的动物，获得了铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

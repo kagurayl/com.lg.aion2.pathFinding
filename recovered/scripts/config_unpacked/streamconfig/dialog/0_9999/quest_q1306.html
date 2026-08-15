@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>早知道这样的话，一开始就实话实说了。</p>
+          <p> </p>
+          <p>一个谎言必须用另一个谎言来掩饰，真的是这样。</p>
+          <p> </p>
+          <p>本来以为只要清除一次维斯帕和和腐土精灵就完了，谁知不是。</p>
+          <p> </p>
+          <p>上面下达了周期地清除可怜的维斯帕和腐土精灵，并进行报告的命令，这叫什么事？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为曾经干过一次，也不能到现在才说要维持自然的平衡而不接受命令，这下可完蛋了。</p>
+          <p> </p>
+          <p>要是家里的情况好一点，可以不做守卫该有多好。</p>
+          <p> </p>
+          <p>现在只有[%username]大人您能帮助我了。</p>
+          <p> </p>
+          <p>请您再帮我清除一次维斯帕和腐土精灵吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您！</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_LF2_SZ_OP]周边的森林里打猎[%dic:STR_DIC_M_Vespa_21_n]和[%dic:STR_DIC_M_ElementalEarth2_21_An]。</p>
+          <p> </p>
+          <p>维斯帕和精灵发出的悲鸣虽然让我难过，但是没有办法。只能忍耐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您上次不是帮我清除过一次维斯帕和腐土精灵吗？</p>
+          <p> </p>
+          <p>这次突然说不行，原因是什么呢？</p>
+          <p> </p>
+          <p>不过古代守护者们也说，已所不欲，勿施于人。我也绝不会强迫您。</p>
+          <p> </p>
+          <p>只希望如果您改变了主意，能回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您这么快就回来啦！</p>
+          <p> </p>
+          <p>捕捉[%dic:STR_DIC_M_Vespa_21_n]和[%dic:STR_DIC_M_ElementalEarth2_21_An]竟然只花了这么少的时间！</p>
+          <p> </p>
+          <p>看来我的实力还是有很大的差距。</p>
+          <p> </p>
+          <p>您应该不是什么都没干就回来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">说全都清除了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次都麻烦您，真是太感谢了！</p>
+          <p> </p>
+          <p>这样周期性地清除一些的话，它们的数量就不会继续增加。</p>
+          <p> </p>
+          <p>请您以后经常过来帮我。谢礼我是绝对不会忘记的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎污染森林的维斯帕和精灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Vespa_21_n]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth2_21_An]([%5]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Androkles]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助安德罗克雷斯去打猎维斯帕和腐土精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[重复任务]</p>
+          <p> </p>
+          <p>安德罗克雷斯说要塞下达了捕捉丛林维斯帕和腐土精灵的命令，他正在为此而苦恼。</p>
+          <p> </p>
+          <p>于是帮他去打猎了斯帕和腐土精灵，他非常高兴，说以后应该会一直有相同的任务，让我有时间的话再回去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

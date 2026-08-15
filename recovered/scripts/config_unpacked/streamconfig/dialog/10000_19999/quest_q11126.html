@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道纽特吗？不管在任何地区，纽特都是让人头疼的东西。</p>
+          <p> </p>
+          <p>有人开玩笑说，在天魔战争之前，纽特就已经存在了。说不定是真的。</p>
+          <p> </p>
+          <p>得知在英吉斯温也有纽特的时候，我已经见怪不怪了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽特也和德拉纳农场附近的其他生命体一样发生了变异，但是却稍微有点不同。</p>
+          <p> </p>
+          <p>如果说其他生命体是变异，那纽特就是，可以说是适应吗？</p>
+          <p> </p>
+          <p>纽特强大的生命力好像根本不受德拉纳影响，不过力气倒是增强不少。</p>
+          <p> </p>
+          <p>它们经常会给结束战斗后回来的守护者造成伤害，因此必须尽快把它们消灭掉才行。</p>
+          <p> </p>
+          <p>[%username]大人，这件事应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在纽坎特的洞穴里，栖息着无数的纽特，它们甚至会攻击龙族。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_LF4_B7_Neut_Worker_53_An]和[%dic:STR_DIC_M_LF4_B7_Neut_Fly_53_An]消灭掉。</p>
+          <p> </p>
+          <p>它们的战斗力不比龙族差，所以必须小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽坎特的洞穴的纽特拥有可以和龙族匹敌的战斗力。</p>
+          <p> </p>
+          <p>可以对付它们的守护者不是很多，所以我才会拜托您。没想到您却拒绝了……</p>
+          <p> </p>
+          <p>请您再考虑一下，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚刚从研究纽特生态的学者那里收到了一封信，正在看呢。</p>
+          <p> </p>
+          <p>他说纽特正在纽坎特的洞穴里大量繁殖。</p>
+          <p> </p>
+          <p>在其他地区发现了纽特的卵。不知道在这个地方它们是通过什么方式繁殖的。</p>
+          <p> </p>
+          <p>您去纽坎特的洞穴消灭纽特了吗？全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们的战斗力可以和龙族抗衡，一定很辛苦吧？</p>
+          <p> </p>
+          <p>据说纽坎特的洞穴的纽特正在逐渐扩散开来，我对此很担心。不过暂时应该可以安心一些了。</p>
+          <p> </p>
+          <p>真是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭纽坎特的洞穴里的纽特和纽提拉</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B7_Neut_Worker_53_An]([%2]/17)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B7_Neut_Fly_53_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sarapion]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说纽坎特的洞穴里的纽特正在扩散，给英吉斯温造成了很大的问题。必须去纽坎特的洞穴消灭纽特和纽提拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>萨拉皮安说在任何地区都能看到的纽特，在英吉斯温受到了德拉纳的影响，变得更加强大了。</p>
+          <p> </p>
+          <p>去纽坎特的洞穴消灭了纽特和纽提拉，回去之后萨拉皮安对我表示感谢，说暂时可以安心了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

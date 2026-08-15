@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，啊啊！咳咳，啊啊啊！</p>
+          <p> </p>
+          <p>这下可糟了。嗓子痒得厉害，好像是得了感冒。</p>
+          <p> </p>
+          <p>要是嗓子坏了的话，就会说不出声音…真让人担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">让他先想想办法。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天下班之后，我得用盐水漱口，喝点蜂蜜茶才行。</p>
+          <p> </p>
+          <p>睡觉的时候应该用毛巾之类的盖住脖子。</p>
+          <p> </p>
+          <p>家里还有蜂蜜吗…啊对了，上次感冒的时候被我全部吃掉了。</p>
+          <p> </p>
+          <p>守护者大人，您能帮我一个忙吗？</p>
+          <p> </p>
+          <p>我不能离开岗位，您能帮我去搜集一瓶蜂蜜吗。当然，我会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最可靠的地方是雪原棕熊栖息地，但那样有可能把事情闹大。您还是去[%dic:STR_DIC_M_Sprigg4_34_An]那里找找看吧。</p>
+          <p> </p>
+          <p>他们身上，一定有从棕熊的巢穴偷来的蜂蜜。</p>
+          <p> </p>
+          <p>去的时候，请您顺便帮我搜集1个[%dic:STR_DIC_M_Sprigg3DF3_33_An]的头巾。它的保暖性很好，我要把它围在脖子上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。这是我的私事，我知道您可能不会答应我。</p>
+          <p> </p>
+          <p>不过真让人担心。这样下去的话，明天我的嗓子就完蛋了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，啊啊，守护者大人！</p>
+          <p> </p>
+          <p>我的嗓子的情况，好像变得更差了。</p>
+          <p> </p>
+          <p>不好意思，您能先把[%dic:STR_DIC_I_QUEST_2599b]给我吗？我得把它围在脖子上，然后喝一点[%dic:STR_DIC_I_QUEST_2599a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜂蜜和头巾。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，啊啊啊！守护者大人，您还没去吗？</p>
+          <p> </p>
+          <p>要是不行的话就直说。</p>
+          <p> </p>
+          <p>我还可以想其它办法！</p>
+          <p> </p>
+          <p>呼，发火又有什么用，疼的还不是我的嗓子。</p>
+          <p> </p>
+          <p>请您马上去搜集[%dic:STR_DIC_I_QUEST_2599a]和[%dic:STR_DIC_I_QUEST_2599b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找到蜂蜜了啊？这些就够我吃几顿的了。</p>
+          <p> </p>
+          <p>这块破布就是斯普利甘特的头巾吗？</p>
+          <p> </p>
+          <p>咳咳，呃。就这样围上去的话，连鼻子都遮住了。看来得把它割开才行。</p>
+          <p> </p>
+          <p>这是我为您准备的东西。虽然不多，但却是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_Sprigg3DF3_33_An]和[%dic:STR_DIC_M_Sprigg4_34_An]那里搜集到的东西交给公告官[%dic:STR_DIC_N_Gaamel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让公告官嘉枚尔治好感冒，帮他搜集雪原棕熊的蜂蜜和斯普利甘特的头巾。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>公告官嘉枚尔说嗓子发痒，好像得了感冒。他说在睡觉之前，必须用盐水漱口，并喝一点蜂蜜。</p>
+          <p> </p>
+          <p>但是刚好蜂蜜都吃光了，他让我帮他搜集一些雪原棕熊的蜂蜜。</p>
+          <p> </p>
+          <p>于是帮他搜集到了蜂蜜和斯普利甘特的头巾，他非常高兴，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

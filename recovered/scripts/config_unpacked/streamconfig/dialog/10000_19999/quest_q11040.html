@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(马上就要晕过去的声音)</p>
+          <p> </p>
+          <p>救救我！</p>
+          <p> </p>
+          <p>谁来救救我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请救救我！</p>
+          <p> </p>
+          <p>黑暗术古想吃掉我。</p>
+          <p> </p>
+          <p>请快点救救我。</p>
+          <p> </p>
+          <p>不然的话，我就会被他们用火烤熟了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，差点就被他们给吃了。</p>
+          <p> </p>
+          <p>我刚出生还没多久，没想到就差点命丧黄泉。</p>
+          <p> </p>
+          <p>你能把我带到[%dic:STR_DIC_SEN_LF4_SensoryArea_Q11040]去吗？拜托你了。</p>
+          <p> </p>
+          <p>沿着瀑布下去，我就能自己走到图胖那里了。</p>
+          <p> </p>
+          <p>我会把这件事告诉图胖，让他好好酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切，原来和黑暗术古是一伙的！</p>
+          <p> </p>
+          <p>不要以为我会乖乖地服从黑暗术古！</p>
+          <p> </p>
+          <p>我们仙人掌不是这么好欺负的！</p>
+          <p> </p>
+          <p>总有一天，你会后悔今天没有帮我的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，我想尽快从这里逃出去。</p>
+          <p> </p>
+          <p>黑暗术古一定会穷追不舍的。</p>
+          <p> </p>
+          <p>如果能安全回去，我会好好跟大人们说的。</p>
+          <p> </p>
+          <p>以后我绝不会一个人到这种危险的地方来了。</p>
+          <p> </p>
+          <p>我准备好了，我们什么时候出发啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">好的，那就跟我走吧。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是谁啊？</p>
+          <p> </p>
+          <p>哎呀，你救了图坡！</p>
+          <p> </p>
+          <p>图坡还不懂事，不知道他有没有跟你道谢。</p>
+          <p> </p>
+          <p>(磕了几个头)谢谢，谢谢。</p>
+          <p> </p>
+          <p>我还以为再也看不到图坡了，你不知道我有多伤心。</p>
+          <p> </p>
+          <p>你是真正的仙人掌守护者！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个请你收下。这是我送给你的礼物。</p>
+          <p></p>
+          <p>听说守护者喜欢这个，所以我特地准备了一些。</p>
+          <p> </p>
+          <p>虽然你救图坡应该不是为了获得酬谢，但是希望你能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">做好逃跑准备后，和[%dic:STR_DIC_N_Tuca_02]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">护送图坡到达[%dic:STR_DIC_SEN_LF4_SensoryArea_Q11040]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">护送成功！回到[%dic:STR_DIC_N_Tuca_01]那里</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">仙人掌图坡差点被黑暗术古烤了吃掉。快点救他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图坡差点被黑暗术古烤了吃掉，救出他之后，去见了图胖。他称赞我是仙人掌的守护者，并给了我礼物。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

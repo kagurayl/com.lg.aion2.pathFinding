@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听迪奥库劳伊说了。</p>
+          <p> </p>
+          <p>听说你带来了德米斯组长的消息？</p>
+          <p> </p>
+          <p>事实上，我也觉得烈士荒地的问题很严重。</p>
+          <p> </p>
+          <p>德米斯组长会定期把决定到这里来的人的名单寄过来，但真正能到达这里的，不过是十分之三。</p>
+          <p> </p>
+          <p>有些人是中途改变了主意，去了别的地方，但大部分人都在荒地失踪或丢了性命。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就像德米斯组长所说，如果能把[%dic:STR_DIC_M_LF2A_Basilisk_45_An]和[%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]消灭掉，就会好很多，但问题是兵力。</p>
+          <p> </p>
+          <p>光靠现在的人员，能守住村子就已经不容易了。</p>
+          <p> </p>
+          <p>所以我想向[%username]大人请求帮助。</p>
+          <p> </p>
+          <p>您能穿过烈士荒地，应该可以独自对付蜥蜴和迪欧纳埃。请您帮帮我。</p>
+          <p> </p>
+          <p>当然，如果您能帮我，我一定会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。准备好之后，请您马上去扫荡[%dic:STR_DIC_M_LF2A_Basilisk_45_An]和[%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]。</p>
+          <p> </p>
+          <p>烈士荒地几乎已经荒废了，要将他们扫荡干净，可能需要一些时间。</p>
+          <p> </p>
+          <p>您最好做好充足的准备之后再出发。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙嘛。</p>
+          <p> </p>
+          <p>明白了。每个人都有自己的事情。</p>      
+          <p> </p>
+          <p>那么再见。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您全身都是灰尘。</p>
+          <p> </p>
+          <p>一定是刚回来吧？[%dic:STR_DIC_M_LF2A_Basilisk_45_An]和[%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]扫荡干净了吗？</p>
+          <p> </p>
+          <p>那里的情况怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是辛苦您了。</p>
+          <p> </p>
+          <p>请收下，这是说好的报酬。</p>
+          <p> </p>
+          <p>在那么干燥的地方战斗，一定口很渴吧。请您用它润润嗓子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭烈士荒地的凶恶的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Basilisk_45_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_NPC_Gaix]百夫长报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了人们可以安全地通过烈士荒地，去扫荡条纹蜥蜴和刺叶迪欧纳埃。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加易斯百夫长说条纹蜥蜴和刺叶迪欧纳埃对经过烈士荒地的人们造成了威胁，让我去消灭他们。</p>
+          <p> </p>
+          <p>消灭了荒地的蜥蜴和迪欧纳埃，他说辛苦了，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

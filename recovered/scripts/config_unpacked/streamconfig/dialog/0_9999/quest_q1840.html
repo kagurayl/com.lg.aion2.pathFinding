@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道自己被派到风景很好的要塞之后，我曾经很高兴。但来了之后却感觉非常失望。</p>
+          <p> </p>
+          <p>之前没想到自己只能整天站在这里盯着画看。</p>
+          <p> </p>
+          <p>每天看得眼睛发直，有的时候甚至一整天都说不了一句话。</p>
+          <p> </p>
+          <p>但是我绝对不会做别的事情或者擅离职守！</p>
+          <p> </p>
+          <p>因为我是个富有责任感的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里驻守是因为[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]。那里还有很多龙族的残党。他们把宝物藏在那里，并严密看守。</p>
+          <p> </p>
+          <p>啊，别担心。这里很安全。</p>
+          <p> </p>
+          <p>但是我绝不能看着有敌人存在而坐视不管！</p>
+          <p> </p>
+          <p>长官们好像也是这么认为，为了除掉他们，我们准备了很多奖赏。</p>
+          <p> </p>
+          <p>怎么样？您愿意接受消灭龙族的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看到那边的画了吗？我不是闲着没事干，才把它挂在那里的。敲打那幅画，就能进入[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]。</p>
+          <p> </p>
+          <p>任务是潜入深渊，消灭尽可能多的龙族。</p>
+          <p> </p>
+          <p>对了！进入入口之后，他们的保护魔法阵就会启动。</p>
+          <p> </p>
+          <p>敌人反正都是要消灭的，所以没关系。但如果不尽快行动，宝物箱就会被全部藏起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然您很忙，那就算了。</p>
+          <p> </p>
+          <p>我不想让您放下手中的事情，先来做这件事。</p>
+          <p> </p>
+          <p>如果有时间的话，您可以随时来找我。</p>
+          <p> </p>
+          <p>你们的帮助将对我起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把通往阿斯特利亚深渊的装置做成图画是我的主意。</p>
+          <p> </p>
+          <p>因为看不到美丽的风景，所以只能用图画来安慰一下自己。</p>
+          <p> </p>
+          <p>但是每天看着相同的画，现在早就看腻了。</p>
+          <p> </p>
+          <p>对了，任务顺利完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吗？呵呵，真痛快！</p>
+          <p> </p>
+          <p>每天听到天族的捷报，我就忘记了辛苦。</p>
+          <p> </p>
+          <p>希望您今后能继续来帮我。阿斯特利亚深渊还有很多敌人。</p>
+          <p> </p>
+          <p>请收下。这是极乐世界给您的奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]的所有龙族([%2]/43)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1251_TreasureGate_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照卡巴拉的委托，清除阿斯特利亚深渊的龙族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡巴拉让我去清除阿斯特利亚要塞下面的阿斯特利亚深渊的龙族。</p>
+          <p> </p>
+          <p>于是前往阿斯特利亚深渊完成了任务，卡巴拉说要消灭的敌人还有很多，让我以后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是热啊。</p>
+          <p> </p>
+          <p>埃尔特内正在变成沙漠虽然令人很担心，不过天气越来越热也是个大问题。</p>
+          <p> </p>
+          <p>在石头建成的要塞和森林里还算凉快一点...</p>
+          <p> </p>
+          <p>在沙漠里工作的守卫和神官岂不是更热。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您最近要不要到沙塔罗卡的坟墓去啊？或者要经过那里附近？</p>
+          <p> </p>
+          <p>如果是那样的话，有件事情我想拜托您。</p>
+          <p> </p>
+          <p>我有件东西要交给那边的[%dic:STR_DIC_N_Radamanthys]大人。</p>
+          <p> </p>
+          <p>您能帮我送过去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我的忙。</p>
+          <p> </p>
+          <p>这是我特制的饮料。是可以缓解干渴，补充体力的饮料。</p>
+          <p> </p>
+          <p>老师拉达曼迪斯大人在炎热的地方辛苦工作，我这个弟子却呆在凉快的地方...所以我为他准备了这个饮料。</p>
+          <p> </p>
+          <p>请您帮我送给位于沙塔罗卡的墓穴的[%dic:STR_DIC_N_Radamanthys]大人。</p>
+          <p> </p>
+          <p>请您让他小心不要中暑，一定要保重身体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您没有事情要去那里啊。</p>
+          <p> </p>
+          <p>那就没办法了。又不能因为我而让您改变行程。</p>
+          <p> </p>
+          <p>看来我得想别的办法了。花点钱叫个和风特急邮件什么的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来沙塔罗卡的墓穴有什么事吗？</p>
+          <p> </p>
+          <p>因为这里有凶猛的阿盖伦德雷克，没什么特殊的事情的话，一般是没有人到这里来的。</p>
+          <p> </p>
+          <p>您找我有什么特别的事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出饮料并转达马卡安的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是马卡安送给我的？真是太谢谢了...</p>
+          <p> </p>
+          <p>我只不过教过他一段时间，他却一直把我当作老师来对待，我真的非常感激。</p>
+          <p> </p>
+          <p>[%username]大人您这么辛苦送到这里，真是谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把饮料交给[%dic:STR_DIC_N_Radamanthys]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把马卡安制作的饮料送给沙塔罗卡的墓穴的拉达曼迪斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的灵魂治愈师马卡安说担心在沙塔罗卡工作的老师拉达曼迪斯会太热。</p>
+          <p> </p>
+          <p>于是按照他的委托，把特别制作的饮料送给了拉达曼迪斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

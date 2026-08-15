@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(桌子上放着一份文件。)</p>
+          <p> </p>
+          <p>(好像是德拉坎写的文件。) </p>
+          <p> </p>
+          <p>(看了一下，但看不懂其中的内容。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Taustir]百夫长看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把文件卷好，放进箱子里。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您最近好像很忙啊。</p>
+          <p> </p>
+          <p>我知道要塞那边交给了您很多重要的任务，阿格拉乌洛斯也经常让您帮他办事。</p>
+          <p> </p>
+          <p>相信他们这么做，是因为相信[%username]大人的实力。</p>
+          <p> </p>
+          <p>不过您来找我，有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出德拉坎的文件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是德拉坎写的文件吗？</p>
+          <p> </p>
+          <p>这确实是用龙族语写成的……我也懂一点龙族语，不过却看不懂这个东西。</p>
+          <p> </p>
+          <p>可能是用暗号写成的，也可能使用的是其他的语言。</p>
+          <p> </p>
+          <p>您去问问[%dic:STR_DIC_N_Aglauros]吧。</p>
+          <p> </p>
+          <p>他在格尔克马洛斯待了很长时间，应该对龙界的语言非常了解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的表情，好像是有什么事情要问我吧？</p>
+          <p> </p>
+          <p>你来找我，一定是和龙族或龙界有关的事情吧？</p>
+          <p> </p>
+          <p>我会把我知道的全部告诉你，快说说是什么事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出文件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你们为什么看不懂这份文件，要来找我了。</p>
+          <p> </p>
+          <p>这不是用普通的龙族语写成的，而是用暗号写成的文件。</p>
+          <p> </p>
+          <p>还好我曾经解读过类似的文件。</p>
+          <p> </p>
+          <p>虽然可以解读，不过可能需要花一点时间。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Taustir]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Aglauros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在荒废的乌达斯神殿发现了一份奇怪的文件。拿去给塔乌斯提尔看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在荒废的乌达斯神殿发现了一份好像是德拉坎写的文件。</p>
+          <p> </p>
+          <p>拿去给塔乌斯提尔看之后，他说好像是用龙族语写成的，但是看不懂，让我去问问阿格拉乌洛斯。</p>
+          <p> </p>
+          <p>看到文件之后，阿格拉乌洛斯说这是用龙族的暗号写成的，但是可以解读，让我稍等一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

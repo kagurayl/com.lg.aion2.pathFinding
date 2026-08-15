@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你接受了诺亚的拜托，我会按约定把主人的宝物给你。</p>
+          <p> </p>
+          <p>你靠近一点！</p>
+          <p> </p>
+          <p>我告诉你隐藏宝物的地方。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">靠过去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那件宝物是主人很心爱的东西。</p>
+          <p> </p>
+          <p>隐藏的地方只有主人和诺亚知道。</p>
+          <p> </p>
+          <p>因为[%username]你帮助了诺亚，所以破例告诉你。 </p>
+          <p> </p>
+          <p>但是千万不能和别人说。你能保证吗？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听好了。我只说一遍。</p>
+          <p> </p>
+          <p>从这儿沿着农场往下走，有一条河。</p>      
+          <p> </p>
+          <p>在河边有一块其他稻草人守着的地。</p>  
+          <p> </p>
+          <p>你在那儿找一下。主人的宝物就在那儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说你没办法保密？</p>
+          <p> </p>
+          <p>那我不能告诉你宝物的位置。</p>   
+          <p> </p>
+          <p>即使你是守护者。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看起来很旧的酒桶。)</p>
+          <p> </p>
+          <p>(里面好像装满了酒，很沉。)</p>                
+	</body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">打开酒桶看看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(桶里装满了金黄色的酒。)</p>
+          <p> </p>
+          <p>(发出甜甜的南瓜的香味。)</p>
+          <p> </p>
+          <p>(从色泽和味道上看一定是南瓜酒。)</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在河边仓库的后面寻找巴尔波亚的宝物</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">作为除掉雷帕尔革命团的报答，稻草人诺亚说要把主人的宝物送给我。在巴尔波亚农场上寻找隐藏的宝物。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稻草人诺亚感谢我处置了雷帕尔革命团，说要把主人的宝物送给我。</p>
+          <p> </p>
+          <p>在诺亚所说的地方，找到了陈年的酒桶。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

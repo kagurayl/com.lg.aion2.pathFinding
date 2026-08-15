@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有了巡查兵，才稍微放心一点。这里真的是非常危险的地方。</p>
+          <p> </p>
+          <p>对于[%username]大人来说，那些怪物可能微不足道，但对于我们人类来说，却是威胁生命的可怕的东西。</p>
+          <p> </p>
+          <p>特别是鸟妖和巴库，一到晚上就格外猖獗。</p>
+          <p> </p>
+          <p>刚想睡觉，鸟妖和巴库就来了，和巡查兵展开血战。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然巡查兵们看到有鸟妖和巴库的肉可以吃，都很高兴，但是对于我来说，这真的是非常可怕的事情。</p>
+          <p> </p>
+          <p>成为难民在这里流浪之后，我对什么东西都很害怕。</p>
+          <p> </p>
+          <p>想想在故乡的日子，每天都那么开心……</p>
+          <p> </p>
+          <p>如果能把凶恶的鸟妖和巴库消灭掉，我就能睡个安稳觉。怎么样？您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。前面可以看到很多的[%dic:STR_DIC_M_Crestlich_28_An]和[%dic:STR_DIC_M_Baku_27_An]。</p>
+          <p> </p>
+          <p>如果您能帮我把他们除掉，我会送你一件珍贵的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了。[%username]大人是无法理解我的心情的。</p>
+          <p> </p>
+          <p>鸟妖和巴库之类的野兽又有什么可怕呢？</p>
+          <p> </p>
+          <p>如果不能站在像我这样无力的难民的角度看问题，当然是这个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸟妖和巴库消灭掉了吗？</p>
+          <p> </p>
+          <p>之前我拜托巡查兵做同样的事情，他还冲我发脾气，说为什么不要肉，光让他去打猎。</p>
+          <p> </p>
+          <p>但是我再也不想吃鸟妖和巴库的肉了。</p>
+          <p> </p>
+          <p>我再也不想看到那种东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说全部消灭掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。今天晚上总算可以消停了。</p>
+          <p> </p>
+          <p>如果[%username]大人能够做这里的巡查兵，我就能安心睡觉了……啊，我不是说现在的巡查兵无能。</p>
+          <p> </p>
+          <p>这是我的最好的东西了，我想用它来对您表示感谢。</p>
+          <p> </p>
+          <p>请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭让难民陷入恐惧的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Crestlich_28_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Baku_27_An]([%5]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ernia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">应该去消灭经常攻击难民营，让埃尔尼亚陷入恐惧的鸟妖和巴库。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难民埃尔尼亚说因为害怕经常攻击难民营的鸟妖和巴库，一直都睡不好觉。</p>
+          <p> </p>
+          <p>按照她的委托，消灭了鸟妖和巴库，她表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

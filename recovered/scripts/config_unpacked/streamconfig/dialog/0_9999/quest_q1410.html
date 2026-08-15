@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！您现在可不能走啊。</p>
+          <p> </p>
+          <p>我不是说过要塞已经答复了吗？而且是给艾奥洛斯大人。</p>
+          <p> </p>
+          <p>艾奥洛斯大人看了回信之后，让我等[%username]大人回来就带您去见他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原因我也不知道。我在报告书上写了[%username]大人您帮了我的忙，不知道是不是因为这个原因...</p>
+          <p> </p>
+          <p>不过，见到[%dic:STR_DIC_N_Aeolus]大人的话您不就知道了。</p>
+          <p> </p>
+          <p>他现在应该在结界塔里面，您最好亲自去向他确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要耽误时间，请您马上就过去吧。</p>
+          <p> </p>
+          <p>艾奥洛斯大人要亲自见您，应该是有什么重要的事情。</p>
+          <p> </p>
+          <p>好了，我要出去巡逻了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您现在有事吗？</p>
+          <p> </p>
+          <p>虽然不知道是什么事情，不过最好不要让艾奥洛斯大人等太久。</p>
+          <p> </p>
+          <p>他虽然脾气很好，但是一旦发起火来就谁也拦不住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎欢迎。</p>
+          <p> </p>
+          <p>我一直在等您过来。</p>
+          <p> </p>
+          <p>要让您去做这种事情，不知道泰雷马科斯大人是怎么想的...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子您好像是刚战斗完回来，您先喘口气。</p>
+          <p> </p>
+          <p>因为这不是适合在兴奋的状态下听的事情。</p>
+          <p> </p>
+          <p>稍微镇定一点之后，请您和我说一声。那时我再和您仔细说。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见[%dic:STR_DIC_N_Aeolus]接受指令</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说结界守护者艾奥洛斯在找我。去结界塔见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇贝尔拉拉住了刚想要回去的我。说艾奥洛斯收到了要塞的回信之后要找我。</p>
+          <p> </p>
+          <p>进入结界塔找到了艾奥洛斯，他让我先歇一歇。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Turbo] </p>
+          <p>训练内容：消灭黑脚莱卡恩</p>
+          <p> </p>
+          <p>我们想给[%username]大人提供一个消灭莱卡恩，让自己获得更快发展的机会。</p>
+          <p>本次训练内容是到黑脚部落去消灭[%dic:STR_DIC_M_LycanPriestS_19_Ae]%和[%dic:STR_DIC_M_LycanShamanS_19_Ae]%。</p>
+          <p>这是危险的任务，请您一定要找到[%dic:STR_DIC_E_Mentor]，组成组队之后一起过去。</p>
+          <p>和导师距离太远的话，就无法通过训练，所以请您一定要跟在他身边。</p>
+          <p>完成训练之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>公文中的训练内容完成了吗？</p>
+          <p> </p>
+          <p>就是和导师一起消灭黑脚精锐治疗师和黑脚精锐大咒术师的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您一定会处理得很好的。</p>
+          <p> </p>
+          <p>您近距离地观看了导师战斗的情形，今后[%username]大人只要像那样对付莱卡恩就行了。</p>
+          <p> </p>
+          <p>虽然这样成长好像很缓慢，但人就是这样一步步成长起来的。</p>
+          <p> </p>
+          <p>愿黑暗的平安与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起消灭[%dic:STR_DIC_E_Q48601]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Turbo]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭黑脚莱卡恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我到黑脚部落去积累和莱卡恩战斗的经验。</p>
+          <p> </p>
+          <p>于是到黑脚部落去，和导师一起消灭掉了黑脚莱卡恩。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

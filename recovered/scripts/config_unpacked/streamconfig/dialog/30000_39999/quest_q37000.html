@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Ammianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是搜集[%dic:STR_DIC_I_QUEST_37000A]。</p>
+          <p> </p>
+          <p>贝尔特伦要塞周边污染的雪莉在不断增加，给作为水源的埃尔伦江造成了污染。变异的雪莉呈现独特的蓝色，它们的皮非常坚硬，因此你需要导师的帮助。</p>
+          <p> </p>
+          <p>请你和导师一起到贝尔特伦要塞附近去，搜集5个[%dic:STR_DIC_I_QUEST_37000A]。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雪莉本来不是蓝色的。随着贝尔特伦要塞周边的水质受到污染，雪莉也开始发生变异，开始变成蓝色。</p>
+          <p> </p>
+          <p>而且雪莉的皮原本很容易剥下，但是变异的雪莉的皮却很硬，很难打开。</p>
+          <p> </p>
+          <p>这次任务之所以让您和导师一起去，是因为没有导师的帮助的话，就无法把雪莉的皮剥开。</p>
+          <p> </p>
+          <p>您去执行了任务，应该知道了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蓝色雪莉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没开始执行任务吗？</p>
+          <p> </p>
+          <p>让您搜集蓝色雪莉，不光是为了研究，也是怕有人吃了它拉肚子。</p>
+          <p> </p>
+          <p>事不宜迟，请您快和导师一起到贝尔特伦要塞周边去搜集[%dic:STR_DIC_OBJ_LF1a_FOBJ_Q37000]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蓝色雪莉的颜色好像比上次看到的时候更深了。是污染变得更严重了吗？</p>
+          <p> </p>
+          <p>必须把这些雪莉交给上面，找出污染的原因。</p>
+          <p> </p>
+          <p>今天的任务您完成得非常出色。</p>
+          <p> </p>
+          <p>只要您一直这么努力，今后一定会成为一个优秀的[%userclass]。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起，搜集[%dic:STR_DIC_I_QUEST_37000A]%，然后交给[%dic:STR_DIC_N_Ammianus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的安米亚努斯那里收到了一封信。按照指示，和导师一起到贝尔特伦要塞周边搜集蓝色雪莉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去贝尔特伦执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起从贝尔特伦要塞附近的污染的雪莉身上搜集蓝色雪莉，交给安米亚努斯之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

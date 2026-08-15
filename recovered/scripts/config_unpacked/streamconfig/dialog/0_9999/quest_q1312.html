@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏[%username]大人，我才能确认土壤和种子都已经成功改良的事实。</p>
+          <p> </p>
+          <p>现在只要逐渐增加种植的面积，埃尔特内的环境应该会逐渐好转。</p>
+          <p> </p>
+          <p>继续增加神秘泉的数量，增加树木的种植的话，相信不久以后我和鲍莫娜的愿望就会实现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能帮我把这个种子交给[%dic:STR_DIC_N_Phomona]吗？</p>
+          <p> </p>
+          <p>要去见鲍莫娜，必然会遇到很多凶恶的野兽。但作为生命的守护者，我没有自信可以和它们对抗。</p>
+          <p> </p>
+          <p>鲍莫娜收到种子的话，一定会非常高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把种子交给鲍莫娜之后，帮我转告她，用插扦的方法比用种子种植更快，费用也更少。</p>
+          <p> </p>
+          <p>术古族原来的种子卖得不是一般的贵。埃尔特内变成沙漠的话，对他们的打击也会很大，不过只要是和钱有关的事情，他们就一点都不考虑现在的情况。</p>
+          <p> </p>
+          <p>好吧，请您把这些改良的种子安全地交给鲍莫娜。路上千万要小心。要记住，埃尔特内的未来就攥在您的手里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里有很多事情要做，所以不能离开这里。</p>
+          <p> </p>
+          <p>而且刚才我也说过了，我一个人去那里的话会很危险。</p>
+          <p> </p>
+          <p>不过看来您也很忙，那就没办法了。</p>
+          <p> </p>
+          <p>以后我再拜托其他人吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您去询问研究情况，您去的时间可要比我想象的长得多。</p>
+          <p> </p>
+          <p>您见到伊安德乌斯大人了吗？</p>
+          <p> </p>
+          <p>研究的情况怎么样？希望您能告诉我好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把种子交给她，并转达伊安德乌斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？我还想只要研究有一点进展就已经不错了，您居然把改良的种子带回来了！</p>
+          <p> </p>
+          <p>啊，真是太好了！</p>
+          <p> </p>
+          <p>我明白了。我要好好种植这些种子，必须尽快培育出更多的种子才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把种子交给[%dic:STR_DIC_N_Phomona]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把伊安德乌斯改良的种子交给鲍莫娜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯说多亏我才能完成种子的改良工作，并让我把种子交给鲍莫娜。</p>
+          <p> </p>
+          <p>把种子交给了鲍莫娜之后，她非常高兴，说要马上种植，培育出更多的种子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

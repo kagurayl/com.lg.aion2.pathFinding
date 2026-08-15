@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>祝贺，祝贺。祝贺您觉醒。</p>
+          <p> </p>
+          <p>您是[%username]吧。您是在[%userlevel]年前觉醒的吗？</p>
+          <p> </p>
+          <p>那时我在举行守护者仪式的时候，好像还见过[%username]大人……肯定见过！</p>
+          <p> </p>
+          <p>您了解守护者日吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在古代，每当有人觉醒成守护者的时候，所有人都会祝贺他觉醒，祝愿他有一个美好的未来。</p>
+          <p> </p>
+          <p>但是随着觉醒者的增多，就用守护者之间相互祝贺的节日代替了那种仪式。</p>
+          <p> </p>
+          <p>主神殿每年都会送来巨大的蛋糕，庆祝这一天的到来。</p>
+          <p> </p>
+          <p>您还没见过蛋糕吗？听说巨大的美味蛋糕已经送到了伏魔殿。</p>
+          <p> </p>
+          <p>您想到伏魔殿去看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不光是蛋糕。您可以去伏魔殿看看蛋糕，然后去见见礼物交换员[%dic:STR_DIC_N_DC1_Emma]。</p>
+          <p> </p>
+          <p>安玛会向拥有节日的热气的所有守护者发放礼物。</p>
+          <p> </p>
+          <p>她是用灼热的热气交换礼物的艾尔玛的妹妹。请您一定要去见见她。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能因为天气冷就蜷缩着不动！</p>
+          <p> </p>
+          <p>来吧，请挺起你的胸膛！快到伏魔殿去感受节日的热气吧。</p>
+          <p> </p>
+          <p>等您做好心理准备之后，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还记得灼热的热气吗？将守护者的气息封印到卡片上的技术是我姐姐发明的。</p>
+          <p> </p>
+          <p>您知道箱子交换员艾尔玛吗？她是我姐姐！</p>
+          <p> </p>
+          <p>上次是将灼热的热气封印到了卡片上，这次又成功地封印了节日的热气。</p>
+          <p> </p>
+          <p>因为姐姐还在交换灼热的热气，所以由我来负责用节日的热气交换礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您有节日的热气吗？</p>
+          <p> </p>
+          <p>[%username]大人在觉醒之后，一直在为伏魔殿的荣耀而战。我在此祝您节日快乐。</p>
+          <p> </p>
+          <p>希望您能搜集到很多的节日的热气，交换到很好的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_DC1_Emma]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">守护者日到了，到充满节日气氛的伏魔殿去见见安玛吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者日到了，节日的守护者让我去伏魔殿看看。</p>
+          <p> </p>
+          <p>来到了充满节日气氛的伏魔殿，安玛告诉了我有关节日的热气的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

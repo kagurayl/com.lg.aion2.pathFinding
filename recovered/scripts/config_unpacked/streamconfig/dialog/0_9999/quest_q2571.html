@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稍等一下啊！您现在忙吗？</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我把这个预防药箱子拿去交给[%dic:STR_DIC_N_Vonduca]吗？</p>
+          <p> </p>
+          <p>啊，本杜卡就是这里的自卫团长。你们也许已经见过面了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Vonduca]怎么说呢...是个了不起的女人。不，是了不起的人类，对吧？</p>
+          <p> </p>
+          <p>连使剑的方法都没好好学过，却在这里带领着自卫团。</p>
+          <p> </p>
+          <p>把村里人带到这里来的据说也是她。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在过来避难之前，村子里的人已经都躲在屋子不敢出去了。</p>
+          <p> </p>
+          <p>因为那些变成不死族的人和家畜。</p>
+          <p> </p>
+          <p>她冒着危险，带领包括老幼病残在内的一行人安全地来到这里避难。您说是不是很了不起？</p>
+          <p> </p>
+          <p>如果没那个胆量的话，这样的计划可能连想都不敢想。</p>
+          <p> </p>
+          <p>怎么样？您愿意去见见[%dic:STR_DIC_N_Vonduca]，把这个预防药箱子交给她吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。</p>
+          <p> </p>
+          <p>把箱子交给她之后，请您跟她说这是不久前说的不死族预防药。那样的话，她就知道是什么了。</p>
+          <p> </p>
+          <p>然后以这个为借口，您可以和本杜卡说说话。问问她有没有什么需要帮助。</p>
+          <p> </p>
+          <p>我想[%username]大人一定也会很欣赏[%dic:STR_DIC_N_Vonduca]的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托[%username]大人去做这种事，是有原因的。</p>
+          <p> </p>
+          <p>我想让您以这个为借口，跟本杜卡说说话。因为她是对这里的情况最了解的人。</p>
+          <p> </p>
+          <p>不过要是您不愿意的话，就把箱子放着吧。</p>
+          <p> </p>
+          <p>过会儿我会让巴雷多送过去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像不是执政官，是来帮助我们村的吗？</p>
+          <p> </p>
+          <p>之前我不知道，后来遇到大事才知道，有守护者大人们在我们的身边，对我们会有多么大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出预防药箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，原来是这个啊。喝了它之后，真的就不会变成不死族了吗？</p>
+          <p> </p>
+          <p>不过味道好像很难闻。</p>
+          <p> </p>
+          <p>不管怎样，我得赶紧把它分发给其他人。</p>
+          <p> </p>
+          <p>你是为了这专门来找我的吗？我们自己去取也可以的，真是麻烦您了。</p>
+          <p> </p>
+          <p>(若有所指地说)要是这种药早点制造出来的话，村子也不会变成这样了...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把预防药交给[%dic:STR_DIC_N_Vonduca]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把斯雷伊尼尔的预防药箱子交给自卫团长本杜卡。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯雷伊尼尔百夫长说自卫团长本杜卡是很了不起的人物，让我把预防药箱子送过去，顺便和她谈谈。</p>
+          <p> </p>
+          <p>把预防药交给本杜卡并和她谈了谈，发现她真的就像百夫长所说，是一个谦逊的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

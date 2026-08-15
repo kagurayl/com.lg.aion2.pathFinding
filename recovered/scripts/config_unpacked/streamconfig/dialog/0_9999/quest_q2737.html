@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯的战局由占领多少个要塞决定。</p>
+          <p> </p>
+          <p>如果魔族能占领所有的要塞，龙族和天族在埃雷修兰塔就会没有立足之地。</p>
+          <p> </p>
+          <p>那可以说是我们最终的目标。</p>
+          <p> </p>
+          <p>最近据伏魔殿的分析说，要实现这一目标，光靠执政官的力量是不够的。</p>
+          <p> </p>
+          <p>但是幸运的是，除了执政官之外，我们还有很多出色的守护者，很多像你这样的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想交给你一个重要的任务。</p>
+          <p> </p>
+          <p>任务是占领[%dic:STR_DIC_M_Q1737all]。要想占领要塞，就必须打倒守护神将。</p>
+          <p> </p>
+          <p>也就是说，你必须把希埃尔的东部要塞、希埃尔的西部要塞和硫磺树要塞的守护神将打倒。</p>
+          <p> </p>
+          <p>怎么样？你想试试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想打倒[%dic:STR_DIC_M_Q1737all]的守护神将，需要做很多事前准备。</p>
+          <p> </p>
+          <p>首先必须确认敌人占领的要塞的可以占领时间是什么时候。然后还必须召集同伴。</p>
+          <p> </p>
+          <p>你也应该明白，一两个组队根本是杯水车薪。必须召集大量的同伴，组成部队。</p>
+          <p> </p>
+          <p>你应该不会觉得敌人只有守护神将一个吧？你需要面对大量的敌人，所以一定要做好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我看错人了吗？</p>
+          <p> </p>
+          <p>当然，我知道这个任务并不容易，你不能马上答应也可以理解。</p>
+          <p> </p>
+          <p>但是我想你应该具备那样的能力和野心。</p>
+          <p> </p>
+          <p>如果你之后改变了主意，或者找到了好的同伴，可以随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚来埃雷修兰塔的时候，我认为魔族的实力一定可以逐渐地扩张。</p>
+          <p> </p>
+          <p>虽然我知道战争很残酷，但我相信魔族的力量。但是实际情况却并不像我想象的那么简单。</p>
+          <p> </p>
+          <p>不过还好有你这样的守护者的帮助。</p>
+          <p> </p>
+          <p>对了，打倒守护神将的任务怎么样了?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太了不起了，[%username]。</p>
+          <p> </p>
+          <p>事实上，我把任务交给你的时候就觉得很抱歉。我知道这件事情会很困难。</p>
+          <p> </p>
+          <p>没想到你完成的这么出色...真让人吃惊。</p>
+          <p> </p>
+          <p>多亏了你，把天族和龙族赶出埃雷修兰塔的日子应该不远了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒[%dic:STR_DIC_M_Q1737all]的守护神将([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Votan]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照布塔恩的指示，打倒埃雷修兰塔下层要塞的敌人的守护神将。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布塔恩说为了扭转埃雷修兰塔的战局，需要守护者的帮助。</p>
+          <p> </p>
+          <p>并把打倒敌人的守护神将，把头盔作为证据带回来的任务交给了我。</p>
+          <p> </p>
+          <p>召集同伴组成部队打倒了守护神将之后，回去找到了布塔恩。他对我大加称赞，说我出色地完成了任务。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

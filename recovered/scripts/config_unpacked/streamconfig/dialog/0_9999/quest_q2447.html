@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你到了这里，能帮我一个忙再走吗？</p>
+          <p> </p>
+          <p>虽然你来这里应该是有事，但是如果能顺便赚点外快，不是一石二鸟的好事吗？</p>
+          <p> </p>
+          <p>所以请你帮帮我，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有事情经常要来雾鬃部落，但是每次都会因为白虎而被抓住。它们可以闻得到术古的味道。</p>
+          <p> </p>
+          <p>如果没有白虎的话，就可以悄悄地进来，做完事情之后再悄悄地出去，呐呐。</p>
+          <p> </p>
+          <p>你能帮我除掉白虎吗？</p>
+          <p> </p>
+          <p>反正魔族和莱卡恩的关系又不好，迟早都是要除掉的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>你去帮我把[%dic:STR_DIC_M_PetA_DireBeastSD_38_An]、[%dic:STR_DIC_M_PetA_DireBeastSD_40_An]和[%dic:STR_DIC_M_PetB_DireBeastSD_39_An]除掉。</p>
+          <p> </p>
+          <p>没有了它们的话，我就不会再被雾鬃莱卡恩抓住了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这种事情对守护者来说不就是小菜一碟吗？</p>
+          <p> </p>
+          <p>你要能帮我就好了，太过分了，呐呐。</p>
+          <p> </p>
+          <p>要是我是乌云贸易团的，你肯定不会这么无情地拒绝我的。不是吗？</p>
+          <p> </p>
+          <p>走着瞧吧，等我们奇多伦盗墓团强大了之后，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果是合格的术古的话，在什么情况下都要想到赚钱。</p>
+          <p> </p>
+          <p>被雾鬃部落关了起来，顺便把碍事的白虎除掉，这就是合格的术古的姿态。</p>
+          <p> </p>
+          <p>你帮我把它们除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。下次来的时候应该就方便多了。</p>
+          <p> </p>
+          <p>现在可以正式开始盗墓...啊，不，没有。我什么都没说。</p>
+          <p> </p>
+          <p>来，这是辛苦的报答。你既然拿到了报酬，就快走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉白虎</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PetA_DireBeastSD_38_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PetA_DireBeastSD_40_An]([%5]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PetB_DireBeastSD_39_An]([%8]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_DF2_15]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">查奥明抱怨说每次去雾鬃部落的时候都会因为白虎而被抓住。按照他的拜托，把搜索白虎、武装白虎和盔甲白虎除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>查奥明说因为白虎，每次到雾鬃部落来就会被抓住，给他的生意造成了障碍。</p>
+          <p> </p>
+          <p>于是帮他除掉了雾鬃部落的白虎，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

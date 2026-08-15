@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是现在还不能放心。周围还有很多人对神殿虎视眈眈，还不能放松警戒。</p>
+          <p> </p>
+          <p>如果没有那些贪心的家伙，我就能有时间倾听风的声音了……</p>
+          <p> </p>
+          <p>我想这次的事情，说不定还要请你帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你也听说过那些传言吧？说神殿里堆满了价值连城的宝物……</p>
+          <p> </p>
+          <p>嘘，请过来一点。</p>
+          <p> </p>
+          <p>这是秘密，神殿里埋藏的宝物比传说中的还要多。</p>
+          <p> </p>
+          <p>除了古书之外，还有珍贵的药材、价值连城的宝石、神秘的布料和珍贵的动植物，就在神殿的某个地方。只要能得到其中的一种，就足够一辈子吃喝不愁了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然我也不知道宝物藏在什么地方。即使知道，我也不能告诉你，呵呵呵。</p>
+          <p> </p>
+          <p>但是最近有人对神殿虎视眈眈，这让我很头疼。</p>
+          <p> </p>
+          <p>特别是[%dic:STR_DIC_M_Ettin_31_An]，偷过一次古书之后胆子更大了。他们打算继续进去偷盗。</p>
+          <p> </p>
+          <p>您能帮我把那些凶恶的家伙除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您一定会帮我的。</p>
+          <p> </p>
+          <p>就算他们胆子再大，只要狠狠教训一下，应该就会长记性了。</p>
+          <p> </p>
+          <p>去之前请您做好心理准备，那些家伙根本不知道什么时候退。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，没想到您会拒绝。</p>
+          <p> </p>
+          <p>您上次的勇气到哪儿去了呢？</p>
+          <p> </p>
+          <p>明白了。我会继续等待其他守护者的。世界很大，守护者也很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你。</p>
+          <p> </p>
+          <p>站在这里请人帮忙，真的非常痛苦，但是却没有别的办法。因为这是我的任务。</p>
+          <p> </p>
+          <p>您帮我去教训在神殿周围出没的[%dic:STR_DIC_M_Ettin_31_An]了吗？</p>
+          <p> </p>
+          <p>看您的表情，应该有点成果了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">领取奖励。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。这下我的心总算舒畅一些了。</p>
+          <p> </p>
+          <p>想到他们露出黄牙笑的可怕的样子，我连觉都睡不着。</p>
+          <p> </p>
+          <p>这是我的一点心意。虽然是匆忙准备的，但应该会有点用处。</p>
+          <p> </p>
+          <p>希望您今后能继续来帮我。我会同样给您报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ettin_31_An]([%2]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ibelia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭黄牙长毛雪人，然后回到伊贝利亚那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西风的守护者伊贝利亚正在为觊觎神殿宝物的怪物而头疼。</p>
+          <p> </p>
+          <p>帮她消灭了黄牙长毛雪人，她向我表示感谢，说感觉心情舒畅了很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

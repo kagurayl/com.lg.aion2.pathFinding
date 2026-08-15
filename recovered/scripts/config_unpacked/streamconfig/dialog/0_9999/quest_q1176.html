@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎哟，在这么危险的地方看到有商人吓了一跳吧。</p>
+          <p> </p>
+          <p>有像[%username]您为了天界不辞辛劳的人在，我这样算不了什么。</p>
+          <p> </p>
+          <p>什么，虽说要想做好生意，留在这里不是长久之计...</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>翻越山坡的时候没看见长得像岩石一般的怪物吗？</p>
+          <p> </p>
+          <p>是被叫作裂岩卡尔克盖伦的家伙。说到岩石自己会移动，不知道的人肯定以为我疯了呢。</p>
+          <p> </p>
+          <p>事实上，我之所以会在这里做生意就是因为那些家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问理由。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能够处置卡尔克盖伦的话，就能得到[%dic:STR_DIC_QILA84]，这自然是非常珍贵的东西。</p>
+          <p> </p>
+          <p>因为对于极乐世界的商人来说，它可以卖个好价钱。</p>
+          <p> </p>
+          <p>但是，要想弄到那家伙的精髓当然是件不容易的事情了。所以说啊，您有没有做这项副业的想法呢？</p>
+          <p> </p>
+          <p>光处置那些来来往往遇到的卡尔克盖伦就可以挣出您的旅行费用来。您看，怎么样啊？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。请你去捕捉[%dic:STR_DIC_FLA19]的[%dic:STR_DIC_MLA26]，然后带到[%dic:STR_DIC_QILA84]来。</p>
+          <p> </p>
+          <p>收了订金就要按约定至少抓来8个才行。</p>
+        <p> </p>
+         <p>极乐世界的商人要来拿货，请速去速回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就算是守护者，要想过活，总得需要钱吧...</p>
+          <p> </p>
+          <p>是，我明白了。像我这样卑微的商人当然不敢对守护者大人呼来喝去了。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我正掰着手指头等您回来呢。</p>
+          <p> </p>
+          <p>对了，弄到[%dic:STR_DIC_QILA84]了吗？</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出卡尔克盖伦的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就这些肯定不够。想弄到它是多么不容易的事儿啊，要买它的人都踏破门槛了。</p>
+          <p> </p>         
+          <p>您能再去搜集一点吗？</p> 
+          <p> </p> 
+          <p>我的信誉就全靠它啦！</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>1，2，3…正好8个没错。至少可以先救急了。</p>
+          <p> </p>
+          <p>来，这是货的价钱。</p> 
+          <p> </p>
+          <p>请别这么看。这个价钱已经是多给您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把消灭[%dic:STR_DIC_MLA26]后得到的东西交给[%dic:STR_DIC_LA64]</font></p>[%collectitem]</step>               
+    </steps>
+          <p><font font_xml="quest_summary">杂货商伊比温需要卡尔克盖伦的精髓。消灭阿尔泰米亚山岭的碎石卡尔克盖伦，搜集它的精髓。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔泰米亚山岭的杂货商伊比温说，如果谁给他卡尔克盖伦的精髓，他就给那个人一个好价钱。捕捉碎石卡尔克盖伦并把搜集到的精髓交给了他，伊比温非常高兴。</p>      
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

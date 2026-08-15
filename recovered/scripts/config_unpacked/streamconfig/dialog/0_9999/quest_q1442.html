@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到了埃尔特内之后，我吃了一惊。</p>
+          <p> </p>
+          <p>居然有那么多的人想要去除魔石。</p>
+          <p> </p>
+          <p>因为大家一得到魔石就会先凑合着装上，等后来得到更好的魔石就又想把原来的换掉。</p>
+          <p> </p>
+          <p>事实上，这是很浪费钱的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然去除魔石的人越多，我赚得越多，但有时还是会觉得可惜。</p>
+          <p> </p>
+          <p>因为魔石装备再解除之后，就无法继续使用了。</p>
+          <p> </p>
+          <p>还不如把搜集到的魔石拿来给我，我可以用更好的魔石交换。这样的话，对大家都有好处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>获得魔石之后，请不要随便装备。请您拿来给我，行吗？</p>
+          <p> </p>
+          <p>你把精神力+40、回避+8、武器防御+16的魔石给我，我就会把我的魔石给你。</p>
+          <p> </p>
+          <p>怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大部分人听我说了之后，都去仓库确认，然后很快就把魔石给我送了过来。</p>
+          <p> </p>
+          <p>[%username]大人，请您去仓库确认一下吧。</p>
+          <p> </p>
+          <p>打猎的时候，如果箱子里的魔石满了，也可以过来找我。</p>
+          <p> </p>
+          <p>只要有精神力+40、回避+8、武器防御+16的魔石各1个就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任何东西，对不同的人而言，价值是不同的。</p>
+          <p> </p>
+          <p>有人可能觉得精神力+40、回避+8、武器防御+16的魔石很有用，所以我不会勉强。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？您去仓库或箱子里找过了吗？</p>
+          <p> </p>
+          <p>如果您有精神力+40、回避+8、武器防御+16的魔石，就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像缺了什么。3种魔石必须齐全，我才能把报酬给您。</p>
+          <p> </p>
+          <p>我需要的是精神力+40、回避+8、武器防御+16的魔石，您再确认一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，确实是精神力+40、回避+8、武器防御+16的魔石。</p>
+          <p> </p>
+          <p>这是我给您作为报酬的魔石。</p>
+          <p> </p>
+          <p>怎么样？很不错吧？希望[%username]大人能够满意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select9">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还有吗？</p>
+          <p> </p>
+          <p>精神力+40、回避+8、武器防御+16魔石。</p>
+          <p> </p>
+          <p>如果您还有，请一次交给我。我可以马上为您交换。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">重新拿出魔石。</Act>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像缺了点什么。3种魔石必须齐全，我才能把奖励给您。</p>
+          <p> </p>
+          <p>我需要精神力+40、回避+8、武器防御+16魔石，希望您重新确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，交给普罗泰西亚斯</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">普罗泰西亚斯说可以用常见的魔石和他交换有用的魔石，应该接受他的提议。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔石去除师普罗泰西亚斯说如果我给他3个常见的魔石，他会用珍贵的魔石和我交换。</p>
+          <p> </p>
+          <p>把精神力+40、回避+8、武器防御+16的魔石各1个交给了他，从他那里获得了报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

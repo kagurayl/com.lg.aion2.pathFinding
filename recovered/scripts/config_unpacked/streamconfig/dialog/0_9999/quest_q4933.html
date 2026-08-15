@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，现在你也是名正言顺的[%userclass]了，也该是回顾自己历程的时候了。</p>
+          <p> </p>
+          <p>你先想想看命运之神庙为什么会下达这样的任务。</p>
+          <p> </p>
+          <p>马勒库坦主神非常担心命运的平衡被打破。</p>
+          <p> </p>
+          <p>有生就要有死。虽然守护者超越了死亡，但他们通过不断的奉献来获得命运的平衡。</p>
+          <p> </p>
+          <p>像现在一样充满了破坏和死亡的情况又是如何呢？这个世界死去太多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在的魔界充满了憎恨。</p>
+          <p> </p>
+          <p>对龙族的憎恨，对天族的憎恨……人们争先恐后，只顾着消灭敌人。</p>
+          <p> </p>
+          <p>命运的弟子要知道到处充斥着的战争和死亡，都将付出代价。</p>
+          <p> </p>
+          <p>[%username]！马勒库坦主神的年轻弟子。</p>
+          <p> </p>
+          <p>请回到你曾经执行过任务的地方吧。去那里向倒下的同伴伸出救援之手，传播马勒库坦主神的教诲吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>向倒下的同伴们伸出你的手吧。</p>
+          <p> </p>
+          <p>你没有选择生或死的时间，只要去考虑如何救活他人就可以了。</p>
+          <p> </p>
+          <p>现在的世界充满了破坏和死亡，你要以复活，让世界找到平衡。</p>
+          <p> </p>
+          <p>见到倒下的人就复活他们，见到疲劳的人，就让他们恢复力量吧。</p>
+          <p> </p>
+          <p>等足够多的人被你的援手所救，再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你最好遵从恩师的教诲。</p>
+          <p> </p>
+          <p>神庙总在为弟子而着想。</p>
+          <p> </p>
+          <p>我相信你会改变主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>追随命运道路的人需要注意的一点是，过分的谨慎。</p>
+          <p> </p>
+          <p>谨慎虽然是[%username]你必须具备的美德之一，但如果太过谨慎反而会成为坏事。</p>
+          <p> </p>
+          <p>有时我们需要毫不犹豫为了别人贡献自己的果敢。</p>
+          <p> </p>
+          <p>[%username]，你觉得呢？我说的事情有了怎样的进展？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>应该没有那么容易。</p>
+          <p> </p>
+          <p>帮助别人，传播教诲不仅非常辛苦，还要有牺牲自我的精神。</p>
+          <p> </p>
+          <p>但因为你所做的一切，命运又会回到平衡。</p>
+          <p> </p>
+          <p>马勒库坦主神和神庙的成员会为你骄傲。</p>
+          <p> </p>
+          <p>愿黑暗的荣耀与你同在！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_RESURRECT]，救活倒下的同伴([%2]/20)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">与[%dic:STR_DIC_N_Freyr]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按照普莱尔的请求，使用复活技能救活倒下的同伴们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普莱尔表示命运的平衡正被打破，让我履行并传播马勒库坦主神的教诲。</p>
+          <p> </p>
+          <p>遵从教诲，复活了倒下的同伴们。向普莱尔报告之后，得到了礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

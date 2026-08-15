@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等，等一下！</p>
+          <p> </p>
+          <p>您要是去梅尔普内营地的话，拜托您件事儿可以吗？</p>
+          <p> </p>
+          <p>我有东西想让您转交给杂货商[%dic:STR_DIC_LA41]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么请求。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个朋友前天突然来找我向我要药酒。说他最近精力不济，在火辣辣的太阳下站着做生意太辛苦。</p>
+          <p> </p>
+          <p>这是靠一边辛苦砍树一边收集的珍贵药草制成的酒，因为跟他也没什么交情所以就骗他说没有。</p>
+          <p> </p>
+          <p>他恳求我说要是再集齐了药草一定要做药酒给他，说一定会重重地谢我。开始的时候我是一口回绝了的，可不知是因为他的口才好还是怎么的，最后竟莫名其妙地答应了他。</p>
+          <p> </p>
+          <p>罗尼安走了以后我又仔细琢磨了一下，我不知道自己怎么就这么笨，竟然答应了他。找药草谈何容易啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我就做了看起来差不多实际上不同的酒。</p>
+          <p> </p>
+          <p>您能帮我把这个酒瓶送到梅尔普内营地交给[%dic:STR_DIC_LA41]吗？</p>
+          <p> </p>
+          <p>实际上这是掺了树木汁液的酒。</p>
+          <p> </p>
+          <p>没错，就是修补皮革防御区时用的那个树液。倒不是什么不能吃的东西，不过味道会比较浓烈。</p>
+          <p> </p>
+          <p>再说了，罗尼安也会如愿精神焕发的，所以也不算是完全骗他，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太谢谢您慷慨相助了。</p>
+          <p> </p>
+          <p>我暂时是不能在梅尔普内的营地附近出现了。喝了那个酒之后，他一定会来找我的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_LA41]那个家伙就在梅尔普内的营地。那么就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，怎么这么不通情理！</p>
+          <p> </p>
+          <p>你连这么简单的玩笑都理解不了吗？</p>
+          <p> </p>
+          <p>我算知道了。算我傻，以后再也不求你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事儿吗？</p>
+          <p> </p>
+          <p>你说是纳姆斯派你来的？</p>
+          <p> </p>
+          <p>这个家伙果然有药酒啊！</p>
+          <p> </p>
+          <p>哼，还骗我说什么没有呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递交树液酒。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近还一直担心自己力气大不如从前了呢，现在我要补补身子了。</p>
+          <p> </p>
+          <p>来，这是酒钱。我现在就喝一杯。</p>
+          <p> </p>
+          <p>（喝了一杯酒。）</p>
+          <p> </p>
+          <p>呃，这是什么呀！味道怎么这样！水，水在哪儿？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把树液酒送给[%dic:STR_DIC_LA41]，并领取酬劳</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_LA10]有事相求。到梅尔普内营地把他做的药酒交给[%dic:STR_DIC_LA41]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>樵夫[%dic:STR_DIC_LA10]有了烦心事儿。随口答应了向他讨药酒的杂货商罗尼安的请求，打算借机耍一下罗尼安。</p>
+          <p> </p>
+          <p>所以，用掺了树液的酒代替了药酒，还收了辛苦费。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

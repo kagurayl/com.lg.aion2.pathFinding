@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是[%username]%，对吧？</p>
+          <p> </p>
+          <p>很高兴见到你。我叫拉俄墨冬，负责管理凯西内尔神庙训练所。</p>
+          <p> </p>
+          <p>嗯哼，真是让人意外。我还以为你应该在英吉斯温呢。</p>
+          <p> </p>
+          <p>本来我给实力出众的守护者全部写了邀请信，但是因为行政官的疏忽，好像把你的名字给漏了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听说过安格利浦大战吗？</p>
+          <p> </p>
+          <p>嗯哼，看来你不知道啊。也是，这是保密的事件，如果没有亲历现场的话，当然不会知道。</p>
+          <p> </p>
+          <p>现在天界正面临巨大的危机。为了克服这场危机，我们需要让像你这样有实力的守护者变得更强。</p>
+          <p> </p>
+          <p>所以这次凯西内尔主神下了决定，将凯西内尔神庙训练所向普通守护者开放。</p>
+          <p> </p>
+          <p>你想在我们训练所接受训练吗？</p>
+          <p> </p>
+          <p>你的实力会得到成倍的提高。嗯哼，我可以保证。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，那你先去见见[%dic:STR_DIC_N_Mazion]吧。</p>
+          <p> </p>
+          <p>他会告诉你使用凯西内尔神庙训练所的方法，以及安格利浦大战的情况。</p>
+          <p> </p>
+          <p>嗯哼，我要说的就是这些。</p>
+          <p> </p>
+          <p>有机会的话，我们下次再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？</p>
+          <p> </p>
+          <p>是不想加入我们凯西内尔神庙吗？</p>
+          <p> </p>
+          <p>别担心。我们只是开放训练所，不会让你加入神庙的。</p>
+          <p> </p>
+          <p>嗯哼，不是任何人都可以加入我们神庙的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听拉俄墨冬所长大人说了。</p>
+          <p> </p>
+          <p>你决定在神庙训练所接受训练了吗？太好了。</p>
+          <p> </p>
+          <p>为了增强天界的兵力，我们需要更多的人来参加训练。</p>
+          <p> </p>
+          <p>在参加训练之前，我想你应该听听有关安格利浦大战的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吃惊吧？虽然很让人愤怒，但这是我们面对的现实。</p>
+          <p> </p>
+          <p>以现在的状态，我们连龙帝中最弱的提亚马特都击败不了。</p>
+          <p> </p>
+          <p>所以我们才开出了开放凯西内尔神庙训练所这一剂猛药。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+    <CutScene id="515"/>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，对于天界来说，现在是非常重要的时期。如果我们不能克服这个难关……</p>
+          <p> </p>
+          <p>希望你能努力训练。</p>
+          <p> </p>
+          <p>训练由木浦斯负责，想开始训练的话，你可以去找他。和[%dic:STR_DIC_N_Arora]说话，她就会把你送进凯西内尔神庙训练所。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到[%dic:STR_DIC_W_LF4_SZ_OP]去和[%dic:STR_DIC_N_Mazion]对话</font></p></step>            
+    </steps>
+          <p><font font_xml="quest_summary">据说凯西内尔神庙训练所正在向普通守护者开放。去见见马吉安，听听有关训练所的说明吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯西内尔神庙训练所所长拉俄墨冬说神庙训练所现在向普通守护者开放了，建议我去接受训练。</p>
+          <p> </p>
+          <p>找到了英吉斯温的首席教官马吉安，他给我讲述了安格利浦大战的情况，并说为了天界的安宁，让我参加训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

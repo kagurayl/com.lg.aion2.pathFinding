@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我父亲最近过得怎么样？</p>
+          <p> </p>
+          <p>我给他写了很多信，但一封回信都没有收到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说好像过得很好。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……是吗？</p>
+          <p> </p>
+          <p>但是他每次都跟我说生活很困难……</p>
+          <p> </p>
+          <p>离得这么远，我也不能亲眼确认。</p>
+          <p> </p>
+          <p>生活困难的话，就应该老老实实待着才对啊。</p>
+          <p> </p>
+          <p>想吃什么东西的时候应该忍着，必须卧薪尝胆才对……你说是不是，守护者大人？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很久没有收到礼物了，我的心情很激动……</p>
+          <p> </p>
+          <p>所以我匆匆忙忙地写了一封信。</p>
+          <p> </p>
+          <p>他送了我这么贵重的礼物，我也应该给他写封信表示感谢，你说对吧？</p>
+          <p> </p>
+          <p>我不想麻烦别人，希望你能帮我送过去。可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。</p>
+          <p> </p>
+          <p>有你亲自帮我送过去，我就放心了。</p>
+          <p> </p>
+          <p>详细的内容信里都有，但是请你再帮我谢谢他。</p>
+          <p> </p>
+          <p>有了这样一个可靠的父亲，我不知道有多高兴。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还有事情要做的话，那就算了。</p>
+          <p> </p>
+          <p>但是回来的时候，一定要过来一趟。</p>
+          <p> </p>
+          <p>我也要表现得知书达理，才不会给父亲的名字抹黑，你说是不是？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(摆出痛苦的表情)上次的信我不是让你扔了吗！</p>
+          <p> </p>
+          <p>你该不会又给我送新的信来了吧？</p>
+          <p> </p>
+          <p>这里还有好几封没有打开的信。</p>
+          <p> </p>
+          <p>拜托你以后不要做这种事情了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都说孩子很烦人，看来真不是一般的烦人。</p>
+          <p> </p>
+          <p>照顾一个长大了的孩子，怎么要花这么多钱啊？</p>
+          <p> </p>
+          <p>这样的女儿要是再有一个的话……</p>
+          <p> </p>
+          <p>哎呀，真是想都不敢想。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Tersites]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">哈尔莫内收到礼物后心情很激动，给父亲特尔希特斯写了一封感谢信。帮她把信送过去吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈尔莫内收到礼物后心情很激动，因此又给父亲写了一封信，让我帮她交给特尔希特斯。</p>
+          <p> </p>
+          <p>但是特尔希特斯收到信之后，让我下次别再做这种事情了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

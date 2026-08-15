@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不知道这个世界是怎么回事。</p>
+          <p> </p>
+          <p>听说很多独自旅行的术古都遭到了[%dic:STR_DIC_E_Ship_Da]的劫持。</p>
+          <p> </p>
+          <p>听说在人迹罕至的地方旅行的术古，被抓去之后，会成为[%dic:STR_DIC_M_IDShip_ManduriGiantNmd_43_Ah]的仆人。</p>
+          <p> </p>
+          <p>在饱受折磨之后，如果生了病或者受了伤，就会被抛弃在地图上没有显示的孤岛上。你不觉得很可怜吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们一向都热爱和平，看到同族这样惨死，真是忍无可忍！</p>
+          <p> </p>
+          <p>(颤抖着身体)但是[%dic:STR_DIC_E_Ship_Da]的黑暗术古太可怕了。</p>
+          <p> </p>
+          <p>不好意思，老是来麻烦你，你能帮术古一族去一趟[%dic:STR_DIC_E_Ship_Da]吗？</p>
+          <p> </p>
+          <p>你的力量很强，而且又有很多朋友，一定可以帮我教训[%dic:STR_DIC_M_IDShip_ManduriGiantNmd_43_Ah]！</p>
+          <p> </p>
+          <p>我会给你相应的报酬。拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，你果然是个好心的守护者！</p>
+          <p> </p>
+          <p>请你去教训一下[%dic:STR_DIC_M_IDShip_ManduriGiantNmd_43_Ah]，让他不敢再折磨我们术古一族。</p>
+          <p> </p>
+          <p>在铁耙号中层甲板的最里面，就能找到[%dic:STR_DIC_M_IDShip_ManduriGiantNmd_43_Ah]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不敢到铁耙号上去吗？</p>
+          <p> </p>
+          <p>请别这样。如果是你的同伴遇到了同样的事情，你会怎么样！</p>
+          <p> </p>
+          <p>如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你终于回来啦！</p>
+          <p> </p>
+          <p>拜托你的事情怎么样了？没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没看到被劫持的术古？没有的话就太好了。</p>
+          <p> </p>
+          <p>曼图图本来只是别人委托我们搜集的东西而已，现在却在铁耙号上被当作贵宾款待。没想到竟然会发生这种事。</p>
+          <p> </p>
+          <p>不管怎样，希望今后不要再有术古被劫持了……</p>
+          <p> </p>
+          <p>这是说好的酬劳。谢谢你的帮助，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Ship_Da]中层最里面的[%dic:STR_DIC_M_IDShip_ManduriGiantNmd_43_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">回到[%dic:STR_DIC_N_Shugo_DC1_22]那里去</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去铁耙号中层深处狠狠地教训一下金眼曼图图，然后回到佩伊灵灵那里去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩伊灵灵说听说有些独自旅行的术古被铁耙号劫持，成为了曼图图的仆人，最后又被遗弃在孤岛。</p>
+          <p> </p>          
+          <p>看到同族受到残害，她很伤心，但因为害怕黑暗术古，不敢到铁耙号上去。因此让我帮她去教训一下金眼曼图图。</p>
+          <p> </p>
+          <p>于是去铁耙号中层深处教训了金眼曼图图，回去告诉佩伊灵灵之后，她终于松了一口气。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我重新数了一下，好像还有丢失的原石没有找到！</p>
+          <p> </p>
+          <p>知道原石的数量不对的话，胡阿灵灵一定会把古安灵骂个半死的。</p>
+          <p> </p>
+          <p>而且拉盖乌姆原石用途很多，本来想卖个好价钱的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想继续请你帮忙。</p>
+          <p> </p>
+          <p>你赶紧再帮我跑一趟，在原石被消化掉之前，呐呐。</p>
+          <p> </p>
+          <p>你也有因为犯错而吃苦头的时候吧？希望你能帮帮身处困境的术古。</p>
+          <p> </p>
+          <p>如果你能帮我，古安灵一定不会忘记你的恩惠的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了，呐呐。</p>
+          <p> </p>
+          <p>你只要去捕捉[%dic:STR_DIC_M_MillipedeD_32_An]，帮我找回[%dic:STR_DIC_I_QUEST_2541a]就行。</p>
+          <p> </p>
+          <p>如果得到了原石之外的其他东西，全都归你所有。古安灵是很厚道的。</p>
+          <p> </p>
+          <p>我来再确认一下拉盖乌姆原石的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你怎么能这样呢？</p>
+          <p> </p>
+          <p>我本来想努力工作，获得胡阿灵灵的信任的，这下全完了。</p>
+          <p> </p>
+          <p>一想到要和胡阿灵灵解释，我的腿都在发抖。</p>
+          <p> </p>
+          <p>你不能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快过来。</p>
+          <p> </p>
+          <p>古安灵连厕所都没去，一直在这里等你。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2541a]丢失的事情，我还谁都没有告诉，呐呐。</p>
+          <p> </p>
+          <p>你帮我找到了吗？给我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拉盖乌姆原石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是失望。</p>
+          <p> </p>
+          <p>格力玛有那么可怕吗？</p>
+          <p> </p>
+          <p>还是被你偷偷藏起来了？</p>
+          <p> </p>
+          <p>如果你能把原石给我，我会好好酬谢你的。希望你遵守承诺。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。有了这些的话，总算能挣回些面子了。</p>
+          <p> </p>
+          <p>虽然上面沾满了黏糊糊的消化液，但是只要擦干净就好了。</p>
+          <p> </p>
+          <p>如果知道是从格力玛肚子里取出来的，可能有的守护者会不愿意买，这件事你可得帮我保密啊。</p>
+          <p> </p>
+          <p>这是我送你的礼物。请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找被[%dic:STR_DIC_M_MillipedeD_32_An]吃掉的原石，然后交给[%dic:STR_DIC_N_Shugo_DF3_11]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">寻找被格力玛吃掉的拉盖乌姆原石，帮助古安灵拜托困境。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古安灵说丢失的原石还没有全部找到，让他很担心。</p>
+          <p> </p>
+          <p>帮他消灭格力玛，搜集到了拉盖乌姆原石。他送了我一件礼物，并让我要帮他保密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

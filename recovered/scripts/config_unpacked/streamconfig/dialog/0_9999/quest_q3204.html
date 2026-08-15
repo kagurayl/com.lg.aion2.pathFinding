@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在只要把书送到埃雷修兰塔去就行了吧？</p>
+          <p> </p>
+          <p>(睁大眼睛看着我)你在干什么，守护者？</p>
+          <p> </p>
+          <p>还不去做出发的准备？必须马上出发，才能在规定时间内送到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问在说什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？干嘛装不知道啊？</p>
+          <p> </p>
+          <p>你不是帮我搜集到了曼杜里训练书吗？</p>
+          <p> </p>
+          <p>难道不应该负责到底吗？</p>
+          <p> </p>
+          <p>快把书送给埃雷修兰塔了的库普灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，拿着。这是你搜集到的[%dic:STR_DIC_I_quest_3203a]。</p>
+          <p> </p>
+          <p>不要跟库普灵多说话，要不佩佩琳琳会不高兴的。</p>
+          <p> </p>
+          <p>千万别说是你找到的。我相信你一定不会，但为了以防万一，我还是叮嘱一声。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？</p>
+          <p> </p>
+          <p>你是不喜欢佩佩琳琳吗？</p>
+          <p> </p>
+          <p>如果不是的话，为什么这么对我？</p>
+          <p> </p>
+          <p>佩佩琳琳真的非常非常失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为到了这里，就可以尽情地旅行了呢。</p>
+          <p> </p>
+          <p>要是知道会整天呆在码头的话，我绝对不会过来的。</p>
+          <p> </p>
+          <p>你真好。想去哪里的话，可以随时去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出驯养曼杜里的方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么啊？呐，是佩佩琳琳送来的吧。</p>
+          <p> </p>
+          <p>这本书一定是你找到的，我说的没错吧？</p>
+          <p> </p>
+          <p>没有必要遮遮掩掩的。我又不是不知道佩佩琳琳，这也不是一次两次了。</p>
+          <p> </p>
+          <p>(接过书)切，是用暗号写成的啊。解读起来可能会花些时间，呐。</p>
+          <p> </p>
+          <p>不管怎样，这对抓到恐怖的塔昆应该会很有帮助。</p>
+          <p></p>
+          <p>来，拿着，这是给你的谢礼。与其送给佩佩琳琳，我想还是送给你更好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_quest_3203a]交给[%dic:STR_DIC_N_Shugo_AB1_4]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把从铁耙号上搜集到的曼杜里训练书交给埃雷修兰塔的库普灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩佩琳琳说既然帮了她，就应该负责到底，让我帮她把曼杜里训练书送给埃雷修兰塔的库普灵。</p>
+          <p> </p>
+          <p>把驯养曼杜里的方法交给库普灵之后，他问我佩佩琳琳这次是不是又找人帮忙，并把辛苦费交给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

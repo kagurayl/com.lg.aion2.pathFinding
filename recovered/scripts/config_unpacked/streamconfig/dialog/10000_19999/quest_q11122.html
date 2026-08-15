@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在观察你。</p>
+          <p> </p>
+          <p>你是为了什么仇恨，才会不停地和狂信徒战斗的呢？</p>
+          <p> </p>
+          <p>我是因为龙崇拜者杀死了我的家人。</p>
+          <p> </p>
+          <p>他们把我的家族带走了，到现在我都不知道他们到底对我的家人们做了些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>崇拜者们一直在压迫着鸢族，我很想把他们全部杀掉。但是他们之中可能会有我们的同伴和家人，让我无法下手。</p>
+          <p> </p>
+          <p>在崇拜者聚集的神殿深处，[%dic:STR_DIC_M_LF4_B6_FanaticFi_NamedQ_54_An]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_NamedQ_54_An]正在对鸢族洗脑，制造新的悲剧。</p>
+          <p> </p>
+          <p>如果不把他们除掉，即使消灭再多的狂信徒，也会不断有新的崇拜者产生。</p>
+          <p> </p>
+          <p>既然要消灭崇拜者，就应该先把胡萨恩和塔卡除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把我年幼的儿子和妻子变成崇拜者的人，就是死十次也死不足惜。</p>
+          <p> </p>
+          <p>现在还不断有鸢族受害者出现，请你快去帮我把[%dic:STR_DIC_M_LF4_B6_FanaticFi_NamedQ_54_An]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_NamedQ_54_An]消灭掉。</p>
+          <p> </p>
+          <p>愿主神诅咒邪恶的崇拜者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看见你好几次在和崇拜者战斗。</p>
+          <p> </p>
+          <p>刚开始我以为你是接到了军团的命令，但是我发现你在战斗的时候非常认真。</p>
+          <p> </p>
+          <p>我觉得你是个志在消灭狂信徒的深明大义的守护者，所以我才会拜托你。</p>
+          <p> </p>
+          <p>如果你不能接受我的请求，就把它忘了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡萨恩和塔卡劫持了无数的鸢族，并把他们变成了崇拜者。你帮我审判他们了吗？</p>
+          <p> </p>
+          <p>他们是我的仇人，是对英吉斯温构成威胁的势力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭他们，不是单纯的打猎，而是伟大的功绩。</p>
+          <p> </p>
+          <p>凶恶的龙族走狗被消灭了，我们鸢族暂时就可以放心了。</p>
+          <p> </p>
+          <p>落入他们魔掌的生死不明的家人们呐……希望你们能为此感到高兴……</p>
+          <p> </p>
+          <p>你完成了我的心愿，这是给你的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭龙族的走狗</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B6_FanaticFi_NamedQ_54_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B6_FanaticWi_NamedQ_54_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Titus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">提图斯让我帮他消灭劫持鸢族，把他们变成龙崇拜者的马里卡·胡萨恩和马里卡·塔卡。应该接受他的请求。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提图斯说有龙族的走狗在劫持鸢族，并对他们进行洗脑，说必须先把他们消灭掉。</p>
+          <p> </p>
+          <p>按照他的委托，消灭了马里卡·胡萨恩和马里卡·塔卡。回去之后，他说自己的家人也遭到了他们的劫持，并对我表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

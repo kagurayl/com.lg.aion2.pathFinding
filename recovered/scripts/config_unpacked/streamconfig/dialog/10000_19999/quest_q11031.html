@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，小心脚底下！</p>
+          <p> </p>
+          <p>我刚在那里撒了蘑菇孢子。</p>
+          <p> </p>
+          <p>颜色非常鲜艳，我想会不会长出什么好吃的蘑菇来。</p>
+          <p> </p>
+          <p>要是被踩到了的话，蘑菇就长不出来了。请您小心一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想确认[%dic:STR_DIC_I_QUEST_11031a]到底能不能吃，您能帮我去搜集一些吗？</p>
+          <p> </p>
+          <p>我本来想让迪鲁斯去的，但他说没有力气。</p>
+          <p> </p>
+          <p>森林和原野是新的动植物的天堂，但是却来不及调查，真是郁闷。</p>
+          <p> </p>
+          <p>必须快点找到吃的东西，回到要塞去才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就拜托您了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_A4_Fellial_Dr_51_An]的叶子肉乎乎的，也许可以成为很好的食材。</p>
+          <p> </p>
+          <p>量也很足，那种叶子吃起来应该很软，应该很容易消化。</p>
+          <p> </p>
+          <p>不过先得判断有没有毒性，只要调查一下就知道了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，不想帮我的话，请走开。</p>
+          <p> </p>
+          <p>我是个学者。和拿着剑或宝珠战斗的守卫不同。</p>
+          <p> </p>
+          <p>一辈子都在图书馆里翻书的手，怎么能去对付那些东西呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_11031a]搜集到了吗？</p>
+          <p> </p>
+          <p>让我看看采到的叶子新不新鲜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出佩里亚叶子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>很好，叶子非常新鲜。</p>
+          <p> </p>
+          <p>叶子的肉质非常厚，只要切碎后撒上一点盐，就应该能吃了。</p>
+          <p> </p>
+          <p>没什么急事的话，您能稍等一下吗？</p>
+          <p> </p>
+          <p>我来加工一下叶子，待会儿请您尝一尝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(皱着眉头)嗯，这些好像不够。</p>
+          <p> </p>
+          <p>必须多准备一些，才能确认有没有问题。</p>
+          <p> </p>
+          <p>既然这样，就请您帮我多搜集一些[%dic:STR_DIC_I_QUEST_11031a]。</p>
+          <p> </p>
+          <p>不要这么随便应付。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，料理做好了！</p>
+          <p> </p>
+          <p>热气腾腾的，看上去很好吃吧？</p>
+          <p> </p>
+          <p>味道我已经调好了，您不用再放盐了。</p>
+          <p> </p>
+          <p>请您快点吃吃看吧，免得凉了。真想知道味道怎么样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">收下料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？料理好吃吗？</p>
+          <p> </p>
+          <p>我另外还为迪鲁斯准备了一份。跟我说说味道如何吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述品尝的感受。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，竟然睡着了，这可不行啊。</p>
+          <p> </p>
+          <p>要是守卫们吃了它之后睡着了，让谁去战斗啊？</p>
+          <p> </p>
+          <p>它分布这么广泛，我应该想到可能会有毒才对啊。怎么就忘了呢？</p>
+          <p> </p>
+          <p>如果是可以吃的东西的话，早就被别人摘走了。</p>
+          <p> </p>
+          <p>剩下的东西应该找个地方扔掉才行。要是不小心让迪鲁斯吃了就遭了。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_M_LF4_A4_Fellial_Dr_51_An]的叶子，然后交给[%dic:STR_DIC_N_Doria]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">重新和[%dic:STR_DIC_N_Doria]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">品尝[%dic:STR_DIC_N_Doria]制作的料理</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Doria]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助负责搜集粮食的多利亚采集佩里亚叶子</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多利亚说想要调查佩里亚叶子是否可以作为食物，让我去采集叶子。</p>
+          <p> </p>
+          <p>多利亚用采集到的叶子为我制作了料理，品尝之后，发现有让人沉睡的副作用。</p>
+          <p> </p>
+          <p>知道结果之后，多利亚说这种东西不能给守卫们吃，必须把剩余的东西扔掉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

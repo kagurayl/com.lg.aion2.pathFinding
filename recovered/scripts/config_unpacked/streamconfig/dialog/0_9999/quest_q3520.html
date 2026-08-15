@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您觉得那边的粮食口袋和我穿的盔甲哪个更结实呢？</p>
+          <p> </p>
+          <p>唉……以我现在的这种状态，即使是塞尼尔晒的鱼干，就能把我打成重伤。</p>
+          <p> </p>
+          <p>因为没办法对盔甲和盾牌进行修理，只能把坏了的东西将就穿在身上，或者用牢固的布进行缝补。</p>
+          <p> </p>
+          <p>因为村里可以找到的修补材料实在有限。</p>
+          <p> </p>
+          <p>啊，对不起。我又在说丧气话了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说没关系。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听巡查兵们说，眼镜蛇的细鳞非常结实。</p>
+          <p> </p>
+          <p>而且表面很光滑，很适合镶在盾牌的表面，那样的话，就能让敌人的武器滑开。</p>
+          <p> </p>
+          <p>但是以我现在的状态，出去搜集[%dic:STR_DIC_I_QUEST_3520a]的话，一定会没命的。</p>
+          <p> </p>
+          <p>所以我想厚着脸皮拜托您一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的恩情我真是没齿难忘。</p>
+          <p> </p>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>请您先帮我搜集5个[%dic:STR_DIC_M_Criton_41_An]的细鳞吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很快就会有人被鱼干打伤了。</p>
+          <p> </p>
+          <p>看来我得继续搜集坚韧的布才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料还没搜集到，就已经有人来找我修理防具了。</p>
+          <p> </p>
+          <p>我让您搜集的[%dic:STR_DIC_I_QUEST_3520a]怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出细鳞。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料还没搜集到，就已经有人来找我修理防具了。</p>
+          <p> </p>
+          <p>请您快一点。眼镜蛇的细鳞在皮托内恩沼泽地带可以搜集到。</p>
+          <p> </p>
+          <p>我在这里等着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常结实！虽然还不够，但我想可以暂时用来对付一阵子了。</p>
+          <p> </p>
+          <p>真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Criton_41_An]的细鳞，然后交给[%dic:STR_DIC_N_Ekseus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去皮托内恩沼泽地带搜集眼镜蛇的细鳞，然后交给艾克塞乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>村里找不到修理防具的材料，艾克塞乌斯对此很担心，于是帮他搜集到了眼镜蛇的细鳞。</p> 
+          <p> </p>
+          <p>艾克塞乌斯收到修理材料之后非常高兴，对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

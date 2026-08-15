@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！您又回来啦。</p>
+          <p> </p>
+          <p>您不知道见到您我有多高兴。</p>
+          <p> </p>
+          <p>莱诺斯和德莱内科仍然会冲到结界塔这里来。</p>
+          <p> </p>
+          <p>因为它们我都快头疼死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您应该知道要做什么了吧？</p>
+          <p> </p>
+          <p>这次请您帮我去清除[%dic:STR_DIC_M_Rhinoce_35_An]和[%dic:STR_DIC_M_Driton_35_An]。</p>
+          <p> </p>
+          <p>[%username]大人的话，这么点事情应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您又来帮我。</p>
+          <p> </p>
+          <p>请您去清除莱诺斯和德莱内科，然后把证据带回来。</p>
+          <p> </p>
+          <p>请您除掉[%dic:STR_DIC_I_QUEST_1408a]和[%dic:STR_DIC_I_QUEST_1408b]各10头。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次也跟您说过，莱诺斯和德莱内科很凶恶，而且数量很多，就我一个人的话很难把它们全部除掉。</p>
+          <p> </p>
+          <p>我真的非常需要帮助。</p>
+          <p> </p>
+          <p>如果您改变了主意的话，请再来找我。莱诺斯和德莱内科实在太多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_M_Rhinoce_35_An]和[%dic:STR_DIC_M_Driton_35_An]都除掉了吗？</p>
+          <p> </p>
+          <p>[%username]大人的话，那样的事情都不算什么事情吧？</p>
+          <p> </p>
+          <p>请您把证据交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出打猎的证据。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我拜托您打猎的是10个[%dic:STR_DIC_I_QUEST_1408a]和10个[%dic:STR_DIC_I_QUEST_1408b]。</p>
+          <p> </p>
+          <p>您是不是搞错了？</p>
+          <p> </p>
+          <p>我不能您一个一个拿过来就一个一个地给您报酬。请您把证据搜集齐了再拿来给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次也完成得相当出色啊。</p>
+          <p> </p>
+          <p>这是说好的报酬。</p>
+          <p> </p>
+          <p>莱诺斯和德莱内科经常过来骚扰，下次如果有时间的话，请您再过来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Rhinoce_35_An]和[%dic:STR_DIC_M_Driton_35_An]，然后把证据交给[%dic:STR_DIC_N_Dionera]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉侵入结界塔的莱诺斯和德莱内科。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>除掉侵入结界塔的莱诺斯和德莱内科，搜集到证据之后交给了迪奥内拉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

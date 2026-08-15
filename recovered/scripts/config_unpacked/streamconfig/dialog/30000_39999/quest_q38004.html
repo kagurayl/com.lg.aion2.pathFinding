@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，很多团体都想让我向[%username]大人传话。</p>
+          <p> </p>
+          <p>因为我一直站在这里，大家都知道我能见到很多人，所以都来求我帮忙。</p>
+          <p> </p>
+          <p>您知道特殊作战部吗？</p>
+          <p> </p>
+          <p>那是执行极乐世界正规军无法执行的任务的组织。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们主要执行战斗任务，因此不会随便接受新会员。</p>
+          <p> </p>
+          <p>这次特殊作战部特地邀请[%username]大人，看来[%username]大人的名气一定很大。</p>
+          <p> </p>
+          <p>我到处劝人加入，您可能会觉得有点烦。不过我也是受人所托，希望您能理解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界特殊作战部负责招募新成员的[%dic:STR_DIC_N_Calderon]大人在埃雷修兰塔的特米伦要塞。</p>
+          <p> </p>
+          <p>想见[%username]大人的人就是他。</p>
+          <p> </p>
+          <p>既然您要到埃雷修兰塔去见卡尔德伦大人，顺便体验一下特殊作战部的活动也是不错的选择。</p>
+          <p> </p>
+          <p>用执行每日任务获得的证物，据说是非常值钱的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我又不是让您马上加入极乐世界特殊作战部，只是让您去见见卡尔德伦大人，您还是不愿意吗？</p>
+          <p> </p>
+          <p>您可真不给人面子。每日任务虽然累，但还是很值得的。</p>
+          <p> </p>
+          <p>我还跟卡尔德伦大人说，见到[%username]大人您的话，一定会帮他传话的……</p>
+          <p> </p>
+          <p>如果以后您见到他，一定要说我跟您说过这件事。我可不想被他责怪，说我没有帮他传话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是负责管理特殊作战部的加入和退出事务的人，您知道我为什么要到这样的战场上来吗？</p>
+          <p> </p>
+          <p>因为如果申请者没有能够进入埃雷修兰塔的实力，我们是不会让他加入的。</p>
+          <p> </p>
+          <p>此外我们也是想吸收一些在埃雷修兰塔勇敢战斗的天族成为我们的会员。</p>
+          <p> </p>
+          <p>怎么样？您想加入特殊作战部吗？加入特殊作战部之后，可以执行每日任务，获得证物作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，当然我不是让你现在就决定。</p>
+          <p> </p>
+          <p>特殊作战部绝对不会强迫别人加入。也不会随便接受别人的加入申请。</p>
+          <p> </p>
+          <p>请您好好考虑一下，如果您愿意接受我们特殊作战部的每日指令，希望您能加入我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Calderon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说极乐世界特殊作战部的卡尔德伦正在找我。去埃雷修兰塔的特米伦要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界特殊作战部下属的卡尔德伦说要告诉我一个有用的情报，于是去埃雷修兰塔的特米伦要塞见到了他。</p>
+          <p> </p>
+          <p>他向我说明了极乐世界特殊作战部的情况，说如果我想加入，可以去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

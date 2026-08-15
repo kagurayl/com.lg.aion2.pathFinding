@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为朋友报了仇，下面应该去自首了。不过在这之前，我必须完成一件事。</p>
+          <p> </p>
+          <p>不知道你有没有发现，我生病了。而且是非常痛苦的病...</p>
+          <p> </p>
+          <p>到了晚上，我就会变成野狼。这是杀死魔族邪恶的老婆婆的代价。</p>
+          <p> </p>
+          <p>那个魔女死去的时候说，我会永远生活在孤独之中。</p>
+          <p> </p>
+          <p>当时我没在意，但过了几天就知道了。早上起来睁开眼睛，发现自己倒在了陌生的地方，周围的人用恐惧的眼神看着我。</p>
+          <p> </p>
+          <p>最后，在他们抛弃我之前，我离开了他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问解除诅咒的方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说必须用具有纯洁气息的水洗澡，才能解除诅咒。</p>
+          <p> </p>
+          <p>但是问题是必须在变成野狼的状态下进行。而在那种状态下，我是不由自己的意志所支配的。</p>
+          <p> </p>
+          <p>刚好这个洞穴里有钟乳石泉。水的气息很纯洁，应该可以解除我的诅咒。</p>
+          <p> </p>
+          <p>[%username]，你能等我变成野狼之后，把我带到[%dic:STR_DIC_W_LF2B_SZ_D_1]里去吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我应该不会乖乖过去，即使把我打个半死，你也要把我带到[%dic:STR_DIC_W_LF2B_SZ_D_1]去。</p>
+          <p> </p>
+          <p>呵呵，也许体力下降一半之后再带过去比较好。</p>
+          <p> </p>
+          <p>那就全靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你会理解我的痛苦...</p>
+          <p> </p>
+          <p>要是错过这次机会，我也许一辈子都得这样生活。</p>
+          <p> </p>
+          <p>救人一命胜造七级浮屠，求你帮帮我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老兄，你怎么这么晚才来？</p>
+          <p> </p>
+          <p>我一直在等你过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问状态。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看看不就知道了？那个可怕的诅咒解开了。</p>
+          <p> </p>
+          <p>现在我不用害怕夜晚的到来了。这全都是托你的福。</p>
+          <p> </p>
+          <p>感谢是必须的，来，这个。</p>
+          <p> </p>
+          <p>你是我的救命恩人。请收下这个，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使变成野狼的[%dic:STR_DIC_M_LF2A_ZaifNmPrisonerNMQ_50_An_2]体力下降一半，然后引到[%dic:STR_DIC_W_LF2B_SZ_D_1]里</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Siraus]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">西拉乌斯说因为魔女的诅咒，一到晚上自己就会变成野狼。为了解开他的诅咒，把受到诅咒的西拉乌斯引到钟乳石泉中。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西拉乌斯说在自首之前，必须完成一件事情，并讲述了自己的秘密。</p>
+          <p> </p>
+          <p>他说自己受到了魔女的诅咒，到了晚上就会变成野狼，必须在变成野狼的状态下在纯洁的水中洗澡，诅咒才能解开。</p>
+          <p> </p>
+          <p>等到晚上，把变成野狼的西拉乌斯引到钟乳石泉中，帮西拉乌斯解除了诅咒。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

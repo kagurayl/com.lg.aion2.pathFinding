@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了很久，从革命团那帮家伙的一贯作风来看，他们一定是在筹划什么巨大的阴谋。</p>
+          <p></p>
+          <p>要制定对策，就必须确切地知道革命团研究基地里到底在进行什么研究。</p>
+          <p></p>
+          <p>一般情况下，要塞会派遣情报人员收集情报，但是这样花费的时间太长...</p>
+          <p></p>
+          <p>没办法，只能使出最后的手段了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了很久，从革命团那帮家伙的一贯作风来看，他们一定是在筹划什么巨大的阴谋。</p>
+          <p></p>
+          <p>要制定对策，就必须确切地知道革命团研究基地里到底在进行什么研究。</p>
+          <p></p>
+          <p>一般情况下，要塞会派遣情报人员收集情报，但是这样花费的时间太长...</p>
+          <p></p>
+          <p>没办法，只能使出最后的手段了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是抓一个俘虏回来进行审问。只要选择了合适的人选，在极短的时间内就能获得很多情报，这一方法非常有效。</p>
+          <p></p>
+          <p>但是这么做的话，我们的监视行为就会被对方注意到...不过情况已经发展到这个地步，也没有其他的办法了。</p>
+          <p></p>
+          <p>[%username]大人，您能去革命团研究基地抓一个情报兵回来吗？</p>
+          <p></p>
+          <p>这些家伙掌握着研究基地的所有情报，只要审问他们就能够获得我们想要的情报。</p>
+          <p></p>
+          <p>请您去革命团研究基地抓一个[%dic:STR_DIC_M_LehparKnightQ_40_An]回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们都是很机灵的家伙，恐怕不会就这么跟着你回来。</p>
+          <p></p>
+          <p>请你先打掉[%dic:STR_DIC_M_LehparKnightQ_40_An]一半的生命力。然后让他们毫无意识地跟着你回来就可以了。</p>
+          <p></p>
+          <p>请记住。不要把他们杀死，只要消耗掉他们一半的生命力就可以。</p>
+          <p></p>
+          <p>从死人那儿是得不到任何情报的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事情只有[%username]大人才能胜任...</p>
+          <p></p>
+          <p>你已经去过一次研究基地了，对那里的地形了如指掌，也知道该怎么跟对方战斗。</p>
+          <p></p>
+          <p>如果您觉得太辛苦的话，我可以给您一点时间。</p>
+          <p></p>
+          <p>我先写一份交上去的报告，请您再重新考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，虽然预料到了，但还是很不好对付。</p>
+          <p></p>
+          <p>体力降到这个地步，还这么厉害！</p>
+          <p></p>
+          <p>您把他带到这儿来真是辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_no;HACTION_SELECT_QUEST_REWARD">这不算什么！</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这还不算什么啊？如果不是[%username]大人帮忙的话，怎么可能这么轻易就活捉这家伙呢。</p>
+          <p></p>
+          <p>请收下。这是给您的一点报答。</p>
+          <p></p>
+          <p>我本想送您更好的东西，但是因为一直呆在森林里，实在没什么东西。</p>
+          <p></p>
+          <p>好了，我现在就得去审问这家伙了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将[%dic:STR_DIC_M_LehparKnightQ_40_An]的生命力降到一半之后，将其引诱回来，交给[%dic:STR_DIC_N_Hestonos]。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Hestonos]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">需要革命团研究基地的实验的详细信息，引诱研究基地的情报兵并将他交给赫斯托诺思。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫斯托诺思说需要更多和革命团研究基地的实验有关信息，让我去活捉雷帕尔情报兵并将其带回。</p>
+          <p></p>
+          <p>按照他的拜托活捉了一名情报兵，他说其他事情由他来处理。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

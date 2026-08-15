@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在[%username]大人去矿山制造混乱的时候，我了解到了一个情况。</p>
+          <p> </p>
+          <p>(观察四周，小心地说)我找到了身上带着拉盖乌姆矿石输送计划文件的人。</p>
+          <p> </p>
+          <p>我偷听到了他们的话，说要把文件送到亚特雷亚各地的主要基地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从他们谈话的内容来看，那个计划书里一定包含着拉盖乌姆矿石的用途和他们的巢穴等所有的内容。</p>
+          <p> </p>
+          <p>如果能拿到那个文件，就能将革命团的人一网打尽。</p>
+          <p> </p>
+          <p>拿着计划书在那里讨论的，是[%dic:STR_DIC_M_LehparFiNNamedD_36_An]、[%dic:STR_DIC_M_LehparWiNNamedD_37_An]和[%dic:STR_DIC_M_LehparAsNNamedD_38_An]。</p>
+          <p> </p>
+          <p>除掉他们，就一定可以拿到[%dic:STR_DIC_I_QUEST_2559a]。</p>
+          <p> </p>
+          <p>[%username]大人，请您再帮我一次！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为不能被他们发现，所以我需要尽量少动。[%username]大人能答应帮我，真是帮了我的大忙。</p>
+          <p> </p>
+          <p>这次也必须深入矿山深处。找到带有[%dic:STR_DIC_I_QUEST_2559a]的人。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LehparFiNNamedD_36_An]、[%dic:STR_DIC_M_LehparWiNNamedD_37_An]和[%dic:STR_DIC_M_LehparAsNNamedD_38_An]都是很不好对付的家伙。</p>
+          <p> </p>
+          <p>而且他们不经常在拉盖乌姆矿山出现。因此需要耐心地等待才行。</p>
+          <p> </p>
+          <p>一个人的话会很困难，请您召集同伴一起过去。希望[%username]大人能安然回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您刚执行完那么困难的任务，又要让您再去一趟，看来是我太为难您了。</p>
+          <p> </p>
+          <p>我知道了。我再等等，一定会有人来帮我的。</p>
+          <p> </p>
+          <p>这个任务我会自己想办法，您别担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(好像在写着什么)啊，您回来啦。</p>
+          <p> </p>
+          <p>我正在写送给要塞的加密文件。</p>
+          <p> </p>
+          <p>即使被发现，也能跟他们说我在写诗。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_I_QUEST_2559a]到手了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拉盖乌姆矿石输送计划书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，您空着手就回来啦？</p>
+          <p> </p>
+          <p>我不是让您帮我去把矿山战斗队长、矿山大法师和矿山斥候队长除掉，把拉盖乌姆矿石输送计划书抢过来的吗！</p>
+          <p> </p>
+          <p>这是将他们一网打尽的好机会。请您快去帮我把[%dic:STR_DIC_I_QUEST_2559a]抢过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是计划书吗？让我来看看！</p>
+          <p> </p>
+          <p>上面写着拉盖乌姆矿石的生产量和埋藏量...可惜没有雷帕尔革命团主要基地的相关内容。</p>
+          <p> </p>
+          <p>不管怎样，这是很重要的文件，我得赶紧把它交给上司。</p>
+          <p> </p>
+          <p>谢谢您帮我完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_I_QUEST_2559a]，然后交给[%dic:STR_DIC_N_Stua]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说拉盖乌姆矿石输送计划书中包含和雷帕尔革命团有关的重要情报。除掉矿山战斗队长、矿山大法师和矿山斥候队长，找到拉盖乌姆矿石输送计划书，并交给斯图亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯图亚说上次侦察的时候看到矿山战斗队长、矿山大法师和矿山斥候队长在拿着拉盖乌姆输送计划书议论。</p>
+          <p> </p>
+          <p>她说如果能把计划书弄到手，就可以了解拉盖乌姆矿石的用途和他们的主要基地所在，把他们一网打尽。</p>
+          <p> </p>
+          <p>于是除掉了他们，拿到了拉盖乌姆矿石输送计划书。但可惜的是，上面并没有写明主要基地的位置。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

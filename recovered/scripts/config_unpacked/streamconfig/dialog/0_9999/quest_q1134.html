@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一点劲都没有，站着都累。</p>
+          <p> </p>
+          <p>因为拉肚子，我已经饿了一整天了。</p>
+          <p> </p>
+          <p>也没吃过什么坏东西，不知道怎么就成了这样。 </p>              
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能是因为水的原因。</p>
+          <p> </p>
+          <p>昨天的水味道有点奇怪。普利内也在拉肚子，我们一起吃的东西只有水。</p>
+          <p> </p>
+          <p>一定是[%dic:STR_DIC_MLA141]和[%dic:STR_DIC_MLA142]的排泄物污染了要塞周围的河和水坑。</p>
+          <p> </p>
+          <p>这样下去的话污染会越来越严重，您愿意帮助我们吗？</p>      
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>那就请您去要塞前面的水坑和河边把[%dic:STR_DIC_MLA141]和[%dic:STR_DIC_MLA142]赶走。</p>
+          <p> </p>
+          <p>他们不会轻易逃走，请您各捕捉10头，这样的话其他的畜生就会因为害怕而逃走了。</p>
+          <p> </p>
+          <p>那就拜托...啊，肚子又疼了。看来我得去向神官要点药了。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来以为您能帮我们的，我很失望。</p>   
+          <p> </p>      
+          <p>这种小事去找斯皮洛斯的话，他一定会烦的，怎么办...</p>
+          <p> </p>     
+          <p>没办法。那我只能去拜托泰奥托斯了。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_MLA141]和[%dic:STR_DIC_MLA142]从水坑那边赶走了吗？</p>
+          <p> </p>
+          <p>现在我能放心地喝水了吗？ </p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>您是位和斯皮洛斯一样亲切的人。</p>   
+          <p> </p>
+          <p>这是我的一点诚意，请您不要拒绝。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除污染要塞水源的动物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA141]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA142]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_LA74]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">贝尔特伦要塞周边的河水和水坑正被海伊布和蜥蜴的排泄物所污染。清除海伊布和蜥蜴，保护要塞的水源地。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿代利亚和普利内喝了水之后得了腹泻。阿代利亚说可能是因为海伊布和蜥蜴的排泄物污染了要塞周边的水源。</p>
+          <p> </p>
+          <p>为了让居民能安心喝水，清除了占据水源地的海伊布和蜥蜴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

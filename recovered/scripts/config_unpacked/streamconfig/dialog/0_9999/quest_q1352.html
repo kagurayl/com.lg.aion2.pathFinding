@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很长时间一直在前哨基地工作，很多军团士兵好像都渐渐地有点厌倦了。</p>
+          <p> </p>
+          <p>一天到晚都处于警戒状态，无法好好休息，这是当然而然的事情。</p>
+          <p> </p>
+          <p>不过这段时间大家还是坚持了过来，但是最近副作用开始逐渐显现出来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前有一个军团士兵去地下神殿巡查的时候，被德加尔比亚所诱惑，差一点死了。</p>
+          <p> </p>
+          <p>他应该是太疲惫了，半睡半醒就去巡逻了。</p>
+          <p> </p>
+          <p>德加尔比亚对精神不强的对象效果更强烈。</p>
+          <p> </p>
+          <p>据说[%dic:STR_DIC_M_5C_Succubus_31_Ae]会引诱对象，而[%dic:STR_DIC_M_5C_SuccubusPath_31_Ae]会使其失魂落魄。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，必须清除掉埃拉库斯地下神殿的[%dic:STR_DIC_M_5C_Succubus_31_Ae]和[%dic:STR_DIC_M_5C_SuccubusPath_31_Ae]。</p>
+          <p> </p>
+          <p>竟敢玩弄金刺军团士兵的灵魂，真是不可原谅。</p>
+          <p> </p>
+          <p>但是军团士兵本来就已经很累了，让他们去的话，说不定又会发生灵魂被夺走的事情。</p>
+          <p> </p>
+          <p>所以这件事情我想请你帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你这么爽快就答应去执行任务。</p>
+          <p> </p>
+          <p>请你到埃拉库斯地下神殿去把[%dic:STR_DIC_M_5C_Succubus_31_Ae]和[%dic:STR_DIC_M_5C_SuccubusPath_31_Ae]清除掉。</p>
+          <p> </p>
+          <p>决不能让军团士兵的灵魂被夺走的事情再次发生。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来我不想加重军团士兵们本来就很重的负担...</p>
+          <p> </p>
+          <p>不过既然你拒绝了，就没有办法了。</p>
+          <p> </p>
+          <p>希望你以后不要后悔。</p>
+          <p> </p>
+          <p>如果有人问起你的人品的话，我是不会给你说好话的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_M_5C_Succubus_31_Ae]和[%dic:STR_DIC_M_5C_SuccubusPath_31_Ae]清除掉了吗？</p>
+          <p> </p>
+          <p>那是些有一点空档都不会放过的可怕的家伙。</p>
+          <p> </p>
+          <p>但是你看上去一点都不累，想必应该没什么问题吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你完成得非常出色！</p>
+          <p> </p>
+          <p>现在你在亚特雷亚的评价将会更高。因为你是金刺军团可以放心把任务托付给你的守护者。</p>
+          <p> </p>
+          <p>来，这是辛苦的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除诱惑军团士兵的德加尔比亚</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_5C_Succubus_31_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_5C_SuccubusPath_31_Ae]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Castor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去把诱惑金刺军团士兵的德加尔比亚除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金刺军团军团长卡斯特罗说发生了疲惫的军团士兵受到德加尔比亚的诱惑的事件，为了士兵们的安全，让我去把它们除掉。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了迷惑的德加尔比亚和愚弄的德加尔比亚，他表示非常感谢，说今后我在亚特雷亚的评价会更高。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

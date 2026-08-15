@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你有没有看见[%dic:STR_DIC_LA53]？</p>
+          <p> </p>
+          <p>那家伙到底去哪儿了？</p>
+          <p> </p>
+          <p>无情的家伙。供他吃饭、供他睡觉，竟然就这么逃走了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问托蒂的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我的宠物普古斯。</p>
+          <p> </p>
+          <p>我一直把它当孩子养大，今天却突然不见了！</p>
+          <p> </p>
+          <p>可恶的家伙。我养它不知花了多少心血...</p>
+          <p> </p>
+          <p>等等...你现在有时间吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">回答说有。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那能帮我去把[%dic:STR_DIC_LA53]找回来吗？</p>
+          <p> </p>
+          <p>那个家伙表面上看起来是普古斯，但是因为经常和人在一起，所以看到人它会很高兴的。</p>
+          <p> </p>
+          <p>最近它好像经常去远处转悠，谁知道就这么不见了。要是它去了什么危险的地方就糟了...</p>
+          <p> </p>
+          <p>怎么样，愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近[%dic:STR_DIC_LA53]那个家伙对[%dic:STR_DIC_FLA07]很感兴趣，我担心是不是去了那个地方。</p>
+          <p> </p>
+          <p>你先去[%dic:STR_DIC_FLA07]找找看托蒂在不在那。</p>
+          <p> </p>
+          <p>要是万一它被布洛尼抓住吃掉怎么办...</p>
+          <p> </p>
+          <p>你赶紧去吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说托蒂只不过是只宠物？</p>
+          <p> </p>
+          <p>也是，眼里只有钱的佣兵怎么会理解[%dic:STR_DIC_LA53]对我的重要性。</p>
+          <p> </p>
+          <p>我再也不会找你帮忙了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？找到[%dic:STR_DIC_LA53]了吗？</p>
+          <p> </p>
+          <p>它在哪？还是没有找到？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">回答被烤着吃了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？</p>
+          <p> </p>
+          <p>几年时间辛辛苦苦当孩子一样养大的托蒂竟然进了布洛尼的肚子？</p>
+          <p> </p>
+          <p>那么多的时间和努力，都白费了...</p>
+          <p> </p>
+          <p>可恶的布洛尼！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到[%dic:STR_DIC_FLA07]去寻找[%dic:STR_DIC_LA53]的踪迹</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">任务完成！和[%dic:STR_DIC_LA12]对话 </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary"> [%dic:STR_DIC_LA12]心爱的宠物[%dic:STR_DIC_LA53]不见了。寻找托蒂的踪迹。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+      <notify state="succeed" progress="0" pos="2" fontsize="16" showframe="true" time="5" color="yellow">发现托蒂被烤熟了！</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> [%dic:STR_DIC_LA12]几年时间辛苦养大的宠物[%dic:STR_DIC_LA53]不见了。</p>
+          <p> </p>
+          <p>他拜托我去[%dic:STR_DIC_FLA07]寻找托蒂的踪迹。</p>
+          <p> </p>
+          <p>虽然找到了托蒂的踪迹，但是它已经被烤熟了。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

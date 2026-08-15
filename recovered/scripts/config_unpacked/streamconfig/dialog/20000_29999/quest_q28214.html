@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>热身活动结束了，现在让我们正式开始训练吧？</p>
+          <p> </p>
+          <p>我要给你一个新任务。</p>
+          <p> </p>
+          <p>我只说一次，一定要仔细听好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去打倒5个对战对象。</p>
+          <p> </p>
+          <p>和之前一样，不管是混沌竞技场还是孤独竞技场，对象是天族还是魔族，都没关系。</p>
+          <p> </p>
+          <p>只要战胜5个人就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你对1对1决斗有自信的话，就到孤独竞技场去，如果更喜欢多人对决的话，就到混沌竞技场去。</p>
+          <p> </p>
+          <p>竞技场入场券在[%dic:STR_DIC_N_Reigar]行政官那里可以领取。</p>
+          <p> </p>
+          <p>那就祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干嘛这样？</p>
+          <p> </p>
+          <p>又不是头一次，是害怕了吗？</p>
+          <p> </p>
+          <p>记住，[%username]%。在你停滞不前的时候，其他人正在第3神庙训练所努力积累实战经验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！看你满头大汗的，里面一定很激烈吧？</p>
+          <p> </p>
+          <p>不过从你的表情来看，应该是顺利结束了。能告诉我结果吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！和我一开始期待的一样。</p>
+          <p> </p>
+          <p>这是马勒库坦主神殿赐给你的奖励。</p>
+          <p> </p>
+          <p>希望你努力训练，获得更多的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_IDArena_pvp_D]打倒对战对象([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Shinin]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">击退进入第3神庙训练所的对战对象，然后向希宁战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>战斗教官希宁说要开始正式训练，让我到第3神庙训练所去打倒5名对战对象。</p>
+          <p> </p>
+          <p>打倒5名对战对象后向希宁报告，他给了我奖励，并鼓励我继续努力训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命执行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

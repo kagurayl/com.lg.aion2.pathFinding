@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<HtmlPages>
+ 
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我刚想派人去找您呢。您能自己过来，我就省事了。</p>
+          <p> </p>
+          <p>别紧张，是好事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(指着桌子上的文件)这是从为魔界做出贡献的守护者中选拔出来的人的名单。</p>
+          <p> </p>
+          <p>这些人可以在马勒库坦主神建立的第2神庙训练所中接受个人训练。</p>
+          <p> </p>
+          <p>是的，您也在名单上，所以您可以参加个人训练。当然，如果您愿意的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，您的决定很明智。这种机会可不是人人都有的。</p>
+          <p> </p>
+          <p>个人训练将在那边的第2神庙训练所中进行。</p>
+          <p> </p>
+          <p>一共分为6个阶段，是您单独接受的训练。</p>
+          <p> </p>
+          <p>训练规则和第1神庙训练所一样，应该不需要我重新说明了……啊，在这项训练中，必须消灭掉最终阶段的对象，才能完成训练。</p>
+          <p> </p>
+          <p>消灭掉扭曲空间的班克之后，请您过来告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了。您不用告诉我理由。</p>
+          <p> </p>
+          <p>您应该有您的事情。</p>
+          <p> </p>
+          <p>虽然这次您拒绝了，但是您的资格不会被剥夺。如果您改变了主意，请再来找我。</p>
+          <p> </p>
+          <p>随时欢迎您到第2神庙训练所来接受个人训练。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，我刚好收到了报告，说您完成了第2神庙训练所的最后一个阶段。</p>
+          <p> </p>
+          <p>您好像进去还没多久，是真的吗？</p>
+          <p> </p>
+          <p>快跟我说说训练的内容吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起，[%username]！</p>
+          <p> </p>
+          <p>我通过雷加尔向训练所记录官确认过了。</p>
+          <p> </p>
+          <p>现在我要授予您称号，请您端正姿态。</p>
+          <p> </p>
+          <p>特此向训练生[%username]授予完成第2神庙训练所的称号。</p>
+          <p> </p>
+          <p>请不要就此满足，希望今后您能继续努力训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+ 
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭第2神庙训练所的最终对象[%dic:STR_DIC_E_IDArena_Solo_S6_VanqJr_55_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Anja]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭第2神庙训练所的最终训练对象班克，然后向安雅战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+ 
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>战斗教官安雅说我在第2训练所的名单上，劝我参加个人训练。</p>
+          <p> </p>
+          <p>消灭了最终训练对象班克之后，向安雅报告。她祝贺我完成了训练，并让我继续努力参加训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+ 
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+ 
+</HtmlPages>

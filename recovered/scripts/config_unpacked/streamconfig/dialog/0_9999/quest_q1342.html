@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！有件急事我想拜托您。</p>
+          <p> </p>
+          <p>您知道石皮科塞利德和石皮科塞利奇吗？</p>
+          <p> </p>
+          <p>就是背上长着凹凸不平的背壳，四处游荡的野兽。</p>
+          <p> </p>
+          <p>最近因为石皮科塞利德和科塞利奇产生了问题，必须马上采取措施。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来科塞利德和科塞利奇并不是危险的动物。只要不去碰它们，它们就不会攻击人。</p>
+          <p> </p>
+          <p>但是不久之前，发生了经过沙漠的居民遭到科塞利德和科塞利奇兽群攻击的事件。</p>
+          <p> </p>
+          <p>要塞那边虽然在进行调查，但是还没有找到确切的原因。</p>
+          <p> </p>
+          <p>但是在找到原因之前，又不能对危险坐视不理。所以我需要[%username]大人的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问需要什么帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去把[%dic:STR_DIC_M_Shellizard_29_An]和[%dic:STR_DIC_M_ShellizardBaby_30_An]清除掉。</p>
+          <p> </p>
+          <p>虽然不知道原本温顺的动物为什么会突然变得凶恶，但最重要的是要考虑到居民们的安全。</p>
+          <p> </p>
+          <p>请您把它们清除掉，然后把证据带回来。</p>
+          <p> </p>
+          <p>这件事非常紧急，所以我才来请[%username]大人帮忙。因为我听说了您在贝尔特伦的功绩。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我的请求。</p>
+          <p> </p>
+          <p>请您马上去捕捉[%dic:STR_DIC_M_Shellizard_29_An]和[%dic:STR_DIC_M_ShellizardBaby_30_An]，并搜集15个[%dic:STR_DIC_I_QUEST_1342a]回来作为证据。</p>
+          <p> </p>
+          <p>因为以后向要塞报告[%username]大人的功劳时，最好是有证据。</p>
+          <p> </p>
+          <p>虽然最好能先把原因弄清楚，不过我们没办法等到那个时候了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说您从来不会拒绝困难的任务，难道是我听错了吗？</p>
+          <p> </p>
+          <p>人们正处于危险之中，怎么能这样视而不见呢？</p>
+          <p> </p>
+          <p>真是太让人失望了。看来是我错了，不该斯皮洛斯说什么就相信的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Shellizard_29_An]和[%dic:STR_DIC_M_ShellizardBaby_30_An]清除掉了吗？</p>
+          <p> </p>
+          <p>没忘记把科塞利德的背壳带回来吧？</p>
+          <p> </p>
+          <p>请您交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出科塞利德的背壳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子您是忘了搜集[%dic:STR_DIC_I_QUEST_1342a]了吧。</p>
+          <p> </p>
+          <p>如果在报告您的功劳的时候没有证据，您不觉得不太好吗？</p>
+          <p> </p>
+          <p>请您快去搜集背壳吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>我从要塞那里收到了消息，说已经找到了原因。</p>
+          <p> </p>
+          <p>如果早一点收到消息的话，就不必杀死科塞利德和科塞利奇了，真是可惜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把清除[%dic:STR_DIC_M_Shellizard_29_An]和[%dic:STR_DIC_M_ShellizardBaby_30_An]的证据交给[%dic:STR_DIC_N_Alexis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清除突然变得凶残的科塞利德和科塞利奇，并把搜集到的背壳交给阿莱克西斯</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿莱克西斯说科塞利德和科塞利奇突然变得凶残，为了防止居民们遭到危险，让我去清除科塞利德和科塞利奇，并把背壳作为证据带回去。</p>
+          <p> </p>
+          <p>按照阿莱克西斯的拜托把背壳带回去交给了他，他说已经找到了它们变得凶残的原因，并感叹说原因发现的太晚了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

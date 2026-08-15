@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于地下要塞的崇拜者，我们还一无所知。</p>
+          <p> </p>
+          <p>我是因为地下要塞才来到这里的，但是却还是没能取得什么发现。</p>
+          <p> </p>
+          <p>既不知道他们的规模，也不知道他们的目的，连战斗力都不了解，真是郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须了解他们的战斗力，才能对这股势力进行进一步的调查。</p>
+          <p> </p>
+          <p>听说他们的战斗力要比普通鸢族强得多，但是光知道这些还不够。</p>
+          <p> </p>
+          <p>[%username]大人，我想您应该可以独自潜入，确认[%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An]、[%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An]和[%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An]的战斗力。</p>
+          <p> </p>
+          <p>您愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。[%username]大人去的话，我就放心了。</p>
+          <p> </p>
+          <p>千万不要把他们当成普通鸢族，否则就会吃大亏。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An]、[%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An]和[%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An]之后，请您会来跟我说说他们的战斗力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于那里是不为人知的地方，不熟悉的人我是不敢派到崇拜者聚集的地方去的。</p>
+          <p> </p>
+          <p>如果您之后改变了主意，一定要再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？您把地下要塞突击兵、暗袭兵和修道者消灭掉了吗？</p>
+          <p> </p>
+          <p>对于鸢族的战斗力，有着很多的争议，但是他们是在龙界生存下来的种族，有人认为他们比天族和魔族更强。</p>
+          <p> </p>
+          <p>据说崇拜者拥有比鸢族更强的能力，这是真的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是这样。崇拜者的战斗力比预想的还要可怕。</p>
+          <p> </p>
+          <p>看来要知道他们的规模，需要花一点时间了。</p>
+          <p> </p>
+          <p>[%username]大人，您和崇拜者直接进行了战斗。真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭地下要塞的崇拜者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An]([%5]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An]([%8]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Barus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须对崇拜者的战斗力和势力规模进行调查。巴鲁斯说必须先对战斗力进行调查，必须消灭突击兵、暗袭兵和修道者，然后向他报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴鲁斯说他被派到这里来，是为了研究地下神殿。</p>
+          <p> </p>
+          <p>但暂时对崇拜者的战斗力还一无所知，因此委托我帮他进行调查。</p>
+          <p> </p>
+          <p>于是去消灭了突击兵、暗袭兵和修道者，并向他进行了报告，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说到夏天，你最先想起来的是什么呢？</p>
+          <p> </p>
+          <p>灼热的奥德之光、凉爽的水果、海边的记忆……</p>
+          <p> </p>
+          <p>我出生在夏天，也是在夏天觉醒的。也许是因为这样，只有到了夏天我才能完全发挥出奥德的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我也不喜欢炎热。在夏天的烈日下站在这个地方，让我感到有点疲惫。</p>
+          <p> </p>
+          <p>[%username]大人，从您身上也可以感觉到，灼热的热气正在升腾上来。</p>
+          <p> </p>
+          <p>要想把热气升华成结晶，[%username]大人必须去见一个人。</p>
+          <p> </p>
+          <p>您想去见见他吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您必须去见见极乐世界的夏季的守护者[%dic:STR_DIC_N_Cartiros]大人。</p>
+          <p> </p>
+          <p>他应该知道如何度过一个凉爽的夏天的方法。</p>
+          <p> </p>
+          <p>他还可以告诉[%username]大人将灼热的热气升华成结晶的方法。</p>
+          <p> </p>
+          <p>天族不是屈服于环境的懦弱的种族。希望您能找到度过一个凉爽夏天的方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天气热了之后，您难道想坐在树荫底下万事不管吗？</p>
+          <p> </p>
+          <p>夏天比想象的要长。我们必须学会享受夏天！</p>
+          <p> </p>
+          <p>如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>亚特雷亚的结界消失之后，奥德的光芒好像变得更强了。</p>
+          <p> </p>
+          <p>更强的奥德气息，在夏天会把灼热的热气传给守护者。</p>
+          <p> </p>
+          <p>虽然这是抽象的概念，但也是具体的东西。</p>
+          <p> </p>
+          <p>您去见见箱子交换员[%dic:STR_DIC_N_Zena]大人，应该就知道我说的是什么意思了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说杰娜大人拥有将夏天的热气封印到卡片上的惊人能力。</p>
+          <p> </p>
+          <p>[%username]大人，请您把聚集到的热气交给[%dic:STR_DIC_N_Zena]大人。您将会获得很不错的奖励。</p>
+          <p> </p>
+          <p>现在您明白了吗？度过凉爽夏天的方法？就是交换能够冷却热气的礼物。</p>
+          <p> </p>
+          <p>夏天是热情的季节，希望您能好好享受！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Cartiros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说见见夏季的守护者卡迪罗斯，他会告诉我度过凉爽夏天的方法。应该到极乐世界去一趟。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说见见极乐世界的夏季的守护者卡迪罗斯，他会告诉我度过凉爽夏天的方法。应该到极乐世界去一趟。</p>
+          <p> </p>
+          <p>去极乐世界见到了卡迪罗斯，他让我搜集夏天的灼热的热气，然后交给杰娜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

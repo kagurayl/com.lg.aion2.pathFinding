@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一脸沉重地阅读着什么东西。)</p>
+          <p> </p>
+          <p>(吃了一惊)您来啦？</p>
+          <p> </p>
+          <p>我在看埃尔特内要塞送来的命令书，不知道您来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为内容很敏感，所以不能向外人透露...不过我相信[%username]大人，就破例告诉您吧。</p>
+          <p> </p>
+          <p>据说库里乌鲁岩石山那边的鸟妖和雷帕尔革命团的动向有点奇怪。</p>
+          <p> </p>
+          <p>因为不知道他们在干什么，上面让我持续对他们进行监视，并定期递交报告。</p>
+          <p> </p>
+          <p>阿盖伦村的事情就已经够多的了，还要去管鸟妖和革命团。唉，事情越干越没个尽头啊。</p>
+          <p> </p>
+          <p>如果村里的居民知道了这件事的话，也许会发生动摇，所以这件事情您一定要保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过该怎么监视那些家伙呢。</p>
+          <p> </p>
+          <p>本来人手就不够，没法派村里的守卫过去。</p>
+          <p> </p>
+          <p>(拍了一下脑袋)啊，这样就行了。</p>
+          <p> </p>
+          <p>[%username]大人，我能拜托您一件事吗？</p>
+          <p> </p>
+          <p>请您去向拉塞宾神秘泉的[%dic:STR_DIC_N_Ophelos]大人转达我的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。请您让[%dic:STR_DIC_N_Ophelos]帮着留意鸟妖和革命团的动态，如果发现有什么异常就立刻通知我。</p>
+          <p> </p>
+          <p>拉塞宾神秘泉离库里乌鲁岩石山不远，因此察看那些家伙的动态应该不会很困难。</p>
+          <p> </p>
+          <p>也许他会不太高兴，请[%username]大人好好和他说说。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊。</p>
+          <p> </p>
+          <p>那就没办法了。对不起，让您操心了。</p>
+          <p> </p>
+          <p>不管怎样，这件事情对其他人一定要保密。本来气氛就不好，如果居民们知道这件事的话，可能会引起大的动摇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竟然连用来阻止沙漠化的神秘泉都干涸见底了。</p>
+          <p> </p>
+          <p>尤斯迪埃主神如果看到这些的话，一定会非常难过的。</p>
+          <p> </p>
+          <p>对了，您来这里有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达百夫长的拜托。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？这是真的吗！</p>
+          <p> </p>
+          <p>嗯，我说怎么觉得最近好像到这边来的人有点多。</p>
+          <p> </p>
+          <p>我知道了。反正又不是什么难事，我在这里看着，如果有什么奇怪的地方的话，我会马上通知阿斯科雷皮乌斯百夫长大人的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Ophelos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮阿斯科雷皮乌斯百夫长去拜托拉塞宾神秘泉的欧佩罗斯监视雷帕尔革命团和鸟妖的动态。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内要塞下达了监视库里乌鲁岩石山的雷帕尔革命团和鸟妖的命令。</p>
+          <p> </p>
+          <p>阿斯科雷皮乌斯百夫长说阿盖伦村的人手不足，让我去拜托拉塞宾神秘泉的欧佩罗斯负责这件事情。向欧佩罗斯转达了百夫长的话之后，他欣然地答应了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

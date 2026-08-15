@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到[%dic:STR_DIC_N_Shugo_DF1_5]了吗？</p>
+          <p> </p>
+          <p>我可爱的未婚妻梅伊灵灵太忙了，连面都见不到啊，唉</p>
+          <p> </p>
+          <p>要是能休息休息就好了，可她干活太勤劳了。</p>
+          <p> </p>
+          <p>不仅漂亮，还能赚钱，真是一等一的新娘啊，哈哈。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久以后就是可爱的[%dic:STR_DIC_N_Shugo_DF1_5]的生日了。</p>
+          <p> </p>
+          <p>我想送她一份最适合她的礼物。就是[%dic:STR_DIC_I_quest_2253a]。</p>
+          <p> </p>
+          <p>但是水晶手镜只在伏魔殿才能买到。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Shugo_DF1_8]刚刚从伏魔殿回来，说不定他那有，哈哈。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">劝他直接去问术古。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喀高灵，那个术古真是个大嘴巴。</p>
+          <p> </p>
+          <p>他肯定到处宣扬，那样梅伊灵灵也会知道了。</p>
+          <p> </p>
+          <p>守护者您能不能帮我去找喀高灵买一个[%dic:STR_DIC_I_quest_2253a]呢？</p>
+          <p> </p>
+          <p>不会让您白跑一趟的，哈哈。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢啦。</p>
+          <p> </p>
+          <p>跟我熟了，以后会有您的好处的。</p>
+          <p> </p>
+          <p>只要我和梅伊灵灵结了婚，就能帮您找到很多好东西。</p>
+          <p> </p>
+          <p>赶紧去找[%dic:STR_DIC_N_Shugo_DF1_8]吧。不然东西都卖完了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你以为我每天不干活光玩吗？</p>
+          <p> </p>
+          <p>我可不是在玩。</p>
+          <p> </p>
+          <p>你以后一定会后悔的。等着瞧，哼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要什么？</p>
+          <p> </p>
+          <p>我刚从伏魔殿回来。</p>
+          <p> </p>
+          <p>有很多新鲜的东西，慢慢看啊，哈哈。</p>
+          <p> </p>
+          <p>只要说出来，肯定给你个好价钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问有没有水晶手镜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>手镜！你竟然要那个东西，看来你一定很有钱。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_quest_2253a]太贵了，我也只能买得起一个。但是已经被人买走了。</p>
+          <p> </p>
+          <p>不好意思，现在没有手镜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见[%dic:STR_DIC_N_Shugo_DF1_8]，询问有没有[%dic:STR_DIC_I_quest_2253a]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">察依灵想送未婚妻梅伊灵灵一个水晶手镜做生日礼物。去见见喀高灵，询问是否有手镜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>察依灵想送未婚妻梅伊灵灵一个水晶手镜做礼物。他说要是自己买的话，梅伊灵灵就会发觉，因此让我帮他去喀高灵那里购买手镜。</p>
+          <p> </p>
+          <p>向喀高灵询问有没有手镜，得知唯一的一个已经被别的守护者买走了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，我想起了以前的很多痛苦的事。</p>
+          <p> </p>
+          <p>被沃夫冈研究所长鄙视，伊塔尔让我帮他收拾残局……</p>
+          <p> </p>
+          <p>伊塔尔以为我不知道，我也有眼睛，怎么会不知道呢？我只不过是装作不知道而已。</p>
+          <p> </p>
+          <p>只要我能揭开纳杜卡活体研究所的秘密，一切的痛苦就都结束了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，这次你一定要帮帮我。</p>
+          <p> </p>
+          <p>请你到[%dic:STR_DIC_W_DF4_SZ_C5_Lab]去帮我搜集德拉坎研究员的日志。</p>
+          <p> </p>
+          <p>有了那个东西的话，我就能向伏魔殿报告，组建正式的研究小组了。</p>
+          <p> </p>
+          <p>我知道，本来应该我自己去搜集的。</p>
+          <p> </p>
+          <p>但我要是离开这里的话，一定会被伊塔尔发现。那样的话，就又会有人说我是只会靠弟弟吃饭的没出息的哥哥了。</p>
+          <p> </p>
+          <p>[%username]，不好意思，算我求你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能理解我的心情，真的非常感谢。</p>
+          <p> </p>
+          <p>请你一定要小心一点，不要被别人发现。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_DF4_SZ_C5_Lab]里不知道有什么东西，一定要小心。找到[%dic:STR_DIC_I_quest_21245a]之后，就马上回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意？</p>
+          <p> </p>
+          <p>那就算了。</p>
+          <p> </p>
+          <p>我并不期待所有的人都会帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我等得眼珠子都快掉出来了。</p>
+          <p> </p>
+          <p>(环顾四周，小声地说)怎么样了？</p>
+          <p> </p>
+          <p>找到纳杜卡活体研究所了吗？德拉坎研究员的日志呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉坎研究员的日志。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，连你都失败了，看来纳杜卡活体研究所确实很危险。</p>
+          <p> </p>
+          <p>因此我更加需要[%username]你的帮助。</p>
+          <p> </p>
+          <p>连你都失败了，我去就更不行了。</p>
+          <p> </p>
+          <p>不好意思，请你再去一趟[%dic:STR_DIC_W_DF4_SZ_C5_Lab]，帮我寻找[%dic:STR_DIC_I_quest_21245a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究所变成了废墟？</p>
+          <p> </p>
+          <p>哎呀，这可真遗憾。那里应该还有很多设备，至少还不至于让人绝望。</p>
+          <p> </p>
+          <p>这就是德拉坎研究员的日志？</p>
+          <p> </p>
+          <p>我要看一下里面的内容，然后决定今后怎么做。我得把这件事告诉伊塔尔。</p>
+          <p> </p>
+          <p>[%username]，真是谢谢你。这些虽然不多，但却是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_W_DF4_SZ_C5_Lab]里，搜集 [%dic:STR_DIC_I_quest_21245a]，然后交给 [%dic:STR_DIC_N_Tanar]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让塔纳尔可以向伏魔殿申请支援，去纳杜卡活体研究所搜集德拉坎研究员的日志。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔纳尔说要想结束痛苦，向伏魔殿申请研究支援，需要作为证据的资料。</p>
+          <p> </p>
+          <p>帮助塔纳尔去纳杜卡活体研究所找到了不死族德拉坎研究员的日志，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

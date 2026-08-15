@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没必要惊讶。</p>
+          <p> </p>
+          <p>你的大名在极乐世界已经广为流传了，想见你是理所当然的。</p>
+          <p> </p>
+          <p>这样相遇也是缘分，咱们来喝一杯吧。</p>
+          <p> </p>
+          <p>来喝一杯，聊聊近来的时事，也听听你的英武故事。。。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">郑重拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，不愿意就算了。</p>
+          <p> </p>
+          <p>我特意想到你才来邀请你的。算了，少一张嘴我又不吃什么亏。</p>
+          <p> </p>
+          <p>不过如果一直待在村子里也真没意思。</p>
+          <p> </p>
+          <p>周围要是有什么好玩的东西也好，或者有个能聊两句的人也好啊。</p>
+          <p> </p>
+          <p>鲁凯窝窝囊囊，一点意思都没有。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问为什么待在里面。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我可不是从一开始就是这样的。</p>
+          <p> </p>
+          <p>听说这村子周边逐渐被污染了，就来调查原因。可是来了一看，发现情形比预想的严重。</p>
+          <p> </p>
+          <p>村子周围有异变的生命体，现在别说调查，就连出村都很困难。</p>
+          <p> </p>
+          <p>(一拍手)看我这人。有[%username]大人在这里我还瞎担什么心啊。</p>
+          <p> </p>
+          <p>你能不能帮帮忙，让我们能够完成任务呢？我一定不会吝啬谢礼的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>够痛快，我喜欢。那就请你去腐木原野抓[%dic:STR_DIC_M_Rottentree_34_An]吧。</p>
+          <p> </p>
+          <p>我们本来应该调查腐木原野的生态，结果因为洛特伦的攻击，根本就腾不出手来完成任务。</p>
+          <p> </p>
+          <p>请您消灭12只。当然，抓得越多越好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又不是让你用弓去猎杀，真是郁闷。</p>
+          <p> </p>
+          <p>谁愿意说这种丧气话啊？</p>
+          <p> </p>
+          <p>用惯了刀，干不了这个。所以才求你的。</p>
+          <p> </p>
+          <p>如果改变了主意再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咱们是不是什么时候见过啊？</p>
+          <p> </p>
+          <p>觉得你看上去很眼熟，却一点都想不起来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，对了！是你帮忙消灭了绿色脚趾洛特伦。</p>
+          <p> </p>
+          <p>哎呦，不好意思。很久没喝酒了，有点醉了。</p>
+          <p> </p>
+          <p>这个不提了。你已经消灭它们了吗？</p>
+          <p> </p>
+          <p>果然是名不虚传。这个请收下，这是约定好的报酬。</p>
+          <p> </p>
+          <p>另外我再多说一句，我喝醉酒的事可千万不要和别人提。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去腐木平原消灭[%dic:STR_DIC_M_Rottentree_34_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kravis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭绿色脚趾洛特伦，使科拉碧斯可以对腐木平原进行调查。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西风的守护者科拉碧斯抱怨说因为洛特伦的缘故无法对腐木平原进行调查。</p>
+          <p> </p>
+          <p>代替他消灭了它们回来，他很感谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

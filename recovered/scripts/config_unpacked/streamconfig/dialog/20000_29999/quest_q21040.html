@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我这里有个非常适合您的任务，我想把它交给您。</p>
+          <p> </p>
+          <p>是和[%username]大人很有缘分的卡斯帕的事情。</p>
+          <p> </p>
+          <p>最近由于奥德接收装置的故障问题，伏魔殿方面非常紧张。</p>
+          <p> </p>
+          <p>查明故障的原因是卡斯帕的传令兵之后，几个和椰林族关系不错的守护者去劝说卡斯帕，但都无济于事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想你应该很清楚，椰林是个奇特的种族，和守护者的关系也可以追溯到很久以前……</p>
+          <p> </p>
+          <p>因此我们不得不帮助他们。</p>
+          <p> </p>
+          <p>不过卡斯帕的传令兵是个幻影，我们也没有什么办法。</p>
+          <p> </p>
+          <p>只有消灭卡斯帕内部的邪恶生命体，才能阻止传令兵散发出扭曲的奥德。</p>
+          <p> </p>
+          <p>消灭卡斯帕内部的所有邪恶生命体，这是秘银铸币奖励任务。</p>
+          <p> </p>
+          <p>您想挑战一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您一定会答应的。您是可以进入卡斯帕内部的少数几个人之一，应该没有理由会拒绝。</p>
+          <p> </p>
+          <p>任务完成之后，我会给您秘银铸币作为奖励。</p>
+          <p> </p>
+          <p>希望您能安然归来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您会拒绝，真让人意外。您不想得到秘银铸币吗？</p>
+          <p> </p>
+          <p>卡斯帕内部不是任何人都可以进去的，因此可以执行这项任务的人不是很多。真让人担心。</p>
+          <p> </p>
+          <p>要是由于卡斯帕的传令兵的缘故，大气中的奥德含量不足或人工奥德生成器出现故障，格尔克马洛斯就会陷入危机。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一个小时都没到，这么快就把卡斯帕内部的所有生命体消灭了？</p>
+          <p> </p>
+          <p>如果有一只虫子剩下，我就不能把秘银铸币给你哦……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。您完成得非常出色，果然不愧是[%username]大人。</p>
+          <p> </p>
+          <p>这是说好的秘银铸币。</p>
+          <p> </p>
+          <p>卡斯帕的传令兵应该也会对你表示感谢的。</p>
+          <p> </p>
+          <p>卡斯帕内部很快又会有生命体出现，如果您能继续帮我，我会继续给您秘银铸币的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭卡斯帕内部的所有寄生生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Q11048_1F]([%2]/329)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Q11048_2F]([%5]/231)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Q11048_3F]([%8]/77)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Flores]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭卡斯帕内部的所有生命体，可以获得秘银铸币。尝试挑战吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>铸币行政官普洛雷斯说消灭卡斯帕内部的所有生命体，就可以获得秘银铸币。</p>
+          <p> </p>
+          <p>进入卡斯帕内部，消灭了所有的生命体之后，普洛雷斯给了我秘银铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

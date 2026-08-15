@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我从阿斯卡尔伦军团长那里听说了你的事情。</p>
+          <p> </p>
+          <p>连挑剔的阿斯卡尔伦都一个劲地夸你，看来你的实力还不错。</p>
+          <p> </p>
+          <p>我要给你一个艰难的任务，你一定要好好执行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在让我头疼的是[%dic:STR_DIC_E_Dgrade4]。</p>
+          <p> </p>
+          <p>他们是拥有丰富的欧比斯战斗经验，实力出众的魔族，所以非常不容易对付。</p>
+          <p> </p>
+          <p>因为他们，我们灰风军团在执行侦察任务的之后遇到了很大的困难。</p>
+          <p> </p>
+          <p>你能帮我把他们除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，如果你能成功完成除掉[%dic:STR_DIC_E_Dgrade4]，对我们军团将会有很大的帮助。</p>
+          <p> </p>
+          <p>我等着你能除掉魔族，给我带回好消息。</p>
+          <p> </p>
+          <p>对了，有一点需要注意。消灭魔军4级兵的时候，如果是实力很差的家伙，那消灭再多也没用。</p>
+          <p> </p>
+          <p>因此一定要消灭和自己实力接近的魔军。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从阿斯卡尔伦那里听到的都是吹牛吗？</p>
+          <p> </p>
+          <p>我听说你有很强的使命感和出色的战斗力。</p>
+          <p> </p>
+          <p>也是，并不是所有的守护者都像我一样以战场为家。</p>
+          <p> </p>
+          <p>如果你以后改变了主意的话，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你呢，[%username]。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_E_Dgrade4]清除掉了吗？</p>
+          <p> </p>
+          <p>和我说说到底怎么样了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯卡尔伦果然说的没错，你的实力果然很强。</p>
+          <p> </p>
+          <p>这么强的能力的话，我可以放心地让你去做更困难的任务了。</p>
+          <p> </p>
+          <p>辛苦了。来，这是辛苦的报答，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade4]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sakmis]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉妨碍灰风军团执行侦察任务的魔军4级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>负责在欧比斯执行侦察任务的灰风军团队长沙克密斯军团长说从阿斯卡尔伦军团长那里听到了很多称赞，因此对我抱着很大的期待。</p>
+          <p> </p>
+          <p>他说魔军4级兵对灰风军团的任务造成了很大的妨碍，让我去把他们除掉。</p>
+          <p> </p>
+          <p>按照他的命令来到战场除掉了魔军4级兵，然后回去见他。他非常高兴，说以后可以放心地让我去做更困难的任务了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

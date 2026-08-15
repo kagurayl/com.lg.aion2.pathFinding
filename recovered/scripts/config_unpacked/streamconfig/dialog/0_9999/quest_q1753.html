@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>不好意思，我能再请您帮个忙吗？</p>
+       <p> </p>
+       <p>上次我也说过，我来这里的原因主要有两个。</p>
+       <p> </p>
+       <p>其中之一是监视龙族的动态，另外一个就是搜集这里的矿石。</p>   
+       <p> </p>
+       <p>把它们送到特米伦据点做成士兵们需要的武器，新的矿石则送到极乐世界进行研究，看看到底是什么东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这里有很多埃雷修兰塔看不到的矿石，特别在硫磺列岛上比其他地方埋藏着更多的矿石。也许因为那里原来是树木茂盛的地方。</p>
+          <p> </p>
+          <p>但是因为有[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]存在，所以挖掘矿石非常不易。树木监视者据说是椰林受到欧比斯的影响而变成的。</p>
+          <p> </p>
+          <p>也许是因为这样，它们把死了的树变成的矿石也当成是同族。</p>
+          <p> </p>
+          <p>我想把这件事情拜托给[%username]大人，您觉得怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">"搜集矿石吗？"</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不，不是。采矿的工作由我们做，请您帮我们把[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]除掉就行了。</p>
+          <p> </p> 
+          <p>您能除掉德拉克纽特纽特的话，树人之类的应该只是小菜一碟。</p>  
+          <p> </p> 
+          <p>还有，这件事我会提供铜铸币作为报酬，所以收入会很丰厚。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我就知道您会答应的。</p>
+          <p> </p>
+          <p>那就请您帮我除掉25个[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An].</p>
+          <p> </p>
+          <p>事情完成之后，我会给您一枚铜铸币。</p>
+          <p> </p>
+          <p>祝您好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也知道老是来麻烦您挺不好意思的。</p>
+          <p> </p>
+          <p>不过我一向不随便拜托什么人。我是觉得[%username]大人比较亲切才来拜托您的...</p>
+         <p> </p>
+         <p>不好意思，让您觉得烦了。您好像还有别的事情吧。您走吧，这件事就不用您操心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，您来的正是时候。</p>  
+         <p> </p>
+         <p>我刚和达克提尔打了个赌。我说现在的话[%username]大人应该快办完事回来了，达克提尔说不可能这么快。</p> 
+         <p> </p>
+         <p>您回来了的话，好像是我赌赢了。怎么样？我说的对不对？</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我的预想是正确的！</p>
+          <p> </p>          
+          <p>[%username]大人，多谢你让我赢了。</p>   
+          <p> </p>   
+          <p>请收下。这是说好的铜铸币。</p>     
+          <p> </p>
+          <p>树人的数量不会减少，会持续增加。如果可以的话，请您以后再来帮我。每次我都会像这次一样给您铜铸币。</p>     
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]([%2]/25)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nike]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说因为树人而很难采集到矿石。为了让尼凯可以安心地采掘矿石，去把粗糙的树人清除掉。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尼凯说来硫磺树列岛是为了采集欧比斯的矿石，但是受到了树人的妨碍，让我帮助他。</p>
+          <p> </p>
+          <p>于是按照他的请求，除掉了粗糙的树人，他给了我一枚铜铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

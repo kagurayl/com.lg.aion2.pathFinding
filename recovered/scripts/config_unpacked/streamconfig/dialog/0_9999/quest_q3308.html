@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和建设基地的头目战斗的感觉如何？</p>
+          <p> </p>
+          <p>虽然看上去有点累，不过还好没有受伤，您能继续执行下一个任务吗？</p>
+          <p> </p>
+          <p>如果[%username]您有时间的话，希望您能执行下一阶段的任务。</p>
+          <p> </p>
+          <p>趁他们混乱的时候把他们一网打尽，效果应该会好得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问下一个任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>下一步是要对付建设基地的大法师里佩尔和大祭司韦伦。</p>
+          <p> </p>
+          <p>啊，不是除掉里佩尔和韦伦。为了除掉他们，必须先把碍事的家伙清除掉。</p>
+          <p> </p>
+          <p>请您去把大法师里佩尔的卫兵[%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae]和大祭司韦伦的大徒弟[%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae]除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯科普是个非常神秘的任务，我们只知道他是个杀星，连他是男是女都不知道。</p>
+          <p> </p>
+          <p>因为见过[%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae]的人全都死了。</p>
+          <p> </p>
+          <p>而[%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae]则是非常有名的人物，因为他的魔法非常厉害。</p>
+          <p> </p>
+          <p>而且长得也很漂亮，不过您最好小心一点。她虽然长得和天使一样，但却非常残忍。</p>
+          <p> </p>
+          <p>很多人都被她的外表骗了，请一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说不是除掉里佩尔和韦伦，您就不愿意了吗？</p>
+          <p> </p>
+          <p>当然，[%username]您具备除掉里佩尔和韦伦的能力，但如果您去找他们，斯科普和纳尔希斯就会一起冲过来。</p>
+          <p> </p>
+          <p>所以必须花一点时间，先把周围的人清理干净...</p>
+          <p> </p>
+          <p>要是您真不乐意的话，我也不没办法。不过我还是希望您能改变主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您回来。</p>
+          <p> </p>
+          <p>他们很难找吧？特别是斯科普，因为什么情报都没有，所以很难找到。不过我想您应该找到他们了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除了保护魔法师的绊脚石，现在可以去对付里佩尔和韦伦了。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>连着往建设基地跑，您一定很累了。请您先去休息一下。</p>
+          <p> </p>
+          <p>您可以用这个润润嗓子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除保护建设基地的大法师和大祭司的护卫</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Elram]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">爱拉姆说扫荡红色魔狼作战进入了第二阶段。除掉保护革命团建设基地的大法师和大祭司的无脸人斯科普和苍白的纳尔希斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>爱拉姆说可以执行扫荡红色魔狼作战的下一阶段任务了，让我去除掉保护大法师里佩尔和大祭司韦伦的无脸人斯科普和苍白的纳尔希斯。</p>
+          <p> </p>
+          <p>除掉斯科普和纳尔希斯后，向爱拉姆进行了报告，他说让我连着往建设基地跑，真是辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听见没，那凄厉的叫声？</p>
+          <p> </p>
+          <p>现在正在倒下，那些椰林和树木。</p>
+          <p> </p>
+          <p>它们被人类无止境的欲望折磨着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_NONE_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道，也有人想帮我们。</p>
+          <p> </p>
+          <p>这个村的人们想守护帕塞尔塔大人。</p>
+          <p> </p>
+          <p>我虽然不信任人类，但还是想报答他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吃的东西不够了，这里。</p>
+          <p> </p>
+          <p>死亡之歌树林之下，[%dic:STR_DIC_I_QUEST_1573a]正在生长。</p>
+          <p> </p>
+          <p>我想把它献给人类。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拜托您了，带给[%dic:STR_DIC_I_QUEST_1573a]吧。</p>
+          <p> </p>
+          <p>只要拿到5个就够了。</p>
+          <p> </p>
+          <p>只要去死亡森林，在树丛里翻一下，就能找到了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我才不相信人类啊。</p>
+          <p> </p>
+          <p>连自己的同胞都不帮，还会帮椰林吗？</p>
+          <p> </p>
+          <p>我不想再多说了，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又倒下了一棵。</p>
+          <p> </p>
+          <p>少数人的努力救不回椰林和树木。</p>
+          <p> </p>
+          <p>带回了我拜托你去找的蘑菇了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出树蘑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然像我担心的一样，蘑菇被污染了。</p>
+          <p> </p>
+          <p>如果在掺有帕塞尔塔大人树液的开始之泉里洗一洗，也许可以净化。</p>
+          <p> </p>
+          <p>先做个试验吧。给你一个蘑菇。</p>
+          <p> </p>
+          <p>在帕尔塞塔大人下[%dic:STR_DIC_I_start_spring]里洗蘑菇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你这是在耍我吗？</p>
+          <p> </p>
+          <p>要是不肯帮忙，那从一开始就别答应我。</p>
+          <p> </p>
+          <p>快按照约定把[%dic:STR_DIC_I_QUEST_1573a]带来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>洗完了吗，污染的蘑菇？</p>
+          <p> </p>
+          <p>给我吧，我看看是否净化了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出蘑菇。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是万幸，蘑菇净化了。</p>
+          <p> </p>
+          <p>如果能用开始之泉清洗因特尔蒂卡就好了。</p>
+          <p> </p>
+          <p>谢谢你帮了我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到5只[%dic:STR_DIC_I_QUEST_1573a]%，带给[%dic:STR_DIC_N_Tree_Move_Terba]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">把[%dic:STR_DIC_I_QUEST_1573a]%在[%dic:STR_DIC_I_start_spring]里净化。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把净化了的蘑菇带给[%dic:STR_DIC_N_Tree_Move_Terba]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">特尔巴要求找到树木蘑菇。要去一趟死亡树林。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+      <notify progress="2" pos="2" fontsize="16" showframe="true" time="5" color="yellow">在开始之泉里清洗了蘑菇。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林族特尔巴想要报答守护帕尔塞塔的人类，让你去死亡树林寻找蘑菇。</p>
+          <p> </p>
+          <p>你找来了蘑菇，他却发现蘑菇已经被污染了，让你拿到开始之泉去洗。你做到了，他很高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

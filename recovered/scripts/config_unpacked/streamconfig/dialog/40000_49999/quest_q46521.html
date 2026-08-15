@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>从魔界城市的富有商人那里收到了搜集[%dic:STR_DIC_I_quest_46521a]的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_Condor_DR_52_An]</p>
+          <p></p>
+          <p> 2. 位置：有人报告说看到在[%dic:STR_DIC_W_SZ_DF4_A6]附近徘徊。</p>
+          <p></p>
+          <p> 3. 详情：守卫巢穴的巨大的突进。性格凶残，需要注意。</p>
+          <p> </p>
+          <p>消灭巨大的豪格鲁，将秃鹫标本拿回来的人，将可以获得委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像很忙啊，呐呐。</p>
+          <p> </p>
+          <p>有事干总是好的。</p>
+          <p> </p>
+          <p>跟我说说委托的执行情况吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出秃鹫标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还不知道委托是什么吗？</p>
+          <p> </p>
+          <p>你再仔细想想。只有准确完成委托的人，我们才会向他发放证物，呐呐。</p>
+          <p> </p>
+          <p>如果你想获得委托费，就快点行动，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(小心翼翼地查看秃鹫标本)就是这个，呐呐。</p>
+          <p> </p>
+          <p>状态很好，委托人一定会很满意的。</p>
+          <p> </p>
+          <p>来，这是为你准备的证物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_46521a]，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭巨大的豪格鲁，搜集秃鹫标本的委托书。</p>
+          <p> </p>
+          <p>前往克鲁克盆地消灭了巨大的豪格鲁，然后把秃鹫标本交给了格尔克马洛斯管理部职员。他说辛苦了，并给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

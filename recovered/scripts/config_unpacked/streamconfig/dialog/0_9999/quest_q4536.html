@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又跟您提起这件事，真的非常抱歉。史匹格又开始逞凶了。</p>
+          <p> </p>
+          <p>就是过去您消灭掉的史匹格。</p>
+          <p> </p>
+          <p>它们把黑色平原的采集物全都弄得乱七八糟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听[%dic:STR_DIC_N_Alfgeir]说……什么来着……</p>
+          <p> </p>
+          <p>啊，斯普利甘特收集者！对吗？</p>
+          <p> </p>
+          <p>是的！我本来以为它们是最大的问题，后来一打听才知道，原来有人在操纵着它们。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]大人！事实上，从欧比斯来到这里对付这种东西，我总觉得有点那个。</p>
+          <p> </p>
+          <p>啊，当然我不是说不愿意，只是刚开始有点不太适应罢了。</p>
+          <p> </p>
+          <p>[%username]大人，那就拜托您了。请您帮我消灭掉那些叫做[%dic:STR_DIC_M_Sprigg4_34_An]的家伙。</p>
+          <p> </p>
+          <p>只要消灭掉一些，它们应该就会被吓走了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是害怕了，所以想逃走吗？</p>
+          <p> </p>
+          <p>那样的话就算了。您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就回来了吗？</p>
+          <p> </p>
+          <p>我拜托您的事情已经完成了吗？！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真不敢相信！</p>
+          <p> </p>
+          <p>虽然我嘴上说没什么，但其实我心里还是很担心的。</p>
+          <p> </p>
+          <p>多亏您的帮助，我终于可以堂堂正正地向[%dic:STR_DIC_N_Gigrite]报告了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭操纵史匹格的[%dic:STR_DIC_M_Sprigg4_34_An]%([%2]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sorgrim]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说阿克斯普利甘特收集组长在煽动史匹格破坏黑色平原的采集物。去消灭它们吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔格林说有人在操纵着斯普利甘特收集者。</p>
+          <p> </p>
+          <p>他说如果不把它们消灭掉，就无法阻止收集者的行动，于是决定再次帮助索尔格林。</p>
+          <p> </p>
+          <p>消灭了阿克斯普利甘特收集组长，告诉索尔格林之后，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

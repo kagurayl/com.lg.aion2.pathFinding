@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一边制作药瓶)其实，只要有材料，强化药瓶也没那么难做。</p>
+          <p> </p>
+          <p>和制作过程相比，收集各种材料要困难得多。</p>
+          <p> </p>
+          <p>只要能收集到品质好的材料，再按照图案依次搭配，就可以制作出强化药瓶了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，已经完成了。</p>
+          <p> </p>
+          <p>看上去虽然和普通的药瓶没什么两样，不过这种药瓶非常结实，就算放入龙族的毒药，也不会被溶化掉。</p>
+          <p> </p>
+          <p>最后，只要把这个交给吉格里泰大人就可以了。</p>
+          <p> </p>
+          <p>既然您已经替我找齐了材料，能不能再帮个忙，把制作好的强化药瓶送到 [%dic:STR_DIC_N_Gigrite] 大人那里呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道您会答应。</p>
+          <p> </p>
+          <p>看您的样子像是从贝鲁斯兰来的，正好在您回去的时候顺路交给 [%dic:STR_DIC_N_Gigrite] 大人。</p>
+          <p> </p>
+          <p>希望我制作的强化药瓶能为解决不死族问题提供帮助。</p>
+          <p> </p>
+          <p>请您向吉格里泰大人转达我的祝福，愿他早日将龙族武器渗出的毒药取得，并找到对付不死族的方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然是吉格里泰大人的委托，可我也无法亲自送去给他。</p>
+          <p> </p>
+          <p>因为我是炼金术匠人，无法离开匠人的会堂。</p>
+          <p> </p>
+          <p>他急需强化药瓶的话，应该会派人来取吧。</p>
+          <p> </p>
+          <p>当然，我也可以用术古特快邮递寄过去，您不用担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，回来的正好，我正等你呢。花了不少时间啊。</p>
+          <p> </p>
+          <p>收集好的材料已经交给豪尼尔了吗？</p>
+          <p> </p>
+          <p>豪尼尔按照约定制作了强化药瓶吗？</p>
+          <p> </p>
+          <p>一切顺利的话，赶紧把药瓶给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将强化药瓶交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是豪尼尔制作的强化药瓶吗？</p>
+          <p> </p>
+          <p>外表看上去和普通药瓶没什么两样啊。不过既然是豪尼尔制作的，应该会与众不同。</p>
+          <p> </p>
+          <p>真是谢谢你了。这样，我就可以把布里特拉的武器那里的毒性物质带回来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将强化药瓶送到[%dic:STR_DIC_N_Gigrite]那里。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">豪尼尔利用收集来的材料制作了强化药瓶。替他将强化药瓶送到吉格里泰那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>豪尼尔利用收集来的材料，很快制作出了强化药瓶。</p>
+          <p> </p>
+          <p>将豪尼尔制作的强化药瓶并送到了吉格里泰那里。吉格里泰表示非常感谢，并称，终于可以取回龙族武器上的毒性物质进行研究了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

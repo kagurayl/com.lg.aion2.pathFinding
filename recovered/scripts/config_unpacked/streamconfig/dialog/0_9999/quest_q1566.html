@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然您已经帮了我一个忙，能不能再帮助我一次呢？</p>
+          <p> </p>
+          <p>如果您认为我厚颜无耻，我也没办法。</p>
+          <p> </p>
+          <p>我是怕不得已，希望[%username]大人能够理解我的心情。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次有一个报告称不死族好像是因为什么其他原因出现的，需要把各个不死族的骨头搜集起来，进行分析，期待从中找到原因。</p>
+          <p> </p>
+          <p>于是，上面就下令立即四处搜集不死族的骨头。</p>
+          <p> </p>
+          <p>我负责的是阿努拜特和不死族。</p>
+          <p> </p>
+          <p>真是不好意思，能不能请您回到塔尔塔隆农庄，搞到[%dic:STR_DIC_I_QUEST_1566UNI]?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，真是太感谢您了。本来这件事您就是拒绝了我，我也无话可说的。</p>
+          <p> </p>
+          <p>请您现在就去塔尔塔隆农庄打败阿努拜特和烂腿僵尸，将骨头碎片带给我。</p>
+          <p> </p>
+          <p>标本越多越好，请多带些回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我就知道。</p>
+          <p> </p>
+          <p>看来连续求人两次总是有些过分啊?</p>
+          <p> </p>
+          <p>我提出要求的时候就已经料到可能会被拒绝了。</p>
+          <p> </p>
+          <p>我也有良心的，这事也只好拜托给其他人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，您回来了。</p>
+          <p> </p>
+          <p>您不累吧？</p>
+          <p> </p>
+          <p>消灭不死族，消灭不死族，蹲在那里翻骨头本来就很麻烦……</p>
+          <p> </p>
+          <p>那就请把带来的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出骨头碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然是我拜托您做事，不好意思挑剔，可是您这也太过分了。</p>
+          <p> </p>
+          <p>我一直相信[%username]大人的。</p>
+          <p> </p>
+          <p>请不要这样，快去把[%dic:STR_DIC_I_QUEST_1566UNI]带来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是不知道怎么向您表示感谢才好了。</p>
+          <p> </p>
+          <p>多亏了您，我卸下了一个大负担。</p>
+          <p> </p>
+          <p>来，请收下，这是我的一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">请收集齐[%dic:STR_DIC_I_QUEST_1566UNI]，带给[%dic:STR_DIC_N_Gamedes]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">代替繁忙的贾梅德斯去消灭阿努拜特侵略军和烂腿僵尸，把不死族骨头碎片带来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贾梅德斯接到命令，让他去搞到不死族骨头碎片，但是他忙于其他事情，没有时间。</p>
+          <p> </p>
+          <p>去塔尔塔隆农庄，消灭阿努拜特和不死族，寻来了不死族骨头碎片。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

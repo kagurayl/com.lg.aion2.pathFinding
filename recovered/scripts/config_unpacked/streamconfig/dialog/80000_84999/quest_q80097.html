@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我逐渐爱上了这个地方。</p>
+          <p> </p>
+          <p>多亏了你为我搜集到的灵魂碎片，我的力量正在逐渐恢复。</p>
+          <p> </p>
+          <p>这就是人们经常说的幸福吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不太清楚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，你还记得之前帮我消灭的追踪者的脸吗？</p>
+          <p> </p>
+          <p>要是我说他们拥有的灵魂碎片，全是从我这里拿走的，你会相信吗？</p>
+	  <p> </p>
+          <p>从魔女的直觉来看，那些追踪者都是我的对头南瓜大王米尼斯派来的。</p>
+	  <p> </p>
+          <p>现在只要找回灵魂之光，我就不用被困在这里了。</p>
+	  <p> </p>
+          <p>这次你还能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助她。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么看你都是个不错的守护者。</p>
+          <p> </p>
+          <p>好的，我的灵魂之光就拜托你了。</p>
+          <p> </p>
+	  <p>请你去把[%dic:STR_DIC_M_Branch_Event_UndeadLightWiD_45_An]、[%dic:STR_DIC_M_Branch_Event_UndeadLightPrd_45_An]和[%dic:STR_DIC_M_Branch_Event_LehparAs_48_An]统统消灭掉。</p>
+          <p> </p>
+          <p>别忘了把他们掉出来的[%dic:STR_DIC_I_QUEST_80097A]拿回来。</p>
+          <p> </p>
+          <p>我会在这里慢慢等着，想想应该给我的对头下什么诅咒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明白了。你的意思表达得很清楚。</p>
+          <p> </p>
+          <p>不过，今天晚上，你遇到黑猫的时候最好小心一点。</p>
+	  <p> </p>
+          <p>呵呵！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……我应该扯掉他半截南瓜头吗？让他没脸再出来混。</p>
+          <p> </p>
+          <p>哎呀，这么快就回来啦？你身上发光的东西。</p>
+          <p> </p>
+          <p>是我拜托你搜集的东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色灵魂之光。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。感觉我的力量又回来了一些。</p>
+          <p> </p>
+          <p>我好像知道愚蠢的南瓜大王为什么急着要到这里来了。</p>
+          <p> </p>
+          <p>亚特雷亚好像没有想象中的那么无聊嘛。</p>
+          <p> </p>
+          <p>这一切也许是因为有你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的[%dic:STR_DIC_I_QUEST_80097A]还没搜集到吗？</p>
+          <p> </p>
+          <p>嗯……你该不会是认为我的力量现在很弱，什么事情都做不了吧？</p>
+          <p> </p>
+          <p>我，希望能给你留下比较亲切的印象。</p>
+          <p> </p>
+          <p>明白我什么意思吧？</p>
+          <p> </p>
+          <p>我会在这里等你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80097A]，然后交给[%dic:STR_DIC_N_event_Blair]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集红色灵魂之光，然后交给布雷尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布雷尔让我帮她找回被追踪者们抢走的灵魂之光。</p>
+          <p> </p>
+          <p>于是按照她的委托找到了灵魂之光，她说多亏了我，她逐渐喜欢上了亚特雷亚，并给了我一份小礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

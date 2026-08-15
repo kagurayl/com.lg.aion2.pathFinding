@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，就算能力再高也觉得疲倦了。</p>
+          <p></p>
+          <p>我有件事需要去天加隆野营地一趟，但是又怕我不在这里的时候出什么事，真是难以决定啊。</p>
+          <p></p>
+          <p>每当这种时候我都希望自己的身体能分成两半，不，分成三半就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问去野营地有什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，先不说这个，您能去那边看一下吗？</p>
+          <p></p>
+          <p>据说天加隆野营地里出现了透明贝珀。平时隐藏着自己的面目，当人们都出来时，就突然发动袭击。</p>
+          <p></p>
+          <p>幸亏有守卫特罗尔在，才没有对野营地内部造成大的损失，但是出入皮托内恩沼泽因此变得很困难了。</p>
+          <p></p>
+          <p>可是我还得护卫村庄，您能代替我去除掉透明贝珀吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等。我再确认一下有没有什么要注意的事情。</p>
+          <p></p>
+          <p>（从口袋中取出米奥贝拉的信阅读）</p>
+          <p></p>
+          <p>从野营地的入口处到[%dic:STR_DIC_W_LF3_SZ_F2]有[%dic:STR_DIC_M_Vapor_41_An]出没。要求在入口附近抓7只就可以了。</p>
+          <p></p>
+          <p>我现在就给米奥贝拉回信说您代替我去了，请您快出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没办法啊。看来您也有其他的事情要忙。</p>
+          <p></p>
+          <p>请不要担心天加隆野营地的事情。</p>
+          <p></p>
+          <p>这里还有蓝色舰队的暂时驻守，我就亲自去看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才米奥贝拉送来了消息。</p>
+          <p></p>
+          <p>说在入口处盘旋的透明贝珀不见了踪迹。</p>
+          <p></p>
+          <p>您按照我的嘱托把他们全都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然听说过您实力超群，但是真没想到您能杀死这么嚣张的贝珀。</p>
+          <p></p>
+          <p>真的帮了我大忙了。</p>
+          <p></p>
+          <p>请收下这个。这是米奥贝拉送来的谢意的表达，请您一定要收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除阻挡住天加隆野营地入口的[%dic:STR_DIC_M_Vapor_41_An]。([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Tegis]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">透明贝珀挡住了天加隆野营地的入口。代替为村庄的事情奔忙的泰奇思除掉透明贝珀。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰奇思接到了天加隆野营地营员的要求，但是却因为村子里的事情很忙而无法离开。</p>
+          <p></p>
+          <p>按照他的委托，帮他去天加隆野营地除掉了入口附近的透明贝珀。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

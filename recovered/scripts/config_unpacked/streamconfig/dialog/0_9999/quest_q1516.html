@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫洛克饿了。</p>
+          <p> </p>
+          <p>怀念主人喂的吃食。</p>
+          <p> </p>
+          <p>再也不想吃飞禽了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问想吃什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>记不清菜名了。好像是叫什么叭达达。</p>
+          <p> </p>
+          <p>对了，是[%dic:STR_DIC_I_QUEST_1516a]。</p>
+          <p> </p>
+          <p>热乎乎的，很好吃。又很软，不用费力嚼。</p>
+          <p> </p>
+          <p>叭达达咖喱。想起它肚子更饿了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮它找来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？你真的会帮我找到叭达达咖喱吗？</p>
+          <p> </p>
+          <p>真高兴，莫洛克太高兴了。</p>
+          <p> </p>
+          <p>做[%dic:STR_DIC_I_QUEST_1516a]，带来。</p>
+          <p> </p>
+          <p>虽然肚子饿得要死，不过我还是会等你带叭达达咖喱回来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1516a]是很常见的食物。</p>
+          <p> </p>
+          <p>主人做给我吃的。</p>
+          <p> </p>
+          <p>他高兴的时候才做给我。</p>
+          <p> </p>
+          <p>莫洛克想吃叭达达咖喱！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫洛克一直等着盼着呢，真失望。</p>
+          <p> </p>
+          <p>[%username] 太坏了。</p>
+          <p> </p>
+          <p>想念主人，想吃叭达达咖喱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]一直不来，莫洛克就一直等。</p>
+          <p> </p>
+          <p>一直饿着肚子也要继续等[%dic:STR_DIC_I_QUEST_1516a]。</p>
+          <p> </p>
+          <p>你带来叭达达咖喱了吗？</p>
+          <p> </p>
+          <p>除了叭达达咖喱，我什么也不要吃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出叭达达咖喱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]答应了我。</p>
+          <p> </p>
+          <p>却没有带来叭达达咖喱。</p>
+          <p> </p>
+          <p>遵守约定，带来叭达达咖喱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，太好吃了。</p>
+          <p> </p>
+          <p>就是主人做得那个味道。</p>
+          <p> </p>
+          <p>一吃到它就想起了主人。</p>
+          <p> </p>
+          <p>突然房子也塌了，主人也没了。</p>
+          <p> </p>
+          <p>主人去哪里了呢，真的很想念他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">制作[%dic:STR_DIC_I_QUEST_1516a]，然后交给[%dic:STR_DIC_N_NPC_LF3_Ettin]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">莫洛克因为思念主人呜咽了。为它做好叭达达咖喱带去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呜咽的莫洛克没有忘记过去主人做给它吃的叭达达咖喱的味道。</p>
+          <p> </p>
+          <p>它说已经不想再抓飞禽吃，想吃叭达达咖喱。于是找来给它吃。</p>
+          <p> </p>
+          <p>吃着叭达达咖喱，莫洛克呜咽着，更加伤心地思念主人了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

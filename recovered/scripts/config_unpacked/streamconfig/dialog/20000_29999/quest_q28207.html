@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，[%username]，我想问您件事。</p>
+          <p> </p>
+          <p>您在第2神庙训练所里见到过龙族吗？</p>
+          <p> </p>
+          <p>我只是想确认一下，您只要把事实告诉我就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">摇头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(歪着头)嗯……看来不是每次都会出现的啊。</p>
+          <p> </p>
+          <p>您也知道，在第2神庙训练所中没有对付龙族的训练。</p>
+          <p> </p>
+          <p>但是最近我收到报告说训练所受到了龙族的袭击。</p>
+          <p> </p>
+          <p>训练内容有什么变动的话，我不可能不知道，所以我希望您能去帮我确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幻影竞技场由时间的守护者[%dic:STR_DIC_N_Inggness]负责管理。</p>
+          <p> </p>
+          <p>您去问问她第2神庙训练所的训练内容有没有变化吧。</p>
+          <p> </p>
+          <p>您得跟她说是我派您去的，她才会和您说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊。</p>
+          <p> </p>
+          <p>知道了。这件事我就拜托其他人去做吧。</p>
+          <p> </p>
+          <p>但是如果您在第2神庙训练所里见到了龙族，一定要向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘻啦……唔……吧喃……</p>
+          <p> </p>
+          <p>(用疲倦的表情看了我一眼，把视线转向了第2神庙训练所那边。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达安雅的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(回过头，凝视着我。) </p>
+          <p> </p>
+          <p>是转职教官……派您来的？</p>
+          <p> </p>
+          <p>太好了。刚好我有事想转告转职教官。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Inggness]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去第2神庙训练所向英格奈丝确认龙族出现的原因。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安雅战斗教官问我有没有在第2神庙训练所见到过龙族，她说收到报告说训练所受到了龙族的攻击，而训练内容中没有和龙族对抗的内容，因此觉得很奇怪。</p>
+          <p> </p>
+          <p>她让我去确认一下训练内容有没有更改，于是找到了管理幻影竞技场的时间的守护者英格奈丝，她说刚好有事想转告战斗教官。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

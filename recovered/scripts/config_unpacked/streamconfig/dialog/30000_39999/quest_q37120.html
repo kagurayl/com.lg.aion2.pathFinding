@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+ <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿拉克内姊妹会为了培养人才，正在进行多项尝试。</p>
+          <p> </p>
+          <p>让执行守护者执行任务，积累实战经验就是其中之一。</p>
+          <p> </p>
+          <p>但是因为协助执行任务的导师太少，所以进展遇到了一定的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这一次，8位圣女在会议上决定对年轻守护者进行训练，让他们学习对付铁耙号头目的方法。但是帮助他们执行任务的人还没有找到。</p>
+          <p> </p>
+          <p>虽然我们找到了几个志愿者，但是那个地方非常危险，所以我们还没能决定下来。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人您愿意担任[%dic:STR_DIC_E_Mentor]，帮助他们执行任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>非常感谢。既然有[%username]大人出面，我就放心了。</p>
+          <p> </p>
+          <p>准备好之后，请您带领45级以下的守护者潜入铁耙号，然后告诉他们对付那里的头目的方法。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？</p>
+          <p> </p>
+          <p>哈，铁耙号的头目非常强，如果没有一定的实力，是不可能对付得了的……</p>
+          <p> </p>
+          <p>您看这么办好不好？我再给您一点时间，您再考虑一下。</p>
+          <p> </p>
+          <p>希望您能给我带来好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很高兴见到您。</p>
+          <p> </p>
+          <p>听说[%username]大人总是会给人带来好消息。</p>
+          <p> </p>
+          <p>这次应该也一样吧？能跟我说说训练结果吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然和我猜想的一样。谢谢您为我们担任导师。</p>
+          <p> </p>
+          <p>这次和[%username]大人一起执行任务的守护者一定会成长成像您一样出色的守护者的。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>您一定很累了吧？快去休息一下吧。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为45级以下的守护者的[%dic:STR_DIC_E_Mentor]，消灭铁耙号的头目</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackAsFirstmateKnmd_45_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sjinne]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">告诉45级以下的守护者们对付铁耙号头目的方法，然后向斯金娜姐妹报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>斯金娜姐妹让我成为45级以下的守护者的导师，训练他们如何对付铁耙号的头目。</p>
+          <p> </p>
+          <p>训练结束后，向斯金娜姐妹报告了结果，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

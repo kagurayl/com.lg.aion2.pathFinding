@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔乌利仍然让人头疼。不管怎么杀，似乎并不会减少，反而不断的增加...</p>
+          <p></p>
+          <p>我简直都要怀疑是不是有个生产塔乌利的池塘，才会有这么多的塔乌利出现。</p>
+          <p></p>
+          <p>虽然我拜托很多守护者去清除它们，但从不断有这些家伙冒出来的事实来看，说不定真有这么个池塘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最开始我想赚点钱，就拜托普通守护者们捕捉这些家伙，并把它们的毛皮带回来。</p>
+          <p></p>
+          <p>本来想在极乐世界的市场上高价卖掉赚点钱...没想到现在塔乌利毛皮已经到了泛滥成灾的地步了。</p>
+          <p></p>
+          <p>不要说极乐世界了，连术古们都不理不睬。</p>
+          <p></p>
+          <p>就算这样，这些家伙们该除掉的还是得除掉。</p>
+          <p></p>
+          <p>怎么样？这次你还愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了！请您前往塔乌利部落，帮我清除[%dic:STR_DIC_M_Tauric_39_An]吧。</p>
+          <p></p>
+          <p>有15头左右就够了。</p>
+          <p></p>
+          <p>您已经与他们对战多次，现在就算闭着眼也能对付它们了吧？</p>
+          <p></p>
+          <p>就请您快去清除它们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人手不足的问题，真是让人头疼。</p>
+          <p></p>
+          <p>塔乌利还在不断增加...</p>
+          <p></p>
+          <p>请不要这样断然拒绝，再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是应该造个谣，说塔乌利毛皮会带来好运，或者塔乌利的肉可以滋补身体呢？</p>
+          <p></p>
+          <p>但是因为关于塔乌利的不祥传说，人们一看到它们就感到害怕，所以应该不会吃这一套。</p>
+          <p></p>
+          <p>所以说到底，这些不断增多的家伙们最终还是要我们守护者们来清除。</p>
+          <p></p>
+          <p>对了，你把他们都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然15头不会让他们灭绝，但是只要坚持下去，总有一天能把它们除掉。</p>
+          <p></p>
+          <p>一段时间之内，我还需要更多的帮助。如果有时间的话，请您再来帮我。</p>
+          <p></p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Tauric_39_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Seniferes]报告结果。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔乌利的数目不断增多。帮助塞尼佩雷斯除掉塔乌利匪徒。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞尼佩雷斯哀叹塔乌利的数量不断增长，令他精疲力竭。于是按照他的委托除掉了塔乌利匪徒，他说今后有时间的话，让我继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

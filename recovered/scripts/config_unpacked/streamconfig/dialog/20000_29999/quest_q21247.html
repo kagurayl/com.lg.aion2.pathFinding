@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的是魔族，真是太好了。</p>
+          <p> </p>
+          <p>我还担心会不会是龙族呢，哈哈哈。</p>
+          <p> </p>
+          <p>你还要站着看多久啊？还不快帮我从这里逃出去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>别想用你的[%mainslotitem]。用它无法打破这个墙壁。</p>
+          <p> </p>
+          <p>我见过很多的材料，但还是第一次看到这种材质的东西。</p>
+          <p> </p>
+          <p>会阻挡除龙族之外的一切生命体。也就是说，除非我变成龙族，否则就无法从监狱里逃出去。</p>
+          <p> </p>
+          <p>请你帮我搜集一些龙族的盔甲。用盔甲把全身包裹起来，也许可以通过这个墙壁。</p>
+          <p> </p>
+          <p>怎么样？你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我搜集出口处的[%dic:STR_DIC_M_DF4_W_C5_DrakanPr_Re_lab_55_An]的盔甲。</p>
+          <p> </p>
+          <p>如果有裂缝的话，在穿过监狱墙壁的时候可能会发生问题，所以一定要尽量搜集完好的盔甲回来。</p>
+          <p> </p>
+          <p>请你快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，该死！是因为害怕龙族吗！？</p>
+          <p> </p>
+          <p>那样的话就没办法了。要是龙族来修复这个研究所，我就只能束手待毙了。</p>
+          <p> </p>
+          <p>你难道真的不能帮帮我吗？要是真的不行的话，帮我告诉扎比斯我在这里也行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来是你啊。我听见外面吵吵闹闹的，是你吗？</p>
+          <p> </p>
+          <p>不过你做事还挺利索的，我很喜欢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_W_C5_DrakanPr_Re_lab_55_An]的盔甲拿来了吗？快把它给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉坎研究员的盔甲。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些还不能让我从这里逃出去。</p>
+          <p> </p>
+          <p>要想制造出我想要的东西，至少需要10件[%dic:STR_DIC_M_DF4_W_C5_DrakanPr_Re_lab_55_An]的盔甲。</p>
+          <p> </p>
+          <p>不好意思，你能快点帮我去搜集盔甲吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(抚摸着盔甲)状态非常好。</p>
+          <p> </p>
+          <p>你用[%mainslotitem]在上面乱打，我还以为一定会有很多伤痕呢。</p>
+          <p> </p>
+          <p>谢谢你，拿着这个。</p>
+          <p> </p>
+          <p>我被抓到这里来之后，就只剩下这个东西了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF4_W_C5_DrakanPr_Re_lab_55_An]的盔甲，然后交给[%dic:STR_DIC_N_Tonistar]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让托尼斯塔能够从研究所实验室中逃出去，帮他搜集不死族德拉坎研究员的盔甲吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被关在研究所实验室里的托尼斯塔说要想穿过监狱的墙壁，需要有龙族的盔甲，让我帮他搜集不死族德拉坎研究员的盔甲。</p>
+          <p> </p>
+          <p>把搜集到的德拉坎研究员的盔甲交给了他，托尼斯塔对我表示感谢，说终于可以制造自己想要的东西了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

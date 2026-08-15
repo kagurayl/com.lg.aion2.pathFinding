@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的实力真让人吃惊。你出色地完成了组织部队，清除关隘兵的任务。</p>
+          <p> </p>
+          <p>你拥有如此出色的统帅能力，我想我可以把更艰难的任务交给你了。</p>
+          <p> </p>
+          <p>这个任务我连夏克密斯和阿斯卡尔伦都没有给，但是我相信你一定可以完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务的内容是打倒[%dic:STR_DIC_M_Q1737all]的守护神将。</p>
+          <p> </p>
+          <p>你也知道，围绕要塞，我们正在和魔族、龙族战斗。而要想占领要塞，就必须打倒守护神将。</p>
+          <p> </p>
+          <p>请你在要塞展开战斗的时候带领部队，除掉守护神将。</p>
+          <p> </p>
+          <p>不管是希埃尔的西部要塞、希埃尔的东部要塞，还是硫磺树要塞都没有关系。只要在展开要塞战的时候打倒守护神将就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事很不容易，谢谢你这么爽快地答应。</p>
+          <p> </p>
+          <p>你首先需要确认要塞的可以占领时间，然后组织部队，攻击守护神将。</p>
+          <p> </p>
+          <p>希望你能成功地打倒守护神将，占领[%dic:STR_DIC_M_Q1737all]。</p>
+          <p> </p>
+          <p>也许会花一点时间，但我相信[%username]你一定可以成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你我都明白这件事很不容易。</p>
+          <p> </p>
+          <p>但是我以为你拥有这种霸气。</p>
+          <p> </p>
+          <p>老实说，我有一点失望。</p>
+          <p> </p>
+          <p>不过我也不能强迫你去。等你以后改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临， [%username]。我正在等你。</p>
+          <p> </p>
+          <p>我听侦察兵说这段时间你参加了很多战斗。</p>
+          <p> </p>
+          <p>你打倒守护神将了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起，[%username]！</p>
+          <p> </p>
+          <p>把这么困难的任务交给你，老实说我的心里很过意不去。</p>
+          <p> </p>
+          <p>没想到你出色地完成了如此艰巨的任务！</p>
+          <p> </p>
+          <p>多亏了你，把魔族和龙族永远赶出埃雷修兰塔的日子应该不远了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒[%dic:STR_DIC_M_Q1737all]的守护神将([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Taranis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔拉尼斯交给了我打倒守护神将的任务。去打倒埃雷修兰塔下层要塞的守护神将吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔拉尼斯说我出色地完成了清除关隘兵的任务，这次交给我的任务是打倒守护神将。</p>
+          <p> </p>
+          <p>按照他的命令组织部队，打倒了埃雷修兰塔下层要塞的守护神将。</p>
+          <p> </p>
+          <p>塔拉尼斯总司令官非常高兴，说把魔族和龙族永远赶出埃雷修兰塔的日子应该不远了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

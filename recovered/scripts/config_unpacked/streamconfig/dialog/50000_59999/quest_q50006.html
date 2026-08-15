@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！守护者日终于到了。我一直在掰着指头等待着这一天。</p>
+          <p> </p>
+          <p>我身为节日的守护者，每年等待节日的到来就是我的命运。</p>
+          <p> </p>
+          <p>我最喜欢的节日，就是守护者日。您知道守护者日的由来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在古代，每当有守护者觉醒的时候，整个城市的人就会聚集在一起举行庆典，但是随着觉醒者的增加，就没有条件那样去做了。</p>
+          <p> </p>
+          <p>所以人们每年举行一次集会，相互祝贺对方觉醒，这一天就被称为守护者日。</p>
+          <p> </p>
+          <p>今年觉醒的人有很多，您感觉到节日的热气了吗？节日的热气就在[%username]大人的箱子里！</p>
+          <p> </p>
+          <p>要想享受守护者日的乐趣，就必须去交换礼物。您愿意去见见礼物交换员[%dic:STR_DIC_N_LC1_Darin]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_LC1_Darin]就在旁边。</p>
+          <p> </p>
+          <p>搜集节日的热气交给她，就能得到礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，身为守护者，却不想参加守护者的节日，到底是怎么回事呢？</p>
+          <p> </p>
+          <p>难道……是对所有的事情都失去兴趣，整天郁郁寡欢，有时还会流泪的那种病？抑……抑郁症？是吗？</p>
+          <p> </p>
+          <p>哎呀！如果奥德之光不足，就很容易患上那种病！越是这样，您就越应该去看一看明亮的奥德之光！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您搜集到节日的热气了吗？</p>
+          <p> </p>
+          <p>所有人的内心有着各种气息。高兴的时候有高兴的气息，悲伤的时候有悲伤的气息，发火的时候有火的气息……</p>
+          <p> </p>
+          <p>在最近这样的节日期间，就会有反应节日气氛的气息。</p>
+          <p> </p>
+          <p>如果您能搜集封印着那种气息的神秘物品交给我，我就会送您礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界的守护者越来越多了。</p>
+          <p> </p>
+          <p>为了极乐世界的和平，希望越来越多的人能够觉醒。</p>
+          <p> </p>
+          <p>对于觉醒成为守护者的人，我在此表示祝贺和尊敬！希望您继续为天界的和平而努力。</p>
+          <p> </p>
+          <p>愿主神的恩宠与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_LC1_Darin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">守护者日到了，去见见礼物交换员达琳吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者日到了，节日的守护者让我去达琳那里交换礼物。</p>
+          <p> </p>
+          <p>见到了礼物交换员达琳，她告诉了我有关节日的热气的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

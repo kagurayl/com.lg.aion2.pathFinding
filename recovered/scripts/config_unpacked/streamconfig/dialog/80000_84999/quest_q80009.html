@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(第一次看见的纸。)</p>
+          <p> </p>
+          <p>(美味三角蛋糕交换券？)</p>
+          <p> </p>
+          <p>(现在正在举行守护者日活动，难道是和活动有关的东西？)</p>
+          <p> </p>
+          <p>(去问问伏魔殿广场上的祝福的守护者贝蕾努斯吧。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">获得纸条。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事吗，侍奉神的守护者。</p>
+          <p> </p>
+          <p>(拿出纸条)</p>
+          <p> </p>
+          <p>哦！祝贺您！您的运气真不错！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拿来的纸条，是三角蛋糕交换券。</p>
+          <p> </p>
+          <p>三角蛋糕非常好吃，吃了之后让人回味无穷。</p>
+          <p> </p>
+          <p>那是为了纪念守护者日而特别定做的东西。</p>
+          <p> </p>
+          <p>希望您吃了之后能继续努力！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把纸条交给[%dic:STR_DIC_N_Belenus]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把写着三角蛋糕交换券的纸条交给贝蕾努斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发现了一张写着三角蛋糕交换券的纸条。</p>
+          <p> </p>
+          <p>好像是和守护者日活动有关的东西，把它交给贝蕾努斯之后，她送给了我一块三角蛋糕。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

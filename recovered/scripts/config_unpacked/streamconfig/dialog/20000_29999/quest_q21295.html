@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(翻看厚厚的书)等等，敏锐的帕德玛夏产蛋之后，经过了一天、两天……</p>
+          <p></p>
+          <p>哎呀，今天已经是第五天了。必须尽快采取措施才行。</p>
+          <p></p>
+          <p>(把书合上，藏了起来)您是什么时候来的？我没听见声音，不知道您已经来了。</p>
+          <p></p>
+          <p>您听到我说的话了吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>本来这件事不能告诉任何人，不过既然您都听到了，我就告诉您吧。</p>
+          <p></p>
+          <p>帕德玛夏的蛋马上就要孵化了。是的，德拉坎就要出生了。</p>
+          <p></p>
+          <p>您可能会问帕德玛夏生的蛋里孵化出德拉坎，又有什么奇怪。但是帕德玛夏的情况有点特殊。</p>
+          <p></p>
+          <p>根据我之前的观察，帕德玛夏的蛋里会孵化出高等级的德拉坎。</p>
+          <p></p>
+          <p>是的，为了阻止那些蛋孵化，我需要[%username]大人的帮助。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>一般人可能不知道，亚龙只负责生蛋，孵蛋的工作由守护者负责。</p>
+          <p></p>
+          <p>为了让我能把帕德玛夏的蛋偷出来，请[%username]大人帮我引开[%dic:STR_DIC_M_Q11293]的视线。</p>
+          <p></p>
+          <p>一个人会很困难，请一定要和心意相通的同伴一起去。</p>
+          <p></p>
+          <p>如果我的预想没错，帕德玛夏的蛋马上就要孵化了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>看来您很忙啊。那就没办法了。</p>
+          <p></p>
+          <p>[%username]大人，刚才听到的话一定要帮我保密。</p>
+          <p></p>
+          <p>虽然不是什么秘密，但最好不要让其他人知道。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您这么快就回来啦。</p>
+          <p></p>
+          <p>您在[%username]在洞穴内对付守护者的时候，有没有看到我就在后面。</p>
+          <p></p>
+          <p>我只看见您打倒了一个守护者，就带着蛋出来了。后来怎么样了？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>完美地消灭掉了守护者，真是太好了。</p>
+          <p></p>
+          <p>真的非常感谢。</p>
+          <p></p>
+          <p>多亏了您，才能把帕德玛夏的蛋拿出来。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">消灭[%dic:STR_DIC_M_Q11293]([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%15]">
+                <font color="[%16]">和[%dic:STR_DIC_N_Kimin]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">为了让基敏能够把帕德玛夏的蛋取出来，去消灭帕德玛夏的守护者。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>基敏说敏锐的帕德玛夏的蛋马上就要孵化了，让我帮帮他。</p>
+          <p></p>
+          <p>为了让他能把帕德玛夏的蛋从洞穴里拿出来，帮他消灭掉了照看蛋的守护者。他对我表示感谢，说多亏了我，事情终于结束了。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

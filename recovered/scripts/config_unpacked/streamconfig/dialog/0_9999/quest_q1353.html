@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>长时间在炎热的沙漠中工作，身体好像逐渐变得虚弱了。</p>
+          <p> </p>
+          <p>有时会觉得眼睛发黑，脑袋发晕。</p>
+          <p> </p>
+          <p>人类都觉得守护者好像一直很健康，您也知道事实并不是这样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自己的身体要自己注意。</p>
+          <p> </p>
+          <p>总不能回去让负责做饭的人做点滋补身体的东西吧。</p>
+          <p> </p>
+          <p>在这里附近可以找到什么对身体有益的东西呢...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙漠里可以吃的东西好像就是科塞利奇了。</p>
+          <p> </p>
+          <p>长大之后成为科塞利德的话，肉质就会变老，根本咬不动。</p>
+          <p> </p>
+          <p>[%username]大人您能帮我搜集一点[%dic:STR_DIC_I_QUEST_1353a]，让我可以补一补身体吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还担心如果您拒绝了的话该怎么办，真是太好了。</p>
+          <p> </p>
+          <p>埃拉库斯沙漠里的科塞利奇有很多种。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_ShellizardBaby_28_An]、[%dic:STR_DIC_M_ShellizardBabyL_28_An]、[%dic:STR_DIC_M_ShellizardBaby_30_An]、[%dic:STR_DIC_M_ShellizardBabyL_30_An] ，不管什么都没关系。请您把科塞利奇肉烤好之后给我。</p>
+          <p> </p>
+          <p>那我就在这里为做料理做准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然这是我个人的拜托，但是这件事情也关系到全体守护者的形象。</p>
+          <p> </p>
+          <p>如果守护者在执勤的时候倒下的话，居民们该会多么不安啊。</p>
+          <p> </p>
+          <p>而且守护者和守卫的品味会有多大差别呢。</p>
+          <p> </p>
+          <p>请您不要拒绝，一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我继续在这儿巡逻，不过心里却有点不安。</p>
+          <p> </p>
+          <p>就这样倒下的话该多丢脸啊...</p>
+          <p> </p>
+          <p>我拜托您弄的[%dic:STR_DIC_I_QUEST_1353a]烤好带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出科塞利奇肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没把肉烤好了拿回来啊？</p>
+          <p> </p>
+          <p>哈...我现在就很头晕。这种状态下，不知道我还能坚持多久。</p>
+          <p> </p>
+          <p>拜托您了，请您快点把[%dic:STR_DIC_I_QUEST_1353a]烤好了带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，太好了。我得赶快做成料理吃了才行。</p>
+          <p> </p>
+          <p>吃了这个的话，身体应该会好一点吧？</p>
+          <p> </p>
+          <p>得尽快恢复健康，避免在执行任务的时候出现差错。</p>
+          <p> </p>
+          <p>谢谢您帮助我，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_M_ShellizardBaby_28_An]、[%dic:STR_DIC_M_ShellizardBabyL_28_An]、[%dic:STR_DIC_M_ShellizardBaby_30_An]、[%dic:STR_DIC_M_ShellizardBabyL_30_An]的肉交给[%dic:STR_DIC_N_Acaste]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为身体不好的阿卡斯泰搜集科塞利奇的肉，烤好之后交给她吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡斯泰说在沙漠上长时间工作之后，身体变差了。于是为了让她恢复健康，打猎了科塞利奇，把肉烤好后交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

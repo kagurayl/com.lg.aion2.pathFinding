@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮我回收粽子的事，我还没有忘记。</p>
+          <p> </p>
+          <p>多亏了您，我们晚上终于可以点粽子灯了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说太好了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……但是[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]还是很猖獗。</p>
+          <p> </p>
+          <p>它们又把您找到的粽子灯拿走了。</p>
+          <p> </p>
+          <p>离活动结束还有很长时间，您能再帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助他。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真的非常感谢。</p>
+          <p> </p>
+          <p>粽子模型在水里泡久了，都变松软了。</p>
+          <p> </p>
+          <p>也许是[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]叼起来更容易，不见的粽子比之前更多了。</p>
+          <p> </p>
+          <p>这次如果您能帮我找回被[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]叼走的[%dic:STR_DIC_I_QUEST_80053A]，我会好好酬谢您的。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？</p>
+          <p> </p>
+          <p>下次有时间的话，希望您能来帮我寻找粽子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您都湿透了。</p>
+          <p> </p>
+          <p>怎么样？拜托您的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出松软的粽子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，样子虽然有点扭曲，不过还能用。</p>
+          <p> </p>
+          <p>谢谢您的帮助。</p>
+          <p> </p>
+          <p>这下漂粽子灯的活动就可以继续进行了。</p>
+          <p> </p>
+          <p>这全都是托[%username]大人的福。谢谢您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_80053A]还没找到吗？天黑之后，我就得把粽子灯点起来了……您能稍微快一点吗？</p>
+          <p> </p>
+          <p>如果您能把[%dic:STR_DIC_M_Branch_Event_Gumi_17_An]拿走的[%dic:STR_DIC_I_QUEST_80053A]找回来的话，我一定会酬谢您的。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_I_QUEST_80053A]，然后交给塔克尔。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">寻找松软的粽子，然后交给塔克尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在亚特雷亚正在举行漂粽子灯的活动。</p>
+          <p> </p>
+          <p>据说那是为了纪念守护和平的正直、廉洁的先代守护者而举行的活动。</p>
+          <p> </p>
+          <p>但是活动上使用的装饰用的粽子灯不见了，塔克尔向我请求帮助。</p>
+	  <p> </p>
+          <p>找到了塔克尔需要的东西，他非常高兴，给了我酬劳</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

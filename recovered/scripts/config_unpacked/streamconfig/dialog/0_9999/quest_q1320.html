@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库雷斯是一种突然出现的生物。</p>
+          <p> </p>
+          <p>之前没有这种生物。</p>
+          <p> </p>
+          <p>椰林和树木开始死亡之后，它们出现了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库雷斯吃光了所有的东西。</p>
+          <p> </p>
+          <p>把露西和八角茴香连根挖出来吃。</p>
+          <p> </p>
+          <p>这样下去的话，就连小植物都不会剩下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能对库雷斯坐视不管。</p>
+          <p> </p>
+          <p>保护小植物，是拯救埃尔特内的道路。</p>
+          <p> </p>
+          <p>希望你能帮我们除掉[%dic:STR_DIC_M_Cures_23_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭库雷斯将对守护沙漠的小植物们来说意义重大。</p>
+          <p> </p>
+          <p>必须除掉[%dic:STR_DIC_M_Cures_23_An]。</p>
+          <p> </p>
+          <p>请你除掉库雷斯之后回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你难道想眼睁睁地看着那些小植物被灭绝而置之不理吗？</p>
+          <p> </p>
+          <p>必须把库雷斯除掉。</p>
+          <p> </p>
+          <p>请你再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Cures_23_An]全部除掉了吗？</p>
+          <p> </p>
+          <p>为了拯救那些可怜的植物，希望你能把库雷斯全部消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告诉他结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真令人遗憾啊，为了拯救植物却必须牺牲其他生物。</p>
+          <p> </p>
+          <p>最讽刺的是罪魁祸首其实还是在植物身上。</p>
+          <p> </p>
+          <p>库雷斯的出现正是因为阿斯科的缘故。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Cures_23_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_NoMove_Lodas]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须除掉会吃光沙漠上所剩无几的小植物的库雷斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗达斯担心突然出现的库雷斯会吃光了沙漠里为数不多的小植物。</p>
+          <p> </p>
+          <p>为了保护植物，只能除掉库雷斯。按照罗达斯的拜托除掉了库雷斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

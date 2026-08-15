@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，怎么这么巧！</p>
+          <p> </p>
+          <p>你怎么过来了。</p>
+          <p> </p>
+          <p>看来我和你好像是心有灵犀啊。</p>
+          <p> </p>
+          <p>不是那样的话，你又怎么会刚好出现呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">谁知道呢。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那样说的话让我多尴尬啊。请不要否认我们之间的缘分嘛。</p>
+          <p> </p>
+          <p>你到这里来，一定是主神派你来帮我的。请你帮帮我吧。</p>
+          <p> </p>
+          <p>报酬我绝不会少给的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你这么爽快，越来越合我的意了。</p>
+          <p> </p>
+          <p>我需要去盖洛克火山地带进行调查，但是因为[%dic:STR_DIC_M_Hellhound_35_An]而根本不能过去！</p>
+          <p> </p>
+          <p>所以我想请你把它们清除掉。当然不是你一个人去，我在做完手头的事情之后会跟着过去。请你先去一步。</p>
+          <p> </p>
+          <p>它们有两个脑袋，应该很容易找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不行啊， 不行。</p>
+          <p> </p>
+          <p>请不要让我失望。</p>
+          <p> </p>
+          <p>你不知道我向主神祈祷了多少次，希望能给我送一个你这样的[%userclass]来。</p>
+          <p> </p>
+          <p>请你一定要再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？已经结束了吗？</p>
+          <p> </p>
+          <p>我都还没做好出发的准备呢...事情要比想象的花时间要多一点。</p>
+          <p> </p>
+          <p>这些先不说了...[%dic:STR_DIC_M_Hellhound_35_An]都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是不好意思。</p>
+          <p> </p>
+          <p>我本来想做完了事情之后去找你的。真的，请相信我。</p>
+          <p> </p>
+          <p>来，请你收下。比原来说好的报酬要多，你知道就行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除盖洛克火山地带的[%dic:STR_DIC_M_Hellhound_35_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Hylas]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">希尔拉斯说因为地狱犬的妨碍而无法去火山地带调查。必须帮助希尔拉斯捕捉火焰地狱犬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希尔拉斯说能这样碰到也是缘分，硬是让我帮助他。</p>
+          <p> </p>
+          <p>他说让我先去捕捉妨碍他去火山地带调查的火焰地狱犬，自己随后就来。但是直到把地狱犬全部清除之后，他还没有出现。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

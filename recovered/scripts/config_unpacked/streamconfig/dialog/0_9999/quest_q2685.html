@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿吉卡坦真的非常爱我，咳。</p>
+          <p> </p>
+          <p>世上恐怕不会再有这么好的丈夫了。</p>
+          <p> </p>
+          <p>我也很爱我的丈夫，可心里总感觉对不起他。</p>
+          <p> </p>
+          <p>不能为他生一个孩子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为身体虚弱，到现在我也无法生育。</p>
+          <p> </p>
+          <p>拉克夏提尔一直尽心服侍我，为我找来了许多滋补良药，可是收效甚微。</p>
+          <p> </p>
+          <p>从妈妈那里听到一个秘方。可是，阿吉卡坦和拉克夏提尔坚决反对。他们说，那对身体不好。可我想试一试。</p>
+          <p> </p>
+          <p>想起来了，是服用熬好的[%dic:STR_DIC_DF3_herb_d_n_c_40a]。那样就能顺利怀孕，为我的丈夫生下可爱的宝宝。</p>
+          <p> </p>
+          <p>那么守护者，你愿意帮我这个忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别嘱咐你一下，要悄悄地去找，千万别让阿吉卡坦或拉克夏提尔知道，要不他们一定会出面阻止的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_DF3_herb_d_n_c_40a]可以在贝鲁斯兰的屋顶找到，咳。</p>
+          <p> </p>
+          <p>别让别人注意到，偷偷地带给我就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你可知道，无法回报阿吉卡坦对我的爱是一件多么难过的事吗？</p>
+          <p> </p>
+          <p>为他生一个孩子是我唯一的梦想。</p>
+          <p> </p>
+          <p>请你一定要帮助我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不在乎会对身体有伤害。</p>
+          <p> </p>
+          <p>只要能为阿吉卡坦生一个孩子，什么苦我都愿意吃。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_DF3_herb_d_n_c_40a]带来了吗？</p>
+          <p> </p>
+          <p>没被阿吉卡坦和拉克夏提尔他们发现了吧？咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将水仙交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没有找到水仙啊，咳。</p>
+          <p> </p>
+          <p>难道说被阿吉卡坦和拉克夏提尔他们发现了，他们不让你继续帮我了吗？</p>
+          <p> </p>
+          <p>可能是我想太多了。请不要告诉任何人，悄悄地帮我找到 [%dic:STR_DIC_DF3_herb_d_n_c_40a]。</p>
+          <p> </p>
+          <p>拜托你了，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，咳！</p>
+          <p> </p>
+          <p>太好了，现在只要悄悄地服用熬好的汤，就可以成功了。</p>
+          <p> </p>
+          <p>你的大恩我不会忘记。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_DF3_herb_d_n_c_40a]，并交给 [%dic:STR_DIC_N_DF3_NPC_Nargital]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">纳尔卡塔尔唯一的心愿是怀上阿吉卡坦的孩子。她表示，只要服用水仙熬的汤就可以怀孕。为了帮助纳尔卡塔尔，去贝鲁斯兰的屋顶采集水仙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纳尔卡塔尔因为身体虚弱而无法怀上孩子，因此觉得很对不起丈夫。</p>
+          <p> </p>
+          <p>虽然服用水仙熬制的汤有助于怀孕，可是这样会对身体造成伤害。因此，丈夫阿吉卡坦和咒术师拉克夏提尔一直表示反对。</p>
+          <p> </p>
+          <p>为了回报丈夫的爱，纳尔卡塔尔非常渴望怀上孩子。接受她的请求，去贝鲁斯兰的屋顶帮她采回了水仙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来得正好。</p>
+          <p> </p>
+          <p>我刚好想和[%username]大人您联系呢。</p>
+          <p> </p>
+          <p>时间紧迫，我就长话短说了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这一次，8位圣女在会议中决定派遣执行守护者去消灭奇夏尔部落的疯狂的克拉尔。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能担任[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，帮助他们消灭掉[%dic:STR_DIC_M_37116]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您和[%dic:STR_DIC_E_Li_35_45]%一起到奇夏尔部落去。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_E_Li_35_45]%和[%dic:STR_DIC_M_37116]%之后，请您回来对和您一起执行任务的执行守护者进行评价。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀……真是遗憾。</p>
+          <p> </p>
+          <p>对付疯狂的克拉尔，必须找一位经验非常丰富的导师……</p>
+          <p> </p>
+          <p>不过我也不想勉强您，我会尊重[%username]大人的意思。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇夏尔部落的事情办得怎么样了？</p>
+          <p> </p>
+          <p>我已经从其他人那里听说了[%username]大人的风采，但是我想听您亲口说说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>疯狂的克拉尔这下应该恢复正常了吧。</p>
+          <p> </p>
+          <p>和[%username]大人一起执行任务的执行守护者经历了今天的事情之后，一定会得到很多宝贵的经验。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_37116]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">成为执行守护者的导师，告诉他们对付疯狂的克拉尔的方法，然后向贝拉特里斯姐妹报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝拉特里斯姐妹说执行守护者在对付疯狂的克拉尔的时候遇到了困难，让我去训练他们。</p>
+          <p> </p>
+          <p>于是成为了执行守护者的导师，教会了他们对付疯狂的克拉尔的方法。向贝拉特里斯报告结果之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

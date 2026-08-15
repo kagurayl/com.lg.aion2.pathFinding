@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的目的地是阿盖伦村。</p>
+          <p> </p>
+          <p>虽然那里也正在变成沙漠，但是神秘泉还没有干涸。那是我们唯一的希望。</p>
+          <p> </p>
+          <p>而且有守卫守护者村子，所以也很让人放心。</p>
+          <p> </p>
+          <p>如果我们达尔塔斯村过去也有守卫的话，也许就不会变成沙漠了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>连我们大人都无法忍受的艰辛，泰奥斯作为一个小孩子就更难忍受了。</p>
+          <p> </p>
+          <p>他和父母一起出来避难，但是父母全都在途中生命去世了。</p>
+          <p> </p>
+          <p>从那以后开始，他不怎么吃东西，经常在哪儿哭，身体变得越来越衰弱了。</p>
+          <p> </p>
+          <p>看着小孩子那个样子，让人不忍心看下去。</p>
+          <p> </p>
+          <p>但是现在水和粮食都不足，也没有什么办法...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说泰奥斯的外婆住在阿盖伦村里。</p>
+          <p> </p>
+          <p>与其和我们在一起忍饥挨饿，最好能把他尽快送到外婆的身边。</p>
+          <p> </p>
+          <p>您能把泰奥斯带到阿盖伦村去吗？再拖下去的话，泰奥斯一定会死掉的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰奥斯的外婆的名字是戴尔罗梅。</p>
+          <p> </p>
+          <p>请您把泰奥斯安全地送到阿盖伦村。</p>
+          <p> </p>
+          <p>我们在这里稍微休整一下再继续出发。</p>
+          <p> </p>
+          <p>那么请您马上就出发吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个可怜的孩子又有什么罪？</p>
+          <p> </p>
+          <p>如果说有罪的话就是出生在这个贫瘠的地方，以及过早地失去父母。</p>
+          <p> </p>
+          <p>现在可以挽救这可怜的孩子但您却漠然置之，[%username]大人还真是残忍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%userclass]大人您是要把我送到外婆那里去吗？</p>
+          <p> </p>
+          <p>我虽然有点害怕，不过您应该会把我带到那里吧？</p>
+          <p> </p>
+          <p>您先走吧。我会在后面跟着您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">说马上出发。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>土地一天比一天干旱，真不知道该怎么活下去。</p>
+          <p> </p>
+          <p>在阿盖伦村种庄稼，现在完全是浪费水。</p>
+          <p> </p>
+          <p>虽然可以打猎周围的野兽生活，但是这得持续到什么时候啊。</p>
+          <p> </p>
+          <p>呼，不知道嫁到达尔塔斯村去的女儿现在怎么样了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_SELECT_QUEST_REWARD">把泰奥斯交给她，并转告他父母的消息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么说泰奥斯的爸妈全都死了吗？</p>
+          <p> </p>
+          <p>哎呀，我可怜的女儿！怎么扔下这么小的孩子就走了呢。</p>
+          <p> </p>
+          <p>这么小就没了父母，多么命苦的孩子啊。</p>
+          <p> </p>
+          <p>谢谢你把泰奥斯安全送到这里。</p>
+          <p> </p>
+          <p>女儿虽然死了，我得帮她把孙子养大...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把泰奥斯带去交给阿盖伦村的[%dic:STR_DIC_N_Dellome]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Dellome]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">走在避难路上的泰奥斯的生命很危险。把他带去交给阿盖伦村的外婆戴尔罗梅吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔尼亚说泰奥斯在避难的路上失去了父母后，因为伤心而变得很衰弱，他为此很担心。</p>
+          <p> </p>
+          <p>按照埃尔尼亚的拜托，把泰奥斯带去交给了阿盖伦村的外婆。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这声音真让人难受！</p> 
+          <p> </p> 
+          <p>一听到那种声音，我就觉得浑身无力。</p> 
+          <p> </p> 
+          <p>最近正在抓紧时间整理对龙族武器的研究报告，可在这种状态下，实在无法集中精神。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_dislike;HACTION_ASK_QUEST_ACCEPT">询问是什么声音。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的听不到吗？这是纳加和纳加兰特发出的声音。</p>
+          <p> </p> 
+          <p>啊，难道只有我能听见吗？活着的时候，就连结界塔附近的动静都察觉不到，没想到变成幽灵后，却能听到那么远的声音，哎。</p> 
+          <p> </p> 
+          <p>总之，我实在忍受不了它们发出的声音，而且数量好象越来越多，声音也变得更大了。</p> 
+          <p> </p> 
+          <p>纳加和纳加兰特也是像德拉克纽特一样危险的家伙们，正好趁这个机会消灭它们，您觉得怎么样？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，马上开始行动吧。</p>
+          <p> </p> 
+          <p>请消灭在巴卡尔玛军团驻地的 [%dic:STR_DIC_M_G6_FeA_NagaFiD_44_Ae]， [%dic:STR_DIC_M_G6_KeA_NagaKnD_45_Ae]，[%dic:STR_DIC_M_G6_PeA1_NagaPrD_45_Ae]和 [%dic:STR_DIC_M_G6_WeA_NagaWiD_45_Ae]。你要尽全力消灭它们。</p> 
+          <p> </p> 
+          <p>这些家伙都十分危险，尤其是纳加。它的魔法与德拉坎不相上下。</p>
+          <p> </p>
+          <p>所以，请您一定要和同伴们一起去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然请求的一部分原因来自我个人，但这一切也是为了贝鲁斯兰啊。</p>
+          <p> </p> 
+          <p>纳加和纳加兰特比德拉克纽特更加聪明，也更加邪恶。如果放任它们不管，必将出现严重的后果。</p> 
+          <p> </p> 
+          <p>如果您不相信我说的话，就试着去和第47纳加和纳加兰特战斗吧。之后您肯定会改变想法的。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正等着您呢。很远就听到了[%username] 大人的脚步声。</p>
+          <p> </p> 
+          <p>事情怎么样了？</p> 
+          <p> </p> 
+          <p>听上去，纳加和纳加兰特的声音似乎比之前小了很多。看来，您已经顺利解决了它们，是吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以预测到结果，这就是听力好在这个时侯的长处。</p>
+          <p> </p> 
+          <p>辛苦您了，[%username] 大人。</p> 
+          <p> </p> 
+          <p>和德拉克纽特不同，纳加们的头脑非常好使，所以不那么容易对付啊。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭纳加和纳加兰特。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_Link_FeA_NagaFiD_44_Ae]([%2]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_KeA_NagaKnD_45_Ae]([%5]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_PeA1_NagaPrD_45_Ae]([%8]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_WeA_NagaWiD_45_Ae]([%11]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gwendolin]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助对声音很敏感的格温杜尔林，去巴卡尔玛军团驻地消灭第47纳加和纳加兰特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格温杜尔林因为纳加和纳加兰特发出的声音而无法集中精神研究，并称它们也是和德拉克纽特一样危险的家伙。她希望能借此机会消灭它们。</p>
+          <p> </p> 
+          <p>接受委托，去巴卡尔玛军团驻地并消灭了第47纳加和纳加兰特。对此，她表示感谢。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

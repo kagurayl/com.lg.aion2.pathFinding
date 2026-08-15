@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：确认警卫魔法球的异常</p>
+          <p> </p>
+          <p>配置在莫尔海姆冰封要塞周围的[%dic:STR_DIC_OBJ_Q47003]发生了异常。</p>
+          <p>这次的任务是找出并消除魔法球无法正常运转的原因。</p>
+          <p>魔法球无法一个人确认，因此请您一定要找一个导师，组成组队之后一起过去。</p>
+          <p>和[%dic:STR_DIC_E_Mentor]距离太远的话，就无法完成训练，因此您最好一直跟着他。</p>
+          <p>消除掉魔法球的异常原因之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>莫尔海姆警卫魔法球确认过了吗？</p>
+          <p> </p>
+          <p>无法正常运转的原因是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来如此。魔法球的能量被史莱姆吸走了的话，怎么可能会运转正常呢。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，现在应该运转正常了吧。</p>
+          <p> </p>
+          <p>这件事会对莫尔海姆要塞有很大的帮助，同时相信对[%username]大人的成长也会有很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起消除[%dic:STR_DIC_OBJ_Q47003]的异常([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Titorea]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，确认莫尔海姆警卫魔法球，消除异常原因。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，说莫尔海姆警卫魔法球出现了异常，让我去确认并消除异常的原因。</p>
+          <p> </p>
+          <p>于是和导师一起确认了魔法球的状态，消灭了吸取魔法球能量的史莱姆。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

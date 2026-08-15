@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞最近挺乱的吧？没办法，因为正在进行清理工作，所以请您谅解一下。</p>
+          <p> </p>
+          <p>重新夺回要塞之后，我们马上就开始了整顿工作。现在好不容易才刚刚设好了结界膜，完成了守卫的配置。</p>
+          <p> </p>
+          <p>要做的事情还很多，但是事情却没有一点进展。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还能因为什么啊？当然是因为那些天族啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Garpedo]、[%dic:STR_DIC_N_Aimele]和[%dic:STR_DIC_N_Sione]。这三个守卫在要塞被夺走之后，一直在周围徘徊，不断地进行骚扰！</p>
+          <p> </p>
+          <p>本来想不管他们，等他们的物资用光了之后，自然就会放弃的。谁知道有一天[%dic:STR_DIC_N_Shugo_AB1_L5]和[%dic:STR_DIC_N_Shugo_AB1_L6]两个术古商人也跑去帮忙。</p>
+          <p> </p>
+          <p>看来必须要好好教训教训他们，把他们从这里赶出去。</p>
+          <p> </p>
+          <p>[%username]大人，这件事您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人愿意帮忙的话，我就安心了。</p>
+          <p> </p>
+          <p>请您到时间塔平原去，把驻扎在那里的[%dic:STR_DIC_N_Shugo_AB1_L5]、[%dic:STR_DIC_N_Shugo_AB1_L6]、[%dic:STR_DIC_N_Garpedo]、[%dic:STR_DIC_N_Aimele]和[%dic:STR_DIC_N_Sione]除掉。</p>
+          <p> </p>
+          <p>那我就在这里等着您的好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，这可怎么办呢？</p>
+          <p> </p>
+          <p>[%username]大人！您不能再想想吗？</p>
+          <p> </p>
+          <p>那些天族虽然没什么，但是附近有天族守护塔，所以我不能随便派什么人过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>可能是要忙着对付[%username]您，天族的那些家伙今天没有出现。多亏了您，我们今天做了不少事情。</p>
+          <p> </p>
+          <p>您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天族的那些家伙，这次应该尝到苦头了吧？</p>
+          <p> </p>
+          <p>多亏了您，暂时我们不用为天族侦察队操心了。</p>
+          <p> </p>
+          <p>请您收下。这是成功执行任务的奖赏。</p>
+          <p> </p>
+          <p>上面接到报告的话，一定会对这次的事情赞许有嘉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_N_Shugo_AB1_L5], [%dic:STR_DIC_N_Shugo_AB1_L6], [%dic:STR_DIC_N_Garpedo], [%dic:STR_DIC_N_Aimele], 和[%dic:STR_DIC_N_Sione]%([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1251_Quest_Da]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说时间塔平原的天族一直在骚扰阿斯特利亚要塞。把天族人清除掉，然后向斯诺里报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯诺里说因为时间塔平原上的天族的骚扰，要塞的整顿工作进展缓慢。为了防止他们进一步骚扰，必须把他们除掉。</p>
+          <p> </p>
+          <p>于是按照他的拜托清除掉了时间塔平原上的天族守卫和术古商人，然后向斯诺里报告了结果。他说上面听到了也会很高兴的，并给了我奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

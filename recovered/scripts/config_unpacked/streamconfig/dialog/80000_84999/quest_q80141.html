@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(奇怪的纸片。是李尔德斯误把它给了我吗……？)</p>
+          <p></p>
+          <p>(将5个天族灵魂碎片和2个贪婪的精气放进溶入了奥德的溶液……)</p>
+          <p></p>
+          <p>(难道，这是防止扭曲的时空裂缝的秘药配方？！)</p>
+          <p></p>
+          <p>(决定去问问极乐世界广场上的秘药制造师弗里马图努斯。) </p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">收起纸片。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>呵呵，喂，年轻人。看你的眼神，好像不想喝酒的样子。找我有什么事吗？</p>
+          <p></p>
+          <p>但是！我的酒是非常特别的酒。尝尝就知道了！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">拿出纸片。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(非常吃惊)哎呀，天哪！</p>
+          <p></p>
+          <p>你……你！真了不起……！到底是从哪里找到的？！</p>
+          <p></p>
+          <p>有了这个配方的话，就可以制作强力的黑洞。那是可以吞噬一切的可怕东西。</p>
+          <p></p>
+          <p>听说各地都有奇怪的时空裂缝出现，很多无辜的守护者因此牺牲了。</p>
+          <p></p>
+          <p>强力的黑洞应该可以消除那种现象。</p>
+          <p></p>
+          <p>来，拿着这个。和你给我的东西相比，这算不了什么，不过还是蛮有用的。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">把纸片交给[%dic:STR_DIC_NPC_event_Prematunuse]</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">把纸片交给秘药制造师弗里马图努斯吧。</font>
+          </p>
+          <p></p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>查看从李尔德斯那里偶然得到的纸片，好像是防止扭曲的时空裂缝的秘方。</p>
+          <p></p>
+          <p>把纸片交给了大城市里的秘药制造师，他对我表示感谢，并送给我一份礼物。</p>
+          <p></p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

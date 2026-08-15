@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，我发现的制作方法好像是错的。</p>
+          <p> </p>
+          <p>这样下去的话，可能永远都无法制作出治疗奥德中毒症的药……</p>
+          <p> </p>
+          <p>啊，怎么办才好呢？</p>
+          <p> </p>
+          <p>(陷入了沉思。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的结论好像下得太早了。</p>
+          <p> </p>
+          <p>我得从头开始再想一想。</p>
+          <p> </p>
+          <p>想想进入卡斯帕内部的守护者们受什么的影响最大，应该就能找到答案了。</p>
+          <p> </p>
+          <p>对了！椰林的果实也许可以成为解决问题的钥匙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问椰林的果实的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我也说过，要以毒攻毒。卡斯帕原来是椰林，椰林的气息一定会对解毒有所帮助。</p>
+          <p> </p>
+          <p>以前我曾经深入研究过椰林的果实。</p>
+          <p> </p>
+          <p>说到具有解毒效果的椰林果实，我想到了一个人。在米埃奈尔那里应该就能得到。</p>
+          <p> </p>
+          <p>虽然不敢确定……但米埃奈尔的果实也许可以用来治疗奥德中毒症。</p>
+          <p> </p>
+          <p>你能去向[%dic:STR_DIC_N_Tree_NoMove_Miener]要一个解毒果实吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你愿意答应我的请求。</p>
+          <p> </p>
+          <p>希望[%dic:STR_DIC_N_Tree_NoMove_Miener]的果实能够有用……在你去搜集果实的时候，我要继续研究古书。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也不敢保证有了米埃奈尔的果实之后就能制作出解毒剂……你拒绝我也是可以理解的。</p>
+          <p> </p>
+          <p>但是如果你能为正在受着痛苦煎熬的守护者们着想，应该就不会这么冷酷无情了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我感觉到了，远方的卡斯帕的痕迹。</p>
+          <p> </p>
+          <p>你看到或听到，什么事情了吗？</p>
+          <p> </p>
+          <p>告诉我，你的来意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说希望得到果实。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的，不是时候。</p>
+          <p> </p>
+          <p>果实，不是一直都有的。</p>
+          <p> </p>
+          <p>要想获得珍贵的东西，重要的是等待。</p>
+          <p> </p>
+          <p>不可能想要就能获得，不管是什么。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Tree_NoMove_Miener]那里获取果实。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">休里曼说如果有含有解毒气息的椰林的果实，应该就能制作出奥德中毒症治疗剂。去见见米埃奈尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>休里曼说用阿毗昙的津液无法制作奥德中毒症治疗剂。</p>
+          <p> </p>
+          <p>休里曼说制作解毒剂好像需要用到解毒果实，让我去米埃奈尔那里搜集果实。</p>
+          <p> </p>
+          <p>见到米埃奈尔之后，米埃奈尔说果实不是一直都有的，没有解毒果实可以给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原本要在短时间内完成任务。不过情况比预想要严重，遇到了很多困难。</p>
+          <p> </p>
+          <p>现在最重要的是确认受到污染的具体地区，以及每个地区受污染的严重程度。</p>
+          <p> </p>
+          <p>我们正在调查死者的峡谷，可那里有很多危险的家伙妨碍标本的取得，使我们没有任何进展……</p>
+          <p> </p>
+          <p>而且这里只有两个人，实在没办法处理所有的事情，您愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了调查受污染程度，需要消灭蛇妖，并采取标本。</p>
+          <p> </p>
+          <p>可当我们准备对付蛇妖的时候，又出现了独眼巨人，使标本采集始终无法顺利进行。</p>
+          <p> </p>
+          <p>[%username] 大人如果能够消灭 [%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An]，会给我们的工作带来很大的帮助。</p>
+          <p> </p>
+          <p>您愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请去消灭栖息在[%dic:STR_DIC_W_DF2B_SZ_D2]和 [%dic:STR_DIC_W_DF2B_SZ_D3]的 [%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An]。</p>
+          <p> </p>
+          <p>只要消灭它们就可以很轻松地收集标本了。</p>
+          <p> </p>
+          <p>那样我们就可以按时完成剩下的任务了。</p>
+          <p> </p>
+          <p>拜托您了，[%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果事情不是这么紧急，我也不会拜托别人的。</p>
+          <p> </p>
+          <p>但作为执政官，我们绝对要按时完成任务。</p>
+          <p> </p>
+          <p>为了任务的顺利完成，我们需要您的力量，请不要拒绝，好好考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>采集标本的工作毫无进展，真是令人头疼。</p>
+          <p> </p>
+          <p>虽然派帕大人和宾图埃尔大人知道这里的情况，就算晚一点也不会责怪。</p>
+          <p> </p>
+          <p>但按时完成任务是作为执政官最基本的原则。</p>
+          <p> </p>
+          <p>所以我才会拜托 [%username] 大人，虽然很让我过意不去。您已经消灭所有独眼巨人工人了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人做得很出色，真是幸运。</p>
+          <p> </p>
+          <p>如果没有您的帮助，我们到现在肯定还在和独眼巨人工人纠缠。</p>
+          <p> </p>
+          <p>多亏了您，终于进展了。</p>
+          <p> </p>
+          <p>真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An]([%2]/30)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Asustri]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了掌握受污染程度，需要采集标本，可是因为独眼巨人工人的阻碍，采集工作没有进展。需要消灭独眼巨人工人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿苏斯特里表示，为了掌握死者峡谷的受污染程度，需要收集标本，可因为独眼巨人工人从中作梗，采集工作无法取得进展。</p>
+          <p> </p>
+          <p>帮助阿苏斯特里去消灭了独眼巨人工人。阿苏斯特里非常高兴，表示这下可以按时完成任务了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

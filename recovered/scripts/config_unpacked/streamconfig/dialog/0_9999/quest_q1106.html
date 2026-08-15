@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>因为凯鲁宾和象鼻虫，今年的收获全泡汤了。</p>
+         <p> </p>
+         <p>想要糊口，必须卖出些粮食才行。但是因为那些家伙的破坏，农场现在什么都没剩下。</p>
+         <p> </p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+     <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以请您帮帮我。</p>
+          <p> </p>
+          <p>虽然让您做这种事情很不好意思，但是您就当救人一命，帮帮我吧。</p>
+          <p> </p>
+          <p>把粮食转交给村里的料理师[%dic:STR_DIC_LA05]就可以了。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经和[%dic:STR_DIC_LA05]他说好了， 您只要转交给他就结束了。</p>
+          <p> </p>
+          <p>虽然您不是免费帮我，但是还是要谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>没剩下多少食物了...</p>
+         <p> </p>
+         <p>我就知道会这样。这样下去的话大家就都饿死呗。 </p>
+         <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天烤的草莓派真是棒极了。怎么样？不买一个尝尝？</p>
+          <p> </p>               
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出粮食袋子。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%dic:STR_DIC_LA36]说派人去了，应该就是您吧。</p>
+          <p> </p>
+          <p>最近佣兵也干这种事情了？哈哈哈。开个玩笑。</p>
+          <p> </p>
+          <p>因为这次的事情卡尔雷斯好像很困难。料理大会的准备完成之后，我会带着食物过去。</p> 
+          <p> </p>
+          <p>所以您不用太担心卡尔雷斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_LA36]的粮食袋子交给厨师[%dic:STR_DIC_LA05]</font></p></step>           
+                   </steps>
+          <p><font font_xml="quest_summary">听说[%dic:STR_DIC_LA36]由于缺乏食物陷入了困境，所以决定答应这次请求。必须把粮食袋子交给村里的料理师[%dic:STR_DIC_LA05]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡尔雷斯由于缺乏食物，人们都快要饿死了。让你帮他找回粮食并交给村里的料理师乌诺。</p>
+          <p> </p>
+          <p>将粮食转交给乌诺，他说之后会把食物带给卡尔雷斯。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

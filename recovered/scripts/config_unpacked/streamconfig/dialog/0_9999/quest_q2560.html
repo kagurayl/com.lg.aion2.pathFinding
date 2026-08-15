@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾四周)有件事情，我想拜托[%username]大人。</p>
+          <p> </p>
+          <p>为了防止被革命团的人发现，我就长话短说了。</p>
+          <p> </p>
+          <p>上面给我下达了命令。</p>
+          <p> </p>
+          <p>说目前没有余力进攻矿山，让我继续观察革命团的动态，削弱他们的战斗力。</p>
+          <p> </p>
+          <p>必要的话，可以接受外部的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事关键的是要保密。</p>
+          <p> </p>
+          <p>弄不好被革命团发现的话，生命就会受到威胁。同时也会使这段时间的努力变成泡影。</p>
+          <p> </p>
+          <p>所以我需要找一个口风紧的人，而您似乎正好合适。</p>
+          <p> </p>
+          <p>您觉得怎么样？虽然会有点危险，但却很有意义，而且报酬也很可观。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把需要消灭的对象告诉您。请您帮我把[%dic:STR_DIC_M_FnA_LehparFiD_37_An]、[%dic:STR_DIC_M_AnA_LehparAsD_37_An]和[%dic:STR_DIC_M_FnB_LehparFiD_37_An]消灭掉。</p>
+          <p> </p>
+          <p>他们是负责矿山入口处的安全的人，如果能把他们除掉，日后展开进攻就会容易很多。</p>
+          <p> </p>
+          <p>请您务必小心。这次的事情如果能够成功，我会给您1枚铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这样断然拒绝，我就没话可说了。</p>
+          <p> </p>
+          <p>我知道了，这次的事情就当没发生过。</p>
+          <p> </p>
+          <p>但是我跟您说的话，您一定要帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没受伤吧？</p>
+          <p> </p>
+          <p>我听见里面很吵闹...</p>
+          <p> </p>
+          <p>但又怕被人怀疑，所以没有到里面去看，都快急死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>没有人跟踪您吧？</p>
+          <p> </p>
+          <p>我相信您一定不会被人跟踪。不过为了以防万一，就说到这里吧。</p>
+          <p> </p>
+          <p>这是说好的铸币。您以后再看吧。在被人发现之前，请您赶快离开这里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭守卫拉盖乌姆矿山的革命团员</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FnA_LehparFiD_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AnA_LehparAsD_37_An]([%5]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FnB_LehparFiD_37_An]([%8]/6)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Stua]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说上面下达了命令，需要在正式发起攻击前弱化矿山的战斗力。帮助斯图亚，清除守卫矿山的矿山战斗兵、强袭兵和剑斗兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯图亚说她正在找一个口风紧的人帮她，问我愿不愿意。</p>
+          <p> </p>
+          <p>任务是在正式攻击之前，弱化拉盖乌姆矿山的战斗力。</p>
+          <p> </p>
+          <p>按照她的拜托清除了矿山战斗兵、强袭兵和剑斗兵。回去找到她之后，她说辛苦了，并给了我铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人的心还真是奇怪。</p>
+          <p> </p>
+          <p>刚开始觉得新簪子只要用黄玉原石就很好了。但是有了这么好的原石之后，就又有了别的欲望。</p>
+          <p> </p>
+          <p>我非常想拥有最好的簪子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么簪子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对我们灵魂治愈师们来说，最好的簪子就是镶嵌了海蓝宝石的簪子。</p>
+          <p> </p>
+          <p>红色的黄玉和蓝色的海蓝宝石虽然都很漂亮，但是海蓝宝石中凝聚了奥德的气息，可以帮助恢复力气。</p>
+          <p> </p>
+          <p>守护者大人您应该很容易能采集到[%dic:STR_DIC_DG_jewelry_n_c_20b]吧？您能再帮我一次吗？</p>
+          <p> </p>
+          <p>这次真的是最后一次了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快就答应我。</p>
+          <p> </p>
+          <p>老实说，我还在担心您会责备我得寸进尺。</p>
+          <p> </p>
+          <p>那就请您帮我采集5个[%dic:STR_DIC_DG_jewelry_n_c_20b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我太无礼的话，请您原谅。</p>
+          <p> </p>
+          <p>看到了漂亮的黄玉原石，我不知不觉就贪心起来了...</p>
+          <p> </p>
+          <p>也是，对于我来说海蓝宝石也是一种奢侈。我会好好使用您帮我搜集到的黄玉原石的。</p>
+          <p> </p>
+          <p>那么再见了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还说您什么时候会回来呢。</p>
+          <p> </p>
+          <p>我让您帮我找的海蓝宝石找到了吗？</p>
+          <p> </p>
+          <p>听术古商人说海蓝宝石是水之宝石，真的像水一样透明吗？</p>
+          <p> </p>
+          <p>我也只是听说过，从来没有亲眼看过，所以非常好奇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出海蓝宝石原石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没采集到5个[%dic:STR_DIC_DG_jewelry_n_c_20b]吗？</p>
+          <p> </p>
+          <p>看来是我太心急了。</p>
+          <p> </p>
+          <p>也是。即使是守护者，要采集5个海蓝宝石原石，也不会那么容易。</p>
+          <p> </p>
+          <p>对不起，我不应该催您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，实在太漂亮了。</p>
+          <p> </p>
+          <p>我总算知道术古商人为什么说海蓝宝石是水之宝石。</p>
+          <p> </p>
+          <p>现在只要让最好的手工师做成簪子就行了。</p>
+          <p> </p>
+          <p>守护者大人，真是谢谢您。虽然我很想给您更好一点的东西，但是我只有这个。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_DG_jewelry_n_c_20b]，然后交给[%dic:STR_DIC_N_Snor]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让斯诺尔制作最好的簪子，必须去帮她采集海蓝宝石原石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯诺尔说看到黄玉之后有了更大的欲望，想要用海蓝宝石来镶嵌簪子。</p>
+          <p> </p>
+          <p>为了让她可以制作最好的簪子，帮她搜集到了海蓝宝石。她表示非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

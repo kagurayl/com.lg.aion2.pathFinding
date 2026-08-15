@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一封装在陈旧的小信封里的信。)</p>
+          <p> </p>
+          <p>(信封里有一张褪了色的纸。)</p>
+          <p> </p>
+          <p>(上面画着一些看不懂的图案，好像是天族语。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Gunter]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在修复文件的时候，会碰到龙族语或者天族语的文件。</p>
+          <p> </p>
+          <p>龙族语可以通过向术古购买药水学习，天族语就不能用药水学会...</p>
+          <p> </p>
+          <p>而且又不能光明正大地学习。</p>
+          <p> </p>
+          <p>所以只能通过从术古那里好不容易弄到的书学习，慢慢地熟悉语法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">把褪色的信给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是天族语。让我来分析一下，就当是学习好了。</p>
+          <p> </p>
+          <p>(把陈旧的书放到一边，看是阅读褪色的信。)</p>
+          <p> </p>
+          <p>这真是一封悲伤的信。</p>
+          <p> </p>
+          <p>是一个在魔族的土地上死去的天族守护者留给女儿的信。</p>
+          <p> </p>
+          <p>我把解读后的内容写下来，我想最好能找到它的主人。</p>
+          <p> </p>
+          <p>这是寄给[%dic:STR_DIC_W_LF3_SZ_FTW]的名叫阿尔莫尼雅的女儿的信，时间已经很久了，如果他的孙子[%dic:STR_DIC_N_Hellione]觉醒了的话，现在可能还活着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔、魔族！魔族！</p>
+          <p> </p>
+          <p>神...神...神官大人！</p>
+          <p> </p>
+          <p>警、警卫团在干...干...</p>
+          <p> </p>
+          <p>(想要逃到外面去。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔莫尼雅？阿尔莫尼雅是我很久以前就去世了的母亲的名字啊？</p>
+          <p> </p>
+          <p>听说她很小的时候曾经住在这个村子里...</p>
+          <p> </p>
+          <p>(读着信)听说外祖父去了欧比斯就没有再回来...可能他在魔族的土地上很思念母亲，后来就去世了。</p>
+          <p> </p>
+          <p>你过来应该不容易，谢谢你把信送过来。</p>
+          <p> </p>
+          <p>在被守护者大人们发现之前，你赶紧回去吧。这是辛苦的报答，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和伏魔殿的[%dic:STR_DIC_N_Gunter]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去天界的[%dic:STR_DIC_W_LF3_SZ_FTW]，把书信交给[%dic:STR_DIC_N_Hellione]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从古代天人的灵魂获得了一封褪色的信。上面写着天族语，最好拿去给昆泰尔看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在清除古代天人的灵魂时发现了一封用天族语写成的信。</p>
+          <p> </p>
+          <p>把信交给昆泰尔后，他对信进行了解读，说是死在魔界的天族写给女儿的心，希望能送给信的主人。</p>
+          <p> </p>
+          <p>去天界把心交给了主人的女儿赫里奥内。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在镇定下来了吧？那就请您仔细听我说。</p>
+          <p> </p>
+          <p>您应该从奇贝尔拉那里听说过了，最近凯丹大本营的动态很不寻常。</p>
+          <p> </p>
+          <p>原来他们也很好战，但是现在越来越好战了。力气很在变大。</p>
+          <p> </p>
+          <p>队长和我觉得，凯丹克拉尔一定是在利用奥德石制造什么东西。如果不是这样的话，他们不会突然变成这个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是还只是猜测。</p>
+          <p> </p>
+          <p>所以必须有谁到凯丹大本营去，弄清楚他们变强的真正原因。</p>
+          <p> </p>
+          <p>这件事情泰雷马科斯大人指定由你去做。</p>
+          <p> </p>
+          <p>虽然我不知道他为什么要给一个还不是守卫的人委派这么重的任务，但是这是队长的命令，我只能执行。</p>
+          <p> </p>
+          <p>您愿意执行队长的命令吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这份勇气倒是很让人钦佩。</p>
+          <p> </p>
+          <p>好的。请您马上去凯丹大本营进行调查，看看是否有什么可疑的东西。调查窝棚周围的箱子的话，应该会有什么线索。</p>
+          <p> </p>
+          <p>请您尽可能地聚集同伴一起去吧。独自一个人去凯丹大本营的话太危险了。</p>
+          <p> </p>
+          <p>那就祝您好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是害怕了吗？还是没有自信呢？</p>
+          <p> </p>
+          <p>要塞队长推荐的人竟然是这样一个胆小鬼，真让人失望。</p>
+          <p> </p>
+          <p>如果您不想执行命令的话，就不要在这里晃悠了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您的脸色，一定很不容易吧。</p>
+          <p> </p>
+          <p>也是，到那种地方去，能够全身而退就已经是得到五位主神的祝福了。</p>
+          <p> </p>
+          <p>对了，找到什么线索了吗</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把证据给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您觉得这叫线索吗？</p>
+          <p> </p>
+          <p>您该不会是到入口晃了晃就回来了吧？</p>
+          <p> </p>
+          <p>队长大人正在等着我们的结果呢。请您再去一趟吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这个不是药瓶吗？</p>
+          <p> </p>
+          <p>看起来闪闪发光，好像其中添加了奥德...</p>
+          <p> </p>
+          <p>不管怎样，辛苦您了。好像要比看上去的能干得多嘛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去凯丹大本营搜索[%dic:STR_DIC_I_QUEST_1411a]寻找线索，然后交给[%dic:STR_DIC_N_Aeolus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说凯丹克拉尔突然变强了。去凯丹大本营寻找线索吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾奥洛斯说凯丹克拉尔突然变强了，应该会有什么原因。他说泰雷马科斯队长推荐了我，于是让我去凯丹大本营寻找可以作为线索的物品。</p>
+          <p> </p>
+          <p>把在大本营找到的药瓶交给了他，他说好象是添加了奥德的药水。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

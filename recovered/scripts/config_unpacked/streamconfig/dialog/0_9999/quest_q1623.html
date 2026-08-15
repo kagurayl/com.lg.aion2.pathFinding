@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们俩这么说话，如果被高尔高斯舰长看到的话，不知道会说什么。</p>
+          <p></p>
+          <p>现在舰长的心情可不太好。</p>
+          <p></p>
+          <p>他以前可不是这样的人，很少为什么事情烦恼。现在一有点小事就会发火。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问何事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗨，原因有很多，不过最大的一个就是因为补给品了。</p>
+          <p></p>
+          <p>因为暗礁的原因，船只无法在斯泰浓海岸停泊，必须停到远处去。对，就是这里的东北面。</p>
+          <p></p>
+          <p>然后用小船载着[%dic:STR_DIC_E_LF3_SupplyBox_Q1623]到这边来，但是由于水势湍急，船在中途就翻了。</p>
+          <p></p>
+          <p>幸运的是没有出现人员伤亡，但是物品却损失了一半以上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此我们正在寻找[%dic:STR_DIC_E_LF3_SupplyBox_Q1623]，重新搜集补给品。别的东西在村子里都能找到，但问题是武器和防具。</p>
+          <p></p>
+          <p>在周边这些渔村里很难找到武器。</p>
+          <p></p>
+          <p>就我一个人，要给每个人都找到粮食、药水和武器，实在太累了。</p>
+          <p></p>
+          <p>[%username]，您能帮帮我吗？请您帮我把装在丢失的箱子里的[%dic:STR_DIC_I_QUEST_1623a]找回来吧。</p>
+          <p></p>
+          <p>现在看来，这似乎是找到武器和防具的最佳办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p></p>
+          <p>[%dic:STR_DIC_E_LF3_SupplyBox_Q1623]就在村子附近的海岸上。</p>
+          <p></p>
+          <p>只要给我找回3个完整的[%dic:STR_DIC_I_QUEST_1623a]就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您太忙了。</p>
+          <p></p>
+          <p>毕竟像您这种层次的人一定会很忙的。</p>
+          <p></p>
+          <p>呼，那就再拜托别人做这事吧。</p>
+          <p></p>
+          <p>如果今明两天之内还没有武器的话，我就会受到舰长的责备...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去找补给品的时候，他们弄到了药水。</p>
+          <p></p>
+          <p>当然，是从附近的术古商人那儿买到的。</p>
+          <p></p>
+          <p>现在只剩下武器和防具的问题了，拜托您寻找的补给品已经找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出补给品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，还是杀了我吧！</p>
+          <p></p>
+          <p>我听了您的话，就告诉舰长说一定可以准备好武器和防具。</p>
+          <p></p>
+          <p>如果您不是故意吓我，就快点去寻找[%dic:STR_DIC_I_QUEST_1623a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于找回来了。</p>
+          <p></p>
+          <p>这个纹样正是我们蓝色舰队军团的纹样。</p>
+          <p></p>
+          <p>真的太感谢了。托您的福，总算了却了一桩心事。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">帮助[%dic:STR_DIC_N_Ekseus]找到装在[%dic:STR_DIC_E_LF3_SupplyBox_Q1623]里的补给品。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">蓝色舰队的武器和防具匮乏。艾克赛乌斯让我帮他寻找落入海中的补给品箱子。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾克赛乌斯说补给品匮乏，高尔高斯舰长心情很差。</p>
+          <p></p>
+          <p>特别是武器和防具匮乏，无法从村子里获得，让我从落入海中的补给品箱子里取回补给品。</p>
+          <p></p>
+          <p>按照他的请求，为艾克赛乌斯取回了补给品，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

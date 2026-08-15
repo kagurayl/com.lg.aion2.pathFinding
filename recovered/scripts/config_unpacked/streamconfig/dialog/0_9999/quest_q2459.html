@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读比比的纸条) [%username]！你是不是听错了？</p>
+          <p> </p>
+          <p>这里写着烤贝尔斯非常好吃，还说谢谢我呢。</p>
+          <p> </p>
+          <p>还让我再给他送一点烤鱼过去呢。这次让我给他做点烤弥内。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage> 
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是怎么办呢？弥内之类的我闭着眼睛都能抓到，但是我还有事情。</p>
+          <p> </p>
+          <p>我要去阿尔特盖德要塞见一个人，所以没时间捕捉弥内。</p>
+          <p> </p>
+          <p>不好意思[%username]，你能再帮我一次吗？这次真的是最后一次了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是不好意思。</p>
+          <p> </p>
+          <p>那就请你帮我搜集12条弥内吧。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_gb_source_fish_d_20b]在忘却盐漠也能见到。如果在史匹格栖息地找不到的话，你可以去那边看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不能再想一想吗？</p>
+          <p> </p>
+          <p>你也看到了，这里没有什么人能帮我。</p>
+          <p> </p>
+          <p>我相信的人只有你，所以请你一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>时间刚刚好。</p>
+          <p> </p>
+          <p>我已经做好了烤弥内的准备，就等你回来了。</p>
+          <p> </p>
+          <p>没有时间了，快把它给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出弥内。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我催得太急了。</p>
+          <p> </p>
+          <p>人一着急就容易失手，你不用太着急，慢慢去捕捉[%dic:STR_DIC_E_gb_source_fish_d_20b]就行了。</p>
+          <p> </p>
+          <p>如果这里没有的话，请你去忘却盐漠看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我真是找对人了。</p>
+          <p> </p>
+          <p>真是谢谢你。虽然还想和你说说话，但是没有时间了。</p>
+          <p> </p>
+          <p>如果要在约好的时间之前把它烤好，然后送给比比的话，就必须快一点了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_E_gb_source_fish_d_20b]，然后交给[%dic:STR_DIC_N_Lif]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">比比让利夫帮他做一点烤弥内。必须帮助忙碌的利夫捕捉弥内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看了比比的纸条之后，利夫说比比让他做点烤弥内，但是她因为有事情而没时间去捕。</p>
+          <p> </p>
+          <p>她说让我最后再帮她一次。由于抹不开情面，于是去帮她捕到了弥内。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

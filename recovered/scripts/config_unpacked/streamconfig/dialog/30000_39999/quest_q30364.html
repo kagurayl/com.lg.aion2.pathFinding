@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(在宝石箱子中发现的项链。)</p>
+          <p> </p>
+          <p>(从上面高雅古朴的装饰来看，好像不是普通的项链。)</p>
+          <p> </p>
+          <p>(应该拿去给手工名人[%dic:STR_DIC_N_Lanse]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来学习手工的啊。</p>
+          <p> </p>
+          <p>那一定是来给我看什么东西的吧？</p>
+          <p> </p>
+          <p>把东西给我看看，我会尽我所能为你解答。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出艾洛之项链。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！这是非常珍贵的东西。</p>
+          <p> </p>
+          <p>像这么精美的项链，连我都没见过几件。</p>
+          <p> </p>
+          <p>宝石、装饰、接口全都制作得非常精致。</p>
+          <p> </p>
+          <p>看上去好像很古老，但保存状态却很好。您看这接口。这是大崩溃之前使用过的方式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">询问是否知道项链的主人。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很遗憾，我也不知道项链的主人是谁。</p>
+          <p> </p>
+          <p>但是既然是精灵身上掉落的项链，应该去问问魔道星和精灵星的老师[%dic:STR_DIC_N_Sif]。</p>
+          <p> </p>
+          <p>拥有如此珍贵的项链的精灵，锡普大人应该会记得吧？</p>
+          <p> </p>
+          <p>那样的话，就能知道项链的主人是谁了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来学习技能的吗？</p>
+          <p> </p>
+          <p>那你找我有什么事吗，[%username]？</p>
+          <p> </p>
+          <p>你好像拿来了什么东西，到底是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出艾洛之项链。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是在哪里发现的？名叫深渊残骸的小型欧比斯？艾洛在那里？</p>
+          <p> </p>
+          <p>艾洛还没死吗……谢谢您，鲁米埃尔主神！</p>
+          <p> </p>
+          <p>艾洛是我召唤的台风精灵。我非常喜欢那个孩子，所以总是把它带在身边。大崩溃发生的那一天也是。</p>
+          <p> </p>
+          <p>永恒之塔破碎，亚特雷亚裂开的时候，我失去了意识，艾洛也不见了。之后不管我怎么召唤，它都不再出现。我还以为是受到大崩溃的影响而死去了呢。</p>
+          <p> </p>
+          <p>没想到它竟然还没死！而且还带着我给它的项链。看来艾洛还没忘记我。现在项链回来了，应该可以重新召唤艾洛了。</p>
+          <p> </p>
+          <p>你不知道我对你是多么的感激。真的非常感谢，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Lanse]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把项链交给[%dic:STR_DIC_N_Sif]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在艾洛消失时掉落的宝石箱子里发现了一条项链。好像不是普通的项链，拿去问问手工名人兰塞吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命气流艾洛消失的时候掉落了一个宝石箱子，在箱子里发现了看上去很不寻常的项链。</p>
+          <p> </p>
+          <p>给手工名人兰塞看过之后，她说这是大崩溃之前制作的非常珍贵的项链。但是她也不知道主人是谁，让我去问问精灵星的老师锡普。</p>
+          <p> </p>
+          <p>把项链交给锡普之后，并告诉了她艾洛的事情。她说艾洛是自己的精灵，听说艾洛没有死，她非常激动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

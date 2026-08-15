@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然要着手调查，最好是先去欧比斯去调查一下。</p>
+          <p> </p>
+          <p>现在我们只知道假烙印之石是通过欧比斯过来的。 </p>
+          <p> </p>
+          <p>[%username]%你既然开始进行调查，最好能追踪到底。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>问题是几乎没有任何情报... </p>
+          <p> </p>
+          <p>不过我听说[%username]%你经验丰富，相信应该可以解决这件事情。</p>
+          <p> </p>
+          <p>怎么样，你愿意对假烙印之石事件调查到底吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先去特米伦据点见见[%dic:STR_DIC_N_Shugo_AB1_L1]吧。</p>
+          <p> </p>
+          <p>他一直以来都在欧比斯从事交易中介工作，应该知道很多情报。</p>
+          <p> </p>
+          <p>如果他不说的话，就说出我的名字然后慢慢盘问，应该会有效果的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是认为假烙印之石不是什么严重的问题？</p>
+          <p> </p>
+          <p>还是不愿意去欧比斯？</p>
+          <p> </p>
+          <p>我这么相信[%username]%你，你竟然拒绝了...真让人失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是为假烙印之石来的吗？</p>
+          <p> </p>
+          <p>我虽然知道有那种东西，但是详细情况我什么都不知道。</p>
+          <p> </p>
+          <p>你想想，一个一天到晚坐在那里做生意的人怎么会知道那种秘密的事情。</p>
+          <p> </p>
+          <p>你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">转达里卡萨斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...虽然是其他贸易团，但是如果我随便透露情报的话，就会失去信用... </p>
+          <p> </p>
+          <p>不过里卡萨斯大人既然说到这个份儿上了...不过我也不能告诉你太详细的东西，呐呐。 </p>
+          <p> </p>
+          <p>往欧比斯的里面走，有一个乌云贸易团藏身的岛。被称为乌云之岛，在远处看不见，只有走近了才能看到。 </p>
+          <p> </p>
+          <p>你到那里问问[%dic:STR_DIC_N_Shugo_AB1_4]。他一开始一定不会说的，但是只要你威胁他几次就行了。</p>
+          <p> </p>
+          <p>不用我和你说你也应该知道，绝对不能和别人说是我告诉你的。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>假烙印之石和我们有什么关系？</p>
+          <p> </p>
+          <p>我们贸易团的罪最多只是在天族和魔族之间贩卖东西。</p>
+          <p> </p>
+          <p>你干嘛来这里和我们捣乱，呐呐！</p>
+          <p> </p>
+          <p>不要妨碍我准备做生意，快走开。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">威胁说以后他们在天界做生意会变得很困难。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是受了极乐世界高层的命令来威胁我们的吧？真是太过分了。</p>
+          <p> </p>
+          <p>没办法。告诉你总比不能做生意好。</p>
+          <p> </p>
+          <p>假的烙印之石是从魔界搞来的。是雷帕尔革命团在一个名叫莫尔海姆的地方制造的。 </p>
+          <p> </p>
+          <p>他们正在一个叫做[%dic:STR_DIC_W_DF2_SUB_D5]的地方制造烙印之石。</p>
+          <p> </p>
+          <p>现在可以别妨碍我了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是从欧比斯来的吗，[%username]？</p>
+          <p> </p>
+          <p>假烙印之石的调查进行得怎么样了？</p>
+          <p> </p>
+          <p>如果你打听到了些什么就快告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔界？雷帕尔革命团？</p>
+          <p> </p>
+          <p>咳，这个...好像还不是想象的那么简单。</p>
+          <p> </p>
+          <p>到底应该怎么解决呢...一下子好像也想不出什么办法。 </p>
+          <p> </p>
+          <p>不管怎样，谢谢你了[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_AB1_L1]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">调查[%dic:STR_DIC_N_Shugo_AB1_4]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">向[%dic:STR_DIC_N_Likasas]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">极乐世界的守护者里卡萨斯说在等我。去极乐世界见见他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里卡萨斯知道假的烙印之石是通过欧比斯进来的之后，希望我能直接去欧比斯调查一下。</p>
+          <p> </p>
+          <p>从天加隆商团的交易中介纳要灵灵那里获取情报之后，去审问了乌云贸易团的库普灵，得知了假烙印之石是从魔界来的事实。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

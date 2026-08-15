@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <p>我找了你好一会儿了。</p>
+    <p> </p>
+    <p>看你一脸发呆的样子，又在睡午觉吧？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">“我刚做了个奇怪的梦。”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>别跟我说什么梦了，快到米雷斯那里去。</p>
+         <p> </p>
+        <p>他刚才就在找你了。你知道[%dic:STR_DIC_LA148]的脾气吧？你最好快点过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+        <p>他说在阿卡利奥斯村的入口处等你。</p>
+        <p> </p>
+         <p>把人叫来叫去的。切，他以为自己是什么啊！ </p>
+        <p> </p>
+        <p>所以人们都不喜欢他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>喂，你还没睡醒吗？</p>
+       <p> </p>
+       <p>按[%dic:STR_DIC_LA148]的性格是不会善罢甘休的...</p>
+       <p> </p>
+        <p>反正我和你说过了。以后可别怪我没说！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等了你这么久！</p>
+          <p> </p>
+          <p>年轻人怎么这么磨蹭啊，啧啧。</p>
+          <p> </p>
+          <p>我最讨厌等人，以后叫你的话必须立刻过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问有什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以后你和我一起，不，你听我的指示就行。</p>
+          <p> </p>
+          <p>卡利安团长把阿卡利奥斯草原那边的事情交给我负责。</p>
+          <p> </p>
+          <p>他让我直接选个一起做事的人，我就推荐了你。</p>
+          <p> </p>
+          <p>啊，不用行礼了，以后好好听我的话就行了。</p>
+          <p> </p>
+          <p>我绝不会亏待你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见[%dic:STR_DIC_LA148]</font></p></step>               
+               
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_LA01]说[%dic:STR_DIC_LA148]正急着找你。说他会在阿卡利奥斯村入口处等你。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做了个奇怪的梦正在发呆，听埃尔皮斯说米雷斯正在找自己。急忙找到米雷斯，他说今后和你一起做事。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

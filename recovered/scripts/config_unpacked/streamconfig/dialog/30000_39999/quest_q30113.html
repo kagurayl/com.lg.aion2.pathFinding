@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不会像贝利担心的那样，鲁莽地冲进神殿攻击他们。</p>
+          <p> </p>
+          <p>因为我决不能在复仇之前死去。</p>
+          <p> </p>
+          <p>你也知道，以我的力量，根本没办法向他们复仇。</p>
+          <p> </p>
+          <p>所以我正在寻找能够帮助我的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你愿意帮我去复仇吗？</p>
+          <p> </p>
+          <p>我虽然被复仇的火焰迷住了眼睛，但看人的眼光还是有的。</p>
+          <p> </p>
+          <p>我想以你的实力，对付狂信徒应该没什么困难的吧？</p>
+          <p> </p>
+          <p>你能让他们知道我的愤怒吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你愿意成为我的复仇天使。</p>
+          <p> </p>
+          <p>我的复仇对象是[%dic:STR_DIC_M_IDTemple_FanaticKnKey1Named_54_Ae]和[%dic:STR_DIC_E_IDTemple_FanaticAsNamed_53_Ah]。</p>
+          <p> </p>
+          <p>此外，请你把他们的部下[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]也一起除掉。</p>
+          <p> </p>
+          <p>你所做的事情，是正义的审判。希望你能告诉他们，正义是永远存在的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我是被复仇之火迷住了眼睛，看错了人。</p>
+          <p> </p>
+          <p>虽然你有消灭他们的能力，但没想到你是个没有正义感和使命感的人。</p>
+          <p> </p>
+          <p>在复仇之前，我决不会离开这里。</p>
+          <p> </p>
+          <p>如果你不想帮我，就不要妨碍我。赶快离开这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的女儿是个非常聪明的孩子，虽然在别人的眼里可能有点傲慢。</p>
+          <p> </p>
+          <p>我相信那个孩子长大之后，一定可以成为时代的指导者。</p>
+          <p> </p>
+          <p>我爱她，因为她是我的女儿，同时也是在为我们鸢族培养未来。</p>
+          <p> </p>
+          <p>那样的一个孩子，就这么消失了。龙信徒们必须为此付出代价。</p>
+          <p> </p>
+          <p>你帮我把他们消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，复仇天使。</p>
+          <p> </p>
+          <p>我的怨恨、我女儿的怨恨好像解开了一点。</p>
+          <p> </p>
+          <p>虽然怨恨并没有完全消失。</p>
+          <p> </p>
+          <p>你为我主持了正义，我必须向你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">代替阿尔提纳德，向龙信徒复仇</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDTemple_FanaticKnKey1Named_54_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_IDTemple_FanaticAsNamed_53_Ah]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Altinard]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助阿尔提纳德，为她的女儿复仇。到荒废的乌达斯神殿去，消灭龙信徒吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔提纳德说正在寻找为女儿复仇的人。</p>
+          <p> </p>
+          <p>于是前往荒废的乌达斯神殿，消灭了惩罚门将马里卡·加尔哈、机敏的马里卡·裘拉和乌达斯精锐杂役。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

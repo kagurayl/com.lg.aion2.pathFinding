@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>情况似乎越来越坏，这让我非常担心。</p>
+          <p> </p>
+          <p>昨天我看见梅内拉乌斯百夫长大人在那儿叹气，就小心翼翼地问了他一下。他说埃雷修兰塔来了魔族精锐驻军。</p>
+          <p> </p>
+          <p>说着他流下了眼泪，说这下没有夺回要塞的希望了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直跟在百夫长大人身边，但还是第一次看见他这样。我虽然很想跟他说不要担心，我们完全可以把他们击退，但却说不出口。</p>
+          <p> </p>
+          <p>事实上，以现在的人员，连对付这里的纽特都捉襟见肘。</p>
+          <p> </p>
+          <p>[%username]大人，我听说您的实力非常了不起。</p>
+          <p> </p>
+          <p>我不期望您能干掉全部，只要干掉一些[%dic:STR_DIC_M_1812_all]就行了。您说行吗？</p>
+          <p> </p>
+          <p>就算我求您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，真的非常感谢。</p>
+          <p> </p>
+          <p>听到您这句话的话，梅内拉乌斯百夫长大人也会非常高兴的。</p>
+          <p> </p>
+          <p>首先最要紧的是阻止魔族继续在埃雷修兰塔扩张势力。因此请您在魔族占领要塞的时候，对他们进行攻击。</p>
+          <p> </p>
+          <p>那就请您在可以占领时前往要塞，把[%dic:STR_DIC_M_1812_all]清除掉，把[%dic:STR_DIC_I_QUEST_1812a]带回来。</p>
+          <p> </p>
+          <p>别忘了要注意身体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。我只是想问问您能不能帮忙。</p>
+          <p> </p>
+          <p>我们守卫都觉得辣手的事情，[%username]大人做起来肯定也很困难。</p>
+          <p> </p>
+          <p>这我都能理解，您不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您先歇一歇吧。</p>
+          <p> </p>
+          <p>看您流了这么多汗，战斗一定很激烈吧。</p>
+          <p> </p>
+          <p>看来我拜托您的事情还是太困难了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出执政官的旗帜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经和梅内拉乌斯百夫长大人说过了，说[%username]大人答应帮助我们。您要是这样的话，我会很难办的。</p>
+          <p> </p>
+          <p>必须要有证据，百夫长大人才会相信。</p>
+          <p> </p>
+          <p>所以，即便是有点麻烦，请您一定要把[%dic:STR_DIC_I_QUEST_1812a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人是找对人了。[%username]大人真是我们天族的财富。</p>
+          <p> </p>
+          <p>请您收下。我能给您的，就只有这么多。</p>
+          <p> </p>
+          <p>虽然不多，希望您能喜欢。</p>
+          <p> </p>
+          <p>那就说到这儿吧。我得赶紧去向百夫长大人报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_1812_all]，然后把证据交给[%dic:STR_DIC_N_Mors]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">在魔族占领克罗坦要塞的时候攻击精锐驻军，组织魔族势力在埃雷修兰塔的扩张。把他们除掉后，搜集执政官的旗帜交给莫尔斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫尔斯说由于魔族势力在埃雷修兰塔的扩张，梅内拉乌斯百夫长在那儿叹气，让我去帮着清除魔族精锐驻军，帮百夫长打气。</p>
+          <p> </p>
+          <p>按照他的拜托清除掉恶劣克罗坦要塞的魔族精锐驻军，把搜集到的执政官的旗帜交给了他。他非常高兴，说要马上拿去给百夫长看看。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，听说你很有才能。</p>
+          <p> </p>
+          <p>但是打猎只有才能是不行的。不管多么优秀的人，即使拥有可以和主神媲美的能力的人，也不可能一生下来就成为优秀的猎人。</p>
+          <p> </p>
+          <p>必须跋山涉水，把自己的腿锻炼得和岩石一样坚硬时，才能成为一名优秀的猎人。</p>
+          <p> </p>
+          <p>那种锻炼不是通过一两次的打猎就能够完成的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打猎快脚马艾奇的感觉如何？它们可以在穆斯费尔火山入口这种危险的地方快速奔跑，没有任何动物可以追得上它们。</p>
+          <p> </p>
+          <p>如果你觉得打猎它们很容易，还应该继续努力，直到闭着眼睛都能抓到它们为止。如果你觉得很困难，就更应该加倍地努力。</p>
+          <p> </p>
+          <p>怎么样？你愿意去打猎[%dic:STR_DIC_M_DisplacerbeastReD_25_An]，继续锻炼自己吗？</p>
+          <p> </p>
+          <p>每杀死一只，你就朝优秀的猎人又更近了一步。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去消灭20只[%dic:STR_DIC_M_DisplacerbeastReD_25_An]。</p>
+          <p> </p>
+          <p>你已经有了经验，应该知道怎么对付它们吧？</p>
+          <p> </p>
+          <p>好的，既然你下定了决心，就抓紧时间！犹豫的猎人不是好猎人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不喜欢打猎练习吗？</p>
+          <p> </p>
+          <p>你不想成为优秀的猎人吗？</p>
+          <p> </p>
+          <p>随你的便。我也不想教那些不努力学习的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>20只[%dic:STR_DIC_M_DisplacerbeastReD_25_An]全都消灭掉了吗？</p>
+          <p> </p>
+          <p>是不是你已经有了经验，所以这么快就回来了。</p>
+          <p> </p>
+          <p>我果然没有看错人……</p>
+          <p> </p>
+          <p>好的，说说你的感受吧。再去打猎马艾奇，是不是觉得更容易了？还是觉得更困难了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，[%username]，你的能力正在逐步提高。</p>
+          <p> </p>
+          <p>只要你继续努力，你的才能就一定能绽放出灿烂的光芒。</p>
+          <p> </p>
+          <p>今后如果想继续接受训练，可以随时来找我。</p>
+          <p> </p>
+          <p>我会很乐意对你进行指导的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_DisplacerbeastReD_25_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Legalus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莱卡尔卢斯说要想成为优秀的猎人，就必须不断地练习。按照他的建议，去打猎快脚马艾奇吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱卡尔卢斯说要想成为优秀的猎人，就必须不断地练习，并建议我继续接受训练。</p>
+          <p> </p>
+          <p>于是接受了他的建议，去穆斯费尔火山入口消灭了快脚马艾奇。回去之后，他说自己没有看错人，如果想继续接受训练，可以随时去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

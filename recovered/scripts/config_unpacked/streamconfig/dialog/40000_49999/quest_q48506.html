@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来这里搜集铜钱的吗？</p>
+          <p> </p>
+          <p>铜钱的交换规则，你应该知道吧？</p>
+          <p> </p>
+          <p>眼对眼，铜钱对铜钱！</p>
+          <p> </p>
+          <p>如果你想获得我的铜钱，你也得给我相等价值的铜钱才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谷和琳琳正在搜集侦探所证物。</p>
+          <p> </p>
+          <p>可以用来交换的铜钱是特殊司令部证物。</p>
+          <p> </p>
+          <p>你愿意和谷和琳琳交换铜钱吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(从怀里掏出一个卷轴查看)现在的市价是6个特殊司令部证物交换7个侦探所证物。</p>
+          <p> </p>
+          <p>你把7个[%dic:STR_DIC_I_COIN_D_HUNTERS_01]给我。</p>
+          <p> </p>
+          <p>我就把6个特殊司令部证物交给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出侦探所证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来这不是你要的铜钱啊？</p>
+          <p> </p>
+          <p>真可惜。不过要是不需要的话，就算了。</p>
+          <p> </p>
+          <p>如果你需要特殊司令部证物，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>交换的铜钱带来了吗？</p>
+          <p> </p>
+          <p>把带来的东西给我看看吧。</p>
+          <p> </p>
+          <p>我得确认一下东西是不是对的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出侦探所证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要的铜钱在哪里啊？</p>
+          <p> </p>
+          <p>我不是说过吗？必须要有7个[%dic:STR_DIC_I_COIN_D_HUNTERS_01]，才能交换到我的证物。</p>
+          <p> </p>
+          <p>如果不符合条件，我是绝对不会和你交换的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(逐一检查证物)全都是真的侦探所证物。</p>
+          <p> </p>
+          <p>呐，有时候会有假的证物。</p>
+          <p> </p>
+          <p>你遵守了约定，我也得遵守我的约定。</p>
+          <p> </p>
+          <p>(从箱子里拿出什么东西)拿着，这是特殊司令部证物。</p>
+          <p> </p>
+          <p>我会继续在这里用特殊司令部证物交换侦探所证物。如果你搜集到了侦探所证物，可以随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_COIN_D_HUNTERS_01]，然后交给[%dic:STR_DIC_N_Shugo_Exchange_08]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">谷和琳琳说自己正在搜集侦探所证物。应该用侦探所证物和他交换特殊司令部证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>铜钱收藏家谷和琳琳说想用特殊司令部证物交换侦探所证物。</p>
+          <p> </p>
+          <p>于是把搜集到的侦探所证物交给了谷和琳琳，交换到了特殊司令部证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

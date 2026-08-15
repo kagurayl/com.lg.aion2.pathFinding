@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用给她的材料做料理。)</p>
+          <p> </p>
+          <p>(把处理好的材料串成串，在火上烤。)</p>
+          <p> </p>
+          <p>(涂上酱料，然后慢慢转着烤。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">看着她做料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话应该就可以了。</p>
+          <p> </p>
+          <p>味道很香。</p>
+          <p> </p>
+          <p>把它送给蹦蹦空的话，他一定会很高兴的。</p>
+          <p> </p>
+          <p>他被雾鬃莱卡恩追杀，一定过得很累...真想快点拿去给他。</p>
+          <p> </p>
+          <p>但是现在我太忙了...明天才能有时间。不，也许得等到后天才行...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人能帮我真是太好了。</p>
+          <p> </p>
+          <p>您能帮我把这个菲斯勒烤串交给查卡塔隐身处的[%dic:STR_DIC_N_DF2_NPC_BumbumKong]吗？</p>
+          <p> </p>
+          <p>他应该和银鬃莱卡恩们在一起，银鬃部族和魔族的关系很友好，请您不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经过內普拉木耙路和银鬃部落之后，就能见到[%dic:STR_DIC_W_DF2_SUB_E2_1]了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_DF2_NPC_BumbumKong]应该就在那里。</p>
+          <p> </p>
+          <p>帮我转告他，让他吃得开心一点，健康地生活下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有其他事情要忙啊。</p>
+          <p> </p>
+          <p>我知道了。明后天我应该可以挤出时间，到时候再送过去吧。</p>
+          <p> </p>
+          <p>把它保存在凉快的地方应该就不会坏。</p>
+          <p> </p>
+          <p>可以亲眼见到蹦蹦空开心的表情，那也挺好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你找蹦蹦空有什么事？</p>
+          <p> </p>
+          <p>蹦蹦空没做错什么，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把烤串交给他，并转达古尔贝克的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说是古尔贝克为我做的？</p>
+          <p> </p>
+          <p>谢谢她帮我做烤串。</p>
+          <p> </p>
+          <p>也谢谢你帮我送过来，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把菲斯勒烤串交给[%dic:STR_DIC_N_DF2_NPC_BumbumKong]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">古尔贝克让我帮她把料理交给蹦蹦空。去查卡塔隐身处，把菲斯勒烤串交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古尔贝克说虽然为陷入失意的蹦蹦空制作了烤串，但是她自己太忙，没有时间送过去。</p>
+          <p> </p>
+          <p>于是帮她去查卡塔隐身处，把烤串送给了蹦蹦空。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

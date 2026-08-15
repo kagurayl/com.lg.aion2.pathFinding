@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>听说最近泰奥勃莫斯出现了异常的征兆。</p>
+          <p> </p>
+          <p>在神圣守护会中活动的结界守护者阿特洛浦斯失去了消息。</p>
+          <p> </p>
+          <p>如果发生了什么没有预料到的事情，他也许会遇到危险。请你快去见见[%dic:STR_DIC_N_Atropos]，确认一下情况。</p>
+          <p> </p>
+          <p>如果情况很严重，请立即发送急电。如果不是很紧急的话，请向[%dic:STR_DIC_E_35014]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(高兴的表情)[%username]！你来这里有什么事吗？</p>
+          <p> </p>
+          <p>是神圣守护会派你来的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">讲述事情经过。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为没收到我的消息，所以大家很着急？奇怪，我明明在按时发送报告书……</p>
+          <p> </p>
+          <p>(好像想起了什么，拍了一下膝盖)我想起来了。</p>
+          <p> </p>
+          <p>一定是那些送特快专递的术古，没有把我的报告书送过去。</p>
+          <p> </p>
+          <p>我会马上把它叫过来确认一下。请你向上面报告，说我没有什么问题。</p>
+          <p> </p>
+          <p>遗失的报告书，我会重新制作后发过去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>见到结界守护者阿特洛浦斯了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>通过特快专递发送的报告书不见了？</p>
+          <p> </p>
+          <p>嗯，如果那个术古邮递员把阿特洛浦斯发给神圣守护会的报告书藏起来的话，事情就不那么简单了。</p>
+          <p> </p>
+          <p>既然阿特洛浦斯说会进行调查，我就稍微等一等吧。</p>
+          <p> </p>
+          <p>这次真是辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Atropos]%对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35014]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说结界守护者阿特洛浦斯失去了联系，让我去确认一下情况。</p>
+          <p> </p>
+          <p>见到阿特洛浦斯之后，他说好像是帮他送信的术古出现了问题，让我回去向普利亚莫斯报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

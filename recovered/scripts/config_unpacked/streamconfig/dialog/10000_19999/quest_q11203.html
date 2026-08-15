@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>植物对环境的变化非常敏感。</p>
+          <p> </p>
+          <p>环境改变之后，它们有时会死去，有时也会适应环境，发生变异。</p>
+          <p> </p>
+          <p>罗克哈就是这种情况。</p>
+          <p> </p>
+          <p>在德拉纳的气息很强的地带，它们会适应德拉纳。在附近硫磺的毒气很强的地带，它们就会适应硫磺毒气。</p>
+          <p> </p>
+          <p>而且这里的硫磺不是普通硫磺，而是提亚马特的力量形成的强酸！因此硫磺罗克哈是非常重要的研究对象。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我不想把我强大的力量用在研究硫磺罗克哈这样的事情上。</p>
+          <p> </p>
+          <p>我不是说研究提亚马特的力量不重要。</p>
+          <p> </p>
+          <p>我想强调的是效率。</p>
+          <p> </p>
+          <p>强者去对付强大的敌人，而弱者则去完成力所能及的任务。这样不是更好吗？</p>
+          <p> </p>
+          <p>这个任务我想交给你。我想你应该很适合去执行这个任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定会答应的。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_LF4_C_Agrint_Acid_55_An]之后，你把它们体内凝结而成的硫磺精髓拿回来。</p>
+          <p> </p>
+          <p>这段时间，监视哨所这里由我来守护。</p>
+          <p> </p>
+          <p>就算有龙族军队出现，我也可以对付得了，你只要集中精神做好自己的工作就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？</p>
+          <p> </p>
+          <p>你是觉得这件事不适合你吗？</p>
+          <p> </p>
+          <p>太困难了？还是太简单了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果贪婪祭坛被敌人占领，这个监视哨所就会成为天族重要的据点。</p>
+          <p> </p>
+          <p>所以我才会被派到这里。</p>
+          <p> </p>
+          <p>不管发生什么事，以我的力量都能守住这个哨所。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出硫磺精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去消灭硫磺罗克哈吗？</p>
+          <p> </p>
+          <p>快一点。</p>
+          <p> </p>
+          <p>这种事情应该一下子就能搞定啊。</p>
+          <p> </p>
+          <p>难道你也和沉默之匕军团一样，是靠人脉而不是靠实力来到这里的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。</p>
+          <p> </p>
+          <p>对于可以在英吉斯温进出的守护者而言，这种事情应该只是小菜一碟。</p>
+          <p> </p>
+          <p>你拿回来的硫磺精髓，我会转交给学者们。</p>
+          <p> </p>
+          <p>当然，我会提到你的功劳的。你不必担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_C_Agrint_Acid_55_An]的精髓，然后交给[%dic:STR_DIC_N_Totus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照托图斯所说，消灭硫磺罗克哈，搜集硫磺精髓。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托图斯说硫磺罗克哈的精髓是研究提亚马特的力量的重要线索。</p>
+          <p> </p>
+          <p>于是去消灭硫磺罗克哈，把搜集到的硫磺精髓交给了他。他对我大加称赞，说做得很好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

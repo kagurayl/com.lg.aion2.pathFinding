@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4533</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人类，如果你接受我对你的感谢，能再听我说一说吗？</p>
+          <p> </p>
+          <p>你消灭掉的被传染的僵尸只不过是牺牲品。</p>
+          <p> </p>
+          <p>我还记得他们拥有完整的生命时的样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果那些愚蠢的自卫团员没有违背禁忌，触碰了布里特拉的武器，他们就会以普通人类的面貌过完一生。</p>
+          <p> </p>
+          <p>那些愚蠢的自卫团员至今还在布里特拉的武器周围徘徊，扩散着污染。</p>
+          <p> </p>
+          <p>你去把造成这一切的他们消灭掉。</p>
+          <p> </p>
+          <p>为了我们种族的安宁，不，是出于对变成僵尸的同族的怜悯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>愚蠢的自卫团员和其他自卫团员外貌全都一样，你是无法分辨出谁是谁的。</p>
+          <p> </p>
+          <p>所以你去把[%dic:STR_DIC_I_2052_Etc]的[%dic:STR_DIC_M_DF3C2_SkeletonCurseD_35_An]%全部消灭掉。</p>
+          <p> </p>
+          <p>(向布里特拉的武器那边看了一眼)快点吧。死亡的味道越来越浓了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去的话，我们的种族就要完蛋了。</p>
+          <p> </p>
+          <p>现在在你和我们种族之间没有任何可以谈的事情了。</p>
+          <p> </p>
+          <p>你快回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你身上的恶臭比之前的更强烈了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF3C2_SkeletonCurseD_35_An]%消灭掉了吗？</p>
+          <p> </p>
+          <p>跟我说说那里到底发生了什么事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，人类。</p>
+          <p> </p>
+          <p>你用你的勇敢和慈悲，帮助了我们。</p>
+          <p> </p>
+          <p>我们会用心感谢你的第一份好意，用血感谢你的第二份好意，用生命感谢你的第三份好意。</p>
+          <p> </p>
+          <p>你对我们的好意，我们绝不会忘记。</p>
+          <p> </p>
+          <p>直到儿子的儿子，儿子的儿子的儿子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭污染的原因[%dic:STR_DIC_M_DF3C2_SkeletonCurseD_35_An]%([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vanargand]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说污染的元凶在被传染的阿努拜特自卫团员中间。消灭阿努拜特自卫团员，然后向巴纳尔甘德报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴纳尔甘德说被传染的僵尸也只是牺牲者，污染的元凶是触碰了布里特拉的武器的自卫团员。</p>
+          <p> </p>
+          <p>为了阻止污染的扩散，消灭布里特拉的武器周围的被传染的阿努拜特自卫团员。回去之后，巴纳尔甘德说感谢我帮助了他们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

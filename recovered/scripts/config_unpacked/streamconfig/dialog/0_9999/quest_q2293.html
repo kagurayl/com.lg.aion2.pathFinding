@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这附近好像还有很多人不知道铸币。</p>
+          <p> </p>
+          <p>如果坚持搜集铸币的话，就能得到极大的奖赏。</p>
+          <p> </p>
+          <p>我现在正在提供铸币。</p>
+          <p> </p>
+          <p>最近精灵们引起了很多问题，去消灭它们的话，就能获得铸币。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>围绕在因派图西姆周围的奥德的气息最近以来一直很奇怪。</p>
+          <p> </p>
+          <p>精灵们也逐渐变得比以前更凶暴了。</p>
+          <p> </p>
+          <p>虽然多次投入执政官来清除精灵，但是效果不是很明显。</p>
+          <p> </p>
+          <p>所以我就被派到了这里。目的是让普通的守护者们帮助执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你只要消灭附近的6头[%dic:STR_DIC_M_AElemental1stD_18_An]和13个[%dic:STR_DIC_M_AElemental2ndD_18_An]，我就会给您铸币。</p>
+          <p> </p>
+          <p>虽然需要费不少力气，但是却绝对是值得的。</p>
+          <p> </p>
+          <p>您愿意去执行清除精灵的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是明智的决定。这既是为阿尔特盖德服务，同时也可以赚取铸币。</p>
+          <p> </p>
+          <p>请您去清除由于奥德流动的异常而变得凶暴的[%dic:STR_DIC_M_AElemental1stD_18_An]6个和[%dic:STR_DIC_M_AElemental2ndD_18_An]16个。</p>
+          <p> </p>
+          <p>少一个都不行。必须除掉约定的数量，我才能把铁铸币给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>铸币制度是对守护者们和地区社会都能形成帮助的好制度。</p>
+          <p> </p>
+          <p>搜集到铸币交给我的话，我就能给您在普通商店中无法买到的物品。</p>
+          <p> </p>
+          <p>所以请您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是能找到精灵们变得凶暴的原因的话就好了。</p>
+          <p> </p>
+          <p>只要消除原因的话，就不必去清除精灵了。</p>
+          <p> </p>
+          <p>但是目前为止还没有找到原因，所以没有办法。</p>
+          <p> </p>
+          <p>6个[%dic:STR_DIC_M_AElemental1stD_18_An]和16个[%dic:STR_DIC_M_AElemental2ndD_18_An]全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>来，这是说好的铁铸币。</p>
+          <p> </p>
+          <p>这段时间应该还得继续清除精灵。</p>
+          <p> </p>
+          <p>所以有时间的话，您可以随时来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">为了获取铸币去抓精灵。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AElemental1stD_18_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AElemental2ndD_18_An]([%5]/16)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Lateni]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">只要除掉刀风之精灵和漩涡精灵，行政官拉泰尼就答应给铁铸币。去获取铸币吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉泰尼说因为因派图西姆的奥德的气息发生异常，精灵们变得越来越凶暴，并说如果能去执行清除精灵的任务的话，他就会提供铁铸币作为报酬。</p>
+          <p> </p>
+          <p>于是去清除了刀风之精灵和漩涡精灵，获得了铁铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

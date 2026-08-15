@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多椰林死了，虽然避难到了这里。</p>
+          <p> </p>
+          <p>寂静沼泽这里虽然有水，但是个生活艰辛的地方。</p>
+          <p> </p>
+          <p>因为沼泽的水质正在变坏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为[%dic:STR_DIC_M_Slime_23_An]，水才会变坏。</p>
+          <p> </p>
+          <p>他们身上的毒，正在使沼泽腐败。</p>
+          <p> </p>
+          <p>有斯莱姆在，椰林就没法活。</p>
+          <p> </p>
+          <p>除掉它们，为了我们椰林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Slime_23_An]，就在寂静沼泽里面。</p>
+          <p> </p>
+          <p>不仅是椰林和树，它们也威胁到人类。</p>
+          <p> </p>
+          <p>把它们除掉，然后回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯莱姆的毒会让人慢慢死掉，不仅是椰林和树，人也一样。</p>
+          <p> </p>
+          <p>愚蠢的守护者啊，你真是鼠目寸光。</p>
+          <p> </p>
+          <p>你会后悔的，在将来的某个时候。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯莱姆放出的毒，正在消失。</p>
+          <p> </p>
+          <p>守护者啊，你把沼泽地带斯莱姆除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，除掉了斯莱姆。</p>
+          <p> </p>
+          <p>寂静的森林，会逐渐活过来。</p>
+          <p> </p>
+          <p>我代表椰林，对你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉污染寂静森林的[%dic:STR_DIC_M_Slime_23_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_Move_virdi]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照比尔迪的拜托，去清除污染寂静沼泽的斯莱姆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林族比尔迪说到寂静沼泽避难的椰林族和树因为斯莱姆的毒而正在死去。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了放出毒素的沼泽地带斯莱姆之后，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

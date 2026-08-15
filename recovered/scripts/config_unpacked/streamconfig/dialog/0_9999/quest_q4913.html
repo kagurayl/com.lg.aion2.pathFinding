@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正等着你呢，[%username]。</p>
+          <p> </p>
+          <p>穆您大人有件重要的事情要我转告给你。</p>
+          <p> </p>
+          <p>说是和魔界的命运有关，要我尽快转告你。</p>
+          <p> </p>
+          <p>看来在你的命运之轮开始转动的时候，魔界的命运也开始转动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>穆您大人预测了一下未来，表示龙族将会入侵到在天界的一个叫做普埃塔的地方，使那里完全成为废墟。</p>
+          <p> </p>
+          <p>那个军团对于侵占天界并不满足，还想侵占魔界，[%username]。</p>
+          <p> </p>
+          <p>据说那些家伙们的头目军团长阿努哈尔特拥有非常重要的东西。</p>
+          <p> </p>
+          <p>那件东西将在你今后和龙族战斗的时候起到帮助。</p>
+          <p> </p>
+          <p>因此不管怎样，都必须把它拿到手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也应该知道，这件事绝对不会那么容易。</p>
+          <p> </p>
+          <p>无论是去未来的普埃塔，还是在那里寻找敌人的军团长并消灭他。</p>
+          <p> </p>
+          <p>但是你没有选择的余地。</p>
+          <p> </p>
+          <p>你愿意去未来的普埃塔，带回可以拯救魔界的东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定，[%username]。</p>
+          <p> </p>
+          <p>去黑暗普埃塔寻找军团长阿努哈尔特虽然也是件大事，但是我们首先要到达黑暗普埃塔才可以。</p>
+          <p> </p>
+          <p>你先去见见埃雷修兰塔的术古族发明家[%dic:STR_DIC_N_Shugo_AB1_D3]吧。</p>
+          <p> </p>
+          <p>他会帮助你去黑暗普埃塔的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你现在是不是糊涂了？</p>
+          <p> </p>
+          <p>这次的事情关系到整个魔界的命运。如果魔界毁灭，你也会一起毁灭。</p>
+          <p> </p>
+          <p>虽然你可能不想去，但这是你无法逃避的事情。</p>
+          <p> </p>
+          <p>你是厌倦了改变自己命运的事情，对一切都丧失兴趣了吗？</p>
+          <p> </p>
+          <p>不管你多么努力地改变自己的命运，一旦魔界毁灭，就全都完了。</p>
+          <p> </p>
+          <p>希望你不要丧失信心，重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想委托我发明什么东西吗？</p>
+          <p> </p>
+          <p>只要有足够的基纳，什么东西都可以给你做。</p>
+          <p> </p>
+          <p>不过有时你还要给我带来材料，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是海依姆达尔派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你是海依姆达尔派来的那个守护者啊！</p>
+          <p> </p>
+          <p>你也真不容易。还要为整个魔界的命运负责。</p>
+          <p> </p>
+          <p>我和海依姆达尔有过约定，我会帮你前往未来的普埃塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔和[%dic:STR_DIC_N_Shugo_AB1_D3]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了挽救魔界的命运必须前往黑暗普埃塔。去卡奥良那里寻求帮助。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海依姆达尔向我转达了穆您的话，说因为占领未来天界的龙族，魔界也处于危险之中。</p>
+          <p> </p>
+          <p>并说龙族头目拥有的物品会在今后和龙族的战斗中起到帮助。</p>
+          <p> </p>
+          <p>他说要想去未来，需要术古族发明家卡奥良的帮助，于是去埃雷修兰塔找到了卡奥良。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

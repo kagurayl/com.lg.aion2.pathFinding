@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！你来的正好。</p>
+          <p> </p>
+          <p>我正要有事要找你，正想让人去找你呢。</p>
+          <p> </p>
+          <p>虽然优秀的守护者有很多，但是慎重、嘴巴紧的人却很少。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有时间的话，你去沉默审判所见见[%dic:STR_DIC_N_Srudgelmir]。</p>
+          <p> </p>
+          <p>他说有件私人的事情需要帮助，让我帮他推荐一个慎重一点的守护者。</p>
+          <p> </p>
+          <p>听到他的话之后，我就想到了你。</p>
+          <p> </p>
+          <p>怎么样？你愿意去帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，不问是什么事情就这么爽快地答应了。</p>
+          <p> </p>
+          <p>其实我也什么都不知道，因为司鲁德盖密尔让我什么都别问。</p>
+          <p> </p>
+          <p>他是我的老朋友，所以我也什么都没问。</p>
+          <p> </p>
+          <p>不管怎样，你快去沉默审判所见见[%dic:STR_DIC_N_Srudgelmir]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你拒绝，我也没办法。，</p>
+          <p> </p>
+          <p>但是我要拜托你一件事。</p>
+          <p> </p>
+          <p>我因为司鲁德盖密尔的事情找过你的事情，你一定要帮我保密。</p>
+          <p> </p>
+          <p>记住！今天我和你没有见过面。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么事情要报告给沉默审判所吗？</p>
+          <p> </p>
+          <p>如果是威胁到魔界的安全的事情的话，就请你马上告诉我吧。</p>
+          <p> </p>
+          <p>如果不是这样的事情的话，对不起，我没有时间接待您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转告纽尔德的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是纽尔德让您来的啊。</p>
+          <p> </p>
+          <p>这件事情有可能会有点危险，您能什么都不问就答应下来，我首先向您表示感谢。</p>
+          <p> </p>
+          <p>我要拜托您的，是一件难以启齿的秘密的事情。</p>
+          <p> </p>
+          <p>所以您必须做好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Srudgelmir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">纽尔德说沉默审判官司鲁德盖密尔正在寻找慎重的守护者。应该去见见司鲁德盖密尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽尔德说沉默审判官司鲁德盖密尔正在寻找慎重的有能力的守护者，让我去见见他。</p>
+          <p> </p>
+          <p>他说自己什么都不知道，让我直接去问问是什么事情。于是去找到了司鲁德盖密尔。他说要交给我一个难以启齿的秘密的任务，让我做好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

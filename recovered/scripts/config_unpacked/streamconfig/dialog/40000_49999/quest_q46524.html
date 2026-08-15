@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了搜集精灵森林精髓的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_Foam_DR_54_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_B2]</p>
+          <p></p>
+          <p> 3. 详情：一直生活在精灵森林里的生命体。虽然外表很漂亮，但如果贸然接近，可能会受到攻击。</p>
+          <p> </p>
+          <p>找到并杀死地头蛇努内因，将精灵森林精髓带回来的人，将可以获得委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>世界上有很多搜集各种珍贵东西的人，呐呐。</p>
+          <p> </p>
+          <p>委托你搜集的东西也是很难见到的东西，所以在好奇心很强的有钱人中人气很高。</p>
+          <p> </p>
+          <p>我也想看看是什么样的东西。拿来了的话，就给我看看吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出精灵森林精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还没找到地头蛇努内因啊，呐呐。</p>
+          <p> </p>
+          <p>在古树精灵森林里仔细寻找，一定可以找到。好好睁大眼睛，呐呐。</p>
+          <p> </p>
+          <p>只要你能搜集到，我一定会把证物送给你的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看)比我想象的还要漂亮。</p>
+          <p> </p>
+          <p>委托人一定会很喜欢的。</p>
+          <p> </p>
+          <p>这是给你的证物。好好拿着，别弄丢了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_46524a]，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭地头蛇努内因，搜集精灵森林精髓的委托书。</p>
+          <p> </p>
+          <p>前往古树精灵森林消灭地头蛇努内因，然后把搜集到的精灵森林精髓交给了格尔克马洛斯管理部职员。他很感叹，并给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

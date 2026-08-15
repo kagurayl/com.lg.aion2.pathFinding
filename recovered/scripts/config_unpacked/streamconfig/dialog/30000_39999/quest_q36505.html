@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>堕落的塞洛多斯因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_52_An] </p>
+          <p></p>
+          <p> 2. 罪行: 污染环境</p>
+          <p></p>
+          <p> 3. 详情: 作为堕落的鸢族的亡灵，死了之后仍然不肯离开卡斯帕森林，四处散播污染物，必须尽快将其消灭。</p>
+          <p> </p>
+          <p>利用设置在卡斯帕森林里的[%dic:STR_DIC_OBJ_LF4_FOBJ_Q36505]，可以将堕落的塞洛多斯召唤出来。最先将其消灭的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>委托我们执行这次赏金任务的，是生命的守护者。</p>
+          <p> </p>
+          <p>他到底是出于什么怨恨，死了之后仍然在卡斯帕森林里散播污染物呢？</p>
+          <p> </p>
+          <p>不过理由跟我们又有什么关系？我们只要完成委托，得到赏金就行了。</p>
+          <p> </p>
+          <p>怎么样？ [%username]大人，您已经把这件事解决了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>即使是幽灵，也逃不出赏金猎人的手心！</p>
+          <p> </p>
+          <p>我见到过虫子和动物污染森林，还是头一次见到幽灵污染森林……</p>
+          <p> </p>
+          <p>现在他消失了，卡斯帕森林应该恢复平静了吧？</p>
+          <p> </p>
+          <p>辛苦您了， [%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">利用[%dic:STR_DIC_OBJ_LF4_FOBJ_Q36505]%召唤并消灭[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_52_An]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以污染卡斯帕森林的罪名而受到通缉的堕落的塞洛多斯之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

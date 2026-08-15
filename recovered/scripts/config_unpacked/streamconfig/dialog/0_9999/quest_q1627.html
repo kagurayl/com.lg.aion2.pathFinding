@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听到过幽灵的叫声吗？</p>
+          <p></p>
+          <p>既像鸟叫声，又像女子的笑声，令人毛骨悚然。</p>
+          <p></p>
+          <p>但是很奇怪的，很多人又会被这个声音所迷惑。</p>
+          <p></p>
+          <p>有人听到了去世的妻子的声音而在半夜跑了出来，也有人听到了美丽的歌声被迷惑而跑进了波特玛废墟。</p>
+          <p></p>
+          <p>大部分人在跑出村子之前就已经清醒，因而捡回了一条小命，但可惜的是，也有少数的几个人没能活下来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就算不这样村子里也已经因为很多事情而人心惶惶了，现在又出了这样的事...唉，真不知道该怎么办了。</p>
+          <p></p>
+          <p>我听蓝色舰队的守护者们说[%username]是法力最高强的一位，您能不能把[%dic:STR_DIC_M_Spectre_41_An]捉住呢？</p>
+          <p></p>
+          <p>不需要抓太多。只要除掉9个就可以了。</p>
+          <p></p>
+          <p>我想拜托您这样做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，真的很感谢。</p>
+          <p></p>
+          <p>事实上我拜托过蓝色舰队的守护者们，但是他们都说自己必须要去捉执政官也就是拉斯贝尔格，没工夫做这样的事情，而被他们无情的拒绝了。</p>
+          <p></p>
+          <p>所以还担心也被守护者大人您拒绝，心里七上八下的呢。</p>
+          <p></p>
+          <p>啊，我又在说些有的没的了。</p>
+          <p></p>
+          <p>请您快出发吧。我等待着您消灭[%dic:STR_DIC_M_Spectre_41_An]归来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这可怎么办呢。</p>
+          <p></p>
+          <p>事实上我先去拜托蓝色舰队的守护者，遭到拒绝后才来拜托[%username]大人您。</p>
+          <p></p>
+          <p>除此之外就没有其他人，我该怎么办啊？</p>
+          <p></p>
+          <p>请您再考虑一下好吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了。本来还打算您回来时为了表示感谢给您敬上一杯酒呢。</p>
+          <p></p>
+          <p>您消灭了邪恶的幽灵了吗？</p>
+          <p></p>
+          <p>他们都是些凶猛的家伙，消灭他们没有受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告知结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拜托守护者大人真是太对了。</p>
+          <p></p>
+          <p>谢谢您。现在村子里的人不必担心被他们迷惑而人心惶惶了。</p>
+          <p></p>
+          <p>请收下吧。这是对您为村民受累的酬谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭用叫声迷惑村民的[%dic:STR_DIC_M_Spectre_41_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Antione]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">邪恶的幽灵利用叫声迷惑村民。为了使村民安心，必须除掉邪恶的幽灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>祭司安提奥内因为邪恶的幽灵利用叫声迷惑村民并夺取了几条生命，而拜托除掉这种生物。</p>
+          <p></p>
+          <p>按照他的嘱托去波特玛废墟除掉了幽灵归来，收到了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

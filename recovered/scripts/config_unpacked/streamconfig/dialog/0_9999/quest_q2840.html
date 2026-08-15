@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不喜欢现在的这种状态。</p>
+          <p> </p>
+          <p>每天盯着门看，还得时刻保持警惕...</p>
+          <p> </p>
+          <p>我身体很不舒服，而且还头疼。</p>
+          <p> </p>
+          <p>我想快点离开欧比斯，回到和平的阿尔特盖德。</p>
+          <p> </p>
+          <p>但可以守卫通往右翼阴影的门的人不多，所以我只能呆在这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这全都是因为那些该死的龙族。</p>
+          <p> </p>
+          <p>在右翼阴影徘徊的龙族消失了的话，我的头疼也许就会好了。</p>
+          <p> </p>
+          <p>你有接受这个任务的勇气吗？</p>
+          <p> </p>
+          <p>你愿意接受这个任务吗？任务是消灭[%dic:STR_DIC_W_IDAbRe_Low_Eciel_SZ_All]的所有敌人。</p>
+          <p></p>
+          <p>我得守着门，不过我相信你一定可以做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还记得去右翼阴影的方法吗？只要通过那边墙上的石门就可以。</p>
+          <p> </p>
+          <p>到了[%dic:STR_DIC_W_IDAbRe_Low_Eciel_SZ_All]之后，请你把所有的敌人全部消灭掉。只要留下一个，任务就算失败。</p>
+          <p> </p>
+          <p>如果你想获得宝物，最好动作快点。龙族的宝物施有魔法，过了一定时间就会消失。</p>
+          <p> </p>
+          <p>你快去吧。我头疼的厉害，需要休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道了。</p>
+          <p> </p>
+          <p>我不愿多说，你快走吧。</p>
+          <p> </p>
+          <p>我想休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多人来找我</p>
+          <p> </p>
+          <p>我是说来找我的人不止你一个。</p>
+          <p> </p>
+          <p>光是向那么多的守护者说明右翼阴影的情况，就够麻烦的了。</p>
+          <p> </p>
+          <p>所以最好不要和我多说话。有什么话，就赶紧说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务真的完成了吗？</p>
+          <p> </p>
+          <p>你把右翼阴影的敌人全部消灭了？真让人吃惊。能够完成这个任务的人并不多。</p>
+          <p> </p>
+          <p>辛苦你了。我代表伏魔殿给予你奖励。</p>
+          <p> </p>
+          <p>但是扫荡一次，龙族并不会全部消失。过一段时间之后，他们又会重新出现。</p>
+          <p> </p>
+          <p>今后我可能还得借助你的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Low_Eciel_SZ_All]的敌人([%2]/67)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1132_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照泰贝纳兹的委托，消灭右翼阴影的所有敌人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰贝纳兹让我去消灭和希埃尔的东部要塞相连的右翼阴影的所有龙族。</p>
+          <p> </p>
+          <p>于是前往右翼阴影完成了任务，泰贝纳兹非常吃惊，说以后可能还得借助我的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

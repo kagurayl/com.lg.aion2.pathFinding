@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古老的遗迹，一定会有着很多的故事。不是吗？</p>
+          <p> </p>
+          <p>玛拉亚斯过去曾经是繁盛一时的城市。</p>
+          <p> </p>
+          <p>虽然现在已经破败不堪，但仍然可以看到当年的雄壮景象。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们使用这么多坚固的石材来建造城市，可以肯定这里原来一定非常富裕。</p>
+          <p> </p>
+          <p>而且建筑工艺也非常精湛。</p>
+          <p> </p>
+          <p>这些高大的立柱，还有雕刻的手艺，全都非同一般。</p>
+          <p> </p>
+          <p>这一定是由可以使用魔法的建筑的守护者或者熟练的石匠建造而成的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道是不是因为这样，所以经常有石头生命体出现。</p>
+          <p> </p>
+          <p>原因好像是这里蕴藏的魔法的力量。</p>
+          <p> </p>
+          <p>结果却成了我这样的后人头疼的东西。</p>
+          <p> </p>
+          <p>不过又有什么办法呢？我负责管理要塞的治安，这是我的工作。</p>
+          <p> </p>
+          <p>我想现在去消灭石头生命体。[%username]，你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>你就负责清理[%dic:STR_DIC_M_DF4_MaidengolemRe2_54_An]、[%dic:STR_DIC_M_DF4_StatueM_Re_54_An]和[%dic:STR_DIC_M_DF4_SAM_Reric2_54_An]吧。</p>
+          <p> </p>
+          <p>我会负责清除其他的危险。</p>
+          <p> </p>
+          <p>不能总在这里感叹，必须开始工作了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不愿意的话，我也没办法。</p>
+          <p> </p>
+          <p>我觉得一个人太无聊，所以想找个伴儿，看来不行啊。</p>
+          <p> </p>
+          <p>知道了。这件事我会自己处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>你没有把建筑物破坏掉吧？</p>
+          <p> </p>
+          <p>我应该早点叮嘱你的，我给忘了。</p>
+          <p> </p>
+          <p>那些建筑有很高的历史价值，应该好好地保存下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一块石头都没碰坏？真是太好了。</p>
+          <p> </p>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>你帮了我很大的忙，我不能让你空着手离开。</p>
+          <p> </p>
+          <p>这个请你收下吧。虽然不是什么了不起的东西，不过应该会有点用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭危险的石头生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_MaidengolemRe2_54_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_StatueM_Re_54_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_SAM_Reric2_54_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ricaldo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了要塞的安全，消灭石头生命体。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里卡尔多说由于古代城市玛拉亚斯蕴含的魔法的力量，让石头获得了生命，对人们构成了威胁。</p>
+          <p> </p>
+          <p>帮助他消灭了玛拉亚斯潘多兰盖伦、被诅咒的玛拉亚斯波士坦盖伦和玛拉亚斯坦佩尔盖伦，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

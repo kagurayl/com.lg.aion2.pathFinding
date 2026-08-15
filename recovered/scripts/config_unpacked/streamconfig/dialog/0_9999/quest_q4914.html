@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(地上掉着一个卷轴。)</p>
+          <p> </p>
+          <p>（看上去是龙族的报告书。）</p>
+          <p> </p>
+          <p>（里面写着关于活体改造的内容。）</p>
+          <p> </p>
+          <p>（最好拿给[%dic:STR_DIC_N_Heimdall]看看。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把报告书放进箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么东西？</p>
+          <p> </p>
+          <p>是从黑暗普埃塔得到的吗？应该是龙族的文件...</p>
+          <p> </p>
+          <p>虽然我对龙族不是太了解，但是我还是非常好奇里面的内容。</p>
+          <p> </p>
+          <p>能给我看看里面的内容吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出活体变异报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>活体改造，到底是什么意思？</p>
+          <p> </p>
+          <p>该不会是龙族正在对生物进行变异吧？</p>
+          <p> </p>
+          <p>这份情报看起来非常重要，应该拿给专家看看。</p>
+          <p> </p>
+          <p>你去拿给[%dic:STR_DIC_W_DC1_12]的[%dic:STR_DIC_N_Hnoss]看看吧。</p>
+          <p> </p>
+          <p>他应该能够看懂内容，应该知道怎么处理这件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您对龙族有什么疑问的地方吗？</p>
+          <p> </p>
+          <p>只要您告诉我您想知道的，我会尽力去找到资料回答您。</p>
+          <p> </p>
+          <p>如果您是给我带来新资料的，不管是什么，我都非常感谢您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出活体变异报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（阅读资料）您是说从龙族那里得到这份报告书吗？</p>
+          <p> </p>
+          <p>这真是让人吃惊。龙族进行活体改造的事，我从来都没听说过。</p>
+          <p> </p>
+          <p>这下又有了重点研究的课题。首先我得好好研究这份报告书的内容。</p>
+          <p> </p>
+          <p>真是谢谢您给我带来重要的资料。在以后研究的过程中，还需要您更多的帮助。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Heimdall]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Hnoss]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在龙族原料变换机上发现了一个像是报告书的卷轴。拿去给海依姆达尔看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>将从黑暗普埃塔得到的报告书交给了海依姆达尔，他说最好拿去给龙族研究专家赫诺斯看看。</p>
+          <p> </p>
+          <p>将报告书送给了赫诺斯，赫诺斯非常激动，说这是从来没有听说过的非常重要的资料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

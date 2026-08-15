@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30406</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>关于光晕精灵的故事，现在几乎只剩下传说了。</p>
+          <p> </p>
+          <p>虽然在大崩溃之前的文献中还有提及，但从来没有人亲眼见过。</p>
+          <p> </p>
+          <p>老实说，我也以为它们已经完全从亚特雷亚消失了。</p>
+          <p> </p>
+          <p>[%username]%，多亏了你和希塔伊温，我也许可以亲眼见到光晕精灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好了，请收下。这是用[%username]%你搜集到的材料制作的魔法笼子。</p>
+          <p> </p>
+          <p>用它一定可以活捉到光晕精灵。</p>
+          <p> </p>
+          <p>对着精灵使用，就可以瞬间把它关进笼子。</p>
+          <p> </p>
+          <p>我已经做好了你要的东西，你把它交给[%dic:STR_DIC_N_Hytaion]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把魔法笼子交给[%dic:STR_DIC_N_Hytaion]的时候，能顺便帮我传句话吗？</p>
+          <p> </p>
+          <p>如果捉到了光晕精灵，让她一定要送一个给我。</p>
+          <p> </p>
+          <p>我帮她制作了魔法笼子，这点要求应该不过分吧……</p>
+          <p> </p>
+          <p>希望她能顺利地捉到光晕精灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可让人为难了。</p>
+          <p> </p>
+          <p>当初来问我活捉光晕精灵的方法的，不是[%username]你自己吗？</p>
+          <p> </p>
+          <p>虽说是希塔伊温让你来的。</p>
+          <p> </p>
+          <p>帮你做好了却不要，你想让我怎么处理这个魔法笼子啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在焦急地等您回来，[%username]大人。</p>
+          <p> </p>
+          <p>见到黑卡泰大人了吗？</p>
+          <p> </p>
+          <p>问到活捉光晕精灵的方法了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出魔法笼子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要有了这个魔法笼子，就能活捉光晕精灵？</p>
+          <p> </p>
+          <p>我终于可以出人头地了。</p>
+          <p> </p>
+          <p>送一个光晕精灵给黑卡泰大人的话，她就一定会支持我的，对吧？</p>
+          <p> </p>
+          <p>一想到这些，我就高兴得快要飞起来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_N_Hytaion]交给 [%dic:STR_DIC_I_QUEST_30407A]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">黑卡泰说捕捉精灵的魔法笼子做好了。把它交给希塔伊温吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑卡泰说魔法笼子做好了，只要有了它，就可以捉到精灵。</p>
+          <p> </p>
+          <p>把笼子交给了希塔伊温，她非常高兴，说终于可以出人头地了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

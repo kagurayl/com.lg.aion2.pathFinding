@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说你实力非常出众，但外表上却看不出来。</p>
+          <p> </p>
+          <p>老实说，我觉得你这样的守护者到处都是。</p>
+          <p> </p>
+          <p>不过最近来英吉斯温的守护者中，你好像看上去是最出众的，我就相信你一次吧。</p>
+          <p> </p>
+          <p>反正也没有其他合适的人选。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也知道，英吉斯温目前有很多的问题。这里是龙族的土地，所以这是当然而然的事情。</p>
+          <p> </p>
+          <p>只靠我们沉默之匕军团的力量，很难把所有的问题全部处理完。</p>
+          <p> </p>
+          <p>如果你能帮我们解决重要的任务，我会给你相应的奖励。</p>
+          <p> </p>
+          <p>怎么样？感兴趣吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，我就知道会这样。最近的守护者全都不看重荣誉，只看重东西和钱。</p>
+          <p> </p>
+          <p>一说有好东西，就马上答应了。但是事情可没有你想象的那么简单。</p>
+          <p> </p>
+          <p>请你努力执行要塞下达的任务，那样的话，我就会给你功勋证书。</p>
+          <p> </p>
+          <p>搜集[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]拿来交给我，我就会认可你的功劳，给你一件不错的饰品。</p>
+          <p> </p>
+          <p>我答应会给你一件很漂亮的头饰。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，我就知道会这样。</p>
+          <p> </p>
+          <p>最近的守护者完全没有霸气。</p>
+          <p> </p>
+          <p>只要是稍微累一点的工作，就一下子变了脸，装作没听见。</p>
+          <p> </p>
+          <p>没想到你也是这样的人，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你差不多该回来了。</p>
+          <p> </p>
+          <p>这段时间任务执行的怎么样？</p>
+          <p> </p>
+          <p>快把功勋证书交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出功勋证书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道会这样。</p>
+          <p> </p>
+          <p>最近的守护者就会耍嘴皮子功夫，骗我说已经完成了任务。</p>
+          <p> </p>
+          <p>我不会上当的。</p>
+          <p> </p>
+          <p>你快去执行重要的任务，搜集[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你果然是名不虚传啊。</p>
+          <p> </p>
+          <p>搜集到了这么多功勋证书，我也不得不认可你为英吉斯温立下了大功。</p>
+          <p> </p>
+          <p>来，这是给你的头饰。这样的东西，不管放在什么地方都不会逊色。</p>
+          <p> </p>
+          <p>这是优秀守护者的证明，希望你能好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]，然后交给[%dic:STR_DIC_N_Yulia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">沉默之匕军团长尤丽娅说只要我去执行重要任务，就会给我一件好东西作为奖励。去搜集功勋证书吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤丽娅说沉默之匕军团无法处理所有的事情，如果我能帮他们执行重要任务，就会给我相应的奖励。</p>
+          <p> </p>
+          <p>于是去执行了重要的任务，搜集到了功勋证书。交给尤丽娅之后，得到了头饰作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

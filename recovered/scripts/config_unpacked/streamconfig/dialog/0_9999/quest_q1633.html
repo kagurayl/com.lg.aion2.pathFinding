@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过斯泰浓海岸吗？就是在梅兰提斯集团前面的那个海滩。</p>
+          <p> </p>
+          <p>我的手下侦察归来报告说那里有一艘失事船。</p>
+          <p> </p>
+          <p>虽然破损的很严重，但是看起来似乎并没有搁置太久，不知道你是否了解这是什么船？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">回答说不知情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯哼，看来您也不知道啊。 </p>
+          <p> </p>
+          <p>据我的部下说所，这艘船上的船员好像都被拉斯贝尔格诅咒了。 </p>
+          <p> </p>
+          <p>这样的话恐怕会与村子有什么关系，在这次战斗中必须把它解决掉。不过要解决的话也要事先了解才可以吧？</p>
+          <p> </p>
+          <p>但是问到的人都说不知道，这实在是...</p>
+          <p> </p>
+          <p>我现在还没有与祭司确认过，您能去帮我问问关于这艘船的状况吗？</p>
+          <p> </p>
+          <p>祭司[%dic:STR_DIC_N_Antione]对村子里的所有事情都非常了解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果安提奥内也不知道的话，就直接询问船上的幽灵然后把它们给除掉。</p>
+          <p> </p>
+          <p>那么就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回到村子还没有多久，就已经帮人们处理了很多事情了。</p>
+          <p> </p>
+          <p>您就别操心了，去休息吧</p>
+          <p> </p>
+          <p>我会派其他的部下去询问祭司的。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天还是有其他的事情要处理...</p>
+          <p> </p>
+          <p>蓝色舰队军团的人也在，西风的守护者们也都让我稍稍安心了，但是却仍然有很多需要操心的事情。次元之门仍然开着，执政官这家伙也仍然还活着。</p>
+          <p> </p>
+          <p>请告诉我您的来意吧，您应该不是来听我罗嗦的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转告高尔高斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在斯泰浓海岸上的失事船？这个嘛。</p>
+          <p> </p>
+          <p>自从那里出现了不死族之后，就没有再去过了，所以不知道那里有船的事情。</p>
+          <p> </p>
+          <p>这里的大海经常有暗流，海藻也很多，因此经常会有触礁搁浅的船。</p>               
+          <p> </p>
+          <p>这艘船可能也是其中的一艘，虽然我并不能确认。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与祭司[%dic:STR_DIC_N_Antione]对话 </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">高尔高斯舰长对于停滞在斯泰浓海滩上的失事船感到好奇。要求向祭司安提奥内确认。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>高尔高斯舰长想知道停留在斯泰浓海滩上的失事船是否与村子有所关联。</p>
+          <p> </p>
+          <p>询问周围的人却都不知情，因此要求我去询问祭司。</p>
+          <p> </p>
+          <p>祭司回答说因为不死族而没有再去过海滩，因此并不知道有失事船的存在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

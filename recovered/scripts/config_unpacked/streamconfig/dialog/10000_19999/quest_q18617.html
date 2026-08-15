@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还在这里啊？太好了。</p>
+          <p> </p>
+          <p>佩兰托军团长下达了一份命令书，说看到[%username]大人之后，就立即转告您。</p>
+          <p> </p>
+          <p>现在跟您说可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，我来读给您听。</p>
+          <p> </p>
+          <p>“关于你看到的恶梦，我已经收到了拉尼尼亚的报告。</p>
+          <p> </p>
+          <p>梦的背景确实是沉默审判官的宅邸吗？</p>
+          <p> </p>
+          <p>梦中出现了克罗梅内，还有沉默审判官和执行者，看来假烙印之石好像是来自魔界。</p>
+          <p> </p>
+          <p>不好意思，请你进入[%dic:STR_DIC_W_IDCromede]，详细地确认一下那里的背景。”</p>
+          <p> </p>
+          <p>佩兰托军团长让我转告您的内容就是这些。我应该怎么转告军团长大人呢？说您接受了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，我会转告军团长大人的。</p>
+          <p> </p>
+          <p>您想现在就进入恶梦之中吗！？</p>
+          <p> </p>
+          <p>我听拉尼尼亚说，必须打到一个名叫卡里加的魔族，恶梦才会消失。进入[%dic:STR_DIC_W_IDCromede]之后，请您想尽一切办法消灭[%dic:STR_DIC_M_IDCromede_Named_Judge_38_An]。</p>
+          <p> </p>
+          <p>事情完成后，请向我报告。</p>
+          <p> </p>
+          <p>佩兰托军团长大人下达了指示，让我在[%username]大人完成任务之后向您发放铸币。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明白了。</p>
+          <p> </p>
+          <p>我会转告军团长大人，说[%username]大人拒绝执行任务。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩兰托军团长指示的事情全部完成了吗？</p>
+          <p> </p>
+          <p>请告诉我结果怎么样了。</p>
+          <p> </p>
+          <p>我必须向军团长大人报告，因此请您尽量说得详细一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>假烙印之石显示的梦境确实是发生在魔界吗？</p>
+          <p> </p>
+          <p>原来如此。不管怎样，既然打倒了卡里加，从恶梦中摆脱了出来，应该就没问题了。</p>
+          <p> </p>
+          <p>请您收下。这是佩兰托军团长奖励给您的铸币。</p>
+          <p> </p>
+          <p>您一定累了吧？请您休息一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">进入[%dic:STR_DIC_W_IDCromede]，打倒[%dic:STR_DIC_M_IDCromede_Named_Judge_38_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Serdy]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说佩兰托军团长想知道梦的背景。重新回到梦中，确认梦的背景是否是魔界。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞尔迪说佩兰托军团长下达了命令，让我去确认恶梦的背景是否是魔界。</p>
+          <p> </p>
+          <p>重新进入恶梦，消灭了卡里加，告诉塞尔迪恶梦中发生的事情之后，她把铸币送给了我，说是军团长的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

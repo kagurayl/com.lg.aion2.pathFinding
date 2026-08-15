@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该死的克鲁斯和地狱犬！</p>
+          <p> </p>
+          <p>击退龙族之后建造了要塞，魔族就来了。魔族来了之后，克鲁斯和地狱犬又来了……</p>
+          <p> </p>
+          <p>虽然守护者拥有永恒的生命，但一旦被逼入绝境，也会感受到死亡的威胁。</p>
+          <p> </p>
+          <p>烦人的要塞战……每次发生要塞战的时候出来的克鲁斯和地狱犬也很烦人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克鲁斯和地狱犬不仅很残暴，而且在战斗中会变得非常兴奋。</p>
+          <p> </p>
+          <p>每次发生要塞战的时候，我们不仅要对付魔族，还要注意克鲁斯和地狱犬。</p>
+          <p> </p>
+          <p>您能帮我把它们消灭掉，让它们不要在要塞战的时候出来捣乱吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您把前面的[%dic:STR_DIC_M_LF4_B7_Kuillus_Feeler_53_An]和[%dic:STR_DIC_M_LF4_B7_Hellhound_Wolf_53_An]消灭掉。</p>
+          <p> </p>
+          <p>虽然魔族和龙族的问题更大，但因为这些东西，我们也遇到了很多的麻烦。</p>
+          <p> </p>
+          <p>全部消灭掉之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我让您去执行守护要塞的任务，您竟然拒绝了？</p>
+          <p> </p>
+          <p>作为一名守护者，你怎么能这么没有责任心呢？</p>
+          <p> </p>
+          <p>如果您不愿意帮忙的话，我也没办法。但是希望您能记住，这件事是对所有天族都有好处的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞周围的克鲁斯和地狱犬全部消灭掉了吗？</p>
+          <p> </p>
+          <p>我大致看了一眼，数量好像减少了很多。</p>
+          <p> </p>
+          <p>下次要塞战的时候，应该不会出现在和魔族战斗的时候，还得分出精力去对付克鲁斯和地狱犬的情况了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>消灭克鲁斯和地狱犬，是和消灭魔族同样重要的事情。</p>
+          <p> </p>
+          <p>这是给您的酬劳，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭要塞周围的克鲁斯和地狱犬</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B7_Kuillus_Feeler_53_An]([%2]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B7_Hellhound_Wolf_53_An]([%5]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Harmonia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要塞周围的克鲁斯和地狱犬不仅凶恶，还在要塞战的时候造成了不小的威胁。应该按照哈默尼亚的委托，把它们消灭掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈默尼亚说要塞周围的克鲁斯和地狱犬在要塞战和平时都造成了巨大的威胁。</p>
+          <p> </p>
+          <p>帮助他消灭了克鲁斯和地狱犬，回去之后，他对我表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

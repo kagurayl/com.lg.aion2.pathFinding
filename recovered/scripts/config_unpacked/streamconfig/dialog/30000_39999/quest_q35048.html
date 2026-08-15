@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>我们正处于历史上最大的战争的中心。因为把结界膜作为盾牌，一直保持沉默的主神终于开始行动了。</p>
+          <p> </p>
+          <p>在这里聚集了天族、龙族和魔族。必定会爆发大规模的战争，让这里血流成河。</p>
+          <p> </p>
+          <p>因此神圣守护会决定制作药水和秘药，捐献给英吉斯温要塞。</p>
+          <p> </p>
+          <p>但是由于资金和材料不足，需要众多会员的帮助。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，请搜集制作药水和秘药的材料[%dic:STR_DIC_G_QUEST_35048]，然后交给[%dic:STR_DIC_E_35021]。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+          <p>(用鼻子闻了闻)怎么好像闻到了药草的香味？</p>
+          <p> </p>
+          <p>您是来捐献药草的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带来的药草。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温幻影要塞需要的药草是[%dic:STR_DIC_G_QUEST_35048]。</p>
+          <p> </p>
+          <p>因为其他药草已经搜集到了足够的量。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能帮着搜集大地草。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道天族和魔族的军事力量大致相当。</p>
+          <p> </p>
+          <p>而且这里是龙界，是在结界外，这对双方都很不利。在这种时候，就只能依靠大量的军需补给品了。</p>
+          <p> </p>
+          <p>[%username]大人捐献的药草会用于制作英吉斯温的军需品。作为答谢，我把神圣守护会证物送给你，希望你能好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集制作药草的[%dic:STR_DIC_G_QUEST_35048]，然后交给[%dic:STR_DIC_E_35021]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，为了向英吉斯温幻影要塞捐献药水和秘药，需要大量的药草，号召会员积极捐献。</p>
+          <p> </p>
+          <p>把搜集到的大地草交给英吉斯温支部会员之后，他对我的协助表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

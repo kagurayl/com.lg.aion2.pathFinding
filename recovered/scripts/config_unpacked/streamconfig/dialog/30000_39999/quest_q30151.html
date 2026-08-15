@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>五位主神好像没有抛弃我。</p>
+          <p> </p>
+          <p>正好遇到了困难，不知道该怎么办才好。[%username]%来的真是太巧了。</p>
+          <p> </p>
+          <p>不是别的事情，锡兰泰拉回廊这里的情况有点严重。天族的势力，比我想象的要强。</p>
+          <p> </p>
+          <p>您也知道，锡兰泰拉回廊是非常重要的地方。它连接着格尔克马洛斯和英吉斯温，无论如何我们都必须掌握这里的主导权。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了很多方法，如何才能掌握主导权。我想最好的方法就是直接对天族进行打击。 只有这样他们才会记住，锡兰泰拉回廊是不属于他们的。</p>
+          <p> </p>
+          <p>他们之中有很多势力不亚于[%username]大人的守护者，我们应该以这些人作为目标。如果能让天族的优秀守护者畏缩不前，应该会给天族的士气造成巨大的打击。</p>
+          <p> </p>
+          <p>但是在锡兰泰拉回廊活动的天族有很多，光靠我们根本对付不过来。要想获得回廊的主导权，必须向更多的人请求帮助。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然都是天族，但有些家伙消灭了也没什么用处。</p>
+          <p> </p>
+          <p>必须消灭掉和[%username]实力相当的天族的优秀守护者才行。</p>
+          <p> </p>
+          <p>当然，我说的是在锡兰泰拉回廊里面。如果能把锡兰泰拉回廊里的天族全部消灭掉，应该就能为占领英吉斯温打下基础</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您真让人失望。其他人我不了解，不过真没想到您会拒绝这次的任务。</p>
+          <p> </p>
+          <p>您是不知道这件事的重要性吗？</p>
+          <p> </p>
+          <p>我知道您不是执政官，但是我认为您是一位充满了责任感和使命意识的守护者，算了就当我看错您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]。</p>
+          <p> </p>
+          <p>你消灭了几个在锡兰泰拉回廊游荡的天族呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，这下天族应该不敢嚣张了。果然不愧是[%username]！</p>
+          <p> </p>
+          <p>那些天族的势力应该很强吧？</p>
+          <p> </p>
+          <p>不管怎样，真是辛苦你了。</p>
+          <p> </p>
+          <p>你刚执行完任务，我这么说可能有点不太合适。不过我想说，前面要走的路还很远。</p>
+          <p> </p>
+          <p>希望你继续努力，直到把天族从锡兰泰拉回廊全部赶出去为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去锡兰泰拉回廊消灭 [%dic:STR_DIC_E_Q30151]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Vergelan]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族掌握锡兰泰拉回廊的主导权，决定去消灭回廊里的天族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吕乌尔说锡兰泰拉回廊的天族比想象的还要多，为了让魔族掌握主导权，必须把他们消灭掉。</p>
+          <p> </p>
+          <p>于是去消灭了和自己实力相当的天族，他对我表示感谢，并说那里还有很多天族，希望我继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

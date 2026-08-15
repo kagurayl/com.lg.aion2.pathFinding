@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不能见面，但是我却在关心莎拉琳琳的消息。</p>
+          <p> </p>
+          <p>偶尔守护者们会转告我她的消息。</p>
+          <p> </p>
+          <p>为什么我们要受到这样的诅咒，连面都见不了啊...呜呜...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_SELECT1_1">安慰佩佩龙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说她走的路上有很多可怕的怪物，让她快活不下去了，呜呜...</p>
+          <p> </p>
+          <p>我想去帮他赶走那些怪物。</p>
+          <p> </p>
+          <p>6</p>
+          <p> </p>
+          <p>我不能到那里去，而且又是个手无缚鸡之力的术古...呜呜...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，请你一定要帮帮我，呐呐。</p>
+          <p> </p>
+          <p>为了莎拉琳琳，请你把[%dic:STR_DIC_M_DrakeAgD_30_Ae]和[%dic:STR_DIC_M_Succubus_30_Ae]清除掉。</p>
+          <p> </p>
+          <p>这是我唯一能为莎拉琳琳做的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里附近没有[%dic:STR_DIC_M_DrakeAgD_30_Ae]和[%dic:STR_DIC_M_Succubus_30_Ae]。</p>
+          <p> </p>
+          <p>但是在莎拉琳琳的周围好像有很多的样子。</p>
+          <p> </p>
+          <p>请你把它们全部除掉，然后让告诉莎拉琳琳，让她放心，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我没办法到那里去。</p>
+          <p> </p>
+          <p>即使能去，以我的力量也没办法对付它们。</p>
+          <p> </p>
+          <p>但是守护者应该就没有问题。所以请你不要拒绝我，一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>见不到佩佩龙，到处都是可怕的怪物，实在太可怕了，呐呐。</p>
+          <p> </p>
+          <p>我常常后悔，为什么要来这种地方。</p>
+          <p> </p>
+          <p>只要能和佩佩龙在一起的话，就不会这么辛苦了。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说接受佩佩龙的请求，把怪物清除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来佩佩龙还在担心我啊。</p>
+          <p> </p>
+          <p>虽然不能见面，但是我却能感觉到他的心。</p>
+          <p> </p>
+          <p>谢谢你答应佩佩龙的请求。</p>
+          <p> </p>
+          <p>这下我就不用担心那些可怕的怪物了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除佩佩龙所说的怪物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DrakeAgD_30_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Succubus_30_Ae]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF2_4]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">佩佩龙说他听说莎拉琳琳因为凶暴的德雷克和幻影之德加尔比亚而很害怕，他为此非常担心。于是决定为莎拉琳琳和佩佩龙把它们清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩佩龙说他听说莎拉琳琳因为德雷克和德加尔比亚而非常痛苦，他为此很担心。</p>
+          <p> </p>
+          <p>于是帮助他清除掉了凶暴的德雷克和幻影之德加尔比亚，并把这件事告诉了莎拉琳琳。莎拉琳琳知道这件事之后，显得非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚好想和你联系，你就出现了。看来你和我还真是心有灵犀。</p>
+          <p> </p>
+          <p>你知道我为什么要找你吗？</p>
+          <p> </p>
+          <p>有一个说大就大，说小就小...反正是很麻烦的问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德奇沙斯岛是个像熔炉一样的地方。</p>
+          <p> </p>
+          <p>虽然因为天气太热，士兵们的体力下降也是问题。但比这更为严重的问题是武器的变形。</p>
+          <p> </p>
+          <p>欧比斯中使用的武器大部分都是出自极乐世界的名人之手，因此不容易被熔化。但是由于长时间暴露在高温下，像剑和弓之类的偶尔会变形。</p>
+          <p> </p>
+          <p>您也知道，武器是非常敏感的东西，只要有一点变形，手感就会差很多。</p>
+          <p> </p>
+          <p>解决的方法倒是有，不过需要花一点时间...您也看到了，我现在忙着做别的事情，没时间来管这件事。</p>
+          <p> </p>
+          <p>可以的话，我想把这件事交给您。可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听莫伊拉伊说，贪欲兽的心脏非常耐热。据说把它熔化后镀到武器上，武器就不会变形。</p>
+          <p> </p>
+          <p>因此需要一些贪欲兽的心脏。刚好岛上生活着[%dic:STR_DIC_M_Ab1_1231_Pretor_38_An]，您去搜集它的心脏就可以。</p>
+          <p> </p>
+          <p>先搜集10个就差不多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意吗？这可真让人失望。</p>
+          <p> </p>
+          <p>您是觉得搜集武器材料不是什么大事吧？这可比杀掉10个魔族重要得多。</p>
+          <p> </p>
+          <p>请您重新考虑一下。如果您改变了主意的话，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是拜托您了吧！您刚走敌人就攻过来了，真是忙得一团糟。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1823a]搜集到了吗？请您快把它给我，敌人说不定马上又会过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德奇沙斯贪欲兽的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，这是什么啊？我明明说过是10个[%dic:STR_DIC_I_QUEST_1823a]。</p>
+          <p> </p>
+          <p>我再给您一次机会。</p>
+          <p> </p>
+          <p>这次可千万不要搞错了。快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真神奇。我想不怕火的东西应该很烫，没想到反而和冰块一样。</p>
+          <p> </p>
+          <p>啊，现在不是说这些的时候！我得在敌人攻过来之前，赶紧把它熔化，镀到武器上去。</p>
+          <p> </p>
+          <p>啊，等等！光有这些好像不够，您还有剩余的心脏吗？</p>
+          <p> </p>
+          <p>如果还有的话，请您快拿来给我。知道了吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1231_Pretor_38_An]，搜集心脏，然后交给[%dic:STR_DIC_N_Ab1_1231_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了制作不怕火的武器，去搜集德奇沙斯贪欲兽的心脏，然后交给穆塞吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>穆塞说由于德奇沙斯岛的热气，武器产生了变形，这样下去的话，士兵们将无法发挥自己的实力。</p>
+          <p> </p>
+          <p>还好莫伊拉伊告诉了她解决方法，那就是把不怕火的贪欲兽的心脏熔化后镀到武器上。</p>
+          <p> </p>
+          <p>按照穆塞的指示去打猎德奇沙斯贪欲兽，搜集到心脏后交给了她。她说量好像不够，让我如果再有贪欲兽的心脏的话，就拿去交给她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

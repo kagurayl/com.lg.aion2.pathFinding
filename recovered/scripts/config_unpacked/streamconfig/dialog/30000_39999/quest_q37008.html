@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是搜集[%dic:STR_DIC_I_QUEST_37008A]%。</p>
+          <p> </p>
+          <p>相信各位应该没有人不知道雷帕尔革命团吧。他们的背叛超出了限度，招致了主神的愤怒。</p>
+          <p> </p>
+          <p>据说雷帕尔革命团中间秘密流传的证物上使用了主神的纹样，这是对主神的神圣性的亵渎。</p>
+          <p> </p>
+          <p>据说秘密证物在革命团建设基地的[%dic:STR_DIC_M_37008all]身上，必须和导师一起去才能获得。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去革命团建设基地把[%dic:STR_DIC_M_37008all]消灭掉了吗？</p>
+          <p> </p>
+          <p>秘密证物的样子我还从没见过，所以我一直在等着[%username]大人。</p>
+          <p> </p>
+          <p>[%username]大人一定把[%dic:STR_DIC_I_QUEST_37008A]带回来了吧？</p>
+          <p> </p>
+          <p>能让我看看是什么样子的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出秘密证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没到革命团建设基地去吗？</p>
+          <p> </p>
+          <p>当然，革命团建设基地是非常可怕的地方。不过如果有导师的帮助，就应该不会那么困难。</p>
+          <p> </p>
+          <p>快去找一个好的导师吧。然后和他一起到那里去搜集[%dic:STR_DIC_I_QUEST_37008A]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样！这……不是主神的纹样吗？</p>
+          <p> </p>
+          <p>邪恶的雷帕尔革命团竟然使用这么神圣的纹样，真是群傲慢不逊的人。</p>
+          <p> </p>
+          <p>还好把它们全部回收回来了。这是这次任务的奖励。真是辛苦您了。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起从[%dic:STR_DIC_M_37008all]身上搜集证物，然后交给[%dic:STR_DIC_N_Vespasianus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，到革命团建设基地去搜集秘密证物吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去革命团建设基地消灭了革命团高级士兵，把搜集到的秘密证物交给了贝斯帕西亚努斯，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（一直在唉声叹气。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么烦恼的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>家乡的父母身体不舒服，所以我给他们送了些贵重的药。</p>
+          <p> </p>
+          <p>没想到送药的船被海盗团劫持了。</p>
+          <p> </p>
+          <p>那些药都是好不容易才买到的，也不知道能不能再买得到，我怕这一耽误，父母的病会加重起来。</p>
+          <p> </p>
+          <p>早知道会如此，我就亲自给他们送过去了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说劫持船的海盗团还没有走远……</p>
+          <p> </p>
+          <p>有的人付钱雇人去找回货物，但我哪有那么多钱啊？</p>
+          <p> </p>
+          <p>所以我只能厚着脸皮求过往的守护者帮忙，但大家都说很忙。</p>
+          <p> </p>
+          <p>嗯…您愿意帮我吗？</p>
+          <p> </p>
+          <p>请您去铁耙号帮我找回10个药包。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，守护者。</p>
+          <p> </p>
+          <p>不过好像海盗们已经将抢劫的货物分赃了。</p>
+          <p> </p>
+          <p>听说名叫[%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae]的家伙拿走的东西最多，您先去他们那里找找看。</p>
+          <p> </p>
+          <p>其中肯定有拿着药包的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您没什么事情要去铁耙号，那我也没办法了。</p>
+          <p> </p>
+          <p>海盗团的传闻已经传开了...</p>
+          <p> </p>
+          <p>一定会有好心的守护者愿意帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是答应帮我寻找药包的守护者大人吗？</p>
+          <p> </p>
+          <p>对了，东西找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出药包。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到现在还没有找到吗？</p>
+          <p> </p>
+          <p>哎，肯定是在某个家伙身上的啊……</p>
+          <p> </p>
+          <p>又不是很好吃的食物，那些家伙们不可能吃掉啊。</p>
+          <p> </p>
+          <p>拜托你了。请您再好好找找。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是这种药包！</p>
+          <p> </p>
+          <p>真是谢谢您，我不知道该如何表达我的感激……</p>
+          <p> </p>
+          <p>这次我一定要抽出时间来，亲自去趟家乡。</p>
+          <p> </p>
+          <p>好长时间没见到父母了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找被[%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae]抢走的药包，然后交给[%dic:STR_DIC_N_Roskva]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">仓库管理员罗斯科巴说，自己送给父母的药包被海盗团抢走了。帮助他去找回药包。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>仓库管理员罗斯科巴为身体不舒服的父母买了一些贵重的药，通过船捎给了父母，却在中途被铁耙号上的黑暗术古抢走了。</p>
+          <p> </p>
+          <p>他很担心这样一耽误，父母的病情会加重。帮他去铁耙号找回了药包。他对我表示感谢，并说这次要自己亲自带过去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

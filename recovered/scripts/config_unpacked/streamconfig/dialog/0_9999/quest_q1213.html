@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，看你手中的[%mainslotitem]%，你应该是[%userclass]吧？</p>
+          <p> </p>
+          <p>能够穿过杜卡基采掘场来到这里的人，可都是百里挑一的杰出之人，想必托付给你一个任务应该是没问题的吧？</p>
+          <p> </p>
+          <p>初次见面就拜托你帮忙确实有些失礼，不过实在是事出紧急，还请多多包涵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SELECT1_1">询问什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，不知你看到前面那帮家伙了没有？ </p>
+          <p> </p>
+          <p>没错，就是那些凶残的西莫罗格。是塔伦派来监视我的家伙。</p>
+          <p> </p>
+          <p>啊，看样子你还不知道塔伦是谁呢。塔伦是只超级巨大的西莫罗格，也就是西莫罗格的帝王。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，不过也不知道是为何，前不久突然派来部下专门监视我的行动。</p>
+          <p> </p>
+          <p>我老老实实地呆在这里没关系，一旦我想走出这一带，他们就会用尖锐的喙来攻击我！</p>
+          <p> </p>
+          <p>唉，看样子是想把我给活活饿死在这里。我可不是说笑，这几天来我滴水未进，现在连站都快站不住了。</p>
+          <p> </p>
+          <p>所以啊，你能帮我去挖几株[%dic:STR_DIC_E_herb_n_c_10b]，行吗？看在我这样拜托你的份上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，真是个善良的年轻人。谢谢你了。 </p>
+          <p> </p>
+          <p>这附近有许多龙蒿，找起来应该不难的。 </p>
+          <p> </p>
+          <p>我已经饿得不行了，快救救我。</p>
+          <p> </p>
+          <p>啊，对了，回来的路上可一定要小心西莫罗格！塔伦很可能又派出了不少部下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎哟，看起来有好消息的样子。</p>
+          <p> </p>
+          <p>没关系，人生在世又岂能事事如意？</p>
+          <p> </p>
+          <p>不用担心我了，赶紧上路吧。要不了多久，就会有我的朋友来帮忙的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage> 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，[%dic:STR_DIC_E_herb_n_c_10b]都找来了吗？</p>
+          <p> </p>
+          <p>我怎么看你又三个脑袋呢？看来是饿得快不行了。</p>
+          <p> </p>
+          <p>快把带来的东西拿过来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递出龙蒿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不会吧，我怎么连视线都开始模糊起来？</p>
+          <p> </p>
+          <p>不对不对，这和我让你采集的数量不对。</p>
+          <p> </p>
+          <p>唉，如果我看得没错，你肯定是搞错了。</p>
+          <p> </p>
+          <p>不好意思，还得辛苦你再跑一趟了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，这就是我要的龙蒿！</p>
+          <p> </p>
+          <p>真不敢相信自己终于有东西吃了～！</p>
+          <p> </p>
+          <p>唉，像人类一样会说话又有什么用？还不是一样会被饿死。</p>
+          <p> </p>
+          <p>无论如何，多亏了你我才没被活活饿死。来，拿着，这是我的谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_E_herb_n_c_10b]，交给[%dic:STR_DIC_N_NPC_LF1a_Fethlot]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">找寻龙蒿，并交给因受到塔伦部下的监视而好多天都滴水未进的菲斯勒拉高斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>智慧的菲斯勒拉高斯被塔伦派来的西莫罗格给监视软禁了起来，需要获得一些草药食物。</p>
+          <p> </p>
+          <p>在他的嘱托下，收集到了龙蒿并交给他。他感激万分，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

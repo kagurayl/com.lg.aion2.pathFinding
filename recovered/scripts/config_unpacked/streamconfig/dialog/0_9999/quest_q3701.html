@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好，[%username]大人。</p>
+          <p> </p>
+          <p>我刚好正想找您。</p>
+          <p> </p>
+          <p>纳莱武斯百夫长大人让我见到[%username]大人的话，就让您去他那里一趟。</p>
+          <p> </p>
+          <p>他说特米伦训练所的位置太偏僻，根本见不到[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>详细的情况我也不知道。</p>
+          <p> </p>
+          <p>见到纳莱武斯百夫长之后，他会告诉您具体是什么事情的。</p>
+          <p> </p>
+          <p>听说好像是和龙族有关的任务。</p>
+          <p> </p>
+          <p>反正是非常重要的任务，所以他才会找[%username]大人。</p>
+          <p> </p>
+          <p>您愿意现在就去见见[%dic:STR_DIC_N_Nereus]百夫长大人吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Nereus]百夫长就在特米伦训练所的入口处。</p>
+          <p> </p>
+          <p>好像是非常重要的事情，您最好快点过去。</p>
+          <p> </p>
+          <p>愿阿里埃的佑护与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纳莱武斯百夫长大人找[%username]大人，肯定是有特殊的任务。</p>
+          <p> </p>
+          <p>您真的不愿意去吗？</p>
+          <p> </p>
+          <p>虽然您不是守卫，我不能强迫您…但还是感到有点失望。</p>
+          <p> </p>
+          <p>我知道了。我会如实向纳莱武斯百夫长大人报告，说[%username]大人拒绝接受任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等你。</p>
+          <p> </p>
+          <p>[%username]，有件事我想交给你。</p>
+          <p> </p>
+          <p>因为是很重要的事情，所以我想交给[%username]你这样可以信任的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是什么任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是攻击龙族的训练所的任务。</p>
+          <p> </p>
+          <p>我们对欧比斯的出入进行限制，只让具备资格的守护者进入，并在这里进行训练。同样，那是龙族训练士兵的地方。</p>
+          <p> </p>
+          <p>虽然训练所里的德拉克纽特士兵的力量还不强，但一旦完成训练，就会成为危险的敌人。</p>
+          <p> </p>
+          <p>所以最好是斩草除根。因此我想派你去把他们清除掉。</p>
+          <p> </p>
+          <p>[%username]，我想把这件事交给你。做好准备之后，你可以从我和埃乌洛斯这里接受任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Nereus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说纳莱武斯百夫长在找我。去特米伦训练所见见他吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>情报官拉兰提亚说特米伦训练所的纳莱武斯百夫长正在找我。</p>
+          <p> </p>
+          <p>见到纳莱武斯之后，他说有和龙族训练所有关的重要任务要交给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

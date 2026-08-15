@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30556</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select_none" accept="true">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须找到梅罗伯斯的日记后半部分。</p>
+          <p> </p>
+          <p>看了他的日志，我的心情好像变得复杂起来了……</p>
+          <p> </p>
+          <p>我们需要知道，他到底透露给了龙族多少情报。</p>
+          <p> </p>
+          <p>我想在[%dic:STR_DIC_M_IDYun_DrakanWi_60_Ae]身上，也许会有[%dic:STR_DIC_I_QUEST_30506A]。</p>
+          <p> </p>
+          <p>请您去消灭他们，找到卷轴的后半部分。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_SIMPLE">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_SIMPLE">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>梅罗伯斯的日记后半部分找到了吗？</p>
+          <p> </p>
+          <p>找到了的话，快把它交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">拿出卷轴的后半部分。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读卷轴)嗯……还好好像没有泄露太多的情报。</p>
+          <p> </p>
+          <p>不过我们有必要对这个文件进行深入分析。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我把梅罗伯斯的日记交给麦奥斯大人吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>您手里拿着的那个撕坏的卷轴是怎么回事？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出梅罗伯斯的日记。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看完卷轴之后，默默地收了起来。)</p>
+          <p> </p>
+          <p>现在说这些事都已经没用了。一开始我就反对任命梅罗伯斯为基地的负责人。</p>
+          <p> </p>
+          <p>他虽然为鸢族工作了很长时间，但是对很多事情都持怀疑态度，想法也太多了。</p>
+          <p> </p>
+          <p>幸好除了兰图斯基地的情报之外，他没有泄露其他情报给龙族。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_QUEST_30506A]，然后交给[%dic:STR_DIC_N_Oreitia]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Maios]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奥雷提亚说必须确认梅罗伯斯到底泄露了哪些情报。消灭第55德拉坎精锐魔法士官，寻找卷轴的后半部分吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥雷提亚说为了确认梅罗伯斯到底泄露了哪些情报，必须找到卷轴的后半部分。</p>
+          <p> </p>
+          <p>于是帮她找到了卷轴的后半部分，她说还好除了兰图斯基地之外，梅罗伯斯好像没有泄露其他情报。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

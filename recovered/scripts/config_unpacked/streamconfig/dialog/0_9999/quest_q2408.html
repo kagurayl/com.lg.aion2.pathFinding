@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说[%username]大人去过很多地方。其他地方也有纽特吗？</p>
+          <p> </p>
+          <p>我是到了这里才第一次看见纽特。所以收到了扫荡纽特的命令之后，我感到很高兴。</p>
+          <p> </p>
+          <p>觉得昆虫之类的东西的话，用一只手对付也足够了。</p>
+        </body>
+        </html>
+    </Contents> 
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是没想到。我的预料完全错了。</p>
+          <p> </p>
+          <p>它们有着奥塔赛德的攻击力和坎塔利的头脑。而且繁殖力非常强，怎么杀都杀不光。</p>
+          <p> </p>
+          <p>不管怎样，光靠莫提尔和我两个人是没办法把它们扫荡干净的了。</p>
+          <p> </p>
+          <p>但是如果有像[%username]大人您这样优秀的[%userclass]帮忙的话，情况就不同了...</p>
+          <p> </p>
+          <p>怎么样？您愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我听到的最让人高兴的消息。那就请您马上开始吧。</p>
+          <p> </p>
+          <p>从这儿往东走的话，可以看到纽特的巢穴。</p>
+          <p> </p>
+          <p>那里有[%dic:STR_DIC_M_NeutL1D_38_An]和[%dic:STR_DIC_M_NeutL2D_38_An]。请您帮我除掉17头杂役和7头警卫兵，然后回来向我报告。</p>
+          <p> </p>
+          <p>[%username]大人只要把那里的事情完成就行，其余的由我和莫提尔来处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吗？虽然很可惜，不过没办法。</p>
+          <p> </p>
+          <p>看您很忙的样子。您就先走吧。</p>
+          <p> </p>
+          <p>纽特我们会想办法处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经把[%dic:STR_DIC_M_NeutL1D_38_An]和[%dic:STR_DIC_M_NeutL2D_38_An]全部清除掉了吗？</p>
+          <p> </p>
+          <p>它们和我说的一样，攻击力很强吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我已经想到了，不过您的实力真是厉害。</p>
+          <p> </p>
+          <p>不管怎么样对手总是纽特杂役和警卫兵，我以为总会花上一点时间。</p>
+          <p> </p>
+          <p>多亏有您帮忙，接下去的工作应该会轻松很多。</p>
+          <p> </p>
+          <p>真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">帮助扫荡纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1D_38_An]([%2]/17)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL2D_38_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Modgud]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让莫德古尔更容易地扫荡纽特，必须去把纽特杂役和警卫兵清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卫兵莫德古尔说纽特智能很高，很不容易对付，因此向我请求帮助。</p>
+          <p> </p>
+          <p>于是按照他的拜托，清除掉了纽特杂役和警卫兵，并回去找到了他。他表示非常感谢，说多亏了我，扫荡纽特的任务变轻松了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

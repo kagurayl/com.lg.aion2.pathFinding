@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿拉克内姊妹会为了培养人才，正在进行多项尝试。</p>
+          <p> </p>
+          <p>让执行守护者执行任务，积累实战经验就是其中之一。</p>
+          <p> </p>
+          <p>但是因为协助执行任务的导师太少，所以进展遇到了一定的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这一次，8位圣女在会议上决定派遣年轻守护者去消灭建设基地的雷帕尔革命团，但是帮助他们执行任务的人还没有找到。</p>
+          <p> </p>
+          <p>虽然找到了几个志愿者，但是那个地方非常危险……</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮他们吗？这件事能由[%username]大人负责的话，我就放心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>准备好之后，请您和[%dic:STR_DIC_E_Li_35_45]一起出发前往革命团建设基地。</p>
+          <p> </p>
+          <p>然后担任他们的[%dic:STR_DIC_E_Mentor]，帮助执行守护者消灭掉[%dic:STR_DIC_M_37115]。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是有什么难言之隐吧？</p>
+          <p> </p>
+          <p>那就算了。看来我只能找别人了。</p>
+          <p> </p>
+          <p>如果您之后改变了主意，请再来找我。</p>
+          <p> </p>
+          <p>需要[%username]大人帮助的事情有很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直希望[%username]大人能担任这次任务的导师，真是太好了。</p>
+          <p> </p>
+          <p>您的实战经验比任何人都要丰富。能有幸得到[%username]大人帮助的人是谁呢？</p>
+          <p> </p>
+          <p>对了，您能先把训练结果告诉我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>训练结果非常好，真是太好了。多亏有[%username]大人担任导师，才能取得这样的成绩。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>再次对您表示感谢。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_37115]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">成为执行守护者的导师，告诉他们对付雷帕尔革命团的方法，然后向贝拉特里斯姐妹报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝拉特里斯姐妹让我去帮助执行守护者对付建设基地的雷帕尔革命团，让他们积累实战经验。</p>
+          <p> </p>
+          <p>于是成为了执行守护者的导师，告诉了他们对付雷帕尔革命团的方法。向贝拉特里斯报告之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

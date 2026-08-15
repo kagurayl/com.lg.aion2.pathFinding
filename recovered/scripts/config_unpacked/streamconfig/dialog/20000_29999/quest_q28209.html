@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然向上面报告了第2神庙训练所的问题，但我还是很担心。</p>
+          <p> </p>
+          <p>提亚马特的龙族一定会继续试图入侵。</p>
+          <p> </p>
+          <p>[%username]%，在您去见英格奈丝的时候，我们又遭到了龙族的攻击，很多训练生受了伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是不是应该关闭训练所。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是最方便的措施。</p>
+          <p> </p>
+          <p>但是我没有那个权限，而且我们也不能因为区区的龙族而关闭马勒库坦主神的训练所。这将是致命的污点。</p>
+          <p> </p>
+          <p>您看这么办怎么样？</p>
+          <p> </p>
+          <p>[%username]%，您去帮我消灭掉神庙的入侵者。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地答应。</p>
+          <p> </p>
+          <p>您要做的事情非常简单。</p>
+          <p> </p>
+          <p>就像上次一样，等第2神庙训练所中出现[%dic:STR_DIC_E_IDArena_Solo_Bonus_In]之后，在[%dic:STR_DIC_M_quest_28208a]入侵进来之前，首先找到并阻止他们。</p>
+          <p> </p>
+          <p>我知道这并不容易，但这全都是为了魔界和马勒库坦主神，希望您能尽自己的全力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我还以为您一定会协助我的呢。</p>
+          <p> </p>
+          <p>很遗憾，神庙训练生中，像[%username]你这样能够对付提亚马特的龙族的强者并不多。</p>
+          <p> </p>
+          <p>为了让他们能迅速提高实力，我们需要您的帮助。</p>
+          <p> </p>
+          <p>您不用马上决定。我可以给您一些时间，请您仔细考虑一下，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！我想您差不多该回来了。</p>
+          <p> </p>
+          <p>第2神庙训练所的事情怎么样了？</p>
+          <p> </p>
+          <p>神庙里又出现裂缝了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来如此。事实上，我还拜托别人去做同样的事情，结果有人报告说遇到了天族而不是龙族。</p>
+          <p> </p>
+          <p>详细的情况应该向英格奈丝确认一下，不过看来结界好像很不稳定，裂缝不仅和神庙训练所内部相连，还通往其他空间。</p>
+          <p> </p>
+          <p>不管怎样，这次辛苦您了。</p>
+          <p> </p>
+          <p>这是马勒库坦神庙训练所为您准备的特殊奖励。</p>
+          <p> </p>
+          <p>[%username]，可以的话，希望您能继续协助我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭第2神庙训练所的最终训练对象[%dic:STR_DIC_E_IDArena_Solo_S6_VanqJr_55_An]([%2]/5) </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">穿过[%dic:STR_DIC_E_IDArena_Solo_Bonus_In]，消灭[%dic:STR_DIC_M_quest_28208a]([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Anja]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">调查第2神庙训练所的裂缝，然后向安雅战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安雅战斗教官让我在上面下达指示之前，保护第2神庙训练生。</p>
+          <p> </p>
+          <p>按照她的委托，在裂缝出现之后立即消灭掉了入侵者。向她报告之后，她说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(合上报告书)最近收到的报告书没什么有用的信息。</p>
+          <p> </p>
+          <p>没有和克拉尔图玛格纳洞穴或者革命团研究基地有关的任何内容，只有尤普罗西内村附近出现了幽灵船，名叫贝罗内的女人突然消失等等。</p>
+          <p> </p>
+          <p>(翻看一份报告书)这个也一样。有个口音奇怪的术古在因特尔蒂卡出没，这有什么奇怪的呢？啧啧。</p>
+         <p> </p>
+         <p>术古的口音不是一直很奇怪吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(继续阅读报告书)有人在革命团研究基地、腐木原野和费特内沼泽地带看到了名叫罗义金的术古...</p>
+          <p> </p>
+          <p>革命团研究基地？术古去那里干什么...</p>
+          <p> </p>
+          <p>嗯，说不定和革命团有什么关系。只要能赚到钱，术古甚至可以和克拉尔联手。</p>
+          <p> </p>
+          <p>看来最好是确认一下。[%username]，你能去一趟普依艾密林和费特内沼泽地带吗？</p>
+          <p> </p>
+          <p>可以的话，请你过去确认一下那个名叫罗义金的术古的身份。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。发现那个术古的地方是[%dic:STR_DIC_W_LF3_SZ_003]、[%dic:STR_DIC_W_LF3_SZ_D3]和[%dic:STR_DIC_W_LF3_SZ_F2]，你可以去那边看看。</p>
+          <p> </p>
+          <p>如果发现他是革命团的走狗，就有[%username]你自己看着办。</p>
+          <p> </p>
+          <p>一个术古，最多也是倒卖倒卖东西，或者跑跑腿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不想去那边吗？</p>
+          <p> </p>
+          <p>知道了。又不是什么大事，没必要急着处理。</p>
+          <p> </p>
+          <p>等有人要去那边的时候，再处理术古的问题吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很高兴见到你，呐。</p>
+          <p> </p>
+          <p>请你帮帮我。</p>
+          <p> </p>
+          <p>你叫什么名字？看你好像是[%userclass]，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问来这里干什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里是哪里…呐？</p>
+          <p> </p>
+          <p>罗义金第一次到因特尔蒂卡来，所以不知道这是什么地方。</p>
+          <p> </p>
+          <p>我想到村里去，却总是在原地打转，我都快累死了。</p>
+          <p> </p>
+          <p>我好像是迷路了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_N_Shulack_LF3_01]并确认其身份</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说因特尔蒂卡出现了一个口音奇怪的术古。去确认是不是革命团的走狗。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格拉亚说收到报告，有个口音奇怪的术古经常在革命团研究基地、腐木原野和费特内沼泽地带等地出现，也许是革命团的走狗，让我去确认一下身份。</p>
+          <p> </p>
+          <p>找到了可疑的术古罗义金并确认了其身份，他说他迷了路，所以在原地徘徊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

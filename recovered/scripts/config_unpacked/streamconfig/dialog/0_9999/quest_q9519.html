@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想放大库存吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">"是"</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>般若波罗蜜</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">(接受)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>重新和我对话，库存就可以放大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">(结束对话)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？这下知道了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">(...)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在身上可以带很多物品了～</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p><font font_xml="quest_summary">决定放大库存。</font></p>
+          <p> </p>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">委托[%dic:STR_DIC_LA05]做缪塔料理。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把缪塔汤交给[%dic:STR_DIC_LA05]。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把缪塔汤交给[%dic:STR_DIC_LA05]。</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">把缪塔汤交给[%dic:STR_DIC_LA10]。</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">把缪塔汤交给[%dic:STR_DIC_LA10]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">达弥努森林的伐木工纳姆斯说他正在为精灵们的歌声而烦恼。</font></p>
+          <p> </p>
+          <p><font font_xml="quest_summary">根据“贤人们的百科辞典”，吃了缪塔之后，就不会再听到精灵们的歌声了。于是去捕捉到了缪塔。</font></p>
+          <p> </p>
+          <p><font font_xml="quest_summary">但是纳姆斯说缪塔的腥味太重，没办法吃下去。</font></p>
+          <p> </p>
+          <p><font font_xml="quest_summary">去让村里的料理师帮他制作缪塔料理吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除了森林里的怪物。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>测试：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>测试：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

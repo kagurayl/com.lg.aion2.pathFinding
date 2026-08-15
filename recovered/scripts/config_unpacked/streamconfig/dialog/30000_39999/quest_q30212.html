@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我仔细想了一下，水晶棒之所以不能发挥作用，也许是因为水晶棒里蕴含的能量不足。</p>
+          <p> </p>
+          <p>水晶棒是让时空之宝珠运转的动力源，如果水晶棒的魔力不足的话，宝珠当然无法正常运转。</p>
+          <p> </p>
+          <p>如果在水晶棒中注入能量，应该就能启动宝珠了。</p>
+          <p> </p>
+          <p>问题是不知道该搜集哪一种能源好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是龙族的东西，一定需要使用龙族的能源。</p>
+          <p> </p>
+          <p>比如说苏尔卡纳之类的东西。</p>
+          <p> </p>
+          <p>如果您去过德雷得奇安，应该知道龙族把苏尔卡纳当作能量源使用吧？</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我搜集一些苏尔卡纳吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说龙族在收获德拉纳的时候，会使用一种叫采集虫的动物。</p>
+          <p> </p>
+          <p>据说采集虫的体内有苏尔卡纳。</p>
+          <p> </p>
+          <p>在红色德拉纳农场、安格利浦火山口和哈纳尔卡德平原，都可以看到采集虫。</p>
+          <p> </p>
+          <p>请您去消灭[%dic:STR_DIC_M_LF4_B4_Spaller_mini_54_An]、[%dic:STR_DIC_M_LF4_C4_Spaller_mini_55_An]、[%dic:STR_DIC_M_LF4_C2_Spaller_mini_55_An]，搜集[%dic:STR_DIC_I_QUEST_30212a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是太累了吧？</p>
+          <p> </p>
+          <p>[%username]大人完成了那么多事情，也该累了。</p>
+          <p> </p>
+          <p>但是我预感这件事很快就会结束了。</p>
+          <p> </p>
+          <p>请您稍作休息之后，再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>采集虫消灭掉了吗？</p>
+          <p> </p>
+          <p>苏尔卡纳碎片找到了的话，就快给我吧。</p>
+          <p> </p>
+          <p>我得马上给水晶棒注入能量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出苏尔卡纳碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去搜集苏尔卡纳吗？</p>
+          <p> </p>
+          <p>在[%username]大人磨磨蹭蹭的时候，鲁德拉的封印也许正在逐渐解开……</p>
+          <p> </p>
+          <p>如果鲁德拉完全苏醒，不知道会发生什么可怕的事。您不是听忠实的应答者说过吗？</p>
+          <p> </p>
+          <p>没时间了，请快一点。</p>
+          <p> </p>
+          <p>请您快去搜集农场采集虫、平原采集虫和火山口采集虫，搜集[%dic:STR_DIC_I_QUEST_30212a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(右手拿着水晶棒，左手拿着苏尔卡纳碎片，念诵咒语。)</p>
+          <p> </p>
+          <p>啊……看来还是不行。</p>
+          <p> </p>
+          <p>[%username]大人，让您白跑了一趟。苏尔卡纳碎片里的魔力好像太少了。</p>
+          <p> </p>
+          <p>这次又失败了，看来得寻找其他方法。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30212a]，然后交给[%dic:STR_DIC_N_Pilomenes]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">水晶棒中让宝珠运转的魔力好像不够。去消灭农场采集虫、平原采集虫和火山口采集虫，搜集苏尔卡纳碎片吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗梅内斯说时空之宝珠无法启动的原因可能是水晶棒中的魔力不足。</p>
+          <p> </p>
+          <p>于是按照他的委托，消灭采集虫，搜集到了苏尔卡纳碎片。但是在水晶棒中注入魔力却失败了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

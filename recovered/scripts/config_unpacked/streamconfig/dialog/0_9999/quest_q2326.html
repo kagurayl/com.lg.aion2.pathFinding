@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近你没感觉到附近有奇怪的苗头出现？</p>
+          <p> </p>
+          <p>有很多没见过的人出没，仔细看了一下，原来都是雷帕尔革命团。</p>
+          <p> </p>
+          <p>不知道他们在这附近徘徊，是在打什么算盘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过只要有革命团出现的地区，就没有不出事情的。</p>
+          <p> </p>
+          <p>在他们干出什么事情之前，必须首先把火苗扑灭。</p>
+          <p> </p>
+          <p>他们是侮辱五位主神的伏魔殿的敌人，所以应该把他们除掉。</p>
+          <p> </p>
+          <p>我想把在这附近徘徊的监视团的暗杀兵、战斗兵和调查员全都清除掉。你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你这么爽快就答应我。[%username]大人真是值得信任啊。</p>
+          <p> </p>
+          <p>他们虽然在附近徘徊了很长时间了，但是还没有攻击监视哨所和居民。所以现在应该是把他们除掉的最好时机。</p>
+          <p> </p>
+          <p>请你赶快去把[%dic:STR_DIC_M_LehparAsD_27_An]、[%dic:STR_DIC_M_LehparWaD_27_An]和[%dic:STR_DIC_M_LehparWizardD_27_An]全部清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>害怕雷帕尔革命团还怎么做守护者啊？</p>
+          <p> </p>
+          <p>不可惜了那把[%mainslotitem]吗？</p>
+          <p> </p>
+          <p>真让人失望。</p>
+          <p> </p>
+          <p>请你再好好想想，改变主意的话，再回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>即使他们没什么动作，但是对雷帕尔革命团决不能放松监视。</p>
+          <p> </p>
+          <p>如果觉得没关系而不当回事的话，必然会尝到苦头。</p>
+          <p> </p>
+          <p>你把监视团的暗杀兵、战斗兵和调查员全都清除掉可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起！做得非常好。</p>
+          <p> </p>
+          <p>我会在向伏魔殿提交的报告上，写上[%username]大人的功劳。</p>
+          <p> </p>
+          <p>虽然不知道他们在策划什么事情，希望这次能打击一下他们的气焰。不过他们本来就是些难缠的家伙，应该不会这么容易就放弃。</p>
+          <p> </p>
+          <p>但是多亏了[%username]大人，近期应该不会有什么问题了。真是谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除雷帕尔革命团</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparAsD_27_An]([%2]/4)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparWaD_27_An]([%5]/4)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparWizardD_27_An]([%8]/2)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">报告[%dic:STR_DIC_N_Tofa]结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">托帕说他因为雷帕尔革命团最近经常在要塞周边出没而神经紧张。为了防止事件发生，最好是去把雷帕尔革命团清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托帕说只要是雷帕尔革命团出现的地区，就没有不出事的，并对最近雷帕尔革命团在要塞附近出现表示担心。</p>
+          <p> </p>
+          <p>于是按照他的拜托清除了雷帕尔革命团。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

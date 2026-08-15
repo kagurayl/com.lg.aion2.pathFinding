@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不光因特尔蒂卡，天界各个地方的守护者都在向这里赶来，打算除掉我。</p>
+          <p> </p>
+          <p>不过，就算天族所有的守护者一起上，我也不怕！</p>
+          <p> </p>
+          <p>我要将那些家伙一网打尽，让他们成为不死族！</p>
+          <p> </p>
+          <p>不过，有一些家伙却引起我的注意。从目前的情况看，他们还比较棘手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么人。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是在我的领土上游荡的[%dic:STR_DIC_M_LF3_UndeadSeekerA_45_An]。</p>
+          <p> </p>
+          <p>他们只在附近侦察我的动向，并不攻进来，不知道在搞什么阴谋。</p>
+          <p> </p>
+          <p>刚开始，我还以为他们不敢进攻是因为惧怕我的强大。可过了很长时间，他们都没有撤退的意思。所以，我怀疑他们在策划什么阴谋。</p>
+          <p> </p>
+          <p>你要是真想帮助我，就去消灭那些家伙，怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在马上就去。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF3_UndeadSeekerA_45_An]就在我领土的各处。</p>
+          <p> </p>
+          <p>把他们全部消灭吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你只是口头上说帮助我。</p>
+          <p> </p>
+          <p>一让你去天族守护者聚集的地方，你就胆怯了，是吧？</p>
+          <p> </p>
+          <p>没想到魔族守护者中有像你这样的胆小鬼。</p>
+          <p> </p>
+          <p>那就不要妨碍我，闪到一边去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天也有很多天族守护者来挑战我。</p>
+          <p> </p>
+          <p>当然现在，他们已经都成为我不死族大军的一员。</p>
+          <p> </p>
+          <p>这段时间你在干什么？</p>
+          <p> </p>
+          <p>是不是已经把那些让我担心的不死族讨伐队侦察兵都消灭了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，做得好！</p>
+          <p> </p>
+          <p>已经没什么再让我担心的了。</p>
+          <p> </p>
+          <p>天族的家伙们应该也明白，不管什么阴谋，对我都毫无用处。</p>
+          <p> </p>
+          <p>辛苦你了， [%username].</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF3_UndeadSeekerA_45_An]%([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_AkanNamed_50_Al]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">拉斯贝尔格说他很担心黑暗领土各地的不死族讨伐队侦察兵在策划什么阴谋。去帮他消灭不死族讨伐队侦察兵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉斯贝尔格说即使天族所有的守护者都过来他都不怕，但自己领土上的不死族讨伐队侦察兵好像在策划什么阴谋，他对此很担心。</p>
+          <p> </p>
+          <p>拉斯贝尔格说如果真的想帮他，就去把他们消灭掉。于是帮他消灭掉了不死族讨伐队侦察兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

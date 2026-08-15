@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您是否能答应帮我一个忙呢？</p>
+          <p> </p>
+          <p>只有[%username]大人一个人肯倾听我的话，所以我也只能麻烦您一个人了。</p>
+          <p> </p>
+          <p>请您一定不要拒绝，听我把话说完。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有一个很重要的东西。 是一个挂着肖像画的[%dic:STR_DIC_I_QUEST_1532a]和[%dic:STR_DIC_I_QUEST_1532b]。</p>
+          <p> </p>
+          <p>虽然我也不记得是什么时候属于我的，也不记得是谁的，不过我知道这个东西对我而言很重要。</p>
+          <p> </p>
+          <p>我好像是在和托洛尔打斗时丢掉了。可是找了一圈都没有，可能是被卡托斯叼走了。</p>
+          <p> </p>
+          <p>反正这东西一定要找回来。[%username]大人，求您找到它。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有了它，我想我也会变得和其它阿努拜特一样的。</p>
+          <p> </p>
+          <p>我会忘记怎么说话，不管碰到什么人上去就去攻击。</p>
+          <p> </p>
+          <p>请消灭[%dic:STR_DIC_M_TrollRE_34_An]和[%dic:STR_DIC_M_CatosRE_34_An]，帮我找回我丢失的[%dic:STR_DIC_I_QUEST_1532a]和[%dic:STR_DIC_I_QUEST_1532b]。</p>
+          <p> </p>
+          <p>我只能相信[%username]您一个人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您不会希望我变成其他阿努拜特那样吧？</p>
+          <p> </p>
+          <p>我不想变成他们那样。</p>
+          <p> </p>
+          <p>求求您帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的精神越来越迷糊了。</p>
+          <p> </p>
+          <p>这样下去变得和其它阿努拜特一样只是时间问题。</p>
+          <p> </p>
+          <p>您找来[%dic:STR_DIC_I_QUEST_1532a]和[%dic:STR_DIC_I_QUEST_1532b]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出吊坠和搭扣。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是否找遍了[%dic:STR_DIC_M_TrollRE_34_An]和[%dic:STR_DIC_M_CatosRE_34_An]了？</p>
+          <p> </p>
+          <p>肯定是在他们手上。</p>
+          <p> </p>
+          <p>我是不是已经告诉过您拜托您找的是什么东西了？</p>
+          <p> </p>
+          <p>精神好像越来越迷糊了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，您终于回来了。</p>
+          <p> </p>
+          <p>没错，肖像画在吊坠里藏着呢。</p>
+          <p> </p>
+          <p>这女人是谁呢？我觉得自己知道，却又想不起是谁。</p>
+          <p> </p>
+          <p>肯定是对我非常重要的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_TrollRE_34_An]和[%dic:STR_DIC_M_CatosRE_34_An]，找到[%dic:STR_DIC_I_QUEST_1532UNI]，带给[%dic:STR_DIC_N_NPC_LF3_GraveKnight]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭特洛尔和卡托斯，帮助被诅咒的康盖斯找到吊坠和搭扣。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被诅咒的康盖斯说他丢失了非常重要的吊坠和搭扣。</p>
+          <p> </p>
+          <p>帮助他消灭了托洛尔和卡托斯，找回了丢失的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我其实是自愿来穆斯费尔火山工作的。</p>
+          <p> </p>
+          <p>因为我想对守护者失踪事件进行调查。</p>
+          <p> </p>
+          <p>当然还有一个原因...那就是火山地带应该不会太冷。</p>
+          <p> </p>
+          <p>阿尔特盖德要塞和莫尔海姆要塞都太寒冷了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚开始我觉得这里很温暖，还自我感觉不错。但过了一段时间之后，就觉得不爽了。</p>
+          <p> </p>
+          <p>这里终日飘着火山灰，硫磺味道也很重。还有很多会妨碍我调查的东西。</p>
+          <p> </p>
+          <p>一说到生活在穆斯费尔火山的生命体，我就觉得烦透了。</p>
+          <p> </p>
+          <p>但最大的问题是我完全没有时间去消灭它们，所以只能一味忍耐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我和埃姆博拉忙着寻找失踪的守护者的下落，所以根本没时间去处理那些生物。</p>
+          <p> </p>
+          <p>岗格雷利大人不知道在忙些什么，成天不说话，一个人埋头在那里调查。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+          <p> </p>
+          <p>我知道您实力很强，对付穆斯费尔火山的怪物也很有经验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您接受我的请求。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_HellhoundD_28_An]、[%dic:STR_DIC_M_ShadowstalkerD_28_An]、[%dic:STR_DIC_M_FlyingEyeD_28_An]、[%dic:STR_DIC_M_ClodwormRe2D_28_An]和[%dic:STR_DIC_M_SlimeReD_28_An]除掉。</p>
+          <p> </p>
+          <p>它们散布在穆斯费尔火山的各地，遇到了就请您把它们消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是说这种小事情就让我自己办吗？</p>
+          <p> </p>
+          <p>我们都是守护者，希望您能发扬一下同伴意识，不要太绝情了。</p>
+          <p> </p>
+          <p>明白了，您走吧。</p>
+          <p> </p>
+          <p>黄昏的执政官的事情，我们自己会看着办的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果调查能有进展，被地狱犬和眼魔骚扰也就算了。</p>
+          <p> </p>
+          <p>但是连一丁点的进展都没有，随时还有那么多的怪物骚扰我们，所以难免会神经过敏。</p>
+          <p> </p>
+          <p>您帮我把它们全部消灭掉了吗？</p>
+          <p> </p>
+          <p>只要没了那些家伙，我就会觉得好受许多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，我和埃姆博拉终于可以安心进行调查了。</p>
+          <p> </p>
+          <p>来，请您收下。</p>
+          <p> </p>
+          <p>虽然不多，但却是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除妨碍乌特卡尔的生物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_HellhoundD_28_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ShadowstalkerD_28_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FlyingEyeD_28_An]([%8]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ClodwormRe2D_28_An]([%11]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SlimeReD_28_An]([%14]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Utgar]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">生活在穆斯费尔火山的多种生物妨碍了乌特卡尔执行任务。决定帮助乌特卡尔把它们清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌特卡尔说生活在穆斯费尔火山的许多怪物妨碍了自己执行任务，但又苦于没有时间去应付他们。</p>
+          <p> </p>
+          <p>去穆斯费尔火山，帮他消灭熔岩地狱犬、燃烧的眼魔、凝视的眼魔，噬人虫和硫磺斯莱姆。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

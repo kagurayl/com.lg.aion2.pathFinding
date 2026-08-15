@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道椰林族吗？应该还没有见到过吧...</p>
+          <p> </p>
+          <p>简单地说明一下，可以说他们是活着的、会说话、也会移动的树。</p>
+          <p> </p>
+          <p>虽然不知道他们是什么时候怎么样诞生的，但是好像很久以前就已经存在了。</p>
+          <p> </p>
+          <p>但是大崩溃之后，由于环境不好，他们在魔界开始逐渐消失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从很久之前开始，椰林和魔族一直维持着友好的关系。</p>
+          <p> </p>
+          <p>由于椰林族的命脉正处于断绝的危机，我们守护者必须站出来帮助他们。</p>
+          <p> </p>
+          <p>从要塞出去，往[%dic:STR_DIC_W_DF2_SUB_A3]走的话，可以看到在一个小池塘里有一个变成石头的巨大的椰林和三个小椰林。</p>
+          <p> </p>
+          <p>请你去那里见见[%dic:STR_DIC_N_Tree_Move_Nabalu]。他向我请求帮助，你要尽量地帮助他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2031-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林的长老贝鲁姆斯，正在变成石头。</p>
+          <p> </p>
+          <p>为了救活贝鲁姆斯长老，这里的三个椰林搜集了精气。</p>
+          <p> </p>
+          <p>但是却白忙了一场。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>精髓在途中被抢走了，被那些斯普利根。</p>
+          <p> </p>
+          <p>但是椰林没有对抗它们的力量。</p>
+          <p> </p>
+          <p>拜托你了，守护者。</p>
+          <p> </p>
+          <p>请你除掉[%dic:STR_DIC_M_Sprigg2_23_An]和[%dic:STR_DIC_M_Sprigg2_25_An]，把它们偷走的[%dic:STR_DIC_I_QUEST_2031a]找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_2031a]找到了吗？</p>
+          <p> </p>
+          <p>那是挽救贝鲁姆斯长老的唯一希望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出椰林的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>非常感谢，守护者。</p>
+          <p> </p>
+          <p>现在得去挽救贝鲁姆斯长老了。</p>
+          <p> </p>
+          <p>虽然不知道效果怎么样，但我们已经尽力了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_Bellumus_Q2031]长老，在[%dic:STR_DIC_E_Bellumushill]。</p>
+          <p> </p>
+          <p>是连接[%dic:STR_DIC_W_DF2_SUB_A4]和[%dic:STR_DIC_W_DF2_SUB_B1]的矮矮的山坡。</p>
+          <p> </p>
+          <p>你去那个山坡，在长老的身上使用椰林的精髓。</p>
+          <p> </p>
+          <p>如果精髓中蕴藏的力量足够的话，他应该会复活。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO4">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2031-3.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你快一点，守护者。</p>
+          <p> </p>
+          <p>如果慢了的话，长老就会完全变成石头。</p>
+          <p> </p>
+          <p>快去找[%dic:STR_DIC_I_QUEST_2031b]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？</p>
+          <p> </p>
+          <p>贝鲁姆斯长老活过来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我们的力量还是不够。</p>
+          <p> </p>
+          <p>不过还是谢谢你，守护者。</p>
+          <p> </p>
+          <p>我们不会忘记你的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Vili]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Tree_Move_Nabalu]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">从[%dic:STR_DIC_M_Sprigg2_23_An]和[%dic:STR_DIC_M_Sprigg2_25_An]身上找回精髓，然后交给[%dic:STR_DIC_N_Tree_Move_Nabalu]</font></p>[%collectitem]</step>
+               <step><p visible="[%9]"><font color="[%10]">听听[%dic:STR_DIC_N_Tree_Move_Nabalu]的指示</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">在[%dic:STR_DIC_E_Bellumushill]身上使用[%dic:STR_DIC_I_QUEST_2031b]</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Tree_Move_Nabalu]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：比尔利百夫长说有和椰林有关的事情拜托我，去见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比尔利说必须帮助正在减少的椰林族，然我去博塔摩尔森林见见椰林族纳巴鲁。</p>
+          <p> </p>
+          <p>纳巴鲁说必须挽救正在变成石头的椰林族长老贝鲁姆斯，让我帮他找回被斯普利根和斯普利甘特偷走的椰林的精髓，然后在贝鲁姆斯身上使用。</p>
+          <p> </p>
+          <p>于是接受了纳巴鲁的拜托，但是贝鲁姆斯没有复活。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

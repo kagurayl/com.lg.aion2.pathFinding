@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想讨伐黑脚部族，当然得先消灭他们的主力战斗兵。</p>
+          <p> </p>
+          <p>不这样的话，没办法消灭这些家伙。</p>
+          <p> </p>
+          <p>现在据我们所掌握的情报，他们的精锐兵是 [%dic:STR_DIC_M_LycanWarriorS_18_Ae]、 [%dic:STR_DIC_M_LycanSeekerS_18_Ae]和[%dic:STR_DIC_M_LycanFighterS_18_Ae]。</p>
+          <p> </p>
+          <p>这次想交给您的任务就是这个。除掉那些家伙的精锐兵！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想来想去，信得过的守护者只有你了。</p>
+          <p> </p>
+          <p>你能去黑脚驻地和黑脚部落，帮我收拾掉那些家伙的精锐兵吗？</p>
+          <p> </p>
+          <p>完成任务的话，报酬是不会少给你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一定要记住，务必和同伴们一起去。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_DF1A_20]和 [%dic:STR_DIC_W_DF1A_30]都是危险之地，你一个人去的话，可能很快就得回来躺在床上接受奇柏利斯克的灵魂治疗了。</p>
+          <p> </p>
+          <p>"请您清掉 [%dic:STR_DIC_M_LycanWarriorS_18_Ae]、 [%dic:STR_DIC_M_LycanSeekerS_18_Ae],和[%dic:STR_DIC_M_LycanFighterS_18_Ae]吧。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>害怕了？也难怪，我可以理解。</p>
+          <p> </p>
+          <p>不过这是伏魔殿的守护者的使命，不是吗？</p>
+          <p> </p>
+          <p>请您再考虑一下，想通了再回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉黑脚部族的精锐兵力了吗？</p>
+          <p> </p>
+          <p>恐怕这次任务没那么顺利吧？</p>
+          <p> </p>
+          <p>不过如果任务失败就不会回来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您太了不起了！</p>
+          <p> </p>
+          <p>您有这样强的实力，什么样的任务都不会有问题。</p>
+          <p> </p>
+          <p>现在没有了精锐兵力，黑脚部族就像一堆散沙了。</p>
+          <p> </p>
+          <p>真是辛苦了!</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉黑脚部族的精锐兵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanSeekerS_18_Ae]([%2]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanWarriorS_18_Ae]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanFighterS_18_Ae]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Valuerin]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了讨伐黑脚部族，决定先除掉精锐兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说要想讨伐黑脚部族，必须先解决精锐兵力，所以按照巴鲁埃林的委托，去黑脚驻地消灭了其主要兵力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

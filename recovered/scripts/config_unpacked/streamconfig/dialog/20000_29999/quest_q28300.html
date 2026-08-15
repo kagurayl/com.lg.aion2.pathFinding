@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格尔克马洛斯防线的惨败是因为龙族从很久以前开始就一直在准备空中兵力。</p>
+          <p> </p>
+          <p>虽然命运在指引着我们，但是我们好像没有做好充分的准备。</p>
+          <p> </p>
+          <p>我们的舰队和提亚马特的力量相比，实在是微不足道，所以才会发生这种事。</p>
+          <p> </p>
+          <p>但是我们也知道了事件的元凶，就是上空的阿图拉姆空中要塞。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在到了为反击做准备的时候了。</p>
+          <p> </p>
+          <p>在鸢族的协助下，我们掌握了隐藏在提亚玛兰塔上空的浮游岛上的阿图拉姆空中要塞的位置。</p>
+          <p> </p>
+          <p>为了吸取失败的教训，继续前进，我们必须攻陷阿图拉姆空中要塞。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和阿图拉姆空中要塞有关的任务由鸢族西里安负责。</p>
+          <p> </p>
+          <p>请你去见见西里安，他会为你做好准备，让你可以潜入空中要塞。</p>
+          <p> </p>
+          <p>快去吧！[%username]%，你是马勒库坦的尖刀！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我们不能让天空变得安全，就可能再次遭遇失败。</p>
+          <p> </p>
+          <p>我的话，就是马勒库坦主神的意志。</p>
+          <p> </p>
+          <p>你最好再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>开往空中要塞所在的浮游岛的船已经准备好了。</p>
+          <p> </p>
+          <p>如果您准备好了的话，现在随时可以过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说做好了潜入空中要塞的准备。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的。</p>
+          <p> </p>
+          <p>请使用前面的移动装置。</p>
+          <p> </p>
+          <p>我马上为您准备好潜入阿图拉姆空中要塞的小型飞艇。</p>
+          <p> </p>
+          <p>潜入空中要塞之后，您必须避开龙族的眼睛，找到情报员哈里肯。</p>
+          <p> </p>
+          <p>那就祝您好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请不要吃惊！</p>
+          <p> </p>
+          <p>我虽然伪装成了龙族，但其实是自己人。</p>
+          <p> </p>
+          <p>千万不要发出声音。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很高兴见到你，长着漂亮翅膀的朋友。</p>
+          <p> </p>
+          <p>能在这种地方见到说人类的话的人，让我倍感亲切。</p>
+          <p> </p>
+          <p>欢迎来到阿图拉姆空中要塞。</p>
+          <p> </p>
+          <p>[%username]%，需要你帮助的事情有很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Silion]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Hariken]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受西里安的帮助，潜入阿图拉姆空中要塞吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔特约普说为了一雪格尔克马洛斯的耻辱，必须攻陷阿图拉姆空中要塞。</p>
+          <p> </p>
+          <p>于是按照他的指示，在西里安的帮助下潜入了空中要塞，和情报员哈里肯接上了头。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

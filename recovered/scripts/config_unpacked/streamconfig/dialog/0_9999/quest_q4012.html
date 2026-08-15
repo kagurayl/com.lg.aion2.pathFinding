@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比尔胡说过这样的话吗？</p>
+          <p> </p>
+          <p>说我决定给稻草人聪明的头脑？ </p>
+          <p> </p>
+          <p>可能因为这是我活着的时候发生的事儿，所以现在记得不太清楚了。 </p>
+          <p> </p>
+          <p>无论怎样，这个故事里比尔胡相信我一定会把它变聪明，所以一直都在等着我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得它是个烦人的家伙...</p>
+          <p> </p>
+          <p>我是什么时候死掉的来着...比尔胡早就应该放弃了的，居然到现在还等待着那个我跟它曾经的约定，嗳！ </p>
+          <p> </p>
+          <p>我要是装不知道吧，肯定会一直烦我的，[%username]大人，请帮我随便给它戴一个脑袋吧。</p>
+          <p> </p>
+          <p>公共墓地里到处都是[%dic:STR_DIC_I_QUEST_4012a]，所以随便捡一个给它就可以了。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_ACCEPT_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在哈班雅克农场一面的角落里有[%dic:STR_DIC_W_DF2A_SZ_C_1]。</p>
+          <p> </p>
+          <p>翻找那里的石棺，就可以在[%dic:STR_DIC_OBJ_Q4012]里找到[%dic:STR_DIC_I_QUEST_4012a]。</p>
+          <p> </p>
+          <p>请把它带给比尔胡，就说戴上它就可以变聪明。 </p>
+          <p> </p>
+          <p>请帮帮我，让比尔胡不要再折磨我了。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，一个稻草人再怎么嘟囔，又能把我怎样呢。</p>
+          <p> </p>
+          <p>比尔胡被绑在杆子上，也不可能来找我。 </p>
+          <p> </p>
+          <p>就这样不搭理它，它总有一天会放弃的吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来了啊！</p>
+          <p> </p>
+          <p>见到毕多胡尼尔主人了吗？ </p>
+          <p> </p>
+          <p>他说要把我变聪明了？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">给它带上头骨。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么呀，是在捉弄我吗？ </p>
+          <p> </p>
+          <p>我明明拜托过主人，他也答应了要把我变聪明了啊。</p>
+          <p> </p>
+          <p>快去把能把我变聪明的东西拿来！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，这可怕！ </p>
+          <p> </p>
+          <p>戴上了头骨以后，总是突然浮现可怕的记忆。</p>
+          <p> </p>
+          <p>虽然我变聪明了是件好事，可是我讨厌被可怕的记忆折磨。 </p>
+          <p> </p>
+          <p>我还是想要以前那样生活。 </p>
+          <p> </p>
+          <p>谢谢你帮助我。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+           <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_OBJ_Q4012]里找到[%dic:STR_DIC_I_QUEST_4012a]，给[%dic:STR_DIC_N_Scarecrow_Virhu]带去</font></p>[%collectitem]</step>
+           <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Scarecrow_Virhu]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">毕多胡尼尔想遵守与比尔胡的约定，生活得舒服一点。到哈班雅克公共墓地去找个头骨给比尔胡戴上吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>接受了比尔胡请求的毕多胡尼尔说，我已经死了这么久了，也想过是否还应该帮它实现那样的请求，可是不帮它实现的话，可能会更加烦人。</p>     
+          <p> </p>
+          <p>他让我从哈班雅克公共墓地找个头骨给比尔胡戴上，我就按他说的做了。 </p>
+          <p> </p>
+          <p>戴上头骨后，比尔胡好像是变聪明了似的，可是它说可怕的记忆经常浮现，所以还是愿意回到以前的生活。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

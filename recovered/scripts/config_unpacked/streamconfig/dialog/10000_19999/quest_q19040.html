@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>姐姐和我从小就很不一样。虽然我们是姐妹，但长得不一样，性格更不一样。</p>
+          <p> </p>
+          <p>我向往远方，喜欢听冒险故事。</p>
+          <p> </p>
+          <p>但是我姐姐却很关心周围发生的事情。</p>
+          <p> </p>
+          <p>不久前我们来到了极乐世界，但最近她一直在忙着养宠物，我好久都没见到她人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问宠物的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>宠物？这个嘛，我从来没有养过宠物。</p>
+          <p> </p>
+          <p>这里的小鸟只不过是在旅行的路上暂时在这里休息，它们不属于任何人。</p>
+          <p> </p>
+          <p>关于宠物，我姐姐才是专家。</p>
+          <p> </p>
+          <p>如果您想知道宠物的事情，可以去问问[%dic:STR_DIC_NPC_Letia]姐姐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她在广场东边，养着好几只宠物。</p>
+          <p> </p>
+          <p>见到我的时候，她也总是在说宠物有关的事情。有长得很可爱的观赏用宠物，也有喂食之后会送主人礼物的奇怪宠物，还有一些宠物会在敌人出现的时候报警……</p>
+          <p> </p>
+          <p>如果您想了解宠物的事情，就去和[%dic:STR_DIC_NPC_Letia]聊聊。相信一定会对您有帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您也对宠物没什么兴趣吧？</p>
+          <p> </p>
+          <p>事实上我也没什么兴趣。我喜欢自由的生活。如果我养了宠物，还得我来照顾它们。</p>
+          <p> </p>
+          <p>我宁愿像这样和旅行途中休息的鸟儿交流。为什么一定要把它们变成自己的宠物呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我妹妹说极乐世界是个美丽的地方，所以不久前我们来到了这里。</p>
+          <p> </p>
+          <p>但是事实上，我并不觉得极乐世界有什么好。</p>
+          <p> </p>
+          <p>我希望我的宠物们能在更广阔的地方玩耍，这里没有宽阔的原野。</p>
+          <p> </p>
+          <p>还好广场这里有一些草坪，已经算是不错了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问宠物的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，[%username]大人真的对宠物一无所知吗？</p>
+          <p> </p>
+          <p>宠物是主人心爱的宝贝，也是主人的同伴。我的宠物一直在逗您玩，您却一句话都不称赞它们，这样太失礼了！</p>
+          <p> </p>
+          <p>在了解宠物之前，您得先学习称赞别人宠物的方法。</p>
+          <p> </p>
+          <p>关于宠物，我没什么可以告诉您的。因为如果不亲手饲养，我再怎么解释也没有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_NPC_Letia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">雷亚说去和她热衷于饲养宠物的姐姐谈谈，应该可以了解更多有关宠物的事情。应该去见见莱提亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷亚说自己的姐姐热衷于饲养宠物，她觉得这样很不好。</p>
+          <p> </p>
+          <p>向她询问有关宠物的事情，她说最好去问她姐姐，于是去见到了莱提亚。</p>
+          <p> </p>
+          <p>莱提亚告诉我说，称赞别人的宠物，是最基本的礼貌。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

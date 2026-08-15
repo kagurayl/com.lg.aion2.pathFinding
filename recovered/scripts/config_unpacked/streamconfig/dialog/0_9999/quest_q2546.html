@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你在这里啊。</p>
+          <p> </p>
+          <p>正好，曾经委托药草采集者采集的术古草还剩了一些。</p>
+          <p> </p>
+          <p>其实，我还真没想到术古草的效果会这么好。</p>
+          <p> </p>
+          <p>没有得到术古草的术古族也抢着给我送来矿物样本，呵呵。</p>
+          <p> </p>
+          <p>这样看来，我的计划算是成功了，不过这样可不行，我得准备更多的术古草。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过我怎么想，都记不起叫做鲁乌灵的术古族了。</p>
+          <p> </p>
+          <p>你肯定他在奇多伦盗墓团营地中吗？呵呵，真是。</p>
+          <p> </p>
+          <p>"[%username], 能不能麻烦你把术古草交给[%dic:STR_DIC_N_Shugo_DF3_13]呢？"</p>
+          <p> </p>
+          <p>那个术古族所在的位置，你应该是最清楚的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，给你术古草。</p>
+          <p> </p>
+          <p>请你把它交给[%dic:STR_DIC_N_Shugo_DF3_13]。</p>
+          <p> </p>
+          <p>请你转告他，上次是我失礼了。我充分认可他的能力，希望以后能得到他的大力协助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不想回去，所以才拒绝的吗？</p>
+          <p> </p>
+          <p>不过，只有你知道鲁乌灵的位置，所以是给他送礼物的最合适人选。</p>
+          <p> </p>
+          <p>既然你不肯，我也没办法。术古草就先放在这里吧。</p>
+          <p> </p>
+          <p>到时候我给他打个招呼，亲自去送给他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等着呢。</p>
+          <p> </p>
+          <p>术古草...啊，不，守护者。</p>
+          <p> </p>
+          <p>已经顺利将变形拉盖乌姆矿石送给豪鲁了吗？</p>
+          <p> </p>
+          <p>豪鲁认可我的能力了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将术古草交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>给我术古草了？这么说应该是充分认可了我的能力。</p>
+          <p> </p>
+          <p>这样一来，他应该也知道我可不是吃素的术古了，咳！</p>
+          <p> </p>
+          <p>辛苦守护者了。</p>
+          <p> </p>
+          <p>虽然不能把术古草分给你，不过我会送给你一样别的礼物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将术古草给[%dic:STR_DIC_N_Shugo_DF3_13]送去。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">作为给自己送来变形拉盖乌姆矿石的奖励，他要将术古草奖励给鲁乌灵。将术古草带回，交给鲁乌灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>豪鲁表示，根本不记得给自己送来变形拉盖乌姆矿石的那个鲁乌灵，他希望有人代替他把术古草交给鲁乌灵。</p>
+          <p> </p>
+          <p>将术古草交给鲁乌灵后，鲁乌灵因为得到了豪鲁的认可而非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

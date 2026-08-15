@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是，[%username]。</p>
+          <p> </p>
+          <p>巴拉努斯的繁殖力非常强，仅消灭几只好像完全没有用。</p>
+          <p> </p>
+          <p>我的恐惧仿佛看不到尽头。一想到它们还在附近游荡，我的心就砰砰直跳。</p>
+          <p> </p>
+          <p>我从小就试着去克服对爬虫类的憎恶……但是看来没什么用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这种苦恼又不能跟别人说，只能一个人默默地忍受痛苦。</p>
+          <p> </p>
+          <p>还好[%username]你能帮我，真的非常感谢。</p>
+          <p> </p>
+          <p>所以我说……你能再帮我去消灭几只[%dic:STR_DIC_M_VaranusRe2D_31_n]吗？</p>
+          <p> </p>
+          <p>继承马勒库坦主神意志的我，竟然会害怕爬虫……虽然难以启齿，但我还是鼓起勇气求你帮忙，请一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>请你快去消灭巴拉努斯吧。如果它们能够消失，我执行任务的时候就会方便很多。</p>
+          <p> </p>
+          <p>如果有人问你为什么要捕捉巴拉努斯，请你设法应付一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，没想到你竟然会拒绝。</p>
+          <p> </p>
+          <p>当然我也知道，巴拉努斯并不是那么好对付的。</p>
+          <p> </p>
+          <p>但是我觉得你和其他的守护者不同，一定会爽快地答应我的。</p>
+          <p> </p>
+          <p>嗯……如果你真的不愿意的话，我也没办法。不过请帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想想那些来回走动的西葫芦……来回走动的西葫芦……</p>
+          <p> </p>
+          <p>啊，[%username]！你终于回来啦。差点没认出你，真是不好意思。</p>
+          <p> </p>
+          <p>我刚才在想，怎样才能克服对爬虫类的恐惧呢？</p>
+          <p> </p>
+          <p>对了，你把红刺巴拉努斯消灭掉了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不知道该怎么说才好。</p>
+          <p> </p>
+          <p>很少有人愿意倾听我的困难。</p>
+          <p> </p>
+          <p>有人肯听我抱怨，就已经很感激了，你还帮我消灭了巴拉努斯！</p>
+          <p> </p>
+          <p>请收下。这些虽然好像少了点……但却是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_VaranusRe2D_31_n]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gigrite]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助患有巴拉努斯恐惧症的吉格里泰消灭巴拉努斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉格里泰说外面还有巴拉努斯，他因此而痛苦，让我帮帮他。</p>
+          <p> </p>
+          <p>帮他消灭掉了红刺巴拉努斯，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

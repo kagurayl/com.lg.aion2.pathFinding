@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]的实力比我想象的还要强啊。</p>
+          <p> </p>
+          <p>其实我也没抱什么期待...</p>
+          <p> </p>
+          <p>[%username]，抱歉，可以再麻烦您一次吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实，因派图西姆的真正敌人不是水雾精灵，而是水波精灵。那些家伙煽动别的精灵攻击人类。</p>
+          <p> </p>
+          <p>请您再去趟因派图西姆，收拾那些[%dic:STR_DIC_M_WElemental2ndD_19_An]。 </p>
+          <p> </p>
+          <p>当然，我会付给您相应的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要清除5个[%dic:STR_DIC_M_WElemental2ndD_19_An]就可以了。</p>
+          <p> </p>
+          <p>我虽然相信[%username]大人的实力，但是请您千万要小心！</p>
+          <p> </p>
+          <p>因为水波精灵那些家伙比水雾精灵强多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_WElemental2ndD_19_An]不但攻击人类，而且还随意改变水的流向，不住捣鬼。</p>
+          <p> </p>
+          <p>对于因派图西姆的重建来说，是个极大的障碍。</p>
+          <p> </p>
+          <p>所以，请您慎重考虑一下再回答我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直等您呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_WElemental2ndD_19_An]很招人烦吧？</p>
+          <p> </p>
+          <p>您把它们清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人，真是托对人了啊。</p>
+          <p> </p>
+          <p>您是我见过的守护者中最厉害的。  </p>
+          <p> </p>
+          <p>来，这是说好的报酬。以后还要请您多多关照。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清掉在[%dic:STR_DIC_W_DF1A_25]徘徊的[%dic:STR_DIC_M_WElemental2ndD_19_An]%。([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Grak]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说比水雾精灵更厉害的水波精灵至今还在因派图西姆。去消灭水波精灵并向克拉克报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭掉水雾精灵之后，克拉克又拜托我消灭剩下的水波精灵。消灭了因派图西姆的水波精灵之后，克拉克给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]，你知道亚龙吗？</p>
+          <p></p>
+          <p>是的，就是生产德拉坎的龙族。</p>
+          <p></p>
+          <p>听说去调查亚龙的执政官发现了亚龙的洞穴。</p>
+          <p></p>
+          <p>继发现阿拉卡之后，又找到了亚龙，这样下去的话，我们就不用为巴卡巴塔大战担心了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>听说亚龙的洞穴在[%dic:STR_DIC_W_SZ_DF4_C6]。</p>
+          <p></p>
+          <p>必须在她下蛋之前消灭掉她。</p>
+          <p></p>
+          <p>[%username]，这件事情只有交给你我才放心。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>到了大地之尖牙之后，你去见见[%dic:STR_DIC_N_Kimin]。</p>
+          <p></p>
+          <p>他会告诉你消灭亚龙所需的情报。</p>
+          <p></p>
+          <p>你的表情干嘛这样，紧张吗？</p>
+          <p></p>
+          <p>[%username]，你是拥有特殊命运的人。</p>
+          <p></p>
+          <p>马勒库坦主神在保护着你，用不着担心。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>啧啧，你是害怕亚龙吗？</p>
+          <p></p>
+          <p>虽然她拥有神秘力量，但也只是没有觉醒成龙的失败者。</p>
+          <p></p>
+          <p>只要几个人齐心协力，就一定可以对付她。</p>
+          <p></p>
+          <p>真的害怕的话，就先到第1神庙训练所去锻炼一下。对付塔哈巴塔，会给你带来自信。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您是赫雷尔代理人派来的吗？</p>
+          <p></p>
+          <p>我来自我介绍一下，我叫基敏。</p>
+          <p></p>
+          <p>我正在按照代理人大人的命令，在提亚马特的领土上调查亚龙。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">自我介绍。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(合上厚厚的书)名字是[%username]，职业是[%userclass]，等级是……</p>
+          <p></p>
+          <p>这是工作上的需要。</p>
+          <p></p>
+          <p>(从口袋里掏出什么东西)请收下。帕德玛夏，啊，就是这个洞穴里的亚龙的名字。</p>
+          <p></p>
+          <p>必须有这个才能进入帕德玛夏的洞穴。</p>
+          <p></p>
+          <p>只要使用一次就没用了，小心别弄丢了。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">和[%dic:STR_DIC_N_Kimin]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">据说在格尔克马洛斯发现了亚龙的洞穴。去见见大地之尖牙的基敏，确认有关亚龙的情报吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>代理人说发现了亚龙的洞穴，让我去见见大地之尖牙的基敏。</p>
+          <p></p>
+          <p>找到基敏之后，他把可以进入帕德玛夏的洞穴的钥匙给了我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

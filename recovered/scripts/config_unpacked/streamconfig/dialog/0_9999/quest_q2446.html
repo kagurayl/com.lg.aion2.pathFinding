@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以这副模样活着，有时候我会感到很羞愧。</p>
+          <p> </p>
+          <p>为了全体椰林族，我忍受着这份耻辱。</p>
+          <p> </p>
+          <p>但是土壤越来越贫瘠，我也越来越不行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>努努族那里，有种人参用的好肥料。</p>
+          <p> </p>
+          <p>有了那种肥料的话，会对我和泰山很有帮助。</p>
+          <p> </p>
+          <p>你能帮我去努努族那里，搜集一点那种肥料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>肥料在[%dic:STR_DIC_M_FnC_RatmanGathererM_38_n]、[%dic:STR_DIC_M_FnA_RatmanWarriorM_38_An]、[%dic:STR_DIC_M_FnB_RatmanWarriorM_38_An]、[%dic:STR_DIC_M_FnB_RatmanWarriorM_40_An]、[%dic:STR_DIC_M_RnA_RatmanScoutM_38_An]和[%dic:STR_DIC_M_RnA_RatmanScoutM_38_An_2]的手里。</p>
+          <p> </p>
+          <p>除掉它们，然后把[%dic:STR_DIC_I_QUEST_2446a]带回来。</p>
+          <p> </p>
+          <p>拜托了，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得我们是不知羞耻的活着吗？</p>
+          <p> </p>
+          <p>魔界的椰林，已经所剩无几了。</p>
+          <p> </p>
+          <p>我们的死亡，可能就是椰林的末日。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和泰山一起开玩笑，让我忘了痛苦。</p>
+          <p> </p>
+          <p>但是艰苦的现实不会因此消失。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2446a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出努努族的肥料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于我们来说，这是关乎生命的事情。</p>
+          <p> </p>
+          <p>拜托你了，守护者。</p>
+          <p> </p>
+          <p>除掉努努族，把[%dic:STR_DIC_I_QUEST_2446a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>希望靠肥料的力量，能够延续我们的生命。</p>
+          <p> </p>
+          <p>只要我们活着，就会祈祷椰林的祝福一直伴随着你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_2446a]，然后交给[%dic:STR_DIC_N_Temoji]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须为泰莫吉和泰山，去努努族那里搜集肥料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰莫吉说伪装成奥格林特虽然屈辱，但是为了全体的椰林，必须珍惜生命。</p>
+          <p> </p>
+          <p>于是按照他的拜托，除掉了努努族，帮他搜集到了努努族的肥料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

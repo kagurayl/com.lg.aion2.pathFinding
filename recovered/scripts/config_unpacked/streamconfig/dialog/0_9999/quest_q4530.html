@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听我说，呐呐！</p>
+          <p> </p>
+          <p>你帮我消灭了赞特凯尔，真的非常感谢！</p>
+          <p> </p>
+          <p>最近很难找到好的盗掘目标，所以赚钱的机会没有想象的那么多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是[%dic:STR_DIC_M_MimicAmethystD_32_An]，呐呐。</p>
+          <p> </p>
+          <p>听说它们的身上有很多珍贵的宝石！</p>
+          <p> </p>
+          <p>那些东西要比盗掘的东西值钱得多，我之前一直都不知道。</p>
+          <p> </p>
+          <p>你能帮我去搜集一些[%dic:STR_DIC_I_QUEST_4530A]吗？</p>
+          <p> </p>
+          <p>当然少不了你的一份。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道要去捕捉什么了吧？</p>
+          <p> </p>
+          <p>是的，就是[%dic:STR_DIC_M_MimicAmethystD_32_An]。</p>
+          <p> </p>
+          <p>你不久前还和它们交过手，应该很清楚怎么对付它们吧？</p>
+          <p> </p>
+          <p>一定要把它们身上的[%dic:STR_DIC_I_QUEST_4530A]%全部拿回来。</p>
+          <p> </p>
+          <p>如果你听说它们很值钱就私吞了的话，我一定不会放过你的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚看你帮助了扎耀伦，还以为你是个不错的守护者呢……</p>
+          <p> </p>
+          <p>看来是我看错人了。</p>
+          <p> </p>
+          <p>这可是个赚钱的好机会，以后你一定会后悔的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，呐呐！</p>
+          <p> </p>
+          <p>我等得眼睛都要直了。</p>
+          <p> </p>
+          <p>一想到可以赚很多钱，我的心就怦怦直跳。</p>
+          <p> </p>
+          <p>好了，快把紫水晶给我看看！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出紫水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，哎呀……这么点可赚不到什么大钱，呐呐。</p>
+          <p> </p>
+          <p>必须是你之前消灭掉的[%dic:STR_DIC_M_MimicAmethystD_32_An]才行。</p>
+          <p> </p>
+          <p>我需要它们体内的[%dic:STR_DIC_I_QUEST_4530A]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这光彩照得人眼睛都睁不开了。</p>
+          <p> </p>
+          <p>看来之后的一个月，我用不着再去盗掘东西了，呐呐！</p>
+          <p> </p>
+          <p>拿着。好不容易可以大赚一笔，我就发发善心吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_4530A]，然后交给[%dic:STR_DIC_N_Shugo_DF3_11]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">古安灵说为了赚大钱，需要奇妙光彩的紫水晶。必须去从紫水晶赞特凯尔身上搜集紫水晶然后交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古安灵说盗掘很难赚到大钱，让我去从上次消灭的紫水晶赞特凯尔身上搜集宝石。</p>
+          <p> </p>
+          <p>消灭了紫水晶赞特凯尔，搜集到了奇妙光彩的紫水晶。交给他之后，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

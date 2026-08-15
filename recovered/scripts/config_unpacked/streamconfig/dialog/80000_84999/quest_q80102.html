@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是你啊。谢谢你帮我搜集灵魂碎块。</p>
+          <p> </p>
+          <p>多亏了你，我终于可以喘口气了。</p>
+          <p> </p>
+          <p>嗯……这是魔女的直觉。你和我之间，也许有着某种复杂的缘分。</p>
+          <p> </p>
+          <p>所以你现在又出现在了我的面前。不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不太清楚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我们来确认一下好吗？</p>
+          <p> </p>
+          <p>那个东西去哪儿了……我明明放在这里的……哎呀，魔女狩猎者的灵魂全都用光了。</p>
+          <p> </p>
+          <p>很遗憾，现在没办法确认了。</p>
+	  <p> </p>
+          <p>如果你能帮我搜集到魔女狩猎者的灵魂，我就可以马上进行确认。</p>
+	  <p> </p>
+          <p>要麻烦你两次，是不是有点不太好啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮她搜集灵魂。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">不答应，走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我和你之间果然好像有着某种缘分。</p>
+          <p> </p>
+          <p>好的，那就拜托你了。</p>
+          <p> </p>
+	  <p>听说追踪我的[%dic:STR_DIC_M_Branch_Event_LehparAsD_18_An]就在附近。</p>
+          <p> </p>
+          <p>如果能搜集到他们的灵魂，应该就可以了。</p>
+          <p> </p>
+          <p>用[%dic:STR_DIC_I_QUEST_80102A]可以确认我们之间到底有着何种缘分，这可是个好机会。</p>
+          <p> </p>
+          <p>至少我待在这里暂时不会觉得无聊了。呵呵！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不行吗？呵呵！</p>
+          <p> </p>
+          <p>但是你也许还会来找我的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>世界上还有比灵魂更美的东西吗？</p>
+          <p> </p>
+          <p>所以我不能放弃搜集灵魂的工作。</p>
+          <p> </p>
+          <p>哎呀，你是什么时候来的？我要的东西呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔女狩猎者的白色灵魂。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，就是这个！现在只要有了那个的话……呵呵呵！</p>
+          <p> </p>
+          <p>……啊？！干嘛？你有什么话要说吗？啊……刚才说的？</p>
+          <p> </p>
+          <p>让我看看。我和你……咦？好像没什么缘分的样子。</p>
+          <p> </p>
+          <p>不过没关系，我们能像这样说话，就已经足够了。不是吗？</p>
+          <p> </p>
+          <p>呵呵呵！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_80102A]还没搜集到吗？</p>
+          <p> </p>
+          <p>嗯……我说，这样拖下去可不行啊。</p>
+          <p> </p>
+          <p>我，可以在和我说话的人身上下诅咒。你明白我的意思了吧？</p>
+          <p> </p>
+          <p>希望你不要中什么诅咒。</p>
+          <p> </p>
+          <p>我会在这里等你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80102A]，然后交给[%dic:STR_DIC_N_event_Witchta]吧。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集魔女狩猎者的白色灵魂，然后交给维奇塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维奇塔说这次需要魔女狩猎者的灵魂，让我帮她搜集。</p>
+          <p> </p>
+          <p>虽然她让我去搜集灵魂的理由有点牵强，不过还是去帮她搜集到了灵魂。她对我表示感谢，并给了我酬谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，[%username]，能再等一会吗？</p>
+          <p> </p>
+          <p>（在长长的羊皮纸上认真地记着什么，最后卷起了羊皮纸。）</p>
+          <p> </p>
+          <p>啊，终于整理完了。不好意思让你久等了。</p>
+          <p> </p>
+          <p>事情太多，所以要及时处理，不然最后肯定会出问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问羊皮纸的内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你说这个羊皮纸吗？对所需物品种类和数量做的汇总。</p>
+          <p> </p>
+          <p>最近战事频繁，对军需品的需求也不断增加，所以目录才会这么长，哈哈。</p>
+          <p> </p>
+          <p>不过我有点担心，战斗可能会无休止地进行，可补给品却是有限的...</p>
+          <p> </p>
+          <p>真是，我为什么没想到这一点呢？只要把事情拜托给你这样出色的 [%userclass]，事情就会迎刃而解。</p>
+          <p> </p>
+          <p>[%username]，能帮助我吗？不是什么太困难的事情，只是要你帮忙给我采集几件物品。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的弓星要制作火箭，需要涂在箭镞上的硫磺，可是储备仓库中已经没有存货了。</p>
+          <p> </p>
+          <p>正好这一带附近有很多硫磺，可以先对付着用。啊，也不是那么急的。</p>
+          <p> </p>
+          <p>去硫磺树列岛，可以见到 [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]，请从它们身上搜集 [%dic:STR_DIC_I_QUEST_2819a]。</p>
+          <p> </p>
+          <p>从它们身上取得的硫磺为液体，这样做成的箭射出去后，火势会非常大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到底为什么而拒绝啊？</p>
+          <p> </p>
+          <p>难道是害怕那些树怪吗？</p>
+          <p> </p>
+          <p>呵呵，真是让人失望。听说你的事迹让整个伏魔殿都震惊。我还对你十分期待呢，原来只是个胆小鬼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（在羊皮纸上记录着什么）真是，目录越来越长了，真不知道该怎么办。</p>
+          <p> </p>
+          <p>多亏你帮我采集硫磺树液。</p>
+          <p> </p>
+          <p>把带来的树液交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将硫磺树液交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么长时间你都去干什么了？</p>
+          <p> </p>
+          <p>这样偷懒，要是敌人突然攻过来，谁负责任啊？</p>
+          <p> </p>
+          <p>别那样站着不动，请赶紧去采集 [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]的树液吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（捏着鼻子）啊，被树液稀释过，硫磺味还这么重啊。</p>
+          <p> </p>
+          <p>辛苦你了。有了这些，一段时间内应该不用担心缺货了。</p>
+          <p> </p>
+          <p>不过，假如以后有时间，最好还是多采集一些来储存起来。</p>
+          <p> </p>
+          <p>今后你要是得到硫磺树液，一定要带到我这。当然，每次我都会酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]的树液，并交给 [%dic:STR_DIC_N_Ab1_1141_Quest_Da]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">古德哈尔坦称，硫磺树要塞缺少硫磺。为了让弓星制作出火箭，去采集粗糙的树人和怪声之树木监视者身上的树液，并交给古德哈尔坦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古德哈尔坦称，因为频繁的战斗，要塞的补给品短缺，需要从周边搜集些材料。</p>
+          <p> </p>
+          <p>接受委托，采集粗糙的树人和怪声之树木监视者身上的树液，并交给了他。对此，他非常高兴，并表示在一段时间内不用担心缺少硫磺了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

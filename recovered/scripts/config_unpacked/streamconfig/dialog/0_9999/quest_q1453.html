@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(晃着贴着金箔图案的信)极乐世界的朋友说要结婚，给我寄来了请帖。</p>
+          <p> </p>
+          <p>是我在神庙的时候一起生活的朋友，虽然很想参加，但是好像不太可能。村里的事情还是老样子。</p>
+          <p> </p>
+          <p>不过我想给那位朋友送一件礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么礼物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我打算送一副石榴石耳环。</p>
+          <p> </p>
+          <p>石榴石是象征永恒的友情的宝石，又是那位朋友的诞生石，所以作为礼物再合适不过。</p>
+          <p> </p>
+          <p>刚好我有两块石榴石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要把石榴石做成耳环的话，还需要有用来制作耳环的金属...</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_E_noblemetal_n_c_30a]应该不错。应该和红色的石榴石很相配。</p>
+          <p> </p>
+          <p>你能帮我搜集一点白金吗？我还得守着村子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。白金在村子后面的山里有很多，应该不难找到。</p>
+          <p> </p>
+          <p>要制作耳环的话，你只要帮我搜集5个就够了。</p>
+          <p> </p>
+          <p>那就请你快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真没人情味。要是我的话一定会爽快地答应的。</p>
+          <p> </p>
+          <p>你是不是担心我让你白跑一趟啊？</p>
+          <p> </p>
+          <p>请你不要担心。你帮我把白金拿回来的话，谢礼我不会少了你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>你去的那段时间，我在包袱里把石榴石找出来了。</p>
+          <p> </p>
+          <p>这就是那对石榴石，怎么样？做成耳环应该会很漂亮吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出白金矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你给我的这是什么啊？这明明不是说好的5个[%dic:STR_DIC_E_noblemetal_n_c_30a]嘛！</p>
+          <p> </p>
+          <p>礼物这个东西，什么时候给很重要。</p>
+          <p> </p>
+          <p>我必须在朋友的结婚典礼之前送出去，所以请你快点把白金带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发出隐隐的光泽，质量好像很不错。真是辛苦你了。</p>
+          <p> </p>
+          <p>请收下。这是你这次帮我的报答。</p>
+          <p> </p>
+          <p>如果你需要我的帮助的话就请和我说。如果可以帮到你的话，我会尽量帮你的。</p>
+          <p> </p>
+          <p>那我这就去找人加工去了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_noblemetal_n_c_30a]，然后交给[%dic:STR_DIC_N_Pietas]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">皮埃塔斯说正在准备石榴石耳环作为朋友的结婚礼物。帮助忙碌的她搜集制作耳环所需的白金矿石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮埃塔斯说收到了极乐世界的好朋友的请帖，但是因为村子里的情况不好，所以不能去。她因此觉得很遗憾。</p>
+          <p> </p>
+          <p>于是她想送朋友一件有意义的贺礼，拜托我帮她搜集白金矿石。</p>
+          <p> </p>
+          <p>帮助皮埃塔斯搜集到了白金矿石，她非常高兴，说终于可以制作石榴石耳环了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

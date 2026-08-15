@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，终于得救了！</p>
+          <p> </p>
+          <p>虽然我讨厌盗掘，但大胆的朵拉齐齐很可怕，所以我也没办法。</p>
+          <p> </p>
+          <p>而且族人们全在挨饿，所以我只能跟着朵拉齐齐，求他施舍一点东西。</p>
+          <p> </p>
+          <p>但是朵拉齐齐死了，现在该怎么办呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你能帮帮我吗？</p>
+          <p> </p>
+          <p>不然的话，所有的族人都会被饿死的。</p>
+          <p> </p>
+          <p>我不能看着小孩子们挨饿！</p>
+          <p> </p>
+          <p>请你一定要帮我找点好东西回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我搜集一些龙族的遗物！</p>
+          <p> </p>
+          <p>在很多地方都能找到龙族的遗物。</p>
+          <p> </p>
+          <p>消灭帕休曼迪尔寺院里比较强的家伙，应该就能找到[%dic:STR_DIC_I_QUEST_IDCatacombs_Reric_01]。</p>
+          <p> </p>
+          <p>请你一定要帮帮我。为了孩子们，拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你救了我们，我对你表示感谢。不过这样是不是太无情了？</p>
+          <p> </p>
+          <p>孩子们正在挨饿，你却装作没看见吗！</p>
+          <p> </p>
+          <p>这样下去的话，我会让部落里的人失望的。</p>
+          <p> </p>
+          <p>这可怎么办才好啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你。</p>
+          <p> </p>
+          <p>龙族的遗物搜集到了吗？</p>
+          <p> </p>
+          <p>有了那个，我才能回到部落里去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的遗物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是想让我急死吗？</p>
+          <p> </p>
+          <p>我得尽快赶回部落去。</p>
+          <p> </p>
+          <p>但是没有龙族遗物的话，我就不能回去。</p>
+          <p> </p>
+          <p>请你一定要帮我搜集到[%dic:STR_DIC_I_QUEST_IDCatacombs_Reric_01]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的遗物终于到手了！</p>
+          <p> </p>
+          <p>这下终于可以回家了！</p>
+          <p> </p>
+          <p>谢谢你答应我的请求！</p>
+          <p> </p>
+          <p>这份恩情，我是不会忘记的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_IDCatacombs_Reric_01]，然后交给[%dic:STR_DIC_N_Shulack_IDCatacombs_1]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卢普金说为了正在挨饿的部落居民，需要搜集龙族的遗物。消灭守卫帕休曼迪尔寺院的人中较强的人，搜集龙族的遗物吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢普金说由于害怕大胆的朵拉齐齐，他们会协助进行盗掘，而现在部落居民们都在挨饿，需要我帮他搜集龙族的遗物。</p>
+          <p> </p>
+          <p>于是消灭了守卫帕休曼迪尔寺院的人中较强的人，搜集到了龙族的遗物，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

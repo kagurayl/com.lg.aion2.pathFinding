@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]啊，您还在继续遵循生命的教诲吗？</p>
+          <p> </p>
+          <p>虽然您现在成长得很快，但这并不意味您的将来也是一帆风顺的。</p>
+          <p> </p>
+          <p>只有坚定地遵循神庙老师和尤斯迪埃主神的教诲才是正确的选择。</p>
+          <p> </p>
+          <p>现在，尤斯迪埃主神对极乐世界的治愈星和护法星提出了考验。</p>
+          <p> </p>
+          <p>如果您想成为[%userclass]，最好还是参加这个考验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问考验的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不用紧张，不是很难的考验。只要实践生命的教诲就行。</p>
+          <p> </p>
+          <p>请使用在神庙学会的复活技能救助那些生命垂危的同伴。</p>
+          <p> </p>
+          <p>只要能使他们重新复活，使用任何技能都不限制。</p>
+          <p> </p>
+          <p>也许您在想上哪里去找战场吧？只要[%username]去执行任务，自然会发现需要帮助的同伴。</p>
+          <p> </p>
+          <p>完成任务后，请向特拉希梅德斯报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请不必因为这个考验而觉得负担过重。</p>
+          <p> </p>
+          <p>我们的初衷是为了锻炼隶属于生命之神庙的治愈星和护法星的实力。</p>
+          <p> </p>
+          <p>在这硝烟四起的年代，拥有治愈和保护同伴力量的治愈星和护法星应该变得更加强大才是。</p>
+          <p> </p>
+          <p>需要救助的人到处都是，请去救助那些需要帮助的人吧。</p>
+          <p> </p>
+          <p>如果您认为自己已经充分运用了[%dic:STR_DIC_E_RESURRECT]，就去向[%dic:STR_DIC_N_Thrasymedes]大人报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要是拒绝，我也不会勉强。</p>
+          <p> </p>
+          <p>不过，要是以后尤斯迪埃主神发脾气，我可不负责任。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命之神庙的成员啊，从你踏进这里的那一刻开始，这里就充满了奥德的气息。我就知道你来了。</p>
+          <p> </p>
+          <p>你是来向我汇报结果的吗？是希凯雅拜托你来的吗？</p>
+          <p> </p>
+          <p>我还担心你会因为这个考验而负担过重。不过，领悟只能靠自己，旁人是帮不了忙的。</p>
+          <p> </p>
+          <p>我相信这次的考验必能对你今后的发展有所帮助。</p>
+          <p> </p>
+          <p>那么报告结果吧。倒在地上的同伴们都复活了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有简单的事情，就必定会有困难的事情。</p>
+          <p> </p>
+          <p>既然选择了[%userclass]这条道路，就意味着你有责任和义务帮助那些需要你帮助的人。</p>
+          <p> </p>
+          <p>希望你能牢记生命的教诲，祝你好运。</p>
+          <p> </p>
+          <p>这是生命之神庙对你完成考验的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_RESURRECT]拯救危在旦夕的同伴([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Thrasymedes]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按照希凯雅所说，使用复活技能令危在旦夕的同伴复活。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希凯雅说生命之神庙有一个考验，劝我参加这个考验。</p>
+          <p> </p>
+          <p>使用复活技能救活了生命垂危的同伴，然后向特拉希梅德斯报告，并领取了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

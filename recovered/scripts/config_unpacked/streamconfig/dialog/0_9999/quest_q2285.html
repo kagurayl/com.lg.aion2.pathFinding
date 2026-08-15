@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我担心得要命，伊莱希特快找上门了，总不能坐以待毙吧。</p>
+          <p> </p>
+          <p>虽然不是我的责任，但还是赔偿乌云贸易团，看来得尽快解决问题。</p>
+          <p> </p>
+          <p>如果袖手旁观、不担负起责任的话，就会在亚特雷亚接不到任何运送的活。</p>
+          <p> </p>
+          <p>因为术古族在这类事上做得很绝。尤其是乌云贸易团。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，您可以帮帮我吗？</p>
+          <p> </p>
+          <p>别人要是知道了的话会有点儿那个，所以在您答应之前，我不能告诉您是什么事。</p>
+          <p> </p>
+          <p>请您想想我的处境，千万别拒绝我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。  </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(压低嗓音，不让古盖隆和比耶尔听见。)</p>
+          <p> </p>
+          <p>您看到那个湖对岸树后面的小屋了吗？那儿是盖尔盖尔村庄。</p>
+          <p> </p>
+          <p>在那儿，有个叫[%dic:STR_DIC_N_NPC_Gerger_3]的盖尔盖尔。你去向盖尔米尔说明我的情况，并请求他的帮助。</p>
+          <p> </p>
+          <p>他曾悄悄答应过我一件事，所以不会充耳不闻的。 </p>
+          <p> </p>
+          <p>还有，千万别告诉任何人，我和盖尔盖尔认识。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为不知道是什么事才拒绝的吗？</p>
+          <p> </p>
+          <p>还是想请你考虑一下可以吗？</p>
+          <p> </p>
+          <p>这事儿关系到我和未婚妻伊莱希特的将来。一定要解决这个问题，我们才能糊口过日子呀。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人您找到卑贱的盖尔盖尔有什么事吗？</p>
+          <p> </p>
+          <p>很少有人知道我们会说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达雷诺兹的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷诺兹面临着一个很大的困难。</p>
+          <p> </p>
+          <p>他虽然害怕别人的耳目，但还是帮了我们很多忙。</p>
+          <p> </p>
+          <p>明白了。我会尽力帮助雷诺兹的。</p>
+          <p> </p>
+          <p>谢谢您来给我们传话。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把雷诺兹的事情告诉给[%dic:STR_DIC_N_NPC_Gerger_3]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定把雷诺兹的危难处境告诉给盖尔米尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷诺兹说一定得解决这个问题，请我悄悄地去盖尔盖尔部落，告诉盖尔米尔现在自己的处境。</p>
+          <p> </p>
+          <p>向盖尔米尔转述了雷诺兹的话，盖尔米尔答应一定会帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

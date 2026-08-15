@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到现在的形势，就忍不住叹气。</p>
+          <p> </p>
+          <p>这地方怎么就成这样了呢？</p>
+          <p> </p>
+          <p>我刚到这里的时候还不是这样的。</p>
+          <p> </p>
+          <p>那时候村口还有绿油油的树木。椰林也很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里的污染和贝尔特伦或者埃尔特内的污染不一样。</p>
+          <p> </p>
+          <p>您有没有去过灰雾丘陵？那里的斯莱姆和刺魔和别的地区的斯莱姆不一样。</p>
+          <p> </p>
+          <p>看看斯莱姆，在被污染的地方都能生存，可是到了这里却发生了变异，就知道这里的污染有多严重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来要把这个事实报告给极乐世界的生命神殿。这样的话就需要[%dic:STR_DIC_I_QUEST_1576a]。</p>
+          <p> </p>
+          <p>我现在手头有研究的东西，能不能请您替我去完成这件事呢？</p>
+          <p> </p>
+          <p>因为这件事很危险，不能随便拜托给别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>那就请去灰雾丘陵，消灭[%dic:STR_DIC_M_Mudthorn_36_An]和[%dic:STR_DIC_M_Slime_36_An]%，找到[%dic:STR_DIC_I_QUEST_1576a]。只要找10个就足够了。</p>
+          <p> </p>
+          <p>我就在这里完成报告，请快点回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办。时间不够。</p>
+          <p> </p>
+          <p>看来必须要尽快完成报告书，然后去灰雾丘陵。</p>
+          <p> </p>
+          <p>希望在我完成报告之前，你能改变心意。</p>
+          <p> </p>
+          <p>那我就忙去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+ <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>啊，请等一下。</p>
+          <p> </p>
+          <p>(正在认真写着什么。)</p>
+          <p> </p>
+          <p>好，行了。我完成了送往生命神殿的报告书。</p>
+          <p> </p>
+          <p>去做的事怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是听错了？</p>
+          <p> </p>
+          <p>我拜托你去弄10只[%dic:STR_DIC_I_QUEST_1576a]来，这点不够啊。 </p>
+          <p> </p>
+          <p>看来您是太急着赶回来了，没能够及时确认一下。现在还得再麻烦您去收集齐。</p>
+          <p> </p>
+          <p>请快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您干事真是干净利落啊。</p>
+          <p> </p>
+          <p>谢谢您。托您的福，可以按计划完成全部工作了。</p>
+          <p> </p>
+          <p>这是给您的报酬。虽然很微薄，还是请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Mudthorn_36_An]和[%dic:STR_DIC_M_Slime_36_An]，获取标本，带给[%dic:STR_DIC_N_Erone]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">埃尔奥内要把报告书、斯莱姆和刺魔，带给生命神殿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔奥内说因特尔蒂卡的污染似乎和其他地方不一样，说要抓些栖息在污染地区的刺魔和斯莱姆标本送往生命神殿确认一下。</p>
+          <p> </p>
+          <p>她忙于写报告书。代替她去找到污染了的生命体标本。她非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

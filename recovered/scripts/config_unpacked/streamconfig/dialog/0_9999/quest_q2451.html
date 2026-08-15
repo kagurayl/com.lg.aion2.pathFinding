@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面的人好像都以为在这里做事很闲。</p>
+          <p> </p>
+          <p>竟然让我在巡逻的空隙，去搜集钯矿石！</p>
+          <p> </p>
+          <p>说是要上贡给伏魔殿。</p>           
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面的大人们是不知道啊，卫兵的工作比想象得要忙得多。</p>
+          <p> </p>
+          <p>从早到晚都要在要塞巡逻。偶尔还要去对付冲到入口处的野兽，还要给来要塞访问的旅行者指路。</p>
+          <p> </p>
+          <p>真是连喝口水的时间都没有。还要让我搜集矿石，呼...</p>
+          <p> </p>
+          <p>我实在是没有自信完成这个任务。不过我说，[%username]大人您能帮帮我吗？请您帮我搜集一点[%dic:STR_DIC_G_metal_n_c_20a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就请您帮我搜集15块[%dic:STR_DIC_G_metal_n_c_20a]吧。</p>
+          <p> </p>
+          <p>钯矿石虽然在莫尔海姆的全域都有分布，但是要属万年雪原和忘却盐漠之间最多。</p>
+          <p> </p>
+          <p>而且石头中间要比平地上多，所以您可以去悬崖或者山谷中找找看。</p>
+          <p> </p>
+          <p>那我就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。[%username]大人拒绝我，应该也有自己的原因。</p>
+          <p> </p>
+          <p>看来矿石问题我得和其他人讨论一下了。</p>
+          <p> </p>
+          <p>呼，莫尔海姆什么时候开始变成这样了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经回来了吗？</p>
+          <p> </p>
+          <p>时间好像还没过多久呢...</p>
+          <p> </p>
+          <p>请您把带回来的[%dic:STR_DIC_G_metal_n_c_20a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出钯矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，好像是我没和您说清楚。</p>
+          <p> </p>
+          <p>我让您帮我搜集的是15块[%dic:STR_DIC_G_metal_n_c_20a]。</p>
+          <p> </p>
+          <p>钯矿石在莫尔海姆万年雪原和忘却盐漠有很多，您去那边找找看吧。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>质量这么好的矿石，拿去上贡给伏魔殿应该没问题了。</p>
+          <p> </p>
+          <p>果然找[%username]大人是找对人了。这是对您帮助我的一点谢意，请您笑纳。</p>
+          <p> </p>
+          <p>我得预先把贡品准备好。每次上贡的时候，就会弄得一团糟。</p>
+          <p> </p>
+          <p>这次多亏了[%username]大人，才能应付过去。再次对您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_metal_n_c_20a]，然后交给[%dic:STR_DIC_N_Thurnberg]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助忙着执行其他任务的杜伦贝尔格搜集上贡给伏魔殿的钯矿石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杜伦贝尔格说是事情太多，没时间搜集上贡给伏魔殿的钯矿石，他为此很烦恼。</p>
+          <p> </p>
+          <p>帮助忙碌的他搜集到了钯矿石，他给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

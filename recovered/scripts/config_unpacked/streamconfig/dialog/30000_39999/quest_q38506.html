@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那边路过的那位守护者，能过来和我说会儿话吗？</p>
+          <p> </p>
+          <p>哎呀！你脚步怎么这么重啊！悬崖要是塌了该怎么办啊，呐呐。</p>
+          <p> </p>
+          <p>你敢到这么危险的地方来，身上一定有很多好东西吧？</p>
+          <p> </p>
+          <p>你有猎人的证物吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我到处和其他人交换铜钱，其他的倒还好，就是猎人的证物有点少。</p>
+          <p> </p>
+          <p>回去之前，我得多搜集一些铜钱才行。没有猎人的证物的话，就糟了，呐呐。</p>
+          <p> </p>
+          <p>如果你有用不到的猎人的证物，希望你能给我。</p>
+          <p> </p>
+          <p>就算没有猎人的证物……你能帮我去搜集吗？赏金猎人工会不接受术古作为会员，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然我不是让你白送给我，呐呐。</p>
+          <p> </p>
+          <p>如果你能给我7个猎人的证物，我就用6个特殊作战部证物和你交换，呐呐。</p>
+          <p> </p>
+          <p>这个条件还可以吧？你快把东西拿过来吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出猎人的证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像不需要特殊作战部证物啊。</p>
+          <p> </p>
+          <p>其他守护者都很乐意和我交换的啊，呐呐。</p>
+          <p> </p>
+          <p>希望你能再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到猎人的证物竟然会不够。</p>
+          <p> </p>
+          <p>我以为已经有很多了呢。看来是算错了。</p>
+          <p> </p>
+          <p>守护者，希望你能帮我多搜集一些猎人的证物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出猎人的证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你确定是7个猎人的证物吗？</p>
+          <p> </p>
+          <p>好像不对吧……</p>
+          <p> </p>
+          <p>如果不是猎人的证物，我就不能和你交换，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，确实是7个猎人的证物，呐呐！</p>
+          <p> </p>
+          <p>多亏了你，我终于得救了！我好像不用再下去了。</p>
+          <p> </p>
+          <p>给，这是6个特殊作战部证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_COIN_HUNTERS_01]，然后交给[%dic:STR_DIC_N_Shugo_Exchange_04]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">多尼琳琳说正在搜集猎人的证物。应该去帮她搜集猎人的证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多尼琳琳说到这么危险的地方来，是为了搜集铜钱，并说自己需要猎人的证物。</p>
+          <p> </p>
+          <p>把猎人的证物交给多尼琳琳之后，她按照约定，把特殊作战部证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

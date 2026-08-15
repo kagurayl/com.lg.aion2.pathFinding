@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来好东西真是藏不住啊。</p>
+          <p> </p>
+          <p>罗伊纳看到我穿的噬人虫盔甲觉得好，说如果有多余的还要我卖给他呢！</p>
+          <p> </p>
+          <p>一个商人和我要东西是什么意思呢？</p>
+          <p> </p>
+          <p>不就是说我做的东西质量好，有人愿意买，哈哈哈！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真想多做点盔甲卖给他，只可惜材料不足。</p>
+          <p> </p>
+          <p>上一次[%username]大人给我找来的材料，我是打算做自己的盔甲用的。</p>
+          <p> </p>
+          <p>现在时局不好，我不敢去抓噬人虫，您能不能帮我集齐[%dic:STR_DIC_I_QUEST_1524a]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不好意思，事事都麻烦您了。</p>
+          <p> </p>
+          <p>这一次就麻烦您帮忙搜集15张[%dic:STR_DIC_I_QUEST_1524a]。</p>
+          <p> </p>
+          <p>说起来，我还真希望盖洛斯能听说这个消息呢。</p>
+          <p> </p>
+          <p>我看他心里一直瞧不起我，要是知道了这件事，他肯定得对我刮目相看的。哈哈哈！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不会吧？难道您还有别的事情？</p>
+          <p> </p>
+          <p>我都已经这么诚恳地请求您了，就请您考虑一下吧。</p>
+          <p> </p>
+          <p>这可是给盖洛斯点颜色看看的好机会呢！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您带来[%dic:STR_DIC_I_QUEST_1524a]了吗?</p>
+          <p> </p>
+          <p>盖洛斯一整天都在看我的脸色呢。看来他是知道罗伊纳要从我手上买盔甲了呢。</p>
+          <p> </p>
+          <p>啊呀，对不起，我心情实在太好了，都忍不住笑出了声来。请把您带来的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出噬人虫皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要找到[%dic:STR_DIC_M_ClodwormRe_33_An]并不难的……</p>
+          <p> </p>
+          <p>不要觉得事情不紧急就拖拖拉拉，请快去搜集皮料吧。</p>
+          <p> </p>
+          <p>万一罗伊纳改变了主意就坏了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"哦,这块皮料太棒了！ "</p>
+          <p> </p>
+          <p>都不用再动手裁剪，直接叠起来缝就好了。</p>
+          <p> </p>
+          <p>请拿着吧。这是对您找到上好皮料的酬谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">干掉[%dic:STR_DIC_M_ClodwormRe_33_An]，弄到皮料，带给[%dic:STR_DIC_N_Terentius]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助泰连迪乌斯制作盔甲，卖给杂货商人罗伊纳，寻找[%dic:STR_DIC_I_QUEST_1524a]。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杂货商人罗伊纳想从泰连迪乌斯手中买他做的盔甲，泰连迪乌斯很高兴。</p>
+          <p> </p>
+          <p>他认为这是让一直以来瞧不起自己的盖洛斯对自己刮目相看的大好机会，请帮他寻找制作盔甲的材料。</p>
+          <p> </p>
+          <p>带来他需要的噬人虫皮革，他很感谢你，给你报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

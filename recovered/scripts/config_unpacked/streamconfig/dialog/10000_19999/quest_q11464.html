@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……这份痛苦，什么时候才能结束呢？</p>
+          <p> </p>
+          <p>看不到尽头的痛苦，让人绝望。</p>
+          <p> </p>
+          <p>不知道你能不能理解我，拥有永恒生命的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大崩溃，已经过去了很长时间。那个无法分辨黑暗和光明的混沌的时期。</p>
+          <p> </p>
+          <p>我只能眼睁睁地看着，自己逐渐变化。</p>
+          <p> </p>
+          <p>我的力量，变得虚弱。我的智慧，失去了光辉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我曾经拥有的力量和智慧，变成了悲伤。</p>
+          <p> </p>
+          <p>只有我的身体和心，还和以前一样。</p>
+          <p> </p>
+          <p>我心中的悲伤，创造出了[%dic:STR_DIC_E_OBJ_IDElim_Seed_Q11450]。</p>
+          <p> </p>
+          <p>帮帮我，守护者。用你纯洁的心灵，抚慰我的伤口。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去寻找[%dic:STR_DIC_E_OBJ_IDElim_Seed_Q11450]，卡斯帕的伤口。</p>
+          <p> </p>
+          <p>如果你拥有博爱的灵魂，一定可以找到。</p>
+          <p> </p>
+          <p>去搜集[%dic:STR_DIC_I_QUEST_11464a]，我的叶子。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>你，要回去了吗……</p>
+          <p> </p>
+          <p>我不想，抓住你不放。</p>
+          <p> </p>
+          <p>我尊重你，如果这是你的意志。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管多么强大的人，都无法独自活下去。</p>
+          <p> </p>
+          <p>我的命运，会因为你的帮助而改变。</p>
+          <p> </p>
+          <p>卡斯帕的伤口，治好了吗？得到[%dic:STR_DIC_I_QUEST_11464a]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出卡斯帕的叶子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>用你的心，看不到我的伤口吗？</p>
+          <p> </p>
+          <p>但是，还有希望……</p>
+          <p> </p>
+          <p>只要你有坚定的意志，就一定可以找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。我终于获得了平静，虽然只是暂时的。</p>
+          <p> </p>
+          <p>只要悲伤还在，痛苦就必定会回来。</p>
+          <p> </p>
+          <p>收下吧，这是我的报答。我不会辜负，你对我的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找并治疗[%dic:STR_DIC_E_OBJ_IDElim_Seed_Q11450]，搜集叶子然后交给[%dic:STR_DIC_N_CaspaGhost_01]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卡斯帕的灵魂，因为自己创造的伤口而痛苦。找到卡斯帕的伤口，搜集卡斯帕的叶子吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡斯帕的灵魂在受到伤口的折磨。找到并治疗伤口，并把搜集到的卡斯帕的叶子交给了卡斯帕的幻影，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

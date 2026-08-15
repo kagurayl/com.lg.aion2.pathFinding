@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和龙族对抗的时候，需要采用多种战略，这你应该知道吧？</p>
+          <p> </p>
+          <p>这段时间我们在对付龙族的时候使用了各种战略和战术。</p>
+          <p> </p>
+          <p>虽然有人认为没什么效果，但我想总有一天我们一定可以找到有效的战略。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最重要的是，要不断给德雷得奇安造成打击。</p>
+          <p> </p>
+          <p>不能给龙族任何喘息的机会。</p>
+          <p> </p>
+          <p>不过你也知道，这需要众多守护者的帮助。</p>
+          <p> </p>
+          <p>[%username]，要是能有你帮忙就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了给德雷得奇安持续造成打击，有两件事需要去做。</p>
+          <p> </p>
+          <p>第一是持续渗透到德雷得奇安内部，不断发动攻击。</p>
+          <p> </p>
+          <p>对德雷得奇安发动持续攻击的重要性，我想应该不需要我强调了。</p>
+          <p> </p>
+          <p>第二是必须消灭掉赞特拉德雷得奇安的[%dic:STR_DIC_M_IDDreadgion_02_DrakanFiHigh_55_Ae]。</p>
+          <p> </p>
+          <p>它们是重要的战斗人员，如果能把它们消灭掉，会对我们一方有很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到你竟然会拒绝。</p>
+          <p> </p>
+          <p>[%username]，你也知道，这个任务并不困难。</p>
+          <p> </p>
+          <p>只要不断对德雷得奇安发动攻击就可以了。</p>
+          <p> </p>
+          <p>不过如果你真的拒绝，我也不会强求。我会去找别人的，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，听说你去执行对德雷得奇安发动持续攻击的任务了。</p>
+          <p> </p>
+          <p>听了那句话后，想到了 [%username]%是可以执行的这次任务。</p>
+          <p> </p>
+          <p>因为那是只有诚实的人才能执行的任务。</p>
+          <p> </p>
+          <p>好了，跟我说说结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你果然完成得非常出色。</p>
+          <p> </p>
+          <p>其他人我不敢说，但我知道你一定可以完成这个任务。</p>
+          <p> </p>
+          <p>来，这个请你收下。你为抵挡德雷得奇安付出了努力，这是给你的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去德雷得奇安执行战斗任务，消灭[%dic:STR_DIC_M_IDDreadgion_02_DrakanFiHigh_55_Ae]%</font></p>
+                         <p visible="[%0]"><font color="[%1]">  德雷得奇安内部战斗([%2]/6)</font></p>
+                         <p visible="[%3]"><font color="[%4]">  第51德拉坎精锐战斗士官([%5]/15)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Barretta]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定对德雷得奇安发动持续的攻击。执行战斗任务，消灭第51德拉坎精锐战斗士官吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>约尔根说虽然目前对德雷得奇安发动了各种攻击，但最重要的是要进行持续攻击。</p>
+          <p> </p>
+          <p>于是去德雷得奇安内部执行战斗任务，消灭了第51德拉坎精锐战斗士官。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命执行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

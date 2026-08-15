@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蜥蜴的鳞片...和熔岩尾鳍，好像很有效。</p>
+          <p> </p>
+          <p>痛苦逐渐减轻了。</p>
+          <p> </p>
+          <p>这全靠了...你的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我就能平静地...等待最后的日子了。</p>
+          <p> </p>
+          <p>虽然我失去了椰林的模样...但是我不想放弃椰林的自尊。</p>
+          <p> </p>
+          <p>不过，有东西成了我保持尊严的障碍。</p>
+          <p> </p>
+          <p>维斯帕让我失去了平静...妨碍了我的冥想...</p>
+          <p> </p>
+          <p>你能...再帮我一次吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_VespaReD_30_n]和[%dic:STR_DIC_M_VespaReD_32_n]嘈杂的拍翅膀的声音，使我失去了平静。</p>
+          <p> </p>
+          <p>请你把它们除掉。</p>
+          <p> </p>
+          <p>让我可以以平静的心...等待最后的日子...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所有的椰林兄弟...都能安然活下去...是我最大的愿望。</p>
+          <p> </p>
+          <p>第二个愿望...是可以平静地迎接最后时刻的到来。</p>
+          <p> </p>
+          <p>但是连这么简单的愿望...都无法实现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从不久之前...我的心稍微平静了一点。</p>
+          <p> </p>
+          <p>我感觉到...维斯帕消失了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_VespaReD_30_n]和[%dic:STR_DIC_M_VespaReD_32_n]...都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是...谢谢你。</p>
+          <p> </p>
+          <p>帮我减轻痛苦...又帮我除掉了维斯帕...</p>
+          <p> </p>
+          <p>现在身体和心...全都恢复了平静...</p>
+          <p> </p>
+          <p>我要像一个真正的椰林那样...迎接最后的日子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除维斯帕</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_VespaReD_30_n]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_VespaReD_32_n]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Magni]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">玛格尼拜托我帮他清除掉妨碍他的平静的黄翅维斯帕和琥珀翅维斯帕。最好应该接受他的请求。</font>                 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛格尼说身体的痛苦消失了，想要像一个真正的椰林一样，平静地等待最后的日子。</p>
+          <p> </p>
+          <p>然而因为吵闹的维斯帕，玛格尼无法找到内心的平静。于是去帮他清除掉了黄翅维斯帕和琥珀翅维斯帕。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

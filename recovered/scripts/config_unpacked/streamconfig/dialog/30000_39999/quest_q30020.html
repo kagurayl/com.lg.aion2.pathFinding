@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那把希埃尔的力量战戟……虽然可以恢复能力，但并不容易。</p>
+          <p> </p>
+          <p>要想把损坏这么严重的东西恢复到原来状态，必定是非常困难的。</p>
+          <p> </p>
+          <p>不过[%username]你很看重武器，我想即使再困难，你也一定不会放弃。</p>
+          <p> </p>
+          <p>如果你觉得太累而中途放弃，会让我觉得很无奈。如果你能坚持到底，我付出的辛苦也就有了价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说绝不会放弃。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你说不会放弃，那我就放心了。</p>
+          <p> </p>
+          <p>知道困难还能迎难而上，看来你应该已经做好了心理准备。</p>
+          <p> </p>
+          <p>我之所以强调会很困难，是因为需要的材料非常珍稀。</p>
+          <p> </p>
+          <p>你愿意去搜集材料吗？只要你能搜集到材料，我会尽自己的全力为你复原战戟的功能。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听说过[%dic:STR_DIC_I_Insidium_01]吗？可能你不知道吧？</p>
+          <p> </p>
+          <p>大崩溃之前，希埃尔主神在这里和提亚马特战斗的时候，散发出巨大的热量和力量。神之金属就是那个时候产生的。</p>
+          <p> </p>
+          <p>总之那是非常好的矿石，现在留存在世界上的已经很少了。听说我们的元老胡内乌斯好像有一些。</p>
+          <p> </p>
+          <p>如果你能接受[%dic:STR_DIC_N_Honeus]的请求，应该就能得到神之金属铸块。虽然可能会比较困难。</p>
+          <p> </p>
+          <p>总之只要你能找到神之金属铸块，我就可以为你修理希埃尔的力量战戟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你对武器没什么太大的兴趣嘛。</p>
+          <p> </p>
+          <p>不过与其中途放弃，倒不如一开始就放弃来得更好。</p>
+          <p> </p>
+          <p>如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>我知道你差不多该回来了，所以正在进行各种准备。</p>
+          <p> </p>
+          <p>请你把神之金属铸块和希埃尔的力量战戟交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出战戟和神之金属铸块。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到你这么没有毅力，[%username]。</p>
+          <p> </p>
+          <p>既然决定去做，就要坚持到底，这样才像个守护者。</p>
+          <p> </p>
+          <p>快去完成[%dic:STR_DIC_N_Honeus]的请求，搜集[%dic:STR_DIC_I_Insidium_01]。</p>
+          <p> </p>
+          <p>别忘了把希埃尔的力量战戟也一起带过来。对了，如果你拿在手上，我就无法加工，所以请你先把它放到箱子里。</p>
+          <p> </p>
+          <p>只要满足这两个条件，其余的就交给我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就搜集到啦。接下去就交给我吧。</p>
+          <p> </p>
+          <p>请稍等一下。</p>
+          <p> </p>
+          <p>(把神之金属铸块放在火炉上溶化后，放在战戟上敲打。)</p>
+          <p> </p>
+          <p>来，好了。你用一下试试。是不是感觉和以前大不一样了？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30020]，然后交给[%dic:STR_DIC_N_Gefeios]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集恢复希埃尔的力量战戟的性能所需的神之金属铸块。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖菲奥斯说要想让希埃尔的力量战戟的性能恢复，必须要有特殊的材料。</p>
+          <p> </p>
+          <p>于是按照他的指示，接受了胡内乌斯的请求，搜集到了神之金属。把材料交给他之后，他帮我把希埃尔的力量战戟复原成了发光的希埃尔的力量战戟。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

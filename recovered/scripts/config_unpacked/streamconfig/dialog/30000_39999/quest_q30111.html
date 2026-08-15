@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+    <QuestInfo>
+    <QuestId>???</QuestId>
+    <QuestName>未录入</QuestName>
+    <QuestType>(在各个装着毒药的玻璃瓶里加入溶液，进行各种试验。)</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(在各个装着毒药的玻璃瓶里加入溶液，进行各种试验。)</p>
+          <p> </p>
+          <p>嗯……好像和想象的有点不同……嗯……</p>
+          <p> </p>
+          <p>啊，[%username]。你还没走啊！真是太好了。</p>
+          <p> </p>
+          <p>[%username]，看来我还得请你帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]你帮我从乌达斯神殿搜集到的毒药，是之前从来没有见到过的类型。</p>
+          <p> </p>
+          <p>甚至连类似的都没有见到过，所以让我很惶恐。</p>
+          <p> </p>
+          <p>我想他们一定是使用格尔克马洛斯出产的什么东西，而且是荒废的乌达斯神殿附近的什么东西制作的。</p>
+          <p> </p>
+          <p>如果不能弄清楚龙信徒使用的毒药的根源是什么，就无法制作出解毒剂。</p>
+          <p> </p>
+          <p>[%username]，希望你能再去一趟荒废的乌达斯神殿，帮我查明毒药的成分。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从毒性来看，我怀疑是某种昆虫的毒素。</p>
+          <p> </p>
+          <p>所以你只要去寻找有没有奇怪的昆虫就行了。</p>
+          <p> </p>
+          <p>请你到荒废的乌达斯神殿去，在有可能有昆虫的地方仔细寻找。</p>
+          <p> </p>
+          <p>找到[%dic:STR_DIC_E_IDTemple_SensoryArea_Q30011]之后，请你顺便把它消灭掉。这样的话，龙信徒们就无法再使用毒药了。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，如果不能帮我这个忙，我就无法配制出解毒剂。</p>
+          <p> </p>
+          <p>既然你帮我找到了毒瓶，希望这件事你也能帮我处理一下。</p>
+          <p> </p>
+          <p>这样我才能配制出有效的解毒剂……</p>
+          <p> </p>
+          <p>本来我可以比其他人更早制作出对抗龙信徒的毒药的解毒剂的……真可惜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你。</p>
+          <p> </p>
+          <p>一想到只要能弄清楚毒药的成分，就可以制作出解毒剂，我就非常激动。</p>
+          <p> </p>
+          <p>毒的根源到底是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有巨大的蜘蛛吗？</p>
+          <p> </p>
+          <p>埃雷修兰塔好像没有[%username]你说的这么大的蜘蛛啊？特别是在有毒的蜘蛛之中。</p>
+          <p> </p>
+          <p>不管怎样，既然知道了毒源，我一定可以比其他人更早制作出解毒剂。 </p>
+          <p> </p>
+          <p>[%username]，这全都是托你的福。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找龙信徒使用的[%dic:STR_DIC_E_IDTemple_SensoryArea_Q30011]%[%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_E_IDTemple_OctacideNamed_54_Ah]%([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Sulbanyer]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">索尔班耶尔说想了解龙信徒使用的毒素的根源。去荒废的乌达斯神殿寻找毒的根源吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+      <notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">发现奥柯特仑的巢穴！消灭大王奥柯特仑！</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔班耶尔说龙信徒们使用的毒素自己从来都没见过，希望知道是用什么材料制作而成的。</p>
+          <p> </p>
+          <p>他说只有知道毒的根源，才能制作出解毒药，并让我顺便消灭毒的根源，让龙信徒无法继续使用毒药。</p>
+          <p> </p>
+          <p>于是在荒废的乌达斯神殿的地下发现了剧毒洞穴，消灭了那里的大王奥柯特仑，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

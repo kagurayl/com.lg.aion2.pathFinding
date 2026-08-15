@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>为了第3神庙训练所，有可能英格丽尔的负担比较大。</p>
+          <p></p>
+          <p>其实... 起初觉得无法担任，但没想到维持的比想的好一些?</p>
+          <p></p>
+          <p>维持受欢迎是否接受了什么帮助呢？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>再怎么推测又有何用呢？我还是做我该做的事吧。</p>
+          <p></p>
+          <p>那么, [%username]您是为了混沌竞技场入场券来找我的吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>入场券是一直准备好的。</p>
+          <p></p>
+          <p>所长也为了第3神庙训练所贡献了很多功劳，幻影大神官也非常关注着。</p>
+          <p></p>
+          <p>所以有充分时间来制作入场卷时，随机都可以进入。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>啊？不是为了入场卷来找我的么？</p>
+          <p></p>
+          <p>那为何来找我呢？</p>
+          <p></p>
+          <p>像[%username]您这样的守护者随时都欢迎。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>入场卷是一个也不能丢掉哦。</p>
+          <p></p>
+          <p>行政官所需要的细心察看的业务。</p>
+          <p></p>
+          <p>请耐心等待。</p>
+          <p></p>
+          <p>几分钟的等待会给予，稳定的训练所运营。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>送[%username] 您混沌竞技场入场券。</p>
+          <p></p>
+          <p>就算不是立即使用也收一下吧！</p>
+          <p></p>
+          <p>有空的时候，可以一次性接受训练哟。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_N_Eno]%那里拿混沌竞技场入场券。</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">与埃纽对话后，拿第3神庙训练所混沌竞技场入场券把。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>埃纽当应过给第3神庙训练所混沌竞技场入场券。</p>
+          <p></p>
+          <p>所以与埃纽对话，拿了混沌竞技场入场券。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

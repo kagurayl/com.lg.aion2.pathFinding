@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你匆匆忙忙地去哪儿呢？</p>
+          <p> </p>
+          <p>也是，我在和你差不多年纪的时候，也每天忙得不可开交。因为担心比不上别人，所以尝试过自己能做的所有的事情。</p>
+          <p> </p>
+          <p>在那个时候，我参加了欧比斯的战斗。提起那里的战争，就让人忍不住要发牢骚。</p>
+          <p> </p>
+          <p>但是后来我的想法变了，希望能过点轻松悠闲的日子。</p>
+          <p> </p>
+          <p>所以我回到了极乐世界，在这里担任近卫兵工作。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>目前我对现在的生活很满意。</p>
+          <p> </p>
+          <p>无聊的时候，可以去书库看看自己喜欢的书；想放松身体的时候，可以去战斗的殿堂和人比试；休假的时候还可以去外港的酒店里喝一杯，吹嘘过去自己曾经多么勇敢。</p>
+          <p> </p>
+          <p>每当那个时候，我就会想起和我一起战斗的战友们，不知道他们现在怎么样了……</p>
+          <p> </p>
+          <p>虽然我们一起从欧比斯回来，但是因为工作地点不同，所以很难见一次面。</p>
+          <p> </p>
+          <p>既然说起来了，我想给我的好朋友写一封信。</p>
+          <p> </p>
+          <p>你要去泰奥勃莫斯吗？那样的话，我想请你帮我把这封信捎过去……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。请稍等一下。只需要一会儿就行了。</p>
+          <p> </p>
+          <p>(在纸上写了点什么，然后装进信封。)</p>
+          <p> </p>
+          <p>来，拿着。请你帮我交给[%dic:STR_DIC_N_LF2a_Guardian_2]。</p>
+          <p> </p>
+          <p>不久前我收到了派遣令，让我到[%dic:STR_DIC_W_LF2B_SZ_A]去。你去那边就能见到我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啧，你不去的话，那就算了。</p>
+          <p> </p>
+          <p>等下班之后，我去寄平信好了。</p>
+          <p> </p>
+          <p>抱歉，拉着你说了这么久。你有急事的话，就去办你的事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对不起，您能把姓名和目的地告诉我吗？</p>
+          <p> </p>
+          <p>啊，每个经过这里的人我们都会这么问，请不要觉得有什么问题。</p>
+          <p> </p>
+          <p>这里是非常危险的地方，我们这样做是为了确认过往的人是否可以安全到达目的地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把乌贝尔特的信交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么信啊？</p>
+          <p> </p>
+          <p>(撕开信封，阅读信)是乌贝尔特寄给我的信啊？</p>
+          <p> </p>
+          <p>听说他在极乐世界当近卫兵……</p>               
+          <p> </p>
+          <p>(把信折起来)等休息的时候再看吧。谢谢您给我送来了这么好的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把乌贝尔特的信交给[%dic:STR_DIC_N_LF2a_Guardian_2]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把乌贝尔特写的问候信交给泰奥勃莫斯的德米斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌贝尔特说他很喜欢极乐世界的生活，但是偶尔会想起在欧比斯一起战斗的战友，因此想给泰奥勃莫斯的德米斯写一封问候信。</p>
+          <p> </p>
+          <p>把乌贝尔特写的信交给了德米斯，他非常高兴，说我给他送去了一份好礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

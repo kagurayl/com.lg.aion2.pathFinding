@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经决定了。我要决定正式向极乐世界请求支援。</p>
+          <p> </p>
+          <p>虽然我不喜欢和别人一起研究，但是燃烧之地的情况这么严重，我又怎能固执己见呢？</p>
+          <p> </p>
+          <p>虽然已经这么决定了，但也不能没有计划，必须先收集材料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先必须证明[%dic:STR_DIC_M_ElementalFire2_23_An]真的是从龙族的气息凝聚成的火焰水晶里诞生。不过那样的话就需要精髓。</p>
+          <p> </p>
+          <p>如果能对体内所含的[%dic:STR_DIC_I_QUEST_3010a]进行调查，就能掌握他的生命的根源了。</p>
+          <p> </p>
+          <p>所以还得麻烦您再辛苦一趟。</p>
+          <p> </p>
+          <p>请去一趟燃烧之地清除炽热的火花精灵，把火焰的精髓给我带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_3010a]当然是越多越好。</p>
+          <p> </p>
+          <p>因为资料越丰富，就越能得出正确的结果。</p>
+          <p> </p>
+          <p>虽然您之前去过那里，不过请您还是小心。不小心的话可能会被烫伤。</p>
+          <p> </p>
+          <p>那我就等你的好消息了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有更重要的事情需要做吗？</p>
+          <p> </p>
+          <p>是我求您办事，所以我也不好说长道短。不过真是遗憾。</p>
+          <p> </p>
+          <p>我跟你提起这个话题就已经相当不容易了，没想到您竟然会一口拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。我正在整理至今为止研究出的结果。</p>
+          <p> </p>
+          <p>让新来的人们哪怕只看到这报告书也能确切了解这里的情况。</p>
+          <p> </p>
+          <p>至今为止研究出的内容都已经记录下来了，现在只要再增加上炽热的火焰的精灵的内容就可以了...</p>
+          <p> </p>
+          <p>来找[%dic:STR_DIC_I_QUEST_3010a]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交火焰的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，到现在还没走干什么呢？</p>
+          <p> </p>
+          <p>推延事情可不是什么好习惯啊。</p>
+          <p> </p>
+          <p>请快到燃烧之地去，除掉[%dic:STR_DIC_M_ElementalFire2_23_An]，把[%dic:STR_DIC_I_QUEST_3010a]带给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是火焰的精髓，绝对没错。</p>
+          <p> </p>
+          <p>把滚烫的火焰的精髓一路送到这里，真是辛苦您了。</p>
+          <p> </p>
+          <p>这些虽然不多，不过请您收下。我从极乐世界给我研究经费中拿出来了一点。</p>
+          <p> </p>
+          <p>以后如果有了什么研究成果，得到什么奖赏的话，到时我会再多加酬谢的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_ElementalFire2_23_An]得到的精髓带给[%dic:STR_DIC_N_Ankises]</font></p>[%collectitem]</step> 
+    </steps>
+          <p><font font_xml="quest_summary">为了让安奇塞斯可以进行研究，除掉燃烧之地的炽热的火焰精灵，收集火焰的精髓，然后交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到燃烧之地出现了火之精灵的消息，安奇塞斯觉得凭自己一人之力研究起来很困难，说要请求上层的支援。 </p>
+          <p> </p>
+          <p>要想请求上层支援，就得先确定是否真有炽热的火焰精灵从火焰水晶出来这一事实，于是请求帮助他除掉精灵找到火焰的精髓。</p>
+          <p> </p>
+          <p>按照他的请求，为他找来了火焰的精髓，他说真是辛苦了，并从研究经费中拿了一部分出来作为酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

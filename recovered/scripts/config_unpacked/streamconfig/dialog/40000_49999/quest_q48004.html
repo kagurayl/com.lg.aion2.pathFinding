@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天桥的周围也有很多人。</p>
+          <p> </p>
+          <p>这里是伏魔殿的大门，自然会有很多人在这里见面。</p>
+          <p> </p>
+          <p>所以经常有人会让我帮着传口信。</p>
+          <p> </p>
+          <p>让我见到他们要找的人的话，就帮他们传话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我这里刚好有您的一个口信。</p>
+          <p> </p>
+          <p>(拿出手册翻看)等等。是伏魔殿特殊司令部留下的。</p>
+          <p> </p>
+          <p>要我现在告诉您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面写着“有要事相商，请到埃雷修兰塔的[%dic:STR_DIC_W_AB1_4]来。[%dic:STR_DIC_N_Viscum]”。</p>
+          <p> </p>
+          <p>已经留在这里有一段时间了，终于等到您来了。</p>
+          <p> </p>
+          <p>如果您要到普利姆要塞去，就必须先去莫尔海姆冰封要塞。</p>
+          <p> </p>
+          <p>如果您想现在就去，就请跟我说。我会马上把您送到莫尔海姆。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实内容并不长……</p>
+          <p> </p>
+          <p>看来您一定有什么急事吧？</p>
+          <p> </p>
+          <p>有时间的话，请您一定要来找我。口信我会一直保留着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我就单刀直入，直话直说了。</p>
+          <p> </p>
+          <p>您知道魔界的军事组织中，有个特殊司令部吧？虽然隶属于伏魔殿，但和一般的军团和执政官组织相比，他们的命令体系更加自由、更具有流动性。</p>
+          <p> </p>
+          <p>他们通过秘密传递的指令书，以个人为单位进行小规模活动，因此可以执行很多正规军队无法执行的任务。</p>
+          <p> </p>
+          <p>如果您看到我们特殊司令部之前立下的功绩，一定会大吃一惊的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们是必须在艰难的环境下对抗众多敌人的组织，因此不会随便接受新成员加入。</p>
+          <p> </p>
+          <p>面对任何敌人都不退缩的人，才有资格加入我们特殊司令部。</p>
+          <p> </p>
+          <p>[%username]大人，您觉得怎么样？听说这段时间您和无数的强敌战斗过。</p>
+          <p> </p>
+          <p>如果您不喜欢在危险的战场上和敌人战斗，您也可以拒绝。但是我觉得如果[%username]大人能加入我们特殊司令部，一定能给我们注入新的力量。</p>
+          <p> </p>
+          <p>加入和退出都是自由的，全由[%username]大人您自己判断。</p>
+          <p> </p>
+          <p>如果有什么问题或者希望加入我们，请随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Viscum]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿特殊司令部的比斯肯在找我。去埃雷修兰塔的普利姆要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿特殊司令部的比斯肯呼叫我，说可以告诉我一个有用的情报，于是去埃雷修兰塔的普利姆要塞见了他。</p>
+          <p> </p>
+          <p>他跟我介绍了伏魔殿特殊司令部的情况，说如果想加入，可以去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

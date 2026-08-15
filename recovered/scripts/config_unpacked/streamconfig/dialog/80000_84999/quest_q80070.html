@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您还记得设置好名字后睁开眼睛的时候，是站在什么地方吗？</p>
+          <p> </p>
+          <p>您还记得时间是怎么流逝的吗？</p>
+          <p> </p>
+          <p>到现在为止，您是不是只顾着盯着眼前呢？</p>
+          <p> </p>
+          <p>您想在今天花一点时间，梳理一下过去的日子吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您想回普埃塔去看看吗？</p>
+          <p> </p>
+          <p>也许有人会说那里很可怕，也许有人会说很想念那里。</p>
+          <p> </p>
+          <p>我想为您推荐几处值得回去看看的地方。</p>
+          <p> </p>
+          <p>怎么样？您想回去看看，顺便吹吹风吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说想回去看看。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说以后再说。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>旅游路线是我自己制作的。</p>
+          <p> </p>
+          <p>我把旅游指南给您。请您参考上面的提示去做。</p>
+          <p> </p>
+          <p>对了，您要去的东方，会有人送纪念品给您。</p>
+          <p> </p>
+          <p>请别忘了把纪念品带回来。明白了吗？</p>
+          <p> </p>
+          <p>好的，祝您旅途愉快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还是只盯着眼前，在努力地奔跑啊。</p>
+          <p> </p>
+          <p>以后如果有了时间，请一定要再来找我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是看了[%dic:STR_DIC_N_event_Makana]的旅游指南之后来的吗？</p>
+          <p> </p>
+          <p>她给的提示好像太简单了。</p>
+          <p> </p>
+          <p>普埃塔食物味道最好的地方就只有这里了。</p>
+          <p> </p>
+          <p>你能把旅游指南给我看看吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出旅游指南。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在旅游指南上记下了秘密信息，表示你已经到过这里。</p>
+          <p> </p>
+          <p>你只要把它给[%dic:STR_DIC_N_event_Makana]看看就行。</p>
+          <p> </p>
+          <p>哎呀，差点忘了。请你拿点普埃塔特制面包去。</p>
+          <p> </p>
+          <p>好的，请你到下一个目的地去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还记得我之前说过的话吗？</p>
+          <p> </p>
+          <p>黄昏的天空映照在湖水中，会映出梦幻的光。</p>
+          <p> </p>
+          <p>或者，在旅行指南上有介绍吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_no;HACTION_SELECT3_1">拿出旅游指南。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，给您。旅行指南好像没有想象中的那么人性化。</p>
+          <p> </p>
+          <p>不过不管在什么地方，夕阳的美丽都是不会变的。</p>
+          <p> </p>
+          <p>我把画着克利奥尼湖的纪念明信片送给你</p>
+          <p> </p>
+          <p>现在还剩下最后一个目的地。</p>
+          <p> </p>
+          <p>您可以在附近逛逛，慢慢地过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎来到这里。</p>
+          <p> </p>
+          <p>跑到这里来，一定很辛苦吧。</p>
+          <p> </p>
+          <p>这里是旅行指南上的最后一个目的地吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_panic;HACTION_SELECT4_1">说是的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，人应该经常到这种美丽的地方来。</p>
+          <p> </p>
+          <p>让自己的脑袋休息一下，享受一下悠闲的时光。</p>
+          <p> </p>
+          <p>给，我给你的是蘑菇符。很可爱吧？</p>
+          <p> </p>
+          <p>见到你真的很高兴。路上小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>旅行怎么样啊？</p>
+          <p> </p>
+          <p>我来确认一下旅行指南和纪念品。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出旅行指南和纪念品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯！您全都找到啦！</p>
+          <p> </p>
+          <p>普埃塔真的很美，不是吗？朴实、美丽、多情。</p>
+          <p> </p>
+          <p>拿回来的纪念品都是送给您的纪念品，我把它们全部送给您！</p>
+          <p> </p>
+          <p>有时间的话，偶尔到去过的地方寻找寻找回忆，也是很不错的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到普埃塔食物最美味的地方。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">找到普埃塔夕阳最美丽的地方。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">找到普埃塔长着最可爱的蘑菇的地方。</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">把旅游指南和纪念品交给[%dic:STR_DIC_N_event_Makana]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打开旅游指南，访问普埃塔的各个风景名胜，获得纪念品之后交给马卡娜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>旅行的守护者马卡娜突然劝我到普埃塔去旅行。</p>
+          <p> </p>
+          <p>打开旅行指南，上面写着马卡娜选定的访问目的地的提示。</p>
+          <p> </p>
+          <p>找到了普埃塔食物最美味的地方、普埃塔夕阳最美丽的地方和普埃塔长着最可爱的蘑菇的地方，在旅行指南上盖了章，获得了纪念品。</p>
+          <p> </p>
+          <p>回到马卡娜那里之后，把纪念品给她看，她说偶尔应该休息休息，像今天一样享受闲暇。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

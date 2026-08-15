@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比阿努阿基塔兰。</p>
+          <p> </p>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我虽然从来没有和你说过，但我一直把[%username]你当成是影子的朋友。</p>
+          <p> </p>
+          <p>所以才冒着危险和你说这些话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问影子是什么意思。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>执行完这次的任务之后，你就自然会知道影子是什么意思。</p>
+          <p> </p>
+          <p>你现在什么都别问，只要按照我说的去做就行了。</p>
+          <p> </p>
+          <p>你去极乐世界贤者的书库见见历史学家[%dic:STR_DIC_N_Nestor]。</p>
+          <p> </p>
+          <p>他会告诉你所有的一切。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。 </Act>
+    </Selects>
+    <Voice file="Q1076-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比阿努阿基塔兰！</p>
+          <p> </p>
+          <p>欢迎你，影子的朋友。</p>
+          <p> </p>
+          <p>事实上，这段时间我一直在观察你。</p>
+          <p> </p>
+          <p>现在终于到了告诉你我所见到的事情的时候。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须要查清楚，伊卡罗尼斯到底做了些什么。</p>
+          <p> </p>
+          <p>为了查清这件事，必须要有一件东西。而要制作那样东西，首先需要搜集材料。</p>
+          <p> </p>
+          <p>需要搜集的材料是[%dic:STR_DIC_I_QUEST_1076a]、[%dic:STR_DIC_E_jewelry_n_c_30b]和[%dic:STR_DIC_I_QUEST_1076c]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1076a]可以通过打猎获得。而[%dic:STR_DIC_E_jewelry_n_c_30b]可以从亚特雷亚各地的天青石矿脉中采集到。</p>
+          <p> </p>
+          <p>问题是[%dic:STR_DIC_I_QUEST_1076c]，必须到埃雷修兰塔上层的巨神兵之墓才能搜集到。你去那里打猎[%dic:STR_DIC_M_Ab1_1221_ElementalFire2_40_An]就可以获得。</p>
+          <p> </p>
+          <p>搜集齐材料之后，拿去交给炼金术名人[%dic:STR_DIC_N_Diana]大人。</p>
+          <p> </p>
+          <p>我已经跟他说过了，只要把材料送过去，他就会帮你做成隐藏的真实之宝珠。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！</p>
+          <p> </p>
+          <p>我正在等你呢。</p>
+          <p> </p>
+          <p>奈斯托尔又给了我一件奇怪的委托。</p>
+          <p> </p>
+          <p>干嘛老是让我制作这些奇怪的东西啊。</p>
+          <p> </p>
+          <p>好了，材料拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要的东西一样不少。</p>
+          <p> </p>
+          <p>稍等一下。我已经准备好了，应该不会花太长时间。</p>
+          <p> </p>
+          <p>(把各种东西混在一起，制作宝珠。) </p>
+          <p> </p>
+          <p>好了，做好了。拿去交给[%dic:STR_DIC_N_Nestor]。</p>
+          <p> </p>
+          <p>帮我跟他说，以后像这种奇怪的委托最好少一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1076-3.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奈斯托尔好像找了个傻瓜。</p>
+          <p> </p>
+          <p>要制作宝珠，难道不需要材料吗！</p>
+          <p> </p>
+          <p>请你快去搜集[%dic:STR_DIC_I_QUEST_1076a]、[%dic:STR_DIC_E_jewelry_n_c_30b]和[%dic:STR_DIC_I_QUEST_1076c]。</p>
+          <p> </p>
+          <p>没有材料就没有宝珠。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1076-4.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]。</p>
+          <p> </p>
+          <p>你搜集到我说的材料，交给迪亚娜大人了吗？</p>
+          <p> </p>
+          <p>迪亚娜大人帮我把宝珠做好了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">拿出宝珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想在暗黑碎片，埃古斯和伊卡罗尼斯之间一定发生了什么事情。</p>
+          <p> </p>
+          <p>这个宝珠会让你看到过去发生了什么事情。</p>
+          <p> </p>
+          <p>请你看看埃古斯和伊卡罗尼斯之间到底发生了什么吧。</p>
+          <p> </p>
+          <p>如果你准备好了的话，就把手放到宝珠上。那样的话，过去就会显现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO4">把手放到宝珠上。</Act>
+    </Selects>
+    <Voice file="Q1076-5.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一直以来，我对埃古斯的死都抱有疑问。</p>
+          <p> </p>
+          <p>现在终于可以知道发生了什么事了。</p>
+          <p> </p>
+          <p>好了，告诉我到底发生了什么事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT6_1">告诉他看到的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是这样！</p>
+          <p> </p>
+          <p>看来伊卡罗尼斯一定早就知道埃古斯的身份。</p>
+          <p> </p>
+          <p>事实上，埃古斯和我都属于影子长老会，是出色地完成过很多事情的同志...</p>
+          <p> </p>
+          <p>看来我得给你说明一下影子长老会是怎么回事。</p>
+          <p> </p>
+          <p>简单地说，就是一群隐藏在亚特雷亚背后的真实的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT6_1_1">询问隐藏的真实是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>年轻的守护者们好像都已经忘记了，亚特雷亚原来是一个，不是吗？</p>
+          <p> </p>
+          <p>后来由于大崩溃而变成了两块，产生了天族和魔族，在漫长的岁月里一直持续不断地战斗。原因是不毁掉对方的永恒之塔的话，自己一方就会灭亡。</p>
+          <p> </p>
+          <p>但是我们影子长老会相信这并非事实，应该可以找到让亚特雷亚恢复原貌的方法。</p>
+          <p> </p>
+          <p>[%username]，总有一天你会知道的。</p>
+          <p> </p>
+          <p>不管怎样，我得把埃古斯的事情告诉同志们。请你去极乐世界大圣所，帮我把这件事告诉[%dic:STR_DIC_N_Aithra]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO6">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1076-6.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select7">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>您找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT7_1">转达奈斯托尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select7_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾四周，小声地说)比阿努阿基塔兰。</p>
+          <p> </p>
+          <p>埃古斯果然是死在了伊卡罗尼斯手上...</p>
+          <p> </p>
+          <p>我知道了。谢谢你冒着危险，告诉我这么重要的事。</p>
+          <p> </p>
+          <p>但是这件事不是我可以处理的。</p>
+          <p> </p>
+          <p>不好意思，您能帮我把这件事告诉[%dic:STR_DIC_N_Boreas]大人吗？</p>
+          <p> </p>
+          <p>不要被别人看到。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1076-7.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你不像是来学习技能的。</p>
+          <p> </p>
+          <p>找我有什么事吗，[%userclass]？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达内尔图斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比阿努阿基塔兰。</p>
+          <p> </p>
+          <p>我担心的事情果然是真的。</p>
+          <p> </p>
+          <p>一直以来，我都觉得伊卡罗尼斯很可疑，但没想到他会加害埃古斯。</p>
+          <p> </p>
+          <p>看来有必要对伊卡罗尼斯进行追踪。谢谢你告诉我这么重要的事情，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Juditio]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Nestor]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">搜集[%dic:STR_DIC_I_QUEST_1076UNI]，然后交给[%dic:STR_DIC_N_Diana]</font>[%collectitem]</p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Nestor]对话</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">查看过去发生的事件</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nestor]报告</font></p></step>
+               <step><p visible="[%18]"><font color="[%19]">向[%dic:STR_DIC_N_Aithra]报告</font></p></step>
+               <step><p visible="[%21]"><font color="[%22]">向[%dic:STR_DIC_N_Boreas]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：由迪提欧说有秘密的事情要拜托我。去特米伦据点见见由迪提欧吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由迪提欧说一直把我当作是影子的朋友，让我什么都别问，只要接受他的委托就行。</p>
+          <p> </p>
+          <p>按照他的指示见到了奈斯托尔，他说回想自己过去目击的事情，埃古斯之所以会死，好像是伊卡罗尼斯的阴谋。</p>
+          <p> </p>
+          <p>按照他的拜托搜集材料，委托炼金术名人迪亚娜制造出了真实的宝珠。奈斯托尔让我通过宝珠查看过去发生的事情。</p>
+          <p> </p>
+          <p>看到伊卡罗尼斯加害埃古斯后，告诉了奈斯托尔。他表明了自己影子长老会的身份，说伊卡罗尼斯好像发现了埃古斯的身份。</p>
+          <p> </p>
+          <p>他让我帮他把消息转告给各个同志，于是依次去转告了艾特拉和布雷亚斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

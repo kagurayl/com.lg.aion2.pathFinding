@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？怎么可能！</p>
+          <p> </p>
+          <p>这是真的吗！</p>
+          <p> </p>
+          <p>这可真是……让人吃惊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道巨人吗？</p>
+          <p> </p>
+          <p>看样子，你是第一次听说巨人吧？</p>
+          <p> </p>
+          <p>不过这是当然的。他们出现的时间，是在很久很久以前。</p>
+          <p> </p>
+          <p>他们是创造巨神兵的种族，是永恒之塔为了创造巨神兵而创造的人。</p>
+          <p> </p>
+          <p>人们都以为巨神兵消失之后，他们就一起消失了。从这份龙族的文件来看，他们好像仍然存在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+    <CutScene id="511"/>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据这份文件，龙族指使龙信徒占领荒废的乌达斯神殿，是因为巨神兵。</p>
+          <p> </p>
+          <p>他们的目的是在地下挖掘洞穴，进入巨人工房，得到巨神兵的动力源。</p>
+          <p> </p>
+          <p>不知道他们寻找巨神兵的动力源到底是用来干什么的。</p>
+          <p> </p>
+          <p>不管怎样，如果龙信徒和龙族的目的是这个的话，我们就必须在他们之前下手，阻止他们的阴谋。</p>
+          <p> </p>
+          <p>[%username]，这件事情能由你负责吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从文件上看，巨人工房好像可以通过乌达斯神殿的地下到达。</p>
+          <p> </p>
+          <p>通过暗黑流放所旁边的通道，经过剧毒洞穴，应该就能到达巨人工房了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_IDTemple_GiganticCore_Q30008]就在巨人工房最里面的坍塌的通道的工作台上。</p>
+          <p> </p>
+          <p>龙信徒可能会拼命骚扰你，巨人的抵抗也会很激烈。不过相信[%username]你一定不会让我失望的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得对巨人和巨神兵不了解，所以不想和这件事扯上关系吗？</p>
+          <p> </p>
+          <p>真是！真不知道该说你没有使命意识，还是对现实缺乏认识……</p>
+          <p> </p>
+          <p>不过我也不能强人所难，我就不再劝你了。</p>
+          <p> </p>
+          <p>我会和苏埃洛丝讨论之后想办法处理的，[%username]，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我正在等你。</p>
+          <p> </p>
+          <p>我曾经让[%username]你帮我执行过很多任务，但从来没有像今天这样焦急过。</p>
+          <p> </p>
+          <p>对了，巨神兵的动力源找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出巨神兵的动力源。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不喜欢多说话。</p>
+          <p> </p>
+          <p>到目前为止，我的同伴们不用我多说什么，就可以把事情处理得很好。</p>
+          <p> </p>
+          <p>但是[%username]……</p>
+          <p> </p>
+          <p>唉，我不想多说什么。请你快去寻找[%dic:STR_DIC_OBJ_IDTemple_GiganticCore_Q30008]。我需要你做的，就是这些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是巨神兵的动力源吗？</p>
+          <p> </p>
+          <p>嗯，我从来没有单独看到过巨神兵的部件，不告诉我这是什么的话，我根本不会想到。</p>
+          <p> </p>
+          <p>但是操纵龙信徒的德拉坎，到底为什么要费尽心思地挖洞，想要把这个东西弄到手呢……</p>
+          <p> </p>
+          <p>看来我得和同伴们联系，让他们帮着进行细致的调查才行。</p>
+          <p> </p>
+          <p>辛苦你了，[%username]。多亏了你，我们阻止了龙信徒的阴谋。我绝对不会忘记你的帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_IDTemple_GiganticCore_Q30008]，然后交给[%dic:STR_DIC_N_Honeus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">龙族和龙信徒正在对巨神兵的动力源虎视眈眈。去巨人工房抢在他们之前找到巨神兵的动力源吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡内乌斯在解读了龙族的文件之后，得知了巨神兵仍然存在这一惊人的事实，他说龙族觊觎的，是巨神兵的动力源。</p>
+          <p> </p>
+          <p>他说要想阻止阴谋，就必须先得到巨神兵的动力源。于是去巨人工房，找到了巨神兵的动力源。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

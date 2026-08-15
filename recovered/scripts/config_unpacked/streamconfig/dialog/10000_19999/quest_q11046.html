@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(小巧的宝石箱子。)</p>
+          <p> </p>
+          <p>(打开一看，里面装着一块小吊坠。) </p>
+          <p> </p>
+          <p>(吊坠里装着一张全家福照片。) </p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Dorsia]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是在下面捡到的？</p>
+          <p> </p>
+          <p>从外表来看，好像是极乐世界很流行的宝石箱子……</p>
+          <p> </p>
+          <p>随便打开别人的东西看，好像有点不太好……</p>
+          <p> </p>
+          <p>不过为了找到主人，打开看看也没关系吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说没关系。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……这个人……我认识。</p>
+          <p> </p>
+          <p>他是去调查卡斯帕的时候受伤的沉默之匕军团的守卫。</p>
+          <p> </p>
+          <p>他非常爱自己的妹妹，也很爱自己的夫人。家里人知道他受伤之后，一定会很伤心的。</p>
+          <p> </p>
+          <p>谢谢您。本来您可以不管的，却特地给我送过来。</p>
+          <p> </p>
+          <p>这个箱子我会帮您还给主人的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Dorsia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在卡斯帕附近捡到了一个宝石箱子。拿去给多尔希亚看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在卡斯帕附近捡到了一个宝石箱子。</p>
+          <p> </p>
+          <p>给多尔希亚看了之后，多尔希亚说这是对卡斯帕进行调查的时候受了伤的守卫的东西，会帮我还给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

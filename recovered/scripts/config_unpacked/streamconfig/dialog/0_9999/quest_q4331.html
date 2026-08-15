@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办才好呢！</p>
+          <p> </p>
+          <p>不久前，我读了一封绑在野狼尾巴上的信，之后和米尔卡百夫长大人一起想了好久，制定了一份讨伐史匹格的计划书。</p>
+          <p> </p>
+          <p>但是我却犯下了蠢事！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔卡百夫长大人叮嘱我一定要保管好，但是在我不注意的时候，史匹格们闯了进来，偷走了讨伐计划书。</p>
+          <p> </p>
+          <p>要是这件事传出去的话，百夫长大人一定会狠狠地处罚我的，村子也会因此陷入危险。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+          <p> </p>
+          <p>我不想因为这件事而让米尔卡百夫长大人失望。</p>
+          <p> </p>
+          <p>求您了。请您一定要帮我找到丢失的讨伐计划书。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>讨伐计划书有两种。一种是我制作的计划书，另一种是米尔卡百夫长大人制作的。请把两种计划书全部找回来。</p>
+          <p> </p>
+          <p>虽然不能确定，但我觉得讨伐计划书应该是被力气很大、身形矫健的[%dic:STR_DIC_M_Sprigg2_32_An]%和[%dic:STR_DIC_M_Sprigg3_33_An]%偷走的。</p>
+          <p> </p>
+          <p>请您去对它们进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您就不能再考虑一下吗？</p>
+          <p> </p>
+          <p>为了伊拉西克村所有的人！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不知道我等得有多着急！</p>
+          <p> </p>
+          <p>讨伐计划书找到了吗？</p>
+          <p> </p>
+          <p>快给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出讨伐计划书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，哎呀……计划书缺了一部分。</p>
+          <p> </p>
+          <p>必须把[%dic:STR_DIC_I_QUEST_4331A]%和[%dic:STR_DIC_I_QUEST_4331B]%全部找到才行。</p>
+          <p> </p>
+          <p>如果不能全部找到，就没有意义了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>讨伐计划书全都找到了，一张都没有少！</p>
+          <p> </p>
+          <p>真希望能亲眼看到那些可恶的史匹格挣扎的样子！</p>
+          <p> </p>
+          <p>[%username]大人，您是上天派来的恩人！</p>
+          <p> </p>
+          <p>我没什么别的送您，但这是我的一份心意，请一定要收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到被史匹格偷走的[%dic:STR_DIC_I_QUEST_4331A]%和[%dic:STR_DIC_I_QUEST_4331B]%，然后交给[%dic:STR_DIC_N_Adhis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说阿德西斯和米尔卡百夫长制作的讨伐计划书被史匹格偷走了。找到丢失的讨伐计划书，然后交给阿德西斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿德西斯说自己保管的史匹格讨伐计划书被偷走了，让我去消灭史匹格，找回讨伐计划书。</p>
+          <p> </p>
+          <p>在斯普利根战士和斯普利甘特掠夺者身上找到了讨伐计划书，并交给了阿德西斯，她对我表示衷心的感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

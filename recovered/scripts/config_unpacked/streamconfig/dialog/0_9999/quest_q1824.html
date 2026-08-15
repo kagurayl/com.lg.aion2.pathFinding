@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来要操心的事情已经够多的了，现在还得操心武器。</p>
+          <p> </p>
+          <p>可能是由于拉米兰岛的空气太热，所以武器发生了问题。</p>
+          <p> </p>
+          <p>啊，不是这段，而是长时间暴露在高温下，剑和弓之类的有一点变形。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问解决方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听莫伊拉伊说贪欲兽的心脏不怕火。如果能把它融化涂在武器上，应该就不会变形了。</p>
+          <p> </p>
+          <p>所以就需要有贪欲兽的心脏。刚好岛上生活着[%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]，采集起来会比较容易。但问题是应该让谁去。</p>
+          <p> </p>
+          <p>您也看到了，最近因为其它问题，大家都忙得焦头烂额。</p>
+          <p> </p>
+          <p>可以的话，这件事情我想交给[%username]大人，您觉得怎么样？愿意接受吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，听您这么说，我总算放心了。</p>
+          <p> </p>
+          <p>我一直在头疼这件事应该交给谁呢。</p>
+          <p> </p>
+          <p>那我就全靠[%username]大人了。您帮我搜集10个[%dic:STR_DIC_I_QUEST_1824a]就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。[%username]大人应该也是有自己的事情，才会拒绝我的。</p>
+          <p> </p>
+          <p>不过我还是很担心。[%username]大人您也清楚，武器是非常敏感的东西，稍微一有变形，手感就会大打折扣。</p>
+          <p> </p>
+          <p>这样下去的话，士兵们就无法发挥自己的能力了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>去的路上，您遇到红色赫西亚军团了吗？他们最近很安静，我反倒觉得很不安。</p>
+          <p> </p>
+          <p>哎呀，看我的记性。我让您帮我搜集的东西搜集到了吗？就是[%dic:STR_DIC_I_QUEST_1824a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拉米兰贪欲兽的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的箱子应该没漏吧。其余的东西呢？</p>
+          <p> </p>
+          <p>不好意思，光这点东西没有用。</p>
+          <p> </p>
+          <p>必须要有10个[%dic:STR_DIC_I_QUEST_1824a]，才能给要塞的士兵们的武器全部涂上。</p>
+          <p> </p>
+          <p>麻烦你再去一趟，搜集满说好的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真神奇。我想不怕火的东西应该很烫，没想到反而和冰块一样。</p>
+          <p> </p>
+          <p>啊，现在不是说这些的时候！我得在敌人攻过来之前，赶紧把它熔化，镀到武器上去。</p>
+          <p> </p>
+          <p>啊，等等！我觉得这些好像不太够。对了？</p>
+          <p> </p>
+          <p>以后如果再搜集到贪欲兽的心脏，请您拿来给我。虽然我给不了您太多，但这么多的酬劳是必须的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]，搜集心脏，然后交给[%dic:STR_DIC_N_Ab1_1241_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了制作不怕火的武器，去搜集拉米兰贪欲兽的心脏，然后交给泰盖塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰盖塔由于拉米兰岛的热气，武器产生了变形，这样下去的话，士兵们将无法发挥自己的实力。</p>
+          <p> </p>
+          <p>还好莫伊拉伊告诉了他解决方法，那就是把不怕火的贪欲兽的心脏熔化后镀到武器上。</p>
+          <p> </p>
+          <p>按照泰盖塔指示去打猎拉米兰贪欲兽，搜集到心脏后交给了他。他说量好像不够，让我如果再有贪欲兽的心脏的话，就拿去交给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

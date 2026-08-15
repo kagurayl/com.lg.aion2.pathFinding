@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来找我，看来已经见过希宁战斗教官了吧。</p>
+          <p> </p>
+          <p>您一定是需要第3神庙训练所的入场券，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>孤独竞技场是1对1进行决斗的地方。</p>
+          <p> </p>
+          <p>混沌竞技场是多人同时对决的地方。</p>
+          <p> </p>
+          <p>必须有竞技场入场券，才能进入对应的竞技场。</p>
+          <p> </p>
+          <p>[%username]大人，我可以把准备好的入场券送给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竞技场入场券的发放需要一些时间，请稍等一下。</p>
+          <p> </p>
+          <p>每人每天只能出入1次，因此需要确认之前是否已经发放过。</p>
+          <p> </p>
+          <p>此外，还需要确认[%username]大人有没有资格。啊，必须拥有使用实战训练所的实力才行。</p>
+          <p> </p>
+          <p>我马上就能确认好，请稍等一下，别走太远。</p>
+          <p> </p>
+          <p>确认完毕之后，我会叫您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？您不需要竞技场入场券吗？</p>
+          <p> </p>
+          <p>没有竞技场入场券的话，就无法参加第3神庙训练所的训练。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人？您是[%userclass]，对吧？</p>
+          <p> </p>
+          <p>确认完毕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，请收好。这是竞技场入场券。</p>
+          <p> </p>
+          <p>每天只能领取一张，请小心不要弄丢。</p>
+          <p> </p>
+          <p>呼，我很担心英格奈丝会累垮身体。</p>
+          <p> </p>
+          <p>光是第1、第2神庙训练所就已经够麻烦的了，现在又开放了第3神庙训练所，该有多累啊？要是我的话，早就撒手不干了。</p>
+          <p> </p>
+          <p>啊，我在说什么呢？</p>
+          <p> </p>
+          <p>哈哈……哈哈，[%username]大人，请努力接受训练吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Reigar]那里领取竞技场入场券吧</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去雷加尔行政官那里领取竞技场入场券吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去雷加尔行政官那里领取入场券，他说每天只能发放一次，让我稍等一下。</p>
+          <p> </p>
+          <p>确认完毕之后，他把竞技场入场券交给了我，让我努力训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

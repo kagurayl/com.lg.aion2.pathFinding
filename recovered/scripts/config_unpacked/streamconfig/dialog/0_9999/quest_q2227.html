@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也认为我疯了吧？</p>
+          <p> </p>
+          <p>真是！我可是有着别人无法想象的超能力呢！</p>
+          <p> </p>
+          <p>只要找到城门的钥匙，我就让你看看我的厉害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，看来你不太相信啊！</p>
+          <p> </p>
+          <p>没关系。只要我证明给你看，你就不信也得信了。</p>
+          <p> </p>
+          <p>只要找到钥匙就行了。不，再做一把也行啊。</p>
+          <p> </p>
+          <p>材料到处都是，马上就能做成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问做钥匙的材料是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是精灵结晶啊！只要抓到[%dic:STR_DIC_M_WElemental1stD_13_An]%就能找到了。</p>
+          <p> </p>
+          <p>因为是湖之城，钥匙当然是要从湖里的精灵那里拿到了！</p>
+          <p> </p>
+          <p>只要你拿来精灵结晶，我就把城门给你打开。</p>
+          <p> </p>
+          <p>怎么样，你能搜集到精灵结晶吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好！那就快去消灭[%dic:STR_DIC_M_WElemental1stD_13_An]%，把精灵结晶带回来！</p>
+          <p> </p>
+          <p>哈哈哈，这回又要去城里了！</p>
+          <p> </p>
+          <p>既然你要把做钥匙的材料带来，那我就特别地招待你一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是怎么也不相信我了。</p>
+          <p> </p>
+          <p>或者是你打不过湖里的那些精灵？</p>
+          <p> </p>
+          <p>算了吧。</p>
+          <p> </p>
+          <p>我不跟不相信我的人说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还以为你逃跑了呢，居然回来了。</p>
+          <p> </p>
+          <p>你也想到我的城里去吧？</p>
+          <p> </p>
+          <p>快把做钥匙的材料交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">交出精灵结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道！</p>
+          <p> </p>
+          <p>都不相信我的话。都说知道了，可其实一点也不信。</p>
+          <p> </p>
+          <p>要是相信我的话，肯定会给我带来精灵结晶的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么呀这是？拿这种东西说是做钥匙的材料？</p>
+          <p> </p>
+          <p>精灵结晶也有质量好坏之分！</p>
+          <p> </p>
+          <p>拿这种低劣的精灵结晶来，你是看不起我吗！</p>
+          <p> </p>
+          <p>我不会理睬看不起我的人。赶紧滚吧！ </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_WElemental1stD_13_An]，搜集精灵结晶，然后交给[%dic:STR_DIC_N_Gor]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">疯子高尔说需要找到些材料制作打开城门的钥匙。捕捉湖里的精灵，搜集精灵结晶交给高尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>疯子高尔说需要找到些材料制作打开城门的钥匙，让我去捕捉湖里的精灵，搜集精灵结晶交给他。</p>
+          <p> </p>
+          <p>但是把精灵结晶交给他以后，他却生气地说我拿很差的东西来糊弄他，是看不起他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

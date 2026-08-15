@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(覆盖着尘土，看不太清楚，但地上好像有一本打开的书。)</p>
+          <p> </p>
+          <p>(拍掉灰尘仔细查看，是一本古老的记录。)</p>
+          <p> </p>
+          <p>(大部分都是暗号，可以看到雷帕尔团的纹样。)</p>
+          <p> </p>
+          <p>(应该去向远征军[%dic:STR_DIC_N_Barus]报告。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把书放进箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>崇拜者的势力仅靠一两名守护者是无法清除的。</p>
+          <p> </p>
+          <p>希望能尽快得到支援……</p>
+          <p> </p>
+          <p>更大的问题是崇拜者的势力正在逐渐扩大。</p>
+          <p> </p>
+          <p>持续有鸢族遭到劫持，这件事一定和崇拜者势力有关。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出灰尘覆盖的书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>全都是用暗号写成的。但是，咦……这是？</p>
+          <p> </p>
+          <p>这本书一定和雷帕尔革命团有关。</p>
+          <p> </p>
+          <p>发现这本书的事情，您必须帮我保密。</p>
+          <p> </p>
+          <p>在狂信徒神殿发现这本书的事情，不能告诉任何人。</p>
+          <p> </p>
+          <p>请你帮我秘密地告诉[%dic:STR_DIC_N_Zenobia]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的天气还挺不错。城市里的人只要一提起龙界，就以为到处都有火球飞来飞去。</p>
+          <p> </p>
+          <p>英吉斯温的中央军就想着回城市里去。[%username]大人，你也这么想吗？</p>
+          <p> </p>
+          <p>这里有那么多有趣的事情，他们怎么就不喜欢这里呢？真让人无法理解。</p>
+          <p> </p>
+          <p>有传言说我在进行某种奇怪的调查，但那完全是误会。我只不过是好奇心比较强罢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出灰尘覆盖的书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细地查看书，大吃一惊。)</p>
+          <p> </p>
+          <p>[%username]大人，发现这本书的事情，您能帮我保密吗？</p>
+          <p> </p>
+          <p>还有，这本书能送给我吗？请一定要帮我保密。我把这个送给您。</p>
+          <p> </p>
+          <p>收下它，就说明您答应帮我保守秘密了。</p>
+          <p> </p>
+          <p>在乌达斯神殿发现雷帕尔革命团的书的事情，千万不能告诉别人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Barus]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Zenobia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在乌达斯神殿捡到了一本刻有革命团纹样的书。应该去向巴鲁斯报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在乌达斯神殿捡到了一本被灰尘覆盖着的书，里面的内容是用暗号写成的，在书中可以看到多处革命团的纹样。</p>
+          <p> </p>
+          <p>拿去向巴鲁斯报告，他让我拿去交给杰诺比亚。</p>
+          <p> </p>
+          <p>杰诺比亚说发现书的事情必须保密，并给了我一些基纳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

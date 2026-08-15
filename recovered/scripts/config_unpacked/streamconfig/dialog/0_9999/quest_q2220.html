@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者！</p>
+          <p> </p>
+          <p>现在想想，5粒普斯谷种子可能不够。</p>
+          <p> </p>
+          <p>虽说普斯谷在哪都能生长，可打了一辈子猎的人，开头几次肯定种不好的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到时又得找普斯谷的种子，也不能每次都这么拜托守护者您...</p>
+          <p> </p>
+          <p>您能不能帮我们把守护普斯谷田的[%dic:STR_DIC_M_RatmanWarriorM_11_An]%和 [%dic:STR_DIC_M_RatmanWarriorM_13_An]%消灭掉呢？</p>
+          <p> </p>
+          <p>这些都是在周边巡查的家伙，高级巡逻兵和它们手下的巡逻兵。</p>
+          <p> </p>
+          <p>只要没有它们，以后就可以轻松地得到种子了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是守护者您有责任心啊！</p>
+          <p> </p>
+          <p>请您帮我消灭姆姆耕地的[%dic:STR_DIC_M_RatmanWarriorM_11_An]%和 [%dic:STR_DIC_M_RatmanWarriorM_13_An]%吧。</p>
+          <p> </p>
+          <p>要是全都消灭当然好了，但是那可能会有些困难，只要两个合起来消灭5只就足够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者您要是不帮助我的话，谁还能帮呢？</p>
+          <p> </p>
+          <p>既然您已经帮了我们，就帮人帮到底吧。</p>
+          <p> </p>
+          <p>就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>抓到[%dic:STR_DIC_M_RatmanWarriorM_11_An]%了吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_RatmanWarriorM_13_An]%是不是更难办啊？</p>
+          <p> </p>
+          <p>这些家伙都很难办，不过看起来您都没有受伤啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是守护者您厉害啊！</p>
+          <p> </p>
+          <p>居然打败了5只姆姆！真是太了不起了。</p>
+          <p> </p>
+          <p>剩下的要让猎手们去处理了。</p>
+          <p> </p>
+          <p>请您收下这个吧。感谢您帮了我这么多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去消灭守护普斯谷田的[%dic:STR_DIC_M_RatmanWarriorM_11_An]%和 [%dic:STR_DIC_M_RatmanWarriorM_13_An]%([%2]/5)。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Titt]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭巡查农田的亚人种，让提特和村民们可以轻松拿到普斯谷种子。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提特总觉得普斯谷种子不够，为了以后也能轻松拿到种子，请求帮自己消灭守护普斯谷田的姆姆巡逻兵和姆姆高级巡逻兵。消灭了巡逻兵回来，提特非常感激并表达了谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

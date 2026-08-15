@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去尤普罗西内村曾经是个很适合居住的村子。</p>
+          <p></p>
+          <p>但是现在却被不死族包围了，生活变得非常困难。</p>
+          <p></p>
+          <p>所以派遣了两名行政官过来，向守护者们提供任务，保证居民安全生活。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一出村子就是波特玛废墟，那里有很多攻击性的灵魂。</p>
+          <p></p>
+          <p>这样的情况导致居民根本就不敢一个人走出村子。</p>
+          <p></p>
+          <p>因此我把除掉灵魂的任务交给守护者，而你们会因此得到铸币。</p>
+          <p></p>
+          <p>[%username]大人，你愿意接受任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去[%dic:STR_DIC_W_LF3_SZ_F1]除掉[%dic:STR_DIC_M_UndeadLightFi_40_An]吧。</p>
+          <p></p>
+          <p>虽然要面对众多的灵魂并非易事，但是可以获得铸币作为奖励，对[%username]大人来说也没什么损失。</p>
+          <p></p>
+          <p>好吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你现在正在执行其他的任务。</p>
+          <p></p>
+          <p>那么等你完成任务之后如果还有时间的话就再来吧。</p>
+          <p></p>
+          <p>现在的情况非常需要帮助，因此任何时间过来我都欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不死族数目众多，种类也不少，因此似乎没有可以一次性解决的方法。</p>
+          <p></p>
+          <p>如果这样一个个的清除的话，与付出的时间和努力相比，成果就太渺小了。</p>
+          <p></p>
+          <p>但是现在也没有其他的方法，因此只能这样了。</p>
+          <p></p>
+          <p>您按照我的嘱托把古代战士的灵魂都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想要大量的清除古代战士的灵魂既耗费精力，又要花费很多时间。</p>
+          <p></p>
+          <p>您实在是辛苦了。</p>
+          <p></p>
+          <p>多亏了[%username]大人的辛劳，居民们的生活安稳多了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_UndeadLightFi_40_An]([%2]/34)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Euripia]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要清除威胁尤普罗西内村庄居民的不死族。进入波特玛废墟，清除古代战士的灵魂。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官埃乌里皮亚说尤普罗西内村庄被不死族所包围，居民们的安全受到了威胁。</p>
+          <p></p>
+          <p>因此进入波特玛废墟，清除了古代战士的灵魂，并获得了铸币作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

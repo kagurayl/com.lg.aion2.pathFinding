@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鱼都在这里，现在只要搜集到塞拉图和科迪努斯标本就行了。</p>
+          <p> </p>
+          <p>我看好像和魔界的没什么区别，不过既然人家要，就得帮着搜集。</p>
+          <p> </p>
+          <p>呵呵，但是伊格特利斯长得漂不漂亮呢？</p>
+          <p> </p>
+          <p>从信上的字看，好像是个非常温柔、非常细心的女人。啊，我应该快点把事情完成，回到要塞去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们说到哪里了？啊，对了，塞拉图和科迪努斯标本！</p>
+          <p> </p>
+          <p>看来我又得找你帮忙了。</p>
+          <p> </p>
+          <p>我需要表皮，数量越多越好。</p>
+          <p> </p>
+          <p>所以你去多抓几只，多搜集一些表皮。知道了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在干嘛？话都说完了，还不出发。</p>
+          <p> </p>
+          <p>这么磨磨蹭蹭的，什么时候才能搜集到表皮啊？</p>
+          <p> </p>
+          <p>快去比斯肯沼泽搜集[%dic:STR_DIC_E_QUEST_21201]的表皮吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干嘛？啊哈，你以为我会白让你帮忙吗？</p>
+          <p> </p>
+          <p>我是明白事理的人。</p>
+          <p> </p>
+          <p>如果你能帮我搜集到刺块塞拉图和大嘴科迪努斯的表皮，我一定会支付相应报酬。真的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？还好那边的事情顺利解决了。</p>
+          <p> </p>
+          <p>唉，我因为格拉乌泽……吉兹队长都没说话呢，哪轮得到他说话。</p>
+          <p> </p>
+          <p>对了，我之前跟你说过什么事情来着？啊！表皮！全都搜集到了吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出表皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，说得好好的，干嘛这样啊？</p>
+          <p> </p>
+          <p>我那么相信你，你怎么能这样呢？</p>
+          <p> </p>
+          <p>本来就因为格拉乌泽心情不太好。别再烦我了，快去搜集刺块塞拉图和大嘴科迪努斯的表皮。马上！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呃，为什么要研究这么可怕的东西呢？</p>
+          <p> </p>
+          <p>不管怎样，辛苦你了。</p>
+          <p> </p>
+          <p>只要把这些和之前抓到的鱼一起给伊格特利斯送过去就行了。</p>
+          <p> </p>
+          <p>要不是有龙族，我就自己送过去了。不过以后回要塞的时候，再去见她好了。</p>
+          <p> </p>
+          <p>你还没走吗？啊，我给忘了。拿着，这已经算是很多了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集栖息在比斯肯沼泽里的[%dic:STR_DIC_E_QUEST_21201]的表皮，然后交给[%dic:STR_DIC_N_Lucal]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的卢卡尔搜集栖息在比斯肯沼泽周围的刺块塞拉图和大嘴科迪努斯的表皮。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢卡尔说伊格特利斯还需要刺块塞拉图和大嘴科迪努斯的表皮，让我帮着搜集。</p>
+          <p> </p>
+          <p>帮他搜集到了塞拉图和科迪努斯的表皮，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

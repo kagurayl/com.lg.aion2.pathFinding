@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，我们就是这么过日子的啊。</p>
+          <p> </p>
+          <p>也没什么吃的东西，连睡觉都不舒服。</p>
+          <p> </p>
+          <p>草草地铺一铺毯子，躺在上面，把天当屋顶，就这样过了多少日子了啊。</p>
+          <p> </p>
+          <p>还好我们现在体力比较充沛，能坚持到现在。要是个病秧子的话，早就放弃不干离开这里了。</p>
+          <p> </p>
+          <p>与其说我是天生的好身体，不如说是因为我给身体吃得好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问吃什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不挑食，什么都吃得香。</p>
+          <p> </p>
+          <p>但是，要能在这里受苦，光吃普通的食物是撑不住的。幸亏这附近有茸毛幼虫，我经常吃这个。</p>
+          <p> </p>
+          <p>是一种长在岩白菜和拉巴诺上的虫子，尝试着采集的话，有时能抓到。</p>
+          <p> </p>
+          <p>在我的家乡那里，要说起什么东西对身体好，它总是第一个被提起的。</p>
+          <p> </p>
+          <p>虽然看起来有点儿恶心，但是把它放到嘴里，就会啪的一下裂开，然后有酸溜溜的汁儿流出来，还是挺好吃的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次伏魔殿视察团来的时候，我无意中提到这这件事，没想到他们对此很感兴趣呢。这种虫子似乎抗污染能力非常强。</p>
+          <p> </p>
+          <p>我这么一说，他们就问我能不能定期收集[%dic:STR_DIC_DGmaterial_d_q_25a]给伏魔殿送去。说是想为土地开垦做研究资料用。</p>
+          <p> </p>
+          <p>因为是位高权重的人拜托我，所以我就痛快答应了，可是，这可不是一般的小事啊。又不是一只两只就够了，而且，南部污染地带不是比较危险吗？</p>
+          <p> </p>
+          <p>所以，守护者大人，拜托您帮帮我好不好？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咻，总算是松了一口气。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_DGmaterial_d_q_25a]在采集拉巴诺或岩白菜时可以发现。</p>
+          <p> </p>
+          <p>去南部污染地带和哈班雅克农场的话，可以采集到拉巴诺或岩白菜。</p>
+          <p> </p>
+          <p>抓起来很不容易的，所以请您要有耐心。</p>
+          <p> </p>
+          <p>那就拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，都说祸从口出，我要是安安静静地自己吃自己的不就行了。</p>
+          <p> </p>
+          <p>平白无故地到处张扬的结果，就是包下来一件麻烦事。</p>
+          <p> </p>
+          <p>您再考虑考虑不行吗？ </p>
+          <p> </p>
+          <p>我本来就不认识几位守护者，又不能这么可怜巴巴的求人家，所以才找您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了，[%username]大人！</p>
+          <p> </p>
+          <p>我拜托您的[%dic:STR_DIC_DGmaterial_d_q_25a]抓回来了吗？</p>
+          <p> </p>
+          <p>怕伏魔殿那边来人问怎么还不送过去，我都担心死了。</p>
+          <p> </p>
+          <p>您要是抓来了，就快点儿给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交茸毛幼虫。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这，您怎么空手回来了？ </p>
+          <p> </p>
+          <p>不知什么时候伏魔殿那边就会联系我啊！</p>
+          <p> </p>
+          <p>在我犯难之前，请快给我找些茸毛幼虫来吧。</p>
+          <p> </p>
+          <p>我都跟您说了，在南部污染地带和哈班雅克农场采集岩白菜或者拉巴诺的话就可以抓到的！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>跟我拜托的一样，把它找来了啊！真是万幸啊。 </p>
+          <p> </p>
+          <p>现在，只要寄给伏魔殿就行了。</p>
+          <p> </p>
+          <p>可是，研究这个的话，这能解决污染问题吗？</p>
+          <p> </p>
+          <p>不管怎么样，只要快点儿解决问题，开垦歘歘地展开就行了。</p>
+          <p> </p>
+          <p>无论是吃饭还是睡觉，都很辛苦。开垦开始进行，要塞也盖好的话，我也能舒服点儿了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_DGmaterial_d_q_25a]带给[%dic:STR_DIC_N_Dunkel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说茸毛幼虫对污染有很强的抵抗力。采集岩白菜和拉巴诺的同时抓住茸毛幼虫，交给敦克尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来参观开垦地的视察团，听到敦克尔说他平时当作营养品吃的茸毛幼虫抗污染能力很强，于是产生了兴趣。</p>
+          <p> </p>
+          <p>他说为了污染研究，必须要把茸毛幼虫送到伏魔殿，所以我在采集岩白菜和拉巴诺的同时抓到了茸毛幼虫给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

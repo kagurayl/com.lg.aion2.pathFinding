@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们占领要塞之后，就把魔族的人全部赶走了。</p>
+          <p> </p>
+          <p>但是那些愚蠢的家伙好像妄图重新占领要塞。</p>
+          <p> </p>
+          <p>他们在离这里不远的克雷提温纷争地带活动，好像在监视这里的动态。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚开始的时候因为没多少人，所以想先不去管他们，但是他们的所作所为越来越放肆。</p>
+          <p> </p>
+          <p>必须在他们做出什么事情之前把他们除掉。</p>
+          <p> </p>
+          <p>但是大家都忙着守卫要塞，没有可以派遣过去的兵力...[%username]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们躲在克雷提温纷争地带的一角。那里有魔族守护塔，请一定要小心。</p>
+          <p> </p>
+          <p>他们的名字叫什么来着...啊，对！是[%dic:STR_DIC_N_Asynja]、[%dic:STR_DIC_N_Gagnrad]和[%dic:STR_DIC_N_Glati]。</p>
+          <p> </p>
+          <p>一共是三个人。请您把他们除掉，然后把[%dic:STR_DIC_I_QUEST_1758a]带回来作为证据。</p>
+          <p> </p>
+          <p>要向上面报告的话，必须要有证据，请别忘了把红色赫西亚的证件带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拒绝我的理由到底是什么呢？</p>
+          <p> </p>
+          <p>该不会是害怕魔族吧？</p>
+          <p> </p>
+          <p>埃雷修兰塔不是害怕龙族和魔族的人应该呆的地方。</p>
+          <p> </p>
+          <p>还是回到亚特雷亚呆在要塞里最安全的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>他们还在克雷提温纷争地带吗？</p>
+          <p> </p>
+          <p>如果您已经把他们除掉了的话，就把证据给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色赫西亚的证件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是不相信您，但是没有证据的话，又有谁知道您去哪里干了什么！</p>
+          <p> </p>
+          <p>而且上面的人都比较重视看得见的结果。</p>
+          <p> </p>
+          <p>所以请您快去把[%dic:STR_DIC_I_QUEST_1758a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是红色赫西亚的证件啊。</p>
+          <p> </p>
+          <p>用这么美的名字做军团的名字，谁想到都是些懦弱的土了吧唧的家伙啊。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>现在魔族的要塞那边应该也知道这件事情了。</p>
+          <p> </p>
+          <p>他们应该会长点记性，以后派侦察队过来侦察的事情应该会少一点了吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉位于克雷提温纷争地带的[%dic:STR_DIC_N_Asynja]、[%dic:STR_DIC_N_Gagnrad]和[%dic:STR_DIC_N_Glati]，并把证据交给[%dic:STR_DIC_N_Ab1_1141_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说被夺走要塞的魔族的红色赫西亚军团在克雷提温纷争地带侦察硫磺树要塞。去教训教训红色赫西亚军团士兵，并把搜集到的证据交给彭托斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>彭托斯说魔族被夺走硫磺树要塞之后，在不远的克雷提温纷争地带持续对要塞进行侦察。刚开始没想要管他们，但是渐渐地他们的行动越来越放肆，必须要好好教训一下他们。</p>
+          <p> </p>
+          <p>于是按照他的拜托去克雷提温纷争地带除掉了红色赫西亚军团的士兵阿西尼亚、格拉提和加格拉德，并把红色赫西亚的证件作为证据带了回去。彭托斯看见证件之后很高兴，说魔族这下应该会受到一点教训。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

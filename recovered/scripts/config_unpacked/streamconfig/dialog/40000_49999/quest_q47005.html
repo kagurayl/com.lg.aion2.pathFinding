@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q47005</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：搜集[%dic:STR_DIC_I_quest_48605a]</p>
+          <p> </p>
+          <p>请[%username]大人到冰脚部落去消灭强大的莱卡恩，让自己得到进一步的发展。</p>
+          <p>这次训练的内容是到冰脚部落去，消灭[%dic:STR_DIC_M_KeA_LycanKnightM_28_Ae]、[%dic:STR_DIC_M_KeC_LycanKnightM_30_Ae]、[%dic:STR_DIC_M_AeA_LycanAssassinM_29_Ae]和[%dic:STR_DIC_M_PeA_LycanPriestM_29_Ae]。消灭掉它们之后，请您把藤蔓护身符作为证物带回来。</p>
+          <p>这是非常危险的任务，请您一定要找一个导师，组成组队之后一起过去。</p>
+          <p>如[%dic:STR_DIC_E_Mentor]距离太远的话，就无法完成训练。因此请您一定要一直跟着导师。</p>
+          <p>完成训练之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>这次的训练完成了吗？</p>
+          <p> </p>
+          <p>冰脚莱卡恩非常危险，不过这次有导师和你在一起，应该不会很难吧。</p>
+          <p> </p>
+          <p>公文中所说的藤蔓护身符拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出藤蔓护身符。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冰脚部落是非常危险的地方。</p>
+          <p> </p>
+          <p>但是如果您找到了好的导师，就应该不会很困难。</p>
+          <p> </p>
+          <p>请您在找到导师之后，到冰脚部落去搜集[%dic:STR_DIC_I_quest_48605a]。</p>
+          <p> </p>
+          <p>这会对提高[%username]大人的战斗能力有很大的好处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您出色地完成了训练。</p>
+          <p> </p>
+          <p>只要您继续努力训练，用不了多久，您就会成为一名实力不输于导师的守护者。</p>
+          <p> </p>
+          <p>希望您今后继续努力修炼。</p>
+          <p> </p>
+          <p>愿黑暗的平安与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起搜集[%dic:STR_DIC_I_quest_48605a]，然后交给[%dic:STR_DIC_N_Titorea]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭冰脚上级哨兵、冰脚上级护卫兵、冰脚上级奇袭兵和冰脚上级药剂师，搜集证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我去消灭雾鬃部族的莱卡恩，积累经验。</p>
+          <p> </p>
+          <p>于是和导师一起，消灭了冰脚上级哨兵、冰脚上级护卫兵、冰脚上级奇袭兵和冰脚上级药剂师，并把藤蔓护身符作为证物带了回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

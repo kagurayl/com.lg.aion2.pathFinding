@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(呆呆地看着水边。)</p>
+          <p> </p>
+          <p>(感觉到了动静)我只是在看着那边的图卡。</p>
+          <p> </p>
+          <p>我在想应该怎么处理它们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们让我在调往克鲁克盆地之前，消灭这一带的所有危险因素。</p>
+          <p> </p>
+          <p>呼……要一个人到那边去，很多东西都还没收拾好，他们却不让我休息。</p>
+          <p> </p>
+          <p>这里的水流很急，不小心就会被冲到克鲁克盆地下游。</p>
+          <p> </p>
+          <p>我用原木把河道挡住了，还把岸边尖锐的石头全部清理掉了。</p>
+          <p> </p>
+          <p>剩下的就只有[%dic:STR_DIC_M_Fungy_DR_51_n]和[%dic:STR_DIC_M_Fungy_DR_Big_51_An]了。我在想该怎么办。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最好的方法是把它们赶到某个人迹罕至的地方，但那并不容易。</p>
+          <p> </p>
+          <p>我不知道怎么控制它们，而且自从我来到这里之后，它们就变得敏感起来。</p>
+          <p> </p>
+          <p>可能是觉得我侵犯了它们的领地。</p>
+          <p> </p>
+          <p>所以只能把它们全部消灭掉了。</p>
+          <p> </p>
+          <p>但是有点下不了手。</p>
+          <p> </p>
+          <p>您能帮帮我吗？我一个人太困难了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我把[%dic:STR_DIC_M_Fungy_DR_51_n]和[%dic:STR_DIC_M_Fungy_DR_Big_51_An]消灭掉。</p>
+          <p> </p>
+          <p>其他的事情，就由我来处理。</p>
+          <p> </p>
+          <p>在通往古树森林的路上可以看到很多图卡，请您去把它们消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，可能我一个人慢慢处理会更好一些。</p>
+          <p> </p>
+          <p>如果任务完成得太快，他们可能会把我提前派到克鲁克盆地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这里可以听到瀑布的声音，让人感到很平静。</p>
+          <p> </p>
+          <p>让我可以暂时忘记和提亚马特的战争。</p>
+          <p> </p>
+          <p>但是这只是暂时的。</p>
+          <p> </p>
+          <p>每天都会收到作战命令书，时刻提醒着你这里是战场。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>偶尔看看图卡们蹦蹦跳跳的样子，感觉也挺好的……</p>
+          <p> </p>
+          <p>但是没有办法。</p>
+          <p> </p>
+          <p>必须首先保证奥德兵们的安全。</p>
+          <p> </p>
+          <p>谢谢您。多亏了您，我才能这么快完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Fungy_DR_51_n]和[%dic:STR_DIC_M_Fungy_DR_Big_51_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vesvola]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助维斯波拉，确保格尔克马洛斯瀑布周围的安全。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维斯波拉说他的任务是在派遣到克鲁克盆地去之前，确保周围的安全。</p>
+          <p> </p>
+          <p>帮助他消灭了绒毛图卡和巨大的绒毛图卡，他对我表示感谢，说多亏了我才能这么快完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者日快乐！</p>
+          <p> </p>
+          <p>我的心情真的非常激动。</p>
+          <p> </p>
+          <p>今年我被选为了守护者日执行官员。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">表示祝贺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我负责的节日活动，是赠送心形头带的活动。</p>
+          <p> </p>
+          <p>怎么样？您不想得到吗？</p>
+          <p> </p>
+          <p>非常简单，请一定要参加！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的选择！</p>
+          <p> </p>
+          <p>搜集10张[%dic:STR_DIC_I_QUEST_80002a]，就可以交换到头带。</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_M_AElemental1st_18_An]、[%dic:STR_DIC_MLA21]和[%dic:STR_DIC_MLA146]身上就能搜集到。</p>
+          <p> </p>
+          <p>我会准备好头带，在这里等您。请快去快回！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的不感兴趣吗？</p>
+          <p> </p>
+          <p>这可是守护者日限量版头带！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>交换券全部搜集到了吗？</p>
+          <p> </p>
+          <p>让我来确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出交换券。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一、二、三……嗯……十！</p>
+          <p> </p>
+          <p>真是辛苦您了！</p>
+          <p> </p>
+          <p>给，这是您要的心形头带！</p>
+          <p> </p>
+          <p>希望您能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_80002a]很难搜集到吗？</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_M_AElemental1st_18_An]、[%dic:STR_DIC_MLA21]和[%dic:STR_DIC_MLA146]身上就能搜集到。</p>
+          <p> </p>
+          <p>请不要着急，慢慢搜集就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80002a]，交给[%dic:STR_DIC_N_event_Kotia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集心形头带交换券，交给科迪亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集怪物掉落的头带交换券，交给祝福的守护者科迪亚，得到了守护者日纪念心形头带。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

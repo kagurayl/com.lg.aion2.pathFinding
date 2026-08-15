@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了您发现的记录，我可以了解泰奥勃莫斯研究所的独特构造。</p>
+          <p> </p>
+          <p>研究所里有水、火、风、大地等4种属性的精灵的房间，每种房间有通道相连。</p>
+          <p> </p>
+          <p>从记录分析来看，好像整个研究所就是为了给巨神兵提供动力的巨大装置。</p>
+          <p> </p>
+          <p>是不是很让人吃惊？总觉得研究所的构造有点奇怪，原来是这样。</p>
+          <p> </p>
+          <p>虽然对于如何提取精力的能量，如何让巨神兵移动，我还不太清楚，不过既然有了线索，以后肯定能知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每种精灵的房间应该都会有提取精灵的能量的某种装置。</p>
+          <p> </p>
+          <p>现在回想起来，我有点头绪了。</p>
+          <p> </p>
+          <p>在调查研究所的时候，我发现在每个精灵的房间都有不知道用途的奇怪装置。现在看来，那些应该是提取精灵的能量的装置。</p>
+          <p> </p>
+          <p>只要找出那种装置的运作原理，我们就会离泰奥勃莫斯研究所的秘密越来越近。</p>
+          <p> </p>
+          <p>(以激动地声音说) 你敢想象吗？或许我们也能像泰奥勃莫斯一样让巨神兵移动起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想再拜托[%username] 大人一件事。</p>
+          <p> </p>
+          <p>我得研究科伊奥斯送过来的资料。</p>
+          <p> </p>
+          <p>请您去泰奥勃莫斯城寨，调查精灵的房间里的装置吧。</p>
+          <p> </p>
+          <p>不是什么困难的事情。只要注意我说的几件事，再带来 [%dic:STR_DIC_I_QUEST_3096a]， [%dic:STR_DIC_I_QUEST_3096b]， [%dic:STR_DIC_I_QUEST_3096c]， [%dic:STR_DIC_I_QUEST_3096d]就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您曾经去过，应该记得每种精灵的房间的位置吧？</p>
+          <p> </p>
+          <p>每种房间的中间都有装置，请去那里将 [%dic:STR_DIC_I_QUEST_3096all]带来。</p>
+          <p> </p>
+          <p>不要让装置受到冲击，或者发生分解！</p>
+          <p> </p>
+          <p>因为还不肯定装置是否完全停止运作，所以要慎重，不要损坏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要放弃如此宝贵的机会吗？</p>
+          <p> </p>
+          <p>或许这件事会成为历史性的大事呢。</p>
+          <p> </p>
+          <p>真是让人遗憾！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>解决了一个难题后，其的他难题也迎刃而解。真是很幸运。</p>
+          <p> </p>
+          <p>多亏[%username] 大人的帮助，我的头脑里已经有了大概的想法。</p>
+          <p> </p>
+          <p>当然现在还不能确认。</p>
+          <p> </p>
+          <p>不过，只要有精灵的房间里的装置研究资料，就能带给我们更大的惊喜。</p>
+          <p> </p>
+          <p>是不是已经拿到我拜托的研究资料了？每个装置一个，共有4个 [%dic:STR_DIC_I_QUEST_3096all] 。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将元素装置的部件交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要赶紧动手。</p>
+          <p> </p>
+          <p>现在只是推测，对于元素装置，我们还没有什么了解。</p>
+          <p> </p>
+          <p>所以我们要收集更多的资料。</p>
+          <p> </p>
+          <p>请赶紧去[%dic:STR_DIC_W_NAME_IDLF2A_Lab]，收集4个[%dic:STR_DIC_I_QUEST_3096all]吧！拜托了， [%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，您果然带来了资料。</p>
+          <p> </p>
+          <p>谢谢您的帮助，您的帮助对我非常重要。</p>
+          <p> </p>
+          <p>但是我需要更多的资料。</p>
+          <p> </p>
+          <p>出现了一些不清楚原因的错误，如果想把错误减到最少，就要进行更多的调查。</p>
+          <p> </p>
+          <p>如果您有机会再去泰奥勃莫斯研究所，可以再帮助我收集一些部件吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_NAME_IDLF2A_Lab]，收集 [%dic:STR_DIC_I_QUEST_3096all]，并交给 [%dic:STR_DIC_N_Pyrrha]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">接受皮拉的委托，去泰奥勃莫斯研究所的精灵的房间，调查装置。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮拉表示，泰奥勃莫斯研究所里的精灵的房间内的装置是非常重要的线索，并请求收集资料。</p>
+          <p> </p>
+          <p>去精灵的房间，调查了装置，带回研究资料并交给了皮拉。对此，皮拉表示感谢，并希望继续得到帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

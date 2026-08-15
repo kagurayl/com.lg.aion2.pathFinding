@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人您应该去过天界的很多地方吧。</p>
+          <p> </p>
+          <p>一看你的衣服我就知道了。虽然都是衣服，但是各地制作的方式有微妙的不同。</p>
+          <p> </p>
+          <p>对了，您在埃尔特内还要呆多久啊？</p>           
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说暂时会呆在这儿。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我能请您帮我一个忙吗？</p>
+          <p> </p>
+          <p>请您在埃尔特内旅行的时候，如果看到[%dic:STR_DIC_E_plant_n_c_20a]的话就帮我采集一点。</p>
+          <p> </p>
+          <p>露西的棉很轻很结实，用它制作的祭司和法师的衣服很受欢迎。</p>
+          <p> </p>
+          <p>但是它们主要生长在沙漠地区，所以不太容易找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就请您帮我搜集15个[%dic:STR_DIC_E_plant_n_c_20a]的棉花吧。</p>
+          <p> </p>
+          <p>露西大多生长在艾易隆沙漠和古代遗迹那边，所以有时间的话请您到那边去。</p>
+          <p> </p>
+          <p>我现在并不急需，请您有事来埃尔特内要塞的时候带过来就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，没关系。我只是想如果您能帮忙就好了。</p>
+          <p> </p>
+          <p>如果行李太多的话，旅行会很不方便。</p>
+          <p> </p>
+          <p>如果没有其他要说的话，我就去干活了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，找我有事吗？</p>
+          <p> </p>
+          <p>哦，对了！我让您帮我采集露西棉，对吧？</p>
+          <p> </p>
+          <p>我最近越来越健忘了。对了，露西棉您带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出露西棉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是没做过这种事情啊。</p>
+          <p> </p>
+          <p>也是，尊贵的守护者又怎么会做这种事情呢...</p>
+          <p> </p>
+          <p>不过没关系。反正也不是什么急事，请您有事去艾易隆沙漠和古代遗迹的时候，再帮我采集[%dic:STR_DIC_E_plant_n_c_20a]的棉花吧。</p>
+          <p> </p>
+          <p>不多不少，只要15个就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，技术不错嘛。</p>
+          <p> </p>
+          <p>可以纺成线的棉花部分一点都没伤掉。</p>
+          <p> </p>
+          <p>请您收下这个。东西很不错，所以我特意多给了点。</p>
+          <p> </p>
+          <p>最近很多人都不知道如何提取精气，您真是了不起。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_plant_n_c_20a]，然后交给[%dic:STR_DIC_N_Krato]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须采集生长在艾易隆沙漠和古代遗迹的露西上的棉花，然后交给克拉托。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>防具商人克拉托拜托我，如果在埃尔特内旅行的时候发现露西的话，就帮他采集几个棉花。</p>
+          <p> </p>
+          <p>帮他采集到了露西棉之后，他说非常感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

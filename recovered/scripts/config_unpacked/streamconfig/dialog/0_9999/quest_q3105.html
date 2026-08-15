@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过拉格托斯海岸吗？</p>
+          <p> </p>
+          <p>因为普雷奇温的火焰，那里变成了到处都是风沙的沙漠，但是在几百年前，那里还是波涛拍岸的美丽的地方。</p>
+          <p> </p>
+          <p>我还记得当时的景象，看到现在这个样子，我的心情就很沉重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不仅如此，地形也变了，生命体也变了。</p>
+          <p> </p>
+          <p>大量的鱼全都干死了，出现了剑齿豹和蝎兽等等凶猛的生物。很多人因此受了伤。</p>
+          <p> </p>
+          <p>如果您要去拉格托斯海岸，请你帮我清除掉一些[%dic:STR_DIC_M_LF2A_Kalnif_45_An]和[%dic:STR_DIC_M_LF2A_ScorpionRough_45_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>我们这些守卫穿过了沙漠，来到这个荒凉的地方执行任务。有人可以理解我们的难处，我真的很感动。</p>
+          <p> </p>
+          <p>如果您能把拉格托斯海岸的[%dic:STR_DIC_M_LF2A_Kalnif_45_An]和[%dic:STR_DIC_M_LF2A_ScorpionRough_45_An]清除掉，我们工作起来就会容易得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么到泰奥勃莫斯来啊？</p>
+          <p> </p>
+          <p>听说因为泰奥勃莫斯可以赚到大钱，所以很多守护者纷纷来到了这里。这是真的吗？</p>
+          <p> </p>
+          <p>不过算了。我也不知道是不是真的。</p>
+          <p> </p>
+          <p>但是因为捞不到好处，您就拒绝我。作为一名来这里进行开拓工作的守卫，我觉得很遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>(帮我掸掉了身上的灰尘)呼，看看这些沙尘。</p>
+          <p> </p>
+          <p>您是刚从拉格托斯海岸回来吧？</p>
+          <p> </p>
+          <p>怎么样？您把[%dic:STR_DIC_M_LF2A_Kalnif_45_An]和[%dic:STR_DIC_M_LF2A_ScorpionRough_45_An]清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>我刚刚接到了一个任务，需要穿越和阿郎凯海岸相连的沙漠，我正在担心呢。</p>
+          <p> </p>
+          <p>多亏了您，这下执行任务就容易多了。</p>
+          <p> </p>
+          <p>请您收下。这是我们为您准备的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除沙漠中造成妨碍的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Kalnif_45_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_ScorpionRough_45_An]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Diokuroi]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">迪奥库劳伊说守卫们穿越拉格托斯海岸的时候，受到了剑齿豹和蝎兽的阻碍。帮助守卫们把剑齿豹和蝎兽清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>迪奥库劳伊说在结界塔村进行开拓工作的守卫们每次穿越拉格托斯海岸的时候，都会受到剑齿豹和蝎兽的阻碍。</p>
+          <p> </p>
+          <p>他说如果剑齿豹和蝎兽消失，执行任务就会容易很多。于是帮他清除掉了拉格托斯海岸的剑齿豹和蝎兽，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

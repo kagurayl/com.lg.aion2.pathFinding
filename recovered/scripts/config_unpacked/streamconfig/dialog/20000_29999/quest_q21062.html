@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(卷轴上出现了发光的文字。)</p>
+          <p> </p>
+          <p>(“在大地的深处，又有新的德拉坎出生了。”)</p>
+          <p> </p>
+          <p>(“敏锐的帕德玛夏还没被打倒。”)</p>
+          <p> </p>
+          <p>(“[%dic:STR_DIC_N_Fundin]会向你提供帮助。”)</p>
+          <p> </p>
+          <p>(发光的文字消失了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经收到了消息。</p>
+          <p> </p>
+          <p>打倒了两个强大的要塞守护者，成功地击败了帕德玛夏的人，是你吗？</p>
+          <p> </p>
+          <p>连挑剔的齐尔胡亚都对你赞不绝口，我很想看看你是个什么样的人。</p>
+          <p> </p>
+          <p>给我看看证据，证明那就是传闻中的那个人。</p>
+          <p> </p>
+          <p>把马勒库坦主神下达命令的卷轴给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">把发光的卷轴给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，我已经听说了，之前被打倒的帕德玛夏还活着。</p>
+          <p> </p>
+          <p>一定是天族的那些家伙用了什么手段。</p>
+          <p> </p>
+          <p>现在我们占领了要塞，那些天族应该不会来妨碍你。你去集中精力，重新打倒帕德玛夏。</p>
+          <p> </p>
+          <p>你已经去过一次，这次应该不会很难吧？</p>
+          <p> </p>
+          <p>在你去消灭[%dic:STR_DIC_M_DF4_Dramata_57_Al]的时候，我们会尽力挡住天族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到了大地上回响的声音。</p>
+          <p> </p>
+          <p>也听到了龙族因为[%dic:STR_DIC_M_DF4_Dramata_57_Al]的死亡而引起的骚动。</p>
+          <p> </p>
+          <p>重新站起来的帕德玛夏，再次被魔族打倒了！</p>
+          <p> </p>
+          <p>[%username]，消灭帕德玛夏的人是你吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，这是一场了不起的胜利！所有人都会为你的胜利而惊叹。</p>
+          <p> </p>
+          <p>天族也会因此而惊慌失措。</p>
+          <p> </p>
+          <p>他们好不容易救活的帕德玛夏又再次倒在了魔族的手下。</p>
+          <p> </p>
+          <p>你再看看发光的卷轴。马勒库坦主神好像也在对你的功绩表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Fundin]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_DF4_Dramata_57_Al][%5]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Fundin]对话</font></p></step>          
+    </steps>
+          <p><font font_xml="quest_summary">从卷轴中接到了命令。去弗恩丁那里了解消灭帕德玛夏所需的情报吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在发光的卷轴上出现的指令说，敏锐的帕德玛夏复活了，让我再次去消灭它。</p>
+          <p> </p>
+          <p>接受了弗恩丁的建议，消灭了敏锐的帕德玛夏。回去之后，弗恩丁对我大加称赞，说我立下了大功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

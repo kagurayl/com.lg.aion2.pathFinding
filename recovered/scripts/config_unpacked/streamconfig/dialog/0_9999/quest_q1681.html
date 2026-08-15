@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我担心大家是不是都太死板了。</p> 
+          <p> </p>
+          <p>不管讲多么有意思的故事，都一点都不发笑。</p>
+          <p> </p>
+          <p>你问我是什么故事。对了，应该讲给你听听。</p>
+          <p> </p>
+          <p>喝茶的时候，有的人向右搅拌，有的人按十字形搅拌，有的人按星星模样搅拌。</p>
+          <p> </p>
+          <p>你知道为什么吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不知道。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还能是为什么啊？当然是为了让糖融化啦。</p>
+          <p> </p>
+          <p>(捶胸顿足)哈哈哈，很有意思吧？</p>
+          <p> </p>
+          <p>但是你的表情好像不太好。是笑话太难懂了吗？</p>
+          <p> </p>
+          <p>哼哼，不行。人们好像不太能理解光用嘴巴说的笑话，应该用肢体让人发笑。</p>
+          <p> </p>
+          <p>那样的话就必须要有那件衣服，不过衣料好像都用光了。你能帮我去搜集一些衣料的材料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在死亡之歌森林里，有一种名叫[%dic:STR_DIC_LF3_gb_source_plant_40b]的植物。</p>
+          <p> </p>
+          <p>仔细查看长得像花一样的部分，可以看到里面有一团棉花一样的东西，那就是[%dic:STR_DIC_LF3_plant_n_c_40a]。</p>
+          <p> </p>
+          <p>请你帮我去搜集几个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我能搜集到的话，还会来拜托你吗？</p>
+          <p> </p>
+          <p>我本来不想告诉你的，实际上是因为我的精气提取技术有点差。</p>
+          <p> </p>
+          <p>鲁凯和科拉碧斯不知道这件事，所以我不想去拜托他们。</p>
+          <p> </p>
+          <p>如果可以的话，请你去帮我搜集一点[%dic:STR_DIC_LF3_plant_n_c_40a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在等你的时候，我有想出了新的笑话。</p>
+          <p> </p>
+          <p>等我完成之后，[%username]，我一定会先说给你听。</p>
+          <p> </p>
+          <p>不过，我让你帮我找到亚麻棉找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出亚麻棉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>死亡之歌森林里为什么会没有亚麻？</p>
+          <p> </p>
+          <p>那你可以去梅德乌斯庄园看看。</p>
+          <p> </p>
+          <p>虽然有点远，但是那里也有[%dic:STR_DIC_LF3_gb_source_plant_40b]生长。</p>
+          <p> </p>
+          <p>不好意思，麻烦你再去一趟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。这么多的话就足够我做衣服的了。</p>
+          <p> </p>
+          <p>什么样的衣服？如果事先告诉你的话就没意思了。</p>
+          <p> </p>
+          <p>等做完之后，你自己亲眼来看吧。</p>
+          <p> </p>
+          <p>啊，还有...你一定要帮我保密。就是我的精气提取技术不太好的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_LF3_gb_source_plant_40b]上搜集棉花，然后交给[%dic:STR_DIC_N_Edoras]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">埃多拉斯说要制作特殊的衣服引人们发笑。必须帮他搜集用于制作衣服的亚麻棉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃多拉斯说人们无法理解自己的笑话，说必须用肢体引人发笑。</p>
+          <p> </p>
+          <p>因此需要特别的衣服，但是没有材料。他说自己的精气提取技术不行，让我帮他搜集亚麻棉。</p>
+          <p> </p>
+          <p>于是帮他搜集到了亚麻棉，他表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

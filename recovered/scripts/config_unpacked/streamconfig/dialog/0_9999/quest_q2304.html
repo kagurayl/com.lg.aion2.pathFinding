@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷帕尔革命团突然开始活动之后，要塞队长大人对此一直很关心。</p>
+          <p> </p>
+          <p>[%username]大人应该也知道，发生了守护者失踪的事件。</p>
+          <p> </p>
+          <p>那件事就让人很头疼了，现在又出了其他的事情，唉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从要塞出去，在[%dic:STR_DIC_W_DF2_SUB_A1]上有很多危险的野兽。</p>
+          <p> </p>
+          <p>其中最凶恶的是白虎。</p>
+          <p> </p>
+          <p>有一个白虎在几天前的一个晚上侵入了要塞。那时刚好是卫兵的交接时间，它像是趁那个时间进入了要塞。</p>
+          <p> </p>
+          <p>人们看到了之后都非常惊慌失措...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然很想马上冲到万年雪原去把白虎全部扫荡干净，但是我还有任务要做。</p>
+          <p> </p>
+          <p>有很多事情需要调查，同时也需要管理很多的执政官，根本抽不出时间。</p>
+          <p> </p>
+          <p>[%username]大人，你能帮我去清除一些 [%dic:STR_DIC_M_DireBeastD_21_An]吗？</p>
+          <p> </p>
+          <p>如果它们又在要塞周围出现的话，居民们一定会非常害怕的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你对付过白虎的话就应该知道，它们并不是那么好对付。</p>
+          <p> </p>
+          <p>如果被它们的前腿击中的话，有可能会失去知觉。</p>
+          <p> </p>
+          <p>所以接近它们的时候一定要格外小心。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就这样看着居民们因为白虎而陷入不安之中吗？</p>
+          <p> </p>
+          <p>难道你没有作为一名守护者的使命意识吗？</p>
+          <p> </p>
+          <p>居然还能碰到这样的守护者，真是长见识了。</p>
+          <p> </p>
+          <p>我知道了。我会自己想办法的，或者直接让部下们去做。跟你没关系了，你走吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_DireBeastD_21_An]都清除掉了吗？</p>
+          <p> </p>
+          <p>居民们都不敢到要塞外面去，我一直在安抚他们呢。</p>
+          <p> </p>
+          <p>人类和守护者不同，如果遇到白虎的话，就有可能会送命。</p>
+          <p> </p>
+          <p>所以我们作为守护者，就必须保护他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！你的[%mainslotitem]果然不凡。</p>
+          <p> </p>
+          <p>白虎不管多凶恶，在你的[%mainslotitem]前面根本不堪一击。</p>
+          <p> </p>
+          <p>谢谢你为了居民们这么辛苦。这是报答，请不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_DireBeastD_21_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Bragi]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除威胁要塞居民的白虎。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布拉吉说最近发生了白虎入侵要塞的事件，给居民们造成了很大的不安。</p>
+          <p> </p>
+          <p>于是去莫尔海姆万年雪原帮他除掉了白虎。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

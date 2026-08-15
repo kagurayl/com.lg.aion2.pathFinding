@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古代城市娄要塞是非常重要的军事要地。因为这里有3个实体。</p>
+          <p> </p>
+          <p>我和梅尔库斯之所以来到这里也是这个原因。</p>
+          <p> </p>
+          <p>为了让内扎坎之盾军团可以更容易地夺回要塞，我们正在搜集有关古代城市娄要塞的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是这要比想象的困难得多。</p>
+          <p> </p>
+          <p>因为那里守卫森严，别说搜集情报了，就连靠近都靠近不了。</p>
+          <p> </p>
+          <p>如果没有在要塞周围巡逻的[%dic:STR_DIC_M_AncientCity_Guard]的话，应该就会好一点。怎么样？您想不想帮帮我们，立一次大功啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实并不像想象的那么简单。在要塞的周围不仅有驻军，而且还有好几处威力强大的防御设施。</p>
+          <p> </p>
+          <p>一个人去的话太冒险了。请您一定要召集其他志同道合的守护者们一起去。</p>
+          <p>同时也要小心漂浮在要塞的上空的监视者之眼。有可能莫名其妙的就会受到攻击。</p>
+          <p> </p>
+          <p>那就祝您好运。愿阿里埃主神的保佑与你同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有其他任务吗？</p>
+          <p> </p>
+          <p>这件事情如果做得好的话，对[%username]大人的转职应该会有很大的帮助。真是可惜。</p>
+          <p> </p>
+          <p>不过到了正面战的时候，请您一定要来帮忙。您该不会到时候又会拒绝我吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我委托您的任务顺利完成了吗？</p>
+          <p> </p>
+          <p>看你没出什么事，真是太好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>把要塞驻军清除掉之后，[%username]大人的名声也得到了相应的提高。</p>
+          <p> </p>
+          <p>现在和您说这种话可能有点扫兴，但是您要记住，要想夺回要塞的话，前面要走的路还很长。</p>
+          <p> </p>
+          <p>请您以后继续过来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_AncientCity_Guard]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Livy]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让拉比乌斯和梅尔库斯能够搜集古代城市娄要塞的情报，召集同伴去把要塞的驻军清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉比乌斯说他们正在为夺回军事要地古代城市娄要塞而搜集情报，但是因为严密的监视而难以进行，请求我的帮助。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了在要塞周围巡逻的要塞驻军，然后回去找到了他。他说以后的路还很长，让我继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的警备越来越森严，这让我非常担心。</p>
+          <p> </p>
+          <p>古代城市娄有很多实体，不管是龙族还是魔族，只要一占领要塞就会派遣大量能力出众的人过去防守。</p>
+          <p> </p>
+          <p>这样一来，我们所需要的情报不知道什么时候才能全部搜集上来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我们需要像[%username]大人这样的守护者的帮助。</p>
+          <p> </p>
+          <p>我们获得了情报，说魔族精锐兵拥有强力的奇斯克。不知道他们对奥德进行了什么处理，好像性能要比我们的好得多。</p>
+          <p> </p>
+          <p>您能帮我去把要塞的[%dic:STR_DIC_M_1810_all]清除掉吗？</p>
+          <p> </p>
+          <p>然后把他们身上的[%dic:STR_DIC_I_QUEST_1810a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，[%username]大人答应帮我，我就安心了。不过我还是有点担心。</p>
+          <p> </p>
+          <p>之前我曾经看到魔族精锐兵战斗的场面，绝对不是闹着玩的。所以请您不要一个人去，一定要和同伴们一起过去。</p>
+          <p> </p>
+          <p>如果[%username]大人因此受伤的话就糟了。</p>
+          <p> </p>
+          <p>哦，对了，我忘了一件重要的事情。魔族精锐兵只有在魔族占领要塞后才会出现。在要塞进入占领状态后，对付起来就会容易很多。</p>
+          <p> </p>
+          <p>请您把[%dic:STR_DIC_M_1810_all]清除掉，然后记得把[%dic:STR_DIC_I_QUEST_1810a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有其他任务吗？</p>
+          <p> </p>
+          <p>这件事情如果做得好的话，对[%username]大人的战绩应该会有很大的帮助。真是可惜。</p>
+          <p> </p>
+          <p>不过到了正面战的时候，请您一定要来帮忙。您该不会到时候又会拒绝我吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您先歇一歇吧。</p>
+          <p> </p>
+          <p>看您满头大汗的，战斗一定很激烈吧。啊，如果不是留在这里有事的话，我也会和您一起去的</p>
+          <p> </p>
+          <p>啊，您把奇斯克带回来了吗？我说的是[%dic:STR_DIC_I_QUEST_1810a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出执政官的奇斯克。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不夺走奇斯克的话，精锐驻军很快就会复活。</p>
+          <p> </p>
+          <p>那样的话，辛辛苦苦把他们除掉就没有意义了。</p>
+          <p> </p>
+          <p>所以请您一定要把执政官的奇斯克抢过来。</p>
+          <p> </p>
+          <p>这样的话，[%dic:STR_DIC_M_1810_all]们就只能在离这里很远的地方复活了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>击退了精锐驻军，[%username]大人的名声也会得到相应的提高。</p>
+          <p> </p>
+          <p>和刚回来的人说这种话可能会有点扫兴，但是要夺回要塞的话，以后要走的路还很长。</p>
+          <p> </p>
+          <p>所以请您以后继续过来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_1810_all]，抢夺奇斯克，然后交给[%dic:STR_DIC_N_Livy]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">根据搜集到的情报，魔族精锐驻军拥有强力的奇斯克。清除精锐驻军，搜集执政官的奇斯克，然后交给拉比乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉比乌斯说他们正在为夺回军事要地古代城市娄而开展情报搜集工作，搜集到了魔族精锐驻军拥有强力的奇斯克的情报。</p>
+          <p> </p>
+          <p>按照他的拜托清除掉了魔族精锐驻军，并夺走了他们的执政官的奇斯克交给了拉比乌斯，让他们无法很快地复活。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

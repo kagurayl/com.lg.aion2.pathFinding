@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这个艰难的地方建立起要塞，执着地生活着的人类非常伟大。不过我觉得生活在这种荒凉的气候中野兽们也同样非常伟大。</p>
+          <p> </p>
+          <p>但是老实说，这样的感叹应该是生物学家的本分和生物学者应该做的事情。</p>
+          <p> </p>
+          <p>像我这样的行政官，应该想办法调节野兽的数量，使它们不会对居民们造成威胁才对。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从要塞前面的莫尔海姆万年雪原到博塔摩尔坡道，有很多危险的动物。</p>
+          <p> </p>
+          <p>到了居民们不能安心地到伊拉西克去的地步。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去清除掉一些野兽吗？</p>
+          <p> </p>
+          <p>虽然需要清除的数量很多，但是报酬是铜铸币，因此很有值得一试的价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是明智的决定。</p>
+          <p> </p>
+          <p>那就请您帮我除掉10头[%dic:STR_DIC_M_Zaif2D_21_An]、10头[%dic:STR_DIC_M_DaruD_21_n]和10头[%dic:STR_DIC_M_Ettin_all]。</p>
+          <p> </p>
+          <p>这个数量是根据它们的分布情况得出的，所以请您一定要除掉足够的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我说数量很多，把您吓到了吧。</p>
+          <p> </p>
+          <p>没关系。反正想要得到铸币的守护者有很多。</p>
+          <p> </p>
+          <p>如果您以后需要铸币的话，也可以来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您清除的野兽，您全都清除掉了吗？</p>
+          <p> </p>
+          <p>我还以为会花很长的时间，没想到您这么快就回来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>居民们也会感谢[%username]大人的。</p>
+          <p> </p>
+          <p>这是说好的铸币。请您收下。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎要塞周围的凶恶的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Zaif2D_21_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DaruD_21_n]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ettin_all]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nott]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要塞周围有很多凶恶的野兽，给居民们造成了很多的不便。接受委托，去把野兽们清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诺特说要塞周围有很多凶恶的野兽，说如果我能去清除它们的话，就会给我铜铸币作为报酬。</p>
+          <p> </p>
+          <p>于是去清除了野狼、塔鲁和雪人，获得了铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

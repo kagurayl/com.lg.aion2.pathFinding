@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊嚏，很久没有露宿过了，身体可能变差了。</p>
+          <p> </p>
+          <p>有点发烧，感觉身体很冷，可能是生病了。</p>
+          <p> </p>
+          <p>在这种地方生病可能不太容易痊愈。因为到了晚上还会更冷...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SELECT1_1">询问有什么可以帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您说的是真的吗？</p>
+          <p> </p>
+          <p>老实说我是有件事情要拜托守护者大人，但是不太好开口，所以一直在犹豫。</p>
+          <p> </p>
+          <p>既然您说要帮我，我就跟您说一下吧。请您帮我搜集10个[%dic:STR_DIC_E_plant_n_c_10a]和5个[%dic:STR_DIC_E_berry_n_c_10b]。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问用途。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我想用比诺做成果汁喝。比诺的营养成分很高，在感觉身体不好的时候喝对身体有好处。</p>
+          <p> </p>
+          <p>琉库是想用来做成棉。填进衣服和被子里，就会比现在暖和一点。</p>
+          <p> </p>
+          <p>原因我告诉您了，请您快去帮我搜集[%dic:STR_DIC_E_plant_n_c_10a]和[%dic:STR_DIC_E_berry_n_c_10b]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_plant_n_c_10a]和[%dic:STR_DIC_E_berry_n_c_10b]在这附近很容易找到。</p>
+          <p> </p>
+          <p>不过您要小心。不小心的话可能会遭到卡尔克盖伦和蜘蛛的攻击。</p>
+          <p> </p>
+          <p>请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，难道我做错了什么了吗？</p>
+          <p> </p>
+          <p>我不明白您为什么现在才跟我说不行。</p>
+          <p> </p>
+          <p>如果您不乐意的话，我也没办法。不过您一开始说过要帮我的，请您再考虑一下吧。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这段时间身体好像更差了。</p>
+          <p> </p>
+          <p>站在这里就觉得很冷，看来得穿厚一点的衣服了。</p>
+          <p> </p>
+          <p>请把我拜托您搜集的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出琉库和比诺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，现在难道连眼睛都不好使了吗？</p>
+          <p> </p>
+          <p>怎么看都不够10个[%dic:STR_DIC_E_plant_n_c_10a]和5个[%dic:STR_DIC_E_berry_n_c_10b]啊。</p>
+          <p> </p>
+          <p>如果我看得没错的话，那就是您弄错了。</p>
+          <p> </p>
+          <p>不好意思，请您再确认一下吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等一下。琉库有一，二，三...10个，比诺是一，二，三...5个。</p>
+          <p> </p>
+          <p>全都正确。真不愧是守护者大人。</p>
+          <p> </p>
+          <p>我先把比诺做成果汁喝了。抽棉花得等到有了力气再做。</p>
+          <p> </p>
+          <p>请您收下这个。您花费宝贵时间帮我找东西，我当然不能白白收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_plant_n_c_10a]和[%dic:STR_DIC_E_berry_n_c_10b]，并交给[%dic:STR_DIC_N_Leipos]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">在阿尔泰米亚山坡采集琉库和比诺，然后交给巴斯库斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴斯库斯说自己好像生病了，让我帮他搜集制作暖和的棉衣和营养果汁的琉库和比诺。</p>
+          <p> </p>
+          <p>搜集琉库和比诺交给他之后，巴斯库斯表示感谢，并给了我一点谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

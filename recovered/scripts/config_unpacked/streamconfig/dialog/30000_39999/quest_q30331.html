@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你也看到了，上次我差一点就召唤出了精灵！</p>
+          <p> </p>
+          <p>我的方向果然是正确的。</p>
+          <p> </p>
+          <p>只要再努把力，一定就能取得成功！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我一定会召唤出精灵的！</p>
+          <p> </p>
+          <p>应该可以报答这段时间[%username]你给我的帮助。</p>
+          <p> </p>
+          <p>我想如果能有阿盖伦德雷克的皮膜的话，一定可以召唤出火之精灵。</p>
+          <p> </p>
+          <p>你能最后再帮我一次吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你帮了我这么多，真是太感谢了。</p>
+          <p> </p>
+          <p>阿盖伦德雷克不仅生命力很强，而且还拥有很强的魔法力量。</p>
+          <p> </p>
+          <p>一定会对召唤精灵起到帮助。</p>
+          <p> </p>
+          <p>请你到失败者的坟墓去，消灭[%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An]，搜集[%dic:STR_DIC_I_QUEST_30331a]。</p>
+          <p> </p>
+          <p>只要有了那个东西，我就能召唤出火之精灵！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我有自信一定能获得成功！</p>
+          <p> </p>
+          <p>你怎么到了这一步却不肯帮我了呢？</p>
+          <p> </p>
+          <p>太过分了！成功明明就在眼前。</p>
+          <p> </p>
+          <p>不过又能怪谁呢？都是因为我没能让[%username]对我产生足够的信任。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到马上就能召唤出龙界的火之精灵，我的心就怦怦直跳。</p>
+          <p> </p>
+          <p>这段时间的辛苦，终于可以得到报答了。</p>
+          <p> </p>
+          <p>破烂的皮膜找到了吗？</p>
+          <p> </p>
+          <p>我得马上召唤精灵才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出破烂的皮膜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你帮了我这么多忙，我也不想抱怨什么。</p>
+          <p> </p>
+          <p>但是现在是成功之前的重要瞬间。</p>
+          <p> </p>
+          <p>请你一定要帮我搜集到[%dic:STR_DIC_I_QUEST_30331a]。</p>
+          <p> </p>
+          <p>前往失败者的坟墓，消灭[%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到了吗？</p>
+          <p> </p>
+          <p>我召唤出了龙界的火之精灵！我终于成功了。</p>
+          <p> </p>
+          <p>这段时间的辛苦总算没有白费。我知道我一定可以成功。</p>
+          <p> </p>
+          <p>谢谢您这段时间给我的帮助，[%username]。</p>
+          <p> </p>
+          <p>如果没有[%username]你的帮助，我就不可能取得成功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30331a]，然后交给[%dic:STR_DIC_N_Yumir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">艾乌拉说只要有了破烂的皮膜，就能召唤出龙界的火之精灵。去消灭古代阿盖伦德雷克，搜集皮膜吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沃米尔说马上就能取得成功了，让我帮他搜集阿盖伦德雷克的破烂的皮膜。</p>
+          <p> </p>
+          <p>按照他的委托，搜集到了阿盖伦德雷克的皮膜，他成功地召唤出了火之精灵。</p>
+          <p> </p>
+          <p>召唤精灵成功之后，沃米尔非常高兴，对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

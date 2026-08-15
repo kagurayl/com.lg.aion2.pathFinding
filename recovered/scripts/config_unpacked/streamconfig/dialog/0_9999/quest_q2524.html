@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近以来，不知道棕熊为什么会变得很凶残。</p>
+          <p> </p>
+          <p>过去虽然也很凶残，但最近它们变得更加厉害，把原来生活在雪原棕熊栖息地里的史匹格全都赶了出来。</p>
+          <p> </p>
+          <p>听说不久前棕熊的头目换了人，看来那个新头目一定很凶残。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的任务是保护吉格里泰大人，清除不死族。因此一开始，我并没有怎么在意这件事。</p>
+          <p> </p>
+          <p>但是贝斯佩尔村和雪原棕熊栖息地很近，不可能不受到影响。</p>
+          <p> </p>
+          <p>对付不死族就已经很累了，还要担心棕熊会不会从背后偷袭。</p>
+          <p> </p>
+          <p>但是又没有时间去清除棕熊。</p>
+          <p> </p>
+          <p>[%username]大人，如果您有时间的话，能帮我去把它们清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您能答应帮我。</p>
+          <p> </p>
+          <p>请您到雪原棕熊栖息地，把[%dic:STR_DIC_M_MosbearReD_33_An]和[%dic:STR_DIC_M_MosbearReBigD_34_An]清除掉。</p>
+          <p> </p>
+          <p>我虽然相信[%username]大人的实力，但它们非常凶恶，请您一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是害怕雪原棕熊，所以不敢答应吗？</p>
+          <p> </p>
+          <p>也是，看棕熊的个头那么大，难免会感到害怕。</p>
+          <p> </p>
+          <p>不过既然您不愿意，我也不能强迫您。</p>
+          <p> </p>
+          <p>看来我得把这件事交给别的擅长打猎棕熊的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道是伏魔殿的那些高层太小气，还是不知道现实的情况。</p>
+          <p> </p>
+          <p>好好的一个村子变成了不死族村，居然就派了一个神圣守护者、一个神官和两个执政官过来。</p>
+          <p> </p>
+          <p>吉格里泰大人再怎么是不死族方面的专家，没有执行任务的人，怎么解决问题啊？</p>
+          <p> </p>
+          <p>而且现在又蹦出了个棕熊，就是再怎么努力也不行啊。</p>
+          <p> </p>
+          <p>对了，棕熊清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您！</p>
+          <p> </p>
+          <p>现在去贝斯佩尔幽灵村的时候，就不用担心会被棕熊偷袭了。</p>
+          <p> </p>
+          <p>[%username]大人，您真是帮了我的大忙。</p>
+          <p> </p>
+          <p>这是我的一点心意，请您收下。千万不要客气。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除变得凶残的棕熊</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MosbearReD_33_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MosbearReBigD_34_An]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sorgrim]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说有雪原棕熊在贝斯佩尔幽灵村出现。为了让索尔格林可以正常执行任务，去把雪原棕熊和巨大的雪原棕熊清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔格林说棕熊变得凶残，侵入到了贝斯佩尔幽灵村。在对付不死族的时候，还要担心棕熊在身后偷袭，因此感到很不安。</p>
+          <p> </p>
+          <p>于是前往雪原棕熊栖息地，帮他清除掉了雪原棕熊，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

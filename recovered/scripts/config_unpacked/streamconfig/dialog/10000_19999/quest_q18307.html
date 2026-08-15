@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很高兴能再次见到您，长着美丽翅膀的人。</p>
+          <p> </p>
+          <p>您好像是个年轻的守护者……应该不知道大崩溃之前的事情吧？</p>
+          <p> </p>
+          <p>但是您应该听过充满了和平的古代亚特雷亚的故事吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然现在分成了天族和魔族，大家谁都不认识谁，但是在过去，大家都一起过着和平富足的生活。</p>
+          <p> </p>
+          <p>在那个时候，我们希埃尔之枪还非常闪耀。</p>
+          <p> </p>
+          <p>为了在龙族的手中活下来，我们放弃了很多东西。过去的痕迹现在几乎都没有保留下来。</p>       
+          <p> </p>
+          <p>一部分丢失的东西好像就在空中要塞。既然我能有缘和您认识，您能为我们鸢族做点事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在空中要塞的兵站区域，有很多提亚马特的军队搜刮回来的东西。其中包括从我们鸢族手里夺取的遗物。</p>
+          <p> </p>
+          <p>我们希埃尔之枪的珍贵遗物竟然和贪婪的龙族的补给品混在一起，真是让人无法忍受。</p>
+          <p> </p>
+          <p>请您一定要帮我找回来。</p>
+          <p> </p>
+          <p>据说在存放鸢族遗物的箱子上刻着特殊的纹样，应该很容易就能分辨出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您是个这么无情的人。</p>
+          <p> </p>
+          <p>拜托外人帮我们找回希埃尔之枪丢失的东西，需要莫大的勇气。</p>
+          <p> </p>
+          <p>您让我觉得好像受到了侮辱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了在龙界生存下来，我们丢弃了很多东西，但是我们从未丢弃我们的骄傲。</p>
+          <p> </p>
+          <p>现在的年轻鸢族可能不知道，但我还记得过去作为一名守护者的荣耀。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鸢族的遗物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>野蛮的龙族到底想把我们鸢族的遗物用在什么地方呢……</p>
+          <p> </p>
+          <p>该不会是用作烧垃圾的燃料吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸢族的遗物找到了吗？</p>
+          <p> </p>
+          <p>您果然是个好人，[%username]大人！</p>
+          <p> </p>
+          <p>遗物的状态还很完好，看来龙族并没有粗暴地对待它们。</p>
+          <p> </p>
+          <p>真的非常感谢。我能给您的只有这个，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿图拉姆[%dic:STR_DIC_W_IDStation_SZ_01_A]搜集 [%dic:STR_DIC_I_quest_18307a]然后交给 [%dic:STR_DIC_N_Rifn]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照里芬所说，到空中要塞的兵站区域寻找鸢族的遗物，然后交给里芬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里芬说空中要塞的兵站区域有被抢走的鸢族的遗物，让我帮他抢回来。</p>
+          <p> </p>
+          <p>于是在仓库的箱子里找到了鸢族的遗物，然后交给了里芬，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

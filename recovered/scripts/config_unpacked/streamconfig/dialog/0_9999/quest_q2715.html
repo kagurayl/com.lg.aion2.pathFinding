@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>最近我的心里总是很担心。虽然不知道是什么原因，生活在燃烧之血星云的火焰族经常会侵入到这个地方。</p>
+       <p> </p>
+       <p>我担心它们会妨碍瞬间移动，同时对拉特斯兰之茎造成什么伤害。</p>
+       <p> </p>
+       <p>我虽然向普利姆要塞进行了报告，但是他们答复说战斗的兵力都不足，无法派人过来支援。</p>
+       <p> </p>
+       <p>但是可以给我银铸币，让我自己去寻找可以帮助我的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听，</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样，[%username]大人？</p>
+          <p> </p> 
+          <p>您能去燃烧之血星云，帮我把那些[%dic:STR_DIC_A_Ab1_2715all]扫荡干净吗？</p>  
+          <p> </p> 
+          <p>这次的事情如果您能帮我的话，我会给您银铸币作为报酬。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能接受任务真是太好了。</p>
+          <p> </p>
+          <p>那就请您马上去燃烧之血星云去好好地教训教训那些火焰族吧。</p>
+          <p> </p>
+          <p>不管是[%dic:STR_DIC_M_Ab1_1221_Tauric_38_An]，还是[%dic:STR_DIC_M_Ab1_1231_Tauric_38_An]都没关系，您只要帮我除掉19头就行了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>如果是别人的话，我也不会这么求您了。</p>
+          <p> </p>
+          <p>我知道[%username]大人的实力很强，所以才来拜托您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了吗？</p>  
+         <p> </p>
+         <p>虽然[%username]大人的名声如雷贯耳，但是没想到您的实力竟然这么出色。</p>  
+         <p> </p>
+         <p>您应该已经把火焰族全部清除掉了吧？</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听了[%username]大人的话，我就安心了。</p>
+          <p> </p>   
+          <p>因为[%username]大人，火焰族的那些家伙也一定会长点记性的。</p>   
+          <p> </p> 
+          <p>来，这是说好的银铸币。希望您能搜集起来，换到一个好东西。</p>
+          <p> </p>   
+          <p>如果以后您还有时间的话，请您再来帮我。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除燃烧之血星云的[%dic:STR_DIC_A_Ab1_2715all]([%2]/19)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Liudona]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说生活在燃烧之血星云的火焰族的动态很异常。按照利乌杜纳的拜托，把克罗坦火焰族和德奇沙斯火焰族清除掉。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>利乌杜纳说火焰族经常侵入拉特斯兰西侧茎干，他为此感到很不安，派我去燃烧之血星云把它们清除掉。</p>
+          <p> </p>     
+          <p>于是去清除掉了克罗坦火焰族和德奇沙斯火焰族，并回去找到了他。他说辛苦了，并给了我银铸币。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

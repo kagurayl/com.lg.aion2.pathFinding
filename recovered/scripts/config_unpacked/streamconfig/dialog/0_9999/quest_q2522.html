@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你上次帮我清除了拉盖乌姆特雷基。</p>
+          <p> </p>
+          <p>不久前我见到洛奇百夫长的时候，他还对我表示感谢，说谢谢我派了一个值得信任的守护者过去。</p>
+          <p> </p>
+          <p>虽然洛奇百夫长那么努力，但是涌向黑色平原的德雷克和特雷基却并没有减少。</p>
+          <p> </p>
+          <p>它们的繁殖力还真是惊人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我在想，最好应该到它们的根据地玛西沙的巢穴和巨人峡谷去，把[%dic:STR_DIC_M_MahishaDrakyD_34_An]和[%dic:STR_DIC_M_DrakeVioletD_36_An]清除掉。</p>
+          <p> </p>
+          <p>虽然不能完全消灭德雷克，但是那里的个体数如果可以减少，它们就不会到黑色平原这边来了。</p>
+          <p> </p>
+          <p>所以我说，[%username]，这件事希望你能帮我处理一下。</p>
+          <p> </p>
+          <p>我知道你是个值得信任的人，所以才会把它交给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不出我所料。我就知道[%username]你一定不会拒绝。</p>
+          <p> </p>
+          <p>请你到玛西沙的巢穴和巨人峡谷去，把[%dic:STR_DIC_M_MahishaDrakyD_34_An]和[%dic:STR_DIC_M_DrakeVioletD_36_An]清除掉。</p>
+          <p> </p>
+          <p>清除德雷克虽然也很重要，但是把特雷基除掉的话，德雷克的数量今后自然也会减少，对吧？</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到[%username]你会拒绝执行任务。</p>
+          <p> </p>
+          <p>像你这么优秀的人，一定是军团长大人交给你什么任务了吧？</p>
+          <p> </p>
+          <p>我这里没关系，你先去做你的事吧。</p>
+          <p> </p>
+          <p>不过事情做完之后，请你一定要尽快来找我。和德雷克战斗不会那么快就结束的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德雷克的繁殖力再怎么强，清除掉这么多的话，应该就没问题了吧？</p>
+          <p> </p>
+          <p>必须弄清楚原因才能彻底解决问题，这可真让人担心。</p>
+          <p> </p>
+          <p>不管怎样，[%dic:STR_DIC_M_MahishaDrakyD_34_An]和[%dic:STR_DIC_M_DrakeVioletD_36_An]清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>虽然不是根本的解决方法，但是在查清原因之前只能这样做。</p>
+          <p> </p>
+          <p>有[%username]你这样的守护者的帮助，真的很幸运。</p>
+          <p> </p>
+          <p>以后如果有时间，请你再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往玛西沙的巢穴和巨人峡谷，清除特雷基和德雷克</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MahishaDrakyD_34_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DrakeVioletD_36_An]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gigrite]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于特雷基和德雷克的数量持续增加，侵入了黑色平原。前往玛西沙的巢穴和巨人峡谷，清除紫水晶特雷基和紫水晶德雷克吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉格里泰说感谢我上次帮他清除了黑色平原上的拉盖乌姆特雷基。但是特雷基和德雷克还在从巨人峡谷不断向黑色平原涌来。</p>
+          <p> </p>
+          <p>于是干脆前往玛西沙的巢穴和巨人峡谷，清除掉了紫水晶特雷基和紫水晶德雷克。</p>
+          <p> </p>
+          <p>吉格里泰说虽然不是根本的解决方法，但问题暂时应该可以解决了，让我以后再去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你不像是这里的人，你到这里来有什么事吗？</p>
+          <p> </p>
+          <p>不，请先别说。我来猜一猜。</p>
+          <p> </p>
+          <p>就那样猜太无聊了，我们赌点东西怎么样？就少一点，赌一千基纳怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">拒绝打赌。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎，真让人失望。好不容易见到了可以和我打赌的人，我还挺高兴的。</p>
+          <p> </p>
+          <p>不喜欢打赌的话，就帮我做点别的事情吧。</p>
+          <p> </p>
+          <p>也不是什么难事，只要帮我搜集10个[%dic:STR_DIC_E_tree_d_n_c_20a]就行。我正在煮汤，木柴有点不够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到你真的愿意帮忙。你一定要帮我找[%dic:STR_DIC_E_tree_d_n_c_20a]。只有用它生火，火力才又旺又持久。</p>
+          <p> </p>
+          <p>盖尔菲树从这里到莫尔海姆万年雪原到处都可以看到，应该不难找到。</p>
+          <p> </p>
+          <p>剩下的木柴已经不多了，请你快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，不愿意打赌，也不愿意帮忙。那你还过什么社会生活？</p>
+          <p> </p>
+          <p>我因为那些野狼不能离开这里，所以请你帮帮我。</p>
+          <p> </p>
+          <p>你也看到了，这里没有其他人能帮我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稍微晚了点。</p>
+          <p> </p>
+          <p>详细的话以后再说，先把[%dic:STR_DIC_E_tree_d_n_c_20a]给我吧。</p>
+          <p> </p>
+          <p>我得重新把火烧旺。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出盖尔菲树。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你到底在干嘛啊？</p>
+          <p> </p>
+          <p>料理最重要的是火候，这样下去的话，汤就要糟蹋掉了。</p>
+          <p> </p>
+          <p>现在还来得及，请你稍微快一点。记住。是10个[%dic:STR_DIC_E_tree_d_n_c_20a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把盖尔菲树放进火里。)</p>
+          <p> </p>
+          <p>呼，太好了。汤差点就做坏了。</p>
+          <p> </p>
+          <p>不过没有必要那么紧张。差点做坏了，但是没做坏。</p>
+          <p> </p>
+          <p>请你拿着。虽然不多，但这是我的一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_tree_d_n_c_20a]，然后交给[%dic:STR_DIC_N_Fathir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须去莫尔海姆万年雪原搜集盖尔菲树，让帕提尔可以把汤煮好。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕提尔说他正在煮汤，但是木柴不够了，让我去帮他搜集木柴。</p>
+          <p> </p>
+          <p>于是去附近帮他搜集到了盖尔菲树，他很高兴，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

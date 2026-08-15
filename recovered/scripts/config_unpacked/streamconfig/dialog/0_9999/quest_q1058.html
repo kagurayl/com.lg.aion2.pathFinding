@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在因特尔蒂卡有一个奇夏尔部族。</p>
+          <p> </p>
+          <p>他们也和凯丹一样侍奉龙族，克拉。</p>
+          <p> </p>
+          <p>他们在龙族的帮助下使用了奥德的力量，但奇夏尔要比凯丹更愚蠢。</p>
+          <p> </p>
+          <p>他们滥用奥德的力量，结果无法控制那种力量，有一些人发了疯，克拉拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>滥用奥德的力量的奇夏尔克拉尔的力量虽然变强了，但精神状态很不稳定。</p>
+          <p> </p>
+          <p>他们分辨不出同族，不管什么人都会随便攻击，克拉。</p>
+          <p> </p>
+          <p>如果把变成了怪物的他们放任不管的话，奇夏尔克拉尔就会完全灭亡。</p>
+          <p> </p>
+          <p>[%username]，拜托你了！即使向因特尔蒂卡的守护者请求帮助，也必须把发疯的奇夏尔克拉尔除掉，克拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1058-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事吗？</p>
+          <p> </p>
+          <p>我现在没有任务可以交给你。</p>
+          <p> </p>
+          <p>如果你想执行任务的话，就去找别的人吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">转达马邦塔的话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也大致听说奇夏尔克拉尔中，昆帕帕和追随他的人变得很异常。不过没想到埃尔特内的马邦塔会来拜托我，看来情况要比想象的严重得多。</p>
+          <p> </p>
+          <p>如果坐视不管的话，有可能会影响到天族。最好还是趁早处理一下。</p>
+          <p> </p>
+          <p>请你到昆帕帕的前哨基地去，把[%dic:STR_DIC_M_KrallWarriorMMad_all]除掉，然后把他们体内的[%dic:STR_DIC_I_QUEST_1058a]作为证据带回来。</p>
+          <p> </p>
+          <p>然后再把他们的领导者[%dic:STR_DIC_M_KrallFighterMadQ_42_Ae]除掉，把[%dic:STR_DIC_I_QUEST_1058b]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！你安然回来啦。</p>
+          <p> </p>
+          <p>我让你去做的任务全部完成了吗？</p>
+          <p> </p>
+          <p>请你把[%dic:STR_DIC_I_QUEST_1058a]和[%dic:STR_DIC_I_QUEST_1058b]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出凝固的奥德和卡巴尔图的剑。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都说[%username]是个既有能力又很诚实的守护者，我听其他人都这么说。</p>
+          <p> </p>
+          <p>我不想我所期待的守护者再让我失望。</p>
+          <p> </p>
+          <p>请你快去把[%dic:STR_DIC_M_KrallWarriorMMad_all]除掉，把[%dic:STR_DIC_I_QUEST_1058a]和[%dic:STR_DIC_I_QUEST_1058b]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我知道[%username]的实力很强，但我想这次的事情可能会有点麻烦。没想到你这么快就完成了任务。</p>
+          <p> </p>
+          <p>取得这样好的成果的话，马邦塔也一定会满意的。</p>
+          <p> </p>
+          <p>真是辛苦了。这是辛苦的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_NPC_Mabangta]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Sarantus]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">除掉[%dic:STR_DIC_M_KrallWarriorMMad_all]和[%dic:STR_DIC_M_KrallFighterMadQ_42_Ae]把证据交给[%dic:STR_DIC_N_Sarantus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：马邦塔说有和奇夏尔部族有关的事情要拜托我。去埃尔特内见见马邦塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马邦塔说奇夏尔克拉尔中的一部分由于滥用奥德的力量而疯掉了，会胡乱地攻击同族，让我去把他们除掉。</p>
+          <p> </p>
+          <p>把马邦塔的话转告了因特尔蒂卡要塞的萨兰图斯百夫长，他说必须在影响到天族之前把他们除掉。</p>
+          <p> </p>
+          <p>于是除掉了疯狂的克拉尔和战斗队长卡巴尔图，并把证据带回去交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+
+</HtmlPages>

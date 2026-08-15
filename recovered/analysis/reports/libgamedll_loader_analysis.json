@@ -1,0 +1,577 @@
+{
+  "lookup": {
+    "result": [
+      {
+        "query": "packfile_initialize",
+        "fn": {
+          "addr": "0x6b850",
+          "name": "packfile_initialize",
+          "size": "0x60"
+        },
+        "error": null
+      },
+      {
+        "query": "packfile_loadlibrary",
+        "fn": null,
+        "error": "Not found"
+      },
+      {
+        "query": "packfile_loadstream",
+        "fn": null,
+        "error": "Not found"
+      },
+      {
+        "query": "script_initialize",
+        "fn": {
+          "addr": "0x7a064",
+          "name": "script_initialize",
+          "size": "0x90"
+        },
+        "error": null
+      },
+      {
+        "query": "script_loadfile",
+        "fn": {
+          "addr": "0x7ae08",
+          "name": "script_loadfile",
+          "size": "0x158"
+        },
+        "error": null
+      },
+      {
+        "query": "updater_start",
+        "fn": {
+          "addr": "0x6bf84",
+          "name": "updater_start",
+          "size": "0x25c"
+        },
+        "error": null
+      },
+      {
+        "query": "filecrc_loadlocal",
+        "fn": {
+          "addr": "0x698c4",
+          "name": "filecrc_loadlocal",
+          "size": "0x1a8"
+        },
+        "error": null
+      },
+      {
+        "query": "filecrc_loadremote",
+        "fn": {
+          "addr": "0x69a6c",
+          "name": "filecrc_loadremote",
+          "size": "0x230"
+        },
+        "error": null
+      }
+    ]
+  },
+  "searches": {
+    "library\\.scp|config\\.scp|filelist\\.zip": {
+      "n": 3,
+      "matches": [
+        {
+          "addr": "0x39be4",
+          "string": "library.scp"
+        },
+        {
+          "addr": "0x3b379",
+          "string": "config.scp"
+        },
+        {
+          "addr": "0x3b7cf",
+          "string": "filelist.zip"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    },
+    "script/_root|debug/debug": {
+      "n": 1,
+      "matches": [
+        {
+          "addr": "0x3ae69",
+          "string": "debug/debug"
+        }
+      ],
+      "cursor": {
+        "done": true
+      }
+    }
+  },
+  "analysis": {
+    "result": [
+      {
+        "target": "packfile_initialize",
+        "addr": "0x6b850",
+        "name": "packfile_initialize",
+        "analysis": {
+          "size": "0x60",
+          "prototype": null,
+          "decompile": "__int64 packfile_initialize()\n{\n  __int64 result; // x0\n\n  m_packfile_library = packfile_loadfile(\"library.scp\", 0); /*0x6b87c*/\n  result = packfile_loadfile(\"config.scp\", 1); /*0x6b888*/\n  m_packfile_stream = result; /*0x6b89c*/\n  m_packfile_loadpack = 1; /*0x6b8a0*/\n  return result; /*0x6b8ac*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x157b4c",
+                "type": "code"
+              },
+              {
+                "addr": "0x4258",
+                "type": "data"
+              },
+              {
+                "addr": "0x157b44",
+                "type": "data"
+              },
+              {
+                "addr": "0x164a10",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x6b854",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x39be4",
+              "length": 11,
+              "string": "library.scp"
+            },
+            {
+              "addr": "0x3b379",
+              "length": 10,
+              "string": "config.scp"
+            }
+          ],
+          "string_ref_count": 2,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "script_initialize",
+        "addr": "0x7a064",
+        "name": "script_initialize",
+        "analysis": {
+          "size": "0x90",
+          "prototype": null,
+          "decompile": "__int64 script_initialize()\n{\n  __int64 result; // x0\n\n  pool_create(&m_pool_event, 1360, 32); /*0x7a07c*/\n  dynamic_create(&m_array_event, 32); /*0x7a08c*/\n  dynamic_create(&m_array_vm, 32); /*0x7a09c*/\n  dynamic_create(&m_array_vmidle, 32); /*0x7a0ac*/\n  dynamic_create(&m_array_platformmessage, 32); /*0x7a0bc*/\n  section_create(&m_platformsection); /*0x7a0c8*/\n  result = script_createvm(\"_root\"); /*0x7a0d4*/\n  m_rootvm = result; /*0x7a0e0*/\n  if ( result ) /*0x7a0e4*/\n    *(_BYTE *)(result + 160) = 0; /*0x7a0e8*/\n  return result; /*0x7a0f0*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x157bac",
+                "type": "code"
+              },
+              {
+                "addr": "0x3bb0",
+                "type": "data"
+              },
+              {
+                "addr": "0x157ba4",
+                "type": "data"
+              },
+              {
+                "addr": "0x164a40",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x7a068",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x39f0b",
+              "length": 5,
+              "string": "_root"
+            }
+          ],
+          "string_ref_count": 1,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "script_loadfile",
+        "addr": "0x7ae08",
+        "name": "script_loadfile",
+        "analysis": {
+          "size": "0x158",
+          "prototype": null,
+          "decompile": "__int64 __fastcall script_loadfile(__int64 result, const char *a2)\n{\n  __int64 v2; // x8\n  const char **v3; // x9\n  __int64 v5; // x19\n  const char *v6; // x10\n  const char *v7; // x21\n  __int64 v8; // x1\n  __int64 v9; // x0\n  int v10; // w2\n  int v11; // w3\n  int v12; // w4\n  int v13; // w5\n  int v14; // w6\n  int v15; // w7\n  __int64 v16; // x20\n  char v17; // [xsp+0h] [xbp-220h]\n  char v18[260]; // [xsp+10h] [xbp-210h] BYREF\n  char filename[260]; // [xsp+114h] [xbp-10Ch] BYREF\n  __int64 v20; // [xsp+218h] [xbp-8h]\n\n  v20 = *(_QWORD *)(_ReadStatusReg(TPIDR_EL0) + 40); /*0x7ae2c*/\n  v2 = (unsigned int)dword_17A71C; /*0x7ae34*/\n  if ( dword_17A71C >= 1 ) /*0x7ae3c*/\n  {\n    v3 = (const char **)m_array_vm; /*0x7ae40*/\n    v5 = result; /*0x7ae48*/\n    while ( 1 ) /*0x7ae4c*/\n    {\n      v6 = *v3; /*0x7ae4c*/\n      if ( *(_QWORD *)*v3 == result ) /*0x7ae58*/\n        break; /*0x7ae58*/\n      --v2; /*0x7ae5c*/\n      ++v3; /*0x7ae60*/\n      if ( !v2 ) /*0x7ae64*/\n        return result; /*0x7ae64*/\n    }\n    v7 = v6 + 96; /*0x7ae6c*/\n    sub_7AC58(filename, a2, \"script/%s/%s.lua\", v6 + 96, a2); /*0x7ae84*/\n    sub_7AC58(v18, v8, \"%s/%s\", v7, a2); /*0x7ae9c*/\n    v9 = packfile_getfile(filename); /*0x7aeb4*/\n    if ( v9 ) /*0x7aeb8*/\n    {\n      v16 = v9; /*0x7aec0*/\n      if ( (unsigned int)luaL_loadbuffer(v5, v9, 0, v18) || (unsigned int)lua_pcall(v5, 0, 0, 0) ) /*0x7aee8*/\n      {\n        if ( lua_tolstring(v5, 0xFFFFFFFFLL, 0) ) /*0x7aefc*/\n          unity_logerror(); /*0x7af10*/\n      }\n      return packfile_freefile(v16, 0); /*0x7af1c*/\n    }\n    else\n    {\n      return logmanager_adderror(\"failed include getfile %s\", (int)filename, v10, v11, v12, v13, v14, v15, v17); /*0x7af30*/\n    }\n  }\n  return result; /*0x7af58*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x157bbc",
+                "type": "code"
+              },
+              {
+                "addr": "0xcd60",
+                "type": "data"
+              },
+              {
+                "addr": "0x157bb4",
+                "type": "data"
+              },
+              {
+                "addr": "0x164a48",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x7ae0c",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x37e21",
+              "length": 16,
+              "string": "script/%s/%s.lua"
+            },
+            {
+              "addr": "0x3b35d",
+              "length": 5,
+              "string": "%s/%s"
+            },
+            {
+              "addr": "0x383d1",
+              "length": 25,
+              "string": "failed include getfile %s"
+            }
+          ],
+          "string_ref_count": 3,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "updater_start",
+        "addr": "0x6bf84",
+        "name": "updater_start",
+        "analysis": {
+          "size": "0x25c",
+          "prototype": null,
+          "decompile": "__int64 updater_start()\n{\n  void **v0; // x0\n  __int64 v1; // x0\n  __int64 v2; // x8\n  __int64 v3; // x0\n  __int64 v4; // x8\n  void (__fastcall *v5)(void *, float); // x19\n  __int64 v6; // x0\n  int v7; // w8\n  unsigned __int8 *v8; // x9\n  unsigned __int8 v9; // w10\n  void *v10; // x0\n  char s; // [xsp+4h] [xbp-10Ch] BYREF\n  _BYTE v13[267]; // [xsp+5h] [xbp-10Bh] BYREF\n\n  *(_QWORD *)&v13[259] = *(_QWORD *)(_ReadStatusReg(TPIDR_EL0) + 40); /*0x6bfa8*/\n  v0 = (void **)m_updater_config; /*0x6bfb0*/\n  if ( m_updater_config ) /*0x6bfb4*/\n  {\n    if ( *(_QWORD *)(m_updater_config + 1048) ) /*0x6bfb8*/\n    {\n      free(*(void **)(m_updater_config + 1048)); /*0x6bfc4*/\n      v0 = (void **)m_updater_config; /*0x6bfc8*/\n      *(_QWORD *)(m_updater_config + 1048) = 0; /*0x6bfcc*/\n    }\n    if ( v0[133] ) /*0x6bfd0*/\n    {\n      free(v0[133]); /*0x6bfdc*/\n      v0 = (void **)m_updater_config; /*0x6bfe0*/\n      *(_QWORD *)(m_updater_config + 1064) = 0; /*0x6bfe4*/\n    }\n    if ( v0[135] ) /*0x6bfe8*/\n    {\n      free(v0[135]); /*0x6bff4*/\n      v0 = (void **)m_updater_config; /*0x6bff8*/\n      *(_QWORD *)(m_updater_config + 1080) = 0; /*0x6bffc*/\n    }\n    free(v0); /*0x6c000*/\n  }\n  m_updater_config = (__int64)malloc(0x448u); /*0x6c010*/\n  platform_sdk(\"InstallerName\", 0, m_updater_config, 260); /*0x6c024*/\n  platform_sdk(\"InstallerVersion\", 0, m_updater_config + 260, 260); /*0x6c040*/\n  platform_sdk(\"InstallerLanguage\", 0, m_updater_config + 520, 260); /*0x6c05c*/\n  platform_sdk(\"UpdateURL\", 0, m_updater_config + 780, 260); /*0x6c078*/\n  *(_QWORD *)(m_updater_config + 1040) = 0; /*0x6c094*/\n  v1 = file_readfile(\"version.txt\"); /*0x6c098*/\n  v2 = m_updater_config; /*0x6c09c*/\n  *(_QWORD *)(m_updater_config + 1048) = v1; /*0x6c0a4*/\n  *(_QWORD *)(v2 + 1064) = 0; /*0x6c0b4*/\n  v3 = file_readfile(\"updater.txt\"); /*0x6c0b8*/\n  v4 = m_updater_config; /*0x6c0bc*/\n  *(_QWORD *)(m_updater_config + 1080) = v3; /*0x6c0c0*/\n  if ( v3 ) /*0x6c0c4*/\n  {\n    v5 = (void (__fastcall *)(void *, float))unity_updater_setprogress; /*0x6c0d0*/\n  }\n  else\n  {\n    file_exractfile(\"updater.txt\"); /*0x6c0e4*/\n    v6 = file_readfile(\"updater.txt\"); /*0x6c0f8*/\n    v4 = m_updater_config; /*0x6c0fc*/\n    *(_QWORD *)(m_updater_config + 1080) = v6; /*0x6c104*/\n    v5 = (void (__fastcall *)(void *, float))unity_updater_setprogress; /*0x6c10c*/\n    if ( !v6 ) /*0x6c110*/\n    {\nLABEL_19:\n      v10 = &unk_3C961; /*0x6c180*/\n      goto LABEL_20; /*0x6c180*/\n    }\n  }\n  sub_6BCBC(&s, 260, \"%s_%s\", \"UPDATE_VERSION_DOWNLOADING\", (const char *)(v4 + 520)); /*0x6c134*/\n  LOBYTE(v7) = s; /*0x6c138*/\n  if ( s ) /*0x6c13c*/\n  {\n    v8 = v13; /*0x6c140*/\n    do /*0x6c164*/\n    {\n      if ( (unsigned int)(unsigned __int8)v7 - 97 >= 0x1A ) /*0x6c154*/\n        v9 = v7; /*0x6c154*/\n      else\n        v9 = v7 ^ 0x20; /*0x6c154*/\n      v7 = *v8; /*0x6c158*/\n      *(v8++ - 1) = v9; /*0x6c15c*/\n    }\n    while ( v7 ); /*0x6c164*/\n  }\n  v10 = (void *)string_getversionvalue(*(_QWORD *)(m_updater_config + 1080), &s); /*0x6c178*/\n  if ( !v10 ) /*0x6c17c*/\n    goto LABEL_19; /*0x6c17c*/\nLABEL_20:\n  v5(v10, 0.0); /*0x6c188*/\n  return downloader_addfile(m_updater_config + 780, \"remoteversion.txt\", 0, 0, 0, 1); /*0x6c1d8*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x15753c",
+                "type": "code"
+              },
+              {
+                "addr": "0x81e8",
+                "type": "data"
+              },
+              {
+                "addr": "0x157534",
+                "type": "data"
+              },
+              {
+                "addr": "0x164708",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x6bf88",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x39056",
+              "length": 13,
+              "string": "InstallerName"
+            },
+            {
+              "addr": "0x37fbe",
+              "length": 16,
+              "string": "InstallerVersion"
+            },
+            {
+              "addr": "0x3ba94",
+              "length": 17,
+              "string": "InstallerLanguage"
+            },
+            {
+              "addr": "0x3bde8",
+              "length": 9,
+              "string": "UpdateURL"
+            },
+            {
+              "addr": "0x3ceb1",
+              "length": 11,
+              "string": "version.txt"
+            },
+            {
+              "addr": "0x3ceb1",
+              "length": 11,
+              "string": "version.txt"
+            },
+            {
+              "addr": "0x37fcf",
+              "length": 11,
+              "string": "updater.txt"
+            },
+            {
+              "addr": "0x37fcf",
+              "length": 11,
+              "string": "updater.txt"
+            },
+            {
+              "addr": "0x37fcf",
+              "length": 11,
+              "string": "updater.txt"
+            },
+            {
+              "addr": "0x3c726",
+              "length": 5,
+              "string": "%s_%s"
+            },
+            {
+              "addr": "0x3a359",
+              "length": 26,
+              "string": "UPDATE_VERSION_DOWNLOADING"
+            },
+            {
+              "addr": "0x3c726",
+              "length": 5,
+              "string": "%s_%s"
+            },
+            {
+              "addr": "0x3a359",
+              "length": 26,
+              "string": "UPDATE_VERSION_DOWNLOADING"
+            },
+            {
+              "addr": "0x38d78",
+              "length": 17,
+              "string": "remoteversion.txt"
+            }
+          ],
+          "string_ref_count": 14,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "filecrc_loadlocal",
+        "addr": "0x698c4",
+        "name": "filecrc_loadlocal",
+        "analysis": {
+          "size": "0x1a8",
+          "prototype": null,
+          "decompile": "void filecrc_loadlocal()\n{\n  int *v0; // x0\n  int *v1; // x19\n  __int64 v2; // x25\n  __int64 v3; // x26\n  __int64 v4; // x20\n  int v5; // w9\n  __int64 v6; // x21\n  __int64 v7; // x21\n  char *v8; // x0\n  __int64 v9; // x8\n  __int64 v10; // x9\n  int v11; // w9\n\n  if ( !m_filecrc_file ) /*0x698ec*/\n  {\n    v0 = (int *)filelist_load(\"localfilelist.bin\", 0); /*0x69918*/\n    if ( v0 ) /*0x6991c*/\n    {\n      v1 = v0; /*0x69920*/\n      filecrc_clear(); /*0x69924*/\n      m_filecrc_file = (__int64)malloc(32LL * v1[4]); /*0x69934*/\n      m_filecrc_bisection = (__int64)malloc(0x10u); /*0x69948*/\n      bisectionhash_create(); /*0x69950*/\n      m_filecrc_writebuffersize = 0; /*0x6995c*/\n      if ( v1[4] >= 1 ) /*0x69968*/\n      {\n        v2 = 0; /*0x6996c*/\n        v3 = 0; /*0x69970*/\n        v4 = 0; /*0x69974*/\n        do /*0x699d4*/\n        {\n          v7 = m_filecrc_file; /*0x699dc*/\n          v8 = (char *)string_malloc(*(char **)(*(_QWORD *)v1 + v2)); /*0x699e4*/\n          v9 = v7 + v3; /*0x699e8*/\n          *(_QWORD *)v9 = v8; /*0x699ec*/\n          v10 = *(_QWORD *)v1 + v2; /*0x699f8*/\n          *(_QWORD *)(v9 + 8) = *(_QWORD *)(v10 + 8); /*0x69a00*/\n          *(_DWORD *)(v9 + 16) = *(_DWORD *)(v10 + 16); /*0x69a08*/\n          v11 = *(_DWORD *)(v10 + 20); /*0x69a0c*/\n          if ( v11 ) /*0x69a10*/\n          {\n            if ( v11 < 0 ) /*0x69a14*/\n            {\n              v5 = 0; /*0x69a24*/\n              *(_DWORD *)(v9 + 24) = 0; /*0x69a28*/\n            }\n            else\n            {\n              *(_DWORD *)(v9 + 24) = v11; /*0x69a18*/\n              v5 = 2; /*0x69a1c*/\n            }\n          }\n          else\n          {\n            *(_DWORD *)(v9 + 24) = 0; /*0x69980*/\n            v5 = 1; /*0x69984*/\n          }\n          v6 = v7 + v3; /*0x69988*/\n          *(_DWORD *)(v6 + 20) = v5; /*0x6998c*/\n          bisectionhash_set(m_filecrc_bisection, v4++, v8); /*0x6999c*/\n          m_filecrc_writebuffersize += (((strlen(*(const char **)v6) << 32) + 0x100000000LL) >> 32) + 16; /*0x699c0*/\n          v3 += 32; /*0x699c8*/\n          v2 += 24; /*0x699cc*/\n        }\n        while ( v4 < v1[4] ); /*0x699d4*/\n      }\n      bisectionhash_sort(m_filecrc_bisection); /*0x69a34*/\n      m_filecrc_writebuffer = (__int64)malloc(m_filecrc_writebuffersize); /*0x69a54*/\n      filelist_clear(v1); /*0x69a68*/\n    }\n  }\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x157b1c",
+                "type": "code"
+              },
+              {
+                "addr": "0x4bb8",
+                "type": "data"
+              },
+              {
+                "addr": "0x157b14",
+                "type": "data"
+              },
+              {
+                "addr": "0x1649f8",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x698c8",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x3d555",
+              "length": 17,
+              "string": "localfilelist.bin"
+            }
+          ],
+          "string_ref_count": 1,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "filecrc_loadremote",
+        "addr": "0x69a6c",
+        "name": "filecrc_loadremote",
+        "analysis": {
+          "size": "0x230",
+          "prototype": null,
+          "decompile": "bool __fastcall filecrc_loadremote(char *a1)\n{\n  int *v1; // x19\n  _QWORD *v2; // x20\n  _QWORD *v3; // x21\n  __int64 v4; // x28\n  __int64 v5; // x24\n  __int64 v6; // x22\n  int v7; // w8\n  __int64 v8; // x26\n  char *v9; // x0\n  __int64 v10; // x23\n  __int64 v11; // x8\n  __int64 v12; // x0\n  __int64 v13; // x0\n\n  v1 = (int *)filelist_load(a1, 1); /*0x69a90*/\n  if ( v1 ) /*0x69a94*/\n  {\n    file_exractfile(\"assetfilelist.bin\"); /*0x69aa4*/\n    v2 = filelist_load(\"assetfilelist.bin\", 3); /*0x69ab4*/\n    v3 = filelist_load(\"localfilelist.bin\", 2); /*0x69ac8*/\n    filecrc_clear(); /*0x69acc*/\n    m_filecrc_file = (__int64)malloc(32LL * v1[4]); /*0x69ae4*/\n    m_filecrc_bisection = (__int64)malloc(0x10u); /*0x69af8*/\n    bisectionhash_create(); /*0x69b00*/\n    m_filecrc_writebuffersize = 0; /*0x69b0c*/\n    if ( v1[4] >= 1 ) /*0x69b18*/\n    {\n      v4 = 0; /*0x69b1c*/\n      v5 = 0; /*0x69b20*/\n      v6 = 0; /*0x69b24*/\n      do /*0x69b68*/\n      {\n        v8 = m_filecrc_file; /*0x69b68*/\n        v9 = (char *)string_malloc(*(char **)(*(_QWORD *)v1 + v4)); /*0x69b6c*/\n        v10 = v8 + v5; /*0x69b70*/\n        *(_QWORD *)v10 = v9; /*0x69b74*/\n        v11 = *(_QWORD *)v1 + v4; /*0x69b88*/\n        *(_QWORD *)(v10 + 8) = *(_QWORD *)(v11 + 8); /*0x69b94*/\n        *(_DWORD *)(v10 + 16) = *(_DWORD *)(v11 + 16); /*0x69b9c*/\n        *(_DWORD *)(v10 + 20) = 2; /*0x69b9c*/\n        *(_DWORD *)(v10 + 24) = *(_DWORD *)(v11 + 20); /*0x69ba4*/\n        bisectionhash_set(m_filecrc_bisection, v6, v9); /*0x69bb4*/\n        m_filecrc_writebuffersize += (((strlen(*(const char **)(v8 + v5)) << 32) + 0x100000000LL) >> 32) + 16; /*0x69bd4*/\n        if ( v3 /*0x69c00*/\n          && (v12 = filelist_getfile(v3, *(_QWORD *)(v8 + v5))) != 0\n          && *(_QWORD *)(v12 + 8) == *(_QWORD *)(v10 + 8)\n          && !*(_DWORD *)(v12 + 20) )\n        {\n          v7 = *(_DWORD *)(v12 + 16); /*0x69b30*/\n          *(_DWORD *)(v10 + 20) = 1; /*0x69b38*/\n        }\n        else\n        {\n          if ( !v2 ) /*0x69c04*/\n            goto LABEL_6; /*0x69c04*/\n          v13 = filelist_getfile(v2, *(_QWORD *)(v8 + v5)); /*0x69c10*/\n          if ( !v13 || *(_QWORD *)(v13 + 8) != *(_QWORD *)(v10 + 8) ) /*0x69c24*/\n            goto LABEL_6; /*0x69c24*/\n          v7 = *(_DWORD *)(v13 + 16); /*0x69c28*/\n          *(_DWORD *)(v10 + 20) = 0; /*0x69c2c*/\n        }\n        *(_DWORD *)(v10 + 16) = v7; /*0x69b3c*/\nLABEL_6:\n        ++v6; /*0x69b40*/\n        v5 += 32; /*0x69b48*/\n        v4 += 24; /*0x69b4c*/\n      }\n      while ( v6 < v1[4] ); /*0x69b68*/\n    }\n    bisectionhash_sort(m_filecrc_bisection); /*0x69c34*/\n    m_filecrc_writebuffer = (__int64)malloc(m_filecrc_writebuffersize); /*0x69c54*/\n    if ( v2 ) /*0x69c58*/\n      filelist_clear(v2); /*0x69c60*/\n    if ( v3 ) /*0x69c64*/\n      filelist_clear(v3); /*0x69c6c*/\n    filelist_clear(v1); /*0x69c74*/\n  }\n  return v1 != 0; /*0x69c98*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x1574dc",
+                "type": "code"
+              },
+              {
+                "addr": "0x2230",
+                "type": "data"
+              },
+              {
+                "addr": "0x1574d4",
+                "type": "data"
+              },
+              {
+                "addr": "0x1646d8",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x69a70",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x395cc",
+              "length": 17,
+              "string": "assetfilelist.bin"
+            },
+            {
+              "addr": "0x3d555",
+              "length": 17,
+              "string": "localfilelist.bin"
+            }
+          ],
+          "string_ref_count": 2,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      }
+    ]
+  }
+}

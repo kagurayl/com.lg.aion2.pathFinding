@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也知道，净化魔界的不死族是永远都做不完的工作。</p>
+          <p> </p>
+          <p>在他们全部消失之前，我们的伤口永远无法愈合。</p>
+          <p> </p>
+          <p>我们必须不断地将幽灵们送归奥德的流动，直到幽灵村里的幽灵全部消失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您能像上次一样，帮我们消灭掉精灵，我们执行任务的时候就会容易很多。</p>
+          <p> </p>
+          <p>如果您能定期去贝斯佩尔幽灵村消灭精灵，将会对我们有很大的帮助……</p>
+          <p> </p>
+          <p>怎么样？您愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮助我们。</p>
+          <p> </p>
+          <p>请您继续去贝斯佩尔幽灵村消灭[%dic:STR_DIC_M_ElementalEarth3SnowD_34_An]。</p>
+          <p> </p>
+          <p>然后把搜集到的[%dic:STR_DIC_I_QUEST_2529a]带回来作为证据。</p>
+          <p> </p>
+          <p>我必须知道消灭了多少精灵，这样我们才能制定相应的对策。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意吗？我觉得您不是这种人，才鼓起勇气请您帮忙的……</p>
+          <p> </p>
+          <p>我和吉格里泰大人忙着对付不死族，没有余力管别的事情。</p>
+          <p> </p>
+          <p>所以才会向[%username]大人请求帮助……</p>
+          <p> </p>
+          <p>没想到您竟然会拒绝。看来我得去找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>我觉得差不多该回来了，所以正在这里等您呢。</p>
+          <p> </p>
+          <p>拜托您的事情怎么样了？</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_M_ElementalEarth3SnowD_34_An]消灭掉，把[%dic:STR_DIC_I_QUEST_2529a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出紫色结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去贝斯佩尔幽灵村吗？</p>
+          <p> </p>
+          <p>即使您再忙，答应别人的事情也应该要完成啊。那样吉格里泰大人和我才能集中精力净化不死族。</p>
+          <p> </p>
+          <p>请您快去消灭[%dic:STR_DIC_M_ElementalEarth3SnowD_34_An]，搜集[%dic:STR_DIC_I_QUEST_2529a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您帮我们消灭了寒冷地之精灵。</p>
+          <p> </p>
+          <p>吉格里泰大人和我终于可以集中精力净化不死族了。</p>
+          <p> </p>
+          <p>净化不死族的速度越快，难民们回到村里的日子就会越早到来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_ElementalEarth3SnowD_34_An]，把获得的结晶交给[%dic:STR_DIC_N_Svera]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去贝斯佩尔幽灵村消灭寒冷地之精灵，搜集紫色结晶交给斯贝拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯贝拉说贝斯佩尔幽灵村因为龙帝的武器受到了污染，不仅是人类和动物，连精灵都受到了影响。</p>
+          <p> </p>
+          <p>由于受到精灵的攻击，净化不死族的工作遇到了困难。于是帮她消灭了寒冷地之精灵，并把紫色结晶作为证据交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

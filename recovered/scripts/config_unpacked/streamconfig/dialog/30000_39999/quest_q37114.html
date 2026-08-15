@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>[%username]大人，我刚好正在找您。</p>
+          <p> </p>
+          <p>就在这个时候，您就出现了。看来我和[%username]大人真是心有灵犀啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我收到了报告，说凯丹克拉尔的动向有点异常。兄弟们对凯丹大本营进行了监视，结果抓到了企图靠近那里的德拉坎和德拉克纽特。</p>
+          <p> </p>
+          <p>我们从他们那里了解到，凯丹克拉尔打算向龙族献上大量的贡品。</p>
+          <p> </p>
+          <p>他们可能是希望通过供奉贡品，让龙族赐予他们力量。</p>
+          <p> </p>
+          <p>所以我恳请[%username]大人，请您阻止凯丹克拉尔向龙族朝贡。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您和[%dic:STR_DIC_E_Li_35_45]%一起到凯丹大本营去。</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37114a]前变身成龙族，就可以见到凯丹祭司长。</p>
+          <p> </p>
+          <p>为了防止被祭司长发现，请通过执行守护者和他对话，然后把贡品箱里面的东西拿回来。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀……真是遗憾。</p>
+          <p> </p>
+          <p>提到可以应付任何情况的有经验的守护者，我一下子就想到了[%username]大人。</p>
+          <p> </p>
+          <p>就算能找到其他人，估计也比不上[%username]大人……</p>
+          <p> </p>
+          <p>不过我也不能勉强您。</p>
+          <p> </p>
+          <p>好的，再见，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>凯丹祭司长的眼睛是很难骗过的，任务顺利完成了吗？</p>
+          <p> </p>
+          <p>我很想知道凯丹克拉尔会献给龙族什么贡品。能给我看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出凯丹克拉尔的贡品箱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普通的克拉尔很容易骗过。他们只要一看到龙族，就会感到害怕，对你恭恭敬敬的。</p>
+          <p> </p>
+          <p>但是祭司长却不同。他经常和龙族会面，还有感知气息的能力，因此必须小心。</p>
+          <p> </p>
+          <p>因此一定要让伪装成德拉克纽特护卫兵的[%dic:STR_DIC_E_Li_35_45]%去和凯丹祭司长对话。</p>
+          <p> </p>
+          <p>一定要记住这一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是凯丹克拉尔准备的贡品？包装得还挺不错的嘛。</p>
+          <p> </p>
+          <p>(打开包装，查看里面的东西)哈，宝石，还有金子……全都是贵重的东西。</p>
+          <p> </p>
+          <p>这些贡品必须送到凯西内尔主神殿去，存入阿拉克内姊妹会的金库。有了这些东西的话，暂时就不用为活动经费担心了。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>希望今后您能继续帮助其他人。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Li_35_45]%一起在[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37114a]变身成龙族，从贡品箱中取出[%dic:STR_DIC_I_quest_37114a]，然后交给[%dic:STR_DIC_N_Velatris]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说凯丹克拉尔想献给龙族一大批贡品。变身成龙族，从凯丹祭司长手上把贡品抢回来吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到了贝拉特里斯姐妹，她说刚好正在找我，并给了我一个任务。</p>
+          <p> </p>
+          <p>内容是阻止克拉尔把贡品献给龙族使者。</p>
+          <p> </p>
+          <p>于是和执行守护者一起变身成龙族，从凯丹祭司长手上拿到了贡品。交给贝拉特里斯之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

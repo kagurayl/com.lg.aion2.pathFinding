@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我找你，是有件急事想交给你。</p>
+          <p> </p>
+          <p>你也知道在龙界有幸存下来的人类和守护者吧？他们就是被称为鸢族的人。</p>
+          <p> </p>
+          <p>这件事正是和他们有关。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸢族和我们不是特别亲近，我想你应该知道。</p>
+          <p> </p>
+          <p>虽然现在关系一般，但过去我们本出同根，而且又有龙族这个共同的敌人。</p>
+          <p> </p>
+          <p>他们对我们的态度既说不上友好，也说不上敌对。</p>
+          <p> </p>
+          <p>想到我们今后要做的事情，必须和鸢族保持友好关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想过很多种方案，我想现在最有效的方法，就是帮助他们解决困难。</p>
+          <p> </p>
+          <p>但是如果摸不准他们的脾气，派遣大量的人员过去，反而不如派一个能干的人过去更好。</p>
+          <p> </p>
+          <p>[%username]，你应该听明白我的意思了吧？</p>
+          <p> </p>
+          <p>你先去见见和我们这边有联系的人，然后帮助他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先到地下要塞监视基地去。去见见那里的[%dic:STR_DIC_N_Honeus]。</p>
+          <p> </p>
+          <p>根据我们掌握的情况，在鸢族中他是对我们比较友好的一个人。</p>
+          <p> </p>
+          <p>最近收到了情报，说他好像遇到了困难。你去找他的话，他一定会向你请求帮助的。</p>
+          <p> </p>
+          <p>如果你能帮他，今后他就会帮助我们。不管是直接也好，间接也好。</p>
+          <p> </p>
+          <p>即使是比较困难的事情，希望你也不要拒绝，一定要帮帮他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好像不知道和鸢族的关系对我们来说是多么重要。</p>
+          <p> </p>
+          <p>如果你不知道这个任务的重要性的话，就是把任务交给你，也不会取得什么成果。</p>
+          <p> </p>
+          <p>就算我什么都没说好了。</p>
+          <p> </p>
+          <p>不过我得告诉你，今后我可不敢再把重要的任务交给你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来找我，有什么事吗？</p>
+          <p> </p>
+          <p>一般的天族守护者都不太愿意和我接触……</p>
+          <p> </p>
+          <p>你特地来找我，一定有什么事情吧？</p>
+          <p> </p>
+          <p>跟我说说是什么事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来帮我的？</p>
+          <p> </p>
+          <p>哈哈哈，真是……</p>
+          <p> </p>
+          <p>我都不知道是该感谢你呢，还是该问问你在打什么主意。</p>
+          <p> </p>
+          <p>不过我现在确实需要帮助，因此我是不会拒绝的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Honeus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">贝尔塞蒂说和鸢族的关系非常重要。去见见地下要塞监视基地的胡内乌斯，询问是否需要帮助吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔塞蒂说为了将来的事情，必须和龙界的守护者保持友好关系。</p>
+          <p> </p>
+          <p>他说直接去帮助他们应该会比较有效，建议我去见见和天族比较友好的胡内乌斯。</p>
+          <p> </p>
+          <p>见到胡内乌斯，说可以帮助他之后。他说我好像有什么图谋，但是自己确实需要帮助，因此不会拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

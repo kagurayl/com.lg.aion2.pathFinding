@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%userclass]大人，您是叫[%username]吧？</p>
+          <p> </p>
+          <p>看来没错。您到底去哪儿呢，现在才出现？</p>
+          <p> </p>
+          <p>乌义金一直在等[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问乌义金是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他是从伏魔殿来的术古，有东西要交给[%username]大人。</p>
+          <p> </p>
+          <p>详细的情况虽然没跟我说，但好像是地位很高的人让他来的。</p>
+          <p> </p>
+          <p>他在贝鲁斯兰要塞等了几天，再也等不下去，就自己出去找您了。您要去追他吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌义金说要从[%dic:STR_DIC_W_STR_DF3_SZ_E4]，经[%dic:STR_DIC_W_STR_DF3_SZ_D1]前往[%dic:STR_DIC_W_STR_DF3_SZ_G2_2]。请您去那个方向找找看。</p>
+          <p> </p>
+          <p>希望不要在路上错过…贝鲁斯兰地方很大，我担心您白跑一趟。</p>
+          <p> </p>
+          <p>我来跟您说明一下乌义金的外貌。</p>
+          <p> </p>
+          <p>他是个带着一只眼镜的口音有点奇怪的术古。还带着一个手下。</p>
+          <p> </p>
+          <p>希望您能找到他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像是很重要的事情，您不想去追他吗？</p>
+          <p> </p>
+          <p>他虽然没说是谁，但好像是伏魔殿地位很高的人派来的。</p>
+          <p> </p>
+          <p>当然，你不愿意的话，我也没办法。不过我还是有点担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿嚏，魔界都这样吗…呐？</p>
+          <p> </p>
+          <p>到处都是冰天雪地。</p>
+          <p> </p>
+          <p>得赶快把事情做完，尽快离开这里才行。那个人到底在哪儿呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是不是乌义金。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(很警惕的样子)我是乌义金…你怎么知道我的名字的？</p>
+          <p> </p>
+          <p>啊，你有没有遇到贝鲁斯兰要塞的名叫艾弗的守护者。</p>
+          <p> </p>
+          <p>我又…害怕，不，我又紧张了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_N_Shulack_DF3_01]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说有个伏魔殿来的名叫乌义金的术古在找我。去阿姆斯尼尔港口、基侬加夫冰冻都市和银色丘陵方向寻找乌义金。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞卫兵艾弗问我为什么现在才出现，说有个名叫乌义金的术古正在找我，不久前刚离开要塞。</p>
+          <p> </p>
+          <p>据说是伏魔殿地位很高的人派来的，于是按照艾弗指点的方向追赶，终于见到了乌义金。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

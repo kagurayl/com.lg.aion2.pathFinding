@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，看来我得换家交易商了。</p>
+          <p> </p>
+          <p>我是说乌云贸易团。我紧急订购的东西到现在还没有消息。</p>
+          <p> </p>
+          <p>找不到的话，就直说找不到好了。让我在这里干等着，真是郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是研究所需的东西……</p>
+          <p> </p>
+          <p>[%username]，你的嘴一向很紧，我就告诉你吧。</p>
+          <p> </p>
+          <p>事实上，我让他们帮我购买精炼德拉纳碎片，因为我有个有关烙印之石的重要实验要做。</p>
+          <p> </p>
+          <p>当然，这是经过上司允许的，秘密的试验。</p>
+          <p> </p>
+          <p>我不能再等下去了。请你帮我去向佩伊灵灵确认一下，我订购的东西到底怎么样了，她是不是忘记了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请帮我转告[%dic:STR_DIC_N_Shugo_DC1_22]。</p>
+          <p> </p>
+          <p>如果我们的交易以这种方式结束，我一定会向上司表达我的意见的。</p>
+          <p> </p>
+          <p>你让她好好想一想，那样的话，会给乌云贸易团使节在伏魔殿的活动造成什么样的影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你有什么急事吗？</p>
+          <p> </p>
+          <p>我以为你一定会答应我的请求，所以才会把这种秘密的事情告诉你……</p>
+          <p> </p>
+          <p>算了，是我太轻率了，要怪也只能怪自己。</p>
+          <p> </p>
+          <p>不过我说的话千万不能泄露给其他人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是最厉害的[%userclass][%username]吗？</p>
+          <p> </p>
+          <p>像你这么身份高的人来访问我们贸易团，我感到非常荣幸。</p>
+          <p> </p>
+          <p>有什么需要的话，请尽管说。</p>
+          <p> </p>
+          <p>不管是人还是东西，只要是你想要的，我都能帮你找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达贝尔盖米尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚想和贝尔盖米尔联系呢。你来的正是时候。</p>
+          <p> </p>
+          <p>贝尔盖米尔订购的东西已经装上船了，但是这次的船因为奥德暴风而停航了！</p>
+          <p> </p>
+          <p>本以为只要暴风停了就能出发，最多晚到个一两天，没想到暴风持续的时间比我想象的要长得多，船看来暂时是没办法出航了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Shugo_DC1_22]转达贝尔盖米尔的话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮贝尔盖米尔去乌云贸易团使节团长佩伊灵灵那里确认一下订购的东西什么时候能到。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔盖米尔说她向乌云贸易团的使节团订购了东西，但说好的日期都已经过了，却还是没有消息，让我帮她去确认一下情况。</p>
+          <p> </p>
+          <p>向使节团长佩伊灵灵转达了贝尔盖米尔的话之后，她说运货的船因为奥德暴风而不能出航，只能表示抱歉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

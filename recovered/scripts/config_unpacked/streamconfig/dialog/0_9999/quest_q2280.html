@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃伦队长好像想把黑脚部族斩草除根。</p>
+          <p> </p>
+          <p>我接到了除掉[%dic:STR_DIC_M_LycanShamanS_17_Ae]的命令，如果这次作战胜利的话，我们魔族在今后的战斗中就占优势了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱卡恩在战斗中比较依赖咒术师。 </p>
+          <p> </p>
+          <p>所以除掉咒术师的话，他的战斗力就会大大下降，那我们讨伐黑脚部族就容易多了。 </p>
+          <p> </p>
+          <p>得找一个能担当此任的守护者...</p>
+          <p> </p>
+          <p>"[%username], 您可以接受这个消灭 [%dic:STR_DIC_M_LycanShamanS_17_Ae]的任务吗？"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。完成这个任务之后，您的功绩一定会传到伏魔殿。</p>
+          <p> </p>
+          <p>请你召集一些同伴一起去[%dic:STR_DIC_W_DF1A_20]吧。这个地方一个人去太危险了，虽然你很强，但还是得和同伴们一起去。</p>
+          <p> </p>
+          <p>去把[%dic:STR_DIC_M_LycanShamanS_17_Ae]收拾了再回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不知道这个任务有多重要吗？</p>
+          <p> </p>
+          <p>放弃这么好的机会，以后会后悔的。</p>
+          <p> </p>
+          <p>你再好好想想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦。完成任务了吗？</p>
+          <p> </p>
+          <p>你去黑脚驻地除掉[%dic:STR_DIC_M_LycanShamanS_17_Ae]了吗？</p>
+          <p> </p>
+          <p>给我详细说说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你和同伴们成功完成这个任务了呀。</p>
+          <p> </p>
+          <p>这为讨伐那些反抗魔族的黑脚部族，奠定了良好基础。</p>
+          <p> </p>
+          <p>谢谢你完成这个任务，这个是你努力工作的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉在战斗中起重要作用的[%dic:STR_DIC_M_LycanShamanS_17_Ae]%。([%2]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Morn]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">得到情报说黑脚部族相当依赖咒术师。所以去黑脚驻地消灭他们的精锐咒术师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          
+<p>据说要想消灭黑脚部族，最好先除掉咒术师，所以其和同伴们一起去黑脚的驻地杀死了黑脚的精锐咒术师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

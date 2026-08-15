@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，最近经常见到你嘛。</p>
+          <p> </p>
+          <p>看你好像正在努力修炼。来学习新技能的间隔也越来越短了。</p>
+          <p> </p>
+          <p>你学会使用上级烙印之石了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。为了对你表示鼓励，我告诉你一个好消息。</p>
+          <p> </p>
+          <p>(晃动着一卷羊皮纸)这是死亡之神庙送来的公文，让我给能够熟练使用上级烙印之石的弓星和杀星发放奖励。</p>
+          <p> </p>
+          <p>听说最近龙界陷入了苦战，所以他们才想到了这个激励措施。</p>
+          <p> </p>
+          <p>如果会使用上级烙印之石的人数增加，就会有更强的力量与龙族和天族对抗。从某种角度来看，这也许是个不错的解决方案。</p>
+          <p> </p>
+          <p>你决定了吗？愿意证明你的实力，接受奖励吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。反正早晚要学，还不如现在学习，还可以获得奖励。可谓一举两得。</p>
+          <p> </p>
+          <p>等等。用什么办法来确认你的能力比较好呢？你是杀星，应该学习过***。</p>
+          <p> </p>
+          <p>即使没学习也没关系，现在学习也可以。</p>
+          <p> </p>
+          <p>我想用它来确认你的实力，请你去使用***10次。</p>
+          <p> </p>
+          <p>期待你能给我带来好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真意外。我以为你一定会接受的呢。</p>
+          <p> </p>
+          <p>我本来想确认了实力之后再告诉你，你知道神庙准备的奖励是什么吗？</p>
+          <p> </p>
+          <p>是上级烙印之石。怎么样？你改变主意了没有？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你快回来了。</p>
+          <p> </p>
+          <p>对了，***学会了吗？一开始可能会比较困难，但一旦学会了，就能很快熟练使用其他上级烙印之石技能了。</p>
+          <p> </p>
+          <p>你过来一点，我得确认一下你是否遵守了约定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">靠近一些。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用手放在我的头上)你果然按照约定，充分地熟悉了上级烙印之石的使用。</p>
+          <p> </p>
+          <p>这样的话，我就可以把说好的奖励送给你了。</p>
+          <p> </p>
+          <p>来，拿着。这是死亡之神庙赐给你的奖励。干嘛？没想到会是这个礼物，很吃惊吗？</p>
+          <p> </p>
+          <p>希望你能和***一样熟练使用。可以的话，请你去格尔克马洛斯帮助魔族作战。</p>
+          <p> </p>
+          <p>有你这样优秀的杀星的支援，一定可以大大增强我方的战斗力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Ra]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Sigyn]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">据说死亡之神庙正在向能够熟练使用上级烙印之石的杀星发放上级烙印之石。使用***，证明自己可以熟练使用上级烙印之石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡金说死亡之神庙正在向能够熟练使用上级烙印之石的弓星和杀星发放上级烙印之石。</p>
+          <p> </p>
+          <p>按照锡金的指示，熟练掌握了***。回去之后，他按照约定，给了我一块烙印之石。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

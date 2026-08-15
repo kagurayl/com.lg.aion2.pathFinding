@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道坎塔斯海岸是歌唱的海岸的意思吗？</p>
+          <p> </p> 
+          <p>根据传说，这个附近有很多塞伊兰。</p>
+          <p> </p> 
+          <p>据说每次塞伊兰坐在石头上唱歌的时候，船员们就会把船开向歌声传来的方向。</p>
+          <p> </p>
+         <p>结果船就会在石头上撞成碎片。因此在坎塔斯海岸有很多破碎的船的碎片和[%dic:STR_DIC_M_Mimic_19_n]。</p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然现在塞伊兰没有了，但是货物箱子却仍然很多。</p>
+          <p> </p>
+          <p>虽然不知道它们是从哪里飘来的，但是经常有箱子从海里漂上海岸。如果不及时清理，就会堆积在那里污染海水。</p>
+	  <p> </p>
+          <p>而且有时候箱子里还藏着奇怪的怪物。那些怪物非常凶恶，是守护者还好，要是人类的话就难免丢了性命。</p>
+          <p></p>
+          <p>为了让大海不被污染，让人类可以安全来往，[%username]大人您能帮一下忙吗？</p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。那就请您帮我一下。</p>      
+          <p> </p>
+          <p>您能帮我清除掉12个[%dic:STR_DIC_M_Mimic_19_n]就帮了我的大忙了。其余的我会让部下们慢慢清除掉。</p>   
+          <p> </p>
+          <p>对了，不管是有怪物的箱子还是普通的箱子，都没有关系。只要把您看到的箱子清理掉就行了。</p>
+          <p></p>
+	</body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不是有什么重要的任务要执行啊。 </p>
+          <p> </p>
+          <p>那样的话就别为这种细小的事情耽误时间。</p>
+          <p> </p>  
+          <p>您可以在完成任务之后有了时间再来帮我。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。 </p>
+          <p></p>
+          <p>由于箱子里可能有怪物，因此清理起来不会那么容易。</p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来最近经常听到[%username]大人的名字是有原因的啊。</p>          
+          <p></p>
+          <p> 我还让您小心箱子里的怪物，真是瞎担心。</p>
+          <p></p>
+          <p> 不管怎样，谢谢您帮助我。这是一点谢意，虽然很少，但请您收下。</p>
+          <p></p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除掉落在坎塔斯海岸上的[%dic:STR_DIC_M_Mimic_19_n]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Phorcys]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除掉落在坎塔斯海岸上的箱子</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

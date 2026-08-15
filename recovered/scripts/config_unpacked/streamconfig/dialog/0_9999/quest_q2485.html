@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就像魔界有莱卡恩一样，在天界有一种名叫克拉尔的亚人种。</p>
+          <p> </p>
+          <p>虽然大部分的克拉尔部族都在和天族对抗，但是也有少数的克拉尔部族以服从龙族为耻，因此和天族合作。</p>
+          <p> </p>
+          <p>虽然现在协助天族的克拉尔的数量还很少，但是如果像他们这样的亚人种的势力增多的话，形势就不太好了。</p>
+          <p> </p>
+          <p>只有克拉尔不断地攻击天族，才能让天界变得更加混乱。这样的话，他们就不能将兵力集中于欧比斯，战斗力就会被分散。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>协助天族的克拉尔的头目名叫[%dic:STR_DIC_N_NPC_Mabangta]。是名叫奇夏尔克拉尔的部族的长老。</p>
+          <p> </p>
+          <p>虽然大部分的奇夏尔克拉尔追随龙族，但是他的追随者却和天族联手。</p>
+          <p> </p>
+          <p>现在他的追随者还不是很多，如果能把他除掉的话，他们的势力就会自然而然地消失。</p>
+          <p> </p>
+          <p>请[%username]大人去把马邦塔除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想找到[%dic:STR_DIC_N_NPC_Mabangta]，您需要去一个名叫[%dic:STR_DIC_W_LF2_SZ_E1_SUB_1]的地方。</p>
+          <p> </p>
+          <p>他和追随他的部下们一起躲藏在那里。</p>
+          <p> </p>
+          <p>您不要以为他们是亚人种就小看他们。他既然是克拉尔的长老，应该不会太好对付。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那您到这里来到底是干什么？</p>
+          <p> </p>
+          <p>您穿过危险的时空的裂缝过来，难道是想来这里旅游的吗！</p>
+          <p> </p>
+          <p>我都把这么重要的情报告诉了您。不知道盖尔库金从哪里找来了这样一个守护者...</p>
+          <p> </p>
+          <p>如果您不愿意去除掉马邦塔的话，那您就走吧。</p>
+          <p> </p>
+          <p>但是我得好好跟他们说说，如果再这样的话，我就不会再给他们提供情报了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您顺利见到锡普拉塔了吗？</p>
+          <p> </p>
+          <p>他说要告诉我们的重要情报是什么呢？</p>
+          <p> </p>
+          <p>跟我仔细说说您到底干了些什么吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天界还有这样的事情啊。</p>
+          <p> </p>
+          <p>是叫马邦塔吗？那个帮助天族的克拉尔？</p>
+          <p> </p>
+          <p>那个家伙消失了的话，克拉尔和天族应该又会对立了吗？</p>
+          <p> </p>
+          <p>谢谢您帮我完成了这么重要的任务。这是给您的报答，请您千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉协助天族的[%dic:STR_DIC_N_NPC_Mabangta]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gelkugin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉克拉尔中协助天族的马邦塔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡普拉塔说有一个名叫马邦塔的克拉尔正在协助天族，说必须要让克拉尔继续和天族对立，才却让天界变得混乱。</p>
+          <p> </p>
+          <p>于是为了让天族和克拉尔继续对立，去除掉了马邦塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

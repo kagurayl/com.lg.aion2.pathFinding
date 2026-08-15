@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您能听我说件事吗？</p>
+          <p> </p>
+          <p>我想和您商量一下史匹格的问题。</p>
+          <p> </p>
+          <p>应该不会花费您太多时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，因为史匹格的原因，我最近患上了头痛和失眠。</p>
+          <p> </p>
+          <p>吉格里泰大人忙着对付贝斯佩尔幽灵村的不死族，没时间去管史匹格的问题。</p>
+          <p> </p>
+          <p>像[%username]大人这样有能力的人应该可以解决这个问题，您有时间吗？</p>
+          <p> </p>
+          <p>没别的，我只是希望您能帮我消灭掉几个史匹格。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]大人！</p>
+          <p> </p>
+          <p>最近趁野兽们肆虐的时候，史匹格正在肆意破坏我们的采集物。</p>
+          <p> </p>
+          <p>其中问题最大的是[%dic:STR_DIC_M_Sprigg3DF3_33_An]。</p>
+          <p> </p>
+          <p>请您去教训一下它们，然后把结果告诉[%dic:STR_DIC_N_Sorgrim]。我得先处理不死族的事情。</p>
+          <p> </p>
+          <p>啊，它们就在[%dic:STR_DIC_W_STR_DF3_SZ_C1]通往[%dic:STR_DIC_W_STR_DF3_SZ_C2]的小路上。</p>
+          <p> </p>
+          <p>它们的合作性很强，请一定要小心！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有别的急事啊。</p>
+          <p> </p>
+          <p>那就没办法了。</p>
+          <p> </p>
+          <p>看来我只能去找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是[%dic:STR_DIC_N_Alfgeir]%拜托帮忙的那位吗？</p>
+          <p> </p>
+          <p>史匹格全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。多亏了您，来到这里这么长时间，终于完成了一项任务。</p>
+          <p> </p>
+          <p>您帮我们完成了这样一件事，我真不知道该怎么感谢您。</p>
+          <p> </p>
+          <p>我从欧比斯到这里来还没多久，感觉有点吃力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭破坏黑色平原的采集物的[%dic:STR_DIC_M_Sprigg3DF3_33_An]%([%2]/23)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sorgrim]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿尔夫盖尔说破坏黑色平原的采集物的史匹格让他很头疼。帮他赶走史匹格，然后把结果告诉索尔格林吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>来到黑色平原，卫兵阿尔夫盖尔叫住了我。</p>
+          <p> </p>
+          <p>他说雪原棕熊栖息地周边的采集物是黑色平原的重要收入来源，但是很多都被史匹格破坏掉了，他为此很头疼。</p>
+          <p> </p>
+          <p>他说虽然很想马上去消灭掉它们，但是自己忙着处理不死族的事情，因此让我去帮他处理一下。</p>
+          <p> </p>
+          <p>按照阿尔夫盖尔所说，消灭掉了斯普利甘特收集者。向索尔格林报告后，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

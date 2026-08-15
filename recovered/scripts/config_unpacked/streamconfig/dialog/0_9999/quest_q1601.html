@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次我说听到了好消息，您还记得吗？那之后我又和天加隆商团的术古确认了一下，好像是个不错的买卖。</p>
+          <p></p>
+          <p>塔乌利中有个叫做燃烧的鬃毛爱乌提安的家伙。</p>
+          <p></p>
+          <p>他的鬃毛的色泽非常美丽，毛皮也水光溜滑，眼睛很有神，而且非常的粗暴，所以很出名。</p>
+          <p></p>
+          <p>听说不久前天加隆的术古们经过普依艾密林时，遭到了爱乌提安的袭击，送往极乐世界的物品也被洗劫一空。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天加隆商团因此乱成一团，听说因特尔蒂卡地区的负责人修奥朗朗还挨了批评。</p>
+          <p></p>
+          <p>也许是觉得这样下去不行，修奥朗朗就到处去拜托和他有交情的守护者，让他们帮忙把爱乌提安除掉。</p>
+          <p></p>
+          <p>他也来找过我，不过我有更紧迫的任务。</p>
+          <p></p>
+          <p>[%username]大人，您能帮我把[%dic:STR_DIC_M_TauricNamed_40_An]除掉吗？</p>
+          <p></p>
+          <p>如果成功的话，酬劳一定会很丰厚的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去[%dic:STR_DIC_W_LF3_SZ_C4]，替我把[%dic:STR_DIC_M_TauricNamed_40_An]除掉。</p>
+          <p></p>
+          <p>据说他平时呆在部落深处。</p>
+          <p></p>
+          <p>而且这家伙还是塔乌利的首领，如果能把他除掉，就可以削弱塔乌利的势力。</p>
+          <p></p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人因为不是从修奥朗朗那里直接接受委托，所以可以拒绝。</p>
+          <p></p>
+          <p>如果您看到他那恳切的哀求眼神，相信您一定不会拒绝的。</p>
+          <p></p>
+          <p>那就算了。就算是拜托其他守护者，也一定要把爱乌提安除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究中心监视基地以为只要注意雷帕尔革命团就可以，没想到塔乌利这么让人伤脑筋。</p>
+          <p></p>
+          <p>不过至少不需要面对龙族，已经算是够幸运的了。</p>
+          <p></p>
+          <p>对了，您除掉[%dic:STR_DIC_M_TauricNamed_40_An]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是[%username]大人。我就知道您一定能把他除掉。</p>
+          <p></p>
+          <p>既然那个家伙已经消失，天加隆的术古们一定会很高兴。当然，人类也可以安心地进出密林了。</p>
+          <p></p>
+          <p>这里要做的事情太多了，既要做研究，还要侦察，现在居然还要处理民怨...</p>
+          <p></p>
+          <p>这样下去我就不再是西风的守护者，而是万能的守护者了。</p>
+          <p></p>
+          <p>辛苦您了，真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_TauricNamed_40_An]。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Seniferes]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">燃烧的鬃毛爱乌提安给天加隆商团的术古们造成了重大的损失。杀死他，然后领取报酬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞尼佩雷斯说天加隆商团的术古们因为燃烧的鬃毛爱乌提安而受到了很大的损失，让我去把他除掉。</p>
+          <p></p>
+          <p>前往塔乌利部落除掉了爱乌提安之后，他对我表示感谢，说着对术古和人类都会很有帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

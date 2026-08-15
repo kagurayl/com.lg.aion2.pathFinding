@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，我的腰。床太硬，我腰疼的毛病越来越严重了。</p>
+          <p> </p>
+          <p>我的脊椎不好，必须睡在水床上。出来旅行之后，就从来没有睡过好觉。</p>
+          <p> </p>
+          <p>一开始还能忍受，但现在连站都站不直了。看来我得在这里多停留一段时间了... </p>
+          <p> </p>
+          <p>我想利用这段时间做一个水床，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问应该怎么帮他。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>附近盐漠里的莱诺斯的皮毛和我之前睡的床上使用的布拉克斯皮毛很相似。</p>
+          <p> </p>
+          <p>莱诺斯皮毛经过防水处理，再经过强化，然后铺上棉布，就能做成和之前用过的水床类似的东西。</p>
+          <p> </p>
+          <p>请您帮我搜集20张[%dic:STR_DIC_I_QUEST_3101a]。然后再帮我购买一些[%dic:STR_DIC_I_shopmaterial_ha_17a]、[%dic:STR_DIC_I_shopmaterial_ta_03a]和[%dic:STR_DIC_I_shopmaterial_ta_11a]。</p>
+          <p> </p>
+          <p>当然，我不会让您白帮忙的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>您也知道，麻吉隆做事非常慢。</p>
+          <p> </p>
+          <p>之前您帮我搜集到了扇子的材料，但到现在都没有完成。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不能强迫您帮我。</p>
+          <p> </p>
+          <p>但这里并没有太多的人可以帮我。</p>
+          <p> </p>
+          <p>我打算在这里呆上很长一段时间，这下完蛋了。</p>
+          <p> </p>
+          <p>都没办法好好休息...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>20张[%dic:STR_DIC_I_QUEST_3101a]、[%dic:STR_DIC_I_shopmaterial_ha_17a]、[%dic:STR_DIC_I_shopmaterial_ta_03a]，以及[%dic:STR_DIC_I_shopmaterial_ta_11a]全都带来了吗？</p>
+          <p> </p>
+          <p>一想到能好好地睡一觉，我的心情就非常激动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水床的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料还没搜集齐吗？</p>
+          <p> </p>
+          <p>我又不是让您免费帮忙，您怎么能这么随便应付呢？</p>
+          <p> </p>
+          <p>只要缺少一样材料，就无法制作水床。</p>
+          <p> </p>
+          <p>所以一样都不能少，拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么多皮毛的话，应该够了。还有防水剂、强化剂、棉纱...</p>
+          <p> </p>
+          <p>好的，材料全都搜集齐了。</p>
+          <p> </p>
+          <p>真是谢谢您。我要马上开始制作。大概需要一两天时间。</p>
+          <p> </p>
+          <p>请收下。这是材料费，以及辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_Q3101all]，然后交给[%dic:STR_DIC_N_Ixion]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伊克锡安说因为睡觉的地方不舒服，他的腰疼越来越严重。帮助伊克锡安搜集制作水床的材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊克锡安说自己的脊椎不太好，原来一直都睡在特制的水床上。</p>
+          <p> </p>
+          <p>来到喷嚏火山口之后，就再也没能好好睡觉，让我帮他搜集制作水床的材料。</p>
+          <p> </p>
+          <p>搜集到了伊克锡安需要的材料，他非常高兴，说要马上开始制作水床。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

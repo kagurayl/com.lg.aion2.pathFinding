@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚开始听到被派到哈拉巴纳露天温泉的消息的时候，我非常高兴。</p>
+          <p> </p>
+          <p>以为不管工作有多累，只要完成了任务往温泉里一泡，就能缓解一天的疲劳。</p>
+          <p> </p>
+          <p>但是过来一看，这叫什么事啊。完全是雷帕尔革命团的天地嘛。</p>
+          <p> </p>
+          <p>别说泡温泉了，在这儿天天和雷帕尔革命团的人战斗，比在要塞工作的时候起码要累十倍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管干掉多少，他们还是会不断地出现。现在和他们打架都打得腻了。</p>
+          <p> </p>
+          <p>莫德古尔和我，只有两个人，对付这么多的人绝对不是什么轻松的事。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人您能帮帮我们吗？请您召集同伴，帮我们把他们清除掉一些。</p>
+          <p> </p>
+          <p>如果您能帮忙的话，将对我和莫德古尔起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去哈拉巴纳露天温泉，把[%dic:STR_DIC_M_LehparWizardD_36_An]、[%dic:STR_DIC_M_LehparPriestD_36_An]和[%dic:STR_DIC_M_LehparAsD_35_An]清除掉。</p>
+          <p> </p>
+          <p>法师和治疗师会使用魔法，暗袭兵会躲在那里偷袭，所以他们是最最让人头疼的。</p>
+          <p> </p>
+          <p>对了，他们很不容易对付，请您一定要召集同伴一起去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是相信我和莫德古尔的实力呢，还是就是不想帮我们呢？</p>
+          <p> </p>
+          <p>如果放走了雷帕尔革命团，您知道上面的责罚会有多重吗？</p>
+          <p> </p>
+          <p>要是您能帮忙的话就好了...不过不愿意的话，我也没有办法。</p>
+          <p> </p>
+          <p>我也不会抱着腿求您。请您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>您帮我狠狠地教训了那帮雷帕尔革命团了吗？</p>
+          <p> </p>
+          <p>您不知道我看见他们有多生气？温泉被革命团的那帮乌合之众占据着，害得我都不能泡！</p>
+          <p> </p>
+          <p>不过话说回来，我拜托您的那些家伙，已经全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。我和莫德古尔暂时总算可以喘口气了。</p>
+          <p> </p>
+          <p>如果有很多人来帮忙的话，一定能把哈拉巴纳露天温泉从雷帕尔革命团的手里夺回来。</p>
+          <p> </p>
+          <p>如果那一天能够到来的话，那全是托[%username]大人的福。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除占据哈拉巴纳露天温泉的革命团</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparWizardD_36_An]([%2]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparPriestD_36_An]([%5]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparAsD_35_An]([%8]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mothir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">哈拉巴纳露天温泉附近的雷帕尔革命团的气焰很嚣张。必须帮助莫提尔把革命团的人清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫提尔说因为哈拉巴纳露天温泉的雷帕尔革命团而非常辛苦。</p>
+          <p> </p>
+          <p>于是按照他的拜托，清除掉了露天温泉法师、治疗师和暗袭兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

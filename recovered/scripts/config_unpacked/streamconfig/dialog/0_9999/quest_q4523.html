@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在真正的朋友面前，不管自己的形象如何，都不会觉得丢脸。</p>
+          <p> </p>
+          <p>特别是从小一起长大的同伴，我不介意在他们面前出丑。</p>
+          <p> </p>
+          <p>那样的朋友，就算我唠叨他两句，他也不会发火。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有一位这样的朋友，最近受了很重的伤。</p>
+          <p> </p>
+          <p>那个家伙的好奇心很强……听说他偷偷进入了[%dic:STR_DIC_W_STR_DF3_SZ_G4_3]，所以才变成了那副模样。</p>
+          <p> </p>
+          <p>没想到研究所里的[%dic:STR_DIC_M_IDDF3LP_LehparEleShamanNmdDQ_45_Ae]有那么强。看到躺在床上的朋友，我很想教训教训他。</p>
+          <p> </p>
+          <p>[%username]大人，你能帮我除掉他吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就拜托您了。</p>
+          <p> </p>
+          <p>我的朋友当时也很拼命……但还是受了重伤，看来那个家伙很不好对付。</p>
+          <p> </p>
+          <p>这件事比较困难，但如果您能帮我完成，我会用铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是在忙别的事吧。</p>
+          <p> </p>
+          <p>那就等您有时间的时候再来找我吧。</p>
+          <p> </p>
+          <p>我现在非常愤慨……如果您想帮我，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>痛苦的时候，人总是更想念朋友。</p>
+          <p> </p>
+          <p>最近我花费了不少时间去安慰痛苦的朋友。</p>
+          <p> </p>
+          <p>如果[%username]大人能把他消灭掉，我的朋友一定会很高兴的。</p>
+          <p> </p>
+          <p>您一定为我的朋友带来了好消息吧？您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是辛苦您了。</p>
+          <p> </p>
+          <p>那是个奇怪的家伙，也许随时会出来危害善良的守护者……</p>
+          <p> </p>
+          <p>多亏了[%username]大人，现在终于安静了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDDF3LP_LehparEleShamanNmdDQ_45_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Maponus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去阿尔奎米亚研究所消灭大神官艾斯拉斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官玛珀努斯说进入阿尔奎米亚研究所的朋友受了伤。</p>
+          <p> </p>
+          <p>帮助伤心的玛珀努斯去研究所消灭了大神官艾斯拉斯，他给我我铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

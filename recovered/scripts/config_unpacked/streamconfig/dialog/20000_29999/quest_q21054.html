@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细看我的脸)你是[%username]吗？</p>
+          <p> </p>
+          <p>嗯，没错。和别人说的一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">有什么事吗？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有人预言说你会到这里来。</p>
+          <p> </p>
+          <p>是命运把你带到这里来的……</p>
+          <p> </p>
+          <p>你见过马勒库坦主神吗？</p>
+          <p> </p>                         
+          <p>主神为了考验你的命运，给了我一件东西。</p>
+          <p> </p>
+          <p>(拿出一件散发出奇妙的光的防具下衣)就是这个，现在暂时放在我这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个嘛，主神好像对你的命运非常关心。</p>
+          <p> </p>
+          <p>他让我给你一个非常困难的任务，如果你能完成，让我把防具下衣送给你。</p>
+          <p> </p>
+          <p>但好似……主神的意志是苛刻的，就像残酷的命运一样。</p>
+          <p> </p>
+          <p>你也不要太高兴。</p>
+          <p> </p>
+          <p>怎么样？你愿意接受这个命运中的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你仔细听着。</p>
+          <p> </p>
+          <p>你必须去米特拉坎德消灭龙族，搜集[%dic:STR_DIC_I_QUEST_21054a]。</p>
+          <p> </p>
+          <p>当然，这件事不是一次两次就能完成的。</p>
+          <p> </p>
+          <p>你必须重复执行，直到得到足够的锻炼而获得重生为止。不管怎样，主神好像觉得你是个很了不起的守护者。</p>
+          <p> </p>
+          <p>你该不会害怕吧？</p>
+          <p> </p>
+          <p>请你马上出发。</p>
+          <p> </p>
+          <p>"等等！我忘了说了。把背鳞送过来的时候，顺便再准备150,000基纳。"</p>
+          <p> </p>
+          <p>那是捐献给马勒库坦主神殿的钱，请不要觉得心疼。主神给我的防具的价值，要比这些钱高得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还只听我说，就吓得腿直打哆嗦了？</p>
+          <p> </p>
+          <p>也是，你也知道，主神的考验是很严格的。</p>
+          <p> </p>
+          <p>不过你真的打算放弃吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你。</p>
+          <p> </p>
+          <p>"怎么样？去过米特拉坎德了吗？150,000基纳准备好了吗？"</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_21054a]在哪儿呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">"拿出背鳞和150,000基纳。"</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"150,000基纳不是小数目，你不再考虑一下吗"</p>
+          <p> </p>
+          <p>就算是捐献，也要看自己的情况而定。自己的情况也不容乐观，还要给别人捐献。我可不赞成这样做。</p>
+          <p> </p>
+          <p>请你考虑一下自己的经济情况，然后再和我说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"拿出背鳞和150,000基纳。"</Act>
+      <Act href="HACTION_FINISH_DIALOG">再考虑一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，你的理解力怎么这么差啊？</p>
+          <p> </p>
+          <p>主神说要对你进行命运的考验，我还很期待呢。真让人失望。</p>
+          <p> </p>
+          <p>我不是让你去大地之尖牙锻炼自己吗？我没跟你说吗？</p>
+          <p> </p>
+          <p>"我还说，要把[%dic:STR_DIC_I_QUEST_21054a]带回来作为证据，并准备150,000基纳，对吧？"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你搜集到了背鳞，看来是已经去过了。</p>
+          <p> </p>
+          <p>但是这样的修炼还不够。</p>
+          <p> </p>
+          <p>我不知道该不该把防具下衣给你。</p>
+          <p> </p>
+          <p>我很想遵循主神的意志，但是还不行，你需要继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">"去米特拉坎德执行任务，然后把[%dic:STR_DIC_I_QUEST_21054a]%和150,000基纳交给[%dic:STR_DIC_N_Batalrion]"</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴塔利安说接到了主神的命令，为我准备了一个困难的任务。执行他的指示吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴塔利安说从马勒库坦主神那里接到了命令，让我执行一个困难的任务，就能把防具下衣送给我。</p>
+          <p> </p>
+          <p>按照他的指示消灭了龙族，并把证据交给了他。但是他说修炼还不够，让我继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

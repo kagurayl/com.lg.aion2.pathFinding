@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您有孩子吗？</p>
+          <p> </p>
+          <p>我只有一个独生女。名字是欧尔兰。</p>
+          <p> </p>
+          <p>觉醒成为守护者的时候，想到不管发生什么事情都可以守护她，所以感觉很开心。不过真的生活了一段时间之后，就发现不是那回事了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_NONE_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看着女儿一点一点长大我很高兴。</p>
+          <p> </p>
+          <p>看着她长大结婚，生了孩子...到那个时候还算好。</p>
+          <p> </p>
+          <p>但是现在，她已经比我老得多，不久就会回到奥德的流动中去了。</p>
+          <p> </p>
+          <p>看着孩子死去，您知道我这个做爸爸的是什么样的心情吗？</p>
+          <p> </p>
+          <p>我在想，要是没有成为守护者，我就看不到这样的事情了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在已经是满头白发的女儿，说在死去之前有一个愿望。</p>
+          <p> </p>
+          <p>说是要泡一泡温泉，但是因为身体太弱，没办法去温泉。而且那里还有雷帕尔革命团，非常危险。</p>
+          <p> </p>
+          <p>可以的话，[%username]大人您能帮我去[%dic:STR_DIC_W_DF2_SUB_D3]打一点温泉水回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是可以让温泉水保温的保温瓶。</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_DF2_SUB_D3]，用这个装了温泉水，然后带回来。</p>
+          <p> </p>
+          <p>这是我那没有几天可以活的女儿欧尔兰的愿望。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然很想自己去取温泉水，但是我在这里脱不开身。</p>
+          <p> </p>
+          <p>您想让我变成连老去的女儿的愿望都不能实现的冷酷的父亲吗？</p>
+          <p> </p>
+          <p>请您再好好想想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然在别人眼里，我的女儿已经是个衰老的老人。但是在我眼里，她还是和以前一样漂亮。</p>
+          <p> </p>
+          <p>不管孩子变成了什么样子，在做父母的眼里，他们总是那么漂亮。</p>
+          <p> </p>
+          <p>对了，我拜托您去为我女儿取温泉水了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出温泉水。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您帮我取来了温泉水，[%username]大人。</p>
+          <p> </p>
+          <p>但是，我不知道该怎么和您说...</p>
+          <p> </p>
+          <p>我跟欧尔兰说温泉水马上送到之后，她说她想要的并不是这个。</p>
+          <p> </p>
+          <p>她说无论如何，都要直接去温泉一趟。</p>
+          <p> </p>
+          <p>让您白白去了哈拉巴纳露天温泉一趟...我真是没脸和您说了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_DF2_SUB_D3]打取温泉水，然后交给[%dic:STR_DIC_N_Kamer]([%2]/1)</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卡梅尔的独生女得偿所愿，帮他去打取温泉水吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡梅尔说身为人类的女儿变成了老人，希望能泡一下温泉。但是她太虚弱，无法直接过去，于是让我用保温瓶装一点温泉水回去。</p>
+          <p> </p>
+          <p>于是来到哈拉巴纳露天温泉，用保温瓶打了温泉水，回去交给了卡梅尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

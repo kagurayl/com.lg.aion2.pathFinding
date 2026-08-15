@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>贝拉特里斯姐妹送来了消息，说埃尔特内的情况让人非常不安。很多兄弟姐妹正在为复原埃拉库斯地下神殿而努力，但是因为魔物们的妨碍，一直没有取得什么成果。</p>
+          <p> </p>
+          <p>得知这个消息之后，8位圣女指示说“把魔物关到永恒的黑暗中吧”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为[%dic:STR_DIC_E_Li_28_38]的导师，和他们一起消灭掉[%dic:STR_DIC_M_37104]。</p>
+          <p> </p>
+          <p>结果请向[%dic:STR_DIC_N_Velatris]姐妹报告。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直希望[%username]大人能成为导师，真是太好了。</p>
+          <p> </p>
+          <p>您的实战经验比任何人都要丰富。</p>
+          <p> </p>
+          <p>对了，埃拉库斯地下神殿的事情怎么样了？一定完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是让人高兴的消息。</p>
+          <p> </p>
+          <p>埃拉库斯地下神殿的魔物消失了，现在神殿的复原工作就能顺利进行了。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>再次对您表示感谢。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_28_38]的[%dic:STR_DIC_E_Mentor]消灭[%dic:STR_DIC_M_37104]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让埃拉库斯地下神殿的复原工作可以顺利进行，必须成为埃尔特内实习守护者的导师，和他们一起消灭地下神殿的魔物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是消灭对复原工作造成妨碍的埃拉库斯地下神殿的魔物。</p>
+          <p> </p>
+          <p>和埃尔特内实习守护者一起，消灭了地下神殿的魔物之后，向贝拉特里斯报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

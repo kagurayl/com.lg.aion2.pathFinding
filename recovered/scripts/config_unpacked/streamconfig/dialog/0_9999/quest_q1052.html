@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+<!-- Aphesius -->
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过腐木原野吗？</p>
+          <p> </p>
+          <p>那是个没有活着的树，只有很多椰林族和树木变异之后变成的奥格林特和洛特伦出没的地方。</p>
+          <p> </p>
+          <p>但是那里并不是一开始就是那样。之前那里曾经是非常茂密的美丽的森林。但是不知从什么时候开始，就变成了那个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来应该对原因进行调查，但是由于多种原因，迟迟没能动手。</p>
+          <p> </p>
+          <p>龙族随时会入侵结界，所以一直没有精力去管那边的事情。</p>
+          <p> </p>
+          <p>但是也不能一直放任不管，不是吗？</p>
+          <p> </p>
+          <p>首先必须查清发生变化的原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你到腐木原野去，捕捉[%dic:STR_DIC_M_Agrint_34_An]和[%dic:STR_DIC_M_Rottentree_34_An]，然后把根的标本带回来。</p>
+          <p> </p>
+          <p>我想对根部进行调查，应该比对树枝或茎干进行调查更能找到问题的原因。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1052-1.ogg"/>
+  </HtmlPage>
+
+<!-- Aphesius -->
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，[%username]！</p>
+          <p> </p>
+          <p>我让你搜集的根的标本找到了吗？</p>
+          <p> </p>
+          <p>腐木原野的事情一直让我很不放心。让我感觉如鲠在喉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这真的是奥格林特和洛特伦的根吗？</p>
+          <p> </p>
+          <p>看上去一点都不像是植物的根...</p>
+          <p> </p>
+          <p>我对树了解的不多，虽然觉得奇怪，但却说不上奇怪在什么地方。</p>
+          <p> </p>
+          <p>光让我看这个不能解决问题，你能把它拿给椰林族看看吗？</p>
+          <p> </p>
+          <p>你把它交给帕塞尔塔村的[%dic:STR_DIC_N_Tree_Move_Mersephon]。这也许对他们会有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然和龙族的入侵相比不算什么大事，但奥格林特和洛特伦绝对不是小问题。</p>
+          <p> </p>
+          <p>就这样放任不管的话，不知道又会发生什么事情。</p>
+          <p> </p>
+          <p>所以，请你帮我去搜集它们的根的标本吧。拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+<!-- Tree_Move_Mersephon -->
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎你，守护者。</p>
+          <p> </p>
+          <p>你找我们椰林，有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出根的标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是奥格林特和洛特伦的根吗？</p>
+          <p> </p>
+          <p>看上去不像是自然的变异。</p>
+          <p> </p>
+          <p>必须拿去给大长老[%dic:STR_DIC_N_Tree_Nomove_Trajanus]大人看看。</p>
+          <p> </p>
+          <p>你去把它交给他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1052-2.ogg"/>
+  </HtmlPage>
+
+<!-- Tree_Nomove_Trajanus -->
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你手里拿的是什么？</p>
+          <p> </p>
+          <p>你是因为它，才过来找我的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出根的标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是奥格林特和洛特伦的根吗？</p>
+          <p> </p>
+          <p>这好像是人类对树做出的恶行。</p>
+          <p> </p>
+          <p>树的根，在自然中是不会变成这样的。</p>
+          <p> </p>
+          <p>我从普依艾密林的树木那里听说了奇怪的事情。</p>
+          <p> </p>
+          <p>名叫雷帕尔革命团的人，正在对树做奇怪的事情。</p>
+          <p> </p>
+          <p>奥格林特和洛特伦，好像就是他们的杰作。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+  
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Aphesius]对话</font></p></step>
+               <step><p visible="[%3]" ><font color="[%4]">采集[%dic:STR_DIC_M_Agrint_34_An]和[%dic:STR_DIC_M_Rottentree_34_An]的根，然后交给[%dic:STR_DIC_N_Aphesius]</font></p>[%collectitem]</step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Tree_Move_Mersephon]对话</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Tree_Nomove_Trajanus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：树和椰林好像发生了奇怪的事。去阿沛希乌斯那里了解一下具体的情况吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿沛希乌斯说森林正在消失，而奥格林特和洛特伦的数量正在增加，让我去调查一下原因。去腐木原野采集了根的标本交给了他，他说应该去问问椰林族。</p>
+          <p> </p>
+          <p>把根的标本交给了椰林族梅尔塞芬之后，他说这不是自然发生的，怀疑是雷帕尔革命团干的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

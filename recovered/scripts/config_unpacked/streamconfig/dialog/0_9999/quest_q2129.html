@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近，[%dic:STR_DIC_W_DF1_9]的莱卡恩好像在秘密筹划着什么似的。</p>
+          <p> </p>
+          <p>按阿尔弗里克和德巴林的话来说，几天前，有一伙[%dic:STR_DIC_M_WormbabyD_12_An]进入到峡谷里面去了。</p>
+          <p> </p>
+          <p>无论怎么看，都像是[%dic:STR_DIC_M_WormbabyD_13_An]的手下要袭击村子，于是我就向我们头儿报告，可头儿去说让我看着办，这叫什么事儿啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本想过得轻松点儿才来到这个地方，现在却被弄得脑袋疼。</p>
+          <p> </p>
+          <p>这是头儿的命令，所以这帮家伙处理还是必须要处理的...</p>
+          <p> </p>
+          <p>我一直一个人在这，现在看来，想找个一起去的兄弟都难啊。</p>
+          <p> </p>
+          <p>好，兄弟你去就行！到[%dic:STR_DIC_W_DF1_9]帮我把[%dic:STR_DIC_M_WormbabyD_12_An]%和[%dic:STR_DIC_M_WormbabyD_13_An]%处理了行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兄弟你说要帮我我就放心了。真是谢谢啊。</p>
+          <p> </p>
+          <p>虽然我知道你实力不凡，但还是要嘱咐你注意安全。因为[%dic:STR_DIC_M_WormbabyD_13_An]和他的手下[%dic:STR_DIC_M_WormbabyD_12_An]%也都不简单啊。</p>
+          <p> </p>
+          <p>那么，在那帮家伙来犯之前，请快出发去[%dic:STR_DIC_W_DF1_9]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是能抓到[%dic:STR_DIC_M_WormbabyD_13_An]，光是战利品就不容小觑啊。</p>
+          <p> </p>
+          <p>要是你觉得这还不够的话，我个人还可以单给你一些报酬。</p>
+          <p> </p>
+          <p>如果这样你还是不愿意的话那我也没办法了，你再好好想想吧。</p>
+          <p> </p>
+          <p>无论结果怎样，都是关系到村子和兄弟们安危的大问题不是吗！拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，已经回来了？</p>
+          <p> </p>
+          <p>看你没受什么伤，那帮家伙干什么了？</p>
+          <p> </p>
+          <p>哈塔塔也处置了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是了不起啊！果然名不虚传。</p>
+          <p> </p>
+          <p>不过，[%username]啊，这事儿对外就说是我做的行不行？既然都决定帮我了，就帮人帮到底吧。</p>
+          <p> </p>
+          <p>来，这是报酬。我认真考虑了之后准备了不少啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡[%dic:STR_DIC_W_FLA210]的莱卡恩</font></p>
+                     <p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_M_WormbabyD_12_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_M_WormbabyD_13_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Nostla]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说在哈塔塔老窝的莱卡恩的动态很反常。为了[%dic:STR_DIC_N_Derot]，处置[%dic:STR_DIC_M_WormbabyD_13_An]和他的部下。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗盖听说莱卡恩在退往哈塔塔老窝，觉得他们要袭击村子。为了帮助公务缠身的他，处置了冷酷无情的哈塔塔和灰鬃卫兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

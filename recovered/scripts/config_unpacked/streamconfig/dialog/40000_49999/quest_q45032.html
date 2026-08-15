@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在贫瘠的地方，仍然有很多团员在为了守护结界而活动。</p>
+          <p> </p>
+          <p>他们需要大量的粮食支援，但暂时却没有很好的方法。</p>
+          <p> </p>
+          <p>特此向团员们请求进行粮食支援。</p>
+          <p> </p>
+          <p>请采集[%dic:STR_DIC_G_QUEST_45032_a]、[%dic:STR_DIC_G_QUEST_45032_b]和[%dic:STR_DIC_G_QUEST_45032_c]，然后通过[%dic:STR_DIC_N_Columba]交给守护团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来有很多充满了热情的团员，但最近好像看不到了。</p>
+          <p> </p>
+          <p>这个地方充满了奥德的气息，如果这里的队员都不努力的话，让贫瘠的地方的人怎么办呢？</p>
+          <p> </p>
+          <p>听说有一些团员为了对没有结界的地方进行调查，目前连吃的东西都没有。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出采集物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团正在让团员们采集粮食，送到困难的地方去。</p>
+          <p> </p>
+          <p>我们需要的是[%dic:STR_DIC_G_QUEST_45032_a]、[%dic:STR_DIC_G_QUEST_45032_b]和[%dic:STR_DIC_G_QUEST_45032_c]。请尽快去搜集。</p>
+          <p> </p>
+          <p>我也必须尽快筹集到足够的东西交给上面，才能去执行其他任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，确实是我们需要的罗根、荔枝和加尔迪内。</p>
+          <p> </p>
+          <p>结界守护团将会把这些粮食用于我们共同的目的。</p>
+          <p> </p>
+          <p>这是给您的证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45032_a]、[%dic:STR_DIC_G_QUEST_45032_b]和[%dic:STR_DIC_G_QUEST_45032_c]，然后交给[%dic:STR_DIC_N_Columba]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，必须为正在奥德稀薄的地区为结界守护团努力的团员们筹集粮食。</p>
+          <p> </p>
+          <p>搜集罗根、荔枝和加尔迪内，交给了库尔伦巴，他把证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

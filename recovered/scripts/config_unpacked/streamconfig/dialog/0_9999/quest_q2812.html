@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，情况太糟糕了。敌人的驻军渐渐增多，我们却看不到援军的影子。</p>
+          <p> </p>
+          <p>部下们说先去攻击看看，但是那样的话，也许现在的兵力都会失去。</p>
+          <p> </p>
+          <p>这样下去的话，士兵们的士气会渐渐低落...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能为削弱敌人的战力出一点力的话就好了。</p>
+          <p> </p>
+          <p>只要除掉几名天族驻军就行，希望这样能提高一点部下们的士气。</p>
+          <p> </p>
+          <p>需要除掉的是[%dic:STR_DIC_M_2812_all]，所以可能会有点困难。你愿意接受吗？</p>
+          <p> </p>
+          <p>这次的事情顺利完成得话，我会跟你的上司好好说的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>执行任务的机会是天族占领克罗坦要塞的时候。</p>
+          <p> </p>
+          <p>请注意观察克罗坦要塞的动态，你会听到进入可以占领状态的信号。那时精锐驻军就会出现。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_2812_all]是非常可怕的家伙。请你一定要小心，不要被他们围住。</p>
+          <p> </p>
+          <p>哦，对了。他们中间应该有带着[%dic:STR_DIC_I_QUEST_2812a]的人。</p>
+          <p> </p>
+          <p>如果能把它给部下们看看的话，也许就能提高士气。所以请你把它给我带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像是我的请求太过分了。</p>
+          <p> </p>
+          <p>请你不用在意。</p>
+          <p> </p>
+          <p>我只是因为援军迟迟没来，抱着试试看的念头才跟你说的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我快不行了。</p>
+          <p> </p>
+          <p>部下的话稍微有一点多。一天到晚在我跟前唠叨，听得耳朵都疼了。</p>
+          <p> </p>          
+          <p>对了，你去做的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克罗坦要塞的旗帜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就直话直说吧。</p>
+          <p> </p>
+          <p>是还没去要塞呢，还是没有把旗帜带回来？</p>
+          <p> </p>
+          <p>不管是哪一个都没关系。</p>
+          <p> </p>
+          <p>如果你想受到奖赏的话，就请把[%dic:STR_DIC_I_QUEST_2812a]带回来。这是上面定的方针，我也没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，幸亏拜托了你。</p>
+          <p> </p>
+          <p>多亏了你，部下们的士气好像提高了一点。</p>
+          <p> </p>
+          <p>希望以后你能继续帮助我们。</p>
+          <p> </p>
+          <p>请收下。这是辛苦的奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2812_all]%，搜集证据然后交给[%dic:STR_DIC_N_Rathgrid]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了恢复执政官们的士气，必须除掉天族。清除在克罗坦要塞进入可以占领状态时出现的天族精锐驻军，搜集要塞的旗帜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉德格里德百夫长说自从克罗坦要塞被夺走之后，部下们的士气就很低落，让我去消灭天族，提高士气。</p>
+          <p> </p>
+          <p>于是注意观察克罗坦要塞的状态，天族占领的要塞在进入可以占领状态后，天族精锐驻军出现。</p>
+          <p> </p> 
+          <p>按照百夫长的拜托除掉了天族，把克罗坦要塞的旗帜交给了他。他说辛苦了，让我以后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

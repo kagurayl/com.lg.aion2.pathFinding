@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的走狗们攻击霜眉要塞的时候，我们莱卡恩没有袖手旁观，咳嗬。</p>
+          <p> </p>
+          <p>虽然我们处于劣势，但是我们还是奋力战斗，咳嗬。</p>
+          <p> </p>
+          <p>但是在德拉克纽特的强势攻击下，我们终于被击溃……</p>
+          <p> </p>
+          <p>在那场战斗中非常活跃的德拉克纽特有加库、奥尔库和马库，咳哼。</p>
+          <p> </p>
+          <p>虽然他们单个作战不是非常强，但是三个在一起的话，攻击力就非常惊人。很多同伴都死在了他们的手里，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最终我们连一个都没有杀死，就变成了这个样子，咳哼。</p>
+          <p> </p>
+          <p>听说他们现在成了头目，统帅着占领霜眉要塞的德拉克纽特部队，咳嗬。</p>
+          <p> </p>
+          <p>听到这个消息之后，我认为这是复仇的好机会。感谢他们一直活到了现在，咳嗬。</p>
+          <p> </p>
+          <p>加库、奥尔库、马库……三个人聚在一起时很强，但分开之后就不那么强了，咳嗬。</p>
+          <p> </p>
+          <p>他们三个人现在分开了，所以是绝好的机会。你去的话，一定可以很容易地打倒他们，咳哼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>记住，守护者。</p>
+          <p> </p>
+          <p>我的仇人的名字是[%dic:STR_DIC_M_DF3_LizardManFiNamedQ_43_An]、[%dic:STR_DIC_M_DF3_LizardManAsNamedQ_43_An]和[%dic:STR_DIC_M_DF3_LizardManRaNamedQ_43_An]。</p>
+          <p> </p>
+          <p>请你帮我把得意洋洋的龙族的走狗除掉，咳嗬。</p>
+          <p> </p>
+          <p>用你的武器，让他们尝尝霜眉的愤怒吧……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕了吗，守护者……</p>
+          <p> </p>
+          <p>他们三个不聚在一起，就什么都不是，你还是害怕吗？</p>
+          <p> </p>
+          <p>还是你不愿意为莱卡恩战斗啊……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>失去族人的痛苦，失去要塞的愤怒全部解开了。</p>
+          <p> </p>
+          <p>虽然要借助你们魔族的力量，咳昂。</p>
+          <p> </p>
+          <p>说吧，守护者。你除掉我们的仇人了吗，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(很高兴的样子)咳昂！咳昂！</p>
+          <p> </p>
+          <p>死去的族人们一定会感到高兴的，咳嗬。</p>
+          <p> </p>
+          <p>我们不会忘记你的，勇敢的魔族执政官！</p>
+          <p> </p>
+          <p>霜眉部族所有的人都会记住并报答你的帮助的，咳哼！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭霜眉的仇人德拉克纽特头目</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF3_LizardManFiNamedQ_43_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF3_LizardManAsNamedQ_43_An]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF3_LizardManRaNamedQ_43_An]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF3_NPC_Hasyaditan]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈夏迪坦的委托，消灭霜眉莱卡恩的仇人德拉克纽特头目。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>霜眉莱卡恩的族长哈夏迪坦说因为德拉坎纽特加库、奥尔库和马库的攻击失去了很多同伴。</p>
+          <p> </p>
+          <p>消灭了突击组长马库、战斗组长奥尔库和奇袭组长马库，为他报了仇。回去之后，他非常高兴，说我是霜眉部族的恩人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

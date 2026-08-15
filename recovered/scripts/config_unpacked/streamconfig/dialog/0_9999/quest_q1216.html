@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很美丽的地方，不是吗？看着平静的大海，我的心也不知不觉平静了下来。</p>
+          <p> </p> 
+          <p>坎塔斯海岸从很久以前开始就以美丽的大海而出名。阳光很好，气候很很温暖，因此是贝尔特伦数一数二的旅游圣地。</p>
+          <p> </p> 
+          <p>人们来这里做的最多的事情要数来这里钓波雷尔。</p>
+          <p> </p> 
+          <p>烤着吃的话，那个味道叫一个绝，能吃到真是死了都愿意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是那已经是过去的事情了。您也看到了，现在波雷尔的数量锐减了。</p>
+          <p> </p>
+          <p>龙龟的数量飞快增加，吃光了周围能见到的贝内拉和肯索利德，更不用说波雷尔了。</p>   
+          <p> </p>
+          <p>由于龙龟没有天敌，它们的数量不会减少。继续这样下去的话，波雷尔很快就会灭绝了。</p>
+          <p> </p>
+          <p>我觉得这样下去不行，所以趁在结界塔进行警戒的空闲去抓龙龟。但是它们繁殖的速度太快，数量根本就不见少。</p> 
+          <p> </p>
+          <p>[%username]大人，您能帮我清除掉一些[%dic:STR_DIC_M_Starturtle_19_n]吗？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您帮我。</p>
+          <p> </p>
+          <p>刚好正是时候。马上就是[%dic:STR_DIC_M_Starturtle_19_n]的产卵期了。</p>
+          <p> </p>
+          <p>它们一次就产很多卵，那些卵全都孵化的话它们的数量就会大量增加，所以最好能在这之前把他们除掉。</p>
+          <p> </p>
+          <p>那就请您除掉12只吧。</p>               
+	</body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您要去执行别的任务？那就没办法了</p>
+          <p> </p>
+          <p>我也要开始慢慢清除龙龟了。在它们在沙里产卵之前。</p>      
+          <p> </p>
+          <p>您去办您的事情吧。以后要是有时间的话请您过来帮帮我的忙。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Starturtle_19_n]清除掉了吗？</p>
+          <p> </p>
+          <p>它们速度虽然慢，但是背壳很厚，清除起来应该不太容易。</p>      
+          <p> </p>
+          <p>被它们撞到的话，不小心就会摔个四脚朝天。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人帮忙真是找对人了。</p>
+          <p> </p>
+          <p>虽然我很想用烤波雷尔来表示感谢，但是波雷尔的数量本来就已经很少了，因此不能随便捕捉。</p>  
+          <p> </p>
+          <p>您拿着这个。虽然不多，但却是我的一点诚意。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除破坏生态的[%dic:STR_DIC_M_Starturtle_19_n]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gen]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">栖息在坎塔斯海岸的波雷尔因为海洋慢性子龙龟的捕食而濒临灭绝。去清除肆意捕食波雷尔的海洋慢性子龙龟吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖恩正在担心海洋慢性子龙龟肆意捕捉波雷尔吃，使其面临灭绝的危机。</p>
+          <p> </p>
+          <p>他说自己虽然也在捕捉龙龟，但是它们的繁殖力很强，没什么效果。于是按照他的拜托清除了海洋慢性子龙龟，他说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

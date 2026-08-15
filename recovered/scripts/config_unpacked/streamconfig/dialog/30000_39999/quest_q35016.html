@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>根据最近收到的情报，有一群身份不明的人在泰奥勃莫斯的主要道路上散布奇怪的东西。</p>
+          <p> </p>
+          <p>那个东西看起来像是普通的矿石，但其实是可以扰乱结界装置和飞行移动装置的非常危险的东西。</p>
+          <p> </p>
+          <p>如果放着不管，天界可能会陷入混乱，因此必须尽快把它们清理掉。</p>
+          <p> </p>
+          <p>请全体神圣守护会会员积极行动起来，清理掉[%dic:STR_DIC_OBJ_FOBJ_Q35016]。任务完成后，立即向 [%dic:STR_DIC_E_35014]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]，是你啊。</p>
+          <p> </p>
+          <p>任务完成了吗？</p>
+          <p> </p>
+          <p>混沌魔石破坏掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了。</p>
+          <p> </p>
+          <p>你的动作果然很快。</p>
+          <p> </p>
+          <p>神圣守护会有你这样一个成员，我们感到很自豪。</p>
+          <p> </p>
+          <p>希望今后你能继续根据任务指示，努力完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_OBJ_FOBJ_Q35016]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_35014]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据神圣守护会发来的委托书，有一群身份不明的人正在散布扰乱结界和飞行移动装置的奇怪东西。</p>
+          <p> </p>
+          <p>迅速将混沌魔石破坏掉后向普利亚莫斯报告，他让我今后继续按照指示行动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

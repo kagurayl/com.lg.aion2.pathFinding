@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>最近在泰奥勃莫斯活动的查乌琳琳失去了消息。</p>
+          <p> </p>
+          <p>如果发生了什么没有预料到的事情，她也许会遇到危险。请你快去见见[%dic:STR_DIC_N_Shugo_LF2a_4]，确认一下情况。</p>
+          <p> </p>
+          <p>如果情况很严重，请立即发送急电。如果不是很紧急的话，请向[%dic:STR_DIC_E_35014]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(高兴的表情)神圣守护会终于派人来啦。</p>
+          <p> </p>
+          <p>查乌琳琳等得快急死了，毛都快掉光了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">讲述事情经过。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个嘛。要问我为什么没有发送报告书……</p>
+          <p> </p>
+          <p>那我就全部说出来好了。</p>
+          <p> </p>
+          <p>现在给我的活动经费太少了，我现在连寄信的钱都付不起了。</p>
+          <p> </p>
+          <p>在这种到处都是灰尘的地方做事，至少也要让我有钱买最高级保湿剂，难道不是吗？</p>
+          <p> </p>
+          <p>请你告诉上面，让他们多给我一点活动经费。不然的话，查乌琳琳就不会发送报告书回去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近泰奥勃莫斯出现了很多问题，真让人担心。</p>
+          <p> </p>
+          <p>对了，见到查乌琳琳了吗？</p>
+          <p> </p>
+          <p>到底发生了什么事情？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，真是可笑。</p>
+          <p> </p>
+          <p>现在给她的活动经费已经不算少了……</p>
+          <p> </p>
+          <p>知道了。我会如实向上面报告的。</p>
+          <p> </p>
+          <p>唉，如果我有权力的话，就马上把查乌琳琳开除出会员名单。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_LF2a_4]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35014]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说查乌琳琳失去了联系，让我去确认一下情况。</p>
+          <p> </p>
+          <p>见到查乌琳琳之后，她说现在的辛苦费不够她继续活动，要求增加活动经费。向普利亚莫斯报告之后，他说真是可笑，但他会如实向上面报告的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

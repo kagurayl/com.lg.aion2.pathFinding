@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在战斗的时候，绝对不能有任何松懈。有时候，一些看上去很普通的敌人可能会拥有惊人的能力。</p>
+          <p> </p>
+          <p>此外，由于贪婪而向能力强于自己的敌人挑战，无疑是飞蛾扑火。</p>
+          <p> </p>
+          <p>啊，但是最近很多守护者连这些基本的东西都不知道，真让人担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤其是[%dic:STR_DIC_M_NagaFighterNM_47_Ah]，有很多守护者去了之后都受了重伤。</p>
+          <p> </p>
+          <p>它在[%dic:STR_DIC_W_IDLF3_Castle_Indratoo]的地下，很多人都想消灭它，让自己出名，因此才会惹祸上身。</p>
+          <p> </p>
+          <p>这样下去可不行。趁现在还不晚，必须从[%dic:STR_DIC_M_NagaFighterNM_47_Ah]的威胁之下把守护者们解救出来。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到英德拉图要塞去，消灭[%dic:STR_DIC_M_NagaFighterNM_47_Ah]。</p>
+          <p> </p>
+          <p>那里戒备森严。请一定要小心。</p>
+          <p> </p>
+          <p>如果觉得太困难，就赶紧回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是在忙别的事吧？</p>
+          <p> </p>
+          <p>那您就先去办其他事吧。等有时间的时候再来找我。</p>
+          <p> </p>
+          <p>别忘了还有很多守护者正在受到痛苦的煎熬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果想去挑战，就必须努力让自己具备足够的能力。</p>
+          <p> </p>
+          <p>现在有一些守护者疏于训练，光想着出名。这种现象很让人担心。</p>
+          <p> </p>
+          <p>有很多人去[%dic:STR_DIC_W_IDLF3_Castle_Indratoo]之后都受了伤，真希望他们能因此引起警惕。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_M_NagaFighterNM_47_Ah]消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去那么危险的地方执行任务，真是辛苦您了。</p>
+          <p> </p>
+          <p>辛苦了。多亏了您，暂时应该不会再有守护者受伤了。</p>
+          <p> </p>
+          <p>来，请收下。这是给您的铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_NagaFighterNM_47_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Savrina]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭伤害了很多守护者的军团长英德拉图。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沉默执行者萨布里纳说一些鲁莽的守护者试图挑战军团长英德拉图，结果受了伤，她因此很担心。</p>
+          <p> </p>
+          <p>于是去英德拉图要塞消灭了军团长英德拉图。回去之后，她给了我铸币作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

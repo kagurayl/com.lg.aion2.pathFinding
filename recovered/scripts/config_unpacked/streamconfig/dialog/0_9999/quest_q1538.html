@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我认真地想了想我失败的原因。</p>
+          <p> </p>
+          <p>是鱼竿太旧了？还是选的地方不对？</p>
+          <p> </p>
+          <p>我一定是忘了什么重要的东西。</p>
+          <p> </p>
+          <p>但我是不会轻易放弃的。就像有了心爱的姑娘就一定要约她吃饭一样，我一定要把鱼钓上来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>承认自己的不足，就可以战胜失误。看来我应该向专家请教请教。</p>
+          <p> </p>
+          <p>我认识的人里，有个名叫贝恩的人。</p>
+          <p> </p>
+          <p>他虽然出生在贝尔特伦，但为了钓鱼离开了故乡，在天界四处流浪。</p>
+          <p> </p>
+          <p>之前我偶然碰到了他，他教了我很多有关钓鱼的东西。</p>
+          <p> </p>
+          <p>由于那时候的耳濡目染，之后我就开始试着钓鱼。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Ben]以钓鱼为生，他一定知道怎么解决问题。您能帮我去问问他吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Ben]现在应该在普埃塔。</p>
+          <p> </p>
+          <p>他说普埃塔的水很好，很适合钓鱼。</p>
+          <p> </p>
+          <p>请您去普埃塔找到贝恩，向他说明情况，并征求他的意见。</p>
+          <p> </p>
+          <p>他欠了我不少人情，只要说出我的名字，他一定会教您的。</p>
+          <p> </p>
+          <p>您可能觉得钓鱼不是什么大事，但对我来说，这却是很重要的问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道这是我的私事。</p>
+          <p> </p>
+          <p>所以我也只能拜托您。</p>
+          <p> </p>
+          <p>不过既然您拒绝，我也没有办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普埃塔真是个好地方。</p>
+          <p> </p>
+          <p>我曾经在摩尔海姆和贝鲁斯兰钓鱼，但既安全又适合钓鱼的普埃塔才是最棒的地方。</p>
+          <p> </p>
+          <p>当然，如果有一天在普埃塔待腻了，我也会离开这里。</p>
+          <p> </p>
+          <p>既然您好不容易找到了我，只要是和钓鱼有关的问题，您可以随便问。</p>
+          <p> </p>
+          <p>我靠钓鱼为生，只要是和钓鱼有关的事情，我比任何人都清楚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转到贾梅德斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贾梅德斯大人？他终于找到我了。…哼哼，他是个很会说话的人。</p>
+          <p> </p>
+          <p>他也钓鱼？</p>
+          <p> </p>
+          <p>像和风一样生活的人居然会爱上钓鱼，真是少见。</p>
+          <p> </p>
+          <p>我虽然教了他很多东西，但是他当时好像一点都不感兴趣。</p>
+          <p> </p>
+          <p>听您一说，我就知道问题在哪...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去普埃塔和[%dic:STR_DIC_N_Ben]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮贾梅德斯去向钓鱼的专家贝恩请教。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贾梅德斯说要想学会钓鱼，必须咨询一下专家。</p>
+          <p> </p>
+          <p>于是去普埃塔见到了钓鱼专家贝恩，并转达了贾梅德斯的话。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

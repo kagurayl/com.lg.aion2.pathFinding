@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我的心情很沉重。</p>
+          <p> </p>
+          <p>每天都会做同样的梦，随着时间的推移，那个梦变得越来越真实了。</p>
+          <p> </p>
+          <p>每天晚上都会看到守护者的灵魂在受着痛苦的煎熬，听到他们悲惨的哭喊声，感觉真的很可怕。</p>
+          <p> </p>
+          <p>一开始我觉得这只是个梦，但现在我相信，这一定是发生在什么地方的真实的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是因为看不清背景，所以不知道到底是发生在什么地方的事。</p>
+          <p> </p>
+          <p>身为神官，我有义务救赎他们的灵魂，所以必须知道那是在什么地方。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+          <p> </p>
+          <p>只要有[%dic:STR_DIC_I_QUEST_30326a]的话，就能在醒着的状态下看见梦的幻影，希望您能帮我去搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_30326a]可以在影魔身上搜集到。</p>
+          <p> </p>
+          <p>在失败者的坟墓，可以看到[%dic:STR_DIC_M_DF4_ShadowStalker_Sand_54_An]和[%dic:STR_DIC_M_DF4_ShadowStalker_Sand_55_An]。</p>
+          <p> </p>
+          <p>只要有了幻影粉末，就应该可以知道守护者的灵魂被囚禁在哪里，怎样才能把他们解救出来了。</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到幻影粉末，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不相信我的梦会是真实的事情吗？</p>
+          <p> </p>
+          <p>如果您不相信，我也没办法。但这确实是真实的梦境。</p>
+          <p> </p>
+          <p>身为神官，如果无法把那些灵魂拯救出来，就说明我没有担任神官的资格。</p>
+          <p> </p>
+          <p>不过既然[%username]大人说不相信，看来我只能找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>昨天晚上，我又做了那个梦。</p>
+          <p> </p>
+          <p>他们那痛苦的表情，现在还在我的眼前。</p>
+          <p> </p>
+          <p>我要的幻影粉末搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出幻影粉末。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您难道不知道事态的严重性吗！？</p>
+          <p> </p>
+          <p>无数的守护者的灵魂，正在经受痛苦的煎熬。</p>
+          <p> </p>
+          <p>您却还在这里磨蹭，您不觉得太过分了吗？</p>
+          <p> </p>
+          <p>请您快去消灭古代影魔和怨恨的古代影魔，搜集[%dic:STR_DIC_I_QUEST_30326a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幻影粉末搜集到啦。谢谢您。</p>
+          <p> </p>
+          <p>我得尽快弄清楚守护者的灵魂被囚禁在什么地方才行。</p>
+          <p> </p>
+          <p>(把幻影粉末洒在头上，闭上眼睛。)</p>
+          <p> </p>
+          <p>啊！我好像知道是哪里了。现在终于可以去拯救他们了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30326a]，然后交给[%dic:STR_DIC_N_Unset]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让文赛特看清梦到的内容，去消灭古代影魔和怨恨的古代影魔，搜集幻影粉末吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>文赛特说梦见守护者的灵魂在受苦，必须把他们拯救出来。</p>
+          <p> </p>
+          <p>于是帮他搜集到了幻影粉末，让他可以在醒着的状态下看到梦的内容。他说终于知道是什么地方了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

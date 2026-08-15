@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近欧比斯怎么样了？[%username]。</p>
+          <p> </p>
+          <p>听说龙族和天族的家伙们还是和以前一样。</p>
+          <p> </p>
+          <p>如果我在那里，一定会好好教训他们，很可惜我现在无法去跟他们战斗。</p>
+          <p> </p>
+          <p>但是，我也不后悔我现在的生活。</p>
+          <p> </p>
+          <p>看到出色的追随着特里尼埃尔主神的意志的人们，我就会觉得很有成就感，[%username]，我说的就是像你这样的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你虽然现在也是很厉害，不过有人指点你，你会成长得更快。</p>
+          <p> </p>
+          <p>为了完成特里尼埃尔主神旨意，需要更多的努力。</p>
+          <p> </p>
+          <p>不过我现在已经没什么可以教你的了。</p>
+          <p> </p>
+          <p>我会给你写推荐书，你去找锡金吧。她会给你很多帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡金就在中央议事堂。是他非常出色的老师，可以称之为死亡之神庙的模范。</p>
+          <p> </p>
+          <p>以你现在的实力，或许之前已经见过她了。</p>
+          <p> </p>
+          <p>总之，你交给她推荐书，她会很高兴的。</p>
+          <p> </p>
+          <p>没有哪位老师会不喜欢出色的弟子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你拒绝了？难道你不想再执行作为守护者的义务吗？</p>
+          <p> </p>
+          <p>你还有很多东西要学。</p>
+          <p> </p>
+          <p>你想要继续成长，就一定要和锡金见面。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要对自己的敌人慈悲。</p>
+          <p> </p>
+          <p>那些无谓的怜悯，不管是对人还是自己都不会有好处的。</p>
+          <p> </p>
+          <p>你来找我有什么事情？</p>
+          <p> </p>
+          <p>如果你想要学习新的技能，那就找对人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将推荐书交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎你来到这里，[%username]。</p>
+          <p> </p>
+          <p>看来提阿尔皮非常看好你。</p>
+          <p> </p>
+          <p>虽然我知道你是个前途无量的守护者，不过想要成为出色的 [%userclass]，你还要学习很多，过程也不会那么容易的。</p>
+          <p> </p>
+          <p>我会尽我所能的帮助你，不过关键还是在于你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将推荐书交给[%dic:STR_DIC_N_Sigyn]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将提阿尔皮给的推荐书交给锡金。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提阿尔皮表示现在已经没什么东西可以教的了，并写了一封推荐书，建议拿去交给锡金。</p>
+          <p> </p>
+          <p>锡金看到推荐书后表示，想要成为出色的守护者，还需要学习很多，并承诺以后会多给予指点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

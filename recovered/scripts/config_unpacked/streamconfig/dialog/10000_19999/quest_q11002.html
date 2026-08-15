@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们怎么能这样对我们呢？</p>
+          <p> </p>
+          <p>我们是接受极乐世界的指示，来调查这里的生态的。他们却把我们当成了乞丐。</p>
+          <p> </p>
+          <p>消灭枯萎森林里的奇怪的生命体，有什么困难的呢？</p>
+          <p> </p>
+          <p>一定是因为这个，他们觉得这里是凯西内尔主神的领地，所以看不起我们生命的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问发生了什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，气得我头都疼了。</p>
+          <p> </p>
+          <p>为了调查栖息在英吉斯温的生命体和结界里的生命体有什么区别，我们来到了枯萎森林，但是这里有很多危险的东西。</p>
+          <p> </p>
+          <p>我们一进行调查，那些长得很奇怪的东西就来骚扰我们，让我们根本无法进行研究。</p>
+          <p> </p>
+          <p>于是我们向沉默之匕军团和极乐世界远征军请求支援，但是他们说先要把手头的事情处理完，然后才能来帮忙。真是。</p>
+          <p> </p>
+          <p>我们想靠自己的力量把事情处理好，气气他们，但是只靠我们的力量实在不行。啊！我把你给忘了。</p>
+          <p> </p>
+          <p>太好了，[%username]。你愿意帮我吗？以你的能力，应该闭着眼睛都能做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>心中的郁闷好像一扫而空了。</p>
+          <p> </p>
+          <p>事情很简单。只要帮我们捕捉枯萎森林里的[%dic:STR_DIC_M_LF4_A_Cellatu_Frogbaby_51_An]和[%dic:STR_DIC_M_LF4_A_Bat_Dolphin_51_n]就行。</p>
+          <p> </p>
+          <p>因为它们，我们不敢去水边，也不敢去树林附近，真是郁闷死了。</p>
+          <p> </p>
+          <p>那就全靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我的脑袋。我觉得快晕倒了。</p>
+          <p> </p>
+          <p>干嘛？你是看不起我们吗？你一直帮生命的守护者办事，我还以为你会帮我们的呢……</p>
+          <p> </p>
+          <p>看来困难的时候才能见人心啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢？</p>
+          <p> </p>
+          <p>我等得眼珠子都快掉出来了。</p>
+          <p> </p>
+          <p>我拜托你的事情怎么样了？塞拉图和穆尔穆尔消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不愧是[%username]。我从极乐世界那边听说过很多有关你的事迹。</p>
+          <p> </p>
+          <p>你在埃尔特内帮助生命的守护者做事，很多人都对你称赞有加。</p>
+          <p> </p>
+          <p>来，收下这个。我想对你表示感谢，请不要拒绝。</p>
+          <p> </p>
+          <p>我们总算没有丢脸，给你这些是应该的。真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭枯萎森林的塞拉图和穆尔穆尔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A_Cellatu_Frogbaby_51_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A_Bat_Dolphin_51_n]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Opilius]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让生命的守护者们可以安心研究，帮他们消灭枯萎森林中的塞拉图和穆尔穆尔</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥皮利乌斯说因为塞拉图和穆尔穆尔的妨碍，他们无法对枯萎森林的生态进行调查，让我帮着消灭怪物。</p>
+          <p> </p>
+          <p>消灭了塞拉图和穆尔穆尔之后，他说我帮他们在沉默之匕军团和极乐世界远征军面前保住了面子，因此对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

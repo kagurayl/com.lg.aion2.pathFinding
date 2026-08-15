@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我最不喜欢自然的和谐被打破。</p>
+          <p> </p>
+          <p>水声和鸟声相伴，这是多么的和谐！竟然有人打破了这种美。</p>
+          <p> </p>
+          <p>把这些家伙全部除掉也是罪有应得。</p>
+          <p> </p>
+          <p>危害人类还是其次！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么意思。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我好像太兴奋了。</p>
+          <p> </p>
+          <p>不是别的，就是那些龙蜥兽。</p>
+          <p> </p>
+          <p>每次我聆听自然的声音而感觉内心无比平静的时候，那些[%dic:STR_DIC_M_FrillfaimamFemale_21_An]就会打破这份平静。</p>
+          <p> </p>
+          <p>无缘无故地攻击其他野兽和人类，怎么会不吵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前要塞也下达了命令。说龙蜥兽威胁到了居民的安全，让我们解决问题。</p>
+          <p> </p>
+          <p>我觉得野兽好歹也是生命，所以就一直拖了下来。现在竟然敢妨碍我冥想，我再也忍不下去了。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去把[%dic:STR_DIC_M_FrillfaimamFemale_21_An]除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，太好了。虽然它们妨碍了我冥想，但是我还是不想伤害生命。</p>
+          <p> </p>
+          <p>但是我想[%username]大人应该不会有这种内心的矛盾，所以可以放心地交给您。</p>
+          <p> </p>
+          <p>您只要去打猎森林里的[%dic:STR_DIC_M_FrillfaimamFemale_21_An]就行了。</p>
+          <p> </p>
+          <p>那就拜托您了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢...必须我自己去抓吗？</p>
+          <p> </p>
+          <p>这可不太符合我的价值观...</p>
+          <p> </p>
+          <p>啊啊，所以我才不想当什么守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_M_FrillfaimamFemale_21_An]除掉了吗？</p>
+          <p> </p>
+          <p>要塞派人来问我有没有办完了，我都不知道该怎么说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说已经除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您！</p>
+          <p> </p>
+          <p>但是要塞再次正式下达了打猎龙蜥兽的命令。</p>
+          <p> </p>
+          <p>下次有时间的话，请您再来帮帮我。杀死活着的生命非常有违我的价值观。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去曼杜里森林打猎[%dic:STR_DIC_M_FrillfaimamFemale_21_An]([%2]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Androkles]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除妨碍安德罗克雷斯的冥想，危害人类的龙蜥兽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安德罗克雷斯说正在为要塞的命令和打破自己冥想的龙蜥兽而苦恼。按照他的拜托除掉了龙蜥兽，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

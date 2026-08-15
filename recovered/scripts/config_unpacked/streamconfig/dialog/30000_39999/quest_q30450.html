@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30450</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我正在等你。</p>
+          <p> </p>
+          <p>我需要一个和鸢族有着亲密关系的守护者，想来想去，好像就只有你最合适。</p>
+          <p> </p>
+          <p>从格尔克马洛斯开始，你就和鸢族保持着密切的关系。</p>
+          <p> </p>
+          <p>我们能够和鸢族联手，也是因为你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有个名叫[%dic:STR_DIC_N_Raues]的鸢族元老向我秘密地请求帮助。</p>
+          <p> </p>
+          <p>可能不是与龙族的战斗直接相关的事情，所以无法正式委托我们帮忙。</p>
+          <p> </p>
+          <p>他叮嘱我要找一个嘴比较紧的、可以信任的人。</p>
+          <p> </p>
+          <p>鸢族都很信任你，你能秘密地去帮助他们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你快去见见鸢族元老[%dic:STR_DIC_N_Raues]%。</p>
+          <p> </p>
+          <p>拉乌艾斯应该就在***。你去了解一下详细的情况，然后帮帮他。</p>
+          <p> </p>
+          <p>你也知道，我们和鸢族的关系非常微妙。</p>
+          <p> </p>
+          <p>希望你妥善处理，不要出什么问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能去的话，拉乌艾斯一定会放心一些。</p>
+          <p> </p>
+          <p>考虑到之前你和他们的关系，应该没有人比你更值得信任了。</p>
+          <p> </p>
+          <p>如果你拒绝，我也不会强求。</p>
+          <p> </p>
+          <p>但是如果你改变了主意，请回来找我。把事情交给可以信赖的人，我会更放心一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直很希望你能过来，真是太好了。</p>
+          <p> </p>
+          <p>我常听别的元老说，你是个值得信任的守护者。</p>
+          <p> </p>
+          <p>所以我非常希望来的人是你，而不是别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说我会尽全力帮忙的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能尽全力帮我，我就放心了。</p>
+          <p> </p>
+          <p>因为情况特殊，所以我不能告诉其他元老，向他们请求帮助。</p>
+          <p> </p>
+          <p>在大家都在忙着为打倒提亚马特做准备的时候，我不能为了救一个人而动用兵力。</p>
+          <p> </p>
+          <p>[%username]%你来了我就放心了。真是太好了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Raues]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说鸢族好像遇到了困难。去***见见拉乌艾斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说***的名叫拉乌艾斯的鸢族元老在秘密地请求帮助。 </p>
+          <p> </p>
+          <p>于是前去帮他，拉乌艾斯对我表示感谢，说有了我就放心了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了搜集只能在龙界的格尔克马洛斯找到的银水晶的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 目标: [%dic:STR_DIC_OBJ_FOBJ_Q46015a]</p>
+          <p></p>
+          <p> 2. 位置: [%dic:STR_DIC_W_SZ_DF4_A5_Under]周边</p>
+          <p></p>
+          <p> 3. 详情: 只有在格尔克马洛斯才能找到的珍贵矿物，一种发出银色光芒的水晶。深受伏魔殿富人们的喜爱，其身价也因此水涨船高。</p>
+          <p> </p>
+          <p>找到格尔克马洛斯银水晶的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500]  -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有些人可能会想把委托物品卖掉，来改变自己的命运，呐呐。</p>
+          <p> </p>
+          <p>但是格尔克马洛斯银水晶之类的东西，只能通过我们术古出售。</p>
+          <p> </p>
+          <p>因此请不要胡思乱想，搜集到了银水晶的话，就快点交给我吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出银水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有看到银水晶？</p>
+          <p> </p>
+          <p>怎么可能！不要放弃，再去好好找找。</p>
+          <p> </p>
+          <p>一定就在[%dic:STR_DIC_W_SZ_DF4_A5_Under]的什么地方，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看)确实是银水晶，呐呐。</p>
+          <p> </p>
+          <p>这种既不是金属又不是岩石的奇妙的质感。这迷人的光芒，真是让人感叹。</p>
+          <p> </p>
+          <p>你完成了任务，这是给你的委托费，呐呐。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_W_SZ_DF4_A5_Under]搜集[%dic:STR_DIC_OBJ_FOBJ_Q46015a]，然后交给 [%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了寻找格尔克马洛斯的珍贵宝物的委托书。</p>
+          <p> </p>
+          <p>前往消沉峡谷找到了格尔克马洛斯银水晶，交给格尔克马洛斯管理部职员之后，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>无论如何...我都不能安心。</p>
+          <p> </p>
+          <p>独眼巨人仍然在威胁着树木...只要它们的头目还活着。</p>
+          <p> </p>
+          <p>必须把它们的头目...除掉...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>独眼巨人的头目...很大很强壮...</p>
+          <p> </p>
+          <p>你能除掉它吗，红色熔岩山崖的...为了树木？</p>
+          <p> </p>
+          <p>头目的名字是...[%dic:STR_DIC_M_CyclopsNamedDQ_35_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_CyclopsNamedDQ_35_An]...在[%dic:STR_DIC_W_DF2_SUB_C4]东侧的尽头。</p>
+          <p> </p>
+          <p>我已经警告过了...它很大也很强壮。</p>
+          <p> </p>
+          <p>请你小心一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕...破坏者哈米泰盟吗？</p>
+          <p> </p>
+          <p>还是不想接受...变成奥格林特的椰林的请求？</p>
+          <p> </p>
+          <p>希望你能帮到底。</p>
+          <p> </p>
+          <p>但是没办法，我也不能强迫你...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>东边的炎热的气息...消失了。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_M_CyclopsNamedDQ_35_An]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多担心的事情...都解决了。</p>
+          <p> </p>
+          <p>幸好，为了红色熔岩之树。</p>
+          <p> </p>
+          <p>谢谢你...守护者。</p>
+          <p> </p>
+          <p>一切...都是靠了你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_CyclopsNamedDQ_35_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Magni]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">玛格尼说正在为独眼巨人的头目破坏者哈米泰盟而烦恼。为了让他安心，必须把它除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛格尼说他担心只要有独眼巨人的头目破坏者哈米泰盟在，红色熔岩山崖的树木的安全就无法保障。</p>
+          <p> </p>
+          <p>于是去飞艇失事地的东侧尽头，除掉了破坏者哈米泰盟。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

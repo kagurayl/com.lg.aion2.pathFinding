@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，多亏有你帮忙，阿尔卡尼斯空中神殿变得安静了很多。</p>
+          <p> </p>
+          <p>这样一来，坦佩尔盖伦和潘多兰盖伦暂时就不会出现了。</p>
+          <p> </p>
+          <p>但是阿努德审判官大人的任务还没有完成。还有一项任务。</p>
+          <p> </p>
+          <p>清除掉了阿尔卡尼斯空中神殿周围的敌人，下面应该正式开始发掘神殿的秘密，寻找宝物了... </p>
+          <p> </p>
+          <p>哈哈，这该多有意思啊。不过命令的内容是清除阿尔卡尼斯空中神殿的另一种守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你该不会失望吧？阿尔卡尼斯空中神殿的秘密虽然很重要，但清理周边的工作也很重要。</p>
+          <p> </p>
+          <p>这次要清除的敌人是[%dic:STR_DIC_M_GargoyleD_30_Ae]。他们平时是石像，不会动，但只要一有人靠近，他们就会发动攻击，因此非常危险。</p>
+          <p> </p>
+          <p>有经验的守护者可能没什么问题，但没经验的人很容易受到蜷缩的阿尔卡尼斯守护像的攻击。</p>
+          <p> </p>
+          <p>[%username]，我想把它交给你。希望你能帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>虽然很麻烦，但现在的经验对将来一定会有帮助！守护者有时也必须做自己不喜欢做的事情。</p>
+          <p> </p>
+          <p>你没说不愿意？[%username]，我不是对你说的，而是对我自己说的。如果不端正意识，是很难在这种地方坚持下去的。</p>
+          <p> </p>
+          <p>请你快去执行任务吧。希望你能顺利把[%dic:STR_DIC_M_GargoyleD_30_Ae]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真的要拒绝吗？</p>
+          <p> </p>
+          <p>别忘了我是沉默审判所的人。</p>
+          <p> </p>
+          <p>希望你以后不要为今天的决定后悔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>两个黄昏的执政官呆在同一个地方，这并不常见。</p>
+          <p> </p>
+          <p>特别是那个乌特卡尔，是个很奇怪的人。看上去很普通，但经常说一些石破天惊的话。</p>
+          <p> </p>
+          <p>不知道他来这里干什么，但黄昏的执政官是不会告诉我的，真郁闷。</p>
+          <p> </p>
+          <p>算了，还是努力完成任务吧。守护像怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我就知道你一定能行，所以一点都不担心。</p>
+          <p> </p>
+          <p>多亏了你，才能顺利完成阿努德审判官大人的任务。我一定会把你的表现告诉他。</p>
+          <p> </p>
+          <p>我给你准备了谢礼，虽然不多。</p>
+          <p> </p>
+          <p>[%username]，希望你能好好努力，成为伏魔殿的高官。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_GargoyleD_30_Ae]([%2]/11)</font></p></step>                     
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gangleri]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照岗格雷利的委托，清除阿尔卡尼斯空中神殿的蜷缩的阿尔卡尼斯守护像。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岗格雷利说阿努德指示的任务还没完成，让我继续帮他完成任务。</p>
+          <p> </p>
+          <p>于是前往阿尔卡尼斯空中神殿，清除了蜷缩的阿尔卡尼斯守护像。他对我表示感谢，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

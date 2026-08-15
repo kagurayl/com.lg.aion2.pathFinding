@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快过来吧，[%username]。</p>
+          <p> </p>
+          <p>怎么样，你会以成为优秀的魔道星而努力奋斗吗？</p>
+          <p> </p>
+          <p>魔道星可不是拿本魔法书做做样子。等到该念咒语的时候再想到去查魔法书就为时过晚了。</p>
+          <p> </p>
+          <p>对于魔道星而言，做到将咒语烂熟于心是非常重要的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我给你个任务吧，顺便考察考察你这段时间以来的实力长进，怎么样？</p>
+          <p> </p>
+          <p>怎么样，[%username]？挑战一下自己，完成这个要反复使用10次[%dic:STR_DIC_E_DP_Wi]的任务吧？</p>
+          <p> </p>
+          <p>你要是一名有实力的魔道星，自然能顺利完成任务。要是实力不够，就把这次任务当作是熟练自己技能的好机会吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这项任务如果没有足够的毅力和耐心，是很难顺利完成的。</p>
+          <p> </p>
+          <p>好在有能够补充神圣力的果冻，必要时使用应该能对你有所帮助。</p>
+          <p> </p>
+          <p>万一你在完成这个任务的途中忍不住想放弃，就请想想自己当初为什么要接受这个任务吧。</p>
+          <p> </p>
+          <p>只要你能找到这个问题的答案，相信你就一定能成为一名优秀的魔道星。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到现在你还记不住咒语？那可就麻烦了。</p>
+          <p> </p>
+          <p>不过，慢慢来吧，我不会催你的。</p>
+          <p> </p>
+          <p>我可不希望看到你急于求成，结果却欲速则不达。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你那表情就知道有好消息了。</p>
+          <p> </p>
+          <p>上次交给你的任务已经顺利完成了？</p>
+          <p> </p>
+          <p>很好，你已经能够熟练运用[%dic:STR_DIC_E_DP_Wi]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就完成了任务？</p>
+          <p> </p>
+          <p>不过这次让你熟记的只是魔法书中千万条咒语中的一条而已。</p>
+          <p> </p>
+          <p>希望你能继续努力，熟练掌握其它咒语。咒语就是魔道星力量的源泉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Wi]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向魔道星和精灵星的老师[%dic:STR_DIC_N_Hecate]报告</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">完成黑卡泰委派的任务后回去报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑卡泰要考验考验我做为魔道星的实力，给了我一个任务，要使用10次睡眠之云 I。</p>
+          <p> </p>
+          <p>完成任务后向黑卡泰报告，他希望我以后继续努力并给予我鼓励。</p>
+          <p> </p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

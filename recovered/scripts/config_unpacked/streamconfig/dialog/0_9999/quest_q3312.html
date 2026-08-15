@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我还得再麻烦你一次。</p>
+          <p> </p>
+          <p>引起旋风的犯人好像不是风花精灵和风之利爪精灵。</p>
+          <p> </p>
+          <p>上次我只注意到上面有旋风，你看到地上的漩涡了吗？</p>
+          <p> </p>
+          <p>不，不是那边，而是那里。那里，那里！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说看不到。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，你看我指的方向啊。看我的手有什么用！</p>
+          <p> </p>
+          <p>哎呀！那些漩涡消失了。</p>
+          <p> </p>
+          <p>没看到就算了，但是我不会看错。</p>
+          <p> </p>
+          <p>一定是地下神殿底下的强力沙暴精灵引起的漩涡。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在地上造成漩涡的话，就会沿着埃拉库斯地下神殿的残骸，引起巨大的旋风。</p>
+          <p> </p>
+          <p>最近有很多来参加上级飞行考试的守护者，这一定会对考试造成妨碍。</p>
+          <p> </p>
+          <p>考试必须公平，但因为旋风的原因掉下来的话，我就只能去帮助他们。</p>
+          <p> </p>
+          <p>拜托你了，请你到下面去，清除十个[%dic:STR_DIC_M_7C_elementalair3_32_Ae]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，[%username]。</p>
+          <p> </p>
+          <p>从这里一直飞下去就行了。</p>
+          <p> </p>
+          <p>一个人可能会很吃力，你最好和同伴一起过去。</p>
+          <p> </p>
+          <p>神殿底下有很多危险的东西，实力不行的话，可能需要很长时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要回去吗？那就没办法了。</p>
+          <p> </p>
+          <p>你已经帮了我一次忙，我也不能老缠着你。</p>
+          <p> </p>
+          <p>祝你一路顺风。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，你经常进行飞行练习吗?</p>
+          <p> </p>
+          <p>身为守护者，连翅膀都不能自如控制，还有比这更可怜的吗？</p>
+          <p> </p>
+          <p>希望你好好练习，让自己可以在奥德的流动中自由地飞翔。</p>
+          <p> </p>
+          <p>对了，你去清除强力沙暴精灵了吗？你去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和同伴们合力完成了任务？真是太好了。</p>
+          <p> </p>
+          <p>幸好你没有一个人去。</p>
+          <p> </p>
+          <p>多亏了你，飞行术考试终于少了一些不和谐因素。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除埃拉库斯神殿的[%dic:STR_DIC_M_7C_elementalair3_32_Ae]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Marana]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除引起旋风，妨碍上级飞行考试的强力沙暴精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马拉娜说看到地下神殿底下的强力沙暴精灵引起了旋风，并说旋风会对上级飞行术考试造成妨碍，让我去清除精灵。</p>
+          <p> </p>
+          <p>帮马拉娜清除了强力沙暴精灵，马拉娜对我表示感谢，说飞行术考试终于少了一些不和谐因素。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

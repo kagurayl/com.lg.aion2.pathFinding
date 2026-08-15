@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"[%username],能不能再拜托您一件事呢？"</p>
+          <p> </p>
+          <p>很奇怪，老是有一些事情要拜托您做。</p>
+          <p> </p>
+          <p>但是这一次真的是最后一次了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是何事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去扫荡纽坦的泥浆山谷的纽特。</p>
+          <p> </p>
+          <p>虽然大王纽坦死了，纽特陷入了混乱，但是现在还是很危险。</p>
+          <p> </p>
+          <p>而且不久就会出现新的领头人，到那时可能会比现在更危险。</p>
+          <p> </p>
+          <p>所以请您在那之前斩草除根。</p>
+          <p> </p>
+          <p>依我看你就是做这件事的最佳人选。你怎么想？愿意接受吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。那就请你去纽坦的泥浆山谷，扫荡纽特吧。</p>
+          <p> </p>
+          <p>我就利用这段时间寻找能够简单消灭这些家伙的方法。</p>
+          <p> </p>
+          <p>我可能是杞人忧天，不过还是请你一定要注意安全。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系，你已经帮了很多忙了。</p>
+          <p> </p>
+          <p>但是我也很为难。真是做梦也没想到你会这样拒绝我。</p>
+          <p> </p>
+          <p>唉，真不知道能不能再找到你这种实力的人。。。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽坦的泥浆山谷那边一直传来吵闹的声音。</p>
+          <p> </p>
+          <p>你成功扫荡了那里的纽特了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你果然实力不凡啊。</p>
+          <p> </p>
+          <p>那么多纽特，居然一举歼灭了。</p>
+          <p> </p>
+          <p>以后如果有机会去极乐世界的话，我一定要向位高权重者介绍你。我以我的名誉保证。</p>
+          <p> </p>
+          <p>另外，请你先收下这个。和你做的事情相比，这实在是微不足道，不过我这也是尽了最大努力准备的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡纽坦的泥浆山谷的纽特。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutH1_38_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutH2_38_An]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1_37_An]([%8]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL2_37_An]([%11]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Senemonea]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在新的纽特领头人出现之前，要扫荡纽坦的泥浆山谷的纽特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞内莫内亚说这是他最后的请求，请你扫荡纽坦的泥浆山谷的纽特。</p>
+          <p> </p>
+          <p>消灭纽特卫兵、卫兵、采集者、巡查者回来，他称赞你实力出众，答应以后有机会向极乐世界位高权重者推荐你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

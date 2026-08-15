@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4537</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我看见您在和阿尔夫盖尔说话。</p>
+          <p> </p>
+          <p>我不是故意偷听的，请不要责怪我无礼。</p>
+          <p> </p>
+          <p>因为阿尔夫盖尔太兴奋了，除了我之外，这里的其他执政官也都听见了。</p>
+          <p> </p>
+          <p>如果我听到的没错的话，您好像帮他消灭了雪原切尔路斯和咆哮的剑齿豹，是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，原来如此。能同时消灭切尔路斯和剑齿豹，看来您的实力非同一般。</p>
+          <p> </p>
+          <p>不知道该怎么说才好……哎呀，我就不管什么面子不面子的了。</p>
+          <p> </p>
+          <p>这次贝鲁斯兰要塞下达了命令，说黑色平原附近经常有人受伤，让我们把栖息在附近的危险的生命体全部消灭掉。</p>
+          <p> </p>
+          <p>每个人都分配到了任务，我的任务是消灭银色格兰盖尔和银色格兰盖尔幼崽。您看了就知道了，它们的数量非常多。</p>
+          <p> </p>
+          <p>所以我想请[%username]大人帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的愿意帮我吗？谢谢您，真是太感谢了！</p>
+          <p> </p>
+          <p>银色格兰盖尔我会自己处理的，[%username]大人只要帮我消灭[%dic:STR_DIC_M_BighorndeerMinerD_33_n]%就行。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您那么热情地帮助阿尔夫盖尔，却又如此冷漠地拒绝我的请求。</p>
+          <p> </p>
+          <p>真是遗憾。</p>
+          <p> </p>
+          <p>不，老实说，我觉得非常不爽。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就完成了吗？</p>
+          <p> </p>
+          <p>我在消灭银色格兰盖尔的时候，看见[%username]大人在清理银色格兰盖尔幼崽。</p>
+          <p> </p>
+          <p>没看见您怎么动手，它们就全都倒下了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您！</p>
+          <p> </p>
+          <p>它们的抵抗一定很激烈吧？您真了不起！</p>
+          <p> </p>
+          <p>等我把这边的事情做完，就可以向要塞报告了。</p>
+          <p> </p>
+          <p>我被派到这里还没多久，还没有做出什么成绩。多亏了[%username]大人，我终于可以给上司留一个好印象了。</p>
+          <p> </p>
+          <p>这些虽然不多，但是我的一份心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭给黑色平原的安全造成威胁的[%dic:STR_DIC_M_BighorndeerMinerD_33_n]%([%2]/18)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sorgrim]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助索尔格林，消灭给黑色平原的安全造成威胁的格兰盖尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔格林说接到了要塞的命令，必须消灭给黑色平原的安全造成威胁的银色格兰盖尔幼崽和银色格兰盖尔，但是它们的数量实在太多，一个人很难完成</p>
+          <p> </p>
+          <p>于是帮他消灭了银色格兰盖尔幼崽，他对我表示感谢，说多亏了我，终于可以给上司留下一个好印象了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

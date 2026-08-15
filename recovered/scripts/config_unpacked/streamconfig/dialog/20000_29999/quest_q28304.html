@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(圆形的珠子模样的物体。)</p>
+          <p> </p>
+          <p>(摇了摇，可以听到有声音。)</p>
+          <p> </p>
+          <p>(珠子里面好像装着什么东西。)</p>
+          <p> </p>
+          <p>(应该拿去给学者[%dic:STR_DIC_N_Rifn]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你见过龙族宝珠吗？从表面上看是个圆球，其实里面是空的。</p>
+          <p> </p>
+          <p>里面可以存放各种物品和贵重品，相当于是一种便携式箱子。</p>
+          <p> </p>
+          <p>在空中要塞中经常可以看到龙族宝珠。如果发现了龙族宝珠，请拿来给我。</p>
+          <p> </p>
+          <p>知道打开宝珠方法的人，只有我一个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出龙族宝珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谁也不知道里面装着什么东西。</p>
+          <p> </p>
+          <p>大部分都是龙族的不值钱的东西，但是偶尔也会有有用的东西。这就全看[%username]大人的运气了。</p>
+          <p> </p>
+          <p>(拿着宝珠抚摸了好一会。)</p>
+          <p> </p>
+          <p>呼，真累。宝珠的封印解开了，您打开看看吧。</p>
+          <p> </p>
+          <p>好了，快点打开吧。我也很想知道里面装的是什么。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把发现的珠子交给[%dic:STR_DIC_N_Rifn]%</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了龙族宝珠，交给里芬解除封印吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿图拉姆空中要塞发现了一个珠子，好像是龙族的东西。</p>
+          <p> </p>
+          <p>交给里芬解开了封印，获得了装在宝珠里的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

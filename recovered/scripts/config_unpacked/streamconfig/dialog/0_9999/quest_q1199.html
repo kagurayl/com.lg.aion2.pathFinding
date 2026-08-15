@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人…</p>
+          <p> </p>
+          <p>您认识[%dic:STR_DIC_N_Tersites]吗？</p>
+          <p> </p>
+          <p>他跟[%username]大人一样，也是守护者。</p>
+          <p> </p>
+          <p>我们曾经热恋过。只要有了他，我就觉得这个世界上没有可以羡慕的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是他变了…</p>
+          <p> </p>
+          <p>看着我的眼神变得冷漠，他的心给了别人。</p>
+          <p> </p>
+          <p>我想尽办法挽回他的心，但都无济于事。结果他离开了。</p>
+          <p> </p>
+          <p>本以为看不见就可以忘记，但事实不是这样。到现在我还不能忘记他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事可以帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您替我找到[%dic:STR_DIC_N_Tersites]大人。</p>
+          <p> </p>
+          <p>听说现在他在极乐世界。</p>
+          <p> </p>
+          <p>只要见他一次我就不会再迷恋。</p>
+          <p> </p>
+          <p>您能不能向他转达我的消息，求他过来见我一次？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>这是我的项链。只要看到这个特尔希特斯会记起我的。</p>
+          <p> </p>
+          <p>请您到极乐世界找到他，说服他来见我一次吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人真是没有慈悲心。竟然拒绝一个可怜女人的哀求。</p>
+          <p> </p>
+          <p>我从未离开过这个村庄，所以不敢去极乐世界。</p>
+          <p> </p>
+          <p>对于守护者大人来说只是小事一桩…</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然极乐世界外面到处都是克拉尔和魔族，但这里可真够太平的。</p>
+          <p> </p>
+          <p>对于久经沙场的我而言，回到极乐世界就觉得很无聊。</p>
+          <p> </p>
+          <p>也没有可以做的事。</p>
+          <p> </p>
+          <p>不过你找我有什么事？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递给爱南特的项链。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，这项链是！</p>
+          <p> </p>
+          <p>你这项链是从哪弄的？这是我亲手送给爱南特的。</p>
+          <p> </p>
+          <p>什么？爱耐特亲手给你的？</p>
+          <p> </p>
+          <p>不可能。她在很久以前就死了!</p>
+          <p> </p>
+          <p>我不想再听你的谎言，马上在我面前消失。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把爱南特的项链转交给[%dic:STR_DIC_N_Tersites]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">爱南特称要见一次难忘的旧爱特尔希特斯。去极乐世界说服特尔希特斯与她见面。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特尔希特斯和爱南特曾经相爱，但是因为特尔希特斯变心而分手。爱纳特想要忘记他却到至今还没忘记。</p>
+          <p> </p>
+          <p>受爱南特只想再见他一次，受她的嘱托找到了特尔希特斯。但是，特尔希特斯谎称爱南特已经死了很久了。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

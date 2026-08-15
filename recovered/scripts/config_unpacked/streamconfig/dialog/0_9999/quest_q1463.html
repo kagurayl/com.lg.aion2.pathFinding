@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>见到您真是太好了，[%username]大人！</p>
+          <p> </p>
+          <p>我正在到处找您呢。</p>
+          <p> </p>
+          <p>巴雷利乌斯百夫长大人问我有没有见到[%username]大人您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不知道是什么事情，但[%dic:STR_DIC_N_Valerius]百夫长大人正在找[%username]大人。</p>
+          <p> </p>
+          <p>他说如果见到您的话，就让您秘密地去要塞一趟。</p>
+          <p> </p>
+          <p>如果没什么急事的话，您愿意去一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Valerius]百夫长在要塞的2层。</p>
+          <p> </p>
+          <p>他让您秘密地去找他，所以好像最好不要告诉别人。</p>
+          <p> </p>
+          <p>请您快过去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是有什么急事啊。</p>
+          <p> </p>
+          <p>不管怎样，百夫长大人的话我已经转告您了，已经仁至义尽。</p>
+          <p> </p>
+          <p>去不去，就由[%username]大人自己决定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于来啦，[%username]。</p>
+          <p> </p>
+          <p>我有件重要的任务要交给你，所以才秘密地把你叫来。</p>
+          <p> </p>
+          <p>你应该知道，我们天族在欧比斯与魔族和龙族战斗。</p>
+          <p> </p>
+          <p>在之前，派遣战斗力出色的守护者到欧比斯去就是战略的全部。但是最近以来，我们采取了很多新的战略。</p>
+          <p> </p>
+          <p>关于这个战略，我有件任务需要[%username]你去执行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了战胜魔族，最近我们向魔界派遣了情报员。那些熟悉魔族的语言的情报员在那边活动，收集各种情报。</p>
+          <p> </p>
+          <p>为了支持他们的活动，我们定期地给他们发送活动经费和指令书。现在需要一个人来负责送过去。</p>
+          <p> </p>
+          <p>在魔界的名叫莫尔海姆的地方，有一个名叫[%dic:STR_DIC_W_DF2_SUB_A2]的地方。在那条坡道中间的一间破房子里，有一个名叫梅戴娅的情报员化装成了采药人住在那里。</p>
+          <p> </p>
+          <p>我把放着作为活动经费的宝石和指令书的包袱给你，请你把它交给[%dic:STR_DIC_N_Medea]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_2">询问去魔界的方法。</Act>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是没去过魔界啊。</p>
+          <p> </p>
+          <p>通过[%dic:STR_DIC_E_directportal]很容易就能过去。不用通过欧比斯，所以要安全得多。</p>
+          <p> </p>
+          <p>当然必须要等待时空的裂缝的出现，稍微会有些不便。</p>
+          <p> </p>
+          <p>离这里最近的时空的裂缝就在要塞的后面。如果找不到的话可以去艾易隆沙漠。那里也有一个时空的裂缝。</p>
+          <p> </p>
+          <p>哦，对了。在魔界完成任务之后，请使用返程魔法。不然的话，会很难回到天界。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是从天界来的啊。</p>
+          <p> </p>
+          <p>来到这里应该很不容易，谢谢您冒险到这里来。</p>
+          <p> </p>
+          <p>您带来了什么东西的话，就请交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出指令书包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是活动经费和指令书啊。</p>
+          <p> </p>
+          <p>需要挖掘情报的话，需要拜托这里的守护者做事。那样的话就需要很多的经费。</p>
+          <p> </p>
+          <p>正好资金都快用光了，真是太好了。</p>
+          <p> </p>
+          <p>请您把这个转交给[%dic:STR_DIC_N_Valerius]百夫长。千万不能打开看，也不能拜托别人去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到你安然回来，看来梅戴娅应该没有被魔族发现，还在那边很好地执行任务。</p>
+          <p> </p>
+          <p>对了，东西交给梅戴娅了吗？</p>
+          <p> </p>
+          <p>还有她有东西让你交给我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出奇怪的包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，终于送来了。我相信你没打开过。</p>
+          <p> </p>
+          <p>谢谢你去魔界出色完成了这项危险的任务。</p>
+          <p> </p>
+          <p>不用我叮嘱你也应该知道吧，魔界有情报员的事情，还有这次的任务都必须保密。</p>
+          <p> </p>
+          <p>这是你出色完成这次任务的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Valerius]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">通过埃尔特内要塞附近的[%dic:STR_DIC_E_directportal]前往魔界，去见见[%dic:STR_DIC_N_Medea]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把包袱交给[%dic:STR_DIC_N_Valerius]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说巴雷利乌斯百夫长正在秘密地找我。去埃尔特内要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听希洛德斯说巴雷利乌斯正在找我，于是去找到了他。他给我下达了给魔界的情报员送活动经费和指令书的秘密任务。</p>
+          <p> </p>
+          <p>于是通过时空的裂缝来到莫尔海姆的博塔摩尔坡道，把指令书包袱交给了梅戴娅。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

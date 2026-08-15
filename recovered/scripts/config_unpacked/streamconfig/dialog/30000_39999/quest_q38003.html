@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前有几个神圣守护会的会员找到了我。</p>
+          <p> </p>
+          <p>他们谈到了[%username]大人，说如果见到您的话，让我帮着向您传话。</p>
+          <p> </p>
+          <p>您知道神圣守护会管理员提芬大人吗？</p>
+          <p> </p>
+          <p>据说他在因特尔蒂卡。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，相见[%username]大人的不只是提芬大人。</p>
+          <p> </p>
+          <p>因为[%username]大人的名气很大，所以很多团体都想吸引[%username]大人加入。这些您都应该知道吧？</p>
+          <p> </p>
+          <p>他一定会劝您加入神圣守护会的。我也是受人所托，您能去见见[%dic:STR_DIC_N_Typhon]大人吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的目的，从小的方面来说是守护极乐世界和天界，从大的方面来说，是阻止所有对亚特雷亚造成威胁的势力，守护永恒之塔。</p>
+          <p> </p>
+          <p>我从来没加入过什么团体，所以对具体的活动不太清楚。</p>
+          <p> </p>
+          <p>不过他们是经常做善事的团体，因此在极乐世界声望很高。</p>
+          <p> </p>
+          <p>详细的情况，您去听听[%dic:STR_DIC_N_Typhon]大人的介绍吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您对神圣守护会不感兴趣吗？</p>
+          <p> </p>
+          <p>加入某个团体之后，必须每天执行任务，很多人都因此很苦恼。</p>
+          <p> </p>
+          <p>但是加入和退出都是自由的，您去见见提芬大人应该也不会有什么损失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是弗里伊杜斯介绍您来的吗？是的，是我让弗里伊杜斯帮我联系您的。</p>
+          <p> </p>
+          <p>最近我听到了很多和[%username]大人有关的事迹，希望[%username]大人能够加入我们。</p>
+          <p> </p>
+          <p>我不会让您很快就做出决定。您想听听有关神圣守护会的说明吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会是为了守护天族的神圣而由人们自发成立的组织。</p>
+          <p> </p>
+          <p>我们获得了很多人的支持，因此我们会发放证物作为活动资金。</p>
+          <p> </p>
+          <p>如果您能完成每日任务，我们就会向您发放证物。搜集证物，可以用于购买各种有用的东西。</p>
+          <p> </p>
+          <p>东西的质量非常好，有些人就是为了那些东西才加入的。不过没关系。不管目的是什么，只要能提高大家的积极性，对我们也会有好处。</p>
+          <p> </p>
+          <p>我不想强求。如果您想和我们一同实现理想，就把您的意愿告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Typhon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说神圣守护会的提芬在找我。去因特尔蒂卡要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界的弗里伊杜斯说神圣守护会的提芬正在找我。</p>
+          <p> </p>
+          <p>于是前往因特尔蒂卡，见到了提芬，他劝我加入神圣守护会。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

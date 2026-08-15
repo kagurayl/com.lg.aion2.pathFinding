@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30462</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来得正好！</p>
+          <p> </p>
+          <p>我有事要找人帮忙，但是却苦于找不到有实力的人！</p>
+          <p> </p>
+          <p>求你一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我在拉迪斯森林搜集某种东西，然后拿出去卖！</p>
+          <p> </p>
+          <p>但是因为凶暴的怪物，最近生意遇到了很大的麻烦。</p>
+          <p> </p>
+          <p>我的梦想是建立一个贸易团，我不想让我的梦想被这样的小事毁掉。</p>
+          <p> </p>
+          <p>请你一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在拉迪斯森林中，有名叫[%dic:STR_DIC_M_IDElementalN_Nmd_Bridge_60_Al]、[%dic:STR_DIC_M_IDElementalN_Nmd_Unicorn_60_Al]和[%dic:STR_DIC_M_IDElementalN_Nmd_Farmer_60_Al]的怪物！</p>
+          <p> </p>
+          <p>它们非常可怕，我一看见它们两腿就会发抖！</p>
+          <p> </p>
+          <p>必须把它们除掉，我才能搜集东西，才能赚大钱！</p>
+          <p> </p>
+          <p>请你一定要把它们消灭掉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为我是黑暗术古，所以你想视而不见吗！</p>
+          <p> </p>
+          <p>刚才我也说过了！</p>
+          <p> </p>
+          <p>我将来会组建一个很大的贸易团！</p>
+          <p> </p>
+          <p>你最好现在接受我的请求，以免将来后悔！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等你！</p>
+          <p> </p>
+          <p>拉迪斯森林的凶暴的怪物怎么样了？</p>
+          <p> </p>
+          <p>别磨磨蹭蹭的，快点告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢！</p>
+          <p> </p>
+          <p>这下我就能到拉迪斯森林去搜集东西了。</p>
+          <p> </p>
+          <p>下次有事的话，我还会找你，你一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_ZONE_NAME_IDElemental_1]的妨碍者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_Bridge_60_Al]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_Unicorn_60_Al]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_Farmer_60_Al]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shulack_LF4a_01]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莫里金说他在拉迪斯森林里搜集东西卖钱，因为有凶暴的怪物，给他造成了不小的困难。去把妨碍他做生意的怪物消灭掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫里金说他在拉迪斯森林里搜集东西卖钱，但是最近遇到了很大的困难。</p>
+          <p> </p>
+          <p>于是消灭掉了妨碍他做生意的会动的耶普拉桥、被诅咒的尤尔丁和透彻监视者图阿里。他对我表示感谢，说暂时不用为那些东西担心了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

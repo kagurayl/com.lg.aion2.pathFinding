@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡的情况怎么样？德拉帕拉倒下之后，情况应该比之前好一点了吧……</p>
+          <p> </p>
+          <p>呵呵，干嘛摆出这种表情。我知道杀死德拉帕拉的人是你。</p>
+          <p> </p>
+          <p>如果不是的话，你怎么能来到这里？只要想一下，很容易就知道了。</p>
+          <p> </p>
+          <p>好了，跟我说说那里的情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说仍然很严重。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，看来英德拉图军团要比想象的强嘛。得赶紧把这里的事情做完才行……</p>
+          <p> </p>
+          <p>[%username]，你愿意帮我吗？</p>
+          <p> </p>
+          <p>事实上，我到这儿来是为了搜集英德拉图军团长及军团首脑的情报。你也看到了，因为那些纳加兰特，我根本无法下手。</p>
+          <p> </p>
+          <p>你能帮我把[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]清除掉，帮我扫清道路吗？让我可以潜入要塞。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>据我观察，他们会由法师和战士组成一组行动。所以别一个人去，一定要和同伴一起去。</p>
+          <p> </p>
+          <p>请你帮我把前面的[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]清除掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，看来你是不知道这件事的重要性。</p>
+          <p> </p>
+          <p>你知道我为什么要搜集英德拉图军团长和首脑们的情报吗？是为了找到他们的弱点，然后消灭他们。</p>
+          <p> </p>
+          <p>如果能把他们一网打尽，结果会怎么样？入侵因特尔蒂卡的英德拉图军团不就群龙无首了！</p>
+          <p> </p>
+          <p>还要我这么跟你说明，真是郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，原来是[%username]你啊。我还以为又被他们发现了呢。</p>
+          <p> </p>
+          <p>对了，你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]的数量少一点了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就说要塞周围站岗的龙族怎么少了很多。这下我终于可以开始工作了。</p>
+          <p> </p>
+          <p>但是不能因此而懈怠，请你今后继续来帮我。</p>
+          <p> </p>
+          <p>我不想强迫你，你好好考虑一下，决定了之后再来找我。</p>
+          <p> </p>
+          <p>啊，这是说好的报酬。今后你来帮我的话，我还会给你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除驻守英德拉图要塞的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_A_IDLF3CI_1517a]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_A_IDLF3CI_1517b]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Erebos]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让埃雷布斯可以对要塞内部进行侦察，清除在要塞周围驻守的纳加法师和纳加兰特战士。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷布斯向我询问因特尔蒂卡的情况，告诉他还很严重后，他说必须尽快把事情做完，并向我请求帮助。</p>
+          <p> </p>
+          <p>他让我帮着清除在要塞周围驻守的纳加法师和纳加兰特战士，让他可以对要塞内部的英德拉图军团的五个首脑进行侦察。</p>
+          <p> </p>
+          <p>完成任务后回去见到了他，他说终于可以进入要塞内部侦察了，让我以后有时间再去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

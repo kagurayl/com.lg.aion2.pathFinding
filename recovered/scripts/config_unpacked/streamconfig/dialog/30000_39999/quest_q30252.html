@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我之所以寻找有能力的守护者，是和神圣要塞有关。</p>
+          <p> </p>
+          <p>在神圣要塞，发现了通往一个名叫深渊残骸的小型欧比斯的通道。</p>
+          <p> </p>
+          <p>据说那条通道好像是龙族建造的。</p>
+          <p> </p>
+          <p>现在我们还不知道那个叫深渊残骸的小型欧比斯是个什么样的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我们正在寻找愿意到[%dic:STR_DIC_W_IDAbRe_Core_SZ_All]去执行任务的守护者。</p>
+          <p> </p>
+          <p>具体需要执行什么任务，其实我也不知道。</p>
+          <p> </p>
+          <p>我只不过是负责寻找合适的人而已。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意去一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到神圣要塞去，见见[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li]大人。</p>
+          <p> </p>
+          <p>他是在神圣要塞地下管理深渊残骸入口的人。</p>
+          <p> </p>
+          <p>您只要告诉他您是去执行任务的，他就就会告诉您应该怎么做了。</p>
+          <p> </p>
+          <p>祝您好运，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是[%username]大人能去一趟就好了……</p>
+          <p> </p>
+          <p>您对新的欧比斯完全没有兴趣吗？</p>
+          <p> </p>
+          <p>要不是没办法离开这里的话，我早就想去看看了。</p>
+          <p> </p>
+          <p>当然，必须准备足够多的粮食。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴洛诺派来的守护者就是你啊，[%username]。</p>
+          <p> </p>
+          <p>你怎么现在才来？</p>
+          <p> </p>
+          <p>接受任务的话，就应该马上赶过来，难道不是吗！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说有点事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于守护者而言，还有比执行任务更重要的事情吗！</p>
+          <p> </p>
+          <p>不过你能来就好了。我终于可以松一口气了。</p>
+          <p> </p>
+          <p>如果你能帮我完成这个任务，就更好了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和神圣要塞的[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说在神圣要塞发现了通往一个名叫深渊残骸的小型欧比斯的通道。向阿拉图斯确认一下详细的情况吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴洛诺说在神圣要塞发现了通往一个名叫深渊残骸的小型欧比斯的通道。</p>
+          <p> </p>
+          <p>他说正在寻找去深渊残骸执行任务的人，于是来到神圣要塞，见到了阿拉图斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

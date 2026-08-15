@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每天都有几百人通过东边的黑色平原进出要塞。</p>
+          <p> </p>
+          <p>因为要想进入要塞，或者前往其他地区，都必须经过那里。</p>
+          <p> </p>
+          <p>换句话说，对于有事要到要塞来的人类来说，就好比是必须通过的关卡一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是黑色平原上有很多的剑齿豹出没。</p>
+          <p> </p>
+          <p>我们虽然几次派遣卫兵去清剿剑齿豹，但是它们的数量却不见减少。</p>
+          <p> </p>
+          <p>你的实力好像要比卫兵强得多，如果你能去一趟的话，应该会很有帮助。</p>
+          <p> </p>
+          <p>怎么样？你能去把那些[%dic:STR_DIC_M_KalnifNmdD_30_An]清除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你马上出发去黑色平原，扫荡[%dic:STR_DIC_M_KalnifNmdD_30_An]。</p>
+          <p> </p>
+          <p>它们会攻击过往的人类。如果不尽快采取措施的话，就会有更多的人类受伤。</p>
+          <p> </p>
+          <p>所以请你尽可能快一点。那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剑齿豹在黑色平原上出现已经是很久以前的事情了。</p>
+          <p> </p>
+          <p>一开始人们并不重视，结果变成了今天这个样子。</p>
+          <p> </p>
+          <p>不过不是有句俗话吗？亡羊补牢，为时未晚。</p>
+          <p> </p>
+          <p>你不要觉得现在就没用了。这件事你先想办法处理一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我很久没直接到黑色平原去了。</p>
+          <p> </p>
+          <p>最近根本没有出去巡视的时间。</p>
+          <p> </p>
+          <p>对了，那里的情况怎么样了？[%dic:STR_DIC_M_KalnifNmdD_30_An]全部扫荡干净了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。多亏了你，人类们暂时可以安全地通过黑色平原了。</p>
+          <p> </p>
+          <p>这是你帮我清除剑齿豹的报答。</p>
+          <p> </p>
+          <p>希望你以后继续为了贝鲁斯兰的安全而努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除黑色平原的[%dic:STR_DIC_M_KalnifNmdD_30_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nerthus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说要塞必经之路黑色平原上有剑齿豹肆虐。去黑色平原清除构成威胁的剑齿豹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内尔图斯说其他地区要到要塞来，必须通过黑色平原。但那里有剑齿豹出没，对人类造成了威胁。</p>
+          <p> </p>
+          <p>刚开始不过只有几只，但现在它们几乎控制了这一地区，对居民们构成了威胁。去消灭威胁的剑齿豹。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%userclass]大人，您好像非常善于利用风路，您能帮帮我吗？</p>
+          <p> </p>
+          <p>我想搜集风化的旧印章，对风路进行调查，但是遇到了很大的困难。</p>
+          <p> </p>
+          <p>(把脸凑过来)您看。我熬了好几天夜，皮肤都成了这个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，我不会白白让您帮忙的。</p>
+          <p> </p>
+          <p>如果您能帮我搜集132个风化的旧印章，我就送您一条项链。</p>
+          <p> </p>
+          <p>怎么样？很不错的条件吧？</p>
+          <p> </p>
+          <p>即可以获得项链，又能顺便练习使用风路，这可是一举两得的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>要想搜集[%dic:STR_DIC_E_air_collection_treasure01]，必须到只有通过风路或间歇泉才能到达的地方去。对那些地方的生命体进行调查，应该就能找到。</p>
+          <p> </p>
+          <p>运气好的话，还能发现装着印章的箱子。请不要过于担心。</p>
+          <p> </p>
+          <p>不过这可真神奇。到底是谁在那里的生命体身上放了印章呢？</p>
+          <p> </p>
+          <p>学者们说是巨人放的，但是我不相信。</p>
+          <p> </p>
+          <p>啊，我好像又扯远了。去搜集印章之前，还有很多东西要准备，您先走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真的不行吗？</p>
+          <p> </p>
+          <p>就算索罗罗伯求你了。</p>
+          <p> </p>
+          <p>切，知道了。既然您不愿意，我也不想拉着您不放。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，这是谁啊？</p>
+          <p> </p>
+          <p>这不是去搜集风化的旧印章的[%userclass]大人吗？</p>
+          <p> </p>
+          <p>132个印章这么快就搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出132个印章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说您怎么回来得这么快。</p>
+          <p> </p>
+          <p>没关系。每个人都会有出错的时候。</p>
+          <p> </p>
+          <p>我看您很快就能搜集到132个印章了。请您快继续去搜集[%dic:STR_DIC_E_air_collection_treasure01]吧。</p>
+          <p> </p>
+          <p>索罗罗伯会给[%userclass]大人加油的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一、二、三、四……啊，真的全部搜集到啦。</p>
+          <p> </p>
+          <p>[%userclass]大人，您真了不起。您是怎么搜集到这么多的？</p>
+          <p> </p>
+          <p>啊，我说过如果您能搜集到风化的旧印章，我就把项链送给您的吧？</p>
+          <p> </p>
+          <p>请挑选您喜欢的项链吧。不过只能选一条。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_air_collection_treasure01]，然后交给索罗罗伯</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">在必须通过风路或间歇泉才能到达的地区的箱子或生命体身上搜集风化的旧印章，然后交给 [%dic:STR_DIC_N_Sorolov]。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索罗罗伯说风化的旧印章比想象的更难搜集，让我帮帮他。</p>
+          <p> </p>
+          <p>按照索罗罗伯的指点，在必须通过风路和间歇泉才能到达的地区的箱子或生命体上搜集印章，然后交给了他。他对我表示感谢，并把项链送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

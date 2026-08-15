@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！我能求您件事吗？</p>
+          <p> </p>
+          <p>本来应该自己做的，但是身体实在不太好...不，是很不舒服。</p>
+          <p> </p>
+          <p>如果您能帮我的话，就太好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，您能帮我去采集一点[%dic:STR_DIC_E_herb_d_n_c_20a]吗？</p>
+          <p> </p>
+          <p>本来答应帮人家采集的，但是因为身体不舒服，所以没能去采取...不，采集。</p>
+          <p> </p>
+          <p>您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我采集15个[%dic:STR_DIC_E_herb_d_n_c_20a]。</p>
+          <p> </p>
+          <p>泰奥尼亚在博塔摩尔坡道和博塔摩尔森林那里有很多。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...您现在很忙吗？</p>
+          <p> </p>
+          <p>那就没办法了。</p>
+          <p> </p>
+          <p>等下次有孔的时候，不，有空的时候再来帮忙吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我让您帮我采集的[%dic:STR_DIC_E_herb_d_n_c_20a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出泰奥尼亚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_herb_d_n_c_20a]还没采集到啊。</p>
+          <p> </p>
+          <p>说好送过来的日子...唉呀，怎么老倒不过来啊。说好送过去的日子已经没剩几天了。</p>
+          <p> </p>
+          <p>请您快去博塔摩尔坡道或者博塔摩尔森林帮我采集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，是15个泰奥尼亚。</p>
+          <p> </p>
+          <p>谢谢您答应我的拜托。</p>
+          <p> </p>
+          <p>这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_herb_d_n_c_20a]，然后交给[%dic:STR_DIC_N_Medea]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">梅戴娅让我帮她采集泰奥尼亚。去博塔摩尔坡道和博塔摩尔森帮她采集泰奥尼亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅戴娅说必须去采集泰奥尼亚，但是因为身体不舒服，所以去不了。</p>
+          <p> </p>
+          <p>于是帮她去采集了泰奥尼亚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

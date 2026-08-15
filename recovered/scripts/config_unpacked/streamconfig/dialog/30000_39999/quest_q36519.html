@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我刚好正在找你。</p>
+          <p> </p>
+          <p>刚收到新的通缉令，[%username]大人好像是最合适的人选。</p>
+          <p> </p>
+          <p>请看一看这张传单。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>情报员凯马拉因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_DGaurdRa_53_An]</p>
+          <p> </p>
+          <p> 2. 罪行：魔族情报员</p>
+          <p> </p>
+          <p> 3. 详情：化装成天族，窃取军事秘密，然后逃往格尔克马洛斯。必须在机密文件落入敌人手中之前将其消灭。</p>
+          <p> </p>
+          <p>经确认，他目前正在格尔克马洛斯的巴卡巴塔激战地。消灭情报员凯马拉，找回天族机密文件的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有[%username]大人参加的话，我就放心了。</p>
+          <p> </p>
+          <p>事实上，很多人都说要去抓捕凯马拉，但是潜入格尔克马洛斯之后就没了消息……</p>
+          <p> </p>
+          <p>哈……哈哈哈。但是[%username]大人一定不会有问题。啊，那是肯定的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我以为[%username]大人一定会参加的呢……</p>
+          <p> </p>
+          <p>不管怎样，您的意思我知道了。</p>
+          <p> </p>
+          <p>这原本就是很危险的事情，我也不会勉强您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像又完成了任务。</p>
+          <p> </p>
+          <p>您手上拿的是什么东西啊？您找到天族的秘密文件了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出天族的秘密文件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是啊？看来是我看错了。</p>
+          <p> </p>
+          <p>必须在天族的机密文件落入魔族上层的手中之前，尽快把它找回来。</p>
+          <p> </p>
+          <p>赏金猎人协会还是第一次处理这种事情。</p>
+          <p> </p>
+          <p>不管是谁都可以，希望能尽快除掉情报员凯马拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是天族的秘密文件啊？为了确认，我看一下其中的内容应该没事吧？</p>
+          <p> </p>
+          <p>(打开文件查阅)是用暗号写成的，完全不知道在说些什么。这种东西即使落入了魔族的手中，我也怀疑他们能不能解读出来。</p>
+          <p> </p>
+          <p>总之辛苦你了。我把赏金送给您，希望您下次再来执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往格尔克马洛斯，消灭[%dic:STR_DIC_M_LF4_DayQ_DGaurdRa_53_An]，把找到的文件交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从英吉斯温赏金管理人那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温赏金管理人拿出了一张悬赏通缉传单，说任务虽然危险，但是报酬很丰厚。</p>
+          <p> </p>
+          <p>消灭了偷走天族秘密文件的情报员凯马拉，并把天族秘密文件作为证据交给了英吉斯温赏金管理人，他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

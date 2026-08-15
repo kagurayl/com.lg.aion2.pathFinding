@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>第一次见面就麻烦你，好像有点过意不去。但是我真的对要塞的事情非常担心。</p>
+          <p> </p>
+          <p>如果是别的事情，我就不会这么操心了。但这件事和信用有关，所以让我一直放心不下。</p>
+          <p> </p>
+          <p>跟一个陌生的天族守护者抱怨，也不能解决问题……</p>
+          <p> </p>
+          <p>如果不是逼不得已，我也不会跟你说了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近因为有很多的工程，所以我决定制作一些十字镐。</p>
+          <p> </p>
+          <p>但是做好的十字镐全部被偷走了。</p>
+          <p> </p>
+          <p>不知道是哪个该死的家伙干的，如果让我抓到的话，我一定不会放过他！</p>
+          <p> </p>
+          <p>但是交货的日子没剩几天了，现在重新制作十字镐来不及了……</p>
+          <p> </p>
+          <p>我真的快要急死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你又不能帮我制作十字镐……</p>
+          <p> </p>
+          <p>如果你真的要帮我的话，就帮我去问问上面的人能不能帮我。</p>
+          <p> </p>
+          <p>听说地下要塞监视基地里有个极乐世界中央军的百夫长，名字叫什么来着……好像叫[%dic:STR_DIC_N_Sueros]。</p>
+          <p></p>
+          <p>你帮我问问那个人能不能帮我吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你答应帮我去传话。</p>
+          <p> </p>
+          <p>你只要帮我问问那个名叫[%dic:STR_DIC_N_Sueros]的百夫长，能不能帮我弄到一些十字镐。</p>
+          <p> </p>
+          <p>另外请你告诉他，剩下的期限没有几天了，时间很紧张。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意的话，就算了。</p>
+          <p> </p>
+          <p>反正是我的问题。</p>
+          <p> </p>
+          <p>不过还是要谢谢你对我的关心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>看你的表情，好像是有话要跟我说吧？发生什么事了？</p>
+          <p> </p>
+          <p>希望不要出什么大事……快说说到底是什么事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达盖菲奥斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……严格地说，这件事和我们没什么关系。不过也不能装不知道……</p>
+          <p> </p>
+          <p>而且军团长大人希望我们能搞好和鸢族之间的关系，所以更加不能坐视不管了。</p>
+          <p> </p>
+          <p>但是十字镐又不会从天上掉下来……让我去哪里找呢……</p>
+          <p> </p>
+          <p>不管怎样，这件事我知道了，[%username]。我会想想应该怎么解决这件事情的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sueros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">鸢族铁匠盖菲奥斯说十字镐被偷走了，他因此遇到了困难。于是决定帮他去问问苏埃洛丝百夫长，能不能向他提供帮助。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸢族村庄的铁匠盖菲奥斯说做好的十字镐全部被偷走了，他因此遇到了困难。</p>
+          <p> </p>
+          <p>他让我去问问苏埃洛丝百夫长能不能帮他。于是去转达了他的话，苏埃洛丝也很为难，说暂时没有十字镐，不知道该怎么办才好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

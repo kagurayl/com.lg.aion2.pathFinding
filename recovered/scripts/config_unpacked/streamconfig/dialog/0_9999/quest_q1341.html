@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生活在沙漠的中央，根本就没有什么乐趣可言。</p>
+          <p> </p>
+          <p>白天要在酷热下工作，晚上要忍受着严寒站岗。</p>
+          <p> </p>
+          <p>每一天都是这样度过，兴趣和个人生活是我们想都不敢想的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是一直光是埋头做事的话，活着也感觉不到活着的乐趣。</p>
+          <p> </p>
+          <p>必须要找些有意思的事情出来，才能调剂一下枯燥的生活。</p>
+          <p> </p>
+          <p>我会一点手艺，所以想没事练练手。</p>
+          <p> </p>
+          <p>我想做点手镯或者项链之类的首饰。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我研究了一下有没有合适的材料，结果发现从蜥蜴和蝎兽身上就能获得不错的首饰材料。</p>
+          <p> </p>
+          <p>您能帮我搜集一些[%dic:STR_DIC_I_QUEST_1341b]和[%dic:STR_DIC_I_QUEST_1341a]吗？</p>
+          <p> </p>
+          <p>只要稍微加工一下，就能做成很好的装饰品。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我的请求！</p>
+          <p> </p>
+          <p>找到材料加工成首饰，应该能缓解一下生活的枯燥。</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到[%dic:STR_DIC_I_QUEST_1341b]和[%dic:STR_DIC_I_QUEST_1341a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，您那么忙，应该没时间帮助卫兵的业余生活。</p>
+          <p> </p>
+          <p>老实说，我也有很多任务要做，所以没有时间搜集材料。</p>
+          <p> </p>
+          <p>而且被队长见到我做首饰的话，他会很不高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就回来啦？</p>
+          <p> </p>
+          <p>真快啊。看来您真的很厉害。</p>
+          <p> </p>
+          <p>请您把搜集到的东西交给我吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出首饰材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，搜集首饰材料不是什么急事。</p>
+          <p> </p>
+          <p>不过自从拜托您之后，我就一直在等您什么时候会回来。</p>
+          <p> </p>
+          <p>您先把紧急的事情做完，有时间的话再去帮我搜集需要的材料吧。</p>
+          <p> </p>
+          <p>反正时间很充裕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了！</p>
+          <p> </p>
+          <p>现在材料有了，我就能开始制作首饰了。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，暂时我不会感觉太无聊了。</p>
+          <p> </p>
+          <p>谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1341a]和[%dic:STR_DIC_I_QUEST_1341b]，然后交给[%dic:STR_DIC_N_Makarios]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让马卡利安可以享受业余生活，去捕捉蝎兽和蜥蜴，搜集制作首饰的材料吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马卡利安觉得沙漠侦察队的生活太枯燥，希望能制作首饰以调剂业余生活。</p>
+          <p> </p>
+          <p>但是苦于没有合适的材料。于是帮他捕捉蝎兽和蜥蜴，搜集到了制作首饰的材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

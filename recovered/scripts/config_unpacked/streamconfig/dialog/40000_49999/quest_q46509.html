@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭测量师马里卡·达玛的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_FanaticWi_54]</p>
+          <p> </p>
+          <p> 2. 位置：受到诅咒的地下城市内部</p>
+          <p> </p>
+          <p> 3. 详情：据说可以使用各种奇怪法术的马里卡·达玛的力量源泉是他的法杖。据说达玛会沿着风路走动，请搜集达玛的法杖，不得有任何的损坏。</p>
+          <p> </p>
+          <p>追踪测量师马里卡·达玛，找到木制法杖者，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天你又完成了什么任务呢？</p>
+          <p> </p>
+          <p>(查看文件)今天发送的是消灭测量师马里卡·达玛的委托书，呐呐。</p>
+          <p> </p>
+          <p>任务完成了的话，就快点把木制法杖给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出法杖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望你能快一点，呐呐。</p>
+          <p> </p>
+          <p>不知道测量师马里卡·达玛的法杖到底是什么东西，但是想得到它的委托人有很多，呐呐。</p>
+          <p> </p>
+          <p>不知道他以前到底干了什么坏事……撞到我们查理隆侦探事务所手上，这下算是死定了。</p>
+          <p> </p>
+          <p>快去抓住他，搜集法杖吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是那个木制法杖？真是又长又结实。</p>
+          <p> </p>
+          <p>(挥舞了一下，但是太长了，挥舞不开。)</p>
+          <p> </p>
+          <p>太长了，用起来真不方便……那么多人要这个东西，到底是用来干什么的啊，呐呐？</p>
+          <p> </p>
+          <p>不管怎样，这次辛苦你了。这是给你的委托费，希望你下次继续努力，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_DaQ_FanaticWi_54]，然后把证据交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了搜集测量师马里卡·达玛的法杖的委托书。</p>
+          <p> </p>
+          <p>前往受到诅咒的地下城市，消灭了马里卡·达玛，并搜集到了法杖。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

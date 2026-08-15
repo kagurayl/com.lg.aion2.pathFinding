@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次因为你帮我们除掉了魔军9级兵，所以形势稍微变得对我们天族有利了。</p>
+          <p> </p>
+          <p>但是这种程度的攻击，并不能完全扭转目前的局势。</p>
+          <p> </p>
+          <p>必须不停地攻击他们，给予他们持续的打击。</p>
+          <p> </p>
+          <p>希望你能帮助我们持续地攻击魔族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你既然和魔军9级兵战斗过，现在是不是应该对付一些比他们更厉害的家伙了？</p>
+          <p> </p>
+          <p>这次需要除掉的是8级兵。他们是在欧比斯经历过一些战斗，具有一些战斗经验的人。</p>
+          <p> </p>
+          <p>如果能除掉[%dic:STR_DIC_E_Dgrade8]的话，应该可以比除掉9级兵给魔族造成更大的打击。</p>
+          <p> </p>
+          <p>你能执行这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你会答应的。你马上奔赴战场，去把[%dic:STR_DIC_E_Dgrade8]清除掉吧。</p>
+          <p> </p>
+          <p>不要忘了。你每走出一步，都是在埃雷修兰塔为天族扩张势力。</p>
+          <p> </p>
+          <p>对了，上次我也说过，消灭实力和你相差太多的魔军没有任何意义。</p>
+          <p> </p>
+          <p>这次请你去消灭和你实力相当的魔军。</p>
+          <p> </p>
+          <p>那么就祝[%username]你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你和魔族战斗过，现在还害怕他们吗？</p>
+          <p> </p>
+          <p>欧比斯不是害怕战斗的人应该呆的地方。</p>
+          <p> </p>
+          <p>如果你害怕战斗的话，就快离开这个地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_Dgrade8]怎么样？</p>
+          <p> </p>
+          <p>应该要比对付9级兵更困难一些吧？</p>
+          <p> </p>
+          <p>跟我说说战斗的结果怎么样吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>你的实力果然名不虚传。</p>
+          <p> </p>
+          <p>阿里埃主神听到你的胜利的话，一定会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade8]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ascalon]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了把魔族从欧比斯战场中赶出去，必须除掉魔军8级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯卡尔伦说要削弱魔族的势力的话，必须持续地给他们打击。</p>
+          <p> </p>
+          <p>所以让我去除掉比魔军9级兵战斗经验更加丰富的魔军8级兵。</p>
+          <p> </p>
+          <p>于是来到战场和魔军8级兵展开了战斗，并除掉了他们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

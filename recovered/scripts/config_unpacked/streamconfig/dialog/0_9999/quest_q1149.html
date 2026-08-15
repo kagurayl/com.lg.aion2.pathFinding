@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普古斯逃走啦！</p>
+          <p> </p>
+          <p>那是我最喜欢的波比！</p>
+          <p> </p>
+          <p>在别人眼里，也许所有的普古斯都长得一模一样，可对我来说，它们是不同的。每天给喂食的话就会发现其实它们在长相和性格上还是有些不同的。 </p>
+          <p> </p>
+          <p>波比和我最好了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听下去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也很疼爱它，它的名字就是我起的呢！可是今天早上我起来一看，我的波比不见了...。</p>
+          <p> </p>
+          <p>平时，即便很晚，只要我吹一声口哨，它离得再远也会一下子跑过来呢...可现在我拿着它最爱吃的东西叫了半天，它也没出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问一下看是否能帮上忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是和阿尔托说的一样，去了[%dic:STR_DIC_FLA13] 方向，波比可就凶多吉少了。</p>
+          <p> </p>
+          <p>它不会真的去杜卡基部落了吧？我相信！我的波比不会那么轻易...的，唔... </p>
+          <p> </p>
+          <p>能帮忙去找找我的波比吗？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>十分感谢。</p>
+          <p> </p>
+          <p>如果发现波比，请把它安全地带回围栏。 </p>
+          <p> </p>
+          <p>它很喜欢跟着人跑，所以带它回来会很容易。</p>
+          <p> </p>
+          <p>拜托一定要让我见到我的波比啊... </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>或许我真的讨人烦。为一只小小的普古斯而担心...</p>
+          <p> </p>
+          <p>可是...波比...对我来说，它和亲人一样。</p>
+          <p> </p>
+          <p>唔，可能眼睛里进了什么东西，我没哭。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咿咿咿！</p>
+          <p> </p>
+          <p>（好像受伤了。）</p>
+          <p> </p>
+          <p>（如果好好哄它，估计会乖乖跟来。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">带着波比回去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>我一定注意，再也不会让它走丢了！我的宝贝，见到你太好了...</p>
+          <p> </p>
+          <p>哦！对了！谢谢您把波比平安带回来，这是我的一点小小心意，请不要拒绝，收下吧。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找失踪的普古斯波比。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">将波比安全的带到[%dic:STR_DIC_LA159]那里。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_LA159]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">牧童拉莫尔非常宠爱的普古斯波比失踪了。去了杜卡基部落附近寻找，并把它带回到围栏。 </font></p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莫尔很难过，因为自己最喜欢的取名叫波比的那只普古斯失踪了。去杜卡基部落寻找波比，并安全地带回围栏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

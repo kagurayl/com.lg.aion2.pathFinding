@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>冷酷的马里卡·努卡因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_FanaticRa_54_An]</p>
+          <p> </p>
+          <p> 2. 罪行：崇拜者审讯专家</p>
+          <p> </p>
+          <p> 3. 详情：对鸢族进行残忍拷问，并把他们变成龙崇拜者的人，有人曾经在堕落地下要塞目击到他。</p>
+          <p> </p>
+          <p>提供有关冷酷的马里卡·努卡下落的决定性情报，会直接将其杀死后把他的皮鞭作为证据带回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那根皮鞭是？</p>
+          <p> </p>
+          <p>难道您杀死了冷酷的马里卡·努卡？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带回来的皮鞭。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是我看错了，原来是腰带啊。</p>
+          <p> </p>
+          <p>我是太想把冷酷的马里卡·努卡除掉了，所以看花了眼睛。</p>
+          <p> </p>
+          <p>那个家伙非常非常恶毒。</p>
+          <p> </p>
+          <p>如果不尽快把他除掉，鸢族就会继续受到伤害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是冷酷的审讯专家的皮鞭吗？</p>
+          <p> </p>
+          <p>(挥动了一下。鞭子发出的风声听上去很可怕。)</p>
+          <p> </p>
+          <p>呼，这个声音……看来我得立即把它销毁掉才行。</p>
+          <p> </p>
+          <p>辛苦你了。我把赏金给您，希望您能继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_DayQ_FanaticRa_54_An]，然后把证据交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭崇拜者审问专家冷酷的马里卡·努卡之后，把皮鞭作为证据带回去，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

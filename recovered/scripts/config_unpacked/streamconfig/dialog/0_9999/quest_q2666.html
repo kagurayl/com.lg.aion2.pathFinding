@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说[%username]的力气非常大。是真的吗？</p> 
+          <p> </p>
+          <p>听他们说，在贝鲁斯兰一带守护者的较量中， [%username]在力量方面最厉害。</p>
+          <p> </p>
+          <p>怎么，看你好象不好意思承认。力气大又不是什么丢人的事情。</p>
+          <p> </p>
+          <p>由于任务需要，我想寻找力气大的守护者承担，所以请你如实告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">告诉他力气还可以。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那样，我就没有找错人。</p>
+          <p> </p>
+          <p>其实，我有件急事要做。</p>
+          <p> </p>
+          <p>我需要一位能够去阿尔奎米亚城寨，帮我推开 [%dic:STR_DIC_OBJ_DF3_OreCart_Q2666]的人。之所以要力气大，是因为那个东西很重。</p>
+          <p> </p>
+          <p>之前也委托过其他人，可谁都推不动。</p>
+          <p> </p>
+          <p>所以，我希望能得到[%username]的帮助。怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近，雷帕尔革命团的团员假扮成探险家，借机侦察亚特雷亚的各个地方。装扮成探险家，不管在哪里都不会惹人怀疑，这个点子确实很高明。</p>
+          <p> </p>
+          <p>他们把情报藏在矿车里，和矿物一起送到魔界的每个角落。这其中包括记载着侦察对象或目的的指令书和记载着侦察结果的报告书。</p>
+          <p> </p>
+          <p>一旦在搜索矿车的过程中找到了指令书，那我们就可以从中做假，将敌人的情报部门一网打尽。</p>
+          <p> </p>
+          <p>你需要做的就是把 [%dic:STR_DIC_OBJ_DF3_OreCart_Q2666]推到没人注意的角落。剩下的事情我会处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你拒绝？</p>
+          <p> </p>
+          <p>可这件事除了 [%username]之外，没人可以做到啊！</p>
+          <p> </p>
+          <p>是不是力气大的事情被人知道，让你感到不好意思？</p>
+          <p> </p>
+          <p>那些比任务还重要吗？</p>
+          <p> </p>
+          <p>请不要拒绝，再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（这好像就是德威说要推到轨道边上的矿车。）</p>
+          <p> </p>
+          <p>（推一下看看。）</p>
+          <p></p>
+          <p>（纹丝不动。）</p>
+          <p> </p>
+          <p>（深呼吸。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">推矿车。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（认真地看着什么。）</p>
+          <p> </p>
+          <p>什么！这些家伙要侦察的地方竟然还包括...</p>
+          <p> </p>
+          <p>要赶紧向军团长大人报告。</p>
+          <p> </p>
+          <p>啊，你来了。这，流了这么多汗啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才我躲在一旁看到你费尽力气推矿车的过程。</p>
+          <p> </p>
+          <p>虽然我也很想去帮你，可我害怕会暴露身份，所以没出来。</p>
+          <p> </p>
+          <p>总之，多亏了 [%username] ，才成功地换掉了指令书。</p>
+          <p> </p>
+          <p>现在要做的就是埋伏在假指令书中指定的场所，等那些家伙们来了后一网打尽。这样，敌人的情报网瞬间就会被击垮。</p>
+          <p> </p>
+          <p>真是辛苦你了，[%username]！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+                <step><p visible="[%0]"><font color="[%1]">将[%dic:STR_DIC_OBJ_DF3_OreCart_Q2666]推到铁路尽头。</font></p></step>
+		<step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Dewi]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让德威能够搜索矿车并换掉指令书，将矿车推到铁路尽头。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德威称，假扮成探险家的雷帕尔革命团谍报人员活动在亚特雷亚各个地方，他们用来交流的指令书都藏在阿尔奎米亚城寨的矿车中。</p>   
+          <p> </p>
+          <p>虽然制定了换掉指令书，搞垮敌人情报网的计划，但首先要把矿车推到不显眼的角落。</p>
+          <p> </p>
+          <p>帮助德威将矿车推到了指定地点，德威非常高兴，称换掉指令书的计划非常顺利。</p>      
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

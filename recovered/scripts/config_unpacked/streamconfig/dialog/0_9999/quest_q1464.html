@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然您到了这里，我能拜托您一件事情吗？</p>
+          <p> </p>
+          <p>虽然来这里当情报员我并不后悔，但是有件事情我一直放不下。</p>
+          <p> </p>
+          <p>因为一直没回天界，所以一直不能做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_smile;HACTION_SELECT_NONE_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来这里最放不下的并不是危险或者有可能无法回到故乡。</p>
+          <p> </p>
+          <p>而是极乐世界的恋人。因为有可能再也见不到他了。</p>
+          <p> </p>
+          <p>当初我觉得只要心灵相通的话就没关系，所以来到了这里。但是因为很长时间不见，出现了很多问题。</p>
+          <p> </p>
+          <p>请您帮我向他传达一下我的消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想给我的恋人送一件小的礼物。表示我一切平安和对他的心意。</p>
+          <p> </p>
+          <p>在这里有一种叫做泰奥尼亚的植物。在魔界虽然主要吃它的根，但是它的茎非常清香。</p>
+          <p> </p>
+          <p>而且有把用泰奥尼亚做成的糖送给喜爱的人的风俗。</p>
+          <p> </p>
+          <p>所以我想送他一些用[%dic:STR_DIC_E_herb_d_n_c_20a]做成的糖。[%username]大人您能帮我采集一些果实吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_herb_d_n_c_20a]生长在博塔摩尔坡道的各处。</p>
+          <p> </p>
+          <p>您能帮我去采集一点回来吗？</p>
+          <p> </p>
+          <p>我得整理一下来这里之后给他写的信。</p>
+          <p> </p>
+          <p>每次想他的时候我就写一封信，已经积累了不少了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不想在这危险的地方多呆啊。</p>
+          <p> </p>
+          <p>如果不是的话，或许是因为疏于采集而采集的能力不足？</p>
+          <p> </p>
+          <p>好不容易才等到一位可以拜托的人，真可惜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您回来啦。我还在担心您在采集的时候会不会碰到魔人呢。</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_E_herb_d_n_c_20a]采回来了吗？</p>
+          <p> </p>
+          <p>我准备好了制作糖果的糖浆。您把泰奥尼亚带回来了的话，就快交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出泰奥尼亚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您带回来啦。请稍等一下。</p>
+          <p> </p>
+          <p>(把泰奥尼亚和糖浆混合在一起做成糖果之后)来，拿着。</p>
+          <p> </p>
+          <p>请您把这个包袱交给极乐世界的[%dic:STR_DIC_N_Jinus]。</p>
+          <p> </p>
+          <p>同时跟他说我很健康，过得也很好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没送过去吗？</p>
+          <p> </p>
+          <p>我一直在等着[%username]大人把[%dic:STR_DIC_E_herb_d_n_c_20a]带回来...</p>
+          <p> </p>
+          <p>呆在魔界太久，对[%username]大人来说也很危险，请您快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去不像是来学习灵魂治愈的，找我有什么事吗？</p>
+          <p> </p>
+          <p>有事的话就请快说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出小包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是梅戴娅送给我的吗？看来[%username]大人是刚从魔界回来吧。</p>
+          <p> </p>
+          <p>看了信，我知道她很健康，也过得很好。</p>
+          <p> </p>
+          <p>真是太好了。虽然有很多人讥讽我是出卖了恋人爬上了高位，但我还是更喜欢和她在一起。</p>
+          <p> </p>
+          <p>谢谢你这么老远带来了梅戴娅的消息。这是我小小的心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_herb_d_n_c_20a]，然后交给[%dic:STR_DIC_N_Medea]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">把小包袱交给[%dic:STR_DIC_N_Jinus]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">梅戴娅说想给极乐世界的恋人送礼物。按照她的拜托，去搜集泰奥尼亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅戴娅说想给极乐世界的恋人送一份包含着爱的礼物。于是按照她的拜托采集泰奥尼亚交给了她。她让我把装有糖果和信的包袱交给载努斯。</p>
+          <p> </p>
+          <p>把包袱交给载努斯之后，他感谢我给他带来梅戴娅的消息，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

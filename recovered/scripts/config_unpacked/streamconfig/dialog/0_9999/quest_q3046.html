@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里吃饭睡觉，打猎卡里顿，人们应该感谢我才对。</p>
+          <p> </p>
+          <p>不是我想夸耀什么，只不过要是没有我的话，这一带早就成了卡里顿的天地了。</p>
+          <p> </p>
+          <p>虽然因为我的努力，他们的地盘没有扩大，但他们的气焰仍然很嚣张。</p>
+          <p> </p>
+          <p>真是些有韧性的家伙。他们配得上做我的对手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也最好小心一点。</p>
+          <p> </p>
+          <p>因为随时随地都会有卡里顿出现，把你的东西抢走。</p>
+          <p> </p>
+          <p>最近经常接到报告，说遭到了卡里顿的抢劫。</p>
+          <p> </p>
+          <p>不仅是贵重物品，甚至连运输车都被抢走了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不采取措施的话，卡里顿的强盗行为就会越来越猖獗。</p>
+          <p> </p>
+          <p>我很了解他们，只要尝到抢劫的甜头，他们就不会停下来。</p>
+          <p> </p>
+          <p>我看你应该打过猎，愿意帮我清除卡里顿吗？</p>
+          <p> </p>
+          <p>在打猎[%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An]和[%dic:STR_DIC_M_LF2A_CalydonMage_47_An]的过程中，还可以培养你的打猎实力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡里顿是我知道的最好的猎物。都快死了还会用刀和弓箭还击，看着真让人感动。</p>
+          <p> </p>
+          <p>只有有经验的猎人才能勉强对付。所以请不要过分自信，还是小心点的好。</p>
+          <p> </p>
+          <p>请你先去捕捉30头[%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An]和15头[%dic:STR_DIC_M_LF2A_CalydonMage_47_An]。我在这里等着你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡里顿的强盗行为越来越严重，你难道想坐视不理吗？</p>
+          <p> </p>
+          <p>呵呵，你难道不觉得羞愧吗？</p>
+          <p> </p>
+          <p>我一个人的力量有限，如果你改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不用说我也知道。</p>
+          <p> </p>
+          <p>因为卡里顿的数量减少了很多。</p>
+          <p> </p>
+          <p>不是你的话，还会是谁干的呢？</p>
+          <p> </p>
+          <p>对了，打猎卡里顿的感觉怎么样？真的是最好的猎物吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想在和卡里顿战斗的过程中，你一定学到了很多东西。</p>
+          <p> </p>
+          <p>他们这次元气大伤，一段时间内应该不会出来抢劫了。</p>
+          <p> </p>
+          <p>这是同样身为猎人的我为你准备的礼物，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除攻击人的卡里顿</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An]([%2]/30)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonMage_47_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Maeleagros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡里顿正在抢劫经过卡里顿出没地的人。帮助梅雷阿格罗斯扫荡卡里顿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>猎人梅雷阿格罗斯说他吃住在野营地，是为了打猎卡里顿。</p>
+          <p> </p>
+          <p>但是最近遭到卡里顿抢劫的人越来越多，靠梅雷阿格罗斯一个人的力量已经应付不过来了，所以请求我的帮助。</p>
+          <p> </p>
+          <p>帮助他除掉了卡里顿山贼和卡里顿术士。回去见到他之后，他说辛苦了，并给了我礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

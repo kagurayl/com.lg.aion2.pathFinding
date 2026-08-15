@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想来想去，还是觉得不能让认为第十三主神即将降临的异端留在贝鲁斯兰。</p>
+          <p> </p>
+          <p>虽然那个人只是个精神不正常的老人。</p>
+          <p> </p>
+          <p>要是因为那个老人，第十三主神降临的传言扩散开来的话，那就糟了。 </p>
+          <p> </p>
+          <p>这会比龙族的危险更让人恐慌。  </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，[%username]，你能再到那里去一趟吗？</p>
+          <p> </p>
+          <p>要是那个名叫比格比尔的老人已经离开那里，就没关系了。如果他还在那里，请你告诫他，一定不能和别人提到第十三主神的事情。</p>
+          <p> </p>
+          <p>要是继续宣言那种言论的话，沉默审判官也许会去拜访他。</p>
+          <p> </p>
+          <p>还有，要是你能说服他离开那里到别的地方去，就再好不过了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你爽快地答应。不好意思，还要让你跑这么老远。</p>
+          <p> </p>
+          <p>请你看看比格比尔是否还在那里，然后妥善处理一下，让他不要再说第十三主神降临的事情了。</p>
+          <p> </p>
+          <p>这对大家都有好处，不是吗？</p>
+          <p> </p>
+          <p>要是老人被关进沉默审判所，我的心里也会不好受的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不要不把第十三主神的事情当回事。</p>
+          <p> </p>
+          <p>沉默审判所并不宽容。</p>
+          <p> </p>
+          <p>他们不会因为他是个精神有问题的老人，而放他一马。</p>
+          <p> </p>
+          <p>与其让老人被沉默审判所抓走，还不如现在就去说服他，可以让自己少一点罪恶感。</p>
+          <p> </p>
+          <p>你要还是不愿意的话，我也没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！是上次遇到的那个奥德的气息不同寻常的守护者。</p>
+          <p>结束对话。</p>
+          <p>你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达格纳林的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把第十三主神降临的事情告诉了黄昏的执政官？</p>
+          <p></p>
+          <p>嗯哼，我还以为你知道哪些话该说，哪些话不该说呢...</p>
+          <p> </p>
+          <p>不过既然已经说了，就没办法了。</p>
+          <p> </p>
+          <p>你就告诉黄昏的执政官和其他人，我已经不在这里了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Byggvir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">说服比格比尔再也不要谈论关于第十三主神的事了</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格纳林说就算是精神失常的老人，谈论第十三主神的的事情也是危险的。</p>
+          <p> </p>
+          <p>想要说服比格比尔不要谈论关于第十三主神的事情而去悬崖上的小屋见他了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

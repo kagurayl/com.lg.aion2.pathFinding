@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来欧比斯多久了啊？</p>
+          <p> </p>
+          <p>如果您已经在埃雷修兰塔待了很长时间，就会知道，战争其实就是物资的较量。</p>
+          <p> </p>
+          <p>拥有更好的武器，更好的防具的一方会更加有利。</p>
+          <p> </p>
+          <p>所以能够给更多的守护者配备更好的武器的一方，会占有压倒性的优势。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要制作好的武器和防具的话，就必须要有奥德。</p>
+          <p> </p>
+          <p>但是您也知道，亚特雷亚的奥德没有欧比斯丰富。</p>
+          <p> </p>
+          <p>所以虽然其他物品需要补给，但是奥德之类的应该靠我们自己解决。</p>
+          <p> </p>
+          <p>目前最急需的是[%dic:STR_DIC_G_od_n_r_30a]。虽然可以从[%dic:STR_DIC_G_od_30c_1]中提取到，但是出现的几率非常低。</p>
+          <p> </p>
+          <p>虽然这件事会很辛苦，不过我还是希望[%username]大人能帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的选择。确保补给品的供应，是和战斗同样重要的事情。</p>
+          <p> </p>
+          <p>高纯度奥德碎片可以从[%dic:STR_DIC_G_od_30c_1]中提取到。</p>
+          <p> </p>
+          <p>发光的奥德虽然有很多，但是[%dic:STR_DIC_G_od_n_r_30a]却必须要运气好才能得到。</p>
+          <p> </p>
+          <p>所以即便很累很枯燥，希望您也能把任务完成，不要在中途放弃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>觉醒还没多久的新人们大多沉迷于战斗。</p>
+          <p> </p>
+          <p>但是经验丰富的守护者的话，就知道为了取得胜利，要做的事情不仅仅是战斗。</p>
+          <p> </p>
+          <p>希望您以后能体会到我所做的事情的意义。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_G_od_n_r_30a]不够了，所以我一直在焦急地等着[%username]大人回来。</p>
+          <p> </p>
+          <p>您应该不会是空着手回来了吧？</p>
+          <p> </p>
+          <p>快把您搜集到的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出高纯度奥德碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去搜集高纯度奥德碎片吗？</p>
+          <p> </p>
+          <p>我以为我已经充分地向[%username]大人您说明了高纯度奥德碎片的重要性了呢...</p>
+          <p> </p>
+          <p>现在我没有时间跟您再说明一遍它的重要性了。</p>
+          <p> </p>
+          <p>请您快去帮我搜集[%dic:STR_DIC_G_od_n_r_30a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集到了这么多啊。真是谢谢您。</p>
+          <p> </p>
+          <p>托[%username]大人的福，破灭之呐喊军团可以拿着好武器去和敌人战斗了。</p>
+          <p> </p>
+          <p>这么不容易的事情，您却完成得这么出色，实在是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_G_od_30c_1]中提取高纯度奥德碎片，然后交给[%dic:STR_DIC_N_Blir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">布利尔说欧比斯的战争归根到底是物资的较量，因为高纯度奥德碎片不足，他正在因此发愁。于是决定帮他去发光的奥德中提取高纯度奥德碎片。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>补给兵布利尔说欧比斯的战争归根到底是物资的较量，为更多的守护者配备更好的武器非常重要。</p>
+          <p> </p>
+          <p>他说要制作好的武器的话，需要用到高纯度奥德碎片，拜托我去发光的奥德中提取。</p>
+          <p> </p>
+          <p>于是以极大的耐心从发光的奥德中提取到了高纯度奥德碎片，他说还需要大量的高纯度奥德碎片，让我有时间的话过去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

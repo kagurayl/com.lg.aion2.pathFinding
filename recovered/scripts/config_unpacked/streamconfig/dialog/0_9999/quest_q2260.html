@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然收拾掉了白虎，但是已损失的物资也没办法了。</p>
+          <p> </p>
+          <p>这样的话工程无法正常进行。</p>
+          <p> </p>
+          <p>不到万不得已不想用这个办法...要向要塞申请多送点物资过来了。</p>
+          <p> </p>
+          <p>苏埃伦军团长肯定要大怒特怒的。</p>
+          <p> </p>
+          <p>不过也是没办法呀。因为不能再让工程往后延期了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我可以提个比较难的请求吗？</p>
+          <p> </p>
+          <p>请你替我去趟要塞，见一下[%dic:STR_DIC_N_Sueron]军团长，向他申请多运送一点物资。</p>
+          <p> </p>
+          <p>[%username]您不是执政官，所以军团长不会向您发火或骂您的。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。请您好好跟[%dic:STR_DIC_N_Sueron]军团长说，请他再运送点物资。</p>
+          <p> </p>
+          <p>您注意着点儿说，不要惹怒他，或许他就会再送点儿来了。</p>
+          <p> </p>
+          <p>那么就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊呀，真是为难你了啊。</p>
+          <p> </p>
+          <p>现在就需要物资，但现在又派不出人手去要塞...</p>
+          <p> </p>
+          <p>那我得碰碰运气，等别的守护者经过这儿了。什么时候能去申请呀...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？物资畜力车受到攻击了？</p>
+          <p> </p>
+          <p>哎呀，你到底是怎么护卫的呀？偷什么懒了？连几头动物都管不好，又把物资弄丢啦！</p>
+          <p> </p>
+          <p>还要求加送物资？</p>
+          <p> </p>
+          <p>要塞预算已经超支，你让我去哪儿弄物资呀？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说抱歉，再次请求。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>话说回来，您又不是执政官，这么说好像太为难您了。该怎么办呢？</p>
+          <p> </p>
+          <p>只有重建因派图西姆，才能打退可怕的亚人种，请你一定要大力相助。</p>
+          <p> </p>
+          <p>知道了。我马上增派物资。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_N_Gulkalla]的话转达给[%dic:STR_DIC_N_Sueron]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">向苏埃伦军团长转达酷卡拉的话，要求增派物资吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>物资缺乏，聪明的酷卡拉使用最后的手段，让我向要塞的军团长请求增派物资。</p>
+          <p> </p>
+          <p>应他的请求，去要塞向苏埃伦转达了他的话，苏埃伦虽然生气，但不得不同意增派物资。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

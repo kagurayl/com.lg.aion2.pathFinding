@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久不见，[%username] 大人。</p>
+          <p> </p>
+          <p>上次多亏您的大力协助。哈班雅克农场里的不死族减少了很多。</p>
+          <p> </p>
+          <p>看来，您在布鲁斯特豪宁的时候积累了很多经验。</p>
+          <p> </p>
+          <p>看到您的[%mainslotitem]，我就能感觉出您这段时间内的成长。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是，好久没见，我光顾聊家常，忘记说要事了。</p>
+          <p> </p>
+          <p>我找[%username] 大人有事想拜托。</p>
+          <p> </p>
+          <p>或许您还不知道，我们智慧的宝珠军团来到这里后不久，后援队就到达了。</p>
+          <p> </p>
+          <p>后援队的目标是对布鲁斯特豪宁的北部进行垦荒作业。因此队中以经验丰富的守护者为核心，去了哈班雅克农场北部地区。</p>
+          <p> </p>
+          <p>我想给去了北部的不死族讨伐队传达定居者营地的情况，[%username] 大人能辛苦一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您能痛快的答应。</p>
+          <p> </p>
+          <p>那么请收下这个现状报告书。这是详细记载着定居者营地和布鲁斯特豪宁南部地区现状的报告书。</p>
+          <p> </p>
+          <p>去贝达扎尔村，交给 [%dic:STR_DIC_N_Bielia] 大人就可以了。</p>
+          <p> </p>
+          <p>路程有点远，您最好坐飞机去那里。去找乌尔洛，他会送您到贝达扎尔村的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在贝达扎尔村也有很多事情要做，您去那里也可以顺便接任务啊。</p>
+          <p> </p>
+          <p>看来您还有其他重要的事情要做，我就不强求您了。</p>
+          <p> </p>
+          <p>不过希望您以后有时间就去一趟贝达扎尔村。</p>
+          <p> </p>
+          <p>能为他们提供帮助的话，他们会非常感激您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎您，[%username] 大人。</p>
+          <p> </p>
+          <p>好像第一次见，您是来帮助我们不死族讨伐队的吗？</p>
+          <p> </p>
+          <p>如果我们曾经见过，请您原谅我的无理。</p>
+          <p> </p>
+          <p>来到贝达扎尔村后，因为太忙，都有点晕头转向了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将现状报告书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是岚黛特大人送来了定居者营地的现况报告书了啊。</p>
+          <p> </p>
+          <p>(观看报告书) 看来现在的情况有所好转。</p>
+          <p> </p>
+          <p>在包括岚黛特大人在内的智慧的宝珠军团的努力下，我们后援队才会来到贝达扎尔村发展。</p>
+          <p> </p>
+          <p>多亏贝达扎尔，村子还是保持着以前那样美丽的样子，可村外到处还都是不死族。</p>
+          <p> </p>
+          <p>既然您都来到了这里，就请您以后多多帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将报告书送到[%dic:STR_DIC_N_Bielia]那里</font></p></step>               
+               
+    </steps>
+          <p><font font_xml="quest_summary">接受岚黛特的委托，去贝达扎尔村，把报告书交给庇艾利亚。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在定居者营地的岚黛特表示，后援队去布鲁斯特豪宁北部进行垦荒作业，请求把现状报告书送给那里的庇艾利亚。</p>
+          <p> </p>
+          <p>去贝达扎尔村，将报告书交给庇艾利亚，庇艾利亚表示这里也有很多事情要做，并请求以后多多关照。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

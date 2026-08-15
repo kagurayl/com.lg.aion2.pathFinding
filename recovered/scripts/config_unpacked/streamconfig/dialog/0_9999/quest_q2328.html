@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥克塔努的迷雾洞穴里不仅只有奥塔赛德。</p>
+          <p> </p>
+          <p>在洞穴的深处，据说还有蜈蚣。</p>
+          <p> </p>
+          <p>说起来的话，蜈蚣要比奥塔赛德凶恶得多。</p>
+          <p> </p>
+          <p>而且它们的毒是非常强烈的剧毒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还好它们的数量要比奥塔赛德少。</p>
+          <p> </p>
+          <p>如果能把它们的头目除掉的话，它们的地盘会被奥塔赛德侵蚀而自动消失。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去把它们的头目除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快就答应我。</p>
+          <p> </p>
+          <p>那就请您去奥克塔努的迷雾洞穴除掉[%dic:STR_DIC_M_CentipedeNamedQ_29_An]，然后把[%dic:STR_DIC_I_QUEST_2328a]带回来作为证据。</p>
+          <p> </p>
+          <p>那是个非常凶恶的家伙，请您一定要格外小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次见到不想接受任务的守护者，我都觉得不可理解。</p>
+          <p> </p>
+          <p>守护者的使命不就是为人类服务吗？</p>
+          <p> </p>
+          <p>而且又可以积累经验，为什么会不愿意呢...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]。</p>
+          <p> </p>
+          <p>本来应该把任务一次性给您的。让您跑了好几趟，真是不好意思。</p>
+          <p> </p>
+          <p>不过话说回来，[%dic:STR_DIC_I_QUEST_2328a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出艾卡的触手。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没把[%dic:STR_DIC_M_CentipedeNamedQ_29_An]除掉吗？</p>
+          <p> </p>
+          <p>守护者的使命是忠实完成担负的任务。</p>
+          <p> </p>
+          <p>请您快去把艾卡的触手拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>去这么大老远的地方，一定很辛苦吧。</p>
+          <p> </p>
+          <p>虽然不多，但这是给您的报答。希望您能好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_CentipedeNamedQ_29_An]，然后将证据交给[%dic:STR_DIC_N_Gelundorf]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉生活在奥克塔努的迷雾洞穴里的埋藏千年的艾卡，并搜集触手作为证据。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖伦多普说在奥克塔努的迷雾洞穴里有蜈蚣，让我去把它们的头目埋藏千年的艾卡除掉。</p>
+          <p> </p>
+          <p>于是除掉了艾卡，并把触手作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

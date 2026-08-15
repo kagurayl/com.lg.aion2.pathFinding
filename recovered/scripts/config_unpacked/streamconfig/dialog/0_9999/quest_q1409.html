@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到了这里之后，到现在为止没有一天可以安心地休息过。</p>
+          <p> </p>
+          <p>你问为什么？这是当然啦。凯丹大本营就在旁边，克拉尔随时有可能冲过来。</p>
+          <p> </p>
+          <p>而且最近麻麻奇部落的动态有点异常。以前偶然才能见到一次，最近却经常能够看到。说明他们经常出来侦察。</p>
+          <p> </p>
+          <p>啊，他们要是真的是来窥探结界塔的话，可该怎么办呢？迪奥内拉和我能挡住他们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的愿意帮我吗？[%username]大人能帮我的话，真的会起很大作用的。</p>
+          <p> </p>
+          <p>那我就不好意思要拜托您了。</p>
+          <p> </p>
+          <p>请您去凯丹大本营帮我好好地教训一下麻麻奇的那些家伙。</p>
+          <p> </p>
+          <p>让他们不敢再来窥探我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>主要过来侦察的是[%dic:STR_DIC_M_BrownieMWa_37_An]、[%dic:STR_DIC_M_DBrownieFWa_37_An]和[%dic:STR_DIC_M_MBrownieFSc_37_An]，只要把它们除掉就行了。</p>
+          <p> </p>
+          <p>这种事情最好能尽快处理，所以请您立刻出发。为了以防万一，我会向要塞报告情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，您不是做这种琐碎的事情的人。</p>
+          <p> </p>
+          <p>对不起，让您操心了。</p>
+          <p> </p>
+          <p>这件事情我会想办法处理的，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在[%username]大人去凯丹大本营的时间里，我向要塞送去了报告书。</p>
+          <p> </p>
+          <p>不知道为什么，他们马上就来了答复。而且不是送给我，而是送给了艾奥洛斯大人。</p>
+          <p> </p>
+          <p>对了，您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的速度可真够快的。</p>
+          <p> </p>
+          <p>我也在神庙里接受了训练，但却连[%username]大人的边都够不上。</p>
+          <p> </p>
+          <p>不管怎样，以后一段时间里我们应该不用为麻麻奇担心了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉凯丹大本营的麻麻奇部族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BrownieMWa_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DBrownieFWa_37_An]([%5]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MBrownieFSc_37_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Kibelle]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助奇贝内除掉来结界塔进行侦察的麻麻奇部族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇贝内抱怨说麻麻奇部族最近经常在结界塔周围出现，让他很担心。</p>
+          <p> </p>
+          <p>于是去凯丹大本营除掉了麻麻奇战士和巡查兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

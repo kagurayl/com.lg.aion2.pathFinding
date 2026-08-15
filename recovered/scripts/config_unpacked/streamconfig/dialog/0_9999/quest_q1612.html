@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们已经知道，雷帕尔革命团正在他们的研究基地里策划着巨大的阴谋。</p>
+          <p></p>
+          <p>制造出普雷尔好像还不够，他们还在继续用动物和植物做实验。</p>
+          <p></p>
+          <p>从革命团监视基地送来的情报看，他们还建立了秘密研究所，进行着在革命团内部也只有极少数人知道的奇怪实验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然还不知道具体是什么，但是革命团的家伙们一定在制造比普雷尔更可怕的东西，因此一定要在实验成功之前阻止他们。</p>
+          <p></p>
+          <p>[%username]，你愿意执行这个任务吗？</p>
+          <p></p>
+          <p>请你到[%dic:STR_DIC_W_LF3_SZ_003]去，破坏他们的[%dic:STR_DIC_E_LF3_Q1612]，让他们再也不能进行研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们的秘密研究所位于[%dic:STR_DIC_W_LF3_SZ_003]的最深处，要进入那里会很困难。</p>
+          <p></p>
+          <p>即使安全地潜入了秘密研究所，要找到研究资料也并非易事。</p>
+          <p></p>
+          <p>希望你不要轻言放弃，仔细寻找，务必把[%dic:STR_DIC_E_LF3_Q1612]破坏掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是嫌革命团研究基地太远所以不想去吗？？</p>
+          <p></p>
+          <p>还是听到秘密研究所这几个字就害怕了？</p>
+          <p></p>
+          <p>不过既然你什么都不想做，我又有什么办法呢？</p>
+          <p></p>
+          <p>勇敢而有使命感的守护者还有很多，你大可不必担心。请你从哪儿来就回哪儿去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷帕尔革命团所筹划的阴谋一定是极其秘和邪恶的。</p>
+          <p></p>
+          <p>他们刚出现的时候我还以为他们是些小毛贼呢。</p>
+          <p></p>
+          <p>必须在他们犯下更大的罪行之前，掌握情报并阻止他们。</p>
+          <p></p>
+          <p>这次交给你的破坏研究资料和阻止革命团阴谋的任务是非常重要的。</p>
+          <p></p>
+          <p>对了，你把[%dic:STR_DIC_E_LF3_Q1612]都破坏了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你完美的完成了任务。做的非常好。</p>
+          <p></p>
+          <p>托[%username]的福，雷帕尔革命团遭到了重大的打击。他们费尽心机策划的研究被阻止了。</p>
+          <p></p>
+          <p>这是对你完美完成任务的报答。来，收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏秘密研究所内的[%dic:STR_DIC_E_LF3_Q1612]([%2]/4)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Graa]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须要阻止雷帕尔革命团的研究。进入革命团研究基地的秘密研究所，将研究资料破坏掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西风的守护者格拉亚说在雷帕尔革命团的研究基地内进行着邪恶的研究，无论如何都要阻止他们的这项研究。</p>
+          <p></p>
+          <p>于是潜入位于革命团研究基地深处的秘密研究所，对研究所内部进行搜索，破坏掉了研究资料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

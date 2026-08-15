@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到这里之后，遇到了很多麻烦的事情。</p>
+          <p> </p>
+          <p>本来我的工作是治疗伤者，研究新药物，没有其他麻烦的事情。</p>
+          <p> </p>
+          <p>让我管理本应由行政官负责的铸币任务，好像有点太过分了。您说是不是？</p>
+          <p> </p>
+          <p>就算人手不足，也不应该这样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管怎样，现在我负责提供铸币任务。</p>
+          <p> </p>
+          <p>乌达斯神殿地下有一个巨人工房，这您应该知道吧？不知道那里的巨人是什么东西。</p>
+          <p> </p>
+          <p>要塞方面好像对巨人很感兴趣，但是调查工作好像不太顺利。</p>
+          <p> </p>
+          <p>他们说有东西给他们造成了妨碍。[%username]大人，您能去把那些东西清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要清除的是[%dic:STR_DIC_M_IDTemple_RollingWheel_53_Ae]。</p>
+          <p> </p>
+          <p>它们长得像长有锋利锯齿的轮子一样。</p>
+          <p> </p>
+          <p>它们到处滚来滚去，好像对调查工作造成了很大的妨碍。</p>
+          <p> </p>
+          <p>既然交给了[%username]大人，我就不管了。相信[%username]大人一定会处理好的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的不愿意吗？</p>
+          <p> </p>
+          <p>我不是跟您说明过了吗！自从摊上了行政官的工作，我就感觉要死了一样。</p>
+          <p> </p>
+          <p>您难道不能体谅体谅我吗！</p>
+          <p> </p>
+          <p>唉，真倒霉……本以为来这里之后可以尽情地进行研究呢。这可真是……</p>
+          <p> </p>
+          <p>算了。我只能等其他愿意帮助别人的守护者来帮我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃洛丝百夫长一直在折腾我，我都快死了。</p>
+          <p> </p>
+          <p>只要一有空，他就问我铸币任务的情况怎么样。</p>
+          <p> </p>
+          <p>要是真那么担心的话，就自己来做好了……</p>
+          <p> </p>
+          <p>对了，魔力之恰克兰塔怎么样了？全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说全部消灭掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这下我终于可以松一口气了。</p>
+          <p> </p>
+          <p>来，请您收下。这是给您的秘银铸币。</p>
+          <p> </p>
+          <p>这个任务并不是一次就结束了。[%username]大人您也应该很清楚吧？</p>
+          <p> </p>
+          <p>有时间的话，希望您能再来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDTemple_RollingWheel_53_Ae]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Steurios]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在调查巨人的过程中受到了魔力之恰克兰塔的妨碍。前往乌达斯神殿地下消灭魔力之恰克兰塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯泰乌里奥斯抱怨说因为人手不够，他不得不兼任行政官的工作。</p>
+          <p> </p>
+          <p>于是按照他的委托，前往乌达斯神殿地下，消灭了给调查巨人造成妨碍的魔力之恰克兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

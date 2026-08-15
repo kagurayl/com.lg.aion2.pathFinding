@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了对付蜂拥而来的魔族和龙族，大家都忙的焦头烂额。好像很久没时间和你说说话了。</p>
+          <p> </p>
+          <p>夺取要塞难，守住要塞更难，这句话说的没错。</p>
+          <p> </p>
+          <p>我虽然抽空还能合一下眼，但是百夫长大人却一直在夜以继日的工作。作为他的副官，我的心情很沉重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前德雷得奇安出现，投下了很多龙族士兵，使情况变得更加困难了。</p>
+          <p> </p>
+          <p>因为所有的兵力都被投入了对魔族的攻击，对龙族的奇袭就很难进行有效的应对。</p>
+          <p> </p>
+          <p>但是也无法向其他要塞请求支援。</p>
+          <p> </p>
+          <p>所以我在想要不要向埃雷修兰塔的普通守护者请求帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？[%username]大人您能帮我们一把吗？</p>
+          <p> </p>
+          <p>请您帮我把在据点附近游荡的[%dic:STR_DIC_M_Ab1_1231_LizardmanFi_39_An]和[%dic:STR_DIC_M_Ab1_1231_LizardmanRa_39_An]清除掉，然后收缴[%dic:STR_DIC_I_QUEST_1786a]回来给我。</p>
+          <p> </p>
+          <p>龙族的武器也许是因为反奥德的力量，一般很难被破坏。如果让它留在那里的话，以后又会被用来威胁天族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能这么爽快地答应我的请求，我真是太高兴了。有[%username]大人这样的守护者存在，真是太好了。</p>
+          <p> </p>
+          <p>那就请您马上出发吧。别忘了把他们的武器带回来。</p>
+          <p> </p>
+          <p>因为只有收缴了他们的武器，才能有效地削弱第38部队的兵力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，虽然可惜，不过也没办法。[%username]大人应该也有其他急事要办。</p>
+          <p> </p>
+          <p>但是我相信，下次您一定会帮我的。</p>
+          <p> </p>
+          <p>不是别的，我们应该为了我们天族而一起奋斗。</p>
+          <p> </p>
+          <p>那您去忙您的事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您的事情怎么样了？等了好久您都没回来，我正在担心呢。</p>
+          <p> </p>
+          <p>您去把第38德拉克纽特军团兵和第38德拉克纽特巡查兵除掉，并把武器带回来了吗？</p>
+          <p> </p>
+          <p>把您带回来的武器给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉克纽特的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，还没把武器收缴上来吗？</p>
+          <p> </p>
+          <p>您也知道，这个据点是要塞的核心堡垒。这里受到威胁的话，守卫要塞就会变得很困难。</p>
+          <p> </p>
+          <p>"所以我再次请求你。请您去把周围的[%dic:STR_DIC_M_Ab1_1231_LizardmanFi_39_An], [%dic:STR_DIC_M_Ab1_1231_LizardmanRa_39_An]清除掉，然后把武器收缴回来。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是德拉克纽特的武器啊。呃，味道好臭啊。</p>
+          <p> </p>
+          <p>看来德拉克纽特不怎么洗它们。</p>
+          <p> </p>
+          <p>把味道这么重的东西带回来，一定很辛苦吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Ab1_1231_LizardmanFi_39_An]和[%dic:STR_DIC_M_Ab1_1231_LizardmanRa_39_An]的武器，然后交给[%dic:STR_DIC_N_Battus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须除掉威胁德奇沙斯据点的第38纽特军团兵和巡查兵，并把武器带回来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴图斯抱怨说和魔族的战斗已经很困难了，龙族出现之后，让局势变得更加艰难。</p>
+          <p> </p>
+          <p>为了让要塞的守卫们可以集中精力对抗魔族，去除掉了德奇沙斯岛的第38德拉克纽特军团兵和巡查兵，并把他们的武器带了回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

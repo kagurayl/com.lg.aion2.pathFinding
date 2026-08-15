@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，又看见[%username]你了。我还以为你只不过是位[%userclass]呢，料理手艺可真不错啊。</p>
+          <p> </p>
+          <p>再稍加努力的话，就可以去做献给主神的料理了。当然还需要我的帮助。</p>
+          <p> </p>
+          <p>好了，[%username]！我有件急事要拜托你，你能抽出时间吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是什么困难的事情，你不必紧张。</p>
+          <p> </p>
+          <p>只要把这些菊苣面包粉给欧比斯的[%dic:STR_DIC_N_Siana]送过去就可以了。是给普利姆据点的东西，他让我快点送过去。</p>
+          <p> </p>
+          <p>怎么样？你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就喜欢你的爽快劲儿。正和我的胃口。</p>
+          <p> </p>
+          <p>和你开玩笑，这是要送给[%dic:STR_DIC_N_Siana]的包裹。他说要得很急，所以请你马上出发。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我以为你会爽快地答应呢。老实说我有点失望。</p>
+          <p> </p>
+          <p>费迪内克斯说明天做晚饭必须要有菊苣面包粉。这下怎么办呢...</p>
+          <p> </p>
+          <p>如果没有什么话说的话你就走吧。在这里晃悠的话只会妨碍我思考。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要什么呢？对不起。我今天有点晕头。</p>
+          <p> </p>
+          <p>我今天必须准备好执政官们吃的食物材料，但是量还缺少很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出莱尼塔的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是尼塔大人让你来的啊。那这个包裹就应该是菊苣面包粉啰。</p>
+          <p> </p>
+          <p>呼，真是太好了。如果连这个都到不了，我就真不知道该怎么办了。</p>
+          <p> </p>
+          <p>谢谢你这么快就把东西送过来。这是给您的一点谢意，您千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把莱尼塔的包裹交给[%dic:STR_DIC_N_Siana]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把莱尼塔给的掠夺者之法书交给欧比斯的武器商人普莱班。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱尼塔说有件东西需要马上送给普利姆据点的武器商人普莱班，拜托我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把莱尼塔给的包裹交给了普莱班，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

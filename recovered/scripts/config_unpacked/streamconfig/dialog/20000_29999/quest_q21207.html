@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在是绝好的机会！</p>
+          <p> </p>
+          <p>必须尽快开展奇袭作战。</p>
+          <p> </p>
+          <p>我一直在监视巴卡巴塔激战地的龙族，最近他们的行动很可疑。</p>
+          <p> </p>
+          <p>他们一定正在准备大规模的攻击行动。</p>
+          <p> </p>
+          <p>在他们行动之前，我们必须先下手为强。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我们几乎没有可以动用的兵力。</p>
+          <p> </p>
+          <p>只能拜托你这样的守护者分别进行作战。</p>
+          <p> </p>
+          <p>不用我多说了吧？</p>
+          <p> </p>
+          <p>在战场上，一瞬间的判断会左右整个局势。一瞬间的犹豫会把同伴推入绝境。</p>
+          <p> </p>
+          <p>[%username]，现在是我们行动的时候了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你马上到巴卡巴塔激战地去，袭击[%dic:STR_DIC_E_Q21207]！</p>
+          <p> </p>
+          <p>攻击的时候，不要过分深入，以免遭到他们的攻击。</p>
+          <p> </p>
+          <p>因为在数量上，他们占据着绝对的优势。</p>
+          <p> </p>
+          <p>消灭他们之后，请你把纳杜卡[%dic:STR_DIC_I_QUEST_21207a]带回来作为证据。让活下来的德拉坎不能马上参加战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听明白我的话了吗！</p>
+          <p> </p>
+          <p>如果你认真听了的话，应该没有理由拒绝啊？</p>
+          <p> </p>
+          <p>请你再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？拜托你的事情完成了吗？</p>
+          <p> </p>
+          <p>除了你之外，我还拜托了其他人，但是却全都没有消息，真让人郁闷。</p>
+          <p> </p>
+          <p>成功了的话，就把纳杜卡[%dic:STR_DIC_I_QUEST_21207a]交给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没完成任务啊？</p>
+          <p> </p>
+          <p>对于奇袭作战来说，时间就是生命。错过了时间的话，反而会变成陷阱。</p>
+          <p> </p>
+          <p>请你抓紧时间。</p>
+          <p> </p>
+          <p>快去巴卡巴塔激战地消灭[%dic:STR_DIC_E_Q21207]，把[%dic:STR_DIC_I_QUEST_21207a]拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。</p>
+          <p> </p>
+          <p>这样的话，龙族的进攻计划就不得不推迟了。</p>
+          <p> </p>
+          <p>不是只有大规模的军团才能取得胜利。个人的努力如果不断积累，同样可以取得胜利。</p>
+          <p> </p>
+          <p>我向你表示感谢。虽然我不能给你太多，但希望你能收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_Q21207]的武器，然后交给[%dic:STR_DIC_N_Ankea]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照安凯亚的指示，消灭守卫巴卡巴塔激战地的纳杜卡军团的德拉坎，抢夺武器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安凯亚说收到了情报，发现最近龙族的行动很可疑，因此必须先下手为强。</p>
+          <p> </p>
+          <p>于是消灭了守卫巴卡巴塔激战地的纳杜卡军团的德拉坎，抢回了武器。安凯亚说龙族的进攻计划应该会被延迟，并对我表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

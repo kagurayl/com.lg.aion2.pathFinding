@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(是一张纸标签。)</p>
+          <p> </p>
+          <p>(上面用很小的字体写着什么。)</p>
+          <p> </p>
+          <p>(仔细看了一下，上面写着的是“RM-12b”。)</p>
+          <p> </p>
+          <p>(好像隐藏着什么重要的情报。)</p>
+          <p> </p>
+          <p>(应该拿去给擅长解读密码的因特尔蒂卡的[%dic:STR_DIC_N_Perento]要塞队长看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是什么时候来的？</p>
+          <p> </p>
+          <p>因为发现了新的密码，所以我正在解读。</p>
+          <p> </p>
+          <p>这是第一次见到的形式，可能会花一点时间，不过也就更加有意思。</p>
+          <p> </p>
+          <p>对了，你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出纸标签。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>RM-12b？看起来好像是密码。</p>
+          <p> </p>
+          <p>但这不是密码。这是雷帕尔革命团给他们制造的实验体取得名字。</p>
+          <p> </p>
+          <p>不过以RM开头的话，应该是指位于普依艾密林的基地...并且是十二号动物实验体...</p>
+          <p> </p>
+          <p>你能把它给我吗？我想再仔细看一下。</p>
+          <p> </p>
+          <p>作为回报，我会给你谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把纸标签交给因特尔蒂卡的[%dic:STR_DIC_N_Perento]要塞队长</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在和普雷尔战斗的过程中，发现了一张写着奇怪的文字的纸标签。应该去找密码专家佩兰托要塞队长问问是什么意思。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在和普雷尔战斗的过程中，发现了一张纸标签。标签上写着“RM-12b”，为了知道确切的含义，把它交给了密码专家佩兰托要塞队长。</p>
+          <p> </p>
+          <p>佩兰托说那不是密码，而是雷帕尔革命团制造的实验体的名字。他说也许这是重要的资料，让我把纸标签交给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

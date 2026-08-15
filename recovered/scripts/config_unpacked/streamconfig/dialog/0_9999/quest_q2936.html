@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你已经充分具备了成为裁缝达人的资格。</p>
+          <p> </p>
+          <p>在我看来，你的才能非比寻常。</p>
+          <p> </p>
+          <p>我想你应该接受达人的称号，正式进入裁缝的领域。</p>
+          <p> </p>
+          <p>当然，我会给你一封推荐信。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问成为裁缝达人有什么好处。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到达了相当的境界之后，当然就应该赋予你相应的称号。</p>
+          <p> </p>
+          <p>在裁缝中，达到最高境界的人可以获得裁缝达人的称号。</p>
+          <p> </p>
+          <p>现在[%username]你也到了接受达人称号的时候了。</p>
+          <p> </p>
+          <p>怎么样，你愿意接受这个称号吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要获得达人的称号，需要获得[%dic:STR_DIC_N_Vidar]总司令官的许可。</p>
+          <p> </p>
+          <p>我给你写一封推荐信，你去毕达尔大人那里接受称号，并举行任命式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是你觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>如果你以后想成为名人的话，最好是接受达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我手头有点事情...</p>
+          <p> </p>
+          <p>如果不是非得找我的话，你可以去找斯卡迪或者克巴西日。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起，[%username]。</p>
+          <p> </p>
+          <p>你做的防具应该能保护众多在欧比斯战斗的守护者。</p>
+          <p> </p>
+          <p>希望以后你也能用高品质的防具，为伏魔殿做出贡献...</p>
+          <p> </p>
+          <p>最后，你回去见见[%dic:STR_DIC_N_Zyakia]，向名人行礼，并重新请求学习裁缝。</p>
+          <p> </p>
+          <p>从现在开始，你可以使用达人的称号了。</p>
+          <p> </p>
+          <p>祝贺你，新的裁缝达人！</p>
+        </body> 
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Vidar]举行达人的任命式。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受了裁缝名人加齐亚成为达人的推荐。去找毕达尔总司令官举行任命式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>裁缝名人加齐亚说已经没有什么可以教给我，已经达到了达人的境界。</p>
+          <p> </p>
+          <p>于是拿着他的推荐信去毕达尔总司令官那里举行了任命式，接受了称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

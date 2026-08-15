@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我之所以张贴公告招募人手，是因为需要有人来清除妨碍主神安息处修复工作的捣乱分子。</p>
+          <p> </p>
+          <p>这里在地理上属于容易积聚奥德的气息的地方，因此施工中清理出来的石头和动物骨头等等都获得了生命，在工地徘徊，妨碍了正常的施工。</p>
+          <p> </p>
+          <p>必须把它们清理掉，修复工作才能顺利进行，但是人手却非常缺乏。</p>
+          <p> </p>
+          <p>最近极乐世界好像也腾不出手，所以没能向遗迹地派遣守卫。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以看到，附近有[%dic:STR_DIC_M_LF2A_MaidengolemRe_46_An]和[%dic:STR_DIC_M_LF2A_KuillusRe_46_An]徘徊。</p>
+          <p> </p>
+          <p>它们就是导致工程延期的元凶。</p>
+          <p> </p>
+          <p>怎么样？既然你是看了募集公告来的，相信你一定愿意帮我吧？</p>
+          <p> </p>
+          <p>你愿意负责这件事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。不要因为是石头就小看它们，搞不好会因此受伤的。</p>
+          <p> </p>
+          <p>不然的话，遗迹地的发掘工作就不会中断了。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_M_LF2A_MaidengolemRe_46_An]和[%dic:STR_DIC_M_LF2A_KuillusRe_46_An]全部清除掉之后，请你到我这儿来领取报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕破碎的遗迹潘多兰盖伦和饥饿的切尔路斯吗？</p>
+          <p> </p>
+          <p>真遗憾，好不容易来一个人。</p>
+          <p> </p>
+          <p>如果你改变了注意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道是不是因为你，破碎的遗迹潘多兰盖伦和饥饿的切尔路斯的数量大大减少了。</p>
+          <p> </p>
+          <p>找人来清理看来是对的。</p>
+          <p> </p>
+          <p>那些东西很凶暴，你没受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们曾经是漂亮的石像和活着的生命体，不知道为什么变成了那样...</p>
+          <p> </p>
+          <p>还好你好像没受伤。这是说好的报酬。</p>
+          <p> </p>
+          <p>你好像能力不错，如果没其他事的话，愿意继续帮我吗？</p>
+          <p> </p>
+          <p>如果我觉得满意的话，会给你比这更多的报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除妨碍遗迹修复工作的潘多兰盖伦和切尔路斯</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_MaidengolemRe_46_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_KuillusRe_46_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Pygmalion]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于潘多兰盖伦和切尔路斯的妨碍，遗迹的修复工作被迫中断。清除徘徊在主神安息处的潘多兰盖伦和切尔路斯，然后去皮格马利安那里领取报酬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮格马利安说由于潘多兰盖伦和切尔路斯的妨碍，遗迹地发掘工程被迫延迟，让我去清除碍事的东西。</p>
+          <p> </p>
+          <p>按照皮格马利安的指示，清除了潘多兰盖伦和切尔路斯。他说辛苦了，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

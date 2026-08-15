@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有件事要求你，椰林的朋友。</p>
+          <p> </p>
+          <p>你也知道，人类非常脆弱。</p>
+          <p> </p>
+          <p>人类不是斯莱姆和蜘蛛的对手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>击退在死亡之歌森林里被诅咒的敌人。</p>
+          <p> </p>
+          <p>这样人类才能安心去寻找树菇。</p>
+          <p> </p>
+          <p>这次你会亲自去完成吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是优秀的守护者。不出我所料。</p>
+          <p> </p>
+          <p>那就去抓住[%dic:STR_DIC_M_SlimeRE_36_An]和[%dic:STR_DIC_M_OctasideRE_35_An]。</p>
+          <p> </p>
+          <p>一定要记住，你速度越快，人类就能越早摆脱麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>即便不能永远这样帮助他们，但偶尔通过这样的方式帮帮忙也不坏。</p>
+          <p> </p>
+          <p>我不会再强人所难了。反正这是你的事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等着你呢。</p>
+          <p> </p>
+          <p>消灭他们了吗，斯莱姆和蜘蛛？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你遵守了诺言。</p>
+          <p> </p>
+          <p>现在人类不用再挨饿了。</p>
+          <p> </p>
+          <p>你要记住，不是只有会战斗才是能人。</p>
+          <p> </p>
+          <p>这是礼物。送给勇敢的[%userclass]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭死亡之歌森林里危险的生命体。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SlimeRE_36_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_OctasideRE_35_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_Move_Terba]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭了斯莱姆和蜘蛛，令村民们可以安心去寻找树菇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林族特尔巴说要想让村民们可以安心去找树菇，就要消灭守护树林的斯莱姆和蜘蛛。</p>
+          <p> </p>
+          <p>消灭了他们回来，特尔巴送给你礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

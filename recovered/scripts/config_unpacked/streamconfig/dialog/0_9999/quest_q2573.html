@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到在那里游荡的库尔卢斯了吗？</p>
+          <p> </p>
+          <p>听说，它们原本是村民们饲养的家畜，在混乱之中也变成了不死族。</p>
+          <p> </p>
+          <p>人们连自己也顾不上，动物就更不用说了。</p>
+          <p> </p>
+          <p>可是，村民们好像对那些库尔卢斯很有感情，毕竟都是从小养到大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竟然还打算给它们喂食。要是被咬了，后果不堪设想...</p>
+          <p> </p>
+          <p>就算有感情，也要理智，不能盲目行事啊。</p>
+          <p> </p>
+          <p>现在，那些库尔卢斯已经变成了六亲不认的凶残怪物。假如放任它们不管，很可能会去伤害路人。</p>
+          <p> </p>
+          <p>所以，让它们回到奥德的怀抱，对谁来说都是件好事。</p>
+          <p> </p>
+          <p>最好由[%username]大人去消灭那些家伙们，您意下如何？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，这附近的大多已经被我们消灭了。您就负责去消灭残留在贝斯佩尔幽灵村的那些 [%dic:STR_DIC_M_UndeadPorgussD_36_An]吧 。</p>
+          <p> </p>
+          <p>还有请您顺便也一起消灭掉[%dic:STR_DIC_M_ZaifUndeadD_37_An]。以库尔卢斯为食的野狼们也变成了不死族，在村里到处游荡。</p>
+          <p> </p>
+          <p>要是不管它们，迟早会危害整个地区，请您去即刻动手吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您竟然拒绝身为守护者应负的使命，这样可以吗？</p>
+          <p> </p>
+          <p>也许在[%username]大人看来，这些只是没什么威胁的可笑生物，但对于我们村民则是非常巨大的威胁！</p>
+          <p> </p>
+          <p>这世界真是混乱，守护者竟然都忘记了自己的使命。</p>
+          <p> </p>
+          <p>真是悲哀。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去贝斯佩尔幽灵村了吗？</p>
+          <p> </p>
+          <p>村子里是不是聚集了大量的库尔卢斯和野狼，就像我说的那样？</p>
+          <p> </p>
+          <p>不管消灭了多少，起码要达到我委托的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦了。</p>
+          <p> </p>
+          <p>让这些只剩躯壳的不死族赶紧回到奥德的怀抱，才是主神的旨意啊。</p>
+          <p> </p>
+          <p>这样，它们的主人也会安心的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭威胁人们安全的不死族库尔卢斯和野狼。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ZaifUndeadD_37_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadPorgussD_36_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sleipnirr]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须消灭聚集在贝斯佩尔幽灵村，威胁人们安全的不死族库尔卢斯和野狼。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯雷伊尼尔百夫长表示，村子里曾经饲养的库尔卢斯如今也变成了不死族。为了村民们的安全，他建议去消灭它们。</p>
+          <p> </p>
+          <p>并要求将达贝斯佩尔幽灵村中出现的不死族的野狼也一起消灭。</p>
+          <p> </p>
+          <p>遵照百夫长的指示，消灭了不死族库尔卢斯和野狼。对此，他表示感谢，并赠送了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

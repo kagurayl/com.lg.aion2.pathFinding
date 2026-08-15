@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>在神圣守护会中活动的神圣保护者斯普内发来了紧急请求。</p>
+          <p> </p>
+          <p>说有重要的事情要报告，让我们派一个嘴巴紧一点的人过去。</p>
+          <p> </p>
+          <p>这种情况并不多见，可能是有什么不能用信告诉我们的重要情报。</p>
+          <p> </p>
+          <p>[%username]，请你马上去见见[%dic:STR_DIC_N_Sofne]大人，了解情况后，向[%dic:STR_DIC_E_35007]报告。</p>
+          <p> </p>
+          <p>如果事态严重，我们就必须做好万全的准备。</p>
+          <p> </p>
+          <p>暗号是路皮里尼红色羽毛。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>(用怀疑地眼神看着我)难道是……路皮里尼？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">红色羽毛！</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是神圣守护会来的同志啊。</p>
+          <p> </p>
+          <p>请把我下面说的话，一五一十地转告给上面的人。</p>
+          <p> </p>
+          <p>黑色的雾，灰色的雾，红色火焰，金色箭矢！</p>
+          <p> </p>
+          <p>好的，记好了的话，就快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！您去见过神圣保护者斯普内大人了吗？</p>
+          <p> </p>
+          <p>(低声说)他跟您说了些什么？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达斯普内的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的是“黑色的雾，灰色的雾，红色火焰，金色箭矢”吗？</p>
+          <p> </p>
+          <p>嗯，这好像是神圣守护会上层使用的暗号。</p>
+          <p> </p>
+          <p>应该是很重要的事情。</p>
+          <p> </p>
+          <p>好的，失陪了。我必须立刻向上面报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sofne]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35007]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说神圣保护者斯普内让他们派一个嘴巴紧的人过去，因此让我去见见他。</p>
+          <p> </p>
+          <p>见到斯普内之后，他告诉了我一句不知道是什么意思的话。转告给帕尔拉斯之后，他说这是上层使用的暗号，他必须马上报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

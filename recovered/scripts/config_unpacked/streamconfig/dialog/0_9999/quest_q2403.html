@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道即使提出建议，只要莱图说“不行”，就没有任何用处。所以不管是什么事情，我都不会提建议。</p>
+          <p> </p>
+          <p>但是想来想去，这次的问题有一点严重。</p>
+          <p> </p>
+          <p>但是莱图不会听别人的话。</p>
+          <p> </p>
+          <p>而且她作为人类，也许对守护者怀有好胜心，所以有什么事都不会去找执政官。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在[%dic:STR_DIC_M_HarpyReD_36_An]正在袭击三尖树田。</p>
+          <p> </p>
+          <p>虽然我没亲眼看见，但是几次在三尖树田看到了掉在地上的鸟妖羽毛。三尖树田也被弄得一团糟。</p>
+          <p> </p>
+          <p>所以我去找米尔卡百夫长大人商量鸟妖的问题，但是她装作没听见。</p>
+          <p> </p>
+          <p>说有警卫团守着，鸟妖怎么可能会袭击三尖树田。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您能装着有其他任务，帮我清除掉一些[%dic:STR_DIC_M_HarpyReD_36_An]吗？</p>
+          <p> </p>
+          <p>[%username]大人不是来守卫村庄的执政官，莱图应该也不好说什么。</p>
+          <p> </p>
+          <p>如果一直按什么都不知道，只知道发脾气的莱图的命令去做的话，三尖树田一定会全部被毁掉的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸟妖不管是什么种类，全都非常凶恶。</p>
+          <p> </p>
+          <p>不过您是守护者，那种东西应该不在话下。</p>
+          <p> </p>
+          <p>请您把[%dic:STR_DIC_M_HarpyReD_36_An]全部清除掉，然后悄悄地告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈...没办法，只能去和莱图说说看了。</p>
+          <p> </p>
+          <p>警卫团的目的本来就是保护村子...我们伊拉西克村就只能依靠巴洛姆三兄妹的势力了。</p>
+          <p> </p>
+          <p>如果得罪了巴洛姆或者莱图的话，就会在村子里呆不下去。我也没有办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_M_HarpyReD_36_An]清除掉了吗？</p>
+          <p> </p>
+          <p>我还担心我拜托[%username]大人的事情会被莱图看到，还在想怎么跟她说呢。</p>
+          <p> </p>
+          <p>还好好像没有看见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，真是太好了。这下三尖树田应该不会再遭到鸟妖的袭击了。</p>
+          <p> </p>
+          <p>但是莱图一定还认为鸟妖从来没有袭击过三尖树田呢。</p>
+          <p> </p>
+          <p>不过那又有什么关系。把问题解决了就行了。</p>
+          <p> </p>
+          <p>谢谢您能答应我的请求。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_HarpyReD_36_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Securis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">警卫团员塞库利斯说警卫团长对鸟妖放着不管，他为此很担心。为了塞库利斯和村子的安全，最好去把鸟妖战士清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞库利斯说警卫团长莱图太固执，经常无视团员们的意见。</p>
+          <p> </p>
+          <p>鸟妖正在袭击三尖树田，但是莱图却装作没听见。塞库利斯没有办法，正在担忧。</p>
+          <p> </p>
+          <p>于是为了塞库利斯和伊拉西克村，清除掉了鸟妖战士。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

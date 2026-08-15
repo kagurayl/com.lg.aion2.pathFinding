@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30453</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，[%username]大人！</p>
+          <p> </p>
+          <p>没想到竟然能遇到您这样有名的人。</p>
+          <p> </p>
+          <p>刚好我需要一点帮助，一定是主神听到了我的祈祷，所以才会让[%username]大人过来。</p>
+          <p> </p>
+          <p>有[%username]大人在，我就能松一口气了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您知道[%dic:STR_DIC_W_ZONE_NAME_IDElemental_1]生活着其他地方没有的精灵吗？</p>
+          <p> </p>
+          <p>您知道拉迪斯森林中充满了光的力量吧？所以那里生活着由光的气息形成的精灵。</p>
+          <p> </p>
+          <p>知道这件事之后，我就一直想得到光晕精灵的力量，但是却一直未能如愿。</p>
+          <p> </p>
+          <p>如果[%username]大人愿意帮我的话，事情就简单多了……您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我，真的非常感谢。</p>
+          <p> </p>
+          <p>请拿着这个力量水晶。这是一种特殊的水晶，可以搜集消灭的生命体的力量。</p>
+          <p> </p>
+          <p>带着它去消灭[%dic:STR_DIC_M_IDElementalN_ElementalLightF_60_Ah]，精灵的力量就会被保存在水晶里面。</p>
+          <p> </p>
+          <p>您明白我的意思了吧？好的，您只要去消灭小光晕精灵，用水晶搜集它们的力量就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么会拒绝呢？</p>
+          <p> </p>
+          <p>您反正是要去拉迪斯森林的。</p>
+          <p> </p>
+          <p>去的时候顺便帮我消灭小光晕精灵，就可以轻松地搜集到它们的力量。</p>
+          <p> </p>
+          <p>您就帮帮我吧。嗯？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临！我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>力量水晶怎么样了？</p>
+          <p> </p>
+          <p>您按照我所说，搜集到光晕精灵的力量了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出力量水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和我想象的一样，水晶的气息没有太大的变化。</p>
+          <p> </p>
+          <p>不过一定有什么变化吧？要是能发挥出强大的力量就好了。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您的帮助。</p>
+          <p> </p>
+          <p>下次遇到麻烦的话，我还会找您。到时您一定要帮帮我哦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDElementalN_ElementalLightF_60_Ah]，用力量水晶搜集精灵的力量([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Alexin]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿莱克辛说想搜集拉迪斯森林中的精灵的力量。去消灭小光晕精灵，用力量水晶搜集精灵的力量吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿莱克辛说对拉迪斯森林中的光晕精灵非常感兴趣。</p>
+          <p> </p>
+          <p>她说想搜集小光晕精灵的力量，于是用她给的力量水晶去帮她搜集到了精灵的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

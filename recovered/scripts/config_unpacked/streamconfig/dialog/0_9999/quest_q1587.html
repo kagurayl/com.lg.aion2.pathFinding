@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据利希迪盖所说，拉斯贝尔格很快就要行动了，不能放任不理。</p>
+          <p> </p>
+          <p>最根本的解决办法就是消灭拉斯贝尔格，可是自己现在的情况却不允许自己分身别处。</p>
+          <p> </p>
+          <p>只能对他们的兵力形成打击。</p>
+          <p> </p>
+          <p>不能因为无法从根本上解决不了问题就放任不理，那等于就是给他们机会让他们展开全面战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是，你也看到了，帕塞尔塔村几乎没有守卫。不能以自身的力量削弱拉斯贝尔格的兵力。</p>
+          <p> </p>
+          <p>所以我想请[%username]大人来承担这项任务，可以吗？</p>
+          <p> </p>
+          <p>请去村子东北部的梅兰提斯遗址，消灭[%dic:STR_DIC_M_Graveknight_44_An]和[%dic:STR_DIC_M_Lich_45_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请立即去梅兰提斯遗址，消灭[%dic:STR_DIC_M_Graveknight_44_An]和[%dic:STR_DIC_M_Lich_45_An]。</p>
+          <p> </p>
+          <p>虽然他们现在是不死族，可曾经也都是守护者，您可能会遇到激烈的抵抗。请一定和同伴们一起去。</p>
+          <p> </p>
+          <p>他们曾经也是天人。不过现在不是同情他们的时候。请记住，如果被同情心蒙住了眼睛，因特尔蒂卡的居民们就有可能全部被屠杀。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您认为自己的能力可以应付这件事吗？</p>
+          <p> </p>
+          <p>对手非常厉害。所以如果没有自信能够打败他们的话，我劝您还不如不要接受比较好。</p>
+          <p> </p>
+          <p>不过如果您遇到了好的同伴，请回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在已经沦落到这般田地，真是更加令人扼腕。</p>
+          <p> </p>
+          <p>一开始的时候如果处理得好的话，今天也不会发生这样的事了。</p>
+          <p> </p>
+          <p>不过虽然令人扼腕，我们所能做的也只有尽现在之所能而已。</p>
+          <p> </p>
+          <p>您是否如我要求的那样消灭了温佩斯特斗士和利奇神官呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>过去的事情已经过去了，您已经竭尽了全力使我们避免了执政官的羞辱。</p>
+          <p> </p>
+          <p>现在事情已经有所缓解，下一步还是等待要塞指令吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭梅兰提斯遗址的鬼魂。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Graveknight_44_An]([%2]/30)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Lich_45_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Rance]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">兰斯说在拉斯贝尔格发动全面战争前最好能够削弱他的兵力。去梅兰提斯祭坛，消灭温佩斯斗士和利奇神官。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰斯说应该在拉斯被贝尔格发动全面战斗前削弱不死族的兵力。所以去了梅兰提斯祭坛，消灭了温佩斯斗士和利奇神官。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

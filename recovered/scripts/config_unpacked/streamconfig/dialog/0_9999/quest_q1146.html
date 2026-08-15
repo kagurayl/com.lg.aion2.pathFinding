@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是丈八灯台照远不照近啊。</p>
+          <p> </p>
+          <p>这几天为了采集曼德拉草，整个森林都翻遍了。</p>
+          <p> </p>
+          <p>委托人？是克罗蒂斯。</p>
+          <p> </p>
+          <p>怎么找也找不到，几乎都要放弃了，刚才终于有收获！找到一株。</p>
+          <p> </p>
+          <p>知道是在哪发现的吗？就在背后的岩石下面！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问关于曼德拉草的情况。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它的根可以做药。</p>
+          <p> </p>
+          <p>不过这种植物喜欢潮湿，一旦缺水，过几个小时就会枯萎。</p>
+          <p> </p>
+          <p>所以，一定要在它干枯之前交给克罗蒂斯，可我现在没空。因为埃尔迪奥委托的香草还没采集到。</p>
+          <p> </p>
+          <p>守护者大人能不能帮忙把曼德拉草交给[%dic:STR_DIC_LA157]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是曼德拉草。</p>
+          <p> </p>
+          <p>因为很容易干枯，一定要按时交给[%dic:STR_DIC_LA157]。</p>
+          <p> </p>
+          <p>如果他打算试种，就让他赶紧种下去。</p>
+          <p> </p>
+          <p>我另外多采几株，如果路上不顺利枯萎了的话，就回来再拿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可是要紧事啊，曼德拉草太依赖水了，这样放着很快会干死的。</p>
+          <p> </p>
+          <p>早知道这样，以后再采集曼德拉草就好了。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>小时候一闹肚子或头疼的话，奶奶就给我喝用曼德拉草榨的汁。</p>
+          <p> </p>
+          <p>喝完以后，疼痛就会消失得无影无踪。</p>
+          <p> </p>
+          <p>我想把奶奶的秘方告诉所有的人，可是在这里真的很难采集到曼德拉草。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将曼德拉草交给他，并告知加诺强调的注意事项。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来是拜托加诺找的曼德拉草啊。</p>
+          <p> </p>
+          <p>能按时交给我，真是谢谢了。</p>
+          <p> </p>
+          <p>原来要在枯萎之前赶紧种下啊。</p>
+          <p> </p>
+          <p>再过几年，这一带处处都会长满曼德拉草。耕种方面我还是很在行的。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在曼德拉干枯之前将它交给[%dic:STR_DIC_LA157]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">加诺答应帮克罗蒂斯寻找曼德拉草，在曼德拉草枯萎之前赶紧交给克罗蒂斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然找到了克罗蒂斯委托的曼德拉草，但加诺很担心在送去之前就枯萎。</p>
+          <p> </p>
+          <p>因此，要按照加诺的委托，在曼德拉草枯萎之前交给克罗蒂斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

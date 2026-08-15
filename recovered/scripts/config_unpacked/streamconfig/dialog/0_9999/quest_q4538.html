@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4538</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来得正好。</p>
+          <p> </p>
+          <p>有很多问题，但是人手却不够，我正在着急呢。</p>
+          <p> </p>
+          <p>我希望伏魔殿能多派点士兵过来，但是却一直不能如愿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道贝鲁斯兰东边的难民村吗？</p>
+          <p> </p>
+          <p>那是个由受到不死族危害的善良的守护者们组成的村庄。</p>
+          <p> </p>
+          <p>虽然内尔图斯大人很想立刻派兵过去解决问题，但问题并不那么简单。</p>
+          <p> </p>
+          <p>因此内尔图斯写了一封信，希望能安慰一下难民们的心。你能把它送到难民村去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_W_STR_DF3_SZ_E1]就在[%dic:STR_DIC_W_STR_DF3_SZ_A]的东边。</p>
+          <p> </p>
+          <p>(从口袋中拿出信。)</p>
+          <p> </p>
+          <p>请你把它交给[%dic:STR_DIC_N_Sleipnirr]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请不要觉得这是件小事。</p>
+          <p> </p>
+          <p>虽然我很想亲自把信送过去，但是我无法离开要塞，所以才会找你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么事吗？</p>
+          <p> </p>
+          <p>看您的表情，好像是有什么重要的事情，是不是有什么重要的情报啊？</p>
+          <p> </p>
+          <p>还是不死族闯进了要塞……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出内尔图斯的信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这不是内尔图斯大人的信吗？</p>
+          <p> </p>
+          <p>(急忙拆开信查看。)</p>
+          <p> </p>
+          <p>果然……</p>
+          <p> </p>
+          <p>(收起信)谢谢您给我送来这么重要的消息。</p>
+          <p> </p>
+          <p>虽然伏魔殿暂时不能派兵到这里来，但是只要知道内尔图斯还在关心我们，难民们就会感到安慰。</p>
+          <p> </p>
+          <p>我得马上把这封信拿去给大家看看！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把内尔图斯的信交给[%dic:STR_DIC_N_Sleipnirr]%</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把内尔图斯的信送到被不死族的问题所困扰的贝斯佩尔难民村。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝鲁斯兰要塞的胡德让我帮他把内尔图斯的信交给贝斯佩尔难民村的斯雷伊尼尔。</p>
+          <p> </p>
+          <p>按照胡德的委托，把信交给了难民村的斯雷伊尼尔，他说谢谢我给他送去了那么重要的消息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

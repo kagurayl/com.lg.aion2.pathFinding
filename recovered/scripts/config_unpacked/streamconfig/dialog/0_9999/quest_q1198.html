@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（墙壁上用匕首插着类似书信的东西。）</p>
+          <p> </p>
+          <p>（读了后才知是有关军事行动的指令书。）</p>   
+          <p> </p>
+          <p>（上面记载着要展开声东击西的战略，削弱天界结界的内容。）</p>
+          <p> </p>
+          <p>（必须向上面报告，得事先做好准备。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把盗贼团的信放进箱子里。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说你去了巴波亚农场？</p>
+          <p> </p>
+          <p>我也正好在关注占领巴波亚农场的那帮不安分的家伙。</p>
+          <p> </p>
+          <p>因为这些家伙的捣乱，今年的上贡农作物大量减少。上级正准备采取措施呢。</p>
+          <p> </p>
+          <p>你发现什么重要物品了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出盗贼团的书信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来雷帕尔革命团并不是一群小混混啊。</p>
+          <p> </p>
+          <p>他们打算削弱结界，肯定是在策划一个大阴谋。</p>
+          <p> </p>
+          <p>再加上声东击西战略…看来雷帕尔革命团规模不小啊。</p>
+          <p> </p>
+          <p>不管怎样，这些家伙的目标是结界，看来需要完善海岸的防备了。</p>
+          <p> </p>
+          <p>[%username]，多亏了你，我们才能事先识破敌人阴谋。</p>
+          <p> </p>
+          <p>也了解到雷帕尔革命团的规模原来比想象中的还要大。</p>
+          <p> </p>
+          <p>你做了一件很重要的事。辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把雷帕尔革命团的书信交给贝尔特伦要塞的[%dic:STR_DIC_N_Spatalos]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了记录雷帕尔革命团要削弱结界的计划的书信。必须要交给斯帕塔洛斯，并将危急的情况告诉他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在巴波亚农场发现雷帕尔革命团书信，上面详细记录了革命团准备削弱结界的声东击西的作战方案。</p>
+          <p> </p>
+          <p>得知这是将天界推入危险境地的阴谋，向斯帕塔洛斯报告了状况。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

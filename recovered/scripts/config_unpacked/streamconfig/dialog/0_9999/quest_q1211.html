@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您后悔过成为[%userclass]吗？</p>
+          <p> </p>
+          <p>当一名灵魂治愈师是我从小的梦想，所以我对现在的生活非常满意。</p>
+          <p> </p>
+          <p>不过有一件让我苦恼的事情，如果能解决的话，我就没有什么遗憾了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然看起来很容易，但是发动一次奇柏利斯克需要很高的集中力。 </p>
+          <p> </p>
+          <p>所以做完几次灵魂治愈之后，精神力就会耗尽。</p>
+          <p></p>
+          <p>要恢复精神力必须进行冥想，但是那样的话太费时间，所以一般都是借助药水的力量来恢复。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_yes;HACTION_ASK_QUEST_ACCEPT">“药水吗？”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，就是精神力恢复药水。我用的药水都是自己做的。</p>
+          <p> </p>
+          <p>现在差不多到了该做药水的时候了。如果不事先做好的话，急用的时候就会没有。</p>
+          <p></p>
+          <p>好了，[%username]大人！虽然我知道您很忙，但是您能帮我个忙吗？</p>
+          <p></p>
+          <p>我不能离开位子，您能帮我去采集一点药草吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您真是个好人。</p>
+          <p> </p>
+          <p>制作药水所需的草药是[%dic:STR_DIC_E_herb_n_c_10b]。在幻影神圣所的周边长着很多，应该不难找到。</p>
+          <p> </p>
+          <p>请您帮我采集10个回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有必要觉得抱歉。</p>
+          <p> </p>
+          <p>[%username]大人应该也有自己要做的事情。</p>
+          <p> </p>
+          <p>药草我会让其他人去采集的，您就不用担心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_herb_n_c_10b]已经采回来了吗？</p>
+          <p> </p>
+          <p>好像还没过多长时间啊...</p>
+          <p> </p>
+          <p>不管怎样，请把找到的药草给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塔拉根草。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还在担心呢，果然。</p>
+          <p> </p>
+          <p>不是还不满10个塔拉根草吗！</p>
+          <p> </p>
+          <p>不好意思，请您按当初约定的那样，搜集10个[%dic:STR_DIC_E_herb_n_c_10b]给我。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来找守护者大人您是找对人了。</p>
+          <p> </p>
+          <p>谢谢。这样我就能马上制作药水了。</p>
+          <p> </p>
+          <p>收下这些吧。虽然不多，但也是对您帮我搜集药草的一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_herb_n_c_10b]并交给[%dic:STR_DIC_N_Titania]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到幻影神圣所的附近采集塔拉根草，让塔塔尼亚可以制作药水。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔塔尼亚说在发动奇柏利斯克的时候需要很多精神力，所以需要使用精神力恢复药水。</p>
+          <p> </p>
+          <p>药水都是她自己制作的。现在需要制作新的药水了，所以她让我帮她搜集塔拉根草。搜集到塔拉根草并交给她之后，塔塔尼亚说非常感谢并给予了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

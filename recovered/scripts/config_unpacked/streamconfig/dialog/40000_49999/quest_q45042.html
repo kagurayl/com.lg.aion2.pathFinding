@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>亲爱的团员们。</p>
+          <p> </p>
+          <p>为了确保药品的供应，我们新设了制药部。但是由于缺少药材，我们无法生产出足够的药品。</p>
+          <p> </p>
+          <p>为了确保战斗的胜利，我们必须确保药品的供应。</p>
+          <p> </p>
+          <p>水仙是制作多种药品的药材。</p>
+          <p> </p>
+          <p>希望团员们采集[%dic:STR_DIC_G_QUEST_45042_a]，并通过[%dic:STR_DIC_N_Alaum]捐献给结界守护团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团正在自行制作各种战斗所需的药水。</p>
+          <p> </p>
+          <p>一部分不好制作的药品，我们会向外部购买，但简单的药品我们可以自己制作。</p>
+          <p> </p>
+          <p>但问题是制作药水需要的材料。</p>
+          <p> </p>
+          <p>我们要求团员们协助搜集[%dic:STR_DIC_G_QUEST_45042_a]，但是却还没有一个人来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水仙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>制作药品，需要大量的药材，因此我们需要团员们的帮助。</p>
+          <p> </p>
+          <p>只有全体团员积极搜集水仙，守护团才能实现药品的自给自足。</p>
+          <p> </p>
+          <p>请您快去搜集3个[%dic:STR_DIC_G_QUEST_45042_a]，然后交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>水仙拿回来啦。这些的话，就可以制作很多药水了。</p>
+          <p> </p>
+          <p>好像还有很多同志正在采集水仙，我再等一会儿，等搜集齐了之后再向上面报告。</p>
+          <p> </p>
+          <p>这是为努力守护结界的同志们准备的证物，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45042_a]，然后交给[%dic:STR_DIC_N_Alaum]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，为了缓解守护团的药品紧缺现象，需要大量的水仙。</p>
+          <p> </p>
+          <p>搜集水仙，交给了阿拉乌姆之后，他给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也看到了，我们编成小队在这里巡逻。</p>
+          <p> </p>
+          <p>虽然在这里守卫我一个人就足够了，但在更远的地方有很多危险的东西，如果不编成两三个人的小队，就会有危险。</p>
+          <p> </p>
+          <p>特别是最近，巡查兵和动物们发生了冲突，还有人受了伤。</p>
+          <p> </p>
+          <p>噬人虫、食人花、西莫罗格看上去不起眼，但他们的攻击力甚至可以让这里的守护者受伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您现在对沙漠应该很熟悉了。您能帮帮我们吗？</p>
+          <p> </p>
+          <p>请您帮我们消灭掉一些[%dic:STR_DIC_M_Clodworm_29_An]、[%dic:STR_DIC_M_Worm_30_An]和[%dic:STR_DIC_M_Condor_30_An]。</p>
+          <p> </p>
+          <p>他们都很粗神经，光杀死一两个根本不足以吓到他们，所以请你去好好地教训教训他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。我们身为守卫卫兵，吃着极乐世界的俸禄。如果您能帮我们完成这个任务，我们会给您相应的报酬。</p>
+          <p> </p>
+          <p>相信您也是为了办事才出来旅行的，我们总不能白让您帮忙吧。</p>
+          <p> </p>
+          <p>消灭掉[%dic:STR_DIC_M_Clodworm_29_An]、[%dic:STR_DIC_M_Worm_30_An]和[%dic:STR_DIC_M_Condor_30_An]之后，请您回来告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您到沙漠来一定有自己的事情要做，那我就不麻烦您了。</p>
+          <p> </p>
+          <p>请您一路小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才我看到您在那边战斗。</p>
+          <p> </p>
+          <p>果然名不虚传。</p>
+          <p> </p>
+          <p>您把我说的蠕动的噬人虫、沙丘食人花和大翅膀西莫罗格全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说全部消灭掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。[%username]大人完成的事情，我们侦察队员要辛苦3天才能完成。</p>
+          <p> </p>
+          <p>作为感谢，我把这个送给您，请不要推辞。</p>
+          <p> </p>
+          <p>谢谢您减轻了侦察队员们的负担。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭沙漠中的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Clodworm_29_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Worm_30_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Condor_30_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Acaste]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿卡斯泰说不仅经过沙漠的守护者，连侦察队员们都受到了生命体的威胁，最好接受他的委托。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡斯泰说沙漠的生命体比想象的更残暴，不仅对守护者，对侦察队员们也造成了威胁。</p>
+          <p> </p>
+          <p>按照她的委托，消灭了蠕动的噬人虫、沙丘食人花和大翅膀西莫罗格。她对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

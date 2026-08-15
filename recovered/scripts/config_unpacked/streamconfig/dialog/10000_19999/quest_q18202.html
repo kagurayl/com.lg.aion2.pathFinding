@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？完成第3阶段的感想如何？</p>
+          <p> </p>
+          <p>现在对训练有点自信了吧？</p>
+          <p> </p>
+          <p>适当的自信是值得鼓励的，但是过度自信只会给训练造成妨碍。</p>
+          <p> </p>
+          <p>大部分守护者都能一次完成3个阶段，所以千万不要自满。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来告诉你下一个目标。</p>
+          <p> </p>
+          <p>下一个目标是完成第5阶段。</p>
+          <p> </p>
+          <p>第5阶段不是固定目标，因此要求有快速应对的能力。</p>
+          <p> </p>
+          <p>怎么样？你想继续挑战吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在第5阶段中，你必须对付铁耙海盗团和雷帕尔革命团其中的一种。</p>
+          <p> </p>
+          <p>因此最终训练对象有可能是铁耙胡特金或者总监督官顿迪斯。</p>
+          <p> </p>
+          <p>虽然不是真的，但是英格丽尔创造的时候会尽量按照现实，所以你最好做好充分的准备。</p>
+          <p> </p>
+          <p>训练会从第1阶段重新开始，在战斗的时候一定要安排好体力。</p>
+          <p> </p>
+          <p>祝你好运！</p>
+          <p> </p>
+          <p>为了凯西内尔的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说什么呢？你是想安于现实了吗？</p>
+          <p> </p>
+          <p>你现在什么都不是。最多只是刚刚摆脱新手阶段而已。</p>
+          <p> </p>
+          <p>希望你端正态度，好好参加训练。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了报告，说你的组队完成了第5阶段的训练。</p>
+          <p> </p>
+          <p>是真的吗？</p>
+          <p> </p>
+          <p>别磨磨蹭蹭的，快点向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>祝贺你！</p>
+          <p> </p>
+          <p>我和埃纽确认过了。</p>
+          <p> </p>
+          <p>我会给予你完成第5阶段训练的称号。希望你继续努力，成为其他训练生的榜样。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒第5阶段的最终训练对象铁耙胡特金或者总监督官顿迪斯([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Molfus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打倒第5阶段的最终训练对象，然后向木浦斯报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯西内尔神庙训练所的战斗教官木浦斯告诉了我训练所的规则，让我去打倒第5阶段的最终训练对象。</p>
+          <p> </p>
+          <p>和同伴们一起消灭了最终训练对象，向木浦斯报告之后，他授予了我称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

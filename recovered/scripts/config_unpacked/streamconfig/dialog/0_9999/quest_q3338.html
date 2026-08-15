@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内最多的就是魔石了。</p>
+          <p> </p>
+          <p>大部分魔石都只能便宜卖给商店，实在太可惜了。对于我们来说，这些魔石是珍贵的教育材料和研究材料。</p>
+          <p> </p>
+          <p>如果您有生命力+40，命中+16和盾牌防御+16各10个，请拿来给我。</p>
+          <p> </p>
+          <p>我会用有用的东西和您交换。和便宜卖给商店相比，这要划算得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮人去除魔石的时候，生命力+40有时候会有人使用，但命中和盾牌防御几乎没有人用。</p>
+          <p> </p>
+          <p>为了换成更高性能的生命力魔石，很多人都到我这里来去除魔石，现在+40也不再是受欢迎的魔石了。</p>
+          <p> </p>
+          <p>不管是什么东西，最好是能送到需要的人手中。希望您能协助我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您该不会是嫌我的提议太麻烦，想直接卖给商店吧？</p>
+          <p> </p>
+          <p>卖给商店之前，请一定要来找我。</p>
+          <p> </p>
+          <p>请顺便到个人仓库和军团仓库里确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在整理收上来的魔石。真的很多。</p>
+          <p> </p>
+          <p>有些好像在仓库里堆了很久，上面积了一层厚厚的灰。</p>
+          <p> </p>
+          <p>但是只要功能没问题就行了，不管是堆了多久的东西，请一起拿来交给我。</p>
+          <p> </p>
+          <p>您只要给我生命力+40，命中+16和盾牌防御+16魔石各10个就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像是搞错了。我让[%username]大人帮着搜集的，是生命力+40，命中+16和盾牌防御+16魔石各10个。</p>
+          <p> </p>
+          <p>只要少了一个，我就不能用新的魔石和您交换。</p>
+          <p> </p>
+          <p>请重新确认一下，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命力+40，命中+16和盾牌防御+16魔石全部都是10个。</p>
+          <p> </p>
+          <p>我们会把这些魔石用于魔石的研究。</p>
+          <p> </p>
+          <p>我把这个作为奖励送给你。希望是您想要的魔石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，然后交给普罗泰西亚斯</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">普罗泰西亚斯说把没用的魔石给他，可以交换到更珍贵的魔石。应该接受普罗泰西亚斯的提议。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔石去除师普罗泰西亚斯说埃尔特内有很多魔石，如果搜集常见的魔石交给他，可以换取珍贵的魔石。</p>
+          <p> </p>
+          <p>于是把生命力+40，命中+16和盾牌防御+16魔石各10个交给了他，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

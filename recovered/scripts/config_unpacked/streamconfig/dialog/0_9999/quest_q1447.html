@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提波里德臀部肉我会分给居民们吃的。但是还有一个问题。</p>
+          <p> </p>
+          <p>百夫长大人说马卡李泰斯老人的身体急剧衰弱，让我特别照顾他一下。他的牙口不好，只能吃松软的食物...</p>
+          <p> </p>
+          <p>现在我们只有提波里德臀部肉，虽然那也很软，但是肉毕竟还是肉。也许他吃不了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！您能为了马卡李泰斯再辛苦一趟吗？</p>
+          <p> </p>
+          <p>如果是鱼的话，再怎么没牙齿应该也能嚼得动。</p>
+          <p> </p>
+          <p>请您去那边的小溪里捕捉[%dic:STR_DIC_E_fish_n_c_30a]吧。</p>
+          <p> </p>
+          <p>而且黄连鱼还能补充力气，可以说是一石二鸟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能解决马卡李泰斯的问题的话， 阿斯科雷皮乌斯百夫长大人也应该不会说我了。</p>
+          <p> </p>
+          <p>操心的事情太多，人都变得有点神经质了...所以我在努力尽量让问题少一点。</p>
+          <p> </p>
+          <p>得赶紧换到要塞或者极乐世界，我的心才能放下来。哎呀，又说了这么多没用的话。</p>
+          <p> </p>
+          <p>不管怎样，请您帮我捕捉12条[%dic:STR_DIC_E_fish_n_c_30a]。这么多的话，我想应该足够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这关系到老人的生命，您觉得这一点都不重要吗？觉得他反正活不长了？</p>
+          <p> </p>
+          <p>但是人的生命都是同样重要的。</p>
+          <p> </p>
+          <p>请您不要这么无情，就帮帮我吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把提波里德臀部肉平均地分给了村里的居民。大家都说很感谢，都忙着做各种料理。</p>
+          <p> </p>
+          <p>但是看到马卡李泰斯老人什么都吃不下去，我的心里就觉得很难受。</p>
+          <p> </p>
+          <p>您把我拜托您搜集的黄鲢鱼带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出黄鲢鱼。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去捕捉黄鲢鱼啊。</p>
+          <p> </p>
+          <p>您是没捕捉过黄鲢鱼吗？</p>
+          <p> </p>
+          <p>如果您熟悉采集的话，应该不会有什么问题...</p>
+          <p> </p>
+          <p>村子下面再下去一点，在小溪里有很多的[%dic:STR_DIC_E_fish_n_c_30a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚抓起来，还活蹦乱跳的呢。</p>
+          <p> </p>
+          <p>应该赶紧炖上一条，给马卡李泰斯送过去。吃了它的话应该可以恢复一点力气，应该就能吃烤的东西了。</p>
+          <p> </p>
+          <p>谢谢您帮助我。马卡李泰斯应该也会很感激的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_E_fish_n_c_30a]，然后交给[%dic:STR_DIC_N_Beramones]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">贝拉莫内斯拜托我去为村里的老人捕鱼。好像最好应该接受他的拜托。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝拉莫内斯说村里的老人马卡李泰斯身体衰弱而且牙口也不好，不能吃东西，需要松软的食物。</p>
+          <p> </p>
+          <p>于是去村子下面的小溪里捕到了黄鲢鱼交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我之前听说使用奇柏利斯克的力量，可以看到人的灵魂。</p>   
+          <p> </p>    
+          <p>守护者的灵魂纯洁透明，好像美丽的水晶。</p>
+          <p> </p>  
+          <p>真的。我可以指着五位主神的名发誓。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_ELA16]展示的神秘能力常常令我惊叹。</p>
+          <p> </p>
+          <p>其中最神奇的，要数刻印灵魂的能力。</p>
+          <p> </p>
+          <p>所以，我正瞒着沉默的审判所，研究奇柏利斯克刻印灵魂的方法呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过研究资料太匮乏了。</p>
+          <p> </p>
+          <p>只有得到灵魂的精髓，才能进行试验。但是靠我的能力无法得到。</p>
+          <p> </p>
+          <p>守护者您能帮我搜集[%dic:STR_DIC_I_quest_2254a]吗？</p>
+          <p> </p>
+          <p>请一定要帮帮我，让我顺利完成这个研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。那么，请你去打猎骚扰因派图西姆的灵魂，搜集[%dic:STR_DIC_I_quest_2254a]。</p>
+          <p> </p>
+          <p>我也几次和他们对阵，但那些人生前都是战士，非常厉害。</p>
+          <p> </p>
+          <p>守护者大人您一定要注意安全。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我感觉到了。</p>
+          <p> </p>
+          <p>无法得到安息的灵魂的叹息和愤怒。</p>
+          <p> </p>
+          <p>魔人们会因此受到伤害。</p>
+          <p> </p>
+          <p>请您一定要帮帮我。您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_I_quest_2254a]带回来了吗？</p>
+          <p> </p>
+          <p>我感觉到灵魂的气息减弱了。</p>
+          <p> </p>
+          <p>把您带回的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出灵魂的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没有去清除因派图西姆的灵魂吗？</p>
+          <p> </p>
+          <p>请不要觉得杀死他们有什么负担。</p>
+          <p> </p>
+          <p>那些灵魂是很久以前死去的人。让他们安息，是真正为他们着想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。  </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>还有，这是秘密。万一让沉默的审判所知道了的话，我和守护者您都会被抓起来的。</p>
+          <p> </p>
+          <p>来，请收下这个。这是您帮助我研究的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_2254a]给[%dic:STR_DIC_N_Andgar]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了安道卡尔的研究工作，去除掉因派图西姆的灵魂并取回他们的精髓。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说灵魂治愈师安道卡尔不仅可以治愈灵魂，而且能感觉到灵魂的气息。他正在研究奇柏利斯克，但苦于没有研究材料。帮他从因派图西姆的灵魂那里搜集到灵魂精髓之后，他非常感激。
+</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

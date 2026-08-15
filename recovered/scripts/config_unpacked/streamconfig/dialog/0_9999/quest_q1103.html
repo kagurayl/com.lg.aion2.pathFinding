@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯鲁宾们也应该怕了，近期应该会平静一些。</p>
+          <p> </p>
+          <p>不过他们偷走的粮食好像要比想象的多。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_ELA07]的居民们纷纷抱怨，不要说是[%dic:STR_DIC_ELA20]，现在连吃的东西都没有。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+    <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+	   <p>神官让我们帮忙从凯鲁宾的巢穴中找回粮食。他说只有这样才能给我们报酬。</p>
+          <p> </p>
+          <p>哼，不管多小的村庄，身为神官的人竟然这样要挟人。</p>
+          <p> </p>
+          <p>不过既然已经这样，你能去找回谷物袋子吗？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说是将粮食分给[%dic:STR_DIC_ELA07]，先去找4个[%dic:STR_DIC_QILA69]回来吧。</p>
+          <p> </p>
+          <p>先去的团员应该在清除凯鲁宾，你只要去把谷物袋子带回来就可以了。</p>
+          <p> </p>
+         <p>你先去山坡上的巢穴看看。对，就是那个围着篱笆的地方。 </p>
+          <p> </p>
+          <p>如果那边没有的话，就去其他的巢穴找找看。在阿卡利奥斯草原的各处应该还有几个巢穴。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的事情不帮他们做的话，我担心他们会不给我们报酬。</p>
+          <p> </p>
+          <p>如果你改变主意的话可以回来找我。</p>
+          <p> </p>
+          <p>虽然有很多可以代替的人，但是还是以前做过的人去做比较。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>粮食都找回来了吗？</p>
+          <p> </p>
+          <p>缺一个都不会有报酬。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出找到的谷物袋子</Act>
+    </Selects>
+  </HtmlPage>
+
+<HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是在开玩笑吗？</p>
+          <p> </p>
+          <p>我不是说过要4个谷物袋子吗？</p>
+          <p> </p>
+          <p>你难道不会数数吗？</p>      
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"1, 2, 3, 4！够了。"</p> 
+          <p> </p>
+          <p>和埃尔皮斯在一起，我以为你会变成老油条呢。比我想象的好多了。</p>
+          <p> </p>
+          <p>辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_QILA69]交给[%dic:STR_DIC_LA148]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">只有找回被凯鲁宾偷走的粮食，神官才会给报酬。去[%dic:STR_DIC_FLA01]的凯鲁宾的巢穴找回谷物袋子。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于因凯鲁宾而遭受的损失比想象的大，神官说无法给予报酬。他说如果能找回被凯鲁宾偷走的粮食的话，卖了之后就能支付报酬。</p>
+          <p> </p>
+          <p>按照米雷斯的指示，找到凯鲁宾的巢穴，找回了粮食。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

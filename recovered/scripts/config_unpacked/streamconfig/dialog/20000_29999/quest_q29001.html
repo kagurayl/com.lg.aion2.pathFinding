@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我一直觉得你很优秀，但没想到你这么了不起！</p>
+          <p> </p>
+          <p>精气提取是需要不断努力的技术，没想到有人竟然能这么快达到达人的境界。</p>
+          <p> </p>
+          <p>你成功地提取到了三种宝石，现在应该得到达人的称号了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>精气提取名人，匠人的会堂的拉塔图斯克认可了你！</p>
+          <p> </p>
+          <p>但是光有我的认可还不够，要想获得达人称号，需要大神官大人的许可。</p>
+          <p> </p>
+          <p>怎么样？你愿意接受称号吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来给你写一封推荐信，你去见见阿盖希亚大神官。</p>
+          <p> </p>
+          <p>在命运大神官那里接受称号并举行任命仪式，[%username]，你就可以正式成为精气提取达人了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不想得到达人的称号吗？</p>
+          <p> </p>
+          <p>你是没有野心？还是觉得拘泥于形式很可笑呢？</p>
+          <p> </p>
+          <p>向合格的人授予相应的称号，这是很自然的事情。希望你不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来聆听马勒库坦主神的教诲的吗？</p>
+          <p> </p>
+          <p>现在马勒库坦主神不在主神殿里。</p>
+          <p> </p>
+          <p>但是我，命运大神官，可以聆听你的话。</p>
+          <p> </p>
+          <p>有事的话，就快说吧。追随命运的教诲的人，可以从我这里得到帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就达到如此的境界……真让人吃惊，[%username]。</p>
+          <p> </p>
+          <p>没想到你是个如此充满热情的人。</p>
+          <p> </p>
+          <p>新的精气提取达人，希望你能将你的能力用于魔界的发展。</p>
+          <p> </p>
+          <p>愿马勒库坦的庇佑与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Agehia]那里举行达人任命仪式</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从精气提取名人拉塔图斯克处接受了成为达人的推荐。去阿盖希亚那里举行任命仪式吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>精气提取名人拉塔图斯克说已经没有什么可以教给我，我已经达到了达人的境界。</p>
+          <p> </p>
+          <p>于是拿着他的推荐信去阿盖希亚大神官那里举行了任命式，接受了称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

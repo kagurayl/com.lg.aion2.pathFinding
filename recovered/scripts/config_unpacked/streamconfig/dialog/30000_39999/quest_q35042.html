@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>不仅是欧比斯，天界和魔界的各个地方都在发生大大小小的战斗。今后进入龙界之后，战斗会变得更加激烈。</p>
+          <p> </p>
+          <p>我们神圣守护会的会员们为了守护天界的神圣，也在积极地参加战斗，并立下了很多功劳。</p>
+          <p> </p>
+          <p>因此神圣守护会决定向在战斗中受伤的守护者提供药水和秘药。</p>
+          <p> </p>
+          <p>但是目前资金和材料全都非常缺乏，在正式开始这项工作之前，需要会员们的大力协助。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，请采集药水和秘药的材料[%dic:STR_DIC_G_QUEST_35042]，然后交给[%dic:STR_DIC_E_35014]。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来找我有什么事吗？</p>
+          <p> </p>
+          <p>(查看我的眼色)是和神圣守护会有关的事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出药草。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会确实需要药草。</p>
+          <p> </p>
+          <p>但是奇怪，您拿来的真的是[%dic:STR_DIC_G_QUEST_35042]吗？</p>
+          <p> </p>
+          <p>不是随便哪一种药草都可以，请先确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>采集是优秀的守护者的基本素养。</p>
+          <p> </p>
+          <p>通过采集得到的物品，可以在战斗中发挥重要作用。</p>
+          <p> </p>
+          <p>[%username]大人捐献的药草会被用来帮助受伤的士兵。我会用神圣守护会的证物作为答谢，希望您能好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_35042]，然后交给[%dic:STR_DIC_E_35014]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，为了帮助在战斗中受伤的守护者，需要大量药草，希望会员能够积极捐献。</p>
+          <p> </p>
+          <p>搜集到紫苏之后，交给了泰奥勃莫斯支部会员。他对我的协助表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

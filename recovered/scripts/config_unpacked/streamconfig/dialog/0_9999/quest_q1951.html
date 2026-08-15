@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还是为你只是出色的[%userclass]呢，没想到你在武器制作上还有一手。</p>
+          <p> </p>
+          <p>这么好的质量的话，即使供奉给主神也毫不逊色。当然想要跟上我的话还需要继续努力。</p>
+          <p> </p>
+          <p>好了，如果你不忙的话，就请你帮我一个忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请把这把钛质大剑交给欧比斯的卢锡乌斯。</p>
+          <p> </p>
+          <p>几天之前我也给他送了一个包裹，但是好像很快就卖光了，又让我赶紧给他送武器去。</p>
+          <p> </p>
+          <p>这么快就让我给他送新的武器，看来那边的情况还真是不容乐观。那种地方不是谁都能去的，所以如果可以的话想请你走一趟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。由制作物品的人直接给他送过去，卢锡乌斯也一定会很高兴的。</p>
+          <p> </p>
+          <p>卢锡乌斯在埃雷修兰卡欧比斯的特米伦据点。那里虽然比其他的地方要安全，但是还是要小心。</p>
+          <p> </p>
+          <p>哦，对了，差点忘记了最重要的事情。来，拿着这个钛质大剑</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，为什么不愿意去？有其他的事情吗？</p>
+          <p> </p>
+          <p>不会吧，即使有其他的事情，有比这件事情更着急的吗！</p>
+          <p> </p>
+          <p>咳咳，对不起对你吼了。我给你时间，你可以好好想想。</p>
+          <p> </p>
+          <p>那我就在这里等你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去好像是位[%userclass]，不知有没有适合[%username]您的武器。</p>
+          <p> </p>
+          <p>极乐世界虽然说会继续给我送武器，但是现在东西本来就不充裕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出钛质大剑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是安泰洛斯大人让您来的啊。没认出来真是不好意思。 </p>
+          <p> </p>
+          <p>我正因为钛质大剑全都卖光了，不知道该怎么办呢。多亏了你，我又缓过来了。</p>
+          <p> </p>
+          <p>谢谢您把东西送到这么远的地方来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔把钛质大剑交给[%dic:STR_DIC_N_Lucius]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把安泰洛斯的包裹交给埃雷修兰塔的特米伦据点的武器商人卢锡乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安泰洛斯说有武器需要马上送给特米伦据点武器商人卢锡乌斯，让我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把安泰洛斯给的钛质大剑交给了卢锡乌斯，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

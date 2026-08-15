@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前您帮了我的大忙，我心里非常感激。</p>
+          <p> </p>
+          <p>我用您带回来的结晶进行了实验，结果发现了意外的事实。</p>
+          <p> </p>
+          <p>保护石的结晶非常容易被污染，根据污染程度的不同，还可以发挥其他属性的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Ab1_1211_SAMB_32_An]分布在死者的庭院、地下寺院的痕迹和加尔西坎的城寨各地。</p>
+          <p> </p>
+          <p>必须调查清楚，那些保护石内部的结晶受到了什么的污染，污染的程度怎么样。</p>
+          <p> </p>
+          <p>因此，请您去帮我打猎被污染的保护石，搜集被污染的保护石的结晶。</p>
+          <p> </p>
+          <p>对[%dic:STR_DIC_I_QUEST_2775a]的实验完成之后，我就能得出结论。</p>
+          <p> </p>
+          <p>格伦大人的假说是否正确。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次请您帮我搜集7个[%dic:STR_DIC_I_QUEST_2775a]。</p>
+          <p> </p>
+          <p>5个做实验有点不太够。我想必须要有7个左右，做实验的时候材料才不会太紧张。</p>
+          <p> </p>
+          <p>那就辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意？</p>
+          <p> </p>
+          <p>上次您帮我处理得不错，所以我才特地来找您的...</p>
+          <p> </p>
+          <p>看来您一定是有什么重要的任务。</p>
+          <p> </p>
+          <p>虽然很可惜，不过我再去问问别人吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等着您呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2775a]带回来了吗？</p>
+          <p> </p>
+          <p>最好是今天之内能把实验做完。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出被污染的保护石的结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格伦大人催得很急，我都快急死了。</p>
+          <p> </p>
+          <p>所以请您快去帮我搜集7个[%dic:STR_DIC_I_QUEST_2775a]。</p>
+          <p> </p>
+          <p>我在这里等着[%username]大人您回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是被污染的保护石的结晶啊。</p>
+          <p> </p>
+          <p>颜色很浑浊，确实和之前的保护石的结晶很不一样。</p>
+          <p> </p>
+          <p>我得赶紧开始实验。对了，我都差点忘了。</p>
+          <p> </p>
+          <p>谢谢您。虽然不多，但却是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1211_SAMB_32_An]，搜集结晶，然后交给[%dic:STR_DIC_N_Greip]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说保护石的结晶会根据污染程度的不容而发挥不同属性的力量。为了让格雷夫可以对其进行实验，帮她去搜集被污染的保护石的结晶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格雷夫说用之前给她的结晶进行了实验，结果发现了意外的事实。保护石的结晶容易被污染，根据污染度的不同，可以发挥不同属性的力量。</p>
+          <p> </p>
+          <p>她说想要获得那种力量的准确的情报的话，需要被污染的保护石的结晶。于是去帮她捕捉了被污染的保护石，搜集到了结晶。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

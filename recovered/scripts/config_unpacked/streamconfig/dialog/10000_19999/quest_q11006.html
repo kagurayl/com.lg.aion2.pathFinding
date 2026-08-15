@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了命令。</p>
+          <p> </p>
+          <p>让我去确认设置在森林周围的欧柏利斯克是否运转正常。</p>
+          <p> </p>
+          <p>这里是确保奥德供应的核心地区，因此让我加强管理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能帮我取一点水回来吗？</p>
+          <p> </p>
+          <p>要想确认欧柏利斯克的运转情况，需要对周围的水进行调查。</p>
+          <p> </p>
+          <p>我把玻璃瓶给您，请您去森林北部的[%dic:STR_DIC_QW_LF4_SZ_A1_Q1]和[%dic:STR_DIC_W_LF4_SZ_A5]的瀑布那里取一点水回来。</p>
+          <p> </p>
+          <p>虽然也可以把欧柏利斯克摘下来一一确认，但这样做会方便很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然您很强，但一次去两个地方可能会有困难。</p>
+          <p> </p>
+          <p>您拿着我刚才给您的玻璃瓶，到森林北部的[%dic:STR_DIC_QW_LF4_SZ_A1_Q1]去取一点水。</p>
+          <p> </p>
+          <p>我需要对奥德含量进行调查，请您把瓶子装满。</p>
+          <p> </p>
+          <p>经过调查，如果发现奥德含量低，就说明接收器出现了问题。</p>
+          <p> </p>
+          <p>那样的话，我就得过去对欧柏利斯克进行修理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就算了。您也很忙，我不能老麻烦您。</p>
+          <p> </p>
+          <p>您去忙您的吧。</p>
+          <p> </p>
+          <p>我得尽快去把水取回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。</p>
+          <p>  </p>
+          <p>请把装着欧柏利斯克周围的水的瓶子给我。我再给您一个空玻璃瓶。</p>
+          <p> </p>
+          <p>这次请您去[%dic:STR_DIC_W_LF4_SZ_A5]取一点瀑布的水回来。</p>
+          <p> </p>
+          <p>在这段时间里，我会对您取回来的水的奥德含量进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>水取回来了吗？</p>
+          <p> </p>
+          <p>快给我看看。</p>
+          <p> </p>
+          <p>这确实是从[%dic:STR_DIC_W_LF4_SZ_A5]的瀑布那里取的水吧？之前有人把地点弄错了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出装满水的黄色水瓶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>测定水中的奥德含量，不是谁都可以做的事情。</p>
+          <p> </p>
+          <p>只能由我们这些对奥德很敏感的生命的守护者来进行。</p>
+          <p> </p>
+          <p>(皱着眉头，查看玻璃瓶里的水。) </p>
+          <p> </p>
+          <p>确实高于英吉斯温的平均奥德含量。看来两处的欧柏利斯克全都运转正常。</p>
+          <p> </p>
+          <p>再过几天，我会去收集奥德，那时再去确认一次吧。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将[%dic:STR_DIC_QW_LF4_SZ_A1_Q1]的水装入空玻璃瓶</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Clodia]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">将[%dic:STR_DIC_E_11006]的水装入空玻璃瓶</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Clodia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">格罗蒂亚想确认欧柏利斯克是否运转正常。帮助他进行确认。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格罗蒂亚说接到了命令，让他确认森林周围的欧柏利斯克是否运转正常。</p>
+          <p> </p>
+          <p>帮助他到枯萎森林北部和迪迈亚水源地取回了水的样本，他说奥德含量高于平均水平，欧柏利斯克没有任何问题。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

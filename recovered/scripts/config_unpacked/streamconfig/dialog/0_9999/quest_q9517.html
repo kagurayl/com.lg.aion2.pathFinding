@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 你想放大库存吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">是</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 般若波罗蜜</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">(接受)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 重新和我对话，库存就可以放大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">(结束对话)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 怎么样？这下知道了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">(...)</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 现在身上可以带很多物品了～</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA140]对话。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">清除[%dic:STR_DIC_MLA116]。([%5]/5) </font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_LA140]对话。</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">清除[%dic:STR_DIC_MLA117]。([%11]/5) </font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">和[%dic:STR_DIC_LA140]对话。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_LA139]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令书</font></p>
+          <p> </p>
+          <p><font font_xml="quest_summary">佣兵队副官为了夺回被凯鲁宾占领的天人们的营地而孤军奋斗。</font></p>
+          <p><font font_xml="quest_summary">找到佣兵队副官[%dic:STR_DIC_LA140]，并接受任务。</font></p>
+          <p> </p>
+          <p><font font_xml="quest_summary"> - 佣兵队长</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除了森林里的怪物。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>测试：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>测试：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

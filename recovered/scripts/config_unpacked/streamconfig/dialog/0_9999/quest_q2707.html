@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从拉莎尼亚那里听到了很多关于你的事情，[%username]。</p>
+          <p> </p>
+          <p>听他说你的实力和责任感都很强，什么任务都可以放心地交给你。</p>
+          <p> </p>
+          <p>我也和拉莎尼亚一样，我无条件地相信[%username]。</p>
+          <p> </p>
+          <p>我给你的任务可能会比较困难，希望你能好好执行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我们红色赫西亚军团感到头疼的，是[%dic:STR_DIC_E_Lgrade4]。</p>
+          <p> </p>
+          <p>他们拥有丰富的在欧比斯战斗的经验，同时实力也很出色，因此非常不好对付。</p>
+          <p> </p>
+          <p>因为他们，军团士兵们在执行侦察任务的时候，不知道遇到了多少困难。</p>
+          <p> </p>
+          <p>所以，我想让[%username]你去把他们清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你愿意接受任务。</p>
+          <p> </p>
+          <p>清除[%dic:STR_DIC_E_Lgrade4]的任务如果取得成功，将会对我们红色赫西亚军团有很大的帮助。</p>
+          <p> </p>
+          <p>[%username]，既然去一趟，就应该消灭和自己实力接近的人。</p>
+          <p> </p>
+          <p>实力相差太多的话，消灭了也没用。</p>
+          <p> </p>
+          <p>那就请你快去快回！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚说你很有实力和责任感，难道都是在吹牛吗？</p>
+          <p> </p>
+          <p>第一次任务就拒绝，真让人失望。</p>
+          <p> </p>
+          <p>不过没办法。我也不能强迫你去做这么困难的事情。</p>
+          <p> </p>
+          <p>不过如果你以后改变了主意的话，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你呢，[%username]。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_E_Lgrade4]全部清除掉了吗？</p>
+          <p> </p>
+          <p>跟我详细地报告一下情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚果然说的没错，你的实力果然很强。</p>
+          <p> </p>
+          <p>这么强的能力的话，我可以放心地让你去做更困难的任务了。</p>
+          <p> </p>
+          <p>真是辛苦你了。这是辛苦的报答。请你收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade4]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Semotor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族在欧比斯战场上取得胜利，必须战胜天军4级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞摩托尔说从拉莎尼亚那里听到了很多我的事情，并给了我一个艰难的任务，说希望我好好执行。</p>
+          <p> </p>
+          <p>于是按照他的命令清除掉了天族4级兵，他非常高兴，说我的实力果然名不虚传。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

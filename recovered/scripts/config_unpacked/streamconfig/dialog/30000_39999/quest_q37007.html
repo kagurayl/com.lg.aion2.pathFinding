@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是消灭[%dic:STR_DIC_M_37007all]%。</p>
+          <p> </p>
+          <p>现在凯丹大本营的克拉尔们建立了森严的等级体系，阻止守护者们进入。</p>
+          <p> </p>
+          <p>很多守护者在凯丹大本营受了伤。凯丹大本营的组长是这一等级体系的核心，我们决定把它们消灭掉，扰乱他们的防御。</p>
+          <p> </p>
+          <p>这件事一个人去的话会非常困难，请一定要和导师组队之后一起去。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的任务有点难吧？</p>
+          <p> </p>
+          <p>因为事情紧急，所以连预备神庙的学员们都参加了这次任务。</p>
+          <p> </p>
+          <p>让他们和导师一起去，是为了降低危险，同时也可以向导师学习经验，这是极乐世界安排这次任务的初衷。</p>
+          <p> </p>
+          <p>请您向我报告执行情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您成功地完成了今天的任务。</p>
+          <p> </p>
+          <p>我得向极乐世界报告，说凯丹大本营的防备松懈了很多，现在可以正式开始发动进攻了。</p>
+          <p> </p>
+          <p>在这次的任务中，[%username]大人可谓功不可没。报告的时候，我一定会提到您的。</p>
+          <p> </p>
+          <p>这是这次任务的证物。希望您能继续为预备神庙而努力。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭[%dic:STR_DIC_M_37007all]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vespasianus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，和导师一起消灭凯丹大本营的组长，削弱它们的防御。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去凯丹大本营消灭了组长，向贝斯帕西亚努斯报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

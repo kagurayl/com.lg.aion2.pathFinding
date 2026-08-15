@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在因特尔蒂卡的密林中看到过古代文明的残骸吗？</p>
+          <p> </p>
+          <p>虽然现在沾满了青苔和泥土，看不清原本的形态，但其中有很多很漂亮的东西留存了下来。</p>
+          <p> </p>
+          <p>但是刺根佩里亚占据了那里，所剩无几的遗迹正在慢慢消失。</p>
+          <p> </p>
+          <p>调查员们说[%dic:STR_DIC_M_FellialRE_36_An]是研究对象，不让我们去捕捉它们。但是研究也应该有个分寸，您说是不是？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们不仅在遗迹上扎根，还肆意地攻击周围经过的人。</p>
+          <p> </p>
+          <p>连前去调查的调查员也经常受到刺根佩里亚的攻击。</p>
+          <p> </p>
+          <p>但是他们还是不让别人抓它们，真是一群善良的人。看到他们受伤回来，我就觉得很心疼。</p>
+          <p> </p>
+          <p>要是可以的话，我真想自己去把它们清理掉。但是为了避开调查员的眼睛，您能帮我去把[%dic:STR_DIC_M_FellialRE_36_An]消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>请您重点把路上的[%dic:STR_DIC_M_FellialRE_36_An]消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您也很忙啊。</p>
+          <p> </p>
+          <p>没办法。看来只能我自己去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前，又有受到刺根佩里亚攻击的人被担架抬了回来。</p>
+          <p> </p>
+          <p>[%username]大人，您没事吧？</p>
+          <p> </p>
+          <p>您看上去很累。不过您能安全回来，真是太好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，暂时应该不会有人受伤了。</p>
+          <p> </p>
+          <p>您去做自己的事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭攻击调查员的[%dic:STR_DIC_M_FellialRE_36_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Prokopios]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭攻击调查员的刺根佩里亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普罗科皮乌斯所刺根佩里亚经常攻击来往的路人，他为此很担心。</p>
+          <p> </p>
+          <p>帮他消灭掉了路边的刺根佩里亚，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

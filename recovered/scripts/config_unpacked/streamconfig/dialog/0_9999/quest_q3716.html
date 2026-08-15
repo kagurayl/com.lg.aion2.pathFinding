@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，虽然你帮了我不少忙，但要做的事情还是很多。</p>
+          <p> </p>
+          <p>要想让德雷得奇安瘫痪，光除掉舰长还不够。</p>
+          <p> </p>
+          <p>这一点不用我多说，你也应该知道吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了给他们造成有效的打击，必须把德雷得奇安的设备破坏掉。</p>
+          <p> </p>
+          <p>其中最重要的是把其中的核心设备破坏掉。</p>
+          <p> </p>
+          <p>你能帮我进入德雷得奇安，破坏掉那里的主要设备吗？</p>
+          <p> </p>
+          <p>反正要除掉舰长，需要在德雷得奇安内部进行搜索才行，所以这件事应该不会太困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要破坏的主要设备是[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1]和[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4]。</p>
+          <p> </p>
+          <p>如果能破坏掉那两个地方的苏尔卡纳，德雷得奇安的功能就会全面瘫痪。</p>
+          <p> </p>
+          <p>换句话说，如果能破坏掉主要设备，就能让德雷得奇安完全陷入混乱。</p>
+          <p> </p>
+          <p>所以这件事和除掉舰长一样重要，希望你能集中精神去做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没有自信吗？</p>
+          <p> </p>
+          <p>连这种自信都没有，还怎么进入德雷得奇安啊？</p>
+          <p> </p>
+          <p>真是，总司令官推荐的守护者只是这种水平吗……</p>
+          <p> </p>
+          <p>知道了。我会找其他人来负责这件事，你回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>对了，破坏德雷得奇安主要设备的任务完成了吗？</p>
+          <p> </p>
+          <p>请向我正式报告一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。虽然德雷得奇安不会马上从埃雷修兰塔消失，但这会给他们造成很大的打击。</p>
+          <p> </p>
+          <p>也就是说，我们还需要继续对德雷得奇安的主要设备进行打击。</p>
+          <p> </p>
+          <p>如果[%username]你和其他守护者能一直像现在这么努力，相信用不了多久德雷得奇安就会从埃雷修兰塔消失。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏德雷得奇安的主要设备</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1] ([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4] ([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mias]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定破坏掉德雷得奇安的主要设备，使其陷入瘫痪。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>麦亚斯说要想让德雷得奇安完全陷入混乱，光除掉舰长还不够。</p>
+          <p> </p>
+          <p>于是按照他的指示，破坏掉了维持用苏尔卡纳和核控制用苏尔卡纳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

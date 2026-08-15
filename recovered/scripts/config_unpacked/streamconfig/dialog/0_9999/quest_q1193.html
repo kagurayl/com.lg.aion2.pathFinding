@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能期待极乐世界派出支援兵，现在能做的只有一件事。就是查清克拉尔的阴谋。</p>
+          <p> </p>
+          <p>要是能查清克拉尔的阴谋，极乐世界也许就会派兵支援。</p>
+          <p> </p>
+          <p>这件事情就由你负责吧。</p>
+          <p> </p>
+          <p>守卫们忙着阻击克拉尔，没有可以投入新任务的人员。就只有靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在马上去[%dic:STR_DIC_FLA23]把[%dic:STR_DIC_MLA151]清除掉，查清敌人的阴谋，并把证据拿回来吧。</p>
+          <p> </p>
+          <p>我对克拉尔的指挥体系进行了分析，监视队长掌握着阴谋证据的可能性很高。</p>
+          <p> </p>
+          <p>虽说这项任务很危险，但和三四个伙伴一起去的话应该可以充分地完成任务的。</p>
+          <p> </p>
+          <p>想不想试试?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不出所料。</p>
+          <p> </p>
+          <p>请你马上去[%dic:STR_DIC_FLA23]把[%dic:STR_DIC_MLA151]清除掉，然后把证据带回来。</p>
+          <p> </p>
+          <p>我再说一次，这是很难独自完成的任务，一定要跟伙伴一起行动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是说没有可以一起去的伙伴吗？</p>
+          <p> </p>
+          <p>也是，最近见个守护者比克拉尔还要难。</p>
+          <p> </p>
+          <p>那么以后找到伙伴了就再来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在图尔辛驻地找到证据了没有？</p>
+          <p> </p>
+          <p>该不会是空手而归吧？</p>
+          <p> </p>
+          <p>要向极乐世界请求支援兵，就得识破敌人的阴谋。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出镶着奥德石的项链。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>接受了任务就得认真执行，不是吗！</p>
+          <p> </p>
+          <p>我已经快让那些克拉尔气死了!</p>
+          <p> </p>
+          <p>这样是没法查出克拉尔的阴谋的。去找出真正线索。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是克拉尔的项链吗？中间镶的是什么？</p>
+          <p> </p>
+          <p>这不是奥德石吗！</p>
+          <p> </p>
+          <p>听说过冶炼奥德石的报告，不过用这个做项链，肯定有其他理由。</p>
+          <p> </p>
+          <p>可以确定这些敌人在酝酿一些阴谋，不过单凭这个是没法掌握真实状况。</p>
+          <p> </p>
+          <p>不管怎样说，你辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_FLA23]把[%dic:STR_DIC_MLA151]清除掉，找到线索后交给[%dic:STR_DIC_LA19]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到图尔辛驻地寻找可以识破克拉尔阴谋的证据吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了请求支援，斯帕塔洛斯决定查清克拉尔阴谋。</p>
+          <p> </p>
+          <p>他让守护者跟同伴一起去图尔辛驻地处置克拉尔，找出可以作为线索的东西。</p>
+          <p> </p>
+          <p>虽然找到了镶着奥德石的项链，但是只能确认它们在酝酿阴谋，不能查明真相。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

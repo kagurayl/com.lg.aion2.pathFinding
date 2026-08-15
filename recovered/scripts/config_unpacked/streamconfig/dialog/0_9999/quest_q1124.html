@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可恶的布洛尼！竟敢让我的努力成了白费！</p>
+          <p> </p>
+          <p>喂，[%username]！我还需要你帮我做一件事。</p>
+          <p> </p>
+          <p>想到我爱情的结晶都被杜卡基族填了肚子，我气得睡都睡不着。</p>
+          <p> </p>
+          <p>不管怎样我要向他们复仇！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问方法。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是问我方法吗？去把他们抓回来就行了！</p>
+          <p> </p>
+          <p>帮我去[%dic:STR_DIC_FLA07]除掉[%dic:STR_DIC_MLA13_1]和[%dic:STR_DIC_MLA13_4]。</p>
+          <p> </p>
+          <p>你能帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了！</p>
+          <p> </p>
+          <p>那么你马上到[%dic:STR_DIC_FLA07]去除掉[%dic:STR_DIC_MLA13_1]和[%dic:STR_DIC_MLA13_4]，搜集他们的勺子5个，然后带回来给我。</p>
+          <p> </p>
+          <p>那是他们吃饭的工具，应该可以成为安慰我的宠物的灵魂的最好的祭品！</p>
+          <p> </p>
+          <p>现在马上出发！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到这种程度就放弃了？</p>
+          <p> </p>
+          <p>我的爱情和努力都白费了！</p>
+          <p> </p>
+          <p>不过是我的错，不该期望佣兵会有侠义之心的。</p>
+          <p> </p>
+          <p>我走了。这件事情我去拜托别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是的，你帮我狠狠地教训布洛尼了吗？</p>
+          <p> </p>
+          <p>想象他们狼狈而逃的情形，我的心里舒服了好多。</p>
+          <p> </p>
+          <p>把带回来的勺子给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出勺子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没把5个勺子带回来？</p>
+          <p> </p>
+          <p>这样就没办法证明你真的帮我教训了布洛尼。</p>
+          <p> </p>
+          <p>快去搜集5个勺子带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>勺子这么脏，这么粗糙，应该是布洛尼用的东西！</p>
+          <p> </p>
+          <p>用这些勺子作为祭品祭祀托蒂的话，应该能安慰一下它的灵魂。</p>
+          <p> </p>
+          <p>你虽然是佣兵，但是很有侠义之心。</p>
+          <p> </p>
+          <p>来，这是你的报酬。辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_FLA07]的[%dic:STR_DIC_MLA13_1]和[%dic:STR_DIC_MLA13_4]，并把证物带回给菲尔诺斯。 </font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">托蒂死了的消息菲尔诺斯非常愤怒。接受他复仇的请求，清除杜卡基族，并把证物勺子带回来。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道托蒂被布洛尼抓去吃掉了之后，[%dic:STR_DIC_LA12]非常愤怒。说不能放过这些可恶的家伙，并请求你清除杜卡基族，把勺子作为证据带回去。。</p>
+          <p> </p>
+          <p>于是到[%dic:STR_DIC_FLA07]去捕捉布洛尼，并把勺子带回来交给了他。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

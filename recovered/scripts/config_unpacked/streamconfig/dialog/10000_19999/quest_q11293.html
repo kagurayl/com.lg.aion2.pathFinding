@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>哈，为什么总是这样呢？想到之前我的狂妄，真让人抬不起头来。</p>
+          <p></p>
+          <p>原来我不是亚龙的负责人。来到英吉斯温之前，我曾经在卡伊努斯代理人手下担任书记官。</p>
+          <p></p>
+          <p>但是来到这里之后，我就开始负责亚龙的调查工作。我也是从那个时候开始研究亚龙的。</p>
+          <p></p>
+          <p>因为我很喜欢学习，所以不觉得很难，反而觉得很有趣。有时在书桌前奋笔疾书，有时又会到充满紧张感的现场去调查。</p>
+          <p></p>
+          <p>我翻阅了贤者书库中所有和龙族有关的书籍，并跟着亚龙追踪者好几个月，因此我很自信，觉得凡是和亚龙有关的事情我都知道。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>但那只是到昨天为止。</p>
+          <p></p>
+          <p>哈，虽然有点丢人，不过我还是想说出来。原来我一直以为只要消灭掉亚龙，一切就结束了。但是亚龙的蛋里，会诞生新的德拉坎。</p>
+          <p></p>
+          <p>因此我光把注意力集中在消灭帕德玛夏上，没有去管那些蛋。但是我在一个好久不见的亚龙追踪者那里听说了一个惊人的事实。</p>
+          <p></p>
+          <p>普通的亚龙只负责生蛋，孵化的工作由守护者负责。直接孵蛋的敏锐的帕德玛夏是非常特殊的事例。</p>
+          <p></p>
+          <p>是的，所以我需要[%username]大人的帮助。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>如果我的预想没错，帕德玛夏的蛋马上就要孵化了。</p>
+          <p></p>
+          <p>请您在蛋孵化之前，把[%dic:STR_DIC_M_Q11293]消灭掉。</p>
+          <p></p>
+          <p>这段时间我会把帕德玛夏的蛋拿到洞穴外面去。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您真够无情的。我这样子求你……</p>
+          <p></p>
+          <p>也是，又能埋怨谁呢？都是我的错……</p>
+          <p></p>
+          <p>看来我只能如实向卡伊努斯代理人报告，请求帮助了。</p>
+          <p></p>
+          <p>他一直对我很好，这次要让她失望了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>看来是我先回来了。</p>
+          <p></p>
+          <p>不知道您有没有看到，在[%username]在洞穴内对付守护者的时候，我就在后面。</p>
+          <p></p>
+          <p>因为要把帕德玛夏的蛋拿回来，我没能看到你打败守护者。后来怎么样了？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>能把守护者消灭掉，真是太好了。</p>
+          <p></p>
+          <p>真的非常感谢。</p>
+          <p></p>
+          <p>多亏了您，在消灭守护者的同时，又把帕德玛夏的蛋取了出来。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">消灭[%dic:STR_DIC_M_Q11293]([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%15]">
+                <font color="[%16]">和[%dic:STR_DIC_N_Jamia]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">为了让杰米娅能够把帕德玛夏的蛋取出来，去消灭帕德玛夏的守护者。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>杰米娅说她误以为只要消灭掉帕德玛夏，帕德玛夏的蛋就不会孵化，因此向我请求帮助。</p>
+          <p></p>
+          <p>为了让她能把帕德玛夏的蛋从洞穴里拿出来，帮她消灭掉了照看蛋的守护者。她对我表示感谢，说多亏了我，事情终于结束了。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

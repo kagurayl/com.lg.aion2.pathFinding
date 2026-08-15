@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们至今还没能占领古代城市娄要塞，真让人遗憾。</p>
+          <p> </p>
+          <p>娄是距离拉特斯兰的西侧茎干最近的地方，因此在战略上非常重要。</p>
+          <p> </p>
+          <p>如果敌人的实力进一步扩大的话，我们就无法使用拉特斯兰的西侧茎干了。</p>
+          <p> </p>
+          <p>因此，为了防止这种事态发生，必须阻止他们扩张势力。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这种层面上看，如果你能把要塞的敌人驻军清除掉的话就好了。</p>
+          <p> </p>
+          <p>啊，当然，如果不仅把驻军清除掉，顺便能把守护神将打倒的话就更好了。</p>
+          <p> </p>
+          <p>可以做到的话，你可以尽情地发挥自己的实力。不过，一个人去太危险，请你和同伴一起过去。</p>
+          <p> </p>
+          <p>你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。这次的事情如果可以成功完成，你的名声会得到进一步的提高。</p>
+          <p> </p>
+          <p>快去把任务告诉你的同伴们吧。然后一起过去把[%dic:STR_DIC_M_2780_all]清除掉。</p>
+          <p> </p>
+          <p>注意不要太贪功，丢了自己的性命。要塞的防线要比想象的牢固得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你这样一口拒绝，我都不知道该说些什么。</p>
+          <p> </p>
+          <p>我就只说一句话。</p>
+          <p> </p>
+          <p>你可以使用拉特斯兰的西侧茎干，是因为在你看不见的地方，有人正在流血牺牲。</p>
+          <p> </p>
+          <p>你是绝对不能忘记这份感激的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务完成了吗？</p>
+          <p> </p>
+          <p>我收到报告说要塞很混乱，是不是因为你啊？</p>
+          <p> </p>
+          <p>我很想知道结果，请你快跟我说说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得好。那个骚动果然是因为你啊。</p>
+          <p> </p>
+          <p>听说因为骚动，要塞的警备都有点松懈了。</p>
+          <p> </p>
+          <p>任务完成得比我期待的好得多。</p>
+          <p> </p>
+          <p>请收下。这是以红色赫西亚的名义给你的奖赏。</p>
+          <p> </p>
+          <p>愿黑暗的平安永远伴随着你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2780_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Dullaha]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照杜尔拉哈的指示，召集同伴清除古代城市娄的要塞驻军，阻止敌人扩张势力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杜尔拉哈说敌人实力在逐渐扩大，他担心这样下去的话，拉特斯兰的西侧茎干就会被他们夺走。</p>
+          <p> </p>
+          <p>为了阻止最坏的事态发生，他让我去把古代城市娄的要塞驻军清除掉，阻止敌人势力的扩张。</p>
+          <p> </p>
+          <p>按照他的指示清除了要塞驻军，然后回去找到了他。他说我出色地完成了任务，并给了我奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

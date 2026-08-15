@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么有那么多守护者到这里来啊？</p>
+          <p> </p>
+          <p>我想安静的生活，他们却一直来妨碍我，虽然生意也因此好了一点……</p>
+          <p> </p>
+          <p>但，但是如果别的黑暗术古知道我在这里，就糟了。</p>
+          <p> </p>
+          <p>不知道他们干嘛要到这里来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是在找书吗？这里有[%dic:STR_DIC_OBJ_IDElim_Book_Q11461]。</p>
+          <p> </p>
+          <p>我在什么地方见到过，你能去找找看吗？</p>
+          <p> </p>
+          <p>可能是很重要的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多乐金知道在哪里。</p>
+          <p> </p>
+          <p>我看见有个叫卡拉贝尔的守护者把它藏在了卡斯帕树干上的洞里。</p>
+          <p> </p>
+          <p>但是那个洞是我睡觉的地方，所以我把它扔掉了。</p>
+          <p> </p>
+          <p>从结论上来说，我现在不知道它的准确位置。</p>
+          <p> </p>
+          <p>可能在长着青苔的树干那边。你去找到[%dic:STR_DIC_OBJ_IDElim_Book_Q11461]，然后交给[%dic:STR_DIC_N_Carabel]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，你是不想遵守约定吗？</p>
+          <p> </p>
+          <p>那，多乐金就不告诉你。</p>
+          <p> </p>
+          <p>那本写满了东西的书，我不告诉你在哪里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>躲在卡斯帕内部的黑暗术古告诉了您书在哪里？</p>
+          <p> </p>
+          <p>真是个可恶的黑暗术古！那是我的[%dic:STR_DIC_I_doc_quest_21461a]！</p>
+          <p> </p>
+          <p>为了找到它，我去了好几次，但他每次都装不知道！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出卡斯帕研究报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_doc_quest_21461a]在哪里？</p>
+          <p> </p>
+          <p>真的带来了吗？</p>
+          <p> </p>
+          <p>听您的描述，好像就是我丢失的东西。您能帮我找回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我之前对卡斯帕进行调查之后记录的研究日志。</p>
+          <p> </p>
+          <p>因为突然有虫子冲过来，我想把它放在安全的地方，所以就塞进了树干上的一个洞里。后来再去找的时候，却发现不见了。</p>
+          <p> </p>
+          <p>您读过内容了吗？虽然还没有仔细整理，但记录内容非常详细。</p>
+          <p> </p>
+          <p>啊，不过这好像不是我的东西。不过很有趣。</p>
+          <p> </p>
+          <p>卡斯帕探险记？到底是什么时候写的书呢？看来我得研究一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_OBJ_IDElim_Book_Q11461]，然后交给[%dic:STR_DIC_N_Carabel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">多乐金说在卡斯帕内部看到过一本写满了字的书。好像是卡拉贝尔的重要东西，给他送过去吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多乐金说最近经常有守护者进出卡斯帕，担心自己会被龙族发现。</p>
+          <p> </p>
+          <p>他问我在找什么，是不是在找一本记录着什么东西的书，并说他知道那本书在什么地方。</p>
+          <p> </p>
+          <p>找到书之后交给了卡拉贝尔，他说那本书不是自己要找的东西，但是本挺有意思的书，对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

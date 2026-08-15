@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你来的正好。我刚好有事要找你。</p>
+          <p> </p>
+          <p>你和龙信徒战斗过吗？</p>
+          <p> </p>
+          <p>你有没有觉得他们使用的武器的杀伤力特别高呢？</p>
+          <p> </p>
+          <p>不知你知不知道，那是因为他们在武器上涂了毒药。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在守护者们受了伤之后，我们不能不对他们进行治疗，但是我们不能一直这么去做。</p>
+          <p> </p>
+          <p>如果能制造出有效的解毒剂和中和他们的毒药的药物，应该会对守护者们起到很大的帮助。</p>
+          <p> </p>
+          <p>不过那样的话，就必须搜集到龙信徒们使用的毒药。</p>
+          <p> </p>
+          <p>[%username]大人，你能帮我去搜集一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，还好你很清楚这件事的重要性。</p>
+          <p> </p>
+          <p>如果不解决这个问题，我们就不能不忙于为受伤的守护者们治疗。</p>
+          <p> </p>
+          <p>如果能搜集到龙信徒们使用的毒药，将会给守护者们的安全提供更多的保障。当然，也会对研究工作带来很大的帮助。</p>
+          <p> </p>
+          <p>荒废的乌达斯神殿一定有龙信徒在武器上涂毒时使用的瓶子。请你去把[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你难道不知道现在是什么情况吗？</p>
+          <p> </p>
+          <p>难道你不知道如果不执行这项任务，就没办法找到削弱他们的方法吗？</p>
+          <p> </p>
+          <p>当然，其他地方可能也有别的学者在对龙信徒的毒药进行研究。</p>
+          <p> </p>
+          <p>但是我是离他们最近的人，如果我能开发出解毒剂，不是更好吗？</p>
+          <p> </p>
+          <p>[%username]，如果你真的不愿意的话，我也没有办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]！</p>
+          <p> </p>
+          <p>必须尽快对毒药进行分析，才能制作出解毒剂。</p>
+          <p> </p>
+          <p>好的，快把装着毒药的玻璃瓶交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出装着毒药的玻璃瓶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是在跟我开玩笑吗？</p>
+          <p> </p>
+          <p>如果不能尽快搜集到毒药，说不定会被别人先开发出解毒剂……</p>
+          <p> </p>
+          <p>你可以骂我只为自己的名声着想。</p>
+          <p> </p>
+          <p>但是学者之间的竞争不就是这个样子的吗？看谁能有新的发现！</p>
+          <p> </p>
+          <p>请你快到荒废的乌达斯神殿去，搜集龙信徒用于在武器上涂毒的[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>瓶子要比我想象的小，看来毒性非常强烈，所以他们自己也很小心。</p>
+          <p> </p>
+          <p>现在终于得到了他们使用的毒药，必须尽快进行分析，制作出解毒剂才行。</p>
+          <p> </p>
+          <p>希望我能够制作出中和毒性的药物。</p>
+          <p> </p>
+          <p>谢谢你答应了我的请求。你真是帮了我的大忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去荒废的乌达斯神殿搜集[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]，然后交给[%dic:STR_DIC_N_Sulbanyer]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说龙信徒会在武器上涂毒。去荒废的乌达斯神殿搜集装着毒药的玻璃瓶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔班耶尔说由于龙信徒的武器上涂有毒药，因此守护者受到的伤害非常严重，必须搜集到他们使用的毒药进行分析。</p>
+          <p> </p>
+          <p>于是去荒废的乌达斯神殿搜集到了装着毒药的玻璃瓶，他对我表示感谢，说我帮了他的大忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

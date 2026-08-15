@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不得不呆在这片弥漫着死亡气息的土地上，真是令人痛苦啊。</p>
+          <p> </p>
+          <p>不过，在帮助我那些已经变成不死族的家人们得到最终安息之前，我是不会离开这里的。</p>
+          <p> </p>
+          <p>梅德乌斯庄园有许多工人。大部分都是从其他地区来的无处可去的男子。</p>
+          <p> </p>
+          <p>他们辛辛苦苦地工作，渴望能在这里实现他们各自的梦想。因为领主大人许诺说在这里工作一定期间以后便能获得一块土地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可惜他们也在克拉尔战争中失去了生命。</p>
+          <p> </p>
+          <p>即便现在，他们也还是没有离开梅德乌斯庄园，继续在这片土地上工作。</p>
+          <p> </p>
+          <p>如果您可怜他们的话，就请赐予[%dic:STR_DIC_M_UndeadfarmerLM_40_An]和[%dic:STR_DIC_M_UndeadfarmerLF_40_An]永恒的安息吧。</p>
+          <p> </p>
+          <p>让他们歇一歇吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_UndeadfarmerLM_40_An]和[%dic:STR_DIC_M_UndeadfarmerLF_40_An]们都不知道自己已经成了不死族了。就像卡尔卡斯和梅姆毗文一样。</p>
+          <p> </p>
+          <p>所以，他们也可能对[%username]大人做出一些反抗。请您小心别受伤了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>光我一个人是帮不了庄园里那么多人的。</p>
+          <p> </p>
+          <p>请您发发慈悲，帮我们一把。</p>
+          <p> </p>
+          <p>让那些连自己已经死了都不知道的灵魂们脱离苦海吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮助那些不死族劳役和不死族奴役们回到奥德的流动中了吗？</p>
+          <p> </p>
+          <p>他们的痛苦终于可以解脱了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每当想起那些人，我就觉得心痛不已。</p>
+          <p> </p>
+          <p>活着的人是无法理解的，在这里徘徊在生死之间的人有多么的痛苦。</p>
+          <p> </p>
+          <p>那些成为不死族的劳役和奴役们也会感激[%username]大人的。我代表他们谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">让那些成为不死族的庄园工人们安息吧</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadfarmerLM_40_An]([%2]/16)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadfarmerLF_40_An]([%5]/13)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_UndeadManager_Kacias]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说梅德乌斯庄园的工人们现在即便已经成了不死族也依旧在庄园里工作。管家卡西亚斯很可怜他们，拜托我将不死族劳役和奴役送回奥德的流动。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>管家卡西亚斯觉得那些原本在梅德乌斯庄园工作的工人们成为不死族后依然徘徊在庄园工作太可怜了。</p>
+          <p> </p>
+          <p>为了帮助他们获得永恒的安息，受管家卡西亚斯之托，去将不死族劳役和不死族奴役送回了奥德的流动。</p>
+          <p> </p>
+          <p>卡西亚斯感谢我终于给了他们永恒的安息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

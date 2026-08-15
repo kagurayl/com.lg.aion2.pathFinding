@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭快速的梅罗顿的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 目标: [%dic:STR_DIC_M_DF4_DaQ_Merdion_DR_53]</p>
+          <p></p>
+          <p> 2. 位置: 北部玛拉亚斯荒野人工奥德生成器周边</p>
+          <p></p>
+          <p> 3. 详情: 多次把人工奥德生成器咬坏，给奥德管理兵造成了精神上的伤害，并给部件的修理工作增加了负担。</p>
+          <p> </p>
+          <p>利用设置在生成器周围的[%dic:STR_DIC_OBJ_DF4_FOBJ_Q46510]，消灭快速的梅罗顿的人，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的任务是快速的梅罗顿，对吧？</p>
+          <p> </p>
+          <p>虽然只是个象鼻虫，但却非常机灵，没有陷阱的话，根本就找不到它，呐呐。</p>
+          <p> </p>
+          <p>必须尽快把它除掉，才能减少委托人的抱怨……事情进展得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了！</p>
+          <p> </p>
+          <p>多亏了你，我们侦探事务所的解决成功率又提高了，呐呐。</p>
+          <p> </p>
+          <p>我给你准备好了委托费，别忘了拿走，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">利用[%dic:STR_DIC_OBJ_DF4_FOBJ_Q46510]，消灭[%dic:STR_DIC_M_DF4_DaQ_Merdion_DR_53]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭快速的梅罗顿的委托书。</p>
+          <p> </p>
+          <p>前往玛拉亚斯荒野北部，消灭了快速的梅罗顿。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

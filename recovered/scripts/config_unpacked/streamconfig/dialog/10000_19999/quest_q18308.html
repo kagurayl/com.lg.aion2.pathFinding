@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，我想拜托你一件事。是有关空中要塞的黑暗术古的事情。</p>
+          <p> </p>
+          <p>其实我对这件事没什么兴趣……但是那个叫西里安还是什么的朋友好像很感兴趣的样子。</p>
+          <p> </p>
+          <p>西里安你知道吧？就是那个帮我们执行空中要塞任务的鸢族。</p>
+          <p> </p>
+          <p>我想我们应该帮帮他。怎么样？你愿意吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德雷得奇安管理区域到处都是黑暗术古。</p>
+          <p> </p>
+          <p>他们能维护德雷得奇安的动力装置和小型飞艇，一定不是普通的家伙。</p>
+          <p> </p>
+          <p>提亚马特不会让黑暗术古成为自己的部下……我想其中一定有艾莱休奇卡的介入。新型苏尔卡纳也是如此。</p>        
+          <p> </p>
+          <p>光是提亚马特就很难对付了，如果有其他龙帝介入的话，就更让人头疼了。西里安的生命可以说是命悬一线。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果黑暗术古是艾莱休奇卡的手下的话，身上一定会有证物。</p>
+          <p> </p>
+          <p>你能去消灭他们，寻找有没有和艾莱休奇卡有关的证物吗？</p>
+          <p> </p>
+          <p>虽然我不希望发生这种事情，但现在情况很明显，这也是没办法的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你拒绝不做的话，西里安会不高兴的。</p>
+          <p> </p>
+          <p>什么？讨好西里安又有什么好处？</p>
+          <p> </p>
+          <p>哈，没想到生活在结界里的守护者这么冷漠。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些黑暗术古，从表面上看好像没有被洗脑，身体好像也没有发生变异。</p>
+          <p> </p>
+          <p>那他们为什么会成为龙帝的手下呢？</p>
+          <p> </p>
+          <p>也许他们之间有着某种我们不知道的契约。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出艾莱休奇卡之印。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿图拉姆空中要塞好像不是提亚马特独自建造的。</p>
+          <p> </p>
+          <p>事实上，能如此熟练地操纵德雷得奇安，也不像是提亚马特能够做到的。</p>
+          <p> </p>
+          <p>一定有其他龙帝提供了帮助。我认为是艾莱休奇卡……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……虽然我猜到了，但没想到有艾莱休奇卡介入的事情得到了证明。</p>
+          <p> </p>
+          <p>现在我们还不知道除了新型德拉纳和技术工会黑暗术古之外，他是否还提供了其他物质上和军事上的帮助。</p>
+          <p> </p>
+          <p>我虽然已经拜托天族和魔族的情报员帮着调查，但是还没有发现什么证据。</p>
+          <p> </p>
+          <p>我还需要一些时间。在我们搜集和分析情报的时候，您能继续帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿图拉姆 [%dic:STR_DIC_W_IDStation_SZ_02_A]搜集 [%dic:STR_DIC_I_quest_18308a]，然后交给 [%dic:STR_DIC_N_Silion]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈里肯的委托，去空中要塞德雷得奇安管理区域的黑暗术古身上搜集艾莱休奇卡的痕迹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈里肯说阿图拉姆空中要塞管理区域的黑暗术古好像不是提亚马特的手下，而是隶属于其他龙帝。</p>
+          <p> </p>
+          <p>于是去消灭黑暗术古，把搜集到的证据交给了西里安。西里安说还需要搜集更多的情报，让我继续帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

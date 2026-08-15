@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！您来的正好。</p>
+          <p> </p>
+          <p>我刚好有件事想找您商量。</p>
+          <p> </p>
+          <p>有时间的话，您能和我谈谈吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想您也应该知道了，最近袭击村庄的怪物越来越多，所以我们会定期进行扫荡工作。</p>
+          <p> </p>
+          <p>离得很远的梅德乌斯庄园的怪物也过来袭击村庄，附近的斯泰浓海岸的精灵也随时可能过来。</p>
+          <p> </p>
+          <p>安迪温说我是瞎操心，但是我却一直放心不下。</p>
+          <p> </p>
+          <p>您愿意参加[%dic:STR_DIC_M_QUEST_3523]扫荡工作吗？就当是为村民服务好了。</p>
+          <p> </p>
+          <p>只要帮我们消灭[%dic:STR_DIC_M_ElementalWater3_43_An]、[%dic:STR_DIC_M_ElementalWater3_44_An]和[%dic:STR_DIC_M_ElementalWater3_45_An]就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，有了您的帮助，我心里就踏实多了！</p>
+          <p> </p>
+          <p>您快去消灭[%dic:STR_DIC_M_QUEST_3523]吧。</p>
+	  <p> </p>
+          <p>小心不要受伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，哎呀……怎么会这样呢？</p>
+          <p> </p>
+          <p>不过相信下次您一定会帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您全身都湿透了，一定经过了一场激烈的战斗吧？</p>
+          <p> </p>
+          <p>这样下去，您会感冒的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我的一点心意。</p>
+          <p> </p>
+          <p>有机会的话，请您继续来参加怪物扫荡作战。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_QUEST_3523]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Catid]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭随时有可能袭击村庄的海岸的精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡提德说安迪温太小看海岸的精灵，但他觉得必须采取措施。</p>
+          <p> </p>
+          <p>他说海岸的精灵随时可能袭击村庄，为了防止出现这种情况，让我去把他们消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

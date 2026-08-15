@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸟妖把跳舞的羽毛抓走了，咕库！</p>
+          <p> </p>
+          <p>竟然把还不会飞的小孩子抓走了！</p>
+          <p> </p>
+          <p>鸟妖真是些卑鄙的家伙，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸟妖冲进来把小格里芬抓走了。</p>
+          <p> </p>
+          <p>把我的孩子[%dic:STR_DIC_N_NPC_LF2_Griffo]也抓走了，咕库。</p>
+          <p> </p>
+          <p>大家都去找自己的孩子了。</p>
+          <p> </p>
+          <p>我被诅咒了，所以不能去寻找跳舞的羽毛。</p>
+          <p> </p>
+          <p>如果你能帮我找回跳舞的羽毛的话，我会报答你的，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被抓走的小孩子们应该就藏在桥那边它们的巢穴里，咕库。</p>
+          <p> </p>
+          <p>你去鸟妖的巢穴把跳舞的羽毛找回来。</p>
+          <p> </p>
+          <p>一定要在白天回来。</p>
+          <p> </p>
+          <p>由于诅咒的原因，到了晚上我就会认不出跳舞的羽毛而攻击他，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人类都一样，咕库。</p>
+          <p> </p>
+          <p>不想帮我的话就马上走开。</p>
+          <p> </p>
+          <p>不管用什么办法都必须在天黑之前找到跳舞的羽毛，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我被鸟妖抓来了，咕库。</p>
+          <p> </p>
+          <p>妈妈来了一定不会饶了它们的。</p>
+          <p> </p>
+          <p>我想见妈妈，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说是妈妈派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妈妈让你来救我吗，咕库？</p>
+          <p> </p>
+          <p>快走吧，咕库。</p>
+          <p> </p>
+          <p>这里好可怕。</p>
+          <p> </p>
+          <p>快把我带到妈妈那里去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你帮我找到了跳舞的羽毛！</p>
+          <p> </p>
+          <p>我会把他藏在巢穴的深处，不会再让他被鸟妖抓走了。</p>
+          <p> </p>
+          <p>都是托[%username]的福。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说没什么大不了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是的，咕库！</p>
+          <p> </p>
+          <p>我因为诅咒不能去救跳舞的羽毛。</p>
+          <p> </p>
+          <p>如果失去跳舞的羽毛的话，白天我也变得会像中了诅咒一样残暴的，咕库。</p>
+          <p> </p>
+          <p>这是你帮我找到跳舞的羽毛的报答，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找被鸟妖抓回巢穴的[%dic:STR_DIC_N_NPC_LF2_Griffo]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">保护[%dic:STR_DIC_N_NPC_LF2_Griffo]，并把它带回 [%dic:STR_DIC_N_NPC_Griffonix]身边</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_NPC_Griffonix]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">火焰之格力普尼克斯的幼崽被抓走了。找到跳舞的羽毛，并把它带回到火焰之格力普尼克斯身边。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火焰之格力普尼克斯说小格里芬被抓走了，自己的孩子跳舞的羽毛也被抓走了。</p>
+          <p> </p>
+          <p>帮助因为诅咒而无法去寻找孩子的火焰之格力普尼克斯来到鸟妖的巢穴，找到了被关在那里的跳舞的羽毛，并把它安全地带了回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好。</p>
+          <p> </p>
+          <p>请您收下。这是极乐世界特殊作战部交给[%username]大人的紧急作战命令书。</p>
+          <p> </p>
+          <p>好像是非常紧急的事情，请马上确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 作战命令书 - </p>
+          <p></p>
+          <p>发件人：极乐世界特殊作战部</p>
+          <p></p>
+          <p>收件人：[%username]</p>
+          <p> </p>
+          <p>经特殊作战部确认，埃尔特内和因特尔蒂卡有魔族出现，给天族军队造成了威胁。敌人虽然人多势众，但却零散地分布于埃尔特内和因特尔蒂卡各地。</p>
+          <p> </p>
+          <p>特此下令，请迅速执行。</p>
+          <p></p>
+          <p>  1. 尽快掌握[%dic:STR_DIC_E_LF2_name]和[%dic:STR_DIC_E_LF3_name]的魔族的位置，消灭2人以上。</p>
+          <p></p>
+          <p>  2. 消灭敌人的方式不限。</p>
+          <p></p>
+          <p>  3. 但是如果消灭的只是能力很差的敌人，将有损特殊作战部的名誉。</p>
+          <p></p>
+          <p>  4. 确认敌人失去斗志后，向[%dic:STR_DIC_N_Valentius]报告</p>
+          <p></p>
+          <p>祝特殊作战部全体成员好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我会向上面报告，说[%username]大人同意执行任务。</p>
+          <p> </p>
+          <p>命令书中也说了，任务完成后请向我报告。</p>
+          <p> </p>
+          <p>确认任务完成后，我会给您一份与之相符的奖励。</p>
+          <p> </p>
+          <p>为了极乐世界的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想执行命令书中的任务吗？</p>
+          <p> </p>
+          <p>虽然不是强制的任务，但情况紧急，本部才会下达这样的特殊命令……</p>
+          <p> </p>
+          <p>好吧，[%username]大人的意思我明白了。</p>
+          <p> </p>
+          <p>我会如实向上面报告的。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦，[%username]大人。</p>
+          <p> </p>
+          <p>今天您消灭了多少个敌人呢？</p>
+          <p> </p>
+          <p>埃尔特内和因特尔蒂卡的任务也由我负责，请向我报告一下执行情况吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认任务完成，[%username]大人。</p>
+          <p> </p>
+          <p>这是极乐世界特殊作战部发给您的奖励。</p>
+          <p> </p>
+          <p>为了极乐世界的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]"></font>消灭[%dic:STR_DIC_E_LF2_name]和[%dic:STR_DIC_E_LF3_name]的[%dic:STR_DIC_E_Daily_1]([%2]/2)</p></step>
+               <step><p visible="[%3]"><font color="[%4]"></font>向[%dic:STR_DIC_N_Valentius]报告</p></step>
+    </steps>
+          <p><font font_xml="quest_summary">紧急指令：消灭埃尔特内和因特尔蒂卡的魔族，然后向埃雷修兰塔支部官员报告</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界特殊作战部下达了消灭埃尔特内和因特尔蒂卡的魔族的紧急指令。</p>
+          <p> </p>
+          <p>完成任务后，向埃雷修兰塔支部的官员报告，并得到了奖励。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

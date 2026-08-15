@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在龙界进行研究，将无法避免战斗，这我已经预想到了。</p>
+          <p> </p>
+          <p>(把背包给我看)看见这些了吗？ 备用武器、药水、封魂石、重生石，还有奇斯克……为了应对随时可能发生的战斗，我做了很多准备。</p>
+          <p> </p>
+          <p>如果你以为学者在战斗方面很弱就错了。</p>
+          <p> </p>
+          <p>过去的真相经常隐藏在危险的地方。学者们必须通过战斗找到那些秘密！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我的任务不是战斗，而是研究和调查。</p>
+          <p> </p>
+          <p>虽然预想到了，但英吉斯温妨碍我工作的东西实在太多了。特别是茂密枝叶洛特伦和粗枝奥格林特，它们的数量太多，让人根本无法涉足哈纳尔卡德平原。</p>
+          <p> </p>
+          <p>消灭它们并不困难，但如果花费太多时间在战斗上，就没有时间进行研究了。学者不进行研究，而把力气花在消灭周围的怪物上，那是一种很大的浪费。不是吗？</p>
+          <p> </p>
+          <p>但是如果你能帮我，情况就不同了。</p>
+          <p> </p>
+          <p>你能帮我消灭[%dic:STR_DIC_M_LF4_C_Rottentree_Green_54_An]和[%dic:STR_DIC_M_LF4_C_Agrint_Green_54_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上我不喜欢战斗。我认为只有花力气得到的东西才有真正的价值。</p>
+          <p> </p>
+          <p>但是洛特伦和奥格林特的数量实在太多，我的研究现在一点进展也没有。</p>
+          <p> </p>
+          <p>有了你的帮助，我就放心了。</p>
+          <p> </p>
+          <p>请你到哈纳尔卡德平原上去，帮我消灭茂密枝叶洛特伦和粗枝奥格林特。尽量多消灭一些，让它们不会对我的调查造成妨碍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是在忙别的事情吧？</p>
+          <p> </p>
+          <p>看来洛特伦和奥格林特我只能自己想办法了。</p>
+          <p> </p>
+          <p>虽然会耽误研究工作，但在龙界，战斗是不可避免的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人问我为什么不成为一名战斗员。确实，我的战斗能力很不错。</p>
+          <p> </p>
+          <p>但是我只在为了获得世间真理的时候才会战斗。</p>
+          <p> </p>
+          <p>你是为了什么而战斗的呢？如果没想过的话，最好仔细想一想。</p>
+          <p> </p>
+          <p>对了，洛特伦和奥格林特消灭掉了的话，就跟我说说具体情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你帮我。</p>
+          <p> </p>
+          <p>除了你之外，我还拜托了其他人帮我。但是敌人的数量实在太多，要想让哈纳尔卡德彻底变得安全，好像还需要一点时间。</p>
+          <p> </p>
+          <p>有时间的话，随时欢迎你来帮我。</p>
+          <p> </p>
+          <p>来，这是给你的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭洛特伦和奥格林特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_C_Rottentree_Green_54_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_C_Agrint_Green_54_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Yereos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭妨碍耶雷奥斯调查的洛特伦和奥格林特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>耶雷奥斯说在龙界经常需要战斗，给研究工作造成了影响，让我帮帮他。</p>
+          <p> </p>
+          <p>于是去消灭了哈纳尔卡德平原上的洛特伦和奥格林特，他对我表示感谢，说有时间的话，希望我能继续帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

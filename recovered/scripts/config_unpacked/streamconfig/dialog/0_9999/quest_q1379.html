@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，喂！走开。</p>
+          <p> </p>
+          <p>啊，不要误会。</p>
+          <p> </p>
+          <p>不是说[%username]大人您，我是在冲那边的德雷克喊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们在这儿横行霸道，我快活不下去了。</p>
+          <p> </p>
+          <p>原来这里的德雷克并不是很多。但是自从沙漠化变得严重，水源不足之后，它们就聚集到了这里。</p>
+          <p> </p>
+          <p>稍微一走神，它们就会把神秘泉的水喝光，弄到连实验用的水都没有了。</p>
+          <p> </p>
+          <p>虽然通往德雷克栖息地的入口被堵住了，但是那只是临时措施，我担心它们什么时候会钻过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">让他去除掉德雷克。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我当然想那样啦。但是我们对于战斗完全没有自信。</p>
+          <p> </p>
+          <p>您看上去像是很有经验的[%userclass]，您能帮帮我们吗？</p>
+          <p> </p>
+          <p>请您除掉在神秘泉周围徘徊的德雷克。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>那就请您帮我们除掉8头[%dic:STR_DIC_M_Drake_28_An]和4头[%dic:STR_DIC_M_Drake_30_An]吧。</p>
+          <p> </p>
+          <p>这样，它们才会因为害怕而逃走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有什么急事要做。</p>
+          <p> </p>
+          <p>那就没办法了。</p>
+          <p> </p>
+          <p>看样子您也很忙，请您快走吧。</p>
+          <p> </p>
+          <p>德雷克问题就随他去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没受伤吧？</p>
+          <p> </p>
+          <p>它们的尾巴非常锋利。</p>
+          <p> </p>
+          <p>上次我在捕捉一头德雷克的时候被它的尾巴刺中，受了很长一段时间的苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的帮我们把8头[%dic:STR_DIC_M_Drake_28_An]和4头[%dic:STR_DIC_M_Drake_30_An]全部除掉了吗！</p>
+          <p> </p>
+          <p>看来我找[%username]大人真是找对人了。</p>
+          <p> </p>
+          <p>真是了不起。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除拉塞宾神秘泉周围的德雷克</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Drake_28_An]([%2]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Drake_30_An]([%5]/4)</font></p></step>         
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Esaias]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把德雷克除掉，让生命的守护者可以安心地研究神秘泉的污染问题。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃塞奥斯抱怨说突然涌来的德雷克喝光了神秘泉的水，让他们无法正常地进行实验。</p>
+          <p> </p>
+          <p>于是帮助不熟悉战斗的生命的守护者除掉了德雷克。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

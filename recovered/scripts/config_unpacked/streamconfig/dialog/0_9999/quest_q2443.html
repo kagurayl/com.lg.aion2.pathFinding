@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对椰林们来说，莫尔海姆太贫瘠了。</p>
+          <p> </p>
+          <p>贝鲁斯兰应该还有希望。</p>
+          <p> </p>
+          <p>你帮我搜集的奥黛尔拉药丸，应该会起到帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是光把奥黛尔拉药丸送过去，是没有用的。</p>
+          <p> </p>
+          <p>必须对雾鬃部落进行侦察，掌握从那里可以得到奥黛尔拉的情报。</p>
+          <p> </p>
+          <p>你能去那个地方侦察，然后把情报交给贝鲁斯兰的[%dic:STR_DIC_N_Etun]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了为这一天准备，我操纵了奥德的流动。</p>
+          <p> </p>
+          <p>我可以让你飞到雾鬃部落的上空。</p>
+          <p> </p>
+          <p>结束飞行之后，你去贝鲁斯兰把奥黛尔拉药丸和情报交给[%dic:STR_DIC_N_Etun]就行。</p>
+          <p> </p>
+          <p>准备好了的话，就跟我说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">说准备好了。</Act>
+      <Act href="HACTION_SELECT1_1_1">说还没准备好。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>飞行一旦开始就无法停止。</p>
+          <p> </p>
+          <p>所以在飞行之前，你先把该做的事做完。</p>
+          <p> </p>
+          <p>准备好了的话，就跟我说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说准备好了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为路太远才拒绝我的吗？</p>
+          <p> </p>
+          <p>还是不敢沿着我创造的奥德的流动飞行啊？</p>
+          <p> </p>
+          <p>我是椰林，虽然现在变成了这个样子。</p>
+          <p> </p>
+          <p>对于椰林来说，操纵奥德的流动并不困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，守护者。</p>
+          <p> </p>
+          <p>有事的话，就说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出奥黛尔拉药丸，并转达泰山的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>这些奥黛尔拉药丸，我会好好使用的。</p>
+          <p> </p>
+          <p>以后见到泰山的话，帮我向他道谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">飞往雾鬃部落上空</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把奥黛尔拉药丸交给[%dic:STR_DIC_N_Etun]，并转达泰山的话</font></p></step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">按照泰山的拜托，去雾鬃部落上空侦察，并把奥黛尔拉药丸交给贝鲁斯兰的埃图恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰山说想要帮助同族，让我去侦察雾鬃部落，确认奥黛尔拉所在的地方。</p>
+          <p> </p>
+          <p>于是按照他的拜托飞到雾鬃部落进行了侦察，并去贝鲁斯兰把奥黛尔拉药丸和情报交给了埃图恩。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

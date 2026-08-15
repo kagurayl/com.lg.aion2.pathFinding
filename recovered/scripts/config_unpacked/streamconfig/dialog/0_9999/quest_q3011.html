@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，好烫。又口渴又害怕。</p>
+          <p> </p>
+          <p>还不如干脆完全燃烧变成灰的好，只要能从这痛苦中解脱出来。</p>
+          <p> </p>
+          <p>受到诅咒的这个地方的火焰不会熄灭也不会消失，就像我的生命这么顽固一样。</p>
+          <p> </p>
+          <p>我好害怕，椰林的本性会渐渐消失，然后变成怪物。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火势渐渐变大了，都是火焰蜥蜴喷吐出来的排泄物造成的。</p>
+          <p> </p>
+          <p>它们使我更加痛苦，使我更加怨恨它们。</p>
+          <p> </p>
+          <p>帮我减轻愤怒和痛苦吧，把那个[%dic:STR_DIC_M_BasiliskDLF2A_23_An]消灭掉。</p>
+          <p> </p>
+          <p>只有您可以帮助我，天族的守护者啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_BasiliskDLF2A_23_An]在燃烧之地的各个角落。</p>
+          <p> </p>
+          <p>不必心怀慈悲，对让我痛苦的生命。</p>
+          <p> </p>
+          <p>拜托了，守护者啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>荣耀的天族可以这样吗，可以对一个饱受痛苦的椰林不管不顾吗。</p>
+          <p> </p>
+          <p>跟龙族有什么区别，如果不行善事的话。</p>
+          <p> </p>
+          <p>诅咒你们所有人，呃呃...</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火焰更强烈了，随着火焰蜥蜴的增多。</p>
+          <p> </p>
+          <p>忍受着痛苦等待着，等待着那位回来。</p>
+          <p> </p>
+          <p>消灭它们了吗，为了我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然只有一点点，火势和痛苦还是减小了的。</p>
+          <p> </p>
+          <p>真是及时雨啊，那位对我的关怀。</p>
+          <p> </p>
+          <p>这是礼物，给椰林的朋友。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_BasiliskDLF2A_23_An]([%2]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_Agrint_Tartagan]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了救被火焰折磨的塔尔塔甘，消灭掉火焰蜥蜴吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔尔塔甘说由于火焰蜥蜴的排泄物燃烧之地的火势越来越大，并为此呼诉它的痛苦。</p>
+          <p> </p>
+          <p>为了塔尔塔甘消灭火焰蜥蜴回去后，塔尔塔甘多亏了我，火势和痛苦似乎减弱了很多，并送了我礼物。</p>    
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(触碰到外形像球一样的纳尔哈的记忆，浮现出了模糊的影像。)</p>
+          <p> </p>
+          <p>(看到了一个在帕休曼迪尔寺院巡逻的德拉坎。)</p>
+          <p> </p>
+          <p>(接下去的画面中，出现了和天族守护者战斗的情景，然后突然变的一片黑暗。)</p>
+          <p> </p>
+          <p>(应该把纳尔哈的记忆拿去给[%dic:STR_DIC_N_Antigone]看看。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是从安格利浦那边过来吗？</p>
+          <p> </p>
+          <p>可以的话，能跟我说说那里的情况吗？</p>
+          <p> </p>
+          <p>那边的要塞提交报告书的时间已经过了，但却没有任何消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出纳尔哈的记忆。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(盯着天空看了一会儿，然后回过头)好像是德拉坎的记忆。</p>
+          <p> </p>
+          <p>是从不稳定的纳尔哈的身上获得的东西吗？</p>
+          <p> </p>
+          <p>好像能看到他变成怪物之前的样子，但遗憾的是，记忆中断了。</p>
+          <p> </p>
+          <p>如果能知道他从普通的德拉坎变成德拉坎守护神将的过程，对我们来说应该会是非常有用的情报……</p>
+          <p> </p>
+          <p>您能稍等一下吗？我来看看能不能复原。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，让您久等了。损坏比想象的要严重，在德尔娜的帮助下，才好不容易复原。</p>
+          <p> </p>
+          <p>从复原后的记忆来看，守护帕休曼迪尔寺院的纳尔哈在和天军的战斗中受了重伤，最后晕倒了。</p>
+          <p> </p>
+          <p>休拉玛的部下们把他抬进了阿拉卡的实验室中，然后在他身上使用龙胶，说是治疗药。</p>
+          <p> </p>
+          <p>虽然记忆没能完全复原，不能知道更详细的内容，但这么多已经是很大的成果了。</p>
+          <p> </p>
+          <p>请您把它交给英吉斯温幻影要塞的[%dic:STR_DIC_N_Leah]百夫长大人。那里应该可以将纳尔哈的记忆完全复原出来。那样的话，对于了解龙族的技术会有很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。我收到了安提格内的联络。</p>
+          <p> </p>
+          <p>"听说发现了和龙族的活体研究有关的情报,快让我看看到底是什么东西吧。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出复原的纳尔哈的记忆。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(盯着天空看了一会儿，然后回过头)这是个非常重要的东西。</p>
+          <p> </p>
+          <p>我们虽然一直在努力搜集龙族活体实验的情报，但是得到的情报却少之又少。</p>
+          <p> </p>
+          <p>多亏了你，事情慢慢变得明朗了。我必须向上面报告，尽快将这个东西完美地复原。</p>
+          <p> </p>
+          <p>[%username]，谢谢你。如果你发现了类似的东西，请一定要拿来给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把纳尔哈的记忆交给[%dic:STR_DIC_N_Antigone]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把复原的纳尔哈的记忆交给[%dic:STR_DIC_N_Leah]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打倒不稳定的纳尔哈，获得了纳尔哈的记忆。应该拿去给安提格内看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把不稳定的纳尔哈的记忆交给安提格内之后，她说其中包含着曾经是德拉坎的纳尔哈变异成守护神将的过程，必须向上司报告。</p>
+          <p> </p>
+          <p>把安提格内复原的纳尔哈的记忆交给了雷阿赫百夫长，他对我表示感谢，说这是了解龙族活体实验的重要线索。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊拉西克村庄的三尖树是，莫尔海姆的主要生产物品其中之一。</p> 
+          <p> </p>
+          <p>伊拉西克村这里的主要收入来源是三尖树种子。居民们大部分都在从事和三尖树种子有关的工作。</p> 
+          <p> </p>
+          <p>那是杀星和弓星设置陷阱的时候必须用到的东西，因此不用担心会没有市场。</p>
+          <p> </p>
+          <p>伏魔殿对三尖树种子也非常关心。因为那是战斗中必需的东西。</p>
+          <p> </p>
+          <p>所以才会派遣我这个行政官到这里来，清除对三尖树种植造成妨碍的所有的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近引起我注意的，是飞艇失事地的火焰彭基和粗暴卡尔克盖伦。它们燃烧着火焰，如果接近三尖树林的话，就会造成大问题。</p>
+          <p> </p>
+          <p>本来它们生活在离村子很远的地方，我也并不担心。但是听说最近它们的活动范围越来越大了。</p>
+          <p> </p>
+          <p>只要过了红色熔岩山崖，马上就是村子，不是吗？因此在它们造成问题之前，应该把它们清除掉。</p>
+          <p> </p>
+          <p>所以我才会派遣到，这么险恶的地方，但光靠我一个人是有些困难哟。</p>
+          <p> </p>
+          <p>[%username]大人，您能接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您到飞艇失事地去，把[%dic:STR_DIC_M_FireFungyRe2D_34_An]和[%dic:STR_DIC_M_SouledStoneAD_33_An]清除掉。</p>
+          <p> </p>
+          <p>您只要清除掉25头火焰彭基和9头粗暴卡尔克盖伦就行了。</p>
+          <p> </p>
+          <p>全部清除掉之后，请您回来找我。我会给您银铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%username]大人不使用三尖树种子吧？看您这么漠不关心。</p>
+          <p> </p>
+          <p>不过您拒绝我也没关系。</p>
+          <p> </p>
+          <p>反正想要获得银铸币的守护者有很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我本来以为种庄稼就是浇浇水，捉捉虫就行了，谁知道没这么简单。</p>
+          <p> </p>
+          <p>还得留意破坏作物的野兽，事情是做也做不完。</p>
+          <p> </p>
+          <p>我让您清除的怪物都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除了会烧掉三尖树的家伙，我就可以稍微放心一点了。</p>
+          <p> </p>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>这是说好的银铸币。希望能对[%username]大人有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除威胁三尖树的东西</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FireFungyRe2D_34_An]([%2]/25)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SouledStoneAD_33_An]([%5]/9)</font></p></step>               
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Atotas]报告</font></p></step>               
+               
+    </steps>
+          <p><font font_xml="quest_summary">去飞艇失事地清除威胁到三尖树的火焰彭基和粗暴卡尔克盖伦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官罗亚说必须事先把有可能危害三尖树的东西除掉。</p>         
+          <p> </p>
+          <p>于是按照他的拜托，清除掉了火焰彭基和粗暴卡尔克盖伦，获得了银铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来寻找火之羽毛的吧，咕库！</p>
+          <p> </p>
+          <p>人们一看我，就只想着从我这里得到火之羽毛，咕库！</p>
+          <p> </p>
+          <p>说是为了火之剑。或者说是可以卖个好价钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能就这样把火之羽毛给你，咕库！</p>
+          <p> </p>
+          <p>把我想要的东西拿来的话就给你。</p>
+          <p> </p>
+          <p>那是很难找到的东西。</p>
+          <p> </p>
+          <p>你还是想得到火之羽毛吗，咕库？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1384a]、[%dic:STR_DIC_I_QUEST_1384b]和[%dic:STR_DIC_I_QUEST_1384c]。</p>
+          <p> </p>
+          <p>把这些东西拿来给我，咕库。</p>
+          <p> </p>
+          <p>只有除掉伤害格里芬的野兽才能获得。</p>
+          <p> </p>
+          <p>把它们除掉之后把证据拿来，我就把火之羽毛给你，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果没有我要的东西的话，就没有火之羽毛。</p>
+          <p> </p>
+          <p>如果你不答应我的要求的话，就从我面前离开，咕库。</p>
+          <p> </p>
+          <p>人类总是很让人讨厌，咕库。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_I_QUEST_1384a]、[%dic:STR_DIC_I_QUEST_1384b]和[%dic:STR_DIC_I_QUEST_1384c]带来了吗？</p>
+          <p> </p>
+          <p>如果你想拿到火之羽毛的话，需要带每样7个来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格力普尼克斯不喜欢开玩笑，咕库。</p>
+          <p> </p>
+          <p>没有我要的东西的话，就没有火之羽毛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们敢碰格里芬，要让它们尝尝教训，咕库。</p>
+          <p> </p>
+          <p>现在它们不会随便攻击格里芬了。</p>
+          <p> </p>
+          <p>我把说好的火之羽毛给你，咕库。</p>
+          <p> </p>
+          <p>快拿着走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集要求的东西，然后交给[%dic:STR_DIC_N_NPC_Griffonix]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去除掉伤害格里芬的[%dic:STR_DIC_M_Harpy_all]、[%dic:STR_DIC_M_Pretor_31_all]和[%dic:STR_DIC_M_elementalair3_33_all]，然后把证据交给火焰之格力普尼克斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火焰之格力普尼克斯说如果要得到火之羽毛的话，就去除掉伤害格里芬的鸟妖、普雷尔和风之精灵。</p>
+          <p> </p>
+          <p>于是去除掉了它们，把证据交给了它。它按照约定，把火之羽毛给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

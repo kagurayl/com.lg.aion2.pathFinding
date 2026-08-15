@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别指令</p>
+          <p> </p>
+          <p>战场要塞是天魔之间展开残酷的肉搏战的地方。</p>
+          <p> </p>
+          <p>希望不要有愚蠢的守护者怀疑这场战争的意义。</p>
+          <p> </p>
+          <p>为了获得胜利，我们已经竭尽全力。</p>
+          <p> </p>
+          <p>请把要塞队长消灭掉。他们的死亡会让胜利之神微笑的。</p>
+          <p> </p>
+          <p>他们的名字是[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q03]、[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q04]和[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q05]。</p>
+          <p> </p>
+          <p>- [%dic:STR_DIC_N_Kirhua] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于我们来说，要塞是军事要地。而保护要塞队长，是守卫要塞的核心。</p>
+          <p> </p>
+          <p>天族的情况应该也是如此。</p>
+          <p> </p>
+          <p>如果能攻击英吉斯温要塞和要塞队长，我们就会有胜算。</p>
+          <p> </p>
+          <p>我因此随机发布了特别指令，承诺向成功消灭要塞队长的人发放非常好的奖励。</p>
+          <p> </p>
+          <p>那就是红晶石戒指和绿松石戒指。</p>
+          <p> </p>
+          <p>"这些珍贵的东西等待主人已经太久了，因此花费了20,000,000基纳的修理费。如果它们的主人出现，必须先支付相应的修理费。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">"报告结果，并拿出20,000,000基纳。"</Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？戒指们的主人终于出现了吗？</p>
+          <p> </p>
+          <p>真让人吃惊。您杀死了天族的关卡队长……</p>
+          <p> </p>
+          <p>看来您一定是个了不起的人。</p>
+          <p> </p>
+          <p>"您愿意支付20,000,000基纳，成为珍贵戒指的主人吗？"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">"拿出20,000,000基纳。"</Act>
+      <Act href="HACTION_FINISH_DIALOG">再考虑一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在有很多蠢货对天魔之间这场宿命的战争表示怀疑的这个时代，您这样的人可以称为英雄。</p>
+          <p> </p>
+          <p>红晶石戒指和绿松石戒指终于找到了主人。</p>
+          <p> </p>
+          <p>"这些戒指等待了太久，因此需要修理一下，所以我需要收取20,000,000基纳。"</p>
+          <p> </p>
+          <p>红晶石戒指和绿松石戒指中，您想选择哪一种呢？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select9">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>越是珍贵的东西，在漫长的时间内如果找不到可以刻印灵魂的主人，东西的功能就会下降。</p>
+          <p> </p>
+          <p>必须经过修理，让戒指恢复原来的力量，但是需要的研磨剂价格非常昂贵。</p>
+          <p> </p>
+          <p>"和戒指的价值相比，这些钱根本算不了什么。请您快去准备20,000,000基纳吧。"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q03]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q04]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">消灭[%dic:STR_DIC_M_LF4_Gateway_Li_Guard_Boss_Q05]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">"准备好20,000,000基纳，然后向[%dic:STR_DIC_N_Kirhua]报告"</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了消灭天族关卡队长的指令书。应该执行任务，然后去见见齐尔胡亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了消灭天族关卡队长阿格洛斯、埃伊雷和帕西帕埃的指令书。</p>
+          <p> </p>
+          <p>完成任务之后，见到了齐尔胡亚。他对我的功劳表示感谢，在收取了一些钱之后，给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

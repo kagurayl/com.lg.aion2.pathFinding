@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好，我正在想该怎么和您联系呢。</p>
+          <p> </p>
+          <p>智慧之神庙发来了一份公文，[%username]您也好像符合要求。</p>
+          <p> </p>
+          <p>您可以使用上级烙印之石吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您果然没有辜负我的期待。</p>
+          <p> </p>
+          <p>智慧之神庙下达了指示，让我向魔道星和精灵星发放奖励，而只有可以熟练使用上级烙印之石的守护者，才有资格领取。</p>
+          <p> </p>
+          <p>他们可能是希望通过这一措施，鼓励使用上级烙印之石。虽然这件事不能在外面讲，但有人认为上级烙印之石中混有龙族的东西，因此不愿意使用。</p>
+          <p> </p>
+          <p>好像扯得太远了。[%username]，您觉得怎么样呢？</p>
+          <p> </p>
+          <p>您想领取智慧之神庙发放的奖励吗？当然，世界上没有免费的午餐，您必须付出一定的代价。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然很勇敢。没问我需要付出什么代价，就欣然答应了。所以我很欣赏您。</p>
+          <p> </p>
+          <p>领取奖励的方法说简单就简单，说难就难。</p>
+          <p> </p>
+          <p>只要能完美地掌握一种上级烙印之石技能就可以了。</p>
+          <p> </p>
+          <p>[%username]你是魔道星，学习***应该会比较好吧。</p>
+          <p> </p>
+          <p>请您使用***10次，然后再回来找我。您是个优秀的魔道星，这点小事应该不成问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，您为什么要拒绝呢？该不会是害怕付出代价吧？</p>
+          <p> </p>
+          <p>智慧之神庙难道会让[%username]您去做过分的事情吗？</p>
+          <p> </p>
+          <p>如果真是那样的话，我也不会跟[%username]您说了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就完成了？</p>
+          <p> </p>
+          <p>比其他人快多了。您真的使用过10次***了吗？</p>
+          <p> </p>
+          <p>请您靠近一点，让我可以确认您是否完成了约定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">靠近一些。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用手放在我的头上)您果然按照约定，努力使用了***。这样的话，其他的上级烙印之石您应该也可以熟练使用了。</p>
+          <p> </p>
+          <p>来，请您收下。这是智慧之神庙给您的奖励。</p>
+          <p> </p>
+          <p>希望您能和***一样熟练掌握，并用来击退天族。</p>
+          <p> </p>
+          <p>希望您能把智慧之神庙的名字，传播到整个亚特雷亚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Wi]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Sif]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">据说智慧之神庙正在向能够熟练使用上级烙印之石的魔道星发放上级烙印之石。使用***，证明自己可以熟练使用上级烙印之石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡普说智慧之神庙正在向能够熟练使用上级烙印之石的魔道星和精灵星发放上级烙印之石。</p>
+          <p> </p>
+          <p>按照锡普的指示，熟练掌握了***。回去之后，他按照约定，给了我一块烙印之石。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

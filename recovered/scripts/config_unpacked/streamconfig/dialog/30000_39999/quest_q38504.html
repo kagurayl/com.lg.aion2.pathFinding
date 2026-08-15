@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能到这里来，一定是个很强的守护者，呐呐。</p>
+          <p> </p>
+          <p>这里经常发生危险的战斗，你有自信吗！？</p>
+          <p> </p>
+          <p>我经常看见穿着很好的防具的守护者被敌人追着到处跑，呐呐。</p>
+          <p> </p>
+          <p>如果你不做好充分的准备，一定也会吃苦头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我忘了说正事了。</p>
+          <p> </p>
+          <p>你有神圣证物吗？</p>
+          <p> </p>
+          <p>你能到这里来，应该参加过神圣守护会的活动吧……我说得对吗？</p>
+          <p> </p>
+          <p>我最近正在搜集证物，我需要很多神圣证物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能给我神圣证物，我可以给你特殊作战部证物或猎人的证物，呐呐。</p>
+          <p> </p>
+          <p>最近一段时间，有很多人在搜集特殊作战部证物或猎人的证物。这可是绝好的机会！</p>
+          <p> </p>
+          <p>快给我6个神圣证物吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神圣证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像对证物不是很感兴趣嘛。</p>
+          <p> </p>
+          <p>本以为到这里来的守护者应该对任务活动更感兴趣呢，呐呐。</p>
+          <p> </p>
+          <p>好的，我知道了。在魔族过来之前，你快走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你问我待在这里危不危险？</p>
+          <p> </p>
+          <p>我对自己逃跑的本事很有信心。</p>
+          <p> </p>
+          <p>你还是担心你自己吧。如果你带来了神圣证物，就快交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神圣证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是跟你说过吗，呐呐？</p>
+          <p> </p>
+          <p>必须给我6个神圣证物才能交换其他证物。</p>
+          <p> </p>
+          <p>我的交易条件已经比别人好多了，你就别抱怨了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，确实是神圣证物，呐呐。</p>
+          <p> </p>
+          <p>我看你的身手不同一般，果然是神圣守护会出身的人。</p>
+          <p> </p>
+          <p>这是给你的证物，</p>
+          <p> </p>
+          <p>我这里有特殊作战部证物和猎人的证物，请你好好挑选，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_COIN_PROTECTION_01]，然后交给[%dic:STR_DIC_N_Shugo_Exchange_05]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伊酷隆说正在搜集神圣证物。应该去帮她搜集神圣证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>铜钱收藏家伊酷隆说如果能帮她搜集神圣证物，就会用其他证物和我交换。</p>
+          <p> </p>
+          <p>把神圣证物交给了伊酷隆，她按照约定把其他证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

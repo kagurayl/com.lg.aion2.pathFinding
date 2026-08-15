@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有一个未完成的任务。</p>
+          <p> </p>
+          <p>如果那个任务无法完成，我就没脸去见鲁德拉大人。</p>
+          <p> </p>
+          <p>但是我变成了这个样子，无法继续执行任务了。</p>
+          <p> </p>
+          <p>要想完成任务，我需要借助别人的帮助。不管是谁都可以，只要能帮我完成任务。</p>
+          <p> </p>
+          <p>但是英吉斯温没有可以帮助我的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我接到的命令是消灭提亚马特的部队。</p>
+          <p> </p>
+          <p>无论发生什么事，我都必须消灭提亚马特的部队。</p>
+          <p> </p>
+          <p>即使是和他们同归于尽，也必须完成任务。</p>
+          <p> </p>
+          <p>你能帮帮我吗？帮我消灭[%dic:STR_DIC_E_IDCatacombsN_UnDrakanGhost_All]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提亚马特的部下们在黄金骨灰堂里。</p>
+          <p> </p>
+          <p>你只要去消灭[%dic:STR_DIC_M_IDCatacombsN_UnDrakanGhostFi_55_Ae]、[%dic:STR_DIC_M_IDCatacombsN_UnDrakanGhostWi_55_Ae]、[%dic:STR_DIC_M_IDCatacombsN_UnDrakanGhostAs_55_Ae]、[%dic:STR_DIC_M_IDCatacombsN_UnDrakanGhostSc_55_Ae]和[%dic:STR_DIC_M_IDCatacombsN_UnDrakanGhostCl_55_Ae]就行。</p>
+          <p> </p>
+          <p>我相信你一定会遵守承诺，把他们消灭掉。</p>
+          <p> </p>
+          <p>如果你能遵守约定，我会给你相应的报答。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我忘了有些人会选择置身事外，即使任务非常重要。</p>
+          <p> </p>
+          <p>看来我是被完成任务的欲望迷昏了头脑。</p>
+          <p> </p>
+          <p>忘了我跟你说过的话吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我们忠实地执行任务，鲁德拉大人总有一天会回来帮助我们。</p>
+          <p> </p>
+          <p>为了让鲁德拉大人能够堂堂正正地回来，我必须竭尽全力。</p>
+          <p> </p>
+          <p>提亚马特的部下消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。你帮了我很大的忙。</p>
+          <p> </p>
+          <p>但是还有很多提亚马特的手下。</p>
+          <p> </p>
+          <p>要想把他们消灭掉，需要很多的时间。</p>
+          <p> </p>
+          <p>相信你一定会继续帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDCatacombsN_UnDrakanGhost_All]([%2]/25)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Bhemah]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">布赫玛说还有未完成的任务。必须去黄金骨灰堂，消灭德拉坎战斗士官的灵魂、消灭德拉坎法师士官的灵魂、消灭德拉坎暗袭士官的灵魂、消灭德拉坎搜索士官的灵魂和消灭德拉坎医务士官的灵魂。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲁德拉的手下布赫玛说必须执行生前留下的任务，让我帮他消灭提亚马特的手下。</p>
+          <p> </p>
+          <p>他让我前往黄金骨灰堂消灭提亚马特的手下，直到他们全部消失。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

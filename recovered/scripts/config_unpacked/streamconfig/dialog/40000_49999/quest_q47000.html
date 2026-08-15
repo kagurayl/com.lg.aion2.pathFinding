@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Turbo] </p>
+          <p>训练内容：检查要塞警卫装置</p>
+          <p> </p>
+          <p>这次[%username]的训练内容是检查要塞的警卫装置。</p>
+          <p>请您和导师一起去确认一下[%dic:STR_DIC_OBJ_Q47000]有没有什么异常。</p>
+          <p>需要记住的是，魔法球无法一个人确认。所以请您一定要找一个[%dic:STR_DIC_E_Mentor]%，组成组队后一起去确认魔法球。</p>
+          <p>确认完魔法球之后，请您把可以查看魔法球状态的水晶球拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>您去确认过阿尔特盖德警卫魔法球了吗？</p>
+          <p> </p>
+          <p>请把水晶球交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水晶球。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>查看阿尔特盖德警卫魔法球应该并不是什么困难的事。</p>
+          <p> </p>
+          <p>现在我们必须马上对魔法球进行确认。</p>
+          <p> </p>
+          <p>请您尽快找到导师，和他一起去查看[%dic:STR_DIC_OBJ_Q47000]%，然后把[%dic:STR_DIC_I_quest_47000a]%拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看水晶球)让我看看。</p>
+          <p> </p>
+          <p>还好运转正常。</p>
+          <p> </p>
+          <p>您也知道，守护者的任务不光是战斗。保护要塞和居民的安全也是非常重要的工作。</p>
+          <p> </p>
+          <p>希望这次训练能成为[%username]大人的宝贵经验。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用[%dic:STR_DIC_E_Mentor]%一起去确认[%dic:STR_DIC_OBJ_Q47000]%，搜集[%dic:STR_DIC_I_quest_47000a]%，然后交给[%dic:STR_DIC_N_Turbo]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，确认阿尔特盖德警卫魔法球，并搜集用来确认状态的水晶球。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我去确认阿尔特盖德警卫魔法球的状态。</p>
+          <p> </p>
+          <p>于是和导师一起确认了魔法球的状态，并搜集到了用来确认状态的水晶球。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

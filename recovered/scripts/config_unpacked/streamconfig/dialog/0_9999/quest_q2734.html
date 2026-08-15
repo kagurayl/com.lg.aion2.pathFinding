@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前多亏您帮我搜集到了高纯度奥德碎片，终于为军团士兵们准备好了好的武器。</p>
+          <p> </p>
+          <p>但是这次还需要[%dic:STR_DIC_G_od_n_r_40a]。</p>
+          <p> </p>
+          <p>高纯度奥德可以从燃烧的奥德中提取到。</p>
+          <p> </p>
+          <p>但是必须要有很强的奥德提取能力，才能提取得到，所以不能随便拜托其他人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的事情，[%username]大人您还能帮帮我吗？</p>
+          <p> </p>
+          <p>为什么需要，我想上次已经跟您说的很清楚了，应该没有必要再跟您重复。</p>
+          <p> </p>
+          <p>而且[%username]大人除了具备高超的奥德提取能力之外，还非常诚实。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是非常感谢。有[%username]大人在，真是太好了。</p>
+          <p> </p>
+          <p>认真练习过奥德提取的守护者其实并没有想象当中的那么多。可以从[%dic:STR_DIC_G_od_40_1]中提取出高纯度奥德的守护者就没有几个人，所以要找到能帮我的人真的不容易。</p>
+          <p> </p>
+          <p>搜集[%dic:STR_DIC_G_od_n_r_40a]需要很长的时间，也很辛苦，但是我相信您一定会帮我搜集到的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来就没有什么人好拜托的，这下可糟了。</p>
+          <p> </p>
+          <p>我还以为[%username]大人一定会帮我的呢...</p>
+          <p> </p>
+          <p>如果您有别的事情的话，我也不好强迫您。请您有了时间之后再来帮帮我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我就知道[%username]大人您一定会帮我搜集到[%dic:STR_DIC_G_od_n_r_40a]的。</p>
+          <p> </p>
+          <p>好了，请您把搜集到的东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出高纯度奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没搜集到吗？</p>
+          <p> </p>
+          <p>当然我知道这件事并不容易，但是现在情况非常紧急。</p>
+          <p> </p>
+          <p>如果没有[%dic:STR_DIC_G_od_n_r_40a]的话，补给品的制作工作就必须要延后。</p>
+          <p> </p>
+          <p>所以请您快去帮我从[%dic:STR_DIC_G_od_40_1]中提取高纯度奥德吧。</p>
+          <p> </p>
+          <p>为了伏魔殿的光荣，拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]大人一定可以帮我搜集到的。</p>
+          <p> </p>
+          <p>我得赶紧把它送到亚特雷亚去，让他们赶快制作补给品。</p>
+          <p> </p>
+          <p>因为奥德的问题，补给品的制作差点就出现了问题。真是谢谢您。您可帮了我的大忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_G_od_40_1]中提取高纯度奥德，然后交给[%dic:STR_DIC_N_Blir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">布利尔说在制造补给品的时候，由于缺少高纯度奥德，现在正面临巨大的困难。应该去燃烧的奥德中提取高纯度奥德，然后交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布利尔说制造补给品的时候需要用到高纯度奥德，现在手头的数量不够，所以正面临困境。</p>
+          <p> </p>
+          <p>他向我强调了补给品的重要性，让我去帮他搜集高纯度奥德。于是去帮他去燃烧的奥德中提取到了高纯度奥德。</p>
+          <p> </p>
+          <p>按照约定把高纯度奥德交给他自后，布利尔显得非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

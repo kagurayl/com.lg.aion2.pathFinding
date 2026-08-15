@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在和龙族的战斗中，最重要的是不要给他们喘息的机会。</p>
+          <p> </p>
+          <p>必须不断进攻，不让他们有调整的时间。</p>
+          <p> </p>
+          <p>为此，我们需要众多守护者的协助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，有个任务我想交给你。</p>
+          <p> </p>
+          <p>任务很简单，只要你有热情，就可以很快完成。</p>
+          <p> </p>
+          <p>你愿意接受吗，[%username]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要做的就是渗透到德雷得奇安内部，从头一直杀到最后。</p>
+          <p> </p>
+          <p>执行三遍左右，就能给龙族造成巨大的打击，证明[%username]你的热情。</p>
+          <p> </p>
+          <p>此外，请你把[%dic:STR_DIC_M_IDAb1_Dreadgion_NagaPr_50_Ae]除掉。消灭治疗师，在任何时候都是明智的策略。</p>
+          <p> </p>
+          <p>那就拜托你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你该不会是嫌任务太累吧？</p>
+          <p> </p>
+          <p>我觉得这个任务很容易啊。只要渗透到德雷得奇安内部，任何人都可以很容易地完成……</p>
+          <p> </p>
+          <p>看来是我看错人了。</p>
+          <p> </p>
+          <p>[%username]，除了你之外，一定还能找到其他人。我再找找看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]！</p>
+          <p> </p>
+          <p>听海尼尔说你去执行重要任务了？</p>
+          <p> </p>
+          <p>跟我说说结果如何吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>我知道[%username]你已经觉醒很久了。没想到还保持着这样的热情，看来一定不是一个普通的守护者。</p>
+          <p> </p>
+          <p>来，拿着。这是对你的诚实和热情的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在德雷得奇安内部战斗，消灭治疗师</font></p>
+                     <p visible="[%0]"><font color="[%1]">  德雷得奇安内部战斗 ([%2]/3)</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_NagaPr_50_Ae]([%5]/8)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Votan]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了给德雷得奇安造成持续的打击，决定去执行战斗任务，消灭纳加精锐治疗师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海尼尔说要想给德雷得奇安造成打击，必须继续进行攻击。</p>
+          <p> </p>
+          <p>于是继续去德雷得奇安内部进行战斗，并按照他的委托消灭掉了纳加精锐治疗师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

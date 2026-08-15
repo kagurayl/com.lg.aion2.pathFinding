@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到你，我有一种特殊的感觉。</p>
+          <p> </p>
+          <p>感觉你可以为我解决多年以来一直埋藏在心底的事情。</p>
+          <p> </p>
+          <p>现在想到那个朋友……</p>
+          <p> </p>
+          <p>一想到我犯下的不可饶恕的错误，我的心就很痛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去，我曾经接到了一个任务，需要去帕休曼迪尔寺院。</p>
+          <p> </p>
+          <p>有个名叫阿赫巴纳的朋友和我一起接受了任务……去了那里……</p>
+          <p> </p>
+          <p>我当时的行为太卑鄙了，我不想告诉你详细的事情。</p>
+          <p> </p>
+          <p>结果就是我逃走了，而那位朋友则受到了诅咒，变成了僵尸，一直被囚禁在帕休曼迪尔寺院里。</p>
+          <p> </p>
+          <p>我希望拯救他……你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿赫巴纳受到了诅咒，被囚禁在守护者哨所，守卫着帕休曼迪尔寺院。</p>
+          <p> </p>
+          <p>请你到地下的惩罚骨灰堂和黄金骨灰堂中，把[%dic:STR_DIC_OBJ_IDCatacombsN_Reric_Q30222]破坏掉。</p>
+          <p> </p>
+          <p>那样的话，奴隶阿赫巴纳就会在守护者哨所出现了。</p>
+          <p> </p>
+          <p>请你一定要消灭[%dic:STR_DIC_E_IDCatacombsN_SpecterNmd_55_Ah]，让我朋友的灵魂从诅咒中解救出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你……不愿意吗？</p>
+          <p> </p>
+          <p>我本以为你是可以为我放下心中负担的人……真遗憾。</p>
+          <p> </p>
+          <p>也许我得自己去解救他，但我却下不了手……</p>
+          <p> </p>
+          <p>不知道什么时候，能够帮我拯救朋友的人才会出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦。</p>
+          <p> </p>
+          <p>奴隶阿赫巴纳……召唤出来了吗？</p>
+          <p> </p>
+          <p>你让他那受到诅咒的灵魂安息了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>多亏了你，我的心终于得到了平静。</p>
+          <p> </p>
+          <p>阿赫巴纳的灵魂一定也会得到安息的。</p>
+          <p> </p>
+          <p>再次对你表示感谢，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+
+
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_OBJ_IDCatacombsN_Reric_Q30222]，召唤并消灭[%dic:STR_DIC_E_IDCatacombsN_SpecterNmd_55_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Aurbotha]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奥尔博塔说有个朋友受到了诅咒，被束缚在帕休曼迪尔寺院中。去解开奴隶阿赫巴纳的束缚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔博塔说和他一起去帕休曼迪尔寺院执行任务的朋友受到了诅咒，被束缚在了那里，成为了守护那里的人，让我去拯救他的灵魂。</p>
+          <p> </p>
+          <p>于是按照他的委托，破坏了龙族战士纪念碑。奴隶阿赫巴纳出现后，消灭了他，把他的灵魂从束缚中解救了出来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

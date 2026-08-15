@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>贝拉特里斯姐妹送来了消息，说埃尔特内的情况让人非常不安。很多兄弟姐妹正在努力击退埃尔特内的克拉尔，但是没有取得很好的成果。</p>
+          <p> </p>
+          <p>得知这个消息之后，8位圣女指示说“通过实战，让年轻守护者成长”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为埃尔特内修炼守护者的导师，告诉他们如何对付[%dic:STR_DIC_M_37105]。</p>
+          <p> </p>
+          <p>然后请把你对[%dic:STR_DIC_E_Li_25_35]的评价告诉[%dic:STR_DIC_N_Velatris]姐妹。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直希望[%username]大人能成为导师，真是太好了。</p>
+          <p> </p>
+          <p>您的实战经验比任何人都要丰富。能有幸获得[%username]大人帮助的人是谁呢？</p>
+          <p> </p>
+          <p>哦，对了，您能先把训练结果告诉我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>训练结果非常好，真是太好了。都是因为导师是[%username]大人，才会取得这样的成果。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>再次对您表示感谢。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_25_35]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_37105]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让埃尔特内修炼守护者们恢复自信，必须成为他们的导师，和他们一起消灭凯丹精锐克拉尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是训练不知道如何对付凯丹精锐克拉尔的埃尔特内修炼守护者。</p>
+          <p> </p>
+          <p>成为年轻守护者的导师，教会他们击退凯丹精锐克拉尔的方法之后，向贝拉特里斯报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

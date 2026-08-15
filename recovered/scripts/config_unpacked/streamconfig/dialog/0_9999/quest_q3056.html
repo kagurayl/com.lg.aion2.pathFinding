@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>以下列罪名，通缉越狱犯[%dic:STR_DIC_N_Siraus]。</p>
+          <p> </p>
+          <p> 1. 杀害霍莫伦一族</p>
+          <p> </p>
+          <p> 2. 打倒护送兵后逃走</p>
+          <p> </p>
+          <p>提供西拉乌斯行踪的决定性情报，或直接杀死西拉乌斯者，将会得到重谢。</p>
+          <p> </p>
+          <p>行政官[%dic:STR_DIC_N_Iphigenia] 上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">决定去抓捕西拉乌斯。</Act>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请先听我解释一下。</p>
+          <p> </p>
+          <p>杀死霍莫伦的不是我。我怎么会杀死情同手足的朋友呢。</p>
+          <p> </p>
+          <p>真正的罪犯另有其人。真的。我以父母的名义发誓。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问真正的罪犯是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你叫什么？</p>
+          <p> </p>
+          <p>好的，[%username]。你好像和别人不太一样。</p>
+          <p> </p>
+          <p>我去霍莫伦家的时候，他们已经死了。四周都充满了血腥味，还有…那种味道。</p>
+          <p> </p>
+          <p>充满了恐怖的灵魂的味道，没错，那一定是[%dic:STR_DIC_M_LF2A_SpectreFxQ_50_An]的味道。</p>
+          <p> </p>
+          <p>我追随着那种味道来到了马波路洞穴，但却对付不了它。</p>
+          <p> </p>
+          <p>[%username]，你一定要帮我，不，帮我的朋友霍莫伦抓住他。拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打败吞噬死亡的马波路了吗？</p>
+          <p> </p>
+          <p>就在马波路洞穴里吧？</p>
+          <p> </p>
+          <p>我敢肯定。我的鼻子从来没有出错过。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，[%username]。</p>
+          <p> </p>
+          <p>霍莫伦现在应该可以安心地回到奥德的流动之中了。</p>
+          <p> </p>
+          <p>还有那些被马波路杀死的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找越狱犯[%dic:STR_DIC_N_Siraus]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">杀死[%dic:STR_DIC_M_LF2A_SpectreFxQ_50_An]([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Siraus]对话</font></p></step>        
+    </steps>
+          <p><font font_xml="quest_summary">必须找到越狱犯西拉乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在马波路洞穴见到了被悬赏通缉的越狱犯西拉乌斯。</p>   
+          <p> </p>
+          <p>想要把他带走的时候，他说杀死霍莫伦一家的真正罪犯另有其人，请我去抓住它。</p>      
+          <p> </p>
+          <p>杀死了西拉乌斯所说的吞噬死亡的马波路，西拉乌斯对我表示感谢，说他的朋友霍莫伦终于可以安心地去了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我了解您， [%username].</p>
+          <p> </p>
+          <p>丛林和树木的守卫者。</p>
+          <p> </p>
+          <p>您是除掉[%dic:STR_DIC_MLA54]%的大恩人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是您除掉了。吸吮树汁的蚰蜒。</p>
+          <p> </p>
+          <p>不过它们还会折磨树木，直到被灭绝的瞬间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们需要除掉[%dic:STR_DIC_MLA54]%的人。</p>
+          <p> </p>
+          <p>帮我们清除吸吮树汁的[%dic:STR_DIC_MLA54]%。</p>
+          <p> </p>
+          <p>椰林不会忘记，帮助我们的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蚰蜒在幻影神圣所周围。</p>
+          <p> </p>
+          <p>请你去搜集5个[%dic:STR_DIC_QILA87]。</p>
+          <p> </p>
+          <p>必须救活垂死的树木。</p>
+          <p> </p>
+          <p>不要再让它们欺负椰林族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蚰蜒很执着，不能一次解决。</p>
+          <p> </p>
+          <p>只要想帮我们，什么时候都可以过来。</p>
+          <p> </p>
+          <p>椰林会永远留在丛林的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到了蚰蜒倒下的声音。</p>
+          <p> </p>
+          <p>您拿回[%dic:STR_DIC_QILA87]%做证据了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蚰蜒的绒毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林的兄弟还在受折磨。</p>
+          <p> </p>
+          <p>已经刻不容缓了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是您拯救了森林树木和椰林族的未来。 </p>
+          <p> </p>
+          <p>蚰蜒应该感受到了椰林族的愤怒。</p>
+          <p> </p>
+          <p>所有的树木都会称颂您的功劳。</p>
+          <p> </p>
+          <p>今后不会再发生树木阻挡您去路的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去清除蚰蜒，把证据交给[%dic:STR_DIC_LA63]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">蚰蜒在吸吮树木的树液，所以圣所附近的树木都在枯萎。去清除蚰蜒，把绒毛交给阿劳特。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为蚰蜒，幻影神圣所附近的树木都在枯萎。</p>
+          <p> </p>
+          <p>受椰林族人阿劳特之托，清除了蚰蜒，并把吸吮树液时使用的绒毛作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

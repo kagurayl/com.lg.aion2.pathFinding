@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看了龙族的报告后，我相当震惊。</p>
+          <p> </p>
+          <p>没想到他们在非生命体上投放一种叫做德拉兹玛的物质，竟然能够制造出会移动的活体，呐呐！</p>
+          <p> </p>
+          <p>虽然我很早就听说了龙族的强大，但没想到居然强大到这个地步。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>无论如何我都要搞到德拉兹玛这种东西。</p>
+          <p> </p>
+          <p>只要能够用好德拉兹玛，说不定还能够开启龙语物品的新纪元呢，呐呐！</p>
+          <p> </p>
+          <p>守护者，我想向你帮我搜集[%dic:STR_DIC_I_quest_3919a]。</p>
+          <p> </p>
+          <p>请帮我搜集足够多的德拉兹玛，我一定会好好感谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像只要消灭罗克哈和玛拉巴塔就能得到[%dic:STR_DIC_I_quest_3919a]。</p>
+          <p> </p>
+          <p>好像通过其它渠道也能搜集到德拉兹玛，不过席拉灵灵就不清楚了。</p>
+          <p> </p>
+          <p>反正我们算是说定了。请你一定要帮忙找到德拉兹玛碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么不乐意的呢？</p>
+          <p> </p>
+          <p>我们提格拉齐工房绝对不会忘恩负义的。</p>
+          <p> </p>
+          <p>帮助我们肯定会有好处的……</p>
+          <p> </p>
+          <p>如果你实在不乐意，那我也没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我联系过扎鲁蒙支部长了，他似乎对德拉兹玛很感兴趣。</p>
+          <p> </p>
+          <p>要我快点把东西给他寄过去，真是心急得不得了，呐呐。</p>
+          <p> </p>
+          <p>你要是找到了德拉兹玛碎片，就快给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉兹玛碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我被扎鲁蒙支部长给烦得不行。</p>
+          <p> </p>
+          <p>要是不快点找到[%dic:STR_DIC_I_quest_3919a]，席拉灵灵会被责怪的。</p>
+          <p> </p>
+          <p>请你快点帮我搜集德拉兹玛碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到德拉兹玛碎片了！</p>
+          <p> </p>
+          <p>太好了，真是太好了！</p>
+          <p> </p>
+          <p>我这就给扎鲁蒙支部长寄过去，呐呐。</p>
+          <p> </p>
+          <p>太谢谢你了，守护者。</p>
+          <p> </p>
+          <p>不过要是能够再多点就更好了。希望你能继续帮我。</p>
+          <p> </p>
+          <p>如果你能帮我，我一定会报答你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_3919a]，然后交给[%dic:STR_DIC_N_Shugo_LC1_28]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">提格拉齐工房对德拉兹玛很感兴趣，我打算去黑暗普埃塔搜集一些回来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>席拉灵灵听说术古高层对德拉兹玛也很感兴趣。</p>
+          <p> </p>
+          <p>于是我去黑暗普埃塔搜集到了德拉兹玛碎片，席拉灵灵立刻将它们寄到了埃雷修兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

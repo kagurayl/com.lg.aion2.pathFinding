@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次递交进贡目录的时候我犯了个大错误。</p>
+          <p> </p>
+          <p>所以现在薄皮子全都用光了。</p>
+          <p> </p>
+          <p>因为没有材料，现在没办法做向五位主神进贡的衣服了。</p>
+          <p> </p>
+          <p>哈...干脆出去当个野人算了，可以不用为这些东西烦恼...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您能帮忙的话当然最好了。众人拾柴火焰高，您说对吧？</p>
+          <p> </p>
+          <p>其他的虽然也有问题，但是最着急的是薄皮子。</p>
+          <p> </p>
+          <p>皮子本来应该向猎人购买，但是最近危险的事情太多，猎人们也很难打到皮子。这样又怎么能应付进贡呢。</p>
+          <p> </p>
+          <p>[%username]大人您能帮我捕捉海伊布和蜥蜴，搜集生皮子，然后把它加工成薄皮子吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿尔特盖德冰湖就能抓到海伊布和蜥蜴。</p>
+          <p> </p>
+          <p>然后请把从它们身上得到的生皮子用这儿的制造机加工成[%dic:STR_DIC_I_QUEST_2910b]。</p>
+          <p> </p>
+          <p>虽然您是第一次做裁缝，但是其实并不非常困难。不过做的时候有可能会失败，所以您最好多找些薄生皮子回来。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不知道现在的情况有多严重吗？</p>
+          <p> </p>
+          <p>也是，又不是自己的事情，当然不会有感觉。</p>
+          <p> </p>
+          <p>不过连这种小小的奉献精神都没有的话，您还好意思以守护者自居！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！[%dic:STR_DIC_I_QUEST_2910b]加工好了吗？</p>
+          <p> </p>
+          <p>您是第一次做，质量稍微差一点也没关系。</p>
+          <p> </p>
+          <p>把您做好的东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出薄皮子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我好想和您说过这件事情很紧急。</p>
+          <p> </p>
+          <p>接到名人的拜托，很多守护者高兴还来不及，看来是我找错人了。</p>
+          <p> </p>
+          <p>我相信您下次一定会把[%dic:STR_DIC_I_QUEST_2910b]带回来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话暂时就没问题了。</p>
+          <p> </p>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>下次做进贡目录的时候我一定会细心一点，绝对不会出现这种问题了。</p>
+          <p> </p>
+          <p>再有这种事情的话就难办了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将[%dic:STR_DIC_I_QUEST_2910a]在[%dic:STR_DIC_E_LF3_Weaving_production]加工后交给[%dic:STR_DIC_N_Zyakia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">加齐亚因递错了进贡目录而陷入了困境。去阿尔特盖德冰湖捕捉海伊布和蜥蜴搜集生皮子，然后用制造机加工成薄皮子后交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加齐亚递错了进贡目录二陷入了困境。</p>
+          <p> </p>
+          <p>所以按照他的委托，搜集生皮子加工成3张薄皮子交给了他，他说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，眼前的问题虽然解决了，但是以后的事情我还是很担心。</p>
+          <p> </p>
+          <p>曼杜里不会只抢一次东西，又不能以后每次发生了这样的事情，都去帮他们找东西。</p>
+          <p> </p>
+          <p>于是我想到了一个办法...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么办法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以前曼杜里虽然也会抢东西，但是却没有最近这么频繁。</p>
+          <p> </p>
+          <p>我听说他们变得变本加厉是从[%dic:STR_DIC_M_ManduriTNamed_22_An]成为他们的头目之后开始的。</p>
+          <p> </p>
+          <p>他喜欢发光的东西，所以每天都让部下们去抢人们的东西。</p>
+          <p> </p>
+          <p>只要把昆都除掉，相信情况会有所好转。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我几次试图抓住他，但是他非常敏捷，根本抓不住。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+          <p> </p>
+          <p>谢礼我决不会少的。还有，你也能捞到不少好处。</p>
+          <p> </p>
+          <p>他们喜欢发光的东西，所以一定可以从他们身上得到很多好东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能帮我，这下我就可以安心了。</p>
+          <p> </p>
+          <p>那就请你去除掉[%dic:STR_DIC_M_ManduriTNamed_22_An]吧。</p>
+          <p> </p>
+          <p>他平时都呆在自己的巢穴里，只有在去拿部下们搜集的东西的时候才会在曼杜里部落和粮食储藏处出现。</p>
+          <p> </p>
+          <p>谁都不知道昆都的巢穴的位置，所以最好是能在他在部落或者粮食储藏处出现的时候把他抓住。</p>
+          <p> </p>
+          <p>那就祝你一切顺利。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？年轻人为什么一点都不上进呢...</p>
+          <p> </p>
+          <p>这可怎么办呢...难道要我自己去抓吗？</p>
+          <p> </p>
+          <p>看来安德罗克雷斯是不会管的。唉，看来还是得自己去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>碰到狡猾的昆都了吗？</p>
+          <p> </p>
+          <p>我之前没和你说，除了你之外，我还拜托很多人帮我去捕捉。</p>
+          <p> </p>
+          <p>不过每次都空手而归。说根本就找不到那个家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>第一次去就见到了狡猾的昆都，你的运气还真是好。</p>
+          <p> </p>
+          <p>辛苦了。来，这是说好的谢礼。</p>
+          <p> </p>
+          <p>虽然我觉得你应该获得了应有的报酬，不过约定就是约定，你就拿着吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_ManduriTNamed_22_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Archelaos]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉煽动曼杜里部下，抢夺物品的狡猾的昆都。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿切拉奥斯说自从狡猾的昆都成为曼杜里的头目之后，抢夺开始变本加厉，拜托我去把他除掉。按照他的拜托除掉了昆都，他说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

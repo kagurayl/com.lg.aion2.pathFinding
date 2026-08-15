@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>测试任务。</p> 
+          <p>击杀点数无法组队共享。</p> 
+          <p>请消灭魔族9级兵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在除了魔族执政官之外，连普通守护者都到埃雷修兰塔来执行任务。</p>
+          <p> </p>
+          <p>其中的9级兵虽然能力不强，但却占据了总兵力的大部分。</p>
+          <p> </p>
+          <p>你能去消灭[%dic:STR_DIC_E_Dgrade9]，削弱魔族的战斗力吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>遇到[%dic:STR_DIC_E_Dgrade9]之后，不管对手是谁，都不要退却。</p>
+          <p> </p>
+          <p>你每击败一个魔族，阿里埃主神的荣耀就会增加一分。</p>
+          <p> </p>
+          <p>好了，[%username]，祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯不是害怕战斗的人应该来的地方。</p>
+          <p> </p>
+          <p>如果你害怕魔族，就趁早离开这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦。魔族的反抗一定很激烈吧？</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_E_Dgrade9]消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>在埃雷修兰塔经常能听到你的名字。果然是名不虚传。</p>
+          <p> </p>
+          <p>你消灭了魔族，为天族创造了荣耀，阿里埃主神一定会记住你的。</p>
+          <p> </p>
+          <p>好的，你这次立下了大功，这是送给你的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade9]战斗并获胜([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ascalon]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了削弱魔族在欧比斯的势力，必须消灭魔军9级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯卡尔伦说为了打破目前的均势状态，必须打击魔族的势力。</p>
+          <p> </p>
+          <p>他说最好的方法是消灭能力一般，但却构成了魔族兵力绝大部分的魔军9级兵。</p>
+          <p> </p>
+          <p>于是前往战场，消灭了所有遇到的魔军9级兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

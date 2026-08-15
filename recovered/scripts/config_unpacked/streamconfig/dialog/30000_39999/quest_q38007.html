@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道阿拉克内姊妹会吗？</p>
+          <p> </p>
+          <p>它是由追随凯西内尔主神的8位圣女建立的组织，在培养人才方面做出了很大的贡献，现在隶属于凯西内尔主神殿。</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的入会管理员[%dic:STR_DIC_N_Ziyunia]和我关系很好，不久前她拜托我帮她一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她说如果见到[%username]大人，就让您去一趟凯西内尔主神殿。</p>
+          <p> </p>
+          <p>这个要求不算难吧，请您去见见她吧。</p>
+          <p> </p>
+          <p>虽然具体的我不太清楚，但她好像是想把[%username]大人招入阿拉克内姊妹会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，明智的决定。</p>
+          <p> </p>
+          <p>[%username]大人如果能加入阿拉克内姊妹会，对天界的发展一定会有很大的帮助。</p>
+          <p> </p>
+          <p>有句话说得好，教育是百年大计……啊，我好像说得太多了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Ziyunia]大人就在凯西内尔主神殿里，您去那里见见她吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉尤尼亚大人一定在焦急地等待着[%username]大人。</p>
+          <p> </p>
+          <p>希望您不要让吉尤尼亚大人失望。您就去一趟吧。</p>
+          <p> </p>
+          <p>如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您应该猜到我为什么把您请到这里来了吧？</p>
+          <p> </p>
+          <p>是的，没错。我想邀请您加入阿拉克内姊妹会。</p>
+          <p> </p>
+          <p>阿拉克内姊妹会是由各个领域能力突出的人组成的组织，我们会担任导师，帮助那些有希望的年轻守护者。</p>
+          <p> </p>
+          <p>为了极乐世界的和平与发展，这是必须做的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，执行任务后，我们会给予相应的奖励。</p>
+          <p> </p>
+          <p>但是我们的目的不是获得奖励，而是帮助那些刚刚觉醒的守护者。对[%username]大人而言，这也将是非常有意义的事。</p>
+          <p> </p>
+          <p>最后，我再告诉您一件事。</p>
+          <p> </p>
+          <p>在这之前，我从来没有劝谁加入阿拉克内姊妹会。很多有能力的守护者都是自己找到我要求加入阿拉克内姊妹会的。</p>
+          <p> </p>
+          <p>我之所以想邀请[%username]大人加入姊妹会，是因为[%username]大人是我们渴望已久的人。</p>
+          <p> </p>
+          <p>我给您一点时间，您可以好好考虑一下再做决定。希望您能尽快决定下来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Ziyunia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说阿拉克内姊妹会的入会管理员吉尤尼亚在找我。应该到凯西内尔主神殿去见见她。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>空间移动师弗里伊杜斯说阿拉克内姊妹会的入会管理员吉尤尼亚正在找我。</p>
+          <p> </p>
+          <p>见到吉尤尼亚之后，她跟我详细介绍了阿拉克内姊妹会的情况，并劝我加入。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

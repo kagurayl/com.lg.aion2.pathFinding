@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据记录，古代人具有在石头中注入生命的特殊的能力。</p>
+          <p> </p>
+          <p>亚特雷亚的古代遗迹那里会移动的石像就是证据。</p>
+          <p> </p>
+          <p>原来生活在古代城市娄这里的人们应该特别擅长这种技术。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您见到过克罗坦岛中央的巨大的构造物吗？那就是古代巨神兵的尸体。</p>
+          <p> </p>
+          <p>巨神兵是古代城市娄最杰出的作品，也是最坏的作品。整个城市因为自己制造的生命体而灭亡了。</p>
+          <p> </p>
+          <p>古代城市娄留下的遗迹不是只有这个。不知道您在来的路上有没有看到。</p>
+          <p> </p>
+          <p>对，就是加尔西坎。创造者早在很久之前就消失了，但是创造出来的东西至今还保留着。不，反而在更可怕地扩张着领地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去的话，整个古代城市娄都会变成加尔西坎的天地。</p>
+          <p> </p>
+          <p>所以我有时间的时候就会去清除它们。</p>
+          <p> </p>
+          <p>现在我刚好想要去清除它们，[%username]大人愿意和我一起去吗？</p>
+          <p> </p>
+          <p>[%username]大人，如果您能帮我的话，这件事情就简单多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我会把它们所在的地方告诉您，您先出发吧。</p>
+          <p> </p>
+          <p>我把手头的事情处理完之后，会马上出发的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1211_GargoyleB_32_An]和[%dic:STR_DIC_M_Ab1_1211_GargoyleC_33_An]就在完全崩塌的古代城市娄的地下神殿的废墟那边。现在的地下神殿，倒不如说是空中神殿更合适一些。</p>
+          <p> </p>
+          <p>您必须在岛的碎片中间一边飞行一边完成任务。那就辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有必要觉得对不起。是我不好，不应该把自己的事情推给别人的。</p>
+          <p> </p>
+          <p>看上去您好像很忙的样子，那您就先走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去哪儿啦？</p>
+          <p> </p>
+          <p>做完手头的事情之后，我就马上过去找您，但是怎么都找不到[%username]大人。</p>
+          <p> </p>
+          <p>您该不会是没去我说的那个地方吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊？您什么时候除掉了这么多加尔西坎啊？</p>
+          <p> </p>
+          <p>您的实力果然是名不虚传啊。</p>
+          <p> </p>
+          <p>谢谢您忠实的完成我拜托您的事情。</p>
+          <p> </p>
+          <p>多亏您的帮忙，我和拉比乌斯总算轻松一点了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉古代城市娄的加尔西坎。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1211_GargoyleB_32_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1211_GargoyleC_33_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mercus]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助梅尔库斯把正在疯狂扩展领地的古代城市娄的加尔西坎清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅尔库斯说古代人制作的加尔西坎凭借坚韧的生命力和强大的繁殖力正不断扩大领地，他担心这样下去的话古代城市娄会变成加尔西坎的天下。</p>
+          <p> </p>
+          <p>为了避免那样的事情发生，去帮他除掉了古代城市娄的加尔西坎。回去把结果告诉梅尔库斯之后，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

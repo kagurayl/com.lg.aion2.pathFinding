@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您既然来了，能不能帮我一个忙啊？</p>
+          <p> </p>
+          <p>但这件事请一定替我保密。</p>
+          <p> </p>
+          <p>请一定要为我保密啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">回答明白了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是这样的，大脚棕熊真让我头疼死了。</p>
+          <p> </p>
+          <p>我跟别人吹牛，说要抓银脚高姆回来，可别说高姆了，我居然被大脚棕熊给害惨了。</p>
+          <p> </p>
+          <p>您能不能帮我消灭那些[%dic:STR_DIC_M_MosbearS_16_An]，让我能专心捕捉高姆呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。我得嘱咐您一次，这件事一定要给我保密啊。</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_DF1A_11]清除[%dic:STR_DIC_M_MosbearS_16_An]吧。</p>
+          <p> </p>
+          <p>只要杀死3只，我就能抓到高姆了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>抓到高姆是我的梦想。能帮助我实现理想，相信您也会高兴的，不是吗？</p>
+          <p> </p>
+          <p>不过既然您不愿意，我也没有办法。</p>
+          <p> </p>
+          <p>请您千万不要把我这个要求告诉任何人。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮我除掉[%dic:STR_DIC_M_MosbearS_16_An]了吗？</p>
+          <p> </p>
+          <p>只要没有那些家伙，抓到银脚高姆就一点也不成问题了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太谢谢您了。</p>
+          <p> </p>
+          <p>现在只要把刀和箭都磨好了，就可以出发去抓高姆了。</p>
+          <p> </p>
+          <p>这是给您的报答。</p>
+          <p> </p>
+          <p>还有，请别忘了为我保密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_MosbearS_16_An]([%2]/3)。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kaibekk]%对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉让凯贝格不能集中捕猎的大脚棕熊。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯贝格抓银脚高姆时总是受到大脚棕熊的妨碍。受他之托，去棕熊栖息地消灭了大脚棕熊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

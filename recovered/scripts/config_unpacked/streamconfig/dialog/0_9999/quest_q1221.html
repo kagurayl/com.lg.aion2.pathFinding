@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，真让人头疼。</p>
+          <p> </p> 
+          <p>因为克拉尔的问题，我就已经忙得不可开交了，现在又出现了奇怪的魔族……</p>
+          <p> </p> 
+          <p>我收到报告，说最近坎塔斯海岸出现了奇怪的克拉尔。从外表看应该是图尔辛克拉尔，但行动有点异常。</p>
+          <p> </p> 
+          <p>他们攻击了海岸上的失事船船员。之前克拉尔从来没有和雷帕尔革命团发生过冲突。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇怪的不光是这一点。</p>
+          <p> </p>
+          <p>那些克拉尔的手脚都被砍断了，浑身都是血，但还是继续攻击。是的，好像是受到了什么人的操纵。</p>
+          <p> </p>
+          <p>于是我们进行了调查，发现是一个名叫哈梅伦的魔族干的。虽然不知道他用什么方法控制了克拉尔，但我们不能就这样放着不管。</p>
+          <p> </p>
+          <p>虽然现在它们在攻击革命团，但如果它们转而攻击贝尔特伦结界塔的话……必须在这种事情发生之前阻止它。</p>     
+          <p> </p>
+          <p>[%username]大人，如果能有您的帮助，这件事就会容易得多。您愿意帮帮我们吗？</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。洗脑的图尔辛克拉尔经常在坎塔斯海岸出现，哈梅伦藏身的[%dic:STR_DIC_W_IDNovice_SZ_IDNovice]入口应该就在附近的什么地方。</p>
+          <p> </p>
+          <p>进入哈拉梅尔之后，请您把[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an]消灭掉。</p>
+          <p> </p>
+          <p>这样的话，它们就不会在坎塔斯海岸出现了。</p>
+	</body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊？那就没办法了。</p>
+          <p> </p>
+          <p>我再观察一天，如果洗脑的克拉尔继续在坎塔斯海岸出现，我就自己去一趟。</p>      
+          <p> </p>
+          <p>希望这段时间[%username]大人能改变主意。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>怎么样？[%dic:STR_DIC_W_IDNovice_SZ_IDNovice]的入口是在坎塔斯海岸吗！？</p>
+          <p> </p>
+          <p>里面有[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an]吗？有多少呢？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了克拉尔之外，还有其他亚人种？</p>
+          <p> </p>
+          <p>嗯，看来那个叫哈梅伦的魔族是个危险的人物。我得仔细调查一下才行。</p>  
+          <p> </p>
+          <p>不过能把活捉的图尔辛前哨兵全部消灭掉，真是太好了。</p>      
+          <p> </p>
+          <p>请收下。这是克拉尔的证物，我想对[%username]大人应该更有用。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_IDNovice_SZ_IDNovice]消灭[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_LA18]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说被魔族哈梅伦洗脑的克拉尔在坎塔斯海岸出现。为了贝尔特伦结界塔的安全，必须消灭被哈梅伦活捉的图尔辛前哨兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>惠亚金泰说图尔辛克拉尔攻击了坎塔斯海岸的雷帕尔革命团，并说这件事的幕后有魔族哈梅伦在操纵。</p>
+          <p> </p>
+          <p>他说如果就那样放着不管，克拉尔也许会攻击坎塔斯海岸的贝尔特伦结界塔，让我到哈梅伦的藏身处哈拉梅尔去消灭活捉的图尔辛前哨兵。</p>
+          <p> </p>
+          <p>按照他的委托，消灭了图尔辛克拉尔。回去之后，他说辛苦了，并把克拉尔的证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

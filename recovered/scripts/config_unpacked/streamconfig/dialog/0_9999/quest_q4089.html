@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在得到了一箱酒，感觉真是太棒了，就像得到全世界的宝藏一样，哈哈哈。</p>
+          <p> </p>
+          <p>那么，我现在要和这尝一尝。</p>
+          <p> </p>
+          <p>啊！对了，可不能白白浪费这么好的朗姆酒。</p>
+          <p> </p>
+          <p>好酒就要配上好菜，那样喝起来才更有味道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问想要什么下酒菜。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说起来，朗姆酒配上烤寄居蟹腿才是绝配啊。</p>
+          <p> </p>
+          <p>就算不加调料直接在火里烤也非常有味道。</p>
+          <p> </p>
+          <p>守护者，你要不要也来喝一杯？</p>
+          <p> </p>
+          <p>当然不是免费的，酒我已经准备好了，下酒菜就由守护者准备吧，怎么样，是不是很公平？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想的没错。正好周围也有很多 [%dic:STR_DIC_M_DF2A_LobniteWaterPlantD_47_n]，抓一些 [%dic:STR_DIC_I_QUEST_4089a] 也不是什么太大的困难吧。</p>
+          <p> </p>
+          <p>抓就多抓一点。</p>
+          <p> </p>
+          <p>喝酒的时候，下酒菜没了，没有比这还烦的事情了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇哦，这个人很不讲理呢。</p>
+          <p> </p>
+          <p>有付出才会有回报，天下没有免费的朗姆酒。</p>
+          <p> </p>
+          <p>你不愿意就算了，我还担心酒不够呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么晚啊！</p>
+          <p> </p>
+          <p>作为守护者，抓个 [%dic:STR_DIC_M_DF2A_LobniteWaterPlantD_47_n] 还费这么长时间，啧啧。</p>
+          <p> </p>
+          <p>赶紧把带来的 [%dic:STR_DIC_I_QUEST_4089a]交给我，趁新鲜的时候烤，才会更好吃。</p>
+        </body>
+        </html>
+   </Contents>    
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将寄居蟹腿交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是叫你带来足够多的 [%dic:STR_DIC_M_DF2A_LobniteWaterPlantD_47_n]腿吗？</p>
+          <p> </p>
+          <p>你这样的话我可不好办啊。</p>
+          <p> </p>
+          <p>我可是很实在的人，不要以为上次给我找到罗盘，我就会免费请你喝酒。</p>
+          <p> </p>
+          <p>想喝朗姆酒就按照约定，给我带来 [%dic:STR_DIC_I_QUEST_4089a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然有点晚，不过东西倒是没错。里面的蟹肉很饱满，估计就吃一个也能饱了。</p>
+          <p> </p>
+          <p>就是这样，用木头串起来挂在篝火上……现在只是等待就可以了。</p>
+          <p> </p>
+          <p>咳咳，刚才对你发了一点小脾气，不好意思，你也知道我的性格很“随和”。</p>
+          <p> </p>
+          <p>这个你就收下，不开心的事就不要放在心上。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_M_DF2A_LobniteWaterPlantD_47_n]的腿，交给 [%dic:STR_DIC_N_Jackspaner]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">烤寄居蟹腿是朗姆酒最好的下酒菜。收集水草寄居蟹的腿交给杰克·斯巴诺。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杰克·斯巴诺打算找点下酒菜喝密克隆送来的朗姆酒，并表示烤寄居蟹腿是朗姆酒最好的下酒菜。</p>
+          <p> </p>
+          <p>并请求去收集下酒菜，按照他的委托消灭了附近的水草寄居蟹，收集了它们的腿交给了杰克·斯巴诺。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

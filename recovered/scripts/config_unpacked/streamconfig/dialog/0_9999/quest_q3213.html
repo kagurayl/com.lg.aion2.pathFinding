@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，世界上怎么有这么倒霉的事情啊！</p>
+          <p> </p>
+          <p>我把货物装在了乌云贸易团的船上，结果全都打了水漂。</p>
+          <p> </p>
+          <p>平时我都是派人运送东西，因为他们说可以大幅降低运费，所以我才让他们帮着运输。</p>
+          <p> </p>
+          <p>结果东西全被叫做铁耙还是什么的海盗团抢走了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>更荒唐的是贸易团的那些家伙。</p>
+          <p> </p>
+          <p>他们说当时没有签订赔款这一条，所以一分钱都不能退给我。</p>
+          <p> </p>
+          <p>说所以运费才会那么便宜。</p>
+          <p> </p>
+          <p>我后来看了一下运单，真的没有任何与赔偿有关的内容。</p>
+          <p> </p>
+          <p>因为贪图运费低，没想到受到了这么大的损失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然做生意不符合我的个性，但因为是叔父传下来的生意，所以我一直苦心地经营。</p>
+          <p> </p>
+          <p>现在后悔也没用了，我都快郁闷死了。</p>
+          <p> </p>
+          <p>我想向黑暗术古复仇。守护者大人，您能帮帮我吗？</p>
+          <p> </p>
+          <p>如果能好好教训他们一顿，我的心里就会好受得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是谢谢您！</p>
+          <p> </p>
+          <p>有您这么好心的人，真是太好了。</p>
+          <p> </p>
+          <p>听说极乐世界外港的贸易团使节中的一个人，可以把人带到铁耙号上。您知道这件事吗？</p>
+          <p> </p>
+          <p>请您帮我除掉20个[%dic:STR_DIC_M_IDShip_ShulackRa_44_Ae]。我被抢走的东西是20个，这样的话，我就会好受一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是因为我只是一个杂货商人，就不愿意接受我的委托吗？</p>
+          <p> </p>
+          <p>但这是什么地方啊？</p>
+          <p> </p>
+          <p>这是守护者宣誓要保护人类的地方。</p>
+          <p> </p>
+          <p>拜托了，请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近根本卖不出东西。</p>
+          <p> </p>
+          <p>也许是因为经济不景气，所以人们只买自己需要的东西。</p>
+          <p> </p>
+          <p>说真的，我不知道这个世界会变成怎样…所以还是把钱抓在手上最安心。</p>
+          <p> </p>
+          <p>教训铁耙的事情，到底怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这下终于痛快多了！</p>
+          <p> </p>
+          <p>过去的事情就算结束了。</p>
+          <p> </p>
+          <p>现在开始，我必须认真地活下去。</p>
+          <p> </p>
+          <p>就像叔父说的那样，只有经历了各种事情，你才能学会走路。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_E_Ship_Li]上的[%dic:STR_DIC_M_IDShip_ShulackRa_44_Ae]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Himusus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">希姆苏斯让乌云贸易团帮着运送货物，但船遭到了黑暗术古海盗团的袭击，东西全部被抢走。帮他向黑暗术古报仇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界的杂货商人希姆苏斯说因为觉得运费低，就把东西交给了乌云贸易团运输。但货船遭到了黑暗术古的攻击，货物全部被抢走。</p>
+          <p> </p>
+          <p>帮助得不到赔偿而怒火中烧的他，教训了铁耙号精锐狙击手。他说今后要认真地活下去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

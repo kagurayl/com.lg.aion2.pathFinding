@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我憎恨龙族。</p>
+          <p> </p>
+          <p>当然，作为光荣的魔族的一员，应该没有人会喜欢龙族。</p>
+          <p> </p>
+          <p>但是我只要一想到龙族，牙齿就直痒痒，甚至超过了对天族的憎恨。</p>
+          <p> </p>
+          <p>我也不喜欢在这里守卫通往古代城市娄地下要塞的入口。</p>
+          <p> </p>
+          <p>我在这里守卫入口，真想立刻冲进地下要塞和龙族战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但我的任务是守卫通道，所以没办法。</p>
+          <p> </p>
+          <p>[%username]大人，我把机会留给您。</p>
+          <p> </p>
+          <p>请您到[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]去，把里面的龙族全部消灭掉。一个活口都不能留下。</p>
+          <p> </p>
+          <p>消灭龙族之后，地下要塞里的宝物就都归[%username]大人所有了。</p>
+          <p> </p>
+          <p>(放低声音)伏魔殿不管龙族的宝物，所以您随便拿多少都可以。</p>
+          <p></p>
+          <p>怎么样？您不感兴趣吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>您知道去[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]的方法吗？只要敲打那个陈旧的石像就行。</p>
+          <p> </p>
+          <p>如果您对龙族的宝物感兴趣，最好动作快点。宝物施有奇怪的魔法，经过一段时间之后就会消失。</p>
+          <p> </p>
+          <p>但是也别光顾着拿宝物箱子，而忘了完成任务！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人无法理解。</p>
+          <p> </p>
+          <p>要是我的话，早就冲进去消灭龙族了。</p>
+          <p> </p>
+          <p>虽然我很想参加战斗，但却没有办法...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了您之外，还有很多人愿意执行这个任务。</p>
+          <p> </p>
+          <p>其中有很多人是为了将龙族赶出古代城市娄，也有一些人是冲着宝物去的。</p>
+          <p> </p>
+          <p> 不过只要讨厌的龙族能够消失，大家都会欢迎。</p>
+          <p> </p>
+          <p>[%username]大人，您那边怎么样？您把龙族全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要消灭地下要塞的所有敌人，是相当不容易的事情。您真了不起。</p>
+          <p> </p>
+          <p>既然您完成了任务，我来把奖励送给您。</p>
+          <p> </p>
+          <p>不过任务并没有结束。我们至今还未发现龙族侵入地下要塞的通道。</p>
+          <p> </p>
+          <p>过了一段时间之后，龙族又会逐渐增多。希望到那时候，能再次借助[%username]大人的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]的敌人([%2]/39)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1211_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照拉休克的委托，消灭古代城市娄地下要塞的龙族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉休克让我去消灭和古代城市娄相连的古代城市娄地下要塞中的龙族。</p>
+          <p> </p>
+          <p>于是前往古代城市娄地下要塞，消灭了那里的敌人。他对我表示感谢，并让我以后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴卡巴塔封印塔怎么样？</p>
+          <p> </p>
+          <p>占领封印塔，是让人欢欣鼓舞的魔族的伟大胜利。</p>
+          <p> </p>
+          <p>但是我们不能总是陶醉在胜利之中。现在这个瞬间，龙族和天族应该正在寻找攻击巴卡巴塔封印塔的机会。</p>
+          <p> </p>
+          <p>因此必须尽快完成防御准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们虽然会从格尔克马洛斯要塞接受补给，但是量非常少。</p>
+          <p> </p>
+          <p>而且我们还接到了命令，让我们自行筹备部分物品。虽然我知道格尔克马洛斯的情况也不容客观，但这样做实在对我们太苛刻了。</p>
+          <p> </p>
+          <p>已经有一部分士兵去筹集物资了。同时，我们也在向其他的人寻求帮助。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能帮帮我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您只要去巴卡巴塔激战地消灭[%dic:STR_DIC_M_DF4_Varanus_DR_54_An]，搜集它们的皮就行了。</p>
+          <p> </p>
+          <p>德拉努斯皮革可以用于防具、建材、药品等多种用途，因此必须首先筹集。</p>
+          <p> </p>
+          <p>[%username]大人，这对您来说应该不是什么难事吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您有其他事情，那就没办法了。</p>
+          <p> </p>
+          <p>虽然我们人手不足，但搜集皮革之类的事情，士兵们也能做。</p>
+          <p> </p>
+          <p>那就失陪了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在战场上，仅是消灭眼前的敌人，为魔族的胜利全力奋战都不够。</p>
+          <p> </p>
+          <p>还有时间想别的事情吗？</p>
+          <p> </p>
+          <p>每次看到克拉扎里德那样抱有不确实际的想法的守护者，我就觉得他们缺乏紧张感。</p>
+          <p> </p>
+          <p>有这个时间的话，去多搜集一张皮革岂不更好？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您不是答应帮我搜集皮革的吗？</p>
+          <p> </p>
+          <p>看您空着手回来，任务还没完成吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_Varanus_DR_54_An]在巴卡巴塔激战地可以找到。消灭它们，可以得到很不错的皮革。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮革的质量真不错。</p>
+          <p> </p>
+          <p>虽然费了不少功夫，但用作材料应该完全没有问题。</p>
+          <p> </p>
+          <p>[%username]大人，您这次帮了我们的大忙。</p>
+          <p> </p>
+          <p>但是我们还有很多需要的东西。下次有时间的话，希望您能再来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_Varanus_DR_54_An]的皮革，然后交给[%dic:STR_DIC_N_Esendia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照艾森迪亚的委托，搜集荒野德拉努斯的皮革。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴卡巴塔封印塔的艾森迪亚说补给物资不足，让我帮着搜集。</p>
+          <p> </p>
+          <p>于是去巴卡巴塔激战地消灭荒野德拉努斯，搜集到了皮革。回去之后，艾森迪亚对我表示感谢，说我帮了大忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

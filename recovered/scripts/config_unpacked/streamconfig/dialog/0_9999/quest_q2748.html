@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自从希埃尔东部要塞被我们夺过来之后，天族的那帮家伙好像非常气愤。</p>
+          <p> </p>
+          <p>上次战斗中受到的打击应该不小，但是却马上在流放之岛上设立了据点，并向那里派遣了灰风军团的士兵。</p>
+          <p> </p>
+          <p>虽然不知道靠那么几个守护者和守护塔，到底能干什么事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我本来没放在心上，但是好像不行。</p>
+          <p> </p>
+          <p>原来偶尔会抢夺送往要塞的补给品，现在却变本加厉，凡是看到魔族就会进行攻击。</p>
+          <p> </p>
+          <p>这样下去的话，也许他们就会冲过来攻击要塞了。</p>
+          <p> </p>
+          <p>我想把他们除掉，但是军团士兵要防御要塞，所以抽调不出人手。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们的据点在流放之岛上。</p>
+          <p> </p>
+          <p>那里的灰风军团士兵的名字是[%dic:STR_DIC_N_Laius]、[%dic:STR_DIC_N_Rodementhes]、[%dic:STR_DIC_N_Salii]、[%dic:STR_DIC_N_Satyr]和[%dic:STR_DIC_N_Ruth]。</p>
+          <p> </p>
+          <p>不光只有他们，那里还有天族守护塔，所以请您一定要格外注意。</p>
+          <p> </p>
+          <p>我在这里等着您把他们全部除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还有比这更重要的任务吗？</p>
+          <p> </p>
+          <p>我真的很想知道会是什么事情。</p>
+          <p> </p>
+          <p>不过我也不能强迫您去执行任务，我明白了。</p>
+          <p> </p>
+          <p>我会找其他比[%username]大人更有责任心，也更勇敢的守护者的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？</p>
+          <p> </p>
+          <p>您把驻守流放之岛的灰风军团的士兵全部除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然我找[%username]大人是找对人了。</p>
+          <p> </p>
+          <p>现在天族的那些人应该不敢随便打希埃尔的东部要塞的主意了吧。</p>
+          <p> </p>
+          <p>您帮我完成了这么重要的任务，真是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_N_Laius]、[%dic:STR_DIC_N_Rodementhes]、[%dic:STR_DIC_N_Salii]、[%dic:STR_DIC_N_Satyr]和[%dic:STR_DIC_N_Ruth]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ab1_1132_Quest_Da]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说天族的灰风军团在流放之岛上对希埃尔的东部要塞虎视眈眈。去流放之岛上把他们清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯塔说天族被夺走希埃尔的东部要塞之后，在流放之岛上设立了据点，并派遣了灰风军团的士兵，对魔族进行攻击。</p>
+          <p> </p>
+          <p>他让我在他们制定夺回要塞的计划之前，把他们清除掉。于是去流放之岛，把灰风军团的军团士兵全都清除掉了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

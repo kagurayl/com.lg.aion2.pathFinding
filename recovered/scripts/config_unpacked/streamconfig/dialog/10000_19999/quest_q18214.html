@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你在发什么呆呢，[%username]？</p>
+          <p></p>
+          <p>有这个时间的话，还不如去修炼！</p>
+          <p></p>
+          <p>你不想变得更强吗？</p>
+          <p></p>
+          <p>那就快点行动起来！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙的训练非常简单。</p>
+          <p></p>
+          <p>规则简单明了，用不着多想就能明白。</p>
+          <p></p>
+          <p>那就是进入竞技场打倒对手！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>华丽的技能？乘虚而入的心理战？机智的生存方法？或者不管不顾地乱砍乱杀？</p>
+          <p></p>
+          <p>过程怎样都好。</p>
+          <p></p>
+          <p>不管是用华丽的技能一击必杀，还是一直纠缠到对方倒下，都是你的自由。</p>
+          <p></p>
+          <p>只要活下去！只要打倒对方！</p>
+          <p></p>
+          <p>这就是第3神庙的规则。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我不会强迫别人接受训练。</p>
+          <p></p>
+          <p>但是当你在龙界遇到大批敌人时，一定会因为没有好好参加训练而后悔。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>训练完成了吗？</p>
+          <p></p>
+          <p>在即使被打倒也能站起来的竞技场中，打倒对方5次是很简单的事。</p>
+          <p></p>
+          <p>不是吗，[%username]？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>辛苦了。</p>
+          <p></p>
+          <p>钥匙可以的话，我希望能提供更严格的训练，但是因为木浦斯的劝说，最后还是决定算了。</p>
+          <p></p>
+          <p>希望你继续努力。</p>
+          <p></p>
+          <p>总有一天，你能光凭感觉就知道背后砍来的刀刃。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">在[%dic:STR_DIC_W_IDArena_pvp_L]中打倒对手5次([%2]/5)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">和[%dic:STR_DIC_N_Junos]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">在第3神庙训练所的孤独竞技场或混沌竞技场中打倒对手。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>朱诺思建议我继续参加训练，让我到竞技场去打倒对手。</p>
+          <p></p>
+          <p>按照他所说，在孤独竞技场和混沌竞技场中打倒了对手，并向朱诺思进行了报告。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

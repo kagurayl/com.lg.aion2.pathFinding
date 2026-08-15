@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你要去复仇峡谷吗？</p>
+          <p> </p>
+          <p>我打算开发新的料理，顺路的话，我想请你帮我搜集几块鸟妖肉。</p>
+          <p> </p>
+          <p>当然，我会好好酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问要开发什么料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是用于出售的料理，而是用来做盒饭的料理。</p>
+          <p> </p>
+          <p>我每天都要给驻守烈士荒地的守卫们送盒饭，现在出售的食物，他们已经吃腻了。</p>
+          <p> </p>
+          <p>我想了很久，怎样才能使主材料不和以前的料理重复，又很容易在附近找到。想了半天，觉得只有鸟妖肉。</p>
+          <p> </p>
+          <p>怎么样？你能帮我去打猎[%dic:STR_DIC_M_HarpyRe_23_An]，搜集鸟妖肉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，请你帮我去搜集[%dic:STR_DIC_I_QUEST_3022a]。</p>
+          <p> </p>
+          <p>上次我看到了鸟妖，觉得其它地方的肉太老了。</p>
+          <p> </p>
+          <p>因为需要用多种料理法加工，所以请你多搜集一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没有要去复仇峡谷做的事情吗？</p>
+          <p> </p>
+          <p>真遗憾。</p>
+          <p> </p>
+          <p>等下次有事去那里的时候，请你再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，我还以为是客人呢。</p>
+          <p> </p>
+          <p>对了，你是刚从复仇峡谷回来吗？</p>
+          <p> </p>
+          <p>详细的事情以后再说，先把东西交给我吧。天气很热，鲜肉很快就会坏掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出柔软的臀部肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_3022a]在哪呢？</p>
+          <p> </p>
+          <p>你该不会是还没出发吧？</p>
+          <p> </p>
+          <p>这下可糟了。我以为你马上就要出发，所以才拜托你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，这就是鸟妖肉啊。</p>
+          <p> </p>
+          <p>看上去好像很好吃的样子。</p>
+          <p> </p>
+          <p>我也从来没吃过，让我先尝尝味道，然后再决定怎么处理。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_HarpyRe_23_An]%，把搜集到的肉交给[%dic:STR_DIC_N_Shugo_LF2a_7]</font></p>[%collectitem]</step> 
+    </steps>
+          <p><font font_xml="quest_summary">格吉隆说正在为驻守烈士荒地的守卫们开发新的料理。帮他搜集新料理的主材料鸟妖悲鸣术士的柔软的臀部肉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格吉隆说他正在开发新的料理，让我去复仇峡谷的时候，顺道帮他搜集几块鸟妖的柔软的臀部肉。</p>
+          <p> </p>
+          <p>因为这是为驻守烈士荒地入口的守卫们办的事，所以欣然地答应了他，并帮他搜集到了需要的肉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

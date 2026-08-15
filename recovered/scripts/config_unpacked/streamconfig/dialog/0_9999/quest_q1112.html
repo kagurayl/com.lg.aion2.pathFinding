@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得一边欣赏晚霞一边钓鱼是人生最幸福的时刻。珊瑚色的天空映照着湖水，闪着梦幻般的光彩。</p>
+          <p> </p>
+          <p>要是再有海伊布在跳舞的话，就更美了。</p>
+          <p> </p>
+          <p>果然钓鱼还是我人生最大的乐趣。</p>
+          <p> </p>
+          <p>不过，最近却发生了一些事情，严重影响了我的幸福感。</p>
+             </body>
+        </html>
+    </Contents>
+    <Selects>
+  <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_MLA134]和[%dic:STR_DIC_MLA133]一边在水中打闹一边吵吵嚷嚷地喝水，鱼都不上钩了。海伊布也没法跳舞了。</p>
+         <p> </p>
+         <p>要是没有那帮小子打扰，我可以更愉快地钓鱼的...</p>
+         <p> </p>
+         <p>[%username]，您帮帮我吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道您会帮助我的。请处置[%dic:STR_DIC_MLA134]和[%dic:STR_DIC_MLA133]各5只。</p>
+          <p> </p>
+          <p>这样他们就会害怕不敢来湖边了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>要是没那些家伙打扰，钓鱼本来可以特别顺利的...虽然很遗憾但也没有办法啊。</p>
+         <p> </p>
+         <p>以后还是得拜托乌诺。</p>
+         <p> </p>
+         <p>我丈夫觉得我不应该只知道钓鱼，所以他也不一定会帮我。况且他还是个胆小鬼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+
+   <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，因为[%username]大人您的脚步声，鱼都被吓跑了。</p>
+          <p> </p>
+          <p>人家钓鱼的时候应该保持安静，这难道不是常识吗？</p>
+          <p> </p>
+          <p>话说回来，拜托您的事儿怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+          <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就说怎么不久之前鱼儿好像都聚集过来了。</p>
+          <p> </p>
+          <p>这下我和贝恩终于能安心地钓鱼了。</p>
+          <p> </p>
+          <p>谢谢。如果您想学钓鱼的话就来找我吧。我肯定会很高兴教您的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]">清除<font color="[%1]">[%dic:STR_DIC_FLA03]的不速之客</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA134]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA133]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">回去找[%dic:STR_DIC_LA07]</font></p></step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">因为布拉斯和蜥蜴，佩拉无法继续钓鱼。决定给她抓布拉斯和蜥蜴各5只。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在克利奥尼湖中接受了佩拉的请求。即清除妨碍她钓鱼的布拉斯和蜥蜴。除掉了布拉斯和蜥蜴各5只之后，收取了报酬。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

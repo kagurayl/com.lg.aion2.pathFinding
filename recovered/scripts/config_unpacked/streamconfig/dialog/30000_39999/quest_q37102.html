@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>塞拉姐妹送来了消息，说贝尔特伦的情况非常让人痛心。她说在前线守护贝尔特伦的兄弟姐妹们因为克拉尔残酷的反击而失去了勇气，经常发生中途放弃任务的情况。</p>
+          <p> </p>
+          <p>得知这个消息之后，8位圣女指示说“帮助年轻的守护者，让他们能够坚守自己的意志”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，为了让[%dic:STR_DIC_E_Li_13_20]们恢复自信，请成为他们的导师，帮助他们消灭[%dic:STR_DIC_M_37102]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Seira]姐妹说想亲自对参加这次任务的人表示感谢，任务完成之后，请到她那里去一趟。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听吉尤尼亚姐妹说，[%username]大人会担任这次任务的导师。</p>
+          <p> </p>
+          <p>您为贝尔特伦修炼守护者付出了很多心血，我在此对您表示感谢。</p>
+          <p> </p>
+          <p>如果可以的话，您能把结果告诉我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，愿凯西内尔主神祝福您！</p>
+          <p> </p>
+          <p>谢谢您，[%username]大人。</p>
+          <p> </p>
+          <p>谢谢您让年轻的守护者们获得了勇气。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_13_20]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_37102]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Seira]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让贝尔特伦修炼守护者们恢复自信，必须成为他们的导师，和他们一起消灭图尔辛精锐克拉尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是让被克拉尔的强势反击吓坏了的贝尔特伦修炼守护者恢复自信。</p>
+          <p> </p>
+          <p>成为了年轻守护者的导师，帮助他们消灭了图尔辛精锐克拉尔之后，向塞拉报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

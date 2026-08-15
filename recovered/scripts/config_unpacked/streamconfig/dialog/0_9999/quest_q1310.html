@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人都忠告我，让我抛弃对已经走向死亡的埃尔特内的迷恋，回到极乐世界去。</p>
+          <p> </p>
+          <p>但是，我相信一定可以重新把埃尔特内救活。</p>
+          <p> </p>
+          <p>为了实现这个梦想，我一直在努力。</p>
+          <p> </p>
+          <p>如果我和生命的守护者们放弃努力，埃尔特内就会完全变成一块死地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤斯迪埃主神为神秘泉倾注了很多努力。</p>
+          <p> </p>
+          <p>在沙漠中出现泉水的话，人们可以活下去，土壤也可以得到改善。</p>
+          <p> </p>
+          <p>但是没有树的话，即使有再多的水，土地也会马上干涸。</p>
+          <p> </p>
+          <p>因此我们需要能生长在干旱地区的树木。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我委托术古族找来了可以生长在沙漠中的树的种子。但是种下去之后，发现它们生长非常缓慢。</p>
+          <p> </p>
+          <p>所以我拜托生命的守护者[%dic:STR_DIC_N_Iandeus]大人寻找可以让树木快速生长的方法。</p>
+          <p> </p>
+          <p>利用尤斯迪埃主神创造的神秘泉的水，应该可以找到什么方法。</p>
+          <p> </p>
+          <p>刚开始研究的时候，他经常会告诉我研究的进展情况，但是最近却一点消息也没有了。</p>
+          <p> </p>
+          <p>[%username]大人，您能去帮我询问一下研究的进展吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Iandeus]大人在[%dic:STR_DIC_W_LF2_SZ_A1]。</p>
+          <p> </p>
+          <p>请您去告诉她我很想知道研究的情况。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，也不是什么要死人的事。</p>
+          <p> </p>
+          <p>虽然对我来说很重要。</p>
+          <p> </p>
+          <p>知道了。以后我自己抽时间去一趟吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...解决办法已经找到，现在的问题是在什么地方培养。</p>
+          <p> </p>
+          <p>啊，[%username]大人！</p>
+          <p> </p>
+          <p>我忙着想问题，不知道是您来了。</p>
+          <p> </p>
+          <p>有什么事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述鲍莫娜的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正是时候！</p>
+          <p> </p>
+          <p>我刚才在那儿嘀咕的就是和鲍莫娜的拜托有关的事情。</p>
+          <p> </p>
+          <p>研究终于取得了进展。</p>
+          <p> </p>
+          <p>我刚想要把消息告诉鲍莫娜呢，刚好您来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去向[%dic:STR_DIC_N_Iandeus]询问研究的情况</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">应该去伊安德乌斯询问鲍莫娜拜托他的研究进行的怎么样了。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲍莫娜为了拯救埃尔特内的森林，拜托伊安德乌斯对在沙漠中可以生长的树进行研究。</p>
+          <p> </p>
+          <p>因为最近没有研究进展的消息，去向伊安德乌斯询问进展情况，他很高兴地说研究取得了进展。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

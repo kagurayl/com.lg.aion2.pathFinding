@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听拉莎尼亚说你出色地完成了清除天军士兵的任务。</p>
+          <p> </p>
+          <p>现在到了你更上一个台阶的时候。所以我想给你一个困难一点的任务。</p>
+          <p> </p>
+          <p>任务的内容就是除掉天军中名声很旺的人。也就是杀死了我们魔军很多的士兵，因此而出名的人。</p>
+          <p> </p>
+          <p>我并不是让你一开始就去对付天军中最出色的人。我想先从天军将校开始比较好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天军将校有分很多级。分别是从1星将校到5星将校。</p>
+          <p> </p>
+          <p>但是你不要去管他们的级别。只要把天军将校打倒就行。当然，如果你能打倒更高级别的人更好。</p>
+          <p> </p>
+          <p>5星将校要比1星将校更难对付。具体选择什么对象是你的自由。</p>
+          <p> </p>
+          <p>你愿意执行清除天军将校的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天军将校们在埃雷修兰塔横行霸道，老实说很让我们头疼。</p>
+          <p> </p>
+          <p>如果这种情况继续下去的话，战局也许就会倒向天军一边。</p>
+          <p> </p>
+          <p>请你遇到天军将校之后见一个除掉一个。你要去除掉天军将军甚至司令官我都不会阻止你。只要你能做得到的话。</p>
+          <p> </p>
+          <p>对了，他们一般不单独行动，所以你一定要和同伴们一起去。那样会比较安全。</p>
+          <p> </p>
+          <p>[%username]，既然要去，就应该消灭能与你匹敌的敌人。</p>
+          <p> </p>
+          <p>能力不强的家伙即使消灭再多，也没什么用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是因为没有自信，所以才拒绝我吗？</p>
+          <p> </p>
+          <p>又不是让你去单挑，有什么好怕的！</p>
+          <p> </p>
+          <p>不过我不会强迫害怕的人去执行任务。</p>
+          <p> </p>
+          <p>等你有了面对天军将校的自信之后，到时再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>最近在侦察兵和传令兵的报告中经常可以见到你的名字。</p>
+          <p> </p>
+          <p>听说你在对付天军的时候干得很不错。</p>
+          <p> </p>
+          <p>对了，你把天军将校除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，真了不起！你立了大功。</p>
+          <p> </p>
+          <p>多亏了你，现在战局变得对我们魔族更有利了。</p>
+          <p> </p>
+          <p>我可以感觉得到，你在对付天军将校的过程中，实力有了质的飞跃。</p>
+          <p> </p>
+          <p>[%username]，希望你今后能继续努力和天族战斗。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade00]%战斗并获胜([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Votan]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了削弱天族在欧比斯的势力，决定去清除天军将校以上级别的兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了削弱天族在欧比斯的势力，决定去清除天军将校以上级别的兵力。</p>
+          <p> </p>
+          <p>布塔恩说之前清除天军士兵的工作做得很好，现在到了更上一层楼的时候。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

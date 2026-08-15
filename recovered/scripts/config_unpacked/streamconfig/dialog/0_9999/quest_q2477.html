@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该死的东西！</p>
+          <p> </p>
+          <p>好不容易弄到了噬人虫尾巴，又不吃了。</p>
+          <p> </p>
+          <p>现在又开始念叨新鲜的肉和水果了。</p>
+          <p> </p>
+          <p>到底要给它吃什么，它老人家才肯吃啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然要继续搜集肉，那就必须搜集一点好吃的肉。</p>
+          <p> </p>
+          <p>我听说用贝鲁斯兰的克雷斯特里奇肉做成的克雷斯特里奇筋间肉烤串非常好吃。</p>
+          <p> </p>
+          <p>克雷斯特里奇肉虽然很好吃，但是却有特殊的腥味。听说只有栖息在贝鲁斯兰的克雷斯特里奇的肉完全没有腥味。</p>
+          <p> </p>
+          <p>我想做一次尝尝看。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为不能放下农场的事情不管，所以我还正在苦恼呢。[%username]您能帮我的话，实在是太感谢了。</p>
+          <p> </p>
+          <p>那就请您快去贝鲁斯兰打猎[%dic:STR_DIC_M_CrestlichReD_29_n]，搜集[%dic:STR_DIC_I_QUEST_2477a]吧。</p>
+          <p> </p>
+          <p>听说越新鲜肉质越好，所以如果您捕到了的话，请您马上帮我带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，为了一个畜生，要去那么远的地方搜集肉，然后做成烤串，也确实有点太过分了。</p>
+          <p> </p>
+          <p>我是因为太心疼女儿，所有就有点着急。</p>
+          <p> </p>
+          <p>度卡尔那个家伙又能饿到什么时候呢？肚子饿了的话，给它吃什么它都会吃的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，您回来啦。</p>
+          <p> </p>
+          <p>我还担心让[%username] 大人去做这种事情是不是太无礼了。</p>
+          <p> </p>
+          <p>如果传出去说我为了一个宠物而让守护者跑腿的话，那就不好了。</p>
+          <p> </p>
+          <p>不过已经让您去了，也没办法了。不管怎样，[%dic:STR_DIC_I_QUEST_2477a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克雷斯特里奇筋间肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊呀，真是太感谢了。但是我还能再拜托您一件事吗？</p>
+          <p> </p>
+          <p>我问了问别人，克雷斯特里奇筋间肉烤串并不是谁做都好吃的。</p>
+          <p> </p>
+          <p>必须要让伏魔殿的料理名人莱尼塔做，做出来的料理才不会有腥味。</p>
+          <p> </p>
+          <p>您既然帮了我，就帮忙帮到底吧。行吗？</p>
+          <p> </p>
+          <p>请您去伏魔殿的[%dic:STR_DIC_W_DC1_5]，拜托[%dic:STR_DIC_N_Lainita]大人帮我制作克雷斯特里奇筋间肉烤串。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去贝鲁斯兰吗？</p>
+          <p> </p>
+          <p>我还以为[%username]大人的话， [%dic:STR_DIC_I_QUEST_2477a]之类的，应该很快就能搜集到...</p>
+          <p> </p>
+          <p>我不是在催您，但是如果可以的话，请您能不能快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你应该不是来跟我学习料理的吧，[%username]。</p>
+          <p> </p>
+          <p>那你找我有什么事吗？</p>
+          <p> </p>
+          <p>有事的话，就快说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出克雷斯特里奇筋间肉包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是让我帮着制作克雷斯特里奇筋间肉烤串啊。</p>
+          <p> </p>
+          <p>(一边制作料理)料理也是有流行的，最近最流行的就是克雷斯特里奇筋间肉烤串。几乎是所有的宴会必点的料理。</p>
+          <p> </p>
+          <p>我做了不知道有多少了，现在闭着眼睛都能做出来。请稍等一下。马上就好。</p>
+          <p> </p>
+          <p>(拿出克雷斯特里奇筋间肉烤串)来，拿着。祝你好胃口。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！您把莱塔尼大人制作的克雷斯特里奇筋间肉烤串带回来了吗？</p>
+          <p> </p>
+          <p>您应该没跟料理名人说这是做给皮比龙吃的吧？</p>
+          <p> </p>
+          <p>如果实话实说的话，他一定会很生气，不会帮您做的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出克雷斯特里奇筋间肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是太谢谢了。</p>
+          <p> </p>
+          <p>度卡尔要是喜欢吃克雷斯特里奇筋间肉烤串就好了。</p>
+          <p> </p>
+          <p>[%username]大人去了那么多地方好不容易做出来的东西，它应该会吃吧。</p>
+          <p> </p>
+          <p>谢谢您不厌其烦地帮我，这是给您的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去贝鲁斯兰搜集[%dic:STR_DIC_M_CrestlichReD_29_n]的筋间肉，然后交给[%dic:STR_DIC_N_Balom]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">拜托[%dic:STR_DIC_N_Lainita]制作料理</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把料理交给[%dic:STR_DIC_N_Balom]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">巴洛姆说想给度卡尔吃克雷斯特里奇筋间肉烤串。去贝鲁斯兰捕捉温顺的克雷斯特里奇，搜集克雷斯特里奇筋间肉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴洛姆说度卡尔仍然不吃东西，说想喂它吃据说非常好吃的克雷斯特里奇筋间肉烤串。</p>
+          <p> </p>
+          <p>于是帮他去贝鲁斯兰搜集了克雷斯特里奇筋间肉，然后去伏魔殿拜托料理名人做成了克雷斯特里奇筋间肉烤串。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

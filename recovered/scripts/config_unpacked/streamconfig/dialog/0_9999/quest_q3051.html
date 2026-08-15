@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你过来一下。</p>
+          <p> </p>
+          <p>(上下打量)看你的身体很结实，应该还可以。</p>
+          <p> </p>
+          <p>(环顾四周，小声说)有件事情，怎么样？你愿意吗？</p>
+          <p> </p>
+          <p>如果愿意的话，可以马上开始。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是扫荡卡里顿，它们越来越...</p>
+          <p> </p>
+          <p>啊，我就和你实话实说吧。事实上，这里的赏金猎人之间打了个赌。</p>
+          <p> </p>
+          <p>看谁在一周之内打猎到的卡里顿最多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问现在的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天是第三天，我一共捕到了10头？</p>
+          <p> </p>
+          <p>虽然这些已经不少了，但这次我一定要赢。特别是一定要比那个该死的纳格伦多！</p>
+          <p> </p>
+          <p>请你偷偷地去[%dic:STR_DIC_W_LF2B_SZ_C5]，帮我打猎[%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An]和[%dic:STR_DIC_M_LF2A_CalydonMage_49_An]，小心不要被人发现。</p>
+          <p> </p>
+          <p>我会把赌注的一半给你作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也应该知道，这次的事情要绝对保密。</p>
+          <p> </p>
+          <p>还有，一定要打猎[%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An]和[%dic:STR_DIC_M_LF2A_CalydonMage_49_An]。其他东西和我没关系。</p>
+          <p> </p>
+          <p>请你在别人发现之前快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？是报酬太少了吗？赌注的一半还不够吗？</p>
+          <p> </p>
+          <p>老兄，没想到你这么贪心。</p>
+          <p> </p>
+          <p>我说怎么看起来和纳格伦很像…啊，够了，这次的事情就当没发生过。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，怎么这么慢！</p>
+          <p> </p>
+          <p>啊，(环顾四周，小声说)去了这么久还没回来，我还以为你逃走了呢。</p>
+          <p> </p>
+          <p>你去办的事情怎么样了？打猎到卡里顿了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。这次我一定会赢，哈哈哈。</p>
+          <p> </p>
+          <p>啊，笑得肚子都疼了。</p>
+          <p> </p>
+          <p>来，拿着。这是说好的报酬。</p>
+          <p> </p>
+          <p>为了预先庆祝我的胜利，我要去吃几个包子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎卡里顿村落的卡里顿</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An]([%2]/30)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonMage_49_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tityus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让提提奥斯可以在打赌中获胜，必须去帮他打猎卡里顿追踪者和卡里顿咒术师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提提奥斯说有件事情，问我愿不愿意。</p>
+          <p> </p>
+          <p>询问是什么事情之后，他说是赏金猎人之间在打赌，看谁打猎到的卡里顿更多。他说如果我能帮他，就把赌注的一半做为报酬送给我。</p>
+          <p> </p>
+          <p>帮他打猎到了卡里顿追踪者和卡里顿咒术师并回去找到了他，他非常高兴，说这次的胜利一定属于自己。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

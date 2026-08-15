@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天桥的周围也有很多人。</p>
+          <p> </p>
+          <p>这里是伏魔殿的大门，自然会有很多人在这里见面。</p>
+          <p> </p>
+          <p>所以经常有人会让我帮着传口信。</p>
+          <p> </p>
+          <p>让我见到他们要找的人的话，就帮他们传话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我这里刚好有您的一个口信。</p>
+          <p> </p>
+          <p>(拿出手册翻看)等等。是结界守护团留下的。</p>
+          <p> </p>
+          <p>要我现在告诉您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面写着“有要事相商，请到[%dic:STR_DIC_W_STR_DF3_SZ_A]来。[%dic:STR_DIC_N_Rostrum]”。</p>
+          <p> </p>
+          <p>已经留在这里有一段时间了，终于等到您来了。</p>
+          <p> </p>
+          <p>如果您想现在就去，就请跟我说。</p>
+          <p> </p>
+          <p>我会马上把您送到贝鲁斯兰。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实内容并不长……</p>
+          <p> </p>
+          <p>看来您一定有什么急事吧？</p>
+          <p> </p>
+          <p>有时间的话，请您一定要来找我。口信我会一直保留着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我对您已经是久仰大名了。</p>
+          <p> </p>
+          <p>虽然您的过去充满了秘密，但现在连伏魔殿的毕达尔大人都对您刮目相看。</p>
+          <p> </p>
+          <p>像[%username]大人这样的人，才是我们结界守护团需要的人才。</p>
+          <p> </p>
+          <p>啊，在这之前，我来跟您介绍一下我们守护团。</p>
+          <p> </p>
+          <p>您听说过结界守护团吗？结界守护团是为了守护结界、保护魔族而建立的组织。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的目的从小的方面来看，是守护魔界周围的结界，从大的方面来看，是阻止一切威胁亚特雷亚的势力，守护永恒之塔。</p>
+          <p> </p>
+          <p>虽然我们不是伏魔殿下属的团体，但很多人都自发地加入了我们，积极参与我们的活动。</p>
+          <p> </p>
+          <p>[%username]大人，我想您一定可以将我们结界守护团发扬光大。</p>
+          <p> </p>
+          <p>加入和退出都是自由的，只要您告诉我，我会立刻帮您处理。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能成为结界守护团的一员，与我们一同保护结界。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Rostrum]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说结界守护团的罗斯特鲁在找我。去贝鲁斯兰要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团下属的罗斯特鲁说要告诉我一个有用的情报，于是去贝鲁斯兰要塞见到了他。</p>
+          <p> </p>
+          <p>他向我介绍了结界守护团的情况，说如果想加入的话，可以去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

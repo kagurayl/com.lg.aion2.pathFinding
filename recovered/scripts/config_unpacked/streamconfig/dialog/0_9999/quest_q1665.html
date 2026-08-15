@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我变成巴拉努斯的样子就已经够冤枉了，现在还得挨打！</p>
+          <p> </p>
+          <p>小时后因为觉得谍报员很帅，所以才志愿当上了谍报员。谁知道会变成这个样子。</p>
+          <p> </p>
+          <p>我很希望自己能成为穿着黑色的皮夹克，潇洒地敌营出入的谍报员！</p>
+          <p> </p>
+          <p>但一切都是不过是空想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以这个样子进行碟报活动很辛苦不说，现在还得挨农场主的鞭子。</p>
+          <p> </p>
+          <p>因为听说有奇怪的东西出没，所以想出来调查，没想到刚一出来就挨了鞭子。</p>
+          <p> </p>
+          <p>挨打还是其次，这样一来就无法进行正常的谍报活动了。</p>
+          <p> </p>
+          <p>他不管白天晚上都瞪大了眼睛监视着我，我根本避不开。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？如果你真的能帮我的话，真的太感谢了。</p>
+          <p> </p>
+          <p>从这里出去，翻过山坡，有一个[%dic:STR_DIC_W_LF3_SZ_011]。那里有个拿着刀的德拉克纽特，他就是[%dic:STR_DIC_M_LizardmanFiNMQ_43_Ae]。</p>
+          <p> </p>
+          <p>请你帮我把他除掉，让我搜集情报工作的时候可以方便些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我好几次想解开变身，把他干掉。</p>
+          <p> </p>
+          <p>但是要是被人看见的话，我之前的谍报活动就竹篮打水一场空了。</p>
+          <p> </p>
+          <p>所以这段时间的忍受还是值得的。</p>
+          <p> </p>
+          <p>请你快去帮我把[%dic:STR_DIC_M_LizardmanFiNMQ_43_Ae]除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你不是说要帮我吗？怎么又溜了？</p>
+          <p> </p>
+          <p>难道你想看到我解开变身被人发现，之前的努力全都变成泡影，你才觉得开心吗？</p>
+          <p> </p>
+          <p>还不如一开始就别说要帮我呢！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>你帮我把[%dic:STR_DIC_M_LizardmanFiNMQ_43_Ae]除掉了吗？</p>
+          <p> </p>
+          <p>如果能听到他被除掉的消息，我会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈哈，真痛快！</p>
+          <p> </p>
+          <p>谢谢你，今后开展碟报工作就更方便了。</p>
+          <p> </p>
+          <p>希望我的努力能尽早得到回报，尽快击败龙族...</p>
+          <p> </p>
+          <p>那样我才能重新恢复天人的样子。</p>
+          <p> </p>
+          <p>不管咋样，真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_LizardmanFiNMQ_43_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_LF3_Baranus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">变身成巴拉努斯的拉米尔罗斯说农场主阿萨恩给他的谍报活动造成了很大的困难。帮他把阿萨恩除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉米尔罗斯正变身成巴拉努斯的样子监视着龙族的动态，但是由于农场主阿萨恩的原因，无法正常地进行谍报活动。于是帮他除掉了农场主阿萨恩。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

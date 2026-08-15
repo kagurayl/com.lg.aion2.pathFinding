@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没事做吗？为什么一天到晚在这晃悠，搞得人很心烦？</p>
+          <p> </p>
+          <p>本来头疼的事情就很多...</p>
+          <p> </p>
+          <p>等等，你是[%userclass]吧？嗯，看你全身的行头，应该还有两把刷子。你有时间吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">为什么这么问？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还能为什么？我想介绍件事情给你做。</p>
+          <p> </p>
+          <p>(环顾四周，小声说)你捕过卡里顿吗？</p>
+          <p> </p>
+          <p>啊，没有也没关系。以你的实力，即使没有经验也足够了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问打猎的理由。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>理由嘛…你一定要知道吗？</p>
+          <p> </p>
+          <p>反正以后你也会知道，我就告诉你吧。</p>
+          <p> </p>
+          <p>事实上，我们正在打赌，看谁捕到的卡里顿多。虽然肯定是我赢，但是为了以防万一。</p>
+          <p> </p>
+          <p>还有，我对那个叫纳格伦的家伙很不满意。因为他使毒的本领还过得去，所以我才接受了他，但我看不惯他的做法。</p>
+          <p> </p>
+          <p>谨慎一点没什么坏事，希望你能帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，明智的决定。</p>
+          <p> </p>
+          <p>我要打猎的卡里顿是[%dic:STR_DIC_M_LF2A_CalydonAssassinH_48_An]和[%dic:STR_DIC_M_LF2A_CalydonMageH_48_An]。</p>
+          <p> </p>
+          <p>打猎1头可以当作其他卡里顿2头，所以很有利。</p>
+          <p> </p>
+          <p>但是它们也比其他的卡里顿凶恶得多，请你千万小心。希望你快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈，跟你说了原因，你却拒绝了。</p>
+          <p> </p>
+          <p>能不能得到赏金还是其次，如果输了的话，我面子上会过不去。</p>      
+          <p> </p>
+          <p>但是因为有点情况，我无法离开旅馆。</p>   
+          <p> </p>
+          <p>请你为我设身处地地想一想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久不见。这段时间过得还好吗？</p>
+          <p> </p>
+          <p>(小声说)我让你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>我怕被人发现，你最好小声点说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。看了我真是找对人了。</p>
+          <p> </p>
+          <p>虽然你刚回来，我这么说有点不好意思，不过你能继续帮我吗？</p>
+          <p> </p>
+          <p>今后我还会给你这么多报酬。提提奥斯向我宣战了。</p>
+          <p> </p>
+          <p>虽然觉得他是个头脑简单四肢发达的家伙，本来不想理他的，但这样下去的话就会输给他。</p>
+          <p> </p>
+          <p>啊，你不用马上做出决定。你也应该累了，先去休息一下，决定之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎卡里顿村落的卡里顿</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonAssassinH_48_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CalydonMageH_48_An]([%5]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Oileus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让奥伊雷乌斯在打赌中获胜，必须帮他打猎卡里顿暗杀者和卡里顿占术师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎马努克旅馆里的奥伊雷乌斯问我有没有时间。</p>
+          <p> </p>
+          <p>询问原因后，他说赏金猎人之间在打赌谁打猎的卡里顿更多，但自己因为有事不能离开旅馆，让我帮他去打猎卡里顿。</p>
+          <p> </p>
+          <p>帮他打猎到了卡里顿暗杀者和卡里顿占术师，他说提提奥斯在向他宣战，让我以后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

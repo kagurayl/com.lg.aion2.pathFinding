@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>写了这么多的信，梅戴娅在魔界的生活一定不怎么如意。</p>
+          <p> </p>
+          <p>不过她是去进行情报工作，这是当然的事情。</p>
+          <p> </p>
+          <p>虽然说是自愿的，但是看她这么辛苦，我的心里很不好受。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她说要去魔界的时候我没能阻止她，现在逐渐变成了恨。</p>
+          <p> </p>
+          <p>如果现在她能回来该有多好...她是个很固执的人，也不会听我的话...</p>
+          <p> </p>
+          <p>不过我还是想去劝劝她。你能去魔界帮我把信交给[%dic:STR_DIC_N_Medea]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等一下。我马上就去写信。</p>
+          <p> </p>
+          <p>（匆忙地把信写好）好了，可以了。一定要帮我转交给[%dic:STR_DIC_N_Medea]。</p>
+          <p> </p>
+          <p>还有，既然[%username]大人您过去，请您也帮我劝劝梅戴娅，让她重新回到天界。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您刚从魔界回来，我就让您再去魔界，真是太勉为其难了。</p>
+          <p> </p>
+          <p>是我太心急了...对不起。</p>
+          <p> </p>
+          <p>梅戴娅的事情虽然很让人伤心，但毕竟只是我们两个人的事情...我知道了。我再想想别的办法把。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您有什么传达给我的紧急情报吗？</p>
+          <p> </p>
+          <p>请您说说是什么事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出载努斯的信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>载努斯给我送来了回信！</p>
+          <p> </p>
+          <p>（读完信之后）虽然很感激他为我着想的心情，但是我不能回去。</p>
+          <p> </p>
+          <p>我不能丢下肩负的任务而回去。而且我并没有为了载努斯而做出牺牲。</p>
+          <p> </p>
+          <p>不管怎样，我知道了载努斯的心意。我对此非常感激。 </p>
+          <p> </p>
+          <p>[%username]大人您给我送来这封信，我也要表示感谢。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Medea]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">回到莫尔海姆，把载努斯的回信交给梅戴娅</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>载努斯觉得梅戴娅是为了自己而做出了牺牲，所以写了信想让她回来。</p>
+          <p> </p>
+          <p>回到莫尔海姆，把载努斯的的回信交给了梅戴娅。她说很感谢，但是以任务为借口说不能回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了喂饱这些什么事都干不成的自卫团，我吃了很多苦。一想到这些，我就火往上冒。</p>
+          <p> </p>
+          <p>神官大人来了之后，守卫们的粮食开始由极乐世界供应。但因为食物不够卫兵们吃，所以让我为他们煮汤吃。</p>
+          <p> </p>
+          <p>我偶尔也会发发牢骚，不过又能怎么办呢？这是神官大人的吩咐...</p>
+          <p> </p>
+          <p>现在连烧火的木柴都不够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去的话，汤就做不好了。您能帮帮我吗？</p>
+          <p> </p>
+          <p>有一种可以用来应急的木柴...</p>
+          <p> </p>
+          <p>在波特玛废墟，有一种名叫[%dic:STR_DIC_M_Spectre_41_An]的怪物。</p>
+          <p> </p>
+          <p>他们拿着的拐杖很神奇，点上火之后可以烧得很旺。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还好有守护者大人这样的好人。</p>
+          <p></p>
+          <p>那种手杖叫做[%dic:STR_DIC_I_quest_1591a]，有12根左右的话，应该就能把汤煮好了。</p>
+          <p></p>
+          <p>请您快去帮我打猎[%dic:STR_DIC_M_Spectre_41_An]，搜集12个火焰之杖。</p>
+          <p></p>
+          <p>哼，要是那些无能的自卫团员能别在那儿瞎转悠，帮我搜集一点木柴就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这下可糟了。做完之前，木柴就要用光了。</p>
+          <p> </p>
+          <p>神官大人知道了的话，一定会骂我连个汤都煮不好的。</p>
+          <p> </p>
+          <p>呼，早知道这样的话，我就多准备一点柴火了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>木柴拿回来了吗？</p>
+          <p> </p>
+          <p>火快要熄灭了……</p>
+          <p> </p>
+          <p>不过没关系，只要放一两根[%dic:STR_DIC_I_quest_1591a]进去，马上就会燃烧起来的。</p>
+          <p> </p>
+          <p>快把东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出火焰之杖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>再煮煮，汤就能吃了。</p>
+          <p> </p>
+          <p>看来邪恶的幽灵要比想象的更难对付吧？</p>
+          <p> </p>
+          <p>火马上要熄了，请您快去[%dic:STR_DIC_M_Spectre_41_An]那里搜集[%dic:STR_DIC_I_quest_1591a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拐杖看上去很结实。</p>
+          <p> </p>
+          <p>不知道火焰之杖是不是具有某种魔力，一碰到火就会猛烈地燃烧起来。</p>
+          <p> </p>
+          <p>有了这些的话，我就能按时把汤做好了。</p>
+          <p> </p>
+          <p>谢谢您。这是我的一点心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Spectre_41_An]的[%dic:STR_DIC_I_quest_1591a]，然后交给[%dic:STR_DIC_N_Camana]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为村里的自卫团员煮汤的卡马娜说木柴不够了。帮她搜集一些好用的木柴吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡马娜按照神官的指示，正在为村里的自卫团员煮汤。</p>
+          <p> </p>
+          <p>但木柴不够了，不知道能不能坚持到把汤做完，她说需要适合燃烧的木柴。</p>
+          <p> </p>
+          <p>帮她从邪恶的幽灵那里搜集到了火焰之杖，她表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

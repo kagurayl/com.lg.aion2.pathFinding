@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听里弗斯拉希尔说，天族正计划在欧比斯各地发动总攻。</p>
+          <p> </p>
+          <p>那样的话，我们魔族会怎么样呢？如果埃雷修兰塔被天族夺走的话，该怎么办呢？</p>
+          <p> </p>
+          <p>不管用什么手段，都必须扭转目前的战局！</p>
+          <p> </p>
+          <p>而首先要做的就是夺回拉米兰要塞。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听里弗斯拉希尔说，如果能减少驻守拉米兰要塞的天族驻军的数量，情况就会比现在好得多。</p>
+          <p> </p>
+          <p>但是他们的数量很多，很难一次就给他们造成致命打击。只有反复进行奇袭攻击，才能削弱他们的力量。</p>
+          <p> </p>
+          <p>问题是谁能去冲破敌阵...想来想去，光凭我们是太困难了。</p>
+          <p> </p>
+          <p>我们光对付龙族就已经够累的了。</p>
+          <p> </p>
+          <p>怎么样，[%username]大人？您愿意为消灭[%dic:STR_DIC_M_2815_all]打头阵吗？</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有实力的人回答果然就是爽快。</p>
+          <p> </p>
+          <p>天族占领拉米兰要塞的时候，要塞进入可以占领状态后，他们就会出现。</p>
+          <p> </p>
+          <p>请你密切留意拉米兰要塞的情况，等[%dic:STR_DIC_M_2815_all]一出现，就把他们全部清除掉，然后把[%dic:STR_DIC_I_QUEST_2815a]带回来。</p>
+          <p> </p>
+          <p>天族的监视非常森严，所以行动必须要隐秘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，面对天族势力的扩张您不感到害怕吗？</p>
+          <p> </p>
+          <p>如果我有[%username]大人那样的实力的话，不用说完我就已经迫不及待地冲出去了。</p>
+          <p> </p>
+          <p>您先别这样，请您再好好想想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您回来，[%username]大人！</p>
+          <p> </p>
+          <p>拉米兰要塞奇袭作战成功了吗？</p>
+          <p> </p>
+          <p>要塞周围的情况怎么样？您把[%dic:STR_DIC_I_QUEST_2815a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拉米兰守卫的纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就比较难办了。</p>
+          <p> </p>
+          <p>不是我不相信[%username]大人，但是要向上司报告的话，就必须要有证据。</p>
+          <p> </p>
+          <p>所以请您去把[%dic:STR_DIC_I_QUEST_2815a]摘下带回来。不好意思，麻烦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我现在知道其他的人为什么要称赞[%username]大人了。</p>
+          <p> </p>
+          <p>对付天族驻军一定很累了吧？您快去休息一下吧。这些纹章我会帮您交给罗斯肖普百夫长大人的。</p>
+          <p> </p>
+          <p>啊，当然我会跟他说是[%username]大人搜集到的。请您不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2815_all]，搜集证据然后交给[%dic:STR_DIC_N_Magnair]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须削弱天族的势力。除掉天族占领的拉米兰要塞进入可以占领状态后出现的天族驻军，搜集拉米兰守卫的纹章。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛格纳伊尔说为了削弱天族的势力，正在展开奇袭作战，让我帮帮他的忙。</p>
+          <p> </p>
+          <p>按照他的请求除掉了占领拉米兰要塞的天族要塞驻军，把搜集到的纹章交给了他。他说会代我向百夫长报告，让我去休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

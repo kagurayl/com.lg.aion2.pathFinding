@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间真是辛苦你了。这次任务是最近我给你的最后一个任务了。</p>
+          <p> </p>
+          <p>最后一个任务，同时也是比之前执行的任务更难的任务。</p>
+          <p> </p>
+          <p>不过我相信以[%username]的实力的话，一定没有问题的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，给你的任务越来越困难了。这次你的对手是[%dic:STR_DIC_E_Lgrade5]。</p>
+          <p> </p>
+          <p>他们的战斗能力要比之前对付的天族要强得多。</p>
+          <p> </p>
+          <p>但是你的能力要比他们强得多，对付天军5级兵应该不会很困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去把对魔族取得胜利造成阻碍的[%dic:STR_DIC_E_Lgrade5]全部清除掉。</p>
+          <p> </p>
+          <p>每除掉一个，我们魔族的士气就会得到提高。</p>
+          <p> </p>
+          <p>对了，[%username]，必须消灭和你实力接近的人。实力太差的话，就算消灭了也没有用。</p>
+          <p> </p>
+          <p>希望你能顺利地把他们除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你已经对这段时间频繁的战斗感到腻烦了。</p>
+          <p> </p>
+          <p>也是，是会有这种时候。我很理解。</p>
+          <p> </p>
+          <p>稍微休息一下的话，你就又会手痒的。</p>
+          <p> </p>
+          <p>到时候再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你安然回来啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_Lgrade5]全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次也同样出色地完成了任务。</p>
+          <p> </p>
+          <p>谢谢你这段时间努力地执行任务，[%username]。</p>
+          <p> </p>
+          <p>多亏了你，我们军团士兵在执行任务的时候得到了很多帮助。</p>
+          <p> </p>
+          <p>这是这段时间你忠实执行任务的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade5]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lasanya]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族在欧比斯战场上取得胜利，必须战胜天军5级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚让我去除掉魔军5级兵，说是最后一个任务。</p>
+          <p> </p>
+          <p>按照他的命令，来到战场除掉了天军5级兵。他对我表示感谢，说我出色完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

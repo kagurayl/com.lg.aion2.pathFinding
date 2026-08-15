@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(咕噜噜，咕噜噜)</p>
+          <p> </p>
+          <p>啊，肚子好哦，缪缪。</p> 
+          <p> </p>          
+          <p>饿了很长时间，蹦蹦空肚子非常饿。</p>
+          <p> </p>
+          <p>要找到蹦蹦帕的话，一定要恢复力气，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有没有吃的。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直被雾鬃追赶，所以来不及带什么吃的，缪缪。</p>
+          <p> </p>         
+          <p>而且这里有很多可怕的野兽，我也不能出去。</p> 
+          <p> </p>          
+          <p>啊，蹦蹦空想吃[%dic:STR_DIC_G_berry_d_n_c_30b]。</p>
+          <p> </p>
+          <p>吃了新鲜的普雷沙的话，应该很快就能恢复，缪缪。</p>
+          <p> </p>
+          <p>守护者，。你能帮我去采集一点吗？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_G_berry_d_n_c_30b]到处都有，缪缪。</p>
+          <p> </p>
+          <p>阴暗的地方要比有太阳晒的地方多。</p>
+          <p> </p>
+          <p>蹦蹦空肚子很饿，别去太长时间，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦空不能吃雾鬃的食物，缪缪。</p>
+          <p> </p>          
+          <p>要找到蹦蹦帕的话，蹦蹦空必须恢复力气。</p>
+          <p> </p>
+          <p>请你帮帮我，让我尽快吃了东西之后恢复力气，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+   
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦空等了你好久，缪缪。</p>
+          <p> </p>
+          <p>(咕噜噜，咕噜噜)</p>
+          <p> </p>
+          <p>我的肚子也等了你好久。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出普雷沙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者你好忙啊，缪缪。</p>
+          <p> </p>
+          <p>(咕噜噜，咕噜噜)</p>
+          <p> </p>
+          <p>蹦蹦空肚子这么饿...</p>
+          <p> </p>
+          <p>快去把[%dic:STR_DIC_G_berry_d_n_c_30b] 带回来，缪缪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普雷沙看上去很好吃，缪缪。</p>
+          <p> </p>
+          <p>感觉力气在慢慢恢复。</p>
+          <p> </p>
+          <p>蹦蹦空非常感谢你。我把这个给你，缪缪。</p>
+          <p> </p>
+          <p>谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_G_berry_d_n_c_30b]，然后交给[%dic:STR_DIC_N_DF2_NPC_BumbumKong]</font></p>[%collectitem]</step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">为了让饿了很久的蹦蹦空恢复力气，去帮他采集普雷沙吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦空说因为饿了很久而没有力气，如果能吃到普雷沙的话，应该就能恢复力气。</p>
+          <p> </p>
+          <p>于是按照他的拜托，帮他采集到了普雷沙。蹦蹦空非常高兴，并给了我报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

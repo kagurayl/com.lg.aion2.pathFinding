@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您去过塔兰的熔岩洞穴吗？</p>
+          <p> </p>
+          <p>据说那是个拥有可以熔化世界上所有的东西的沸腾的熔岩的洞穴。</p>
+          <p> </p>
+          <p>不过，您听说过那里除了纽特和熔岩之外，还有其他贵重的东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问那是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是紫水晶。</p>
+          <p> </p>
+          <p>没错，就是被人们认为是不祥的宝石的紫水晶。</p>
+          <p> </p>
+          <p>那个地方本来就很危险，又有不祥的东西，因此听说谁都没有去碰过那些紫水晶。</p>
+          <p> </p>
+          <p>但是最近听说乌云贸易团的术古们正在秘密地收购那种紫水晶。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我年纪大了，身体也变差了。还经常咳嗽，所以没办法过去。</p>
+          <p> </p>
+          <p>如果能吃点对身体有好处的食物的话，也许就能恢复一点力气。但是那也得有钱才行...</p>
+          <p> </p>
+          <p>所以我想了一下，您去帮我搜集那种[%dic:STR_DIC_I_QUEST_2353a]，卖到的钱我们一人一半，怎么样？</p>
+          <p> </p>
+          <p>和乌云贸易团讨价还价，就让我来负责。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，谢谢你。</p>
+          <p> </p>
+          <p>那你就到位于穆斯费尔火山地带的塔兰的岩石洞穴去，帮我搜集[%dic:STR_DIC_I_QUEST_2353a]吧。</p>
+          <p> </p>
+          <p>听说是在洞穴很深的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咳咳...也是，已经这么一大把年纪了，吃了对身体好的东西也不一定能有力气。</p>
+          <p> </p>
+          <p>这把年纪的话，早就半个身子埋在土里了。</p>
+          <p> </p>
+          <p>就这样活着吧。到时候了的话，该走的还得走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，你回来了。</p>
+          <p> </p>
+          <p>去那么大老远的地方，真是辛苦了。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_I_QUEST_2353a]找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出紫水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老头子的拜托，你就不放在心上了吗？</p>
+          <p> </p>
+          <p>说好的事情，难道不应该遵守吗？</p>
+          <p> </p>
+          <p>所以请你快去塔兰的熔岩洞穴去搜集紫水晶吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是传说中的紫水晶啊。</p>
+          <p> </p>
+          <p>谢谢你辛辛苦苦把它采回来。</p>
+          <p> </p>
+          <p>来，这是从术古那里拿到的预付款。请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Crystal_Q2353]搜集紫水晶，然后交给[%dic:STR_DIC_N_Gundalpun]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须搜集塔兰的熔岩洞穴里的紫水晶，然后交给甘达尔芬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>甘达尔芬说塔兰的熔岩洞穴里的紫水晶很值钱，让我去搜集紫水晶，然后收益对半分。</p>
+          <p> </p>
+          <p>于是来到塔兰的熔岩洞穴的深处，帮他采集到了紫水晶。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

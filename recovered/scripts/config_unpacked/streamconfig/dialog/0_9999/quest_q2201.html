@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实我是刚刚被派到这的。</p>
+          <p> </p>
+          <p>刚来的时候，其他的执政官都劝告我要小心。</p>
+          <p> </p>
+          <p>他们劝告我说，要塞的头目[%dic:STR_DIC_N_Sueron]军团长的性格不一般，一定要多加小心。</p>
+          <p> </p>
+          <p>他们说在这里违抗命令的事情是绝不允许发生的，连百夫长们对军团长的命 令都不能发表任何意见。</p>
+          <p> </p>
+          <p>我在担心是不是被派错了地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚刚上任，就被百夫长[%dic:STR_DIC_N_Valuerin]叫过去，这么说道。</p>
+          <p> </p>
+          <p>“军团长要把阿尔特盖德变成魔界中最安全的地方，你的任务就是保障要塞周边安全的万无一失。”</p>
+          <p> </p>
+          <p>他命令我，要让居民们即使没有守护者的保护，也能安全地走动，为此必须将要塞周围所有 能构成威胁的生物都消灭掉。</p>
+          <p> </p>
+          <p>所以我在不执勤的时候，经常到要塞外面去清除危险的怪物。</p>
+          <p> </p>
+          <p>但其实我觉得，魔界内并不是只有人和守护者才能生存啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点了点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过比起其它的生物来，[%dic:STR_DIC_M_PhainiD_10_n]最难抓了。</p>
+          <p> </p>
+          <p>可能是因为块头太大了，一般的攻击都奈何不了它。</p>
+          <p> </p>
+          <p>[%username]您能不能帮帮我？</p>
+          <p> </p>
+          <p>这是我来要塞后的第一个任务，真的很想出色地完成。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太感谢了。[%dic:STR_DIC_M_PhainiD_10_n]在要塞外的[%dic:STR_DIC_W_DF1A_2]。</p>
+          <p> </p>
+          <p>您只要去水里帮我除掉10只就可以了。</p>
+          <p> </p>
+          <p>如果您能帮我，我一定会报答您的。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又要巡查，又要消灭危险生物，我真的已经忙不过来了。</p>
+          <p> </p>
+          <p>可是要是辩解说时间不够，是肯定行不通的。</p>
+          <p> </p>
+          <p>要是您能帮助我就好了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您回来啦？</p>
+          <p> </p>
+          <p>除掉[%dic:STR_DIC_M_PhainiD_10_n]了吗？</p>
+          <p> </p>
+          <p>虽然我很信任[%username]大人，但是就这么漫无目的地等着，我都有些着急了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="PLAYEMOTION_salute;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>多亏了您，这样我就能去向百夫长巴鲁埃林报告了。</p>
+          <p> </p>
+          <p>这是我对您的一点表示。请收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_M_PhainiD_10_n] ([%2]/10)。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Heidunn]%对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要塞军团长下达命令，要求保障要塞周边的安全。帮助海伊顿去消灭冰之蛇颈龙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海伊顿是新派到阿尔特盖德要塞来的执政官。</p>
+          <p> </p>
+          <p>接到了消灭要塞周围所有危险动物的命令，但是因为冰之蛇颈龙很难消灭，所以他的处境很困难。</p>
+          <p> </p>
+          <p>受他所托消灭了冰之蛇颈龙，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

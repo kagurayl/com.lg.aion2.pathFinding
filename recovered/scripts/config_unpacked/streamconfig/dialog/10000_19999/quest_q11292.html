@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>嘘，怎么能这么大声说话呢！</p>
+          <p></p>
+          <p>这里的亚龙非常敏感。</p>
+          <p></p>
+          <p>要是亚龙守护者出来的话，我们俩就完了。全部完蛋！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说对不起。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>用不着向我道歉。只要以后小心一点就行了。</p>
+          <p></p>
+          <p>是凯西内尔的代理人让你来的吗？还是听之前来过的人说的？</p>
+          <p></p>
+          <p>不管怎样都没关系。你到这里来，一定是为了消灭亚龙，不是吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>敏锐的帕德玛夏就在这个洞穴里。她产了很多蛋，正在孵化。</p>
+          <p></p>
+          <p>(掰着手指头算日子)哎呀！马上就要孵化出来了。</p>
+          <p></p>
+          <p>必须在这之前消灭掉帕德玛夏才行，在帕德玛夏的蛋里孵化出德拉坎之前。</p>
+          <p></p>
+          <p>请和其他守护者组成联盟，一起进入帕德玛夏的洞穴。</p>
+          <p></p>
+          <p>帕德玛夏的洞穴钥匙可以在守卫这里的德拉坎身上找到。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>如果不是来消灭亚龙的话，您来这里干什么？</p>
+          <p></p>
+          <p>这里可不是[%username]大人想象中的普通的龙族地区。</p>
+          <p></p>
+          <p>只要一不小心，可能就得去奇柏利斯克旅行。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(上下打量)看您好像没什么事。</p>
+          <p></p>
+          <p>洞穴里乱糟糟的，我还以为出大事了呢。</p>
+          <p></p>
+          <p>也是，那个家伙差点就成为龙，一定不好对付。</p>
+          <p></p>
+          <p>好了，请把结果告诉我吧。[%dic:STR_DIC_M_DF4_Dramata_57_Al_LF4]一定已经消掉了吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您确定打倒了吗？</p>
+          <p></p>
+          <p>在[%username]大人之前也有几个人说消灭掉了，但她又重新活了过来。</p>
+          <p></p>
+          <p>龙族的生命力非常强，只要还有一口气，就很快就会恢复。</p>
+          <p></p>
+          <p>[%username]大人不像是会说谎的人，我就相信你一次。</p>
+          <p></p>
+          <p>请收下。这是卡伊努斯代理人大人赐予你的奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">打倒[%dic:STR_DIC_M_DF4_Dramata_57_Al_LF4]([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%15]">
+                <font color="[%16]">向[%dic:STR_DIC_N_Jamia]报告</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">消灭敏锐的帕德玛夏，阻止德拉坎从帕德玛夏的蛋中孵化。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>杰米娅说洞穴里的亚龙帕德玛夏产了蛋，正在孵化，很快就会有德拉坎孵化出来。</p>
+          <p></p>
+          <p>她让我在这之前把帕德玛夏消灭掉，于是组成联盟，消灭掉了帕德玛夏。</p>
+          <p></p>
+          <p>向杰米娅报告结果之后，她代替卡伊努斯代理人给了我奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

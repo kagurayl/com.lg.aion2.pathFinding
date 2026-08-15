@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在上来的时候应该看到了吧？山坡下面的特洛尔和托尔金。最近因为它们，让我头疼得要死。</p>
+          <p> </p>
+          <p>它们挡着路，攻击来往的人，所以现在我都收不到补给品和重要的书信。</p>
+          <p> </p>
+          <p>而且它们的数量正在以惊人的速度增加，这样下去的话，我担心它们会冲到结界塔里面来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最好应该先下手为强，[%username]大人您能帮帮我吗？</p>
+          <p> </p>
+          <p>您也看到了，古尔贝克和我都呆在结界塔里不能出去。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_TrollReD_36_An]和[%dic:STR_DIC_M_TrollkinD_36_An]清除掉，让它们不能继续嚣张。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>那就请您帮我清除11头[%dic:STR_DIC_M_TrollReD_36_An]和7头[%dic:STR_DIC_M_TrollkinD_36_An]吧。</p>
+          <p> </p>
+          <p>千万不要因为它们长得很迟钝就小看它们。它们都是些力量很强的家伙。</p>
+          <p> </p>
+          <p>请您一定要小心一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道了。看来我得去找别人了。</p>
+          <p> </p>
+          <p>但是，我担心还能不能找到像[%username]大人这么有能力的人。</p>
+          <p> </p>
+          <p>因为特洛尔和托尔金的气势越来越嚣张了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把特洛尔和托尔金全部除掉了吗？</p>
+          <p> </p>
+          <p>它们都是些皮粗肉厚的家伙，一定不容易对付吧？您应该没伤到什么吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在人们终于可以安心地来结界塔了。</p>
+          <p> </p>
+          <p>这全是[%username]的功劳。</p>
+          <p> </p>
+          <p>愿阿斯佩尔的光荣永远伴随着您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除占领通往结界塔的道路的特洛尔和托尔金</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_TrollReD_36_An]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_TrollkinD_36_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Angrboda]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让人们可以安心地来结界塔，必须把特洛尔和托尔金清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昂格尔伯达说特洛尔和托尔金会攻击来结界塔的人，让我去把它们清除掉。</p>
+          <p> </p>
+          <p>帮助缺少人手的结界守护者清除了特洛尔和托尔金，昂格尔伯达表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

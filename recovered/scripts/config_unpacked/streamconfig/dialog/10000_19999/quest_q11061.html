@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(宝珠上显现出光芒组成的字迹。)</p>
+          <p> </p>
+          <p>(“通过锡兰泰拉回廊，到格尔克马洛斯去。”)</p>
+          <p> </p>
+          <p>(“消灭守卫龙族防御壁的突变纳塔拉孜。)</p>
+          <p> </p>
+          <p>"(""去巴卡巴塔封印塔的[%dic:STR_DIC_N_Stanis]那里获取帮助吧。"")"</p>
+          <p> </p>
+          <p>(宝珠上的字消失了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>你来巴卡巴塔封印塔有事吗？</p>
+          <p> </p>
+          <p>如果没什么事的话，希望你能帮巴卡巴塔封印塔做事。</p>
+          <p> </p>
+          <p>消灭几个德拉坎应该没问题吧？如果你愿意，现在就来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">把宝珠给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是接受了凯西内尔主神的命令的人啊。</p>
+          <p> </p>
+          <p>丑陋的突变的东西，就是徘徊在巴卡巴塔激战地的[%dic:STR_DIC_M_DF4_Raid]。</p>
+          <p> </p>
+          <p>占领封印塔之后，它经常来这里骚扰，让我们吃了不少苦头。</p>
+          <p> </p>
+          <p>要不是父亲叮嘱我必须要守好结界塔的话，我早就过去把它干掉了。</p>
+          <p> </p>
+          <p>但是现在这好像是你的任务了。既然是凯西内尔主神的命令，我很乐意帮助你。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_Raid]在红色大地神殿和巴卡巴塔封印塔之间徘徊，威胁着天族。它非常强大，如果不组织部队过去，根本不是它的对手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，[%username]！</p>
+          <p> </p>
+          <p>我看到你的军队走过巴卡巴塔激战地时扬起的尘土了。</p>
+          <p> </p>
+          <p>在随时可能遭到魔族攻击的危险的地方，你能做出这种壮举真的很了不起。</p>
+          <p> </p>
+          <p>你确认突变纳塔拉孜死了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。</p>
+          <p> </p>
+          <p>对于你的实力，我感到很震惊。等战争结束之后，我想和你好好亲近亲近。</p>
+          <p> </p>
+          <p>父亲好像很喜欢你。</p>
+          <p> </p>
+          <p>但是凯西内尔交给你的任务还没有完成。</p>
+          <p> </p>
+          <p>你去看看宝珠吧。应该又有新的指令了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Stanis]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_DF4_Raid]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">向[%dic:STR_DIC_N_Stanis]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">通过紫色宝珠收到了新的命令。去斯塔尼斯那里了解突变纳塔拉孜的情况吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>通过紫色宝珠收到了命令，让我去格尔克马洛斯的巴卡巴塔封印塔接受斯塔尼斯的帮助，消灭突变纳塔拉孜。</p>
+          <p> </p>
+          <p>于是向斯塔尼斯了解了详细的情况，并组织部队消灭了纳塔拉孜。斯塔尼斯感到很吃惊，说让我继续执行下一个指令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

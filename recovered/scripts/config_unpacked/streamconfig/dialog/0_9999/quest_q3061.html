@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村子给人的感觉是不是有点凄凉？</p>
+          <p> </p>
+          <p>看来您也发现了，不过现在已经比以前好多了。我刚来的时候，这里连结界塔也没有，大家都是在地上吃饭和睡觉。</p>
+          <p> </p>
+          <p>现在，奇柏利斯克出现了，生意人也开始关注这里了，看上去已经大有起色了。不过，这离我们人类的基本居住要求还有很大差距。</p>
+          <p> </p>
+          <p>最重要的一点是，附近的食物来源十分缺乏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉格托斯海岸附近的云凯尔贝和蔓莓果是我们的主要食物来源。可最近，蝎兽和拉博斯克的出现使我们为数不多的食物来源开始告急，因此大家都非常苦恼。</p>
+          <p> </p>
+          <p>为了保护我们的口粮不被抢夺，前一阵子我和弟弟一起去海岸，打算消灭那些家伙们。可是它们繁殖的速度实在太快，仅凭我们俩根本不能击败它们。</p>
+          <p> </p>
+          <p>所以，我希望路过这里的守护者助我们一臂之力。</p>
+          <p> </p>
+          <p>[%username] 大人能够帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从村子入口出去后，沿着右侧的路一直走，就会到达拉格托斯海岸。</p>
+          <p> </p>
+          <p>在那里消灭蝎兽和拉博斯克，并将[%dic:STR_DIC_I_QUEST_3061a]作为胜利的凭据带回来。</p>
+          <p> </p>
+          <p>事情顺利完成后，我会以白金铸币作为谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这，看上去您还有其他要事。</p>
+          <p> </p>
+          <p>那样的话就没办法了，真是遗憾。</p>
+          <p> </p>
+          <p>我已经向极乐世界报告了这件事，并用白金铸币作为这次任务的报酬。</p>
+          <p> </p>
+          <p>所以，稍后如果有时间就过来吧。那些在海岸附近的家伙，想要彻底消灭它们可不容易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我预想的要快很多。</p>
+          <p> </p>
+          <p>那些比[%username] 大人先出发的人都还没回来呢。</p>
+          <p> </p>
+          <p>那么，您是不是已经把那些抢夺粮食的家伙狠狠地教训了一顿？请将胜利的证据 [%dic:STR_DIC_I_QUEST_3061a]交给我吧，然后这金铸币就是您的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将盐水浸泡的甲壳递给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么快就回来了啊。</p>
+          <p> </p>
+          <p>迷路了？没找到去拉格托斯海岸的路吗？</p>
+          <p> </p>
+          <p>从村子入口出去，然后沿着右侧的路，一直走下去就到了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>数量没错。</p>
+          <p> </p>
+          <p>这些金铸币归您了，收下吧。</p>
+          <p> </p>
+          <p>看上去您很有实力，能继续拜托您吗？</p>
+          <p> </p>
+          <p>当然，肯定不是无偿的。我会用白金铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去拉格托斯海岸，消灭蝎兽和拉博斯克，收集[%dic:STR_DIC_I_QUEST_3061a]，并交给 [%dic:STR_DIC_N_Eunomia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">蝎兽和拉博斯克抢夺村民们的食物来源，因此村民们的生活变得十分困难。接受委托，消灭剧毒尾巴蝎兽、锥子尾巴蝎兽、海岸拉博斯克和海洋拉博斯克，并收集它们的皮毛作为胜利的证据，交给埃乌诺米亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于结界塔村子周遍的食物匮乏，埃乌诺米亚忧心忡忡。</p>
+          <p> </p>
+          <p>虽然在离村子不远的拉格托斯海岸有不少食物，但蝎兽和拉博斯克的出现使仅有的粮食供应出现问题，因此埃乌诺米亚希望有人帮忙消灭那些家伙。</p>
+          <p> </p>
+          <p>接受她的委托，消灭了抢夺村民食物的家伙，并作为胜利的证据，将皮毛带给她。对此，她表示感谢，并赠送了白金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

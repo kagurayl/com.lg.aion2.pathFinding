@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您知道我的职业，就会容易理解了。对于我来说，扁桃体发炎简直是家常便饭。</p>
+          <p> </p>
+          <p>换季的时候会得，公告太多的时候会得，累了的时候会得，营养不足的时候会得，睡眠不足的时候会得……</p>
+          <p> </p>
+          <p>但是不管嗓子多疼，都不能放下公告官的工作，所以对嗓子的伤害很厉害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，你能帮我搜集一些保护嗓子的蜂蜜和头巾吗？</p>
+          <p> </p>
+          <p>这是职业消耗品，本来伏魔殿应该免费发放给我才对，但我的领导又怎么能体会到我的痛苦呢？</p>
+          <p> </p>
+          <p>所以我只能自己出钱让人帮着搜集。</p>
+          <p> </p>
+          <p>我不会让您白干的，希望您能接受我的委托。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭[%dic:STR_DIC_M_Sprigg4_34_An]和[%dic:STR_DIC_M_Sprigg3DF3_33_An]，就能获得蜂蜜和头巾。</p>
+          <p> </p>
+          <p>那是我必需的用品，那就麻烦您了。</p>
+          <p> </p>
+          <p>公告官的工资也不高，如果您能帮我搜集到，我会尽可能多的给您报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就算了。之前您已经帮了我不少忙了。</p>
+          <p> </p>
+          <p>手上的东西还能用到明天。但是接下去该怎么办呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，啊啊啊，守护者大人！</p>
+          <p> </p>
+          <p>我嗓子的状态好像越来越差了。</p>
+          <p> </p>
+          <p>不好意思，你能先把[%dic:STR_DIC_I_QUEST_2599b]给我吗？我得喝点[%dic:STR_DIC_I_QUEST_2599a]润润嗓子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜂蜜和头巾。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，啊啊啊！怎么？您还没去吗？</p>
+          <p> </p>
+          <p>如果您没时间的话，就早说啊。</p>
+          <p> </p>
+          <p>我还能想想别的办法！</p>
+          <p> </p>
+          <p>唉，发火又有什么用，只会让我的嗓子更疼。</p>
+          <p> </p>
+          <p>请您快去搜集[%dic:STR_DIC_I_QUEST_2599a]和[%dic:STR_DIC_I_QUEST_2599b]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次都要麻烦您。</p>
+          <p> </p>
+          <p>身为传达伏魔殿的意志的公告官，必须保护好自己的嗓子，不是吗？</p>
+          <p> </p>
+          <p>还好有您这样的人帮我，总算可以放心一些了。</p>
+          <p> </p>
+          <p>这是我为您准备的。虽然不多，但却是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_Sprigg3DF3_33_An]和[%dic:STR_DIC_M_Sprigg4_34_An]身上搜集到的东西交给公告官[%dic:STR_DIC_N_Gaamel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮公告官嘉枚尔搜集雪原棕熊的蜂蜜和斯普利甘特的头巾，让他可以免受嗓子疼的困扰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>公告官嘉枚尔说嗓子很疼，好像得了扁桃体炎，必须在睡觉之前用盐水漱口，然后喝点暖和的蜂蜜茶。</p>
+          <p> </p>
+          <p>但是刚好蜂蜜全部用光了，于是让我帮他去搜集雪原棕熊的蜂蜜。</p>
+          <p> </p>
+          <p>帮他搜集到了阿克斯普利甘特收集组长的蜂蜜和斯普利甘特收集者的头巾，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

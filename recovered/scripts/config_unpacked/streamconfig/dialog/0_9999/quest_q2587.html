@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然没能正式开始对阿鲁齐纳的宫殿进行发掘，但我还是会经常过去调查。</p>
+          <p> </p>
+          <p>我们考古学家只要有好的研究对象，不管都远，都阻挡不了我们的步伐。</p>
+          <p> </p>
+          <p>在这一点上，宝物猎人也不输给我们。</p>
+          <p> </p>
+          <p>但是我们考古学家关心的是文物的价值，而他们只关心东西可以卖多少钱。</p>
+          <p> </p>
+          <p>根据需要，他们经常会破坏一些伟大的遗迹。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对我们考古学家而言，没有什么事情比探查遗迹更重要的了。</p>
+          <p> </p>
+          <p>在探查的过程中，会经历各种危险。不，我们正是通过了解危险的含义，才能一步步地揭开遗迹的秘密。</p>
+          <p> </p>
+          <p>但是上次我发现，塞伊兰专门训练师和海洋克里顿非常危险。</p>
+          <p> </p>
+          <p>在调查的时候遭到了它们的攻击，不得不接受灵魂治疗。它们一起扑过来，让我又有什么办法。</p>
+          <p> </p>
+          <p>如果有有实力的守护者帮助发掘，就不会发生那种事情了。对了，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的帮助，对我来说是个很大的支持。</p>
+          <p> </p>
+          <p>在阿鲁齐纳的宫殿里，有个聚集着塞伊兰的地方。</p>
+          <p> </p>
+          <p>请你过去，把[%dic:STR_DIC_M_SeirenBreederD_46_Ae]和[%dic:STR_DIC_M_Pet_CritonWaterD_44_An]清除掉。</p>
+          <p> </p>
+          <p>只要它们消失了，发掘工作就会顺利得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕它们吗？</p>
+          <p> </p>
+          <p>呵呵。能到贝鲁斯兰来的守护者竟然会害怕塞伊兰。</p>
+          <p> </p>
+          <p>我不知道该称赞你的坦率呢，还是应该批评你没有勇气。</p>
+          <p> </p>
+          <p>但是我不想强迫你。害怕的话就算了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(正在整理卷尺和刷子。)</p>
+          <p> </p>
+          <p>有时间的时候，必须好好地整理一下工具箱。</p>
+          <p> </p>
+          <p>需要查看是不是缺少什么东西。</p>
+          <p> </p>
+          <p>要是忘了带发掘工具，到了现场之后就会束手无策。</p>
+          <p> </p>
+          <p>对了，上次我拜托你的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正想明天过去进行发掘调查，你来的正好。</p>
+          <p> </p>
+          <p>谢谢。多亏了你，暂时应该是安全了。</p>
+          <p> </p>
+          <p>请收下。这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎塞伊兰专门训练师和海洋克里顿</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SeirenBreederD_46_Ae]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Pet_CritonWaterD_44_An]([%5]/13)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Rubelik]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卢佩里克可以安心地发掘，必须把塞伊兰专门训练师和海洋克里顿清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢佩里克说因为塞伊兰专门训练师和海洋克里顿，调查工作遇到了困难，向我请求帮助。</p>
+          <p> </p>
+          <p>按照他的拜托，除掉了怪物。他对我表示感谢，说暂时应该安全了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

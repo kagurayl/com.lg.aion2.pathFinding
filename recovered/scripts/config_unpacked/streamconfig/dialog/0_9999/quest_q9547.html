@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的表情，一定是着急想去埃雷修兰塔体验要塞战吧？</p>
+          <p> </p>
+          <p>也是。要说成为守护者后最刺激的瞬间是什么时候的话，百分之百的人都会说是在欧比斯参加要塞战的时候。</p>
+          <p> </p>
+          <p>但是以你的等级，别说是要塞战了，可能连要塞都没走到就会死在天族警卫兵的手上。</p>
+          <p> </p>
+          <p>啊啊，别着急。我会帮助你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你必须先答应我一件事。</p>
+          <p> </p>
+          <p>要塞战是非常激烈的战斗，因此必须要有相应的觉悟。</p>
+          <p> </p>
+          <p>要说是什么样的觉悟...</p>
+          <p> </p>
+          <p>那就是至少必须在永恒之塔商用化之后，接受收费服务。嗯，至少需要3个月。</p>
+          <p> </p>
+          <p>你有决心遵守这个约定吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，很高兴你能有这种觉悟。</p>
+          <p> </p>
+          <p>不过你该不会是因为现在是测试期间，才跟我说空话吧？</p>
+          <p> </p>
+          <p>如果你违背了约定，沉默审判官会追到地狱对你进行惩罚的！</p>
+          <p> </p>
+          <p>所以请你好好想想，如果真的有这个觉悟，就再来和我说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，你说想去埃雷修兰塔参加要塞战，难道就这么点热情吗？</p>
+          <p> </p>
+          <p>我这里不需要连收费服务都不能接受的乌合之众。</p>
+          <p> </p>
+          <p>那你就不要好高骛远，还是乖乖地呆在亚特雷亚的好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，你做好参加要塞战的准备了吗？</p>
+          <p> </p>
+          <p>收费服务的钱准备好了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">对，准备好了！</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，果然不错！</p>
+          <p> </p>
+          <p>那样的话，我就应该给你相应的奖励。</p>
+          <p> </p>
+          <p>来，这些经验值可以提升你的等级。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">准备好了之后，和特别任务行政官对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">特别任务行政官问我是否做好了去埃雷修兰塔参加要塞战的觉悟。对收费服务深思熟虑之后，再去和他对话。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别任务行政官说要想参加要塞战的话，需要特别的觉悟。</p>
+          <p> </p>
+          <p>他所说的觉悟就是在永恒之塔商用化的时候，接受收费服务。</p>
+          <p> </p>
+          <p>于是在对收费服务深思熟虑之后再去和他说话，为了让我能够参加埃雷修兰塔的要塞战，他给了我很多的经验值帮我提升等级。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

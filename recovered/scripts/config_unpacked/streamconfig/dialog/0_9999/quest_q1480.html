@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然您从科伊奥斯大人那里接下了任务，就请您去搜集克鲁比安的武器吧。</p>
+          <p> </p>
+          <p>现在在拒绝的话，就让人很为难了。</p>
+          <p> </p>
+          <p>因为必须要去极乐世界一趟，所以也不容易拜托其他人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是所有的克鲁比安都有武器。</p>
+          <p> </p>
+          <p>使用武器的是克鲁比安战士。</p>   
+          <p> </p>
+          <p>所以请您去寂静沼泽除掉[%dic:STR_DIC_M_Cherubim2Wp_24_n]，然后把它们拿着的[%dic:STR_DIC_I_QUEST_1480a]带回来。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然非常负责，做事就要做到底。</p>
+          <p> </p>
+          <p>对了，搜集到[%dic:STR_DIC_I_QUEST_1480a]之后，不要给我，请您直接交给[%dic:STR_DIC_N_Coeus]大人。</p>
+          <p> </p>
+          <p>我们没有必要浪费时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样...是突然有什么急事吗？</p>
+          <p> </p>
+          <p>我都不知道该拜托谁了。</p>
+          <p> </p>
+          <p>搜集武器就不容易，还要去极乐世界，应该拜托谁呢...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您就是上次我让您去搜集[%dic:STR_DIC_I_QUEST_1480a]的那位吧？</p>
+          <p> </p>
+          <p>对了，克鲁比安的武器搜集到了吗？</p>
+          <p> </p>
+          <p>带来了的话就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克鲁比安的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您是因为其他事情来极乐世界的，您就早说嘛。</p>
+          <p> </p>
+          <p>我还以为您把克鲁比安的武器带来了呢。害我白高兴了一场。</p>
+          <p> </p>
+          <p>不管怎样，您什么时候能把克鲁比安的武器带过来啊？</p>
+          <p> </p>
+          <p>有了那个我才能进行研究啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是克鲁比安使用的武器吗？</p>
+          <p> </p>
+          <p>剑的工艺这么精良，看来他们的智能要比想象得高嘛。样子很复杂，剑刃开得也很好。</p>
+          <p> </p>
+          <p>应该很有研究的价值。</p>
+          <p> </p>
+          <p>啊，不好意思，因为武器的事情太兴奋了。谢谢您帮我搜集到了克鲁比安的武器。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Cherubim2Wp_24_n]的武器，然后交给[%dic:STR_DIC_N_Coeus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去寂静沼泽打猎克鲁比安战士，为极乐世界的科伊奥斯搜集武器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说科伊奥斯想要克鲁比安的武器之后，梅姆内斯告诉我并不是所有的克鲁比安都有武器，只有寂静沼泽的克鲁比安猎人手里有武器。</p>
+          <p> </p>
+          <p>于是去寂静沼泽除掉了克鲁比安战士，把搜集到的武器交给了极乐世界的科伊奥斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞目前虽然面临很多问题，但其中最大的问题是贝斯佩尔幽灵村。</p>
+          <p> </p>
+          <p>成为守护者之后，我有过很多战斗的经验，其中不死族似乎是最难对付的。</p>
+          <p> </p>
+          <p>都说怀恨死去的话，就会变成不死族。</p>
+          <p> </p>
+          <p>这句话好像说的没错。大部分不死族都是遭受天灾或者大的事故，才会变成不死族的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来贝鲁斯兰要塞上任之后，我才发现贝斯佩尔幽灵村是不死族的天地。</p>
+          <p> </p>
+          <p>因为光靠我和部下们的力量无法解决，所以我向伏魔殿请求帮助。因为我们在多次面对不死族的战斗中得到了教训，知道不死族应该交给专家来处理。</p>
+          <p> </p>
+          <p>就这样，神圣保护者吉格里泰被派遣到了这里。他是整个亚特雷亚在净化不死族方面能力最强的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Gigrite]虽然带来了一个执政官和一个神官，但是靠那么点人手根本不够。</p>
+          <p> </p>
+          <p>需要人力或者补给品时，积极地提供协助是我这个要塞队长应尽的责任。</p>
+          <p> </p>
+          <p>你能帮我把这封信交给吉格里泰马？</p>
+          <p> </p>
+          <p>内容是让他有什么需要的话，就跟我说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你答应帮我把信送过去。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Gigrite]就在黑色平原。他们在通往贝斯佩尔幽灵村的桥附近扎了营。</p>
+          <p> </p>
+          <p>你到那里去，帮我把信交给他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你没有什么事情要过去吗？</p>
+          <p> </p>
+          <p>那样的话，就没有必要专门跑一趟了。</p>
+          <p> </p>
+          <p>我知道了。我会让有事去那里的守护者送过去，你不用管了。</p>
+          <p> </p>
+          <p>实在不行的话，让术古特急邮件送过去也行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>净化不死族相当不容易。</p>
+          <p> </p>
+          <p>需要尽可能让他们在没有怨恨和思念的状态下回归奥德的流动。</p>
+          <p> </p>
+          <p>这是既能解放不死族的灵魂，又能帮助人的事情，我觉得很有意义。</p>
+          <p> </p>
+          <p>不过，你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是内尔图斯队长的信啊。</p>
+          <p> </p>
+          <p>不管是人力或是补给品，需要的话可以提供支援。啊，真是太感谢了。</p>
+          <p> </p>
+          <p>刚好因为人手不足，我正在苦恼呢。</p>
+          <p> </p>
+          <p>[%username]，谢谢你把这么重要的信送过来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把信交给[%dic:STR_DIC_N_Gigrite]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把内尔图斯要塞队长的信，交给来解决贝斯佩尔幽灵村问题的神圣保护者吉格里泰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内尔图斯说来到贝鲁斯兰要塞之后，发现贝斯佩尔幽灵村的不死族问题很严重，因此向伏魔殿请求了帮助。</p>
+          <p> </p>
+          <p>于是神圣保护者吉格里泰被派遣到了这里。内尔图斯说如果他们如果缺少人力或补给品，可以随时向要塞请求支援，让我帮他把信送过去。</p>
+          <p> </p>
+          <p>把要塞队长的信交给了吉格里泰，他说刚好因为人手不足而感到苦恼，并对我表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说有个鸢族魔法师在多尔戈宅邸研究石人，您听说了吗？</p>
+          <p> </p>
+          <p>那您应该听说了吧？因为德拉坎魔法师的入侵，宅邸里的石人都变得很奇怪。</p>
+          <p> </p>
+          <p>本来制造它们是为了用来和龙族战斗……现在反倒成了我们的敌人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此我们必须尽快把那里的石人消灭掉，防患于未燃。</p>
+          <p> </p>
+          <p>憎恨石人的战斗力很强，如果放着不管，以后一定会成为心腹大患。</p>
+          <p> </p>
+          <p>但是有能力进入多尔戈宅邸的守护者并不多，所以我很担心。</p>
+          <p> </p>
+          <p>[%username]大人，如果您能接受这次任务，对我们会有很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到多尔戈宅邸去，消灭掉[%dic:STR_DIC_M_IDElementalN_Golem_Ranger_60_Ah]和[%dic:STR_DIC_M_IDElementalN_Golem_Melee_60_Ah]。</p>
+          <p> </p>
+          <p>虽然我让您去把它们消灭掉，但心里还是觉得有点可惜。</p>
+          <p> </p>
+          <p>按照原来的计划，它们本来是用来对付龙族的。</p>
+          <p> </p>
+          <p>想想就觉得很遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>能进入多尔戈宅邸的优秀的守护者并不多。</p>
+          <p> </p>
+          <p>[%username]大人就是其中之一。如果您也拒绝，那我还能让谁去呢？</p>
+          <p> </p>
+          <p>请您一定要再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>您去多尔戈宅邸办的事情怎么样了？</p>
+          <p> </p>
+          <p>憎恨石人消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了[%username]大人，暂时终于可以松一口气了。但问题并没有完全解决。</p>
+          <p> </p>
+          <p>这一点[%username]大人应该也很清楚。</p>
+          <p> </p>
+          <p>虽然不知道会是什么时候，但以后可能还得麻烦您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_ZONE_NAME_IDElemental_2]的 [%dic:STR_DIC_M_IDElementalN_Golem]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和多用途临时NPC%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去消灭坚强的憎恨石人和冷酷的憎恨石人，以免成为龙族的兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>憎恨石人原本应该是鸢族的兵力，但现在却可能会成为龙族的帮手，情况非常危急。</p>
+          <p> </p>
+          <p>于是到多尔戈宅邸去消灭了坚强的憎恨石人和冷酷的憎恨石人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

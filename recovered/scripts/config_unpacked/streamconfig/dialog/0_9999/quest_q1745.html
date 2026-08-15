@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族又在攻击要塞了。他们建造了守护塔，想要攻击城门！</p>
+          <p> </p>
+          <p>这样下去的话，城门也许会被他们打破。城门是我们最后的防御。</p>
+          <p> </p>
+          <p>如果城门被攻破的话，他们就会像潮水一样地涌进来。</p>
+          <p> </p>
+          <p>不管发生什么事情，都不能让魔族进到要塞里面。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要让魔族放弃进攻的话，就必须把他们的守护塔破坏掉。</p>
+          <p> </p>
+          <p>如果不那样做的话，他们就不会停止攻击，还会继续尝试冲到要塞里面来。</p>
+          <p> </p>
+          <p>[%username]大人，您能用那把[%mainslotitem]把[%dic:STR_DIC_OBJ_1131_AttackTower_Da]破坏掉吗？</p>
+          <p> </p>
+          <p>其他人正忙着加固城门，守护塔就交给[%username]大人您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我做这么困难的事情。</p>
+          <p> </p>
+          <p>希埃尔的左翼要塞是战略上非常重要的地方。绝对不能被他们夺走。</p>
+          <p> </p>
+          <p>所以，请您立刻去把[%dic:STR_DIC_OBJ_1131_AttackTower_Da]破坏掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在这种情况下您竟然拒绝执行任务？</p>
+          <p> </p>
+          <p>难道要我们丢掉了这个要塞你才开心吗？</p>
+          <p> </p>
+          <p>作为天族人，还有守卫者的使命感到底去哪儿了？</p>
+          <p> </p>
+          <p>真是让人不敢相信！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把魔族守护塔破坏掉了吗？</p>
+          <p> </p>
+          <p>刚才我看到他们的攻击停了下来，就知道[%username]大人您成功了。</p>
+          <p> </p>
+          <p>请您跟我说说详细的情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的要塞没被占领，全是[%username]大人的功劳。</p>
+          <p> </p>
+          <p>刚好有[%username]大人您及时赶到，看来是阿里埃主神在保佑着我们。</p>
+          <p> </p>
+          <p>愿阿里埃的保佑永远伴随着[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏攻击城门的[%dic:STR_DIC_OBJ_1131_AttackTower_Da]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1131_Quest_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">魔族为了占领要塞，竖起了魔族守护塔进行攻击。去破坏魔族守护塔并阻止他们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族开始攻击城门，欧凯阿诺斯说必须马上阻止他们。</p>
+          <p> </p>
+          <p>于是按照他的拜托，到城外破坏了魔族守护塔。他表示非常感谢，说多亏了我才守住了要塞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

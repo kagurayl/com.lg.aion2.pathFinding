@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有必要催得那么紧吗？</p>
+          <p> </p>
+          <p>那个叫阿岚的人短时间内又不会离开毁坏的工房。</p>
+          <p> </p>
+          <p>我大概听盖尔伦说了，过去他好像是个伟大的鸢族贤者。</p>
+          <p> </p>
+          <p>曾经看到过永恒之塔的荣耀之光的人，在这受到诅咒的提亚马特的土地上率领着所剩无几的幸存者，他到底会怎么想呢？</p>
+          <p> </p>
+          <p>看到所剩无几的幸存者一个个变成龙族崇拜者，他又会怎么想呢？</p>
+          <p> </p>
+          <p>阿岚心底深处的那个深渊……我真的很想了解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您一定不会想到，我从来就没见过阿岚。</p>
+          <p> </p>
+          <p>因为遗忘的巨人工房有很多听从阿岚命令的巨人守卫着。</p>
+          <p> </p>
+          <p>我喜欢和别人说话，但在战斗方面很不擅长。</p>
+          <p> </p>
+          <p>我想焦急的奇凯罗一定会派人过来。</p>
+          <p> </p>
+          <p>就在这时，您就来了。请您帮我消灭掉毁坏的工房中的巨人，让我可以和阿岚见面。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在您对付巨人的时候，我会偷偷地去和阿岚见面。</p>
+          <p> </p>
+          <p>所以请您尽量不要去招惹阿岚。</p>
+          <p> </p>
+          <p>和阿岚对话的事情由我来负责，请不要担心。</p>
+          <p> </p>
+          <p>(挤了挤眼睛)我被人称为可以阅读心灵的人，绝非浪得虚名。我有我的办法。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_LF4_B8_Nepilim_55_An]和[%dic:STR_DIC_M_LF4_B8_Nepilim_Tech_55_An]消灭掉，不要让它们来妨碍我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不是为奇凯罗的事情而来吗？</p>
+          <p> </p>
+          <p>那您是来这里看风景的吗？</p>
+          <p> </p>
+          <p>真是个奇怪的人。不过我很欣赏您。</p>
+          <p> </p>
+          <p>和我一起感受这英吉斯温的风吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(表情严肃地思考着什么。)</p>
+          <p> </p>
+          <p>嗯？是您啊？</p>
+          <p> </p>
+          <p>您来找我，10个巨人应该全部消灭掉了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，不管是10个还是20个，都没有关系。</p>
+          <p> </p>
+          <p>因为您的目的是为我争取时间。</p>
+          <p> </p>
+          <p>我先说结论吧，要想和阿岚接触，恐怕还需要一点时间。</p>
+          <p> </p>
+          <p>我是说，您还需要帮我消灭更多的巨人，直到我觉得可以了为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Q11110]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Suleion]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让苏雷利安可以和阿岚接触，消灭毁坏的工房里的巨人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏雷利安说因为巨人的妨碍，他无法和阿岚接触，正在等待帮助。</p>
+          <p> </p>
+          <p>按照他的委托，消灭了毁坏的工房中的巨人。回去之后，他说要想和阿岚见面，还需要更多的时间。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

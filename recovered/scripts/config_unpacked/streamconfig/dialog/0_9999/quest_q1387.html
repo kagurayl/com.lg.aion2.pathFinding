@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您现在忙吗？</p>
+          <p> </p>
+          <p>不好意思，到了这种时候还要来麻烦您，但是请您再帮我一次忙。</p>
+          <p> </p>
+          <p>事实上，在[%username]大人去清除鸟妖的时候，我从在要塞疗养的士兵那里收到了消息。</p>
+          <p> </p>
+          <p>就是上次受伤的卫兵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他说那是因为身体太弱说不清楚，攻击他的并不是鸟妖监视者。</p>
+          <p> </p>
+          <p>攻击他的是鸟妖尸体猎人。占据可以俯视革命团建设基地的悬崖的也是它们。</p>
+          <p> </p>
+          <p>虽然很遗憾到现在才知道这一情况，但是既然知道了，就不能让它们继续猖獗下去。</p>
+          <p> </p>
+          <p>所以，[%username]您能帮我去把它们清除掉吗？</p>
+          <p> </p>
+          <p>您已经有过对付鸟妖的经验，应该很清楚它们的习性，也了解了它们的实力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。我还有些担心[%username]大人这一次会不会拒绝呢。</p>
+          <p> </p>
+          <p>虽然我相信[%userclass]大人的实力，但是您还是要小心一点。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Harpy_33_An]是比鸟妖监视者更加凶恶，更加聪明的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是对我有什么不满意吗？</p>
+          <p> </p>
+          <p>那我在这里向您道歉。</p>
+          <p> </p>
+          <p>希望您能改变想法。现在能对付它们的只有[%username]大人您一个！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您。</p>
+          <p> </p>
+          <p>您找到鸟妖尸体猎人了吗？</p>
+          <p> </p>
+          <p>您应该没受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是[%username]大人。一次就除掉了12头残忍的鸟妖尸体猎人。</p>
+          <p> </p>
+          <p>现在可以派监视兵过去了。通过这次事情，它们应该知道了我们的可怕，不敢再像以前一样随意进行攻击了。</p>
+          <p> </p>
+          <p>请您拿着这个。您帮了我们两次忙，这是对您的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除库里乌鲁岩石山的[%dic:STR_DIC_M_Harpy_33_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Leone]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说攻击监视兵的是鸟妖尸体猎人。去除掉占据革命团建设基地悬崖的鸟妖吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在去清除鸟妖监视者的时候，从在要塞疗养的监视兵那里收到了消息。攻击监视兵的是鸟妖尸体猎人，占据悬崖的也是它们。</p>
+          <p> </p>
+          <p>雷欧内说对不起，但还要麻烦我一次。除掉了悬崖上的鸟妖之后回去找到了他，他表示感谢，并给予了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

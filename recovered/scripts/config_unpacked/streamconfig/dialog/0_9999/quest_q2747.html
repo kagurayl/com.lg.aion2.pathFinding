@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>越是愤怒，头脑就越冷静。我现在就是这个样子。</p>
+          <p> </p>
+          <p>我一直在想着如何才能把要塞夺回来。</p>
+          <p> </p>
+          <p>即使死了又站起来很多次，如果能夺回要塞的话，不管什么事情我都会去做！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我现在正在和军团士兵们商讨夺回要塞的计划，但是却总是有东西骚扰我们。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1132_Specter_27_An]在空中飞来飞去，不断地骚扰我们。</p>
+          <p> </p>
+          <p>但是刚想站起来干掉它们，它们又逃得无影无踪。去追赶它们的话，只是在浪费时间。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我把它们清除掉吗？那样的话，我们就能专心地制定作战计划了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就请您马上去把[%dic:STR_DIC_M_Ab1_1132_Specter_27_An]清除掉。</p>
+          <p> </p>
+          <p>这段时间，我们会尽我们的能力，制定出攻击要塞的计划。</p>
+          <p> </p>
+          <p>事情完成之后，请您过来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除生命破坏者只是件小事。</p>
+          <p> </p>
+          <p>但是为了夺回要塞这件大事，小事也是必须做的。</p>
+          <p> </p>
+          <p>如果不能理解这一点的话，您当然就不会帮我们。</p>
+          <p> </p>
+          <p>我不想求您帮忙。如果您觉得这件事情没有意义的话，您就走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人去清除[%dic:STR_DIC_M_Ab1_1132_Specter_27_An]的时间里，它们过来骚扰我们的现象少了很多。</p>
+          <p> </p>
+          <p>多亏了您，我们制定战略的工作取得了很大的进展。</p>
+          <p> </p>
+          <p>请您向我报告一下，到底干掉了多少？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不出所料，完成得非常出色。</p>
+          <p> </p>
+          <p>只要再努把力，我们应该就能夺回希埃尔的东部要塞。</p>
+          <p> </p>
+          <p>但是问题是，生命破坏者还是有很多。</p>
+          <p> </p>
+          <p>所以，希望您以后还能继续过来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1132_Specter_27_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gefjun]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">生命破坏者给正在制定夺回要塞的计划的军团士兵们造成了妨碍。按照盖皮恩的拜托，去把生命破坏者清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖皮恩说为了夺回要塞，他正在和军团士兵们制定战略，但是生命破坏者对他们造成了妨碍。</p>
+          <p> </p>
+          <p>于是为了军团士兵可以安心地制定战略，帮他清除掉了生命破坏者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

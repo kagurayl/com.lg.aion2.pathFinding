@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Ammianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是扫荡图尔辛[%dic:STR_DIC_M_37002all]%。</p>
+          <p> </p>
+          <p>图尔辛驻地的精锐军非常危险，希望你能和导师一起执行任务。任务完成后，你将得到奖励。</p>
+          <p> </p>
+          <p>再提醒你一次，不要把傲慢当作勇气。请一定要和导师一起去。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的任务完成了吗？</p>
+          <p> </p>
+          <p>虽然现在克拉尔蜷缩在大地的角落里，勉强守卫着属于自己的领地，但在对克拉尔战争之前，它们就像是亚特雷亚的主人一样到处横行。</p>
+          <p> </p>
+          <p>任何时候都不能放松警惕。您去感受过他们的力量了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。您顺利地完成了今天的任务。</p>
+          <p> </p>
+          <p>今天的导师怎么样？您得到他的指点了吗？</p>
+          <p> </p>
+          <p>也有人和自己的导师对不上脾气，没能完成当天的任务，只能回来独自生气。</p>
+          <p> </p>
+          <p>但是相信您作为极乐世界神圣的预备神庙的一员，一定会谦虚地聆听别人的教诲。</p>
+          <p> </p>
+          <p>这是今天的奖励。辛苦您了。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭图尔辛[%dic:STR_DIC_M_37002all]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ammianus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的安米亚努斯那里收到了一封信。按照指示，和导师一起消灭图尔辛驻地的精锐军。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去贝尔特伦执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起消灭了图尔辛驻地的精锐军，向安米亚努斯报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

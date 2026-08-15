@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的奖励是铸币。</p>
+          <p> </p>
+          <p>本来是想发放防具的，但因为大家需要的东西各不相同，所以决定发放铸币。</p>
+          <p> </p>
+          <p>您使用过铸币吗！？没有用过也没关系。</p>
+          <p> </p>
+          <p>这次我会告诉您铸币应该如何使用的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您只要把铸币看作和基纳类似的东西就行。</p>
+          <p> </p>
+          <p>只不过不能在普通商店中使用，只能在我这样的行政官或功勋奖励官那里使用。</p>
+          <p> </p>
+          <p>用铸币可以购买到防具、武器、药水等各种物品。因为是伏魔殿提供的东西，品质也是最好的。</p>
+          <p> </p>
+          <p>这样说明应该够了吧？现在您来实际体验一下吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才拿到了吧？是的，我说的是铁铸币。</p>
+          <p> </p>
+          <p>您去见见前面的罗哈班，并在他那里使用铸币。</p>
+          <p> </p>
+          <p>您只要把铁铸币交给他，把罗哈班的文件箱买回来就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还不知道怎么使用铁铸币吗？</p>
+          <p> </p>
+          <p>嗯，看来是我解释得太复杂了……</p>
+          <p> </p>
+          <p>您先休息一会儿，让脑袋清醒一下吧。</p>
+          <p> </p>
+          <p>然后我会重新和您说明。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去见过罗哈班了吗？</p>
+          <p> </p>
+          <p>我说的东西买回来了吗？</p>
+          <p> </p>
+          <p>买回来了的话，请交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出罗哈班的文件箱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是因为东西太多，所以没找到吧？罗哈班的文件箱是单独分类的。</p>
+          <p> </p>
+          <p>我再给您一点时间，您再去慢慢找找。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，是罗哈班的文件箱。</p>
+          <p> </p>
+          <p>怎么样？现在知道铸币怎么使用了吧？</p>
+          <p> </p>
+          <p>对了，我和罗哈班的东西稍微有点不同。</p>
+          <p> </p>
+          <p>我是战斗系的，所以只有剑星、守护星、杀星和弓星的物品，罗哈班是魔法系的，只有治愈星、护法星、魔道星和精灵星的物品。</p>
+          <p> </p>
+          <p>在使用铸币的时候，请一定要确认行政官负责的职业是什么。</p>
+          <p> </p>
+          <p>来，请收下。这是给您的奖励。应该够您买双鞋子或手套的了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用铸币购买罗哈班的文件箱，然后交给[%dic:STR_DIC_N_Lateni]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照拉泰尼的指示，到罗哈班那里用铸币购买物品。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉泰尼告诉了我使用铸币的方法，让我直接去罗哈班那里购买物品。</p>
+          <p> </p>
+          <p>购买到罗哈班的文件箱之后，她送了我一些铸币作为奖励，说只要到负责自己职业的行政官那里购买东西就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 您是守护者，战斗实力一定很出色。</p>
+          <p> </p>
+          <p>不过抓捕棕熊，你肯定不如我。</p>
+          <p> </p>
+          <p>这附近的打猎区对我来说，就像自己的手掌一样熟悉，因为我从小就来这儿打猎了。</p>
+          <p> </p>
+          
+<p>守护者大人您的实力再怎么好，也不可能比我更快地猎取[%dic:STR_DIC_M_Mosbear_all]。</p>
+          <p> </p>
+          <p>我们来比比看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">同意比赛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这是向我挑战啦？</p>
+          <p> </p>
+          
+<p>好啊！那么如果你能用更少的时间，打破我捕捉3头[%dic:STR_DIC_M_Mosbear_all]的记录的话，就算你赢。所以一定要在10分钟以内哟。</p>
+          <p> </p>
+          <p>只要是棕熊就行。去 [%dic:STR_DIC_W_DF1A_11]，那儿有很多。</p>
+          <p> </p>
+          <p>哈哈哈，看看您打猎真的能快过我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去信心十足嘛。</p>
+          <p> </p>
+          <p>那么现在开始吧？</p>
+          <p> </p>
+          <p>可以开始打猎的时候，请说准备好了。</p>
+          <p> </p>
+          <p>我就从那时起给你计时。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">“准备好了！” </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看起来没什么自信嘛。</p>
+          <p> </p>
+          <p>当然了。因为没有人比我更 熟悉这附近和棕熊了。</p>
+          <p> </p>
+          <p>这话要是听着不爽，您可以再来挑战啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您确实在规定时间以内回来了。</p>
+          <p> </p>
+          <p>不过有没有抓住棕熊呢？
+
+</p>
+          <p> </p>
+          <p>没打猎到的话，在规定时间之内回来也没用的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么可能！果真在10分钟内打到了3头棕熊啊！</p>
+          <p> </p>
+          <p>我死也没想到还有人比我打得更快。</p>
+          <p> </p>
+          <p>您可真是厉害！</p>
+          <p> </p>
+          <p>来，收下这个吧。既然您赢了，就该给您钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]">
+<font color="[%1]">在10分钟之内打猎[%dic:STR_DIC_M_Mosbear_all]([%2]/3)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">回去找[%dic:STR_DIC_N_Sjania]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">沙尼亚说猎取棕熊的话，自己最厉害，所以决定和他比赛，在10分钟以内去打3头棕熊。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙尼亚说打猎棕熊数自己最厉害，如果有自信的话，就和他比一比。</p>
+          <p> </p>
+          <p>所以在10分钟内打猎了3头棕熊 ，把他吓了一跳，称赞我实力真强。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

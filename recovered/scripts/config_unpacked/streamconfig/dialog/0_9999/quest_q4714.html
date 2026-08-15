@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来这段时间我们持续攻击德雷得奇安收到了效果。</p>
+          <p> </p>
+          <p>巴拉那特军团的首脑层为了找出持续受到攻击的原因和解决的方法，派出了监视官。</p>
+          <p> </p>
+          <p>这表示龙族也对现在的情况感到了危机。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>派到德雷得奇安的监视官一直在调查情况，这对我们很不利。</p>
+          <p> </p>
+          <p>一旦他们发现我们渗透到德雷得奇安的方法，并找到阻止的对策，对我们将非常不利。</p>
+          <p> </p>
+          <p>因此，我们想要继续渗透到德雷得奇安引发骚乱，首先必须除掉监视官。</p>
+          <p> </p>
+          <p>[%username]，你愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]会调查德雷得奇安的各处，不过他想要向上面报告，必须要回到司令室。</p>
+          <p> </p>
+          <p>请你等监视官尼尔夏卡回到司令室的时候，再消灭掉他。</p>
+          <p> </p>
+          <p>虽然遇到监视官的概率不高，但是这是很重要的任务，请你保持耐心，不要放弃，一定要消灭他。</p>
+          <p> </p>
+          <p>那么拜托你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的任务真的非常重要。</p>
+          <p> </p>
+          <p>难道因为监视官尼尔夏卡，我们之前的辛苦都要白费吗？</p>
+          <p> </p>
+          <p>普通的事情，我也不会如此苦苦劝你的。</p>
+          <p> </p>
+          <p>但是这件事情实在太重要，请你再考虑考虑吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等[%username]呢。</p>
+          <p> </p>
+          <p>监视官尼尔夏卡怎么样了？</p>
+          <p> </p>
+          <p>消灭他了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能消灭他真是太好了。</p>
+          <p> </p>
+          <p>这样的话一段时间内巴拉那特军团就无法了解情况了。</p>
+          <p> </p>
+          <p>如果好好把握这个机会，我们可以大大削弱埃雷修兰塔的龙族势力。</p>
+          <p> </p>
+          <p>这是对你这段时间辛苦的报答，希望你能好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Henir]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭来调查德雷得奇安受攻击原因的监视官尼尔夏卡，让巴拉那特军团无法了解情况。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海尼尔表示，巴拉那特军团为了找出持续受到攻击的原因和解决的方法，派出了监视官尼尔夏卡。</p>
+          <p> </p>
+          <p>杀死了监视官，阻止巴拉那特军团了解情况。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

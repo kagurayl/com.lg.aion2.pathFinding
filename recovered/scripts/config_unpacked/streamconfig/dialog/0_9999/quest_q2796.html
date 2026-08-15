@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在应该已经吸满了吧。必须在溢出来之前收回来。</p>
+          <p> </p>
+          <p>啊，我是在说[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]。它可以吸收欧比斯的精气。如果把它放在龙族掉落的武器之类的东西上，它就会自动吸收精气。</p> 
+          <p> </p> 
+          <p>(看看四周，然后小声说)这是个秘密，我们提格拉齐工房制作的武器之所以特别，是因为使用了水晶里聚集的精气。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>问题是龙族的武器太大，必须飞着才能接近。</p>
+          <p> </p>
+          <p>因此直接回收非常困难。努库灵又不能飞，只能费了九牛二虎之力爬上去，呐呐。</p>
+          <p> </p>
+          <p>现在到了回收之前放上去的[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]的时候了，但是努库灵一个人忙不过来。</p>
+          <p> </p>
+          <p>守护者你能帮帮我吗？我会好好酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>放置[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]的地方是坠落之岛、拉米兰岛、古代龙之坟墓和德奇沙斯岛。</p>
+          <p> </p>
+          <p>你只要去长得像长着翅膀的塔的上面找找看就行。可以看到白色的球在那里闪闪发光，所以应该不难找到。</p>
+          <p> </p>
+          <p>虽然一共有很多个，不过你只要帮我拿回10个就行了。</p>
+          <p> </p>
+          <p>对了，有些水晶可能还没收集满精气，请你在收集的时候要看仔细了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要是太忙的话，那就没办法了。</p>
+          <p> </p>
+          <p>我再去问问别的守护者。</p>
+          <p> </p>
+          <p>做完其他的事情再来帮我？</p>
+          <p> </p>
+          <p>那时说不定也会需要帮忙，你可以过来看一眼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>差点就遇不到你了。</p>
+          <p> </p>
+          <p>我去回收水晶，才刚回来不久。</p>
+          <p> </p>
+          <p>先把[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出提格拉齐水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是在和我闹着玩吗？</p>
+          <p> </p>
+          <p>我明明跟你说是10个[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]，难道不是吗？</p>
+          <p> </p>
+          <p>不满10个的话就没有报酬。请你快去继续回收吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，尾巴感觉有点发麻，确实是装满了精气的水晶。</p>
+          <p> </p>
+          <p>你帮我回收了水晶，应该可以加入我们工房了。</p>
+          <p> </p>
+          <p>收下吧。这比我原来打算给你的要多得多，你心里清楚就行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_Ab1_TowerCore_Q2796]，然后交给[%dic:STR_DIC_N_Shugo_AB1_17]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">努库灵说他是来回收制作武器时所需的提格拉齐水晶的，但是一个人忙不过来。帮他去坠落之岛、拉米兰岛、古代龙之坟墓和德奇沙斯岛回收吸满了精气的提格拉齐水晶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>努库灵说放在燃烧之血星云各地的提格拉齐水晶应该已经吸满了精气，必须赶快回收回来。</p>
+          <p> </p>
+          <p>他说一个人回收水晶忙不过来，让我帮帮他。按照他的请求，帮助他回收了吸满了精气的提格拉齐水晶交给了他，并从他那里收到了辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

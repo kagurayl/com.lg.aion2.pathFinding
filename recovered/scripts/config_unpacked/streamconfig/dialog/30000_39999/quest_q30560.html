@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30560</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我仔细想了想，我觉得不应该把父亲的遗物留在我这里。</p>
+          <p> </p>
+          <p>我可以忠实地遵循父亲的遗志，所以遗物对我来说不是必需的。</p>
+          <p> </p>
+          <p>但是我妹妹……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我妹妹[%dic:STR_DIC_N_Danell]和我不太一样。</p>
+          <p> </p>
+          <p>她小时候遭到过龙族的攻击，所以一提到龙族就觉得害怕。</p>
+          <p> </p>
+          <p>我希望她能战胜那种恐惧，站出来勇敢地和龙族战斗。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我把这个遗物交给达内尔吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是不理解达内尔的心。</p>
+          <p> </p>
+          <p>看到无数的人在瞬间变成石头，谁都会感到恐惧。</p>
+          <p> </p>
+          <p>但是人不能一辈子都活在那种恐惧之中。</p>
+          <p> </p>
+          <p>希望达内尔看到父亲的遗物之后，可以稍微地鼓起一点勇气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是觉得奇怪，我为什么不自己送过去，对吧？</p>
+          <p> </p>
+          <p>事实上，我和达内尔之间有点隔阂。</p>
+          <p> </p>
+          <p>是在漫长的岁月中逐渐堆积起来的厚厚的隔阂。</p>
+          <p> </p>
+          <p>我想趁这个机会，把我们之间的隔阂消除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+          <p>我和魔族守护者好像没什么好谈的啊……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出希埃尔之枪徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个……是父亲的遗物啊。</p>
+          <p> </p>
+          <p>一定是乌鲁斯哥哥让您送过来的吧。</p>
+          <p> </p>
+          <p>我知道他为什么把这个送过来，也知道他希望我怎样。</p>
+          <p> </p>
+          <p>但是我还是很害怕。我会好好想想的……不过应该不能让我摆脱对龙族的恐惧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把父亲的遗物交给[%dic:STR_DIC_N_Danell]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">乌鲁斯说希望妹妹达内尔能够有所改变。把父亲的遗物希埃尔之枪徽章交给达内尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌鲁斯说妹妹达内尔非常害怕龙族，应该更需要父亲的遗物。</p>
+          <p> </p>
+          <p>于是帮他把遗物交给了达内尔，并告诉她乌鲁斯希望她能勇敢地和龙族战斗。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

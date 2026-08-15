@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>活下来的银鬃莱卡恩已经没有多少了。</p>
+          <p> </p>
+          <p>大部分人都和我一样，受了一点伤，咳嗬。</p>
+          <p> </p>
+          <p>但是雾鬃莱卡恩还在追杀我们，所以要去搜集药物很不容易，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>银鬃部族有一种代代相传的药。</p>
+          <p> </p>
+          <p>要制作那种药的话，需要有[%dic:STR_DIC_I_QUEST_2431a]。那虽然是剧毒的东西，但是和药草一起使用的话，就会成为很好的药物。</p>
+          <p> </p>
+          <p>为了配制出那种药，您能帮我们去搜集叙路克的毒液吗，咳昂？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这里下去，那里有很多的[%dic:STR_DIC_M_ShelukD_37_An]和[%dic:STR_DIC_M_ShelukD_38_An]，咳昂。</p>
+          <p> </p>
+          <p>请您帮我去捕捉它们，然后搜集[%dic:STR_DIC_I_QUEST_2431a]。</p>
+          <p> </p>
+          <p>拜托您了，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雾鬃的那帮家伙随时可能冲过来，咳嗬。</p>
+          <p> </p>
+          <p>在他们过来之前，我们必须重整旗鼓。</p>
+          <p> </p>
+          <p>请您一定要帮帮我们，咳昂！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在准备制作秘药的药草。</p>
+          <p> </p>
+          <p>只要有了[%dic:STR_DIC_I_QUEST_2431a]的话，就能马上把秘药做出来，咳昂。</p>
+          <p> </p>
+          <p>得赶紧涂上秘药，尽快好起来，为迎战雾鬃莱卡恩做好准备，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出叙路克的毒液。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有叙路克的毒液的话，就无法制作秘药，咳昂。</p>
+          <p> </p>
+          <p>如果我自己去搜集的时候受到雾鬃的攻击的话，一切就都会变成泡影。</p>
+          <p> </p>
+          <p>请您快去帮我搜集叙路克的毒液，咳嗬！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把毒液带回来了啊。</p>
+          <p> </p>
+          <p>真的非常感谢，咳昂！</p>
+          <p> </p>
+          <p>这下大家的伤马上就会好起来。</p>
+          <p> </p>
+          <p>得赶紧恢复体力，把龙族的手下雾鬃莱卡恩彻底打败。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_ShelukD_37_An]和[%dic:STR_DIC_M_ShelukD_38_An]的毒液，然后交给[%dic:STR_DIC_N_DF2_NPC_Ananta]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">阿南塔让我帮他搜集制作银鬃部族秘药的材料。去捕捉叙路克，搜集叙路克的毒液吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿南塔说要想治疗伤者，重整旗鼓的话，需要配制银鬃部族的秘药。</p>
+          <p> </p>
+          <p>于是帮他搜集到了秘药的材料叙路克的毒液。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

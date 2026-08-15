@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来得正好。我正在想会不会有人路过这里呢。</p>
+          <p> </p>
+          <p>如果您不忙的话，能拜托您一件事情吗？要是您正好要去幻影神圣所，我想拜托您一件事。</p>
+          <p> </p>
+          <p>有件东西我想让您帮我送到幻影神圣所去。</p>
+          <p> </p>
+          <p>本想自己直接过去的，但是因为我不在的时候，斯托尼就会变得很暴躁，有时候还会攻击人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是上交给埃尔德斯圣所的贡品，是侍奉五主神之人的小小心意。</p>
+          <p> </p>
+          <p>圣所也了解我的情况，所以每月都会派人来取贡品，不过这个月不知道出了什么事情，到现在也没有来。</p>
+          <p> </p>
+           <p>本来以为只是晚点儿来取，但过了几天也没有消息，所以我才想拜托守护者大人您。</p>
+          <p> </p>
+          <p>您能帮我把这贡品送到埃尔德斯圣所去吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感谢您答应我的请求！</p>
+          <p> </p>         
+          <p>把这个交给埃尔德斯圣所的卢纳斯大人就可以。您只要说是我送的他就明白了。</p>
+          <p> </p>  
+          <p>哦，[%dic:STR_DIC_FLA20_1]在空中飘着。对守护者大人的飞行，应该没有多大阻碍吧。</p>
+          <p> </p>
+          <p>愿阿里埃保佑[%username]大人。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有什么急事吗？</p>          
+          <p> </p>
+          <p>知道了。虽然我很着急，不过也没办法……</p>
+          <p> </p>
+          <p>看来贡品得让术古特快专递送过去了。虽然这么做不太好，不过现在只有这个办法了。</p>                     </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎来到供奉凯西内尔主神的埃尔德斯圣所。</p>
+          <p> </p>
+          <p>您是来参加大巡礼的吗？如果您是来接受巡礼的话，请接受我们幻影神圣所准备的祝福礼物吧。</p>
+          </body>
+        </html>
+    </Contents>
+    	<Selects>
+      	<Act href="HACTION_SELECT_QUEST_REWARD">拿出巴斯库斯拜托的贡品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来是巴斯库斯送来的贡品啊!这怎么好意思，应该是我们去拿的。</p>
+          <p> </p>
+          <p>来参加大巡礼的人实在太多，我们忙得焦头烂额的，所以忘记去巴斯库斯那里取贡品了。</p>
+          <p> </p>
+          <p>可以想象，那位有着忠诚信仰的人因为送不出贡品会焦急成什么样子。所以他才会拜托[%username]您送过来的吧？</p>
+          <p> </p>
+          <p>感谢您替我们取来了巴斯库斯的贡品。下次我们一定不会再忘记了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把巴斯库斯供奉的贡品转交给[%dic:STR_DIC_N_Lunax]吧。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">代替脱不开身的巴斯库斯，把供奉给圣所的贡品交给[%dic:STR_DIC_FLA20_1]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了照顾斯托尼而无法分身的巴斯库斯，正在为埃尔德斯圣所没有派人来取贡品而担心。所以由我来替他将贡品转交给埃尔德斯圣所。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我就觉得你很出色。你确实很出色，[%username]！</p>
+          <p> </p>
+          <p>没想到你在这么短的时间内就学会了与武器制作有关的所有的东西。</p>
+          <p> </p>
+          <p>现在我已经没有什么可以教你的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你已经达到了武器制作的最高境界，当然应该获得与之相符的称号。</p>
+          <p> </p>
+          <p>现在已经到了[%username]你申请达人的称号的时候。</p>
+          <p> </p>
+          <p>怎么样？你想接受这个称号吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要获得达人的称号，需要获得[%dic:STR_DIC_N_Fasimedes]总司令官的许可。</p>
+          <p> </p>
+          <p>我给你写一封推荐信，你去帕西美达斯大人那里接受称号，并举行任命式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是你觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>如果你以后想在我之后成为名人的话，最好是接受达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对不起，我还有点事情。</p>
+          <p> </p>
+          <p>如果不是非得找我的话，你可以去找拉比临托斯或菲比。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经到了这种境界……做得很不错嘛，[%username]。</p>
+          <p> </p>
+          <p>你制作的武器对于打垮欧比斯的魔族和龙族将会起到很大的帮助。</p>
+          <p> </p>
+          <p>希望你以后能继续制作出优秀的武器。</p>
+          <p> </p>
+          <p>最后，你再去[%dic:STR_DIC_N_Anteros]那里向名人打个招呼，请求学习武器制作。</p>
+          <p> </p>
+          <p>那样的话，今后你就能使用达人的称号了。</p>
+          <p> </p>
+          <p>祝贺你，新的武器制作达人！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Fasimedes]举行达人的任命式</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受了武器制作名人安泰洛斯任命为达人的推荐。去找帕西美达斯总司令官举行任命式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>武器制作名人安泰洛斯说已经没有什么可以教给我，已经达到了达人的境界。</p>
+          <p> </p>
+          <p>于是拿着他的推荐书去帕西美达斯总司令官那里举行了任命式，接受了称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

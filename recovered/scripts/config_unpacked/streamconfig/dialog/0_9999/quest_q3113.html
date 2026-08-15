@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近有很多守护者纷纷赶往泰奥勃莫斯秘密研究所。</p>
+          <p> </p>
+          <p>他们的目的是什么呢？</p>
+          <p> </p>
+          <p>当然，可能有些人是在执行军团长大人的指令……</p>
+          <p> </p>
+          <p>但是大部分人是出于好奇心！拥有永恒的生命、忘记了恐惧的守护者们，为了满足自己的好奇心，什么事情都做得出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰奥勃莫斯秘密研究所里面有个名叫不安的特里罗安的可怕怪物。您见过吗？</p>
+          <p> </p>
+          <p>据说那个怪物吸收了强大的奥德能量，在无限地增殖。</p>
+          <p> </p>
+          <p>现在秘密研究所很可能会爆炸，可以说是一触即发。</p>
+          <p> </p>
+          <p>为了削弱特里罗安，让无数的守护者免于因为好奇而牺牲。[%username]大人，这件事您必须帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？如果您能帮我消灭不安的特里罗安，我会送您铸币作为报酬。</p>
+          <p> </p>
+          <p>极乐世界为了对泰奥勃莫斯秘密研究所进行研究，在我这边分配了大量的铸币。</p>
+          <p> </p>
+          <p>[%username]大人，那就拜托您了。泰奥勃莫斯秘密研究所是个非常危险的地方，千万不能大意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您是不想到泰奥勃莫斯秘密研究所去吗？您有密室恐惧症吗？</p>
+          <p> </p>
+          <p>大部分守护者都想去那种危险的地方证明自己的能力。</p>
+          <p> </p>
+          <p>不过没关系。这是以铸币为奖励的任务，应该会有很多人愿意去做。</p>
+          <p> </p>
+          <p>我现在很忙，失陪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！我一直在等您。</p>
+          <p> </p>
+          <p>听说不安的特里罗安暂时好像安静下来了。</p>
+          <p> </p>
+          <p>没发生别的事吧？您该不是从灵魂治愈师那里来吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还能是什么结果呢？我知道[%username]大人一定可以消灭掉不安的特里罗安。</p>
+          <p> </p>
+          <p>您杀死了夺走了无数守护者生命的特里罗安，真了不起。</p>
+          <p> </p>
+          <p>谢谢您。这是极乐世界送给您的铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDLF2A_ElementalKingNmd_50_Ah]%([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ionse]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">埃乌泰尔佩说如果我能消灭掉引起奥德能量异常增殖的特里罗安，就会送我铸币作为报酬。到泰奥勃莫斯秘密研究所去看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃乌泰尔佩说如果我能消灭掉引起奥德能量异常增殖的特里罗安，就会送我铸币作为报酬。</p>
+          <p> </p>
+          <p>去泰奥勃莫斯秘密研究所消灭了不安的特里罗安，回去见到埃乌泰尔佩之后，她把说好的铸币送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

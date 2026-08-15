@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>空间移动需要很多奥德的力量。为什么需要那么多，老实说连我也不知道。</p>
+          <p> </p>
+          <p>在空间移动师学校学习的时候，虽然也学习过理论，但是并没能完全理解。</p>
+          <p> </p>
+          <p>我只知道空间移动是凭借石像内的奥德的力量发动的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过我所做的事情只是管理石像，然后在需要的时候发动它，至于知不知道原理不会成为什么大问题。</p>
+          <p> </p>
+          <p>但是最近石像的状态有点异常。</p>
+          <p> </p>
+          <p>不知道是不是因为用了太长时间，每次启动的时候，都会消耗大量的奥德。</p>
+          <p> </p>
+          <p>好像得修理一下了，但是我最担心的是在修理之前，会不会因为奥德不足而出现什么问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想拜托您一件事。您能去要塞上空的巨大的奥德中帮我采一点[%dic:STR_DIC_I_od_d_n_c_20a]吗？</p>
+          <p> </p>
+          <p>虽然我很想自己去做，但是我不会飞，所以无法提取奥德。</p>
+          <p> </p>
+          <p>这件事情是为了很多守护者的安全着想，请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>在要塞的上空有很多巨大的奥德。您去那里提取[%dic:STR_DIC_I_od_d_n_c_20a]交给我就行了。</p>
+          <p> </p>
+          <p>暂时只要有15个就应该够了。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>空间移动的时候，如果不能送到目的地去的话，谁都不知道会发生什么事情。</p>
+          <p> </p>
+          <p>如果[%username]大人在空间移动的时候，设备出现了问题，把您送进一个没有出口的欧比斯里去的话，又该怎么办？</p>
+          <p> </p>
+          <p>如果您以后改变主意的话，请回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还好石像到现在为止没有发生任何问题。</p>
+          <p> </p>
+          <p>不过我一直在担心，担心什么时候会发生问题。</p>
+          <p> </p>
+          <p>我要的奥德结晶体您带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥德结晶体。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去搜集奥德结晶体啊。</p>
+          <p> </p>
+          <p>石像也许随时都可能出现问题。</p>
+          <p> </p>
+          <p>所以请您快去帮我提取奥德结晶体吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您！</p>
+          <p> </p>
+          <p>有了这么多的话，暂时应该不会出问题了。</p>
+          <p> </p>
+          <p>您能帮助我真的非常感谢。</p>
+          <p> </p>
+          <p>这些虽然不多，但却是我的心意。请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">提取[%dic:STR_DIC_I_od_d_n_c_20a]，然后交给[%dic:STR_DIC_N_Orhe]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">奥尔赫说石像出现了问题，让我帮他搜集奥德结晶体。去要塞上空提取奥德吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔赫说石像出现了问题，消耗大量的奥德。为了防止石像在修理之前出问题，他让我帮他提取奥德结晶体。</p>
+          <p> </p>
+          <p>于是来到要塞上空，从巨大的奥德中提取了奥德结晶体并交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了[%username]大人，您见过马艾奇吗？</p>
+          <p> </p>
+          <p>第一次见到马艾奇的时候，我觉得它是长得很温顺的动物。</p>
+          <p> </p>
+          <p>看它们腿脚修长，慢慢吞吞地走路，还以为它们是吃草的动物呢。</p>
+          <p> </p>
+          <p>不过如果我是农村出身的话，应该就不会有这种愚蠢的想法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当我看见马艾奇挥舞着它纤长的触手攻击人的时候，我非常吃惊。</p>
+          <p> </p>
+          <p>那些家伙要比想象中还要粗野和残暴得多。</p>
+          <p> </p>
+          <p>而且它们很敏感，只要发出一点声音，它们就会挥舞着触手攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能是因为最近食物不足，马艾奇比以前更凶残了。</p>
+          <p> </p>
+          <p>居民们几乎不敢靠近古代遗迹。</p>
+          <p> </p>
+          <p>您能去[%dic:STR_DIC_W_LF2_SZ_G1]附近清除[%dic:STR_DIC_M_Displacerbeast_26_An]，让居民们可以平安地进入古代遗迹吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能帮忙真是太好了。</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_W_LF2_SZ_G1]附近有很多[%dic:STR_DIC_M_Displacerbeast_26_An]。</p>
+          <p> </p>
+          <p>它们的牙齿和巨大的脚也是很危险的武器，不过最应该小心的是它们背上的触手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可是有助于保证居民安全的大事，您怎么能觉得无关紧要呢？</p>
+          <p> </p>
+          <p>好吧，也不能硬要[%username]大人您改变注意...</p>
+          <p> </p>
+          <p>看来这个问题必须寻找其他的解决方法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您见到了[%dic:STR_DIC_M_Displacerbeast_26_An]，觉得怎么样？</p>
+          <p> </p>
+          <p>远看觉得很温顺，但是近看就会发现他们的牙齿和眼睛都很吓人，对吧？</p>
+          <p> </p>
+          <p>对了，打猎进行得顺利吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。这下我心里的石头总算放下了。</p>
+          <p> </p>
+          <p>守护者和守卫做任务，不都是为了保护人类吗？</p>
+          <p> </p>
+          <p>这是对您的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Displacerbeast_26_An]([%2]/24)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Justachys]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭攻击居民的竖条马艾奇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤斯塔奇斯说由于遭到竖条马艾奇的攻击，居民们都受了伤。因此按照他的嘱托，去古代遗迹打猎了马艾奇。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

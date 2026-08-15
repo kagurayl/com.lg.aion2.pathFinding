@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开了一半的纸。)</p>
+          <p> </p>
+          <p>(打开纸查看，好像画着某个建筑内部的简单的地图。)</p>
+          <p> </p>
+          <p>(仔细一看，有个地方标着X标记，下面写着“马里卡·努拉”。)</p>
+          <p> </p>
+          <p>(好像和龙崇拜者有关，应该拿去给[%dic:STR_DIC_N_Ortiz]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你跑得气喘吁吁的，发生了什么事？</p>
+          <p> </p>
+          <p>你手上拿着的纸是什么东西？</p>
+          <p> </p>
+          <p>你是因为那个东西才跑来找我的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出画着地图的纸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开纸查看)这好像是建筑的图纸……</p>
+          <p> </p>
+          <p>咦，这不是受诅咒的地下城市的建筑结构图吗！</p>
+          <p> </p>
+          <p>你到底是从哪里找到的？从龙崇拜者身上？</p>
+          <p> </p>
+          <p>嗯，你抓到的那个家伙，好像身份还挺高的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把画着地图的纸交给[%dic:STR_DIC_N_Ortiz]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从龙崇拜者身上获得了画着地图的纸。好像是和龙崇拜者有关的东西，拿去给奥尔提兹看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭龙崇拜者的时候，发现了一张折起来的纸。</p>
+          <p> </p>
+          <p>纸上画着建筑图形，还写着人的名字。拿去交给鸢族奥尔提兹之后，他说这好像是受诅咒的地下城市的图纸。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

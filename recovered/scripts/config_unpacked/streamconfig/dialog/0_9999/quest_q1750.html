@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>灰风军团的侦察能力很出色是谁都认可的事实。</p>
+          <p> </p>
+          <p>不管是渗透还是侦察，只要任务由他们负责，就没有不成功的。如果是内扎坎之盾军团的士兵的话，是根本不可能做到的。</p>
+          <p> </p>
+          <p>但是最近我觉得能力出众也很让人心烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的主要任务是侦察。侦察！但是因为战斗能力出色，经常会让我做一些和侦察无关的事情。</p>
+          <p> </p>
+          <p>监视占领要塞的那些家伙的动态就已经够忙的了，竟然还要我们去清除那些不死族。</p>
+          <p> </p>
+          <p>到底是什么战略啊，说有妨碍啥的。</p>
+          <p> </p>
+          <p>这明明是执行战略的人应该做的事情，为什么要让我们去干呢...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的部下们光执行侦察任务就已经够忙的了。</p>
+          <p> </p>
+          <p>如果因为要做别的任务而在本质工作上造成失误的话，难道又能原谅我们吗？</p>
+          <p> </p>
+          <p>[%username]，你能帮我们把[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]消灭掉吗？</p>
+          <p> </p>
+          <p>你又不像我们一样有固定的任务，应该总会有点时间吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你说能帮我。</p>
+          <p> </p>
+          <p>不过[%username]大人和我们一样能力出众，让您做这种事情好像有点大材小用了。</p>
+          <p> </p>
+          <p>以[%username]的实力，清除[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]之类的根本不算什么。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拒绝我，是因为有什么急事吗？</p>
+          <p> </p>
+          <p>看您拿着[%mainslotitem]，应该不至于负责那么重要的任务吧。</p>
+          <p> </p>
+          <p>不过您要不愿意，我又能怎么样呢。</p>
+          <p> </p>
+          <p>大家都按自己的意志活着，做不做任务还要看自己。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来的正是时候，[%username]。</p>
+          <p> </p>
+          <p>上面刚刚来了消息，让我赶紧把是否清除掉了不死族的报告交上去。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]全都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了，[%username]。</p>
+          <p> </p>
+          <p>多亏了[%username]你，我的部下们才能把精力集中在侦察任务上。</p>
+          <p> </p>
+          <p>清除不死族的任务应该不会一次就结束，有事情的话，希望你能过来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Laius]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">灰风军团本来侦察任务就已经很忙碌，现在又收到了清除不死族的命令，正在为难。按照莱奥斯的拜托去把灵魂破坏者清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱奥斯说部下们执行侦察任务就很忙了，现在又收到了清除妨碍战略执行的不死族的命令，他为此大吐苦水。</p>
+          <p> </p>
+          <p>于是按照他的拜托，帮他除掉了灵魂破坏者。他说清除不死族的任务应该不会一次就结束，让我下次再去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

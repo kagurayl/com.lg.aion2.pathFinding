@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大崩溃之后，在亚特雷亚各地逐渐发生了各种奇怪的事情。</p>
+          <p> </p>
+          <p>虽然刚开始还不容易察觉，但是随着时间的推移变得越来越严重。</p>
+          <p> </p>
+          <p>最近以来，要塞周边的[%dic:STR_DIC_M_lupyllini_19_n]变得越来越凶暴，甚至开始攻击行人。</p>
+          <p> </p>
+          <p>它们曾经是以动人的叫声给人们带来欢乐的鸟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我怀疑它们突然变得凶暴的原因可能是食物或者水。</p>
+          <p> </p>
+          <p>首先得抓到它们分析一下原因。</p>
+          <p> </p>
+          <p>您能帮我搜集[%dic:STR_DIC_I_QUEST_1303a]吗？</p>
+          <p> </p>
+          <p>劈开羽毛，对中间的芯进行分析的话，应该就能知道原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乘着浮游石从要塞下去，在通往[%dic:STR_DIC_W_LF2_SZ_A1]的路的周边应该可以找到路皮里尼。</p>
+          <p> </p>
+          <p>它们现在变得很凶暴，请您一定要小心。</p>
+          <p> </p>
+          <p>在您搜集羽毛的时间里，我会去向生命的守护者们搜集情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然现在看起来不会马上发生什么事情，但是这是一种前兆。</p>
+          <p> </p>
+          <p>这种事情持续一段时间之后，一定会发生巨大的变化。</p>
+          <p> </p>
+          <p>我不会让您去做太勉强的事情，但是您要记住这种征兆决不是小事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1303a]搜集到了吗？</p>
+          <p> </p>
+          <p>为了[%username]大人一拿回来就能开始分析，我已经做好了各种准备。</p>
+          <p> </p>
+          <p>请您把尾羽给我吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出路皮里尼的尾羽。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没搜集到？</p>
+          <p> </p>
+          <p>看来您是不觉得路皮里尼变得凶暴是什么严重的问题啊。</p>
+          <p> </p>
+          <p>对于[%username]大人来说也许只是稍微有点不便，但是对于人类来说这却是威胁到生命的事情。</p>
+          <p> </p>
+          <p>请您赶快去搜集路皮里尼的尾羽，这样我们就能知道它们变得凶暴的原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>弄到了尾羽之后，接下去要做的就只剩下分析其中的异常物质了。</p>
+          <p> </p>
+          <p>谢谢您。多亏了您，调查变得容易了。</p>
+          <p> </p>
+          <p>这是对您的辛苦的一点小小诚意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1303a]，然后交给[%dic:STR_DIC_N_Gaia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说红尾路皮里尼突然变得凶暴起来。为了帮助盖亚调查原因，去搜集尾羽吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖亚听说最近红尾路皮里尼变得凶暴之后，说必须进行调查。按照她的委托，帮她搜集到了红尾路皮里尼的尾羽，她说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

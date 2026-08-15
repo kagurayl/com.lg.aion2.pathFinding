@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我有我的任务，但是我到这里来其实另有目的。</p>
+          <p> </p>
+          <p>很多人都还不知道，消沉峡谷中埋藏着很多珍贵的矿物。</p>
+          <p> </p>
+          <p>只要找到一两种埋藏量丰富的珍贵矿石，就可以赚很多钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我去调查的时候，发现有种名叫[%dic:STR_DIC_OBJ_DF4_Amethyst_Q21031]的矿物的埋藏量非常大。</p>
+          <p> </p>
+          <p>锑是非常珍贵的矿物，用途也非常多样。</p>
+          <p> </p>
+          <p>经过精气提取后，可以用作毒药，也可以用于制作女性的化妆品，还可以用作陶瓷的装饰。</p>
+          <p> </p>
+          <p>希望这里能采掘到大量的锑……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也看到了，我来这里是执行任务的。虽然我很想去采掘锑，但是我还得在这里调查矿物。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去一趟吗？</p>
+          <p> </p>
+          <p>这一带一直以来都以自然资源宝库而闻名。</p>
+          <p> </p>
+          <p>您就当体验一下，去尝试采掘[%dic:STR_DIC_OBJ_DF4_Amethyst_Q21031]，也没什么坏处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在消沉峡谷中仔细寻找，可以发现[%dic:STR_DIC_OBJ_DF4_Amethyst_Q21031]。</p>
+          <p> </p>
+          <p>只要挖3个[%dic:STR_DIC_I_QUEST_21031a]，就是一大笔钱。</p>
+          <p> </p>
+          <p>如果您能帮我搜集3个，我会给您辛苦费的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，[%dic:STR_DIC_I_QUEST_21031a]并不好找。</p>
+          <p> </p>
+          <p>但是正因为不好找，所以才有价值。</p>
+          <p> </p>
+          <p>以后如果您改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拜托您的事情完成了吗？</p>
+          <p> </p>
+          <p>啊，一想到能看到锑，我的心情就很激动。</p>
+          <p> </p>
+          <p>请把带回来的[%dic:STR_DIC_I_QUEST_21031a]给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出锑原石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思。是我太着急了吗？</p>
+          <p> </p>
+          <p>我以为您一定已经采掘到了呢。</p>
+          <p> </p>
+          <p>不用着急，您去消沉峡谷慢慢寻找，采掘[%dic:STR_DIC_I_QUEST_21031a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是锑原石啊。真是惹人喜爱的矿物。</p>
+          <p> </p>
+          <p>精气提取之后卖掉，就能赚很多钱。怎么会有人不喜欢呢？</p>
+          <p> </p>
+          <p>谢谢您。这是[%username]大人您的一份钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去消沉峡谷搜集[%dic:STR_DIC_OBJ_DF4_Amethyst_Q21031]的原石，然后交给[%dic:STR_DIC_N_Carabel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说消沉峡谷一带埋藏着很多稀有的矿物。搜集其中价值最高的锑原石，交给卡拉贝尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡拉贝尔说消沉峡谷有很多珍贵的矿物，是他向往的地方。</p>
+          <p> </p>
+          <p>但是因为要执行任务，不能随便离开，所以让我帮他去采掘珍贵矿物锑原石。</p>
+          <p> </p>
+          <p>把锑原石交给了他，他对我表示感谢，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

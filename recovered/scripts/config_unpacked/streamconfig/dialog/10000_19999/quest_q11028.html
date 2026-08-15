@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，多亏了你帮忙，我才能对德拉纳生长的环境和特性进行研究。</p>
+          <p> </p>
+          <p>但是研究就是这个样子，发现了一件事时，就会有更多的疑问产生。</p>
+          <p> </p>
+          <p>在研究德拉纳的过程中，我的目光自然而然地被森林里的生命体吸引住了。</p>
+          <p> </p>
+          <p>[%username]，你经常去，应该知道，森林里的生命体和天界的生命体存在很大的差异。</p>
+          <p> </p>
+          <p>明明是相同的种类，外貌和特性却完全不同，我想应该是受到了德拉纳的影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想对德拉纳和森林中的生命体的关系进行全面的研究。</p>
+          <p> </p>
+          <p>那样的话，就需要很多的标本。</p>
+          <p> </p>
+          <p>[%username]，这件事您能帮帮我吗？</p>
+          <p> </p>
+          <p>请您帮我搜集生命体的样本，让我可以集中精力进行研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听了您的话，我就放心了。</p>
+          <p> </p>
+          <p>事实上，森林里的野兽标本，我也可以搜集到。但那样的话，研究的速度就会受到影响。</p>
+          <p> </p>
+          <p>请您先去帮我搜集[%dic:STR_DIC_I_QUEST_11028a]、[%dic:STR_DIC_I_QUEST_11028b]和[%dic:STR_DIC_I_QUEST_11028c]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，以你的实力，应该是小菜一碟吧？</p>
+          <p> </p>
+          <p>森林里的野兽标本，我也可以搜集到。但那样的话，研究的速度就会受到影响。</p>
+          <p> </p>
+          <p>研究的时候如果在中间停顿下来，就很难再回到原来的状态了。</p>
+          <p> </p>
+          <p>不过又能怎么样呢？看来我得找别人帮忙了。如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>我要的东西拿回来了吗？</p>
+          <p> </p>
+          <p>就是[%dic:STR_DIC_I_QUEST_11028a]、[%dic:STR_DIC_I_QUEST_11028b]和[%dic:STR_DIC_I_QUEST_11028c]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出体液。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尽快回来是好事，不过该带回来的东西应该带回来。</p>
+          <p> </p>
+          <p>为了进一步的研究，我需要[%dic:STR_DIC_I_QUEST_11028a]、[%dic:STR_DIC_I_QUEST_11028b]和[%dic:STR_DIC_I_QUEST_11028c]。</p>
+          <p> </p>
+          <p>您好像光顾着打猎了，请您再回去看看吧。必须在血干掉之前采集到才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然很完美。[%username]，多亏了你，我应该可以提前完成英吉斯温的研究了。</p>
+          <p> </p>
+          <p>这些虽然不多，但却是我的一片心意。</p>
+          <p> </p>
+          <p>如果您以后采集到了体液，请拿来给我。对我来说，标本越多越好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_A2_Kuillus_Drana_51_An]、[%dic:STR_DIC_M_LF4_A2_Crestlich_Drana_51_An]和[%dic:STR_DIC_M_LF4_A2_BAT_Drana_51_An]的体液，然后交给[%dic:STR_DIC_N_Ambrosini]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让安布罗西尼可以对德拉纳和生命体的关系进行研究，去帮他搜集受到德拉纳影响的生命体的体液吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安布罗西尼说想调查德拉纳对枯萎森林里的生命体造成的影响，让我帮他去采集变异最严重的克鲁斯、鸟妖和穆尔穆尔的体液。</p>
+          <p> </p>
+          <p>按照安布罗西尼的委托，搜集到了生命体的体液。他对我表示感谢，说多亏了我，研究应该可以提前完成了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

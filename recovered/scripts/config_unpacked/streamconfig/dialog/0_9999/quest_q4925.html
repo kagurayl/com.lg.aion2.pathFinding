@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又见面了，[%username]。</p>
+          <p> </p>
+          <p>你在很努力地锻炼自己嘛。来学新技能的间隔时间越来越短了。</p>
+          <p> </p>
+          <p>我想送你个特别的礼物，要不要挑战一下神圣力测试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">神圣力测试？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大多数人都以为飞翔的翅膀是永恒之塔赐予守护者的独特能力，其实不然。</p>
+          <p> </p>
+          <p>守护者真正独特的能力是神圣力能力。人类或莱卡恩等亚人种也会使用生命力或精神力技能，但神圣力技能是只有守护者才会使用的。</p>
+          <p> </p>
+          <p>不过这种技能的限制条件很多，使用起来会相对不太方便。所以守护者中有很多人都不太会用这个技能。</p>
+          <p> </p>
+          <p>总司令特别针对这一问题，举办了神圣力测试以促进守护者对神圣力技能的重视。</p>
+          <p> </p>
+          <p>说起来是测试，但用不着紧张。只要使用10次指定技能就算完成测试。</p>
+          <p> </p>
+          <p>怎么样？要不要尝试一下神圣力测试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。让我看看，你是杀星，最近刚学会影子披风吧。</p>
+          <p> </p>
+          <p>如果你还没开始学也没关系。现在开始熟悉也来得及。</p>
+          <p> </p>
+          <p>那么就把这个技能作为[%username]你的神圣力测试对象吧。请使用10次[%dic:STR_DIC_E_DP_As]，完成后请回来找我。</p>
+          <p> </p>
+          <p>对了，你知道积累神圣力的方法吗？神圣力是在战斗的过程中，自然而然积累起来的。要想更快地积累神圣力，最好是去欧比斯。</p>
+          <p> </p>
+          <p>如果嫌麻烦，食用补充神圣力的果冻也可以。</p>
+          <p> </p>
+          <p>那么我就等着你的好消息了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到，我还以为是你的话，肯定不会拒绝的。</p>
+          <p> </p>
+          <p>神圣力对守护者来说非常重要，如果你改变了主意，可以再来找我。</p>
+          <p> </p>
+          <p>那么再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我猜你也该回来找我了。</p>
+          <p> </p>
+          <p>怎么样，神圣力测试完成了没？</p>
+          <p> </p>
+          <p>让我确认一下您有没有遵照约定，使用10次以上的影子披风。</p>
+          <p> </p>
+          <p>请走近一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">走上前去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(将手放在头上) 唔，神圣力的流动很平滑。看来您确实认真地练习过神圣力技能。</p>
+          <p> </p>
+          <p>(将手拿开) 祝贺你，通过了神圣力测试。</p>
+          <p> </p>
+          <p>相信现在你闭着眼睛也能够施展影子披风了吧？希望这次测试能够对你今后的发展有所帮助。</p>
+          <p> </p>
+          <p>这是给通过测试守护者的奖励，是专门为杀星制作的东西，希望你能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">请使用[%dic:STR_DIC_E_DP_As]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Sigyn]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">总司令官主办的神圣力测试正在进行，使用10次神圣力技能影子披风，便能通过测试。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡金表示神圣力测试是为了激励那些不太会使用神圣力的守护者熟悉相关技能，邀请我参加测试。</p>
+          <p> </p>
+          <p>按照锡金的要求，使用了10次神圣力技能影子披风。他对我表示祝贺，说我通过了测试。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

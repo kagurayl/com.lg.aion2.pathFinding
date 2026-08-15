@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>假的烙印之石正在从魔界流入的事情真让人感到震惊。</p>
+          <p> </p>
+          <p>虽然明知道乌云贸易团在耍花招，但是又不能因此而驱逐这些家伙。</p>
+          <p> </p>
+          <p>三尖树种子也是如此...停止和他们的交易的话，会对天界造成很大的打击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想来想去，方法好像只有一个。</p>
+          <p> </p>
+          <p>就是去魔界直接攻击雷帕尔革命团。</p>
+          <p> </p>
+          <p>当然这是个很艰难的任务。但是事情既然已经开始，就应该坚持到底。</p>
+          <p> </p>
+          <p>你愿意接受最后一个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你接受最后一个任务。</p>
+          <p> </p>
+          <p>那就请你去莫尔海姆的[%dic:STR_DIC_W_DF2_SUB_D5]，打碎存放假烙印之石的装置。</p>
+          <p> </p>
+          <p>他们在秘密地制造烙印之石，所有在建筑物的地下应该会有秘密实验室之类的东西。</p>
+          <p> </p>
+          <p>请你找到实验室，然后破坏掉[%dic:STR_DIC_E_OBJ_DF2_StigmaStorage_Q1939]。希望你能勇敢作战，祝你一路顺风！</p>
+          <p> </p>
+          <p>对了，要去莫尔海姆的话，请你到革命团建设基地去。利用那里的时空的裂缝，应该可以前往缪尔莫尔海姆。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来去魔界这样的任务还是太重了。</p>
+          <p> </p>
+          <p>不过我还是要谢谢你一直帮我执行任务到现在。</p>
+          <p> </p>
+          <p>如果你改变了主意，可以再来找我。</p>
+          <p> </p>
+          <p>任何时候我都会把任务安心地交给[%username]你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我相信你的实力，但是你去的那个地方太危险，我还在担心您会不会回不来。</p>
+          <p> </p>
+          <p>对了，你有没有后帮我让魔界的雷帕尔革命团的那些家伙吃吃苦头？</p>
+          <p> </p>
+          <p>快和我说说结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你破坏了烙印之石仓库，真是太好了。</p>
+          <p> </p>
+          <p>如果他们能够因为这件事情而彻底放弃制作假烙印之石就好了。</p>
+          <p> </p>
+          <p>不管怎样，去这么远的地方完成了任务，真是谢谢你了。</p>
+          <p> </p>
+          <p>这是你认真执行任务的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_E_OBJ_DF2_StigmaStorage_Q1939]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Likasas]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">使用埃尔特内的革命团建设基地里的时空的裂缝，前往莫尔海姆的革命团建筑基地，破坏存放假烙印之石的烙印之石仓库。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里卡萨斯说无法断绝和乌云贸易团的交易，所以让我直接去魔界，攻击制造假烙印之石的雷帕尔革命团。</p>
+          <p> </p>
+          <p>于是去莫尔海姆的革命团建筑基地，破坏了烙印之石仓库。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

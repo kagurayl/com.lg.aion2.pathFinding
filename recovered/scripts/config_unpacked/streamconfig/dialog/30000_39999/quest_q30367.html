@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过深渊残骸，见到过那个东西吗？</p>
+          <p> </p>
+          <p>啊，我好像没说清楚，我是说巨大的奥德碎片。</p>
+          <p> </p>
+          <p>在调查队的报告书中，提到了巨大的奥德碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像有必要对那个[%dic:STR_DIC_OBJ_IDAbRe_Core_ArtifactCore]进行进一步的调查。</p>
+          <p> </p>
+          <p>没有无原因的结果，深渊残骸中之所以有那么多强大的守护者守卫着巨大奥德碎片，应该是有原因的。</p>
+          <p> </p>
+          <p>我推测它好像对维持深渊残骸起着非常重要的作用。因为小型欧比斯本来就是非常不稳定的地方。</p>
+          <p> </p>
+          <p>为了确认我的推测是否正确，我需要你的帮助，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你消灭掉守卫深渊残骸的强大的守护者，破坏巨大的奥德碎片。</p>
+          <p> </p>
+          <p>破坏掉巨大的奥德碎片之后，仔细观察一下到底会发生什么事。</p>
+          <p> </p>
+          <p>破坏掉那个碎片，可能会有危险，请随时保持警惕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你的好奇心不是很强啊，[%username]。</p>
+          <p> </p>
+          <p>你不想知道巨大的奥德碎片的作用是什么吗？</p>
+          <p> </p>
+          <p>如果你不愿意的话，我也没办法。我总不能强迫你去吧？</p>
+          <p> </p>
+          <p>知道了，你走吧，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巨大的奥德碎片破坏掉了吗？</p>
+          <p> </p>
+          <p>我很想知道情况怎么样了。</p>
+          <p> </p>
+          <p>快告诉我发生了什么事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>破坏掉巨大的奥德碎片之后，深渊残骸深处传来了愤怒的喊声？</p>
+          <p> </p>
+          <p>虽然和我的预测有所出入，但好像很有意思。</p>
+          <p> </p>
+          <p>把所有的巨大奥德碎片全部破坏掉的话，好像会引起实体守护者的愤怒。</p>
+          <p> </p>
+          <p>虽然对付愤怒的守护者也很有趣，但现在还不是时候。</p>
+          <p> </p>
+          <p>天族和龙族也在对实体虎视眈眈，现在还是维持实体的稳定比较好。</p>
+          <p> </p>
+          <p>我们没必要非得破坏巨大的奥德碎片，引起实体守护者的愤怒。</p>
+          <p> </p>
+          <p>[%username]，你做得很好。这是给你的奖励。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_OBJ_IDAbRe_Core_ArtifactCore]([%2]/2)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭深渊残骸的强大的守护者，破坏他们守护的巨大奥德碎片。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格沃尔说想知道深渊残骸里的巨大奥德碎片的作用，让我去破坏掉巨大的奥德碎片。</p>
+          <p> </p>
+          <p>于是破坏掉了巨大的奥德碎片，深渊残骸深处传来了守护者愤怒的喊声。</p>
+          <p> </p>
+          <p>听说了这些之后，格沃尔要想安心占领实体，最好还是不要去碰那些巨大的奥德碎片。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>现在你得去[%dic:STR_DIC_W_DC2]见一个重要人物。</p>
+          <p> </p>
+          <p>你听说过阿盖希亚这个名字吗？他是侍奉马勒库坦主神的命运大神官。</p>
+          <p> </p>
+          <p>在成为大神官之前，他是个有名的沉默审判官。</p>
+          <p> </p>
+          <p>不久前，他让我推荐一个可以信任的人。我想来想去，觉得还是你最合适。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是因为什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个嘛……如果你真的想知道，就快去见见阿盖希亚大神官大人吧。</p>
+          <p> </p>
+          <p>你知道怎么去主神殿吗！？</p>
+          <p> </p>
+          <p>啧啧，我来给你说明一下，你好好听着。</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_W_DC1_1]的入口处，可以看到两个瞬间移动石像。其中金黄色的石像可以通往[%dic:STR_DIC_W_DC2]，你通过那个过去就行了。</p>
+          <p> </p>
+           <p>那就辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就是[%username]吗？</p>
+          <p> </p>
+          <p>来这里有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达毕达尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，毕达尔总司令官推荐的人是你吗？</p>
+          <p> </p>
+          <p>果然是他的风格，呵呵。</p>
+          <p> </p>
+          <p>啊，没什么，别在意。看来总司令官给我挑了个不错的人。</p>
+          <p> </p>
+          <p>不知你知不知道，马勒库坦主神现在不在这里。为了关系到亚特雷亚的命运的事情，他去了龙界的格尔克马洛斯。</p>
+          <p> </p>
+          <p>龙界的环境非常恶劣，应该会有很多困难。希望你能去那里贡献一份力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Vidar]总司令官对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和命运大神官[%dic:STR_DIC_N_Agehia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：毕达尔总司令官好像在找我。去伏魔殿见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了毕达尔总司令官的呼叫，来到伏魔殿之后，他让我到马勒库坦主神殿去一趟。</p>
+          <p> </p>
+          <p>见到了马勒库坦主神殿的命运大神官阿盖希亚，向他询问原因，他说希望我去龙界的格尔克马洛斯贡献一份力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

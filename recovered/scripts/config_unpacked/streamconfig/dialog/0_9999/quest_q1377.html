@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然埃尔特内全域变成沙漠是最大的问题，但对于居民们来说，还有很多其他问题。</p>
+          <p> </p>
+          <p>其中之一就是附近的动物变得越来越凶残了。因为动物们的生计也变得艰难了。</p>
+          <p> </p>
+          <p>所以我向守卫们下达了扫荡变得凶残的动物的任务，但是坦率的说，现在做得还非常不够。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我向经过这里的守护者们提供任务，并提供铸币作为报酬。</p>
+          <p> </p>
+          <p>希望能通过这种方式，让居民们能够安全地生活。</p>
+          <p> </p>
+          <p>最近最让人头疼的是[%dic:STR_DIC_M_Cherubim2_35_n]和[%dic:STR_DIC_M_Cherubim3_35_n]。人们经常因为它们个头小而不注意，从而受到它们的伤害。</p>
+          <p> </p>
+          <p>您能为居民们去清除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的回答还真是够爽快。</p>
+          <p> </p>
+          <p>谢谢您。那就请您去捕捉[%dic:STR_DIC_M_Cherubim2_35_n]和[%dic:STR_DIC_M_Cherubim3_35_n]吧。</p>
+          <p> </p>
+          <p>也许它们又会危害居民，所以请您尽快出发。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(咂咂嘴)啧，真可惜。</p>
+          <p> </p>
+          <p>像[%username]大人这样实战经验丰富的[%userclass]可不容易碰到。</p>
+          <p> </p>
+          <p>如果您改变了主意的话请再来找我。您的话我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经回来了吗？</p>
+          <p> </p>
+          <p>我让您除掉的也不是一两头...</p>
+          <p> </p>
+          <p>看来您的打猎实力还真是出色。</p>
+          <p> </p>
+          <p>不管怎样，您除掉约好的数量了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人还真是实在人啊。</p>
+          <p> </p>
+          <p>真是辛苦您了。来，这是说好的铸币。</p>
+          <p> </p>
+          <p>如果没别的事情的话，以后还要继续拜托您。花多长时间没关系，您只要去清除克鲁比安和克鲁比埃尔就行了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉危害居民的克鲁比安和克鲁比埃尔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Cherubim2_35_n]([%2]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Cherubim3_35_n]([%5]/17)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Agrips]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克鲁比安和克鲁比埃尔在攻击人类。必须去库里乌鲁通道击退凯鲁宾。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿格林斯说居民们因为克鲁比安和克鲁比埃尔而受苦，光凭守卫的力量不够，让我帮着清除那些家伙。</p>
+          <p> </p>
+          <p>于是在去克鲁比安通道清除了克鲁比安和克鲁比埃尔之后回去找到了他，他说以后还要继续拜托我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

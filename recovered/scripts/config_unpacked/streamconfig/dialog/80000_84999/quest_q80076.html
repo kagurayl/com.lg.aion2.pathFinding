@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好，你好！我是月光妖精！很高兴见到你！</p>
+          <p> </p>
+          <p>我蓬松的毛帽漂亮吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说漂亮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀～你说得这么直接，真让人难为情。呵呵！</p>
+          <p> </p>
+          <p>我月光妖精大人有件事想拜托你，可以吗？</p>
+          <p> </p>
+          <p>你一定会答应的吧？嗯？嗯？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应委托。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">太麻烦，直接走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真开心！好的，你快去搜集我的宠物[%dic:STR_DIC_I_QUEST_80076A]！</p>
+          <p> </p>
+          <p>衣服和帽子的毛有点掉了，必须赶紧补一点才行。</p>
+          <p> </p>
+          <p>毛皮衣服是我的魅力所在，不打理可不行！</p>
+          <p> </p>
+          <p>我来这里玩的时候，带来了很多火拳塔鲁。因为没地方放，就把它们关在了决斗的殿堂里！很壮观吧！</p>
+          <p> </p>
+          <p>一个人的话可能会有点累，你可以和朋友或军团里的人一起去搜集！</p>
+          <p> </p>
+          <p>明白了吗？失败的话，我就不理你了～嘿嘿！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为我比你漂亮吗？</p>
+          <p> </p>
+          <p>真没劲～反正除了你之外，还有很多守护者可以帮我！</p>
+          <p> </p>
+          <p>耶！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呀！真开心！我的火拳塔鲁可爱吗？</p>
+          <p> </p>
+          <p>我要的东西呢？嗯？嗯？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塔鲁的尾巴毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦哦！这么多啊！但是我最多只能数到50。</p>
+          <p> </p>
+          <p>不过大概差不多就行了，对吧？</p>
+          <p> </p>
+          <p>你可真了不起！那些家伙发起脾气的话，甚至会攻击我！</p>
+	  <p> </p>
+          <p>看来它们好像不知道我是它们的主人。</p>
+          <p> </p>
+          <p>真的非常感谢！我会好好使用的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要的东西呢？还没弄到吗？</p>
+          <p> </p>
+          <p>到决斗的殿堂去，可以看到很多火拳塔鲁。</p>
+          <p> </p>
+          <p>请你一定要帮我搜集到[%dic:STR_DIC_I_QUEST_80076A]！</p>
+          <p> </p>
+          <p>我想尽快让我的魅力恢复。</p>
+          <p> </p>
+          <p>拜托你了～快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80076A]，然后交给[%dic:STR_DIC_N_event_Rabitta]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集火拳塔鲁的尾巴毛，然后交给拉比塔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>遇到了一个奇怪的女人，不由分说地让我帮她搜集塔鲁的尾巴毛。</p>
+          <p> </p>
+          <p>搜集到了她想要的东西，她带着纯真的微笑向我表示感谢，并送了我一份礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

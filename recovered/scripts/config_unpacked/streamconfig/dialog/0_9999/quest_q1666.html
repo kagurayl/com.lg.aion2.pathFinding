@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡的局势变得如此紧张，是在龙族入侵之后。</p>
+          <p> </p>
+          <p>之前虽然也有很多问题，但居民们没有像现在这样恐慌。</p>
+          <p> </p>
+          <p>但是自从龙族打开次元之门入侵之后，一切就都变了。</p>
+          <p> </p>
+          <p>本来以为不可能发生的事情就发生在自己的眼前，怎么能让人不恐慌？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们守卫的工作是将入侵天界的龙族赶出结界，让因特尔蒂卡重新恢复安全的状态。</p>
+          <p> </p>
+          <p>但是这并不容易。守卫人数不足，而龙族的数量却一直在增加。</p>
+          <p> </p>
+          <p>像这样消极地防御，无疑是在为龙族增强自己的力量提供方便。</p>
+          <p> </p>
+          <p>因此必须进入他们的巢穴，狠狠地教训教训他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。我就知道[%username]大人一定会帮助我的。</p>
+          <p> </p>
+          <p>穿过奇夏尔部落，可以看到[%dic:STR_DIC_W_LF3_SZ_E2]。</p>
+          <p> </p>
+          <p>请您到那里去把英德拉图军团的[%dic:STR_DIC_M_LizardmanFighter_42_An]和[%dic:STR_DIC_M_LizardmanRanger_42_An]清除掉，让他们见识一下天人的可怕。</p>
+          <p> </p>
+          <p>这样就足以威胁到他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然不能和您一起去，不过有件事我想提醒您。请您一定要和同伴一起去。</p>
+          <p> </p>
+          <p>一个人去的话，可能连奇夏尔部落都无法突破。</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_LF3_SZ_E2]，把英德拉图军团的[%dic:STR_DIC_M_LizardmanFighter_42_An]和[%dic:STR_DIC_M_LizardmanRanger_42_An]清除掉，狠狠地惩罚一下那些不知道天人厉害的龙族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡面临的问题不只是龙族。</p>
+          <p> </p>
+          <p>但龙族是将亚特雷亚分成两块的罪魁祸首。</p>
+          <p> </p>
+          <p>还有比他们更危险的存在吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。您能安然回来，真是太好了。</p>
+          <p> </p>
+          <p>您去对付龙族，感觉怎么样？</p>
+          <p> </p>
+          <p>只有直接面对他们，才会知道龙族的可怕。</p>
+          <p> </p>
+          <p>拜托您的事情完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话，应该充分让英德拉图军团的龙族见识到了天族的力量。</p>
+          <p> </p>
+          <p>他们应该知道，如果他们胆敢轻举妄动，我们一定不会放过他们。</p>
+          <p> </p>
+          <p>这全都是[%username]大人的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除第52英德拉图军团兵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LizardmanFighter_42_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LizardmanRanger_42_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Brosia]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">布洛西亚说想让龙族见识一下天族的力量。去英德拉图军团驻地，清除德拉克纽特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说虽然抵挡住了入侵因特尔蒂卡的龙族，但是这样会给他们增强力量提供机会。</p>
+          <p> </p>
+          <p>于是前往英德拉图军团驻地，清除了第52德拉克纽特精锐前哨兵和精锐巡查兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

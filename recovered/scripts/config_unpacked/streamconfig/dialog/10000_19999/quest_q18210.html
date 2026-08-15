@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>欢迎光临，[%username]大人！</p>
+          <p></p>
+          <p>凯西内尔神庙的第三训练所开放了！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">听听详细说明。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙训练所和现有的训练所有很大的不同！</p>
+          <p></p>
+          <p>不是和布洛尼、克拉尔、龙族等等战斗，而是和像[%username]大人一样的守护者战斗的训练。</p>
+          <p></p>
+          <p>虽然都是幻影，但一定会比之前的训练更加紧张！</p>
+          <p></p>
+          <p>[%username]大人，如果您也想接受训练，我可以把您介绍给第3神庙训练所的训练教官朱诺思大人。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙训练教官由最初进入欧比斯的时期开始就和敌人战斗的传说中的守卫[%dic:STR_DIC_N_Junos]大人担任。</p>
+          <p></p>
+          <p>请您现在就去见见朱诺思大人。</p>
+          <p></p>
+          <p>他会跟您说明第3神庙的相关情况的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>还没准备好的话就没办法了。</p>
+          <p></p>
+          <p>没有准备好就参加这么难的训练，会降低训练生们的士气。</p>
+          <p></p>
+          <p>以后如果改变了主意，请再来找我。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙是可以将自己的能力发挥到极限的地方！</p>
+          <p></p>
+          <p>如果你想随便试试，最好到欧比斯去。</p>
+          <p></p>
+          <p>如果以为只是训练就掉以轻心的话，一定会遭受耻辱。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">了解孤独竞技场的规则。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙中有好几个竞技场，合起来称为第3神庙训练所。</p>
+          <p></p>
+          <p>其中在孤独竞技场中只能见到一个敌人。</p>
+          <p></p>
+          <p>先打倒对方的人可以获胜。</p>
+          <p></p>
+          <p>虽然要3个回合才能决出胜负，但如果你有足够实力的话，很快就能决出胜负。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <CutScene id="484" />
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>混沌竞技场是可以有6到10个人参加训练。</p>
+          <p></p>
+          <p>在混沌竞技场中，除了自己之外其他全都是敌人！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">了解混沌竞技场的规则。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>必须打倒所有敌人，或者活到最后。</p>
+          <p></p>
+          <p>就算被打倒，也可以重新复活，在决出最终胜利者之前可以继续战斗。</p>
+          <p></p>
+          <p>如果还有不理解的地方，可以随时来找我。</p>
+          <p></p>
+          <p>不管几次都可以，直到[%username]%你明白为止。</p>
+        </body>
+      </html>
+    </Contents>
+    <CutScene id="485" />
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">和[%dic:STR_DIC_N_Junos]%对话，听取和孤独竞技场有关的说明</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">和[%dic:STR_DIC_N_Junos]%对话，听取和混沌竞技场有关的说明</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">听说凯西内尔第3神庙训练所开放了！到训练教官朱诺思那里了解一下情况吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>埃纽说凯西内尔训练所的第三训练所开放了，让我到朱诺思那里去听一下说明。</p>
+          <p></p>
+          <p>神庙训练教官朱诺思为我说明了孤独竞技场和混沌竞技场的情况。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

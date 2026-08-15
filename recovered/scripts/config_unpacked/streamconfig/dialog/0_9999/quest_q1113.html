@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情不少，报酬不多，人们都把佣兵当成跑腿儿的。</p>
+          <p> </p>
+          <p>听说在凯鲁宾的问题解决之前，要一直在这里工作。到底要等到什么时候啊！</p>
+          <p> </p>
+          <p>虽然还不能和团长说，但是我想离开这里到其他的村子去。</p>
+          <p> </p>
+          <p>你是第一次做佣兵可能不太清楚，如果运气好，在其他富有的村庄找到活干，报酬会是这里的2倍！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为在达弥努树林能赚点儿外快，所以我对这儿还有点留恋。不过现在却有人妨碍我赚外快，真叫人气愤。</p>
+          <p> </p>
+          <p>在潮湿的土地上，有一种生长在地下的带有独特香气的蘑菇。</p>
+          <p> </p>
+          <p>我虽然不知道它到底是什么滋味，但这个村子的人们都把它看作是最好的料理材料。</p>
+          <p> </p>
+          <p>所以我一有空就会去找些蘑菇卖给乌诺，收入很可观。</p>
+          <p> </p>
+          <p>可是最近以来，却不见了这种蘑菇的踪影。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直觉得很奇怪，最近终于找到了元凶。原来是[%dic:STR_DIC_MLA135]把它都吃光了。</p>
+          <p> </p>
+          <p>它们走来走去，时不时用鼻子拱地，把蘑菇都吃掉了。</p>
+          <p> </p>
+          <p>同志，当时团长很犹豫应不应该让失去记忆的你加入佣兵团。那时候要不是我的大力推荐，你可能就没有今天了！</p>
+          <p> </p>
+          <p>现在正是你报答我的恩惠的时候。</p>
+          <p> </p>
+          <p>卖蘑菇的钱我会分你一点儿，请帮我处置短毛麦皮古斯吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢了。顺着这条路往树林里走。可能是[%dic:STR_DIC_MLA135]天地。</p>
+          <p> </p>
+          <p>处置所有那些喜欢贵重蘑菇的不知天高地厚的野兽们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，我说！当时团长在苦恼要不要让你加入的时候，是我站在了你的一边！</p>
+          <p> </p>
+          <p>要是没有我的话，你现在根本不会在这儿！</p>
+          <p> </p>
+          <p>我这么对你，你却拒绝我的请求，真是让人心寒啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经除掉[%dic:STR_DIC_MLA135]%了吗？</p>
+          <p> </p>
+          <p>虽然和当成家畜养的普古斯很像，但都是些在森林里长大的家伙，非常凶恶。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。这下就能顺利地做我的副业了。</p>
+          <p> </p>
+          <p>这是卖蘑菇挣的钱，分给你点儿吧。</p>
+          <p> </p>
+          <p>咱们佣兵团员之间当然要互相帮助。</p>
+          <p> </p>
+          <p>辛苦了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]">打猎<font color="[%1]">把蘑菇吃光了的[%dic:STR_DIC_MLA135]%([%2]/8)</font></p></step>                     
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_LA69]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">出售生长在土地里的蘑菇可以说是安培斯的外快来源。但是，短毛麦皮古斯靠着嗅觉挖出蘑菇并把蘑菇吃光了。必须帮助安培斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除了吃光作为安培斯外快来源的蘑菇的麦皮古斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

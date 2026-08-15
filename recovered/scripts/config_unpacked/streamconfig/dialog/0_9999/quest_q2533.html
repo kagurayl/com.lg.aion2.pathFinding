@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然现在已经得到了[%username]送来的，能够盛放毒药的强化药瓶，那么马上可以收集毒药了。</p>
+          <p> </p>
+          <p>想要解决问题，就要从问题的源头开始调查，不是吗？</p>
+          <p> </p>
+          <p>一旦摸清布里特拉的武器中的毒药成分，应该会有办法阻止人们成为不死族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然现在已经得到了[%username]送来的，能够盛放毒药的强化药瓶，那么马上可以收集毒药了。</p>
+          <p> </p>
+          <p>想要解决问题，就要从问题的源头开始调查，不是吗？</p>
+          <p> </p>
+          <p>一旦摸清布里特拉的武器中的毒药成分，应该会有办法阻止人们成为不死族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然[%username]带来了药瓶，希望你帮人帮到底。</p>
+          <p> </p>
+          <p>到贝斯佩尔幽灵村将毒药收集来。</p>
+          <p> </p>
+          <p>村子的中间插着 [%dic:STR_DIC_W_STR_DF3_MS_Britra]，毒已经扩散到周围，形成了绿色的坑。把坑里的毒药装在药瓶里带回来就可以了。</p>
+          <p> </p>
+          <p>如果是人类，很有可能会受毒药影响而变成不死族，不过 [%username]是守护者，短时间接触毒气应该问题不大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，请你带好这个药瓶。一定要在由布里特拉的武器里的毒形成的绿色大坑里将毒药装来给我。</p>
+          <p> </p>
+          <p>你务必要记住一点，毒药装好后一定要在5分钟内赶回来。</p>
+          <p> </p>
+          <p> 时间一长，毒药就会变质而失去研究价值。</p>
+          <p> </p>
+          <p>时间紧迫，赶紧出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你会帮到最后呢。</p>
+          <p> </p>
+          <p>不过，你能为我带来盛放毒药的强化药瓶，已经算帮了我很大的忙，我还能向你奢求什么呢。</p>
+          <p> </p>
+          <p>知道了，我会把这件事委托给其他守护者。</p>
+          <p> </p>
+          <p>那么再见了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！终于回来了啊，[%username]。</p>
+          <p> </p>
+          <p>我一直担心你无法按时返回。</p>
+          <p> </p>
+          <p>那么请把盛放毒药的药瓶交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将药瓶交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看这颜色这么鲜艳，毒性一定也很强。</p>
+          <p> </p>
+          <p>谢谢你能出色完成如此困难而紧迫的任务。</p>
+          <p> </p>
+          <p>我会对毒药进行细致的分析，全力制作出能阻止人们成为不死族的药物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_STR_DF3_MS_Britra] 附近，将毒药装入药瓶里。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">在规定时间内把药瓶交给 [%dic:STR_DIC_N_Gigrite]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">吉格里泰表示，既然已经拿到了强化药瓶，下一步就该去收集毒药。去贝斯佩尔幽灵村收集毒药。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉格里泰表示，既然已经拿到了可以盛放毒药的强化药瓶，下一步就该去收集毒药。</p>
+          <p> </p>
+          <p>他说，下一步的任务是拿着药瓶去贝斯佩尔幽灵村中央的布里特拉的武器附近的坑中装一些毒药回来。并表示，时间一长的话，毒药就会变质，不管有什么事情，一定要在10分钟内回来。</p>
+          <p> </p>
+          <p>遵照他的委托，在5分钟内把毒药带回来交给了他，他表示会仔细研究毒药成分，阻止人们成为不死族。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

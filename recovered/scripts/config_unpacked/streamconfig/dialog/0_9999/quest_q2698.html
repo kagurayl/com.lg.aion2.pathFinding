@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（慢慢恢复知觉）啊...啊啊...</p>
+          <p> </p>
+          <p>千...千万...</p>
+          <p> </p>
+          <p>我...不...不要管我...千万！啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">让斯泰因镇静下来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我...我...</p>
+          <p> </p>
+          <p>给我想个办法。</p>
+          <p> </p>
+          <p>不会...不会让你救我...</p>
+          <p> </p>
+          <p>让这种痛苦...消失掉...啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问他关于书的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>先...拜托你...</p>
+          <p> </p>
+          <p>拜托...一件事...</p>
+          <p> </p>
+          <p>让这种痛苦...停止的...药...</p>
+          <p> </p>
+          <p>给...给我找来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对...对面的房间角落...有 [%dic:STR_DIC_OBJ_IDDF3_LP_LehparCabinet_Q2698]...</p>
+          <p> </p>
+          <p>在里面...</p>
+          <p> </p>
+          <p>镇...镇痛剂...蓝色药丸...</p>
+          <p> </p>
+          <p>请给我带来...带来那个...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（再一次晕倒。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样...这样下去...</p>
+          <p> </p>
+          <p>不久后...我...</p>
+          <p> </p>
+          <p>对...对面房间角落...研究所...抽屉柜...</p>
+          <p> </p>
+          <p>那...那里面...镇痛剂...求你了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将镇痛剂交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就算...我...我想说...</p>
+          <p> </p>
+          <p>这种状态下...实...实在...</p>
+          <p> </p>
+          <p>想要...说...说清楚...需要...药...</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_IDDF3_LP_LehparCabinet_Q2698]，请给我...带来...镇痛剂...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（吃完药后）啊，现在才感觉自己是个活人。</p>
+          <p> </p>
+          <p>痛苦消失了，意识也恢复了。</p>
+          <p> </p>
+          <p>虽然我明白，这种情况也不会维持多久。</p>
+          <p> </p>
+          <p>不过还是谢谢你给我找到了药。</p>
+          <p> </p>
+          <p>我记得刚才你问了关于书的事情。作为回报，我会把知道的都告诉你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_OBJ_IDDF3_LP_LehparCabinet_Q2698]找到镇痛剂并交给 [%dic:STR_DIC_N_NPC_Stein]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">虽然要从斯泰因那里获得情报，可是因为痛苦，他连话都说不清楚。首先要为他找来镇痛剂。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然要从斯泰因那里获得情报，可是因为试验的痛苦，他实在无法说出话来。</p>
+          <p> </p>
+          <p>按照他的请求，在对面房间的抽屉柜，找到了镇痛剂，然后交给了他。</p>
+          <p> </p>
+          <p>服用了镇痛剂的斯泰因很快就恢复了意识，表示将知道的事情和盘托出。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

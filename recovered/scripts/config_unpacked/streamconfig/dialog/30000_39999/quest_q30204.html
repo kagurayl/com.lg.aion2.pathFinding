@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我们要做的，是弄清楚我们到底犯了什么错误。</p>
+          <p> </p>
+          <p>我们必须弄清楚封印守护者伊斯巴里亚的警告到底是什么，他们到底希望通过仪式阻止什么事情。</p>
+          <p> </p>
+          <p>那件事情会给我们造成打击，还是会给龙族造成打击。</p>
+          <p> </p>
+          <p>如果只会给龙族造成打击，我们就没有理由阻止他们了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是封印守护者秘密举行的仪式，所以要搜集到相关的情报可能会很不容易。</p>
+          <p> </p>
+          <p>这些情报，好像也不能从龙族身上找到。</p>
+          <p> </p>
+          <p>必须去咨询一下专家，看看到底应该从什么地方入手。</p>
+          <p> </p>
+          <p>你能继续帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你先去向[%dic:STR_DIC_N_Pilomenes]请求帮助。</p>
+          <p> </p>
+          <p>你去跟他说明之前发生在帕休曼迪尔寺院的事情，然后问问应该去哪里搜集情报。</p>
+          <p> </p>
+          <p>知道之后，不要马上回来。希望你能搜集到具体的情报，解决问题之后，再回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发生了这么严重的事情，你想一个人置身事外吗？</p>
+          <p> </p>
+          <p>[%username]，没想到你是个这么没有责任感的人。</p>
+          <p> </p>
+          <p>既然你不愿意，我也不想强迫你。看来我得去找别人了。</p>
+          <p> </p>
+          <p>请不要担心，再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到这里是龙族的土地，我就很紧张。</p>
+          <p> </p>
+          <p>虽然我知道要塞里面很安全，但还是会经常担心。</p>
+          <p> </p>
+          <p>您来找我，有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达卡伊努斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……如果是那种问题，我想最好应该去寻找传说记录物</p>
+          <p> </p>
+          <p>那是我和卡伊努斯大人从没听说过的事情，我想在龙族社会应该也是秘密的东西。</p>
+          <p> </p>
+          <p>那样的事情，可能会在神话传说中找到什么线索。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Pilomenes]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">向皮罗梅内斯询问封印守护者的警告是什么。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡伊努斯说既然消灭了封印守护者，就必须查明危险到底是什么。</p>
+          <p> </p>
+          <p>向龙族专家皮罗梅内斯请求帮助，他建议我去龙族的传说记录物中找找看。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

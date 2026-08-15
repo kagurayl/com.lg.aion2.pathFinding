@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您身体怎么样？</p>
+          <p></p>
+          <p>可以的话，我想再拜托您一件事。</p>
+          <p></p>
+          <p>啊，不是让您在到帕德玛夏的洞穴里去，请别担心。</p>
+          <p></p>
+          <p>这次的事情非常简单。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>请您帮我把这个蛋交给[%dic:STR_DIC_N_Batalrion]。</p>
+          <p></p>
+          <p>他是亚龙追踪者，在亚龙方面，知识非常渊博。</p>
+          <p></p>
+          <p>由他来对蛋进行调查，应该是最合适的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>亚龙的蛋非常珍贵。龙族之中除了守护者和几个特殊的人之外，其他人都没机会看到它。</p>
+          <p></p>
+          <p>因为龙帝不允许其他人接近亚龙。请您帮我把蛋交给[%dic:STR_DIC_N_Batalrion]。</p>
+          <p></p>
+          <p>我会事先跟他说一声，剩下的事情他会看着办的。</p>
+          <p></p>
+          <p>然后我还想让您顺便帮个忙。</p>
+          <p></p>
+          <p>把帕德玛夏的蛋交给巴塔利安之后，请您去向[%dic:STR_DIC_N_Hler]代理人大人报告目前为止的情况。</p>
+          <p></p>
+          <p>很久没告诉她消息了，她一定很想知道这边的情况。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>亚龙的蛋非常珍贵。</p>
+          <p></p>
+          <p>龙族之中除了守护者和几个特殊的人之外，其他人都没机会看到它。因为龙帝不允许其他人接近亚龙。</p>
+          <p></p>
+          <p>竟然拒绝这么特别的机会……不过您要是不愿意的话就算了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>是基敏让你来的吗？</p>
+          <p></p>
+          <p>他说会通过[%userclass]把东西交给我，你好像就是那个人吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出帕德玛夏的蛋。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>哦，这就是帕德玛夏的蛋吗？</p>
+          <p></p>
+          <p>(查看蛋)和其他亚龙的蛋有点不同。</p>
+          <p></p>
+          <p>我得仔细查看一下。</p>
+          <p></p>
+          <p>请告诉他，我会尽快调查清楚。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你的身上可以闻到龙族的腥味。</p>
+          <p></p>
+          <p>你见过敏锐的帕德玛夏吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达基敏的话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>基敏做事果然很细致。</p>
+          <p></p>
+          <p>他把帕德玛夏的蛋交给了巴塔利安？</p>
+          <p></p>
+          <p>不知道从帕德玛夏的蛋里能知道些什么。</p>
+          <p></p>
+          <p>总之辛苦了。这次的事情中，你立下了大功。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">把帕德玛夏的蛋交给[%dic:STR_DIC_N_Batalrion]</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">向[%dic:STR_DIC_N_Hler]转达基敏的话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">把帕德玛夏的蛋交给亚龙追踪者巴塔利安，然后去向赫雷尔代理人报告基敏的情况。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>基敏说帕德玛夏的蛋最好交给能力比自己更强的巴塔利安，让我把蛋送过去。</p>
+          <p></p>
+          <p>把帕德玛夏的蛋交给了亚龙追踪者巴塔利安，并向赫雷尔代理人报告了基敏的情况，她说辛苦了，并给了我奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

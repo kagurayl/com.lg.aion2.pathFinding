@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚好需要人帮忙，您来的正是时候。</p>
+          <p> </p>
+          <p>您应该知道阿斯特利亚要塞被敌人夺走的事情了吧？</p>
+          <p> </p>
+          <p>如果我们的兵力再多一点的话，就绝对不会被夺走。</p>
+          <p> </p>
+          <p>啊，想到这件事情，我就禁不住感叹。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是任何时候都不能沉浸在失落之中。因为战争还没有结束。</p>
+          <p> </p>
+          <p>所以我制定了重新夺回要塞的计划，尝试进行了几次攻击。</p>
+          <p> </p>
+          <p>不久前，要塞进入可以占领状态之后，我带着士兵们过去看了一眼，发现那里布置的全都是实力很强的精锐驻军。</p>
+          <p> </p>
+          <p>那次把我们弄得很狼狈。本以为只是些普通的驻军，没想到他们竟然派遣了精锐部队！</p>
+          <p> </p>
+          <p>现在想起来还是让人胆战心惊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为上次夺回要塞的作战失败，所以目前兵力非常不足。</p>
+          <p> </p>
+          <p>所以我想借助[%username]大人这样的守护者的力量。</p>
+          <p> </p>
+          <p>我们受过对付龙族精锐兵的训练，但要击退天族好像还有点困难。</p>
+          <p> </p>
+          <p>您愿意帮助我们击退天族的精锐驻军吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地答应。</p>
+          <p> </p>
+          <p>请您在天族占领阿斯特利亚要塞的时候开始执行任务。要塞进入可以占领状态之后，他们就会出现。</p>
+          <p> </p>
+          <p>去清除精锐驻军的时候，请您和同伴们一起过去。要对付一个人的话，[%username]大人一个人就足够了，但他们绝对不会和您讲什么公平的。</p>
+          <p> </p>
+          <p>清除完[%dic:STR_DIC_M_2808_all]之后，请您把[%dic:STR_DIC_I_QUEST_2808a]带回来。</p>
+          <p> </p>
+          <p>请您准备好了之后就马上出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有其他的任务吗？</p>
+          <p> </p>
+          <p>也是，向您这么优秀的人，怎么可能没有事情做呢。</p>
+          <p> </p>
+          <p>但是请您答应我。做完手上的事情之后，一定要先来这里帮帮我们。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去办的事情怎么样了？</p>
+          <p> </p>
+          <p>据先前回来的人报告，有个守护者和他的同伴们狠狠地打击了敌军。那是[%username]大人您吗？</p>
+          <p> </p>
+          <p>我想知道结果怎样了。请您把除掉[%dic:STR_DIC_M_2808_all]的证据给我看看。快点！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出镶嵌了奥德的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。对付[%dic:STR_DIC_M_2808_all]要比想象的难得多吧？</p>
+          <p> </p>
+          <p>所以我才让您和同伴一起过去。</p>
+          <p> </p>
+          <p>您先喘口气，然后召集同伴一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。这对要塞的攻略起了很大的帮助。</p>
+          <p> </p>
+          <p>真高兴您是我们天族的人。</p>
+          <p> </p>
+          <p>请您收下。虽然不多，但却是对您为天族奋斗的一点报答。</p>
+          <p> </p>
+          <p>希望您以后还能继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2808_all]，搜集证据然后交给[%dic:STR_DIC_N_Muirica]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">天族的精锐驻军对夺回阿斯特利亚要塞形成了阻碍。在要塞进入可以占领状态后，去把天族的精锐驻军清除掉，并搜集镶嵌着奥德的武器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>缪里卡说因为有天族精锐驻军的驻守，夺回阿斯特利亚要塞变得更困难了，因此让我去把他们清除掉。</p>
+          <p> </p>
+          <p>按照她的拜托去阿斯特利亚清除掉了天族精锐驻军，并把镶嵌了奥德的武器作为证据交给了她。她说非常感谢，并让我以后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

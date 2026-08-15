@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次的研究看来我是太大意了。</p>
+          <p> </p>
+          <p>就是上次你帮我搜集的[%dic:STR_DIC_I_QUEST_1646a]。</p>
+          <p> </p>
+          <p>比我想象的还要脆弱。我用处理其他水之精灵的精髓的方法处理它，结果全碎掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是研究进行到一半又不能半途而废，去斯泰浓海岸又太远了，我正在想应该怎么办呢。</p>
+          <p> </p>
+          <p>要是可以的话，我想再麻烦你一次吗？</p>
+          <p> </p>
+          <p>请你再去帮我搜集一些[%dic:STR_DIC_I_QUEST_1646a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你马上去[%dic:STR_DIC_W_LF3_SZ_F5]消灭[%dic:STR_DIC_M_ElementalWater4_44_An]，搜集[%dic:STR_DIC_I_QUEST_1646a]。</p>
+          <p> </p>
+          <p>请你帮我多搜集一些，就搜集5束吧。</p>
+          <p> </p>
+          <p>在这段时间，我得寻找新的研究方法，看看怎样才能不把水之花弄碎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来我是觉得你比较有经验，希望把这件事交给你……</p>
+          <p> </p>
+          <p>明白了，既然你不愿意，我也不想拉着你不放。</p>
+          <p> </p>
+          <p>水之花我会自己去搜集的，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就从斯泰浓海岸回来了？</p>
+          <p> </p>
+          <p>我还没有取得任何进展。我翻遍了所有的书，但是却没有找到处理易碎的结晶的方法。</p>
+          <p> </p>
+          <p>看来我得去一趟极乐世界图书馆了……</p>
+          <p> </p>
+          <p>不管怎样，5束[%dic:STR_DIC_I_QUEST_1646a]搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水之花。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得这是用来研究的，所以不用着急吧？</p>
+          <p> </p>
+          <p>对别人来说可能不算什么，但对我来说，每一次研究都是非常重要的。</p>
+          <p> </p>
+          <p>请你快去消灭神圣大海精灵，搜集[%dic:STR_DIC_I_QUEST_1646a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然之前已经看到过了，但还是觉得很神奇。精灵水竟然长得像花一样。</p>
+          <p> </p>
+          <p>接下去我得找到不会把它弄碎的新的研究方法才行……</p>
+          <p> </p>
+          <p>啊，差点忘了你在等我了。</p>
+          <p> </p>
+          <p>你也一定很忙吧？谢谢你接受我的委托。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_ElementalWater4_44_An]身上搜集精髓，然后交给[%dic:STR_DIC_N_Miobera]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让米奥贝拉可以对水之花进行研究，去搜集神圣大海精灵的精髓吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米奥贝拉说水之花在研究的过程中全部碎掉了，让我再去搜集一些水之花。</p>
+          <p> </p>
+          <p>于是去斯泰浓海岸消灭神圣大海精灵，搜集到了水之花。她对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

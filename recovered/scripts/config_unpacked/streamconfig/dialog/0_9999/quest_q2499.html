@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听到了有关永恒之塔的碎片的事情了吗？</p>
+          <p> </p>
+          <p>据说在很多地方发现了不会裂开，不会破碎，不管怎么锋利的刀都无法在上面留下痕迹的奇怪的结晶。</p>
+          <p> </p>
+          <p>当然谁也不知道那是什么东西。</p>
+          <p> </p>
+          <p>虽然没有人知道那是什么，但是人们纷纷猜测那是在天魔战争时期崩溃的永恒之塔的碎片。</p>
+          <p> </p>
+          <p>如果不尽快弄清楚那种物质是什么的话，人们之间也许会传出更加耸人听闻的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先必须要有足够的标本，才能送到伏魔殿去进行研究。</p>
+          <p> </p>
+          <p>据人们说，那种物质在莫尔海姆万年雪原区域偶尔可以发现，你能帮我搜集15个[%dic:STR_DIC_OBJ_SmallCrystal_Q2499]吗？</p>
+          <p> </p>
+          <p>如果能送到伏魔殿去，应该很快就会有结果。那样的话，人们就不会传言那是塔的碎片了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，要从散布在雪原全境的[%dic:STR_DIC_OBJ_SmallCrystal_Q2499]上搜集到15个结晶，是非常辛苦的事情。</p>
+          <p> </p>
+          <p>但是说不定那些结晶真的是塔的碎片。</p>
+          <p> </p>
+          <p>虽然很多人认为传言并不可信，但如果传言是真的，我们就必须采取措施。</p>
+          <p> </p>
+          <p>希望你能重视这件事情，妥善地进行处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然这并不是会危害人类的危险野兽，更不是需要分秒必争完成的任务。</p>
+          <p> </p>
+          <p>但是更可怕的是它会搞得人心惶惶。</p>
+          <p> </p>
+          <p>身为神圣保护者，我不能看着奇怪的传言一直在人群中流传。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去[%dic:STR_DIC_OBJ_SmallCrystal_Q2499]把15个碎片带回来了吗？</p>
+          <p> </p>
+          <p>搜集15个应该费了不少时间吧？快把它交给我吧</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出小结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是还没出发吗？</p>
+          <p> </p>
+          <p>嗯，原来如此。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_SmallCrystal_Q2499]并不是分布在一个地方，而是散布在各个地区。</p>
+          <p> </p>
+          <p>所以要搜集15个的话，已经没有时间可以让你浪费了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这个小结晶就是从奇怪的结晶上采到的吗？</p>
+          <p> </p>
+          <p>看上去就不像是普通的东西。看上去好像含有很多奥德，但又很坚硬，不像是奥德石。</p>
+          <p> </p>
+          <p>看来最好还是送到伏魔殿去调查一下。</p>
+          <p> </p>
+          <p>这么冷的天去雪原搜集东西，真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_OBJ_SmallCrystal_Q2499]上采集到的东西交给[%dic:STR_DIC_N_Bolverk]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">在莫尔海姆万年雪原全境发现了奇怪的结晶，人们纷纷猜测说会不会是永恒之塔的碎片。应该去帮着搜集结晶。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣保护者布尔贝尔克说在莫尔海姆万年雪原全境发现了奇怪的结晶。</p>
+          <p> </p>
+          <p>人们纷纷猜测说那是大崩溃时碎裂的永恒之塔的碎片，但是没有人知道那究竟什么东西。</p>
+          <p> </p>
+          <p>按照他的拜托找到了奇怪的结晶，并把搜集到的小结晶交给了他。他说必须请伏魔殿调查那到底是什么物质。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

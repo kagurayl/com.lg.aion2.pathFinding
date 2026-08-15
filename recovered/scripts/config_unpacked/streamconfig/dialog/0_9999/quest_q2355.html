@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想来想去，扫荡塔兰的熔岩洞穴里的纽特，并不能让我很出名。</p>
+          <p> </p>
+          <p>必须除掉人们都知道的有名的家伙，我才能变得有名。</p>
+          <p> </p>
+          <p>但是我的能力却没有那么出色...</p>
+          <p> </p>
+          <p>[%username]大人！既然您帮了我一次，这次能再帮帮我吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔兰的熔岩洞穴里有一个名叫卑鄙的格尔邦克的僵尸。</p>
+          <p> </p>
+          <p>虽然不知道他为什么会生活在洞穴里，但是看到人的话，就会冲过去让人把项链交出来。</p>
+          <p> </p>
+          <p>它是恶名非常高的怪物，而且还会为害人类，如果能把那个僵尸除掉的话，我就一定会出名。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮我去把[%dic:STR_DIC_M_ZombieNamedD_28_Ae]除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过塔兰的熔岩洞穴，应该很清楚，一个人去那里是非常危险的。</p>
+          <p> </p>
+          <p>必须要进入有熔岩的地方，才能找到[%dic:STR_DIC_M_ZombieNamedD_28_Ae]。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人是守护者，所以不知道我的心情。</p>
+          <p> </p>
+          <p>您知道被别人看不起是多么让人气愤和痛苦的事情吗？</p>
+          <p> </p>
+          <p>我只不过是想炫耀一下，对那些看不起我的人说：看，我能做这样的事情。难道这有什么不好吗？</p>
+          <p> </p>
+          <p>不愿意的话，就算了。我一定可以找到愿意帮助我的善良的守护者的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在想[%username]大人除掉[%dic:STR_DIC_M_ZombieNamedD_28_Ae]的话，该怎么把消息传出去。</p>
+          <p> </p>
+          <p>应该让消息自然地传出去才行。</p>
+          <p> </p>
+          <p>不过话说回来，您把那个僵尸除掉了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，真的非常感谢。</p>
+          <p> </p>
+          <p>不过[%username]大人，您除掉格尔邦克的事情一定要保密哦。</p>
+          <p> </p>
+          <p>请您收下这个。这是我在旅行的时候准备的。</p>
+          <p> </p>
+          <p>我再强调一下，这件事情您一定要帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_ZombieNamedD_28_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kimci]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助想要出名的金西除掉卑鄙的格尔邦克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金西说要想出名，就必须除掉有名的家伙。于是帮他除掉了卑鄙的格尔邦克，并答应为他保守秘密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

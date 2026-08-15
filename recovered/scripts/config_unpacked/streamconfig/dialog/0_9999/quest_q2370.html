@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你既然到这里来，莎拉琳琳能拜托你一件事吗，呐呐？</p>
+          <p> </p>
+          <p>有件事莎拉琳琳很担心。</p>
+          <p> </p>
+          <p>之前因为没人帮我，所以我一直很苦恼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的手很小，所以经常会把东西掉到下面去。</p>
+          <p> </p>
+          <p>但是下面有很多危险的野兽，所以我也不能下去。</p>
+          <p> </p>
+          <p>如果有人能帮我把那些凶恶的野兽清除掉的话，以后再有东西掉了，我也不会担心了。</p>
+          <p> </p>
+          <p>守护者，你能帮帮我吗？</p>
+
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你就到下面去，帮我把[%dic:STR_DIC_M_MillipedeReD_30_An]和[%dic:STR_DIC_M_BasiliskReD_30_An]清除掉。</p>
+          <p> </p>
+          <p>速度越快越好，呐呐。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太无情了一点啊？</p>
+          <p> </p>
+          <p>如果你能答应莎拉琳琳的请求，我一定会报答你的。</p>
+          <p> </p>
+          <p>所以请你再考虑一下，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，呐呐！</p>
+          <p> </p>
+          <p>你把我说的动物都清除掉了吗？</p>
+          <p> </p>
+          <p>莎拉琳琳可以放心地下去了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇，太好了，太好了！</p>
+          <p> </p>
+          <p>终于可以放心下去了，真是太好了。</p>
+          <p> </p>
+          <p>来，拿着这个。是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除神殿底下的动物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MillipedeReD_30_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BasiliskReD_30_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF2_4]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莎拉琳琳说因为害怕格力玛和黑鳞蜥蜴而不敢到下面去。决定帮助莎拉琳琳把它们清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莎拉琳琳说即使有事情要到下面去，也因为害怕格力玛和黑鳞蜥蜴而不敢下去。</p>
+          <p> </p>
+          <p>于是帮助莎拉琳琳清除掉了在下面游荡的格力玛和黑鳞蜥蜴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%username]大人出色地跟上了命运的步法。</p>
+          <p> </p>
+          <p>觉醒为守护者后您经过了很多的考验，才到达了现在的地步。</p>
+          <p> </p>
+          <p>但只是跟随着命运，是不够的。</p>
+          <p> </p>
+          <p>有这样一句话，为了要看透命运，就要战胜命运。</p>
+          <p> </p>
+          <p>想要理解命运的真正意思，您还要学习很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但我现在已经没什么可以指点您的了。</p>
+          <p> </p>
+          <p>我会写推荐书给在中央议事堂的普莱尔大人的。</p>
+          <p> </p>
+          <p>他是对命运的理解非常深刻的人。比起我，普莱尔大人会给您更多的帮助。</p>
+          <p> </p>
+          <p>请拿着我给您的推荐书，去找普莱尔大人吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>或许您已经见过了他，普莱尔大人是比较生硬的人。</p>
+          <p> </p>
+          <p>但是如果您带我的推荐书，他会非常欢迎您的。</p>
+          <p> </p>
+          <p>他非常喜欢资质好的徒弟。</p>
+          <p> </p>
+          <p>那么请您去看看吧，普莱尔大人就在中央议事堂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么一定要拒绝推荐书呢？</p>
+          <p> </p>
+          <p>虽然我没有什么很大的权利，可是我也不会随便给别人写推荐书的。</p>
+          <p> </p>
+          <p>您真的不愿意我也没办法，很遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在等着你，[%username]。</p>
+          <p> </p>
+          <p>我已经猜到会有贵客到来。</p>
+          <p> </p>
+          <p>好像你不是来购买技能书的，把你带来的东西给我看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将推荐书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是李帕贝尔加亲自写的推荐书啊，我对于他的眼光还是很信任的。</p>
+          <p> </p>
+          <p>[%username]，能够教导你我看到非常高兴。</p>
+          <p> </p>
+          <p>想要成为比现在还要出色的守护者，以后还有很多要学习。</p>
+          <p> </p>
+          <p>在成为[%userclass]的道路上遇到困难就请随时找我，不管是对于命运的疑问，还是购买技能书，我都会给予你帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将推荐书交给[%dic:STR_DIC_N_Freyr]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将李帕贝尔加的推荐书交给普莱尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李帕贝尔加表示现在已经没什么东西可以教的了，并写了一封推荐书，建议拿去交给普莱尔。</p>
+          <p> </p>
+          <p>普莱尔看到推荐书后表示，想要成为出色的守护者，还需要学习很多，并承诺以后会多给予指点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌拉咕噜，你哪里不舒服？乌拉咕噜！</p>
+          <p> </p>
+          <p>啊，[%username]大人！乌拉咕噜有点奇怪。</p>
+          <p> </p>
+          <p>以前回来之后食欲都很旺盛，会一直在我身边转悠，但是最近却什么都吃不进去。</p>
+          <p> </p>
+          <p>是不是什么地方不舒服...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>        
+          <p>好像是关了太长时间得了抑郁症。也是，只能和我一个人说话，路过的守护者们都会因为他是克拉尔族而对他指指点点。</p>
+          <p> </p>
+          <p>好像需要什么东西来让让他恢复精神...啊，我想到一个很好的东西！</p>
+          <p> </p>
+          <p>给他吃被俘虏之前吃过的战斗粮，说不定能让他打起精神。</p>
+          <p> </p>
+          <p>我得照看乌拉咕噜，[%username]大人，您能去帮我找些[%dic:STR_DIC_I_junk_l_s_16d]来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage> 
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您尽快出发吧。</p>
+          <p> </p>
+          <p>乌拉咕噜已经饿了很长时间了。我担心他会支撑不住。</p>
+          <p> </p>
+          <p>哦，对了。最好是找一些贝尔特伦地区的[%dic:STR_DIC_I_junk_l_s_16d]。因为乌拉咕噜的故乡在那边，我想那边的食物应该更好一点。</p>
+          <p> </p>
+          <p>请您先找3个回来吧。虽然可能不好找，但是这关系到乌拉咕噜的生命，拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能再考虑一下吗？ </p>
+          <p> </p>
+          <p>这样下去的话，乌拉咕噜也许就会死掉。</p>
+          <p> </p>
+          <p>因为有他在，我们知道了很多关于克拉尔的事情...</p>  
+          <p> </p>
+          <p>虽然只是研究，但是现在已经有了感情，看着他痛苦，我的心里也很难受。</p>
+          <p> </p>
+          <p>看来得马上求鲁埃尔拉斯做一点克拉尔的食物了。虽然他肯定会大发脾气的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道是您回来了，[%username]大人。</p>
+          <p> </p>
+          <p>乌拉咕噜好像闻到了味道，吵吵着说肚子饿呢。</p> 
+          <p> </p>
+          <p>详细的情况以后再说，先把带回来的[%dic:STR_DIC_I_junk_l_s_16d]给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出战斗粮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，真让人失望。</p>
+          <p> </p>
+          <p>乌拉咕噜一直很期待，您竟然不遵守约定。</p>
+          <p> </p>
+          <p>请您按照约定找3个[%dic:STR_DIC_I_junk_l_s_16d]回来吧。</p> 
+          <p> </p>
+          <p>不然这里就不是那个家伙的监狱，而是坟墓了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，闻到了刺鼻的味道，应该是[%dic:STR_DIC_I_junk_l_s_16d]没错。</p>
+          <p> </p>
+          <p>虽然闻过很多次，但是还是不能适应这个味道。这种东西怎么能吃得下去...</p>
+          <p> </p>
+          <p>好了，乌拉咕噜！因为乌拉咕噜的缘故，我不能再在这和您说话了。</p>
+          <p> </p>
+          <p>请您收下。本来想包装得漂亮一点的，因为那个家伙，我实在抽不出时间。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_junk_l_s_16d]，然后交给[%dic:STR_DIC_N_Mameia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">因为乌拉咕噜不吃东西，玛梅娅非常担心。去贝尔特伦的[%dic:STR_DIC_FLA22]和[%dic:STR_DIC_FLA23]搜集克拉尔族的战斗粮，然后交给玛梅娅。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛梅娅说她因为乌拉咕噜得了抑郁症，好几天都没吃东西，所以很担心。</p>
+          <p> </p>
+          <p>帮助需要照看乌拉咕噜的玛梅娅搜集到了生活在贝尔特伦的克拉尔的战斗粮。收到战斗粮之后玛梅娅很高兴，并拜托我以后继续帮她搜集战斗粮。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你是来买东西的话，就找错人了。</p>
+          <p> </p>
+          <p>我不是做生意的术古。</p>
+          <p> </p>
+          <p>我是因为要找东西，才到这里来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问要找什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你为什么要问这个啊？</p>
+          <p> </p>
+          <p>这是商业秘密，我谁都不会告诉。</p>
+          <p> </p>
+          <p>不过...守护者如果能帮我的话，我就告诉你。</p>
+          <p> </p>
+          <p>你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在搜集鸟妖羽毛。</p>
+          <p> </p>
+          <p>鸟妖羽毛的光泽很好，颜色鲜明，是最好的装饰品。</p>
+          <p> </p>
+          <p>如果拿到极乐世界出售的话，我就能大赚一笔，呐呐。</p>
+          <p> </p>
+          <p>好了，我把秘密告诉了你，现在到了守护者遵守约定的时候了。</p>
+          <p> </p>
+          <p>你去打猎[%dic:STR_DIC_M_HarpyHard_32_An]和[%dic:STR_DIC_M_HarpyHard_34_An]，帮我搜集5个羽毛就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不愿意帮忙的我，我就不能把我的秘密告诉你。</p>
+          <p> </p>
+          <p>没有其他要说的话，你走吧。</p>
+          <p> </p>
+          <p>在这里浪费时间，还不如去搜集羽毛。</p>
+          <p> </p>
+          <p>等等！我在搜集[%dic:STR_DIC_I_QUEST_1388a]的事情你一定要保密。</p>
+          <p> </p>
+          <p>绝对不能和其他术古说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊？</p>
+          <p> </p>
+          <p>我自己去都比这快，呐！</p>
+          <p> </p>
+          <p>你搜集到约好的鸟妖羽毛了吗？</p>
+          <p> </p>
+          <p>必须是[%dic:STR_DIC_I_QUEST_1388a]的。其他鸟妖的羽毛卖不上价钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鸟妖羽毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底在干嘛？</p>
+          <p> </p>
+          <p>难道不知道时间就是金钱吗？</p>
+          <p> </p>
+          <p>不要再浪费金钱，快去帮我搜集5个鸟妖的羽毛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，柔软光滑，确实是鸟妖的羽毛！</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>来，拿着这个。我是有良心的商人。</p>
+          <p> </p>
+          <p>辛苦费之类的，我还是会付的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_HarpyHard_32_An]和[%dic:STR_DIC_M_HarpyHard_34_An]，搜集羽毛交给[%dic:STR_DIC_N_Shugo_LF2_10]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">作为听取休美伦的商业秘密的代价，决定要帮助他。搜集鸟妖羽毛交给休美伦吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在拉塞宾神秘泉偶然遇到了术古族商人休美伦。</p>
+          <p> </p>
+          <p>他说他正在搜集可以在极乐世界高价出售的鸟妖的羽毛。</p>
+          <p> </p>
+          <p>搜集到鸟妖羽毛后交给了他，他给了我一些钱，说是辛苦费。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

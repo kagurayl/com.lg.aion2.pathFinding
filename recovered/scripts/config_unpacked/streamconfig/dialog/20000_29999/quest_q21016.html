@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘘，请小声一点。</p>
+          <p> </p>
+          <p>大声说话的话，[%dic:STR_DIC_M_DF4_Bee_DR_51_An]可能会冲过来。</p>
+          <p> </p>
+          <p>我戴着头盔小心地避开粗暴蜂群，要是那样的话，就全白费了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">您不觉得闷吗？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岂止是闷啊，呼吸困难，声音也听不太清楚。</p>
+          <p> </p>
+          <p>(不好意思地用干涩的声音说)但是不这样的话，就会中可怕的毒……</p>
+          <p> </p>
+          <p>要塞附近还有龙族出没。</p>
+          <p> </p>
+          <p>我想去查看他们的动态，但是[%dic:STR_DIC_M_DF4_Bee_DR_51_An]成群结队的，造成了很大的麻烦。</p>
+          <p> </p>
+          <p>一不小心中了剧毒的话，有可能就会死掉。达侬德尔也在这里，但它们却偏偏只攻击我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切，达侬德尔说是因为我不洗澡，所以才会这样。不过这怎么可能？</p>
+          <p> </p>
+          <p>它们应该是可以认出哪个守护者更有威胁，所以才会这样的吧？</p>
+          <p> </p>
+          <p>既然提到了，[%username]大人，您能帮我消灭掉一些[%dic:STR_DIC_M_DF4_Bee_DR_51_An]吗！？</p>
+          <p> </p>
+          <p>粗暴蜂群如果能减少一些，监视龙族的时候就会容易很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我。</p>
+          <p> </p>
+          <p>要是达侬德尔能帮帮我就好了，但是他说这不关他的事，就当没看见。</p>
+          <p> </p>
+          <p>还让我去洗洗干净。</p>
+          <p> </p>
+          <p>好了，[%dic:STR_DIC_M_DF4_Bee_DR_51_An]就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用不高兴的声音说)知道了。不愿意的话就算了。</p>
+          <p> </p>
+          <p>看来我只能带着头盔出去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也许修理要塞的防御壁的工作才是最适合我的。</p>
+          <p> </p>
+          <p>制定战斗计划，观察敌人的动态……真让人头疼。</p>
+          <p> </p>
+          <p>但是对用双手和肌肉做的事情，我却很有信心！</p>
+          <p> </p>
+          <p>您看，汗都流下来了。感觉很爽快。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然是名不虚传。</p>
+          <p> </p>
+          <p>听说[%username]大人的身手也非常了不起。</p>
+          <p> </p>
+          <p>虽然不知道制定战略的头脑怎么样。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮助我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭安塔格尔激战地周围的[%dic:STR_DIC_M_DF4_Bee_DR_51_An]([%2]/30)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vyuin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭粗暴蜂群，让维因可以对龙族进行监视。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维因说因为粗暴蜂群的骚扰，自己没法集中精神做事。</p>
+          <p> </p>
+          <p>帮他消灭了粗暴蜂群，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

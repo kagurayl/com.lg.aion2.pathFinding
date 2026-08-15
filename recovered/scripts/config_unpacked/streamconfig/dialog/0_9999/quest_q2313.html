@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，今天又因为巴拉努斯少钓了不少鱼！</p>
+          <p> </p>
+          <p>明明觉得像是贝尔斯...这是第几次了啊！</p>
+          <p> </p>
+          <p>为了捕捉贝尔斯，包括鱼饵在内我都进行了完美的准备，但是因为巴拉努斯每次都是白费力气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里钓鱼，是为了钓贝尔斯。</p>
+          <p> </p>
+          <p>我在很长的时间里，转战于魔界各地。所以魔界所有的鱼我都钓到过。除了一种，就是贝尔斯。</p>
+          <p> </p>
+          <p>别人很容易就能钓上来的鱼，怎么我就偏偏钓不到呢？</p>
+          <p> </p>
+          <p>如果用精气提取的话，应该几百条都抓到了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以这次我做了充分的准备，除了鱼竿之外，连鱼钩和鱼饵全都是为了钓贝尔斯而专门准备的。</p>
+          <p> </p>
+          <p>但是就在贝尔斯要咬饵的时候，可恶的巴拉努斯就会乱跳，结果全都被吓走了。</p>
+          <p> </p>
+          <p>你能帮我把[%dic:STR_DIC_M_VaranusReD_24_An]清除掉，让我可以钓到贝尔斯吗？</p>
+          <p> </p>
+          <p>请你把那边的那些全部除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能答应帮我，真是太感谢了。</p>
+          <p> </p>
+          <p>那就请你帮我清除掉9条[%dic:STR_DIC_M_VaranusReD_24_An]，然后来告诉我。</p>
+          <p> </p>
+          <p>我要稍微休息一下。等[%username]大人帮我清除掉巴拉努斯之后，我再开始钓鱼</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还有事要忙啊？</p>
+          <p> </p>
+          <p>也是，在别人看来，我是多么闲暇啊。在别的守护者失踪的时候，我却在这里钓鱼...</p>
+          <p> </p>
+          <p>我知道了。我的事情，我自己会想办法的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚好在这里看到了你打猎。你还真是厉害啊。</p>
+          <p> </p>
+          <p>看来我是挑对人了。</p>
+          <p> </p>
+          <p>巴拉努斯都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你。</p>
+          <p> </p>
+          <p>现在终于可以安心地钓鱼了。</p>
+          <p> </p>
+          <p>既然有[%username]帮忙，这次一定要钓到贝尔斯。</p>
+          <p> </p>
+          <p>对了，这是我的一点谢意。请千万别推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_VaranusReD_24_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lif]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助因为巴拉努斯而无法钓鱼的利夫把巴拉努斯清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>利夫说魔界几乎所有的鱼都钓到过，只有贝尔斯没有钓到。但是不管怎么努力，因为巴拉努斯在旁边折腾，每次都把贝尔斯吓跑。</p>
+          <p> </p>
+          <p>于是帮她清除掉了蓝皮巴拉努斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

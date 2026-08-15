@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，看我的记性！竟然把这么重要的事给忘了。</p>
+          <p> </p>
+          <p>啊，[%username]！还好您还在要塞。</p>
+          <p> </p>
+          <p>您应该还很疲倦，让您去做这种事情不知道合不合适...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次我有两个守护巨神忘了跟您说了。</p>
+          <p> </p>
+          <p>那就是[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和[%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]，还需要他们的核。</p>
+          <p> </p>
+          <p>不好意思，请您再辛苦一趟吧。我会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，太好了。想起漏了他们之后，您不知道我有多担心...</p>
+          <p> </p>
+          <p>在您出发之前，我来告诉您一个情报，希望能对您有帮助。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和[%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]就像他们的名字一样，只在白天和晚上出现。</p>
+          <p> </p>
+          <p>打倒光之守护巨神时候，请您在他们出现的地方耐心等待。之后黑暗之守护巨神就会出现。</p>
+          <p> </p>
+          <p>那就祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。您拒绝我也是当然的。</p>
+          <p> </p>
+          <p>一次就已经很麻烦了，我还来麻烦您第二次。</p>
+          <p> </p>
+          <p>不过能在把东西送给班图斯之前发现，就已经是万幸了。</p>
+          <p> </p>
+          <p>光之守护巨神和黑暗之守护巨神的核嘛，看来只能找其他的守护者了，呼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去好像很累。</p>
+          <p> </p>
+          <p>这也难怪。您一直在和守护巨神战斗...</p>
+          <p> </p>
+          <p>不过您有过对付他们的经验，这次应该容易一些了吧？[%dic:STR_DIC_I_QUEST_1826a]和[%dic:STR_DIC_I_QUEST_1826b]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出守护巨神的核。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您也和我一样糊涂。</p>
+          <p> </p>
+          <p>我明明说的是[%dic:STR_DIC_I_QUEST_1826a]和[%dic:STR_DIC_I_QUEST_1826b]各5个。</p>
+          <p> </p>
+          <p>还有，光之守护巨神和黑暗之守护巨神分别只在白天和晚上出现。</p>
+          <p> </p>
+          <p>现在您应该清楚了吧？请您快去搜集守护巨神的核吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一，二...五！各五个，一共是十个没错。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>您一定很累吧？请您收下，这是说好的报酬。</p>
+          <p> </p>
+          <p>虽然不是太好，但希望对您有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和[%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]，然后把搜集到的核交给[%dic:STR_DIC_N_Ab1_1011_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">锡普诺斯说他忘了还有其他守护巨神的核需要搜集。搜集光之守护巨神和黑暗之守护巨神的核，然后交给锡普诺斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡普诺斯说他把光之守护巨神和黑暗之守护巨神的核给忘了，让我去帮他搜集两个巨神的核。</p>
+          <p> </p>
+          <p>按照他的请求除掉了只在白天和晚上出现的守护巨神，并把搜集到的核交给了锡普诺斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

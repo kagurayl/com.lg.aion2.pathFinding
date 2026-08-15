@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，通过您拿来的阿盖伦德雷克的角，我发现了一件有趣的事。</p>
+          <p> </p>
+          <p>角本身没什么特别……但是角上带有的力量的波动却很独特。</p>
+          <p> </p>
+          <p>我想一定是沙塔罗卡的思念在释放特殊的魔法信号。</p>
+          <p> </p>
+          <p>但是那种波动的持续时间非常短，没办法进行研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想我还得继续麻烦[%username]大人。</p>
+          <p> </p>
+          <p>像上次一样，请您帮我去消灭[%dic:STR_DIC_M_Bonedrake_26_An]，搜集[%dic:STR_DIC_I_QUEST_1333a]。</p>
+          <p> </p>
+          <p>我也不知道对波动进行研究需要多少角。</p>
+          <p> </p>
+          <p>你先去帮我搜集3个吧。您上次已经去过了，我想应该不难吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您想起来了吗？请您去捕捉阿盖伦德雷克，帮我搜集3个[%dic:STR_DIC_I_QUEST_1333a]。</p>
+          <p> </p>
+          <p>只有在沙塔罗卡的坟墓附近才能看到他们，请您不要走得太远，就去附近捕捉好了。</p>
+          <p> </p>
+          <p>角的数量越多，得出的结果就越准确。</p>
+          <p> </p>
+          <p>我在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是想为研究阿盖伦德雷克的奇美雅大人减轻一些负担，没想到您竟然会拒绝……</p>
+          <p> </p>
+          <p>又不是什么困难的事情，希望您能重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看到您捕捉阿盖伦德雷克的情形了，好像比上次又厉害了不少嘛。</p>
+          <p> </p>
+          <p>但是您好像太沉醉于战斗之中了。</p>
+          <p> </p>
+          <p>该不会只顾着和他们战斗，忘了把[%dic:STR_DIC_I_QUEST_1333a]拿回来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德雷克的角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您太沉迷于战斗，我还在担心呢……</p>
+          <p> </p>
+          <p>打猎虽然很好，但如果您不把角拿回来，让我怎么进行研究啊？</p>
+          <p> </p>
+          <p>好了，请您快去把德雷克的角拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]大人。多亏了您，我终于可以对阿盖伦德雷克进行研究了。</p>
+          <p> </p>
+          <p>希望能取得好的研究成果，为扫荡阿盖伦德雷克提供帮助……</p>
+          <p> </p>
+          <p>再次向您表示感谢！我不会忘记[%username]大人的恩惠的。</p>
+          <p> </p>
+          <p>角可能不够，希望您能继续帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1333a]，然后交给[%dic:STR_DIC_N_Radamanthys]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭阿盖伦德雷克，搜集德雷克的角，然后交给拉达曼迪斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉达曼迪斯说为了研究沙塔罗卡的心脏制造出来的阿盖伦德雷克，需要更多的角。</p>
+          <p> </p>
+          <p>于是按照他的委托，去捕捉阿盖伦德雷克，并把搜集到的角交给了他。他对我表示感谢，说可能还需要更多的角，让我继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

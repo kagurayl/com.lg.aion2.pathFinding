@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>头疼的事情一桩接一桩！</p>
+          <p> </p>
+          <p>没想到龙族崇拜者的势力已经这么大了。</p>
+          <p> </p>
+          <p>到现在我们还不知道他们的洗脑技术能不能用在守护者身上，以及是通过什么方法洗脑的。</p>
+          <p> </p>
+          <p>虽然很想去侦察一下，但是却遇到了很多问题。</p>
+          <p> </p>
+          <p>你到锯齿峡谷关卡前面去过吗？那里有很多魔狼！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔狼是食肉动物，性格非常凶残。</p>
+          <p> </p>
+          <p>一看到可以吃的东西，就会疯狂地扑上去。路过的人经常遭到它们的袭击。</p>
+          <p> </p>
+          <p>因为那些家伙，我都没办法出去侦察，这可怎么办啊！</p>
+          <p> </p>
+          <p>(抱着头)啊……又开始头疼了……</p>
+          <p> </p>
+          <p>最近费神的事情实在太多，头疼的毛病又犯了。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不期望你能把堕落地下要塞扫荡干净。</p>
+          <p> </p>
+          <p>只要帮我消灭几只魔狼，让我们可以出去侦察就行。</p>
+          <p> </p>
+          <p>从锯齿峡谷关卡出去，就能见到它们了。</p>
+          <p> </p>
+          <p>请你把[%dic:STR_DIC_M_LF4_B_Warg_MeerkatBaby_53_An]和[%dic:STR_DIC_M_LF4_B_Warg_Meerkat_53_An]全部消灭掉。那样的话，我就不用再头疼了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>……</p>
+          <p> </p>
+          <p>头疼又开始了。</p>
+          <p> </p>
+          <p>看来我得休息一下。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曾经只要一剑在手，我就什么都不怕……</p>
+          <p> </p>
+          <p>现在虽然待在安全的地方，但责任感还是在折磨着我。</p>
+          <p> </p>
+          <p>沉重的责任感让我彷徨，让我恐惧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔狼全部消灭掉了吗？</p>
+          <p> </p>
+          <p>我本来没抱太大的希望。谢谢你。我得马上派部下去执行侦察任务才行。</p>
+          <p> </p>
+          <p>虽然头很疼，但任务还是要执行的。</p>
+          <p> </p>
+          <p>只要端正心态，一个个地解决问题，总会有时间可以好好休息一下的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭对地下要塞的侦察工作造成妨碍的魔狼</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B_Warg_MeerkatBaby_53_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B_Warg_Meerkat_53_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sueros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让苏埃洛丝的部下可以安心侦察，消灭锯齿峡谷的魔狼。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃洛丝说堕落地下要塞的侦察工作迟迟没有进展，让我帮他消灭魔狼。</p>
+          <p> </p>
+          <p>于是帮他消灭了锯齿峡谷的短鬃魔狼和长鬃魔狼，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

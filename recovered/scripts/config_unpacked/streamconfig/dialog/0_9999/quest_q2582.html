@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次去收集柴火的时候，自卫团的贝亚尔对我说。</p>
+          <p> </p>
+          <p>“您能不能在这里一直守护着我们，直到我们老死？”</p>
+          <p> </p>
+          <p>我当时很惊讶，就问他为什么要这么问？他说道：“既然不能守一辈子，为什么还让人们这么依赖您？”</p>
+          <p> </p>
+          <p>虽然贝亚尔的话有点挑衅的意思，让我有点难过，不过仔细一想，他说的话也不是没有道理。</p>
+          <p> </p>
+          <p>我们只是根据上面的指示而行动，无法向贝亚尔他们承诺什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自从这次谈话之后，我就经常在思考让人类能够自食其力的方法。</p>
+          <p> </p>
+          <p>一有时间，我就向他们传授战斗技巧。如果不是很危险，我就让自卫团的人独立行动。</p>
+          <p> </p>
+          <p>啊，这样过了不长时间，他们就打算独立去采集食物，并且要去港口，查看船舶的动向。</p>
+          <p> </p>
+          <p>港口是非常危险的地方...可是，也不能因为这，而打击他们的自信心，真是让人烦恼。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我先去把危险因素消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我就知道[%username]大人肯定会答应。</p>
+          <p> </p>
+          <p>那么请您赶快去阿姆斯尼尔港口，消灭[%dic:STR_DIC_M_WaterwormIceD_37_An]和 [%dic:STR_DIC_M_WaterwormIceD_39_An]。</p>
+          <p> </p>
+          <p>只要除掉那些家伙，自卫团进入港口会容易很多。行动顺利完成之后，也会增强他们的自信心。</p>
+          <p> </p>
+          <p>还有，请一定要将这件事保密。自卫团里的人要是知道的话，会伤害他们的自尊心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（摇着手说）不，不，既然您有事情那就没办法了。</p>
+          <p> </p>
+          <p>我会找别的守护者，或者自己去一趟。</p>
+          <p> </p>
+          <p>如果赶在凌晨的时候，应该没人知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正等着您呢。</p>
+          <p> </p>
+          <p>那么，去港口了吗？</p>
+          <p> </p>
+          <p>拜托您的事情办得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样啊，真是太好了。</p>
+          <p> </p>
+          <p>我现在就去跟本杜卡他们说，想要去港口的话，现在是最好的时机。</p>
+          <p> </p>
+          <p>[%username]大人，您为村子出了力，这是给您的谢礼。</p>
+          <p> </p>
+          <p>请不要拒绝，收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿姆斯尼尔港口消灭西德罗食人花。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_WaterwormIceD_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_WaterwormIceD_39_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Noarynt]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让自卫团能够平安到达港口，需要提前消灭西德罗食人花。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诺伦特表示，他想要帮助人类尽快独立。为了让自卫团能够平安的去港口，他让我先去解除危险。</p>
+          <p> </p>
+          <p>答应了诺伦特的请求，在人类到达之前，消灭了湖水西德罗食人花和冰冻西德罗食人花。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

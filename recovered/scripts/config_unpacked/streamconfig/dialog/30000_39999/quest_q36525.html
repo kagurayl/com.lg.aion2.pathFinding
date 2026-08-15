@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Fethlot_Highland_54_n]因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_Fethlot_Highland_54_n] </p>
+          <p></p>
+          <p> 2. 罪行：异常急速生长</p>
+          <p></p>
+          <p> 3. 详情：需要受到奥德接收器的影响而异常生长的高地巴尔隆的研究标本。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_LF4_DayQ_Fethlot_Highland_54_n]，把用作研究标本的[%dic:STR_DIC_I_QUEST_36525a]带回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温的生态，目前还在研究阶段。</p>
+          <p> </p>
+          <p>不过由于研究条件不好，因此进展一直缓慢。</p>
+          <p> </p>
+          <p>研究需要大量的标本，但适合研究的标本却很难搜集到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的研究标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有研究标本的话，就无法知道高地巴尔隆为什么会变得这么巨大。</p>
+          <p> </p>
+          <p>栖息在周围的高地巴尔隆什么时候说不定也会变得那么大。</p>
+          <p> </p>
+          <p>希望您能帮着搜集研究所需的标本，还能顺便赚取赏金。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真没想到会有这么大。真吓人！</p>
+          <p> </p>
+          <p>研究标本我会送上去的。</p>
+          <p> </p>
+          <p>据研究员说，它是因为受到设置在大地的裂缝的奥德接收器的影响，才会变成这样的。</p>
+          <p> </p>
+          <p>分析原因的工作就交给研究员去做吧。这是给[%username]大人的证物。</p>
+          <p> </p>
+	  <p>真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_M_LF4_DayQ_Fethlot_Highland_54_n]的尾巴交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭纽埃罗，搜集用作研究标本的巨大巴尔隆的尾巴，交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

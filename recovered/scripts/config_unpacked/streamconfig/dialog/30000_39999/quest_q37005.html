@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是去凯丹采掘场搜集[%dic:STR_DIC_I_QUEST_37005A]%。</p>
+          <p> </p>
+          <p>凯丹矿石无法通过精气提取采集，因此请你到[%dic:STR_DIC_M_37005all]%手上抢夺矿石。</p>
+          <p> </p>
+          <p>凯丹精锐军一个人对付起来很困难，希望你能接受导师的帮助。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我们还不知道凯丹矿石是用来干什么的，也不知道应该怎么使用。听说它的用途和守护者们通过精气提取获得的矿石完全不同。</p>
+          <p> </p>
+          <p>对了，您是刚从凯丹采掘场回来吗？</p>
+          <p> </p>
+          <p>凯丹精锐军一定很不好对付吧？请把[%dic:STR_DIC_I_QUEST_37005A]%交给我，然后去休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出凯丹矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您该不会是忘了从[%dic:STR_DIC_M_37005all]身上把凯丹矿石拿回来了吧？</p>
+          <p> </p>
+          <p>我得提醒您一句，没有导师的话，就无法获得[%dic:STR_DIC_I_QUEST_37005A]。</p>
+          <p> </p>
+          <p>很遗憾，您得再跑一趟了。</p>
+          <p> </p>
+          <p>您好像觉得很冤枉吧？但是[%username]大人的箱子里怎么找都找不到凯丹矿石，我也没有办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这一定是凯丹矿石。[%username]大人办事效率果然很高。</p>
+          <p> </p>
+          <p>导师有没有给您什么好的建议啊？偶尔也会遇到很笨的导师，不过大部分都还是好的。</p>
+          <p> </p>
+          <p>给，这是这次任务的奖励。希望您今后能继续积极执行任务。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭[%dic:STR_DIC_M_37005all]，搜集矿石，然后交给[%dic:STR_DIC_N_Vespasianus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，和导师一起消灭凯丹精锐军，搜集凯丹矿石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去凯丹采掘场搜集凯丹矿石，交给贝斯帕西亚努斯之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]，刚才我好像已经把竞技场入场券给你了。</p>
+          <p></p>
+          <p>必须有入场券才能进入竞技场，每次需要1张。</p>
+          <p></p>
+          <p>虽然这次由我送给你，但以后[%username]%你必须直接去[%dic:STR_DIC_N_Reigar]那里领取才行。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好的，我要确认一下你对第3神庙训练所的规则了解多少。</p>
+          <p></p>
+          <p>所谓百闻不如一见，没有比直接去试试更快的了。</p>
+          <p></p>
+          <p>你去打倒1个对手，然后再来找我。</p>
+          <p></p>
+          <p>不管是混沌竞技场还是孤独竞技场，不管对手是魔族还是天族，都没关系。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>如果你对1对1决斗有自信，就去孤独竞技场，如果你觉得和多个人对战更好，那就去混沌竞技场。</p>
+          <p></p>
+          <p>进入各个竞技场的出入门不同，进去之前一定要确认清楚名字。</p>
+          <p></p>
+          <p>希望你能取得好结果。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>为什么这样？</p>
+          <p></p>
+          <p>听说和实战一样，所以害怕了？</p>
+          <p></p>
+          <p>这种程度的训练都害怕的话，怎么能对付提亚马特的军团呢！</p>
+          <p></p>
+          <p>[%username]%，听说你是功勋卓著的[%userclass]，我原本还挺期待，真让人失望。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你的表情好像有点奇怪，[%username]。</p>
+          <p></p>
+          <p>在里面发生什么事了吗？</p>
+          <p></p>
+          <p>[%username]，以你的实力，这次任务应该并不难啊？</p>
+          <p></p>
+          <p>跟我报告一下结果吧。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出血染的徽章，并报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>怎么样？通过第一次考试的感受如何？</p>
+          <p></p>
+          <p>虽然可能还搞不太清楚，不过慢慢会熟悉的。</p>
+          <p></p>
+          <p>马勒库坦主神对第3神庙训练所抱有很大的期待。</p>
+          <p></p>
+          <p>有时间的话，就过来训练。</p>
+          <p></p>
+          <p>奖励自然会有的，[%username]你的实力也会有显著的提高。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_W_IDArena_pvp_D]打倒对战对象([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">把血染的徽章交给[%dic:STR_DIC_N_Shinin]</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">使用竞技场入场券，进入第3神庙训练所，击败对战对象。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>战斗教官希宁说要确认我有没有理解规则，让我到竞技场去打倒一个对战对象。</p>
+          <p></p>
+          <p>在竞技场中打倒对战对象的瞬间，发现了一个血染的徽章掉在地上。</p>
+          <p></p>
+          <p>把徽章交给了希宁，并报告了结果，他祝贺我通过了第一次考试。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

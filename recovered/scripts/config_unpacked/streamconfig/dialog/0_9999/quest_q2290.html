@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮我找到了保险柜，真是谢谢了。</p>
+          <p> </p>
+          <p>既然您帮了我，能不能再帮我一个忙？</p>
+          <p> </p>
+          <p>其实从不久前开始，我就想离开阿尔特盖德。</p>
+          <p> </p>
+          <p>因为牵挂着玛尼尔，所以推了一天又一天，现在既然这样，我想是机会了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在对面的岸边，我准备了一艘船。</p>
+          <p> </p>
+          <p>是，对。就是那个小帆船。</p>
+          <p> </p>
+          <p>您可以护送我到小帆船那里去，帮助我安全离开吗？</p>
+          <p> </p>
+          <p>因为革命团的那些家伙，我不敢一个人去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以后见到玛尼尔的话，请转告他我去了别的地方。看到他的话，我可能就会因为心软而舍不得离开。</p>
+          <p> </p>
+          <p>我现在还是想去流浪，可是玛尼尔好像决定留在此地了，所以我只好一个人离开了。</p>
+          <p> </p>
+          <p>[%username]大人，请您先走，我会在后面跟着，一直到帆船那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">“请跟我走。” </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您觉得我不跟玛尼尔说一声就走是不对的吗？</p>
+          <p> </p>
+          <p>玛尼尔是我唯一的血脉，你以为我的心里能好受吗？</p>
+          <p> </p>
+          <p>但是，如果见了玛尼尔，我可能就会舍不得丢下他自己离开了。</p>
+          <p> </p>
+          <p>我是个不能在一个地方呆太久的人。可是玛尼尔想留在这儿，我也是没办法啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您怎么一个人回来了？</p>
+          <p> </p>
+          <p>您没找到叔叔吗？</p>
+          <p> </p>
+          <p>他不在瀑布周围吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达克洛盖的话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>叔叔离开阿尔特盖德了?</p>
+          <p> </p>
+          <p>怪不得最近常常呆呆地看我，我当时还想他是不是有话要说呢，可...</p>
+          <p> </p>
+          <p>原来是因为我才没能离开啊。</p>
+          <p> </p>
+          <p>都没见上一面就离开了，真让人伤心。不过，还好知道他没事了。</p>
+          <p> </p>
+          <p>谢谢您保护叔叔，[%username]大人。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">护送[%dic:STR_DIC_N_Groken]到帆船  </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Manir]对话  </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">护送决定离开阿尔特盖德的克洛盖到帆船边</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克洛盖说他早就想离开阿尔特盖德，请求护送他到帆船那里。克洛盖离开以后，把他的话转达给了玛尼尔，玛尼尔说叔叔没跟他见一面就离开了，很伤心。不过，还好知道叔叔安然无恙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

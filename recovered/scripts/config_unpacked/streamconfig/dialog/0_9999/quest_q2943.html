@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到你就好像看到了很久以前的我。我也和你一样在短时间内飞速成长。受到了周围不少人的嫉妒。</p>
+          <p> </p>
+          <p>在那样的目光下能够坐到今天的这个位置，全是因为努力的原因。正直的努力！这是我成功的秘密。</p>
+          <p> </p>
+          <p>所以你不应该满足于现在的成果，而应该继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还有，我有句话要和你说，是什么来着？ </p>
+          <p> </p>
+          <p>啊，对了！请你把这本掠夺者之法书交给欧比斯的[%dic:STR_DIC_N_Fraiban]。</p>
+          <p> </p>
+          <p>以你的身手，去一趟欧比斯应该是没有问题的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拿着这个。为了方便携带，我把法书捆成了一个包裹。</p>
+          <p> </p>
+          <p>普莱班就在普利姆据点，应该不难找到。</p>
+          <p> </p>
+          <p>那你马上出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，不行吗？</p>
+          <p> </p>
+          <p>难道你想让我自己去？我到现在一次都没出过伏魔殿。</p>
+          <p> </p>
+          <p>现在再去找别人也很困难了，你就在考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知有没有[%username]大人想要的武器。</p>
+          <p> </p>
+          <p>伏魔殿虽然说会继续给我送武器，但是现在东西本来就不多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出豪尼尔的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是豪尼尔大人送来的东西吗？</p>
+          <p> </p>
+          <p>（打开包裹确认法书。） </p>
+          <p> </p>
+          <p>怎么这次居然送对了。以前经常会送错东西。可能是脑袋里的东西太多了...</p>
+          <p> </p>
+          <p>啊呀，这话您可不能和豪尼尔大人说。这是您的辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把豪尼尔的包裹交给[%dic:STR_DIC_N_Fraiban]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把豪尼尔给的掠夺者之法书交给欧比斯的武器商人普莱班。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>豪尼尔说有件东西需要马上送给普利姆据点的武器商人普莱班，拜托我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把豪尼尔给的包裹交给了普莱班，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

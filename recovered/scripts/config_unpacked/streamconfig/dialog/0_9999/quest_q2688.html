@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>孩子，我的孩子！</p>
+          <p> </p>
+          <p>他们抢走了我的孩子，咳。</p>
+          <p> </p>
+          <p>莫尔罗塔一定会找回我的孩子。</p>
+          <p> </p>
+          <p>对，只要向简卡卡大人祈祷，他一定会帮我找回孩子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对，我要建一座祭坛。只要建成山那么高的祭坛，简卡卡大人一定会实现我的心愿，咳。</p>
+          <p> </p>
+          <p>可是，建造祭坛到底需要什么材料呢？啊，对，就是[%dic:STR_DIC_DF3_tree_d_n_c_40a]！</p>
+          <p> </p>
+          <p>[%username]吗，帮我找来神圣的菩提树吧。</p>
+          <p> </p>
+          <p>要可以叠在一起抵到天上那么多的，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没时间了。</p>
+          <p> </p>
+          <p>如果错过了时机，我就永远无法找回我的孩子了，咳。</p>
+          <p> </p>
+          <p>赶紧去找 [%dic:STR_DIC_DF3_tree_d_n_c_40a]吧。</p>
+          <p> </p>
+          <p>让莫尔罗塔能够建造祭坛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？</p>
+          <p> </p>
+          <p>[%username]吗，不知道你刚才说了什么，咳。</p>
+          <p> </p>
+          <p>那都没什么关系。</p>
+          <p> </p>
+          <p>我要菩提树，菩提树。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]吗，你是谁？</p>
+          <p> </p>
+          <p>为什么这里会有魔族？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将菩提树交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我可没功夫和你浪费时间，咳。</p>
+          <p> </p>
+          <p>莫尔罗塔要去找自己的孩子。</p>
+          <p> </p>
+          <p>这淘气的小家伙，到现在还没有回来，找到后一定要好好教训他，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>菩提树?怎么回事...孩子，我的孩子啊！</p>
+          <p> </p>
+          <p>对，我要建造祭坛，咳。</p>
+          <p> </p>
+          <p>你先回去吧。建造祭坛就由我一个人来做。</p>
+          <p> </p>
+          <p>你要是帮忙，简卡卡大人会生气的，咳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_DF3_tree_d_n_c_40a]，并交给 [%dic:STR_DIC_N_DF3_NPC_Molota]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助莫尔罗塔建造祭坛，收集菩提树，并交给她。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>霜眉部族的莱卡恩人莫尔罗塔由于受到失去孩子的打击，一直疯疯癫癫。</p>
+          <p> </p>
+          <p>她表示，只要向简卡卡祈祷就可以找回孩子，并请求帮她收集建造祭坛需要的菩提树。</p>
+          <p> </p>
+          <p>不忍心拒绝可怜的她，收集到菩提树并交给她。她表示，要独自一个人建造祭坛才会灵验。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

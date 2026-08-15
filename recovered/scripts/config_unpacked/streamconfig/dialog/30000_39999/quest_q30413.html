@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30413</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>泰尔玛好不容易从石头中摆脱了出来。</p>
+          <p> </p>
+          <p>但是泰尔玛还是很害怕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是因为什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为森林的气息，石块经常附着到我的身体上。</p>
+          <p> </p>
+          <p>必须削弱那种气息，泰尔玛才能保持现在的样子。</p>
+          <p> </p>
+          <p>请帮帮泰尔玛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭树叶蜘蛛，森林的气息就会变弱。</p>
+          <p> </p>
+          <p>蜘蛛会搜集光的气息。</p>
+          <p> </p>
+          <p>所以每次蜘蛛靠近我的时候，就会有石头跟过来。</p>
+          <p> </p>
+          <p>泰尔玛想保持现在的样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰尔玛好害怕。</p>
+          <p> </p>
+          <p>变成石头的话，就不能自由走动了。</p>
+          <p> </p>
+          <p>请一定要帮帮泰尔玛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蜘蛛变少了。</p>
+          <p> </p>
+          <p>泰尔玛的痛苦减少了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说消灭掉了蜘蛛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>泰尔玛现在不害怕了。</p>
+          <p> </p>
+          <p>但是蜘蛛还有很多。</p>
+          <p> </p>
+          <p>你得继续帮助泰尔玛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭树叶蜘蛛([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和恢复原状的泰尔玛%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助泰尔玛，让石头不再附着到他的身上。去消灭树叶蜘蛛，削弱森林的气息吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打碎石头之后，恢复原状的泰尔玛出现了。</p>
+          <p> </p>
+          <p>泰尔玛说因为森林的气息，石块会重新附着到身上，让我帮他保持现在的样子。</p>
+          <p> </p>
+          <p>于是帮他消灭了树叶蜘蛛，让它们无法聚集森林的气息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

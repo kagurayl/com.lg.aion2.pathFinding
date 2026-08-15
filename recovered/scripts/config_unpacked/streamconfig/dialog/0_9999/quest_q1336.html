@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>侦察队要做的事情很多，不过由于人手不足，对很多地方都没能很好地进行侦察。</p>
+          <p> </p>
+          <p>现在只能勉强做到对危险的地区进行定期巡查。</p>
+          <p> </p>
+          <p>事实上最近有几件事情一直让我放不下心来，由于没有可以派去调查的守卫，所以不知道该怎么办才好...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是因为什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先是[%dic:STR_DIC_W_SensoryArea_Q1336_1]。莫尔皮诺斯兽群追随着食物在沙漠北部游荡，但奇怪的是，最近连一头都没有看见。</p>
+          <p> </p>
+          <p>其次是沙塔罗卡坟墓南侧的[%dic:STR_DIC_W_SensoryArea_Q1336_2]。从几天前开始就完全看不到做饭的炊烟了。原来每到早晨和傍晚时分，就会有袅袅的炊烟升上来。我想村子一定是出了什么问题。</p>
+          <p> </p>
+          <p>最后需要确认的是在南侧的[%dic:STR_DIC_W_SensoryArea_Q1336_3]。它们是追寻尸体的家伙，几天前出现之后就没有再离开。这说明有可以成为它们食物的东西。必须去调查一下到底发生了什么事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这三件事情我最最担心，由于没能确认，所以我心里很焦急。</p>
+          <p> </p>
+          <p>如果不忙的话，[%username]大人您能帮着去确认一下吗？怎么样？</p>
+          <p> </p>
+          <p>如果您能答应的话，会对侦察队起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快就答应帮忙。</p>
+          <p> </p>
+          <p>要寻找[%dic:STR_DIC_W_SensoryArea_Q1336_1]的话，必须往北走。因为莫尔皮诺斯兽群只在沙漠的北部游荡。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_SensoryArea_Q1336_2]在沙塔罗卡的心脏的南侧尽头。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_SensoryArea_Q1336_3]就在前哨基地的南侧。往南稍微走一会儿，应该就能看到。</p>
+          <p> </p>
+          <p>希望您在完成全部三个任务之后回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也看到了，我下属的侦察兵全部都出去执行任务去了，所以没有人手对新的地区进行侦察。</p>
+          <p> </p>
+          <p>所以我才来拜托[%username]大人...</p>
+          <p> </p>
+          <p>您是不是太不把人类的安危当回事了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去沙漠侦察了吗？</p>
+          <p> </p>
+          <p>莫尔皮诺斯兽群怎么样了啊？还有达尔塔斯村？</p>
+          <p> </p>
+          <p>还有西莫罗格聚集的地方又有什么东西？</p>
+          <p> </p>
+          <p>请您快跟我报告一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">报告侦察结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样！这是真的吗？</p>
+          <p> </p>
+          <p>莫尔皮诺斯兽群全都被杀了，达尔塔斯村变成了废墟？</p>
+          <p> </p>
+          <p>这真是...让人不敢相信。早知道这样的话，早点采取措施就好了...</p>
+          <p> </p>
+          <p>而且沙漠的中间竟然出现了腐败的地区...</p>
+          <p> </p>
+          <p>这应该不是我们侦察队能够解决的问题。必须马上向要塞报告才行。</p>
+          <p> </p>
+          <p>不管怎样，您帮我完成了这么困难的任务，真是谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去沙漠进行侦察</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_W_SensoryArea_Q1336_1][%5]</font></p>
+                     <p visible="[%6]"><font color="[%7]">  [%dic:STR_DIC_W_SensoryArea_Q1336_2]的状态[%8]</font></p>
+                     <p visible="[%9]"><font color="[%10]">  [%dic:STR_DIC_W_SensoryArea_Q1336_3][%11]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">向[%dic:STR_DIC_N_Demokritos]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">沙漠侦察队队长德莫克里托斯说有几件担心的事情。去那些地方进行侦察，并回去向他报告结果吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德莫克里托斯说他正在为莫尔皮诺斯兽群、达尔塔斯村和在侦察基地南面出现的西莫罗格而担心。</p>
+          <p> </p>
+          <p>按照他的拜托对沙漠进行了侦察，发现莫尔皮诺斯兽群全部被杀害，达尔塔斯村变成了废墟。而且侦察基地南侧变成了腐败的土地。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

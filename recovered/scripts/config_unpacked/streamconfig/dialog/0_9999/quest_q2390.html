@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来徘徊在村子周围的动物已经够让人心烦的了，现在鸟妖也来捣乱。</p>
+          <p> </p>
+          <p>它们攻击了装着三尖树的车子！</p>
+          <p> </p>
+          <p>幸好没有什么人受伤，但是它们把送往要塞的三尖树全部抢走了。</p>
+          <p> </p>
+          <p>它们抢走了三尖树到底要用来干什么...三尖树有毒，又不能吃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管怎样，这次的事情不能就这样算了。这次虽然量不多，没有造成太大的损失。但是以后此类事件如果持续发生的话，损失就会变得更大。</p>
+          <p> </p>
+          <p>因此，为了防止此类事情继续发生，必须好好地教训它们一次。但是您也看见了，现在执政官的人手非常不足。而人类的警卫团也无法和鸟妖对抗。</p>
+          <p> </p>
+          <p>可以的话，[%username]大人您帮帮我吗？</p>
+          <p> </p>
+          <p>以[%username]大人的实力的话，教训几头[%dic:STR_DIC_M_HarpyD_34_An]应该不算什么难事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快就答应我。</p>
+          <p> </p>
+          <p>遭到鸟妖攻击的人们正在痛苦之中。他们知道[%username]答应帮忙的话，一定会非常高兴的。</p>
+          <p> </p>
+          <p>那就请您马上出发去清除[%dic:STR_DIC_M_HarpyD_34_An]吧。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，这可怎么办呢！</p>
+          <p> </p>
+          <p>几天之后就又要运送三尖树去要塞了...</p>
+          <p> </p>
+          <p>您不能再考虑一下吗？眼下我能拜托的人，就只有[%username]大人您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了呢？</p>
+          <p> </p>
+          <p>您把鸟妖掠夺者全都除掉了吗？</p>
+          <p> </p>
+          <p>它们都是些很凶恶的家伙，战斗的时候没有受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听您这么一说，我就安心了。</p>
+          <p> </p>
+          <p>看来拜托[%username]大人，真是找对人了。</p>
+          <p> </p>
+          <p>这些虽然不是很多，但是却是我的一片心意。</p>
+          <p> </p>
+          <p>愿阿斯佩尔保佑您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_HarpyD_34_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mirka]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说鸟妖掠夺者袭击了装载三尖树的车子，抢走了三尖树。为了防止同样的事情再次发生，必须教训一下鸟妖。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>百夫长米尔卡说鸟妖袭击了向要塞运送三尖树的车子，为了防止同样的事情再次发生，让我去教训一下鸟妖。</p>
+          <p> </p>
+          <p>按照她的拜托除掉了鸟妖掠夺者，她说非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

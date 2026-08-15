@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(卷轴上出现了发光的文字。)</p>
+          <p> </p>
+          <p>(“让魔族在英吉斯温站稳脚跟。”)</p>
+          <p> </p>
+          <p>(“消灭守卫古代龙神殿和贪婪祭坛的[%dic:STR_DIC_M_LF4_C1_Golem_Named_55_Al]”)</p>
+          <p> </p>
+          <p>(“[%dic:STR_DIC_N_Kirhua]会向你提供帮助。”)</p>
+          <p> </p>
+          <p>(发光的文字消失了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到古代龙神殿来，有什么事吗！？</p>
+          <p> </p>
+          <p>如果您是执行任务的途中过来休息的，希望您能好好休息。</p>
+          <p> </p>
+          <p>如果您打算留在这里，希望您能帮我们执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">把卷轴给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您说要消灭[%dic:STR_DIC_M_LF4_C1_Golem_Named_55_Al]？您对他应该很了解了吧？</p>
+          <p> </p>
+          <p>您有过讨伐帕德玛夏的经验，我就不再多说了。</p>
+          <p> </p>
+          <p>那个家伙非常嚣张。我们虽然占领了要塞，但是暂时还拿他没有办法。</p>
+          <p> </p>
+          <p>他的攻击力非常强，而且还会召唤召唤兽。要想打倒巴尔伦，必须做好充分的准备。</p>
+          <p> </p>
+          <p>他会在古代龙神殿和贪婪祭坛周边出现，请您仔细寻找。祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>周围怎么这么吵啊？</p>
+          <p> </p>
+          <p>我虽然不能出去，但是却能听到外面的人的呼喝声。</p>
+          <p> </p>
+          <p>听到你的部队穿过原野的声音，我就知道你们回来了。</p>
+          <p> </p>
+          <p>看您安然无事的样子，[%dic:STR_DIC_M_LF4_C1_Golem_Named_55_Al]一定除掉了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然成功了！</p>
+          <p> </p>
+          <p>我这样感叹，不是因为马勒库坦主神的命令，而是感叹您的出色表现。</p>
+          <p> </p>
+          <p>连我们命运之天平都难以解决的事情，没想到被您这么快就解决了。您可帮了我们的大忙。</p>
+          <p> </p>
+          <p>这样一来，魔族在英吉斯温的势力就更加稳固了。这全都是您的功劳！</p>
+          <p> </p>
+          <p>但是马勒库坦主神的命令不会就此结束。请您再看看卷轴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Kirhua]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_LF4_C1_Golem_Named_55_Al][%5]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">向[%dic:STR_DIC_N_Kirhua]报告</font></p></step>          
+    </steps>
+          <p><font font_xml="quest_summary">从卷轴中接到了命令。去齐尔胡亚那里了解消灭守护者巴尔伦所需的情报吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在发光的卷轴上出现了接受齐尔胡亚的帮助，消灭英吉斯温的守护者巴尔伦的命令。</p>
+          <p> </p>
+          <p>完成任务之后回到齐尔胡亚那里，齐尔胡亚表示惊叹，并让我执行下一个任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

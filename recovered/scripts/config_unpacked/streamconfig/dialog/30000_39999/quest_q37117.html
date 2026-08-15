@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+ <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您也应该知道，因特尔蒂卡的情况非常严重。</p>
+          <p> </p>
+          <p>结界遭到破坏，龙族入侵，而且还有邪恶的魔族在那里耀武扬威。</p>
+          <p> </p>
+          <p>以要塞现在的兵力，根本无法解决目前的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到这一消息后，8位圣女说“尽阿拉克内姊妹会的全力帮助因特尔蒂卡”。</p>
+          <p> </p>
+          <p>是的，没错。我们会向[%dic:STR_DIC_E_Li_35_45]提供支援，帮助他们消灭掉[%dic:STR_DIC_M_quest_37117a]%。</p>
+          <p> </p>
+          <p>特此向[%username]大人下达指示，请您成为他们的[%dic:STR_DIC_E_Mentor]，帮助执行守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]大人一定会参加姊妹会的行动。</p>
+          <p> </p>
+          <p>准备完成之后，请您和[%dic:STR_DIC_E_Li_35_45]%一起去消灭[%dic:STR_DIC_M_quest_37117a]%。</p>
+          <p> </p>
+          <p>事情完成后，请您过来对执行守护者进行评价。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为[%username]大人一定会毫不犹豫地站出来呢。真让人意外。</p>
+          <p> </p>
+          <p>您一定是有什么重要的事情要做吧。</p>
+          <p> </p>
+          <p>以后有时间的话，请您再来帮我。我们有很多事需要您这样有能力的导师去做。</p>
+          <p> </p>
+          <p>请一路走好。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>这次扫荡英德拉图精锐兵的任务结果怎么样？</p>
+          <p> </p>
+          <p>一定有很多有意思的事吧？我们以后慢慢再聊，请先向我报告结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(点头)哎呀，您一定很累吧。</p>
+          <p> </p>
+          <p>因为今天[%username]大人完成了两件事。第一是削弱了龙族的战斗力，第二是教会了执行守护者对付英德拉图精锐兵的方法。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>希望今后您能继续帮助其他人。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_quest_37117a]%([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Zeinia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">和执行守护者一起消灭英德拉图精锐兵，然后向杰尼亚姐妹报告训练结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杰尼亚姐妹让我和执行守护者一起去消灭英德拉图军团的精锐兵，削弱龙族的战斗力。</p>
+          <p> </p>
+          <p>成为了执行守护者的导师，和他们一起消灭了龙族，向杰尼亚姐妹报告了结果之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

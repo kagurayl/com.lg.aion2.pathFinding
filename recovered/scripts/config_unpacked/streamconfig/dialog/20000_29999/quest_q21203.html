@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]，我听说过很多有关你的事情。</p>
+          <p> </p>
+          <p>听说年纪轻轻，就拥有不俗的实力。</p>
+          <p> </p>
+          <p>不过你到这里来干什么呢？你也是为了黄昏德拉纳农场的事情而来吗？</p>
+          <p> </p>
+          <p>不累吗？虽然你有飞檐走壁的能力，但独自对付农场上的德拉坎，一定很累吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看这么办怎么样？</p>
+          <p> </p>
+          <p>我们来这里是想对黄昏德拉纳农场进行侦查，但是因为事情太多，人手有点不够。</p>
+          <p> </p>
+          <p>如果有你的帮助，我们的情况就会好很多。你愿意帮我吗？如果你有什么事情的话，我们也可以帮助你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先，请你帮我们把德拉纳采集虫消灭掉。</p>
+          <p> </p>
+          <p>如果你去过黑暗普埃塔就应该知道，龙族会利用[%dic:STR_DIC_M_DF4_Spaller_55_An]来收获德拉纳。德拉纳是非常强的生命体，用普通的工具是无法把它挖出来的。</p>
+          <p> </p>
+          <p>如果能把它们消灭掉，就会对龙族的德拉纳生产造成很大的影响。</p>
+          <p> </p>
+          <p>对了，根据我们的调查，采集虫有个头目，名字叫做[%dic:STR_DIC_M_Spaller_NmdQ_55_An]。请你一定要把它除掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是觉得一个人也没问题吧？</p>
+          <p> </p>
+          <p>也是，不然你怎么会一个人到这里来呢？</p>
+          <p> </p>
+          <p>你的意思我明白了。不过人心是很容易改变的，如果你改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是刚去过黄昏德拉纳农场吗？</p>
+          <p> </p>
+          <p>你看上去很累的样子，快跟我说说，然后去休息休息吧。</p>
+          <p> </p>
+          <p>结果怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然名不虚传。这么快就消灭5只采集虫，而且还除掉了采集者加纳特。</p>
+          <p> </p>
+          <p>真是辛苦你了。你一定很累了，快去休息一下吧。</p>
+          <p> </p>
+          <p>其他的事情可以慢慢做，等你休息好了之后，我会告诉你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭黄昏德拉纳农场上的采集虫</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Spaller_55_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Spaller_NmdQ_55_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Geeze]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭黄昏德拉纳农场上的德拉纳采集虫和它们的头目采集者加纳特，阻止龙族的德拉纳生产。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉兹说提议让我们互相帮助，让我先帮助他们执行任务。</p>
+          <p> </p>
+          <p>他让我帮着消灭黄昏德拉纳农场上的德拉纳采集虫和它们的头目采集者加纳特。</p>
+          <p> </p>
+          <p>按照他的委托消灭了采集虫，回去之后，他说辛苦了，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

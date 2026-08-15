@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界通过要塞下达了一份公文，说和提格拉齐工房签订了某种协议。</p>
+          <p> </p>
+          <p>内容是为术古们搜集需要的材料，而作为代价，我们可以得到可以提高天族的军事力量的高质量的武器。</p>
+          <p> </p>
+          <p>我听说提格拉齐工房制作的武器和防具很不错，看样子这是个不错的协议。</p>
+          <p> </p>
+          <p>我看了看作为奖励发放的物品，真的非常不错。</p>
+          <p> </p>
+          <p>但是...问题是术古们需要的材料相当麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙语工房需要的龙族的蓝血和龙族的五色鳞片只有在魔界的德拉乌伯尼尔洞穴才能搜集到。</p>
+          <p> </p>
+          <p>我虽然很想要一件防具，但对我来说实在太困难了。不要说进入德拉乌伯尼尔洞穴，就是潜入魔界就绝非易事。</p>
+          <p> </p> 
+          <p>不过我想[%username]大人您应该没有问题。我听阿塔兰特大人说您出色地完成了潜入德拉乌伯尼尔洞穴的任务。</p>
+          <p> </p>
+          <p>让我看看...(翻阅公文)如果您能搜集到2个[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和5个[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]，就能在提格拉齐工房制作的手套、护肩和鞋子中任选一样。</p>
+          <p> </p>
+          <p>您想试试吗？如果成功，就可以获得好的防具作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]存在于德拉乌伯尼尔洞穴的拥有强大力量的龙族体内。</p>
+          <p> </p>
+          <p>打猎懒惰的德拉加休、训练教官阿克巴尔和大学者尤迪休提拉之类的就可以搜集到。</p>
+          <p> </p>
+          <p>听说德拉乌伯尼尔洞穴的普通龙族身上偶尔也能找到蓝血，但非常罕见。所以您一定要好好查看战利品。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]搜集起来要更容易些。德拉乌伯尼尔洞穴的所有龙族都有五色鳞片。</p>
+          <p> </p>
+          <p>对了，您知道怎么去德拉乌伯尼尔洞穴吧？通过英德拉图军团驻地的时空的裂缝，可以到达贝鲁斯兰的霜眉前哨基地和巴卡尔马军团驻地。</p>
+          <p> </p>
+          <p>在那里找到德拉乌伯尼尔洞穴就行。一个人去的话，也许连洞口都进不去，请您一定要召集同伴一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我理解您为什么会拒绝我。</p>
+          <p> </p>
+          <p>您已经去过一次，知道德拉乌伯尼尔洞穴是个多么危险的地方。</p>
+          <p> </p>
+          <p>您是不想再去了...这我可以理解。</p>
+          <p> </p>
+          <p>没关系，我会找其他勇敢的人帮忙的。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又见面了，[%username]大人。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]搜集到了吗？</p>
+          <p> </p>
+          <p>带回来了的话，就快交给我吧。</p>
+          <p> </p>
+          <p>确认之后，我就给您奖励。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族蓝血和五色鳞片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也知道要去德拉乌伯尼尔洞穴打猎龙族非常不容易。</p>
+          <p> </p>
+          <p>但是您已经答应执行任务，就应该去搜集材料。</p>
+          <p> </p>
+          <p>如果不能像龙语工房提供材料，签订的协议说不定就会破裂。</p>
+          <p> </p>
+          <p>2个[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和5个[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]一个都不能少哦。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的蓝血和龙族的五色鳞片...很好。数字也没错。</p>
+          <p> </p>
+          <p>我马上把奖励给您。</p>
+          <p> </p>
+          <p>您要什么呢？手套、护肩和鞋子，我一共准备了三样东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">请给我手套。</Act>
+      <Act href="HACTION_SELECT2_1_2">请给我护肩。</Act>
+      <Act href="HACTION_SELECT2_1_3">请给我鞋子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您最好想清楚之后再挑选。</p>
+          <p> </p>
+          <p>根据规定，东西是不能退换的。</p>
+          <p> </p>
+          <p>如果您辛辛苦苦执行了任务，却得到了没用的东西的话，就太冤枉了。所以请您一定要考虑好之后再做选择。</p>
+          <p> </p>
+          <p>您真的要挑选手套吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_2">不，请给我护肩。</Act>
+      <Act href="HACTION_SELECT2_1_3">不，请给我鞋子。</Act>
+      <Act href="HACTION_SETPRO10">是的，请给我手套。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您最好想清楚之后再挑选。</p>
+          <p> </p>
+          <p>根据规定，东西是不能退换的。</p>
+          <p> </p>
+          <p>如果您辛辛苦苦执行了任务，却得到了没用的东西的话，就太冤枉了。所以请您一定要考虑好之后再做选择。</p>
+          <p> </p>
+          <p>您真的要挑选护肩吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">不，请给我手套。</Act>
+      <Act href="HACTION_SELECT2_1_3">不，请给我鞋子。</Act>
+      <Act href="HACTION_SETPRO20">是的，请给我护肩。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2_1_3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您最好想清楚之后再挑选。</p>
+          <p> </p>
+          <p>根据规定，东西是不能退换的。</p>
+          <p> </p>
+          <p>如果您辛辛苦苦执行了任务，却得到了没用的东西的话，就太冤枉了。所以请您一定要考虑好之后再做选择。</p>
+          <p> </p>
+          <p>您真的要挑选鞋子吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">不，请给我手套。</Act>
+      <Act href="HACTION_SELECT2_1_2">不，请给我护肩。</Act>
+      <Act href="HACTION_SETPRO30">是的，请给我鞋子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是战斗的时候保护手的东西最重要，对吧？</p>
+          <p> </p>
+          <p>武器再怎么好，拿着武器的手如果保护不好的话，又有什么用？</p>
+          <p> </p>
+          <p>来，我把手套给您。</p>
+          <p> </p>
+          <p>这是提格拉齐工房制作的东西，请您不要担心质量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。防具中的点睛之笔就是护肩。</p>
+          <p> </p>
+          <p>即使装备再怎么结实的防具，如果护肩不结实的话，就不能让人放心。</p>
+          <p> </p>
+          <p>我如果护肩不好的话，都不敢出去战斗。</p>
+          <p> </p>
+          <p>来，这是给您的护肩。希望对您有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，我把鞋子给您。</p>
+          <p> </p>
+          <p>快穿上试试吧。</p>
+          <p> </p>
+          <p>我帮您准备了魔石，您可以马上装备。</p>
+          <p> </p>
+          <p>呼，我什么时候才能穿上提格拉齐工房制作的鞋子呢？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往魔界的德拉乌伯尼尔洞穴，搜集[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]，然后交给[%dic:STR_DIC_N_Brosia]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">到[%dic:STR_DIC_N_Brosia]那里选择作为奖励的防具</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说极乐世界和龙语工房签订了协议。按照布洛西亚的提议，通过英德拉图军团驻地的时空的裂缝前往魔界的德拉乌伯尼尔洞穴，搜集龙族的蓝血和龙族的五色鳞片，换取提格拉齐工房制作的防具吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说从极乐世界收到了公文，只要去魔界的德拉乌伯尼尔洞穴打猎龙族搜集材料，就能获得龙语工房制作的防具。</p>
+          <p> </p>
+          <p>于是通过时空的裂缝前往德拉乌伯尼尔洞穴，搜集到了龙族的蓝血和龙族的五色鳞片交给了布洛西亚，获得了防具。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

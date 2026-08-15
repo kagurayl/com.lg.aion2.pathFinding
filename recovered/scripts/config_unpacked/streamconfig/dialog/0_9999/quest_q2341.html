@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冰脚莱卡恩真让人看不顺眼。</p>
+          <p> </p>
+          <p>虽然它们侍奉的是实体守护者，不用担心它们把龙族引进来。</p>
+          <p> </p>
+          <p>但是作为永恒之塔的一部分的实体落在亚人种的手中，对我们魔族来说是一种无法忍受的侮辱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想夺回实体的话，必须首先削弱他们的战力。</p>
+          <p> </p>
+          <p>要想达到那个目的，必须先把它们中间的主力兵力除掉。</p>
+          <p> </p>
+          <p>所以，[%username]大人，希望您能帮帮我们。</p>
+          <p> </p>
+          <p>您能帮我去冰脚部落，把[%dic:STR_DIC_M_HeA_LycanHunterM_29_Ae]和[%dic:STR_DIC_M_FeA_LycanFighterM_29_Ae]清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次您辛苦了一趟之后，他们的防御力下降了很多，所以这次会容易一些。</p>
+          <p> </p>
+          <p>不过请您不要因此掉以轻心，一定要和同伴们一起过去。</p>
+          <p> </p>
+          <p>如果他们成群结队的冲过来，即便是[%username]大人也无法抵挡。</p>
+          <p> </p>
+          <p>所以您在去清除[%dic:STR_DIC_M_HeA_LycanHunterM_29_Ae]和[%dic:STR_DIC_M_FeA_LycanFighterM_29_Ae]的时候，一定要千万小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是一个人很难完成的任务。</p>
+          <p> </p>
+          <p>所以请您先去寻找一起去的同伴。有了同伴的话，执行任务应该就会轻松很多。</p>
+          <p> </p>
+          <p>请您准备好了之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冰脚的那些家伙见到[%username]大人之后有没有瑟瑟发抖啊？</p>
+          <p> </p>
+          <p>这次的任务您也顺利完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。这绝对是件很不容易的事情。</p>
+          <p> </p>
+          <p>除掉了他们的主要力量，对他们的打击应该很大。</p>
+          <p> </p>
+          <p>今后只要再加把劲的话，就能把他们完全打败。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除冰脚莱卡恩</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_HeA_LycanHunterM_29_Ae]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeA_LycanFighterM_29_Ae]([%5]/19)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Hakon]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除拥有实体的冰脚莱卡恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈坤说实体掌握在亚人种手中是对魔族的巨大侮辱，必须把冰脚莱卡恩清除掉。</p>
+          <p> </p>
+          <p>于是按照他的拜托，清除了冰脚部落的主要兵力冰脚上级武装兵和冰脚上级搜索兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

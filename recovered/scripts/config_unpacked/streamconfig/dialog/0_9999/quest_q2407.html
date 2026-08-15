@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神官过问雷帕尔革命团的事情，会不会有点多管闲事啊？</p>
+          <p> </p>
+          <p>但是离村子不远的地方就有一个巨大的革命团建筑基地，不能不让我担心。</p>
+          <p> </p>
+          <p>而且村子里只有三名执政官，如果他们杀过来的话...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我搜集了一些情报，据说革命团建筑基地的头目是一个名叫[%dic:STR_DIC_M_LehparAsNamedDQ_40_Ae]的人。</p>
+          <p> </p>
+          <p>虽然不知道他是在什么地方干什么的人，但是据说他的统帅能力很强，把革命团员指挥得井井有条。</p>
+          <p> </p>
+          <p>据说如果不是他的话，他们根本就不可能尝试在这里建设基地。</p>
+          <p> </p>
+          <p>所以如果能把指挥官温干兹除掉的话，就应该会给他们建设基地的事情造成巨大的打击。</p>
+          <p> </p>
+          <p>[%username]大人，您能去[%dic:STR_DIC_W_DF2_SUB_D5]帮我把他除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说[%dic:STR_DIC_M_LehparAsNamedDQ_40_Ae]非常多疑，所以基地的设计图都是由他一个人管理的。</p>
+          <p> </p>
+          <p>所以把他除掉之后，请您把建设基地设计图带回来作为证据。</p>
+          <p> </p>
+          <p>指挥官温干兹就在革命团建筑基地的深处。</p>
+          <p> </p>
+          <p>要去那个地方非常不容易，请您一定要召集同伴一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不敢去对付[%dic:STR_DIC_M_LehparAsNamedDQ_40_Ae]啊。</p>
+          <p> </p>
+          <p>他确实很不好对付。但是如果和同伴一起去的话，应该不会那么困难。</p>
+          <p> </p>
+          <p>他们建成基地之后，下一个目标一定是伊拉西克村。</p>
+          <p> </p>
+          <p>所以请您不要拒绝，一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等[%username]大人您回来。</p>
+          <p> </p>
+          <p>您把指挥官温干兹除掉了吗？</p>
+          <p> </p>
+          <p>我让您搜集的证据带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出建筑基地设计图。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去革命团建筑基地吗？</p>
+          <p> </p>
+          <p>我不是让您去除掉指挥官温干兹，然后把[%dic:STR_DIC_I_QUEST_2407a]带回来的吗？</p>
+          <p> </p>
+          <p>为了伊拉西克村的居民们，请您快去把他除掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然看不懂设计图，但是他们要建的基地还真是大。地下也好像在建什么东西...</p>
+          <p> </p>
+          <p>反正我也看不出什么东西，我会让米尔卡百夫长把它送到要塞去的。</p>
+          <p> </p>
+          <p>那样的话，要塞就可以对它进行详细的分析，并制定相应的对策。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_LehparAsNamedDQ_40_Ae]，然后把证据交给[%dic:STR_DIC_N_Rikesh]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">李凯希说由于雷帕尔革命团在离村子不远的地方建造基地，让她感觉很不安。除掉革命团建筑基地的负责人指挥官温干兹，然后把证据交给她吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李凯希说雷帕尔革命团在离村子不远的地方建造基地，让她感觉非常不安。</p>
+          <p> </p>
+          <p>她让我去帮她除掉指挥官温干兹，阻止他们建造基地。于是去除掉了指挥官温干兹，并把建筑基地设计图作为证据交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

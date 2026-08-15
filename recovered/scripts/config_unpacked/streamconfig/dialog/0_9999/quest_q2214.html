@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（正在羊皮纸上写着什么）</p>
+          <p> </p>
+          <p>您来啦，[%username]？我正忙着给要塞写报告书呢。</p>
+          <p> </p>
+          <p>（突然停下笔，盯着笔的末端）</p>
+          <p> </p>
+          <p>天啊，笔断了！本来就没什么时间了，居然连笔都断了。</p>
+          <p> </p>
+          <p>报告书必须得在今天完成啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是那样就太谢谢您了。那您能帮我找些制作笔的材料吗？</p>
+          <p> </p>
+          <p>我用[%dic:STR_DIC_I_quest_2214a]做笔。</p>
+          <p> </p>
+          <p>只有用这种笔，写出来的字才不会模糊。而且字也干净漂亮。</p>
+          <p> </p>
+          <p>抓到[%dic:STR_DIC_M_lupylliniD_10_n]就可以得到[%dic:STR_DIC_I_quest_2214a]了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>在茅斯兰森林里到处都是[%dic:STR_DIC_M_lupylliniD_10_n]，很容易就能找到。</p>
+          <p> </p>
+          <p>为了以防万一，请您帮我多找些，搜集５个就可以了。</p>
+          <p> </p>
+          <p>没有多少时间了，请您快点吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您改主意了。没办法了。</p>
+          <p> </p>
+          <p>病急乱投医，只好用天涯草的梗了。</p>
+          <p> </p>
+          <p>之前您要是能给我找来就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？我说的没错吧？树林里有很多路皮里尼吧？</p>
+          <p> </p>
+          <p>以[%username]您的能力，肯定是易如反掌啊。</p>
+          <p> </p>
+          <p>那就请给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出路皮里尼的尾羽。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没有去抓[%dic:STR_DIC_M_lupylliniD_10_n]吗？</p>
+          <p> </p>
+          <p>您不会是害怕鸟吧？</p>
+          <p> </p>
+          <p>要是知道您还没去，我就自己去找了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的拿来了5个[%dic:STR_DIC_I_quest_2214a]啊！</p>
+          <p> </p>
+          <p>一时半会儿不用担心没有笔用了。</p>
+          <p> </p>
+          <p>太感谢您了。这是点小小意思，请收下。.</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_quest_2214a]，交给[%dic:STR_DIC_N_Lovinja]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">罗比尼亚用的笔断了。找到路皮里尼的尾羽，帮罗比尼亚完成报告书。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到茅斯兰森林，罗比尼亚正忙着写报告书。突然罗比尼亚的笔断了。为着急的罗比尼亚找来路皮里尼的尾羽，罗比尼亚表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您去过荒废的乌达斯神殿吗？</p>
+          <p> </p>
+          <p>那是位于贪婪地下要塞附近的龙族的荒废的神殿。</p>
+          <p> </p>
+          <p>地下要塞和那个神殿里聚集着很多的龙崇拜者。</p>
+          <p> </p>
+          <p>纪念塔上的内容没有用，看来这次得看看有没有别的办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>荒废的乌达斯神殿是个非常古老的神殿。</p>
+          <p> </p>
+          <p>虽然现在荒废了，但过去曾经非常繁盛，曾经有很多关于它的资料。</p>
+          <p> </p>
+          <p>虽然过去的资料大部分已经遗失，但如果能够找到一小部分，说不定可以找到对我们有帮助的资料。</p>
+          <p> </p>
+          <p>[%username]大人，您能去荒废的乌达斯神殿一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在[%dic:STR_DIC_E_IDTemple_DF4]里，有个名叫金石回廊的地方。</p>
+          <p> </p>
+          <p>在金石回廊里面，有个名叫智慧城堡的地方。那是龙信徒当作图书馆使用的地方。</p>
+          <p> </p>
+          <p>请您去那里找到 [%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]，然后带回来。</p>
+          <p> </p>
+          <p>虽然几乎没有什么书籍存世，不过我想应该可以找到一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次让您白跑了一趟，一定感觉很失望吧？</p>
+          <p> </p>
+          <p>老实说，这次去荒废的乌达斯神殿可能又是白跑一趟。</p>
+          <p> </p>
+          <p>但是守护者的工作不都是这样吗？必须经历无数次的挫折，才能找到正确的道路。</p>
+          <p> </p>
+          <p>请您先去休息一下，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您回来啦。</p>
+          <p> </p>
+          <p>乌达斯神殿的事情怎么样了？找到龙信徒的古代文献了吗？</p>
+          <p> </p>
+          <p>必须找到它，我才能找到有关的情报……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙信徒的古代文献。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也知道，荒废的乌达斯神殿是很难到达的地方。</p>
+          <p> </p>
+          <p>但是现在那里是我们唯一的希望。</p>
+          <p> </p>
+          <p>请您快去荒废的乌达斯神殿，寻找[%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(翻阅文献)啊！找到有用的内容了。等等，我想把它读完。</p>
+          <p> </p>
+          <p>嗯……这就是全部吗？内容比我想象的要少。</p>
+          <p> </p>
+          <p>在帕休曼迪尔寺院深处封印着名叫“鲁德拉”的东西，这就是全部的内容了。</p>
+          <p> </p>
+          <p>只有短短的一句话，我也不知道鲁德拉到底是什么东西。</p>
+          <p> </p>
+          <p>不过这真的非常有趣，应该会对你有所帮助吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]，然后交给[%dic:STR_DIC_N_Herka]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">前往荒废的乌达斯神殿的智慧城堡，寻找龙信徒的古代文献。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫尔卡说最后的希望是荒废的乌达斯神殿。</p>
+          <p> </p>
+          <p>按照他的指示，在神殿的智慧城堡里找到了龙信徒的古代文献，得知帕休曼迪尔寺院里封印着一个名叫鲁德拉的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

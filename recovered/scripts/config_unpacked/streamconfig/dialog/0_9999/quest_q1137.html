@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有件急事要做，所以很忙。</p>
+          <p> </p>
+          <p>请你帮我一个忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是去要塞上空的悬崖上寻找古代寄居蟹的化石。</p>
+          <p> </p>
+          <p>这是极乐世界的奈斯托尔委托搜集的，他说这是对大崩溃时期的生命体和现在的生命体进行比较时必需的资料。</p>
+          <p> </p>
+          <p>事情很简单，但是必须飞到悬崖那边去。</p>
+          <p> </p>
+          <p>守卫们全都因为克拉尔而无法分身，而人类又没办法做，所以找不到合适的人。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>化石在要塞周围的悬崖上有很多。</p>
+          <p> </p>
+          <p>特别是那些像碟子一样突出来的部分。那些部分是大崩溃时期沉积土层的突起，在那里应该能很容易找到化石。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然我知道这是很无聊的事情。</p>
+          <p> </p>
+          <p>但是这是极乐世界下达的命令，我又能怎么样呢？</p> 
+          <p> </p>
+          <p>如果您改变主意的话，可以随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就找到化石了？</p>
+          <p> </p>
+          <p>要搜索那么多地方，应该需要很多时间才对...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出化石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去吗？</p>
+          <p> </p>
+          <p>我和奈斯托尔说好今天送过去的。</p>
+          <p> </p>
+          <p>请您务必抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的找到啦。</p>
+          <p> </p>
+          <p>这可是大海捞针。[%username]大人，您的运气可真好。</p>
+          <p> </p>
+          <p>真是太感谢了。奈斯托尔应该会很高兴的。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到贝尔特伦要塞周边的悬崖上寻找化石，然后交给[%dic:STR_DIC_LA153]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">极乐世界的历史学家奈斯托尔委托斯皮洛斯寻找用于研究的化石。帮助忙碌的斯皮洛斯去贝尔特伦要塞周边的悬崖上寻找化石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界的历史学家奈斯托尔委托斯皮洛斯寻找古代寄居蟹的化石。</p>
+          <p> </p>
+          <p>在贝尔特伦要塞的悬崖上找到了化石，并交给了斯皮洛斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

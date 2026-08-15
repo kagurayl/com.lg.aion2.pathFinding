@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>据说特洛尔掠夺者破坏了设置在灰雾丘陵的追踪之眼，给调查工作造成了困难。</p>
+          <p> </p>
+          <p>虽然调查工作也很重要，但如果记录着影像的追踪记忆落入敌人的手中，那就糟了。</p>
+          <p> </p>
+          <p>希望全体神圣守护会会员能够站出来消灭[%dic:STR_DIC_M_TrollRE_36_An]，任务完成后立即向[%dic:STR_DIC_E_35007]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我正在等您。</p>
+          <p> </p>
+          <p>我想以[%username]大人的实力，应该很快就能完成任务。</p>
+          <p> </p>
+          <p>对了，任务执行得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于解决了，真是太好了。</p>
+          <p> </p>
+          <p>您消灭了让人头疼的特洛尔掠夺者，我们终于可以重新开始对灰雾丘陵进行调查了。</p>
+          <p> </p>
+          <p>当然，我们必须重新设置被他们破坏的追踪之眼。</p>
+          <p> </p>
+          <p>真是辛苦您了。希望您以后能继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_TrollRE_36_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_35007]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>某一天，突然收到了神圣守护会的委托书，让我去消灭破坏设置在灰雾丘陵的追踪之眼的特洛尔掠夺者。</p>
+          <p> </p>
+          <p>迅速地消灭了特洛尔掠夺者，并向因特尔蒂卡支部会员进行了报告。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

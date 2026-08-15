@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(有一块发出神秘光芒的水晶漂浮在那里。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">调查水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看，上面有未知的文字在发光。)</p>
+          <p> </p>
+          <p>(好像是保存着龙族的情报的水晶球。)</p>
+          <p> </p>
+          <p>(把水晶球拿下来进行调查，应该可以知道更多有关龙族的情报。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(小心翼翼地把水晶球摘下来，放进了我的箱子里。)</p>
+          <p> </p>
+          <p>(仔细盯着看，上面有用龙族语写成的文字。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Silion]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(水晶球上的文字在发着光。)</p>
+          <p> </p>
+          <p>(看来好像是重要的情报。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+          <p>如果是削弱阿图拉姆空中要塞的方法，我随时欢迎。</p>
+          <p> </p>
+          <p>如果您获得了什么线索，请快点交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出龙族水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个……是龙族存储情报的装置啊。</p>
+          <p> </p>
+          <p>简单地说，就像我们的文件和书一样。</p>
+          <p> </p>
+          <p>(查看内容)嗯，这个内容……好像是魔族的卢斯佩纳舰长寻找的东西。</p>
+          <p> </p>
+          <p>卢斯佩纳舰长很忙，所以您只要把它交给忠实心腹埃伊利就行。</p>
+          <p> </p>
+          <p>这些内容好像和魔族有很大的关系，你也可以看一看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，我不喜欢这种气氛！</p>
+          <p> </p>
+          <p>卢斯佩纳大人虽然表面上装得很坦然，但其实内心一定很汹涌。</p>
+          <p> </p>
+          <p>不管怎么说，面对一个天族，心里难免会觉得不舒服。</p>
+          <p> </p>
+          <p>虽然他是位明白事理的人……但是我很担心他会随时爆发出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出龙族水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦！这个东西是！</p>
+          <p> </p>
+          <p>是含有德拉坎昆班达的情报的东西啊。</p>
+          <p> </p>
+          <p>那个昆班达一直让我们魔族军队很头疼。</p>
+          <p> </p>
+          <p>我们最终都没能找到他的下落。真想知道这里面是什么内容。</p>
+          <p> </p>
+          <p>这是给您的谢礼。如果能通过水晶获得更多的情报，之后我还会给您更多的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Silion]%对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Eiley]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了装有龙族情报的水晶球。拿去给西里安看看吧</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿图拉姆空中要塞发现了装有龙族情报的水晶。</p>
+          <p> </p>
+          <p>里面好像记录着重要的情报，拿去给西里安看了之后，他让我拿去交给卢斯佩纳的心腹埃伊利。</p>
+          <p> </p>
+          <p>埃伊利非常高兴，说终于获得了寻找已久的情报，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

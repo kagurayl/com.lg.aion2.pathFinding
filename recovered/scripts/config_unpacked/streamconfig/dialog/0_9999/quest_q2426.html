@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，不管我怎么说服自己，但是还是忍不住叹气。</p>
+          <p> </p>
+          <p>数十年间搜集的研究材料和药品全部消失了...</p>
+          <p> </p>
+          <p>一想到这，我就感到非常无辜和愤怒。有时睡在床上也会跳起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在虽然暂时在这里避难，但是我一定要把研究室抢回来。</p>
+          <p> </p>
+          <p>所以必须把占据研究室的精灵们清除掉。</p>
+          <p> </p>
+          <p>但是我都想不起来我最后一次用剑是什么时候的事情了。几十年时间里，我一直埋头于研究，战斗已经生疏了。</p>
+          <p> </p>
+          <p>事实上，我在神庙接受战斗训练的时候，就不是什么优秀的学生。</p>
+          <p> </p>
+          <p>所以我说，[%username]你能帮我把精灵们清除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。多亏了[%username]你，我又产生了夺回研究室的希望。</p>
+          <p> </p>
+          <p>冲进研究室，把我赶出来的是[%dic:STR_DIC_M_ElementalEarth2D_23_An]和[%dic:STR_DIC_M_ElementalEarth3D_23_An]。</p>
+          <p> </p>
+          <p>只要把它们清除掉的话，所有的问题就都会解决。所以，请你马上去精灵之山路帮我把它们清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来临渴掘井的俗话不单单是俗话啊。</p>
+          <p> </p>
+          <p>心疼的人才会着急，谁会来帮你啊。</p>
+          <p> </p>
+          <p>从现在起，我得重新练练剑术，把它们除掉，然后夺回研究室。</p>
+          <p> </p>
+          <p>虽然不知道什么时候可以成功，不过反正有的是时间，不管花多长时间都没关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_ElementalEarth2D_23_An]和[%dic:STR_DIC_M_ElementalEarth3D_23_An]全都清除掉了吗？</p>
+          <p> </p>
+          <p>你去精灵之山路的话，应该会经过我的研究室。研究室现在怎么样了？</p>
+          <p> </p>
+          <p>请你跟我说说精灵和研究室都怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究室全部被破坏了？</p>
+          <p> </p>
+          <p>啊？我从那里出来才多久啊...那些家伙到底在那里干了些什么...</p>
+          <p> </p>
+          <p>[%username]你清除掉精灵没有了意义。现在已经无可挽回了。</p>
+          <p> </p>
+          <p>不过还是要谢谢你接受我的请求。现在既然知道了情况，就得想想其他的办法了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">为了夺回研究室，把精灵清除掉</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth2D_23_An]([%2]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth3D_23_An]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kistig]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">被精灵赶出来的奇斯提克正在制定夺回研究室的计划。为了让他可以回到研究室，去把湿地精灵和湿土精灵清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇斯提克说想夺回被精灵占领的研究室，并说那样的话就必须把占据着研究室的精灵清除掉。</p>
+          <p> </p>
+          <p>按照他的拜托清除了精灵，回去找到了他，他说想知道研究室的情况。告诉他研究室已经被全部破坏之后，他仿佛很绝望，但是很快又恢复了正常，并说要制定新的对策。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

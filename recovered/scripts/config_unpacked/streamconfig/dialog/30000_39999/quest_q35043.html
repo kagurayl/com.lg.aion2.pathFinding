@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会下属的[%username]，你好。</p>
+          <p> </p>
+          <p>我收到了请求，让我给派遣到泰奥勃莫斯的会员，介绍一个可以帮助他们做事的有能力的人。[%username]，我觉得你是适合的人员，因此特地给你发来了委托书。</p>
+          <p> </p>
+          <p>大地上愚昧无知的被造物好像正在妨碍泰奥勃莫斯的会员们执行任务。</p>
+          <p> </p>
+          <p>请你到泰奥勃莫斯去，消灭[%dic:STR_DIC_M_LF2A_SpakyDesert_45_n]，然后把结果告诉[%dic:STR_DIC_E_35014]。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>您是来支援泰奥勃莫斯的活动的吧？</p>
+          <p> </p>
+          <p>已经有很多人过来帮忙了，但泰奥勃莫斯还有很多偏远的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>泰奥勃莫斯的萤火虫要比其他地区的更难对付。</p>
+          <p> </p>
+          <p>有了[%username]大人帮忙，我们暂时就能安心做事了。我会用神圣守护会的证物作为答谢，希望您能有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF2A_SpakyDesert_45_n]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_E_35014]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，让我帮着消灭给泰奥勃莫斯的活动造成妨碍的生命体。</p>
+          <p> </p>
+          <p>于是消灭了甲翅萤火虫之后，向泰奥勃莫斯支部会员报告。他对我的协助表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

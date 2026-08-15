@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Turbo] </p>
+          <p>训练内容：搜集[%dic:STR_DIC_I_quest_48602a]</p>
+          <p> </p>
+          <p>我们想给[%username]大人提供一个消灭黑脚精锐战士，让自己的实力能够有一个飞跃的机会。</p>
+          <p>这次训练的内容是到黑脚驻地去消灭[%dic:STR_DIC_M_LycanFighterS_16_Ae]%、[%dic:STR_DIC_M_LycanSeekerS_17_Ae]和[%dic:STR_DIC_M_LycanWarriorS_16_Ae]，然后搜集莱卡恩的武器带回来。</p>
+          <p>这是危险的任务，请您一定要找到[%dic:STR_DIC_E_Mentor]，组成组队之后一起过去。</p>
+          <p>需要注意的是，如果和导师距离太远的话，就无法通过训练。所以请您一定要跟在导师身边。</p>
+          <p>最后，完成训练之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>这次的训练怎么样？我说的是去黑脚驻地搜集莱卡恩的武器的任务。</p>
+          <p> </p>
+          <p>有导师在的话，我想应该不是那么困难吧。</p>
+          <p> </p>
+          <p>如果您完成了训练，请把证物交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出莱卡恩的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没能找到导师吗？</p>
+          <p> </p>
+          <p>如果不是因为这个，应该不会完不成训练啊。</p>
+          <p> </p>
+          <p>您再好好转转，一定可以找到好的导师的。</p>
+          <p> </p>
+          <p>请您和导师一起消灭黑脚精锐战士、黑脚精锐搜索兵和黑脚精锐哨兵，然后把[%dic:STR_DIC_I_quest_48602a]交给我。</p>
+          <p> </p>
+          <p>没什么时间了。请您尽快完成这次的训练。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您出色地完成了训练。</p>
+          <p> </p>
+          <p>看到[%username]大人在一天天成长，我就感到很高兴。</p>
+          <p> </p>
+          <p>再成长一些的话，您一定会取得骄人的功绩。</p>
+          <p> </p>
+          <p>今后希望您能继续努力参加神庙的训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起搜集[%dic:STR_DIC_I_quest_48602a]，然后交给[%dic:STR_DIC_N_Turbo]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭黑脚精锐战士、黑脚精锐搜索兵和黑脚精锐哨兵，搜集证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我去消灭黑脚驻地的莱卡恩，积累经验。</p>
+          <p> </p>
+          <p>于是和导师一起消灭了黑脚精锐战士、黑脚精锐搜索兵和黑脚精锐哨兵，并把莱卡恩的武器作为证物带了回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

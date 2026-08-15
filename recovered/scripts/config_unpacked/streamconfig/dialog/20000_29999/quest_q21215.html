@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，请听我说。</p>
+          <p> </p>
+          <p>我需要去失败者的坟墓采集骨头标本，但是哥哥却坚持说自己要去。</p>
+          <p> </p>
+          <p>我说不过他，就只能让他去。标本倒是搜集到了，但他却受到了附近的阿盖伦德雷克的攻击，弄得满身是伤。</p>
+          <p> </p>
+          <p>我告诉过他，那里很危险……</p>
+          <p> </p>
+          <p>如果我去的话，应该可以顺利地采集到标本，看来我不应该对哥哥那么言听计从。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哥哥的伤势可能还得过几天才能好，我的心里很不好受。</p>
+          <p> </p>
+          <p>虽然他有很多缺点，但怎么说都是我唯一的亲人。</p>
+          <p> </p>
+          <p>今后反正还需要继续搜集骨头，我想还不如趁这段时间处理掉，免得又发生什么事情。</p>
+          <p> </p>
+          <p>失败者的坟墓有很多龙族的骨头，简直可以建造一个博物馆。我怎么能因为几只小小的生物就放弃呢？</p>
+          <p> </p>
+          <p>[%username]大人，请您去失败者的坟墓，帮我把生活在龙骨周围的[%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An]消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我绝对不是想为哥哥报仇。</p>
+          <p> </p>
+          <p>那是哥哥自己的问题，谁让他在调查的时候不注意的呢？</p>
+          <p> </p>
+          <p>重要的是必须顺利地完成龙族骨头的搜集工作。</p>
+          <p> </p>
+          <p>请您到失败者的坟墓去，把妨碍搜集骨头的古代阿盖伦德雷克消灭掉。</p>
+          <p> </p>
+          <p>对了，这件事千万不要告诉哥哥。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我根本就不应该跟别人说。</p>
+          <p> </p>
+          <p>自己的事情当然应该自己处理。</p>
+          <p> </p>
+          <p>失礼了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还是第一次因为龙骨太多而头疼。在魔界的时候，就是一个小小的标本都很难找到。</p>
+          <p> </p>
+          <p>要按时代和属性分类，看来要花一段时间了。</p>
+          <p> </p>
+          <p>现在还有很多骨头没有搜集到，很难想象工作量将会有多大。</p>
+          <p> </p>
+          <p>啊，这就叫痛并快乐着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古代阿盖伦德雷克全部消灭掉啦！</p>
+          <p> </p>
+          <p>真是太好了。现在就可以去搜集骨头，而不用被哥哥说了。</p>
+          <p> </p>
+          <p>对哥哥来说，这也是一件好事。</p>
+          <p> </p>
+          <p>我把这个送给你，作为我的谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭失败者的坟墓的[%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Itar]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照伊塔尔的委托，消灭失败者的坟墓的古代阿盖伦德雷克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊塔尔说哥哥塔纳尔去失败者的坟墓搜集龙骨的时候，受到了阿盖伦德雷克的攻击而受了伤。</p>
+          <p> </p>
+          <p>为了确保失败者的坟墓一带的安全，按照他的委托消灭了古代阿盖伦德雷克。回去之后，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

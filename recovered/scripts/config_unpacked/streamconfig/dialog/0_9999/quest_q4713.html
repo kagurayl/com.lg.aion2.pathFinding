@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我又有一件事情要请你帮忙。总是麻烦你，真是不好意思。</p>
+          <p> </p>
+          <p>但是想要让德雷得奇安完全失去威胁，只除掉一个舰长是不够的。</p>
+          <p> </p>
+          <p>没有舰长虽然暂时会陷入混乱，但是不久后就会由副舰长或其他龙族填补空位。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想要让德雷得奇安完全瘫痪，需要破坏德雷得奇安内部的设备。</p>
+          <p> </p>
+          <p>如果顺便能消灭巴拉那特军团的精锐士兵，就能带来更好的效果。</p>
+          <p> </p>
+          <p>你愿意渗透到巴拉那特德雷得奇安，破坏里面的主要设备，并消灭敌人的精锐士兵吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请去破坏指挥德雷得奇安的司令室内的[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_13]。</p>
+          <p> </p>
+          <p>只要破坏那里的苏尔卡纳，德雷得奇安的功能就会瘫痪掉。</p>
+          <p> </p>
+          <p>另外请你消灭德雷得奇安中的主要力量[%dic:STR_DIC_M_IDAb1_Dreadgion_Elite]。</p>
+          <p> </p>
+          <p>这样的话足以让巴拉那特德雷得奇安陷入混乱，很难恢复过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不愿意我也不会勉强的。</p>
+          <p> </p>
+          <p>但是如果你要去德雷得奇安，希望能顺便执行这个任务。</p>
+          <p> </p>
+          <p>我觉得对[%username]你来说不是很难做到。</p>
+          <p> </p>
+          <p>请你好好考虑后再找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我等着你呢，[%username]。</p>
+          <p> </p>
+          <p>我拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>我说的是破坏司令室动力苏尔卡纳，消灭巴拉那特军团的精锐士兵事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。多亏了你，巴拉那特德雷得奇安不会再对我们构成什么威胁了。</p>
+          <p> </p>
+          <p>但是仅仅这样，我认为还无法把他们从埃雷修兰塔完全赶走。</p>
+          <p> </p>
+          <p>[%username]，希望你能继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">攻击德雷得奇安，使其陷入混乱</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_13] ([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Elite] ([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Henir]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了瘫痪德雷得奇安，破坏他们的主要设备，并消灭巴拉那特军团的精锐士兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海尼尔说想要让德雷得奇安完全瘫痪，只消灭一个舰长是不够的。</p>
+          <p> </p>
+          <p>按照他的委托，破坏了司令室动力苏尔卡纳，并消灭了巴拉那特军团的精锐士兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

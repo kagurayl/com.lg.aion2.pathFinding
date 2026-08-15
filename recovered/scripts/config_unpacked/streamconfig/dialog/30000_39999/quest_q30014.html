@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，多亏你帮我搜集到了一部分十字镐，但数量还缺少很多。</p>
+          <p> </p>
+          <p>这件事是鸢族主动向我们请求帮忙，这件事处理的好坏，将会对今后我们和鸢族的关系产生很大的影响。</p>
+          <p> </p>
+          <p>因此从我的立场上看，无论如何都必须搜集齐其余的十字镐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你应该比我更了解情况，所以我就长话短说了。</p>
+          <p> </p>
+          <p>你能再到荒废的乌达斯神殿去搜集十字镐吗？</p>
+          <p> </p>
+          <p>这件事非常重要，相信你一定不会拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去乌达斯神殿地下，消灭[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]，搜集[%dic:STR_DIC_I_QUEST_30013a]。</p>
+          <p> </p>
+          <p>相信不用我多说，你也知道那里是多么可怕的地方吧？</p>
+          <p> </p>
+          <p>时间紧迫，希望你能马上出发。</p>
+          <p> </p>
+          <p>拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过一次，觉得已经足够了吗？</p>
+          <p> </p>
+          <p>你可能不想再去荒废的乌达斯神殿了，也可能觉得做同样的事太乏味。</p>
+          <p> </p>
+          <p>但是[%username]你觉醒已经很久了，难道不知道这就是守护者的使命吗？</p>
+          <p> </p>
+          <p>现在需要担心的事情已经够多的了，没想到连你这样为人称道的人都不愿意帮我……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道盖菲奥斯在鸢族社会中的地位如何。</p>
+          <p> </p>
+          <p>如果地位很高的话，我们天族就能给所有鸢族留下一个好的印象。</p>
+          <p> </p>
+          <p>好了，搜集到笨重的十字镐的话，请快点给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出十字镐。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我想你应该比我更清楚这件事的重要性！</p>
+          <p> </p>
+          <p>我本来就快担心死了，你还觉得不够，还要再给我火上浇油吗？</p>
+          <p> </p>
+          <p>我不想多说什么，[%username]。</p>
+          <p> </p>
+          <p>请你马上到乌达斯神殿地下去消灭[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]，搜集[%dic:STR_DIC_I_QUEST_30013a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我能相信的人就只有你了。</p>
+          <p> </p>
+          <p>多谢你在这件事上给我的帮助。</p>
+          <p> </p>
+          <p>不过[%username]你也知道，虽然你很努力，但十字镐的数量还是不够。</p>
+          <p> </p>
+          <p>抱歉，以后希望你能继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30013a]，然后交给[%dic:STR_DIC_N_Sueros]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">交给盖菲奥斯的十字镐还不够。去乌达斯神殿地下消灭乌达斯精锐杂役，搜集十字镐吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃洛丝说交给盖菲奥斯的十字镐还不够。</p>
+          <p> </p>
+          <p>于是去乌达斯神殿地下帮他搜集到了十字镐，他说以后还需要我继续帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

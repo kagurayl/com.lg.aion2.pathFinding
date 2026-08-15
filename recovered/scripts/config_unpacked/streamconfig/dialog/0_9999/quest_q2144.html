@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我来告诉您一个有用的情报。</p>
+          <p> </p>
+          <p>现在我正在做一项工作，如果您把没用的魔石交给我，我会用其他更好的魔石和您交换。</p>
+          <p> </p>
+          <p>这不是我的个人行为，而是受魔石去除师协会的委托。</p>
+          <p> </p>
+          <p>协会好像打算将回收上来的魔石用于研究。具体什么研究我也不知道，不过大概能猜到。</p>
+          <p> </p>
+          <p>反正您不会吃亏的。如果您有生命力+30，命中+14和盾牌防御+14魔石的话，请拿来给我。</p>
+          <p> </p>
+          <p>我会用其他的魔石和您交换。但是不能一个个交换，只能以10个为单位交换。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>用不常用的魔石交换更好的魔石，这样的机会可不是一直有的。</p>
+          <p> </p>
+          <p>而且又是我这样优秀的魔石去除师的提议，您怎么能错过呢？</p>
+          <p> </p>
+          <p>我和其他毛手毛脚的魔石去除师不同，绝对不会把东西搞错。</p>
+          <p> </p>
+          <p>您该不会这么快就把魔石的种类忘记了吧？我要的是生命力+30，命中+14和盾牌防御+14魔石各10个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意的话就算了，哈哈。</p>
+          <p> </p>
+          <p>有时也会碰到完全不用魔石的人。</p>
+          <p> </p>
+          <p>看到武器和防具上的魔石凹槽空空如也，我就觉得很可惜。不过这都是个人爱好问题。</p>
+          <p> </p>
+          <p>您不会也不使用魔石吧？如果不是的话，我想您应该不会拒绝我的建议。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经常有人说太可惜了。</p>
+          <p> </p>
+          <p>说的是我。他们说我在这种偏僻的地方工作，实在是太可惜了。</p>
+          <p> </p>
+          <p>我只是在这里默默地从事魔石去除工作，听到这样的称赞，让我很有压力。看来只要有能力，不管在什么地方都会发光。</p>
+          <p> </p>
+          <p>对了，我要的魔石都带来了吗？您是因为这件事来找我的，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您一定是忘记了。我明明告诉了您两遍啊。</p>
+          <p> </p>
+          <p>如果您对自己的记忆力没有自信，就应该养成记录的习惯。</p>
+          <p> </p>
+          <p>所谓好记性不如烂笔头，哈哈。开玩笑，开玩笑。</p>
+          <p> </p>
+          <p>我要的是生命力+30，命中+14和盾牌防御+14各10个。请确认好之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔石我已经确认好了……给，这是新的魔石。</p>
+          <p> </p>
+          <p>这是我为您挑选的魔石，您一定会喜欢的。</p>
+          <p> </p> 
+          <p>当然，如果您不喜欢，我也没办法。哈哈。</p>
+          <p> </p>
+          <p>今后如果有没用的魔石的话，请再拿来给我。我会随时跟您交换。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，然后交给拉库图</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集魔石去除师协会需要的生命力+30，命中+14和盾牌防御+14魔石各10个，然后交给拉库图。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉库图说魔石去除师协会正在回收魔石，只要搜集3种用不着的魔石各10个，就可以交换到更高级的魔石。</p>
+          <p> </p>
+          <p>把拉库图所说的魔石交给了他，按照约定，他把高等级的魔石送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

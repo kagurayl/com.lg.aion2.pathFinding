@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(刻有马勒库坦主神的纹样的卷轴上写着烫金大字。)</p>
+          <p></p>
+          <p>(“向将格尔克马洛斯防御基地从邪恶的天族手中拯救出来的[%username]%致谢。”)</p>
+          <p></p>
+          <p>(“[%dic:STR_DIC_N_Vedrfonir]会把武器交给你，”)</p>
+          <p></p>
+          <p>(“成为命运之锤，消灭敌人吧。”)</p>
+          <p></p>
+          <p>(“马勒库坦的代理人，泰格拉克”) </p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>请不要太着急。</p>
+          <p></p>
+          <p>只要命运的代理人在，格尔克马洛斯防御基地不会那么容易陷落。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出泰格拉克的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(仔细地查看命令书。)嗯……</p>
+          <p></p>
+          <p>[%username]%，泰格拉克代理人大人好像一直很喜欢你。</p>
+          <p></p>
+          <p>我会按照指示，把武器发放给你。[%username]%，当你按照命运的意志前进的时候，武器会显露出自己真正的形态。</p>
+          <p></p>
+          <p>愿那份力量让你成为马勒库坦之锤，击退入侵格尔克马洛斯的天族。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">把泰格拉克的命令书交给[%dic:STR_DIC_N_Vedrfonir]</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">把命令书交给贝尔德·普尼尔，领取武器。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>帮助代理人泰格拉克守住了格尔克马洛斯防御基地，获得了泰格拉克的命令书。</p>
+          <p></p>
+          <p>把命令书交给贝尔德·普尼尔，获得了武器。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

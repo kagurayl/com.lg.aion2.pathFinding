@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，[%username]！既然您帮了我一次忙，能不能再帮我一次啊？</p>
+          <p> </p>
+          <p>虽然波雷尔的数量减少了很多，但是问题并没有完全解决。</p>
+          <p> </p>
+          <p>我觉得应该采取措施增加因为波雷尔而减少的鱼类的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是什么特别的方法，而是想把某种鱼抓起来，然后放在一起饲养。</p>
+          <p> </p>
+          <p>这样就不会被其他鱼或者野兽吃掉，至少要比现在好一点。</p>
+          <p> </p>
+          <p>首先我想用这种方式饲养[%dic:STR_DIC_E_fish_n_c_20a]。怎么样，这次您还能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您帮我捕捉9条[%dic:STR_DIC_E_fish_n_c_20a]吧。</p>
+          <p> </p>
+          <p>胭脂鱼力气比较大，比捕捉波雷尔更需要技术。</p>
+          <p></p>
+          <p>请您快去快回。我得趁这段时间准备放养胭脂鱼的池塘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。您之前能帮我，我就已经非常感谢了。</p>
+          <p> </p>
+          <p>胭脂鱼我会自己慢慢抓的，您去做您的事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您回来啦？</p>
+          <p> </p>
+          <p>(擦了擦汗)挖个池塘要比想象的累得多。不过还是挖好了。</p>
+          <p> </p>
+          <p>对了，我让您捕的[%dic:STR_DIC_E_fish_n_c_20a]怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出胭脂鱼。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有必要道歉。</p>
+          <p> </p>
+          <p>胭脂鱼连我都不太容易抓到。它们本来力气就非常大，也很敏捷。所以请您不要泄气，慢慢地抓好了。</p>
+          <p> </p>
+          <p>这段时间我会把挖掘池塘的工作完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是活蹦乱跳，连一个鳞片都没伤掉。真是辛苦您了。</p>
+          <p> </p>
+          <p>不知道这个办法有没有效果。事实上，我也是第一次进行这种尝试...</p>
+          <p> </p>
+          <p>来，虽然不多，但却是我的诚意。请您收下吧。</p>
+          <p> </p>
+          <p>我虽然很想多给您一点，但身上就只有这么点钱了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_E_fish_n_c_20a]，然后交给[%dic:STR_DIC_N_Lano]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">拉诺说想将胭脂鱼另行饲养，希望能增加它们的数量。去埃尔特内要塞周边的河流和寂静沼泽捕捉胭脂鱼，然后交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉诺说光靠捕捉波雷尔不能完全解决问题，必须将胭脂鱼另外饲养，增加它们的数量。</p>
+          <p> </p>
+          <p>于是在拉诺挖掘池塘的时间里，帮他捕捉到了胭脂鱼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

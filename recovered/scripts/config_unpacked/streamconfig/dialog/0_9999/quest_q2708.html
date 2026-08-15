@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次的任务你完成得非常出色，[%username].</p>
+          <p> </p>
+          <p>你的实力要比想象的强得多。</p>
+          <p> </p>
+          <p>拉莎尼亚果然有看人的眼光。</p>
+          <p> </p>
+          <p>多亏了你，让我安心了很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次要让你除掉的家伙实力非常强。</p>
+          <p> </p>
+          <p>我想拜托你去清除天族3级兵。他们是在欧比斯身经百战的士兵，因此务必要小心。</p>
+          <p> </p>
+          <p>我不是不相信[%username]你的实力，只不过是让你当心。</p>
+          <p> </p>
+          <p>你愿意帮我把[%dic:STR_DIC_E_Lgrade3]清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定不会拒绝，一定会欣然接受。</p>
+          <p> </p>
+          <p>如果一听到[%dic:STR_DIC_E_Lgrade3]的名字就害怕的话，就不像是你了。</p>
+          <p> </p>
+          <p>[%username]，相信以你的实力，应该不会去消灭实力与你相差太多的天军吧。</p>
+          <p> </p>
+          <p>实力相差太多的话，消灭了也没有用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样...真没想到你会拒绝。</p>
+          <p> </p>
+          <p>如果不是你的话，我也不会给你这么困难的任务。</p>
+          <p> </p>
+          <p>请你再好好考虑一下吧。</p>
+          <p> </p>
+          <p>只有执行困难的任务，才能大幅地提高你的经验，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎回来，[%username]。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_E_Lgrade3]全部清除掉了吗？</p>
+          <p> </p>
+          <p>请跟我报告一下详细的结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然完成得非常出色，[%username]。</p>
+          <p> </p>
+          <p>因为有你的帮助，我们红色赫西亚军团以后执行任务的时候就会容易得多了。</p>
+          <p> </p>
+          <p>同时也重挫了天族的气焰。</p>
+          <p> </p>
+          <p>希望你以后能继续发挥你的能量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade3]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Semotor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族在欧比斯战场上取得胜利，必须击退天军3级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞摩托尔说上次我出色完成了任务，这次可以安心地交给我更困难的任务了。</p>
+          <p> </p>
+          <p>他让我去欧比斯除掉久经沙场的天军3级兵。</p>
+          <p> </p>
+          <p>按照他的命令除掉了他们，他对我表示感谢，说我沉重打击了天族的气焰。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

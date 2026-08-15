@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，听说你正在处理荒废的乌达斯神殿的问题。</p>
+          <p> </p>
+          <p>虽然消灭了一部分龙信徒，但仅是这个样子是远远不够的！</p>
+          <p> </p>
+          <p>这是考验耐心的战斗，首先放弃的一方就会失败。</p>
+          <p> </p>
+          <p>你们魔族也把龙信徒视为眼中钉，趁这次机会，我们相互联手怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次需要消灭的是[%dic:STR_DIC_M_IDTemple_Fanatic_Magic]。龙族强化了他们的能力，因此他们拥有非常强的治愈力。</p>
+          <p> </p>
+          <p>如果能把拥有治愈能力的龙信徒消灭掉，就能大大削弱他们的战斗力。</p>
+          <p> </p>
+          <p>有一件事我必须和你说清楚，既然和我联手，[%username]你就要拥有足够的耐心。</p>
+          <p> </p>
+          <p>这次的事情不是一次就能完成的，必须持续讨伐才行。这样的话，才会有效果，不是吗？</p>
+          <p> </p>
+          <p>当然，我不会白白让你帮忙的。如果你能忠实地完成任务，我会给予你相应的报答。</p>
+          <p> </p>
+          <p>怎么样？你愿意接受我的提议吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好！请你先回到荒废的乌达斯神殿，把这些家伙消灭掉。</p>
+          <p> </p>
+          <p>需要消灭的家伙是[%dic:STR_DIC_M_IDTemple_FanaticPr_52_Ae]、[%dic:STR_DIC_M_IDTemple_FanaticCh_52_Ae]、[%dic:STR_DIC_M_IDTemple_FanaticPr_54_Ae]和[%dic:STR_DIC_M_IDTemple_FanaticCh_54_Ae]。</p>
+          <p> </p>
+          <p>只要把拥有治愈力的家伙统统消灭掉就行。</p>
+          <p> </p>
+          <p>我知道这件事并不容易，不过拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙信徒就在你面前，你连一点警戒之心都没有吗？</p>
+          <p> </p>
+          <p>只要是有使命感的守护者，不用我多说，都应该去消灭他们。</p>
+          <p> </p>
+          <p>如果你对讨伐龙信徒不感兴趣的话，我也不想强求。</p>
+          <p> </p>
+          <p>用作奖励的神之金属本来就已经不多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到底怎样才能把龙信徒彻底消灭呢？</p>
+          <p> </p>
+          <p>当然，如果能消灭掉龙族，龙信徒就会自然而然地消失。不过那并不容易……</p>
+          <p> </p>
+          <p>对了，你把我所说的那些龙信徒消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好，[%username]！</p>
+          <p> </p>
+          <p>这样做虽然还不足以给他们造成致命的打击，但只要继续努力，就一定可以把他们消灭干净。</p>
+          <p> </p>
+          <p>希望你今后继续积极协助我们消灭龙信徒。</p>
+          <p> </p>
+          <p>这个请你收下。这是名叫神之金属的矿石，可以用来强化武器。请好好保管，应该会有用的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去荒废的乌达斯神殿消灭[%dic:STR_DIC_M_IDTemple_Fanatic_Magic]([%2]/25)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Aglauros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿格拉乌洛斯让我去荒废的乌达斯神殿消灭拥有治愈力的乌达斯精锐治疗师、乌达斯精锐修道者、乌达斯精锐祭司和乌达斯精锐修道僧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿格拉乌洛斯说要想把荒废的乌达斯神殿的龙信徒扫荡干净，必须持续消灭他们。</p>
+          <p> </p>
+          <p>他说如果我消灭了足够多的龙信徒，就会给我相应的报答。于是前往神殿，消灭了拥有治愈能力的龙信徒。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

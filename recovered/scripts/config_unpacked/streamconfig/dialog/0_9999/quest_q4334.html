@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，鸟妖们又在惹事了。</p>
+          <p> </p>
+          <p>本来要做的事情就已经够多了……</p>
+          <p> </p>
+          <p>事情有点麻烦，您能休息一下，顺便听我说一说吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次您帮我消灭了鸟妖，我对此表示衷心的感谢。多亏了您，村里终于安静了一些。</p>
+          <p> </p>
+          <p>但是因为那件事情，鸟妖现在好像跑到莫尔海姆结界塔附近去惹事了。</p>
+          <p> </p>
+          <p>提尔守护者大人说如果我不能解决这件事，就要向要塞申请，把伊拉西克的执政官派到结界塔周围。我真的很担心，伊拉西克村的兵力目前并不乐观……</p>
+          <p> </p>
+          <p>所以我说，您能帮我去把[%dic:STR_DIC_M_HarpyD_34_An]消灭掉，然后把证据交给我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您！</p>
+          <p> </p>
+          <p>我们必须把消灭鸟妖的证据直接送过去才行，请别忘了搜集[%dic:STR_DIC_I_QUEST_4334A]%带回来。</p>
+          <p> </p>
+          <p>我会在这里等着[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为提尔守护者大人伤了您的感情吗？</p>
+          <p> </p>
+          <p>守护者大人不是在怀疑[%username]大人，而是出于愤怒。</p>
+          <p> </p>
+          <p>我拜托您，就是为了让他亲眼看看我们正在为了消灭鸟妖而努力。</p>
+          <p> </p>
+          <p>早知道这样的话，一开始我就让您把证据带回来了……都是因为我的疏忽，让[%username]大人不高兴了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！</p>
+          <p> </p>
+          <p>看到您安然归来，我的心情就好多了。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_HarpyD_34_An]%的证据带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鸟妖的手镯。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，数量好像有点不够，还不能向提尔守护者证明什么。</p>
+          <p> </p>
+          <p>不好意思，请您一定要搜齐我说的数量。</p>
+          <p> </p>
+          <p>只有这样，我们才能说自己正在为消灭鸟妖而努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>早知道这样的话，一开始我就让您把证据带回来了……都是因为我的疏忽，给[%username]大人添麻烦了。</p>
+          <p> </p>
+          <p>消灭鸟妖掠夺者的证据就在这里，提尔守护者大人应该会相信我们了吧？</p>
+          <p> </p>
+          <p>多谢您保护了村庄的安全，维护了我们的面子。真不知道该怎么感谢您。这个虽然不算什么，不过请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_HarpyD_34_An]的手镯，然后交给[%dic:STR_DIC_N_Mirka]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">米尔卡说需要搜集消灭鸟妖的证据，给结界守护者提尔看。去搜集鸟妖掠夺者的手镯，然后交给米尔卡百夫长吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔卡百夫长因为不能拿出消灭鸟妖的证据而感到很为难，因为结界守护者提尔说如果不能解决鸟妖的骚乱，就要把伊拉西克村的执政官派到结界守护塔那边去。</p>
+          <p> </p>
+          <p>按照米尔卡的委托，消灭了鸟妖，把搜集到的证据带回去交给了他。米尔卡对此感到非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

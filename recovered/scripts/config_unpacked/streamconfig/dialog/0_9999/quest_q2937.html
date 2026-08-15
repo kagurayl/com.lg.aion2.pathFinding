@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好，我是古林布尔斯提。</p>
+          <p> </p>
+          <p>不好意思，能告诉我您尊姓大名吗？</p>
+          <p> </p>
+          <p>有些事情我需要确认一下，希望您能合作。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说出名字。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您的合作。请稍等一下。</p>
+          <p> </p>
+          <p>(查看名单)[%username]，[%username]……</p>
+          <p> </p>
+          <p>啊，在这里。上司给我下了命令，让我向通过修炼并达到一定能力值以上的勤奋的人发放奖励。</p>
+          <p> </p>
+          <p>[%username]，您也在奖励的对象之内。祝贺您。</p>
+          <p> </p>
+          <p>请您到黄金的会堂去见见内克伦伦。他会把奖励发放给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经和内克伦伦打过招呼了。您只要说是我让您去的就行了。</p>
+          <p> </p>
+          <p>剩下的事情就需要您自己看着办了。</p>
+         <p> </p>
+         <p>您问我是什么奖励。您自己过去确认一下不就行了。哈哈哈。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是无法理解。</p>
+          <p> </p>
+          <p>又不是让您去干什么，是让您去黄金的会堂领取奖励啊。</p>
+          <p> </p>
+          <p>您难道连这点路都不愿意走吗？</p>
+          <p> </p>
+          <p>您是不是知道奖励是什么，但还是不愿意去啊？ </p>
+          <p> </p>
+          <p>不管怎样，我已经跟您说了。您以后可别来埋怨我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你找我有什么事！</p>
+          <p> </p>
+          <p>除了放大箱子，我什么都不做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达古林布尔斯提的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是古林布尔斯提大人派你来的啊。 </p>
+          <p> </p>
+          <p>知道了。我马上为你放大箱子。</p>
+          <p> </p>
+          <p>干嘛那么吃惊？你连奖励是什么都不知道吗？</p>
+          <p> </p>
+          <p>看来古林布尔斯提大人是为了给你个惊喜，所以才没跟你说。</p>
+          <p> </p>
+          <p>不管怎样，祝贺你领到了奖励，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去黄金的会堂见见[%dic:STR_DIC_N_Shugo_DC1_4]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">古林布尔斯提说我努力地执行守护者的义务，有资格获得奖励。让我去黄金的会堂的内克伦伦那里领取奖励。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在匠人的会堂见到的古林布尔斯提说祝贺快速成长为守护者并去找内克伦伦获得奖励。</p>
+          <p> </p>
+          <p>把他的话转达给内克伦伦，说恭喜并扩展了背包。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

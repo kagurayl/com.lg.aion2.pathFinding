@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼……我还是感觉很不安。</p>
+          <p> </p>
+          <p>我想继续去神殿里寻找宝物，呐呐！</p>
+          <p> </p>
+          <p>多亏你的帮忙，凶恶的野兽减少了。但现在它们又出现了，这可怎么办啊，呐呐！</p>
+          <p> </p>
+          <p>你能再帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真是个好守护者，呐呐！我一眼就看出来了，呐呐！</p>
+          <p> </p>
+          <p>就像上次一样，只要帮我消灭凶恶的野兽，把岩石清理掉就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你继续帮我消灭[%dic:STR_DIC_M_PretorVioletD_36_An]和[%dic:STR_DIC_M_KuillusD_36_An]，呐呐。</p>
+          <p> </p>
+          <p>然后把通往神殿的路上的[%dic:STR_DIC_OBJ_BigRock_Q2551]清理掉。</p>
+          <p> </p>
+          <p>不知道那是从哪里滚下来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么！现在想溜了？</p>
+          <p> </p>
+          <p>我还说你是个好守护者，现在我把话收回！</p>
+          <p> </p>
+          <p>竟敢看不起我们奇多伦盗墓团！你一定会后悔的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你终于回来啦！去过绿雾峡谷了吗？</p>
+          <p> </p>
+          <p>帮我把岩石清理掉，把凶恶的野兽消灭干净了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">领取奖励。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，这是辛苦费。</p>
+          <p> </p>
+          <p>干嘛用这种眼神看我？嫌少吗？</p>
+          <p> </p>
+          <p>嫌少的话，一开始就别答应我啊。</p>
+          <p> </p>
+          <p>路过这里的时候，如果想起了我，可以随时来找我，呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除绿雾峡谷通往神殿的路上的障碍物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PretorVioletD_36_An]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KuillusD_36_An]([%5]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_OBJ_BigRock_Q2551]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF3_12]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除周围的障碍，让胡阿灵灵可以安心地进出神殿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡阿灵灵在绿雾峡谷里偶然发现的神殿里搜集宝物。</p>
+          <p> </p>
+	  <p>但是由于路上的岩石和周围的普雷尔侦察兵和黑甲切尔路斯，发掘工作遇到了困难，因此让我帮她清除障碍。</p>
+	  <p> </p>
+          <p>按照胡阿灵灵的委托清除了障碍，她违背了当初的约定，只给了我很少的辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

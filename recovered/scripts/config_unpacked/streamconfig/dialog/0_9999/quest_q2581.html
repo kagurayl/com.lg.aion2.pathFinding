@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，看来你比我想的还要固执。</p>
+          <p> </p>
+          <p>你觉得，我想要守护灯塔只是一种执着吗？</p>
+          <p> </p>
+          <p>你仍然觉得我应该回到奥德的怀抱，是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">回答说不知道。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，现在你的想法和之前的想法起了一点变化啊。</p>
+          <p> </p>
+          <p>其实，我无法离开这里最大的原因是因为水晶灯。点亮灯塔必须要有水晶灯，可却被人偷走了！</p>
+          <p> </p>
+          <p>如果灯塔能够发挥作用，我也可以放心的回到奥德的怀抱，可是现在因为担心，实在无法离开。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">告诉他港口都冻了，灯塔也没有作用了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谁又能知道在冰冻的大海对面，会不会有船正在苦苦寻找着灯塔上的火光呢？</p>
+          <p> </p>
+          <p>而且，不仅是大海，就算对附近的森林中迷路的人，灯塔对他们而言也是非常巨大的希望。</p>
+          <p> </p>
+          <p>"[%username], 你能答应我一个请求吗？"</p>
+          <p> </p>
+          <p>听说 [%dic:STR_DIC_M_ElementalWater4DF3_39_An]身上拥有 [%dic:STR_DIC_I_QUEST_2581a]。</p>
+          <p> </p>
+          <p>我想得到那个来用于灯塔照明，你愿意帮我找来吗？这是我迫切的愿望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，看来你还是非常了解我。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2581a]在阿姆斯尼尔冰湖的 [%dic:STR_DIC_M_ElementalWater4DF3_39_An]身上可以得到。</p>
+          <p> </p>
+          <p>去收集几个回来吧。</p>
+          <p> </p>
+          <p>虽然比水晶灯差点，不过也可以重新点亮灯塔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你会和之前遇到过的人不一样...</p>
+          <p> </p>
+          <p>你走吧。不要再对我说，让我回到奥德怀抱这类话。</p>
+          <p> </p>
+          <p>就像你不会改变想法一样，我的想法也不会改变。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（呆呆的望着已经封冻的大海。）</p>
+          <p> </p>
+          <p>啊，是去收集 [%dic:STR_DIC_I_QUEST_2581a]的守护者啊。</p>
+          <p> </p>
+          <p>怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将闪光的精灵石交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去你还没有去冰湖啊。</p>
+          <p> </p>
+          <p>是不是后悔接受了我的请求？</p>
+          <p> </p>
+          <p>我以为你会马上去找来，有点失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这下终于可以用灯光照亮远方了。</p>
+          <p> </p>
+          <p>谢谢你，[%username]。你真是个好人。</p>
+          <p> </p>
+          <p>收下吧，这是我拥有的一切。</p>
+          <p> </p>
+          <p>对于已经成为灵魂的我来说，这些没有任何意义，你就不要推辞了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_ElementalWater4DF3_39_An]，并为 [%dic:STR_DIC_N_Valboner]收集精灵石。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让巴尔波奈尔能够重新点亮灯塔，消灭霜雾精灵，并收集闪光的精灵石交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴尔波奈尔为了重新点亮灯塔的灯，需要到阿姆斯尼尔冰湖收集闪光的精灵石。</p>
+          <p> </p>
+          <p>答应他的请求，消灭霜雾精灵，并将收集好的精灵石交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

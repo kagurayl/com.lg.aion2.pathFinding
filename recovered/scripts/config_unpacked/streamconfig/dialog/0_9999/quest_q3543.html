@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人！我能拜托您一件事吗？</p>
+          <p> </p>
+          <p>不是别的，在我忙着清除僵尸的味道的时候，卡托斯溜到了结界塔附近，造成了混乱！</p>
+          <p> </p>
+          <p>结界塔可以由我们来守护，但问题是经过这里的居民。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须马上下去消灭掉卡托斯才行，但是我们又不能离开结界塔。</p>
+          <p> </p>
+          <p>您知道卡托斯多么危险吗？它们会用巨大的身子乱撞。</p>
+          <p> </p>
+          <p>对于居民们来说，生死就在一线之间。</p>
+          <p> </p>
+          <p>您能帮我们去消灭[%dic:STR_DIC_M_CatosRE_34_An]%吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您真是位热心的人。</p>
+          <p> </p>
+          <p>到结界塔下面去，应该就能看到[%dic:STR_DIC_M_CatosRE_34_An]%了。</p>
+          <p> </p>
+          <p>请悄悄地把它们消灭掉，不要让居民们感觉到危险。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有什么急事吧？</p>
+          <p> </p>
+          <p>那就没办法了。既然[%username]大人这么忙，我也没有理由一直抓着您不放。</p>
+          <p> </p>
+          <p>虽然心里不太舒服，但我也只能先执行好守卫结界塔的任务了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>果然不愧是[%username]大人。</p>
+          <p> </p>
+          <p>它们数量非常多，消灭起来一定很费劲吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>这下它们暂时应该不敢在附近出没了。</p>
+          <p> </p>
+          <p>多亏了您，居民们终于安全了，我心里的石头也终于放下了。</p>
+          <p> </p>
+          <p>这是我给您的答谢。请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_CatosRE_34_An]([%2]/28)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Rahelio]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭在结界塔附近引起骚乱的瞎眼卡托斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉赫利奥说卡托斯在结界塔附近引起了骚乱，给居民们的安全造成了威胁。</p>
+          <p> </p>
+          <p>于是帮他消灭了瞎眼卡托斯，让它们不敢再随便在结界塔附近出没。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

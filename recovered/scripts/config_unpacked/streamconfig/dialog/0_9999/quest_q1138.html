@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有两个孩子。</p>
+          <p> </p>
+          <p>名叫巴斯和赛琳，长得非常可爱。虽然不是亲兄妹，但是关系很好，每当看到这些我就很高兴。</p>
+          <p> </p>
+          <p>死去的弟弟看到这些应该也会很高兴的...</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">“孩子们在哪儿呢？”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们住在离这儿不远的托尔巴斯村里。 </p>
+          <p> </p>
+          <p>要塞这里时不时有克拉尔入侵，既危险又不是什么好玩的地方。</p>
+          <p> </p>
+          <p>所以我在执勤的时候把孩子们放在托尔巴斯村的加诺那儿了。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>啊，不好！忘了今天要去值夜了。</p>
+         <p> </p>
+         <p>忘了跟加诺说让他帮忙照看孩子到明天早上...</p>
+         <p> </p>
+         <p>[%username]！如果您不是很忙的话，您能帮我去和[%dic:STR_DIC_LA145]说一下吗？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，真是太感谢了。我还担心如果您拒绝的话我该去找谁呢。</p>
+          <p> </p>
+          <p>请您跟加诺说我今天值夜，让他帮我把孩子们照看到明天。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_LA145]应该在托尔巴斯森林。一般这个时候他都会去挖草药。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙。怎么办呢？</p>
+          <p> </p>
+          <p>巴斯和赛琳会一直等我的。</p>    
+          <p> </p>
+          <p>还能找得到其他人吗...</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里风景真是不错，不是吗？</p>
+          <p> </p>
+          <p>我原来生活在极乐世界。但是受不了那里乏味的生活，于是搬到了这儿。</p>
+          <p> </p>
+          <p>虽然没有华丽的建筑，但是却能享受心灵的闲暇，真的很幸福。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达佩里内斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是吗？佩里内斯也真不容易。</p>
+          <p> </p>
+          <p>我会好好照看赛琳和巴斯的，不要担心。</p>
+          <p> </p>
+          <p>我把这株草药挖出来就回去。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA145]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的佩里内斯转告加诺，让他照看巴斯和赛琳。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>独自抚养巴斯和赛琳的佩里内斯说经常接受加诺的帮助。</p>
+          <p> </p>
+          <p>他说由于需要值夜，不能去接孩子们，希望能帮他转告加诺。</p>
+          <p> </p>
+          <p>帮助忙碌的佩里内斯找到，转达了他的话。</p>      
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

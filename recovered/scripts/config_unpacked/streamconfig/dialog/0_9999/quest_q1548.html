@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了以防万一能不能请你在那里等一下呢？我怕再出现要拜托你的事。</p>
+          <p> </p>
+          <p>(仔细打量纽特的心脏。) </p>
+          <p> </p>
+          <p>天哪，不会吧！你看看这个！</p>
+          <p> </p>
+          <p>看见了吗？看没看见血管周围的伤口都愈合了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我长到这么大也算见过了各种生物，可是从来没见过恢复能力这么强的家伙。</p>
+          <p> </p>
+          <p>如果就这么放任不管的话，密林就会成为纽特的天下了。不，说不定整个天界都会成为纽特的天下。</p>
+          <p> </p>
+          <p>嗯，现在不是慌乱的时候。现在就请你去密林，打败[%dic:STR_DIC_OBJ_NeutSpawner_Q1548]。现在已经大敌当前了。</p>
+          <p> </p>
+          <p>而我就利用这段时间向要塞的佩兰托军团长大人请求支援。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过我要强调，要破坏[%dic:STR_DIC_OBJ_NeutSpawner_Q1548]。现在对这些家伙，哪怕能消灭掉一个都好。</p>
+          <p> </p>
+          <p>请先要打碎5个纽特的蛋。到时候要塞给我们的答复也该到了，之后的安排到时候再说。</p>
+          <p> </p>
+          <p>来，请一定要抓紧，在纽特被孵出前完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听明白我的话了吗？</p>
+          <p> </p>
+          <p>如果现在不马上去打碎[%dic:STR_DIC_OBJ_NeutSpawner_Q1548]%，纽特的数量就会以惊人的速度增长。</p>
+          <p> </p>
+          <p>请一定要听我的话，不要到时候后悔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你打碎纽特的蛋了吗？</p>
+          <p> </p>
+          <p>正好佩兰托军团长回信了，我正要读呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是[%username]，拜托您果然没错。</p>
+          <p> </p>
+          <p>真是辛苦你了。一路奔波肯定很辛苦，润一下喉吧。</p>
+          <p> </p>
+          <p>我就利用这时间看看军团长的回信。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_OBJ_NeutSpawner_Q1548]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Senemonea]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须阻止纽特的繁殖。翻遍普依艾密林，打碎了纽特的卵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞内莫内亚发现纽特的心脏恢复能力很强，非常惊讶。担心它们会成为天界安全的巨大威胁，请你去密林打碎它们的卵。</p>
+          <p> </p>
+          <p>打碎了纽特的卵，她说佩兰托军团长答复增援的书信也到了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

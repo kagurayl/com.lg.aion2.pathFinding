@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会的亲爱的亲人们！</p>
+          <p> </p>
+          <p>我收到神谕说冰脚部落正在发生奇怪的事情，经过确认我发现莱卡恩和龙族又重新开始接触，莱卡恩正在准备献给龙族的贡品。</p>
+          <p> </p>
+          <p>虽然我们派遣忠实的兄弟去消灭掉了和莱卡恩接触的龙族，但是我们还需要确认莱卡恩献给龙族的东西是什么。</p>
+          <p> </p>
+          <p>成为[%dic:STR_DIC_E_Da_25_35]%的[%dic:STR_DIC_E_Mentor]，和他们一起使用[%dic:STR_DIC_OBJ_DF2_FOBJ_Q47105a]%，就可以变身成龙族。</p>
+          <p> </p>
+          <p>让变身成德拉坎纽特护卫兵的[%dic:STR_DIC_E_Da_25_35]%和冰脚祭司长说话，他就会献上贡品。之后作为导师的[%username]%你把贡品箱里的东西拿回来就行了。</p>
+          <p> </p>
+          <p>事情顺利完成后，请你向[%dic:STR_DIC_N_Rancier]兄弟报告，领取兄弟会的奖励。</p>
+          <p> </p>
+          <p>相信你一定不会忘记，我们的任务是将亚特雷亚的一切命运引向正确的道路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>骗过对龙族心怀恐惧的莱卡恩非常容易，只要变身成龙族，他们就会服从。</p>
+          <p> </p>
+          <p>但是莱卡恩祭司长却不是那么容易欺骗的。</p>
+          <p> </p>
+          <p>变身成德拉坎纽特护卫兵的人必须和祭司长说话，就是因为这个原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出冰脚莱卡恩的贡品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去搜集莱卡恩的贡品吗？</p>
+          <p> </p>
+          <p>该不会是失败了吧？失败了的话，莱卡恩很可能会产生怀疑。</p>
+          <p> </p>
+          <p>希望您能顺利地完成马勒库坦兄弟会的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是莱卡恩准备的贡品？</p>
+          <p> </p>
+          <p>包装得还挺不错的嘛。必须把贡品送到总部去，仔细调查莱卡恩到底在打什么主意。</p>
+          <p> </p>
+          <p>[%username]大人，真是辛苦您了。这是给您的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_OBJ_DF2_FOBJ_Q47105a]变身成龙族，从[%dic:STR_DIC_E_Da_25_35]%从莱卡恩祭司长那里获得的[%dic:STR_DIC_OBJ_DF2_FOBJ_Q47105b]中取出祭品，然后交给[%dic:STR_DIC_N_Mephisto]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了马勒库坦兄弟会的信。到冰脚龙族祭坛变身成龙族，搜集莱卡恩祭司长供奉的贡品。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从马勒库坦兄弟会收到了一封信，让我到莫尔海姆的冰脚部落去执行兄弟会的任务。</p>
+          <p> </p>
+          <p>按照信中的指示，和莫尔海姆的修炼守护者一起化装成龙族，获得了贡品。回去报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

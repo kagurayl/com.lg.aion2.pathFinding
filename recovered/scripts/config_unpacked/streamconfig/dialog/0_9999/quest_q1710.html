@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间交给了你不少困难的任务。</p>
+          <p> </p>
+          <p>每次你都完成得非常出色，所以把任务交给你让我很放心。</p>
+          <p> </p>
+          <p>你执行得每一个任务，都会对我们天族在埃雷修兰塔扩张势力起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最后，我要委托你一项极其困难的任务。</p>
+          <p> </p>
+          <p>那就是清除[%dic:STR_DIC_E_Dgrade1]。1级兵是在欧比斯经历过无数战斗后生存下来的老兵。</p>
+          <p> </p>
+          <p>但是你也是和他们同样出色的老兵了。</p>
+          <p> </p>
+          <p>我想把这次的任务交给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和[%dic:STR_DIC_E_Dgrade1]战斗的时候，有可能会遇到危险。但是以你之前积累的经验，应该可以全身而退。</p>
+          <p> </p>
+          <p>好了，请你除掉他们，让整个埃雷修兰塔为你的名字而发抖吧。</p>
+          <p> </p>
+          <p>我在这儿等着你带回胜利的消息。</p>
+          <p> </p>
+          <p>啊，我忘了说注意事项了。在对付魔军1级兵的时候，一定要消灭和自己实力接近的人。</p>
+          <p> </p>
+          <p>实力差距太大的话，就没有任何意义了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好好地干嘛这样啊？</p>
+          <p> </p>
+          <p>但愿你不是陷入了厌战的情绪。</p>
+          <p> </p>
+          <p>在埃雷修兰塔取得胜利，是天族占领亚特雷亚的第一步。</p>
+          <p> </p>
+          <p>所以请你打起精神，让他们再一次瑟瑟发抖吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快过来，[%username]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_Dgrade1]全部除掉了吗？</p>
+          <p> </p>
+          <p>向我报告一下他们的实力如何吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得非常好。你不知道能和你一起做事，我有多么高兴。</p>
+          <p> </p>
+          <p>不仅战斗能力出众，同时又具备很强的使命感。你真是位找不出任何缺点的优秀的守护者。</p>
+          <p> </p>
+          <p>希望你以后能在埃雷修兰塔执行更多的任务，把天族带向胜利。</p>
+          <p> </p>
+          <p>来，这是这段时间辛苦的报答！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade1]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sakmis]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉魔军1级兵，削弱魔族势力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙克密斯说感谢我这段时间出色地完成了任务，并说最后要交给我一项极其重要的任务。</p>
+          <p> </p>
+          <p>他让我除掉魔族的老兵魔军1级兵。按照他的命令把他们除掉之后，他感谢我这段时间出色地完成了任务，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

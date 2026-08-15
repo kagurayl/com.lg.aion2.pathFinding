@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>小偷比鲁金因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_ShulackWi_52_An] </p>
+          <p></p>
+          <p> 2. 罪行：偷窃奥德</p>
+          <p></p>
+          <p> 3. 详情：在欧柏利斯克附近偷窃奥德，给天族战力造成巨大损失。偷窃奥德的目的尚未查明，有人看到他在黑暗术古悬崖村落附近沿着风路四处游荡。</p>
+          <p> </p>
+          <p>提供比鲁金的行踪的决定性情报，或直接将其除掉，找到偷走的奥德的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>这次您又完成了一件任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出找到的奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，还没找到他的下落吗？</p>
+          <p> </p>
+          <p>不久前，有人在黑暗术古悬崖村落看到了他。</p>
+          <p> </p>
+          <p>请您埋伏在那里。</p>
+          <p> </p>
+          <p>他一定会在自己熟悉的地方游荡，因此一定会在黑暗术古们生活的地方出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，被他偷走了这么多奥德。</p>
+          <p> </p>
+          <p>这么多的话，足够灵魂治愈师用一年的了。</p>
+          <p> </p>
+          <p>在这种缺少奥德的地区窃取奥德，是很严重的罪行。</p>
+          <p> </p>
+          <p>真是辛苦您了。请您把赏金拿走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集被[%dic:STR_DIC_M_LF4_DayQ_ShulackWi_52_An]偷走的奥德，然后交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以偷窃奥德的罪名而受到通缉的小偷比鲁金，找到了被偷走的奥德，然后向英吉斯温的赏金管理人报告。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

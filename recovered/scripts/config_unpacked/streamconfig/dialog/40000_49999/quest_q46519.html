@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有一件不错的工作，你想试试吗？</p>
+          <p> </p>
+          <p>报酬非常丰厚，是我特意留给你的。</p>
+          <p> </p>
+          <p>如果你感兴趣的话，我就给你看看内容。你想看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看委托书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭和袭击格尔克马洛斯计划有关的工作员夏伦，夺取指令书的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_Light_Wi_53] </p>
+          <p></p>
+          <p> 2. 位置：英吉斯温安格利浦火山口</p>
+          <p></p>
+          <p> 3. 详情：天族的工作人员，据确认和袭击格尔克马洛斯计划有牵连。据说身上携带着含有计划内容的指令书。</p>
+          <p> </p>
+          <p>渗透到英吉斯温，消灭工作员夏伦，抢回战斗指令书的人，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你一定会感兴趣的。</p>
+          <p> </p>
+          <p>委托书上写得很清楚，[%dic:STR_DIC_M_DF4_DaQ_Light_Wi_53]的生死并不重要。</p>
+          <p> </p>
+          <p>只要把他身上的战斗指令书抢回来就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？不感兴趣吗？</p>
+          <p> </p>
+          <p>这样的任务应该很划算啊？</p>
+          <p> </p>
+          <p>当然会有点危险，不过要想获得这么多的奖励，当然需要冒点险，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的战斗好像格外激烈，呐呐。</p>
+          <p> </p>
+          <p>越是这样的时候，无力的术古就应该躲在一边。</p>
+          <p> </p>
+          <p>不过查理隆下达的任务还是要拼命去完成的！</p>
+          <p> </p>
+          <p>好了，你快去完成查理隆的任务吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出战斗指令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去英吉斯温吗，呐呐？</p>
+          <p> </p>
+          <p>如果觉得太困难，可以放弃。但是这样就得不到一分钱……</p>
+          <p> </p>
+          <p>如果你想得到委托费，就快点去英吉斯温，从[%dic:STR_DIC_M_DF4_DaQ_Light_Wi_53]手上把指令书抢回来，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把指令书小心翼翼地放进怀里)辛苦你了，呐呐。</p>
+          <p> </p>
+          <p>指令书我会尽快交给委托人。</p>
+          <p> </p>
+          <p>因为事情非常紧急。</p>
+          <p> </p>
+          <p>来，这是你的那一份钱。我特地多给了一些，希望你能满意，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_DaQ_Light_Wi_53]，然后把搜集到的指令书交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从查理隆侦探事务所的格尔克马洛斯管理部职员那里收到了委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所的格尔克马洛斯管理部职员给了我一个委托书，让我去夺取工作员夏伦的战斗指令书。</p>
+          <p> </p>
+          <p>前往英吉斯温，找到并消灭了工作员夏伦，找到了指令书。回去格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

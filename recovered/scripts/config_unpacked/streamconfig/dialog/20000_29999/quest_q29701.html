@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>按照我的假说，塔梅斯很快就会崩溃。</p>
+          <p> </p>
+          <p>但是没有一个人愿意听我的话。</p>
+          <p> </p>
+          <p>听说[%username]大人曾经去塔梅斯执行过任务，您在里面看到发生地震或裂缝了吗？</p>
+          <p> </p>
+          <p>在地面上的熔岩层中，您有没有感觉到不稳定的气息呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们不能再袖手旁观了。无论如何，[%username]大人您都必须帮帮我们。</p>
+          <p> </p>
+          <p>塔梅斯的地基变得不稳定，是由于埋藏着大量矿石的中心部分无法继续支撑。</p>
+          <p> </p>
+          <p>本来那些天然的矿石为地形提供了支撑，但随着永不知足的龙族看守们不断掠夺矿石，问题变得越来越严重了。</p>
+          <p> </p>
+          <p>您能到矿石地层中去，消灭龙族幽灵吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔梅斯的倒塌，对我们所有人来说都是个问题。一旦地形崩塌，周围不知道会发生什么事。</p>
+          <p> </p>
+          <p>我们所在的这个地方，也会被地震的余波波及。</p>
+          <p> </p>
+          <p>请您去阻止矿石地层中的龙族幽灵。鸢族的祖先们会帮助您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔梅斯一旦崩溃，其余波将会造成很大的破坏。塔梅斯的地层对这里造成的影响要比想象的更大。</p>
+          <p> </p>
+          <p>必须立即采取措施，才能阻止发生更大的问题。请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从塔梅斯回来吗？关押龙族罪犯的地方，到底是个什么样的地方呢？</p>
+          <p> </p>
+          <p>是不是和我说的一样，地层看上去非常不稳定啊？啊，当然，一般的守护者是看不出来的。</p>
+          <p> </p>
+          <p>由矿物自然堆积起来的地形非常害怕人为的破坏。</p>
+          <p> </p>
+          <p>那些腐烂了几千年的龙族的幽灵当然不会知道这些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了鸢族元老之外，我还把报告书交给了极乐世界和伏魔殿，但意识到事情严重性的人却一个都没有。</p>
+          <p> </p>
+          <p>[%username]大人，您能聆听我的话，真的非常感谢。</p>
+          <p> </p>
+          <p>必须把破坏矿物的龙族全部消灭掉，我才能安心一点。真让人担心啊。</p>
+          <p> </p>
+          <p>今后如果您要去塔梅斯，请告诉我一声。在龙族幽灵们的暴行使地基崩溃之前。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭矿物堆积层的[%dic:STR_DIC_M_IDRaksha_2F_Spaller_56_Ae]%([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kenros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">坎洛斯说从地形学上来说，塔梅斯的地基存在崩溃的危险，为了阻止地基崩溃，必须消灭矿物堆积层的龙族幽灵。应该帮帮他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>建筑学者坎洛斯说从地形学上来说，塔梅斯的地基存在崩溃的危险，为了阻止地基崩溃，必须消灭矿物堆积层的龙族幽灵。</p>
+          <p> </p>
+          <p>听从他的劝告，去塔梅斯消灭了龙族幽灵。回去向他报告之后，他说希望今后能继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

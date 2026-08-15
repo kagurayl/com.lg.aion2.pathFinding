@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>炼金术达人的称号，是授予拥有出色的炼金术能力的守护者的光荣称号。</p>
+          <p> </p>
+          <p>[%username]，没有人比你更适合获得达人的称号了。</p>
+          <p> </p>
+          <p>你一直在努力地学习艰深的炼金术，现在已经拥有了出众的能力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>成为达人之后，应该以一颗正直之心为亚特雷亚的繁荣而继续努力。</p>
+          <p> </p>
+          <p>你也知道，炼金术比其他技能更接近生命的本质，因此坚定的信念是非常重要的。</p>
+          <p> </p>
+          <p>如果起了贪念的话，很可能会导致悲惨的结局。</p>
+          <p> </p>
+          <p>怎么样，你想获得炼金术达人的称号吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要获得达人的称号，需要获得[%dic:STR_DIC_N_Vidar]总司令官的许可。</p>
+          <p> </p>
+          <p>我给你写一封推荐信，你去毕达尔大人那里接受称号，并举行任命式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是你觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>如果你以后想成为名人，最好是接受达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我手头有点事情……</p>
+          <p> </p>
+          <p>如果不是非得找我，你可以去找斯卡迪或者克巴西日。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你达到了相当的境界，[%username]。</p>
+          <p> </p>
+          <p>你制作的药物应该可以给无数的人以生命和活力。</p>
+          <p> </p>
+          <p>希望你以后也能用炼金术向人们传达祝福。</p>
+          <p> </p>
+          <p>最后，你回去见见[%dic:STR_DIC_N_Honir]，向名人行礼，并重新请求学习炼金术。</p>
+          <p> </p>
+          <p>从现在开始，你可以使用达人的称号了。</p>
+          <p> </p>
+          <p>祝贺你，新的炼金术达人！ </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Vidar]举行达人的任命式。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受了炼金术名人豪尼尔成为达人的推荐。去找毕达尔总司令官举行任命式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>炼金术名人豪尼尔为我说明了成为炼金术的达人必须具备的心理素质。</p>
+          <p> </p>
+          <p>拿着他的推荐书到毕达尔总司令官那里举行了任命式，接受了称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

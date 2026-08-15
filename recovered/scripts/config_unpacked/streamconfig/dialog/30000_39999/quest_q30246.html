@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>作为辛苦的代价，我想送你一份小礼物。</p>
+          <p></p>
+          <p>在这之前，希望你和我做一个约定。</p>
+          <p></p>
+          <p>你能接受吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">点头。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">询问理由。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>希望你暂时不要把封印鲁德拉的地方告诉其他人。</p>
+          <p></p>
+          <p>我担心盲目地追求立功的人会解开鲁德拉的封印。</p>
+          <p></p>
+          <p>曾经和提亚马特战斗过的龙如果醒来，英吉斯温一定会陷入更大的混乱。</p>
+          <p></p>
+          <p>你明白我的意思吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你是怕我会害你吗？</p>
+          <p></p>
+          <p>这样约定，是为了你的安全和英吉斯温的和平。</p>
+          <p></p>
+          <p>希望你能接受我的请求。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你的性格还真够急的。我再说一遍。</p>
+          <p></p>
+          <p>封印鲁德拉的地方一定要跟其他人保密。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>很好，[%username]。</p>
+          <p></p>
+          <p>光是对付提亚马特一个就已经很麻烦了，要是鲁德拉也蹦出来的话，那就糟了。</p>
+          <p></p>
+          <p>拿着。你为天界付出了努力，这是我给你的礼物。</p>
+          <p></p>
+          <p>愿凯西内尔的祝福与你同在。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">和[%dic:STR_DIC_N_Cainus]对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">卡伊努斯代理人说需要约定一件事。去见见他，和他谈谈吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>卡伊努斯代理人说如果封印鲁德拉的地方传出去，可能会有急着立功的人解开鲁德拉的封印，因此叮嘱我一定要保密。</p>
+          <p></p>
+          <p>答应保密之后，他说这段时间辛苦了，并给了我一份礼物。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

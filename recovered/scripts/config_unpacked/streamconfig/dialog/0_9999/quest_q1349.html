@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上我一直觉得很奇怪。</p>
+          <p> </p>
+          <p>沙漠上有这么多的纽特在游荡，但是我却从来没看见过它们的幼崽。</p>
+          <p> </p>
+          <p>而且如果是甲壳类的话，应该需要蜕皮才能成长，不过我从来没看见过它们褪下来的皮。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然发现它们不像一般的甲壳类动物那样生长，但是却不知道它们是怎么成长的。</p>
+          <p> </p>
+          <p>而且我也从来没看见它们下蛋。</p>
+          <p> </p>
+          <p>因此对于它们是如何出生的，我也完全不知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过我终于知道了所有的真相。</p>
+          <p> </p>
+          <p>它们出生的时候专门有一个卵囊。军团士兵在出去巡逻的时候偶然发现了那个东西。</p>
+          <p> </p>
+          <p>而且它们出生的时候是以成体的形态出生的，所以也就看不见幼崽和褪下的皮了。</p>
+          <p> </p>
+          <p>现在既然找到了问题的根源，需要做的事情只有一个。</p>
+          <p> </p>
+          <p>那就是把[%dic:STR_DIC_OBJ_LF2_Neut_Spawner]除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地把任务接下来。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_LF2_Neut_Spawner]就在纽特的巢穴里。应该就在那个像个高塔的地方。</p>
+          <p> </p>
+          <p>有件事情必须注意。碰了卵囊的话，纽特们就会发疯了一样地涌过来。</p>
+          <p> </p>
+          <p>第一个发现它的军团士兵打算把卵囊除掉，但是遭到了纽特的攻击而受了重伤。</p>
+          <p> </p>
+          <p>所以不要一个人过去，最好是和同伴们一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事一个人做起来很难，要一下子答应并不容易。</p>
+          <p> </p>
+          <p>我也很理解。第一个发现它的军团士兵也不得不接受了灵魂治愈。</p>
+          <p> </p>
+          <p>如果您找到了一起执行任务的同伴，请您再回来找我。</p>
+          <p> </p>
+          <p>不管怎么看。[%username]大人都是最合适做这项工作的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。看上去您好像没受什么伤，您把卵囊顺利除掉了吗？</p>
+          <p> </p>
+          <p>请您告诉我到底怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是做得太好了！</p>
+          <p> </p>
+          <p>因为纽特的数量非常多，我还在担心您会不会失败呢。</p>
+          <p> </p>
+          <p>看来[%username]大人的实力还真是名不虚传啊。</p>
+          <p> </p>
+          <p>这是对您出色完成任务的一点谢意。请您收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉生产成体的[%dic:STR_DIC_OBJ_LF2_Neut_Spawner]([%2]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Trillian]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把纽特出生的巨大的卵囊除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然知道了纽特是从巨大的卵囊中以成体形态出生的，但是据说只要一碰卵囊，纽特们就会蜂拥而出，所以不容易除掉。</p>
+          <p> </p>
+          <p>于是接受特里利安的拜托，帮他除掉了纽特的卵囊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

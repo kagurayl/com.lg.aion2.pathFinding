@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(这本书表面很光滑，看上去很多人曾读过。)</p>
+          <p> </p>
+          <p>（标题是《完整的人类》，里面的内容好像是赞美雷帕尔。）</p>
+          <p> </p>
+          <p>（或许能够得到和革命团相关的重要情报。）</p>
+          <p> </p>
+          <p>（最好将这本书送到要塞军团长 [%dic:STR_DIC_N_Nerthus]那里。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止翻阅。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间你为贝鲁斯兰做出不小的贡献，十分感谢你你。</p>
+          <p> </p>
+          <p>多亏了你的帮助，不少龙族和不死族的问题得到了解决。</p>
+          <p> </p>
+          <p>那么，你这次又是为什么而来？</p>
+          <p> </p>
+          <p>我记得好像没有委托要交给你啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">把书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（翻看这本书）是从阿尔奎米亚研究所带来的吗？</p>
+          <p> </p>
+          <p>嗯...雷帕尔竟然成了第十三位主神？大概看了下，好像是赞美雷帕尔的内容。</p>
+          <p> </p>
+          <p>创造了面包和肉，还能让病倒在床上的人恢复健康？真是荒唐的内容。</p>
+          <p> </p>
+          <p>不过最近，加入雷帕尔革命团的人络绎不绝，看来有人受到书中内容的蛊惑...</p>
+          <p> </p>
+          <p>我想，最好还是把这送到伏魔殿的革命团研究专家 [%dic:STR_DIC_N_Kushar]那里。</p>
+          <p> </p>
+          <p>这对于研究革命团的虚假宣传对人们起到怎样的影响，以及如何向人们揭穿这些谎言应该会有很大帮助。</p>
+          <p> </p>
+          <p>拜托[%username]把这本书送到库夏尔那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎你，[%username]。</p>
+          <p> </p>
+          <p>看你的表情，不像是偶然路过这里的。</p>
+          <p> </p>
+          <p>是不是关于雷帕尔革命团的事情。</p>
+          <p> </p>
+          <p>好，有什么问题你可以尽管跟我说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，这本书是从阿尔奎米亚研究所带来的吗？</p>
+          <p> </p>
+          <p>让我看一下，标题是《完整的人类》。</p>
+          <p> </p>
+          <p>（翻看书中的内容）唔...说雷帕尔是第十三位主神？</p>
+          <p> </p>
+          <p>在之前审问过的几个雷帕尔革命团团员曾透露过他们有类似的信仰，不过没想到他们会将信仰写成正式的书籍...</p>
+          <p> </p>
+          <p>这是一本很有研究价值的书。可以对敌人的信仰体系做彻底剖析。</p>
+          <p> </p>
+          <p>如果是拿来送给我的，我就收下了。接下来，我会分析其中的内容，并把结论和真相发布到伏魔殿各处。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Nerthus]对话。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把书送到伏魔殿的 [%dic:STR_DIC_N_Kushar]那里。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在阿尔奎米亚研究所得到一本雷帕尔革命团的书。把书让贝鲁斯兰军团长内尔图斯先过目。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿尔奎米亚研究所得到了一本名为《完整的人类》的有关雷帕尔革命团的书。</p>
+          <p> </p>
+          <p>内尔图斯看过之后称，这是记载雷帕尔革命团信仰的书，会对研究他们有所帮助，并委托将书送到革命团研究专家库夏尔那里。</p>
+          <p> </p>
+          <p>把书送到位于伏魔殿知识会堂的库夏尔那里。库夏尔称，此书对他研究雷帕尔革命团很有帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

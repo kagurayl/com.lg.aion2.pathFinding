@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你见过巴尔波亚吗？最近好久没看见他人了。</p>
+          <p> </p>
+          <p>而且从几天前开始，我看见有陌生的人在他的农场出没。</p>
+          <p> </p>
+          <p>我担心是不是出了什么事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问巴尔波亚的情况。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他是个和蔼亲切的人。和我也很谈得来。</p>
+          <p> </p>
+          <p>我刚到这里来的时候，巴尔波亚帮了我很多忙。我能很快和这里的人打成一片，也是多亏了他。</p>
+          <p> </p>
+          <p>当然他也有些怪脾气。他非常喜爱树在田里的稻草人。还给它起了个名字叫诺拉。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>因此我很担心诺拉。会不会被野狼撕碎了...</p>
+          <p> </p>
+          <p>诺拉坏了的话，巴尔波亚会很伤心的。</p>
+          <p> </p>
+          <p>您能帮我一个忙吗？请您帮我到巴尔波亚的农场上去看看稻草人[%dic:STR_DIC_LA43]%是否安然无恙。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_LA43]%在前面的农场，应该不难找到。 </p>
+          <p> </p>
+          <p>帮我看看诺拉状态好不好，顺便看看农场发生了什么事情。</p>
+          <p> </p>
+          <p>虽然应该我去，但是农场上的那些人看起来好像有点危险。要是守护者大人您的话，即使他们一块儿上也动不了您一根汗毛。就拜托您了。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。跟您提这种要求是我的错。</p>
+          <p> </p>
+          <p>但愿巴尔波亚没事...</p>
+          <p> </p>
+          <p>难道...不会死了吧？</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要东张西望。</p>
+          <p> </p>
+          <p>诺拉会说话。因为诺拉是特殊的稻草人！</p>
+          <p> </p>
+          <p>你为什么来这儿？该不会是来偷农作物的吧？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述加诺的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加诺，主人的朋友！</p>
+          <p> </p>
+          <p>诺拉没事。但是主人他...</p>
+          <p> </p>
+          <p>那些流浪汉把主人带走了。</p>   
+          <p> </p>
+          <p>诺拉会等着主人。永远！</p>      
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见[%dic:STR_DIC_FLA24]的稻草人[%dic:STR_DIC_LA43]%</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">巴尔波亚心爱的稻草人诺拉被放置在农场。去看看诺拉是否安然无恙。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴尔波亚农场出现了奇怪的人，巴尔波亚也失踪了。</p>
+          <p> </p>
+          <p>和他关系很好的加诺担心巴尔波亚心爱的稻草人诺拉，让我去看看它是否安然无恙。</p>
+          <p> </p>
+          <p>诺拉说自己没事，很担心被奇怪的人带走了的主人。</p>     
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

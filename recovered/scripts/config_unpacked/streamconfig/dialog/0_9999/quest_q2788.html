@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们提格拉齐工房主要用龙族的皮革和牙齿作为材料制作物品。</p>
+          <p> </p>
+          <p>最好的东西是龙帝的皮革，但是却很难找到，加工起来也非常不容易。</p>
+          <p> </p>
+          <p>只有扎鲁蒙老师才能用龙帝的材料制作物品。</p>
+          <p> </p>
+          <p>因此我们一般使用德拉克纽特和纳加兰特的作为材料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问来这里的原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，那个，那个...</p>
+          <p> </p>
+          <p>(低着头)我还没有到可以使用德拉克纽特和纳加兰特的阶段。</p>
+          <p> </p>
+          <p>还只是使用德雷克来制作物品。我来这里是为了搜集德雷克的皮革。</p>
+          <p> </p>
+          <p>但是因为德雷克太凶恶了，到现在我一头都没有抓到！</p>
+          <p> </p>
+          <p>守护者的话，应该能很容易抓到。你能帮帮我吗？当然不管怎样，我一定会给你谢礼的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。你知道吗？以后我应该也能帮到你。</p>
+          <p> </p>
+          <p>那就请你帮我搜集[%dic:STR_DIC_M_Ab1_1231_drake_39_An]的厚皮革和[%dic:STR_DIC_M_Ab1_1231_drakeB_39_An]的薄皮革各5张。</p>
+          <p> </p>
+          <p>由于厚皮革和薄皮革的用途各不相同，因此一定要帮我各搜集5张。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我和扎鲁蒙老师说好了，这次的事情完成之后，他就会允许我使用德雷克皮革制作物品。</p>
+          <p> </p>
+          <p>所以你能重新考虑一下吗？</p>
+          <p> </p>
+          <p>只要你能帮我搜集到德雷克皮革的话，我就把身上所有的东西都给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>德雷克的反抗一定很激烈，果然不愧是守护者，这么快就搜集到了。</p>
+          <p> </p>
+          <p>快把皮革给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在你看来也许没什么区别，但是每个德雷克的皮革的质量是有所不同的。</p>
+          <p> </p>
+          <p>都说微妙的差异才能做出名作，所以请你能够注意一下。</p>
+          <p> </p>
+          <p>花多点时间也没关系，请你帮我搜集5张[%dic:STR_DIC_I_QUEST_2788a]和5张[%dic:STR_DIC_I_QUEST_2788b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，全部搜集到了啊。</p>
+          <p> </p>
+          <p>虽然亚特雷亚也有德雷克，但是和欧比斯的没法比。</p>
+          <p> </p>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>请你收下。这是说好的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Ab1_1231_drake_39_An]的厚皮革和[%dic:STR_DIC_M_Ab1_1231_drakeB_39_An]的薄皮革，然后交给[%dic:STR_DIC_N_Shugo_AB1_17]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集退化的德雷克和太古的德雷克的皮革交给努库灵，让他可以用作制作材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>努库灵说是来搜集制作物品所需的德雷克皮革的，但是因为德雷克太凶恶，至今还一张没有搜集到。</p>
+          <p> </p>
+          <p>帮助他搜集到了退化的德雷克和太古的德雷克的皮革，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

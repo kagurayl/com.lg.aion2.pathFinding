@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要做的事情太多了，分成两个人都嫌少。要塞方面也吃紧，还要照顾周边，真快忙疯了。</p>
+          <p> </p>
+          <p>好在托尔巴斯村有自卫团，还算幸运了。或许因为是居民们自发组织的团体，大家的劲头倒是非常地足。</p>
+          <p> </p>
+          <p>总向我们提出补给品的需求，有点伤脑筋，还好村子规模不大，并不需要太多。</p>
+          <p> </p>
+          <p>不过斯帕塔洛斯大人看好自卫团，命令我们在物资方面全力支援。感觉他个人很看好自卫团的发展。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次新到了防具和长剑，也顺便给托尔巴斯村留了一份。</p>
+          <p> </p>
+          <p>有自卫团团长[%dic:STR_DIC_LA24]的要求和斯帕塔洛斯大人的指示，肯定不能马虎了。</p>
+          <p> </p>
+          <p>那么，你能去托尔巴斯村将补给品包裹转交给阿波尔洛斯吗？</p>
+          <p> </p>
+          <p>可能现在他已经在等这批物资了呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，那么请把这个补给品包裹交给[%dic:STR_DIC_LA24]。</p>
+          <p> </p>
+          <p>已经说不清这是第几次物资支援了。也不知道是入侵村子的亚人种或野兽太多还是使用武器的人大脑太迟钝。</p>
+          <p> </p>
+          <p>反正既然是斯帕塔洛斯大人的命令，那就只好送了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办，运送补给品可不能随便交给陌生人。</p>
+          <p> </p>
+          <p>[%username]，要是你改变了想法，请随时来找我。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>早就听说奇内索斯大人派发补给品，怎么到现在还没有消息呢。</p>
+          <p> </p>
+          <p>也不知道到底什么时候能送来呢，明天有事情还得离开村子一天...</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递交补给品包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是奇内索斯大人送来的补给品，这下好了。</p>
+          <p> </p>
+          <p>能得到这么多优秀的武器，真的是太感谢了。</p>
+          <p> </p>
+          <p>我得赶紧把这个好消息告诉团员们。再次感谢你。 </p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把奇内索斯委托的补给品送到[%dic:STR_DIC_LA24]那里。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奇内索斯说斯帕塔洛斯对托尔巴斯村的自卫团赞许有加，并对他们的补给品需求非常支持。将补给品送到阿波尔洛斯手里。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇内索斯需要把补给品送到托尔巴斯村，因为找不到负责运送的合适人选，正在担心。</p>
+          <p> </p>
+          <p>将补给品送到了自卫团团长阿波尔洛斯那里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说发现雷帕尔革命团以可以把人变成守护者为诱饵，引诱和劫持人类事件的人是你，对吧？</p>
+          <p> </p>
+          <p>得知这一情况后，我们向躲藏在拉盖乌姆矿山里的雷帕尔革命团的秘密码头派遣了谍报员。</p>
+          <p> </p>
+          <p>现在他正伪装成革命团员，在那里执行任务。他说他们马上要从矿山码头移动到根据地去。</p>
+          <p> </p>
+          <p>但要想能顺利潜入，必须要得到其他人的协助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先去拉盖乌姆矿山和谍报员[%dic:STR_DIC_N_Stua]秘密地接头。斯图亚的身份一旦暴露，一切努力就都白费了。所以请你一定要格外小心。</p>
+          <p> </p>
+          <p>请你在他的帮助下，混入雷帕尔革命团，潜入雷帕尔革命团用来将人类改造成守护者的阿尔奎米亚研究所。</p>
+          <p> </p>
+          <p>潜入研究所之后，请你将[%dic:STR_DIC_OBJ_DF3_powerplant_Q2058]破坏掉，让革命团无法再以人类为对象进行实验。</p>
+          <p> </p>
+          <p>其他的事情，请你听从[%dic:STR_DIC_N_Stua]的指示。那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是来帮我的吗？我正在等您。</p>
+          <p> </p>
+          <p>执政官们正在待命，准备随时破坏阿尔奎米亚研究所。因此需要有人来告诉他们研究所的位置。</p>
+          <p> </p>
+          <p>我一开始本来想自己去的，但是想到我之前为了潜入雷帕尔革命团而付出的辛苦，这么快就暴露身份太可惜了。</p>
+          <p> </p>
+          <p>[%username]大人，麻烦您辛苦一趟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要前往阿尔奎米亚研究所执行任务，必须化装成雷帕尔革命团。</p>
+          <p> </p>
+          <p>要想避开他们的耳目，混上飞艇，就只能这么做。</p>
+          <p> </p>
+          <p>我帮您准备了雷帕尔革命团的团服。</p>
+          <p> </p>
+          <p>请您穿上之后，就马上出发。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SETPRO2">换上衣服。</Act>
+    </Selects>
+    <Voice file="Q2058-2.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也看到了你发射的信号弹。</p>
+          <p> </p>
+          <p>多亏了你，执政官们成功地破坏了革命团的研究所。</p>
+          <p> </p>
+          <p>谢谢你帮我完成了这么重要的任务。</p>
+          <p> </p>
+          <p>我早就知道你会成功，跟我说说详细的经过吧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在惊险的瞬间，多亏了斯图亚才涉险过关。</p>
+          <p> </p>
+          <p>斯图亚也因为[%username]你，而可以继续进行碟报活动。</p>
+          <p> </p>
+          <p>现在阿尔奎米亚研究所被破坏，[%username]你也破坏了研究设施，雷帕尔革命团应该无法继续以人类为对象进行实验了。</p>
+          <p> </p>
+          <p>这全都是托了[%username]你的福，我会向上面报告[%username]你的功劳。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Trista]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Stua]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">化装成革命团员，通过[%dic:STR_DIC_OBJ_DF3_Airportdoor_In]潜入[%dic:STR_DIC_SEN_DF3_SensoryArea_Q2058]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">通过[%dic:STR_DIC_OBJ_DF3_AlquimiaDoor_In]，潜入守护者生成实验室，破坏[%dic:STR_DIC_OBJ_DF3_powerplant_Q2058]([%11]/1)</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">逃出研究所，在研究所入口前用[%dic:STR_DIC_I_QUEST_2058a]向执政官发射信号</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Trista]报告</font></p></step>
+</steps> 
+          <p><font font_xml="quest_summary">指令：听说有和雷帕尔团有关的重要任务。去见见派遣到贝鲁斯兰要塞的沉默审判官特里斯塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特里斯塔说多亏我上次在帮帕埃鲁寻找父亲斯泰因的时候发现了雷帕尔革命团的秘密码头，他向那里派遣了谍报员。他说革命团打算把所有人送到阿尔奎米亚研究所去，让我潜入研究所执行任务。</p>
+          <p> </p>
+          <p>来到拉盖乌姆通道，见到了谍报员斯图亚，并化装成雷帕尔革命团员，乘坐飞艇潜入了研究所。按照命令，将研究所动力装置破坏掉后，逃出了研究所，并在入口处发射了信号弹。</p>
+          <p> </p>
+          <p>看到信号弹后，待命的执政官们通过飞行移动出动，在阿尔奎米亚研究所上空引爆了奥德炸弹，将研究所炸成了一片焦土。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

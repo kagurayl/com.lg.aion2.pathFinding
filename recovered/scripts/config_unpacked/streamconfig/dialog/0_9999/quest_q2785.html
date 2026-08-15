@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>时候到了。占领克罗坦要塞的时间到了。</p>
+          <p> </p>
+          <p>现在沉迷于要塞的安乐生活的敌人一定已经懈怠了。我们不能放过这样的机会，必须对他们发动攻击。</p>
+          <p> </p>
+          <p>以我们的兵力，这种方法应该是最好的选择。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在调动我们军团的兵力之前，让我借用一下你的力量。</p>
+          <p> </p>
+          <p>请你帮我去削弱敌人的防御力。</p>
+          <p> </p>
+          <p>不会很困难。你只要和志同道合的伙伴，把守卫敌人要塞的[%dic:STR_DIC_M_2785_all]清除掉一些就可以了。</p>
+          <p> </p>
+          <p>以你的实力，这样的事情应该不难做到。你愿意接受吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定会毫不犹豫地答应的。</p>
+          <p> </p>
+          <p>我看人的眼光一向不错。</p>
+          <p> </p>
+          <p>世界上一共有可以信任的人和不可以信任的人两种人。当然，你属于前者。</p>
+          <p> </p>
+          <p>你应该会有很多值得信任的同伴。请你和那些同伴们一起，去把[%dic:STR_DIC_M_2785_all]清除掉。祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经预想到了，所以并不觉得惊讶。</p>
+          <p> </p>
+          <p>执政官中也有很多胆小鬼。</p>
+          <p> </p>
+          <p>请你好好地想一想，自己是不是也是那种人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>战士中间，有很多性格急躁的人。</p>
+          <p> </p>
+          <p>但是，那是因为他们修养不够。</p>
+          <p> </p>
+          <p>像我这种经过长期修养的人，是非常有耐心的。所以你这么晚回来，我也什么都不会说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我果然没看错人。</p>
+          <p> </p>
+          <p>做得好。真了不起。</p>
+          <p> </p>
+          <p>以你的实力，已经充分具备了加入我们军团的资格。如果你想加入的话，请随时跟我说。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2785_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Rathgrid]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">和同伴们一起清除克罗坦要塞的驻军，削弱敌人的防御力，然后向拉德格里德百夫长报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉德格里德百夫长说现在要塞的敌人一定松懈了下来，他计划在不久之后展开正面攻击。</p>       
+          <p> </p>
+          <p>他让我在这之前，除掉一些要塞的驻军，推翻他们的防线。</p>  
+       <p> </p>
+       <p>按照他的指示，清除掉了要塞驻军并回去找到了他。他说非常了不起，说如果我愿意的话，可以加入他们军团。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

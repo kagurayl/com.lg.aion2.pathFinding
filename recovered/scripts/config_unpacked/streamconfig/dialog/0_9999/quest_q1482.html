@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是[%username]大人吗！</p>
+          <p> </p>
+          <p>真是太好了。索尼里姆真正找你呢。</p>
+          <p> </p>
+          <p>上次你帮了[%dic:STR_DIC_N_Sonirim]的忙，你还记得吗？</p>
+          <p> </p>
+          <p>索尼里姆一直记在心里放不下。他对那次非常后悔，希望您能给予他一次挽回的机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您到了魔界，一定受了不少苦。但是，请您再给[%dic:STR_DIC_N_Sonirim]一次机会。</p>
+          <p> </p>
+          <p>他这么努力，希望您能稍微再帮他一下。</p>
+          <p> </p>
+          <p>这段时间他也想了不少办法。</p>
+          <p> </p>
+          <p>他去天界的各地向前辈们学习，我想应该会有一点进步吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮助我。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Sonirim]真的很努力，我很想帮帮他。</p>
+          <p> </p>
+          <p>这次应该不会出问题了。</p>
+          <p> </p>
+          <p>他这段时间格外的努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意的话我也没办法。</p>
+          <p> </p>
+          <p>看来您还是对上次的事情耿耿于怀啊。</p>
+          <p> </p>
+          <p>不是谁都能从一开始就做得很好的，请您再给他一次机会吧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人。</p>
+          <p> </p>
+          <p>上次真的非常对不起。因为我您受苦了吧？</p>
+          <p> </p>
+          <p>谢谢您重新给我机会。</p>
+          <p> </p>
+          <p>这次我真的很有自信。我去亚特雷亚各地向其他瞬间移动的先辈们请教过。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大家都告诉我说关键是如何操纵奥德的力量。说如果能接近土之气息的话，应该会对我有所帮助。</p>
+          <p> </p>
+          <p>他们说如果能从腐土精灵那里搜集到土之精髓，然后带在身上的话，应该就可以成功。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去搜集[%dic:STR_DIC_I_QUEST_1482a]吗？</p>
+          <p> </p>
+          <p>在曼杜里森林里，有很多的[%dic:STR_DIC_M_ElementalEarth2_21_An]。您既然决定帮我的忙，就顺便把这件事情也拜托给您了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您回来啦。</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_I_QUEST_1482a]带回来了吗？</p>
+          <p> </p>
+          <p>有了那个的话，一切都会好起来的。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出土之精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找到了啊。真是谢谢您。</p>
+          <p> </p>
+          <p>把它包好放进怀里就行了吧？</p>
+          <p> </p>
+          <p>请您稍等一下。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没搜集到吗？</p>
+          <p> </p>
+          <p>对[%username]大人来说，也许不过是微不足道的拜托，但对我而言，却是关系到一生的事情。</p>
+          <p> </p>
+          <p>所以，请您一定要帮我去除掉腐土精灵，把[%dic:STR_DIC_I_QUEST_1482a]带回来。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把它放在了怀里。不知道为什么身体感觉很轻松，这次应该没问题。</p>
+          <p> </p>
+          <p>您说过要再给我一次机会的吧？这次您要去哪里呢？</p>
+          <p> </p>
+          <p>您跟我说，我马上就把你送到那边去。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">说要去普埃塔。</Act>
+      <Act href="HACTION_SETPRO3">说要去贝尔特伦。</Act>
+      <Act href="HACTION_SETPRO3">说要去极乐世界。</Act>
+      <Act href="HACTION_SELECT3_2">拒绝好意。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，这次我真的很有自信。</p>
+          <p> </p>
+          <p>您就再相信我一次。</p>
+          <p> </p>
+          <p>请您跟我说想去哪里？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">说要去普埃塔。</Act>
+      <Act href="HACTION_SETPRO3">说要去贝尔特伦。</Act>
+      <Act href="HACTION_SETPRO3">说要去极乐世界。</Act>
+      <Act href="HACTION_FINISH_DIALOG">拒绝好意。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您回来啦！</p>
+          <p> </p>
+          <p>这次的瞬间移动怎么样？我很想知道有没有成功。</p>
+          <p> </p>
+          <p>您到达目的地了吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告诉他结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？又去了莫尔海姆？</p>
+          <p> </p>
+          <p>这是真的吗？</p>
+          <p> </p>
+          <p>哈...真对不起。我还以为这次一定会成功的呢...</p>
+          <p> </p>
+          <p>我无话可说了。</p>
+          <p> </p>
+          <p>(转开头，避开视线。)</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sonirim]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">从[%dic:STR_DIC_M_ElementalEarth2_21_An]身上搜集精髓，然后交给[%dic:STR_DIC_N_Sonirim]</font></p>[%collectitem]</step>
+               <step><p visible="[%6]"><font color="[%7]">重新和[%dic:STR_DIC_N_Sonirim]对话</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">回天界去告诉[%dic:STR_DIC_N_Sonirim]结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奥内希姆斯让我给索尼里姆一个挽回失误的机会。去要塞2层见见索尼里姆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+       <notify progress="3"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">又到了魔界！最好赶快回去。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥内希姆斯说索尼里姆想挽回失误，让我再给他一次机会。</p>
+          <p> </p>
+          <p>去见了索尼里姆，他说听人说如果有土之气息的话，就能很好地操纵奥德，让我帮他搜集土之精髓。</p>
+          <p> </p>
+          <p>搜集到了土之精髓交给了他，他说会把我送到想去的地方去。</p>
+          <p> </p>
+          <p>但是这次到达的地方又是魔界的莫尔海姆。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

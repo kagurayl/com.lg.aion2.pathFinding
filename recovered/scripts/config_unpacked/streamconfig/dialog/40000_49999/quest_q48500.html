@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我叫马古隆。</p>
+          <p> </p>
+          <p>我是亚特雷亚数一数二的铜钱收藏家。</p>
+          <p> </p>
+          <p>到这里来，也是为了搜集铜钱。</p>
+          <p> </p>
+          <p>守护者，你叫什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说出名字。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你就是[%username]啊。</p>
+          <p> </p>
+          <p>我听说过很多关于你的事情……(上下打量)不过看上去好像不怎么强嘛。</p>
+          <p> </p>
+          <p>每到一个地方都能听到你的名字，我还以为你一定很凶呢。</p>
+          <p> </p>
+          <p>听说你做了很多事情，你加入结界守护团了吗？</p>
+          <p> </p>
+          <p>事实上我正在搜集结界证物，但是好像比我想象的困难。</p>
+          <p> </p>
+          <p>如果你有结界证物，就送给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要搜集10个铜钱作为一组，但是现在只搜集到了2个。</p>
+          <p> </p>
+          <p>请你帮我搜集8个结界证物。</p>
+          <p> </p>
+          <p>如果你能给我8个[%dic:STR_DIC_I_COIN_D_PROTECTION_01]，我就用特殊司令部证物和你交换。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出结界证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你一定是误会了，我不是让你白送给我。</p>
+          <p> </p>
+          <p>马古隆没有那么小气。</p>
+          <p> </p>
+          <p>如果你能给我结界证物，我就会用特殊司令部证物和你交换。</p>
+          <p> </p>
+          <p>怎么样？改主意了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把正在擦拭的铜钱藏起来)[%dic:STR_DIC_I_COIN_D_PROTECTION_01]这么快就都搜集到了？</p>
+          <p> </p>
+          <p>你还挺麻利的嘛。</p>
+          <p> </p>
+          <p>快给我看看。我要确认一下对不对。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出结界证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像没听清楚我的话。我再说一遍。</p>
+          <p> </p>
+          <p>我需要8个[%dic:STR_DIC_I_COIN_D_PROTECTION_01]。</p>
+          <p> </p>
+          <p>只要少了一个，交易就不成了。一定要记住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(逐一查看证物)全都是真的结界证物。</p>
+          <p> </p>
+          <p>呐，有时候会有假的证物。</p>
+          <p> </p>
+          <p>你遵守了约定，我也得遵守我的约定。</p>
+          <p> </p>
+          <p>(从箱子里拿出什么东西)拿着，这是特殊司令部证物。</p>
+          <p> </p>
+          <p>本来应该是10个结界证物换1个特殊司令部证物的，你的运气已经很不错了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_COIN_D_PROTECTION_01]，然后交给[%dic:STR_DIC_N_Shugo_Exchange_06]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">马古隆说正在搜集结界证物。应该去帮他搜集结界证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自称是铜钱收藏家的马古隆说自己正在搜集结界证物。</p>
+          <p> </p>
+          <p>把结界证物交给马古隆之后，他把特殊司令部证物送给了我，说是给我的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

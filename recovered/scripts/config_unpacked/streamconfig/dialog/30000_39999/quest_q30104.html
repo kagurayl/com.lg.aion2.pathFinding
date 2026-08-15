@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>荒废的乌达斯神殿的情况好像比想象的还要严重。</p>
+          <p> </p>
+          <p>这样下去的话，事情很可能会发展到无法控制的地步。</p>
+          <p> </p>
+          <p>查明他们的目的固然重要，但我想我们首先必须阻止他们进一步扩张势力。</p>
+          <p> </p>
+          <p>必须阻止他们进一步扩张势力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我向阿格拉乌洛斯大人征询了意见，他说最好的办法是消灭他们的头目。</p>
+          <p> </p>
+          <p>龙崇拜者们被完全洗脑，没有理性也没有思维，只会根据他们头目的命令行事。</p>
+          <p> </p>
+          <p>因此如果能把引导之房里的名叫[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]的头目消灭掉，应该就能让他们变成一团散沙。</p>
+          <p> </p>
+          <p>更惊人的是，龙信徒的头目会对普通人进行洗脑，把他们变成龙信徒。</p>
+          <p> </p>
+          <p>因此必须把他们的头目消灭掉。[%username]，您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经去过荒废的乌达斯神殿了，应该比我更熟悉吧？</p>
+          <p> </p>
+          <p>而且相信您也知道，龙信徒的问题是多么严重。</p>
+          <p> </p>
+          <p>我就不强调消灭[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]是多么的重要了。</p>
+          <p> </p>
+          <p>希望您能完成任务，顺利归来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道[%username]的人所处的情况和我不同。</p>
+          <p> </p>
+          <p>我是奉命行事的人，而[%username]大人则是按照自己的意志行事的人。</p>
+          <p> </p>
+          <p>但是我们全都在为了伏魔殿的事业而努力，不是吗！</p>
+          <p> </p>
+          <p>如果您真的在为伏魔殿而努力，希望您能重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多守护者问我，说龙信徒过去也是人类，为什么要消灭他们。</p>
+          <p> </p>
+          <p>老实说，这一点对我来说并不重要。</p>
+          <p> </p>
+          <p>重要的是我接到了消灭龙信徒的命令。至于消灭龙信徒是为了什么，不应该由我来判断。</p>
+          <p> </p>
+          <p>对了，您把狂暴的支配者马里卡消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了，[%username]。</p>
+          <p> </p>
+          <p>这样我暂时就不用担心了。</p>
+          <p> </p>
+          <p>但是这件事还没有结束，相信不用我说您也知道吧。</p>
+          <p> </p>
+          <p>希望您今后能继续帮我处理龙信徒的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Taustir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了阻止龙信徒扩张势力，决定消灭他们的头目。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔乌斯提尔说龙信徒的势力比想象的更大，必须消灭他们的头目。</p>
+          <p> </p>
+          <p>消灭了狂暴的支配者马里卡之后，他说和龙信徒的战争现在才刚刚开始，让我今后去帮助胡内乌斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

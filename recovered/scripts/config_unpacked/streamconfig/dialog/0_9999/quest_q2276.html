@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西葫芦虽然很爽脆，但是味道好像比想象得要差。</p>
+          <p> </p>
+          <p>不过既然尝了地上长的东西，就也想尝尝别的。</p>
+          <p> </p>
+          <p>我听说有一种叫做岩白菜的，和西葫芦长得比较类似的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是怎么知道有岩白菜的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是问生长在水里的塞伊兰是怎么知道这些的？ </p>
+          <p> </p>
+          <p>只不过是术古去过的地方比想象得要多罢了。 </p>
+          <p> </p>
+          <p>这个就说这么多，刚才说道[%dic:STR_DIC_G_vegetable_d_n_c_10c]了吧？</p>
+          <p> </p>
+          <p>这次你也能帮我去弄一点吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我就在这儿等你把[%dic:STR_DIC_G_vegetable_d_n_c_10c]拿回来。 </p>
+          <p> </p>
+          <p>据说岩白菜生长在喀尔巴利亚山岗和克里巴黛峡谷。</p>
+          <p> </p>
+          <p>据说和西葫芦长得很像，不要搞错，别把西葫芦带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的眼神，是在说我不做正经事儿吧。</p>
+          <p> </p>
+          <p>如果你不愿意帮我，你就走吧。</p>
+          <p> </p>
+          <p>别再我眼前晃悠，赶紧走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我想象的要慢啊。 </p>
+          <p> </p>
+          <p>干嘛吞吞吐吐的？</p>
+          <p> </p>
+          <p>不管怎样，只要你回来了就没关系。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_G_vegetable_d_n_c_10c]拿出来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出岩白菜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_G_vegetable_d_n_c_10c]在哪里？</p>
+          <p> </p>
+          <p>约定是用来遵守的。</p>
+          <p> </p>
+          <p>在给我把岩白菜拿来之前别在我面前出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（小小地咬了一口）嗯，味道比想象得要好。</p>
+          <p> </p>
+          <p>比西葫芦好多了。</p>
+          <p> </p>
+          <p>这样的话可以吃好久也不会腻了。</p>
+          <p> </p>
+          <p>来，这是为守约的人准备的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_vegetable_d_n_c_10c]，然后交给[%dic:STR_DIC_N_DF3_NPC_Irlein]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伊尔雷音说这次想吃岩白菜。采集岩白菜，然后交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊尔雷音说西葫芦的口感虽然好，但是没有想象的那么好，说这次想尝尝岩白菜。</p>
+          <p> </p>
+          <p>搜集岩白菜交给了他，他说味道很好，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

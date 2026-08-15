@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，我非常担心。那些在要塞外面游荡的天族。</p>
+          <p> </p>
+          <p>他们被我们赶了出去，现在一定恨得牙直痒痒吧？</p>
+          <p> </p>
+          <p>他们心里一定很想马上就把要塞攻下来。虽然不会像他们想象的那么容易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是要是觉得伤口不大就放着不管的话，总有一天会化脓。</p>
+          <p> </p>
+          <p>猛兽即使抓到了一头小的野兽，也不会觉得放心。</p>
+          <p> </p>
+          <p>所以我们决不能因为自己处于有利的地位而放松。天族仍然是有威胁的存在。</p>
+          <p> </p>
+          <p>为了以防万一，我们最好能事先把要塞外面的天族清除掉。</p>
+          <p> </p>
+          <p>您愿意帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去镇压要塞外面的天族据点。</p>
+          <p> </p>
+          <p>您可以独自趁着天黑潜入进去，也可以和同伴们一起从正面攻过去。</p>
+          <p> </p>
+          <p>不管什么方法都可以，只要把据点的守卫全部清除掉就行。</p>
+          <p> </p>
+          <p>没错，他们就是[%dic:STR_DIC_N_Bellona]、[%dic:STR_DIC_N_Battus]、[%dic:STR_DIC_N_Luptinai]、[%dic:STR_DIC_N_Bromius]和[%dic:STR_DIC_N_Vergil]。</p>
+          <p> </p>
+          <p>哦，对了。请您在天族身上的披风上割下一小块带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>这也不是什么太困难的事，不是吗？</p>
+          <p> </p>
+          <p>当然，可以代替您去的守护者还有很多。</p>
+          <p> </p>
+          <p>不过出于对您的尊重，我想再问您一次。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去好像很高兴，任务顺利完成了吗？</p>
+          <p> </p>
+          <p>报酬我已经准备好了。</p>
+          <p> </p>
+          <p>只要您把证据交给我，我马上就可以给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出守卫的披风碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不会是放弃了吧？我不是在催您，请不要觉得有什么负担。</p>
+          <p> </p>
+          <p>我绝对不是怀疑您的能力。</p>
+          <p> </p>
+          <p>虽然您说已经把5名天族除掉了，但是做事情总是需要证据。</p>
+          <p> </p>
+          <p>请您再去一趟，把[%dic:STR_DIC_I_QUEST_2789a]拿回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确实是守卫的披风碎片。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>您为魔族付出了如此大的努力，这是给您的礼物。</p>
+          <p> </p>
+          <p>这是我精心挑选的东西，希望您能满意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除天族据点的守卫，搜集[%dic:STR_DIC_I_QUEST_2789a]%，然后交给[%dic:STR_DIC_N_Ab1_1231_Quest_Da]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清除驻扎在德奇沙斯要塞外面的守卫贝洛娜、巴图斯、鲁普提耐、布洛米乌斯和贝尔吉里乌斯清除掉，并把披风碎片作为证据交给埃切尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃切尔说很担心要塞外的天族据点里的守卫，让我在他们行动之前把他们清除掉。</p>
+          <p> </p>
+          <p>按照他的指示，1清除掉了守卫贝洛娜、巴图斯、鲁普提耐、布洛米乌斯和贝尔吉里乌斯，并把搜集到的披风碎片交给了他。他说辛苦了，并给了我奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

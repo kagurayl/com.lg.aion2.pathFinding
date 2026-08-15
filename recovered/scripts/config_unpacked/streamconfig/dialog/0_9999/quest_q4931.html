@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李帕贝尔加拜托的事情其实是一种测验。</p>
+          <p> </p>
+          <p>为了在除了治愈星和护法星外的人中，找到能够履行命运的教诲的人。</p>
+          <p> </p>
+          <p>在倒地的同伴面前，你想到了什么？到底救不救他，这是你的一种选择。</p>
+          <p> </p>
+          <p>摆在人的命运面前的这种选择，就是命运的教诲。</p>
+          <p> </p>
+          <p>得到命运的教诲的人，总是会经历这种磨难。对于不是命运之神庙的弟子来说，这样的负担或许过于沉重了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>命运之神庙的弟子们现在处于困难之中。</p>
+          <p> </p>
+          <p>像现在这样的乱世，命运不可能选择所有的人。</p>
+          <p> </p>
+          <p>向一个人伸出援手，另一个人就会被放弃。想要拯救所有人，命运的弟子远远不够。</p>
+          <p> </p>
+          <p>所以，我们才会向你这样的[%userclass]寻求帮助。</p>
+          <p> </p>
+          <p>希望你在进入战场后，伸出命运之手，拯救他人。你完全有资格这么做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>像你这样的人才没有成为命运之神庙的弟子，我感到十分遗憾。</p>
+          <p> </p>
+          <p>现在你的神圣力已经完全属于[%userclass]，无法再学习复活技能。</p>
+          <p> </p>
+          <p>不过，希望你能在箱子里始终携带着[%dic:STR_DIC_I_SOULSTONE_RESURRECT]。</p>
+          <p> </p>
+          <p>为了不论何时何地，拯救和安慰那些等待援助的同伴。</p>
+          <p> </p>
+          <p>你也应该知道，复活精灵石的使用是不被认可的。如果不是危急时刻，希望[%username]你留着自己用。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的请求很过分吗？</p>
+          <p> </p>
+          <p>当然我没有强迫你做的权利。</p>
+          <p> </p>
+          <p>但是你不要忘记，你向别人伸出援助之手，就等于帮助自己，在你危难的时候，别人也会向你伸出援助之手的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当初我们都是一起的，因为不可能领悟所有教诲，所以才会分成各种神庙。</p>
+          <p> </p>
+          <p>继续修炼下去，总有一天你会领悟所有教诲的。</p>
+          <p> </p>
+          <p>[%username]，我说的意思你能理解吧？</p>
+          <p> </p>
+          <p>还有我拜托的事情没有时间限制，不管是什么时候，完成后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做的很好，[%username]。</p>
+          <p> </p>
+          <p>你做[%userclass]真是太可惜了。</p>
+          <p> </p>
+          <p>马勒库坦主神也会非常高兴的。</p>
+          <p> </p>
+          <p>以后在你精心修炼[%userclass]的时候，也不要忘记伸出命运之手。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_I_SOULSTONE_RESURRECT]，复活倒下的同伴([%2]/100)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Freyr]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按照普莱尔的话，使用复活精灵石，履行命运之神庙的教诲。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普莱尔表示命运之神庙的人手不足，希望我能帮助他们履行和传播命运的教诲。</p>
+          <p> </p>
+          <p>于是利用复活精灵石，救活了倒下的同伴。他对此表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾佩弥斯的脸色看上去不太好。</p>
+          <p> </p>
+          <p>经常咳嗽，吃不下饭。</p>
+          <p> </p>
+          <p>原因一定是那个东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为那些晚上偷偷溜进村庄的[%dic:STR_DIC_M_BATRe2_40_An]。他们是靠吃尸体维生的危险的家伙。</p>
+          <p> </p>
+          <p>同时也非常臭，臭得让人眼睛都睁不开。</p>
+          <p> </p>
+          <p>他们会传染疾病，所以必须在他们溜进村子之前把他们消灭掉。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是个勇敢的人！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_BATRe2_40_An]就聚集在梅德乌斯庄园东部。</p>
+          <p> </p>
+          <p>您过去就知道了，臭味真的非常厉害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不答应我也没关系。</p>
+          <p> </p>
+          <p>但是请不要靠近艾佩弥斯。</p>
+          <p> </p>
+          <p>我会一直盯着他的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呃！好臭！</p>
+          <p> </p>
+          <p>啊，你把黑雾蝠妖除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>事情办完之后，您能去洗个澡吗？我的艾佩弥斯因为您身上的臭味一直在皱眉头呢。</p>
+          <p> </p>
+          <p>[%username]大人您回来的时候，我还以为有黑雾蝠妖入侵呢。请您一定要好好洗个澡。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_BATRe2_40_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Hideros]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭晚上溜进村子的黑雾蝠妖。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>靠吃尸体维生的黑雾蝠妖每天晚上都会溜进村子，引起了不小的问题。</p>
+          <p> </p>
+          <p>西德罗斯说黑雾蝠妖可能会把疾病传染给艾佩弥斯，他为此很担心。</p>
+          <p> </p>
+          <p>消灭黑雾蝠妖之后回去找他，他说我身上很臭，让我去好好洗个澡。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

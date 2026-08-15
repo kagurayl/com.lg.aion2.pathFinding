@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你拿着[%mainslotitem]，应该是个很出色的[%userclass]吧。</p>
+          <p> </p>
+          <p>我也曾经拿着[%mainslotitem]冲锋陷阵过。 </p>
+          <p> </p>
+          <p>虽然很快就回来了，不，虽然很快被赶了出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？当然是因为我没有战斗的才能。我的直属百夫长看不下去，问我愿不愿意去后方做战斗支援工作，于是就把我送回来了。</p>
+          <p> </p>
+          <p>回到要塞之后，做过各种事情，最后好不容易才找到了适合自己性格的事情。那就是钓鱼。</p>
+          <p> </p>
+          <p>幸好有这个可以赚口饭吃，不过最近也变困难了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>河里的[%dic:STR_DIC_E_fish_n_c_10c]的数量太多了。</p>
+          <p> </p>
+          <p>波雷尔在不干净的水里也能正常生长，而且什么都吃，会把其他的鱼都吃掉。而且几乎没有天敌，所以数量一天比一天多。而其他鱼类的数量却在减少。</p>
+          <p> </p>
+          <p>所以，有时间的时候我会去捕捉波雷尔。如果您能帮我的话，应该就会快很多。怎么样？您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去捕捉[%dic:STR_DIC_E_fish_n_c_10c]吧。</p>
+          <p> </p>
+          <p>它们从这里到寂静沼泽都有分布，应该不难找到。</p>
+          <p> </p>
+          <p>哦，对了。请您把抓到的波雷尔带回来给我。卖到商店里还能赚点钱呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是没有钓鱼的自信吗？</p>
+          <p> </p>
+          <p>波雷尔不需要有多少技巧就能钓到的。</p>
+          <p> </p>
+          <p>好，我知道了。如果您改变了主意的话，请随时来找我。</p>
+          <p> </p>
+          <p>反正我一直会呆在这儿的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您的表情，[%dic:STR_DIC_E_fish_n_c_10c]应该抓到了吧？</p>
+          <p> </p>
+          <p>必须趁新鲜的时候才能卖出去，快把您抓到的波雷尔交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出波雷尔。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像没什么钓鱼的才能啊。</p>
+          <p> </p>
+          <p>我一会儿就抓到了10条[%dic:STR_DIC_E_fish_n_c_10c]了...</p>
+          <p> </p>
+          <p>不过第一次钓也难免。稍微慢一点也没关系，请您去捕捉波雷尔吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还挺能干嘛。</p>
+          <p> </p>
+          <p>稍微花点功夫的话，也许能干得比我还好，哈哈哈。</p>
+          <p> </p>
+          <p>哦，对了，我得把这个给您。请您收下吧。这是波雷尔的价钱。</p>
+          <p> </p>
+          <p>您来帮忙我真的很感谢。也不能光我一个人赚钱啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_E_fish_n_c_10c]，然后交给[%dic:STR_DIC_N_Lano]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">由于波雷尔数量的急速增长，河里生态系统的均衡被打破了。捕捉波雷尔交给拉诺吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉诺正在捕鱼维持生计，但是最近由于波雷尔的数量大量增加，导致其他鱼类逐渐消失，他为此很担心。</p>
+          <p> </p>
+          <p>到埃尔特内要塞附近的河流和寂静沼泽捕捉到了波雷尔，交给他之后，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

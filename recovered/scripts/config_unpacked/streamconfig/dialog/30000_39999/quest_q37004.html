@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是消灭[%dic:STR_DIC_W_LF2_SZ_C3]的[%dic:STR_DIC_M_37004all]%。</p>
+          <p> </p>
+          <p>虽然现在荒废了，但埃拉库斯地下神殿原本是显示主神威严的地方。极乐世界从很久以前就开始计划对其进行复原，但因为底层的魔物的妨碍，进展一直不太顺利。</p>
+          <p> </p>
+          <p>请把它们全部消灭掉。因为要对付守护像、精灵和德加尔比亚等各种生命体，所以务必和导师一起去执行任务。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您收到任务邮件了吧？您到[%dic:STR_DIC_W_LF2_SZ_C3]去过了吗？</p>
+          <p> </p>
+          <p>如果您找到了一个好的导师，和他一起去过地下神殿的话，现在心里一定很满足吧。</p>
+          <p> </p>
+          <p>不知道什么时候开始蚕食地下神殿的各种生命体散发出阴暗的气息。</p>
+          <p> </p>
+          <p>极乐世界预备神庙的所有人必须齐心协力，击退阴暗的气息，让那里重新变得神圣。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。总有一天，埃拉库斯地下神殿的阴暗气息会全部消失，那里会重新发出神圣之光。</p>
+          <p> </p>
+          <p>您出色地完成了今天的任务，这将会成为预备神庙所有人的榜样。</p>
+          <p> </p>
+          <p>希望您能和今天见到的导师保持良好的关系，这将对您有很大的帮助。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭[%dic:STR_DIC_W_LF2_SZ_C3]的 [%dic:STR_DIC_M_37004all]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vespasianus]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，和导师一起消灭埃拉库斯地下神殿的地下生命体。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去埃拉库斯地下神殿消灭了地下生命体，向贝斯帕西亚努斯报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

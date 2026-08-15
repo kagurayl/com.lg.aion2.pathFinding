@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你觉得自己的运气还行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不知道。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想趁这次机会，试试自己的运气如何吗？</p>
+          <p> </p>
+          <p>只是玩玩而已，用不着太紧张。</p>
+          <p> </p>
+          <p>你想试试吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">试试运气。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说不相信什么运气。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，很好。</p>
+          <p></p>
+          <p>只不过是玩玩，请不要太在意。</p>
+          <p></p>
+          <p>稍等一下，我来摇一下卦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，只是玩玩而已，你好像想得太多了。</p>
+          <p> </p>
+          <p>感兴趣的话，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，卦出来了。</p>
+          <p> </p>
+          <p>最后，必须把[%username]大人的愿望装进去，请把手轻轻地放在箱子上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把手放在箱子上。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好了！</p>
+          <p></p>
+          <p>和朋友们一起开箱子，会更好玩。</p>
+          <p></p>
+          <p>不管出来什么都不要吃惊，呵呵呵。</p>
+          <p> </p>
+          <p>箱子里得到的东西可以直接使用，也可以和旁边的[%dic:STR_DIC_N_event_Harmonan]老奶奶交换别的东西。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收下[%dic:STR_DIC_N_event_Metrano]给的占卜箱子</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说在鲁图斯那里可以获得测试运气的箱子。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和鲁图斯打了招呼之后，他把测试运气的占卜箱子送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

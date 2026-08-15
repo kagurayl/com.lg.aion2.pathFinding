@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然在[%username]你和克伊伦的帮助下，找到了进入阿德玛城寨的秘密通道的钥匙，但还有一个问题。</p>
+          <p> </p>
+          <p>你也应该想到了，我们还不知道秘密通道的位置。我还头一次听说有这种东西，怎么可能知道位置呢？</p>
+          <p> </p>
+          <p>但是不能就这样放弃，看来我还得继续麻烦[%username]你。</p>
+          <p> </p>
+          <p>你弄清楚了进入阿德玛城寨的方法，我相信你一定可以找到秘密通道的位置。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿德玛城寨是纳赫尔古城城主的领地，我想秘密通道应该就在纳赫尔古城的内部。</p>
+          <p> </p>
+          <p>还好纳赫尔古城附近有一个在那里生活了很长时间的塞伊兰。她的名字是萨赫努，她也许知道秘密通道在哪。</p>
+          <p> </p>
+          <p>塞伊兰虽然性格古怪、颐指气使，但只要能说服她，她就会把秘密通道的位置告诉你。</p>
+          <p> </p>
+          <p>请你从萨赫努那里打听到通道的位置，然后进入阿德玛城寨查看一下情况。如果找到了和污染有关的危险的东西，请你把它除掉。</p>
+          <p> </p>
+          <p>元老守护者汉斯对阿德玛城寨也很关心。他让我在任务结束之后，向他说明一下情况。</p>
+          <p> </p>
+          <p>那就全靠[%username]你了。拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2094-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者找我有什么事？</p>
+          <p> </p>
+          <p>我不想和自私、狡猾的人类说话。</p>
+          <p> </p>
+          <p>别来妨碍我。快滚！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问进入阿德玛城寨的秘密通道的位置。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想进入阿德玛城寨吗？</p>
+          <p> </p>
+          <p>如果是这件事的话，我还可以帮帮你。因为城寨的主人兰马尔克领主和我有很多过节。</p>
+          <p> </p>
+          <p>不过有件事你好像没搞明白。秘密通道非常窄。</p>
+          <p> </p>
+          <p>我偶尔会在古城和城寨周围看见小孩子。小孩子也许可以，但你的个头是进不去的。</p>
+          <p> </p>
+          <p>不过如果你能听我的话，我不仅可以告诉你秘密通道的位置，还可以帮你顺利地通过秘密通道。</p>
+          <p> </p>
+          <p>你先到贝鲁斯兰的阿鲁齐纳的宫殿去。去那里打猎[%dic:STR_DIC_M_ElementalWater4D_45_Ae]，搜集精灵之水滴。</p>
+          <p> </p>
+          <p>接下去的事情我之后再和你说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2094-2.ogg"/>
+  </HtmlPage>
+
+
+  <HtmlPage name="select2_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是想进入阿德玛城寨吗？以你现在的样子，即使我告诉了你位置，你也进不去。</p>
+          <p> </p>
+          <p>要想进入秘密通道，需要非常特殊的东西，那样东西只有在阿鲁齐纳的宫殿才能找到。</p>
+          <p> </p>
+          <p>如果你想得到我的帮助，就先去获得进入宫殿的资格。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿鲁齐纳的宫殿回来了吗？</p>
+          <p> </p>
+          <p>你按照我的命令，打猎海啸精灵，搜集到[%dic:STR_DIC_I_QUEST_2094a]了吗？</p>
+          <p> </p>
+          <p>好了，把东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出精灵之水滴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是人类！</p>
+          <p> </p>
+          <p>不仅自私、狡猾，而且不讲信用。</p>
+          <p> </p>
+          <p>虽然不想和你们交往，但我跟纳赫尔古城和阿德玛城寨存在过节，所以再给你一次机会。</p>
+          <p> </p>
+          <p>快去阿鲁齐纳的宫殿打猎[%dic:STR_DIC_M_ElementalWater4D_45_Ae]，搜集[%dic:STR_DIC_I_QUEST_2094a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，搜集到我要的东西啦。</p>
+          <p> </p>
+          <p>我必须给精灵之水滴注入魔力，请稍等一下。</p>
+          <p> </p>
+          <p>(把精灵之水滴拿在手中，开始念诵咒语。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人类的性子还真急。</p>
+          <p> </p>
+          <p>还没好，你再等等。</p>
+          <p> </p>
+          <p>(继续拿着水滴，念诵咒语。) </p>
+          <p> </p>
+          <p>好了，完成了。你先拿着这个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>通向阿德玛城寨的秘密通道在[%dic:STR_DIC_W_DF2B_SZ_B2_1]里面。据说有钥匙，应该可以顺利地进去。</p>
+          <p> </p>
+          <p>问题是通道非常窄，但是我已经帮你解决了。</p>
+          <p> </p>
+          <p>你现在得到了用精灵之水滴制造的德布里的精髓，你就可以变身成德布里，通过狭窄的秘密通道，进入阿德玛城寨。</p>
+          <p> </p>
+          <p>如果你有足够的自信，也可以通过正门[%dic:STR_DIC_OBJ_DF2a_AdmaDoor_In]进去。还可以变成德布里，通过门的缝隙进去。</p>
+          <p> </p>
+          <p>到达阿德玛城寨之后，变身就会解除，剩下的事情你就看着办吧。就是把城寨里的所有人全部杀掉都没关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO4">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>苏尔特队长说派[%username]你去阿德玛城寨调查。</p>
+          <p> </p>
+          <p>所以我一直在焦急地等待[%username]你的归来。</p>
+          <p> </p>
+          <p>你进去了吗？里面的情况怎么样？</p>
+          <p> </p>
+          <p>里面的人全都变成不死族了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT6_1">说明城寨的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿德玛城寨里面都是吸血鬼和女妖？他们只顾自己生活…五位主神一定发怒了。</p>
+          <p> </p>
+          <p>红色雷杰军团的比雷尔也在那里？而且是以小孩子的形态？</p>
+          <p> </p>
+          <p>阿德玛城寨周围出现的奇怪小孩原来就是比雷尔啊。</p>
+          <p> </p>
+          <p>你杀死变成本来模样的比雷尔之后，有个种子一样的东西蹦了出来，进入了[%username]你的身体... </p>
+          <p> </p>
+          <p>真让人不敢相信。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT6_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯…从你所说的情况推测，那个种子会不会是龙帝布里特拉种下的。</p>
+          <p> </p>
+          <p>而比雷尔变成小孩子的样子，好像也是受到了种子的影响。</p>
+          <p> </p>
+          <p>本以为布里特拉不得已撤退了…原来他早就有了污染布鲁斯特豪宁的计划。</p>
+          <p> </p>
+          <p>但是为什么要选择比雷尔呢…最好把这件事通知红色雷杰军团。</p>
+          <p> </p>
+          <p>告诉他们之后，请你再去告诉弓星和杀星的老师[%dic:STR_DIC_N_Sigyn]医生。因为是和红色雷杰军团有关的事情，必须告诉他一声。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO6">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2094-4.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来学习技能的啊。</p>
+          <p> </p>
+          <p>看你的表情，好像是有什么不寻常的事情。</p>
+          <p> </p>
+          <p>快跟我说说是什么事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？布鲁斯特豪宁被污染，是因为布里特拉的阴谋？</p>
+          <p> </p>
+          <p>为了达到目的竟然利用了红色雷杰军团的士兵？真是太狡猾了。</p>
+          <p> </p>
+          <p>必须告诉特里尼埃尔主神才行。要是他知道自己宠爱的红色雷杰军团的士兵变成了那个样子的话……</p>
+          <p> </p>
+          <p>不管怎样，真是辛苦你了。现在知道了原因，解决布鲁斯特豪宁的污染问题就会容易很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Surt]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">去阿鲁齐纳的宫殿搜集[%dic:STR_DIC_I_QUEST_2094a]，然后交给[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]</font></p>[%collectitem]</step>
+               <step><p visible="[%9]"><font color="[%10]">重新和[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]对话</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">进入[%dic:STR_DIC_E_Q2094]，消灭[%dic:STR_DIC_E_DF2B_Q2094][%14]</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Heintz]对话</font></p></step>
+               <step><p visible="[%18]"><font color="[%19]">敲打[%dic:STR_DIC_OBJ_DF2A_TombStoneCenter_Q2094]，召唤比尔凯的灵魂。</font></p></step>
+               <step><p visible="[%21]"><font color="[%22]">向[%dic:STR_DIC_N_Sigyn]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：苏尔特让我通过秘密通道进入阿德玛城寨。去了解一下详细的情况吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏尔特说既然找到了秘密通道的钥匙，让我找到通道所在的位置，进入阿德玛城寨。</p>
+          <p> </p>
+          <p>去向纳赫尔湖附近的塞伊兰萨赫努请求帮助，她说因为和阿德玛城寨有过节，所以破例帮我一次。</p>
+          <p> </p>
+          <p>萨赫努让我去阿鲁齐纳的宫殿搜集精灵之水滴，并用它制作出了德布里的精髓，帮助我通过了秘密通道。</p>
+          <p> </p>
+          <p>躲藏在阿德玛城寨里的人全部变成了不死族，曾经是红色雷杰军团士兵的比雷尔变成了小孩。杀死比雷尔之后，出现了一个奇怪的种子一样的东西。</p>
+          <p> </p>
+          <p>听完事情的经过后，海洛斯说一定是布里特拉在比雷尔身上种下了污染的种子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

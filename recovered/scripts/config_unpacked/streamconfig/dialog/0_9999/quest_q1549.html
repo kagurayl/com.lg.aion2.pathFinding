@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(表情凝重地叠起信。)</p>
+          <p> </p>
+          <p>哎呦，这可怎么办。佩兰托军团长拒绝了增援请求。</p>
+          <p> </p>
+          <p>他说因为次元之门的缘故，现在要塞的兵力也严重不足。也是，与纽特相比，现在对付龙族更紧要。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可是这边也不能放手不管，我们自己也要想点办法才行。</p>
+          <p> </p>
+          <p>为了以防万一，还是要准备好第二手准备。</p>
+          <p> </p>
+          <p>不是别的，主要还是消灭[%dic:STR_DIC_M_NeutL2Named_39_Ae]。纽特有着严密的阶级社会，大王如果不见的话，就会群龙无首。</p>
+          <p> </p>
+          <p>"问题是谁去干掉大王...[%username], 我想来想去除了你没有合适的人选了。你能担负起此重任吗？"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干掉[%dic:STR_DIC_M_NeutL2Named_39_Ae]，把[%dic:STR_DIC_I_QUEST_1549a]带给我。</p>
+          <p> </p>
+          <p>这样既能令纽特陷入混乱之中，又可以借此研究其组织结构，找到消灭它们的办法。</p>
+          <p> </p>
+          <p>大王纽坦就在[%dic:STR_DIC_W_LF3_SZ_018]。周围有不少护卫兵，你一定要叫上同伴一起去。</p>
+          <p> </p>
+          <p>那我就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有必要觉得抱歉。我也是一样。</p>
+          <p> </p>
+          <p>可是我这么信任你，你都拒绝了我，接下来我能拜托谁呢，真是让人为难啊。</p>
+          <p> </p>
+          <p>啊，要是早一点知道这个情况就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽坦的泥浆山谷那边一直传来嘈杂的声音。</p>
+          <p> </p>
+          <p>你成功干掉了大王纽坦吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纽坦的前腿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也看到了纽特心脏强大的恢复力了吧？</p>
+          <p> </p>
+          <p>就这样你还没认识到情况有多危急？</p>
+          <p> </p>
+          <p>快去干掉[%dic:STR_DIC_M_NeutL2Named_39_Ae]，把[%dic:STR_DIC_I_QUEST_1549a]带来!</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直担心你失败呢，没想到你最后还是成功了。</p>
+          <p> </p>
+          <p>你已经尽了全力，现在该我上了。</p>
+          <p> </p>
+          <p>它们现在一片混乱，我要趁此机会找到消灭纽特的办法。在它们选出新的大王之前，赶紧结束战斗。</p>
+          <p> </p>
+          <p>啊，对了，这些是给你的酬劳，辛苦你了。真是太谢谢你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">抓到[%dic:STR_DIC_M_NeutL2Named_39_Ae]，把拿到的东西带给[%dic:STR_DIC_N_Senemonea]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了能让塞内莫内亚扫荡纽特，干掉了大王纽坦，带回了它的前腿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩兰托军团长回信说要塞兵力不足，不能派遣增援军。</p>
+          <p> </p>
+          <p>塞内莫内亚说不能坐以待毙，请求你干掉大王纽坦，令纽特陷入混乱。</p>
+          <p> </p>
+          <p>按照她的要求，干掉了大王纽坦，带回了它的前腿。她给了你谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！[%username]，你来得正好。</p>
+          <p> </p>
+          <p>我刚好发现了一些奇怪的东西。</p>
+          <p> </p>
+          <p>你看看这个。这是派到因特尔蒂卡的革命团研究基地监视基地去的西风的守护者内里森送来的报告书，里面有一样奇怪的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内里森会周期性地发回雷帕尔革命团动向报告书，其中如果有军事方面的重要事项的话，就会请我进行研究。</p>
+          <p> </p>
+          <p>但是这次却附加了奇怪的资料。</p>
+          <p> </p>
+          <p>他在旁边标明这是在雷帕尔团员撕碎扔掉后被他捡到的，好象是革命团内部的报告书。</p>
+          <p> </p>
+          <p>可以看到“人类改造实验基本完成...”的字样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这好像不是普通的报告书。很可能是革命团集中全力研究的研究报告书。</p>
+          <p> </p>
+          <p>而且不幸的是，那项实验好像已经基本完成了。</p>
+          <p> </p>
+          <p>但是光凭这张纸片无法知道详细的情况。必须在大事发生之前，了解事件的全貌...</p>
+          <p> </p>
+          <p>所以，如果你能把报告书剩下的部分找到的话就好了。</p>
+          <p> </p>
+          <p>我虽然也可以拜托内里森，但是还要在中间传话，会浪费很多的时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看内里森的报告中说，这张纸片实在因特尔蒂卡的革命团研究基地捡到的。</p>
+          <p> </p>
+          <p>他说是在[%dic:STR_DIC_M_LabPo_LehparBioWi_41_An]、[%dic:STR_DIC_M_Lab_LehparAs_42_An]和[%dic:STR_DIC_M_LabPo_LehparBioPr_42_An]走过的地方捡到的。你去把他们杀死，然后搜索有没有报告书。</p>
+          <p> </p>
+          <p>幸好捡到的部分下面有页码显示，报告书一共好像有三张。你在搜集的时候要注意，第一张、第二张和第三张一张都不能少。</p>
+          <p> </p>
+          <p>我想他们应该是一个人保管一张。</p>
+          <p> </p>
+          <p>那就拜托了。我相信[%username]你一定可以找到报告书的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然按照正常的程序，我应该去拜托内里森。</p>
+          <p> </p>
+          <p>但是要先和内里森的上司说，然后再向他传令，然后报告书再送到我的手里，不知道到底需要多长时间。</p>
+          <p> </p>
+          <p>[%username]你不知道，西风的守护者做事的流程是多么的繁琐。</p>
+          <p> </p>
+          <p>不过这是我的事情，我也不能非得逼着让不愿意干的人去干。明白了，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>这段时间我觉得不能在这儿干等，所以了解了一下。</p>
+          <p> </p>
+          <p>他们在革命团研究基地进行活体实验好像已经有一段时间了。</p>
+          <p> </p>
+          <p>但是好像谁也不知道以人类为对象的实验到底进展到哪一步了。</p>
+          <p> </p>
+          <p>所以我在这儿迫不及待地等着你把研究报告书带回来。如果找到了的话，就快把它给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出研究报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样！你还没去因特尔蒂卡吗？</p>
+          <p> </p>
+          <p>早知道你这么磨蹭的话，我还不如拜托内里森呢。</p>
+          <p> </p>
+          <p>我是相信你才会拜托你的，没想到你竟然不守约定...</p>
+          <p> </p>
+          <p>现在再去找别的守护者已经来不及了，请你快去把研究报告书找回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我看看...第一张、第二张、第三张...</p>
+          <p> </p>
+          <p>都找齐了！</p>
+          <p> </p>
+          <p>虽然有几处文字被删掉了，但要了解大致的内容还是没有问题的。</p>
+          <p> </p>
+          <p>请稍等一会儿。我马上看一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_LabPo_LehparBioWi_41_An]、[%dic:STR_DIC_M_Lab_LehparAs_42_An]和[%dic:STR_DIC_M_LabPo_LehparBioPr_42_An]，把获得的报告书交给[%dic:STR_DIC_N_Xenophon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">科赛诺芬说附在革命团动向报告书中的纸片好象是和人体试验有关的报告书的一部分。这是非常重要的事件，去寻找其余的部分吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>科赛诺芬说西风的守护者内里森送来的革命团动向报告书中附加的纸片好象是革命团的研究报告书的一部分。</p>
+          <p> </p>
+          <p>上面写着人类改造实验已经基本完成的内容。</p>
+          <p> </p>
+          <p>他说必须在更大的事件发生之前，了解革命团的阴谋。于是前往革命团研究基地找到了报告书的其余部分。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

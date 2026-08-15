@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，特制排骨蔬菜汤终于完成啦！</p>
+          <p> </p>
+          <p>闻到这震撼性的香味了吗？</p>
+          <p> </p>
+          <p>离开饭还有一段时间，这之前先给 [%dic:STR_DIC_N_DF3_NPC_BabaKun]送去一份。</p>
+          <p> </p>
+          <p>这么美味的料理，不提前给巴巴昆送去的话，他肯定吃不到了。</p>
+          <p> </p>
+          <p>信不信？我们的军团士兵会把这锅汤吃得一滴都不剩。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，要是我亲自送过去，我怕周围的人会说三道四。</p>
+          <p> </p>
+          <p>说不定会因我给姆格尔做料理而取笑我呢。</p>
+          <p> </p>
+          <p>同伴们知道这件事，可能也会埋怨我。毕竟现在我们自己的口粮都紧缺，还给别人送，确实不太好。</p>
+          <p> </p>
+          <p>所以，想来想去，还是要拜托您。能不能替我把汤送到 [%dic:STR_DIC_N_DF3_NPC_BabaKun]那里呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，您真是我的幸运星。</p>
+          <p> </p>
+          <p>有人问起的话，您就说是您自己吃的。</p>
+          <p> </p>
+          <p>绝对不能说是我给 [%dic:STR_DIC_N_DF3_NPC_BabaKun]做的料理喔！</p>
+          <p> </p>
+          <p>那么拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，您拒绝吗。</p>
+          <p> </p>
+          <p>这真是...要在汤变凉之前送过去啊...</p>
+          <p> </p>
+          <p>可除了您之外，我也没有别人可以拜托，您能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这是什么味道？</p>
+          <p> </p>
+          <p>好香啊，喵喵！</p>
+          <p> </p>
+          <p>难道是波文给我做的料理？</p>
+          <p> </p>
+          <p>波文答应给我做好吃的，可到现在还没有消息，喵喵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将特制排骨蔬菜汤交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，等等...先别和我说话。让我先尝一口，喵喵。</p>
+          <p> </p>
+          <p>（正在品尝。）</p>
+          <p> </p>
+          <p>（瞬间仿佛丢了魂一样，飘飘欲仙。）</p>
+          <p> </p>
+          <p>喵喵！太好吃啦！</p>
+          <p> </p>
+          <p>好幸福呀！要是每天都能吃到这么好吃的东西，那该多好呀，喵喵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_DF3_NPC_BabaKun]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将波文制作的特制排骨蔬菜汤交给巴巴昆。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>将波文制作的特制排骨蔬菜汤交给巴巴昆。巴巴昆品尝之后飘飘欲仙，赞不绝口。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

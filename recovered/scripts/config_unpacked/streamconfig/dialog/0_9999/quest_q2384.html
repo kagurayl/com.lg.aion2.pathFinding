@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么想，我都觉得莱图太过分了，呐呐。</p>
+          <p> </p>
+          <p>我来这里寻找宝物，结果中了诅咒，成了这个样子！不能从这里出去，而且只能在晚上出现！</p>
+          <p> </p>
+          <p>这样还让我给他绷带？</p>
+          <p> </p>
+          <p>真是太过分了，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，要送过去的绷带已经准备好了，呐呐。</p>
+          <p> </p>
+          <p>但是有些给这里的可怕的野兽抢走了，也有些掉了。</p>
+          <p> </p>
+          <p>纱布绷带我看见被[%dic:STR_DIC_M_HellhoundD_30_An]叼走了。棉绷带好像在碰到[%dic:STR_DIC_M_SuccubusGuard_30_Ae]的时候掉了。压迫绷带在被[%dic:STR_DIC_M_MaidengolemD_30_Ae]追的时候掉了。</p>
+          <p> </p>
+          <p>啊啊，我也不知道。难道莱图还能追到这里来吗？</p>
+          <p> </p>
+          <p>所以，如果实在着急的话，你就自己去找吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_2384a]只要捕捉吞火地狱犬就能找到。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2384b]被忘却之德加尔比亚抢走了，呐呐。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2384c]在废墟潘多兰盖伦那里。</p>
+          <p> </p>
+          <p>你帮我各找到3个交给莱图，他就应该没话说了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你不愿意帮我的话，我就不知道该怎么办了，呐呐。</p>
+          <p> </p>
+          <p>反正我被关在神殿里，白天也不出现，莱图怎么能找得到我。</p>
+          <p> </p>
+          <p>他愿意过来，就过来吧，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说莎拉琳琳中了诅咒，被关了起来，那是真的吗？</p>
+          <p> </p>
+          <p>不过说好的绷带，你应该带回来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出绷带。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莎拉琳琳说没办法拿出绷带？</p>
+          <p> </p>
+          <p>这怎么行...你去跟她说，这样的话，即使她以后出来了，也别想踏入伊拉西克村一步。</p>
+          <p> </p>
+          <p>请您快去把我订购的绷带拿回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被关了起来还准备好了绷带啊。</p>
+          <p> </p>
+          <p>不过她也别无选择。如果不想和伊拉西克村断绝来往的话。</p>
+          <p> </p>
+          <p>谢谢您帮我把绷带拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_HellhoundD_30_An]、[%dic:STR_DIC_M_SuccubusGuard_30_Ae]和[%dic:STR_DIC_M_MaidengolemD_30_Ae]那里找回绷带，然后交给[%dic:STR_DIC_N_Letum]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">莎拉琳琳说原来打算交给莱图的东西有些掉了，有些被抢走了。去捕捉周围的生命体，把绷带找回来吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莎拉琳琳说被关在神殿里之后，绷带被周围的生命体抢走了，说如果真的需要的话，就自己去找。</p>
+          <p> </p>
+          <p>于是去捕捉地狱犬、德加尔比亚和潘多兰盖伦，找回绷带后交给了莱图。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼大事不好了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]全部用光了。没有蘑菇的话，包子就会不好吃。</p>
+          <p> </p>
+          <p>包子不好吃的话，扎马努克主人就会发火。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">让他去搜集蘑菇。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]生长在卡里顿村落下面的峡谷和迪尔莫伊峡谷里。</p>
+          <p> </p>
+          <p>那里很危险。那里很远。布洛尼去不了那里，也没有时间。</p>
+          <p> </p>
+          <p>有谁帮我搜集蘑菇的话，布洛尼会送他大礼。</p>
+          <p> </p>
+          <p>守护者，你想得到礼物吗？我会给你礼物，你帮我去搜集[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]生长在峡谷下面。</p>
+          <p> </p>
+          <p>扎马努克主人喜欢蘑菇，需要多采一点。</p>
+          <p> </p>
+          <p>布洛尼会在这段时间准备好肉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(突然切得更快了)布洛尼好害怕。</p>
+          <p> </p>
+          <p>扎马努克主人发起火来很可怕。</p>
+          <p> </p>
+          <p>布洛尼不想挨打，呜呜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼在等守护者。</p>
+          <p> </p>
+          <p>我等了好久。肉已经加工好了。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]给我。我把礼物给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出大伞盖蘑菇。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用力挥着刀)守护者很坏。</p>
+          <p> </p>
+          <p>扎马努克主人刚才来过了，问包子什么时候做好。</p>
+          <p> </p>
+          <p>快把[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]拿回来。</p>
+          <p> </p>
+          <p>这些肉已经不新鲜了，布洛尼会去找新鲜的肉。</p>
+          <p> </p>
+          <p>别担心。肉很容易找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼很高兴。现在可以做包子了。</p>
+          <p> </p>
+          <p>扎马努克主人很高兴。布洛尼得到了礼物。</p>
+          <p> </p>
+          <p>守护者也得到礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]，然后交给[%dic:STR_DIC_N_LF2A_NPC_Jabala]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">包子的主要材料之一大伞盖蘑菇没有了。去峡谷里搜集大伞盖蘑菇，然后交给料理师扎巴拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎马努克旅馆的料理师扎巴拉让我帮着搜集大伞盖蘑菇。</p>
+          <p> </p>
+          <p>说是扎马努克喜欢的蘑菇，必须加到包子里。</p>
+          <p> </p>
+          <p>搜集到了只生长在峡谷里的大伞盖蘑菇，扎巴拉说终于可以做包子了，并给了我一件小礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

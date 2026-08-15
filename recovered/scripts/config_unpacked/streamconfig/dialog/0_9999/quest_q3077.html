@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人为什么会来到这里呢？</p>
+          <p> </p>
+          <p>以您的实力，欧比斯的战场上立功岂不是更好？</p>
+          <p> </p>
+          <p>难道也在像我一样在找人？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问在寻找什么人。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您问我在寻找谁？我不是来寻找亲人，而是来杀人的……</p>
+          <p> </p>
+          <p>那个杀害我儿子的家伙！哎……事实上，我连那个人是男是女也不确定。名字、相貌也都不知道。</p>
+          <p> </p>
+          <p>我只知道，那家伙拥有一双翅膀。</p>
+          <p> </p>
+          <p>在听到儿子身亡的消息后，我悲痛地跑到现场，可是什么也没有发现。</p>
+          <p> </p>
+          <p>(从怀中拿出羽毛) 最后，我在孩子的手中发现了这根羽毛。他直到死还紧紧的抓着的羽毛。</p>
+          <p> </p>
+          <p>后来，我就放弃了守卫的工作，成为了赏金猎人。为了寻找拥有和这根羽毛一样翅膀的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有没有进展。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果事情有眉目，我也不会来到这种地方。已经快十年了，可还是找不到有关那个家伙的线索。</p>
+          <p> </p>
+          <p>听说，泰奥勃莫斯这里是罪犯的天堂。因此，我千里迢迢跑到这里，希望能找到仇人……</p>
+          <p> </p>
+          <p>首先，我打算从同样拥有翅膀的鸟妖开始调查。不久后，我发现泰奥勃莫斯原来有两处鸟妖栖息地。</p>
+          <p> </p>
+          <p>我想调查分别那两处地方，可是一个人实在忙不过来……您愿意帮我调查其中一个地方吗？当然我会支付给您足够的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也应该很忙，可还是抽出时间帮助我，非常感谢。</p>
+          <p> </p>
+          <p>那么我就去调查栖息在复仇峡谷的鸟妖，[%username] 大人请去调查栖息在主神安息处的鸟妖吧。</p>
+          <p> </p>
+          <p>不管是[%dic:STR_DIC_M_LF2A_Harpy_45_An]和 [%dic:STR_DIC_M_LF2A_HarpyRe_45_An]都要消灭它们，并把它们的羽毛带来，我需要和这羽毛做比较。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要紧。我也没有报太大的期望。</p>
+          <p> </p>
+          <p>还有，我也担心 [%username] 大人会杀掉害死阿林的凶手。</p>
+          <p> </p>
+          <p>儿子的仇一定得由我亲自报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人是刚回来的吗？</p>
+          <p> </p>
+          <p>我也是刚从复仇峡谷回来。</p>
+          <p> </p>
+          <p>很可惜，在那里的鸟妖中没有发现凶手。</p>
+          <p> </p>
+          <p>请问主神安息处的鸟妖怎么样？ [%dic:STR_DIC_I_QUEST_3077a]和 [%dic:STR_DIC_I_QUEST_3077b]您带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将羽毛交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是忘记了吗？还是认为那里的鸟妖不是凶手，所以放过了它们？</p>
+          <p> </p>
+          <p>还是很感谢您帮助我。不过，您这样的话，我很难办的。</p>
+          <p> </p>
+          <p>最后的判断应该由我来做，请您一定不要忘记将 [%dic:STR_DIC_M_LF2A_Harpy_45_An]和 [%dic:STR_DIC_M_LF2A_HarpyRe_45_An]的羽毛带来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您已经消灭了主神安息处的鸟妖了。</p>
+          <p> </p>
+          <p>这么多羽毛，应该能找出一个吧。</p>
+          <p> </p>
+          <p>哈哈，虽然这件事我已经重复了无数遍，可是只要一想到能找到仇人，我的心就很激动。</p>
+          <p> </p>
+          <p>(从怀中拿出羽毛) 我得和这个比较，不好意思，您能稍微离开一会吗？</p>
+          <p> </p>
+          <p>我想一个人静静地做这件事。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_M_LF2A_Harpy_45_An]和 [%dic:STR_DIC_M_LF2A_HarpyRe_45_An]的羽毛，并交给 [%dic:STR_DIC_N_Elektra]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">埃勒特拉为了向杀害儿子的凶手复仇，在天界到处寻找，来到了泰奥勃莫斯。为了难过的埃勒特拉，消灭栖息在主神安息处的鸟妖，收集它们的羽毛并交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赏金猎人埃勒特拉正在寻找杀害儿子的凶手。</p>
+          <p> </p>
+          <p>埃勒特拉称，从儿子的手中发现了一根羽毛，并认为长有此羽毛的家伙一定是凶手，他表示在调查泰奥勃莫斯的鸟妖方面需要得到帮助。</p>
+          <p> </p>
+          <p>按照埃勒特拉的委托，消灭了栖息在主神安息处的鸟妖，并将收集到的羽毛交给了他，他表示必须要比较和自己拥有的羽毛是否一致。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，要想在根本上解决贝斯佩尔幽灵村的不死族问题，还需要一段时间。</p>
+          <p> </p>
+          <p>虽然已经派出执政官和守护者进行持续调查，可不知道什么时候才能想出万全的解决方法。</p>
+          <p> </p>
+          <p>光在这等，解决不了问题。要让人们避免遭受不死族的攻击。</p>
+          <p> </p>
+          <p>虽然只是权宜之计，可如果想到居民们的安危，这是我们应该付出的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，我希望 [%username]能帮助我们。</p>
+          <p> </p>
+          <p>目前，也有很多守护者正在执行消灭不死族的任务，可是它们的数量却没见减少。</p>
+          <p> </p>
+          <p>我觉得，与其派几个一般的人，还不如派一个像 [%username]一样实力出众的人更有帮助。</p>
+          <p> </p>
+          <p>怎么样？愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，请你去贝斯佩尔幽灵村消灭 [%dic:STR_DIC_M_SkeletonD_35_An]和 [%dic:STR_DIC_M_ZombieD_35_An]， [%dic:STR_DIC_M_GraveknightD_36_An]。</p>
+          <p> </p>
+          <p>那些不死族总跑到贝斯佩尔幽灵村外伤害路过的人。</p>
+          <p> </p>
+          <p>所以只要 [%username]出马，消灭那些家伙，会给人们带来很大的帮助。</p>
+          <p> </p>
+          <p>那么拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前曾听到很多关于[%username]实力不凡，以及忠于使命的消息，所以我才会拜托你。你的拒绝真是让我意外。</p>
+          <p> </p>
+          <p>可能你正在秘密执行什么重要的任务，我就不再追究了。</p>
+          <p> </p>
+          <p>假如你忙完了，希望能继续来帮助我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从前的贝鲁斯兰可不是现在的样子。</p>
+          <p> </p>
+          <p>随着岁月流逝，产生变化也没什么，可谁又能想到变化的幅度会如此巨大？</p>
+          <p> </p>
+          <p>为什么会发生这样的事情...真是让人惋惜。</p>
+          <p> </p>
+          <p>对了，我拜托你的事情办的怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，辛苦了。</p>
+          <p> </p>
+          <p>多亏了[%username]，被不死族攻击的事件应该会减少一些。</p>
+          <p> </p>
+          <p>不过，不死族的数量仍然很多，如果有机会，希望你能继续来帮助我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭贝斯佩尔幽灵村的不死族。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SkeletonD_35_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ZombieD_35_An]([%5]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_GraveknightD_36_An]([%8]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gigrite]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须阻止贝斯佩尔幽灵村的不死族伤害他人的事件。接受吉格里泰的委托，去消灭阿努拜特自卫团团员，苍白的僵尸和温佩斯特佣兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉格里泰表示，想找到根除贝斯佩尔幽灵不死族的方法还需要一段时间。而这期间，为了减小人们所受到的伤害，吉格里请求消灭不死族。</p>
+          <p> </p>
+          <p>为此去村子消灭了阿努拜特，僵尸和温佩斯特。他表示，这样一来，被不死族攻击的事件会减少一些。对此，他表示感谢。</p>
+          <p> </p>
+          <p>但这并不代表已经消灭了所有不死族，他希望下次能继续合作。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

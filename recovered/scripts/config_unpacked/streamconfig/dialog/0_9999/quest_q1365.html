@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须把抛弃克拉尔的自尊心，让我们成为龙族奴隶的乌尔卡托除掉，克拉！</p>
+          <p> </p>
+          <p>但是现在我们部族中，和我拥有一样意志的勇士的数量实在太少了。</p>
+          <p> </p>
+          <p>我们迫切需要天族的帮助，克拉拉！</p>
+          <p> </p>
+          <p>为了切断和龙族的关系，凯丹克拉尔必须和天族联手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须和实力接触的值得信赖的守护者联手，克拉。</p>
+          <p> </p>
+          <p>我虽然见过很多守护者，但是却没有可以让我完全信任的人。</p>
+          <p> </p>
+          <p>现在我把希望放在你的身上。</p>
+          <p> </p>
+          <p>但是在这之前，你必须证明自己的实力，克拉拉。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这附近有很多地之精灵。</p>
+          <p> </p>
+          <p>如果能够清除它们的话，我就能相信你的能力，克拉！</p>
+          <p> </p>
+          <p>你愿意去清除[%dic:STR_DIC_M_ElementalEarth2_31_An]和[%dic:STR_DIC_M_ElementalEarth3_31_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你就去把地之精灵除掉后再回来见我吧，克拉！</p>
+          <p> </p>
+          <p>如果能除掉马邦塔的隐身处附近的[%dic:STR_DIC_M_ElementalEarth2_31_An]和[%dic:STR_DIC_M_ElementalEarth3_31_An]各五个的话，我就能相信你的实力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道你没有可以向我展示的能力和诚意吗，克拉！</p>
+          <p> </p>
+          <p>我不能和这样没有诚意的守护者联手。</p>
+          <p> </p>
+          <p>你回去吧，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，守护者。</p>
+          <p> </p>
+          <p>地之精灵除掉了吗，克拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然除掉了地之精灵，看来你具备那样的能力，克拉！</p>
+          <p> </p>
+          <p>谢谢你爽快地答应我的请求，克拉！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉马邦塔的隐身处入口处的地之精灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth2_31_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth3_31_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_Mabangta]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了向马邦塔证明自己的实力，去清除沙漠精灵和沙地精灵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马邦塔说他需要拥有出众能力的守护者，让我去证明自己的能力。</p>
+          <p> </p>
+          <p>于是按照他的指示除掉了沙漠精灵和沙地精灵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

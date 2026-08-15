@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在前线工作，就必须面对各种各样的情况。</p>
+          <p> </p>
+          <p>虽说我是药草的守护者，但我也不能只埋头于研究。</p>
+          <p> </p>
+          <p>帮执政官和行政官做事，可能会对我今后的道路有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此我现在正在帮助处理铸币任务。</p>
+          <p> </p>
+          <p>要塞好像对巨人很感兴趣，目前正在进行调查。</p>
+          <p> </p>
+          <p>他们定期向乌达斯神殿地下派遣执政官进行调查，但是据说花在战斗上的时间比花在调查上的时间还要多。</p>
+          <p> </p>
+          <p>那里好像有很多妨碍的东西。[%username]，你能帮帮他们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去把[%dic:STR_DIC_M_IDTemple_RollingWheel_53_Ae]消灭掉。</p>
+          <p> </p>
+          <p>它的锯齿很危险，一直在那里转来转去，好像造成了不小的妨碍。</p>
+          <p> </p>
+          <p>如果能清除掉一些魔力之恰克兰塔，执政官们就能放心地进行调查了。</p>
+          <p> </p>
+          <p>那就拜托你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢？</p>
+          <p> </p>
+          <p>[%username]，我还以为你一定会欣然接受的呢。</p>
+          <p> </p>
+          <p>这是上面派下来的事，我又不能不干……</p>
+          <p> </p>
+          <p>想到这些，我就觉得很头疼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近真是忙死了。</p>
+          <p> </p>
+          <p>要研究新的毒物、治疗伤者，还要管理铸币，有好多活要干。</p>
+          <p> </p>
+          <p>要是铸币任务能少一点，我就会轻松一些。我又不能为了自己舒服而不管这些事……</p>
+          <p> </p>
+          <p>不管怎样，该做的事情还是要做的。魔力之恰克兰塔怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说全部消灭掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，多亏了你，我终于可以松一口气了。</p>
+          <p> </p>
+          <p>这是给你的秘银铸币，请收下。</p>
+          <p> </p>
+          <p>这次的任务也需要执行很多次。行政官的工作就是这样。</p>
+          <p> </p>
+          <p>有时间的话，希望你能再来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDTemple_RollingWheel_53_Ae]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sulbanyer]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在调查巨人的过程中受到了魔力之恰克兰塔的妨碍。前往乌达斯神殿地下消灭魔力之恰克兰塔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔班耶尔说因为人手不足，他在帮着处理其他工作，让我去地下神殿执行任务。</p>
+          <p> </p>
+          <p>于是按照他的委托，消灭了给调查巨人造成妨碍的魔力之恰克兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

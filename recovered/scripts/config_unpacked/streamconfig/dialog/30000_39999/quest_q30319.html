@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间真是辛苦你了。</p>
+          <p> </p>
+          <p>我的比深渊还深的仇恨，终于得到了安慰。</p>
+          <p> </p>
+          <p>但是我还有一个仇没有报。</p>
+          <p> </p>
+          <p>魔族，你能继续帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>惩罚骨灰堂卑鄙的鲁德拉的手下之中，有个头目。</p>
+          <p> </p>
+          <p>必须除掉他们的头目，才能解开我的怨恨。</p>
+          <p> </p>
+          <p>魔族，你能帮我去进行这最后的复仇吗？</p>
+          <p> </p>
+          <p>帮我复仇之后，我会给予你巨大的奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们的头目名叫[%dic:STR_DIC_E_IDCatacombsN_UnDrakanScNmd_55_Ah]。</p>
+          <p> </p>
+          <p>他是头目，所以和之前对付的那些不可相提并论。</p>
+          <p> </p>
+          <p>魔族，我相信你可以做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族，你是害怕了吗？</p>
+          <p> </p>
+          <p>这么长时间，你一直在为我复仇，为什么到了现在却放弃了呢？</p>
+          <p> </p>
+          <p>我不需要懦弱胆小之辈。</p>
+          <p> </p>
+          <p>你走吧，魔族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你走之后，我的心一直不能平静。</p>
+          <p> </p>
+          <p>一想到马上可以完成最后的复仇，我感到很高兴。</p>
+          <p> </p>
+          <p>告诉我，魔族！</p>
+          <p> </p>
+          <p>勇于献身的马纳达尔跪倒在你的脚下了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于！我终于向勇于献身的马纳达尔报了仇！</p>
+          <p> </p>
+          <p>这都是你的功劳，魔人！</p>
+          <p> </p>
+          <p>我会把说好的奖赏给你。</p>
+          <p> </p>
+          <p>拿着，这是灵魂香炉。只要找到与之相配的东西，就能为你开创新的世界。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDCatacombsN_UnDrakanScNmd_55_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Aeshma]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去消灭埃修玛的最后的复仇对象——鲁德拉手下中的头目。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃修玛说这段时间辛苦我了，但是他还有最后的仇要报。</p>
+          <p> </p>
+          <p>于是消灭了鲁德拉手下的头目勇于献身的马纳达尔，作为报答，他把灵魂香炉送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

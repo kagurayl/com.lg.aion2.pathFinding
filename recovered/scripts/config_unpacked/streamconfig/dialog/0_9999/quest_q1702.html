@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>战争这个东西，如果双方的力量接近的话，就会陷入持续的对峙状态。</p>
+          <p> </p>
+          <p>但是这种均衡总有一天会被打破。所以先行动的一方往往会更有利。</p>
+          <p> </p>
+          <p>现在就是到了必须打破均衡的时候。</p>
+          <p> </p>
+          <p>我正在构想用最少的兵力攻击对方薄弱环节的计划。你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在，魔族不仅派遣了执政官，就连守护者也都被派到埃雷修兰塔来参加作战。</p>
+          <p> </p>
+          <p>其中9级兵虽然能力一般，但是却构成了整体兵力的绝大部分。</p>
+          <p> </p>
+          <p>你能去击退[%dic:STR_DIC_E_Dgrade9]，削弱他们的战斗力吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>遇到[%dic:STR_DIC_E_Dgrade9]的话，一定要把对方消灭掉。</p>
+          <p> </p>
+          <p>你每击退一个魔军士兵，就是在埃雷修兰塔为阿里埃主神增光。</p>
+          <p> </p>
+          <p>但是有一点需要注意。消灭实力和你相差太多的魔军没有任何意义。</p>
+          <p> </p>
+          <p>必须消灭和你实力相当的魔军，我才能认可你的功绩。</p>
+          <p> </p>
+          <p>那我就祝[%username]好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里不是害怕在欧比斯战斗的人应该来的地方。</p>
+          <p> </p>
+          <p>如果你害怕魔族，就快离开这里吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你安然回来啦。魔军的反击一定很激烈吧。</p>
+          <p> </p>
+          <p>对了，你把[%dic:STR_DIC_E_Dgrade9]击退了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>我在埃雷修兰塔也听说了你的名声。果然是名不虚传。</p>
+          <p> </p>
+          <p>你击退了魔族，为天族增了光。阿里埃主神也会记住你的名字。</p>
+          <p> </p>
+          <p>来，这是给为天军立功的人的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade9]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ascalon]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须击退魔军9级兵，削弱欧比斯中魔族的势力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯卡尔伦说，为了打破均势，必须对魔族的势力进行打击。</p>
+          <p> </p>
+          <p>他说按照这个方针，应该把能力虽然一般，但却构成魔族兵力绝大部分的魔军9级兵击退。</p>
+          <p> </p>
+          <p>于是来到战场，遇到魔军9级兵并和他们展开了激烈的战斗，最后击退了他们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

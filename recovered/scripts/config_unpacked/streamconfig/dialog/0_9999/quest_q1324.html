@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！你要去[%dic:STR_DIC_W_LF2_SZ_A1]吗？</p>
+          <p> </p>
+          <p>我有件事想找人帮忙，但是找不到合适的人。</p>
+          <p> </p>
+          <p>这件事必须交给嘴巴很紧的人...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你！</p>
+          <p> </p>
+          <p>那就请你把这份命令书送给[%dic:STR_DIC_W_LF2_SZ_A1]的[%dic:STR_DIC_N_Novan]。</p>
+          <p> </p>
+          <p>你跟他说是我送去的命令书就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>里面有重要的内容，请你不要看命令书的内容。</p>
+          <p> </p>
+          <p>我相信你是一名有责任心的守护者，应该不会随意阅读公文中的内容。</p>
+          <p> </p>
+          <p>事情很紧急，请你赶快把它交给在[%dic:STR_DIC_W_LF2_SZ_A1]站岗的[%dic:STR_DIC_N_Novan]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让你这么有能力的守护者去干这种跑腿的活，是有一点失礼。</p>
+          <p> </p>
+          <p>这样的话就得用术古特急邮件送过去了...不过怎么想都觉得不太安全...</p>
+          <p> </p>
+          <p>虽然微风公会说一定会保守秘密，但是术古族向来都见钱眼开，说不定会发生出卖情报的事情。</p>
+          <p> </p>
+          <p>我知道了。那我就想其他办法吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里除了曼杜里没有其他的问题。</p>
+          <p> </p>
+          <p>曼杜里虽然会从来往的人那里抢东西，但是和雷帕尔革命团以及沙漠化相比，只不过是个小问题。</p>
+          <p> </p>
+          <p>您过来有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">把马西米亚乌斯的命令书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这种事情...</p>
+          <p> </p>
+          <p>我知道了。谢谢您给我送来命令书。</p>
+          <p> </p>
+          <p>但是除了我之外，通道那边的古代遗迹的希洛德斯也必须看一下这份命令书。</p>
+          <p> </p>
+          <p>您能去古代遗迹把这份命令书转交给希洛德斯吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是马西米亚乌斯大人派您来的吗？</p>
+          <p> </p>
+          <p>嗯，会是什么事情呢？发生了什么紧急的事情了吗？</p>
+          <p> </p>
+          <p>请您和我说说是什么事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出马西米亚乌斯的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读书信) 啊！看来必须加强警戒了。</p>
+          <p> </p>
+          <p>谢谢您把命令书送过来。</p>
+          <p> </p>
+          <p>剩下的事情我会自行处理的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把命令书交给[%dic:STR_DIC_N_Novan]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把命令书交给[%dic:STR_DIC_N_Herodes]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">马西米亚乌斯说有命令书要送给诺班。去把它交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马西米亚乌斯让我把命令书送给在曼杜里部落驻守的诺班。</p>
+          <p> </p>
+          <p>见到诺班之后，他说这件事情必须同时通知古代遗迹那边的希洛德斯。于是过去把命令书交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

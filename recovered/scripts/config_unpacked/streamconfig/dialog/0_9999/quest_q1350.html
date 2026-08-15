@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我被派遣到埃拉库斯沙漠这里来，是因为埃拉库斯沙漠里的危险的动物的数量开始增加。</p>
+          <p> </p>
+          <p>由于没有兵力清除逐渐增多的野兽，极乐世界决定提供铸币，希望以此可以解决问题。</p>
+          <p> </p>
+          <p>虽然有点危险，但是可以获得其他地方无法获得的防具和武器，所以执行任务其实是很划算的事情。</p>
+          <p> </p>
+          <p>怎么样？你有兴趣试一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去捕捉埃拉库斯沙漠上的危险的动物吧。</p>
+          <p> </p>
+          <p>奖赏越高，任务就越困难。需要捕捉的可不是一头两头。</p>
+          <p> </p>
+          <p>你还是想接受这个任务吗？</p>
+          <p> </p>
+          <p>如果你愿意接受任务，我就和你详细地说明一下需要捕捉哪些动物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去捕捉[%dic:STR_DIC_M_Sheluk_30_An]、[%dic:STR_DIC_M_MimicRe2_31_An]和[%dic:STR_DIC_M_Catos_31_An]。</p>
+          <p> </p>
+          <p>它们就在埃拉库斯各处，应该不难找到。</p>
+          <p> </p>
+          <p>要把它们全部抓起的话，需要很多的时间，希望你能努力。一头一头地捕捉，也许不知不觉就能完成任务了。</p>
+          <p> </p>
+          <p>祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多愚蠢的守护者为了获得铸币而进行无谓的尝试，至少你还并不愚蠢。</p>
+          <p> </p>
+          <p>不过这也不是在称赞你。只有不把这种事情当回事儿，才能在残酷的欧比斯生存下来，不是吗？</p>
+          <p> </p>
+          <p>以后如果有时间的话，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是花了一点时间啊。</p>
+          <p> </p>
+          <p>需要捕捉28头的动物，当然很不容易，不过...</p>
+          <p> </p>
+          <p>对了，任务完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。</p>
+          <p> </p>
+          <p>应该挺不容易的，谢谢你忠实地完成了任务。</p>
+          <p> </p>
+          <p>来，这是说好的报酬。</p>
+          <p> </p>
+          <p>我准备了很多铸币，以后再想要执行任务的话，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉埃拉库斯沙漠上的动物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Sheluk_30_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_MimicRe2_31_An]([%5]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Catos_31_An]([%8]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sandinas]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去捕捉埃拉库斯沙漠上的危险的动物，获取铸币吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官山迪纳斯说去除掉沙漠上危险的动物的话，就可以获得极乐世界准备的铸币。</p>
+          <p> </p>
+          <p>于是去除掉了他指定的动物，获得了铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

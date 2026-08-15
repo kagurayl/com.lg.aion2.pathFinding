@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道这些[%dic:STR_DIC_M_OctasideD_17_An]到底是从哪里来的。怎么清除都除不完。</p>
+          <p> </p>
+          <p>这个地区发生最多的事故就是被蜘蛛毒针所蜇，导致中毒。</p>
+          <p> </p>
+          <p>一不留神你就会蜇到。不仅是附近的居民，甚至也有很多不熟悉附近地形的守护者也会被蜇到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也被蜇过，腿肿得像什么一样。</p>
+          <p> </p>
+          <p>除了很疼之外，消肿的时间也很长。</p>
+          <p> </p>
+          <p>虽然对守护者来没什么太大的影响，但对于人类的健康应该会有影响。</p>
+          <p> </p>
+          <p>所以我会尽我的能力治疗这些病人，但一个人的力量毕竟是有限。</p>
+          <p> </p>
+          <p>守护者大人，您能不能帮帮我？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我，真的太感谢了。</p>
+          <p> </p>
+          <p>请去[%dic:STR_DIC_W_DF1A_15]除掉3头[%dic:STR_DIC_M_OctasideD_17_An]就可以了。</p>
+          <p> </p>
+          <p>对要塞百姓来说可是帮了一个大忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要是不愿意的话，我也没办法。</p>
+          <p> </p>
+          <p>要是去马辛代尔湿地的话要多加小心。</p>
+          <p> </p>
+          <p>被[%dic:STR_DIC_M_OctasideD_17_An]蜇到的话，再后悔就来不及了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还担心你被毒针蜇了呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_OctasideD_17_An]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得很好！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_OctasideD_17_An]是对于人有害昆虫，所以最好看到一个就除掉一个。</p>
+          <p> </p>
+          <p>虽然不多，但是我的一点心意，拿着吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_OctasideD_17_An]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Eggther]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">马辛代尔湿地的剧毒蜘蛛危害周围百姓的性命，所以要尽快将其除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人类被剧毒蜘蛛蛰到的事故太多，守卫阿尔特盖德东部关隘的艾格泰伦很是担心。</p>
+          <p> </p>
+          <p>接受他的拜托，清除掉了剧毒蜘蛛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

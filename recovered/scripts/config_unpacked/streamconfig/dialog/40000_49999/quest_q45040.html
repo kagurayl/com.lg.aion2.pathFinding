@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>团员们的活动需要很多的支援。</p>
+          <p> </p>
+          <p>现在连基本的粮食供给都有问题，因此很多守护者都遇到了困难。</p>
+          <p> </p>
+          <p>现在要求大家搜集活动或露营时使用的粮食——白吉恩、美罗内和卡尔盘。</p>
+          <p> </p>
+          <p>收到信的团员请采集[%dic:STR_DIC_G_QUEST_45040_a]、[%dic:STR_DIC_G_QUEST_45040_b]和[%dic:STR_DIC_G_QUEST_45040_c]然后交给阿拉乌姆。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然守护者不吃东西也不会死，但长时间饥饿的话，战斗效率就会下降。</p>
+          <p> </p>
+          <p>团员们的处境非常困难，有时会很长时间吃不到东西，我对此觉得很痛心。</p>
+          <p> </p>
+          <p>现在我们要求大家协助筹集粮食，但不知道为什么，现在还没有人来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出采集物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为自豪的结界守护团的一员，每天执行任务，那种付出是值得的。</p>
+          <p> </p>
+          <p>如果接到了任务却不执行，就等于忘记了结界守护团团员的义务。</p>
+          <p> </p>
+          <p>您应该没有接到了任务却把它忘了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是非常新鲜的白吉恩、美罗内和卡尔盘啊。</p>
+          <p> </p>
+          <p>这些食材即使存放很长时间也不会变质，因此是非常有用的战斗粮。</p>
+          <p> </p>
+          <p>谢谢您执行并完成了任务。请收下这个证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45040_a]、[%dic:STR_DIC_G_QUEST_45040_b]和[%dic:STR_DIC_G_QUEST_45040_c]，然后交给[%dic:STR_DIC_N_Alaum]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，为了结界守护团的运转，必须为团员们筹集粮食。</p>
+          <p> </p>
+          <p>采集白吉恩、美罗内和卡尔盘，交给了阿拉乌姆，他给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然上次打赌输给了[%username]您，但我还是不服。</p>
+          <p> </p>
+          <p>您只不过是运气好才那么快抓到的。</p>
+          <p> </p>
+          <p>您要想证明比我实力强，就再跟我打一次赌怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">欣然接受。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就现在马上开始吧。</p>
+          <p> </p>
+          <p>我抓10只棕熊的最快纪录是30分钟，就以这个做标准吧。</p>
+          <p> </p>
+          <p>在30分钟以内，在[%dic:STR_DIC_W_DF1A_11]抓棕熊，并搜集10颗[%dic:STR_DIC_I_quest_2230a]回来作为证据。</p>
+          <p> </p>
+          <p>跟上次一样，只要是棕熊就可以。[%username]您要是成功的话就是您赢了。</p>
+          <p> </p>
+          <p>要是有自信的话就说，马上开始计时。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，快出发。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">“好。”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈哈，您承认上次是凭运气了吧？</p>
+          <p> </p>
+          <p>那是当然的了。没人比我更了解这附近的猎场和棕熊了。</p>
+          <p> </p>
+          <p>要是听这话您不高兴，就下次再来挑战吧。随时欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>准时回来了啊。</p>
+          <p> </p>
+          <p>10颗[%dic:STR_DIC_I_quest_2230a]也带回来了吗？</p>
+          <p> </p>
+          <p>没有证据，谁知道您是不是消灭了10只啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出棕熊尖牙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打了赌就得守约啊！</p>
+          <p> </p>
+          <p>不是让您搜集10颗[%dic:STR_DIC_I_quest_2230a]嘛！</p>
+          <p> </p>
+          <p>要是这样的话就算您放弃打赌了。</p>
+          <p> </p>
+          <p>还是赶紧去吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select7">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>输了一次就得了，难道还想再来一次？</p>
+          <p> </p>
+          <p>再来一次也不见得能赢啊。</p>
+          <p> </p>
+          <p>要是您真想的话，就给您机会。真正的胜者都是宽容的。</p>
+          <p> </p>
+          <p>准备好了的话就告诉我，我来计时。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">“准备好了。”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天啊！居然真的在30分钟以内消灭了10只棕熊。</p>
+          <p> </p>
+          <p>虽然不想，我也只能承认了。</p>
+          <p> </p>
+          <p>[%username]您比我厉害啊。</p>
+          <p> </p>
+          <p>来，请收下吧。这是您打赌赢的钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在30分钟以内消灭棕熊，把[%dic:STR_DIC_I_quest_2230a]交给[%dic:STR_DIC_N_Sjania]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">沙尼亚要重新打一次赌，约定在30分钟以内搜集到10颗棕熊的尖牙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙尼亚认为上次的结果只不过是靠运气，于是要重新打赌。</p>
+          <p> </p>
+          <p>于是在30分钟以内捕捉到了10头棕熊，搜集到了10颗棕熊的尖牙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

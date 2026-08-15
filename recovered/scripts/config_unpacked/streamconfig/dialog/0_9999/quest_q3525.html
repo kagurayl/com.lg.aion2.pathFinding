@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过斯泰浓海岸吗？</p>
+          <p> </p>
+          <p>那里有很多在和拉斯贝尔格的战斗中死去的守护者的灵魂。</p>
+          <p> </p>
+          <p>由于执政官设置的诅咒的奇柏利斯克，他们无法复活，也无法回到奥德的流动中，只能一直在那里徘徊。</p>
+          <p> </p>
+          <p>这段时间我忙着保护村子的安全，没有余力去管他们。但是极乐世界派遣队过来了，还有蓝色舰队的人，我想我们应该想办法帮帮他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么办法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最好的方法就是帮助他们重新复活了。</p>
+          <p> </p>
+          <p>但是他们以灵魂的形态徘徊了太久，已经忘了自己是守护者了。被诅咒盖上烙印的灵魂，是无法通过正常的奇柏利斯克复活的。</p>
+          <p> </p>
+          <p>是的，很遗憾，目前最好方法，就是把那些灵魂送回奥德的流动。</p>
+          <p> </p>
+          <p>这件事我能交给您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。我在想要不要拜托蓝色舰队或极乐世界派来的人去做，但那样对灵魂们好像不太尊重。</p>
+          <p> </p>
+          <p>请您一定要把可怜的[%dic:STR_DIC_M_QUEST_3525]送回奥德的流动。</p>
+          <p> </p>
+          <p>当然，[%dic:STR_DIC_M_UndeadLightWi_44_An]和[%dic:STR_DIC_M_UndeadLightFi_43_An]的抵抗会非常激烈。但是他们最终一定会感谢你的，不要犹豫，尽全力去做吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就没办法了。您也有别的事情要做。</p>
+          <p> </p>
+          <p>但是这件事该交给谁呢……</p>
+          <p> </p>
+          <p>又不好让蓝色舰队或极乐世界派来的人去做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>刚才我在祭坛祈祷的时候，看到斯泰浓海岸那边有几道光芒升上了天空。</p>
+          <p> </p>
+          <p>如果我猜得没错的话，那一定是回到奥德的流动中的灵魂吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(冲着祭坛低下头)希望你们在永恒之塔的怀抱中获得安息。</p>
+          <p> </p>
+          <p>谢谢您。在海岸徘徊的灵魂们终于获得了安息。</p>
+          <p> </p>
+          <p>请您收下这个。和您所做的事情相比，这点东西微不足道，但却是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_M_QUEST_3525]送回奥德的流动([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">把结果告诉[%dic:STR_DIC_N_Erato]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说在和执政官拉斯贝尔格的战斗中死去的守护者的灵魂在斯泰浓海岸徘徊。必须按照埃拉罗所说，把海岸上的灵魂送回奥德的流动。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃拉罗神官说在和执政官拉斯贝尔格的战斗中死去的守护者的灵魂在斯泰浓海岸徘徊，他想帮助他们。</p>
+          <p> </p>
+          <p>由于灵魂被刻上了诅咒的烙印，所以无法复活。按照埃拉罗神官的建议，把他们全部送回了奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

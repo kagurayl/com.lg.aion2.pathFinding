@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村子周围有很多危险的东西，最近最危险的是鸟妖。</p>
+          <p> </p>
+          <p>它们非常凶恶，以至于村民们都不敢到村外去。</p>
+          <p> </p>
+          <p>而且它们的头目很厉害，所以气焰就更加嚣张了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然没办法把鸟妖全部清除掉，但是如果能把它们的头目除掉的话，应该就能打击一下它们的气焰。</p>
+          <p> </p>
+          <p>[%username]大人，能辛苦您一趟吗？</p>
+          <p> </p>
+          <p>我带来的执政官卫兵很少，如果出去的话，我怕村子里会出事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您从莱图和塞库利斯守着的门出去，一直向东走，就会看到一群哈比。</p>
+          <p> </p>
+          <p>请您把其中的[%dic:STR_DIC_M_HarpyReDNamed_35_An]除掉。</p>
+          <p> </p>
+          <p>等一等，[%username]！请您听完再走。</p>
+          <p> </p>
+          <p>哈尔皮亚一般不会在人面前露面。平时它都藏在藏身处，偶尔才会出来。但是谁都不知道它会什么时候出来。</p>
+          <p> </p>
+          <p>所以您去了没有看见也不要放弃，在那儿一直等到哈尔皮亚出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有事情要忙啊。</p>
+          <p> </p>
+          <p>我总不能缠着有重要任务要执行的人，先去干这种琐屑的事情。</p>
+          <p> </p>
+          <p>以后有时间的话，请您再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又是鸟妖，又是三尖树怪物...虽然伊拉西克确实要比其他村庄富裕，但是除此之外，其他条件却并不见得好。</p>
+          <p> </p>
+          <p>首先气候就不是很好。虽然因为有了这样的气候，三尖树才能生长得很好。</p>
+          <p> </p>
+          <p>所以我很想帮助村里的人，至少让他们能够安心地在村子附近活动。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_HarpyReDNamed_35_An]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。我就知道[%username]大人一定会处理得很好的。</p>
+          <p> </p>
+          <p>多亏了您，现在居民们终于可以放心的到村外去了。</p>
+          <p> </p>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>这是辛苦的报答，请您收下，千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_HarpyReDNamed_35_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mirka]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了打击威胁村子居民的鸟妖的气焰，决定去把它们的头目哈尔皮亚除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守卫伊拉西克村的百夫长米尔卡说村民们因为鸟妖而无法安心地出去，她为此很担心。</p>
+          <p> </p>
+          <p>为了打击鸟妖的气焰，帮助她除掉了它们的头目哈尔皮亚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

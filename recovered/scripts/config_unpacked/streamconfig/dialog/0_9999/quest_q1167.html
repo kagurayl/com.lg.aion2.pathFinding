@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些讨厌的西莫罗格！</p>
+          <p> </p>
+          <p>路过的时候会被它们袭击！</p>
+          <p> </p>
+          <p>那些家伙把包裹全啄烂了，里面的粮食也损失光了。</p>           <p> </p>         
+           <p>哎...饿了好几天，现在连生气的力气都没了。</p>
+           <p> </p>
+           <p>经过危险的布洛尼巢穴，好不容易才到了这里，总不能为了粮食再返回去吧...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>尊敬的守护者大人，请您帮助我们吧。</p>
+          <p> </p>
+          <p>不然，在到达幻影神圣所之前，我们就会饿死。</p>
+           <p> </p>
+           <p>能不能设法帮我们弄一些食物，能让我们有力气赶路。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感激您了，尊敬的[%username]大人！</p>
+           <p> </p>
+          <p>让我想一想...这附近的[%dic:STR_DIC_QILA79]和[%dic:STR_DIC_QILA80]好象都可以食用。</p> 
+          <p> </p>
+          <p>只要搜集3个[%dic:STR_DIC_QILA79]和5个[%dic:STR_DIC_QILA80]，我想就已经足够我们路上的消耗了。</p>
+           <p> </p>
+           <p>那么一切拜托您了，我们先去生火了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。提出非分的请求是我们的错。</p>
+          <p> </p>
+          <p>您不用操心了，巡礼者自然有接受痛苦和磨难的准备。</p>
+          <p> </p>
+          <p>如果以后您路过这里，希望能将妻子和我的尸体掩埋，因为我们不想再受西莫罗格的侵扰。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人！您终于回来了。</p>
+          <p> </p>
+          <p>由于饥饿，体力不支，我差点站不起来了，请您不要介意。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将食物交给他们。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉！难道您很喜欢和一对饥饿的人开玩笑吗？</p>
+          <p> </p>
+          <p>哦！对不起，守护者大人，我有些无理了，请您不要介意。</p>
+          <p> </p>
+          <p>如果您有时间，还请尽快找回菲斯勒和西莫罗格的肉。我和我妻子恐怕坚持不了多久了。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！真是万分感谢！</p>
+          <p> </p>
+          <p>尊敬的守护者大人前来救助我们这些正在遭受饥饿和死亡威胁的人，这恐怕就是天意吧。</p>
+          <p> </p>          
+          <p>请收下这个吧。虽然比您的救命之恩，这点心意微不足道，可是我们能给您的，也只有这个了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集食物，并交给[%dic:STR_DIC_LA31]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巡礼者[%dic:STR_DIC_LA31]夫妇因为受到西莫罗格的攻击而丢失了食物包裹，已经饿了好几天。消灭凶恶的西莫罗格和悬崖菲斯勒，搜集它们的肉来帮助德罗诺亚度过难关。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为被西莫罗格攻击而损失了食物包裹的巡礼者德罗诺亚夫妇已经连续挨饿了好几天。为了救助他们，消灭了菲斯勒和西莫罗格，并把搜集到的肉交给了德罗诺亚夫妇。他们非常感激。</p>
+          <p> </p>                 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

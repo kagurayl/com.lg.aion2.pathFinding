@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扩散污染的，并不是霞翅缪塔。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_MutaD_23_n]正在不停地扩散污染。</p>
+          <p> </p>
+          <p>它们正在将蘑菇的污染向博塔摩尔森林扩散，包括通往史匹格栖息地的路在内。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了防止污染扩散，你愿意继续帮助我吗？</p>
+          <p> </p>
+          <p>必须把[%dic:STR_DIC_M_MutaD_23_n]清除掉。</p>
+          <p> </p>
+          <p>它们在持续地污染森林，威胁着椰林族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>请你把[%dic:STR_DIC_M_MutaD_23_n]清除掉，然后把[%dic:STR_DIC_I_QUEST_2312a]作为证据交给我。</p>
+          <p> </p>
+          <p>我相信你一定可以阻止森林的污染。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>森林很危险，就像我上次说过的那样。</p>
+          <p> </p>
+          <p>现在你坐视不理的话，森林和椰林最终一定会灭亡。</p>
+          <p> </p>
+          <p>请你再考虑一下，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_M_MutaD_23_n]清除掉了吗？</p>
+          <p> </p>
+          <p>那么，把证据给我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出缪塔的腿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不赶快采取措施的话，森林会被完全地改变。</p>
+          <p> </p>
+          <p>请你快去清除丛林缪塔，然后把[%dic:STR_DIC_I_QUEST_2312a]交给我。</p>
+          <p> </p>
+          <p>这是关系到椰林的生死的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>你把缪塔清除掉了啊，就像约定的那样。</p>
+          <p> </p>
+          <p>在你的帮助下，森林一定会活过来的。</p>
+          <p> </p>
+          <p>相信你会继续帮助我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_MutaD_23_n]，然后把证据交给[%dic:STR_DIC_N_Tree_Move_Anoramas]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为拯救椰林，去把污染博塔摩尔森林的丛林缪塔清除掉，然后把缪塔的腿作为证据交给阿诺拉马斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿诺拉马斯拜托我为了椰林族继续清除博塔摩尔森林的污染源。</p>
+          <p> </p>
+          <p>于是去清除了丛林缪塔，并把缪塔的腿作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

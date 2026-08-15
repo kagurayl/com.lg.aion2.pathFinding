@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能被派到德奇沙斯要塞，我真的很幸运。因为可以见到[%username]大人这样的人。</p>
+          <p> </p>
+          <p>和优秀的人对话，是我最大的乐趣。不管是谈私事，还是谈公事。</p>
+          <p> </p>
+          <p>[%username]大人，我有话要和您说。</p>
+          <p> </p>
+          <p>啊，不是个人的事情，请不要紧张。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有一个和德奇沙斯地下要塞有关的任务。</p>
+          <p> </p>
+          <p>任务的内容非常简单，就是消灭[%dic:STR_DIC_W_IDAbRe_Up3_Dkisas_SZ_All]中的敌人。</p>
+          <p> </p>
+          <p>消灭足够多的敌人之后，再把头目[%dic:STR_DIC_M_Dkisas_DrakanNamed_45_Ah]干掉就行了。</p>
+          <p> </p>
+          <p>虽然我不想第一次见面就交给您这么困难的任务。但这是命令，我也没有办法。</p>
+          <p> </p>
+          <p>不过可以得到不错的奖励，还能获得好的名声，条件相当不错。您觉得怎么样，[%username]大人？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定！</p>
+          <p> </p>
+          <p>听说地下要塞有很多龙族搜集的宝物，有时间的话，您可以尽情地拿。那些宝物本来就是我们魔族的东西！</p>
+          <p> </p>
+          <p>但是宝物上有魔法，经过一段时间之后就会消失，所以您最好抓紧时间。</p>
+          <p> </p>
+          <p>您知道去[%dic:STR_DIC_W_IDAbRe_Up3_Dkisas_SZ_All]的方法吗？您可以通过那边墙上的门过去。</p>
+          <p></p>
+          <p>[%username]大人，请您快去让龙族们见识一下您的本事吧。埃拉乌盖雅会一边等您，一边为您祈祷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您为什么会拒绝？</p>
+          <p> </p>
+          <p>我一直以为您是个很仗义的人... </p>
+          <p> </p>
+          <p>没想到这么胆小。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>        
+          <p>为到德奇沙斯要塞来的人说明德奇沙斯宝物房间的情况，是非常愉快的事情。</p>
+          <p> </p>
+          <p>这里有很多很了不起的人，真是太让人高兴了。有了这么多人，魔界一定会安然无恙的。</p>
+          <p> </p>
+          <p>当然，[%username]大人您最厉害。</p>
+          <p> </p>
+          <p>对了，任务完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈！我就知道[%username]大人一定可以完成。</p>
+          <p> </p>
+          <p>在[%username]大人面前，地下要塞的龙族一定只能束手就擒。</p>
+          <p> </p>
+          <p>这是说好的报酬。[%username]大人，您帮了我的大忙！</p>
+          <p> </p>
+          <p>但是现在还未发现龙族的通道，所以事情还没有结束。今后您能继续帮助埃拉乌盖雅吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"> <font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up3_Dkisas_SZ_All]的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Up3_Dkisas]([%2]/80)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Dkisas_DrakanNamed_45_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1231_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照埃拉乌盖雅的委托，消灭德奇沙斯地下要塞的敌人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃拉乌盖雅让我去和德奇沙斯要塞相连的德奇沙斯地下要塞消灭那里的敌人。</p>
+          <p> </p>
+          <p>于是前往德奇沙斯地下要塞，消灭了那里的龙族。埃拉乌盖雅非常高兴，让我下次继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

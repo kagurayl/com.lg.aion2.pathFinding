@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_54_An]因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_54_An] </p>
+          <p></p>
+          <p> 2. 罪行：特殊盗窃</p>
+          <p></p>
+          <p> 3. 详情：涉嫌大量盗窃天军运往幻影要塞的军事物资，逃亡龙泪峡谷方向。</p>
+          <p> </p>
+          <p>消灭军事物品盗窃犯[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_54_An]，将[%dic:STR_DIC_I_QUEST_36524a]作为证物带回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在要塞生活久了，我确实体会到了军事物资是多么的重要。</p>
+          <p> </p>
+          <p>一个生锈的箭杆，可能会关系到一个生命。</p>
+          <p> </p>
+          <p>本来应该在四天前送到的军事物资被盗，现在要塞内部非常紧张。</p>
+          <p> </p>
+          <p>您有什么可以缓解紧张的好消息吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鸢族的羽毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管谁都可以，只要能找回[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_54_An]就好。</p>
+          <p> </p>
+          <p>虽然武器流入鸢族的手中也是个问题，但更大的问题是要塞内的伤员人数在不断增加，必须尽快找回物资。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确实是鸢族的羽毛。</p>
+          <p> </p>
+          <p>多亏了您，这下终于可以放心了。</p>
+          <p> </p>
+          <p>我们会马上派遣英吉斯温守卫精锐兵，找回被抢走的物资。</p>
+          <p> </p>
+          <p>这是今天的证物。希望您明天继续加油。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_54_An]的羽毛，然后交给 [%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了抢走天界的军事物资的大盗弗莱亚，把鸢族的羽毛交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

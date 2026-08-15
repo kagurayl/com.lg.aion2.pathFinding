@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是消灭[%dic:STR_DIC_M_LF2_DQ_LehparAs_43_An]%。</p>
+          <p> </p>
+          <p>最近在埃尔特内的曼杜里森林中发现了伪装藏身处，有革命团情报员隐藏在那里。</p>
+          <p> </p>
+          <p>被逼上绝境的情报员，不知道会做出什么事情来。请和导师一起找到[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37003]%，消灭情报员。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过曼杜里森林了吗？[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37003]%不难找到吧？</p>
+          <p> </p>
+          <p>要想知道革命团情报员到底在打什么主意，就必须活捉他，但是他们实在太危险了……</p>
+          <p> </p>
+          <p>经过考虑，极乐世界决定暂时不去调查情报员的目的，而是把他们消灭掉。</p>
+          <p> </p>
+          <p>我很想知道结果如何。请向我报告一下任务的结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。这次的事情，应该对拓宽[%username]大人的视野很有好处。</p>
+          <p> </p>
+          <p>而且我们也赶走了革命团情报员，真是太好了。</p>
+          <p> </p>
+          <p>我们正在调查他们的阴谋。必须尽快查清他们的目的才行……</p>
+          <p> </p>
+          <p>给，这是这次任务的奖励。希望今后您能努力执行任务。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭躲藏在[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37003]里的 [%dic:STR_DIC_M_LF2_DQ_LehparAs_43_An]%([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vespasianus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，和导师一起找到曼杜里森林中的伪装藏身处，消灭革命团情报员。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去消灭了躲藏在曼杜里森林里的革命团情报员，向贝斯帕西亚努斯报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

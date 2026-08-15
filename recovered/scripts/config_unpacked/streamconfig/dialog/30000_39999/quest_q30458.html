@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你听我说。</p>
+          <p> </p>
+          <p>普普灵喜欢一个人，就是那边的俏俏灵灵，呐呐。</p>
+          <p> </p>
+          <p>但是俏俏灵灵太高傲了，根本不听我的话。</p>
+          <p> </p>
+          <p>我向她表白，又给她送了礼物，但是她却不为所动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我仔细想了想，我想给俏俏灵灵一件特殊的礼物。</p>
+          <p> </p>
+          <p>我想送她一枚镶嵌了特殊宝石的戒指，这样的话，俏俏灵灵应该就会对我另眼相看吧，呐呐。</p>
+          <p> </p>
+          <p>但是普普灵是个无力的术古，很难搜集到特殊的宝石。</p>
+          <p> </p>
+          <p>守护者，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢，呐呐。</p>
+          <p> </p>
+          <p>我想制作一枚镶嵌[%dic:STR_DIC_I_QUEST_30408A]的戒指。</p>
+          <p> </p>
+          <p>据说用石人的心脏制作的戒指拥有打动人心的力量。</p>
+          <p> </p>
+          <p>看到那个戒指的话，俏俏灵灵一定会回心转意的。</p>
+          <p> </p>
+          <p>请你先到多尔戈宅邸去消灭[%dic:STR_DIC_M_IDElementalN_Golem_Ranger_60_Ah]，搜集石人的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太过分了，呐呐。</p>
+          <p> </p>
+          <p>无论如何，我都要得到俏俏灵灵的心。你难道不能理解我的心情吗？</p>
+          <p> </p>
+          <p>如果我没能追到俏俏灵灵的话，就全都是你的责任。</p>
+          <p> </p>
+          <p>我会恨你一辈子的，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你回来啦。</p>
+          <p> </p>
+          <p>我拜托你的事情怎么样了，呐呐？</p>
+          <p> </p>
+          <p>石人的心脏搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出石人的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你在爱情方面有过失败的经历吗？</p>
+          <p> </p>
+          <p>所以你才会反对别人追求自己的爱情？</p>
+          <p> </p>
+          <p>如果不是的话，你为什么不愿意帮助我呢！</p>
+          <p> </p>
+          <p>请你一定要帮我去消灭[%dic:STR_DIC_M_IDElementalN_Golem_Ranger_60_Ah]，搜集到[%dic:STR_DIC_I_QUEST_30408A]，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是石人的心脏，呐呐？</p>
+          <p> </p>
+          <p>真的非常感谢，守护者。</p>
+          <p> </p>
+          <p>虽然接下去还得把它做成戒指，不过我终于可以放心了。</p>
+          <p> </p>
+          <p>在你的帮助下，我一定要得到俏俏灵灵的心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30408A]，然后交给普普灵</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">普普灵说为了得到俏俏灵灵的心，想送她一件特殊的礼物。去消灭憎恨石人，搜集石人的心脏吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普普灵说自己很喜欢俏俏灵灵，但是她很高傲，不愿意接受自己的心。</p>
+          <p> </p>
+          <p>他说为了让俏俏灵灵回心转意，想制作一枚特殊的戒指。于是去消灭了憎恨石人，帮他搜集到了石人的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

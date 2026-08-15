@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然站在这里保卫尤普罗西内村，但是我的心却在贫瘠而危险的地方。</p>
+          <p> </p>
+          <p>那就是帕蒂玛废墟和梅兰提斯遗迹地。</p>
+          <p> </p>
+          <p>附近的散发出阴森气息的不死族和破坏神圣土地的不祥的生命体……</p>
+          <p> </p>
+          <p>是的，我从那个地方来到了这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是有很多理由，让我不能离开尤普罗西内村。</p>
+          <p> </p>
+          <p>等有一天尤普罗西内村的警备任务完成之后，我一定会马上到帕蒂玛废墟和梅兰提斯遗迹地去。</p>
+          <p> </p>
+          <p>去和那些可怕的东西战斗，把不祥的气息从那里赶走。</p>
+          <p> </p>
+          <p>怎么样？你愿意帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我把失去了纯洁的灵魂，在那里游荡的祖先们全部送回奥德的流动。</p>
+          <p> </p>
+          <p>他们就是[%dic:STR_DIC_M_UndeadLightWi_40_An]。</p>
+          <p> </p>
+          <p>请你把他们全部消灭掉，然后回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经过帕蒂玛废墟和梅兰提斯遗迹地的时候，请你一定要为我们那些可怜的祖先们祈祷。</p>
+          <p> </p>
+          <p>有时间的话，请你一定要来帮我。</p>
+          <p> </p>
+          <p>只要我还在这里，我会报答那些帮助过他们的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从你身上，我感觉到了只有杀死了古代咒术师的灵魂的人才有的死亡的气息。</p>
+          <p> </p>
+          <p>和不死族的战斗怎么样？他们应该不愿意回到奥德的流动中去吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你消灭了古代咒术师的灵魂，现在路上的邪恶气息应该会少一些了。</p>
+          <p> </p>
+          <p>但是我们的战争还没有结束。</p>
+          <p> </p>
+          <p>我们必须继续努力，直到所有的灵魂全都回到奥德的流动之中。</p>
+          <p> </p>
+          <p>来，请收下。这是辛苦的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭游荡的[%dic:STR_DIC_M_UndeadLightWi_40_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Endyon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">安迪温说守护者们必须继续努力，直到尤普罗西内村附近的不死族全部回到奥德的流动之中。应该帮助他消灭不死族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安迪温说希望我能帮助他，把尤普罗西内村附近的不死族送回奥德的流动。</p>
+          <p> </p>
+          <p>按照他的委托消灭了不死族，回去之后，他给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

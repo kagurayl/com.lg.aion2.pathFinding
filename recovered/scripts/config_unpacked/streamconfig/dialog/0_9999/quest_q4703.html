@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要去诺赫西纳训练所的话，我想顺便再拜托你一件事。</p>
+          <p> </p>
+          <p>也没什么，就是消灭训练士兵的教官。</p>
+          <p> </p>
+          <p>训练德拉克纽特，把他们培养成真正士兵的家伙是龙族教官。</p>
+          <p> </p>
+          <p>所以要想对龙族训练所给予很大的打击，消灭教官可是个最好的方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>相比消灭训练兵，消灭教官要难的多。</p>
+          <p> </p>
+          <p>不过在这一段时间，你在亚特雷亚积累了很多经验，只要沉着应付，足够可以对付他们。</p>
+          <p> </p>
+          <p>反正以后还要在欧比斯和德拉坎交战，这次事情也可以成为你很好的经验。</p>
+          <p> </p>
+          <p>你愿意去[%dic:STR_DIC_W_IDAb1_MiniCastle]消灭教官吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族训练教官们一般是训练德拉克纽特士兵们守卫诺赫西纳训练所重要据点的战略。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae]在实体那里，[%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae]和[%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae]在关隘上，[%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae]在要塞里。</p>
+          <p> </p>
+          <p>请从实体开始依次往里突破，消灭那些家伙们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要拒绝如此重要的任务吗？</p>
+          <p> </p>
+          <p>我还以为你是有责任心和能力的守护者，看来是我看错人了。</p>
+          <p> </p>
+          <p>这样的话，我以后还如何相信你，委托你任务呢？</p>
+          <p> </p>
+          <p>你再仔细考虑一下，改变主意的话，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你认为天族和龙族中哪一方对我们有更大的威胁？</p>
+          <p> </p>
+          <p>如果只有一个敌人，我们就不用像现在一样分散兵力，或许战争早就结束了。</p>
+          <p> </p>
+          <p>就因为现在这样同时面临多个敌人，我才会觉得战争的局面越来越对我们不利。</p>
+          <p> </p>
+          <p>不过有像[%username]你这样的守护者在最前线如此努力，我相信总有一天我们会战胜所有龙族和天族。</p>
+          <p> </p>
+          <p>去诺赫西纳训练所消灭训练教官了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做的很好，[%username]。</p>
+          <p> </p>
+          <p>既然已经消灭了诺赫西纳训练所的训练教官，有一段时间他们是无法训练德拉克纽特士兵了。</p>
+          <p> </p>
+          <p>我得考虑趁这个机会向龙族展开猛烈的攻击。</p>
+          <p> </p>
+          <p>总之辛苦你了。如果我们在和龙族的战争中获得优势，一切都是[%username]你的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭龙族教官。</font></p>
+                     <p visible="[%0]"><font color="[%1]"> [%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]"> [%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]"> [%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae]([%8]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]"> [%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae]([%11]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lasanya]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭训练德拉克纽特士兵的龙族教官</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚让我求去消灭训练德拉克纽特士兵的龙族教官。</p>
+          <p> </p>
+          <p>去诺赫西纳训练所消灭了龙族教官，拉莎尼亚对此非常高兴，认为这下可以在一段时间内在和龙族的战争中占据优势。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

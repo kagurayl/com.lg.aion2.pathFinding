@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（折成四边形的小纸片。）</p>
+          <p> </p>
+          <p>（打开一看，原来是发往伏魔殿的货物清单。）</p>
+          <p> </p>
+          <p>（向[%dic:STR_DIC_N_Urnir]咨询一下详细情况比较好。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束观察。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事情吗？</p>
+          <p> </p>
+          <p>有什么需要向结界塔报告的情报吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">递出送货清单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是送货清单吗？你刚才说是在哪里捡到的？</p>
+          <p> </p>
+          <p>这么说来，在喀尔巴利亚丘陵下面的渡口处漂浮的箱子就是伏魔殿寄给乌云贸易团的东西了？</p>
+          <p> </p>
+          <p>不久前曾经发生过马车袭击事件，也许就是那时掉落的箱子。那么，运载货物的船只是否已经遇难了？</p>
+          <p> </p>
+          <p>不过，马布伦好像还不知道呢，还在焦急地等待着货物的到达。这样吧，不如[%username]你就去一趟[%dic:STR_DIC_W_DF1A_16]，把这个消息转告给[%dic:STR_DIC_N_Shugo_DF1_9]。 </p>
+          <p> </p>
+          <p>也许会让他有些伤心，不过还是让他知道事实的比较好。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，我正担心着呢。</p>
+          <p> </p>
+          <p>从伏魔殿定的货品都已经出发好长时间了，怎么到现在还一点消息都没有呢？</p>
+          <p> </p>
+          <p>这样下去，马布伦的信用可是要大打折扣了啊。呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递出送货清单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说什么？！在渡口漂浮的箱子里发现了这个清单？</p>
+          <p> </p>
+          <p>那，那我定的那些货物不全都...老天啊，这下我可完蛋了！</p>
+          <p> </p>
+          <p>要知道光是船运费用就不老少啊...贸易团上层要是责怪起来，我可怎么办啊？呐呐。</p>
+          <p> </p>
+          <p>不行，我不能就此放弃。现在就出发去喀尔巴利亚丘陵，看看还能不能找回一些剩下的货品。</p>
+          <p> </p>
+          <p>哎呀，无论如何，还是谢谢你告诉了我这个消息。呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Urnir]%对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">与[%dic:STR_DIC_N_Shugo_DF1_9]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在渡口的货物箱子里捡到一张送货清单。最好去阿尔特盖德结界塔，询问一下乌勒尼尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在处理漂浮在水面上的货物箱子时，发现了一张送货清单，并将其交给乌勒尼尔看。</p>
+          <p> </p>
+          <p>乌勒尼尔说这是伏魔殿发给马布伦的货品清单，让送去阿尔特盖德的东部关隘，并告诉马布伦这个消息。</p>
+          <p> </p>
+          <p>把送货清单交给马布伦看。马布伦发现自己的货物全都损失掉了，十分担心被贸易团的上层责难。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

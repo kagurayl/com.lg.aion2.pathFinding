@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是曾经在盗贼团呆过，后来觉醒成为[%userclass]的[%username]大人吧？</p>
+          <p> </p>
+          <p>听很多人说您的实力很出众。刚好碰到了，有件事情我想请您帮个忙。</p>
+          <p> </p>
+          <p>希埃尔的西部要塞被夺走了，所以我们军团被紧急派到这里进行侦察，但是却遇到了很多困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当前最重要的事情是夺回希埃尔的西部要塞，所以我们派出了很多人前去要塞侦察。</p>
+          <p> </p>
+          <p>但是因为[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]，侦察任务很难执行。</p>
+          <p> </p>
+          <p>正藏在那里进行侦察呢，突然被它们攻击，经常搞得我们手忙脚乱。而且它们会对记忆造成混乱，所以问题就更大了。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意帮我把它们清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>出于任务的特点，我们必须秘密地行动，因此我们不能出去清除它们。</p>
+          <p> </p>
+          <p>[%username]大人如果能帮我们把[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]清除掉的话，我们执行任务就会容易很多。</p>
+          <p> </p>
+          <p>对了，记忆破坏者一般都漂在空中寻找攻击对象，所以一边飞行一边清除它们会比较方便。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们不是没有能力清除记忆破坏者。</p>
+          <p> </p>
+          <p>但是为了完成任务，我们必须尽量避人耳目，所以没有办法。</p>
+          <p> </p>
+          <p>我是相信别人对[%username]大人的评价才回来拜托您的。既然您听完了情况还不愿意帮忙，那我也没有别的办法。</p>
+          <p> </p>
+          <p>只能去向别人请求帮助了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您这么快就回来了。</p>
+          <p> </p>
+          <p>我让您去清除的[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]全部除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了您，我们红色赫西亚军团在执行任务的时候，应该会方便得多了。</p>
+          <p> </p>
+          <p>谢谢您，[%username]大人。</p>
+          <p> </p>
+          <p>但是记忆破坏者不会全部消失，所以有时间的话，请您再来帮我。</p>
+          <p> </p>
+          <p>愿阿斯佩尔的庇护伴随着您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Goeldag]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说记忆破坏者对红色赫西亚军团对希埃尔的西部要塞的侦察工作造成了妨碍。必须按照古埃尔达克的拜托，把记忆破坏者清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古埃尔达克说希埃尔的西部要塞被夺走之后，他们红色赫西亚军团被紧急派到了这里，对要塞进行侦察。</p>
+          <p> </p>
+          <p>但是藏在那里进行侦察的军团士兵经常受到记忆破坏者的攻击，对他们执行任务造成了妨碍。</p>
+          <p> </p>
+          <p>于是按照他的拜托，清除了记忆破坏者。他表示非常感谢，说侦察工作应该会变得方便了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

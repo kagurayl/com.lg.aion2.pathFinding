@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，你那种眼神是什么意思？</p>
+          <p> </p>
+          <p>哦，我明白了，你是想在我眼中看看我对那些天族守护者的怨恨有没有消失。 </p>
+          <p> </p>
+          <p>看来，你也不亚于我和贝托尼，都很执着。</p>
+          <p> </p>
+          <p>如果怨恨能那么容易消除，当初我也不会下定决心在这里做这些事了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，贝托尼应该也不会那么容易放弃说服我的想法。</p>
+          <p> </p>
+          <p>那就让我来说服他吧。</p>
+          <p> </p>
+          <p>我来写封信，你能不能替我送到 [%dic:STR_DIC_N_Betoni]那里？</p>
+          <p> </p>
+          <p>这样你也能轻松一些，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我现在就开始写，你先等会。</p>
+          <p> </p>
+          <p>（递来写好的信）那么，你就把这封信交给 [%dic:STR_DIC_N_Betoni]吧。</p>
+          <p> </p>
+          <p>并且转告他，不要再试图说服我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也像贝托尼一样，希望我回到魔界吗？</p>
+          <p> </p>
+          <p>在这里，让天族的那些守护者们变成不死族，这样对魔族也有利，为什么总是想说服我放弃呢。</p>
+          <p> </p>
+          <p>不管贝托尼派多少人来，也不会让我有回到魔界的想法。</p>
+          <p> </p>
+          <p>就算你不给我送信，我也不在乎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又是您一个人回来了啊。</p>
+          <p> </p>
+          <p>没能说服拉斯贝尔格吗？</p>
+          <p> </p>
+          <p>他怎么说？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将拉斯贝尔格的信交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（将读完的信叠起来）看来，拉斯贝尔格内心深爱着那位叫做马伊内的天族女子。</p>
+          <p> </p>
+          <p>不管过了多久，他也无法忘怀对马伊内的爱，以及对敌人的怨恨。</p>
+          <p> </p>
+          <p>看来，继续说服他有点不太可能。我得放弃了。</p>
+          <p> </p>
+          <p>只能祈祷他不被天族所杀，一切平安。</p>
+          <p> </p>
+          <p>说服拉斯贝尔格的任务虽然失败，不过对您一直以来提供的帮助，我真诚地表示感谢， [%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">给[%dic:STR_DIC_N_Betoni]送信。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">拉斯贝尔格称，完全没有回到魔界的想法。把他写的信送到贝托尼那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉斯贝尔格称，不管贝托尼派多少人来，他也完全没有回到魔界的想法。他希望用书信的方式向贝托尼表达自己的意志。</p>
+          <p> </p>
+          <p>贝托尼读完信后表示，看上去说服拉斯贝尔格已经不太可能，只能放弃了。</p>
+          <p> </p>
+          <p>并对之前得到的大力协助致以诚挚的谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

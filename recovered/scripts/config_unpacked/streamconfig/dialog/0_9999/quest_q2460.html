@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，等等！请稍等一下。</p>
+          <p> </p>
+          <p>(把嘴里嚼着的拉巴诺吞了下去)喂，你现在忙吗？</p>
+          <p> </p>
+          <p>可以的话，我想拜托你一件事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage> 
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吃了之后，我的肚子更饿了。看来光靠这个好像不太够。</p>
+          <p> </p>
+          <p>我也不需要太多的东西，只要再吃几个这里附近的[%dic:STR_DIC_E_berry_d_n_c_20b]和[%dic:STR_DIC_E_vegetable_d_n_c_20b]就行了。怎么样？</p>
+          <p> </p>
+          <p>这次你还能帮我去搜集一点吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。请你帮我搜集10个[%dic:STR_DIC_E_berry_d_n_c_20b]和15个[%dic:STR_DIC_E_vegetable_d_n_c_20b]。</p>
+          <p> </p>
+          <p>它们都生长在史匹格栖息地，所以应该很容易找到。</p>
+          <p> </p>
+          <p>我肚子很饿，所以请你快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有必要觉得抱歉。我也觉得让你帮我两次太过意不去了。</p>
+          <p> </p>
+          <p>我会自己慢慢去找吃的，请不要担心。</p>
+          <p> </p>
+          <p>多亏你帮我找到了拉巴诺，现在走路的力气是有了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊。</p>
+          <p> </p>
+          <p>其他的话以后再说，先把东西给我吧。</p>
+          <p> </p>
+          <p>拉巴诺都吃光了，但是肚子却更饿了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出齐尔西和菊苣。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哼，在你眼里，这些有10个[%dic:STR_DIC_E_berry_d_n_c_20b]和15个[%dic:STR_DIC_E_vegetable_d_n_c_20b]吗？</p>
+          <p> </p>
+          <p>这可真是个奇特的现象。早知道的话，就该先和你谈谈数字的概念。</p>
+          <p> </p>
+          <p>不过先等你把约好的东西都找到之后再说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去很新鲜，一定很好吃。</p>
+          <p> </p>
+          <p>谢谢你。帮我找到了这两种东西。</p>
+          <p> </p>
+          <p>这是我的一点谢意，请你收下。虽然很想多给一点，但是身上只有这么多了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_berry_d_n_c_20b]和[%dic:STR_DIC_E_vegetable_d_n_c_20b]，然后交给[%dic:STR_DIC_N_DF2_NPC_Sprigg]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让比比完全恢复力气，应该去帮他采集齐尔西和菊苣。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吃了拉巴诺之后，比比还嫌不够，说需要在吃点齐尔西和菊苣才能完全恢复，让我帮他去采集一点。</p>
+          <p> </p>
+          <p>于是帮他采集了齐尔西和菊苣，他表示非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

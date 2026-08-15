@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4329</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您看看这个。</p>
+          <p> </p>
+          <p>这是消灭三尖树怪物的时候发现的眼镜。</p>
+          <p> </p>
+          <p>从大小来看，好像是小孩子的眼镜，也许是受到了三尖树怪物的攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我看看……</p>
+          <p> </p>
+          <p>您看，在眼镜的脚上，写着“阿米”，好像是个名字</p>
+          <p> </p>
+          <p>阿米？好像从没听说过这个名字。</p>
+          <p> </p>
+          <p>我想最好是去问问[%dic:STR_DIC_N_Karina]，他对这里的人都很了解。</p>
+          <p> </p>
+          <p>我要执行米尔卡大人的命令，因此无法离开这里，您能帮我跑一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Karina]就在山坡上巴洛姆大人的房子附近。</p>
+          <p> </p>
+          <p>希望那个名叫阿米的孩子不要出什么事，真让人担心。</p>
+          <p> </p>
+          <p>如果见到了他，请一定要帮我向他问声好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗！？</p>
+          <p> </p>
+          <p>说不定这副眼镜的主人已经……</p>
+          <p> </p>
+          <p>阿米的家人们该多着急啊。请您再想一想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对不起，您能把脚拿开吗？</p>
+          <p> </p>
+          <p>(用扫帚扫了几下)好了，可以了。</p>
+          <p> </p>
+          <p>打扫完毕，我得准备午饭了。</p>
+          <p> </p>
+          <p>您有什么事吗？巴洛姆就在旁边。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_otl;HACTION_SELECT_QUEST_REWARD">拿出被三尖树吞掉的眼镜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这个！我还说掉在哪里了，原来是掉在三尖树田里了。</p>
+          <p> </p>
+          <p>谢谢您。这是我花了很多钱买的，丢了之后，您不知道我有多心疼。</p>
+          <p> </p>
+          <p>啊，阿米？您看到啦。</p>
+          <p> </p>
+          <p>其实阿米是我的笔名。因为我觉得卡利娜这个名字有点土。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮我找到了眼镜。以后有机会的话，我还得去谢谢那个叫阿德西斯的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Karina]询问被三尖树吞掉的眼镜的主人</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙着执行任务的阿德西斯，向卡利娜询问被三尖树怪物吞掉的眼镜的主人是谁。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿德西斯说在消灭三尖树怪物时发现了一副被三尖树怪物吞掉的小孩的眼镜。</p>
+          <p> </p>
+          <p>阿德西斯说希望能找到眼镜的主人，但是因为要执行米尔卡的命令，因此让我帮他去问问村里的居民卡利娜。</p>
+          <p> </p>
+          <p>卡利娜说那是自己丢失的眼镜，她对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阿雷凯迪尔的项链旁边有一封折了好几层的信)</p>
+          <p> </p>
+          <p>(信上的字写得像芝麻一样小。)</p>
+          <p> </p>
+          <p>(好像应该给阿雷凯迪尔送过去。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p></p>
+          <p> </p>
+          <p>看您的表情应该是没能找到吧。</p>
+          <p> </p>
+          <p>虽然我知道很可能找不到，但是心里还是有一点期待...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出首饰盒。. </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(读了首饰盒里的信，留下了眼泪。)</p>
+          <p> </p>
+          <p>现在我明白了，为什么[%username]大人您会一个人回来，为什么不跟我解释。</p>
+          <p> </p>
+          <p>虽然找到了母亲，但是却无法见面...我的心很悲痛。</p>
+          <p> </p>
+          <p>知道是这个结果的话，当初就不应该去找。</p>
+          <p> </p>
+          <p>不。至少母亲知道我还活着，我没有做错。</p>
+          <p> </p>
+          <p>不过，什么时候...什么时候才能见面啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把首饰盒交给[%dic:STR_DIC_N_Arekedil] </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把装着项链和信的首饰盒交给阿雷凯迪尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打开要交给阿雷凯迪尔的首饰盒，项链的旁边放着一封信。</p>
+          <p> </p>
+          <p>读完信之后，阿雷凯迪尔感叹自己的命运，说找到了母亲却无法见面。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

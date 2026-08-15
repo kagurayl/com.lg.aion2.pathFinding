@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭龙族降灵术士杜里亚克的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。</p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_DrakanWi_Re_55]</p>
+          <p></p>
+          <p> 2. 位置：据说逃往了失败者的坟墓方向</p>
+          <p></p>
+          <p> 3. 详情：袭击奥德兵，造成重伤，抢走武器后，沿着风路向失败者的坟墓方向逃窜。</p>
+          <p> </p>
+          <p>如能提供降灵术士杜里亚克的下落，或直接将其杀死者，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不明白龙族到底在打什么主意，呐呐。</p>
+          <p> </p>
+          <p>降灵术士杜里亚克好像也在失败者的坟墓策划什么阴谋。</p>
+          <p> </p>
+          <p>比如说……召唤龙族的灵魂等等非常可怕的事情！</p>
+          <p> </p>
+          <p>不能放着不管，你必须尽快把这件事处理掉，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把降灵术士消灭掉了。真是太好了，呐呐。</p>
+          <p> </p>
+          <p>但是这样还不能完全粉碎他们的阴谋。</p>
+          <p> </p>
+          <p>龙族有很多军队，降灵术士要多少就有多少……</p>
+          <p> </p>
+          <p>这次任务的委托费就归你了。快拿着吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭躲藏在失败者的坟墓里的[%dic:STR_DIC_M_DF4_DaQ_DrakanWi_Re_55]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭龙族降灵术士的委托书。</p>
+          <p> </p>
+          <p>前往失败者的坟墓，消灭了降灵术士杜里亚克。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，能在古代龙神殿见到您，真是太好了！</p>
+          <p> </p>
+          <p>如果不能攻陷神殿，我就不能在这里悠闲地和您谈话了。</p>
+          <p> </p>
+          <p>要是能趁此机会集中兵力，击退龙族或进攻魔族就好了。但是我们却没有这样的余力。</p>
+          <p> </p>
+          <p>这里是龙界，与其冒险推进，不然扎实地走稳每一步。每次取得胜利的时候，应该好好地整顿一下。</p>
+          <p> </p>
+          <p>我正在查看剩余的补给品，看看有没有缺少的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在要塞战的时候，补给品的消耗量非常大。但是这里是龙界的最前线，补给品往往很难顺利送到这里。</p>
+          <p> </p>
+          <p>从极乐世界调集补给品需要很长的时间。向英吉斯温前哨基地请求支援，但那里的情况也不容乐观。</p>
+          <p> </p>
+          <p>而且敌人也不会放过机会，攻击我们的补给线。</p>
+          <p> </p>
+          <p>如果能在附近直接搜集到缺少的物品就好了。</p>
+          <p> </p>
+          <p>要搜集到所有的物品可能会比较困难，但是有一部分应该可以从附近搜集到。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最紧缺的补给品是修补要塞和修理武器的材料，我知道附近可以找到不错的代用品。</p>
+          <p> </p>
+          <p>在结界塔附近栖息着很多的[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_11220a]的强度非常强，但是却很容易加工，因此应该是很好的替代材料。</p>
+          <p> </p>
+          <p>虽然性能没有补给的材料出色，但是现在没有条件让我们挑挑拣拣。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮我去搜集德拉努斯的皮革。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然是应急的东西，但应该会对改善要塞的状况有很大的帮助……</p>
+          <p> </p>
+          <p>[%username]大人的话听了真让人伤心。</p>
+          <p> </p>
+          <p>帮助身处困境的战友，难道不是守卫的义务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，不仅是建筑材料，粮食也非常缺乏。</p>
+          <p> </p>
+          <p>不过我不能连粮食也让[%username]大人去帮着搜集。</p>
+          <p> </p>
+          <p>只要您能帮我搜集到缺少的材料，就已经很感谢了。</p>
+          <p> </p>
+          <p>请把[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An]的皮革交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉努斯的皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去吗？</p>
+          <p> </p>
+          <p>我也不想催促[%username]大人……不过还是有点失望。</p>
+          <p> </p>
+          <p>您是不知道位置在哪里吗？</p>
+          <p> </p>
+          <p>您只要去要塞周围消灭凶恶的[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An]，搜集皮革就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德拉努斯是天界很少能看见的生命体。也许是适应了龙界的环境，它们的皮革非常独特。</p>
+          <p> </p>
+          <p>我想应该可以用作修理要塞的材料。</p>
+          <p> </p>
+          <p>[%username]大人，您帮了我们的大忙。我代表古代龙神殿向您表示感谢。这些虽然不多，但是希望您能收下这些奖励。</p>
+          <p> </p>
+          <p>古代龙神殿还有很多事情需要帮助，希望今后您能继续来协助我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An]的皮革，然后交给[%dic:STR_DIC_N_Chekius]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照切奇乌斯的委托，消灭德拉努斯，搜集用来修理要塞的皮革。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切奇乌斯说攻占古代龙神殿的时候，消耗了大量的补给品，因此急需补充。</p>
+          <p> </p>
+          <p>于是去要塞周围消灭德拉努斯，把搜集到的皮革交给了他。他对我表示感谢，说以后希望我能继续协助他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

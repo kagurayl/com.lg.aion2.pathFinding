@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]大人，有件事我想告诉你。</p>
+          <p></p>
+          <p>凯西内尔神庙训练所增加了新业务。</p>
+          <p></p>
+          <p>通过第3神庙训练所可以获得勇气之神庙徽章，搜集到一定数量之后，可以交换为白金功勋勋章。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>听说第3神庙训练所的优秀毕业生们在龙界的战斗中建立了赫赫功勋。</p>
+          <p></p>
+          <p>阿里埃主神对结果非常满意。为了鼓励大家积极参加训练、对大家付出的辛劳表示感谢，阿里埃特地下达了这个命令。</p>
+          <p></p>
+          <p>[%username]大人，您也是优秀的训练生，如果您想要，随时可以过来交换。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好的，请准备好[%dic:STR_DIC_I_COIN_ARENA_PVP_01]%和[%dic:STR_DIC_I_COIN_ARENA_01]%。</p>
+          <p></p>
+          <p>现在有的话，就给我看看吧。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>如果您想交换，只要来找我就行。</p>
+          <p></p>
+          <p>只要任务没变，我会继续在这里工作，您可以以后再来找我。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>交换时需要400个勇气之神庙徽章和9800个神庙徽章。</p>
+          <p></p>
+          <p>交换之后无法退换，请一定要考虑清楚。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神庙徽章。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>必须有400个勇气之神庙徽章和9800个神庙徽章，才能交换白金功勋勋章。</p>
+          <p></p>
+          <p>请清点一下数量。</p>
+          <p></p>
+          <p>虽然我心很软，但工作还是不能马虎的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>给，白金功勋勋章已经准备好了。</p>
+          <p></p>
+          <p>虽然本来只有在实战中建立功勋的人才能获得，但我破例把它给你。</p>
+          <p></p>
+          <p>希望这个勋章能提高[%username]大人的名誉。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_W_IDArena_L]接受训练，搜集[%dic:STR_DIC_I_COIN_ARENA_PVP_01]%和[%dic:STR_DIC_I_COIN_ARENA_01]%，交给[%dic:STR_DIC_N_Eno]</font>
+              </p>[%collectitem]</step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">按照埃纽所说，用勇气之神庙徽章交换白金功勋勋章。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>埃纽把在凯西内尔神庙训练所中获得的徽章交给她，可以交换白金功勋勋章。</p>
+          <p></p>
+          <p>于是用准备好的徽章交换到了勋章。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

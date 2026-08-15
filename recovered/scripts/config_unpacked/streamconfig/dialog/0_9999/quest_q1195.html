@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然还没把握图尔辛克拉尔到底在策划什么阴谋，但是应该是和欧比斯有关。</p>
+          <p> </p>
+          <p>从和奥德石有关这一点来看，应该没错。联想到奥德石，我想应该不会有错。</p>
+          <p> </p>
+          <p>必须马上向极乐世界传报，要求支援。</p>
+          <p> </p>
+          <p>不过情况很紧急，在支援部队到来之前，我们应该尽我们最大的努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了想援军到来之前可以做的事情，最好是能够除掉图尔辛的[%dic:STR_DIC_MLA37]。</p>
+          <p> </p>
+          <p>这件事显然不容易。它们的防卫严密，再说库拉卡本身就是优秀的战士。</p>
+          <p> </p>
+          <p>但是再怎么样那才是最好的办法。</p>
+          <p> </p>
+          <p>没有库拉克的图尔辛克拉尔就是乌合之众，只要除掉那家伙我们就可以暂时松一口气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_charge;HACTION_ASK_QUEST_ACCEPT">询问任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想除掉[%dic:STR_DIC_MLA37]就得跟克拉尔打响全面战斗，在目前的这种情况还不具备条件。</p>
+          <p> </p>
+          <p>所以希望你能跟伙伴一起进入图尔辛驻地除掉库拉克。</p>
+          <p> </p>
+          <p>目前为止你出色完成了任务，所以我相信你。再说你熟悉图尔辛驻地的地理状况和库拉克的居所。</p>
+          <p> </p>
+          <p>可以接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库拉克不是一般克拉尔。可以说是目前最聪明出色的克拉尔。</p>
+          <p> </p>
+          <p>所以你要格外小心。一定要跟伙伴们一起去图尔辛驻地。</p>
+          <p> </p>
+          <p>希望除掉库拉克后凯旋归来。</p>
+          <p> </p>
+          <p>愿阿里埃保佑你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没有信心吗？也是。你也听说过库拉克的名字。</p>
+          <p> </p>
+          <p>不过我之所以交付这个任务，因为是相信你这个人。我坚信你能做到。</p>
+          <p> </p>
+          <p>要是以后下决心的话，就再过来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>噢，[%username]！真高兴你能平安归来！</p>
+          <p> </p>
+          <p>怎么样？</p>
+          <p> </p>
+          <p>除掉库拉克了吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好！除掉了库拉克，真厉害。</p>
+          <p> </p>
+          <p>听到这个消息之后，极乐世界方面也会高兴的。</p>
+          <p> </p>
+          <p>族长都消失了，那些家伙可以消停一段时间了。</p>
+          <p> </p>
+          <p>这都是你的功劳。我会到极乐世界详细报告你的功劳。</p>
+          <p> </p>
+          <p>真是辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉图尔辛的[%dic:STR_DIC_MLA37]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_LA19]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉图尔斯神族长库拉克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯帕塔洛斯为要求支援兵积攒时间，下令除掉库拉克。认为克拉尔没有族长就会瓦解，可以平息攻击。</p>
+          <p> </p>
+          <p>跟伙伴们一起赶赴图尔辛驻地，好不容易除掉了库拉克。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

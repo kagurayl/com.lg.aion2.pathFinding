@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>秘药已经准备好了，现在完成咒术需要的材料只剩下一种。</p>
+          <p> </p>
+          <p>需要一种草药粉，在黑暗的地方放置的时间越长，效果就越好，所以我很早就准备好了。</p>
+          <p> </p>
+          <p>现在已经可以去拿了。</p>
+          <p> </p>
+          <p>不过还有一个问题……我不知道该怎么办。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为要放置在黑暗的地方很长的时间，我就把它装进透风良好的袋子里，藏在了贝达扎尔公墓的残破的建筑里。</p>
+          <p> </p>
+          <p>那个时候，贝达扎尔公墓还没有像现在这么危险。不过像我这样的老人家去那里费了点劲。</p>
+          <p> </p>
+          <p>但是现在，那里到处都是蜘蛛和阿努拜特，真是太危险了。。</p>
+          <p> </p>
+          <p>可是没有那种材料就无法完成咒术…… [%username] 大人能不能帮助我呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，请[%username] 收下这幅地图。我在这里标上了那个袋子的位置。</p>
+          <p> </p>
+          <p>那里到处都是残破的建筑，覆盖着蜘蛛网，所以那个装着草药粉的袋子不会很好找。</p>
+          <p> </p>
+          <p>找到袋子后请把里面的草药粉拿出来给我带过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要打碎一个老人长久的梦想吗？</p>
+          <p> </p>
+          <p>你知道我为了完成咒术有多么努力吗……</p>
+          <p> </p>
+          <p>如果和布鲁斯特豪宁安危无关，你就不打算管了？</p>
+          <p> </p>
+          <p>希望能够出现帮助我这个老人的心地善良的守护者……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和使用奥德的魔法一样，让人起死回生是咒术的最高境界。</p>
+          <p> </p>
+          <p>虽然我还没有到达那种境界，可只要完成这次的咒术，让人起死回生也并非不可能。</p>
+          <p> </p>
+          <p>带来草药粉了吗？</p>
+          <p> </p>
+          <p>因为有地图，寻找也不会那么困难吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将草药粉交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是因为是一个老人的请求，你就不那么重视了？</p>
+          <p> </p>
+          <p>我也不想再重复跟你说这件事情的重要性。</p>
+          <p> </p>
+          <p>所以请不要一直这样闲着，请赶紧去给我找草药粉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为到处都是蜘蛛网，过程也不会轻松，真是辛苦您了。</p>
+          <p> </p>
+          <p>现在所有的准备都做完了，只剩下完成咒术。</p>
+          <p> </p>
+          <p>如果能够成功完成咒术，这都是 [%username] 大人的功劳。</p>
+          <p> </p>
+          <p>谢谢您这段时间以来的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到在残破的建筑里的装在袋子里的草药粉，交给 [%dic:STR_DIC_N_Seznec]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助塞兹内克完成咒术，去贝达扎尔公墓，按照地图上所标的位置寻找装在袋子里的草药粉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞兹内克表示想要完成咒术，需要自己曾经装在袋子里存放的草药粉。</p>
+          <p> </p>
+          <p>可是因为存放的地方到处都是蜘蛛和阿努拜特，很难去拿，按照塞兹内克给的地图，帮他找到了装在袋子里的草药粉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(刀刃很锐利，截面呈直角的短刀。)</p>
+          <p> </p>
+          <p>(长度比普通短刀短，好像不是战斗用或打猎用的刀。)</p>
+          <p> </p>
+          <p>(难道是猎人用来剥皮的刀？)</p>
+          <p> </p>
+          <p>(应该去问问[%dic:STR_DIC_N_Maeleagros]是不是他的东西。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡里顿的皮毛有很多用途。</p>
+          <p> </p>
+          <p>特别是趁着黑夜，披着卡里顿的皮毛潜入卡里顿聚集的地方，就不会被任何人发现。</p>
+          <p> </p>
+          <p>只要加工一下，就可以用来制作防具。但是因为很厚、很坚硬，所以只能整张地使用。</p>
+          <p> </p>
+          <p>啊，你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出短刀，询问是否是他的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看短刀)这不是我的刀。我的手很大，不会用这么小的短刀。</p>
+          <p> </p>
+          <p>但是，我好像在什么地方看到长成这样的刀，到底是在哪儿呢...</p>
+          <p> </p>
+          <p>啊，没错！我看见石匠们用的是这种刀。</p>
+          <p> </p>
+          <p>附近能称为石匠的人，就只有[%dic:STR_DIC_N_Pygmalion]大人了，你去见见他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是看了公告之后来的吗？</p>
+          <p> </p>
+          <p>来的正好。可以的话，我希望你马上开始做事。</p>
+          <p> </p>
+          <p>因为切尔路斯和潘多兰盖伦，工程已经拖延了很久了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出短刀，询问是否是他的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？这个…你是从哪儿拿到这把刀的？</p>
+          <p> </p>
+          <p>这是拉萨尔老师的东西。</p>
+          <p> </p>
+          <p>几年之前他说有东西需要确认，突然去了极乐世界，后来就没有了消息...  </p>
+          <p> </p>
+          <p>在燃烧的僵尸身上发现了这个东西？老师怎么会，呜呜。</p>
+          <p> </p>
+          <p>啊，感觉像被棍子打了一下，脑袋好晕。现在我，什么都不想说。</p>
+          <p> </p>
+          <p>对不起，请让我一个人静一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把短刀交给[%dic:STR_DIC_N_Maeleagros]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把短刀交给[%dic:STR_DIC_N_Pygmalion]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">燃烧的僵尸身上掉落了一把样子奇特的短刀。好像是剥皮用的短刀，拿去问问猎人梅雷阿格罗斯是不是他的东西吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在燃烧的僵尸身上获得了一把奇特的短刀。</p>
+          <p> </p>
+          <p>怀疑是剥皮用的短刀，于是拿去给梅雷阿格罗斯看了看，他说好像是石匠用的刀，让我拿去給皮格马利安看看。</p>
+          <p> </p>
+          <p>看到短刀之后，皮格马利安说那是几年前失踪的老师拉萨尔的东西，他感到非常悲痛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

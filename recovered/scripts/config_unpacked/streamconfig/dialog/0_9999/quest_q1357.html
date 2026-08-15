@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>考古发掘非常辛苦，这是一项没有头绪的工作。</p>
+          <p> </p>
+          <p>虽然搜集到了很多小的证据，但是要把它们组成大的图案，是件很困难的事情。</p>
+          <p> </p>
+          <p>即使费了好大力气拼成了大的图案，对此关心的人也是极少数，所以我才说没什么头绪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来这就是必须集中全力进行的工作，但是最近发生了很多让我无法集中精力的事情。</p>
+          <p> </p>
+          <p>本来研究工作就很孤独，还经常发生这样那样的事情，我几次都想放手不干了。</p>
+          <p> </p>
+          <p>所以最近经常在这里发呆，抱怨抱怨，说想要回到极乐世界去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神殿附近的德利顿正在抢走和破坏我搜集来的文物。</p>
+          <p> </p>
+          <p>要发掘一个石像，需要用小刷子刷几千次，最大地保留原来的状态，小心翼翼地把它拿出来。现在辛辛苦苦搜集到的东西却正在被破坏...</p>
+          <p> </p>
+          <p>这样下去的话，我就再也打不起精神来了。</p>
+          <p> </p>
+          <p>在我守护文物的时候，[%username]大人您能帮我去把[%dic:STR_DIC_M_Driton_30_An]清除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝，</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。您不知道这对我来说是多大的帮助。</p>
+          <p> </p>
+          <p>德利顿在奇乌拉神殿的附近有很多。这里说是德利顿的天地也一点都不过分。</p>
+          <p> </p>
+          <p>请您把它们全部清除掉之后回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拒绝了吗？好的，我知道了。</p>
+          <p> </p>
+          <p>身为学者，保护自己的研究也是自己应该做的任务。</p>
+          <p> </p>
+          <p>虽然很久没有战斗过了，看来得重新拾起刀剑了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把聚集在这周围的[%dic:STR_DIC_M_Driton_30_An]都清除掉了吗？</p>
+          <p> </p>
+          <p>它们可都是些很厉害的家伙。</p>
+          <p> </p>
+          <p>能把石头做的东西咬碎，真是让人吃惊，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，这下我终于可以安心地投入研究工作了。</p>
+          <p> </p>
+          <p>现在不会发生珍贵的文物失踪或者被损坏的事情了。</p>
+          <p> </p>
+          <p>真是谢谢您。这是一点谢意。请您一定要收下。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除破坏文物的[%dic:STR_DIC_M_Driton_30_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Actaeon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去把妨碍考古学者阿泰安进行研究的德利顿清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>考古学者阿泰安正在因为德利顿妨碍他的研究而头疼万分。</p>
+          <p> </p>
+          <p>于是帮助他除掉了德利顿，他对我表示感谢，说这下终于可以埋头研究了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

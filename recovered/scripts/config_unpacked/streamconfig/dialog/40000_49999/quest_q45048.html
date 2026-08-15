@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>致全体结界守护团团员。</p>
+          <p> </p>
+          <p>在守护团活动的过程中，战斗是不可避免的，而在战斗中，消耗品是必需的。</p>
+          <p> </p>
+          <p>消耗品中最重要的是药水，但是目前守护团的药水供给遇到了困难。</p>
+          <p> </p>
+          <p>请各位团员帮着搜集可以用作药水材料的白木通。</p>
+          <p> </p>
+          <p>采集到[%dic:STR_DIC_G_QUEST_45048a]后，请交给[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>白木通是多种药水的重要成分。</p>
+          <p> </p>
+          <p>在格尔克马洛斯可以采集到很多。</p>
+          <p> </p>
+          <p>如果您收到了信，就应该知道，守护团要求同志们帮忙采集[%dic:STR_DIC_G_QUEST_45048a]。</p>
+          <p> </p>
+          <p>如果您有白木通，请趁新鲜的时候，把东西交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出白木通。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您没收到信吗？</p>
+          <p> </p>
+          <p>只要是可以进出格尔克马洛斯的守护团员，所有人都在搜集白木通。</p>
+          <p> </p>
+          <p>虽然已经搜集到了不少，但目前还有点不足。</p>
+          <p></p>
+          <p>所有人必须每天都积极搜集[%dic:STR_DIC_G_QUEST_45048a]，才能确保足够的分量，希望您继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您采集到3个白木通了啊。</p>
+          <p> </p>
+          <p>有[%username]大人这么热心的同志在，我们结界守护团一定会永远繁荣下去的。</p>
+          <p> </p>
+          <p>这是守护团为您准备的证物。</p>
+          <p> </p>
+          <p>希望每天都能见到您。谢谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45048a]，然后交给[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，搜集用作药品材料的采集物，然后交给安皮比亚或穆鲁斯卡。</p>
+          <p> </p>
+          <p>按照信上的指示，把采集到的白木通送了过去，获得了作为奖励的证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，我说，我用你给我的木板修好了车子的挡板。</p>
+          <p> </p>
+          <p>这样的话，应该就能重新用来运粮食了。</p>
+          <p> </p>
+          <p>但是车子最重要的是轮子，不是吗？</p>
+          <p> </p>
+          <p>用木板是没法修理轮子的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要很多守护者都使用的结实的木材，那就是从年老的洛特伦身上才能搜集到的[%dic:STR_DIC_I_QUEST_21101a]。</p>
+          <p> </p>
+          <p>那种东西只能从[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]身上找到。</p>
+          <p> </p>
+          <p>如果你能帮我搜集到，我就可以对车子最重要的部分——轮子进行修理了。</p>
+          <p> </p>
+          <p>拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你了。</p>
+          <p> </p>
+          <p>但是[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]非常可怕。</p>
+          <p> </p>
+          <p>请你小心一点，一定要帮我搜集到[%dic:STR_DIC_I_QUEST_21101a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也害怕[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]吗？</p>
+          <p> </p>
+          <p>那样的话就算了。</p>
+          <p> </p>
+          <p>应该用什么来修理轮子呢？</p>
+          <p> </p>
+          <p>我也没有别的办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]找到了吗？</p>
+          <p> </p>
+          <p>据说它们是非常可怕的东西。</p>
+          <p> </p>
+          <p>而且只有一个，应该很难找到。</p>
+          <p> </p>
+          <p>不过你是守护者，应该可以找到它吧？[%dic:STR_DIC_I_QUEST_21101a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出古树树干。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没找到[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]吗！？</p>
+          <p> </p>
+          <p>反正我们在这里已经停留了很久了，不用着急。</p>
+          <p> </p>
+          <p>只要多玛提能少抱怨几声，我就别无所求了。最近他一直在唠叨。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_21101a]找到了的话，就快点给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这就是坚硬的古树树干。</p>
+          <p> </p>
+          <p>终于可以把车子修好了。</p>
+          <p> </p>
+          <p>修好车子之后，说不定就能把多玛提扔在这里逃走了。</p>
+          <p> </p>
+          <p>这次又麻烦你了。真是谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_Rottentree_DR_NmdQ_54_An]，搜集木材，然后交给[%dic:STR_DIC_N_Shulack_DF4_3]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">难民普尔金说修理轮子部分，最好用古树树干。去消灭千年腐树，搜集木材吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难民普尔金说虽然用木板修好了车子的一部分，但最重要的轮子没办法修理。</p>
+          <p> </p>
+          <p>他说修理轮子最好用古树树干，于是去消灭了千年腐树，把搜集到的木材交给了他。他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

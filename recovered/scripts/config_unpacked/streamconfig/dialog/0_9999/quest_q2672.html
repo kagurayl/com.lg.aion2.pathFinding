@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>成为灵魂后方便的一点是，不管怎样在巴卡尔玛军团驻地来回行动，也不会受到攻击。</p>
+          <p> </p>
+          <p>因此能够很容易地掌握敌人的动态。不过，只凭我一个人什么事情也做不了，这有点麻烦。</p>
+          <p> </p>
+          <p>前几天，我在巴卡尔玛军团驻地游荡时，发现了个奇怪的东西。</p>
+          <p> </p>
+          <p>那就是[%dic:STR_DIC_OBJ_DragonEgg_Q2672]。如果那个地方不是龙族的根据地，我可能还以为是巨大蛇妖的蛋呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总之，在龙族的根据地有蛋，这件事总是让人很担心。</p>
+          <p> </p>
+          <p>在搞清楚那些蛋是什么之前，我可放不下心来。</p>
+          <p> </p>
+          <p>[%username] 大人，你能带一些 [%dic:STR_DIC_OBJ_DragonEgg_Q2672]回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到您答应帮我把[%dic:STR_DIC_OBJ_DragonEgg_Q2672]带来，我安心不少。</p>
+          <p> </p>
+          <p>那些来历不明的蛋散落在巴卡尔玛军团周围。</p>
+          <p> </p>
+          <p>请注意，一定不要让蛋碎了。</p>
+          <p> </p>
+          <p>那么，拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我太敏感了吗？</p>
+          <p> </p>
+          <p>但一想到龙族又在搞什么阴谋，我就忧心忡忡。</p>
+          <p> </p>
+          <p>被敌人的阴谋欺骗，一次就够了。</p>
+          <p> </p>
+          <p>如果您改变注意，请帮忙去收集在龙族驻地的 [%dic:STR_DIC_OBJ_DragonEgg_Q2672]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人，您回来了啊。</p>
+          <p> </p>
+          <p>您出去的这段时间，我一直担心那些蛋生出的是龙族。</p>
+          <p> </p>
+          <p>虽然也明白只是担心，对解决事情没有任何帮助。</p>
+          <p> </p>
+          <p>那么，您已经把收集到的[%dic:STR_DIC_OBJ_DragonEgg_Q2672]带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把蛋交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人，直到蛋的谜揭开之前，绝对不可以放松。</p>
+          <p> </p>
+          <p>所以，请您赶快去巴卡尔玛军团驻地收集那些蛋吧。</p>
+          <p> </p>
+          <p>如果 [%dic:STR_DIC_OBJ_DragonEgg_Q2672]里生出的是德拉坎该怎么办？别这么慢吞吞的了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蛋已经收集完了，这让我稍微放了点心。</p>
+          <p> </p>
+          <p>要塞方面的人很快就会过来，我要请求他们将蛋送到那里进行彻底的研究。</p>
+          <p> </p>
+          <p>谢谢您帮助我收集这些蛋。</p>
+          <p> </p>
+          <p>[%username] 大人又为消灭贝鲁斯兰的龙族做出了贡献。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去巴卡尔玛军团驻地，收集 [%dic:STR_DIC_OBJ_DragonEgg_Q2672]，并交给[%dic:STR_DIC_N_Gwendolin]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">格温杜尔林称，在巴卡尔玛军团驻地有些来历不明的奇怪的蛋。收集这些蛋，并交给格温杜尔林。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格温杜尔林称，灵魂的好处是不会被龙族攻击。幸亏如此，她才可以很方便地观察敌人的动向。</p>
+          <p> </p>
+          <p>她表示，在敌人的驻地发现了一些可疑的蛋，希望能把它们收集来，以供研究。</p>
+          <p> </p>
+          <p>接受她的委托，收集蛋并交给了她。她表示安心了许多，并会把这些蛋送到要塞进行彻底的研究。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

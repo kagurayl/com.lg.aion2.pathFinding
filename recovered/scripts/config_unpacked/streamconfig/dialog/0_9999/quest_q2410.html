@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>革命团建筑基地的动态很不寻常，我因此很担心。</p>
+          <p> </p>
+          <p>我刚来这里的时候，他们的规模还很小。但现在规模已经变得很庞大，已经不能随便去招惹。</p>
+          <p> </p>
+          <p>我担心这样下去的话会出事，所以向要塞进行了报告，但是他们让我继续监视情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们让我注意监视革命团建筑基地的动态，并定期地提交报告书。但是由于他们的警戒太森严...</p>
+          <p> </p>
+          <p>如果没有入口处的那些家伙的话，进行侦察就会容易得多。但是以我们的实力，很难把他们除掉。</p>
+          <p> </p>
+          <p>[%username]大人，我听莫提尔说您的实力非常出众，这件事情您能帮一下忙吗？</p>
+          <p> </p>
+          <p>当然，我一定会给您相应的报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。根据我到现在为止的调查，入口主要由[%dic:STR_DIC_M_FeA_LehparFiD_38_An]、[%dic:STR_DIC_M_ReB_LehparRngD_38_An]和[%dic:STR_DIC_M_WeA_LehparWiD_38_An]守卫。</p>
+          <p> </p>
+          <p>他们的战斗方式很特别，所以去之前最好先想好对付他们的办法。</p>
+          <p> </p>
+          <p>请小心不要受伤。哦，对了。这次的任务如果可以顺利完成，我会给您银铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，看来您很忙啊。虽然很可惜，不过也没办法。</p>
+          <p> </p>
+          <p>像[%username]大人这样有实力的人一时半会儿也很难遇到...</p>
+          <p> </p>
+          <p>如果您改变注意的话，请再来找我。[%username]大人的话，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没受伤吧？革命团的那些家伙可不太好对付。</p>
+          <p> </p>
+          <p>特别是建筑基地法师之类的会用魔法在远处攻击，如果不能打起精神的话，很可能会被打倒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我听到的最让人高兴的消息。</p>
+          <p> </p>
+          <p>看来我拜托[%username]大人，算是找对人了。</p>
+          <p> </p>
+          <p>请您收下。这是说好的银铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除守卫革命团建筑基地入口的革命团员</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeA_LehparFiD_38_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ReB_LehparRngD_38_An]([%5]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_WeA_LehparWiD_38_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Modgud]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说革命团建筑基地的警备森严，无法对其进行侦察。帮助莫德古尔把守护入口的建筑基地战斗兵、建筑基地巡查兵和建筑基地法师清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卫兵莫德古尔说由于革命团建筑基地的警备太森严而无法进行侦察，并请求我的帮助。</p>
+          <p> </p>
+          <p>于是帮他清除掉了守卫入口的革命团员，并向他进行了报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

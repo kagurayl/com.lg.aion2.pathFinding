@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了守护结界塔，我们需要为团员们准备武器。</p>
+          <p> </p>
+          <p>上面决定消减武器的预算，让我们自行筹建武器生产部，自己解决武器问题。</p>
+          <p> </p>
+          <p>虽然有很多同志在帮助我们，但武器材料仍然非常缺乏。</p>
+          <p> </p>
+          <p>为了结界守护团，请帮着搜集[%dic:STR_DIC_G_QUEST_45041_a]和[%dic:STR_DIC_G_QUEST_45041_b]。</p>
+          <p> </p>
+          <p>通过[%dic:STR_DIC_N_Alaum]上交给守护团，将会有效地缓解武器的供应。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于守护者来说，使用奥德的力量虽然很重要，但有一把好的武器也是非常重要的。</p>
+          <p> </p>
+          <p>您也知道，根据武器的好坏，可以让一个人发挥出更强的力量，也可以让他发挥不出原来的力量。</p>
+          <p> </p>
+          <p>要是能给同志们提供更好的武器，那就好了。但是我们是没有上面支援的独立团体，因此没有办法。</p>
+          <p> </p>
+          <p>虽然团员们都在努力贡献自己的一份力量，但最近可能是因为团员人数变少了，所以筹集到的支援物品的数量也越来越少。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出采集物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我们打算制作的武器，是用坚硬的矿物和直挺的树制作而成，性能非常好。</p>
+          <p> </p>
+          <p>坚硬的矿物中最具代表性的是山铜矿石，直挺的木材当然是菩提树。</p>
+          <p> </p>
+          <p>为了为结界守护团团员提供更好的武器，我们正在搜集这两种采集物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您完成指令啦。</p>
+          <p> </p>
+          <p>是您自己采集的吗？还是买来的啊？不管什么方式都没关系。</p>
+          <p> </p>
+          <p>[%username]大人在物质和精神上都给结界守护团提供了很大的帮助，我在此对您表示感谢。</p>
+          <p> </p>
+          <p>希望您收下这个证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45041_a]和[%dic:STR_DIC_G_QUEST_45041_b]，然后交给[%dic:STR_DIC_N_Alaum]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，需要搜集菩提树和山铜矿石，作为武器补给用的材料。</p>
+          <p> </p>
+          <p>按照信上的指示，搜集到采集物后交给了阿拉乌姆，他给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

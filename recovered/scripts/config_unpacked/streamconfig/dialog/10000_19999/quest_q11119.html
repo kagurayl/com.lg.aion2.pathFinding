@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>准确地说，鸢族不是危险势力。真正危险的，是劫持鸢族，把他们变成亲龙势力的某一股势力。</p>
+          <p> </p>
+          <p>那股势力隐藏在幕后，现在还没人知道他们的真面目。</p>
+          <p> </p>
+          <p>现在我们能做的，只是对狂信徒进行监视，在周围进行警戒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说在提亚马特的攻击造成的巨大的裂缝下面，就是狂信徒们聚集的地方。</p>
+          <p> </p>
+          <p>有几个守护者在经过附近的时候遭到了[%dic:STR_DIC_M_LF4_B_Fethlot_Highland_53_n]的攻击，掉了下去，因此才发现了那个地方。</p>
+          <p> </p>
+          <p>而且[%dic:STR_DIC_M_LF4_B_Direbeast_Fanatic_53_An]被狂信徒们驯服了，这样下去的话，可能会很危险。</p>
+          <p> </p>
+          <p>你能去消除裂缝附近的威胁吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去把[%dic:STR_DIC_M_LF4_B_Fethlot_Highland_53_n]和[%dic:STR_DIC_M_LF4_B_Direbeast_Fanatic_53_An]消灭掉。</p>
+          <p> </p>
+          <p>然后回来向我报告。</p>
+          <p> </p>
+          <p>它们是采用和狂信徒类似的方法训练的，因此对守护者非常敌视。你必须要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>身为守护者，却不愿意去消除威胁天族的因素，真让人失望。</p>
+          <p> </p>
+          <p>如果你有什么急事，那也没办法。总之你再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说的没错，巴尔隆和狮蝎非常具有攻击性吧？</p>
+          <p> </p>
+          <p>我们正在调查，鸢族和附近的生命体是被谁洗了脑。</p>
+          <p> </p>
+          <p>你按照我的指示，把它们消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道它们受到了什么的影响，变得格外凶残，但是我知道它们一定不是你的对手。</p>
+          <p> </p>
+          <p>我们还在继续进行调查，狂信徒到底是受到了什么的影响。</p>
+          <p> </p>
+          <p>在揭开真相之前，希望你能继续来帮我。</p>
+          <p> </p>
+          <p>你出色地完成了这次任务，我对你表示感谢。拿着。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭巴尔隆和狮蝎</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B_Fethlot_Highland_53_n]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B_Direbeast_Fanatic_53_An]([%5]/13)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Corocota]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">不知道受到了什么的影响，巴尔隆和狮蝎呈现和狂信徒类似的情况。必须执行任务，消灭它们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗库塔说巴尔隆和狮蝎好像受到了和狂信徒类似的影响，对守护者非常具有攻击性。</p>
+          <p> </p>
+          <p>接受了消灭它们的指令，完成任务之后回去见到了克罗库塔。他对我表示感谢，说我出色完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

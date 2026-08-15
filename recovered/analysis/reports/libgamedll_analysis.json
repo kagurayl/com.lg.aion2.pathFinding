@@ -1,0 +1,509 @@
+{
+  "lookup": {
+    "result": [
+      {
+        "query": "gamelib_initialize",
+        "fn": {
+          "addr": "0x7287c",
+          "name": "gamelib_initialize",
+          "size": "0x50"
+        },
+        "error": null
+      },
+      {
+        "query": "gamelib_startgame",
+        "fn": {
+          "addr": "0x728cc",
+          "name": "gamelib_startgame",
+          "size": "0xa0"
+        },
+        "error": null
+      },
+      {
+        "query": "gamelib_updaterstart",
+        "fn": {
+          "addr": "0x72860",
+          "name": "gamelib_updaterstart",
+          "size": "0x4"
+        },
+        "error": null
+      },
+      {
+        "query": "gamelib_downloadfile",
+        "fn": {
+          "addr": "0x72aac",
+          "name": "gamelib_downloadfile",
+          "size": "0x8"
+        },
+        "error": null
+      },
+      {
+        "query": "filelist_load",
+        "fn": {
+          "addr": "0x6a230",
+          "name": "filelist_load",
+          "size": "0x1c8"
+        },
+        "error": null
+      },
+      {
+        "query": "packfile_getfile",
+        "fn": {
+          "addr": "0x6b9f0",
+          "name": "packfile_getfile",
+          "size": "0x134"
+        },
+        "error": null
+      },
+      {
+        "query": "script_vmthread",
+        "fn": {
+          "addr": "0x7b120",
+          "name": "script_vmthread",
+          "size": "0x6c"
+        },
+        "error": null
+      },
+      {
+        "query": "network_requestconnect",
+        "fn": {
+          "addr": "0x6b0e8",
+          "name": "network_requestconnect",
+          "size": "0x94"
+        },
+        "error": null
+      }
+    ]
+  },
+  "analysis": {
+    "result": [
+      {
+        "target": "gamelib_initialize",
+        "addr": "0x7287c",
+        "name": "gamelib_initialize",
+        "analysis": {
+          "size": "0x50",
+          "prototype": null,
+          "decompile": "__int64 gamelib_initialize()\n{\n  __int64 v0; // x0\n  __int64 v1; // x0\n  __int64 v2; // x0\n  __int64 v3; // x0\n  __int64 v4; // x0\n  __int64 v5; // x0\n\n  v0 = updater_stop(); /*0x72884*/\n  v1 = filecrc_loadlocal(v0); /*0x72888*/\n  configmanager_initialize(v1); /*0x7288c*/\n  if ( (configmanager_getcmdbool(\"unpack\") & 1) == 0 ) /*0x7289c*/\n    packfile_initialize(); /*0x728a0*/\n  v2 = configmanager_getcmdbool(\"luadebugger\"); /*0x728ac*/\n  if ( (v2 & 1) != 0 ) /*0x728b0*/\n    v2 = luadebugger_initialize(); /*0x728b4*/\n  v3 = stringconfig_initialize(v2); /*0x728b8*/\n  v4 = protocol_initialize(v3); /*0x728bc*/\n  v5 = message_initialize(v4); /*0x728c0*/\n  return uimanager_initialize(v5);\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x7e40",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x72880",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 1,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x380bd",
+              "length": 6,
+              "string": "unpack"
+            },
+            {
+              "addr": "0x3ae52",
+              "length": 11,
+              "string": "luadebugger"
+            }
+          ],
+          "string_ref_count": 2,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "gamelib_startgame",
+        "addr": "0x728cc",
+        "name": "gamelib_startgame",
+        "analysis": {
+          "size": "0xa0",
+          "prototype": null,
+          "decompile": "__int64 gamelib_startgame()\n{\n  __int64 v0; // x0\n  _QWORD *v1; // x19\n  unsigned int v3; // [xsp+4h] [xbp-Ch] BYREF\n  __int64 v4; // [xsp+8h] [xbp-8h]\n\n  v4 = *(_QWORD *)(_ReadStatusReg(TPIDR_EL0) + 40); /*0x728e4*/\n  script_initialize(); /*0x728e8*/\n  v0 = configmanager_getcmdbool(\"debuginput\"); /*0x728f4*/\n  if ( (v0 & 1) != 0 ) /*0x728f8*/\n  {\n    v0 = script_getrootvm(); /*0x728fc*/\n    if ( v0 ) /*0x72900*/\n    {\n      v1 = (_QWORD *)v0; /*0x72904*/\n      script_loadfile(*(_QWORD *)v0, \"debug/debug\"); /*0x72914*/\n      v3 = 0; /*0x72918*/\n      v0 = script_prepare(*v1, \"debug_init\", &v3); /*0x7292c*/\n      if ( (v0 & 1) != 0 ) /*0x72930*/\n        v0 = script_call(*v1, 0, v3); /*0x72940*/\n    }\n  }\n  return packfile_clearlibrary(v0); /*0x72964*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0xaf78",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x728d0",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 1,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [
+            {
+              "addr": "0x3ae5e",
+              "length": 10,
+              "string": "debuginput"
+            },
+            {
+              "addr": "0x3ae69",
+              "length": 11,
+              "string": "debug/debug"
+            },
+            {
+              "addr": "0x3a1ae",
+              "length": 10,
+              "string": "debug_init"
+            }
+          ],
+          "string_ref_count": 3,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "gamelib_updaterstart",
+        "addr": "0x72860",
+        "name": "gamelib_updaterstart",
+        "analysis": {
+          "size": "0x4",
+          "prototype": null,
+          "decompile": "// attributes: thunk\n__int64 gamelib_updaterstart()\n{\n  return updater_start();\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x36b8",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x157530",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 1,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "gamelib_downloadfile",
+        "addr": "0x72aac",
+        "name": "gamelib_downloadfile",
+        "analysis": {
+          "size": "0x8",
+          "prototype": null,
+          "decompile": "__int64 __fastcall gamelib_downloadfile(char *a1)\n{\n  return filecrc_downloadfile(a1);\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x7f18",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x72ab0",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 1,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "filelist_load",
+        "addr": "0x6a230",
+        "name": "filelist_load",
+        "analysis": {
+          "size": "0x1c8",
+          "prototype": null,
+          "decompile": "_QWORD *__fastcall filelist_load(char *a1, char a2)\n{\n  void *v3; // x0\n  void *v4; // x21\n  unsigned int v5; // w19\n  int v6; // w22\n  _QWORD *v7; // x19\n  int v8; // w0\n  int v9; // w22\n  __int64 v10; // x24\n  char *v11; // x0\n  char **v12; // x21\n  __int64 v13; // x25\n  _DWORD *v14; // x26\n  void *v15; // x20\n  __int64 v16; // x22\n  char **v17; // x25\n  char *v18; // t1\n  void *v19; // x0\n  void *ptr; // [xsp+0h] [xbp-20h] BYREF\n  void *v22; // [xsp+8h] [xbp-18h] BYREF\n  int v23; // [xsp+14h] [xbp-Ch]\n  __int64 v24; // [xsp+18h] [xbp-8h]\n\n  v24 = *(_QWORD *)(_ReadStatusReg(TPIDR_EL0) + 40); /*0x6a260*/\n  v23 = 0; /*0x6a264*/\n  v3 = (void *)file_readfile(a1); /*0x6a268*/\n  if ( !v3 ) /*0x6a26c*/\n    return 0; /*0x6a26c*/\n  v4 = v3; /*0x6a270*/\n  ptr = v3; /*0x6a274*/\n  v22 = v3; /*0x6a274*/\n  if ( (a2 & 1) != 0 ) /*0x6a278*/\n  {\n    v5 = binary_readint32(&v22); /*0x6a284*/\n    ptr = malloc((int)v5); /*0x6a2a4*/\n    v6 = lz4_decodebuffer(v22, ptr, (unsigned int)(v23 - 4), v5); /*0x6a2ac*/\n    free(v4); /*0x6a2b4*/\n    v4 = ptr; /*0x6a2b8*/\n    if ( v6 != v5 ) /*0x6a2c0*/\n    {\n      v19 = ptr; /*0x6a3b8*/\n      goto LABEL_15; /*0x6a3b8*/\n    }\n  }\n  v7 = malloc(0x20u); /*0x6a2cc*/\n  v7[1] = v4; /*0x6a2d0*/\n  v8 = binary_readint32(&ptr); /*0x6a2d8*/\n  *((_DWORD *)v7 + 4) = v8; /*0x6a2dc*/\n  if ( !v8 ) /*0x6a2e0*/\n  {\n    free(v4); /*0x6a3ac*/\n    v19 = v7; /*0x6a3b0*/\nLABEL_15:\n    free(v19); /*0x6a3bc*/\n    return 0; /*0x6a3c0*/\n  }\n  v9 = v8; /*0x6a2e4*/\n  v10 = v8; /*0x6a2e8*/\n  v7[3] = 0; /*0x6a2f4*/\n  v11 = (char *)malloc(24LL * v8); /*0x6a2f8*/\n  v12 = (char **)v11; /*0x6a2fc*/\n  *v7 = v11; /*0x6a304*/\n  if ( v9 >= 1 ) /*0x6a308*/\n  {\n    v13 = (unsigned int)v9; /*0x6a30c*/\n    v14 = v11 + 16; /*0x6a310*/\n    do /*0x6a348*/\n    {\n      *((_QWORD *)v14 - 2) = binary_readstring(&ptr); /*0x6a31c*/\n      *((_QWORD *)v14 - 1) = binary_readint64(&ptr); /*0x6a328*/\n      v14[1] = binary_readint32(&ptr); /*0x6a334*/\n      *v14 = binary_readint32(&ptr); /*0x6a340*/\n      v14 += 6; /*0x6a340*/\n      --v13; /*0x6a344*/\n    }\n    while ( v13 ); /*0x6a348*/\n  }\n  if ( (a2 & 2) != 0 ) /*0x6a34c*/\n  {\n    v15 = malloc(0x10u); /*0x6a35c*/\n    v7[3] = v15; /*0x6a360*/\n    bisectionhash_create(); /*0x6a364*/\n    if ( v9 >= 1 ) /*0x6a36c*/\n    {\n      v16 = 0; /*0x6a370*/\n      v17 = v12; /*0x6a374*/\n      do /*0x6a398*/\n      {\n        v18 = *v17; /*0x6a378*/\n        v17 += 3; /*0x6a378*/\n        bisectionhash_set((int)v15, v16++, v18); /*0x6a388*/\n      }\n      while ( v10 != v16 ); /*0x6a398*/\n    }\n    bisectionhash_sort(v15); /*0x6a3a0*/\n  }\n  return v7; /*0x6a3f0*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x15719c",
+                "type": "code"
+              },
+              {
+                "addr": "0x1dc8",
+                "type": "data"
+              },
+              {
+                "addr": "0x157194",
+                "type": "data"
+              },
+              {
+                "addr": "0x164538",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x6a234",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "packfile_getfile",
+        "addr": "0x6b9f0",
+        "name": "packfile_getfile",
+        "analysis": {
+          "size": "0x134",
+          "prototype": "__int64 __fastcall(char *filename)",
+          "decompile": "void *__fastcall packfile_getfile(char *filename, _DWORD *a2, _DWORD *a3, char a4)\n{\n  int *v8; // x0\n  void *v9; // x21\n  __int64 v11; // x0\n  int *v12; // x22\n  size_t v13; // x0\n  void *v14; // x0\n\n  if ( m_packfile_loadpack )\n  {\n    if ( m_packfile_library && (v8 = (int *)bisectionhash_get((int)m_packfile_library + 24, filename)) != 0 )\n    {\n      *a2 = v8[1]; /*0x6ba4c*/\n      *a3 = 1; /*0x6ba50*/\n      return (void *)(*(_QWORD *)(m_packfile_library + 16) + *v8); /*0x6ba60*/\n    }\n    else if ( !m_packfile_stream\n           || (v11 = bisectionhash_get((int)m_packfile_stream + 24, filename)) == 0\n           || ((v12 = (int *)v11, *a2 = *(_DWORD *)(v11 + 8), *a3 = 0, v13 = *(int *)(v11 + 8), (a4 & 4) != 0)\n             ? (v14 = malloc(v13))\n             : (v14 = (void *)buffermanager_malloc(v13)),\n               v9 = v14,\n               (unsigned int)lz4_decodebuffer(\n                               *(_QWORD *)(m_packfile_stream + 16) + *v12,\n                               v14,\n                               (unsigned int)v12[1],\n                               (unsigned int)v12[2]) != v12[2]) )\n    {\n      v9 = 0; /*0x6bb00*/\n      *a3 = 0; /*0x6bb04*/\n      *a2 = 0; /*0x6bb08*/\n    }\n    return v9; /*0x6bb0c*/\n  }\n  else\n  {\n    *a3 = 0; /*0x6ba68*/\n    return (void *)file_readfile(filename); /*0x6ba88*/\n  }\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x15686c",
+                "type": "code"
+              },
+              {
+                "addr": "0x2e60",
+                "type": "data"
+              },
+              {
+                "addr": "0x156864",
+                "type": "data"
+              },
+              {
+                "addr": "0x1640a0",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x6b9f4",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 4,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "script_vmthread",
+        "addr": "0x7b120",
+        "name": "script_vmthread",
+        "analysis": {
+          "size": "0x6c",
+          "prototype": null,
+          "decompile": "__int64 __fastcall script_vmthread(__int64 a1)\n{\n  int v2; // w20\n\n  v2 = lua_pcall(*(_QWORD *)a1, *(unsigned int *)(a1 + 68), 0xFFFFFFFFLL, (unsigned int)(-2 - *(_DWORD *)(a1 + 68))); /*0x7b154*/\n  lua_settop(*(_QWORD *)a1, *(unsigned int *)(a1 + 64)); /*0x7b15c*/\n  section_enter(a1 + 16); /*0x7b168*/\n  *(_DWORD *)(a1 + 72) = v2; /*0x7b170*/\n  section_leave(a1 + 16); /*0x7b174*/\n  return 0; /*0x7b188*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x2620",
+                "type": "data"
+              },
+              {
+                "addr": "0x7b29c",
+                "type": "data"
+              },
+              {
+                "addr": "0x163850",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x7b124",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 3,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      },
+      {
+        "target": "network_requestconnect",
+        "addr": "0x6b0e8",
+        "name": "network_requestconnect",
+        "analysis": {
+          "size": "0x94",
+          "prototype": null,
+          "decompile": "__int64 __fastcall network_requestconnect(_DWORD *a1)\n{\n  __int64 result; // x0\n  int v3; // w8\n  pthread_t v4[2]; // [xsp+0h] [xbp-10h] BYREF\n\n  v4[1] = *(_QWORD *)(_ReadStatusReg(TPIDR_EL0) + 40); /*0x6b104*/\n  result = network_stop(); /*0x6b108*/\n  if ( (result & 1) != 0 ) /*0x6b10c*/\n  {\n    *(_QWORD *)a1 = 0x100000002LL; /*0x6b12c*/\n    __strncpy_chk2((char *)a1 + 262, a1 + 48, 69, -1, 70); /*0x6b130*/\n    v3 = a1[4]; /*0x6b134*/\n    *((_BYTE *)a1 + 331) = 0; /*0x6b138*/\n    a1[5] = v3; /*0x6b144*/\n    return pthread_create(v4, 0, (void *(*)(void *))&network_threadconnect, a1); /*0x6b154*/\n  }\n  return result; /*0x6b174*/\n}",
+          "decompile_error": null,
+          "disasm": null,
+          "xrefs": {
+            "to": [
+              {
+                "addr": "0x2428",
+                "type": "data"
+              }
+            ],
+            "from": [
+              {
+                "addr": "0x6b0ec",
+                "type": "code"
+              }
+            ],
+            "to_truncated": false,
+            "from_truncated": false,
+            "to_count": 1,
+            "from_count": 1
+          },
+          "callers": [],
+          "caller_count": 0,
+          "callers_truncated": false,
+          "callees": [],
+          "callee_count": 0,
+          "callees_truncated": false,
+          "strings": [],
+          "string_ref_count": 0,
+          "strings_truncated": false,
+          "constants": null,
+          "constant_count": 0,
+          "constants_truncated": false,
+          "basic_blocks": null,
+          "basic_block_count": 0,
+          "basic_blocks_truncated": false
+        },
+        "error": null
+      }
+    ]
+  }
+}

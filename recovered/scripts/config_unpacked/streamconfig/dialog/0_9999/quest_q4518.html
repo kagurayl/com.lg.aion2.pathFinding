@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>孩子，我心爱的孩子！</p>
+          <p> </p>
+          <p>莫尔罗塔的孩子不见了，我应该抓着他的手的，但是忘记了，咳嗬。</p>
+          <p> </p>
+          <p>他一定会回来的，我们家孩子很聪明。</p>
+          <p> </p>
+          <p>我正在向简卡卡祈祷，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不，光向简卡卡祈祷好像还不够，咳昂。</p>
+          <p> </p>
+          <p>还有什么呢？还能做什么呢？</p>
+          <p> </p>
+          <p>对了，幸运的尾巴，我需要那个东西。</p>
+          <p> </p>
+          <p>莫尔罗塔不能离开这里，咳嗬。</p>
+          <p> </p>
+          <p>我们家孩子回来没有看见我的话，可能又会走掉的。</p>
+          <p> </p>
+          <p>守护者，你去帮我搜集幸运的尾巴吧，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幸运的尾巴，就是塔鲁的尾巴。</p>
+          <p> </p>
+          <p>塔鲁中间，有种长着白尾巴的家伙，咳昂。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_STR_DF3_SZ_G3]有很多贪婪的塔鲁，在那里一定可以搜集到[%dic:STR_DIC_I_QUEST_4518a]，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？</p>
+          <p> </p>
+          <p>[%username]，不知道你在说什么，咳昂。</p>
+          <p> </p>
+          <p>不管是什么都没关系。</p>
+          <p> </p>
+          <p>快去帮我搜集幸运的尾巴——[%dic:STR_DIC_I_QUEST_4518a]吧，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你是谁啊？</p>
+          <p> </p>
+          <p>魔族来这里干什么？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塔鲁的白尾巴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干嘛伸出一只空手啊？</p>
+          <p> </p>
+          <p>莫尔罗塔没有东西可以给你，咳昂。</p>
+          <p> </p>
+          <p>你看到我的孩子了吗？时间都过了，他怎么还不来，咳昂？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是塔鲁的白尾巴……没错，幸运的尾巴！</p>
+          <p> </p>
+          <p>我们家孩子应该很快就会回来了，咳昂。</p>
+          <p> </p>
+          <p>你走吧。</p>
+          <p> </p>
+          <p>你在这里的话，他会不敢回来的，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DaruD_43_n]的白尾巴，然后交给[%dic:STR_DIC_N_DF3_NPC_Molota]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">莫尔罗塔的孩子不见了，她非常伤心。应该帮她搜集塔鲁的白尾巴。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>霜眉部落莱卡恩莫尔罗塔不见了孩子，精神好像有点不太正常。</p>
+          <p> </p>
+          <p>她不满足于向简卡卡祈祷，还说要幸运的尾巴，让我帮她搜集塔鲁的白尾巴。</p>
+          <p> </p>
+          <p>觉得她很可怜，于是帮她搜集到了塔鲁的白尾巴，她非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

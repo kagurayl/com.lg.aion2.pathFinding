@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>坎塔利监视营地监视和巡查的地方并不只有坎塔利部落和忘却盐漠。</p>
+          <p> </p>
+          <p>冰脚部落也在我们监视营地的职权范围之内。</p>
+          <p> </p>
+          <p>需要巡查的地区很大，但执政官的人数很少，所以非常辛苦。</p>
+          <p> </p>
+          <p>但是又不能因为人数少而不管那些冰脚莱卡恩。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一旦决定攻击冰脚莱卡恩，就必须将他们彻底打垮。</p>
+          <p> </p>
+          <p>所以必须首先将在冰脚莱卡恩的后方负责支援的家伙除掉。</p>
+          <p> </p>
+          <p>特别是，如果能把召唤术师和治疗师除掉的话，它们就会完全丧失战斗力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_WeB_LycanWizardM_30_Ae]和[%dic:STR_DIC_M_PeB_LycanPriestM_30_Ae]主要负责战斗支援和治疗任务。</p>
+          <p> </p>
+          <p>如果没有召唤术师的支援的话，它们的兵力就会被削弱。如果治疗师消失的话，清除战斗兵力就会容易得多。</p>
+          <p> </p>
+          <p>所以，您能帮我把它们清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得您应该知道冰脚部落是个多么危险的地方吧？</p>
+          <p> </p>
+          <p>请您不要冒失地一个人过去，一定要和同伴一起过去。因为那是他们的巢穴，而且莱卡恩有成群结队攻击的习惯。</p>
+          <p> </p>
+          <p>不过相信[%username]大人的话，对付[%dic:STR_DIC_M_WeB_LycanWizardM_30_Ae]和[%dic:STR_DIC_M_PeB_LycanPriestM_30_Ae]应该没有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道您害怕那些莱卡恩吗？</p>
+          <p> </p>
+          <p>我不会强迫您去做不想做的事情。</p>
+          <p> </p>
+          <p>但是我确实感到有点可惜。</p>
+          <p> </p>
+          <p>如果能弱化他们的防御力，就可以对他们造成更大的打击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您从冰脚部落回来了吗？</p>
+          <p> </p>
+          <p>您按我所说的那样，削弱他们的防御力了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>它们的气势受到了很大的打击，我得马上向要塞报告，制定更大的作战计划。</p>
+          <p> </p>
+          <p>这全是托[%username]大人的福。谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除冰脚莱卡恩的上级召唤术师和治疗师</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_WeB_LycanWizardM_30_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PeB_LycanPriestM_30_Ae]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Hakon]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须清除冰脚上级召唤术师和冰脚上级治疗师，以削弱它们的兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈坤说一旦决定进行攻击，就应该把冰脚部族的兵力完全击垮。</p>
+          <p> </p>
+          <p>于是去消灭了冰脚上级召唤术师和冰脚上级治疗师，削弱了它们的兵力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

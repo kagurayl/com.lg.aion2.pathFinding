@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>为了在格尔克马洛斯扩大奥德的区域，设置结界塔，我们付出了很多努力，但进展却不太顺利。</p>
+          <p> </p>
+          <p>但是结界守护团确信在锡兰泰拉回廊一定可以找到符合我们目的的线索。</p>
+          <p> </p>
+          <p>为了推进“龙界结界塔”计划，我们和派遣到各个要塞的执政官们合作，定期地交换情报。</p>
+          <p> </p>
+          <p>我们必须和[%dic:STR_DIC_W_LF4_SZ_2011_A]的协助者接头，我们认为在所有守护团员中，[%username]你是最合适的人选。看到本文件后，请立即开始执行。</p>
+          <p> </p>
+          <p>潜入英吉斯温，和[%dic:STR_DIC_N_Kirhua]接头，然后把他的情报转告给[%dic:STR_DIC_E_45021]。</p>
+          <p> </p>
+          <p>这项任务是绝密任务，必须严格注意保密。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎来到古代龙神殿。</p>
+          <p> </p>
+          <p>虽然英吉斯温是个激烈的战场，但是在神殿里，你可以安心地休息。</p>
+          <p> </p>
+          <p>必须休息好了，才能为下一场战斗做准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问需要转达的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对古代龙神殿感兴趣的集团，不仅仅只有结界守护团。</p>
+          <p> </p>
+          <p>为了胜利、为了名誉、为了利益，无数人来到了这里。</p>
+          <p> </p>          
+          <p>我认同结界守护团的目的，因此我才会提供协助。</p>
+          <p> </p>
+          <p>嗯……有关古代龙神殿的报告书，我会用秘密邮件发给守护团</p>
+          <p> </p>
+          <p>[%username]大人只要告诉[%dic:STR_DIC_E_45021]见到我了就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昨天我也见到您了吗？还是没有见到啊？</p>
+          <p> </p>
+          <p>最近守护团人数越来越多，事情也越来越多。</p>
+          <p> </p>
+          <p>有很多人来找我，我都记不住谁是谁了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述听到的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认完毕。</p>
+          <p> </p>
+          <p>现在秘密邮件应该已经到了。秘密邮件上面施有魔法，在我确认传信人说的话之后，邮件就会瞬间发送过来。</p>
+          <p> </p>
+          <p>我会在确认邮件后，向上面报告的。</p>
+          <p> </p>
+          <p>[%username]大人，辛苦您了。这是守护团为您准备的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Kirhua]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_45021]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，为了执行“龙界结界塔计划”，让我去和古代龙神殿的执政官接头。</p>
+          <p> </p>
+          <p>潜入英吉斯温，见到齐尔胡亚并听完他的话之后，转告给了格尔克马洛斯支部职员。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

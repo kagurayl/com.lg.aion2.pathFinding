@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一把刻着火焰图案的小钥匙。)</p>
+          <p> </p>
+          <p>(从上面可以感觉到强烈的奥德的气息，不像是普通的东西。)</p>
+          <p> </p>
+          <p>(好像是重要的文物，应该给正在奇乌拉神殿入口处进行调查的[%dic:STR_DIC_N_Actaeon]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能来到遗迹亲手触摸各种东西并进行研究，真是件让人非常开心的事情。</p>
+          <p> </p>
+          <p>刚来这里的时候我非常激动，心想这下终于可以亲眼见到奇乌拉神殿了。不过过来一看去发现并不像我想象的那样。</p>
+          <p> </p>
+          <p>门口就有影魔和蝠妖堵着，非常危险，所以根本进不去。</p>
+          <p> </p>
+          <p>哦，对了。你来着我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">拿出钥匙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？这个！你到底是在什么地方发现的？</p>
+          <p> </p>
+          <p>看看这个火焰图案。这就是...</p>
+          <p> </p>
+          <p>(突然压低嗓音)这就是火之神殿的钥匙。那是位于...魔界的神殿。通往那个神殿的门，就在奇乌拉神殿的地下。</p>
+          <p> </p>
+          <p>听说钥匙上的奥德的波动太强烈，只要拿着钥匙的话，拿着的人的身上也会被刻上那种波动。那样的话，即使没有钥匙也能把门打开。</p>
+          <p> </p>
+          <p>[%username]大人现在不用钥匙也能通过奇乌拉神殿地下进入火之神殿了。</p>
+          <p> </p>
+          <p>所以请你把钥匙交给我吧。我要仔细地研究一下钥匙的图案和样式。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去问问[%dic:STR_DIC_N_Actaeon]有关钥匙的事情</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在奇乌拉神殿偶然发现了一把小钥匙。应该去找考古学家阿泰安问一下。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在奇乌拉神殿偶然发现了一把小钥匙。上面刻着火焰图案，看上去不是普通的东西。于是找到了考古学者阿泰安，问了问那是用在什么地方的东西。</p>
+          <p> </p>
+          <p>阿泰安看到钥匙之后吃了一惊，说那是位于魔界的火之神殿的钥匙。并且告诉我钥匙上的奥德波动很强，只要拿在手上波动就会刻在身上。这样的话即使没有钥匙也能通过奇乌拉神殿地下的入口进入火之神殿。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

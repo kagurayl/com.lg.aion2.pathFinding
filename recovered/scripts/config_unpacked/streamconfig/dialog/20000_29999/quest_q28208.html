@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前，我感觉第2神庙训练所里好像有阴森的大地气息。</p>
+          <p> </p>
+          <p>一开始，我还以为是因为那些从格尔克马洛斯回来的守护者。</p>
+          <p> </p>
+          <p>在一个地方待太久的话，就会沾染上那个地方的气息。</p>
+          <p> </p>
+          <p>但是经过上次的事情之后，我发现不是这样的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神庙训练所里……出现了裂缝。</p>
+          <p> </p>
+          <p>好像是可以扭曲空间的班克所为。</p>
+          <p> </p>
+          <p>因为他的力量，我设下的幻影竞技场的结界变弱了。提亚马特的龙族好像通过脆弱的地方入侵了进来。</p>
+          <p> </p>
+          <p>虽然现在重新强化了结界，裂缝已经消失。但曾经被穿透过的结界很可能会重新出现裂缝。</p>
+          <p> </p>
+          <p>所以……我想拜托您一件事。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(垂下眼睛)虽然我能够为幻影竞技场设置结界，让人们的眼睛看到幻影，但是却不擅长直接和敌人战斗。</p>
+          <p> </p>
+          <p>请您进入第2神庙训练所，确认一下[%dic:STR_DIC_E_IDArena_Solo_Bonus_In]那一边到底是什么东西。</p>
+          <p> </p>
+          <p>如果我的猜测没错，那里有提亚马特的龙族的话，请您把他们消灭掉，然后把您看到的东西告诉[%dic:STR_DIC_N_Anja]战斗教官。</p>
+          <p> </p>
+          <p>那样的话，她就会处理后续去的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(垂下眼睛)虽然我能够为幻影竞技场设置结界，让人们的眼睛看到幻影，但是却不擅长直接和敌人战斗。</p>
+          <p> </p>
+          <p>所以我想请您通过神庙中的裂缝，确认入侵者的身份，然后把他们消灭掉。</p>
+          <p> </p>
+          <p>您竟然不愿意……</p>
+          <p> </p>
+          <p>真累啊。我们好像没什么可谈的了，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>怎么样，见到英格奈丝了吗？</p>
+          <p> </p>
+          <p>她怎么说？龙族为什么会出现呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样！神庙里竟然出现了裂缝？</p>
+          <p> </p>
+          <p>竟敢进入马勒库坦神庙训练所，龙族的胆子可真够大的。</p>
+          <p> </p>
+          <p>幸好我们很快查明了原因。</p>
+          <p> </p>
+          <p>必须向上面报告这件事情，尽快采取措施。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒第2神庙训练所的最终训练对象[%dic:STR_DIC_E_IDArena_Solo_S6_VanqJr_55_An]([%2]/5) </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">穿过[%dic:STR_DIC_E_IDArena_Solo_Bonus_In]，消灭[%dic:STR_DIC_M_quest_28208a]([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Anja]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">调查第2神庙训练所的裂缝，然后向安雅战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>时间的守护者英格奈丝说趁班克使结界弱化的时候，提亚马特的龙族入侵了神庙训练所。</p>
+          <p> </p>
+          <p>虽然强化了结界，消除了神庙里的裂缝，但是同样的事情很可能再次发生，因此让我等裂缝出现之后去确认一下是否有龙族，然后把他们消灭掉。</p>
+          <p> </p>
+          <p>按照英格奈丝所说，消灭了裂缝另一边的入侵者，向安雅战斗教官报告了裂缝的情况，她说必须马上向上面报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

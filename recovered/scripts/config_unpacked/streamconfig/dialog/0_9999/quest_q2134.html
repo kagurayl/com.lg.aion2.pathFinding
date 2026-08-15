@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%dic:STR_DIC_N_Tobu]副头目真是看我不顺眼呢。</p>
+          <p> </p>
+          <p>把我从村子里赶到这么远的地方来，是为了什么？让我挖[%dic:STR_DIC_I_herb_n_c_10a2]%？</p>
+          <p> </p>
+          <p>说的好听，我哪知道铁矿石在什么地方！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在找铁矿石简直比上天摘星星还难。</p>
+          <p> </p>
+          <p>不光是这，这附近有铁矿石的地方还只有[%dic:STR_DIC_W_DF1_8]%和[%dic:STR_DIC_W_DF1_9]呢。</p>
+          <p> </p>
+          <p>反正就是想要拿到铁矿石，必须要进莱卡恩的巢穴。</p>
+          <p> </p>
+          <p>要是不想再招惹副头目，就必须找到铁矿石。可最近真是没什么力气，何况连怎么挖铁矿石我都不知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要帮我？那当然好啊。</p>
+          <p> </p>
+          <p>我还以为老兄你光是武艺高强，看来连[%dic:STR_DIC_I_herb_n_c_10a2]都会挖啊。</p>
+          <p> </p>
+          <p>给我挖5块铁矿石就行。事后一定包个大红包好好答谢你！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总算安心了。</p>
+          <p> </p>
+          <p>那就去[%dic:STR_DIC_W_DF1_8]或者[%dic:STR_DIC_W_DF1_9]挖5块[%dic:STR_DIC_I_herb_n_c_10a2]给我吧。</p>
+          <p> </p>
+          <p>藤蔓峡谷那的铁矿石比奥黛尔拉栽培地多。</p>
+          <p> </p>
+          <p>要是晚了托夫又要唠叨了，快去快回吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明明说好帮我，现在怎么又变卦了？</p>
+          <p> </p>
+          <p>是不是有什么事了!</p>
+          <p> </p>
+          <p>拉着我扯东扯西的，浪费时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>被莱卡恩那些家伙害苦了吧？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_herb_n_c_10a2]拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出铁矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，是不是光顾着打架，把我的铁矿石给忘到脑后去了吧？</p>
+          <p> </p>
+          <p>我不是让你帮我挖5块铁矿石嘛！</p>
+          <p> </p>
+          <p>既然答应我就该给我办啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正好5块！</p>
+          <p> </p>
+          <p>辛苦了！本来该我干的事，麻烦你真不好意思。</p>
+          <p> </p>
+          <p>这是答应你的报酬。我还特别多加了一些。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">挖出[%dic:STR_DIC_I_herb_n_c_10a2]，然后交给 [%dic:STR_DIC_N_Alfrigh]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">托夫副头目命令阿尔弗里克挖出铁矿石。去奥黛尔拉栽培地和杜巴罗藤蔓峡谷两个地方挖出 铁矿石，然后交给阿尔弗里克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在奥黛尔拉栽培地附近观望的阿尔弗里克接到了托夫副头目挖铁矿石的命令，十分苦恼。</p>
+          <p> </p>
+          <p>帮助不会挖铁矿的阿尔弗里克去挖出铁矿石。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

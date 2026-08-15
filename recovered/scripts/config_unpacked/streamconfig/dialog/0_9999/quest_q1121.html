@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我都快要发疯了。</p>
+          <p> </p>
+          <p>本来钱就不好挣，现在连祈祷都不能做了，你说我要不要疯掉？</p>
+          <p> </p>
+          <p>[%username]大人，您有时间的话一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">同意帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前在祈祷的时候，默珠的绳子断了。</p>
+          <p> </p>
+          <p>我自己浑然不知，还跑去[%dic:STR_DIC_FLA06]巡查。在那期间，默珠的珠子都掉光了。</p>
+          <p> </p>
+          <p>等我发现回去找的时候，[%dic:STR_DIC_MLA44]和[%dic:STR_DIC_MLA13_6]已经在吃那些珠子了！</p>
+          <p> </p>
+          <p>虽然我把眼前的几只都抓住了，但是还有3颗珠子没有找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有时间的话，请你帮我捕捉[%dic:STR_DIC_MLA44]和[%dic:STR_DIC_MLA13_6]找回3颗珠子！</p>
+          <p> </p>
+          <p>因为是极乐世界的神官给我的默珠，想买都买不到的！</p>
+          <p> </p>
+          <p>这关系到我的人生。请你一定要帮我！</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，[%username]！</p>
+          <p> </p>
+          <p>捕捉[%dic:STR_DIC_MLA44]和[%dic:STR_DIC_MLA13_6]，应该能找到珠子。</p>
+          <p> </p>
+          <p>一共是3个，请你帮我找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为你和那些眼里只有钱的人有点区别...</p>
+          <p> </p>
+          <p>真让人失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>怎么样？默珠的珠子都找到了吗？</p>
+          <p> </p>
+          <p>不知道是被哪个家伙吃下去了，找起来可不那么容易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出默珠的珠子。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像少了几个。</p>
+          <p> </p>
+          <p>找不全3个吗？</p>
+          <p> </p>
+          <p>虽然我知道很难找，不过是你的话就一定会有办法的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，3个都找到了！</p>
+          <p> </p>
+          <p>这下只要买根绳子重新穿起来就行了。</p>
+          <p> </p>
+          <p>虽然好像不是什么大事，但是你帮我找回了今后的人生。</p>
+          <p> </p>
+          <p>虽然不多，但是请您收下这些钱作为酬谢。请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找回被[%dic:STR_DIC_MLA44]和[%dic:STR_DIC_MLA13_6]抢走的物品交还给奥兹</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">侦察队员奥兹珍爱的默珠因为绳子断了遗失了珠子。需要捕捉老练的萤火虫和钳子头斯巴克找回珠子。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虔诚的奥兹不知道默珠断了而出去巡查，结果丢失了默珠的珠子。虽然找回了几个，但是有3个珠子怎么也找不到，于是拜托我帮忙。</p>
+          <p> </p>
+          <p>沿着拉克立玛孢子路去捕捉老练的萤火虫和钳子头斯巴克找回珠子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

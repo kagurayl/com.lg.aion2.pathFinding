@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直对[%username]大人带回来的雷帕尔革命团指令书不太放心。</p>
+          <p> </p>
+          <p>不知道革命团的那帮家伙有什么图谋...</p>
+          <p> </p>
+          <p>虽然向要塞汇报了情况，但我们也不能坐以待毙。</p>
+          <p> </p>
+          <p>假如他们的目标是结界塔，那我们是不是也得想想对策？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮我到他们的营地清除掉革命团的那帮家伙吧。</p>
+          <p> </p>
+          <p>如果受到攻击，革命团的反动分子也需要时间来重新集结。</p>
+          <p> </p>
+          <p>这样我们就能争取更多的时间了。</p>
+          <p> </p>
+          <p>您能去雷帕尔的营地帮我清除他们呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去[%dic:STR_DIC_W_DF1A_29]消灭雷帕尔革命团吧。</p>
+          <p> </p>
+          <p>消灭完那些家伙之后，请把[%dic:STR_DIC_I_quest_2270a]%拿回来作为证据。</p>
+          <p> </p>
+          <p>有了证据的话，向要塞报告也就有根有据了。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您还不清楚结界塔的重要性吗？</p>
+          <p> </p>
+          <p>不要说是守护者，连人类都知道结界的重要性...</p>
+          <p> </p>
+          <p>不过我现在责怪[%username]大人又有什么用。</p>
+          <p> </p>
+          <p>好了，我还是找一个有责任心和有能力的守护者吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去雷帕尔革命团野营地消灭敌人了吗？</p>
+          <p> </p>
+          <p>我正在担心要是敌人进攻过来的话该怎么办呢。</p>
+          <p> </p>
+          <p>请把消灭敌人的证据交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出革命团徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没有消灭掉敌人吗？</p>
+          <p> </p>
+          <p>还要让我强调几遍结界塔的重要性啊！</p>
+          <p> </p>
+          <p>赶紧去消灭敌人，把证据带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>革命团徽章带回来啦。</p>
+          <p> </p>
+          <p>向要塞报告的时候，我会顺便把这个交上去的。</p>
+          <p> </p>
+          <p>看到徽章的话，要塞就应该知道事情的严重性。</p>
+          <p> </p>
+          <p>歇息你完成了我交给你的任务。 这是你的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">带给[%dic:STR_DIC_N_Neifenmer]作为消灭[%dic:STR_DIC_M_LehparWaD_17_An]%和[%dic:STR_DIC_M_LehparPriestD_17_An]%的证据。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到来自内佩恩梅尔的委托，让我去消灭敌人，以牵制雷帕尔革命团。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了牵制雷帕尔革命团的阴谋，内佩恩梅尔要求除掉敌人后拿回证据。</p>
+          <p> </p>
+          <p>所以到雷帕尔革命团消灭了那帮家伙，并把徽章作为证据带了回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

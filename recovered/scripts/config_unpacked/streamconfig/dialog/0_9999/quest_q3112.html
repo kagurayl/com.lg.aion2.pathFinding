@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你能再帮我搜集一些吗？</p>
+          <p> </p>
+          <p>还能是什么？(环顾四周，小声地说)就是[%dic:STR_DIC_I_QUEST_3106a]和[%dic:STR_DIC_I_QUEST_3106b]。</p>
+          <p> </p>
+          <p>我把之前你帮我搜集到的东西混在极乐世界送来的建筑材料里交给了加易斯百夫长大人，你不记得了吗？？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，在我看来极乐世界送来的建筑材料和这里搜集到的材料没什么区别。</p>
+          <p> </p>
+          <p>不仅是外表，连质量也是如此。</p>
+          <p> </p>
+          <p>如果质量也一样的话，就没有必要从极乐世界高价购买材料了，你说对不对？</p>
+          <p> </p>
+          <p>所以我想请你再帮我搜集一些[%dic:STR_DIC_I_QUEST_3106a]和[%dic:STR_DIC_I_QUEST_3106b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我怕引起误会，所以请你不要跟百夫长说。</p>
+          <p> </p>
+          <p>我会把极乐世界送来的材料和这里搜集到的材料一起给加易斯百夫长大人看，然后再跟他说。</p>
+          <p> </p>
+          <p>我说的是真，真的。</p>
+          <p> </p>
+          <p>所以你要装作什么都不知道，只要帮我搜集[%dic:STR_DIC_I_QUEST_3106a]和[%dic:STR_DIC_I_QUEST_3106b]就行了。</p>
+          <p> </p>
+          <p>当然，我会给你报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不帮我也可以。</p>
+          <p> </p>
+          <p>很好，但是不要去跟加易斯百夫长告密。</p>
+          <p> </p>
+          <p>卡奥天灵之后会跟他正式说的，请你不要误会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拜托您的事情怎么样了？</p>
+          <p> </p>
+          <p>怎么样？现在我说的敬语比以前好一点了吧？</p>
+          <p> </p>
+          <p>请把搜集到的东西给我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在干什么啊？不，您想干什么啊？</p>
+          <p> </p>
+          <p>呐，不管什么敬语不敬语了，我都快急死了。</p>
+          <p> </p>
+          <p>快把说好的[%dic:STR_DIC_I_QUEST_3106a]和[%dic:STR_DIC_I_QUEST_3106b]给我拿来，呐呐。</p>
+          <p> </p>
+          <p>少了一个都别想拿到报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，东西全部搜集到啦？</p>
+          <p> </p>
+          <p>哼哼，谢谢你，守护者。</p>
+          <p> </p>
+          <p>这是我给你的酬劳。(环顾四周，小声地说)这件事如果告诉别人就没意思了。</p>
+          <p> </p>
+          <p>说出去只会对你不好，所以你最好是管好自己的嘴巴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_LF2A_hippolizardRe_45_n]和[%dic:STR_DIC_M_LF2A_MudthornSalt_45_An]身上搜集材料，然后交给[%dic:STR_DIC_N_Shugo_LF2a_10]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卡奥天灵说想建议加易斯百夫长使用提波里德的角和刺魔的唾液来代替原来的建筑材料。必须帮助卡奥天灵搜集建筑材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡奥天灵说提波里德的角和刺魔的唾液比想象的要好，因此想建议加易斯百夫长使用提波里德的角和刺魔的唾液代替极乐世界送来的材料。</p>
+          <p> </p>
+          <p>她说需要进行比较，于是去帮她搜集到了材料。她又突然改了口，威胁我说一定要对别人保密。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

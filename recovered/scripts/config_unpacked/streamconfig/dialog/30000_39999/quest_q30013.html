@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，上次你跟我说的那件事。</p>
+          <p> </p>
+          <p>就是鸢族村庄的那个铁匠。</p>
+          <p> </p>
+          <p>我觉得无论如何都必须帮助他。但想来想去，只有一个解决办法。</p>
+          <p> </p>
+          <p>但是好像并不容易……所以我很担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么办法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是别的，就是去荒废的乌达斯神殿地下，从那里的工人们手上把十字镐抢回来。</p>
+          <p> </p>
+          <p>想来想去，附近能找到大量十字镐的，就只有这个办法了。</p>
+          <p> </p>
+          <p>不过[%username]你也知道，那里非常危险，不是谁都可以去的。</p>
+          <p> </p>
+          <p>[%username]，除了你之外，这件事再没有别的人选了。你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]你之前去过，所以应该知道，龙信徒们正在乌达斯神殿地下挖掘洞穴。</p>
+          <p> </p>
+          <p>虽然没有大量的十字镐堆在那里，但至少那里的工人手上有十字镐。</p>
+          <p> </p>
+          <p>这件事非常危险，让我有点担心。不过我相信[%username]你一定可以做到。</p>
+          <p> </p>
+          <p>请你去消灭[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]，搜集[%dic:STR_DIC_I_QUEST_30013a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，要求帮助的事情是你告诉我的，等到实际做事的时候，你就不管了吗？</p>
+          <p> </p>
+          <p>前线的守护者都这个样子的话，我们还能搞好和鸢族的关系吗？</p>
+          <p> </p>
+          <p>军团长大人要是问起来的话，我该怎么回答呢……</p>
+          <p> </p>
+          <p>真让人郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道盖菲奥斯是不是还在等待我们的帮助，或者已经放弃并寻找其他的途径了。</p>
+          <p> </p>
+          <p>无论如何我们都必须帮助他，这样他才会对天族有个好印象。这样的话，应该会对今后占领整个英吉斯温有所帮助。</p>
+          <p> </p>
+          <p>十字镐拿回来了的话，就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出十字镐。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖菲奥斯不是说时间很紧张吗？</p>
+          <p> </p>
+          <p>那你还在那里磨蹭什么啊！</p>
+          <p> </p>
+          <p>请你快去乌达斯神殿地下消灭[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]，搜集[%dic:STR_DIC_I_QUEST_30013a]！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，真是辛苦你了。</p>
+          <p> </p>
+          <p>虽然没有搜集到盖菲奥斯需要的全部十字镐，但至少搜集到了一部分，就先给他送过去吧。</p>
+          <p> </p>
+          <p>今后可能还得继续搜集……[%username]，我可能还得继续麻烦你。</p>
+          <p> </p>
+          <p>谢谢你帮我解决了燃眉之急。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30013a]，然后交给[%dic:STR_DIC_N_Sueros]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">在乌达斯神殿地下，可以搜集到十字镐。去消灭乌达斯精锐杂役，搜集笨重的十字镐。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃洛丝说要想搜集到盖菲奥斯所需的十字镐，唯一的方法是去荒废的乌达斯神殿消灭挖洞的龙信徒。</p>
+          <p> </p>
+          <p>于是前往乌达斯神殿地下，消灭了乌达斯精锐杂役，搜集到了十字镐。</p>
+          <p> </p>
+          <p>拿到十字镐之后，苏埃洛丝说要马上给盖菲奥斯送过去，而且搜集到的数量还不够，让我今后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

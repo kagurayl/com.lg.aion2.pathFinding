@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔的战斗已经持续了七百多年。</p>
+          <p> </p>
+          <p>无数的守护者为了打败魔族和龙族而热血奋斗，但遗憾的是，情况没有发生任何的改变。</p>
+          <p> </p>
+          <p>老实说，现在我们一直在持续地打消耗战。</p>
+          <p> </p>
+          <p>越是在这种时候，越要提高士兵们的士气。只有这样，才能扭转局势。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你应该知道我对你抱有很高的期望吧？</p>
+          <p> </p>
+          <p>守护者虽然有很多，但可以把重要任务放心地交给他的守护者却并不多。</p>
+          <p> </p>
+          <p>所以这次我想拜托你去清除魔军将校级以上的兵力。</p>
+          <p> </p>
+          <p>魔军的司令官和将军合起来，总共大约有30名左右。但是他们对战斗产生的影响是无法估量的。</p>
+          <p> </p>
+          <p>如果能把他们打倒，就会对扭转战局产生很大的帮助，同时也能提高天军的士气。</p>
+          <p> </p>
+          <p>虽然很不容易，但希望你能接受任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，那就请你去把魔军将军除掉。</p>
+          <p> </p>
+          <p>整个埃雷修兰塔只有30名左右，可能不太容易找到，而且战斗力也非常可观。</p>
+          <p> </p>
+          <p>他们的战斗力非常强，所以不要一个人去，一定要带上同伴。</p>
+          <p> </p>
+          <p>不要觉得应该公平较量。讲究公平的话，是不可能赢得战争的。</p>
+          <p> </p>
+          <p>但是有一点需要注意，必须消灭魔军将校中和自己实力接近的人。</p>
+          <p> </p>
+          <p>如果实力太差，消灭再多也不会对战局有什么影响，所以一定要消灭和自己实力相近的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道你已经厌倦了不停地和死了之后又会复活的守护者们战斗了吗？</p>
+          <p> </p>
+          <p>但是这个任务是你在埃雷修兰塔和整个亚特雷亚扬名的好机会。</p>
+          <p> </p>
+          <p>而且你也具备这样的能力。</p>
+          <p> </p>
+          <p>我随时对你表示欢迎。如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>战争虽然很激烈，但从某个角度看也很没有意义。</p>
+          <p> </p>
+          <p>特别是像现在这样，战斗了几百年都不分胜负的战争。</p>
+          <p> </p>
+          <p>虽然没有意义，但军人的本分就是战斗并且获胜。</p>
+          <p> </p>
+          <p>对了，你把魔军将军清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你出色地完成了任务，[%username]。</p>
+          <p> </p>
+          <p>现在你的名字在埃雷修兰塔已经无人不知了。魔族和龙族一听到你的名字，一定会瑟瑟发抖的。</p>
+          <p> </p>
+          <p>愿胜利的荣光一路伴随你前行。</p>
+          <p> </p>
+          <p>愿阿里埃主神保佑你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade01]%战斗并获胜([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Taranis]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接到了清除对战局有重大影响的天军将军的命令。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔拉尼斯说战争陷入了无尽的消耗战，在这种时候降低敌人的士气是尤为重要的。</p>
+          <p> </p>
+          <p>让我去打倒魔军中将校以上的兵力，给魔族阵营造成巨大的打击，同时提高天族的士气。</p>
+          <p> </p>
+          <p>于是去除掉了魔族将军，他对我大加称赞，说我的名声已经传遍整个埃雷修兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

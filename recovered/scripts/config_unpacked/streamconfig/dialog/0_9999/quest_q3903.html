@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道技能书的由来吗？</p>
+          <p> </p>
+          <p>虽然能力出色的魔道星和精灵星们为了开发新的魔法，夜以继日不懈努力。不过，我们所使用的大部分魔法都是从前流传下来的。</p>
+          <p> </p>
+          <p>将之前那些效果出众，得到承认的魔法进一步发展后就成为了技能书。</p>
+          <p> </p>
+          <p>幻象之秘典是幻象之神殿相传的记载着所有魔法的一部非常重要的书。</p>
+          <p> </p>
+          <p>这部书分为好几卷，目前由黑卡泰大人保管。</p>
+          <p> </p>
+          <p>之前，我借阅了其中的第一卷，多亏了这本书的指点，我才能为众多像你一样的守护者传授基础魔法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，现在也到了该把书还给黑卡泰大人的时候了。</p>
+          <p> </p>
+          <p>密书第一卷的内容我基本已经掌握了。</p>
+          <p> </p>
+          <p>[%username]大人能把这本密书送到守护者殿堂里的黑卡泰大人那里吗？</p>
+          <p> </p>
+          <p>您是诚实的 [%userclass]，因此我可以放心地把书交给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，换做是好奇心强的 [%userclass]，应该非常想知道这本密书的内容。</p>
+          <p> </p>
+          <p>但是我给 [%username] 大人的第一卷，都是您学习过的。</p>
+          <p> </p>
+          <p>后面还没有学过的密书都在黑卡泰大人那里。</p>
+          <p> </p>
+          <p>在黑卡泰大人那里，您的疑惑将会得到解答，请去守护者殿堂找他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真是一位特殊的人。</p>
+          <p> </p>
+          <p>大部分魔道星和精灵星都日思夜想地要得到这本密书。</p>
+          <p> </p>
+          <p>没有任何好奇心的 [%userclass]我还是第一次见到。</p>
+          <p> </p>
+          <p>不过我也不能强求您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对奥德的力量研究越深入，就越让人感到糊涂。难道这种混沌才是奥德的最终境界吗？</p>
+          <p> </p>
+          <p>不过这种混沌应该只是暂时的，到达更高的境界后，应该能发现另一个世界。</p>
+          <p> </p>
+          <p>或许是非常复杂，很难看懂的接近混沌的秩序。</p>
+          <p> </p>
+          <p>奥德的力量所勾勒出的轨迹真是美丽，只要是追求强大的力量的人都会被奥德迷住的。</p>
+          <p> </p>
+          <p>[%username]，我相信你能理解我的心情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将密书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>与奥德的力量所能够创造的无数秩序相比，这部幻象之秘典不过是冰山一角。</p>
+          <p> </p>
+          <p>可是，即便只是一小部分，这部密书中包含的力量也还是非常强大的。</p>
+          <p> </p>
+          <p>如果你想成为出色的守护者，就需要熟悉密书的全部内容。</p>
+          <p> </p>
+          <p>等你可以学新技能的时候，就来找我吧。和贝尔丽亚相比，我可以教你更多的知识。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Hecate]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将从贝尔丽亚处得到的密书送到黑卡泰那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔丽亚请求把魔道星和精灵星的密书送到黑卡泰那里。</p>
+          <p> </p>
+          <p>拿到密书的黑卡泰表示，如果想成为更出色的守护者，需要学习密书中的所有内容，并承诺会给予帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

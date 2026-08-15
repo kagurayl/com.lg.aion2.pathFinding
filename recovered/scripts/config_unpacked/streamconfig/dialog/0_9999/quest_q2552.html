@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说守护者的实力非常出色。</p>
+          <p> </p>
+          <p>夸伊灵贸易团里很多认识的朋友都对守护者赞不绝口，咳。</p>
+          <p> </p>
+          <p>我有件烦恼的事情，你能帮助我吗？</p>
+          <p> </p>
+          <p>我需要像守护者这样实力出众的人，啧啧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说的是拉盖乌姆矿山。</p>
+          <p> </p>
+          <p>那个我很早就看上了的地方却被一些突然冒出来的奇怪家伙占据了。</p>
+          <p> </p>
+          <p>本来，我打算在那里采集很多宝石，然后衣锦还乡，骄傲地回到曾经赶我出去的贸易团，啧啧。</p>
+          <p> </p>
+          <p>可是现在那些奇怪的家伙霸占了矿山，放任不管的话，他们会把那些宝贵的拉盖乌姆矿石都采光的！</p>
+          <p> </p>
+          <p>守护者，帮助我消灭他们吧，啧啧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，啧啧！</p>
+          <p> </p>
+          <p>他们的分工比较细呢，有专门采集拉盖乌姆矿石的人，还有负责监督的人。</p>
+          <p> </p>
+          <p>得好好教训他们，让他们离拉盖乌姆矿石远点。</p>
+          <p> </p>
+          <p>请消灭[%dic:STR_DIC_M_LnA_LehparFiWorkerD_36_An]和 [%dic:STR_DIC_M_FeC_LehparFiWorkerD_36_An]各10个。</p>
+          <p> </p>
+          <p>那样，在一段时间内，他们就不敢轻举妄动，随便乱碰拉盖乌姆矿石了，啧啧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么！不答应我的请求吗？</p>
+          <p> </p>
+          <p>是不是因为被夸伊灵贸易团驱逐，连守护者也无视我了！</p>
+          <p> </p>
+          <p>我不会犯两次同样的错误，啧啧！</p>
+          <p> </p>
+          <p>等我飞黄腾达后，绝对不会向守护者委托可以让你们赚到基纳的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了啊，啧啧！</p>
+          <p> </p>
+          <p>去矿山了吗？</p>
+          <p> </p>
+          <p>拜托的事情处理得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，真是谢谢你！</p>
+          <p> </p>
+          <p>这样的话，一段时间内他们只能放弃采矿了。</p>
+          <p> </p>
+          <p>一想到是革命团的家伙们采走了矿石，真让我心痛，现在终于痛快啦，啧啧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭采集拉盖乌姆矿石的雷帕尔革命团。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LnA_LehparFiWorkerD_36_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeC_LehparFiWorkerD_36_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Shugo_DF3_10]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">扎耀伦看上的拉盖乌姆矿山被雷帕尔革命团占据了。消灭采集拉盖乌姆矿石的矿山劳工和矿山杂役。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎耀伦计划采集拉盖乌姆矿石发财， 并重新回到曾驱逐他的伊灵贸易团。但是，雷帕尔革命团占据了矿山，并开始采集拉盖乌姆矿石，他的计划陷入危机。</p>
+          <p> </p>
+          <p>帮助扎耀伦，消灭了矿山劳工和矿山杂役，使雷帕尔革命团无法再继续采矿。对此，扎耀伦觉得非常痛快，感到很高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

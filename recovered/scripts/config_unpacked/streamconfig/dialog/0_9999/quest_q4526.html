@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你觉得和其他人相处最重要的是什么呢？</p>
+          <p> </p>
+          <p>我认为是信任。不管是朋友还是恋人，如果不相信对方，一切就都没有意义了。</p>
+          <p> </p>
+          <p>但是有个名叫伊卡罗尼斯的人，把背叛当作是家常便饭。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了自己的利益，他不止一次地辜负了别人对他的信任。</p>
+          <p> </p>
+          <p>我从来没有见过比他更无耻的人。</p>
+          <p> </p>
+          <p>对魔族来说，他也是个危险人物，因此最好把他消灭掉。</p>
+          <p> </p>
+          <p>怎么样，[%username]大人？您能帮我把[%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道您一定会答应的！请您马上到[%dic:STR_DIC_W_LF3_Lehpar]去。</p>
+          <p> </p>
+          <p>我会在这里为[%username]大人祈祷。</p>
+          <p> </p>
+          <p>啊，成功之后一定要告诉我。如果您能完成任务，我会送您铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，没想到您竟然会拒绝。</p>
+          <p> </p>
+          <p>听说您是个勇敢的人……看来都是谣言。</p>
+          <p> </p>
+          <p>既然您不愿意，我也不想死缠着您不放。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听了太多关于伊卡罗尼斯的事情，搞得我都不敢相信别人了。</p>
+          <p> </p>
+          <p>不过要是连家人和朋友都不能相信，我还能相信谁呢？</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]怎么样了？您回来找我，一定是成功了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是谢谢您。</p>
+          <p> </p>
+          <p>您竟然消灭了那个家伙，真让人高兴。</p>
+          <p> </p>
+          <p>来，请收下。这是给您的铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lewin]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去阿祖图兰要塞消灭背叛者伊卡罗尼斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官莱文让我去为魔族消灭背叛者伊卡罗尼斯。</p>
+          <p> </p>
+          <p>按照她的委托，前往阿祖图兰要塞消灭了背叛者伊卡罗尼斯。回去告诉她之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

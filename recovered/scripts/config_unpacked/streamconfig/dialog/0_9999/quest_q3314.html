@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里森林是埃尔特内的很多植物和动物的家园，有很多人正在努力保护它。[%username]大人您也是其中之一。</p>
+          <p> </p>
+          <p>但是只是执行几次任务是远远不够的。要想恢复崩溃的生态系统，并不是那么容易的事情。</p>
+          <p> </p>
+          <p>曼杜里森林还需要更多的关心和保护。</p>
+          <p> </p>
+          <p>经过我们的调查，发现龙蜥兽的危险性还是很高，我们今后需要继续对它们进行监视并采取措施。</p>          
+          <p> </p>
+          <p>我们还不知道龙蜥兽增殖的准确原因，但是可以肯定的是，它们对曼杜里森林的生态造成了威胁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里森林是守护埃尔特内的最后的堡垒，不管发生什么事情我们都必须守住它。</p>
+          <p> </p>
+          <p>仅靠一次的努力不行的话，我们就第两次、第三次地继续努力。因为对于我们守护者来说，时间是永恒的。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮我去消灭破坏森林生态的[%dic:STR_DIC_M_FrillfaimamMale_22_An]。</p>
+          <p></p>
+          <p>特别是最凶恶的雌性龙蜥兽，如果能把它们除掉，情况应该就会好转一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您马上去消灭[%dic:STR_DIC_M_FrillfaimamMale_22_An]。</p>
+          <p> </p>
+          <p>可能因为是雌性，所以它们是龙蜥兽中最凶残的一种。</p>
+          <p> </p>
+          <p>这个任务您上次已经执行过了，我想应该不困难吧。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您上次帮了我。</p>
+          <p> </p>
+          <p>但是您是觉得这样，事情就结束了吗？</p>
+          <p> </p>
+          <p>您也应该知道，这不是一次两次就能够解决的问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我拜托您的事情完成了吗？</p>
+          <p> </p>
+          <p>就是消灭锯齿龙蜥兽的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锯齿龙蜥兽的数量减少了，这下森林被破坏的事情应该会有所减少。</p>
+          <p> </p>
+          <p>食草动物应该也会逐渐增加。</p>
+          <p> </p>
+          <p>如果曼杜里森林能恢复原貌，那全是托[%username]大人的福。</p>
+          <p> </p>
+          <p>谢谢您帮我消灭了龙蜥兽。</p>
+          <p> </p>
+          <p>我会继续对龙蜥兽的繁殖状态进行监视，如果出现问题，相信[%username]大人一定会来帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_FrillfaimamMale_22_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Iandeus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">龙蜥兽正在破坏曼杜里森林的生态，伊安德乌斯对此很担心。为了让曼杜里森林恢复原貌，去消灭锯齿龙蜥兽吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯说虽然很多守护者都在努力保护曼杜里森林，但还是不够。</p>
+          <p> </p>
+          <p>特别是龙蜥兽的繁殖给生态界造成了混乱，必须采取相应的措施。</p>
+          <p> </p>
+          <p>于是帮他消灭了凶恶的锯齿龙蜥兽，他非常高兴，说这一定会给曼杜里森林带来积极的影响。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在除掉破坏的灵魂之后，有没有仔细地观察过骨头啊？</p>
+          <p> </p>
+          <p>大概有一半已经腐烂，中间也是空的，所以马上就会碎掉。</p>
+          <p> </p>
+          <p>但是其余的都是很坚硬的骨头。它们非常坚硬，只要稍微打磨一下，就能当作武器使用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要用到它们，所以[%username]大人您能帮我搜集一点[%dic:STR_DIC_I_QUEST_1731a]吗？</p>
+          <p> </p>
+          <p>我并不需要所有的骨头，只需要坚硬的骨头就行了。</p>
+          <p> </p>
+          <p>您也知道，我拿[%dic:STR_DIC_M_Ab1_1131_Skeleton_25_An]没有办法。它们看见我就全都逃跑了。</p>
+          <p> </p>
+          <p>如果您能帮我的话，我一定会报答您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>那就请您除掉破坏的灵魂，搜集[%dic:STR_DIC_I_QUEST_1731a]之后交给我吧。</p>
+          <p> </p>
+          <p>我再说一遍，破碎的骨头是不行的。必须是坚硬的骨头才行。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？如果你不愿意帮我的话就走啊，干嘛还要听我说完？</p>
+          <p> </p>
+          <p>干嘛要惹人生气...</p>
+          <p> </p>
+          <p>不要和我闹着玩！本来这个样子我就已经很不开心了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1731a]搜集到了吗？</p>
+          <p> </p>
+          <p>事实上，我让您帮我搜集那个东西是为了做一把短剑。</p>
+          <p> </p>
+          <p>那种骨头非常坚硬，因此可以做成很不错的短剑。</p>
+          <p> </p>
+          <p>请您把坚硬的骨头给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出坚硬的骨头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去搜集骨头啊？</p>
+          <p> </p>
+          <p>既然答应帮忙，就应该快点，不是吗？</p>
+          <p> </p>
+          <p>您这样站着不动，让我干着急算是什么嘛！</p>
+          <p> </p>
+          <p>请您快去搜集[%dic:STR_DIC_I_QUEST_1731a]吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>骨头果然又轻又坚硬。</p>
+          <p> </p>
+          <p>不知道我现在这个样子能不能把骨头做成短剑，不过先得谢谢您帮我找来了材料。</p>
+          <p> </p>
+          <p>来，这是说好的报酬。请您收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Ab1_1131_Skeleton_25_An]，把搜集到的骨头交给[%dic:STR_DIC_N_Labdacus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">拉布达库斯说破坏的灵魂有两种骨头，他需要其中坚硬的骨头。帮助他除掉破坏的灵魂，搜集坚硬的骨头吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉布达库斯问我知不知道破坏的灵魂有两种骨头。他说有一半因为腐烂已经破碎，但其余的却非常坚硬，可以用作武器。</p>
+          <p> </p>
+          <p>因为他说需要坚硬的骨头，所以我去除掉了破坏的灵魂，帮他搜集到了骨头。他很高兴，说应该可以用它做一把很不错的短剑。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

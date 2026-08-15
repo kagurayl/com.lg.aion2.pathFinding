@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>净化果实，你想用来干什么？</p>
+          <p> </p>
+          <p>来跟我要果实的人，都是炼金术士和药品商人。</p>
+          <p> </p>
+          <p>你应该不是想用我的果实，做不好的事情吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说是拿来做药。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要做什么药啊？</p>
+          <p> </p>
+          <p>跟我说说，你要用我的果实做什么？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说明情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好吧，我来帮你。</p>
+          <p> </p>
+          <p>有一个方法，可以让我结果。</p>
+          <p> </p>
+          <p>我的果实，是椰林的果实里面最珍贵的。</p>
+          <p> </p>
+          <p>必须要有[%dic:STR_DIC_I_quest_11454a]和[%dic:STR_DIC_I_SOIL_CONDITIONER_01]。</p>
+          <p> </p>
+          <p>去搜集吧，想要我的果实的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Ab1_1011_AgrintGi_50_An]，在埃雷修兰塔。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_quest_11454a]，则在守护神将的体内。</p>
+          <p> </p>
+          <p>生长树液，可以加快椰林的生长。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_SOIL_CONDITIONER_01]可以让贫瘠的土地变得肥沃。当然，还可以让我结果。</p>
+          <p> </p>
+          <p>我需要，这两样东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就没办法了，如果你不愿意的话。</p>
+          <p> </p>
+          <p>我也没有办法，让自己结出果实。</p>
+          <p> </p>
+          <p>我觉得这件事，应该是很重要的事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦，守护者。</p>
+          <p> </p>
+          <p>拿来了吗？生长树液。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_I_quest_11454a]洒在我的树枝上，把[%dic:STR_DIC_I_SOIL_CONDITIONER_01]洒在土壤上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">洒下树液和肥料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你竟然想骗过我。</p>
+          <p> </p>
+          <p>没有生长树液和肥料，我也没有办法。</p>
+          <p> </p>
+          <p>你到底有没有听清楚我的话啊……</p>
+          <p> </p>
+          <p>快去，搜集[%dic:STR_DIC_I_quest_11454a]和[%dic:STR_DIC_I_SOIL_CONDITIONER_01]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果实正在生长，在洒下树液和肥料的地方。</p>
+          <p> </p>
+          <p>呃，呃。</p>
+          <p> </p>
+          <p>结出果实，是一件痛苦的事情。</p>
+          <p> </p>
+          <p>来，这个果实，是我用痛苦结成的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Ab1_1011_AgrintGi_50_An]的树液和[%dic:STR_DIC_I_SOIL_CONDITIONER_01]，然后交给 [%dic:STR_DIC_N_Tree_NoMove_Tramis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让特拉密斯可以结果，打倒树之守护神将，搜集生长树液，然后在多乐金那里购买潮湿的肥料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听我讲述了为什么需要椰林的果实之后，特拉密斯说可以帮我获得果实，让我去搜集树之守护神将的生长树液和多乐金那里出售的潮湿的肥料。</p>
+          <p> </p>
+          <p>把搜集到的生长树液和肥料洒在特拉密斯身上，他的树枝上快速长出了果实。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

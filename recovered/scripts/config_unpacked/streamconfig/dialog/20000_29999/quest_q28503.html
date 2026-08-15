@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(轻轻地咳了一声，不停地瞟我。)</p>
+          <p> </p>
+          <p>(好像有什么话要说。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是否有话要说。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(惊慌的样子)不，嗯，那个……</p>
+          <p> </p>
+          <p>守护者，你看上去好像很强。</p>
+          <p> </p>
+          <p>我看你好像不是来做生意的，而且来的时候也没有受伤……</p>
+          <p> </p>
+          <p>有件事我想拜托你，可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我求你不是因为出于私心……</p>
+          <p> </p>
+          <p>在阿尔特盖德的术古中，有个搜集奥黛尔拉的朋友。</p>
+          <p> </p>
+          <p>他搜集奥黛尔拉不是出于别的目的，而是想制作成补给品用于慈善事业。他是个很善良的人！</p>
+          <p> </p>
+          <p>看到新鲜的奥黛尔拉，我就想起了他……</p>
+          <p></p>
+          <p>我想搜集哈拉梅尔的奥黛尔拉，把它们用在好的地方。你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在姆格尔管理的奥黛尔拉栽培场上，堆满了[%dic:STR_DIC_OBJ_ODGrass]。你只要偷偷地帮我拿一些回来就行了。</p>
+          <p> </p>
+          <p>请你帮我搜集5个左右，交给阿尔特盖德要塞的[%dic:STR_DIC_N_Shugo1]</p>
+          <p> </p>
+          <p>这是出于慈善目的！绝对不是出于私利。</p>
+          <p> </p>
+          <p>这么正义的事业，难道不应该帮帮他吗！你说呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是担心我会用于其他用途吗？</p>
+          <p> </p>
+          <p>你帮了我一次，却还是不能相信我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我这里有很多好东西。</p>
+          <p> </p>
+          <p>如果想买什么东西，就尽管说。</p>
+          <p></p>
+          <p>我将很高兴为你服务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥黛尔拉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？</p>
+          <p> </p>
+          <p>不是交易，是别的事情吗？</p>
+          <p> </p>
+          <p>私人的事情，等下班之后再跟我说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是哪里来的？又大又新鲜的奥黛尔拉。</p>
+          <p> </p>
+          <p>慈善事业？你在说什么啊？</p>
+          <p> </p>
+          <p>(想了一想)啊，呐呐。确实是我让他搜集的东西。</p>
+          <p> </p>
+          <p>我会把这些值钱的东西用于慈善事业！</p>
+          <p> </p>
+          <p>谢谢你的帮助！为了表示感谢，我把这个送给你，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_ODGrass]，然后交给[%dic:STR_DIC_N_Shugo_DF1_2]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照可可宾的委托，搜集了奥黛尔拉交给查乌灵</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可可宾说为了慈善事业，需要搜集奥黛尔拉交给朋友查乌灵，让我帮他搜集奥黛尔拉。</p>
+          <p> </p>
+          <p>按照他的委托把搜集到的奥黛尔拉交给了查乌灵，他对我表示感谢，但总觉得有点奇怪。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

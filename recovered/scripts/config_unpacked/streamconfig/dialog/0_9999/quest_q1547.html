@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，现在做不了研究，只能待在野营地，真让人气闷啊。</p>
+          <p> </p>
+          <p>什么为什么啊？你看不到这些穷凶极恶的家伙正在逐渐围过来吗？</p>
+          <p> </p>
+          <p>哎呦，我要早知道的话，就去埃尔特内了。我听说密林里纽特的规模更大，才来到这里的，结果搞成这样。</p>
+          <p> </p>
+          <p>时间一晃即过，我却什么成果都没有，烦死了。我该怎么向极乐世界报告才能保住脸面呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说要帮他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？你要是肯帮我当然是很感谢了。</p>
+          <p> </p>
+          <p>"我到这边观察之后发现密林里有[%dic:STR_DIC_M_NeutH1_38_An], [%dic:STR_DIC_M_NeutH2_38_An], [%dic:STR_DIC_M_NeutL1_37_An], [%dic:STR_DIC_M_NeutL2_37_An]，好像各自分工不同。这到底是一开始就是这样的还是经过特定的过程变成这样的，我很好奇。"</p>
+          <p> </p>
+          <p>要想了解这一点，最好的办法是研究它们的心脏。心脏的大小如果类似的话，就是由后天的原因决定的。如果不一样的话，就是天生的。</p>
+          <p> </p>
+          <p>所以，请带回[%dic:STR_DIC_I_QUEST_1547UNI]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请不要停留了，赶紧上路吧。</p>
+          <p> </p>
+          <p>要等你把材料带给我，我才能尽快开始试验研究。进行研究了才能把报告结果交给极乐世界嘛。</p>
+          <p> </p>
+          <p>所以你不要随便应付我。一定要找齐4种[%dic:STR_DIC_I_QUEST_1547UNI]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说，你这是火上浇油吗？</p>
+          <p> </p>
+          <p>本来我就因为事情不顺正在发愁呢。</p>
+          <p> </p>
+          <p>如果不帮忙就赶紧走。看见你就讨厌。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你带来[%dic:STR_DIC_I_QUEST_1547UNI]了吗?</p>
+          <p> </p>
+          <p>这帮家伙头脑很好，对付起来不容易。</p>
+          <p> </p>
+          <p>快给我看看带来的东西。刚搞到的时候研究起来最合适了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纽特的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像少了点什么。</p>
+          <p> </p>
+          <p>我是怎么说的？我不是要你把各种[%dic:STR_DIC_I_QUEST_1547UNI]都带回来吗？</p>
+          <p> </p>
+          <p>必须收集齐了才能拿出真正的研究结果。</p>
+          <p> </p>
+          <p>你赶紧去找吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。摸着还热乎着呢，看来你是一抓住就跑来了。</p>
+          <p> </p>
+          <p>刚才对你发火真不好意思。</p>
+          <p> </p>
+          <p>我原来不是这样的，大概是因为事情不顺吧，总是不知不觉地发火。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_QUEST_1547UNI]按种类收集齐，带给[%dic:STR_DIC_N_Senemonea]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让塞内莫内亚能够进行纽特研究，按种类收集齐了纽特心脏。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞内莫内亚说来普依艾密林已经很久了，却不能开始研究纽特，觉得很烦。</p>
+          <p> </p>
+          <p>为了让她能够进行研究，把纽特的心脏按种类不同收集齐，带给她。她为自己发火而道歉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

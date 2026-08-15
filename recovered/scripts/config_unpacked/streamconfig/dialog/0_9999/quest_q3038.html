@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们主人的心情怎么样？</p>
+          <p> </p>
+          <p>今天又发火了吗？</p>
+          <p> </p>
+          <p>我从小就服侍主人，但还是摸不清他的脾胃。</p>
+          <p> </p>
+          <p>心情明明好好的，突然又会发神经，我因此吃了不少苦头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想他是不是患上了抑郁症。</p>
+          <p> </p>
+          <p>没错。很有可能。在这种地方呆了太久之后，谁都会得抑郁症。</p>
+          <p> </p>
+          <p>所以才会这样！</p>
+          <p> </p>
+          <p>所以他经常把我当成出气筒。没法活了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，请你帮帮我。</p>
+          <p> </p>
+          <p>为了让主人不再折磨我，你能帮我搜集一些[%dic:STR_DIC_I_QUEST_3038a]吗？</p>
+          <p> </p>
+          <p>吃了那个之后，他的心情一定会好一些的。</p>
+          <p> </p>
+          <p>打猎周围的[%dic:STR_DIC_M_LF2A_Cellatu_47_An]就可以搜集到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。请你帮我搜集30个。</p>
+          <p> </p>
+          <p>以主人的性格，吃一两次应该不会有什么用。</p>
+          <p> </p>
+          <p>当然，我不会让你白跑腿。如果你帮我搜集到[%dic:STR_DIC_I_QUEST_3038a]，我会给你一样好东西，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能帮我的话，我本来打算送你一样好东西的。</p>
+          <p> </p>
+          <p>呼，今天不知道又会怎么折腾我...</p>
+          <p> </p>
+          <p>要不是欠他的情的话，我早就逃跑了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_3038a]搜集到了吗？</p>
+          <p> </p>
+          <p>刚才主人又在发脾气。</p>
+          <p> </p>
+          <p>看他的脸色不对，一定又要骂我了。快把卵巢给我吧。</p>
+          <p> </p>
+          <p>我得赶紧做成菜给他吃。</p>
+        </body>
+        </html>
+   </Contents>    
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塞拉图的卵巢。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去打猎[%dic:STR_DIC_M_LF2A_Cellatu_47_An]吗？</p>
+          <p> </p>
+          <p>也是，他们非常凶恶。</p>
+          <p> </p>
+          <p>不过千万不能放弃。主人非常需要[%dic:STR_DIC_I_QUEST_3038a]，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这就是抑郁症的特效药。</p>
+          <p> </p>
+          <p>谢谢你，守护者。这是给你的辛苦费，收下吧。</p>
+          <p> </p>
+          <p>要治愈主人的抑郁症，需要连续吃很长时间。以后请你继续帮我搜集。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF2A_Cellatu_47_An]的卵巢，然后交给[%dic:STR_DIC_N_Shugo_LF2a_15]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">因为伊克锡安的神经质，麻吉隆过得非常辛苦。搜集治疗抑郁症的特效药塞拉图的卵巢，交给麻吉隆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊克锡安的仆人麻吉隆说伊克锡安的性格很怪癖的原因是得了抑郁症，让我帮着搜集治疗抑郁症的塞拉图的卵巢。</p>
+          <p> </p>
+          <p>搜集到塞拉图的卵巢后交给了他，他说要想治好抑郁症，需要连续吃很长时间才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

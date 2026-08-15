@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！这么问您好像有点突然，但是您要去B5吗？</p>
+          <p> </p>
+          <p>如果您要去的话，我有件事想拜托您。</p>
+          <p> </p>
+          <p>让一个不熟的人去做这种事，我感到有点不安。</p>
+          <p> </p>
+          <p>但是我找不到别的人去，请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在B5可以见到一个名叫阿尔提纳德的人。</p>
+          <p> </p>
+          <p>她是我好朋友的母亲，不久前去了哪里。我想知道她现在过得怎么样。</p>
+          <p> </p>
+          <p>事实上……不久前她的女儿……被狂信徒杀死了。她说要为女儿复仇，于是去了那里，不知道她现在怎么样了。</p>
+          <p> </p>
+          <p>事情就是这样，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>阿尔提纳德应该就在B5。</p>
+          <p> </p>
+          <p>请您代我向她问好，如果阿尔提纳德有什么需要，请您一定要帮帮她。</p>
+          <p> </p>
+          <p>最重要的是必须防止她因为接受不了失去女儿的痛苦而做出什么傻事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我不好，不该向不熟的人提这种要求。</p>
+          <p> </p>
+          <p>如果可以的话，我真想自己过去，但是我的战斗能力实在太差。</p>
+          <p> </p>
+          <p>所以只能麻烦别人……</p>
+          <p> </p>
+          <p>我再想想别的办法。天无绝人之路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>我跟魔族应该没什么好谈的啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达贝利的问候。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝利在担心我啊。</p>
+          <p> </p>
+          <p>真是个善良的年轻人……不愧是我女儿的好朋友。</p>
+          <p> </p>
+          <p>我虽然不喜欢别人为我担心，但现在没有别的办法，因为我有一个必须完成的心愿。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和阿尔提纳德对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">贝利说担心朋友的母亲阿尔提纳德，让我去B5看看阿尔提纳德是否安然无恙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝利正在为报仇心切的朋友的母亲担心。</p>
+          <p> </p>
+          <p>于是前往B5，向阿尔提纳德转达了贝利的问候。她说虽然不喜欢别人为她担心，但必须为女儿报仇。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

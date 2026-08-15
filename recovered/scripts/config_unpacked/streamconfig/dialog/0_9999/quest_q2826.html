@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！幸亏你还在要塞。</p>
+          <p> </p>
+          <p>看起来你好象很疲惫，这个请求我也不知道该不该向你讲。</p>
+          <p> </p>
+          <p>到现在我还没犯过这样的错误，真是见鬼了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问发生了什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次因为我的疏忽，竟然漏掉了两种要搜集核的守护巨神。</p>
+          <p> </p>
+          <p>它们是[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和 [%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]，现在很需要他们的核。</p>
+          <p> </p>
+          <p>不好意思，能不能再麻烦你一次？我会尽我所能补偿你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我先把可能对这次行动提供帮助的情报都告诉你。你一边做准备，一边听吧。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和 [%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]从来不会同时出现。</p>
+          <p> </p>
+          <p>光之守护巨神出现的时候，黑暗守护巨神会消失；反过来，当黑暗守护巨神出现的时候，光之守护巨神也会消失不见。</p>
+          <p> </p>
+          <p>愿黑暗的宁静与祥和始终陪伴您左右。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都是我的失误，才会让事情变得这么麻烦，我也不好强求你。</p>
+          <p> </p>
+          <p>很遗憾无法得到你的帮助，不过也多亏在给格伦送去核之前查出了错误。</p>
+          <p> </p>
+          <p>看来光之守护巨神和黑暗守护巨神的核，只能去拜托别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看上去好疲惫啊。</p>
+          <p></p>
+          <p>难为你了。连续两次和守护巨神战斗...</p>
+          <p> </p>
+          <p>不过有之前的经验，应该比上次容易一些吧，核已经都搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将守护巨神的核交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，你也和我一样粗心啊。</p>
+          <p> </p>
+          <p>我明明说过各要5个[%dic:STR_DIC_I_QUEST_2826a]和 [%dic:STR_DIC_I_QUEST_2826b] 的嘛。</p>
+          <p> </p>
+          <p>还有，要记得，光之守护巨神和黑暗守护巨神不会同时出现。</p>
+          <p> </p>
+          <p>这下你应该都清楚了吧，请快去搜集约定好的那些核吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一，二...五！每种5个，共十个，没错。</p>
+          <p> </p>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>战斗一定十分艰苦，看你累的。这是说好的奖励，请收下。</p>
+          <p> </p>
+          <p>[%username]，我觉得这应该对你有用，希望你喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ab1_1011_LightGuardian_50_An]和 [%dic:STR_DIC_M_Ab1_1011_DarkGuardian_50_An]，并搜集它们的核交给 [%dic:STR_DIC_N_Ab1_1011_Quest_Da]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">缪艾丽娜表示，上次因为失误，有两个守护巨神的核没有搜集。搜集光之守护巨神和黑暗守护巨神的核，并交给缪艾丽娜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>缪艾丽娜称，上次忘记把光之守护巨神和黑暗守护巨神说到，再次拜托搜集剩下两种守护巨神的核。</p>
+          <p> </p>
+          <p>接受她的请求消灭了交替出现的守护巨神，并搜集它们的核交给了缪艾丽娜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

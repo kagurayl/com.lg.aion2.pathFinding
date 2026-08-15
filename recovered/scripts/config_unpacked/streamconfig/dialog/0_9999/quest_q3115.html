@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把正在看的信折起来)魔石去除师协会刚送来了通知，您来得正好。</p>
+          <p> </p>
+          <p>协会正在培养魔石去除师，因此需要很多用于练习的魔石。</p>
+          <p> </p>
+          <p>目前的方式无法满足增长的需求，因此让我一次多回收一些。</p>
+          <p> </p>
+          <p>我没办法离开这里，您能帮我搜集魔石吗？</p>
+          <p> </p>
+          <p>我会用有用的魔石和您交换的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>协会需要的魔石是精神力+60，回避+12和武器防御+20魔石。</p>
+          <p> </p>
+          <p>都是些常见的东西，应该不是很难找到。</p>
+          <p> </p>
+          <p>[%username]大人，那我就全靠您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得报酬太少了吗？</p>
+          <p> </p>
+          <p>知道了。虽然物质上的奖励是少了点。但是这是为了整个天界，不是吗！</p>
+          <p> </p>
+          <p>要是可以的话，希望您能帮我一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为是谁呢，原来是[%username]大人啊。</p>
+          <p> </p>
+          <p>刚好我想把回收到的魔石送到协会那边去呢，您来的正好。</p>
+          <p> </p>
+          <p>快把带来的魔石交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像有点弄错了……</p>
+          <p> </p>
+          <p>协会需要的是精神力+60，回避+12和武器防御+20魔石各10个。</p>
+          <p> </p>
+          <p>可能是因为外形相似，所以搞错了吧。请仔细确认魔石的名称和数值，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>全都没错。</p>
+          <p> </p>
+          <p>请收下。这是给您的魔石。</p>
+          <p> </p>
+          <p>这段时间我需要继续给协会寄魔石，如果您以后有了魔石的话，请拿来给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，然后交给达尼亚</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集魔石去除师协会需要的精神力+60，回避+12和武器防御+20魔石各10个，然后交给达尼亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达尼亚说从魔石去除师协会收到了要求回收魔石的通知，让我帮助忙碌的她搜集魔石。</p>
+          <p> </p>
+          <p>搜集到了达尼亚所说的魔石各10个，交给她之后，她给了我一个不错的魔石作为答谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

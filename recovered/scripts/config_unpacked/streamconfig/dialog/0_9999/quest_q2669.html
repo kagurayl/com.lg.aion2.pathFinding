@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究雷帕尔革命团是我的工作，不过我也没有想到那些家伙们会因此而绑架我。</p>
+          <p> </p>
+          <p>难道说，我最近发表的论文对他们产生了威胁，还是...</p>
+          <p> </p>
+          <p>不管怎么想，我都找不出他们绑架我的理由。</p>
+          <p> </p>
+          <p>论文还有其他事情先放在一边，最重要的是先从这里逃出去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究所里面会有很多雷帕尔革命团的成员...</p>
+          <p> </p>
+          <p>凭我一个人的力量实在无法从这里逃脱。</p>
+          <p> </p>
+          <p>[%username] 大人能把我送出研究所吗？</p>
+          <p> </p>
+          <p>只要从这里出去，应该可以顺利逃走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>我以为这次必死无疑，没想到还能活着回去。</p>
+          <p> </p>
+          <p>等您出发的时候告诉我一声。</p>
+          <p> </p>
+          <p>我会紧跟在您身边。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我原以为这次有救了，没想到您竟然丢下我不管！</p>
+          <p> </p>
+          <p>既然这样，您为什么还把我从试验管里救出来？</p>
+          <p> </p>
+          <p>在您眼里，我的死活无关紧要，是吗？</p>
+          <p> </p>
+          <p>早知如此，还不如干脆在雷帕尔革命团人体试验中死掉，至少不会死得这么冤枉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来，以后对雷帕尔革命团的研究范围不能只限于信仰、行为、习惯等方面了。</p>
+          <p> </p>
+          <p>对他们的信仰有什么矛盾，以及这些对魔界起到怎样恶劣的影响等，都应该仔细调查。</p>
+          <p> </p>
+          <p>包括打倒他们的方法。</p>
+          <p> </p>
+          <p>但首先，必须从这里逃出去。</p>
+          <p> </p>
+          <p>您带路吧。我会跟在您后边。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">那么出发吧。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是[%username]！</p>
+          <p> </p>
+          <p>怎么样，消灭雷帕尔革命团，救出阿特拉了吗？</p>
+          <p> </p>
+          <p>是不是已经带他从研究所逃脱，到达了安全的地方？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。终于顺利救出了阿特拉，真是万幸。</p>
+          <p> </p>
+          <p>希望阿特拉在被关押期间查到一些对我们有利的情报...</p>
+          <p> </p>
+          <p>那样，我们就可以掌握雷帕尔革命团的动向，包括他们今后的计划等等。</p>
+          <p> </p>
+          <p>这次经历之后，或许他会做一些对今后消灭革命团有帮助的研究。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">做好逃离准备后，与 [%dic:STR_DIC_N_Atla]对话。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">保护[%dic:STR_DIC_N_Atla]到达 [%dic:STR_DIC_W_STR_DF3_SZ_G4_3] 入口。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">任务成功！ 向[%dic:STR_DIC_N_Dewi]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让阿特拉顺利逃走，保护他到达阿尔奎米亚研究所入口。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿特拉称，在伏魔殿遭到了绑架，醒来后发现被关在此地。他希望能得到协助，逃离这里。</p>   
+          <p> </p>  
+          <p>保护阿特拉到达研究所入口，并向德威报告结果。德威非常高兴，并表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

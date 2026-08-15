@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你来的正好。</p>
+          <p> </p>
+          <p>你要到要塞外面去吗？</p>
+          <p> </p>
+          <p>可以的话，能顺便帮我一个忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是什么麻烦的事。你只要帮我把这份命令书交给警戒哨所的[%dic:STR_DIC_N_Vyuin]就可以了。</p>
+          <p> </p>
+          <p>本来我应该自己去的，但是最近几天我没办法走开。</p>
+          <p> </p>
+          <p>沃夫冈研究所长说有紧急书信要送到伏魔殿去，让我在这里等着，直到研究结果出来为止。</p>
+          <p> </p>
+          <p>所以我想请你帮我带过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。只要帮我把这个交给维因就可以了。</p>
+          <p> </p>
+          <p>这是伏魔殿送来的命令书，里面好像有很重要的内容。</p>
+          <p> </p>
+          <p>上面还设置了封印。</p>
+          <p> </p>
+          <p>请你马上帮我交给[%dic:STR_DIC_N_Vyuin]，千万不要耽搁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我又不是让你去巴卡巴塔侦察哨所，只是去一趟安塔格尔警戒哨所而已……</p>
+          <p> </p>
+          <p>知道了。每个人都有自己的事情要做。</p>
+          <p> </p>
+          <p>你也好像很忙的样子，你去忙你的吧。命令书我会想办法处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，谁啊？好像不是我们军团的人啊……</p>
+          <p> </p>
+          <p>看你的穿着，好像也不是幻想之光和沉默之匕的人。</p>
+          <p> </p>
+          <p>请不要一个人在要塞前面乱逛。龙族随时可能发动进攻。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出封印的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是来送命令书的啊。</p>
+          <p> </p>
+          <p>(打开命令书查看。)</p>
+          <p> </p>
+          <p>(把命令书折起来)嗯，格尔克马洛斯防御基地兵力不足，让我到那边去。</p>
+          <p> </p>
+          <p>这里因为龙族的事情每天都忙得焦头烂额的，那里的情况难道比这里还严重吗……不过既然是命令，就必须遵守。</p>
+          <p> </p>
+          <p>等接替工作的人到了之后，我马上就出发。</p>
+          <p> </p>
+          <p>谢谢您把命令书送过来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把封印的命令书交给[%dic:STR_DIC_N_Vyuin]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的阿尔文把伏魔殿的命令书交给安塔格尔警戒哨所的维因。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔文说因为沃夫冈研究所长的事情没法离开，如果我要到要塞外面去的话，就顺便把命令书带给维因。</p>
+          <p> </p>
+          <p>把封印的命令书交给了维因。他说这是把他调到格尔克马洛斯防御基地的命令书，等接替自己的人到了之后，就马上出发。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

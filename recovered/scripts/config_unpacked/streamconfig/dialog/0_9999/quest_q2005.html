@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为几个笨蛋，我们乌尔古伦盗贼团的名声要扫地了。</p>
+          <p> </p>
+          <p>有几个兄弟去奥黛尔拉种植地的时候被灰鬃族占了便宜。</p>
+          <p> </p>
+          <p>肯定是看到术古商人以极高的价钱买入[%dic:STR_DIC_I_QUEST_2005A]，便想偷出来卖，好赚上那么一笔。</p>
+          <p> </p>
+          <p>这些蠢货！连个亚人种也对付不了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+    <Voice file="Q2005-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有向头禀报就出去，结果还遭遇了这种事...都不配叫大盗，可是又能怎么办呢？毕竟是我们的弟兄啊。</p>
+          <p> </p>
+          <p>再这样下去的话我们盗贼团的名声就全完了，还没等恶名远扬就可能已经贻笑大方了。</p>
+          <p> </p>
+          <p>所以要给那些家伙们一点儿颜色瞧瞧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">询问任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然要干掉他们。让人骑在我们脖子上，可不是大盗所能接受的。</p>
+          <p> </p>
+          <p>你到东边的[%dic:STR_DIC_FLA192]去把[%dic:STR_DIC_M_WormbabyD_8_An]干掉。</p>
+          <p> </p>
+          <p>还有，顺便把[%dic:STR_DIC_I_QUEST_2005A]全部带回来。</p>
+          <p> </p>
+          <p>只要盯上的东西就一定要得到手，那才叫真正的大盗呢！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，正等着你呢。</p>
+          <p> </p>
+          <p>你教训了灰鬃看守了？</p>
+          <p> </p>
+          <p>把他干掉后[%dic:STR_DIC_I_QUEST_2005A]也带回来了吧？</p>
+          <p> </p>
+          <p>谁也不能小看我们乌尔古伦盗贼团！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥黛尔拉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道我们盗贼团的名声扫地你 也无所谓吗？</p>
+          <p> </p>
+          <p>快去干掉他们！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是你够兄弟啊。</p>
+          <p> </p>
+          <p>如果别的弟兄们也有你这样的能力我就 没什么可担心的了。</p>
+          <p> </p>
+          <p>像个傻子似的，还被亚人种欺负...</p>
+          <p> </p>
+          <p>给，收下吧。你干得漂亮，这是头儿赏给你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA416]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">从[%dic:STR_DIC_FLA192]的灰鬃监视兵那儿抢夺[%dic:STR_DIC_I_QUEST_2005A]，然后交给[%dic:STR_DIC_LA416]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：按[%dic:STR_DIC_LA416]的指示去干掉带给乌尔古伦盗贼团耻辱的亚人种。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盗贼团的盗贼们到奥黛尔拉部落去偷奥黛尔拉，反而被灰鬃看守打了回来。</p>
+          <p> </p>
+          <p>妙乌说想要保住盗贼团的名声就要给他们一点儿颜色看看，按照妙乌的话，去奥黛尔拉种植地干掉了灰鬃看守，把奥黛尔拉带给了妙乌。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname] </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命执行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

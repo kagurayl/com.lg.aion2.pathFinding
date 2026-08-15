@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然对改良种子的调查已经基本结束，但把它种在哪儿这个问题还没有解决。</p>
+          <p> </p>
+          <p>南部污染地带虽然正在慢慢被净化，但是只有这一处地方是不够的。 </p>
+          <p> </p>
+          <p>只有把北面的哈班雅克农场也一起开垦，收成才能有点保障。</p>
+          <p> </p>
+          <p>可是，哈班雅克农场有几个问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然至今为止还没有确认那里的土壤状况，但与之相比，还有个更大的问题。</p>
+          <p> </p>
+          <p>问题就是，大崩溃时死去的农夫们都变成了不死族，徘徊在哈班雅克农场。</p>
+          <p> </p>
+          <p>只要有他们在，开垦哈班雅克农场就是件不可能的事。以前来过的开垦团都以失败而告终也是因为这个问题。</p>
+          <p> </p>
+          <p>虽然应该大规模地清剿不死族，可是现在没有做这件事的余力。</p>
+          <p> </p>
+          <p>[%username]大人，您要是肯伸出援助之手，肯定会帮我们大忙的...您能帮我们除掉哈班雅克农场的不死族吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请到哈班雅克农场帮我们除掉徘徊在那里的[%dic:STR_DIC_M_ZombieFarmerD_23_An]和[%dic:STR_DIC_M_ZombieMiddleageD_23_An]们。</p>
+          <p> </p>
+          <p>让定居者们能够安心到哈班雅克农场去开垦。 </p>
+          <p> </p>
+          <p>只有尽快在那里培育农作物，才能减轻人们的痛苦啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次拜托您的任务太辛苦了吗？</p>
+          <p> </p>
+          <p>如果您需要休息的话，我也不会强求的。</p>
+          <p> </p>
+          <p>会有其他人来帮忙吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来到布鲁斯特豪宁后，看不到一点进展，心里真是苦闷啊。</p>
+          <p> </p>
+          <p>但是，[%username]大人，托您的福，现在似乎有些进展了。</p>
+          <p> </p>
+          <p>您帮我们除掉流落在哈班雅克农场的不死族了吗？</p>
+          <p> </p>
+          <p>只要解决了不死族的问题，定居者们马上就可以动身前往哈班雅克农场开始进行开垦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>虽然没有完全消灭掉不死族，但是，[%username]大人，托您的福，已经卸掉了一个大包袱了。 </p>
+          <p> </p>
+          <p>定居者们肯定都会感谢您的。当然，我们兵团的人也很感谢您。</p>
+          <p> </p>
+          <p>这是对您辛苦的一点答谢，请您不要拒绝，收下吧。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭哈班雅克农场的不死族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ZombieFarmerD_23_An]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ZombieMiddleageD_23_An]([%5]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Randet]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了使定居者们可以开垦哈班雅克农场，除掉徘徊在农场的不死族农场居民和不死族农场工人吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岚黛特说，要想种植改良种子，除了南部污染地带以外，还必须在哈班雅克农场也进行开垦才行。</p>
+          <p> </p>
+          <p>但是，因为哈班雅克农场里徘徊着大崩溃时死去的不死族，他担心定居者们进不了农场。</p>
+          <p> </p>
+          <p>所以，为了使定居者们可以安心到哈班雅克农场进行开垦，消灭掉了不死族农场居民和不死族农场工人。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

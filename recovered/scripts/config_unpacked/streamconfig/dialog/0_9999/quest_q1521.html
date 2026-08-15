@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡现在情况危急。</p>
+          <p> </p>
+          <p>龙族通过次元之门入侵，许多生命体又出现突然变异，状况十分混乱。</p>
+          <p> </p>
+          <p>克拉乌斯大人要我们不为周围形势所动，默默地坚守结界塔。可是心中慌乱不是人力所能阻止的啊。</p>
+          <p> </p>
+          <p>这种时候克鲁比埃尔还要来捣乱...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问克鲁比埃尔的事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克鲁比埃尔本来根本就没在这附近出现过。</p>
+          <p> </p>
+          <p>可是近来不知出了什么事，突然涌向结界塔这边，引起了骚乱。</p>
+          <p> </p>
+          <p>已经影响到了任务的完成。可是守卫们忙于守护结界塔，无法抽身。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是打心眼里想消灭它们，可是又怕龙族万一侵入，所以一时一刻也不敢离开结界塔。</p>
+          <p> </p>
+          <p>而且克鲁比埃尔个头虽然不大，力气却着实不小，人类对付起来还有些困难。</p>
+          <p> </p>
+          <p>所以能不能请你下去干掉[%dic:STR_DIC_M_Cherubim3_32_An]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢您能接受这个任务了。</p>
+          <p> </p>
+          <p>这事虽说不像与龙族对抗一般十万火急，可是也是一定要做的。 </p>
+          <p> </p>
+          <p>请下到结界塔之下，干掉[%dic:STR_DIC_M_Cherubim3_32_An]吧。他们现在应该正在从苏贝尔斯石山去往黑暗湿地的路上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说起来，和龙族相比，克鲁比埃尔之辈算不得什么要紧事。</p>
+          <p> </p>
+          <p>虽说影响了任务的完成，也还撑得过去。</p>
+          <p> </p>
+          <p>既然您有要务在身，就不再多做挽留了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>前一段开始，克鲁比埃尔就不再出现了。</p>
+          <p> </p>
+          <p>托您的福，执行任务变得容易多了。</p>
+          <p> </p>
+          <p>看来[%username]大人已经出手干掉了他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是万分感谢。</p>
+          <p> </p>
+          <p>正为这帮家伙妨碍任务的完成而烦不胜烦呢。现在都被干掉了，真是大快人心。</p>
+          <p> </p>
+          <p>小小谢礼不成敬意，请收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">干掉[%dic:STR_DIC_M_Cherubim3_32_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Rahelio]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克鲁比埃尔妨碍了卫兵在结界塔完成守卫任务。去干掉它们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉赫利奥说，克鲁比埃尔虽然妨碍到了卫兵们执行任务，可是因为要守护结界塔，卫兵们也拿它们无可奈何。所感谢你替卫兵干掉了克鲁比埃尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

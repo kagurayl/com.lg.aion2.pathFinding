@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道埃雷修兰塔也有椰林族生活吗？</p>
+          <p> </p>
+          <p>硫磺树列岛这里的烙印之岛上，有个名叫特里米诺斯的椰林。</p>
+          <p> </p>
+          <p>好像是在大崩溃之后被吸到这里来的，但是他好像适应了这里的环境，活了下来。</p>
+          <p> </p>
+          <p>不过亚特雷亚的椰林反而好像正在经历更大的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道您有没有去过，在贝鲁斯兰有一个名叫基侬加夫冰冻都市的地方。那是在很久以前受到艾莱休奇卡的诅咒而冰冻三尺的地方。</p>
+          <p> </p>
+          <p>但是那里有一个名叫埃图恩的椰林。在漫长的时间里，在那个艰难的地方坚持了下来，但是听说最近他的状态正在急剧恶化。</p>
+          <p> </p>
+          <p>于是贝鲁斯兰要塞的黄昏的执政官想埃雷修兰塔的黄昏的执政官安诺发来了联络。询问有没有什么办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最后这件事转到了我这里。</p>
+          <p> </p>
+          <p>让我问问特里米诺斯有没有让贝鲁斯兰的椰林族恢复元气的方法。</p>
+          <p> </p>
+          <p>但是我也什么都不知道，最好是去直接把情况告诉特里米诺斯。</p>
+          <p> </p>
+          <p>[%username] 大人，请您到烙印之岛上去，把贝鲁斯兰的那个名叫埃图恩的椰林的话转告给[%dic:STR_DIC_N_Tree_moving_Triminos]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这里往西南方向飞的话，很快就能到达烙印之岛。</p>
+          <p> </p>
+          <p>请您向特里米诺斯说明详细的情况。那样的话，他一定会为同族想想有什么办法。</p>
+          <p> </p>
+          <p>此外，如果[%dic:STR_DIC_N_Tree_moving_Triminos]需要什么帮忙的话，希望您能尽量答应他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您听得这么认真，我还以为您一定会帮我的呢...</p>
+          <p> </p>
+          <p>没办法。只能再找找其他人了。</p>
+          <p> </p>
+          <p>再见。愿黑暗的平安永远伴随着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，守护者？</p>
+          <p> </p>
+          <p>有什么话要说的话，就不要磨蹭。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达埃图恩的消息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃图恩？是叫埃图恩吗？</p>
+          <p> </p>
+          <p>他是生活在冰冻都市吗，埃图恩？</p>
+          <p> </p>
+          <p>听说他在残酷的环境中变得衰弱，我很心痛。</p>
+          <p> </p>
+          <p>不管用什么手段，都必须帮助他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Tree_moving_Triminos]转达埃图恩的情况</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说贝鲁斯兰的名叫埃图恩的椰林族在逐渐衰弱。去向烙印之岛上的特里米诺斯说明情况吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加格拉德说贝鲁斯兰的名叫埃图恩的椰林急剧衰弱，通过黄昏的执政官发来了联络，请求帮助。</p>
+          <p> </p>
+          <p>他让我去烙印之岛的特里米诺斯那里问问有没有帮助他的办法，于是去向特里米诺斯说明了埃图恩的状况。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

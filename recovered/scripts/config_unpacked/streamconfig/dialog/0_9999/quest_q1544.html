@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这片密林连大地精灵都变得邪恶了。</p>
+          <p> </p>
+          <p>说起来，精灵们以前就不那么友好。可是也从来没有精灵主动攻击人的先例。</p>
+          <p> </p>
+          <p>可是现在只要靠近它们，它们就像疯了一样扑过来。</p>
+          <p> </p>
+          <p>我已经告诉了塞内莫内亚大人。他说应该调查一下。大地精灵变成这样肯定是有什么原因的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您不忙的话，不知道能不能帮帮我？</p>
+          <p> </p>
+          <p>不是什么难事。抓住[%dic:STR_DIC_M_ElementalEarth2_37_An]，拿到几样东西带回来就可以了。</p>
+          <p> </p>
+          <p>大地精灵只在特定区域活动，所以那个地方的土壤肯定出现了什么特异的成分。</p>
+          <p> </p>
+          <p>因此需要构成大地精灵的[%dic:STR_DIC_I_QUEST_1544a]。</p>
+          <p> </p>
+          <p>只要3袋子就够了。怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>实际上这是我第一次作研究。第一步一定要走好，后面的研究才会顺利。我希望能得到塞内莫内亚大人的认可。</p>
+          <p> </p>
+          <p>所以请您一定要帮帮我。帮我找到构成大地精灵的[%dic:STR_DIC_I_QUEST_1544a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这可怎么办？第一步就遇上了困难，真是前途一片渺茫啊。</p>
+          <p> </p>
+          <p>这可是我第一次搞研究啊。</p>
+          <p> </p>
+          <p>我是无论如何都想做好，您就不能帮帮我吗？我都这样恳求您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(没精打采地读着一本很厚的书。)</p>
+          <p> </p>
+          <p>您来了啊。我在等您的时候一直在读这本关于精灵的书。</p>
+          <p> </p>
+          <p>有很多很有意思的内容。幸亏有它，我了解了很多对研究很有帮助的知识。</p>
+          <p> </p>
+          <p>那么我可以看看您带来的[%dic:STR_DIC_I_QUEST_1544a]吗?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出精灵的土。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您带回三袋子…</p>
+          <p> </p>
+          <p>没什么，看来是我没有说清楚。</p>
+          <p> </p>
+          <p>虽然很麻烦，还是请您帮帮我吧。</p>
+          <p> </p>
+          <p>要有三袋子才够做研究的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是大地精灵掉下的吗？</p>
+          <p> </p>
+          <p>(把土放在手掌上仔细观察。)</p>
+          <p> </p>
+          <p>真奇怪啊，没什么不一样的...</p>
+          <p> </p>
+          <p>我本来以为看到土就能马上知道问题是什么了，现在看来是我想得太简单了。</p>
+          <p> </p>
+          <p>您为了搞到这些费了这么大力气，这可怎么好意思呢？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到构成[%dic:STR_DIC_M_ElementalEarth2_37_An]的泥土，带给[%dic:STR_DIC_N_Sillen]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">锡兰正在做研究，说是需要构成大地精灵的物质。收集泥土带给锡兰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡兰说大地精灵只在特地地区出现，他现在正在研究大地精灵变邪恶的原因。</p>
+          <p> </p>
+          <p>为了开始研究，去寻找构成精灵之土，可是却发现泥土本身并没有什么区别。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>湖就在眼前，可就是喝不到水。</p>
+          <p> </p>
+          <p>守护者，请您帮帮我们。</p>
+          <p> </p>
+          <p>我们要渴死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们到这里住，就是因为[%dic:STR_DIC_W_DF1A_22]。</p>
+          <p> </p>
+          <p>觉得离水近一些会方便。而我们想错了。</p>
+          <p> </p>
+          <p>可能是水热的原因，到处都是德布里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>而且还都很凶，一跑近就会冲过来！</p>
+          <p> </p>
+          <p>那些家伙太可怕了，我们根本到不了湖边。</p>
+          <p> </p>
+          <p>守护者，请您一定要救救我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的太谢谢您了。我们不会忘记您的大恩大德的。</p>
+          <p> </p>
+          <p>那请帮我们消灭5只[%dic:STR_DIC_M_DebrieD_16_An]吧。</p>
+          <p> </p>
+          <p>请从离村子最近的开始消灭吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还不如和别人一样看不起我们呢。</p>
+          <p> </p>
+          <p>不用这么费力得装成是为我们好。</p>
+          <p> </p>
+          <p>您看会说话的史匹格也看够了，请赶紧离开村子吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>湖里的[%dic:STR_DIC_M_DebrieD_16_An]真的很多吧？</p>
+          <p> </p>
+          <p>消灭它们时一定很累吧？</p>
+          <p> </p>
+          <p>它们特别难缠，就是守护者您也一定很费力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了您，现在可以放心喝水了。真的谢谢您。</p>
+          <p> </p>
+          <p>我们一辈子都不会忘记您的大恩大德的。</p>
+          <p> </p>
+          <p>请收下这个。小小礼物，不成敬意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭控制克里巴黛火山湖的[%dic:STR_DIC_M_DebrieD_16_An]%。([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_NPC_Gerger_2]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">盖尔盖尔部落的人们因为害怕凶恶的德布里，无法拿到食用水。为盖尔图斯把控制火山湖的绿德布里消灭掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔图斯诉苦说因为控制火山湖的德布里而拿不到食用水。帮其消灭火山湖的德布里，他说这下可以放心喝水了，非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

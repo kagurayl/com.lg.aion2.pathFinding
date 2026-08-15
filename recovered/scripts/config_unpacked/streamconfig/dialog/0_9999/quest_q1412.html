@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们是用这个来干什么的呢？</p>
+          <p> </p>
+          <p>没办法。不知道是什么东西的时候，尝一下是最快的方法。</p>
+          <p> </p>
+          <p>不用担心。我的身体久经历练，什么样的毒都伤不了我一根汗毛。</p>
+          <p> </p>
+          <p>(喝了一口药瓶里的药水。)</p>
+          <p> </p>
+          <p>呃，这是？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚才还只是怀疑，看来里面真的添加了奥德。事实上，没有方法比直接摄取奥德石可以更快地吸收奥德的力量了。</p>
+          <p> </p>
+          <p>但是奥德石的毒性很强，一般的人喝一小口就会丧命。</p>
+          <p> </p>
+          <p>竟然把那种东西做成药水！虽然经过了稀释，但也只是克拉尔那样强壮的肉体才可以承受。</p>
+          <p> </p>
+          <p>这一定是克拉尔变强的原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须立刻把这件事情向要塞报告。</p>
+          <p> </p>
+          <p>请你把药水转交给埃尔特内要塞的[%dic:STR_DIC_N_Aurelius]。他在这方面非常有学识，应该可以确认药水的材料和比例。</p>
+          <p> </p>
+          <p>然后请您把结果向队长大人报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要耽误时间，请您马上出发吧。到了要塞之后，立刻去找[%dic:STR_DIC_N_Aurelius]。</p>
+          <p> </p>
+          <p>这样下去的话，他们也许会获得和守护者同等的力量。</p>
+          <p> </p>
+          <p>那样的话，不仅是埃尔特内，整个天界都逃不过他们的魔爪。</p>
+          <p> </p>
+          <p>所以请您抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道您现在还有比这更重要的事情吗？</p>
+          <p> </p>
+          <p>这可怎么办？如果您有时间的话，应该就不会拒绝我。</p>
+          <p> </p>
+          <p>我知道了。这件事情我会想办法的。您这就走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等着结界塔那边的消息呢。</p>
+          <p> </p>
+          <p>看来艾奥洛斯大人一定是找到了什么线索。</p>
+          <p> </p>
+          <p>您如果带了什么东西来的话，就先把它给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出奥德药水，并转达艾奥洛斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可不是一般的事情。</p>
+          <p> </p>
+          <p>我一直以为奥德石只能用于打开次元之门...</p>
+          <p> </p>
+          <p>我知道哦了。我会对您带来的药水的成分进行分析，然后向队长大人报告的。</p>
+          <p> </p>
+          <p>这是队长大人让我等[%username]大人过来之后交给您的。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_QUEST_1412a]转交给埃尔特内的百夫长[%dic:STR_DIC_N_Aurelius]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">弄清楚了奥德药水的效果。去向埃尔特内要塞的百夫长阿奥雷利乌斯报告这件事情吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿奥雷利乌斯稍微喝了一点奥德药水，说那是提高克拉尔的力量的药水。</p>
+          <p> </p>
+          <p>他让我把这件事情立刻通知要塞，于是把奥德药水转交给了阿奥雷利乌斯。他说会在分析完药水的成分之后向队长报告，并把队长交给她的物品给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有一件烦心事儿，愿意听我说说吗？</p>
+          <p> </p>
+          <p>一大早天空就黑漆漆的，真是个奇怪的天气。一整天心情都不舒畅，到了晚上，不知哪儿来的一位老人要定做衣裳。</p>
+          <p> </p>
+          <p>他给了我一大笔钱作为定金。</p>
+          <p> </p>
+          <p>天啊！竟然要我给他做慧眼之衣。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问关于慧眼之衣的信息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要穿上慧眼之衣就能认出具有特殊功能的人。一句话，就是有魔法的衣服。</p>
+          <p> </p>
+          <p>大半夜的有人出巨款定做慧眼之衣...虽然觉得有点反常，但也没有拒绝人家的理由。</p>
+          <p> </p>
+          <p>但是，我又觉得这位老人似乎在哪儿见过。开始的时候没想起来，后来再仔细想了想，不就是[%dic:STR_DIC_LA12]嘛！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问关于菲尔诺斯的信息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是在拉克立玛孢子路独自生活的老人。因为他从不与村子里的人来往，所以也不知道他是干什么的。但是，不断有传闻说他在做奇怪的实验。</p>
+          <p> </p>
+          <p>虽然收了定金，但到哪里去找材料却是个大问题。我需要[%dic:STR_DIC_QILA07]，但却没有地方卖。再加上它凶猛异常，抓也不好抓。</p>
+          <p> </p>
+          <p>这...[%userclass]，您能帮我捕捉菲斯勒吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>要想做慧眼之衣，需要大概5张[%dic:STR_DIC_QILA07]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_FLA04]的西边区域，有很多[%dic:STR_DIC_MLA06]。要是[%userclass]您出手的话，肯定很容易就能解决。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您竟然拒绝了我的请求...</p>
+          <p> </p>
+          <p>这是信用问题啊。接受了订单却做不出衣服的话，我的信用会一落千丈的。</p>
+          <p> </p>
+          <p>要是您能帮助我的话该多好啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一直在等。</p>
+          <p> </p>
+          <p>要想按时做完衣服，就必须在今天之前把料子做出来才行。</p>
+          <p> </p>
+          <p>找到[%dic:STR_DIC_QILA07]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交猎物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么回事？我不是拜托您找[%dic:STR_DIC_QILA07]的吗？</p>
+          <p> </p>
+          <p>请不要让我陷入绝境啊。</p>
+          <p> </p>
+          <p>对于[%userclass]大人您来说，抓菲斯勒不是轻而易举的事情嘛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>1，2，3，4，5！5张齐了。</p>
+          <p> </p>
+          <p>要说抓它难是够难的，不过[%dic:STR_DIC_QILA07]的手感可真是不错。</p>
+          <p> </p>
+          <p>现在终于可以做慧眼之衣了。</p>
+          <p> </p>
+          <p>真是太谢谢了。这是对您的报答。请别拒绝，收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集材料后给[%dic:STR_DIC_LA04]送过去</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">木内接受了菲尔诺斯老人的衣服订单，但是因找不到材料而陷入困境。决定帮她找到做衣服的材料，即菲斯勒的毛皮。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从隐居老人菲尔诺斯那里接受衣服订单的[%dic:STR_DIC_LA04]有了烦心事。</p>
+          <p> </p>
+          <p>因为做衣服的材料特别难找。帮助她，替她找到了做料子的材料——[%dic:STR_DIC_QILA07]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

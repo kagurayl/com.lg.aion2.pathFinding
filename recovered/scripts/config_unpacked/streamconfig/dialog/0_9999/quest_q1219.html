@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个恶毒的家伙！</p>
+          <p> </p>
+          <p>还是头一次看见乌蒙这样恶毒的术古。</p>
+          <p> </p>
+          <p>手续费和东西的价钱一样高，哪有这样的啊！</p>
+          <p> </p>
+          <p>但是他威胁如果我不给钱的话就告诉军团长...</p> 
+          <p> </p>
+          <p>谁又知道我是多么的冤枉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过万幸的是他说没有钱的话可以用别的东西偿还。</p>
+          <p> </p>
+          <p>他让我把坎塔斯海岸的失事船上的宝物箱子拿回来给他。</p>
+          <p> </p>
+          <p>不知道他又是怎么知道那里有宝物箱子的</p>
+          <p> </p>
+          <p>但是我在结界塔这里守卫，不能离开岗位...</p>
+          <p> </p>
+          <p>虽然好像有点不知廉耻，[%username]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沿着坎塔斯海岸走过去，就能看到一艘奇怪的失事船。</p>
+          <p> </p>
+          <p>在海岸上和船上有[%dic:STR_DIC_E_OBJ_LF1a_JewelBox_Q1219]。您把那个带回来就行了。</p>
+          <p> </p>
+          <p>那里有很多失事船的船员和水手，请您一定要小心。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，那该怎么办才好呢？</p>
+          <p> </p>
+          <p>难道得我晚上偷偷过去吗？</p>
+          <p> </p>
+          <p>但是去那边就是擅离职守。我真的不知道该怎么办了。</p>
+          <p> </p>
+          <p>如果被军团长知道了的话一定会被扣工资，名誉也会受到损害...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_OBJ_LF1a_JewelBox_Q1219]那回来了吗？</p>
+          <p> </p>
+          <p>我怕乌蒙会告诉军团长大人，担心死我了。</p>
+          <p> </p>
+          <p>拿回来了的话就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出宝物箱子</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，您还没去啊。</p>
+          <p> </p>
+          <p>对于[%username]大人您来说也许不算什么，但是对于我来说却是关乎我职业生涯的大问题。</p>
+          <p> </p>
+          <p>请您快去把[%dic:STR_DIC_E_OBJ_LF1a_JewelBox_Q1219]拿回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把宝物箱子拿回来啦！</p>
+          <p> </p>
+          <p>啊，真是太好了！这下终于能安心了。</p>
+          <p> </p>
+          <p>我一直在担心我的守卫生活会不会就此终结，您不知道我有多担心。</p>
+          <p> </p>
+          <p>真是谢谢您。多亏[%username]大人您就了我一命！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去奇怪的失事船寻找[%dic:STR_DIC_E_OBJ_LF1a_JewelBox_Q1219]，拿回来交给[%dic:STR_DIC_N_Une]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">乌蒙的催款书中说，如果乌内没有钱还的话，就拿坎塔斯海岸的失事船上的革命团的宝物箱子冲抵。代替不能离开岗位的乌内到失事船拿回宝物箱子吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌蒙的催款书中说，如果没有钱还的话，就用就拿坎塔斯海岸的失事船上的革命团的宝物箱子冲抵。</p>
+          <p> </p>
+          <p>但是乌内由于在贝尔特伦结界塔执勤，不能擅离职守。</p>
+          <p> </p>
+          <p>为了帮助陷入困境的乌内，去失事船帮他拿回了宝物箱子。他表示非常感谢，说这下可以继续他的守卫生活了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

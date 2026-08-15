@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我孑然一身到处清除天族的人，在他们那里，我好像已经很有名了。</p>
+          <p> </p>
+          <p>最近天族成群结队地过来，想要除掉我。</p>
+          <p> </p>
+          <p>不过我决不会因此被打倒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是让人讨厌的是，在我和天族战斗的时候，德拉克纽特经常从我身后偷袭。</p>
+          <p> </p>
+          <p>它们知道打不过我，所以平时就在远处徘徊，看到我和好几个天族战斗，无法分心的时候，就冲过来骚扰我。</p>
+          <p> </p>
+          <p>我本来想在平时把它们清除掉，但是只要我一靠近，它们就会逃跑，所以没有能够实现。</p>
+          <p> </p>
+          <p>你能帮我把那些讨厌的[%dic:STR_DIC_M_Ab1_2730_LizardmanFi_26_An]和[%dic:STR_DIC_M_Ab1_2730_LizardmanAs_26_An]清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去把[%dic:STR_DIC_M_Ab1_2730_LizardmanFi_26_An]和[%dic:STR_DIC_M_Ab1_2730_LizardmanAs_26_An]清除掉。</p>
+          <p> </p>
+          <p>即使你没有我强，但是对付德拉克纽特应该是绰绰有余的。</p>
+          <p> </p>
+          <p>那你快去把它们清除掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，连德拉克纽特都害怕的胆小鬼。</p>
+          <p> </p>
+          <p>只有这么点实力，你是怎么来埃雷修兰塔的啊？</p>
+          <p> </p>
+          <p>我不想和没有实力的胆小鬼说话，你给我滚吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从远处看了看，你对付德拉克纽特的手法很不错嘛。</p>
+          <p> </p>
+          <p>虽然不如我，但你应该是[%userclass]中最厉害的了。</p>
+          <p> </p>
+          <p>对了，我让你除掉的那些家伙，你全都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以后和天族战斗的时候，暂时应该不会有德拉克纽特来骚扰我了。</p>
+          <p> </p>
+          <p>不管怎样，既然你帮了我，我就得酬谢你。</p>
+          <p> </p>
+          <p>来，收下吧。没有必要客气。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除德拉克纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_2730_LizardmanFi_26_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_2730_LizardmanAs_26_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mokkurkalfi]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莫库尔卡尔皮说在他和天族战斗的时候，德拉克纽特经常从背后偷袭，非常让人讨厌。于是决定帮他去清除第30德拉克纽特突击兵和第30德拉克纽特强袭兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫库尔卡尔皮说自己孤身一人清除天族，在天族那边出了名，所以天族成群结队地过来对付他。</p>
+          <p> </p>
+          <p>虽然和他们战斗没有任何问题，但是每次战斗的时候，德拉克纽特就会从背后偷袭，非常让人讨厌。</p>
+          <p> </p>
+          <p>他虽然想在平时把它们清除掉，但是它们会望风而逃，所以没办法实现。于是去帮他清除掉了第30德拉克纽特突击兵和强袭兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

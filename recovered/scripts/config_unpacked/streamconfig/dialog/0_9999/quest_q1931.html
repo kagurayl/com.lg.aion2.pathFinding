@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>实际上我从刚才起就一直在等你。</p>
+          <p> </p>
+          <p>在埃尔特内发现菲利佩摩斯神官的日记本的人是你吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">回答说是。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>读了神官的日记本，有件事情一直挂在我的心上。</p>
+          <p> </p>
+          <p>日记中提到，有个名叫锡普拉塔的雷帕尔革命团成员说加速生命之石会对实验有帮助。</p>
+          <p> </p>
+          <p>他说的实验到底是什么呢？而且最近因特尔蒂卡那里也传来了很多奇怪的消息，我一直很担心。</p>
+          <p> </p>
+          <p>而且事实上...虽然大家只在私下里说，在贤者的书库这里也曾经发生过奇怪的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前贤者的书库曾经被盗过。</p>
+          <p> </p>
+          <p>不知道是怎么做到的，那人让这里所有的守护者都陷入了沉睡，然后把书拿走了。从这一点来看，偷书的人应该是个拥有强大能力的守护者。</p>
+          <p> </p>
+          <p>不见的书是关于炼金术和生命的很久以前的珍贵的古书。</p>
+          <p> </p>
+          <p>现在想想，偷走书的应该就是雷帕尔革命团。</p>
+          <p> </p>
+          <p>一定要在他们利用[%dic:STR_DIC_OBJ_LC1_Book_Q1931]的内容做出可怕的事情之前把书找回来。[%username]您能去把书找回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说在因特尔蒂卡有一个雷帕尔革命团的研究基地。而[%dic:STR_DIC_W_IDLF3LP_SZ_1]就在研究基地的深处。</p>
+          <p> </p>
+          <p>他们偷走的书应该就在那个地方。应该是被用作了研究资料。</p>
+          <p> </p>
+          <p>请你到[%dic:STR_DIC_W_IDLF3LP_SZ_1]去，把[%dic:STR_DIC_OBJ_LC1_Book_Q1931]“炼金术和生命的法则”找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您觉得我的推测很可笑吗？</p>
+          <p> </p>
+          <p>虽然我承认跨越有点大，但是并不是没有根据的事情。</p>
+          <p> </p>
+          <p>与其在这儿担心，还不如直接去确认一下的好，难道不是吗？</p>
+          <p> </p>
+          <p>请您再好好考虑考虑。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>“炼金术和生命的法则”是像我想的那样在革命团研究基地吗？</p>
+          <p> </p>
+          <p>如果您找到了[%dic:STR_DIC_OBJ_LC1_Book_Q1931]的话，请快把它交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去革命团研究基地？</p>
+          <p> </p>
+          <p>不知道他们是不是在用书进行什么研究。</p>
+          <p> </p>
+          <p>请你快去把[%dic:STR_DIC_OBJ_LC1_Book_Q1931]“炼金术和生命的法则”找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的是被他们偷走了！</p>
+          <p> </p>
+          <p>他们用这个到底进行了什么研究呢。</p>
+          <p> </p>
+          <p>不过现在既然找回来了，我也就不担心了。</p>
+          <p> </p>
+          <p>真是谢谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到因特尔蒂卡的[%dic:STR_DIC_W_IDLF3LP_SZ_1]去，把[%dic:STR_DIC_OBJ_LC1_Book_Q1931]找回来，并交给[%dic:STR_DIC_N_Gerania]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须到因特尔蒂卡的革命团研究基地深处的革命团秘密研究所去，找回被雷帕尔革命团偷走的书。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔尼亚说以前贤者的书库被偷走的“炼金术和生命的法则”可能落入了雷帕尔革命团的手中，他对此很担心。</p>
+          <p> </p>
+          <p>于是前往因特尔蒂卡的革命团研究基地深处的革命团秘密研究所，找到了引起问题的书。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

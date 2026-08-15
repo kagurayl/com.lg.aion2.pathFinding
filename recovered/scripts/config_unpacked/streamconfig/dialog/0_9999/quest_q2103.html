@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管怎么说，任务完成了。你替我去报告吧。</p>
+          <p> </p>
+          <p>我要在这儿处理一些后续事情，没有时间亲自去了。</p>
+          <p> </p>
+          <p>去找[%dic:STR_DIC_N_Guheitun]队长报告，说已经把史匹格完全制服了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说知道了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Guheitun]队长会在[%dic:STR_DIC_W_DF1_11]。</p>
+          <p> </p>
+          <p>还有，你晕过去了的事情，我看还是不说为好。</p>
+          <p> </p>
+          <p>对于一个盗贼来说，身体虚弱并不是什么好事。</p>
+          <p> </p>
+          <p>快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>顺着这条路走一段下去的话，能看到左边的[%dic:STR_DIC_W_DF1_11]%。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Guheitun]队长也会在那儿。</p>
+          <p> </p>
+          <p>请抓紧时间。作战队长发起火来，受苦的只有我们这些队员。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看你不是晕过去了，而是完全疯了。</p>
+          <p> </p>
+          <p>你知道对于一个盗团来说最重要的是什么吗？就是纪律！明白吗？纪律！</p>
+          <p> </p>
+          <p>接到了命令就只有遵照执行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是[%dic:STR_DIC_N_Vandarnt]让你来向我报告的？</p>
+          <p> </p>
+          <p>我早就让你们去消灭史匹格，怎么现在才来？</p>
+          <p> </p>
+          <p>这真是。带着这样一群乌合之众，想要当盗贼可真是费劲。</p>
+          <p> </p>
+          <p>那，让你们做的事情都处理完了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告说已经把史匹格全都除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然说都处理完了，那还差不多。</p>
+          <p> </p>
+          <p>但以后如果还像今天这样，一件小事都处理不好的话，我就不会那么好说话了。</p>
+          <p> </p>
+          <p>还以为[%dic:STR_DIC_N_Vandarnt]去的话，能很快处理完，看来他跟其他的那些家伙没什么两样。</p>
+          <p> </p>
+          <p>不过呢，还是辛苦了，去休息吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见盗团作战队长[%dic:STR_DIC_N_Guheitun]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">告诉盗团作战队长格海顿已经把史匹格消灭了。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭了史匹格后回去，班达仁特又让我去格海顿那里报告情况。</p>
+          <p> </p>
+          <p>因为事情拖得时间有点长，但听说把史匹格消灭了之后，格海顿的气消了一点儿。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

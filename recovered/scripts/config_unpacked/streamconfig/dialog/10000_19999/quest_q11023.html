@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一件事都没能完成。</p>
+          <p> </p>
+          <p>最近我正在对拉菲奥内进行研究。因为那是可以客观地判断结界外和结界内部的差异的指标性植物。</p>
+          <p> </p>
+          <p>但是它们的数量越来越少了。经过观察，我发现周围的叙路克从卵里孵化了出来，把周围的拉菲奥内全部吃掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我想尽快离开这个地方。</p>
+          <p> </p>
+          <p>所以我尽量缩短吃饭和睡觉的时间，埋头进行研究。</p>
+          <p> </p>
+          <p>但是这样下去的话，我再怎么努力也没有用。</p>
+          <p> </p>
+          <p>请您帮我消灭[%dic:STR_DIC_M_LF4_A_Sheluk_Worm_51_An]，让我可以顺利地进行研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以的话，请您顺便帮我把[%dic:STR_DIC_M_LF4_A_Kuillus_Feeler_51_An]也一起消灭掉。</p>
+          <p> </p>
+          <p>它们的嗅觉非常发达，每次我去采集标本的时候，它们就会出来骚扰我。</p>
+          <p> </p>
+          <p>如果能顺便把它们和[%dic:STR_DIC_M_LF4_A_Sheluk_Worm_51_An]一起消灭掉，我就感激不尽了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都说永恒之塔会帮助勤奋的人，但这话对我好像没什么用。</p>
+          <p> </p>
+          <p>好吧。反正人生要靠自己走下去。</p>
+          <p> </p>
+          <p>我的事情我自己会想办法处理。您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把乱糟糟的纸整理起来)您回来啦？我正在对之前的调查资料进行整理。</p>
+          <p> </p>
+          <p>这样今后写报告书的时候就会方便一些。</p>
+          <p> </p>
+          <p>拜托您的事情怎么样了？一定解决了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>多亏了您，我终于可以安心研究拉菲奥内了。</p>
+          <p> </p>
+          <p>这是我的一点心意。虽然我很想多给一些，但现在我能给您的，就只有这个了。</p>
+          <p> </p>
+          <p>好的，我要继续整理资料了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭妨碍研究的叙路克和克鲁斯</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A_Sheluk_Worm_51_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A_Kuillus_Feeler_51_An]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ambrosini]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭妨碍安布罗西尼进行研究的叙路克和克鲁斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安布罗西尼说由于叙路克和克鲁斯的骚扰，无法进行研究，让我帮助他。</p>
+          <p> </p>
+          <p>为了让他可以早日完成研究，帮他消灭了凶暴的叙路克和钢铁克鲁斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏公告 - </p>
+          <p> </p>
+          <p>悬赏回收巨人庭院里的崇拜者的宝物。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字 : [%dic:STR_DIC_OBJ_FOBJ_Q36016a]</p>
+          <p></p>
+          <p> 2. 价值 : 装有崇拜者们准备供奉在巨人庭院里的珍贵物品的箱子</p>
+          <p></p>
+          <p> 3. 详情 : 在[%dic:STR_DIC_W_LF4_SZ_B3]发现的崇拜者们的供品箱子。据说里面装满了黄金、宝石等各种宝物、工艺品和布料。</p>
+          <p> </p>
+          <p>先找到崇拜者们供奉在巨人庭院里的镶嵌宝石的供品箱中的宝物的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会， [%dic:STR_DIC_E_36500]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>越有价值的东西，就越难找到。</p>
+          <p> </p>
+          <p>[%username]大人的事情，进展顺利吗？</p>
+          <p> </p>
+          <p>如果您在镶嵌宝石的供品箱中找到了宝物，请快点交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出宝石龙雕像。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说[%dic:STR_DIC_W_LF4_SZ_B3]的各个地方都有崇拜者们献给龙的供品箱。</p>
+          <p> </p>
+          <p>崇拜者们的信仰真是让人无法理解。他们不仅信奉龙族，还给古老的化石上供。</p>
+          <p> </p>
+          <p>……我真的很想知道镶嵌宝石的供品箱里装着什么东西。</p>
+          <p> </p>
+          <p>要是[%username]大人能帮我把东西拿回来就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(收下雕像)哎呀，真沉啊。 </p>
+          <p> </p>
+          <p>崇拜者们为什么要崇拜龙族啊……</p>
+          <p> </p>
+          <p>要是我是龙族的话，看到崇拜者们送来这么多金银宝贝，一定会觉得很麻烦的。</p>
+          <p> </p>
+          <p>不管怎样，您完成了委托，我得把赏金给您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_LF4_SZ_B3]寻找 [%dic:STR_DIC_OBJ_FOBJ_Q36016a]，然后交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>在巨人庭院中找到镶嵌宝石的供品箱之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>最近很多会员在英吉斯温执行任务的时候受了伤。</p>
+          <p> </p>
+          <p>其中大部分是在经过安格利浦废墟时遭到了废墟魔狼的袭击。</p>
+          <p> </p>
+          <p>安格利浦废墟是通往安格利浦关卡的通道，也是进入锡兰泰拉回廊的必经之地。</p>
+          <p> </p>
+          <p>希望全体神圣守护会会员能够站出来消灭[%dic:STR_DIC_M_LF4_C_Direbeast_Dark_55_An]，任务完成后立即向[%dic:STR_DIC_E_35021]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+          <p>(查看四周)是和神圣守护会有关的事情吗？</p>
+          <p> </p>
+          <p>您来找我，一定是已经完成任务了吧？您执行的是什么任务呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>废墟魔狼终于被清扫干净啦。</p>
+          <p> </p>
+          <p>我因为工作原因，经常会穿过安格利浦废墟，好几次差点被它们坏了大事。</p>
+          <p> </p>
+          <p>对付它们其实还好，不过和魔狼战斗的时候，会被附近的龙族和魔族听见。</p>
+          <p> </p>
+          <p>[%username]大人，多亏了您，现在我终于不用担心了。</p>
+          <p> </p>
+          <p>请您收下。这是这次任务的奖励。希望今后您能继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_C_Direbeast_Dark_55_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_35021]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>某一天，收到了神圣守护会的委托书。让我去安格利浦废墟消灭对任务造成妨碍的废墟魔狼。</p>
+          <p> </p>
+          <p>按照委托书的要求，消灭了废墟魔狼，并向英吉斯温支部会员进行了报告。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于[%username]大人的努力，德雷克的数量虽然有所减少，但却还是不能让人放心。</p>
+          <p> </p>
+          <p>现在虽然因为它们的数量减少了一点。但是一段时间之后特雷基长大了的话，情况就又会变得和以前一样。</p>
+          <p> </p>
+          <p>不管怎样，把[%dic:STR_DIC_M_DrakyBaby_28_An]清除掉应该是最根本的解决方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？虽然我很想请您帮忙，但是觉得不好意思，所以一直没能说出口。</p>
+          <p> </p>
+          <p>既然[%username]大人您和我说了，我就不顾廉耻地再拜托您一次。</p>
+          <p> </p>
+          <p>请您帮我除掉8头[%dic:STR_DIC_M_DrakyBaby_28_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您快去清除特雷基吧。</p>
+          <p> </p>
+          <p>您一定要小心。如果觉得它们小而看不起它们的话，很可能会吃大亏。</p>
+          <p> </p>
+          <p>它们的体型虽然小，但是凶恶的程度和德雷克没什么分别。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么突然又改变主意了呢...</p>
+          <p> </p>
+          <p>也是，您也有自己的事情，我不该一而再，再而三地让您帮忙。</p>
+          <p> </p>
+          <p>没关系。看样子您也很忙的，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我的直觉是对的。</p>
+          <p> </p>
+          <p>我正和欧佩罗斯说[%username]大人您可能就要回来了。</p>
+          <p> </p>
+          <p>对了，我拜托您的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道该怎么感谢您。</p>
+          <p> </p>
+          <p>这下应该就能安心地进行调查了。</p>
+          <p> </p>
+          <p>来，请收下这个。</p>
+          <p> </p>
+          <p>虽然很少，但这是我们给您的一点谢礼。</p>
+          <p> </p>
+          <p>愿尤斯迪埃的祝福伴随着您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除拉塞宾神秘泉周边的[%dic:STR_DIC_M_DrakyBaby_28_An]([%2]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Esaias]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须在特雷基长大成为德雷克，威胁神秘泉的安全之前把它们除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃塞奥斯说能除掉德雷克虽然很好，但是特雷基长大的话情况就又会一样。</p>
+          <p> </p>
+          <p>于是帮他除掉了神秘泉周围的特雷基。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

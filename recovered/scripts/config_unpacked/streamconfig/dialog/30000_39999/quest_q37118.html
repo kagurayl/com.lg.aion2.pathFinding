@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+ <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把正在看的信收了起来)您来得正好。</p>
+          <p> </p>
+          <p>(晃了晃信)这是极乐世界发来的命令书。</p>
+          <p> </p>
+          <p>看了之后，我刚想和[%username]大人联系，您却自己来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这一次，8位圣女在会议上决定对执行守护者进行训练，让他们学习破坏龙族守护石的方法。</p>
+          <p> </p>
+          <p>特此向[%username]大人下达指示，请您成为[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，告诉他们破坏[%dic:STR_DIC_E_LF3_DragonObelisk_Q1062]的方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]大人一定会爽快答应。</p>
+          <p> </p>
+          <p>事情完成后，别忘了把训练结果告诉我。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我还以为[%username]大人一定会爽快地答应呢……</p>
+          <p> </p>
+          <p>具体的原因我就不问了。[%username]大人做事一向慎重，想必有您自己的原因。</p>
+          <p> </p>
+          <p>请一路走好。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>破坏龙族守护石的训练怎么样了？</p>
+          <p> </p>
+          <p>我很想知道训练结果，您能告诉我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>训练结果非常好，真是太好了。多亏有[%username]大人担任导师，才能取得这样的成绩。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>希望今后您能继续帮助其他人。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_35_45]的[%dic:STR_DIC_E_Mentor]，破坏[%dic:STR_DIC_E_LF3_DragonObelisk_Q1062]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Zeinia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">告诉执行守护者们破坏龙族守护石的方法，然后向杰尼亚姐妹报告训练结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杰尼亚姐妹让我成为执行守护者的导师，告诉他们破坏龙族守护石的方法。</p>
+          <p> </p>
+          <p>带领执行守护者完成了训练，向杰尼亚姐妹报告了结果，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

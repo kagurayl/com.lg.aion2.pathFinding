@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里看守补给仓库，偶尔也会帮着别人做事。</p>
+          <p> </p>
+          <p>看着别人忙，我总不好推脱说自己的工作是看守仓库，因此不能帮忙吧。</p>
+          <p> </p>
+          <p>不知道其他要塞怎么样，普利姆要塞因为很少受到攻击，所以我也可以安心地给人帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我就收到了这一整张目录的任务，不过其中有个任务让我很为难。</p>
+          <p> </p>
+          <p>一般来说，如果是送到据点或要塞的东西，只要按人员分配好东西，然后让传令兵顺便送过去就行了。</p>
+          <p> </p>
+          <p>但是我看了看目录，上面居然有莫库尔卡尔皮的补给品。</p>
+          <p> </p>
+          <p>您知道莫库尔卡尔皮是谁吧？就是那个能力非常出众，但是因为不能和人共事而离开红色赫西亚军团的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为他是独自行动的普通守护者，从给他发送补给品来看，他应该是在暗地里执行什么任务。</p>
+          <p> </p>
+          <p>但是因为这不是正式的东西，所以不太好让传令兵送过去。而我又不能离开这里，亲自把补给品给他送过去。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人您能帮我把补给品给[%dic:STR_DIC_N_Mokkurkalfi]送过去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我。我因为不知道该怎么办，还在为难呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Mokkurkalfi]就在这里西南面的孤岛上。</p>
+          <p> </p>
+          <p>请您去见见莫库尔卡尔皮，然后把补给品交给他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有什么重要的任务吗？</p>
+          <p> </p>
+          <p>那样的话，我也不能逼着您去。</p>
+          <p> </p>
+          <p>哈，这到底该怎么办呢...</p>
+          <p> </p>
+          <p>看来我是热心过头啦。早知道会有这么头疼的问题的话，我就干脆缩在那里不吭声了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想一个人静静才躲到了这里，为什么总有那么多无聊的人过来找我呢...</p>
+          <p> </p>
+          <p>你找我有什么事呢？</p>
+          <p> </p>
+          <p>如果想让我教你一手的话，你就别妄想了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出补给品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你是送补给品过来的守护者啊。</p>
+          <p> </p>
+          <p>刚好需要的物资都用光了，我还正在担心呢。</p>
+          <p> </p>
+          <p>你还站在那里干嘛？办完事就赶紧回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把补给品转交给[%dic:STR_DIC_N_Mokkurkalfi]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">温达兰说正在帮着发送补给品，但是不知道如何处理发给莫库尔卡尔皮的补给品。于是决定帮他去送给莫库尔卡尔皮。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>温达兰说看守仓库的同时，不得已还得给人帮忙，接受了一整张目录的工作。</p>
+          <p> </p>
+          <p>但是目录中有需要发给莫库尔卡尔皮的补给品，自己不能离开岗位送过去，所以正在担心。</p>
+          <p> </p>
+          <p>于是帮他去孤岛把补给品交给了莫库尔卡尔皮。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

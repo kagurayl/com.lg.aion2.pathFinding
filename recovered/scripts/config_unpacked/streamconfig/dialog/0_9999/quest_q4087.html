@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(这是发出小芽的树枝。)</p>
+          <p> </p>
+          <p>(看上去折断很长时间了，可是叶子还是很新鲜，发出生命的气息，好像是椰林族的树枝。)</p>
+          <p> </p>
+          <p>(要去拿到椰林族 [%dic:STR_DIC_N_Tree_Moving_Krodos]那里问问看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束调查。</Act>
+    </Selects>
+  </HtmlPage> 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来找我什么事情。</p>
+          <p> </p>
+          <p>要询问利提姆塔斯大人，只要是关于伊奥鲁森林的事情。</p>
+          <p> </p>
+          <p>我还有很多事情不知道，关于这片丛林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将树枝交给他，并告诉他缘由。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是贝达扎尔大人的树枝，曾和我一起来到了这里。</p>
+          <p> </p>
+          <p>利提姆塔斯大人知道后会很高兴的，找到了丢失的圣树树枝。</p>
+          <p> </p>
+          <p>希望贝达扎尔大人的祝福伴随着你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把发芽的树枝拿到椰林族 [%dic:STR_DIC_N_Tree_Moving_Krodos]那里</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">森林路皮里尼掉落的树枝好像和椰林族有关。得去拿到在克伊伦山坡的椰林族克劳多斯那里询问。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在狩猎森林路皮里尼的时候找到了一根发芽的树枝。</p>
+          <p> </p>
+          <p>看上去折断很久，但是树叶还是非常新鲜，传来一股生命的气息，拿到椰林族克劳多斯那里询问。</p>
+          <p> </p>
+          <p>克劳多斯看到树枝后表示，这是曾和自己一起移到伊奥鲁森林的贝达扎尔圣树的树枝，并表示如果丽迪塔斯知道已经找到树枝的话一定会非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

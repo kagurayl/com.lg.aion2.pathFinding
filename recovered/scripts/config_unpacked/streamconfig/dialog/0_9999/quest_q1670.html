@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一本非常陈旧的日记本。)</p>
+          <p> </p>
+          <p>(上面写着跨过位于因特尔蒂卡的只有勇敢者才能越过的桥，就能到达隐藏的岛。)</p>
+          <p> </p>
+          <p>(能勇敢地跨过看不见的桥吗？)</p>
+          <p> </p>
+          <p>(上面说有3个岛，很想去找找看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你发现了一件很有意思的东西。</p>
+          <p> </p>
+          <p>从陈旧的程度看，好像是非常古老的日记本。</p>
+          <p> </p>
+          <p>(接过日记本)嗯，里面有很多有意思的内容。</p>
+          <p> </p>
+          <p>哦？看不见的桥？因特尔蒂卡还有这种地方吗？</p>
+          <p> </p>
+          <p>我还是头一次听说...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说已经去过了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？真的吗？</p>
+          <p> </p>
+          <p>这么说来，这本日记本上讲述的其他事情很可能也都是事实...</p>
+          <p> </p>
+          <p>好像越来越有意思了。</p>
+          <p> </p>
+          <p> 不好意思，这个日记本能送给我吗？我要和古代文献进行比较，确认一下是否是事实。</p>
+          <p> </p>
+          <p>竟然得到了这么珍贵的资料！我真是太高兴了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_E_Hidden_Bridge]，到达三个岛</font></p>
+                     <p visible="[%3]"><font color="[%4]">  有[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]的岛[%5] </font></p>
+                     <p visible="[%6]"><font color="[%7]">  有[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]的岛[%8] </font></p>
+                     <p visible="[%9]"><font color="[%10]">  有[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]的岛[%11] </font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">把日记本交给极乐世界的[%dic:STR_DIC_N_Gerania]看看</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在偶然捡到的日记本中，写着勇敢地跨过看不见的桥的内容。应该去找找隐藏的岛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>偶然捡到了一本日记，上面写着在因特尔蒂卡，隐藏着一座看不见的桥。</p>
+          <p> </p>
+          <p>出于好奇，找到了那三座桥。这样看来日记中记录的事情也许都是真的。</p>
+          <p> </p>
+          <p>考虑到说不定会对因特尔蒂卡的研究有所帮助，把它交给了极乐世界的盖拉尼亚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

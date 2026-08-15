@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>大事不好了。最近以来，生活在燃烧之血星云的火焰族经常在附近出没。</p>
+       <p> </p>
+       <p>他们的目标好象是拉特斯兰之茎，这让我感觉很不安。</p>
+       <p> </p>
+       <p>我虽然向特米伦要塞进行了报告，但是他们回信说因为人员不足，无法派人支援。</p>
+       <p> </p>
+       <p>但是可以给我银铸币，让我自己寻找可以帮助我的人。也就是[%username]大人这样有能力的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样，[%username]大人？</p>
+          <p> </p> 
+          <p>您能去燃烧之血星云，帮我扫荡那些[%dic:STR_DIC_A_Ab1_1715all]吗？</p>  
+          <p> </p> 
+          <p>这次的事情如果您能帮我的话，我会给您银铸币作为报酬。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能接受任务真是太好了。</p>
+          <p> </p>
+          <p>那就请您马上去燃烧之血星云去好好地教训教训那些火焰族吧。</p>
+          <p> </p>
+          <p>不管是[%dic:STR_DIC_M_Ab1_1221_Tauric_38_An]、[%dic:STR_DIC_M_Ab1_1231_Tauric_38_An]，还是[%dic:STR_DIC_M_Ab1_1241_Tauric_38_An]都没关系，只要帮我除掉16头就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>如果是别人的话，我也不会这么求您了。</p>
+          <p> </p>
+          <p>我知道[%username]大人的实力很强，所以才来拜托您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就结束了吗？</p>  
+         <p> </p>
+         <p>好像和我说完话还没多久啊...</p>  
+         <p> </p>
+         <p>该不会是还没出发吧？</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，我还怀疑您。</p>
+          <p> </p>          
+          <p>因为您实在回来得太快了。</p>   
+          <p> </p>   
+          <p>多亏了[%username]大人，火焰族的那些家伙应该会害怕了吧。真是辛苦您了。</p>   
+          <p> </p>   
+          <p>请您收下。这是说好的银铸币。</p>     
+          <p> </p>   
+          <p>如果有时间的话，请您再来帮我。我随时表示欢迎。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除燃烧之血星云的[%dic:STR_DIC_A_Ab1_1715all]([%2]/16)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Theon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说生活在燃烧之血星云的火焰族的动态很异常。在火焰族攻击拉特斯兰之茎入口之前，除掉克罗坦火焰族、德奇沙斯火焰族和拉米兰火焰族，并向泰安报告结果吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰安说生活在燃烧之血星云的火焰族的动态很异常。</p>
+          <p> </p>     
+          <p>上面无法派遣援军，所以他正在寻找可以帮他的人，问我对这件事情感不感兴趣。</p>     
+          <p> </p>   
+          <p>接受了他的提议，除掉了克罗坦火焰族、德奇沙斯火焰族和拉米兰火焰族之后回去找他，他说辛苦了，并给了我一枚银铸币。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

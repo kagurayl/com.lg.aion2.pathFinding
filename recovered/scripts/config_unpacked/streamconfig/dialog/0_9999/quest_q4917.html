@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果没有[%username]大人，我连做梦也不敢研究德拉纳和龙胶。</p>
+          <p> </p>
+          <p>多亏了您来往于黑暗普埃塔帮助我，我的研究才有了点进展。</p>
+          <p> </p>
+          <p>再进行一些调查和资料分析，我就可以发表对人们有帮助的成果了。</p>
+          <p> </p>
+          <p>这一切都是[%username]大人的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我这样麻烦您，却无法报答，我的心情非常沉重。</p>
+          <p> </p>
+          <p>所以我想给您介绍一个术古族，他应该可以对[%username]大人有所帮助。</p>
+          <p> </p>
+          <p>您知道被派到提格拉齐工房的曹皮伦吗？就是那个负责搜集关于龙族的情报的术古族。</p>
+          <p> </p>
+          <p>上次我偶尔跟他说了一下关于德拉纳的话，没想到他表现出了浓厚的兴趣。</p>
+          <p> </p>
+          <p>看来他认为德拉纳会对提格拉齐工房开发新道具有所帮助。</p>
+          <p> </p>
+          <p>只要去执行曹皮伦的任务，虽然辛苦一点，但应该可以得到很好的奖励。您愿意去见见[%dic:STR_DIC_N_Shugo_DC1_23]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你只要去[%dic:STR_DIC_N_Shugo_DC1_23]那里，说是我介绍来的，他就会明白了。</p>
+          <p> </p>
+          <p>还有一件事我要提前说一下。</p>
+          <p> </p>
+          <p>您也和很多术古族接触过了，和他们共事不是那么容易的，他们绝对不会做吃亏的买卖，会尽可能地利用你。</p>
+          <p> </p>
+          <p>不过只要您能坚持下去，完成困难的任务，也会得到相应的回报。所以请您多忍忍，坚持下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来您也很清楚，和术古族合作会很受罪。</p>
+          <p> </p>
+          <p>也是，就算给多么丰厚的奖励，如果过程太艰难的话，我也不会勉强您去。</p>
+          <p> </p>
+          <p>不过如果您以后改变了主意，请随时找我。</p>
+          <p> </p>
+          <p>我会随时向您介绍曹皮伦的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你来跟我主动搭话，是不是有什么好情报啊。</p>
+          <p> </p>
+          <p>什么事情？赶紧说吧。</p>
+          <p> </p>
+          <p>有价值的情报的话，我会重重给你奖励，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是赫诺斯介绍来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我也听说过了，呐呐！</p>
+          <p> </p>
+          <p>听说你去黑暗普埃塔，给他搜集了德拉纳和龙胶的标本。</p>
+          <p> </p>
+          <p>我正对那些龙族的新材料很好奇呢。</p>
+          <p> </p>
+          <p>如果你能帮助我的话，我会重重酬谢你的。</p>
+          <p> </p>
+          <p>让我们俩好好合作吧，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_DC1_23]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说曹皮伦对德拉纳很感兴趣，应该去匠人的会堂找他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫诺斯对我为他搜集材料表示感谢。作为报答，他介绍了术古族曹皮伦。</p>
+          <p> </p>
+          <p>他说和曹皮伦的合作虽然会很辛苦，但是可以得到丰厚的奖励。于是去匠人的会堂见到了曹皮伦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

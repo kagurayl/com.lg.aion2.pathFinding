@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要是说因特尔蒂卡最大的危险因素是龙族，一定不会有任何人有异议。</p>
+          <p> </p>
+          <p>但是众多的守卫在欧比斯战斗，派遣到要塞的守卫就相对较少。</p>
+          <p> </p>
+          <p>但是又不能放着入侵天界的龙族不管。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以只能向不是守卫的守护者们提供任务，清除龙族。</p>
+          <p> </p>
+          <p>不过我们不会让守护者去抓纳加兰特之类厉害的家伙。</p>
+          <p> </p>
+          <p>像去英德拉图军团驻地清除德拉克纽特的任务，一个人勉强就能应付，虽然会比较累。当然如果能和伙伴一起去的话，就会容易很多。</p>
+          <p> </p>
+          <p>怎么样？[%username]大人，您愿意执行这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去[%dic:STR_DIC_W_LF3_SZ_E2]和[%dic:STR_DIC_W_LF3_SZ_E3]，清除[%dic:STR_DIC_M_LF3E3_FeB_LizardFi_44_Ae]、[%dic:STR_DIC_M_LizardmanPriest_44_An]和[%dic:STR_DIC_M_LizardmanFighter_44_An]。</p>
+          <p> </p>
+          <p>由于需要清除不少的兵力，所以可能需要花一些时间。</p>
+          <p> </p>
+          <p>不过我想以[%username]大人的实力，应该不会有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是。需要去英德拉图军团驻地那么远的地方，您可能会不太乐意。</p>
+          <p> </p>
+          <p>我不想强迫不愿意去的人去。</p>
+          <p> </p>
+          <p>但是如果您改变了主意，可以随时回来。</p>
+          <p> </p>
+          <p>铸币的量很充分。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我没有亲手去清除龙族，但看到有那么多守护者在努力奋斗，我就感觉当个行政官也很有意义。</p>
+          <p> </p>
+          <p>因为每个守护者为人类和亚特雷亚服务的方法都是不同的。</p>
+          <p> </p>
+          <p>您把第52德拉克纽特精锐强兵、第52德拉克纽特精锐搜索兵和第52德拉克纽特精锐守备兵全都清除了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真了不起。</p>
+          <p> </p>
+          <p>要清除那么多的德拉克纽特，一定很辛苦吧？</p>
+          <p> </p>
+          <p>这是说好的金铸币。任务很艰巨，所以我给您3个。请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除英德拉图军团驻地的第52德拉克纽特兵力</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF3E3_FeB_LizardFi_44_Ae]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LizardmanPriest_44_An]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LizardmanFighter_44_An]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Brosia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除因特尔蒂卡最大的危险因素龙族第52德拉克纽特精锐兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说因特尔蒂卡最大的危险因素是龙族，说如果我能清除其中的第52德拉克纽特兵力，就给我金铸币。</p>
+          <p> </p>
+          <p>于是前往英德拉图军团驻地，清除了第52德拉克纽特精锐强兵、第52德拉克纽特精锐搜索兵和第52德拉克纽特精锐守备兵。回去找到他之后，他给了我金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

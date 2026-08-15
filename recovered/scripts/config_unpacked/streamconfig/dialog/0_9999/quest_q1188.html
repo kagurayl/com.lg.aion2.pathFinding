@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道会有人过来帮忙的。从一早开始等到现在。</p>
+          <p> </p>
+          <p>啊，您别认为我在说胡话。我只是有那种预感。</p>
+          <p> </p>
+          <p>要是我的预感灵验的话，您好像会答应我的请求。</p>
+          <p> </p>
+          <p>只是要去的地方太远，其实事情倒是很简单的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到坎塔斯就可以看到贝尔特伦塔。那里有守护天界结的守卫。</p>
+          <p> </p>
+          <p>您去找其中的[%dic:STR_DIC_LA35]。因为有句话一定要转告他。</p>
+          <p> </p>
+          <p>能帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>那就请您马上去坎塔斯找[%dic:STR_DIC_LA35]%转告这句话。</p>
+          <p> </p>
+          <p>转告他说‘路皮里尼的尾翼不是黑色’。</p>
+          <p> </p>
+          <p>您这么转达就可以了。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+          <p> </p>
+          <p>啊，可以再拜托您一件事吗？能对我这个请求保密吗？还有去诺托斯的事情也一样要保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是不是在执行重要任务。</p>
+          <p> </p>
+          <p>对不起。提出奇怪的请求。</p>
+          <p> </p>
+          <p>您就忘了这件事吧。</p>
+          <p> </p>
+          <p>也忘掉我想转告的话。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"您有什么事, [%username]大人？"</p>
+          <p> </p>
+          <p>啊，原来是莫莱大人派来的。</p>
+          <p> </p>
+          <p>我们已经很久没见过了…不过莫莱大人要转告什么？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转告路皮里尼的尾翼不是黑色。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>路皮里尼的尾翼不是黑色？ 这可...</p>
+          <p> </p>
+          <p>(好像陷入沉思。)</p>
+          <p> </p>
+          <p>啊，对不起。是我失礼。感谢您来转告。</p>
+          <p> </p>
+          <p>您好像很好奇这句话的含义？对不起。现在不能告诉您。</p>
+          <p> </p>
+          <p>如果[%username]大人去寻找真相，说不定什么时候就可以告诉您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与在[%dic:STR_DIC_FLA21]的贝尔特伦结界塔的[%dic:STR_DIC_LA35]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">到坎塔斯与守护贝尔特伦结界塔的卫兵诺托斯对话。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>保卫幻影神圣所的百夫长莫莱突然嘱托我去坎塔斯，要求向守护贝尔特伦结界塔的守卫诺托斯转达奇怪的话。</p>
+          <p> </p>
+          <p>向诺托斯转达莫莱的话时好像很惊讶，但是没有告诉我是什么含义。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

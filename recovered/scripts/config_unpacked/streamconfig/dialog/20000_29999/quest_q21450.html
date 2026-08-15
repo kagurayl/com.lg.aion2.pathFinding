@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我等得脖子都酸了，您怎么才来啊？</p>
+          <p> </p>
+          <p>听说我过去的同伴泰伊洛快要死了！生命状态正变得越来越坏。身体像火球一样，手脚上的斑点也越来越深，也越来越虚弱了。</p>
+          <p> </p>
+          <p>他原来是命运之天平的一员，听到了奇怪的传闻之后，进入了卡斯帕内部，就变成了这个样子。</p>
+          <p> </p>
+          <p>唉……都是因为那个奇怪的传闻……</p>
+          <p> </p>
+          <p>现在军团长下达了禁止接近卡斯帕的命令。因为听说进入内部之后，就可以发挥出异常强大的力量，很多轻率的守护者进去之后全都因为过度的奥德而生了病。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那种症状被称为奥德中毒症，不仅是泰伊洛，还有很多守护者也深受这种症状的折磨。治疗药只有一种，那就是用卡斯帕的嫩叶熬汤喝。</p>
+          <p> </p>
+          <p>但是卡斯帕是非常古老的树木，由于奥德的作用，停止生长已经很久了。因此嫩叶是非常非常珍贵的东西。</p>
+          <p> </p>
+          <p>现在入口被封了起来，没有军团长许可的人无法随便进入，因此我一直找不到人，只能等待[%username]大人的出现。</p>
+          <p> </p>
+          <p>请您帮我进入卡斯帕内部，寻找[%dic:STR_DIC_OBJ_IDElim_Seed_Q11450]，搜集一些[%dic:STR_DIC_I_quest_21450a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>充满了生命力的[%dic:STR_DIC_OBJ_IDElim_Seed_Q11450]有好几处。找到之后，把上面的土拍掉，就会有小树枝出现，长出[%dic:STR_DIC_I_quest_21450a]来。</p>
+          <p> </p>
+          <p>我需要五个，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>充满生命力的地方很难找到，不过我确实需要[%dic:STR_DIC_I_quest_21450a]。</p>
+          <p> </p>
+          <p>虽然泰伊洛是守护者，不会死去，但是我不忍心看到他痛苦的样子。</p>
+          <p> </p>
+          <p>请您尽快帮我搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，泰伊洛是守护者，不会死去。但是这样反而更加残忍，不是吗？不会死去的守护者，却受到了死一般的痛苦煎熬。</p>
+          <p> </p>
+          <p>不仅是泰伊洛，还有很多守护者都在忍受奥德中毒症的折磨。</p>
+          <p> </p>
+          <p>不过能够进入卡斯帕内部的人不是很多，您真的不能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到卡斯帕的内部去了吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_quest_21450a]搜集到了吗？充满生命力的地方应该不太容易找到。</p>
+          <p> </p>
+          <p>泰伊洛的状态目前还算可以。</p>
+          <p> </p>
+          <p>[%username]大人回来之后，我就可以用[%dic:STR_DIC_I_quest_21450a]熬汤给他喝下去了。不过现在我只能就这样看着他受苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>充满生命力的地方没能找到吗？</p>
+          <p> </p>
+          <p>还是您把[%dic:STR_DIC_I_quest_21450a]掉在什么地方了？</p>
+          <p> </p>
+          <p>泰伊洛正在经受痛苦的折磨。希望泰伊洛的状态能尽快好转。</p>
+          <p> </p>
+          <p>如果您找到了[%dic:STR_DIC_OBJ_IDElim_Seed_Q11450]，就应该能找到嫩叶。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找到充满生命力的地方了啊。发出蓝色光泽的嫩叶很适合用来做成药。</p>
+          <p> </p>
+          <p>奥德中毒症还真是可怕。昨天晚上泰伊洛又在说胡话了。</p>
+          <p> </p>
+          <p>我得赶紧让泰伊洛把药吃下去。真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_OBJ_IDElim_Seed_Q11450]搜集嫩叶，然后交给[%dic:STR_DIC_N_Vesvola]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">维斯波拉说过去的同伴泰伊洛的了奥德中毒症，正在受到痛苦的折磨。帮他搜集唯一的治疗药——卡斯帕的嫩叶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维斯波拉说过去的同伴泰伊洛听说有关卡斯帕内部的传闻之后，进入了卡斯帕的内部，结果患上了奥德中毒症。</p>
+          <p> </p>
+          <p>他说奥德中毒症的唯一的治疗药，是卡斯帕的嫩叶。于是帮助他进入卡斯帕的内部，搜集到了卡斯帕的嫩叶。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

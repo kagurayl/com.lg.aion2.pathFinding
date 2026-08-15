@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很抱歉冒昧来跟您说这些，您能帮帮我吗？</p>
+          <p></p>
+          <p>因为事情太着急我才会找你。按照计划，我应该在很早就回到了野营地，但是因为一件东西困住了我的脚步。</p>
+          <p></p>
+          <p>利希迪盖大人最讨厌的就是迟到，我现在很有可能要被赶出调查团了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要[%dic:STR_DIC_I_QUEST_1629a]。是利希迪盖大人让我搜集的，说是调查皮托内恩沼泽环境时必需的东西。</p>
+          <p></p>
+          <p>我以为应该和西德罗食人花一样不难捉到，想慢慢地寻找，但是进入沼泽之后才发现与我想象的并不一样。</p>
+          <p></p>
+          <p>除了德利顿之外，还有很多刺魔和克洛德蠕虫，凭我的力量完全无法解决。</p>
+          <p></p>
+          <p>但是[%username]大人您应该完全没有问题。</p>
+          <p></p>
+          <p>请帮我清除[%dic:STR_DIC_M_WaterWorm_41_An]，并带回5个皮肤组织。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，这下总算保住小命了。</p>
+          <p></p>
+          <p>很抱歉，您能快点出发吗？我的日程已经落后很多了。</p>
+          <p></p>
+          <p>我在这段时间里做好出发的准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？即使是这样的情况也不行？</p>
+          <p></p>
+          <p>哼，真是够无情的。</p>
+          <p></p>
+          <p>既然您不愿做，那我也不会再拜托您了。我自己去找西德罗食人花的皮肤组织，您该干嘛干嘛吧。</p>
+          <p></p>
+          <p>哼，反正一直找下去的话，总是会遇到死去的西德罗食人花的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这就回来了。</p>
+          <p></p>
+          <p>目录里的食物和物品我都装上了。</p>
+          <p></p>
+          <p>现在只要有[%dic:STR_DIC_I_QUEST_1629a]就完美了。您带来给我了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出西德罗食人花的皮肤组织。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不会是放弃了吧？</p>
+          <p></p>
+          <p>我一直催促您让您有压力了吗？</p>
+          <p></p>
+          <p>多花点时间也无所谓，请一定要帮我找到5个西德罗食人花的皮肤组织。</p>
+          <p></p>
+          <p>我就在这里慢慢的等。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在就已经有雾气了。这是研究的最佳时机。</p>
+          <p></p>
+          <p>这样就会得到利希迪盖大人的称赞了。</p>
+          <p></p>
+          <p>真的很感激您帮助了我。虽然已经答应过您，但是也请您收下我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_WaterWorm_41_An]并收集皮肤组织交给[%dic:STR_DIC_N_Menaxia]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">美娜西亚为了回到野营地必须得到在皮托内恩沼泽的西德罗食人花的皮肤组织。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>美娜西亚的日程已经晚了，又出现了各种差错，请求帮其寻得西德罗食人花的皮肤组织。</p>
+          <p></p>
+          <p>于是按照委托为她搜集到了西德罗食人花的皮肤组织，使其得以回到野营地。她表示非常感激。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

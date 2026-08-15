@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守卫需要留心很多东西。</p>
+          <p> </p>
+          <p>既需要牵制虎视眈眈寻找侵入机会的克拉尔，也需要留意漂浮在上空的欧比斯的碎片。</p>         
+          <p> </p>
+          <p>此外还要处理居民们的委托。</p> 
+          <p> </p>
+          <p>也有守卫会断然拒绝，但是我的话一般都会接受。</p>
+          <p> </p>
+          <p>帮助身处困境的人类也是我们守护者的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天我又收到了德拉西亚的委托。</p>
+          <p> </p>
+          <p>她说最近因为要塞周围寄居蟹的原因，雪莉已经所剩无几，所以让我们帮忙清除那些家伙。</p>   
+          <p> </p>
+          <p>已经几天时间没能找到用来做菜的雪莉了，所以她很恼火。</p>
+          <p> </p>
+          <p>本来我是想亲自去处理的，但是今天军团长有个命令。</p> 
+          <p> </p>
+          <p>[%username]，您能帮我去清除掉[%dic:STR_DIC_MLA16_2]吗？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>请帮我清除11头[%dic:STR_DIC_MLA16_2]。</p>
+          <p> </p>
+          <p>雪莉的繁殖速度很快，除掉这么多的话，就应该能够看到雪莉了。</p>               
+	</body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢？我和德拉西亚说要今天会帮她处理的。</p>
+          <p> </p>
+          <p>又不能现在说不行...</p>      
+          <p> </p>
+          <p>没办法。只能晚上去抓寄居蟹了。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你什么时候回来的？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_MLA16_2]都清除掉了吗？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，看来我拜托您是找对人了。</p>
+          <p> </p>
+          <p>拿着这个。德拉西亚说让我对你转达一下谢意。</p>  
+          <p> </p>
+          <p>虽然没多少，但也是一片心意。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除吃掉雪莉的[%dic:STR_DIC_MLA16_2]([%2]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_LA17]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要塞周边由于寄居蟹的原因，雪莉数量变少了。帮助清除寄居蟹，使德拉西亚能够找到用来做菜的雪莉。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于寄居蟹吃光了雪莉，德拉西亚找不到做菜用的材料，于是找到奇内索斯请求帮助。</p>
+          <p> </p>
+          <p>奇内索斯因为有其他事情分不开身，因此代替他去清除掉了寄居蟹。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

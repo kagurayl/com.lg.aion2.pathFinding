@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我到英吉斯温来，是为了研究德拉纳。</p>
+          <p> </p>
+          <p>德拉纳既不是植物，也不是矿物，也不是动物，我想查清它的本质。</p>
+          <p> </p>
+          <p>但是不要说研究了，现在我连摸都没能摸到。</p>
+          <p> </p>
+          <p>附近好像有个希克伊伦农场……总之是个很小的德拉纳农场。我到那里去的时候，差点遇到大麻烦。</p>
+          <p> </p>
+          <p>农场周围还有很多龙族残党。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能帮帮我吗？拜托您了。</p>
+          <p> </p>
+          <p>请您帮我到希克伊伦农场去，把[%dic:STR_DIC_M_LF4_A2_LizardAs_52_An]和[%dic:STR_DIC_M_LF4_A2_LizardFi_52_An]消灭掉。</p>
+          <p> </p>
+          <p>在龙族的注意力被[%username]您吸引的时候，我想趁机采集一点德拉纳和土壤标本。</p>
+          <p> </p>
+          <p>当然，我会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我。</p>
+          <p> </p>
+          <p>希克伊伦农场离这里有一段距离。</p>
+          <p> </p>
+          <p>不要管我，准备好了之后就出发吧。看到[%username]您出发之后，我会跟着去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您是不能理解我的心情吗？</p>
+          <p> </p>
+          <p>研究对象就在眼前，但却束手无策，是多么让人痛苦啊……</p>
+          <p> </p>
+          <p>您能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，现在我的心脏还在跳个不停。</p>
+          <p> </p>
+          <p>龙族的气势真是吓人。要是我一个人去的话，可能早就被吓得动弹不的了。</p>
+          <p> </p>
+          <p>[%username]，谢谢你帮我消灭了龙族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>[%username]，多亏您帮我引开了龙族的视线，我才能采集到德拉纳和土壤标本。</p>
+          <p> </p>
+          <p>这是给您的辛苦费。我特地多给了一些，希望您能满意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭希克伊伦农场的龙族残党</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A2_LizardAs_52_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_A2_LizardFi_52_An]([%5]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ambrosini]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭希克伊伦农场的龙族残党，让安布罗西尼可以对德拉纳进行研究。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安布罗西尼说他来到英吉斯温是为了对德拉纳进行研究，但是因为龙族的阻碍而无法采集到标本，因此请我帮忙。</p>
+          <p> </p>
+          <p>为了让安布罗西尼可以采集到德拉纳和土壤标本，帮他消灭掉了希克伊伦农场的龙族残党。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

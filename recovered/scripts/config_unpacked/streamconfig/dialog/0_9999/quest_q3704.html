@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说您在纳莱武斯大人那里接受了任务，要到[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All]去？</p>
+          <p> </p>
+          <p>去的时候，能顺便帮我一个忙吗？</p>
+          <p> </p>
+          <p>任务并不困难，但只能在诺赫西纳训练所执行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是去训练要塞搜集[%dic:STR_DIC_I_QUEST_3704a]。</p>
+          <p> </p>
+          <p>就像极乐世界的武器制作名人会尝试制作新的武器一样，龙族也在不断开发新的武器。</p>
+          <p> </p>
+          <p>实验新武器的地方，就是诺赫西纳训练所。也就是说，诺赫西纳训练所是唯一可以获得龙族实验用武器的地方。</p>
+          <p> </p>
+          <p>您能帮我找到[%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704]，搜集他们的实验用武器吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704]可以在诺赫西纳训练要塞里面找到。请您把武器保管箱中的[%dic:STR_DIC_I_QUEST_3704a]带回来。</p>
+          <p> </p>
+          <p>如果能弄到他们的实验用武器，极乐世界就能制造出可以与之对抗的新武器。</p>
+          <p> </p>
+          <p>这是件大好事，请您别忘了把他们的武器带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不是要去诺赫西纳训练所吗？</p>
+          <p> </p>
+          <p>只要去的时候，顺便把龙族的实验用武器带回来就行。您为什么会拒绝呢？</p>
+          <p> </p>
+          <p>如果您真的不愿意，我也没办法。不过说实话，我还是感觉有点遗憾。</p>
+          <p> </p>
+          <p>除了战斗之外，其实还有很多重要的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>优秀的战士需要出色的武器——比敌人更好的武器。</p>
+          <p> </p>
+          <p>这就需要制作武器的人进行各种研究。</p>
+          <p> </p>
+          <p>[%username]大人带回来的[%dic:STR_DIC_I_QUEST_3704a]将会对研究起到很大的帮助。</p>
+          <p> </p>
+          <p>来，请您把东西交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的实验用武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去诺赫西纳训练所吗？</p>
+          <p> </p>
+          <p>我不想催促您，但这件事非常重要。</p>
+          <p> </p>
+          <p>请您尽快把[%dic:STR_DIC_I_QUEST_3704a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是龙族新制作的武器啊。</p>
+          <p> </p>
+          <p>重量很沉，要是被它打到的话，一定会受很重的伤。</p>
+          <p> </p>
+          <p>真是辛苦您了。我会尽快把武器送往极乐世界，作为研究的材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704]身上搜集武器，然后交给[%dic:STR_DIC_N_Euros]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说需要龙族的实验用武器。去诺赫西纳训练所搜集武器，然后交给埃乌洛斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃乌洛斯说龙族在诺赫西纳训练所实验新的武器，让我帮他去搜集实验用武器。</p>
+          <p> </p>
+          <p>在训练要塞里的龙族武器保管箱中找到了实验用武器。交给他之后，他说会尽快把武器送往极乐世界，作为研究的材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

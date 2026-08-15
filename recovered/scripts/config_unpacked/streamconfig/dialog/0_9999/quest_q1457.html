@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊高伦独自一个人生活太久了。</p>
+          <p> </p>
+          <p>好像得了忧郁症，一听到鸟妖翅膀的声音就想要流眼泪。</p>
+          <p> </p>
+          <p>这样下去的话，不要说出人头地，肯定会大病一场。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能嚼上一嚼术古草的话，心情应该会好一点！</p>
+          <p> </p>
+          <p>啊，说术古草的话，守护者一定不会知道。</p>
+          <p> </p>
+          <p>那是一种药草，人类把它叫做[%dic:STR_DIC_E_herb_n_c_30a]。</p>
+          <p> </p>
+          <p>只要嚼一嚼那种草，我们术古的心情就会变好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然我和你提了，你能帮我找一点[%dic:STR_DIC_E_herb_n_c_30a]来吗，呐呐？</p>
+          <p> </p>
+          <p>必须嚼一嚼它，我才能继续在这里坚持下去。</p>
+          <p> </p>
+          <p>水苏在岩石山这里有很多，应该很容易找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，真的谢谢你。</p>
+          <p> </p>
+          <p>如果你能帮我带15个[%dic:STR_DIC_E_herb_n_c_30a]回来的话，我会给你钱作为报酬的。</p>
+          <p> </p>
+          <p>啊，一想到能尝到术古草，现在心情就好像好一点了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想看我从这个悬崖上跳下去吗？</p>
+          <p> </p>
+          <p>找几个水苏有那么困难吗？</p>
+          <p> </p>
+          <p>算了！如果你不想帮我的话！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>术古才带来了吗？就是[%dic:STR_DIC_E_herb_n_c_30a]。</p>
+          <p> </p>
+          <p>我都等得快发疯了。</p>
+          <p> </p>
+          <p>快把水苏给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水苏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这明明不是15个[%dic:STR_DIC_E_herb_n_c_30a]嘛！</p>
+          <p> </p>
+          <p>你以为我忧郁了就不会数数了吗？</p>
+          <p> </p>
+          <p>不要让我更忧郁了，快把搜集齐的水苏给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，水苏的味道。</p>
+          <p> </p>
+          <p>啊啊，心情好多了。为什么这么高兴啊，呐呐。</p>
+          <p> </p>
+          <p>伊高伦现在不孤独了。</p>
+          <p> </p>
+          <p>都是托守护者的福。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_herb_n_c_30a]，然后交给[%dic:STR_DIC_N_Shugo_LF2_12]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伊高伦说长期独自生活，好像得了忧郁症。为了让他高兴起来，帮助他去搜集他们称为术古草的水苏吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>独自呆在库里乌鲁岩石山上的伊高伦感叹因为长期的孤独好像患上了忧郁症。</p>
+          <p> </p>
+          <p>于是为了让他打起精神，帮他搜集到了被称为术古草的水苏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

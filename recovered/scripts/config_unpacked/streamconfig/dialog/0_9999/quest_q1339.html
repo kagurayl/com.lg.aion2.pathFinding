@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去沙漠进行过侦察，所以应该知道莫尔皮诺斯兽群消失了的事情。</p>
+          <p> </p>
+          <p>由于它们不是定居的动物，所以刚开始我不知道它们已经消失了。</p>
+          <p> </p>
+          <p>后来我了解到它们都是被蝎兽杀害了的时候，您不知道我有多么惊讶。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这次的事件中您也知道了，蝎兽是危险的动物。</p>
+          <p> </p>
+          <p>特别是它们的领地意识很强，不喜欢人类或其他动物靠近它们的领地。它们会很快地接近目标，然后用尾巴刺人，使其中毒而死。</p>
+          <p> </p>
+          <p>莫尔皮诺斯兽群可能也是不小心经过了它们的领地，才被它们杀死的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么可以帮忙的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在球尾蝎兽危害到其他人之前，必须把它们除掉。</p>
+          <p> </p>
+          <p>请您去捕捉埃拉库斯沙漠里的[%dic:STR_DIC_M_Scorpion_28_An]。</p>
+          <p> </p>
+          <p>必须在发生其他事情之前尽快采取措施。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您马上去埃拉库斯沙漠捕捉所有看到的[%dic:STR_DIC_M_Scorpion_28_An]。</p>
+          <p> </p>
+          <p>动作越快越好。要是伤到人就糟了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不知道蝎兽有多么危险。</p>
+          <p> </p>
+          <p>被它的尾巴刺到的话，没走到五步，就会因为毒素扩散到全身而死亡。</p>
+          <p> </p>
+          <p>生活在这附近的所有的人全都暴露在这个危险之下。</p>
+          <p> </p>
+          <p>而且有很多人不知道蝎兽的可怕，因此也就更加危险！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Scorpion_28_An]全都除掉了吗？</p>
+          <p> </p>
+          <p>我一直在担心出去侦察的人会带回不好的消息。</p>
+          <p> </p>
+          <p>[%username]大人您回来了，我就安心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说把蝎兽清除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>多亏了您，我放下了心里的一块石头。</p>
+          <p> </p>
+          <p>当然，如果您能继续帮我的话，我会更高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到埃拉库斯沙漠去清除球尾蝎兽([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Kalikrates]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除威胁人类生命的[%dic:STR_DIC_M_Scorpion_28_An]</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡里克拉泰斯说有很多人因为被球尾蝎兽的尾巴刺到而死，他对此表示担心。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了蝎兽，他说非常感谢，说希望我能继续帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

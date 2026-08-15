@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4333</QuestId>    <QuestName>???</QuestName>    <QuestType>未输入</QuestType>  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能和我说会儿话吗？</p>
+          <p> </p>
+          <p>在这种一分一秒都很珍贵的时候，炉子的火却总是灭掉。</p>
+          <p> </p>
+          <p>辛辛苦苦蒸了大麻叶卖掉，才能勉强赚一个月的生活费，这样下去的话，真的就要饿死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>用白柳树作为柴火，火才不容易熄灭，但是那样的话就太贵了。</p>
+          <p> </p>
+          <p>所以我说，守护者大人。</p>
+          <p> </p>
+          <p>您能帮我去捕捉[%dic:STR_DIC_M_FireFungyRe2D_34_An]，搜集一些它们的心脏吗？</p>
+          <p> </p>
+          <p>有了[%dic:STR_DIC_I_QUEST_4333A]的话，火焰就可以三天三夜不熄灭。即使只能搜集到几个也是好的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，守护者大人。</p>
+          <p> </p>
+          <p>它们就在[%dic:STR_DIC_W_DF2_SUB_C4]周围。</p>
+          <p> </p>
+          <p>它们的身体非常烫，请一定要小心。</p>
+          <p> </p>
+          <p>我在这里等着您。请您快一点。火好像马上就要灭了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吧……</p>
+          <p> </p>
+          <p>这种小事，估计守护者大人也没时间处理……</p>
+          <p> </p>
+          <p>没关系……每天只吃一顿这个月应该就能撑过去……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！您回来啦？</p>
+          <p> </p>
+          <p>火马上就要熄灭了。</p>
+          <p> </p>
+          <p>请快把[%dic:STR_DIC_I_QUEST_4333A]给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出火焰彭基的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该怎么办才好呢？</p>
+          <p> </p>
+          <p>您给我的好像还不够。</p>
+          <p> </p>
+          <p>这可糟了。时间不多了。请您快一点！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是火焰彭基的心脏啊！</p>
+          <p> </p>
+          <p>跑到那么危险的地方去搜集心脏，该是多么危险啊。</p>
+          <p> </p>
+          <p>守护者大人，多亏了您，今后几个月我都不用再担心了。</p>
+          <p> </p>
+          <p>真的非常感谢。这个虽然没什么，但却是我的一点心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_4333A]，然后交给[%dic:STR_DIC_N_Dezaren]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让德扎兰的火炉的火焰不熄灭，去帮他搜集火焰彭基的心脏吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德扎兰说他靠蒸大麻叶卖钱维生，但是因为木柴不足，火炉的火经常熄灭。</p>
+          <p> </p>
+          <p>他说如果能有火焰彭基的心脏，火就应该不会熄灭了，让我帮他去搜集。于是到飞艇失事地去消灭了火焰彭基，帮他搜集到了心脏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

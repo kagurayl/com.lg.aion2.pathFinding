@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，请稍等。等一下我，守护者大人！</p>
+          <p></p>
+          <p>您想知道那艘失事船是怎么来的吗？您能给我详细说明一下吗？</p>
+          <p></p>
+          <p>我好像记得这么一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT_NONE_1">详细说明失事船的样子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，请稍等。等一下我，守护者大人！</p>
+          <p></p>
+          <p>您想知道那艘失事船是怎么来的吗？您能给我详细说明一下吗？</p>
+          <p></p>
+          <p>我好像记得这么一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT_NONE_1">详细说明失事船的样子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（脸色变得苍白）难道是阿尔戈斯号...</p>
+          <p></p>
+          <p>事实上几年前村子里的男人们乘船去了贝尔特伦。因为龙族正在筹划进入天界的阴谋，当然不能袖手旁观了。</p>
+          <p></p>
+          <p>他们离开后就失去了音讯，我一直很担心。这么说很有可能是他们。一直以为情况非常紧急，而没有时间传回消息。</p>
+          <p></p>
+          <p>但是听了[%username]大人您的话，我不由得产生了这艘失事船就是阿尔戈斯号的不吉念头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以守护者大人您能去帮我确认一下吗？看看那艘船是不是阿尔戈斯号。</p>
+          <p></p>
+          <p>阿尔戈斯号启航的时候，因为期望他们每个人都平安归来，所以给他们戴上了刻有名字的项链。</p>
+          <p></p>
+          <p>虽然船的损伤严重，无法辨认名字，但是请帮我确认一下是否有[%dic:STR_DIC_I_QUEST_1634a]。如果那艘船是阿尔戈斯号的话，就一定会留下这些项链。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您能去帮我确认。</p>
+          <p></p>
+          <p>如果发现了[%dic:STR_DIC_I_QUEST_1634a]，请你带回来给我。我一定要确认上面是否有当时离开的人的名字。</p>
+          <p></p>
+          <p>啊，希望不要是阿尔戈斯号...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能相信的人就只有[%username]大人您了，您怎么能拒绝我呢？</p>
+          <p></p>
+          <p>您干脆一开始就不要告诉我，这样我也不会如此的担心了！</p>
+          <p></p>
+          <p>虽然不想这样，但是一定要知道是怎么回事。干脆去拜托高尔高斯舰长好了。</p>
+          <p></p>
+          <p>他应该不会像某些人这样绝情的拒绝我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了吗？[%username]大人离开之后，我就去了奇柏隆祈祷。</p>
+          <p></p>
+          <p>希望那艘船不要是阿尔戈斯号。</p>
+          <p></p>
+          <p>那里...有[%dic:STR_DIC_I_QUEST_1634a]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出船员项链。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去吗？不然就是那里没有项链？</p>
+          <p></p>
+          <p>啊，我心里太不安了，手上连东西都拿不住。</p>
+          <p></p>
+          <p>为了让我安心请您一定去确认一下吧。就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（用颤抖的手查看项链）</p>
+          <p></p>
+          <p>加拉苏斯、罗迪亚斯、鲁诺赛...</p>
+          <p></p>
+          <p>啊啊...最后全部都长眠于大海了。不安的预感变成了现实...我做梦也没有想到阿尔戈斯号会沉没。</p>
+          <p></p>
+          <p>更不知道就在离村子很近的地方...他们该多怨恨我们啊。</p>
+          <p></p>
+          <p>还要去告诉他们的家人这个事实...我没法从自己的口中说出这些话。请守护者大人去做这个可以吗？</p>
+          <p></p>
+          <p>把这些项链交给兰提斯、赫里奥内和卡马娜，并且告诉他们这个消息。</p>
+          <p></p>
+          <p>我就指望[%username]大人您了，我要去为阿尔戈斯号的船员们祈祷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想要整天站着可是腿太疼了。</p>
+          <p></p>
+          <p>虽然偶尔也会有为什么要这么痛苦的活着而后悔的时候，但是世界上哪有不困难的事情呢。</p>
+          <p></p>
+          <p>更何况我还有为了与克拉尔作战而去了贝尔特伦的大哥呢。跟他比起来我这个根本就不算什么了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_SELECT3_1">拿出项链并告知大哥的消息。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么...您怎么说出这么荒唐的话？</p>
+          <p></p>
+          <p>我大哥在...在贝尔特伦啊。不可能有这样的事情！</p>
+          <p></p>
+          <p>（确认项链上的名字）啊啊啊！加拉苏斯大哥...</p>
+          <p></p>
+          <p>呜呜呜...大哥，大哥！</p>
+          <p></p>
+          <p>（呜咽一会之后）谢谢您带来了大哥的遗物。尽管找不到尸体...用这个也可以放到坟墓中去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，难道是罗迪亚斯吗？</p>
+          <p></p>
+          <p>啊，原来是守护者大人啊。我又当成是我的儿子了呢。</p>
+          <p></p>
+          <p>对了，守护者大人您为什么来到我这么寒碜的小地方呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_SELECT4_1">拿出项链并告知儿子的消息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？我没听清。</p>
+          <p></p>
+          <p>可是这条项链是怎么回事呢？要把它送给我吗？</p>
+          <p></p>
+          <p>（查看项链，突然睁大眼睛。）</p>
+          <p></p>
+          <p>哎呀，守护者大人为什么带来了我家儿子的项链呢？</p>
+          <p></p>
+          <p>难道...我的罗迪亚斯...死了？</p>
+          <p></p>
+          <p>哎哟哟，哎哟哟！艾温大人太狠心了啊。就这样把还有大把前程的年轻人给带走了。</p>
+          <p></p>
+          <p>要带走的话干脆把我这把老骨头也带去吧，哎哟哟，哎哟哟！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的天气真好啊。</p>
+          <p></p>
+          <p>在这么好的天气里应该会带来好消息吧。</p>
+          <p></p>
+          <p>守护者大人您带了什么来给我？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_SELECT_QUEST_REWARD">拿出项链并告知丈夫的消息。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（无语地看着项链。）</p>
+          <p></p>
+          <p>丈夫经常说自己话太多，说自己是永远的海员。希望死也要死在船上。</p>
+          <p></p>
+          <p>每次他说这种话的时候，我都觉得不吉利，心里很不舒服...没想到最后还是这样了。</p>
+          <p></p>
+          <p>我心里的某个地方其实也猜到事情是这样了。丈夫走后没多久在梦中就经常见到他悲伤的面孔。</p>
+          <p></p>
+          <p>无情的人啊，为什么要这么快走...（一边说一边哽咽。）</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_UndeadLightFi_44_An_2]和[%dic:STR_DIC_M_UndeadLightWi_44_An_2]找到项链并带回给[%dic:STR_DIC_N_Antione]。</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">与[%dic:STR_DIC_N_Antione]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把项链交给[%dic:STR_DIC_N_Lantis]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">把项链交给[%dic:STR_DIC_N_Hellione]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">把项链交给[%dic:STR_DIC_N_Camana]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">确认失事船是否与很久前离开的阿尔戈斯号有关系。清除失事船上的灵魂，并找到船员的项链。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安提奥内祭司详细的询问了失事船的模样，并说不知是否是多年前去往贝尔特伦的阿尔戈斯号。</p>
+          <p></p>
+          <p>如果是阿尔戈斯号的话，船员们就会有一条项链，让我找到项链后交给他。</p>
+          <p></p>
+          <p>找回项链之后，安提奥内确认了失事船确实是阿尔戈斯号，并请我将项链和阿尔戈斯号失事的消息一并传达给他们的家人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

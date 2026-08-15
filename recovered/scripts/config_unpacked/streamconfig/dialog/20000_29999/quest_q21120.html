@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您对格尔克马洛斯的感觉如何？</p>
+          <p> </p>
+          <p>是不是觉得有点荒凉？这里的建筑都非常陈旧了，还没来得及修理。</p>
+          <p> </p>
+          <p>我们一直在进行重建工作，但是一直受到龙族的妨碍。他们不断地进行骚扰，让我们无暇顾及工程。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要做的事情非常多。我本来就想找您帮忙，既然您主动提出来，就多谢了。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮我们争取一点时间，让我们可以构筑防御基地。</p>
+          <p> </p>
+          <p>袭击这里的龙族大部分都是从南部玛拉亚斯荒野来的，因此请您去把那里的龙族消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望您能去玛拉亚斯消灭尽可能多的龙族。如果有困难的话，请您先把[%dic:STR_DIC_M_DF4_DrakanWi_Re_53_An]消灭掉。</p>
+          <p> </p>
+          <p>他们负责守护德拉纳生长器，如果能把他们除掉，其他的龙族就会好对付得多。</p>
+          <p> </p>
+          <p>那就辛苦您了。</p>
+          <p> </p>
+          <p>为了伏魔殿的伟大胜利！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不喜欢做这样的事吗？</p>
+          <p> </p>
+          <p>我觉得[%username]大人去消灭龙族是最合适的，而且这件事对我们来说也很重要。</p>
+          <p> </p>
+          <p>既然您决定帮我们，希望您能再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就完成了?</p>
+          <p> </p>
+          <p>第56德拉坎管理兵一定会拼命抵抗的吧？</p>
+          <p> </p>
+          <p>跟我说说您是用什么办法把他们消灭掉的吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，是这样啊？</p>
+          <p> </p>
+          <p>看来我们在今后对付第56德拉坎管理兵的时候，也应该尝试这种方法。</p>
+          <p> </p>
+          <p>这下总算可以安心进行重建工作，不需要为龙族担心了。</p>
+          <p> </p>
+          <p>请您收下。这是发放给为远征军提供帮助的人的奖励。</p>
+          <p> </p>
+          <p>今后我们还有很多事情需要[%username]大人这样优秀的[%userclass]的帮助，希望您能继续帮助我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_DrakanWi_Re_53_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Aquila]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于龙族的袭击，格尔克马洛斯的重建工作遇到了障碍。消灭守护玛拉亚斯德拉纳生长器的第56德拉坎管理兵，然后向阿奎拉报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿远征军阿奎拉说由于不断受到龙族骚扰，格尔克马洛斯的重建工作进展缓慢，让我帮他们消灭周围的龙族，让重建工作得以顺利进行。</p>
+          <p> </p>
+          <p>消灭了周围的第56德拉坎管理兵，回去之后，他给了我奖励，说终于可以集中精力进行重建工作了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

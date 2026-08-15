@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30463</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，我搜集到了很多东西，但又出现了其他问题！</p>
+          <p> </p>
+          <p>我还想拜托你一件事！</p>
+          <p> </p>
+          <p>这是非常重要的事情，请你一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，从[%dic:STR_DIC_W_ZONE_NAME_IDElemental_1]里搜集到的东西不能直接出售！</p>
+          <p> </p>
+          <p>必须偷偷地到多尔戈宅邸里去加工一下才行。</p>
+          <p> </p>
+          <p>但是自从有个奇怪的德拉坎魔法师来了之后，我就不能到宅邸里去了！</p>
+          <p> </p>
+          <p>守护者，求你再帮我一次，让我可以进去加工东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次你也得帮我消灭掉很多怪物！</p>
+          <p> </p>
+          <p>你必须把[%dic:STR_DIC_M_IDElementalN_Nmd_Butler_60_Al]、[%dic:STR_DIC_M_IDElementalN_Nmd_HalfGolem_60_Al]和[%dic:STR_DIC_M_IDElementalN_Nmd_Wizard_60_Al]全部消灭掉。</p>
+          <p> </p>
+          <p>它们很厉害，你一定要小心。</p>
+          <p> </p>
+          <p>不管发生什么事，你一定要把它们消灭掉，让我可以进去加工东西！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>光搜集到东西有什么用！</p>
+          <p> </p>
+          <p>没办法加工的话，东西就没法卖出去！</p>
+          <p> </p>
+          <p>东西卖不出去的话，我创建贸易团的梦想就要破灭了！</p>
+          <p> </p>
+          <p>求你一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到多尔戈宅邸去了吗？</p>
+          <p> </p>
+          <p>把我说的怪物都消灭掉了吗？</p>
+          <p> </p>
+          <p>快跟我说说结果怎么样吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了！</p>
+          <p> </p>
+          <p>这样我就能放心地到多尔戈宅邸去了。</p>
+          <p> </p>
+          <p>但是绝对不能松懈。</p>
+          <p> </p>
+          <p>如果又有别的事情，你一定要来帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_ZONE_NAME_IDElemental_2]的妨碍者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_Butler_60_Al]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_HalfGolem_60_Al]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDElementalN_Nmd_Wizard_60_Al]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shulack_LF4a_01]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莫里金说从拉迪斯森林中搜集到的东西必须拿到多尔戈宅邸去加工。为了让他可以顺利进入宅邸，去帮他消灭掉妨碍者吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫里金说从拉迪斯森林中搜集到的东西必须拿到多尔戈宅邸去加工，但是自从黑暗魔法师扎德拉来了之后，就无法去加工东西了。</p>
+          <p> </p>
+          <p>于是按照他的委托，消灭了忠诚的管家卡德拉、未完成的英格雷斯和黑暗魔法师扎德拉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

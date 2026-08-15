@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是些难缠的家伙！啊，请不要误会。</p>
+          <p> </p>
+          <p>我不是在说你，而是在说追到这里来的天族。</p>
+          <p> </p>
+          <p>据侦察兵报告说，他们在这里不远的根之岛上游荡，监视这里的动态。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为没有多少人，我还想就放过他们算了。但是他们的所作所为越来越过分，我开始有点担心。</p>
+          <p> </p>
+          <p>必须在他们做出什么事情之前，把他们除掉。</p>
+          <p> </p>
+          <p>刚好眼前就有一个可以帮我的人。没错，就是[%username]你。</p>
+          <p> </p>
+          <p>我相信你一定不会拒绝的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你把那3个难缠的守护者中的任何一个人，3次送到灵魂治愈师那里去。</p>
+          <p> </p>
+          <p>第一个对象是被称为火花的守护者的[%dic:STR_DIC_N_Nemea]。他的魔法能力很强，一定要务必注意。</p>
+          <p> </p>
+          <p>第二个对象是[%dic:STR_DIC_N_Nike]。他主要使用长剑。</p>
+          <p> </p>
+          <p>最后一个对象名叫[%dic:STR_DIC_N_Dactyl]，会挥剑乱砍乱杀，因此最好小心一点。</p>
+          <p> </p>
+          <p>那我就在这里等着你的好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底为什么会拒绝呢？</p>
+          <p> </p>
+          <p>难道是害怕天族吗？以你的实力的话，三个天族应该是小菜一碟啊...</p>
+          <p> </p>
+          <p>如果你还是害怕的话，就没办法了。如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在要塞的整理工作已经完成。</p>
+          <p> </p>
+          <p>现在不要说天族，即使是龙族冲过来都不会有任何问题。</p>
+          <p> </p>
+          <p>对了，我拜托你的事情怎么样了？有没有让他们尝尝3次送去灵魂治愈的耻辱啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们这次一定吃了不少苦头，哈哈哈。</p>
+          <p> </p>
+          <p>辛苦你了。多亏你现在不用再为天族侦察队担心了。</p>
+          <p> </p>
+          <p>你一定很累了吧。快去休息吧。</p>
+          <p> </p>
+          <p>如果需要帮助的话，我会联系你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_N_Nemea]、[%dic:STR_DIC_N_Nike]和[%dic:STR_DIC_N_Dactyl]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1141_Quest_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说被夺走要塞的天族守卫在侦察硫磺树要塞。去把天族守卫除掉，然后向古德哈尔坦报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古德哈尔坦说被夺走硫磺树要塞之后，天族一直在不远的根之岛上对要塞进行侦察。刚开始本来想不管，但是他们的行动渐渐地越来越过分，必须好好教训教训他们。</p>
+          <p> </p>
+          <p>于是去根之岛除掉了内梅亚、尼凯和达克提尔，然后回去向古德哈尔坦报告。他非常高兴，说天族这下一定吃足了苦头。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

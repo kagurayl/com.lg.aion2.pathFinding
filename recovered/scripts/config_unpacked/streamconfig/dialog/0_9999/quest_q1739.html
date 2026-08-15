@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在到了积极对龙族和魔族进行压制的时候。</p>
+          <p> </p>
+          <p>必须不断地攻击，不让他们有丝毫的喘息之机。</p>
+          <p> </p>
+          <p>一旦所有的要塞都落入我们的手中，他们就无法在埃雷修兰塔立足。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也知道，要想占领要塞，必须打倒守护神将。但是要打倒守护神将并不容易。</p>
+          <p> </p>
+          <p>那是需要召集大量的守护者组成部队，才能完成的任务。</p>
+          <p> </p>
+          <p>我想以你的名声，应该可以召集到足够的人员。</p>
+          <p> </p>
+          <p>怎么样，[%username]你能帮我去攻击魔族和龙族占领的[%dic:STR_DIC_M_Q1739all]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你答应我，[%username]。</p>
+          <p> </p>
+          <p>你应该知道[%dic:STR_DIC_M_Q1739all]吧？</p>
+          <p> </p>
+          <p>不管哪个要塞都没关系，在敌人占领的要塞进入可以攻击状态后，请你组织部队，去攻击守护神将。</p>
+          <p> </p>
+          <p>任务的目的是为了让战局变得对我们更有利。因此不管是魔族占领的要塞，还是龙族占领的要塞都没关系。</p>
+          <p> </p>
+          <p>希望你能尽自己的全力，把埃雷修兰塔的地图全都染成绿色。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你没有接受这个任务的义务。</p>
+          <p> </p>
+          <p>但是有了天族，才会有你。难道不是吗？</p>
+          <p> </p>
+          <p>我是相信[%username]的能力，才会来拜托你。希望你能够接受。</p>
+          <p> </p>
+          <p>如果是因为没有好的同伴的话，你可以召集到值得信任的同伴之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]！</p>
+          <p> </p>
+          <p>我刚好听说埃雷修兰塔上层各地都爆发了激烈的战斗。</p>
+          <p> </p>
+          <p>你成功地打倒守护神将了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把任务交给你，看来是个明智的选择。</p>
+          <p> </p>
+          <p>因为[%username]你，现在埃雷修兰塔的局势变得对我们更有利了。</p>
+          <p> </p>
+          <p>这种局势持续下去的话，不用多久，我们就应该可以把魔族和龙族赶出去。</p>
+          <p> </p>
+          <p>真是辛苦你了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒[%dic:STR_DIC_M_Q1739all]的守护神将([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Taranis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔拉尼斯把打倒守护神将的任务交给了我。去打倒埃雷修兰塔上层要塞的守护神将吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔拉尼斯说到了对龙族和魔族展开总攻的时候，并把打倒守护神将的任务交给了我。</p>
+          <p> </p>
+          <p>按照他的命令组成部队，除掉了埃雷修兰塔上层要塞的守护神将。</p>
+          <p> </p>
+          <p>塔拉尼斯总司令官非常高兴，说用不了多久，就能把魔族和龙族赶出埃雷修兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

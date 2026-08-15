@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把正在看的信折了起来)哈哈，没想到我也有这种时候。</p>
+          <p> </p>
+          <p>啊，最近我连着遇到了好几件好事。</p>
+          <p> </p>
+          <p>对烙印之石名人来说，什么样的事情算好事呢？当然是和烙印之石有关的事情。</p>
+          <p> </p>
+          <p>不久前，赫尔卡告诉了我在荒废的乌达斯神殿发现的古代文献的事情，这次巴塔利安大人又告诉了我一个有趣的消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个嘛……对[%username]大人这样的[%userclass]来说可能不算什么，但对我们烙印之石名人来说，却是比宝石还要珍贵的情报。</p>
+          <p> </p>
+          <p>您看这么办可不可以？</p>
+          <p> </p>
+          <p>我把巴塔利安大人给我的信给[%username]大人看，您则需要帮助我进行研究。</p>
+          <p> </p>
+          <p>我可以保证，这件事对[%username]大人也有好处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴塔利安大人说在纳杜卡活体研究所的克拉尔实验体身上发现了烙印之石的痕迹。</p>
+          <p> </p>
+          <p>虽然克拉尔实验体全都死了，但那里的德拉坎研究员还以不死族的形态留在研究室里。据说幸存下来的人在失败者的坟墓那边。</p>
+          <p> </p>
+          <p>对[%dic:STR_DIC_M_21277]进行调查的话，也许可以找到烙印之石研究记录。</p>
+          <p> </p>
+          <p>请您帮我去寻找[%dic:STR_DIC_I_quest_21277a]。</p>
+          <p> </p>
+          <p>回来找我的时候，请您再带一个文件修复液过来。文件修复液在[%dic:STR_DIC_N_Thuth]那里应该可以买到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意的话就算了。</p>
+          <p> </p>
+          <p>不好意思，没事的话，您能让开一下吗？</p>
+          <p> </p>
+          <p>我得仔细确认一下巴塔利安大人寄来的信的内容。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>对了，拜托您的事情怎么样了？</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_M_21277]找到[%dic:STR_DIC_I_quest_21277a]了吗？文件修复液也带来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出研究记录和文件修复液。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈，[%username]大人也会有失误的时候啊。</p>
+          <p> </p>
+          <p>为了确认龙族在克拉尔实验体身上做的烙印之石研究，必须找到有关的资料。</p>
+          <p> </p>
+          <p>请您到克拉尔研究员身上找到[%dic:STR_DIC_I_quest_21277a]。状态不好也没关系。</p>
+          <p> </p>
+          <p>使用[%dic:STR_DIC_I_quest_21277b]，就可以把它复原/</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>(查看研究记录)状态好像都不太好。还好我让您准备了文件修复液。</p>
+          <p> </p>
+          <p>下面的事情就交给我吧。您应该累了吧？快去休息一下吧。</p>
+          <p> </p>
+          <p>因为都是单页的文件，要想对齐顺序，可能需要一点时间。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_21277a]和[%dic:STR_DIC_I_quest_21277b]，然后交给[%dic:STR_DIC_N_Garath]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让加拉斯可以研究龙族的烙印之石，去从纳杜卡活体研究所的不死族德拉坎研究员和失败者的坟墓的纳杜卡德拉坎研究员身上寻找烙印之石研究记录吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>烙印之石名人加拉斯说从巴塔利安那里得到了有关烙印之石的重要情报，让我帮帮他。</p>
+          <p> </p>
+          <p>于是帮他从德拉坎研究员身上找到了烙印之石研究记录，并和文件修复液一起交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，灰尘！</p>
+          <p> </p>
+          <p>(挥着手)讨厌的灰尘！</p>
+          <p> </p>
+          <p>可能是这里太干燥了，有很多灰尘。</p>
+          <p> </p>
+          <p>每天打扫好几次，东西上还是积满了灰尘。</p>
+          <p> </p>
+          <p>这样下去的话，怎么能管理好守卫们交给我的贵重物品呢？</p>
+          <p> </p>
+          <p>看到灰尘不断积累，我这个仓库管理人的心就感觉像裂开了一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须用皮革把东西包起来，这样的话，再多的灰尘也不怕了。</p>
+          <p> </p>
+          <p>如果能用薄皮革把东西包起来，不仅可以抵御灰尘，还可以防止湿气和碰撞使东西造成损坏。</p>
+          <p> </p>
+          <p>附近可以找到的合适的皮革是……</p>
+          <p> </p>
+          <p>啊，是巴库皮革！</p>
+          <p> </p>
+          <p>巴库的表皮虽然看上去很硬，但经过加工之后，可以变得非常薄。</p>
+          <p> </p>
+          <p>[%username]! 这件事能麻烦你吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，大地的伤痕地区有很多受到石化影响的动物。</p>
+          <p> </p>
+          <p>我要的皮革，是没有受到石化影响的巴库的皮革！石化的巴库的皮会裂开，没什么用。</p>
+          <p> </p>
+          <p>请你快去帮我搜集[%dic:STR_DIC_M_LF4_B_Baku_Giraffe_53_n]的皮革吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没办法帮我吗？</p>
+          <p> </p>
+          <p>啊……这可怎么办呢……</p>
+          <p> </p>
+          <p>要是我自己去搜集，就没人接待客人了……</p>
+          <p> </p>
+          <p>但是看到东西积满了灰尘，我的心就很痛……这可怎么办呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(忙着掸灰尘。)</p>
+          <p> </p>
+          <p>这里也是灰尘！那里也是灰尘！</p>
+          <p> </p>
+          <p>啊，[%username]，你来啦？你来的正好。</p>
+          <p> </p>
+          <p>我要的皮革拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮革还没搜集到吗？</p>
+          <p> </p>
+          <p>大地的伤痕那边有很多[%dic:STR_DIC_M_LF4_B_Baku_Giraffe_53_n]，你再去看看吧。</p>
+          <p> </p>
+          <p>必须是水草巴库！其他巴库的皮不能用！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去很不错！</p>
+          <p> </p>
+          <p>这样的话，应该可以制作出包裹东西的皮革了。</p>
+          <p> </p>
+          <p>[%username]，你真是帮了我的大忙。这些虽然不多，但却是我的一片心意，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_B_Baku_Giraffe_53_n]的皮革，然后交给[%dic:STR_DIC_N_Levilus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">雷比鲁斯无法忍受东西上积满了灰尘，帮他去搜集巴库皮革吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷比鲁斯说因为气候干燥，东西上积满了灰尘，需要用皮革把东西包起来。</p>
+          <p> </p>
+          <p>于是去消灭水草巴库，帮他搜集到了皮革，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

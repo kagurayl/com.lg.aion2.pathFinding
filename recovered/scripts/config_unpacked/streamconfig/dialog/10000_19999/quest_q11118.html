@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妈妈让我照顾好妹妹。</p>
+          <p> </p>
+          <p>她经常这么嘱咐我。</p>
+          <p> </p>
+          <p>但是我却没有照顾好塞茨奇奇，让她得了病。我好伤心。</p>
+          <p> </p>
+          <p>塞茨奇奇闹着说要看发光体的光。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问什么是发光体的光。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在我们小时候生活的村子里，外面的田野上有很多的发光体。</p>
+          <p> </p>
+          <p>一到晚上就会闪闪发光，非常漂亮。</p>
+          <p> </p>
+          <p>塞茨奇奇也许是很想念那个时候的生活。</p>
+          <p> </p>
+          <p>抓住发光体之后放在瓶子里，应该可以帮助塞茨奇奇恢复身体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是必须有很多的发光体，才能发出美丽的光。</p>
+          <p> </p>
+          <p>我问了其他守护者，他们说补给兵[%dic:STR_DIC_N_Cinisca]什么东西都有。他那里也许会有装发光体的玻璃瓶。</p>
+          <p> </p>
+          <p>希望看到闪闪发光的发光体之后，塞茨奇奇会开心起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为你应该会帮助我们这些可怜的难民。</p>
+          <p> </p>
+          <p>所以我才请你帮忙。没想到守护者们这么冷漠。</p>
+          <p> </p>
+          <p>没有一个人愿意帮我们。就算是这样饿死，估计也不会有人来管我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>装发光体的玻璃瓶？小时候我们也会把发光体装在瓶子里玩。</p>
+          <p> </p>
+          <p>如果你需要玻璃瓶，就先去抓发光体吧。</p>
+          <p> </p>
+          <p>玻璃瓶我这里有很多。装在里面的话，就能发出闪烁的光。</p>
+          <p> </p>
+          <p>但是如果想让时间久一些，就必须是[%dic:STR_DIC_I_QUEST_11118a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您也有这种爱好啊？</p>
+          <p> </p>
+          <p>这么大了还想抓发光体放进玻璃瓶里玩。</p>
+          <p> </p>
+          <p>看来您一定很喜欢发光体吧？</p>
+          <p> </p>
+          <p>还是想在晚上借着发光体的光看书啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出发光体，讲述塞伊金的故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>啊，原来是这样啊。</p>
+          <p> </p>
+          <p>没想到您是在帮助可怜的黑暗术古难民，您可真博爱。</p>
+          <p> </p>
+          <p>我已经把昏掉的发光体装进玻璃瓶了。</p>
+          <p> </p>
+          <p>打开玻璃瓶之后，昏掉的发光体就会醒来，就会发出美丽的光了。</p>
+          <p> </p>
+          <p>您想要的就是这个，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>年轻的时候您没试过吗？</p>
+          <p> </p>
+          <p>这么少的发光体根本不行。</p>
+          <p> </p>
+          <p>至少要有30个发光体，才能发出美丽的光。</p>
+          <p> </p>
+          <p>请您继续去捕捉发光体吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发光体实在太美了，就好像……好像……</p>
+          <p> </p>
+          <p>好像回到了和爸爸妈妈在一起的过去。</p>
+          <p> </p>
+          <p>回到了我们能吃得饱饱的幸福的时节……</p>
+          <p> </p>
+          <p>真让人怀念。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在我们一家人一起生活的时候，经常能看到发光体。</p>
+          <p> </p>
+          <p>但是我还是头一次看到它们发出这么美丽的光。</p>
+          <p> </p>
+          <p>你到底是怎么抓到这么多发光体的？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述经过。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。为了让我们兄妹开心，你付出了很多努力。</p>
+          <p> </p>
+          <p>塞茨奇奇和我一定会吃饱喝足，恢复健康的。</p>
+          <p> </p>
+          <p>有你这样的守护者帮助我们，我感到很放心。</p>
+          <p> </p>
+          <p>再次向你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Cinisca]征询意见</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把昏掉的[%dic:STR_DIC_M_LF4_A3_Foam_Wisp_52_n]装进瓶子，交给[%dic:STR_DIC_N_Cinisca]</font></p>[%collectitem]</step>
+               <step><p visible="[%6]"><font color="[%7]">带着装有发光体的玻璃瓶，在[%dic:STR_DIC_N_Shulack_LF4_2]身边打开</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Shulack_LF4_2]对话</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">和[%dic:STR_DIC_N_Shulack_LF4_1]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">可怜的难民兄妹说想看小时候看到的发光体的光。帮助他们完成愿望吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞茨奇奇和塞伊金说想起了小时候看到的发光体。</p>
+          <p> </p>
+          <p>现在虽然变成了难民，但是如果能看到发光体的光，应该就能想起小时候的幸福生活。</p>
+          <p> </p>
+          <p>经过一番波折之后，把装有发光体的瓶子在他们面前打开，他们看了之后非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

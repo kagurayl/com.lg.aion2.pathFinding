@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我偶尔在[%dic:STR_DIC_W_LF2B_SZ_B4]附近看到了塔乌利窝棚。</p>
+          <p> </p>
+          <p>窝棚很脏，但周围却散落着一些看上去很贵的化石。</p>
+          <p> </p>
+          <p>看来是他们不知道化石的珍贵，而在有化石的地方建造了窝棚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然很想去拿几块，但又被塔乌利发现，所以心里一直很痒痒。</p>
+          <p> </p>
+          <p>如果能搜集到几块[%dic:STR_DIC_OBJ_LF2a_Fossil_Q3040]，就能赚到大钱。那样的话，就能每天吃扎马努克旅馆的包子了。</p>
+          <p> </p>
+          <p>守护者，你能帮我去拿几块化石回来吗？</p>
+          <p> </p>
+          <p>反正对塔乌利而言，只不过是一些石头而已，你去拿回来他们也不会注意的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真的愿意帮我吗？</p>
+          <p> </p>
+          <p>呐，我的心情感觉好了很多。</p>
+          <p> </p>
+          <p>请你从塔乌利窝棚的[%dic:STR_DIC_OBJ_LF2a_Fossil_Q3040]中，搜集[%dic:STR_DIC_I_QUEST_3040a]带回来。</p>
+          <p> </p>
+          <p>碎了的话价值就会下降，请你帮我搜集完整的化石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能帮我搜集化石，难道我还会让你白跑一趟？</p>
+          <p> </p>
+          <p>我会分你一份的。</p>
+          <p> </p>
+          <p>要是你还是不愿意，我也没办法。这样的机会可不多，你可得好好想想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来啦，来啦，呐呐。</p>
+          <p> </p>
+          <p>塔乌利窝棚？你去过了吗？拿回来了吗？[%dic:STR_DIC_I_QUEST_3040a]？</p>
+          <p> </p>
+          <p>我都快急死了，怎么这么磨蹭啊？快把东西给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出化石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去塔乌利窝棚吗？</p>
+          <p> </p>
+          <p>你该不会是害怕塔乌利吧？</p>
+          <p> </p>
+          <p>要是被塔乌利发现的话，直接把他们干掉不就行了？</p>
+          <p> </p>
+          <p>别磨蹭，快去把[%dic:STR_DIC_I_QUEST_3040a]拿回来，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真的是很好的化石。</p>
+          <p> </p>
+          <p>但是要卖掉好像并不容易。</p>
+          <p> </p>
+          <p>越是贵的东西，就越难交易出去。而且必须避开吉乌华灵大人的眼睛才行。</p>
+          <p> </p>
+          <p>我手上的现金不多。不过这么多辛苦费，应该可以了吧？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_LF2a_Fossil_Q3040]中值钱的东西，然后交给[%dic:STR_DIC_N_Shugo_LF2a_17]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说塔乌利窝棚附近有珍贵的化石。搜集化石，然后交给夏奥隆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>夏奥隆说偶然在塔乌利窝棚旁边看到了珍贵的古代化石，问我能不能帮他搜集几块化石。</p>
+          <p> </p>
+          <p>不忍心拒绝他的请求，帮他搜集到了化石，但是他说没什么现金，只给了我很少的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

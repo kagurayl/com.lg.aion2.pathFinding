@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您知道红色大地神殿被敌人占领了吗？</p>
+          <p> </p>
+          <p>那个地区是战斗最为激烈的地区。除了魔族之外，龙族、天族都在为了占领红色大地神殿和巴卡巴塔封印塔而战斗。</p>
+          <p> </p>
+          <p>现在我们失去了红色大地神殿，情况变得不利了。一旦失去优势，就很难再夺回来。严重的话，可能会导致整个战争的失败。</p>
+          <p> </p>
+          <p>马勒库坦主神带领我们来到了这里，我们决不能退却。</p>
+          <p> </p>
+          <p>必须夺回红色大地神殿，扭转目前的局势。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不认为现在的情况非常悲观。</p>
+          <p> </p>
+          <p>特别是巴卡巴塔激战地，不论是我们魔族、龙族，还是天族，情况全都不容乐观。越是混乱的时候，就越容易找到敌人的空档。</p>
+          <p> </p>
+          <p>这种时候，正是[%username]大人建立功勋的时候，不是吗？虽然我做不到，但我想[%username]大人应该可以做到。</p>
+          <p> </p>
+          <p>请您召集志同道合的同伴，组成部队，攻击红色大地神殿，打倒敌人的守护神将。</p>
+          <p> </p>
+          <p>如果[%username]大人能在夺回红色大地神殿的战斗中立下大功，马勒库坦主神也会关注您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭[%dic:STR_DIC_M_QUEST_21232]的事情可能会很困难。</p>
+          <p> </p>
+          <p>但是除[%username]大人之外，还有很多军团和守护者们在为此努力。</p>
+          <p> </p>
+          <p>如果能打倒敌人的守护神将，夺回红色大地神殿，伏魔殿远征军下属的科杰特就会负责守卫红色大地神殿的任务。</p>
+          <p> </p>
+          <p>[%username]大人，请您把自己的功绩告诉她，她就会给予您相应的奖励。</p>
+          <p> </p>
+          <p>希望您能成功完成任务。愿命运的庇佑与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>夺回红色大地神殿，比任何任务都要重要。</p>
+          <p> </p>
+          <p>[%username]大人即使立下再多的战功，如果不能夺回要塞，我们还是会在战争中失败。</p>
+          <p> </p>
+          <p>那样的话，[%username]大人就不过是个败军之将而已。请您再好好考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正因为有了无数人的帮助，我们才有可能夺回红色大地神殿。</p>
+          <p> </p>
+          <p>这是我们浴血奋战得到的要塞，必须尽全力守好它才行！</p>
+          <p> </p>
+          <p>需要修理破损的建筑，补充消耗的物品，在要塞周围设置警戒，要做的事情还有很多。</p>
+          <p> </p>
+          <p>对了，向要塞战中立下功劳的人发放奖励也是我的任务之一。[%username]大人，您也在夺回红色大地神殿的战斗中立了大功，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有人在我面前赞扬了[%username]大人的功劳。</p>
+          <p> </p>
+          <p>现在既然已经确认了功绩，我把奖励送给您。</p>
+          <p> </p>
+          <p>希望您能努力守卫红色大地神殿，为魔族的胜利而战。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒敌人的守护神将，夺回[%dic:STR_DIC_W_DF4_SZ_3021_A]</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_QUEST_21232]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Cozett]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从敌人手中夺回红色大地神殿。消灭敌人的守护神将，夺回红色大地神殿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马尔蒂让我参加夺回红色大地神殿的战斗。</p>
+          <p> </p>
+          <p>于是和同伴们一起前往红色大地神殿，打倒了敌人的守护神将。向科杰特报告之后，她给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

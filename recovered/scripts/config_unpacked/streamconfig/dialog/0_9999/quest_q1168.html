@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到大巡礼的旅程会如此艰难。</p>
+          <p> </p>
+          <p>能够穿越杜卡基部落对我们来说已经算是奇迹了，现在西莫罗格又挡在了前面。</p>
+          <p> </p>
+          <p>粮食丢了个精光，又饿了很多天。</p>
+          <p> </p>
+          <p>哎，难道五位主神觉得我们所受的磨难还不足以表现我们的虔诚吗...</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可我们决不放弃。这次大巡礼是我们夫妇一直以来的夙愿。</p>
+          <p> </p>
+          <p>无论如何，我们也要离开这里去幻影神圣所。</p>
+          <p> </p>
+          <p>虽然已经想出了打退西莫罗格的方法，可由于长时间的饥饿，现在浑身乏力，恐怕暂时没办法去做了。</p>
+          <p> </p>
+          <p>尊敬的守护者大人能不能帮助我们？</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感激您了。我会仔细说明，请按照我的方法去做。</p>
+          <p> </p>
+          <p>在这前面的洞穴里有[%dic:STR_DIC_QILA81]。这种东西有很强的催眠作用，一旦吃掉就会沉睡不醒。 </p>
+          <p> </p>
+          <p>请采集５棵那样的蘑菇。那样的话就能让挡路的西莫罗格全都沉睡过去。</p> 
+          <p> </p>
+          <p>啊，差点忘了，洞穴里有很多蜘蛛。请务必小心。</p>      
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幻影神的圣地就在眼前，却无法企及，真是心痛。</p>
+          <p> </p>
+          <p>可我们也不必太难过。 </p>
+          <p> </p>
+          <p>五位诸神让我们遭受这样的磨难一定是理由的。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就采集到了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_QILA81]生长在阴暗的角落，应该不容易找到...</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把昏睡蘑菇交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巡礼时间已经不多了。</p>
+          <p> </p>
+          <p>如果再耽搁就无法得到赐福了。</p>
+          <p> </p>
+          <p>所以请守护者大人务必设法采集一些 [%dic:STR_DIC_QILA81]回来。</p>            
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经采到[%dic:STR_DIC_QILA81]了吗。</p>
+          <p> </p>
+          <p>有这么多已经足够了。呆会儿我就把这些蘑菇撒在路上，让西莫罗格吃下去。</p>
+          <p> </p>
+          <p>尊敬的[%username]大人，真的非常感谢。如果能平安到达幻影神的圣地，我们一定会为您祈祷。愿阿里埃保佑您。</p>                    
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把可以使西莫罗格睡眠的蘑菇交给[%dic:STR_DIC_LA71]。</font></p>[%collectitem]</step>               
+    </steps>
+          <p><font font_xml="quest_summary">巡礼者夫妇因为西莫罗格而束手无策。为了使西莫罗格沉睡，以便继续巡礼之路，必须采集一些昏睡蘑菇。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在塔伦的巢穴附近见到了巡礼者阿娜希亚夫妇。他们准备赶往幻影神圣所，但由于途中被西莫罗格阻扰，而束手无策。</p>
+ <p> </p>      
+          <p>为了救助处于困境的巡礼者夫妇，帮他们采集了能够使西莫罗格睡眠的昏睡蘑菇。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

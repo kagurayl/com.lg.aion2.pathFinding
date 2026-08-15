@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去我就觉得您很出色，没想到您这么了不起，[%username]大人！</p>
+          <p> </p>
+          <p>奥德提取是需要耐心和等待的技术，没想到您能在如此短的时间内达到达人的境界。</p>
+          <p> </p>
+          <p>您成功地获得了两种奥德，现在可以获得达人资格了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥德提取名人，匠人的会堂的乌斯塔伦认可[%username]大人为奥德提取达人！</p>
+          <p> </p>
+          <p>但是光有我的认可是不够的。要获得达人的称号，需要经过大神官大人的同意。</p>
+          <p> </p>
+          <p>怎么样？您想接受这个称号吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我会给您写一封推荐信，您拿去交给阿盖希亚大神官达人。</p>
+          <p> </p>
+          <p>在幻影大神官那里接受称号并举行任命仪式，[%username]，您就能成为奥德提取达人了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是您觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>向合格的人授予相应的称号，这是很自然的事情。希望您不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，[%username]？</p>
+          <p> </p>
+          <p>你想聆听命运的教诲吗？</p>
+          <p> </p>
+          <p>如果你对前进的道路有什么疑惑，可以随时来找我。你是遵循马勒库坦主神的人，我会帮助你的……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读推荐信)你获得了成为奥德提取达人的资格吗？</p>
+          <p> </p>
+          <p>奥德提取达人是只有经过不断的努力和卓越的耐心才能获得的……我为你的热情而感叹。</p>
+          <p> </p>
+          <p>新的奥德提取达人，希望你能将你的能力用于魔界的发展。</p>
+          <p> </p>
+          <p>愿马勒库坦的庇佑与你同在</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Agehia]那里举行达人任命仪式</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从奥德提取名人乌斯塔伦处接受了成为达人的推荐。去阿盖希亚那里举行任命仪式吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥德提取名人乌斯塔伦说已经没有什么可以教给我，我已经达到了达人的境界。</p>
+          <p> </p>
+          <p>于是拿着他的推荐信去阿盖希亚大神官那里举行了任命式，接受了称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

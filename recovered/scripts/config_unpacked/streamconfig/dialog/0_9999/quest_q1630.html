@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡整个就是个博物馆啊。脚步所至之处，目光所及之处，全都是遗迹。</p>
+          <p></p>
+          <p>这个地区的遗迹真是让人惊讶。之前只在书本里读到过的海洋城市的遗迹居然这样完整的保存下来了。</p>
+          <p></p>
+          <p>我真的很想快点开始研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要先结束对皮托内恩沼泽的陶器的研究就可以了。只要有一只陶器，就可以知道曾在那里生活的人们的生活方式和文化水平。</p>
+          <p></p>
+          <p>但是有些家伙却妨碍了我的研究，那就是古代天人的灵魂和幽灵。</p>
+          <p></p>
+          <p>想做点研究怎么就这么难呢...想要的东西一样都得不到。</p>
+          <p></p>
+          <p>您如果可以的话，能把这些家伙们一下子给解决了吗？你能帮我去皮托内恩沼泽搜寻[%dic:STR_DIC_E_OBJ_LF3_Relic_Q1630]，然后把[%dic:STR_DIC_I_QUEST_1630a]带回吗？</p>
+          <p></p>
+          <p>报酬方面我一定不会亏待你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真是个通情达理的朋友。</p>
+          <p></p>
+          <p>在皮托内恩沼泽里，破败的建筑物碎片中，有[%dic:STR_DIC_E_OBJ_LF3_Relic_Q1630]。</p>
+          <p></p>
+          <p>虽然越多越好，但是考虑到重量会很重，你只要带5只回来就可以了。这些都是很古老的东西了，因此请一定小心带回来，不要打破。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能了解我这种明知古代的陶器就在眼前却无法看到的心情吗？</p>
+          <p></p>
+          <p>如果自己可以做的话，我早就抓了12回了。</p>
+          <p></p>
+          <p>对不起冲你发火了。一想起得不到我想要的史料，我就莫名其妙的冲动起来...</p>
+          <p></p>
+          <p>您再好好想想吧，如果改变了心意的话就再来找我。我会等着您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这就回来了吗？</p>
+          <p></p>
+          <p>不是空手回来的吧？</p>
+          <p></p>
+          <p>快把[%dic:STR_DIC_I_QUEST_1630a]交给我吧。一定要小心不要打破...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出古代陶器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看了是我太性急了。</p>
+          <p></p>
+          <p>我是如此迫切的等待着，请您一定要理解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，这就是你从皮托内恩沼泽带回来的东西吗？</p>
+          <p></p>
+          <p>你看，底座的样子果然和在西艾伦波利斯出土的不一样吧。</p>
+          <p></p>
+          <p>花纹也有些不同呢。多谢了。多亏了有你才能得到这么珍贵的东西。</p>
+          <p></p>
+          <p>请收下吧，这是对您的谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_E_OBJ_LF3_Relic_Q1630]收集陶器带给[%dic:STR_DIC_N_Miobera]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了使考古学家米奥贝拉得以研究古代海洋城市，需要为其带回皮托内恩沼泽的古代陶器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>考古学家米奥贝恩因为皮托内恩沼泽有很多古代海岸城市的遗迹而兴奋。但是因为有幽灵和古代天人的灵魂，而无法得到需要的史料。</p>
+          <p></p>
+          <p>为她找到了古代陶器，她表示非常感激。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

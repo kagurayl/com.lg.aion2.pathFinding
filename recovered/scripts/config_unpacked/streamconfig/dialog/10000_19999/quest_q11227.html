@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近好像有人在故意捉弄我，呐呐。</p>
+          <p> </p>
+          <p>铁锹的柄也不见了，衣服被泼上了泥浆，盒饭里好吃的东西都被吃掉了……</p>
+          <p> </p>
+          <p>而且挖到的宝石也不见了，害得我被梅伊宁臭骂一顿。</p>
+          <p> </p>
+          <p>不仅如此。不久前，我的工具箱被放在了一块很高的石头上，我从来没有去过那里。</p>
+          <p> </p>
+          <p>难道真的是出鬼了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我抬头看了一眼，发现有鲁萨尔卡爬到了很高的地方。</p>
+          <p> </p>
+          <p>没听说鲁萨尔卡会飞……它们到底是怎么上去的呢。</p>
+          <p> </p>
+          <p>它们是四兄弟，只要一看到我，就来跟我捣乱，呐呐。</p>
+          <p> </p>
+          <p>我一发火，它们就跑到很高的地方躲起来，不知道它们是怎么上去的。</p>
+          <p> </p>
+          <p>我都快被它们气死了。守护者，你一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得你可以抓住老四，逼它说出来。</p>
+          <p> </p>
+          <p>老大、老二和老三一直躲在上面，只有老四不太会躲。</p>
+          <p> </p>
+          <p>它好像在守着什么东西，所以没有爬上去……所以被我用铲子打了好几下。</p>
+          <p> </p>
+          <p>老四一定知道鲁萨尔卡可以爬到高处去的秘密，呐呐。</p>
+          <p> </p>
+          <p>你先去教训一下老四，然后再分别教训一下老三、老二和老大！顺序一定不能错！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就不能帮帮夏奥伦吗？</p>
+          <p> </p>
+          <p>最近我真的很累！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我，夏奥伦！虽然不会算钱，但却是个执着的术古。</p>
+          <p> </p>
+          <p>妈妈告诉我，凡是敢欺负我的人，一定要用铲子狠狠地教训。</p>
+          <p> </p>
+          <p>龙界的龙族一定也很怕我的铲子！</p>
+        </body>
+        </html> 
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你帮我教训过可恶的四兄弟了吗？</p>
+          <p> </p>
+          <p>真是谢谢你！现在终于可以放心做事，不用被梅伊宁骂了！</p>
+          <p> </p>
+          <p>今后如果需要帮忙，我会再跟你说的。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_B2_Bookie_NamedQ1_54_An]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_LF4_B2_Bookie_NamedQ2_54_An]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">消灭[%dic:STR_DIC_M_LF4_B2_Bookie_NamedQ3_53_An]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">消灭[%dic:STR_DIC_M_LF4_B2_Bookie_NamedQ_WindBox_53_An]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">和[%dic:STR_DIC_N_Shugo_LF4_6]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭骚扰夏奥伦的鲁萨尔卡4兄弟。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>夏奥伦说鲁萨尔卡4兄弟一直骚扰自己，但它们躲在高出，一直拿它们没办法，让我帮他教训教训它们。</p>
+          <p> </p>
+          <p>于是消灭了爱沙吉，利用间歇泉依次消灭了老三、老二和老大。回去之后，夏奥伦对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

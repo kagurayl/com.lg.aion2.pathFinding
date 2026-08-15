@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来等待着你的命运一定会非常曲折。</p>
+          <p> </p>
+          <p>继续活下去一定会很累。</p>
+          <p> </p>
+          <p>啧啧，连我都有点同情你，虽然和我没什么关系...</p>
+          <p> </p>
+          <p>不过又有什么办法呢。守护者连死都死不了，只能努力活下去。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么办法。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，听一下祝福之歌也许会好一点。</p>
+          <p> </p>
+          <p>你去找一下音律的守护者[%dic:STR_DIC_N_Agamo]。 </p>
+          <p> </p>
+          <p>他的歌声中蕴含着神圣的力量，也许会对我艰难的命运起一点帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Agamo]在伏魔殿广场的池塘旁边。</p>
+          <p> </p>
+          <p>你去好好求求他，他应该会给你唱祝福之歌。</p>
+          <p> </p>
+          <p>如果能得到他的祝福，5次苦难应该就能减少到3次。</p>
+          <p> </p>
+          <p>快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是看你的人生实在太艰难，所以才好心给你忠告，你却连谢都不谢我。</p>
+          <p> </p>
+          <p>我好心劝你你还不听，真是！</p>
+          <p> </p>
+          <p>看来你是希望一辈子痛苦。这都要怪你的臭脾气！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找我有什么事？</p>
+          <p> </p>
+          <p>如果您是来让我给您唱歌的，我就只能和您说声对不起了。</p>
+          <p> </p>
+          <p>我的歌声中包含了主神赐予的特殊的力量。</p>
+          <p> </p>
+          <p>我不想把这神圣的力量用在某些人的爱好上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">转述格林希尔德的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格林希尔德大人说这种话，看来[%username]大人您的命运真的是很艰难。</p>
+          <p> </p>
+          <p>只有这种时候才真正需要我的力量。</p>
+          <p> </p>
+          <p>我很高兴为[%username]大人您唱歌。</p>
+          <p> </p>
+          <p>但是您喜欢得到什么祝福呢？想要克服艰难的命运的话，必须要有力量和财富。</p>
+          <p> </p>
+          <p>请您选择您想要的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">“希望得到力量。”</Act>
+      <Act href="HACTION_SETPRO2">“财富好像更好一些。”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我唱的祝福之歌会赋予您巨大的力量，希望能为您克服艰难的人生有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Voice file="q2911_powersong.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望您永远富有，愿这些财富可以帮助您度过人生的重重难关。请接受我的祝福之歌。</p>
+        </body>
+        </html>
+    </Contents>
+    <Voice file="q2911_goldsong.ogg"/>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Agamo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">格林希尔德说我以后的人生会很艰难。去听听阿加莫的祝福之歌，说不定会有些帮助。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格林希尔德说我以后的人生会很艰难。为了减少人生的困苦，他让我去听阿加莫的祝福之歌。</p>
+          <p> </p>
+          <p>和阿加莫转达了格林希尔德的话，他问我力量和财富中选择哪个，然后为我唱了祝福之歌。  </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

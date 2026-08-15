@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我找你，是有件特别的事情想交给你。</p>
+          <p> </p>
+          <p>你知道鸢族吗？他们是大崩溃之后在龙界幸存下来的人。</p>
+          <p> </p>
+          <p>这件事正是和他们有关。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，鸢族和我们不是特别亲近，我想你应该知道。</p>
+          <p> </p>
+          <p>虽然现在关系一般，但严格地说，过去我们本出同根。</p>
+          <p> </p>
+          <p>而且又有龙族这个共同的敌人。</p>
+          <p> </p>
+          <p>想到我们今后要在格尔克马洛斯完成的事情，必须和鸢族保持友好关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想建立友好关系，就必须通过各种方法和他们接触。</p>
+          <p> </p>
+          <p>不管是真心的，还是处于战略目的，重要的是要和他们形成交流的纽带。</p>
+          <p> </p>
+          <p>你应该知道我想交给你什么任务了吧？</p>
+          <p> </p>
+          <p>请你去见见想和我们缔结友好关系的鸢族，结成友好的关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先去南部玛拉亚斯荒野，见见[%dic:STR_DIC_N_Aglauros]。</p>
+          <p> </p>
+          <p>据塔乌斯提尔百夫长说，只要能消灭掉龙族和龙信徒，他就会和魔族联手。</p>
+          <p> </p>
+          <p>最近他好像正在因为龙信徒而头疼，你去帮助他的话，他一定会很高兴的。</p>
+          <p> </p>
+          <p>如果通过这次的事情使双方形成信任关系，会对我们有很大的帮助。</p>
+          <p> </p>
+          <p>请你去见见阿格拉乌洛斯，向他提供帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好像不知道和鸢族的关系对我们来说是多么重要。</p>
+          <p> </p>
+          <p>如果你看不到任务的重要性的话，即使把任务交给你，也不会有什么结果。</p>
+          <p> </p>
+          <p>你走吧。</p>
+          <p> </p>
+          <p>不过我要告诉你，以后我不会把重要任务交给你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族的守护者来找我干什么！</p>
+          <p> </p>
+          <p>一般的魔族守护者都不太愿意和鸢族接触。</p>
+          <p> </p>
+          <p>你特地来找我，一定有什么事情吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是在问我需不需要帮助吗？</p>
+          <p> </p>
+          <p>我这里需要帮助的事情有很多。</p>
+          <p> </p>
+          <p>不远的地方就是龙信徒的巢穴，当然会有很多事情。</p>
+          <p> </p>
+          <p>[%username]，你来找我，看来魔族也想和我们联手吧？</p>
+          <p> </p>
+          <p>希望今后我们能互相协助！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Aglauros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要想完全占领格尔克马洛斯，必须搞好和鸢族的关系。去玛拉亚斯荒野问问阿格拉乌洛斯是否需要帮助吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴雷塔说要想完全占领格尔克马洛斯，必须搞好和鸢族的关系。</p>
+          <p> </p>
+          <p>他说有个名叫阿格拉乌洛斯的鸢族对和魔族联手的事情很感兴趣，让我去见见他，向他提供帮助。</p>
+          <p> </p>
+          <p>于是前往南部玛拉亚斯荒野见到了阿格拉乌洛斯，说可以帮助他之后，他说希望今后能联手对付龙信徒。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

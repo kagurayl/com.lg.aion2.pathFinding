@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>吉尔灵完蛋了，呐呐。</p>
+          <p> </p>
+          <p>有一批需要紧急准备的东西，但是有张订单我忘了交给格吉隆了。</p>
+          <p> </p>
+          <p>格吉隆那个笨蛋也不知道动动脑筋，只给我送来了订单上写的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做生意要讲信用。</p>
+          <p> </p>
+          <p>我说价钱好说，让他多准备一些的。他拍着胸脯说没问题……这样的话，我就要失去一个重要的客人了。</p>
+          <p> </p>
+          <p>守护者，请你帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，[%username]！这是订单，请你收好。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Shugo_LF2a_7]在美华灵发掘工会窝棚里，应该不难找到，呐呐。</p>
+          <p> </p>
+          <p>尽量快去快回。想到如果不能按时交货而可能受到的损失，我急得毛都要掉光了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你怎么能这样啊？</p>
+          <p> </p>
+          <p>吉尔灵一般不轻易求人的。</p>
+          <p> </p>
+          <p>这次的事情实在太急了。你再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？格吉隆很忙。</p>
+          <p> </p>
+          <p>有很多订单需要完成，我快疯掉了，呐呐。</p>
+          <p> </p>
+          <p>没事的话，请你以后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出订单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吉尔灵送来的订单啊，呐呐。</p>
+          <p> </p>
+          <p>他经常忘记订单，然后让别的小术古送过来。这次让你送来了啊。</p>
+          <p> </p>
+          <p>吉尔灵的健忘症如果不改改，就很难把生意做大。</p>
+          <p> </p>
+          <p>还好这次赶在送货之前把订单送来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]！</p>
+          <p> </p>
+          <p>我实在太着急，都没心思做事了。我担心错过和客人说好的交货时间，我等得脖子都快断了。</p>
+          <p> </p>
+          <p>要是这样的事情经常发生，我的脖子就要碰到屋顶了。</p>
+          <p> </p>
+          <p>订单送过去了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了，呐呐。</p>
+          <p> </p>
+          <p>要是失去了这个客人，我真的就只能关门了。多亏你走得快，我终于得救了。</p>
+          <p> </p>
+          <p>这是我给你的一点心意，你收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_LF2a_7]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Shugo_LF2_6]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把吉尔灵的订单交给格吉隆。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉尔灵是一个经营药店的普通术古。</p>
+          <p> </p>
+          <p>他忘了把重要的订单交给格吉隆，正在不知所措。</p>
+          <p> </p>
+          <p>帮他把订单送了过去，他对我表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

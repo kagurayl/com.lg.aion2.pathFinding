@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>硫磺树要塞被敌人夺走，对我们造成了很大的打击。</p>
+          <p> </p>
+          <p>不管用什么手段，都必须把要塞从他们手里夺回来。</p>
+          <p> </p>
+          <p>要想实现这一目的，必须首先清除他们的要塞驻军，破坏他们的防御体系。</p>
+          <p> </p>
+          <p>但是在要塞无法占领的时候发动攻击，没有任何的意义。</p>
+          <p> </p>
+          <p>只有进入可以占领状态时，才是最好的进攻机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在他们派遣了很多的兵力驻守希埃尔的东部要塞。</p>
+          <p> </p>
+          <p>消灭那些兵力，是用很小的力量对他们造成重大的打击的最好方法。</p>
+          <p> </p>
+          <p>龙族可以由我们来牵制，但是敌人如果是天族的话，就需要借助外部的力量。</p>
+          <p> </p>
+          <p>[%username]大人，这件事情您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>硫磺树要塞被天族占领之后，请[%username]大人耐心地等待。听到可以占领的信号后，请您马上开始执行任务。</p>
+          <p> </p>
+          <p>请您去把由天族战斗兵、弓兵、法师和祭司组成的[%dic:STR_DIC_M_2805_all]清除掉。不管是上级也好，还是中级、下级也好。</p>
+          <p> </p>
+          <p>并且在把他们除掉之后，把他们身上别着的[%dic:STR_DIC_I_QUEST_2805a]带回来作为证据。</p>
+          <p> </p>
+          <p>您也知道，这是深入敌人要塞的危险任务。所以一定要格外小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是太危险了，让您不敢站出来了？</p>
+          <p> </p>
+          <p>我也很理解。因为并不是和一两个天族战斗，而是要去被他们占领的要塞。</p>
+          <p> </p>
+          <p>但是这个任务非常重要，必须要由什么人来执行。</p>
+          <p> </p>
+          <p>如果您以后改变主意的话，请回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您安然回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您去过硫磺树要塞了吗？</p>
+          <p> </p>
+          <p>您应该把[%dic:STR_DIC_M_2805_all]除掉，并把[%dic:STR_DIC_I_QUEST_2805a]带回来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出守卫的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去吗？</p>
+          <p> </p>
+          <p>[%username]大人的任务对我们夺回硫磺树要塞非常重要。</p> 
+          <p> </p>
+          <p>请您不要放松对要塞的监视，清除掉[%dic:STR_DIC_M_2805_all]之后，把[%dic:STR_DIC_I_QUEST_2805a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把他们除掉了，并把武器带回来了啊。</p>
+          <p> </p>
+          <p>在占领着的要塞发生这种事情，他们一定会被吓得肝胆俱裂。</p>
+          <p> </p>
+          <p>真是辛苦您了。如果我们能重新夺回希埃尔的东部要塞的话，那将全是[%username]大人的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2805_all]，并把证据交给[%dic:STR_DIC_N_Glati]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了夺回硫磺树要塞，必须把驻军清除掉。清除要塞进入可以占领状态后出现的天族驻军，搜集守卫的武器。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格拉提说要想夺回被敌人夺走的硫磺树要塞，必须首先清除驻守要塞的驻军。</p>
+          <p> </p>
+          <p>他说在天族占据要塞的时候，需要我的帮助。</p>
+          <p> </p>
+          <p>于是去清除了天族要塞驻军，搜集守卫的武器交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

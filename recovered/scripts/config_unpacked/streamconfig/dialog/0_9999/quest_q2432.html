@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雾鬃部族至今还在追踪我们。</p>
+          <p> </p>
+          <p>虽然不知道是龙族的命令，还是雾鬃那些家伙自己的意志，感觉他们好像不想放过我们，咳昂。</p>
+          <p> </p>
+          <p>这样下去的话，不要说族长大人的安全，就是其他的同族都会被他们全部杀死。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮帮我们。</p>
+          <p> </p>
+          <p>请您把追踪我们的[%dic:STR_DIC_M_LycanFighterM_38_An]和[%dic:STR_DIC_M_LycanShamanM_38_An]清除掉，咳嗬。</p>
+          <p> </p>
+          <p>我们不能再让他们追击了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们就在[%dic:STR_DIC_W_DF2_SUB_E2]。</p>
+          <p> </p>
+          <p>应该正在寻找我们藏身的地方，咳昂。</p>
+          <p> </p>
+          <p>在他们发现我们藏在这里之前，请您把[%dic:STR_DIC_M_LycanFighterM_38_An]和[%dic:STR_DIC_M_LycanShamanM_38_An]除掉。</p>
+          <p> </p>
+          <p>拜托您了，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以我们的力量无法和他们对抗。</p>
+          <p> </p>
+          <p>这样下去，如果被他们发现的话，我们就束手无策了。</p>
+          <p> </p>
+          <p>如果您不希望银鬃部族灭亡的话，就请您再想一想，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雾鬃部族的动态怎么样，咳昂？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LycanFighterM_38_An]和[%dic:STR_DIC_M_LycanShamanM_38_An]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>暂时应该没有被他们发现的危险了，咳嗬。</p>
+          <p> </p>
+          <p>真是谢谢您。我们总算能喘口气了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除雾鬃部族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanFighterM_38_An]([%2]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanShamanM_38_An]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF2_NPC_Ananta]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">雾鬃部族还在追踪银鬃部族。去把雾鬃剑斗兵和雾鬃咒术师清除掉，阻止它们继续追踪。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿南塔说雾鬃部族至今还在追踪银鬃部族，说他们的安全受到了威胁。</p>
+          <p> </p>
+          <p>于是帮他清除掉了追踪他们的雾鬃剑斗兵和雾鬃咒术师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

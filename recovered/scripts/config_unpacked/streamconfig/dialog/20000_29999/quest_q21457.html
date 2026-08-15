@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(嘴里嘀咕着什么，低头沉思。)</p>
+          <p> </p>
+          <p>哎呀，我又光顾着出神，没看到您来了。</p>
+          <p> </p>
+          <p>我正在研究卡斯帕的生长过程，所以没有注意到您。</p>
+          <p> </p>
+          <p>卡斯帕是个充满了独特奥德气息的地方，研究得越深入，疑问就越多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就像树的年轮可以显示树的生长周期一样，卡斯帕的生长痕中也埋藏着很多秘密。</p>
+          <p> </p>
+          <p>但是您也知道，我没办法到卡斯帕内部去，因此缺少研究的标本。</p>
+          <p> </p>
+          <p>如果能搜集到足够的[%dic:STR_DIC_OBJ_IDElim_Mark_Q11457]，我的研究应该就能取得进展。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去搜集吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。我就知道[%username]大人一定会答应帮我的。</p>
+          <p> </p>
+          <p>我想可能会花一点时间，因为[%dic:STR_DIC_OBJ_IDElim_Mark_Q11457]只是些非常细微的花纹而已。</p>
+          <p> </p>
+          <p>细心的人，可以在上面看到依稀的曲线。</p>
+          <p> </p>
+          <p>也许不太容易找到，不过希望您能帮我采集到[%dic:STR_DIC_I_quest_21457a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得这件事太麻烦了吗？</p>
+          <p> </p>
+          <p>如果您急着赶路，可能确实没有心思去寻找[%dic:STR_DIC_OBJ_IDElim_Mark_Q11457]。</p>
+          <p> </p>
+          <p>虽然有点遗憾，不过没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我要的[%dic:STR_DIC_I_quest_21457a]搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出生长痕标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您一定会花一点时间。</p>
+          <p> </p>
+          <p>但是您怎么空着手回来了……不是专家的话，确实很难找到。</p>
+          <p> </p>
+          <p>不过能够进入卡斯帕内部的守护者不是很多。</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到卡斯帕的[%dic:STR_DIC_I_quest_21457a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的搜集到啦。</p>
+          <p> </p>
+          <p>啊，看到生长痕标本，真想快点开始试验。</p>
+          <p> </p>
+          <p>等我解开卡斯帕的秘密之后，一定会告诉[%username]大人的。</p>
+          <p> </p>
+          <p>来，这是我的一点心意。真是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_OBJ_IDElim_Mark_Q11457]，把采集到的标本交给[%dic:STR_DIC_N_Irkale]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">学者伊尔卡雷说正在对卡斯帕进行研究，但是缺少生长痕标本。去卡斯帕内部搜集生长痕标本吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>学者伊尔卡雷说需要生长痕标本，但是自己无法进入卡斯帕内部，让我去帮他搜集卡斯帕的生长痕。</p>
+          <p> </p>
+          <p>进入卡斯帕内部，找到了生长痕。把采集到的标本交给他之后，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好。如果你现在没事的话，我能拜托你一件事吗？</p>
+          <p> </p>
+          <p>这是件非常紧急的事，需要一个实力出众的人。</p>
+          <p> </p>
+          <p>我早就知道[%username]大人的实力和责任感，交给你的话我很放心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿盖伦村有一个人生病了。因为肚子饿吃了生长在村子附近的一种草，那种草好像是种毒草。</p>
+          <p> </p>
+          <p>现在那人全身浮肿，皮肤也变成了蓝色。</p>
+          <p> </p>
+          <p>村里的神官没有办法治疗，所以就找到我请求帮助。</p>
+          <p> </p>
+          <p>我大概知道了是什么毒，但是却没有制作解毒剂的材料。[%username]大人你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有时候需要以毒攻毒。</p>
+          <p> </p>
+          <p>现在我需要的是[%dic:STR_DIC_M_VespaNamed_23_n]的毒针和贝尔特伦的[%dic:STR_DIC_M_Debrie_16_n]的紫色皮膜。</p>
+          <p> </p>
+          <p>将这两种材料配合在一起，就应该能配制出解毒剂。</p>
+          <p> </p>
+          <p>怎么样？你能帮我采集这两种毒物吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_VespaNamed_23_n]在[%dic:STR_DIC_W_LF2_SZ_A1]。请你捕捉到它之后把毒针带回来。</p>
+          <p> </p>
+          <p>要想获得[%dic:STR_DIC_M_Debrie_16_n]的紫色皮膜，需要去贝尔特伦的[%dic:STR_DIC_FLA17]。皮膜里有毒性成分，拿的时候一定要小心。</p>
+          <p> </p>
+          <p>这是人命关天的事情，请你尽快把东西带回来。拜托你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说过这是人命关天的事情！</p>
+          <p> </p>
+          <p>我不能离开这里亲自去贝尔特伦，所以才来拜托你。没想到你竟然会拒绝...真是太过分了。</p>
+          <p> </p>
+          <p>知道了。我以后不会再找[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，[%username]！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1461a]和[%dic:STR_DIC_I_QUEST_1461b]都搜集到了吗？</p>
+          <p> </p>
+          <p>如果找到了的话，就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出毒针和皮膜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间你在干什么啊？</p>
+          <p> </p>
+          <p>我不是说过需要[%dic:STR_DIC_I_QUEST_1461a]和[%dic:STR_DIC_I_QUEST_1461b]吗！</p>
+          <p> </p>
+          <p>村里来人说了，病人的状况很危急。</p>
+          <p> </p>
+          <p>所以请你快点把解毒剂的材料带回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要的东西都拿回来啦！</p>
+          <p> </p>
+          <p>谢谢你。我得赶紧制作解毒剂。</p>
+          <p> </p>
+          <p>希望这个能挽救病人的生命...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_VespaNamed_23_n]和[%dic:STR_DIC_M_Debrie_16_n]，搜集解毒剂的材料，让后交给[%dic:STR_DIC_N_Seora]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">阿盖伦村有个居民因为吃了毒草而中毒了。必须找到塞奥拉需要的解毒剂的材料交给她。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞奥拉说阿盖伦村有个居民吃了毒草之后中毒了，需要马上制作解毒剂。</p>
+          <p> </p>
+          <p>于是按照塞奥拉的拜托搜集到了女王维斯帕的毒针和污染的沼泽里的泥巴德布里的紫色皮膜交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

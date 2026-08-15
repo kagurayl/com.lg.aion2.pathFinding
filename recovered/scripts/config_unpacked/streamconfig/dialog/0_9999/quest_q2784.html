@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能一直像最近这样的话，我就别无所求了。</p>
+          <p> </p>
+          <p>虽然也有问题需要解决，但是要塞的整顿工作进行得很顺利。可以说差不多到了收尾阶段。</p>
+          <p> </p>
+          <p>如果能把最后的一个问题解决，一切就完美了。但是最后一个问题好像有一点困难...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天族在要塞外部徘徊。</p>
+          <p> </p>
+          <p>虽然对他们进行过威胁，但是他们好像没有退却的意思，真是些相当难对付的家伙。</p>
+          <p> </p>
+          <p>所以我说，如果[%username]大人能帮我把他们清除掉的话，就太好了。</p>
+          <p> </p> 
+          <p>让他们不敢再打要塞的主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人果然就是好说话。</p>
+          <p> </p>
+          <p>要把天族的那些人全部清除掉会相当困难，因此我把其中最恶劣的人的名单告诉您。</p>
+          <p> </p>
+          <p>请您去把[%dic:STR_DIC_N_Menelaus]、[%dic:STR_DIC_N_Lyaeus]、[%dic:STR_DIC_N_Myrrha]、[%dic:STR_DIC_N_Leager]和[%dic:STR_DIC_N_Mors]这5个人清除掉。然后把他们身上的[%dic:STR_DIC_I_QUEST_2784a]带回来作为证据。</p>
+          <p> </p>
+          <p>请您准备好之后就马上出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是过于陶醉于胜利的喜悦之中了？</p>
+          <p> </p>
+          <p>这样松懈下来可不行。</p>
+          <p> </p>
+          <p>欧比斯不是可以这样放松的地方。光那些天族就已经很不好对付了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务已经完成了吗？</p>
+          <p> </p>
+          <p>好像还没用多长时间...</p>
+          <p> </p>
+          <p>您该不会是还没出发吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出守卫的纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果记不住的话，就请您记下来。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Menelaus]、[%dic:STR_DIC_N_Lyaeus]、[%dic:STR_DIC_N_Myrrha]、[%dic:STR_DIC_N_Leager]和[%dic:STR_DIC_N_Mors]。</p>
+          <p> </p>
+          <p>只有清除这些天族，才能获得守卫的纹章。</p>
+          <p> </p>
+          <p>好了，现在您能出发了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。在这么短的时间内，除掉了5名天族。</p>
+          <p> </p>
+          <p>真是辛苦您了。天族的那些家伙一定会被吓破胆的。</p>
+          <p> </p> 
+          <p>想到那些天族瑟瑟发抖的样子，我就忍不住要笑出来，呵呵呵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_N_Menelaus]、[%dic:STR_DIC_N_Lyaeus]、[%dic:STR_DIC_N_Myrrha]、[%dic:STR_DIC_N_Leager]和[%dic:STR_DIC_N_Mors]，然后把证据交给[%dic:STR_DIC_N_Ab1_1221_Quest_Da]</font></p>[%collectitem]</step>          
+               
+    </steps>
+          <p><font font_xml="quest_summary">为了完成要塞的整顿工作，去清除掉周围的守护者，并把守卫的纹章作为证据交给希尔德布兰特吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希尔德布兰特说只要清除掉在要塞周围徘徊的天族守卫，要塞整顿工作就能完美地完成，让我去清除掉5名守卫。</p>
+          <p> </p>
+          <p>清除掉了她所说的守卫，回去找到了她。她说天族一定会被吓破胆子，并满足地笑了。</p>    
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为您会休息一下再来，年轻就是好啊。</p>
+          <p> </p>
+          <p>我和[%username]一样大的时候也是这样，但现在只要一累，就全身酸疼...</p>
+          <p> </p>
+          <p>现在只剩下最后一个任务了。完成这次任务之后，扫荡红色魔狼作战就可以取得圆满成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问下一个任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您知道最近埃尔特内发生了很多劫持事件吧？</p>
+          <p> </p>
+          <p>据我所知，很多失踪者都被送到了建设基地。一开始作为工人，受了伤不能干活之后，就用作实验体。</p>
+          <p> </p>
+          <p>做出这种丧尽天良的事情的，是[%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae]。</p>
+          <p> </p>
+          <p>为了让可怜的人类不再无辜牺牲，请您把格拉比除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说到格拉比的时候，我太激动，差点把另一个需要除掉的人物忘了。</p>
+          <p> </p>
+          <p>那是一个名叫[%dic:STR_DIC_M_LF2_LehparKnNamedQ_40_Ae]的人，原来是边境小村里的守卫，不知道为什么加入了雷帕尔革命团。</p>
+          <p> </p>
+          <p>他成了总监督官潘特罗斯的手下，对我们除掉潘特罗斯的计划造成了妨碍。</p>
+          <p> </p>
+          <p>请您把他和[%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae]一起除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么到现在才拒绝呢？</p>
+          <p> </p>
+          <p>只要完成这个任务，扫荡红色魔狼作战就圆满结束了。</p>
+          <p> </p>
+          <p>既然由[%username]您开始，由您来结束不是更好吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次好像花了一些时间嘛。</p>
+          <p> </p>
+          <p>[%username]您办事一向很快，我还担心是不是出事了。</p>
+          <p> </p>
+          <p>对了，您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不愧是[%username]。</p>
+          <p> </p>
+          <p>即使是[%username]您，这次的任务应该也是很有难度的。</p>
+          <p> </p>
+          <p>来，请您收下。啊，请不要推辞。</p>
+          <p> </p>
+          <p>多亏了您，扫荡红色魔狼作战成功地结束了。要是可以的话，我还想多给一点呢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除建设基地的革命团头目</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2_LehparKnNamedQ_40_Ae]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Elram]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让爱拉姆可以完成扫荡红色魔狼作战，除掉监督官格拉比和护卫队长鲁伊特拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>爱拉姆说扫荡红色魔狼作战还剩最后一个任务，让我去除掉劫持事件的主犯监督官格拉比和背叛天族加入革命团的护卫队长鲁伊特拉。</p>
+          <p> </p>
+          <p>除掉格拉比和鲁伊特拉之后，向爱拉姆进行了报告。他说作战终于成功完成，并对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

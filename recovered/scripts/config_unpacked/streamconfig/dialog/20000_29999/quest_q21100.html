@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这辆车子与其修理，还不如重新做一个。</p>
+          <p> </p>
+          <p>损坏实在太严重了。</p>
+          <p> </p>
+          <p>不过正是有了这辆坏了的车子，难民们才能活下来。</p>
+          <p> </p>
+          <p>要不是上面的这些粮食，难民们早就在逃难的路上饿死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还没能克服战争的伤痛。提亚马特不知道什么时候又会喷火。</p>
+          <p> </p>
+          <p>我想快点修好车子，转移到安全的地方去。虽然不知道哪里才是安全的地方……</p>
+          <p> </p>
+          <p>修理车子需要[%dic:STR_DIC_I_QUEST_21100a]。</p>
+          <p> </p>
+          <p>在古树森林里有很多[%dic:STR_DIC_M_DF4_Rottentree_DR_53_An]，你能帮我去搜集他们的木板吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古树森林里的[%dic:STR_DIC_M_DF4_Rottentree_DR_53_An]也没能克服战争的伤痛。</p>
+          <p> </p>
+          <p>因此非常凶恶。</p>
+          <p> </p>
+          <p>不过你是守护者，应该不会怕它们。</p>
+          <p> </p>
+          <p>必须搜集20个洛特伦的[%dic:STR_DIC_I_QUEST_21100a]，才能修好车子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说守护者是为了帮助不幸的人而诞生的。</p>
+          <p> </p>
+          <p>你却不愿意帮助我们这些可怜的难民？</p>
+          <p> </p>
+          <p>你就一点同情心都没有吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>木板拿来了吗？</p>
+          <p> </p>
+          <p>必须是又厚又结实的木板，才能修好车子。</p>
+          <p> </p>
+          <p>不管怎么说，是这辆车子让我们活了下来，我们应该对它表示感谢。</p>
+          <p> </p>
+          <p>快把20个[%dic:STR_DIC_I_QUEST_21100a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出木板。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是捉弄我吗？</p>
+          <p> </p>
+          <p>到了这个地步还拼命地想活下去，你觉得很好笑吗？</p>
+          <p> </p>
+          <p>我必须把车子修好。</p>
+          <p> </p>
+          <p>我需要20个[%dic:STR_DIC_I_QUEST_21100a]。希望你快去帮我搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些木板看上去很不错。</p>
+          <p> </p>
+          <p>洛特伦的木头果然是最好的。</p>
+          <p> </p>
+          <p>谢谢你帮助我。我是难民，只能给你这个。</p>
+          <p> </p>
+          <p>希望我能把车子修好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_Rottentree_DR_53_An]，把搜集到的东西交给[%dic:STR_DIC_N_Shulack_DF4_3]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">难民普尔金说想修好逃难的时候带过来的车子，但是缺少材料。应该帮他去洛特伦身上搜集木板。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难民普尔金说逃难的时候，带了一辆车子出来，现在已经坏了，但是他想修好它。</p>
+          <p> </p>
+          <p>他让我帮着搜集修理车子用的木板。于是去打猎洛特伦，帮他搜集到了木板，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

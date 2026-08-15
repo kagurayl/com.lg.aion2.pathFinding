@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]，您还在这里啊。</p>
+          <p> </p>
+          <p>(折好信)太好了，我刚好有事找您。</p>
+          <p> </p>
+          <p>我从米奥贝拉那里收到了这封信。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她说又出现了透明贝珀。上次已经捕捉了那么多，却还是出现，看来透明贝珀的数量要比我想象的多。</p>
+          <p> </p>
+          <p>她说他们的攻击比上次更凶了，她都不敢到皮托内恩沼泽地带去。</p>
+          <p> </p>
+          <p>看来必须再去支援一下才行，但是我又不能离开这里。这件事我能交给您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能去的话，我就放心了。</p>
+          <p> </p>
+          <p>让别人去我还有点不太放心。</p>
+          <p> </p>
+          <p>您已经有经验了，只要消灭野营地入口处到[%dic:STR_DIC_W_LF3_SZ_F2]之间的[%dic:STR_DIC_M_Vapor_41_An]就可以了。</p>
+          <p> </p>
+          <p>我会给米奥贝拉回一封信的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您是个这么不负责任的人。</p>
+          <p> </p>
+          <p>这件事全是因为上次您没做好，所以又出现了问题。</p>
+          <p> </p>
+          <p>让您除掉7个透明贝珀就这个样子，看来以后我真的不能找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从皮托内恩沼泽地带回来吗？</p>
+          <p> </p>
+          <p>啊，我是从您腿上的泥土看出来的。</p>
+          <p> </p>
+          <p>对了，透明贝珀怎么样了？您把它们全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然处理得干净利落。</p>
+          <p> </p>
+          <p>这次透明贝珀应该不会再出现了吧……它们在攻击之前不会现形，所以没办法确定是否取得了成功，真是郁闷。</p>
+          <p> </p>
+          <p>不管怎样，您按照约定除掉了贝珀，我就得给您报酬。</p>
+          <p> </p>
+          <p>请收下。这是米奥贝拉让我给您的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭天加隆野营地入口处的[%dic:STR_DIC_M_Vapor_41_An]%([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tegis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说天加隆野营地的入口出现了透明贝珀。帮助忙着处理村里事务的泰奇思消灭透明贝珀。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰奇思说天加隆野营地又出现了透明贝珀，让我再去消灭贝珀。</p>
+          <p> </p>
+          <p>来到天加隆野营地，消灭了入口处的透明贝珀。回去之后，他给了我报酬，说是米奥贝拉让他给我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

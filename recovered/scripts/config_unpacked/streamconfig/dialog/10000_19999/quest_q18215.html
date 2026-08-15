@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙训练所是英格丽尔大人创造的幻影空间的最深处。</p>
+          <p></p>
+          <p>因此是非常不稳定的空间！</p>
+          <p></p>
+          <p>竞技场被严密地封印了起来，必须有神圣入场券的守护才能出入。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>但是入场券每天只能获得一次。</p>
+          <p></p>
+          <p>因为每天无法制作出那么多的量。</p>
+          <p></p>
+          <p>[%username]大人如果想要的话，我可以送您一张入场券。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好的，很好。</p>
+          <p></p>
+          <p>您能稍等一下吗？我要确认一下入场券的剩余数量。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您不需要竞技场入场券吗？</p>
+          <p></p>
+          <p>按我的看法……即使您现在不想马上接受训练，也最好把入场券收下。</p>
+          <p></p>
+          <p>这是每天只能获得一次的珍贵东西。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>请稍等一下。</p>
+          <p></p>
+          <p>快准备好了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>给，这是为[%username]大人准备的竞技场入场券。</p>
+          <p></p>
+          <p>希望您能好好使用。</p>
+          <p></p>
+          <p>这是魔道星们为了让大家能够接受训练而花费心血制作的珍贵物品。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_N_Eno]%那里领取竞技场入场券</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">和埃纽对话，领取第3神庙训练场的竞技场入场券。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>埃纽说竞技场入场券每天只能获得一次。</p>
+          <p></p>
+          <p>因此和她对话，获得了竞技场入场券。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

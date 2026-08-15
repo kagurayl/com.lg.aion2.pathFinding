@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道在要塞的南面有魔族驻扎吗？</p>
+          <p> </p>
+          <p>虽然不知道他们被赶出去之后在策划什么，但是我却非常担心。</p>
+          <p> </p>
+          <p>他们偶尔会在要塞附近出现，却什么都不干。</p>
+          <p> </p>
+          <p>只是两个人一伙在要塞周围观察，不知道在打什么主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正是因为不知道魔族在策划什么，所以让我很担心。</p>
+          <p> </p>
+          <p>这种时候最好的办法就是率先发动攻击。</p>
+          <p> </p>
+          <p>啊，并不是要把他们消灭掉。而是适当地威胁他们，然后观察他们的反应。</p>
+          <p> </p>
+          <p>如果他们在打什么主意的话，这个时候就会露出狐狸尾巴来。但是却一时找不到合适的人来办这件事。</p>
+          <p> </p>
+          <p>必须要渗透到魔族的根据地附近，所以是很危险的任务。[%username]大人，这件事我能拜托您去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>[%username]大人能接下这个任务，我就安心了。</p>
+          <p> </p>
+          <p>请您去除掉驻地里的魔族，把他们盔甲上刻着的[%dic:STR_DIC_I_QUEST_1784a]摘下来作为证据。</p>
+          <p> </p>
+          <p>有5个的话应该就够了。那就辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您也很忙啊，不过没想到您会一口拒绝。</p>
+          <p> </p>
+          <p>真的不行的话，那也没办法。</p>
+          <p> </p>
+          <p>我去问问别的人。如果您有推荐的人的话，就向我推荐一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天没看见魔族侦察兵。</p>
+          <p> </p>
+          <p>是因为[%username]您的行动产生了作用吗？</p>
+          <p> </p>
+          <p>请您把伏魔殿的纹章交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出伏魔殿的纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>数量看上去好像不够啊，是我看错了吗？</p>
+          <p> </p>
+          <p>必须除掉5名以上，才能向上面报告要求奖赏。</p>
+          <p> </p>
+          <p>我虽然很相信[%username]大人，但是上面的人可不会这样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，确实是伏魔殿的纹章。虽然看过很多次，但每次看到都会令人不快。</p>
+          <p> </p>
+          <p>但是执政官们被夺走纹章之后一定会觉得很耻辱，想到这个我的心情就好多了。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉在要塞周围徘徊的[%dic:STR_DIC_N_Rathgrid]、[%dic:STR_DIC_N_Laufey]、[%dic:STR_DIC_N_Goinn]、[%dic:STR_DIC_N_Modir]和[%dic:STR_DIC_N_Lodurr]，然后把证据交给[%dic:STR_DIC_N_Ab1_1221_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉在要塞周围侦察的执政官，然后搜集伏魔殿的纹章作为证据交给莫伊拉伊。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫伊拉伊说魔族的动态很异常，必须率先攻击魔族驻地。</p>
+          <p> </p>
+          <p>按照她的拜托除掉了要塞周围的执政官，并把伏魔殿的纹章作为证据交给了她。她说辛苦了，并给了我奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

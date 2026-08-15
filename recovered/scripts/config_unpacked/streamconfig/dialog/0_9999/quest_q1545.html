@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不得不再冒昧请求您帮我一个忙。</p>
+          <p> </p>
+          <p>这次的东西肯定没问题，这也是最后一次了。</p>
+          <p> </p>
+          <p>我可以发誓。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所有精灵都有精髓，是一种精气凝结的结晶体。</p>
+          <p> </p>
+          <p>精灵的性质还有能力都是由精髓决定的。看一个精灵的精髓就可以准确知道精灵的状态。</p>
+          <p> </p>
+          <p>正好我手上有其他地区的精灵的精髓，只要找到这个地方的[%dic:STR_DIC_M_ElementalEarth3_38_An]进行比较，就可以找到它们变邪恶的原因。</p>
+          <p> </p>
+          <p>怎么样，您肯帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的很感谢您。</p>
+          <p> </p>
+          <p>还有我差点忘了，一定要找[%dic:STR_DIC_I_QUEST_1545a]。 泥土的精髓太少了，很难进行比较。</p>
+          <p> </p>
+          <p>腐败大地精灵与被污染的地之精灵相比，块头大一点，可是对[%username]大人来说还是手到擒来。</p>
+          <p> </p>
+          <p>那么就请您小心上路吧。愿阿里埃庇护你!</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次真是最后一次麻烦您了...</p>
+          <p> </p>
+          <p>只要您找到大地之精髓，我就能找出大地精灵变得暴躁的原因了。</p>
+          <p> </p>
+          <p>请您一定要帮我顺利完成这一次的研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看这个。这就是我跟您说的大地精髓。</p>
+          <p> </p>
+          <p>和水的精髓不一样，大地精灵有些发灰白色。</p>
+          <p> </p>
+          <p>正常的大地精灵都是这样清澈湛蓝的，[%dic:STR_DIC_I_QUEST_1545a]怎么样呢?我能看看您带来的吗?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出大地精灵。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个怎么看也不像是大地精髓。</p>
+          <p> </p>
+          <p>看来您是错带了其他的了。</p>
+          <p> </p>
+          <p>请您再确认一下吧。我拜托您带回3个[%dic:STR_DIC_I_QUEST_1545a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这真是大地精灵吗？</p>
+          <p> </p>
+          <p>我第一次看到泛紫色的精髓。看来问题比我想的还要严重。</p>
+          <p> </p>
+          <p>哎呀，我要好好看看。</p>
+          <p> </p>
+          <p>来，请收下吧。这是对您多次帮助我的报答。</p>
+          <p> </p>
+          <p>太感谢您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">干掉[%dic:STR_DIC_M_ElementalEarth3_38_An]，拿到精髓，带给[%dic:STR_DIC_N_Sillen]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让锡兰能顺利结束研究，收集大地精髓。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡兰说正常的大地精灵和腐败的大地精灵相比较，就可以找出大地精灵变得暴躁的原因。请求你带回大地精髓。</p>
+          <p> </p>
+          <p>你没有办法拒绝殷切恳求你的锡兰，打败了精灵，带回了精髓。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

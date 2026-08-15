@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>获得了永恒之塔赐予的力量的守护者，有义务保护地上愚昧的人类和亚人种，将他们引导到正确的道路上去。</p>
+          <p> </p>
+          <p>很多人觉得最重要的事情是战争，但我们神圣守护会不能忘记神圣的真正含义。</p>
+          <p> </p>
+          <p>在现在这一瞬间，有无数的人类和亚人种被卷入了战争，失去了家园四处流浪，连饭都吃不饱。我们神圣守护会必须站出来帮助他们。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，请协助为天界和龙界的可怜的被造物筹集粮食。</p>
+          <p> </p>
+          <p>需要会员们筹集的粮食是[%dic:STR_DIC_G_QUEST_35032_01]、[%dic:STR_DIC_G_QUEST_35032_02]和[%dic:STR_DIC_G_QUEST_35032_03]。筹集到粮食后，请交给[%dic:STR_DIC_E_35007]。会员的小小付出，会给亚特雷亚带来巨大的幸福。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来找我有什么事吗？</p>
+          <p> </p>
+          <p>(查看我的眼色)是和神圣守护会有关的事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出粮食。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是接到了筹集粮食的委托书吧？</p>
+          <p> </p>
+          <p>但是由于流通上的问题，我们不可能接收所有种类的粮食。</p>
+          <p> </p>
+          <p>我们只接收指定的粮食，经过加工之后，用来帮助饥饿的人类和亚人种。</p>
+          <p> </p>
+          <p>请您去搜集[%dic:STR_DIC_G_QUEST_35032_01]、[%dic:STR_DIC_G_QUEST_35032_02]和[%dic:STR_DIC_G_QUEST_35032_03]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦！愿神圣的庇佑与您同在！</p>
+          <p> </p>
+          <p>有[%username]大人这样的守护者在，我们神圣守护会也感到非常荣耀。</p>
+          <p> </p>
+          <p>[%username]大人捐献的粮食将会发放给饥饿的人类和亚人种。我会用证物来报答[%username]大人的这种献身精神。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_Q35032]，然后交给[%dic:STR_DIC_E_35007]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，需要为饥饿的人类和亚人种准备粮食。</p>
+          <p> </p>
+          <p>搜集到了小南瓜、乐芭果和黄连鱼，交给因特尔蒂卡支部会员之后，他对我的协助表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

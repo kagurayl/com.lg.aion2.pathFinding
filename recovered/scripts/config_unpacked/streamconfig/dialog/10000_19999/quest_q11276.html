@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让您去圣战的痕迹帮我搜集含有魂的奥德，真是抱歉。但从目前来说，那是我们可以找到的最好的材料。</p>
+          <p> </p>
+          <p>再给我一点时间的话，我会寻找更方便、效率更高的材料，但现在没有这个时间。</p>
+          <p> </p>
+          <p>有这么多含有魂的奥德的话，应该就差不多了。真是辛苦您了！</p>
+          <p> </p>
+          <p>现在用奥德精炼工具箱取出杂质的工作差不多完成了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我不敢确定烙印之石仪式一定能成功，但我想即使搜集更多的材料，也不会使成功的可能性进一步提高了。</p>
+          <p> </p>
+          <p>是的，我们已经准备好了所有可以准备的东西。</p>
+          <p> </p>
+          <p>最后就只能祈祷我们好运了。</p>
+          <p> </p>
+          <p>[%username]大人，我再问您一次，您想举行开启烙印之石凹槽的仪式吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人的回答我已经清楚了。</p>
+          <p> </p>
+          <p>(拿出一颗发光的宝珠)这是用[%username]大人搜集到的含有魂的奥德精炼后获得的含有纯净灵魂力量的宝珠。</p>
+          <p> </p>
+          <p>您必须用心去感受这种光。</p>
+          <p> </p>
+          <p>好的，请闭上眼睛，集中精神。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">闭上眼睛集中精神。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没做好心理准备吗？</p>
+          <p> </p>
+          <p>好不容易做好了仪式的准备，您该不会到了这一步却没有勇气了吧？</p>
+          <p> </p>
+          <p>做好心理准备之后，请您再来和我说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了确保仪式成功，任何细小的事情都不能疏忽。</p>
+          <p> </p>
+          <p>[%username]大人，您也不想看到辛苦准备好的仪式以失败告终吧？</p>
+          <p> </p>
+          <p>请不要犹豫，集中精神。保持冷静。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">闭上眼睛集中精神。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把发光的宝珠举到高处，念诵咒语。)</p>
+          <p> </p>
+          <p>感觉到浑身发热了吗？新的烙印之石凹槽打开了吗？</p>
+          <p> </p>
+          <p>呼，太好了，仪式成功了！因为仪式还在试验阶段，我还担心会不会失败呢。</p>
+          <p> </p>
+          <p>这全都是因为[%username]大人的运气很好。</p>
+          <p> </p>
+          <p>愿在[%username]大人前进的路上，新的烙印之石凹槽能有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Daniele]对话，开启烙印之石凹槽</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">全部准备好了。和达尼埃雷对话，举行开启烙印之石凹槽的仪式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达尼埃雷说举行仪式的材料已经全部准备好了，问我愿不愿意举行烙印之石仪式。</p>
+          <p> </p>
+          <p>答应举行仪式之后，按照达尼埃雷的指示完成了仪式，成功地开启了新的烙印之石凹槽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为提亚马特的长剑事件，这个巴斯佩尔特村庄附近的雷帕尔革命团问题肯定要扩大。</p>
+          <p> </p>
+          <p>一直以来我们明明知道他们在那儿，因为兵力不足，除了他们到村庄里来挑起事端的情况以外，也没采取什么措施。</p>
+          <p> </p>
+          <p>不过现在苏埃伦队长知道了村庄附近有他们的窝点，肯定不能再这样坐视不管了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们要在队长追究责任之前对革命团采取适当的措施。</p>
+          <p> </p>
+          <p>再怎么说，除掉贼窝里的贼首是最有效的方法吧。</p>
+          <p> </p>
+          <p>早听说[%username]大人您的实力非凡。除掉贼首[%dic:STR_DIC_M_LehparAsChD_15_An]这件事拜托您去办，可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">答应试试。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先感谢您这么痛快地答应这项艰巨的任务。</p>
+          <p> </p>
+          <p>走出这个村子，从伊顿之湖一直往北走的话，可以看见一座桥。桥那边的洞穴就是敌人的巢穴。</p>
+          <p> </p>
+          <p>要把洞穴内外的[%dic:STR_DIC_M_LehparWaD_14_An]，[%dic:STR_DIC_M_LehparAsD_14_An]和全部除掉，还有他们的头目[%dic:STR_DIC_M_LehparAsChD_15_An]也一走除掉吧。</p>
+          <p> </p>
+          <p>那么，就看您的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2015-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我希望[%username]您 能在苏埃伦队长怪罪下来之前回来，正等着您呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LehparAsChD_15_An]和盗墓者们您都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">回答都除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真快啊。</p>
+          <p> </p>
+          <p>看来关于[%username]您的传闻果然不是假的。</p>
+          <p> </p>
+          <p>得赶快把消灭了雷帕尔革命团和他们头目的事情报告给要塞。这样一来就不会被问罪了吧。</p>
+          <p> </p>
+          <p>给，这是给您的一点儿心意，略表我的感激之情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Nokirjar]对话 </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">除掉雷帕尔革命团</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_M_LehparAsChD_15_An]([%5]/1)</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_M_LehparWaD_14_An]([%8]/5)</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_M_LehparAsD_14_An]([%11]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Nokirjar]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：除掉雷帕尔革命团的头目苏马尔浑和盗墓贼们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诺基日扎尔担心如果不能除掉雷帕尔革命团就会被要塞的队长苏埃伦兴师问罪。于是去盗墓贼的藏身之处把盗墓贼的头目苏马尔浑和盗墓贼们全都消灭了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

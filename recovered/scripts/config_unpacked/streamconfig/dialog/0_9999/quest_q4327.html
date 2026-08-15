@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚被分配到这个村子的时候，我不知道有多高兴。</p>
+          <p> </p>
+          <p>您也知道，伊拉西克村是有名的富裕村。</p>
+          <p> </p>
+          <p>(用手指摆出一个O字)那样的话，这个东西也会多一点……您明白我的意思吧？</p>
+          <p> </p>
+          <p>但是来了之后才发现落到自己手里的什么都没有。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过这次我想我发现了一个好机会。</p>
+          <p> </p>
+          <p>村里的富翁巴洛姆悬赏捕捉野狼！他说会给消灭野狼最多的人一大笔赏金。</p>
+          <p> </p>
+          <p>所以我说，您能帮我去搜集一些[%dic:STR_DIC_I_QUEST_4327A]%吗？</p>
+          <p> </p>
+          <p>这是只有我才知道的方法，用从[%dic:STR_DIC_M_CentipedeD_30_An]身上采集到的毒素，可以一次消灭很多的野狼。</p>
+          <p> </p>
+          <p>啊，当然我不会让您白帮我忙的。如果您能帮我，我会把赏金的一半分给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您到[%dic:STR_DIC_W_DF2_SUB_C3]去，在那里应该可以找到很多的[%dic:STR_DIC_M_CentipedeD_30_An]。</p>
+          <p> </p>
+          <p>别忘了，请帮我搜集7个[%dic:STR_DIC_I_QUEST_4327A]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切，果然在这里什么都捞不到……明白了。</p>
+          <p> </p>
+          <p>我会找别人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这么快就回来啦？</p>
+          <p> </p>
+          <p>动作比我想象的快得多嘛。</p>
+          <p> </p>
+          <p>快把拿回来的[%dic:STR_DIC_I_QUEST_4327A]%给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜈蚣的毒刺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，哎呀……我说的是7个[%dic:STR_DIC_I_QUEST_4327A]。</p>
+          <p> </p>
+          <p>这么一点用来捕捉野狼是不够的。</p>
+          <p> </p>
+          <p>要想确保赏金能归我们所有，就必须消灭掉足够多的野狼。请按照当初的约定，帮我去搜集7个毒刺吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>给，请您收下。</p>
+          <p> </p>
+          <p>赏金的一半差不多就是这些。</p>
+          <p> </p>
+          <p>我也得去捕捉野狼了。</p>
+          <p> </p>
+          <p>哈哈，看来我来这里是来对地方了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_CentipedeD_30_An]的毒刺，然后交给[%dic:STR_DIC_N_Kamer]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卡梅尔说为了消灭野狼，需要蜈蚣的毒刺。到红色熔岩山崖去消灭毒刺蜈蚣，搜集毒刺吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡梅尔说农场主巴洛姆正在悬赏捕捉野狼，他说如果能有蜈蚣的毒刺，就有自信可以获胜。</p>
+          <p> </p>
+          <p>他说如果我帮他搜集毒刺，就把赏金分给我。于是去帮他搜集到了蜈蚣的毒刺，卡梅尔非常高兴，按照约定把谢礼送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

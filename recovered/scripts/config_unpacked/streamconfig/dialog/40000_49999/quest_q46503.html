@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了搜集神奇的奇乌鲁乌的羽毛的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_Owllau_Pr_52]</p>
+          <p></p>
+          <p> 2. 位置：有人报告说曾经在阿武拉乌森林瀑布周围见到过他。</p>
+          <p></p>
+          <p> 3. 详情：据说用会使用神奇的咒术的阿武拉乌的羽毛做成护身符，可以让人实现愿望。</p>
+          <p> </p>
+          <p>找到神奇的奇乌鲁乌的行踪，并搜集到羽毛者，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>术古从来不迷信。</p>
+          <p> </p>
+          <p>不知道为什么有人会相信羽毛之类的东西，呐呐。</p>
+          <p> </p>
+          <p>看来最近守护者们好像有很多烦心事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出羽毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有找到神奇的奇乌鲁乌吗？</p>
+          <p> </p>
+          <p>有人说在阿武拉乌森林的瀑布周围看到过他，你去等等看吧。</p>
+          <p> </p>
+          <p>对了，即使发现了他，如果搜集不到羽毛的话，委托也不能算完成。这你应该知道吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得他的羽毛好像和其他阿武拉乌没什么区别啊，为什么这么受欢迎呢？</p>
+          <p> </p>
+          <p>不过只要有人愿意出委托费，不要说是阿武拉乌，就是卡里顿的毛，我们也能搜集得到。</p>
+          <p> </p>
+          <p>虽然我不敢保证到底是否真的有效。</p>
+          <p> </p>
+          <p>真是辛苦你了。这是委托费，请你收好，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF4_DaQ_Owllau_Pr_52]的羽毛，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了搜集神奇的奇乌鲁乌的羽毛的委托书。</p>
+          <p> </p>
+          <p>确认委托内容后，消灭了神奇的奇乌鲁乌，搜集到了羽毛。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

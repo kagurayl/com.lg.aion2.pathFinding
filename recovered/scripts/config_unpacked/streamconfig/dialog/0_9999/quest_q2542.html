@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这附近的生物们都受到了拉盖乌姆矿石的影响。</p>
+          <p> </p>
+          <p>其中最特别的就是德雷克，啧啧。</p>
+          <p> </p>
+          <p>德雷克们喜欢集中在高纯度的拉盖乌姆矿石周围，咳。</p>
+          <p> </p>
+          <p>也就是说只要找到那些家伙们聚集的地方，就可以找到高纯度的拉盖乌姆矿石！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可是就算知道这么好的情报，我也没办法动手，咳。</p>
+          <p> </p>
+          <p>如果只有一两只德雷克还好说，可是它们实在太多了。</p>
+          <p> </p>
+          <p>这就叫做镜里观花，啧啧！</p>
+          <p> </p>
+          <p>所以拜托守护者，你来帮助我吧。</p>
+          <p> </p>
+          <p>能代替我去收集 [%dic:STR_DIC_OBJ_Rakeum_Q2542]吗？</p>
+        </body> 
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_Rakeum_Q2542]如果不拿来用，那真是太可惜了，啧啧。</p>
+          <p> </p>
+          <p>好东西就是需要伯乐啊。</p>
+          <p> </p>
+          <p>好好观察德雷克和特雷基聚集的地方就可以找到。</p>
+          <p> </p>
+          <p>如果那些家伙们攻击，你就给它们点教训看看，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还有别的事情要忙啊，啧啧。</p>
+          <p> </p>
+          <p>不会是想一个人独吞 [%dic:STR_DIC_OBJ_Rakeum_Q2542]的吧？</p>
+          <p> </p>
+          <p>拉盖乌姆矿石不通过术古族是无法交易的！别做梦了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奖励越多的基纳，危险也会越高。</p>
+          <p> </p>
+          <p>不过如果我是守护者，肯定会去寻找宝物的，啧啧。</p>
+          <p> </p>
+          <p>不管多么危险的地方，咳。</p>
+          <p> </p>
+          <p>不过带来[%dic:STR_DIC_OBJ_Rakeum_Q2542]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将高纯度的拉盖乌姆矿石交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要的是 [%dic:STR_DIC_OBJ_Rakeum_Q2542]。</p>
+          <p> </p>
+          <p>既然已经说好了，我希望你还是遵守约定。</p>
+          <p> </p>
+          <p>拿来拉盖乌姆矿石后再找我吧，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就等着这个，咳。</p>
+          <p> </p>
+          <p>太好了，我还以为只是镜中的花呢，咳。</p>
+          <p> </p>
+          <p>辛苦你了，啧啧。</p>
+          <p> </p>
+          <p>收下吧，这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_OBJ_Rakeum_Q2542]，并交给 [%dic:STR_DIC_N_Shugo_DF3_10]。</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">与[%dic:STR_DIC_N_Shugo_DF3_10]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说德雷克和特雷基喜欢聚集在高纯度的拉盖乌姆矿石周围，收集高纯度的拉盖乌姆矿石，并交给扎耀伦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎耀伦表示，德雷克聚集的地方有高纯度的拉盖乌姆矿石，但是虽然知道，可是因为害怕德雷克而无法去采集。</p>
+          <p> </p>
+          <p>代替扎耀伦，给他采集了高纯度的拉盖乌姆矿石，他非常高兴，对此表示了感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

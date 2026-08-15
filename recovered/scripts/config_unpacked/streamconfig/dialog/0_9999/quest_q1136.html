@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，有什么需要请尽管说。</p>
+          <p> </p>
+          <p>除了没有短剑、长剑、棍、枪之外什么都有。</p>
+          <p> </p>
+          <p>质量？那是最基本的。为了让顾客买回去就能用，我经常用磨刀石把它们磨得闪亮亮的。</p>  
+          <p> </p>
+          <p>把手上还镶了水晶，闪闪发光，非常漂亮。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问关于水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>水晶是由奥德的气息形成的神秘的矿石。</p>
+          <p> </p>
+          <p>非常透明光亮，是最好的装饰品。如果拥有一把镶有水晶的武器，其他人都会羡慕你的。</p>
+          <p> </p>
+          <p>但是水晶很难找到。特别是大个的水晶一般都埋在地底深处，挖掘起来很困难。</p>
+          <p> </p>
+          <p>不过[%dic:STR_DIC_QILA76]%的话，花上一点功夫就可以挖到。</p>      
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此现在在湿地里已经很难找到水晶碎片了。水里可能还有一些。</p>
+          <p> </p>
+          <p>但是在水边有很多凶恶的动物，经常会遭遇不测。</p>
+          <p> </p>
+          <p>我手头的[%dic:STR_DIC_QILA76]%差不多都用光了，您能帮我一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>要装饰这次做的武器的话，需要5个[%dic:STR_DIC_QILA76]%。</p>
+          <p> </p>
+          <p>在要塞前面的河和水坑里可以找到水晶。河里应该最多。</p>
+          <p> </p>
+          <p>哦，对了。河的周边有很多奇怪的动物，一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我能自己去的话干嘛还找你啊！</p>
+          <p> </p>
+          <p>如果我去找水晶被开普拉咬死的话，谁来养活我的家人啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我认为武器也得漂亮一点。好看的武器可以提高战士的气质。</p>
+          <p> </p>         
+          <p>对了，我让你找的水晶碎片找到了吗？</p>
+          <p> </p>   
+          <p>有了水晶我才能完成这个。 </p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水晶碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道让我把没有任何装饰的刀卖给客人？</p>
+          <p> </p>   
+          <p>客人就要来拿刀了。</p>   
+          <p> </p>  
+          <p>请您务必快一点，拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是水里生长的[%dic:STR_DIC_QILA76]%啊。 </p>
+          <p> </p>
+          <p>比湿地里生长的还要透明。 </p>
+          <p> </p>
+          <p>谢谢。这是一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找要塞附近水中生长的水晶，交给[%dic:STR_DIC_LA75]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">武器商阿沛诺库说需要水晶碎片来装饰武器。把水晶碎片交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿沛诺库说需要水晶碎片来装饰武器，在水中找到水晶碎片并交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然搜集到了料理的材料，但是我还缺少一样东西，呐呐</p>
+          <p> </p>
+          <p>要制作出最好的料理的话，做料理用的水非常重要。</p>
+          <p> </p>
+          <p>但是以手头的这些水的话，是绝对做不出最好的料理的。</p>
+          <p> </p>
+          <p>当然我做出来的东西，不管是什么都会很好吃，但是却无法做出最美味的东西来，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据不同的材料，需要使用不同的水。</p>
+          <p> </p>
+          <p>根据料理的不同，有时候需要使用泉水，有时候需要使用河水，还有的时候还需要用到海水。</p>
+          <p> </p>
+          <p>现在要做的酱肉需要用到湖水。其中以[%dic:STR_DIC_W_DF2_SUB_B1]的湖的水最好。</p>
+          <p> </p>
+          <p>既然你帮了我，就顺便帮我打一点水吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你马上去[%dic:STR_DIC_W_DF2_SUB_B1]的湖那边。</p>
+          <p> </p>
+          <p>在那个附近有雷帕尔革命团出没，[%dic:STR_DIC_M_LehparWizardD_27_An]身上带有[%dic:STR_DIC_I_QUEST_2333a]。</p>
+          <p> </p>
+          <p>你帮我用那个铁罐打一点湖水回来，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊，为什么？</p>
+          <p> </p>
+          <p>难道我奥拉雄只能做普通的料理了吗？</p>
+          <p> </p>
+          <p>别这样，你就帮我去打点水吧。</p>
+          <p> </p>
+          <p>拜托了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，呐呐！</p>
+          <p> </p>
+          <p>我让你去打的湖水带回来了吗？</p>
+          <p> </p>
+          <p>带回来了的话，就快给我吧。快。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出铁罐。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>哇，真的把湖水打来了啊！</p>
+          <p> </p>
+          <p>谢谢，谢谢你，呐呐！</p>
+          <p> </p>
+          <p>现在应该可以制作料理了，请稍等一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>这段时间你在干什么啊！</p>
+          <p> </p>
+          <p>我不是让你去打一点湖水回来吗，呐呐！</p>
+          <p> </p>
+          <p>快去[%dic:STR_DIC_W_DF2_SUB_B1]帮我打一点湖水回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？这是什么啊！</p>
+          <p> </p>
+          <p>你打来的水里有一条德布里！</p>
+          <p> </p>
+          <p>这可怎么办呢，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">让他就那样扔掉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在说什么啊！</p>
+          <p> </p>
+          <p>术古绝对不会危害其他的生命。</p>
+          <p> </p>
+          <p>要是扔在这里的话，德布里会死掉的，呐呐。</p>
+          <p> </p>
+          <p>别这样，你去把它放到原来的湖里吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，呐呐！</p>
+          <p> </p>
+          <p>你把那条德布里放到湖里了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说放到湖里了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，谢谢你答应我的请求。</p>
+          <p> </p>
+          <p>如果你不把那条德布里放回去的话，我会吃不好饭也睡不着觉的。</p>
+          <p> </p>
+          <p>你帮我打来了水，又救了德布里，我必须报答你。</p>
+          <p> </p>
+          <p>来，请收下这个。到今天为止，我从来没有给过这么多辛苦费，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_QUEST_2333a]，去[%dic:STR_DIC_W_DF2_SUB_B1]湖取水后，交给[%dic:STR_DIC_N_Shugo_DF2_8]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">等待[%dic:STR_DIC_N_Shugo_DF2_8]做料理</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">把德布里放回湖里</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Shugo_DF2_8]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奥拉雄说需要做料理的水。必须去忘却盐漠帮他打取湖水。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥拉雄说要做出最好的料理的话，需要用到忘却盐漠的湖水。</p>
+          <p> </p>
+          <p>于是去除掉了附近的雷帕尔革命团，找到了铁罐，然后帮他打到了湖水。但是在铁罐里面发现了一条德布里。</p>
+          <p> </p>
+          <p>奥拉雄说不能杀死其他生命，在他的恳求下，把那条德布里放回了湖里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

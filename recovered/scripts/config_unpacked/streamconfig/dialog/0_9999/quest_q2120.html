@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村子里的弟兄们都好吗？那个二当家的还那样吗？</p>
+          <p> </p>
+          <p>对，说的就是那个讨厌的托夫。</p>
+          <p> </p>
+          <p>现在已经没什么关系了，才说这样的话。我在村子里的时候那个家伙总是纠缠我，我到[%dic:STR_DIC_W_DF1_5]来也都是因为他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管是什么原因吧，我觉得来这儿来对了。比村子安静，还可以背着头搞点外块什么的。 </p>
+          <p> </p>
+          <p>就有一样不好，也许是因为海风的缘故吧，比村子里冷得多。</p>
+          <p> </p>
+          <p>冷得夜里都没法睡觉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>再加上帐篷是用薄布做的，帐篷的里边和外边都没什么两样！</p>
+          <p> </p>
+          <p>所以我想过，如果有布拉斯皮做个垫子应该能好一点儿。你能不能给我弄点儿[%dic:STR_DIC_I_2120a]来？</p>
+          <p> </p>
+          <p>最近凡是皮子都要用在了制作护具上，根本没有剩余。</p>
+          <p> </p>
+          <p>我一定会好好谢你的，所以就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢！</p>
+          <p> </p>
+          <p>去打[%dic:STR_DIC_M_BraxD_5_n]弄些结实一点的毛皮给我吧。</p>
+          <p> </p>
+          <p>当然[%dic:STR_DIC_M_BraxBabyD_4_n]的皮也行，虽然不点薄，但可以多加几层。</p>
+          <p> </p>
+          <p>有8张左右就足够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊嚏，我要是好好的，要你帮什么忙啊？</p>
+          <p> </p>
+          <p>啊嚏，我要是好好的，要你帮什么忙啊？</p>
+          <p> </p>
+          <p>知道了，我再找找别的弟兄吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正等着你呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_2120a]弄来了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递过布拉斯的毛皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没去打布拉斯？</p>
+          <p> </p>
+          <p>你能不能不这样耗人精力呀？快去弄８张[%dic:STR_DIC_I_2120a]给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一面光滑一面柔软，是[%dic:STR_DIC_I_2120a]！</p>
+          <p> </p>
+          <p>我要立即就这些皮做垫子。</p>
+          <p> </p>
+          <p>谢谢！多亏了你，从今天开始就可以暖暖和和地睡觉了。</p>
+          <p> </p>
+          <p>给，这是给你的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_I_2120a]%拿给[%dic:STR_DIC_N_Denma]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收集[%dic:STR_DIC_I_2120a]%拿给[%dic:STR_DIC_N_Denma]</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但玛倾诉太冷了，简难以忍受，并拜托弄点皮来，好做张御寒的垫子．打了布拉斯，把它们的皮拿给了她，她很感激，因以后就可以暖暖和和地睡觉了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

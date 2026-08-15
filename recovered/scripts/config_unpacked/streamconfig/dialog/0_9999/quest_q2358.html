@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神经过于敏感，也会给生活造成很多的不便。</p>
+          <p> </p>
+          <p>最近眼睛经常发花，我担心可能由于身体不好造成的。</p>
+          <p> </p>
+          <p>在这么炎热的地方拼命地干活，身体总难免会出现点什么毛病。</p>
+          <p> </p>
+          <p>不过后来我才知道，那是燃烧的影魔造成的。因为它身体上散发出的热量，才会使周围看上去显得模糊的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然知道了原因，但是症状却没有好转。反而比之前更加重了。</p>
+          <p> </p>
+          <p>不过现在已经很忙了，也不能追在[%dic:STR_DIC_M_ShadowstalkerD_28_An]屁股后面去杀它。</p>
+          <p> </p>
+          <p>所以，如果您没什么事的话，能帮我去把燃烧的影魔除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也许你一看见它们，就会知道，原来那就是[%dic:STR_DIC_M_ShadowstalkerD_28_An]啊。</p>
+          <p> </p>
+          <p>因为它们的形体像影子一样模糊，而且燃烧着看上去很模糊的火焰。</p>
+          <p> </p>
+          <p>如果能除掉9头左右的话，我就能少烦心一点了。那就拜托你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来[%username]你也和我一样忙啊。</p>
+          <p> </p>
+          <p>总不能拉着有很多事要做的人来帮我做私人事情吧。</p>
+          <p> </p>
+          <p>忍着不就得了？反正又不是真的眼睛花了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_ShadowstalkerD_28_An]清除掉了吗？</p>
+          <p> </p>
+          <p>只要它们消失的话，我的神经应该就不会这么敏感了。</p>
+          <p> </p>
+          <p>偶尔我也很讨厌自己，为什么会这么敏感...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我听到的最让人高兴的消息。</p>
+          <p> </p>
+          <p>如果其他的调查也能这么顺利就好了...</p>
+          <p> </p>
+          <p>谢谢你。现在我终于可以集中精力进行调查了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_ShadowstalkerD_28_An]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Embla]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">埃姆博拉说因为燃烧的影魔的缘故，让她眼睛有点花。决定帮助忙着做其他事情的她清除燃烧的影魔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正在穆斯费尔火山执行任务的埃姆博拉说因为燃烧的影魔而眼睛发花，让她感觉很难受。</p>
+          <p> </p>
+          <p>但是因为她没有时间，所以只能忍着。于是去帮她清除掉了燃烧的影魔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，在来尤普罗西内村之前，我一直想去一个地方侦察。</p>
+          <p> </p>
+          <p>那就是永恒之岛，一个拥有很多传说的地方。</p>
+          <p> </p>
+          <p>我很想向尤普罗西内的村民们请求帮助，但他们一直都用怀疑的眼光看着我们，所以我没敢说出口。</p>
+          <p> </p>
+          <p>现在既然遇到了你，我就不得不提起永恒之岛的事情来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问永恒之岛的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这里一直往南走，有一个谁都无法接近的地方。从表面上看，那是树立在海面之上的3个浮游岛。</p>
+          <p> </p>
+          <p>但其实那里隐藏着一座肉眼看不见的桥。</p>
+          <p> </p>
+          <p>穿过那座桥，就可以到达一个名叫永恒之岛的地方。据说那里有几个守护着古代秘密的拥有强大力量的史匹格。</p>
+          <p> </p>
+          <p>那些史匹格的力量非常强大，一个人去的话很难对付它们。如果不把它们消灭掉，就无法到永恒之岛上去侦察。</p>
+          <p> </p>
+          <p>你能帮我把永恒之岛的神秘的史匹格消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们的名字是[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]、[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]和[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]。</p>
+          <p> </p>
+          <p>你最好和信得过的同伴一起去。那些家伙非常强，一个人很难对付。</p>
+          <p> </p>
+          <p>希望你能帮我解开长期以来对永恒之岛的好奇感。</p>
+          <p> </p>
+          <p>如果你能帮我消灭掉守护永恒之岛的史匹格，我一定会报答你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>永恒之岛不是什么人都能去的地方。</p>
+          <p> </p>
+          <p>但是身为守护者，不能因为要去未知的地方而感到害怕。</p>
+          <p> </p>
+          <p>这就是我们蓝色舰队的精神。如果你改变了主意，请随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过永恒之岛了吗？</p>
+          <p> </p>
+          <p>看不见的桥会引导冒险家到达永恒之岛的传说是真的吗？</p>
+          <p> </p>
+          <p>你遇到守护永恒之岛的拥有惊人力量的史匹格了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人吃惊！永恒之岛竟然真的存在！</p>
+          <p> </p>
+          <p>你一定和守护那里的史匹格进行了一番苦战吧？</p>
+          <p> </p>
+          <p>这是说好的报酬，是赠送给探索未知领域的守护者的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_LF3_name]永恒之岛的守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gorgos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">高尔高斯说想去永恒之岛侦察，帮他消灭那里的守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>高尔高斯说想去永恒之塔侦察，必须穿过看不见的桥才能到达那里。</p>
+          <p> </p>
+          <p>于是找到了永恒之岛，帮他消灭了守护者。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的东部要塞被魔族占领了！</p>
+          <p> </p>
+          <p>由于希埃尔之翼群岛和特米伦据点很近，所以是埃雷修兰塔中非常重要的军事要地。</p>
+          <p> </p>
+          <p>但是那样一块地方被魔族占领了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>而且后来龙族又攻击了希埃尔的东部要塞。不知道现在要塞到底掌握在哪一边的手里。 </p>
+          <p> </p>
+          <p>如果想要重新夺回要塞的话，就必须削弱他们的兵力。即便只能削弱一点也是好的。</p>
+          <p> </p>
+          <p>我想把守卫希埃尔的东部要塞的[%dic:STR_DIC_title_1749]除掉，[%username]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去希埃尔的东部要塞，把[%dic:STR_DIC_title_1749]清除掉。</p>
+          <p> </p>
+          <p>不管是魔族也好，龙族也好，都没有关系。因为不管是哪一边占领了要塞，我们都必须把他们赶出去。</p>
+          <p> </p>
+          <p>除了要塞里面，要塞外面应该也有守卫的人，所以一定要小心。最好能和志同道合的同伴一起过去。</p>
+          <p> </p>
+          <p>请您把他们除掉，然后把[%dic:STR_DIC_I_QUEST_1749a]带回来作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为天族的守护者，您不因为要塞被夺走而难过吗？</p>
+          <p> </p>
+          <p>我们在埃雷修兰塔这么辛苦工作的原因是什么？难道不是为了守护天界吗？</p>
+          <p> </p>
+          <p>那样的话，就当然必须把龙族和魔族赶出去！</p>
+          <p> </p>
+          <p>您居然会拒绝执行除掉龙族和魔族的任务...真让人不敢相信。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然令人心痛，但是目前还没能把要塞夺回来。</p>
+          <p> </p>
+          <p>不管用什么方法，我们都必须削弱要塞的防御力。</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_title_1749]除掉了吗？证据[%dic:STR_DIC_I_QUEST_1749a]也带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出要塞守护者的证件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去希埃尔的东部要塞啊。</p>
+          <p> </p>
+          <p>我们必须尽快把要塞夺回来，您这样不觉得太悠闲了吗？</p>
+          <p> </p>
+          <p>请您快去把[%dic:STR_DIC_title_1749]除掉，然后把[%dic:STR_DIC_I_QUEST_1749a]带回来作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把他们除掉，并把要塞守护者的证件带回来了吗？</p>
+          <p> </p>
+          <p>有像[%username]大人这样的人在不断努力，我相信我们很快就能把要塞夺回来。</p>
+          <p> </p>
+          <p>不到魔族和龙族消失的那一天，圣战就不会结束！</p>
+          <p> </p>
+          <p>愿阿里埃的保佑伴随每一个天族！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_title_1749]，然后把证据交给[%dic:STR_DIC_N_Rodementhes]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">希埃尔的东部要塞被夺走了，罗德曼达斯说这是不可接受的事情。召集同伴一起去把希埃尔的东部要塞的驻军除掉，并把证据带回去给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗德曼达斯说希埃尔的东部要塞被夺走了，因为那是靠近特米伦据点的军事要地，所以他非常担心。</p>
+          <p> </p>
+          <p>他说不管怎样都必须削弱要塞的防御力，才能夺回要塞。于是去希埃尔的东部要塞去除掉了驻军，把证据带回去交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

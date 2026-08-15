@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4335</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样？是不是感觉浑身充满了力量？</p>
+          <p> </p>
+          <p>(伸出手)那就拿钱来。</p>
+          <p> </p>
+          <p>看到这么英俊的脸之后浑身又充满了力量，难道不应该付钱吗！？</p>
+          <p> </p>
+          <p>哈哈哈，看来这个玩笑好像不怎么引人发笑嘛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(突然收起笑容)[%username]，最近我听到很多关于你的传闻。</p>
+          <p> </p>
+          <p>听说只要你出手，什么头疼的事情都能手到擒来，是真的吗？</p>
+          <p> </p>
+          <p>那我刚好有一件头疼的事想拜托你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，我就喜欢像你这么性格直爽的人。</p>
+          <p> </p>
+          <p>也不是什么特别难办的事情。</p>
+          <p> </p>
+          <p>来的路上你应该看到了。[%dic:STR_DIC_M_TrollReD_36_An]%挡住了结界塔的入口。</p>
+          <p> </p>
+          <p>因为它们，给进出伊拉西克村的人们造成了很大的不便，请你帮我把它们清理掉。</p>
+          <p> </p>
+          <p>你要去哪儿？我还没说完呢。</p>
+          <p> </p>
+          <p>还有一件事！请你把[%dic:STR_DIC_M_FethlotNmD_36_n]也一起消灭掉。</p>
+          <p> </p>
+          <p>它们把制作药水的罗根全部吃掉了……忍了这么久，我再也看不下去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈！哎呀，是我说得太认真了吗？</p>
+          <p> </p>
+          <p>请不要害怕。因为人手不够，所以我才会请你帮忙。</p>
+          <p> </p>
+          <p>知道吗？如果你能帮我这个忙，我会送你一样珍贵的东西。</p>
+          <p> </p>
+          <p>请好好考虑一下，帮帮我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦。</p>
+          <p> </p>
+          <p>(查看服装)之前没发现，你的穿着还挺时髦的。</p>
+          <p> </p>
+          <p>这些东西是从哪里买到的呢？10基纳应该能买到了吧？</p>
+          <p> </p>
+          <p>哈哈哈，开个玩笑。对了，我拜托你的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起！看来传闻也有对的时候嘛。</p>
+          <p> </p>
+          <p>你遵守了约定，我给你一张可以摸我这张英俊的脸十次的使用券。</p>
+          <p> </p>
+          <p>哈哈哈，玩笑，玩笑！看你这么严肃，怎么？不喜欢这个玩笑吗？</p>
+          <p> </p>
+          <p>请收下。不是什么奇怪的东西，请不要紧张。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭莫尔海姆结界塔周边让人头疼的东西</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FethlotNmD_36_n]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_TrollReD_36_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tyr]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">结界守护者提尔说固执的菲斯勒和特洛尔山贼让他非常头疼。去消灭让他头疼的东西，然后向提尔报告吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护者提尔说固执的菲斯勒和特洛尔山贼让他非常头疼，让我去帮他解决头疼的东西。</p>
+          <p> </p>
+          <p>解决了所有问题之后，回去找到了他。他跟我开了个无聊的玩笑，然后对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

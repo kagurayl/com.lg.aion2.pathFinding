@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，我很想见妈妈。</p>
+          <p> </p>
+          <p>想念妈妈温暖的手，想吃妈妈给我做的饭。</p>
+          <p> </p>
+          <p>但是现在什么东西都很紧缺，这种想法太不切实际了，对吧？</p>
+          <p> </p>
+          <p>不过我还是很想念妈妈做的饭。最后能再吃一次也是好的...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说可以帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您帮我去搜集生长在阿纳斯神秘泉附近的[%dic:STR_DIC_E_berry_n_c_20b]和生长在神秘泉里的[%dic:STR_DIC_E_fish_n_c_20b]。</p>
+          <p> </p>
+          <p>妈妈经常给我做的食物是乡铃果酱和凉拌黄鳍金枪鱼。</p>
+          <p> </p>
+          <p>如果能吃到这些的话，我应该就会少想妈妈一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>您帮我搜集到[%dic:STR_DIC_E_berry_n_c_20b]和[%dic:STR_DIC_E_fish_n_c_20b]之后，我得拜托埃尔尼亚阿姨帮我把菜做出来。</p>
+          <p> </p>
+          <p>现在没什么吃的东西，如果能和其他人分享的话就更好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也知道，在这种时候想吃妈妈做的饭是真的很傻。</p>
+          <p> </p>
+          <p>但是呵呵，不知道为什么却总是想起来。</p>
+          <p> </p>
+          <p>要是妈妈在的话，口渴和饿肚子又算是什么辛苦的事情啊。</p>
+          <p> </p>
+          <p>妈妈...呜呜呜，我想见妈妈...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去阿纳斯神秘泉把乡铃和黄鳍金枪鱼带回来了吗？</p>
+          <p> </p>
+          <p>虽然那里有可怕的野兽和雷帕尔革命团，但是对守护者大人来说应该不算什么吧？</p>
+          <p> </p>
+          <p>我就等着勇敢的[%username]大人把他们全部打倒，把我想要的东西带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出乡铃和黄鳍金枪鱼。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去阿纳斯神秘泉吗？</p>
+          <p> </p>
+          <p>在那里应该有很多新鲜的[%dic:STR_DIC_E_berry_n_c_20b]和[%dic:STR_DIC_E_fish_n_c_20b]。</p>
+          <p> </p>
+          <p>请您帮帮我，让我可以和别人分享妈妈曾经做给我吃的食物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把我让您搜集的东西带回来啦！</p>
+          <p> </p>
+          <p>谢谢您！真的谢谢您！</p>
+          <p> </p>
+          <p>我这就去让埃尔尼亚阿姨帮我做成果酱和凉拌金枪鱼。</p>
+          <p> </p>
+          <p>这么多的话，这里所有的人应该都能分到一份。</p>
+          <p> </p>
+          <p>真的非常非常感谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">为[%dic:STR_DIC_N_Teos]采集食物</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">泰奥斯想吃去世的妈妈做的食物。帮他采集[%dic:STR_DIC_E_berry_n_c_20b]和[%dic:STR_DIC_E_fish_n_c_20b]吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>失去父母，踏上避难道路的泰奥斯想吃妈妈曾经做给他吃的菜。</p>
+          <p> </p>
+          <p>于是为了让他能够吃到食物，帮他去阿纳斯神秘泉采集了乡铃和黄鳍金枪鱼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在需要更确实的证据。</p>
+          <p> </p>
+          <p>虽然没有找到确实的物证，但从情况看，一定有什么事情。</p>
+          <p> </p>
+          <p>最近大咒术师肯夏夏经常在奥德精炼所出没，审讯他的话，说不定能知道些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae]是负责提炼奥德石的克拉尔。</p>
+          <p> </p>
+          <p>要想制作出新武器，必须用特殊的方法加工奥德石。所以他一定知道些什么。</p>
+          <p> </p>
+          <p>请你去把他杀掉，寻找有没有可以作为证据的东西。</p>
+          <p> </p>
+          <p>如果能找到证据，说不定就能知道他们的阴谋。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae]是个很不好对付的家伙。</p>
+          <p> </p>
+          <p>你去奇夏尔部落侦察的时候应该也看到了，在[%dic:STR_DIC_W_SensoryArea_Q1661B]有很多保护肯夏夏的人。</p>
+          <p> </p>
+          <p>请你一定要召集同伴一起去。</p>
+          <p> </p>
+          <p>请你抓紧时间，尽快找到物证。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能抓到[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae]，一定可以找到确切的证据。</p>
+          <p> </p>
+          <p>这是个艰巨的任务，我也不能强迫你去。</p>
+          <p> </p>
+          <p>你走吧。我会找其他的守护者的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看到奇夏尔部落好像发生了骚动，是因为你吗？</p>
+          <p> </p>
+          <p>为了防止克拉尔冲到这里来，我们加强了戒备。</p>
+          <p> </p>
+          <p>对了，你找到什么证据了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出尖锐的奥德石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>抓到[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae]的话，一定能找到什么证据。</p>
+          <p> </p>
+          <p>请你快去寻找那个证据！</p>
+          <p> </p>
+          <p>这不是可以让你磨蹭的事...难道你不知道现在的情况有多紧急吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>头一次看到这种样子的奥德石。克拉尔提炼得到的奥德石一般都是圆形的...</p>
+          <p> </p>
+          <p>这么尖锐的东西，好像是要镶到什么地方，或者用来刺人的东西。</p>
+          <p> </p>
+          <p>不知道他们把奥德石弄得这么尖锐，是不是想把它用作致命的武器。</p>
+          <p> </p>
+          <p>得拿去让武器专家看看，说不定能知道些什么。我得马上把它送到极乐世界去。</p>
+          <p> </p>
+          <p>谢谢你帮我找到了证据。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_SensoryArea_Q1661B]杀死[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae]，搜集证据，然后交给[%dic:STR_DIC_N_Piros]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了查清奇夏尔部落的图谋，需要有更加确实的证据。去奥德精炼所杀死大咒术师肯夏夏，搜集证据。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮洛斯说虽然没有物证，但奇夏尔克拉尔一定在图谋些什么。</p>
+          <p> </p>
+          <p>他说最近负责奥德精炼的克拉尔大咒术师肯夏夏进场在奥德精炼所出没，让我去把他杀死，寻找证据。</p>
+          <p> </p>
+          <p>把找到的尖锐的奥德石交给了他，他说要送去极乐世界分析它的真正用途。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

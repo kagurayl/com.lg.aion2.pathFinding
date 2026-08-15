@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您好像很眼熟啊，有什么事吗？啊，是帮我消灭蜘蛛的那位啊？</p>
+          <p> </p>
+          <p>我记不住魔族……不，执政官的脸。</p>
+          <p> </p>
+          <p>您帮了我的大忙，实在是太感谢了。</p>
+          <p> </p>
+          <p>但是不知道它们在哪里产了……嗯，产了卵，仍然有很多蜘蛛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去就危险了。消灭了那么多，但数量还是在继续增加……</p>
+          <p> </p>
+          <p>现在虽然只是对采集造成了妨碍，但如果继续繁殖的话，情况就会变得更加危险。不仅是采集工，还会有更多的人……陷入危险。</p>
+          <p> </p>
+          <p>[%username]大人，您是位能干的[%userclass]，我想再拜托您一件事。</p>
+          <p> </p>
+          <p>您能继续去帮我消灭[%dic:STR_DIC_M_OctasideD_21_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我，真是太感谢了。</p>
+          <p> </p>
+          <p>请您去消灭12只[%dic:STR_DIC_M_OctasideD_21_An]，然后回来告诉我。</p>
+          <p> </p>
+          <p>如果您还有余力的话，当然消灭得越多越好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>以[%username]大人的实力，12只蜘蛛应该很快……嗯，一下子就能消灭掉了吧。</p>
+          <p> </p>
+          <p>只要您能帮我消灭蜘蛛，我会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人果然是值得期待的魔族……人啊。</p>
+          <p> </p>
+          <p>看来我是找对人了。</p>
+          <p> </p>
+          <p>蜘蛛消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>蜘蛛的繁殖力很强，一定还会继续出现。</p>
+          <p> </p>
+          <p>这次[%username]大人真是帮了我的大忙。有时间的话，请您继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_OctasideD_21_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Medea]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照梅戴娅的委托，消灭不断繁殖的阴影蜘蛛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅戴娅说蜘蛛的数量不见减少，如果继续增加，将会对人们造成威胁。</p>
+          <p> </p>
+          <p>于是帮她消灭掉了阴影蜘蛛，她对我表示感谢，并让我继续帮她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

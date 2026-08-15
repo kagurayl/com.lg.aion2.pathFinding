@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，之前我也说过，你的命运将会非常曲折。</p>
+          <p> </p>
+          <p>不过没有必要担心，只要你按照我说的去做，就可以改变自己的未来。</p>
+          <p> </p>
+          <p>我看你好像在努力学习技能，实战方面怎么样呢？有没有努力积累经验呢？</p>
+          <p> </p>
+          <p>不知道你最近有没有到格尔克马洛斯去。如果没去过的话，你可以去那边看看。那边是龙族的土地，应该可以积累到很多新的经验。</p>
+          <p> </p>
+          <p>对了，你会使用上级烙印之石吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。没想到你自己就学会了。</p>
+          <p> </p>
+          <p>去了龙界你就会知道，当然即使不去你也知道，要想对付天族和龙族，上级烙印之石是非常必要的。</p>
+          <p> </p>
+          <p>你的实力怎么样？技能不是学会了就行了。必须通过不断的练习，培养自己的感觉，这样才能说是熟练掌握了技能。</p>
+          <p> </p>
+          <p>刚好命运之神庙发来了公文，让我给熟练使用上级烙印之石的治愈星和护法星发放奖励。</p>
+          <p> </p>
+          <p>你愿意证明自己的实力，领取奖励吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，应该用什么东西来确认你的实力呢……</p>
+          <p> </p>
+          <p>嗯，你是护法星，就用***吧。你去使用***10次，然后回来找我。</p>
+          <p> </p>
+          <p>通过这样的练习，即使是新手，应该也可以熟练掌握上级烙印之石技能了。</p>
+          <p> </p>
+          <p>我要说的就是这些。你快去完成任务吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是让人无法理解，还有比这更重要的事情吗？</p>
+          <p> </p>
+          <p>知道了。不愿意的话，我也不会拉着你不放。</p>
+          <p> </p>
+          <p>我破例再给你一次机会，如果之后改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>我已经说过了，并不是时间越少就越好，重要地是需要进行充分的练习。</p>
+          <p> </p>
+          <p>来，让我来确认一下你是否使用了10次[%dic:STR_DIC_E_DP_Pr]。你靠近一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">靠近一些。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用手放在我的头上)你遵守了约定。</p>
+          <p> </p>
+          <p>现在你闭着眼睛也能使用***了吧？来，拿着。这是命运之神庙给你的奖励。</p>
+          <p> </p>
+          <p>希望你能和***一样熟练使用。可以的话，请你去格尔克马洛斯为魔族提供帮助。</p>
+          <p> </p>
+          <p>马勒库坦主神及其麾下的军团被派到了那里，但好像遇到了很多困难。如果有你这样有能力的护法星过去帮忙，一定可以大大提高他们的实力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Pr]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Freyr]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">据说命运之神庙正在向能够熟练使用上级烙印之石的护法星发放上级烙印之石。使用***，证明自己可以熟练使用上级烙印之石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普莱尔说命运之神庙正在向能够熟练使用上级烙印之石的治愈星和护法星发放上级烙印之石。</p>
+          <p> </p>
+          <p>按照普莱尔的指示，熟练掌握了***。回去之后，他按照约定，给了我一块新的上级烙印之石。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

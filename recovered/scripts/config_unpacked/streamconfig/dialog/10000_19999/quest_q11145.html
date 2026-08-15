@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>头疼一直不见好，所以我咨询了一下治愈的守护者，他建议我静养一段时间。</p>
+          <p> </p>
+          <p>但是真的可以吗？</p>
+          <p> </p>
+          <p>这里是永恒之塔的光芒无法到达的龙界！是在提亚马特的力量下颤抖的英吉斯温！是在紧张得让人透不过起来的地下要塞！</p>
+          <p> </p>
+          <p>……让我怎么静养啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">让他镇定。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，不好意思，我太激动了。在一向信任我的部下面前这么失态，好像太失礼了。</p>
+          <p> </p>
+          <p>虽然前面有很多考验，但是我不想放弃任务。</p>
+          <p> </p>
+          <p>在打倒提亚马特，在提亚玛兰塔插上极乐世界的旗帜之前，我绝不会停下来。</p>
+          <p> </p>
+          <p>不过正如治愈的守护者所说，我必须得休息一下。</p>
+          <p> </p>
+          <p>在我休息的时候，你能帮我执行一个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>地下要塞的崇拜者不仅为数众多，而且还分等级。</p>
+          <p> </p>
+          <p>要想给他们造成致命的打击，必须先了解他们的等级体系。</p>
+          <p> </p>
+          <p>我想请你去做的，是消灭地下要塞等级最低的人。</p>
+          <p> </p>
+          <p>你去消灭战士系列的[%dic:STR_DIC_M_LF4_B6_FanaticFi_53_An]和[%dic:STR_DIC_M_LF4_B6_FanaticKn_53_An]，以及法师系列的[%dic:STR_DIC_M_LF4_B6_FanaticWi_53_An]和[%dic:STR_DIC_M_LF4_B6_FanaticEl_53_An]，然后回来见我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就没办法了。</p>
+          <p> </p>
+          <p>你也有自己要做的事情……</p>
+          <p> </p>
+          <p>你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>休息的时候，我想了很多。</p>
+          <p> </p>
+          <p>刚觉醒的时候，刚进入神庙的时候，刚成为守卫的时候……</p>
+          <p> </p>
+          <p>那时我只会向前看，不知道自己还会有累垮的一天。</p>
+          <p> </p>
+          <p>你回来找我，事情一定解决了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你为我操心，[%username]。</p>
+          <p> </p>
+          <p>虽然头痛还没有完全好，但暂时好像恢复了一点。</p>
+          <p> </p>
+          <p>休息的时候我想了一下，我最近好像太安逸了。事实上，我应该连为这些而苦恼的时间都没有，不是吗！？</p>
+          <p> </p>
+          <p>天族要走的路还很长。我们难道不是为了执行永恒之塔的意志而来到这里的吗！</p>
+          <p> </p>
+          <p>我今后要更加努力！[%username]，希望你能继续帮助我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭地下要塞的崇拜者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Q11145a]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Q11145b]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sueros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照苏埃洛丝的指示，消灭地下要塞的崇拜者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在精神上受到很大压力的苏埃洛丝让我在他休息的时候帮他消灭崇拜者。</p>
+          <p> </p>
+          <p>去地下要塞消灭了崇拜者，回去之后，他说自己会更加努力，让我今后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

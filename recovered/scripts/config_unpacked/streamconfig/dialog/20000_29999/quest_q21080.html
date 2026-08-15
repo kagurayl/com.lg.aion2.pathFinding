@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿着卷轴，抓耳挠腮)哈，怎么办呢？为什么把这种事交给我呢……</p>
+          <p> </p>
+          <p>(略微有点吃惊的表情)啊，[%username]大人！您还在要塞啊？</p>
+          <p> </p>
+          <p>对了，[%username]大人的话……</p>
+          <p> </p>
+          <p>不好意思，您能帮我一个忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沃夫冈研究所长下达了命令，让我把这封信交给克鲁克盆地试验场的丹斯凯尔。</p>
+          <p> </p>
+          <p>据说和人工奥德生成器有关，让我马上送过去。</p>
+          <p> </p>
+          <p>他说利用奥德飞行装置前面的风路，可以比特急邮件更快地送到那里……</p>
+          <p> </p>
+          <p>但是[%username]大人您也知道，我还不会利用风路飞行。不，老实说，我不敢通过风路飞行。</p>
+          <p> </p>
+          <p>[%username]大人，你能帮我把这封信交给丹斯凯尔吗？拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。[%username]大人一定是马勒库坦主神派来帮助我的人！</p>
+          <p> </p>
+          <p>据所长说，利用奥德飞行装置前面的风路到达[%dic:STR_DIC_W_SZ_DF4_A2]之后，再利用那里的风路，就可以到达克鲁克盆地试验场所在的[%dic:STR_DIC_W_SZ_DF4_A3]了。</p>
+          <p> </p>
+          <p>据说在奥德调查团野营地山脊上，往下看会有巴浦德。</p>
+          <p> </p>
+          <p>请您收下。这是沃夫冈研究所长交给我的信。</p>
+          <p> </p>
+          <p>请把它交给克鲁克盆地试验场的[%dic:STR_DIC_N_Denskel]，然后回来告诉我信有没有顺利地送过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？</p>
+          <p> </p>
+          <p>我自己都不愿意去，却来麻烦[%username]大人，其实我也觉得挺不好意思的。</p>
+          <p> </p>
+          <p>哎呀，我浪费了您很多时间。[%username]大人，您快走吧。</p>
+          <p> </p>
+          <p>这件事我会自己想办法的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来这里有什么事吗？</p>
+          <p> </p>
+          <p>人工奥德生成器是非常敏感的装置，即使是很小的变化都会受到影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">拿出沃夫冈的信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这是……</p>
+          <p> </p>
+          <p>(打开沃夫冈的信看了一下，然后又折起来。)</p>
+          <p> </p>
+          <p>沃夫冈所长又要差我做事了。</p>
+          <p> </p>
+          <p>虽然您带来的不是好消息，但您特地帮我把信送过来，我还是要对您表示感谢。</p>
+          <p> </p>
+          <p>帮我跟所长说信我已经收到，回信我会通过安格拉德交给他的。</p>
+          <p> </p>
+          <p>回去时，请走前面克鲁克盆地的风路，会直接移动到格尔克马洛斯要塞。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO4">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦。</p>
+          <p> </p>
+          <p>[%username]大人去了之后，我就一直放心不下。</p>
+          <p> </p>
+          <p>我担心您会不会不小心掉下悬崖，或者掉进龙族的巢穴……</p>
+          <p> </p>
+          <p>看到您安然无恙，我就放心了。</p>
+          <p> </p>
+          <p>拜托您的事情怎么样了？您帮我把信交给丹斯凯尔了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>丹斯凯尔真的是这么说的吗？</p>
+          <p> </p>
+          <p>知道了。我会如实向沃夫冈所长报告的。</p>
+          <p> </p>
+          <p>听[%username]大人这么一说，我感到非常惭愧。</p>
+          <p> </p>
+          <p>我身为执政官，却害怕风路……看来休息的时候，我得多多练习才行。</p>
+          <p> </p>
+          <p>请您收下这个。这是我的一点心意，请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">通过[%dic:STR_DIC_DF4_SensoryArea_Q21080A]，移动到 [%dic:STR_DIC_W_SZ_DF4_A2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">通过[%dic:STR_DIC_W_SZ_DF4_A2]风路，移动到 [%dic:STR_DIC_W_SZ_DF4_A6]。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">从风路出来后，降落到[%dic:STR_DIC_NPC_Vafuth]悬崖。</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">把沃夫冈的信交给[%dic:STR_DIC_NPC_Vafuth]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">通过[%dic:STR_DIC_NPC_Vafuth] 风路，回到格尔克马洛斯要塞。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Niamela]报告结果。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助害怕风路的尼亚梅拉利用格尔克马洛斯要塞的风路，把沃夫冈的信交给丹斯凯尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尼亚梅拉说接到了沃夫冈所长的命令，有一封信需要送给克鲁克盆地试验场的丹斯凯尔。</p>
+          <p> </p>
+          <p>按照沃夫冈所长所说的方法，利用风路可以很快地把信送过去，但是由于害怕风路，因此不敢过去，让我帮帮她。</p>
+          <p> </p>
+          <p>按照尼亚梅拉的委托，利用风路来到格尔克马洛斯瀑布附近，把沃夫冈的信交给了丹斯凯尔。回去之后，尼亚梅拉对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

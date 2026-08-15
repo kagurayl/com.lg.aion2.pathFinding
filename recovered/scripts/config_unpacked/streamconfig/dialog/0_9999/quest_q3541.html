@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里的巡逻兵会交替在附近巡逻。</p>
+          <p> </p>
+          <p>除了守卫监视基地之外，监视龙族的动态也是我们的工作之一。</p>
+          <p> </p>
+          <p>但问题是不仅是龙族，附近还有很多其他的生命体。</p>
+          <p> </p>
+          <p>它们经常袭击我们，大家忙着消灭它们，都没时间好好巡逻了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其中最让人烦心的是[%dic:STR_DIC_M_OctasideRE_34_An]%。</p>
+          <p> </p>
+          <p>因为它们会使用毒素，所以尤其麻烦。</p>
+          <p> </p>
+          <p>其实它们不难对付，但如果它们用剧毒进行攻击，事情就不一样了。</p>
+          <p> </p>
+          <p>[%username]，为了卫兵们的安全，你能帮我消灭掉一些蜘蛛吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%你果然不愧是真正的守护者。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_OctasideRE_34_An]%一直在[%dic:STR_DIC_W_LF3_SZ_D3]%徘徊，骚扰经过那里的巡逻兵。</p>
+          <p> </p>
+          <p>而且它们的毒素也是抑制植物生长的原因之一。</p>
+          <p> </p>
+          <p>蜘蛛的毒素让很多人都觉得很麻烦。</p>
+          <p> </p>
+          <p>请你一定要帮我们清理掉，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于人手不足，我们只能在这里苦苦支撑。你能体谅一下我们的处境，帮我们这个忙吗？</p>
+          <p> </p>
+          <p>老实说，也不是什么太难的事情。</p>
+          <p> </p>
+          <p>如果你真的不愿意，我也没办法。</p>
+          <p> </p>
+          <p>这件事我们会自己处理，你就不用费心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近龙族的气势好像越来越嚣张了。</p>
+          <p> </p>
+          <p>不快点想办法的话，说不定这里都会被他们夺走。</p>
+          <p> </p>
+          <p>啊，对了，青紫蜘蛛全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我想象的要快得多嘛。</p>
+          <p> </p>
+          <p>[%username]，你果然名不虚传。</p>
+          <p> </p>
+          <p>多亏了你，巡逻兵们终于可以放心出去巡逻了。</p>
+          <p> </p>
+          <p>谢谢你的帮助。这是一点小小的报答，请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_OctasideRE_34_An]%([%2]/18)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Piros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭让巡逻兵们头疼的腐木原野的青紫蜘蛛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮洛斯说腐木原野的青紫蜘蛛经常袭击巡逻兵，让他们很难外出巡逻。</p>
+          <p> </p>
+          <p>为了让巡逻兵们可以安心巡逻，帮他们消灭掉了蜘蛛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

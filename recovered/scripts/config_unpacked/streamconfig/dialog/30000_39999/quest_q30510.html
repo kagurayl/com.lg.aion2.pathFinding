@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30510</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了很久，我觉得不能就这样放弃。</p>
+          <p> </p>
+          <p>不能让我送给埃内提亚的东西就这样留在龙族的手中。</p>
+          <p> </p>
+          <p>无论如何都必须想办法找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是在目前的情况下，我无法进入[%dic:STR_DIC_W_ZONE_NAME_IDYun]。</p>
+          <p> </p>
+          <p>[%username]大人，拜托您了，您能帮我去找回埃内提亚的戒指吗？</p>
+          <p> </p>
+          <p>必须找到那枚戒指，我才能安心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去兰图斯前哨基地消灭[%dic:STR_DIC_M_IDYun_DrakanStrider_60_Ae]，应该就能找到[%dic:STR_DIC_I_QUEST_30510A]。</p>
+          <p> </p>
+          <p>为了让埃内提亚能够安息，一定要找到那枚戒指。</p>
+          <p> </p>
+          <p>那就拜托您了，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确实，和全体鸢族的命运相比，个人的遗物是微不足道的。</p>
+          <p> </p>
+          <p>但是它对我来说非常重要。</p>
+          <p> </p>
+          <p>连[%username]大人都拒绝我的话，我都不知道该找谁帮忙了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您。</p>
+          <p> </p>
+          <p>埃内提亚的遗物找到了吗？</p>
+          <p> </p>
+          <p>请不要告诉我没找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出订婚戒指。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来还没找到啊。</p>
+          <p> </p>
+          <p>我不想催促您。但是您可别忘了啊。</p>
+          <p> </p>
+          <p>请一定要帮我去[%dic:STR_DIC_W_ZONE_NAME_IDYun]找回埃内提亚的[%dic:STR_DIC_I_QUEST_30510A]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我送给埃内提亚的订婚戒指。</p>
+          <p> </p>
+          <p>没想到戒指会以这种方式回到我的手中……</p>
+          <p> </p>
+          <p>我一辈子都不会忘记埃内提亚。</p>
+          <p> </p>
+          <p>继承埃内提亚的遗志，是我活着的唯一理由。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到埃内提亚的[%dic:STR_DIC_I_QUEST_30510A]，然后交给[%dic:STR_DIC_N_Autiron]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">阿乌提伦说不能放弃埃内提亚的遗物。去消灭第55精锐帕卡提战斗军官，找回订婚戒指吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿乌提伦说不能放弃埃内提亚的遗物。</p>
+          <p> </p>
+          <p>于是到兰图斯前哨基地去消灭龙族，帮他找回了遗物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

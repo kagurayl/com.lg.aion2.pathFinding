@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们占领希埃尔的东部要塞已经很久了。</p>
+          <p> </p>
+          <p>但是魔族一直在进行无谓的试探，企图夺回这个地方。</p>
+          <p> </p>
+          <p>因此守卫要塞的士兵们不断地受到偷偷侵入要塞的魔族的攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在背后操纵魔族守护者的是破灭之呐喊军团。</p>
+          <p> </p>
+          <p>他们以流放之岛为据点，不断地派遣守护者攻击我们。</p>
+          <p> </p>
+          <p>你能帮我去把他们清除掉吗？</p>
+          <p> </p>
+          <p>这对于能否继续占领希埃尔东部要塞非常重要。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说在流放之岛上一共有5名破灭之呐喊军团的士兵。</p>
+          <p> </p>
+          <p>他们的名字是[%dic:STR_DIC_N_Amundi]、[%dic:STR_DIC_N_Gefjun]、[%dic:STR_DIC_N_Bui]、[%dic:STR_DIC_N_Helfrid]和[%dic:STR_DIC_N_Ogmund]。</p>
+          <p> </p>
+          <p>破灭之呐喊军团的士兵，是在埃雷修兰塔长时间身经百战的士兵。</p>
+          <p> </p>
+          <p>所以在对付他们的时候需要格外小心。</p>
+          <p> </p>
+          <p>哦，对了。作为除掉他们的证据，请你把他们身上带着的[%dic:STR_DIC_I_QUEST_1748a]带回来给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像是不知道情况的严重性。</p>
+          <p> </p>
+          <p>如果在埃雷修兰塔像你这样什么都不知道的话，每天肯定要好几次都在奇柏利斯克睁开眼睛。</p>
+          <p> </p>
+          <p>我不想在没有任何想法的守护者身上浪费时间，你给我走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！你终于回来了！</p>
+          <p> </p>
+          <p>任务成功完成了吗？</p>
+          <p> </p>
+          <p>你把破灭之呐喊军团百夫长和军团士兵全部除掉了吗？</p>
+          <p> </p>
+          <p>那么[%dic:STR_DIC_I_QUEST_1748a]应该带回来了吧。把它给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出破灭之徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底要磨蹭到什么时候啊？</p>
+          <p> </p>
+          <p>要想守住要塞的话，必须尽快把破灭之呐喊军团士兵除掉。</p>
+          <p> </p>
+          <p>快去除掉他们，然后把[%dic:STR_DIC_I_QUEST_1748a]带回来给我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把破灭之呐喊军团的士兵全都除掉了啊！</p>
+          <p> </p>
+          <p>太好了，真是太好了！这下总算打击了一下破灭之呐喊军团的气焰。</p>
+          <p> </p>
+          <p>由于你的帮助，我们应该可以把希埃尔的东部要塞守住了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_N_Amundi]、[%dic:STR_DIC_N_Gefjun]、[%dic:STR_DIC_N_Bui]、[%dic:STR_DIC_N_Helfrid]和[%dic:STR_DIC_N_Ogmund]，然后把证据交给[%dic:STR_DIC_N_Ab1_1132_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清除企图夺回希埃尔的东部要塞的破灭之呐喊军团士兵，搜集破灭之徽章作为证据交给耶佩托斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>耶佩托斯说破灭之呐喊军团在流放之岛设立了据点，对希埃尔的东部要塞虎视眈眈。</p>
+          <p> </p>
+          <p>于是去除掉了破灭之呐喊军团的士兵，把破灭之徽章作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

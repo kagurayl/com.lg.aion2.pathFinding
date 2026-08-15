@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝鲁姆斯大人，正在变成石头。</p>
+          <p> </p>
+          <p>虽然进行了很多努力，但是没有任何作用。</p>
+          <p> </p>
+          <p>这样下去的话，有一个椰林就要消失了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须把这个消息告诉一个守护者。</p>
+          <p> </p>
+          <p>为了我们椰林做出过很多努力的守护者。</p>
+          <p> </p>
+          <p>帮我把贝鲁姆斯大人的消息告诉他，告诉[%dic:STR_DIC_N_Legalus]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我拜托路过这里的守护者写的信。</p>
+          <p> </p>
+          <p>请你把信交给[%dic:STR_DIC_N_Legalus]。</p>
+          <p> </p>
+          <p>他应该就在往史匹格栖息地那边去的路上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有办法把这个消息告诉他。</p>
+          <p> </p>
+          <p>必须把这个消息告诉莱卡尔卢斯。</p>
+          <p> </p>
+          <p>你再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的天气真好。</p>
+          <p> </p>
+          <p>真是个射箭的好天气。</p>
+          <p> </p>
+          <p>我正在想要不要收拾了东西去打猎。</p>
+          <p> </p>
+          <p>不过，[%username]大人找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_otl;HACTION_SELECT_QUEST_REWARD">拿出纳巴鲁的书信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开书信，阅读内容)嗯？这是真的吗？</p>
+          <p> </p>
+          <p>贝鲁姆斯真的在变成石头吗？</p>
+          <p> </p>
+          <p>怎么会这样...我们那么努力，结果...</p>
+          <p> </p>
+          <p>谢谢你告诉我这么重要的消息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把纳巴鲁的书信交给[%dic:STR_DIC_N_Legalus]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助纳巴鲁把贝鲁姆斯变成了石头的消息告诉莱卡尔卢斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纳巴鲁说想把椰林族元老贝鲁姆斯变成了石头的消息告诉莱卡尔卢斯。于是按照他的拜托，找到了莱卡尔卢斯，把消息告诉了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

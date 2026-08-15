@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就在[%username]大人您去抓龙蜥兽的时候，从要塞那里传来了指示。</p>
+          <p> </p>
+          <p>要求我们清除所有的[%dic:STR_DIC_M_FrillfaimamFemale_21_An]，直到它们灭绝为止。</p>
+          <p> </p>
+          <p>也是，它们不断地攻击其他动物和人类，必须得教训他们一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于没有可以拜托的守护者，我还在想这次得我亲自动手了。</p>
+          <p> </p>
+          <p>虽然它们对人类造成了危害，但是要消灭一种生命总是痛苦的事情，因为所有的生命都是平等的。</p>
+          <p> </p>
+          <p>但命令就是命令。[%username]大人，您能帮我去清除一些[%dic:STR_DIC_M_FrillfaimamFemale_21_An]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]大人您一定会帮我的。</p>
+          <p> </p>
+          <p>不过这次的数量要比上次多一些。</p>
+          <p> </p>
+          <p>请您帮我打猎15头[%dic:STR_DIC_M_FrillfaimamFemale_21_An]。</p>
+          <p> </p>
+          <p>那就拜托您了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，真的得我自己去抓吗？</p>
+          <p> </p>
+          <p>所有的生命都是平等的，为了人类的方便就要杀死其他的生命...</p>
+          <p> </p>
+          <p>如果不当守卫的话，就不会有这种事情了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_FrillfaimamFemale_21_An]抓到了吗？</p>
+          <p> </p>
+          <p>要塞那边一直催我报告，我正在为难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">说清除掉了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太谢谢了！这下总算能歇口气了。</p>
+          <p> </p>
+          <p>短期内要塞应该不会再来催促，让我们享受美丽的自然的声音吧。</p>
+          <p> </p>
+          <p>不过需要定期向要塞报告，所以您有时间的话，可以随时再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去曼杜里森林打猎[%dic:STR_DIC_M_FrillfaimamFemale_21_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Androkles]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去清除给人们造成危害的龙蜥兽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安德罗克雷斯说要塞下达了消灭龙蜥兽的命令，他为此很头疼。于是按照他的委托，帮他清除了龙蜥兽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

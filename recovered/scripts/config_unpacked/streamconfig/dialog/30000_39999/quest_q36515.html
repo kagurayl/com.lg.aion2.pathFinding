@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>龙族召唤师伦迪利玛因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_DrakanPr_55_An]</p>
+          <p> </p>
+          <p> 2. 罪行：袭击天族要塞队长</p>
+          <p> </p>
+          <p> 3. 详情：在和魔族开展要塞战的时候，带领一群龙族袭击了要塞队长，然后向安格利浦废墟方向逃窜。要塞因此被魔族夺走，我军受到巨大打击。</p>
+          <p> </p>
+          <p>如有能提供龙族召唤师伦迪利玛的下落，或者直接将其消灭，并将伦迪利玛的宝珠作为证据带回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不能尽快取得战果，我担心这里会变成和埃雷修兰塔一样。</p>
+          <p> </p>
+          <p>由于受到龙族的袭击，要塞被敌人夺走的事情，就是很好的例子。</p>
+          <p> </p>
+          <p>对了，您来找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出宝珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没找到线索吗……</p>
+          <p> </p>
+          <p>还是我来告诉您一个好消息吧。</p>
+          <p> </p>
+          <p>有人说在安格利浦废墟的沙尘暴中，看到了悬赏金额非常高的龙族召唤师伦迪利玛。</p>
+          <p> </p>
+          <p>虽然那个目击者是黑暗术古，但他的手上有宝珠，我想那个家伙一定是我们正在寻找的人。</p>
+          <p> </p>
+          <p>[%username]，在别的守护者把赏金抢走之前，希望您能抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是伦迪利玛使用的宝珠吗？</p>
+          <p> </p>
+          <p>就是这颗宝珠拥有召唤部下的能力吗？</p>
+          <p> </p>
+          <p>这个东西我能使用吗？要是我也能召唤部下的话，那就方便了……哈哈，开个玩笑！</p>
+          <p> </p>
+          <p>[%username]！您完成了一件了不起的事情。赏金很沉，请您收好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_DayQ_DrakanPr_55_An]，然后把证据交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭袭击要塞队长，给天族带来巨大危害的龙族召唤师伦迪利玛之后，把宝珠作为证据交给了英吉斯温的赏金管理人。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

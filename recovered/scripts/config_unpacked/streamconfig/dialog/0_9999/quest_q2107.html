@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（卷成卷后又拿绳子绑上的纸。）</p>
+          <p> </p>
+          <p>（下方写着‘致：乌尔古伦’。）</p>
+          <p> </p>
+          <p>（最好是给乌尔古伦头儿吧。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">不再察看。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>噢，[%username]！</p>
+          <p> </p>
+          <p>什么事？</p>
+          <p> </p>
+          <p>我好像也没有交待你什么任务啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_blush;HACTION_SELECT2_1">递过纸卷。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，哪儿来的？</p>
+          <p> </p>
+          <p>（解开纸卷，脸越来越红。）</p>
+          <p> </p>
+          <p>嗯，这个在哪儿发现的？就放在那个地方呗，拿来干什么...</p>
+          <p> </p>
+          <p>总之呢，这是[%dic:STR_DIC_N_Linevir]的，最好还给她。</p>
+          <p> </p>
+          <p>你转告她，我还是忘不了我死去的妻子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你又不用接受灵魂的治疗 ，到我这儿来干什么？</p>
+          <p> </p>
+          <p>我正有重要的事情要处理，忙得很，有什么事请你长话短说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把纸卷给她还转达了头目的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（听了头目的话之后，脸变得通红。）</p>
+          <p> </p>
+          <p>这，这，从哪儿来的？</p>
+          <p> </p>
+          <p>头目全都看到了？</p>
+          <p> </p>
+          <p>虽然是把我的心里话写进去了，可是我知道他肯定不会接受我，所以都没敢给他，自己一直拿着的呀。</p>
+          <p> </p>
+          <p>在哪儿掉了呢？再说了，你为什么就把这个直接给头儿拿过去了呢？</p>
+          <p> </p>
+          <p>哎呀，我不管。以后我还怎么见他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把信拿到[%dic:STR_DIC_N_Ulgorn]处</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把信转给[%dic:STR_DIC_N_Linevir]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在湖边打猎时，发现了写了乌尔古伦头目名字的纸卷。拿给头儿吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在湖边打猎时，发现了写了乌尔古伦头目名字的纸卷。拿给头儿吧。</p>
+          <p> </p>
+          <p>拿给了头儿，头儿看了之后让我转告丽内比日他不能接受，还让我把信也还给她。</p>
+          <p> </p>
+          <p>知道头儿看了信，丽内比日很是害羞，还发了火。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

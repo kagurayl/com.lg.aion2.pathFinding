@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼……我本来想找点有特色的华丽的食材……</p>
+          <p> </p>
+          <p>可是现在连可以吃的东西都没有找到。</p>
+          <p> </p>
+          <p>但是如果我放弃的话，又有谁能做这件事呢？</p>
+          <p> </p>
+          <p>我一定要找到好的材料。</p>
+          <p> </p>
+          <p>我最近发现了一种新材料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">这次又是什么？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加努斯巨蜥尾鳍怎么样？</p>
+          <p> </p>
+          <p>尾鳍的味道很独特，而且含有适量的脂肪，口感非常好。</p>
+          <p> </p>
+          <p>以前我曾经在极乐世界参加过一个宴会，不知道是什么东西的尾鳍，味道非常好。</p>
+          <p> </p>
+          <p>那其实都称不上是料理，只是把尾鳍在火上烤了一下而已。</p>
+          <p> </p>
+          <p>这次我想对[%dic:STR_DIC_I_QUEST_11033a]进行实验。</p>
+          <p> </p>
+          <p>您能帮我去搜集[%dic:STR_DIC_M_LF4_A_Varanus_Axolotl_51_n]的尾鳍吗？让我们一起来寻找新的食材吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。这次请您帮我搜集十个[%dic:STR_DIC_M_LF4_A_Varanus_Axolotl_51_n]的尾鳍。</p>
+          <p> </p>
+          <p>这段时间我要研究一下怎么烹调比较好。</p>
+          <p> </p>
+          <p>晒成干需要很长时间，我得看看有没有其他办法。</p>
+          <p> </p>
+          <p>好的，您快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了，知道了。</p>
+          <p> </p>
+          <p>我让您睡着了，还让您得了黄疸……</p>
+          <p> </p>
+          <p>但是我不是故意要那样做的。</p>
+          <p> </p>
+          <p>为了让您恢复身体，我还给了你一些酬劳。现在再来跟我说这些，就不太好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_11033a]拿回来了吗？</p>
+          <p> </p>
+          <p>我刚好找到了一种不错的料理方法。</p>
+          <p> </p>
+          <p>这次我一定要做出一种不错的料理。</p>
+          <p> </p>
+          <p>当然，前提是材料没有问题……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出尾鳍。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我马上用尾鳍制作成料理。</p>
+          <p> </p>
+          <p>(把尾鳍放进沸水中)好的，这样。</p>
+          <p> </p>
+          <p>必须整个抄一下。</p>
+          <p> </p>
+          <p>然后蘸着调料吃就行了。</p>
+          <p> </p>
+          <p>马上就可以试吃了。请稍等一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_11033a]好像不够啊？</p>
+          <p> </p>
+          <p>又不是第一次了，您怎么还会犯这种低级错误呢？</p>
+          <p> </p>
+          <p>请您先好好数数，然后再来找我。</p>
+          <p> </p>
+          <p>水已经煮开了，请您快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(闻闻味道。)嗯，味道很好……</p>
+          <p> </p>
+          <p>(用手指扯了一下。)弹力也不错……</p>
+          <p> </p>
+          <p>(蘸好了调料)来，您可以试吃了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">收下料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(欢呼)任何问题都没有，这次好像是成功了，对吧？</p>
+          <p> </p>
+          <p>但是您的表情怎么这么奇怪啊？</p>
+          <p> </p>
+          <p>味道不好吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说非常难吃。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……</p>
+          <p> </p>
+          <p>看来只能放弃口感了。</p>
+          <p> </p>
+          <p>但是这也不一定是坏事。</p>
+          <p> </p>
+          <p>每个人的口味都不一样，都说良药苦口，不是吗？</p>
+          <p> </p>
+          <p>不管怎样，总算是找到了一种食材。这全都是托您的福。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_A_Varanus_Axolotl_51_n]的尾鳍，然后交给[%dic:STR_DIC_N_Doria]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">重新和[%dic:STR_DIC_N_Doria]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">品尝[%dic:STR_DIC_N_Doria]制作的料理</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Doria]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">多利亚说绝不会放弃寻找好的食材。帮助她搜集加努斯巨蜥的尾鳍吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多利亚说绝不会放弃寻找好的食材，最近又发现了一种新材料。</p>
+          <p> </p>
+          <p>帮她搜集到了加努斯巨蜥尾鳍，她让我尝尝味道如何。</p>
+          <p> </p>
+          <p>尝了之后发现味道很差，但却没有什么后遗症。她对我表示感谢，说终于找到了一种食材。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

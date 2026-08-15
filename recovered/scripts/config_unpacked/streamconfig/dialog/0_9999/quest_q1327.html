@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Maidengolem_27_An]守护着古代遗迹的实体。</p>
+          <p> </p>
+          <p>谁都不知道雕像为什么会移动。</p>
+          <p> </p>
+          <p>虽然大家都觉得那是因为实体的力量。</p>
+          <p> </p>
+          <p>以前它们会攻击靠近实体的野兽和居民，但是现在情况出现了一点变化。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于没有需要守护的实体，它们好像陷入了混乱。</p>
+          <p> </p>
+          <p>它们原来就是雕像，当然不具有什么很高的智能。</p>
+          <p> </p>
+          <p>以前它们只是执行收到的命令，自从守护的东西消失之后，它们开始随意攻击周围的所有东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了居民们的安全，请您把[%dic:STR_DIC_M_Maidengolem_27_An]除掉。</p>
+          <p> </p>
+          <p>从潘多兰盖伦的角度来看，变回原来的雕像也许更好一点。</p>
+          <p> </p>
+          <p>因为现在已经没有要拼命保护的东西了。</p>
+          <p> </p>
+          <p>这件事情您能帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_LF2_SZ_G1]清除[%dic:STR_DIC_M_Maidengolem_27_An]。</p>
+          <p> </p>
+          <p>虽然是古代的遗迹，毁了有些可惜。但是它们给人类造成了危害，而且也不再是原来那个样子了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有其他紧急任务的话，应该先跟我说一声才对。</p>
+          <p> </p>
+          <p>那样我就不必浪费时间，直接去找其他守护者了。</p>
+          <p> </p>
+          <p>知道了。既然您很忙，我就去找其他有时间的守护者好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_M_Maidengolem_27_An]清除掉了吗？</p>
+          <p> </p>
+          <p>雕像那样到处移动的话，对周围的居民们来说无疑是一种危险。</p>
+          <p> </p>
+          <p>本来危险的野兽就很多，连石像也攻击人的话，还有谁敢在沙漠里来往啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>虽然毁掉贵重的遗产有点可惜，但是再怎么说还是人的生命更重要。</p>
+          <p> </p>
+          <p>如果我有绘画的手艺的话，应该先把潘多兰盖伦的画给画下来，真是可惜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Maidengolem_27_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Justachys]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了埃尔特内的居民们的安全，去把遗迹潘多兰盖伦清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据尤斯塔奇斯说，由于失去了需要保护的实体，遗迹潘多兰盖伦开始随意地攻击人类。</p>
+          <p> </p>
+          <p>为了居民们的安全，清除掉了潘多兰盖伦，并回去告诉了尤斯塔奇斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

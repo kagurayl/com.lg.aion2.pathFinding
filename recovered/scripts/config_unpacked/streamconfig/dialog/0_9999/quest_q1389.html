@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内这里到底是在发生什么事情啊。</p>
+          <p> </p>
+          <p>那是不久之前的事情。</p>
+          <p> </p>
+          <p>我们一伙人进入了库里乌鲁岩石山。我们藏在那里观察，想看看雷帕尔革命团的数量有没有增加。</p>
+          <p> </p>
+          <p>但是却发现那里不只有雷帕尔革命团的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和他们在一起的还有一些皮肤发绿的鱼头的怪物。</p>
+          <p> </p>
+          <p>我见过很多种族，但是长得这么奇怪的家伙还是头一次看见。</p>
+          <p> </p>
+          <p>也从来没听说过有长成那样的生命体。</p>
+          <p> </p>
+          <p>我们必须弄清楚它们的身份，这样的话就需要弄到它们的皮肤组织。</p>
+          <p> </p>
+          <p>[%username]大人，这件事情您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就请您去除掉普雷尔掠夺者，把[%dic:STR_DIC_I_QUEST_1389a]带回来。</p>
+          <p> </p>
+          <p>有了那个的话，我们就能知道它们到底是什么了。</p>
+          <p> </p>
+          <p>请您帮我搜集10个。</p>
+          <p> </p>
+          <p>对了，它们主要是在晚上出现。所以要搜集皮肤组织的话，最好是晚上过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不知道确定普雷尔的身份是多么重要。</p>
+          <p> </p>
+          <p>它们和雷帕尔革命团是一伙的。以后我们必须要和它们战斗，只有了解了它们，才能想办法对付它们，不是吗？</p>
+          <p> </p>
+          <p>如果这样您还不愿意的话，那就没办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把[%dic:STR_DIC_I_QUEST_1389a]带回来了吗？</p>
+          <p> </p>
+          <p>长得非常奇特吧？</p>
+          <p> </p>
+          <p>您没有受伤吧？它们看上去好像很凶恶的样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出普雷尔的皮肤组织。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我让您搜集10个[%dic:STR_DIC_I_QUEST_1389a]，难道是太困难了？</p>
+          <p> </p>
+          <p>我想以[%username]大人的实力，应该是手到擒来才对啊...</p>
+          <p> </p>
+          <p>这种事情越快越好。所以请您快点把普雷尔的皮肤组织带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是普雷尔的皮肤啊。</p>
+          <p> </p>
+          <p>有了这么多的话，应该能充分地对组织进行分析了。</p>
+          <p> </p>
+          <p>谢谢您帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_1389a]，然后交给[%dic:STR_DIC_N_Esaias]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">埃塞奥斯发现有长得很奇特的普雷尔和雷帕尔革命团在一起。为了获得普雷尔的情报，必须去搜集皮肤组织。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃塞奥斯说和雷帕尔革命团在一起的普雷尔是初次看见的生命体，他因此而感到不安。说如果以后要对付它们的话，必须知道它们的身份。</p>
+          <p> </p>
+          <p>于是去搜集普雷尔掠夺者的皮肤组织交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

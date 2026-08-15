@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你好像是个[%userclass]，来这么偏远的地方到底...不，有什么事情吗？</p>
+          <p> </p>
+          <p>不管怎样，很高兴见到你。</p>
+          <p> </p>
+          <p>每天就只能看见一些野兽，好久没有见到人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问正在做什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我被蜘蛛给咬了，正在休息。</p>
+          <p> </p>
+          <p>我是拔...嗯...挖药草的。本来在这里挖泰奥尼亚，结果被咬了。</p>
+          <p> </p>
+          <p>伤口虽然并不严重，但是因为中了毒，所以有点头晕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问会不会很危险。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，没到那种地步，您没有必要担心。咬得也不是很严重，而且我已经吃了解毒剂了。</p>
+          <p> </p>
+          <p>事实上，更让我担心的是蜘蛛。我还以为过一段时间会变少呢……谁知道没减少，反而变多了……</p>
+          <p> </p>
+          <p>对了[%username]大人，您看上去像是位很能干的[%userclass]，我能拜托您一件事吗？</p>
+          <p> </p>
+          <p>请您帮我把那些[%dic:STR_DIC_M_OctasideD_21_An]清除掉一些吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您愿意帮忙，真是太谢谢您了。</p>
+          <p> </p>
+          <p>那就请您去除掉12只[%dic:STR_DIC_M_OctasideD_21_An]，然后回来告诉我。</p>
+          <p> </p>
+          <p>我在这里休息一下。等[%username]大人清除完蜘蛛之后，那时候再开始采取……不，采集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能再想想吗？</p>
+          <p> </p>
+          <p>以[%username]大人的实力，12只蜘蛛之类的，应该上马...嗯，马上就能除掉。</p>
+          <p> </p>
+          <p>如果您能帮我捕捉蜘蛛的话，我会给您丰厚的谢礼的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一致...一直在这里看着，您的实力真是了不起。</p>
+          <p> </p>
+          <p>我好像是挑对人了。</p>
+          <p> </p>
+          <p>蜘蛛都抓到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告诉她结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>这下我就能安心地拔...不，挖药草了。</p>
+          <p> </p>
+          <p>这是我的一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_OctasideD_21_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Medea]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助因为蜘蛛而无法进行采集的梅戴娅清除掉阴影蜘蛛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅戴娅说她在挖泰奥尼亚的时候，被蜘蛛咬了，所以正在休息。</p>
+          <p> </p>
+          <p>帮助她清除了阴影蜘蛛，以便让她能够安心地采集药草。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

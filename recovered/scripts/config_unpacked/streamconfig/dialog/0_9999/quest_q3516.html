@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然连着麻烦你有点不太好意思，但我趁着酒意，就再麻烦你一次吧。</p>
+          <p> </p>
+          <p>咕嘟！嗯，我说……</p>
+          <p> </p>
+          <p>腐木原野上的洛伦特没有灭绝，只消灭掉几个看来是无法确保安全的。</p>
+          <p> </p>
+          <p>并不是说我不能对付洛伦特，但它们给我的生态调查造成了妨碍……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来这里是调查污染状况的，不是来战斗的，不是吗？</p>
+          <p> </p>
+          <p>其实我也有点害怕，咕嘟！</p>
+          <p> </p>
+          <p>连到村外去都很困难，要是不喝一杯的话，我可能早就晕倒了。</p>
+          <p> </p>
+          <p>如果你能帮我把[%dic:STR_DIC_M_Rottentree_34_An]消灭掉的话，我会继续给你报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我喜欢你这么爽快的人。请你去腐木原野把[%dic:STR_DIC_M_Rottentree_34_An]消灭掉。</p>
+          <p> </p>
+          <p>消灭12个就行了。当然，如果你能全部消灭掉，那就再好不过了。</p>
+          <p> </p>
+          <p>每次你帮我消灭掉12个，我就会给你报酬。我不是那种让人白帮忙的无耻之徒，咕嘟！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我又不是白让你帮忙，真是的。</p>
+          <p> </p>
+          <p>怎么能说出这么无情的话呢？</p>
+          <p> </p>
+          <p>我在舞刀弄剑方面实在不行，所以才请你帮忙。</p>
+          <p> </p>
+          <p>如果你改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们上次见面是什么时候来着，咕嘟。</p>
+          <p> </p>
+          <p>脸很熟，但是我完全记不起来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，没错！你是答应帮我消灭绿脚洛特伦的那个人，咕嘟。</p>
+          <p> </p>
+          <p>哎呀，不好意思。我喝得太多了，有点醉了。</p>
+          <p> </p>
+          <p>对了，你把它们全部消灭掉了吗？</p>
+          <p> </p>
+          <p>真是名不虚传。拿着这个。这是我答应给你的报酬。</p>
+          <p> </p>
+          <p>我喝醉酒的事情，千万别告诉别人啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去腐木原野消灭[%dic:STR_DIC_M_Rottentree_34_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kravis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭绿脚洛伦特，让科拉碧斯可以去腐木原野调查。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西风的守护者科拉碧斯抱怨说因为洛伦特而无法去腐木原野调查。</p>
+          <p> </p>
+          <p>帮他消灭了洛伦特，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道贝尔特伦结界塔在哪里吗？好像是在坎塔斯海岸。</p>
+          <p> </p>
+          <p>如果您知道的话，可以拜托您一件事吗？</p>
+          <p> </p>
+          <p>我有封重要书信要发往结界塔。</p>
+          <p> </p>
+          <p>是很重要的，应该马上送去。不过我必须守护柯贝尔温，不能脱身。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事很重要，希望您能帮助我。</p>
+          <p> </p>
+          <p>这是与大多数人的安危息息相关的事情。</p>
+          <p> </p>
+          <p>请您把这书信转交给在坎塔斯守护贝尔特伦结界塔的[%dic:STR_DIC_LA38]大人吧。</p>
+          <p> </p>
+          <p>能替我们去一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么请您马上去[%dic:STR_DIC_FLA21]的[%dic:STR_DIC_LA38]大人那边。</p>
+          <p> </p>
+          <p>这封信的内容非常重要，稍微一耽搁就可能威胁天界的安危，请您赶紧出发。</p>
+          <p> </p>
+          <p>拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像不知道坎塔斯在哪里。</p>
+          <p> </p>
+          <p>您怎么还不清楚这件事情的紧急程度呢？</p>
+          <p> </p>
+          <p>知道了。我会拜托其他守护者转交书信的。</p>
+          <p> </p>
+          <p>您走好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来得这么急，是什么事情。</p>
+          <p> </p>
+          <p>让我看看，我感觉到了塞尔雷內的奥德气息。</p>
+          <p> </p>
+          <p>你来这里是受了塞尔雷內的委托吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">递给塞尔雷內的书信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，在欧比斯？</p>
+          <p> </p>
+          <p>炸药…到底要用在什么地方…</p>
+          <p> </p>
+          <p>啊，不好意思。在远道而来的客人面前自言自语。</p>
+          <p> </p>
+          <p>没什么事，不要担心。</p>
+          <p> </p>
+          <p>谢谢你转送这封信。回去路上小心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">给[%dic:STR_DIC_LA38]转交[%dic:STR_DIC_LA22]的书信</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要到坎塔斯把塞尔雷內拜托的书信交给克里蒂埃。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的神官塞尔雷內说是重要事情，急着拜托把书信转给在贝尔特伦结界塔的克里蒂埃。</p>
+          <p> </p>
+          <p>收到书信之后克里蒂埃嘀咕了几句，但是没法理解是什么意思。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

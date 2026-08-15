@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好，我刚好有事找您。</p>
+          <p> </p>
+          <p>听蓝色舰队的人说，阿尔戈斯号上的船员们的灵魂还在斯泰浓海岸徘徊？</p>
+          <p> </p>
+          <p>这全都是因为拉斯贝尔格的诅咒，是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(擦了擦眼泪)可怜的人……那样死去就已经够不幸的了，还变成了那个样子，无法回到奥德的流动之中，呜呜。</p>
+          <p> </p>
+          <p>我和遗属们商量了一下，决定把那些人送回奥德的流动。</p>
+          <p> </p>
+          <p>问题是谁来帮我们做这件事，听说只有守护者才能做到。</p>
+          <p> </p>
+          <p>所以我想拜托您一件事。之前发生的事您都看到了，应该可以知道我们的心情是多么的悲痛。</p>
+          <p> </p>
+          <p>请您一定要把阿尔戈斯号的船员送回奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，真是太感谢了。</p>
+          <p> </p>
+          <p>请您去斯泰浓海岸，把[%dic:STR_DIC_M_UndeadLightFi_44_An_2]和[%dic:STR_DIC_M_UndeadLightWi_44_An_2]送回奥德的流动。</p>
+          <p> </p>
+          <p>这件事结束之后，请您把灵魂们的特征告诉我。</p>
+          <p> </p>
+          <p>我必须把结果告诉家属们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了。我知道这件事是多么的麻烦和危险。</p>
+          <p> </p>
+          <p>但是为人类服务是守护者的义务，不是吗？</p>
+          <p> </p>
+          <p>您看赫里奥内老奶奶。听说儿子死了之后，每天都吵着要去见儿子。</p>
+          <p> </p>
+          <p>如果她知道儿子死去的灵魂得到了安息，也许精神就会恢复正常。请您一定要再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，不知道我们村为什么会变成这个样子。</p>
+          <p> </p>
+          <p>阿尔戈斯号的事情传开之后，村里就没有了欢声笑语。</p>
+          <p> </p>
+          <p>哎呀，您这么忙，我又在这里瞎唠叨了。拜托您的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>您告诉我的那些人，我知道是谁了。</p>
+          <p> </p>
+          <p>这是村里人准备的东西。和您给我们的帮助相比，非常微不足道。</p>
+          <p> </p>
+          <p>我要去把消息告诉遗属们了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将在斯泰浓海岸徘徊的[%dic:STR_DIC_M_QUEST_3527]送回奥德的流动([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">把结果告诉[%dic:STR_DIC_N_Antione]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把在斯泰浓海岸徘徊的阿尔戈斯号的灵魂们送回奥德的流动，然后把结果告诉安提奥内神官。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安提奥内神官说死去后无法回到奥德的流动中去的阿尔戈斯号的灵魂们很可怜，让我把船员的灵魂送回奥德的流动。</p>
+          <p> </p>
+          <p>把灵魂送回了奥德的流动，把他们的长相告诉神官之后，他说要把消息告诉遗属们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我待在这里已经很久了。</p>
+          <p> </p>
+          <p>像我这样在恶劣的环境中工作的守护者应该并不是很多。就连革命团的那些家伙也全都待在暖和的屋里。</p>
+          <p> </p>
+          <p>不过这是工作的需要，我也没办法，但是再怎么说晚上总得睡觉吧？</p>
+          <p> </p>
+          <p>你看这里又破又旧的，到处都是虫子蛀的洞。你看看那个入口，就那样空在那里。虽然我经过耐寒的训练，但还是受不了。</p>
+          <p> </p>
+          <p>所以我决定先把其他任务放一放，先把屋顶补好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>修补屋顶，最好使用动物的皮。</p>
+          <p> </p>
+          <p>刚好在附近的混沌森林里有很多高尔干，它们的皮应该还不错。</p>
+          <p> </p>
+          <p>但是因为屋顶实在太大了，需要用掉很多皮革才行，所以我正在发愁……</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？只要你能帮我搜集一点，我就很高兴了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实非常简单，没有必要担心。</p>
+          <p> </p>
+          <p>比对付狡猾的雷帕尔革命团要容易多了。</p>
+          <p> </p>
+          <p>你只要去打猎[%dic:STR_DIC_M_GorgonWhiteBabyD_42_n]和[%dic:STR_DIC_M_GorgonWhiteD_43_n]，把它们的皮革拿回来就行。</p>
+          <p> </p>
+          <p>嗯，我不知道需要多少……你先帮我搜集15张吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的请求太过分了吗？</p>
+          <p> </p>
+          <p>谍报员想要一个睡得舒服的地方，可能确实是有点要求太高了。</p>
+          <p> </p>
+          <p>但是我只想好好睡一觉而已，希望你不要误会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去有守护者说过，</p>
+          <p> </p>
+          <p>大地是守护者的床，天是守护者的被子……</p>
+          <p> </p>
+          <p>但是我的被窝却非常冷。</p>
+          <p> </p>
+          <p>如果有谁能帮我搜集到修补屋顶的皮革，我就很满足了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出高尔干脊背皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想修好屋顶，需要很多张皮革才行。</p>
+          <p> </p>
+          <p>至少需要15张高尔干的脊背皮。</p>
+          <p> </p>
+          <p>我不是在催你。请你去帮我搜集水晶角高尔干和水晶角高尔干幼崽的皮革吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，真是太感谢了！</p>
+          <p> </p>
+          <p>但是在你去搜集皮革的时候，我看了一下屋顶的情况……我好像需要更多的皮革才行。</p>
+          <p> </p>
+          <p>我的性格就是这样，即使是小事，我也不会马虎。</p>
+          <p> </p>
+          <p>这是15张皮革的报酬。有时间的时候，希望你能继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_4522]，然后交给[%dic:STR_DIC_N_Dewi]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助德威搜集高尔干的皮革，让他可以修理漏风的屋顶。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德威说因为屋顶漏风，让他非常难受，因此让我帮他搜集修理屋顶所需的皮革。</p>
+          <p> </p>
+          <p>帮他搜集到了混沌森林的水晶角高尔干和水晶角高尔干幼崽的皮革，他对我表示感谢，说可能还需要更多的皮革。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

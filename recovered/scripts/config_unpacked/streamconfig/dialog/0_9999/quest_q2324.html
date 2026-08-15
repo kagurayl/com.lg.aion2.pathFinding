@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一本厚厚的手册。)</p>
+          <p> </p>
+          <p>(分为日记、约会、金钱出纳等部分，整理得非常清晰。)</p>
+          <p> </p>
+          <p>(最后写着海尔莫德的名字。)</p>
+          <p> </p>
+          <p>(应该去把它拿去给[%dic:STR_DIC_N_Hermod]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好。</p>
+          <p> </p>
+          <p>请您告诉我这里到底是什么地方。</p>
+          <p> </p>
+          <p>我只记得和同伴们一起乘坐飞艇，但是醒过来之后，就发现一个人站在这里。</p>
+          <p> </p>
+          <p>到底是怎么回事啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出手册。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？为什么这个...这是我随身带着的东西，到底是掉在哪儿了呢？</p>
+          <p> </p>
+          <p>直到刚才，我还不知道它已经不见了。</p>
+          <p> </p>
+          <p>看来不见的东西不止一个。放在飞艇上的行李又去哪儿了呢？</p>
+          <p> </p>
+          <p>不管怎样，真是谢谢您。既然找到了手册，其他东西慢慢找回来就行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把手册还给[%dic:STR_DIC_N_Hermod]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">偶然发现的手册上写着海尔莫德的名字。必须找到它的主人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发现了写着海尔莫德的手册，找到手册的主人并交给了他，但是他已经死了，变成了灵魂的状态。</p>
+          <p> </p>
+          <p>但是他本人并不知道自己已经死了，还在那里犯迷糊呢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

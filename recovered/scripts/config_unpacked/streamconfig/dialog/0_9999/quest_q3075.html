@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是旅行者。</p>
+          <p> </p>
+          <p>不好意思，我能问一问您的目的地吗？</p>
+          <p> </p>
+          <p>啊，也没别的事情。如果您是去结界塔村子的话，我想拜托您一件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望您能去烈士荒地消灭[%dic:STR_DIC_M_LF2A_Basilisk_45_An]。</p>
+          <p> </p>
+          <p>可能是容易和火焰蜥蜴混淆，人们一直没有注意，最近陆续有人被它们伤害。</p>
+          <p> </p>
+          <p>其实，最好的方法是护送人们往返结界塔村子，可这说起来容易，做起来就难了。您也看到了，就连守护这里的兵力也不足。</p>
+          <p> </p>
+          <p>所以，我们想找位实力出众，并且心地善良的人提供帮助。我觉得您可以胜任，您认为呢？</p>
+          <p> </p>
+          <p>您愿意接受吗？看您的装备，蛮有实力的……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请顺便把[%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]也消灭掉吧。那是一种外表上看十分巨大的植物，它也祸害不浅。</p>
+          <p> </p>
+          <p>完成任务后，请您顺便告诉结界塔村子的守卫，叫他们定期清理一下道路。</p>
+          <p> </p>
+          <p>本来这些事情他们应该自觉去做，可是我要是不提，他们根本就不动，真让人伤脑筋。</p>
+          <p> </p>
+          <p>啊……这么一来，原本的一个请求，现在却变成了三个。哈哈，这也是因为我信任[%username]大人，那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是嫌麻烦？其实我也是看您打算去结界塔村子才会……</p>
+          <p> </p>
+          <p>如果您真不想做，我也没办法，但我还是希望您考虑考虑。</p>      
+          <p> </p>
+          <p>我们总不能离开岗位去抓蜥蜴啊！</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您难道是从烈士荒地过来的吗？</p>
+          <p> </p>
+          <p>这……您真是够莽撞的。</p>
+          <p> </p>
+          <p>那个地方充满了凶猛的野兽，几个人结伴还好说，一个人从那里走实在太危险了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将德米斯的话转告给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还有这样的事情？主要是这里也有很多事情要做，所以我没有考虑到那个地方。</p>
+          <p> </p>
+          <p>谢谢您消灭蜥蜴和迪欧纳埃，辛苦您了，请赶紧去休息吧。</p>
+          <p> </p>
+          <p>关于烈士荒地的问题，我会尽快向加易斯百夫长大人报告，以便能在最快的时间内处理。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭烈士荒地的凶猛野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Basilisk_45_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_DionaeaRed_45_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Diokuroi]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了能让人们安全到达结界塔村子，去烈士荒地，消灭蜥蜴和迪欧纳埃。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德米斯希望能消灭在烈士荒地威胁旅人安全的蜥蜴和迪欧纳埃。</p>
+          <p> </p>
+          <p>接受德米斯的请求，消灭了不毛之地的蜥蜴和迪欧纳埃，并向守护结界塔村子入口的守卫迪奥库劳伊转达了德米斯的话。迪奥库劳伊称没想到会有那种事情，并表示自己会尽快向加易斯百夫长报告此事，以便尽快采取措施。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

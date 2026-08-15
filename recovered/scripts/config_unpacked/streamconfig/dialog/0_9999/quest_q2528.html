@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前，发生了一起伤人事件。路过此地的商人被袭。</p>
+          <p> </p>
+          <p>攻击他们的是切尔路斯和剑齿豹。</p>
+          <p> </p>
+          <p>这起事件并非偶然。贝鲁斯兰多数地区常年被冰雪覆盖，获取食物非常困难。</p>
+          <p> </p>
+          <p>因此，经常会发生饥饿的野兽袭击人类的事件。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次出现类似的事情，我都非常担心。害怕那些家伙们袭击监视基地。</p>
+          <p> </p>
+          <p>虽然这里有我和索尔格林两个人，对付一两只应该问题不大，但如果成群结队发起攻击，那我们就束手无策了。</p>
+          <p> </p>
+          <p>不仅如此，一旦吉格里泰大人去了贝斯佩尔幽灵村，敌人可能会趁机向我们发动进攻。</p>
+          <p> </p>
+          <p>为了不让吉格里泰大人担心，我想提前消灭这些隐患。</p>
+          <p> </p>
+          <p>[%username] 大人能不能帮助我呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。我希望您消灭在这附近活动的那些 [%dic:STR_DIC_M_KuillusReD_33_An]和 [%dic:STR_DIC_M_KalnifReD_34_An]。</p>
+          <p> </p>
+          <p>它们频繁出没在贝斯佩尔幽灵村和雪原棕熊栖息地。</p>
+          <p> </p>
+          <p>由于非常饥饿，他们肯定十分凶恶，请一定要小心。</p>
+          <p> </p>
+          <p>那么拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉格里泰大人是非常敏感的人。虽然外表看不出来，但如果巴拉努斯接近监视基地，还是能从他脸上读到不安的。</p>
+          <p> </p>
+          <p>我不想再因为切尔路斯和剑齿豹而让吉格里泰大人担心。</p>
+          <p> </p>
+          <p>光是解决贝斯佩尔幽灵村的不死族问题就够让他头疼了。</p>
+          <p> </p>
+          <p>既然[%username] 大人拒绝，那也没办法。我只好抽空去解决了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（自言自语）食物还剩下5箱，药品也还很充足...</p>
+          <p> </p>
+          <p>啊，什么时候回来的啊！正忙着清点补给品，都没看到您回来。</p>
+          <p> </p>
+          <p>对了，消灭[%dic:STR_DIC_M_KuillusReD_33_An]和 [%dic:STR_DIC_M_KalnifReD_34_An]的事情办得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>我也感觉到周围活动的切尔路斯和剑齿豹比以前少了一些。</p>
+          <p> </p>
+          <p>其实站在它们的立场，我能理解它们的做法。可我们也得活下去，不是吗？</p>
+          <p> </p>
+          <p>看来，一段时间内不会发生让吉格里泰大人担心的事情了，这都多亏了您，谢谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭袭击人类的野兽。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KuillusReD_33_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KalnifReD_34_An]([%5]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Alfgeir]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭因为食物不足而袭击人类的雪原切尔路斯和咆哮的剑齿豹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔夫盖尔表示，由于食物不足，切尔路斯和剑齿豹经常袭击人类，就连幽灵村监视基地也时常处于危险之中。</p>
+          <p> </p>
+          <p>并表示，希望在神圣保护者吉格里泰大人注意之前解决问题。接受委托，去贝斯佩尔幽灵村和雪原棕熊栖息地消灭了切尔路斯和剑齿豹。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好像很久都没见面了。</p>
+          <p></p>
+          <p>[%username]大人，我找您是为了传达新的消息。</p>
+          <p></p>
+          <p>马勒库坦主神殿在继第1神庙训练所和第2神庙训练所之后，决定开放第3神庙训练所。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问第3神庙训练所的情况。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>如果说第1神庙训练所是学习和同伴配合的方法的地方，第2训练所是培养个人能力的地方，那第3神庙训练所就是培养生存能力的地方。</p>
+          <p></p>
+          <p>我看您好像对新的训练所感兴趣，您想去见见负责管理的战斗教官吗？</p>
+          <p></p>
+          <p>第3神庙训练所的战斗教官刚刚上任。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>新战斗教官的名字是[%dic:STR_DIC_N_Shinin]。</p>
+          <p></p>
+          <p>就是走廊入口处的那个男人。</p>
+          <p></p>
+          <p>他正在招募训练生，[%username]大人去的话，他会为你详细的说明训练所的情况。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>为什么？不感兴趣吗？</p>
+          <p></p>
+          <p>可能是因为强度很大，听说可以很快地提高实力。</p>
+          <p></p>
+          <p>以后如果改变了主意，请您去找希宁战斗教官。啊，负责管理第3神庙训练所的教官名叫希宁。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你来找我，一定是想了解第3神庙训练所，那我就单刀直入了。</p>
+          <p></p>
+          <p>和之前的神庙训练所不同，第3神庙训练所由几个房间构成。</p>
+          <p></p>
+          <p>进入走廊后，可以看到各个房间的出入门。目前允许进入的是孤独竞技场和混沌竞技场。</p>
+          <p></p>
+          <p>各个竞技场的规则各不相同，首先我来说明一下孤独竞技场的规则。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">了解孤独竞技场的规则。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>听清楚了吗？</p>
+          <p></p>
+          <p>看你的表情好像有点茫然。</p>
+          <p></p>
+          <p>我给你一点时间，你先熟悉一下规则。</p>
+          <p></p>
+          <p>混沌竞技场的规则之后再说。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <CutScene id="486" />
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>孤独竞技场的规则全都记住了吗？</p>
+          <p></p>
+          <p>那我来说明一下混沌竞技场的规则。</p>
+          <p></p>
+          <p>混沌竞技场的规则稍微有点复杂，请仔细听好。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">了解混沌竞技场的规则。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>第3神庙训练所是实战训练所，所以只要稍有松懈，就可能受伤。</p>
+          <p></p>
+          <p>为了保护自己，获得好的成果，必须熟悉规则。</p>
+          <p></p>
+          <p>如果还有不理解的地方，可以随时来找我。</p>
+          <p></p>
+          <p>不管几次都可以，直到[%username]%你明白为止。</p>
+        </body>
+      </html>
+    </Contents>
+    <CutScene id="487" />
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去见见新战斗教官[%dic:STR_DIC_N_Shinin]</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">向[%dic:STR_DIC_N_Shinin]确认混沌竞技场的规则</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">听说第3神庙训练所开放了。应该马上去见见战斗教官希宁，了解一下训练所的情况。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>神庙行政官说第3神庙训练所开放了，有兴趣的话，就去见见战斗教官希宁。</p>
+          <p></p>
+          <p>见到希宁之后，他为我说明了孤独竞技场和混沌竞技场的规则，说有问题的话，可以随时去找他。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

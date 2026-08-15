@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q3332</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个村子不知道以后会变成什么样子。</p>
+          <p> </p>
+          <p>除了水的问题之外……人们的生活也正在变得越来越困难。</p>
+          <p> </p>
+          <p>虽然夺回神秘泉是最直接的方法，但老实说，这样还不够。</p>
+          <p> </p>
+          <p>从村子的状况来看，居民们也变得非常敏感。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问发生了什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一点点的小事就精神激动，他们好像过于不安了。</p>
+          <p> </p>
+          <p>很多人说因为村外提波里德奔跑的声音，晚上经常睡不着觉。</p>
+          <p> </p>
+          <p>我现在因为别的问题就已经够头疼的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说可以帮他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？</p>
+          <p> </p>
+          <p>我刚好在看有没有人能帮我呢？</p>
+          <p> </p>
+          <p>请您帮我去清理掉一些[%dic:STR_DIC_M_hippolizardCh_33_An]%。</p>
+          <p> </p>
+          <p>虽然这样不能完全消除居民们的不安，但至少可以暂时减少他们的不便。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，麻烦您帮我，我心里觉得挺过意不去的。</p>
+          <p> </p>
+          <p>不过又能怎么办呢？消除居民们的不安，本来就是守卫的工作。</p>
+          <p> </p>
+          <p>请您帮我到[%dic:STR_DIC_W_LF2_SZ_G3]附近去清理掉一些[%dic:STR_DIC_M_hippolizardCh_33_An]%。</p>
+          <p> </p>
+          <p>不好意思，拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实我跟您说的时候就觉得很不好意思。</p>
+          <p> </p>
+          <p>因为提波里德的脚步声睡不着觉，就找您帮忙，这有点说不过去。</p>
+          <p> </p>
+          <p>但是我希望这样能让居民们安心一点。</p>
+          <p> </p>
+          <p>既然[%username]大人不愿意，我就只能找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>军民们的神经好像越来越敏感了。</p>
+          <p> </p>
+          <p>这样下去的话，也许大家都会离开这里。</p>
+          <p> </p>
+          <p>对了，提波里德清理掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，居民们的不安暂时可以消除了。</p>
+          <p> </p>
+          <p>希望能减少一些他们的不满，让他们能够有力量在这种艰难的情况下坚持下去。</p>
+          <p> </p>
+          <p>谢谢您帮我们清理掉了提波里德。</p>
+          <p> </p>
+          <p>为了表示感谢，我把这个送给您。请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭吵闹的[%dic:STR_DIC_M_hippolizardCh_33_An]([%2]/17)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Asclepius]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说村子附近的笨重的提波里德给居民们的睡眠造成了反感。去消灭掉它们，解除居民们的不安吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯科雷皮乌斯说居民们变得越来越敏感，他们抱怨提波里德的脚步声让他们睡不着觉。</p>
+          <p> </p>
+          <p>于是帮他消灭了提波里德，他对我表示感谢，说多亏了我，居民们的不安终于消除了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

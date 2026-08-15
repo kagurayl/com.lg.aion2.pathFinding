@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你开启过占卜箱子吗？</p>
+          <p></p>
+          <p>我开过很多个箱子，每次心里都很紧张。</p>
+          <p></p>
+          <p>虽然只是当作娱乐，但心情也是忽上忽下。</p>
+          <p></p>
+          <p>你也这样吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">好像是的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你对获得的卦满意吗？</p>
+          <p></p>
+          <p>如果不是很满意的话，愿意用5个[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_40A]卦跟我做个游戏吗？</p>
+          <p></p>
+          <p>运气好的话，可以获得[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_50A]卦，也许还能获得比那更好的礼物。</p>
+          <p></p>
+          <p>幸运女神总是青睐喜欢冒险的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的胆子还蛮大的嘛。我喜欢！</p>
+          <p></p>
+          <p>你只要在这里的包袱中间选择一个就可以了。</p>
+          <p></p>
+          <p>包袱里装的东西各不相同，不知道会出来什么东西。</p>
+          <p></p>
+          <p>你准备好了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出5个中吉卦。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我留在这里的期间，会一直和人交换占卦的。</p>
+          <p> </p>
+          <p>走过路过时，随时可以来找我。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的胆子还蛮大的嘛。我喜欢！</p>
+          <p></p>
+          <p>你只要在这里的包袱中间选择一个就可以了。</p>
+          <p></p>
+          <p>包袱里装的东西各不相同，不知道会出来什么东西。</p>
+          <p></p>
+          <p>你准备好了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出5个中吉卦。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卦的数量好像有点不够嘛。</p>
+          <p></p>
+          <p>你能确认一下背包里是否有5个[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_40A]卦吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">确认卦的数量后再来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我藏得很好，必须从很深的地方挖出来才行。</p>
+	  <p></p>
+	  <p>啊，出来了！</p>
+	  <p></p>
+	  <p>来，拿着！</p>
+	  <p></p>
+          <p>和朋友们一起抽奖，会更有意思。</p>
+          <p></p>
+          <p>如果你对包袱的结果不满意，可以再来找我！</p>
+          <p></p>
+          <p>剩下还有很多包袱呢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用5个[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_40A]卦交换[%dic:STR_DIC_N_event_Harmonan]的秘密包袱</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">应该接受哈尔莫南的提议，用5个中吉卦交换秘密包袱。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集到5个中吉卦之后，找到了哈尔莫南。</p>
+          <p></p>
+	  <p>她说可以获得更好的东西，于是带着期待的心情，用5个占卦和她交换了秘密包袱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

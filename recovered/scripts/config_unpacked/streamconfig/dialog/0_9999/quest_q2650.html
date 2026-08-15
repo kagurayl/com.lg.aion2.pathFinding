@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道您是否了解，龙族在投入战斗之前也要接受严格的训练。</p>
+          <p> </p>
+          <p>他们的组织管理体系化，之前在称呼他们时，前面的数字表示他们所在的军团。</p>
+          <p> </p>
+          <p>不仅如此，那些德拉克纽特士兵外表看上去虽然都差不多，但他们都有各自擅长的领域。</p>
+          <p> </p>
+          <p>仔细观察，您会发现，他们有的用刀，有的用弓，有的用铁锤，还有防具也各不相同。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就像杀星善于攻击和躲避一样，那些家伙们中也有擅于暗杀的德拉克纽特。</p>
+          <p> </p>
+          <p>必须提前消灭那些家伙。这样，在和巴卡尔玛军团决战时，我方的压力才不至于太大。</p>
+          <p> </p>
+          <p>而且，这对 [%username] 大人也是一次很好的训练。可以借此机会了解龙族的作战方式。</p>
+          <p> </p>
+          <p>怎么样？您打不打算执行这项任务？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务地点在霜眉前哨基地，除掉第47部队在那里负责暗杀任务的德拉克纽特。</p>
+          <p> </p>
+          <p>主要目标是[%dic:STR_DIC_M_Atk_LizardAsD_43_Ae]， [%dic:STR_DIC_M_AnA_LizardAsD_43_Ae]， [%dic:STR_DIC_M_AeA_LizardAsD_43_Ae]，任务就是消灭他们。</p>
+          <p> </p>
+          <p>另外，一定要集结同伴一同前往。只身一人进入敌人腹地非常危险。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去，您还没有做好进入敌人腹地的准备。</p>
+          <p> </p>
+          <p>不要紧。清醒认识自己的能力而选择拒绝，比高估形势而导致任务失败要好得多。</p>
+          <p> </p>
+          <p>请继续增强实力，当您有足够的自信后再来找我。</p>
+          <p> </p>
+          <p>但铲除那些威胁是必然的，不论早晚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了啊，[%username] 大人。</p>
+          <p> </p>
+          <p>霜眉前哨基地的情况如何？到处都是德拉克纽特和德雷克吧？</p>
+          <p> </p>
+          <p>您已经消灭了第47部队中负责暗杀任务的德拉克纽特了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。比我预想的时间要快很多。</p>
+          <p> </p>
+          <p>具备这样强大实力，不管什么任务应该都能顺利完成。</p>
+          <p> </p>
+          <p>您为将龙族赶出贝鲁斯兰做出了巨大的贡献。您的参展给予了我们很大的帮助。</p>
+          <p> </p>
+          <p>以后也希望能继续得到您的大力协助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭第47部队中负责暗杀任务的德拉克纽特。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Atk_LizardAsD_43_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AnA_LizardAsD_43_Ae]([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeA_LizardAsD_43_Ae]([%8]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Betoni]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">贝托尼称，消灭负责暗杀任务的德拉克纽特，既能了解龙族的战斗方式，也为即将到来的与巴卡尔玛军团的决战提供巨大的帮助。接受他的请求，去霜眉前哨基地消灭负责暗杀任务的第47德拉克纽特士兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝托尼称，龙族士兵也有各自专门的战斗领域，并询问是否愿意接受消灭负责暗杀任务的德拉克纽特的任务。</p>
+          <p> </p>
+          <p>并表示，消灭那些家伙们，既可以掌握龙族的作战方式，也减轻未来和巴卡尔玛军团决战时的压力。</p>
+          <p> </p>
+          <p>接受他的委托进入霜眉前哨基地，消灭了第47德拉克纽特精锐强袭兵，第47德拉克纽特精锐刺杀兵，第47德拉克纽特精锐隐身兵。</p>
+          <p> </p>
+          <p>收到报告的贝托尼表示，凭借这样强大的实力，不管什么任务都会得心应手，并希望以后多多合作。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

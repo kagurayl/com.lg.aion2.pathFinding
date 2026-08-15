@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(流着冷汗)怎，怎么办呢？</p>
+          <p> </p>
+          <p>又要去斯泰浓海岸了。</p>
+          <p> </p>
+          <p>高尔高斯舰长让我去那里回收补给品箱子。</p>
+          <p> </p>
+          <p>怎么办呢？我还以为会没问题的，但一听到斯泰浓海岸，我就又想起了那时候的事情……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问在害怕什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所，所有的东西都很可怕。斯泰浓海岸的所有东西。</p>
+          <p> </p>
+          <p>去消灭拉斯贝尔格的时候，同伴们全都死在了那里，再也没有复活。</p>
+          <p> </p>
+          <p>要，要是我慢一步的话，就会变成和他们一个样子了。</p>
+          <p> </p>
+          <p>(哀切地说)[%username]，请您帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了守护者和蓝色舰队的名誉，无论如何我都必须遵守命令。</p>
+          <p> </p>
+          <p>我考虑了很长时间，要不要到海边去。但是斯泰浓海岸……我怎么都无法鼓起勇气。</p>
+          <p> </p>
+          <p>问题是那里有很多[%dic:STR_DIC_M_WaterWorm_44_An]。它们身上有保护色，平时看上去和水的颜色一样，但是靠近之后，就会突然蹦出来攻击。</p>
+          <p> </p>
+          <p>只要没有了它们，执行任务就会容易得多。[%username]，请您帮我把它们消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，换岗时间过后，我得马上去回收补给品箱子才行……</p>
+          <p> </p>
+          <p>让我去找其他同伴帮忙？我不能那样做。</p>
+          <p> </p>
+          <p>如果我害怕出去执行任务的事情传出去的话，我还有什么脸面待在蓝色舰队里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾四周，小声地说)怎么去了这么长时间？</p>
+          <p> </p>
+          <p>马上就要换岗了，您还没出现，我都快急死了。</p>
+          <p> </p>
+          <p>拜托您的事情顺利吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，太好了。</p>
+          <p> </p>
+          <p>谢谢您帮我按时完成了任务。</p>
+          <p> </p>
+          <p>(飞快地从口袋里掏出了什么东西)请您收起来。这是我的一点心意。</p>
+          <p> </p>
+          <p>周围有很多人，快把它收起来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭斯泰浓海岸的[%dic:STR_DIC_M_WaterWorm_44_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">把结果告诉[%dic:STR_DIC_N_Alexius]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭沙锯西德罗食人花，让阿雷克西乌斯可以安心地去斯泰浓海岸回收补给品箱子。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿雷克西乌斯说他接到了命令，要去斯泰浓海岸回收补给品箱子，他因此很苦恼。</p>
+          <p> </p>
+          <p>在那里看到在和拉斯贝尔格的战斗中死去的同伴，他就很害怕。</p>
+          <p> </p>
+          <p>不过阿雷克西乌斯说命令是必须要执行的，于是帮他消灭掉了隐藏在海边的沙锯西德罗食人花。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

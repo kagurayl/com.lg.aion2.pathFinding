@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在哪儿呀...从极乐世界带来的菜谱明明就放在这儿的...</p>
+          <p></p>
+          <p>（挨个挨个地在找着什么东西）</p>
+          <p></p>
+          <p>蓝色舰队的人们都吃不下饭。原来都生活在大城市，对于海边的饮食好像很不习惯的样子。</p>
+          <p></p>
+          <p>因此我想给他们做极乐世界的饭菜，可是时间太长，我已经忘了做菜的方法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，找到了！</p>
+          <p></p>
+          <p>（读菜谱）啊，忘记这个了。</p>
+          <p></p>
+          <p>应该把刺魔津液做熟才能软化蜥蜴肉，忘记这一步了。怪不得那么硬呢。</p>
+          <p></p>
+          <p>守护者大人，这样下去可怎么办啊？</p>
+          <p></p>
+          <p>请您帮我去搜集[%dic:STR_DIC_I_QUEST_1622a]和[%dic:STR_DIC_I_QUEST_1622b]吧，我会把这本菜谱作为报答送给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢了。请您帮我搜集5份[%dic:STR_DIC_I_QUEST_1622a]和5桶[%dic:STR_DIC_I_QUEST_1622b]吧。</p>
+          <p></p>
+          <p>蓝色军舰的人都想吃这个，真的很急需。</p>
+          <p></p>
+          <p>其他的材料都准备好了，希望您快点回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您对做菜没什么兴趣。</p>
+          <p></p>
+          <p>就算这样，这本菜谱也是非常珍贵的...</p>
+          <p></p>
+          <p>唉，没办法了。只能让蓝色军舰的各位吃蜥蜴排骨了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您的材料都带来了吗？</p>
+          <p></p>
+          <p>如果是不懂的人，可能连排骨和尾骨都分不清。</p>
+          <p></p>
+          <p>守护者大人您想要看一看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出做菜材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没有把[%dic:STR_DIC_M_BasiliskRe_41_An]和[%dic:STR_DIC_M_Mudthorn_41_An]带来吗？</p>
+          <p></p>
+          <p>您要是能快点给我就好了。</p>
+          <p></p>
+          <p>如果不能给拿着武器作战的人吃饱的话，他们可就没有力气了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人您真是太有眼光了。带来的正是我需要的材料。</p>
+          <p></p>
+          <p>刺魔津液也给我带回来了。</p>
+          <p></p>
+          <p>给，这是答应你的菜谱。我还要做饭就先退下了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将[%dic:STR_DIC_M_BasiliskRe_41_An]和[%dic:STR_DIC_M_Mudthorn_41_An]所必须的材料带给[%dic:STR_DIC_N_Senir]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">塞尼尔要做菜需要把刺魔津液和蜥蜴的排骨带来给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞尼尔因为蓝色舰队军团的人不想吃饭而要给他们做极乐世界的饭菜。</p>
+          <p></p>
+          <p>为他带来做饭需要的蜥蜴的排骨和刺魔津液，获得了他的菜谱作为答谢礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

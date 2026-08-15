@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，等一等！</p>
+          <p> </p>
+          <p>不好意思，你能在那里等一等吗？</p>
+          <p> </p>
+          <p>我想把我做出来的第一个透明箱子给你看看。</p>
+          <p> </p>
+          <p>只要用透明突起缝起来就行，不会花多长时间的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把透明突起穿在水晶针上，在空中缝着什么东西。)</p>
+          <p> </p>
+          <p>抱歉让你久等了。</p>
+          <p> </p>
+          <p>好了，这是我做出来的第一个透明箱子。啊，你应该看不见吧。</p>
+          <p> </p>
+          <p>我想把它拿去给君君宾看一下。她见到这个的话，一定会高兴得跳起来的。</p>
+          <p> </p>
+          <p>你能帮我把它拿去交给[%dic:STR_DIC_N_Shugo_AB1_9]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，呐呐。</p>
+          <p> </p>
+          <p>(把信和什么东西放进黑色箱子里)来，你拿好了。</p>
+          <p> </p>
+          <p>我做的透明箱子和给[%dic:STR_DIC_N_Shugo_AB1_9]的信都放在里面了。</p>
+          <p> </p>
+          <p>你千万不要偷看信的内容哦。虽然我相信你不会那么做的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拿着箱子去找君君宾的话，周围的人会怎么说呢？</p>
+          <p> </p>
+          <p>也许会说我们俩的关系不正常的。</p>
+          <p> </p>
+          <p>要是传到宾塔奇老师耳朵里的话，我们俩也许会被赶出师门的。</p>
+          <p> </p>
+          <p>所以请你帮我给她送过去。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>又见面啦，呐呐。</p>
+          <p> </p>
+          <p>你把箱子材料交给米诺隆了吗？</p>
+          <p> </p>
+          <p>你来找我又有什么事呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把米诺隆的黑色箱子交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开盖子，拿出信并开始阅读。)</p>
+          <p> </p>
+          <p>是米诺隆制作的第一个透明箱子啊。</p>
+          <p> </p>
+          <p>上面还说你帮了他很多忙，他对你非常感激。</p>
+          <p> </p>
+          <p>透明箱子里面还有给君君宾的...</p>
+          <p> </p>
+          <p>(脸突然变红了)啊，没什么。</p>
+          <p> </p>
+          <p>守护者，谢谢你帮助我们。请你收下，这是我给你的礼物。对你的帮助表示真心的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把米诺隆的黑色箱子交给[%dic:STR_DIC_N_Shugo_AB1_9]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米诺隆说想把自己制作的第一个透明箱子拿去给君君宾看。帮助他把装着透明箱子和信的箱子交给君君宾吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米诺隆很快就用送去的材料制作出了透明箱子，他说想给我看看，让我等一会儿。</p>
+          <p> </p>
+          <p>不久之后，米诺隆做好了箱子，他说想拿去给君君宾看看。于是让我把装着透明箱子和信的黑色箱子转交给君君宾。</p>
+          <p> </p>
+          <p>把箱子交给君君宾之后，她说非常感谢，并给了我礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

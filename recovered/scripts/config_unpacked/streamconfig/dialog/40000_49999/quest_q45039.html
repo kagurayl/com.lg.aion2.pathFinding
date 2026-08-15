@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>致全体结界守护团团员。</p>
+          <p> </p>
+          <p>我们是为了旨在完成守护结界这一神圣使命的光荣的团体。</p>
+          <p> </p>
+          <p>因此确保奥德对我们来说非常重要，可以说是我们行动的方向。</p>
+          <p> </p>
+          <p>如果你是自豪的结界守护团团员，就去搜集奥德吧。</p>
+          <p> </p>
+          <p>采集[%dic:STR_DIC_G_QUEST_45039_a]，交给[%dic:STR_DIC_N_Alaum]后，可以得到证物作为酬谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我加入结界守护团已经很久了；</p>
+          <p> </p>
+          <p>每天我都在努力地执行任务。</p>
+          <p> </p>
+          <p>仅是我为守护结界而采集的奥德，就足够守卫一座要塞的了。</p>
+          <p> </p>
+          <p>但是您也知道，奥德会不断地消耗，因此守护者们必须不断地采集奥德。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>执行任务，是团员应尽的义务。</p>
+          <p> </p>
+          <p>如果不想执行任务，说明身为结界守护团成员的自豪感出了问题。</p>
+          <p> </p>
+          <p>如果出现这种情况，请和会员负责人商议。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。今天我收到了您3个奥德。</p>
+          <p> </p>
+          <p>您为了守护结界而采集的奥德，我们会好好使用的。</p>
+          <p> </p>
+          <p>对于您用于承担团员的义务、积极执行任务的行为，我在此表示感谢。请收下这个证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45039_a]，然后交给[%dic:STR_DIC_N_Alaum]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，为了维持结界，需要更多的奥德。</p>
+          <p> </p>
+          <p>采集奥德，交给了定居者营地的阿拉乌姆之后，他给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

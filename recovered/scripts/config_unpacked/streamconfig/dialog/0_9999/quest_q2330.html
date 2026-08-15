@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你来的正好。我刚好有事情想拜托你。</p>
+          <p> </p>
+          <p>智慧的神庙发来了一封命令书，接收人是岚黛特。</p>
+          <p> </p>
+          <p>据我所知，[%dic:STR_DIC_N_Randet]应该在布鲁斯特豪宁，好像是他们送错了地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然想要不要送回去，但是那份命令书好像是很紧急的命令书。</p>
+          <p> </p>
+          <p>你能把它送到布鲁斯特豪宁去吗？</p>
+          <p> </p>
+          <p>那边人手不足，你顺便去看看有没有什么需要帮忙的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，明智的决定。</p>
+          <p> </p>
+          <p>来，拿着。这是智慧的神庙的命令书。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Randet]应该就在布鲁斯特豪宁的定居者营地，你去把命令书交给他。</p>
+          <p> </p>
+          <p>哦，对了。你知道怎么去布鲁斯特豪宁吗？别磨蹭，去让瞬间移动师[%dic:STR_DIC_N_Orhe]把你送过去就行。</p>
+          <p> </p>
+          <p>那就幸苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人失望。我特地把这件事交给你，没想到你竟然会拒绝。</p>
+          <p> </p>
+          <p>还有，趁这次机会，还可以给智慧的神庙留一个好印象。</p>
+          <p> </p>
+          <p>你必须要培养自己的处事能力。我们这样的守护者想要在社会上立足，必须要懂得通融。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我记得没错的话，我们好像还是头一次见面。</p>
+          <p> </p>
+          <p>如果我认错人了的话，我在这里表示抱歉。这里有好多人，我还都不太熟悉。</p>
+          <p> </p>
+          <p>对了，您找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出神庙的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？</p>
+          <p> </p>
+          <p>(查看命令书。)</p>
+          <p> </p>
+          <p>啊，是神庙的命令书啊。</p>
+          <p> </p>
+          <p>您是特地把它送过来的吗？</p>
+          <p> </p>
+          <p>太感谢了！愿鲁米埃尔女神祝福你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把命令书交给[%dic:STR_DIC_W_ZONE_NAME_DF2A]的[%dic:STR_DIC_N_Randet]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">送给岚黛特的命令书被错送到了莫尔海姆要塞的布尔贝尔克那里。把命令书交给布鲁斯特豪宁的岚黛特吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护者布尔贝尔克说从智慧的神庙收到了命令书，但好像是送错了人，让我把命令书交给原来的主人岚黛特。</p>
+          <p> </p>
+          <p>于是把命令书交给了布鲁斯特豪宁的定居者营地的岚黛特，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

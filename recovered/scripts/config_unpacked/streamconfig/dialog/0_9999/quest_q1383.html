@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是[%username]大人吗！</p>
+          <p> </p>
+          <p>我听到了很多关于您的事情。听说您是实力出众的[%userclass]？</p>
+          <p> </p>
+          <p>能在这里碰到您，看来我今天的运气可真不错。</p>
+          <p> </p>
+          <p>岩石山监视基地的莱卡斯向我请求支援，我正在寻找合适的人选。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个嘛，我也不太清楚，但是通往监视基地的道路好像被格里芬挡住了。</p>
+          <p> </p>
+          <p>自尊心很强的莱卡斯请求帮助的话，问题一定是非常严重了。</p>
+          <p> </p>
+          <p>岩石山监视基地是监视革命团建设基地的重要地方，如果出了事的话就糟糕了。</p>
+          <p> </p>
+          <p>所以我想请[%username]大人去看一下情况，把[%dic:STR_DIC_M_Griffon_32_An]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Griffon_32_An]只有在白天才会出现。</p>
+          <p> </p>
+          <p>所以要执行任务的话，一定要在白天过去。</p>
+          <p> </p>
+          <p>把它们除掉之后，一定要来跟我说一下那里的情况。</p>
+          <p> </p>
+          <p>我得看情况决定是否要正式向埃尔特内要塞请求支援。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您改变想法了吗？</p>
+          <p> </p>
+          <p>当然，我想[%username]大人自己也有很多事情要做，找你帮忙的人也很多，一觉得很烦吧。</p>
+          <p> </p>
+          <p>但是有什么事情那么重要，会让您拒绝同僚的请求呢？请您好好考虑一下，如果改变主意的话请再来找我。</p>
+          <p> </p>
+          <p>我会在这儿等着[%username]您回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，这么快就回来啦？</p>
+          <p> </p>
+          <p>对了，情况怎么样？</p>
+          <p> </p>
+          <p>格里芬的攻击严重到需要请求支援的程度了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们的数量不是很多，真是太好了。</p>
+          <p> </p>
+          <p>这样的话，我们就没有必要请求要塞支援了。</p>
+          <p> </p>
+          <p>莱卡斯在那里大惊小怪的，我还以为有多严重呢。那个家伙看来没想象的那么老实，呵呵呵。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮助我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把挡住通往岩石山监视基地的道路的[%dic:STR_DIC_M_Griffon_32_An]清除掉([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Lemia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">应该去把挡住通往岩石山监视基地的道路的风之猎人格里芬清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷米亚说正在寻找能够帮助清理阻挡通往岩石山监视基地的道路的格里芬的人。</p>
+          <p> </p>
+          <p>去库里乌鲁岩石山除掉了风之猎人格里芬，并把那里的情况告诉了雷米亚，她说这下放心了，应该没有必要向野营基地请求支援。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

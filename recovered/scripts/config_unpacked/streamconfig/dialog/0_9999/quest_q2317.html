@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你知道博塔摩尔森林气势最盛的野兽是什么吗？</p>
+          <p> </p>
+          <p>就是斯普利根和斯普利甘特。</p>
+          <p> </p>
+          <p>它们原来生活在湖的另一边，但是最近把领地扩大到了博塔摩尔森林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此让居民们在经过森林的时候很不方便。它们虽然个头不大，但是却非常凶恶。</p>
+          <p> </p>
+          <p>而且数量也在急剧增加，生态界的均衡有被打破的危险。</p>
+          <p> </p>
+          <p>但是最近要塞由于处于非常时期，因此没有余力派遣执政官来解决斯普利根和斯普利甘特的问题。</p>
+          <p> </p>
+          <p>所以只好由我这个老头子拿了铜铸币在这里请求守护者们的帮助。因为如果不是要塞的命令的话，一般人不愿意去做这么麻烦的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要能去清除[%dic:STR_DIC_M_Sprigg2_23_An]和[%dic:STR_DIC_M_Sprigg3_25_An]的话，我就会提供铜铸币作为报酬。</p>
+          <p> </p>
+          <p>[%username]大人你也想执行扫荡斯普利根的任务吗？</p>
+          <p> </p>
+          <p>如果你搜集到铜铸币的话，我可以发放防具作为奖品，因此是很划算的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去除掉20头[%dic:STR_DIC_M_Sprigg2_23_An]和9头[%dic:STR_DIC_M_Sprigg3_25_An]。</p>
+          <p> </p>
+          <p>虽然要捕捉29头并不容易，但是你可以在执行其他任务，顺便经过博塔摩尔森林的时候去清除，因此应该不会太困难。</p>
+          <p> </p>
+          <p>那就辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，要捕捉29头那么多，绝对不是容易的事情。</p>
+          <p> </p>
+          <p>能力不行的话，拒绝我也是明智的选择。</p>
+          <p> </p>
+          <p>比接下任务之后，因为太困难而束手无策要好得多。</p>
+          <p> </p>
+          <p>那就请你以后想要执行任务的时候再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]。</p>
+          <p> </p>
+          <p>斯普利根和斯普利甘特都清除掉了吗？</p>
+          <p> </p>
+          <p>你应该是做完了才回来找我的吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>29头全都抓到了啊。</p>
+          <p> </p>
+          <p>真是辛苦了。</p>
+          <p> </p>
+          <p>来，这是说好的铸币。希望你好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除斯普利根和斯普利甘特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Sprigg2_23_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Sprigg3_25_An]([%5]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gundalpun]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除威胁居民的斯普利根和斯普利甘特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>甘达尔芬说斯普利根和斯普利甘特的数量突然增加，对居民们造成了威胁，但是因为要塞无法派遣执政官过来而成了大问题。</p>
+          <p> </p>
+          <p>所以他按照要塞的命令提供任务，并提供铜铸币。于是帮他去除掉了29头斯普利根和斯普利甘特，获得了铜铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

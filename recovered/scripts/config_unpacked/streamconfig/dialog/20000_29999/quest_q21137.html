@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把贝罗金的影像之珠拿在手上，尝试启动。)</p>
+          <p> </p>
+          <p>(也许是坏了，没有任何反应。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Skira]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"[%username], 你去见过盖尔兰了吗？"</p>
+          <p> </p>
+          <p>他告诉你黑暗术古发明家是谁了吗？</p>
+          <p> </p>
+          <p>(查看四周)嗯，看你一个人回来，好像是没找到那个发明家吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出影像之珠并报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？那个名叫贝罗金的黑暗术古发明家死了？</p>
+          <p> </p>
+          <p>还好珠子找到了……</p>
+          <p> </p>
+          <p>(把影像之珠握在手上，闭上眼睛。)</p>
+          <p> </p>
+          <p>(过了一会儿之后把眼睛睁开)果然无法启动。贝罗金至死都拿在手上，提亚马特军退攻击侬术古部落的景象一定被记录了下来……</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Wolfgang]研究所长也许能修好坏了的珠子。</p>
+          <p> </p>
+          <p>不好意思，请你把影像之珠送到所长那里去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从斯基拉那里收到了消息。</p>
+          <p> </p>
+          <p>听说你找到了那个名叫贝罗金的黑暗术古发明家制造的影像之珠？</p>
+          <p> </p>
+          <p>把珠子给我看一眼吧。我得看看状态如何。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出贝罗金的影像之珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看珠子)损坏的情况要比想象的严重。</p>
+          <p> </p>
+          <p>我这边恐怕无法复原。</p>
+          <p> </p>
+          <p>必须送到伏魔殿的研究所去，让他们看一看。</p>
+          <p> </p>
+          <p>[%username]，谢谢你帮我找到了这么重要的线索。</p>
+          <p> </p>
+          <p>这是给你的奖励。如果在影像之珠中可以找到我们需要的信息，我会再多给你一些。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把贝罗金的影像之珠交给[%dic:STR_DIC_N_Skira]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把贝罗金的影像之珠交给[%dic:STR_DIC_N_Wolfgang]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把贝罗金的影像之珠交给斯基拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把贝罗金的影像之珠交给斯基拉之后，她说珠子好像坏了，无法启动，让我拿去给沃夫冈研究所长看看。</p>
+          <p> </p>
+          <p>确认了珠子的状况之后，沃夫冈说在格尔克马洛斯无法修复，必须送到伏魔殿研究所去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

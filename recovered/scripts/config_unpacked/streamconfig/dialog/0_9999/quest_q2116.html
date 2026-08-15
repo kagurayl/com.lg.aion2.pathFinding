@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想要找什么黑珍珠的话，还需要更多其它的情报。</p>
+          <p> </p>
+          <p>光有日志，连珍珠在哪儿都搞不清。因为还没到伊斯夏尔肯，日志就已经结束了。</p>
+          <p> </p>
+          <p>想要付诸行动的话，还要去一趟阿希尔澜号，收集必要的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些家伙拿着日志到了伊斯夏尔肯，肯定不会是漫无目的。</p>
+          <p> </p>
+          <p>一定是有什么确切的情报才会来到这儿。比如说标有黑珍珠的地图之类的。</p>
+          <p> </p>
+          <p>我们要做的事情就是把那张地图搞到手。</p>
+          <p> </p>
+          <p>伊斯夏尔肯的地形我们了如之掌，只要能够弄到地图，我们就胜券在握了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然已经走到这一步了，兄弟你就继续处理吧。</p>
+          <p> </p>
+          <p>我在这儿看着，你去阿希尔澜号把[%dic:STR_DIC_I_2116a]%找来。</p>
+          <p> </p>
+          <p>对了！对头儿还有其他同事一定要保密，这个不用我多说吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道，兄弟你肯定会出马的。</p>
+          <p> </p>
+          <p>那你去搜船把[%dic:STR_DIC_I_2116a]%取来吧。</p>
+          <p> </p>
+          <p>还有，我再跟你说一句，你最好别想耍小聪明骗我。我在这方面可是敏锐得很。</p>
+          <p> </p>
+          <p>那你就快去快回吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你该不会是想先假装没兴趣，然后自己去动手吧？</p>
+          <p> </p>
+          <p>最好不是那样，否则就不好玩了。</p>
+          <p> </p>
+          <p>听明白了就去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你怎么这么晚才来啊？左等也不来，右等也不来，我还以为你掉进水里淹死了呢。</p>
+          <p> </p>
+          <p>怎么样？[%dic:STR_DIC_I_2116a]找到了吗？</p>
+          <p> </p>
+          <p>那些家伙在找什么地方啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递过地图。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊？你还没把事情做完？</p>
+          <p> </p>
+          <p>要是我去了，两趟都完事了。</p>
+          <p> </p>
+          <p>在别人还没注意之前，赶紧去阿希尔澜号把地图找出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是那个地图啊。</p>
+          <p> </p>
+          <p>我看那些家伙人数不少，你辛苦了。</p>
+          <p> </p>
+          <p>这里人多眼杂，现在把地图拿出来看不太方便。你过一会儿再来，到时候我们再看吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿希尔澜号找出地图拿给[%dic:STR_DIC_N_Lidun]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">想要找到黑珍珠就要有地图。去阿希尔澜号找出地图吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+        <p>说如果要找到黑珍珠就要有地图。于是我们就照里顿的嘱咐，去搜了阿希尔澜号，找出并带回了标有宝贝位置的地图。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

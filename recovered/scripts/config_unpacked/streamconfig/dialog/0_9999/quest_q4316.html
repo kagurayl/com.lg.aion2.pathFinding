@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>随着战争的持续，我们失去了很多的东西。</p>
+          <p> </p>
+          <p>本应该好好保存的古代的遗产，由于敌人的破坏和我们的漠视而变成了灰烬。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_UNdeadLight_all]的存在……也许是一件幸运的事。</p>
+          <p> </p>
+          <p>虽然他们成为了幽灵，但从另外的角度来看，他们也在为我们保护古代的遗产。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从你带回来的遗物来看……可以知道超出我们想象的大量遗物差点落入了天族的手中。</p>
+          <p> </p>
+          <p>现在我每天都能收到报告，说发现了新的遗物。</p>
+          <p> </p>
+          <p>你能继续帮我去寻找古代的遗物吗？你之前去过，对你来说应该并不困难。</p>
+          <p> </p>
+          <p>还有比这更有意义的事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。请你去消灭[%dic:STR_DIC_M_UNdeadLight_all]，搜集[%dic:STR_DIC_I_QUEST_2320a]、[%dic:STR_DIC_I_QUEST_2320b]和[%dic:STR_DIC_I_QUEST_2320c]。</p>
+          <p> </p>
+          <p>越多越好。越多就越能接近真实……</p>
+          <p> </p>
+          <p>希望你能积极协助我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不想到有幽灵的地方去吗？</p>
+          <p> </p>
+          <p>那些幽灵都满怀愤恨，看样子的确不好对付。</p>
+          <p> </p>
+          <p>我可以理解你的心情。如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要的东西找到了吗？</p>
+          <p> </p>
+          <p>古代的货币、武器和防具。</p>
+          <p> </p>
+          <p>那是死去的幽灵仍然带在身边的宝贵的遗物，请给我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出古代的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？你还没搜集到我想要的东西吗？</p>
+          <p> </p>
+          <p>虽然古董越老越值钱，但我们必须在它们消失之前找回来，不是吗？</p>
+          <p> </p>
+          <p>请你快去搜集[%dic:STR_DIC_I_QUEST_2320a]、[%dic:STR_DIC_I_QUEST_2320b]和[%dic:STR_DIC_I_QUEST_2320c]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿出一个货币)看这个纹样。每一种纹样都有着微妙的差别。</p>
+          <p> </p>
+          <p>虽然搜集到了很多遗物，但还是不够。</p>
+          <p> </p>
+          <p>知道的越多，待解的谜团也就越多。这就是考古学的魅力……</p>
+          <p> </p>
+          <p>不管怎样，这次真是辛苦了。这是我的一点心意，请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_UNdeadLight_all]，搜集古代的东西，然后交给[%dic:STR_DIC_N_Tofa]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭在莫尔海姆徘徊的古代天人的灵魂，搜集古代的遗物交给托帕。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托帕说需要从古代守卫的灵魂身上搜集更多的遗物。</p>
+          <p> </p>
+          <p>于是按照他的委托，消灭了古代天人的灵魂，把搜集到的古代货币、武器和防具交给了他。他非常感慨，对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的正好！[%username]，刚才我还想找你呢。</p>
+          <p> </p>
+          <p>最近有件特别棘手的事。</p>
+          <p> </p>
+          <p>为了保证周边的安全，不久前，要塞方面开始向外围城墙设立岗哨。这样，监视的范围更远，发现可疑情况的几率也随之增加。</p>
+          <p> </p>
+          <p>不过，最近每天都出现哨兵们失去意识而晕倒的情况！</p>
+          <p> </p>
+          <p>后来询问了醒来的士兵，他们说是被一个叫什么古代加尔西坎的东西攻击。那东西平常静止不动，大家都以为是石像，没太在意，可现在却受到攻击了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然没有看清敌人的面目，很让我生气，可是事情既然发生，那就没办法了。为了让同样的事情不再发生，必须要有所行动。</p>
+          <p> </p>
+          <p>所以，我才想到找你。说起来，你应该是解决这件事的最佳人选。</p>
+          <p></p>
+          <p>要塞的士兵与天族、龙族的战斗经验很丰富，可从来没有和加尔西坎这种怪物战斗过...</p>
+          <p></p>
+          <p>只有你，我可以绝对信任，怎么样啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回答得真痛快。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An]大都分布在古代城市娄要塞外围。它们的行动非常迅速，一定要小心。</p>
+          <p> </p>
+          <p>啊，还有作为胜利的凭据，请把 [%dic:STR_DIC_I_QUEST_2821a]带来。不是不相信你，不过凡事都要讲原则。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你有别的事情要忙，那也没办法。</p>
+          <p> </p>
+          <p>只能派要塞里的士兵们去干了。由于缺乏经验，抓一只加尔西坎要费大半天时间，不过也不是不能做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An]都消灭了吗？</p>
+          <p> </p>
+          <p>那么请将胜利的凭据交给我吧。</p>
+          <p> </p>
+          <p>是[%dic:STR_DIC_I_QUEST_2821a] 。你没忘记吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将加尔西坎的角交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就算消灭了所有古代加尔西坎，可如果没有获得证据，我也无法确认啊。</p>
+          <p> </p>
+          <p>只有得到[%dic:STR_DIC_I_QUEST_2821a]，我才能支付酬劳。</p>
+          <p> </p>
+          <p>所以请拿回规定数量的角吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要吓人啊。既然都带来了，表情干吗还这么沉重！</p>
+          <p> </p>
+          <p>这么快就能消灭古代加尔西坎。果然，我的决定是正确的。</p>
+          <p> </p>
+          <p>来，这是说好的奖励。希望能对你有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An]，并搜集胜利的凭据交给 [%dic:STR_DIC_N_Ab1_1211_Quest_Da]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭妨碍要塞警备的古代加尔西坎，作为证据，把搜集到的角交给赫拉特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古代加尔西坎最近开始攻击守卫外围城墙的哨兵，赫拉特因而感到非常担心。</p>
+          <p> </p>
+          <p>要塞的士兵们没有和像加尔西坎这样的怪物战斗的经验。因此她希望把消灭古代加尔西坎的任务交给信得过的人。</p>
+          <p> </p>
+          <p>接受赫拉特的委托，消灭了在古代城市娄要塞周围的古代加尔西坎，并把它们的角作为证据交给了赫拉特。她对此表示了感谢，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

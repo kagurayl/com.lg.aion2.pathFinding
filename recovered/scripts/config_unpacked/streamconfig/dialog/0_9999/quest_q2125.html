@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你想不想赚点钱？现在有个事情可以让我们赚上一小笔。</p>
+          <p> </p> 
+          <p>你知道莱卡恩很重视的那个岛北边的[%dic:STR_DIC_W_DF1_8]吧？我和[%dic:STR_DIC_N_Hef]、[%dic:STR_DIC_N_Alfrigh]今天想对那儿下手。</p>
+          <p> </p>
+          <p>当然对头儿要保密。怎么样？有没有兴趣？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说有兴趣。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感兴趣是吧？好！</p>
+          <p> </p>
+          <p>那我要告诉其他人，你也加入进来了。</p>
+          <p> </p>
+          <p>我跟[%dic:STR_DIC_N_Alfrigh]说，至于[%dic:STR_DIC_N_Hef]兄弟你直接跟他说吧。怎么样？</p>
+          <p> </p>
+          <p>要是我回到村子里的话，头儿有可能会看出破绽也说不定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去[%dic:STR_DIC_N_Hef]发出‘喵～’的一声，他就能明白是什么意思了。</p>
+          <p> </p>
+          <p>啊，对了，如果你见到赫耶夫的话，问问他那些武器都准备得怎么样了。</p>
+          <p> </p>
+          <p>那抓紧出发吧，没多少时间了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切～这么好的机会你都不要。</p>
+          <p> </p>
+          <p>不过不愿意就算了，我也不强人所难。 </p>
+          <p> </p>
+          <p>别告诉别人就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于一个大盗来说，没有比武器更好的朋友了。</p>
+          <p> </p>
+          <p>武器跟人不一样，永远不会有背叛两个字。</p>
+          <p> </p>
+          <p>说吧，你来是想要什么武器？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说“喵～”。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妙乌说要再找一个人，看来她找到你了。</p>
+          <p> </p>
+          <p>也好。我还担心她找来一个没什么本事，只会说三道四的家伙呢。  </p>
+          <p> </p>
+          <p>啊，还有，今天去偷奥黛尔拉培育地我看有点难。今天头儿吩咐下来很多杂七杂八的事情，所以我们要用的武器都没准备好。</p>
+          <p> </p>
+          <p>如果准备好武器的话，还要等几天，兄弟你去跟[%dic:STR_DIC_N_Alfrigh]说一声我们的计划延期了。可以吗？</p>
+          <p> </p>
+          <p>那家伙性子太急，不赶紧去跟她说，搞不好她自己就去了。所以你快点去[%dic:STR_DIC_W_DF1_5]看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚好我也听妙乌说兄弟你的事情了。</p>
+          <p> </p>
+          <p>怎么样？我现在手都痒痒了，恨不得马上就动手。</p>
+          <p> </p>
+          <p>对了，赫耶夫说准备好了？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达赫耶夫的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？妈的。等几个小时都够难受了，还要等几天？</p>
+          <p> </p>
+          <p>可是又有什么办法，总不能连个武器都没有就攻去啊。</p>
+          <p> </p>
+          <p>我会对妙乌说的，你收下这个吧。</p>
+          <p> </p>
+          <p>让你来这儿受累了，收着吧。</p>
+          <p> </p>
+          <p>行了，行什么礼呀。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Hef]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Alfrigh]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">说好和妙乌、[%dic:STR_DIC_N_Hef]、[%dic:STR_DIC_N_Alfrigh]一起攻打奥黛尔拉培育地。告诉[%dic:STR_DIC_N_Hef]我加入了，并问问他武器的准备情况。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妙乌提议背着头儿去攻打奥黛尔拉，我决定加入。在告诉[%dic:STR_DIC_N_Hef]这件事情的同时问了问他武器的准备情况，他说还没好，要再等几天。</p>
+          <p> </p>
+          <p>把这个消息告诉了[%dic:STR_DIC_N_Alfrigh]，他给了我一点跑腿费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p>阴险狡诈的寡妇希尼斯因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p> 1. 诈婚</p>
+          <p> 2. 毒死了4个丈夫，抢走他们的财产</p>
+          <p></p>
+          <p>将重谢提供[%dic:STR_DIC_M_CriminalLightWiNamedQ_24_An]具体行踪，或直接将希尼斯除掉把她的头发作为证据上交的人。</p>
+          <p></p>
+          <p>-赏金猎人[%dic:STR_DIC_N_Crios]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Background name="Doc_bg_q3019"/>
+    <Selects>
+      <Act href="HACTION_SETPRO1">决定捉拿阴险狡诈的希尼斯。 </Act>
+      <Act href="HACTION_FINISH_DIALOG">情节展开到此告一段落。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然原本我对结婚也没什么兴趣，但听说了阴险狡诈的希尼斯之后，想结婚的念头一点儿都没有了。</p>
+          <p> </p>
+          <p>为了夺取财产居然杀了四个丈夫，真是太可怕了，谁还敢结婚呢？</p>
+          <p> </p>
+          <p>据说她毒害丈夫的方法也是非常谨慎，每天都在炖菜里化砖块大小的奶油给她的丈夫吃。所以全部都是患上高血压，最后死于心脏麻痹。</p>
+          <p> </p>
+          <p>啊，对了，你说你是为何事而来的？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交希尼斯的头发。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你再怎么说已经除掉了阴险狡诈的希尼斯也没用，只要没有证据，我就没法相信。</p>
+          <p> </p>
+          <p>如果只是用嘴说的话，我大概都已经抓住希尼斯十回了，哈哈。</p>
+          <p> </p>
+          <p>要是需要赏金的话，就请把证据拿给我看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，看来这是希尼斯的头发没错。</p>
+          <p> </p>
+          <p>既然都带了这东西回来，您早说嘛。</p>
+          <p> </p>
+          <p>无论如何您辛苦了。请收下。</p>
+          <p> </p>
+          <p>这是捉拿希尼斯的赏金。为了抓到她一定费了不少心思吧，用这些钱买一点恢复气力的补品吧。</p>
+          <p> </p>
+          <p>当然，除了炖菜，哈哈哈！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_CriminalLightWiNamedQ_24_An]，找到证物，带给[%dic:STR_DIC_N_Crios]</font></p>[%collectitem]</step>        
+    </steps>
+          <p><font font_xml="quest_summary">除掉悬赏通缉犯阴险狡诈的希尼斯，剪掉她的头发，交给克里奥斯，领取赏金吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉了因毒害了4个丈夫而被通缉的阴险狡诈的希尼斯，带着她的头发作为证据，交给克里奥斯，领取了赏金。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

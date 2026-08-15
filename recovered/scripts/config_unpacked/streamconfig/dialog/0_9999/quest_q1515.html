@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说，这是谁啊？这不是[%username]吗！</p>
+          <p> </p>
+          <p>[%userclass]这么能干，我正在找你呢，怎么突然出现在这里了？看来真是阿里埃大人在保佑我啊。</p>
+          <p> </p>
+          <p>没有时间了，我就言简意赅地说一下吧。</p>
+          <p> </p>
+          <p>你能不能现在去一下因特尔蒂卡结界塔？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Aphesius]请求支援。</p>
+          <p> </p>
+          <p>他自尊心非常强，从没有提出过这种请求。现在请求增援，看来一定是发生了十分紧急的事情。</p>
+          <p> </p>
+          <p>他说能不能请能干的[%userclass]去，你能不能帮助他呢？ </p>
+          <p> </p>
+          <p>现在结界塔位于普依艾密林和奇夏尔部落之间，情况十分危急。你如果能去的话，真的是帮了大忙。</p>
+          <p> </p>
+          <p>他做事一向有板有眼，肯定会厚厚优待你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。那就请你赶快出发吧。</p>
+          <p> </p>
+          <p>我看你也不要走着去了，去求一下移动师吧。</p>
+          <p> </p>
+          <p>结界塔位于普依艾密林和奇夏尔部落之间，第一次去的人很难找到，而且路上也很危险。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不能重新考虑一下了吗？</p>
+          <p> </p>
+          <p>如果是平时肯定就派要塞的卫兵去了，可是因为龙族的关系，现在因特尔蒂卡也处于战时状态。</p>
+          <p> </p>
+          <p>结界塔本身就非常重要，而且还占据了从东部到西部的交通要道，如果失守，不知会沦为怎样的情形。</p>
+          <p> </p>
+          <p>所以请你一定重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来做什么？</p>
+          <p> </p>
+          <p>如果不是什么急事，就以后再说吧。</p>
+          <p> </p>
+          <p>东部地区次元之门被打开了，搞得我最近手忙脚乱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是要塞派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说你是巴尔西塔派来的人？</p>
+          <p> </p>
+          <p>这么说你就是那大名鼎鼎的[%username]?你的事情我都熟记于胸了。</p>
+          <p> </p>
+          <p>现在[%userclass]人手不够，你来了真是太好了。看来拜托巴尔西塔还是没错啊。 </p>
+          <p> </p> 
+          <p>居然派来了这么优秀的[%userclass]。</p>
+          <p> </p>
+          <p>这里的事情可能比你想象的困难，不过还请你多多帮忙。我一定会好好补偿你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Aphesius]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">他说因特尔蒂卡结界塔人手不够。要你去结界塔见阿沛希乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>百夫长巴尔西塔说阿沛希乌斯请求支援，要你去因特尔蒂卡结界塔。</p>
+          <p> </p>
+          <p>赶到了结界塔，阿沛希乌斯感谢我的到来，表示非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

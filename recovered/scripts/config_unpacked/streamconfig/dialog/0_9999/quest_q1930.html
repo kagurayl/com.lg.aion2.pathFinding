@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人一走过来，我就一下子感觉到了火的气息。</p>
+          <p> </p>
+          <p>您是不是带着拥有强力火之气息的武器啊？</p>
+          <p> </p>
+          <p>那么能让我看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">拿出火焰之剑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...这种程度的话也算是好武器了。</p>
+          <p> </p>
+          <p>不过如果能注入更多的火之气息的话，它就能变成更好的武器。</p>
+          <p> </p>
+          <p>如果您能找齐材料，我可以帮您提高它的性能... </p>
+          <p> </p>
+          <p>但是寻找材料需要去很远的地方，可能会有点繁琐。</p>
+          <p> </p>
+          <p>您还是想要提高武器的性能吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的！那我告诉你材料。</p>
+          <p> </p>
+          <p>一共有3种，格力普尼克斯的羽毛、岩浆的精髓和燃烧的地狱犬尾巴。</p>
+          <p> </p>
+          <p>幸运的是所有的东西都可以在埃尔特内地区找到。</p>
+          <p> </p>
+          <p>怎么样？您能搜集到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1930B]和[%dic:STR_DIC_I_QUEST_1930C]在盖洛克火山地带可以找到。</p>
+          <p> </p>
+          <p>捕捉精灵和地狱犬就可以获得。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1930A]可能不太好找。</p>
+          <p> </p>
+          <p>因为只有在库里乌鲁岩石山深处的火焰格力普尼克斯身上才能获得。</p>
+          <p> </p>
+          <p>不管你是去打猎格力普尼克斯也好，或者想别的办法也好，都没关系。只要能搜集到就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是嫌去这么远的地方太麻烦。</p>
+          <p> </p>
+          <p>但是与其在欧比斯和执政官战斗的时候后悔：“当时要是提高了剑的性能就好了...”，现在麻烦一点也是好的。</p>
+          <p> </p>
+          <p>以后如果您改变了主意可以再来找我。我随时可以帮助您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了，[%username]。</p>
+          <p> </p>
+          <p>怎么看起来好像受了很多苦的样子。</p>
+          <p> </p>
+          <p>我说的材料您都找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您对提高剑的性能不怎么关心嘛。</p>
+          <p> </p>
+          <p>虽然可能会觉得太麻烦，但是做完之后您绝对不会后悔。</p>
+          <p> </p>
+          <p>请您快掉去把[%dic:STR_DIC_I_QUEST_1930A]、[%dic:STR_DIC_I_QUEST_1930B]和[%dic:STR_DIC_I_QUEST_1930C]找回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要的材料您都找到了。</p>
+          <p> </p>
+          <p>您稍等一下。我马上就把火之气息注入剑里面。</p>
+          <p> </p>
+          <p>（过了一会儿）来，已经好了。火焰之剑变成了地狱的火花。</p>
+          <p> </p>
+          <p>这种程度的话可以说是最好的剑了。希望您能在战斗中好好使用它。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将从[%dic:STR_DIC_N_NPC_Griffonix]、[%dic:STR_DIC_M_ElementalFire3_36_An]和[%dic:STR_DIC_M_Hellhound_39_An]身上获得的材料交给[%dic:STR_DIC_N_Regmos]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">强化火焰之剑需要埃尔特内出产的材料。必须搜集材料交给莱克姆斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火花之守护者莱克姆斯看到火焰之剑之后，说剑还可以变得更好。</p>
+          <p> </p>
+          <p>于是去埃尔特内搜集到了他所说的材料交给了他，他把火焰之剑提升成了地狱的火花。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

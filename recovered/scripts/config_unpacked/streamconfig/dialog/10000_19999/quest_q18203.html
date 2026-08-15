@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你完成了第7阶段的训练，感觉怎么样？</p>
+          <p> </p>
+          <p>是不是感觉实力比以前强一些了？</p>
+          <p> </p>
+          <p>不说其他的，通过这样的训练，可以让你们学会合力对付敌人的方法。</p>
+          <p> </p>
+          <p>和龙族战斗的时候，很少有一对一的情况，经常是多对多。因此今后希望你们能继续努力进行团体训练。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到目前为止，你都做得很好。但是第7阶段开始就不同了。</p>
+          <p> </p>
+          <p>失败的概率会更高，有的训练生甚至会受重伤。</p>
+          <p> </p>
+          <p>你想继续挑战吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我喜欢这种爽快的回答！</p>
+          <p> </p>
+          <p>在第7阶段中，会出现你们最熟悉的对手。</p>
+          <p> </p>
+          <p>所以从心理上来说，这也许是最困难的训练。</p>
+          <p> </p>
+          <p>不过以你之前展现出来的实力，这次的训练应该也能出色地完成。</p>
+          <p> </p>
+          <p>期待你能取得好的结果。</p>
+          <p> </p>
+          <p>为了凯西内尔的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真遗憾。我还以为你一定会继续挑战的。</p>
+          <p> </p>
+          <p>不过与其鲁莽地挑战，对自己有自知之明也是一件好事。</p>
+          <p> </p>
+          <p>等你熟练掌握了之前学会的东西，重新有了勇气之后，你可以再来找我。</p>
+          <p> </p>
+          <p>凯西内尔神庙训练所的大门会向所有人打开，再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了报告，说你的组队打倒了奥尔佩。</p>
+          <p> </p>
+          <p>是真的吗？</p>
+          <p> </p>
+          <p>请参照6W原则，向我如实报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>祝贺你！</p>
+          <p> </p>
+          <p>我和埃纽确认过了。</p>
+          <p> </p>
+          <p>第7阶段的对手是你们的老师，本来以为你们一定会害怕。你们打倒了奥尔佩，做的很好。</p>
+          <p> </p>
+          <p>我会给予你完成第7阶段训练的称号。这个称号会一直在你的头上发光，其他人一定会羡慕你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒第7阶段的最终训练对象奥尔佩([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Molfus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打倒第7阶段的最终训练对象奥尔佩，然后向木浦斯战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯西内尔神庙训练所的战斗教官木浦斯告诉了我训练所的规则，让我去打倒第7阶段的最终训练对象。</p>
+          <p> </p>
+          <p>和同伴们一起打倒了奥尔佩，向木浦斯报告之后，他授予了我称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

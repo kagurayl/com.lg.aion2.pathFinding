@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剩下的路还远着呢，现在才搜集到了8块碎片中的3块。</p>
+          <p> </p>
+          <p>下一个你要去的地方是埃雷修兰塔的上部。</p>
+          <p> </p>
+          <p>那里有构成剑身下半部分的两块剑身碎片。</p>
+          <p> </p>
+          <p>分别是[%dic:STR_DIC_I_quest_ab1_04]和[%dic:STR_DIC_I_quest_ab1_05]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>会自我分裂的龙剑似乎同时拥有再生的能力和破坏的能力。</p>
+          <p> </p>
+          <p>你会去埃雷修兰塔上部的阿斯特利亚深渊和古代城市娄地下要塞吗？</p>
+          <p> </p>
+          <p>听说那里有龙族入侵，并把宝物藏在了那里。希望你快去快回。</p>
+          <p></p>
+          <p>请注意安全，一定要将剑身碎片带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在距离强烈的奥德气息笼罩大地的日子已经不远了。</p>
+          <p> </p>
+          <p>一切要快！</p>
+          <p> </p>
+          <p>带回再生剑身和破坏剑身后，你还得去寻找剩下的3块碎片。</p>
+          <p> </p>
+          <p>别忘了再带360万基纳来。研磨剂上花的钱要比想象的多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都已经找到3块碎片了，这个时候放弃太可惜了吧？</p>
+          <p> </p>
+          <p>怎么能这样呢……</p>
+          <p> </p>
+          <p>错过这次机会的话，要等到下一次龙剑复活不知得等到什么时候了。</p>
+          <p> </p>
+          <p>如果你改变了主意，请尽快回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔上部的阿斯特利亚深渊和古代城市娄地下要塞里真的有[%dic:STR_DIC_I_quest_ab1_04]和[%dic:STR_DIC_I_quest_ab1_05]吗？</p>
+          <p> </p>
+          <p>毕竟口口相传的传说也可能会有误传的地方。</p>
+          <p> </p>
+          <p>但遗憾的是这个传说是我们现在唯一可以依赖的线索。如果没找着，请你再回去找找看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出两块剑身碎片和360万基纳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还在干嘛？</p>
+          <p> </p>
+          <p>还不赶紧去找那两块剑身碎片？回到埃雷修兰塔上部的古代城市娄地下要塞和阿斯特利亚深渊再找找看。</p>
+          <p> </p>
+          <p>啧啧……手上的钱不够，不能什么地方借点吗……</p>
+          <p> </p>
+          <p>为了传说中的宝剑，区区360万基纳都搞不定吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不容易，居然找到了再生剑身和破坏剑身。</p>
+          <p> </p>
+          <p>真厉害。</p>
+          <p> </p>
+          <p>现在都还能感受到龙剑失去主人时，自我破坏的那份巨大力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿斯特利亚深渊和古代城市娄地下要塞寻找龙剑的[%dic:STR_DIC_I_swordM2]，和360万基纳一起交给[%dic:STR_DIC_N_Anusis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说为了复原传说中的龙剑，还需要另外两块剑身碎片。必须去埃雷修兰塔上部寻找那2块剑身碎片。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿努西斯为了复原传说中的龙剑，要我去寻找再生剑身和破坏剑身。</p>
+          <p> </p>
+          <p>这两个剑身的碎片隐藏在埃雷修兰塔上部的阿斯特利亚深渊和古代城市娄地下要塞。</p>
+          <p> </p>
+          <p>找到这两块剑身碎片后，阿努西斯说感觉到了其中强大的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

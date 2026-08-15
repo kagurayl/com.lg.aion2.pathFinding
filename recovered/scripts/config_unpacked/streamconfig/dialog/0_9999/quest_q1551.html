@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>近来要找雷米很困难了。啊，蔓莓果也是。</p>
+          <p> </p>
+          <p>以前山谷里，雷米和蔓莓果多得是，需要的时候去采集就好。</p>
+          <p> </p>
+          <p>可是现在还得平时就保存一些，以备不时之需。</p>
+          <p> </p>
+          <p>这都是曼杜里给闹的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管是雷米还是蔓莓果，只要发出香味，曼杜里就会把它们拔掉。</p>
+          <p> </p>
+          <p>如果放任不管的话，这附近好的药草都会被毁了。</p>
+          <p> </p>
+          <p>请您一定要阻止那些曼杜里啊。</p>
+          <p> </p>
+          <p>必须要采取一定措施了，守护者大人可以帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总之要减少曼杜里的数量。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_ManduriBRe_39_An]和[%dic:STR_DIC_M_ManduriTRe_39_An]各消灭10只，情形就会好很多。</p>
+          <p> </p>
+          <p>那就请您速去速回。我在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者达人都已经完成了无数的重要任务了，我把消灭曼杜里的任务拜托给您并不算是难为您吧？</p>
+          <p> </p>
+          <p>您这么冷酷地拒绝了我，我真是无话可说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人离开后，我进一步调查了曼杜里的食物。</p>
+          <p> </p>
+          <p>除了雷米和蔓莓果，缪塔翅膀和龙蜥兽尾骨它也吃。这些曼杜里实际上可比外表凶悍得多。</p>
+          <p> </p>
+          <p>好吧，您的成果如何？没有受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是守护者大人，消灭曼杜里对您来说根本不算件事。</p>
+          <p> </p>
+          <p>来，请您收下这个。</p>
+          <p> </p>
+          <p>这是对您多次帮助我的答谢。</p>
+          <p> </p>
+          <p>区区谢礼不成敬意，请不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">减少破坏密林生态平衡的曼杜里数量。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriBRe_39_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriTRe_39_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sillen]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">因为曼杜里，药草面临着绝种的危险。减少曼杜里的数量，维护生态界平衡。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>锡兰正在对曼杜里进行研究，她说曼杜里把雷米和蔓莓果都吃光了。</p>
+          <p> </p>
+          <p>如果放任不管的话，普依艾密林的药草面临着灭种的危险。她请求你减少曼杜里的数量。</p>
+          <p> </p>
+          <p>按照她的要求，干掉了一定数量的曼杜里。回来找锡兰。她给了你表达谢意的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

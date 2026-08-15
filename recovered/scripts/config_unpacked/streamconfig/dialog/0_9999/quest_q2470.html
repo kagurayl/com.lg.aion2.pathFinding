@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这是谁啊？这不是莫尔海姆无人不知的[%username]大人吗！</p>
+          <p> </p>
+          <p>我听到过[%username]大人的很多事情。说您为了魔界鞠躬尽瘁？</p>
+          <p> </p>
+          <p>特别是从来不会拒绝像我这种可怜人的请求。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，您能答应我一个请求吗？</p>
+          <p> </p>
+          <p>决不是什么困难的事情，非常简单。</p>
+          <p> </p>
+          <p>您只要帮我搜集7个[%dic:STR_DIC_E_gb_source_tree_d_30a]就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问用途。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些我也得跟您说吗？哈，既然是我拜托您，我就跟您说了吧。</p>
+          <p> </p>
+          <p>我想为巴洛姆大人制作用白柳树烤制的烤菲斯勒。他非常喜欢吃用白柳树烤出来的料理。</p>
+          <p> </p>
+          <p>我本来想自己去的，但是刚好是秋收季节，所以抽不出时间。</p>
+          <p> </p>
+          <p>守护者大人，您能帮我去搜集吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沿着路往下走，就能看到一棵大树。</p>
+          <p> </p>
+          <p>那边附近应该就有[%dic:STR_DIC_E_gb_source_tree_d_30a]，您去仔细找一找。</p>
+          <p> </p>
+          <p>请您先帮我搜集7个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您的名字难道不是[%username]吗？</p>
+          <p> </p>
+          <p>真奇怪。我听说名叫[%username]的守护者大人绝对不会拒绝别人的拜托。</p>
+          <p> </p>
+          <p>看来传言是太夸张了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，怎么这么慢啊！我等得眼珠子都要掉出来了。</p>
+          <p> </p>
+          <p>我已经拜托巴鲁姆库斯老人帮我弄到了新鲜的菲斯勒肉。</p>
+          <p> </p>
+          <p>请您快把白柳树给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出白柳树。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说[%username]大人处理事情又快又准，看来都是谣言啊。</p>
+          <p> </p>
+          <p>我明明让您帮我搜集的是7个[%dic:STR_DIC_E_gb_source_tree_d_30a]！</p>
+          <p> </p>
+          <p>肉必须趁新鲜烤了才好吃，请您赶快去搜集木柴吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这淡淡的香味！白柳树的味道闻上去总是那么香。</p>
+          <p> </p>
+          <p>用它来烤菲斯勒肉的话，肉上就会带有香气，真的会非常好吃。把它送给巴洛姆大人的话，他一定会很喜欢的。</p>
+          <p> </p>
+          <p>想想就让人高兴。真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_gb_source_tree_d_30a]，然后交给[%dic:STR_DIC_N_Virashak]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让比拉夏克可以制作巴洛姆喜欢的烤肉，去帮他搜集白柳树吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比拉夏克说想要制作巴洛姆喜欢的烤肉，让我帮他去搜集白柳树。</p>
+          <p> </p>
+          <p>帮他搜集到了白柳树，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

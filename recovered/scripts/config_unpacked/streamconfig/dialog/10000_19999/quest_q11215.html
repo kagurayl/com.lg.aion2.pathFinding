@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您忙吗？</p>
+          <p> </p>
+          <p>就算您很忙，请您先把其他任务放一放吧。</p>
+          <p> </p>
+          <p>古代龙神殿被敌人夺走了，您知道吗？</p>
+          <p> </p>
+          <p>这一地区是战斗最激烈的地区。不仅是天族，龙族和魔族也想拼死占领贪婪祭坛和古代龙神殿。</p>
+          <p> </p>
+          <p>丢失[%dic:STR_DIC_W_LF4_SZ_2011_A]之后，现在情况很不乐观。一旦失去优势，局势就很难挽回，甚至可能导致战争的瞬间崩盘。</p>
+          <p> </p>
+          <p>我们跟随着凯西内尔主神来到了这里，因此绝对不能退缩，必须把局势扭转过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然古代龙神殿被敌人夺走了，但现在还用不着过于悲观。</p>
+          <p> </p>
+          <p>我们只是需要一个契机。如果能取得一场胜利，应该就能克服当前的困难。</p>
+          <p> </p>
+          <p>这种时候正是[%username]大人扬名立万的好机会，不是吗？</p>
+          <p> </p>
+          <p>请您快去组织部队。召集信任您的同伴，消灭[%dic:STR_DIC_M_QUEST_11215]。</p>
+          <p> </p>
+          <p>如果能在夺回[%dic:STR_DIC_W_LF4_SZ_2011_A]的战斗中立功，相信凯西内尔主神也会关注[%username]大人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>压制住守卫要塞的警备兵，消灭守护神将，这件事并不容易。</p>
+          <p> </p>
+          <p>但是除了[%username]大人之外，还有很多军团和守护者在为此英勇作战，相信一定可以取得成功。</p>
+          <p> </p>
+          <p>打倒敌人的守护神将，夺回[%dic:STR_DIC_W_LF4_SZ_2011_A]之后，幻想之光的[%dic:STR_DIC_N_Queesia]将会被派到这里来。</p>
+          <p> </p>
+          <p>[%username]大人，您把您的功绩告诉她就行了。</p>
+          <p> </p>
+          <p>愿凯西内尔的庇佑与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拖得越久，胜算就越小。</p>
+          <p> </p>
+          <p>您想成为败军之将，回到极乐世界去吗？还是想在欢呼声中衣锦还乡呢？</p>
+          <p> </p>
+          <p>请记住，您的帮助，将会左右战争的胜负。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能夺回古代龙神殿，全都是因为有众多守护者的帮助。</p>
+          <p> </p>
+          <p>担心天界的未来，感动于凯西内尔主神的意志的众多天人，纷纷投身到英吉斯温的战斗之中。</p>
+          <p> </p>
+          <p>[%username]大人也在夺回古代龙神殿的战斗中建立了功勋，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到的事情果然是真的。</p>
+          <p> </p>
+          <p>我听说有人打倒了守护神将，建立了不朽的功勋。</p>
+          <p> </p>
+          <p>[%username]大人，您的功绩我知道了。我会给您相应的奖赏。</p>
+          <p> </p>
+          <p>为了古代龙神殿和天族的胜利，希望您能继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒敌人的守护神将，夺回[%dic:STR_DIC_W_LF4_SZ_2011_A]</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_QUEST_11215]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Queesia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">古代龙神殿被敌人夺走了。消灭守护神将，夺回古代龙神殿。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫拉斯邀请我参加夺回古代龙神殿的作战。</p>
+          <p> </p>
+          <p>于是和同伴们一起前往古代龙神殿，打倒了敌人的守护神将。向奎希亚报告之后，她给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

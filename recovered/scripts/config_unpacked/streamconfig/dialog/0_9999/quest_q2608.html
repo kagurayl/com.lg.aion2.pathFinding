@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我听到了一个坏消息。</p>
+          <p> </p>
+          <p>老实说……是非常坏的消息。刚听到的时候，我被吓了一跳。</p>
+          <p> </p>
+          <p>为了阻止贝斯佩尔村污染的扩散，贝鲁斯兰要塞的执政官已经尽了全力……但之前辛苦和努力，也许会全部变成泡影。</p>
+          <p> </p>
+          <p>阿斯佩尔主神啊，救救我们吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有人看到一群奇异的格兰盖尔在喝贝斯佩尔村流出来的受到污染的水。那种水的毒性非常强，懦弱的人类只要一碰到它就会变成不死族。</p>
+          <p> </p>
+          <p>收到报告之后，我马上赶往那里，但格兰盖尔们很快四散逃开，没能抓住它们。喝了水的格兰盖尔一定受到了污染……格兰盖尔有迁徙的习性。</p>
+          <p> </p>
+          <p>是的，没错。贝斯佩尔村的污染很可能会因此扩散到整个贝鲁斯兰。</p>
+          <p> </p>
+          <p>解决的方法只有一个。必须尽快杀死那些奇异的格兰盖尔，阻止污染的扩散。</p>
+          <p> </p>
+          <p>虽然执政官们正在竭尽全力，但要将数量众多、栖息地非常广阔的格兰盖尔全部杀掉，人手还是非常不足。</p>
+          <p> </p>
+          <p>[%username]大人，我们非常需要您的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>目前还没有收到格兰盖尔变成不死族的报告。</p>
+          <p> </p>
+          <p>在发生那种事情之前，请您务必抓紧时间。</p>
+          <p> </p>
+          <p>必须全部消灭掉的对象是[%dic:STR_DIC_M_BighorndeerMinerD_35_n]和[%dic:STR_DIC_M_BighorndeerD_35_An]。</p>
+          <p> </p>
+          <p>它们虽然很可怜，但这么做是为了整个贝鲁斯兰。愿黑暗的主神原谅我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道现在是什么情况吗？</p>
+          <p> </p>
+          <p>贝斯佩尔村的灾难已经足够了。您也应该不想让贝鲁斯兰要塞也变成那个样子吧？</p>
+          <p> </p>
+          <p>请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>愿主神的恩宠保佑那些被诅咒的创造物……</p>
+          <p> </p>
+          <p>连吉格里泰达人都过来帮忙了，希望贝鲁斯兰的事情能够顺利解决。</p>
+          <p> </p>
+          <p>[%username]大人，跟我说说事情的结果吧。奇异的格兰盖尔全部除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人这边有所进展，我就能稍微放心一点了。</p>
+          <p> </p>
+          <p>但是还不能完全放心。</p>
+          <p> </p>
+          <p>格兰盖尔栖息地非常广阔，而且很难掌握它们的行踪，因此现在还不能说危险已经过去。</p>
+          <p> </p>
+          <p>在我们判断危险已经过去之前，还必须继续对奇异的格兰盖尔进行监视。[%username]大人，希望您能继续协助我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭喝了污染的水的格兰盖尔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BighorndeerMinerD_35_n]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BighorndeerD_35_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Alfgeir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说奇异的格兰盖尔喝了贝斯佩尔难民村的污染的水。在格兰盖尔把污染扩散出去之前，把它们消灭掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔夫盖尔说收到了消息，说奇异的格兰盖尔喝了贝斯佩尔难民村的污染的水，必须在格兰盖尔把污染扩散之前把他们消灭掉。</p>
+          <p> </p>
+          <p>于是消灭了奇异的格兰盖尔和奇异的格兰盖尔幼崽。回去之后阿尔夫盖尔对我表示感谢，并让我继续帮忙，直到危险解除时为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

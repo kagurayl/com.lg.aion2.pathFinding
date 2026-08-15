@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好，[%username]。</p>
+          <p> </p>
+          <p>我正好找不到合适的人，你来的正是时候。</p>
+          <p> </p>
+          <p>因为不是英吉斯温的事情，我不想在这上面浪费太多的时间。正在犹豫的时候，你就来了。</p>
+          <p> </p>
+          <p>看来是凯西内尔主神在保佑我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔那边好像正在寻找有能力的守护者。</p>
+          <p> </p>
+          <p>他们联系到了我，让我推荐几个优秀的守护者，但是我却想不起有什么合适的人。</p>
+          <p> </p>
+          <p>[%username]，虽然不知道你是不是那边想要的人，但你的能力是大家公认的，所以应该不会有什么问题。</p>
+          <p> </p>
+          <p>你愿意去埃雷修兰塔一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说是有什么重要的事，具体的事情我也不知道。</p>
+          <p> </p>
+          <p>你先到[%dic:STR_DIC_W_AB1_1]的拉提斯广场去见见[%dic:STR_DIC_N_Barono]。</p>
+          <p> </p>
+          <p>具体的情况巴洛诺会告诉你的。</p>
+          <p> </p>
+          <p>请你马上就去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来龙界，是希望能闯出一番事业吧？</p>
+          <p> </p>
+          <p>这样的想法很好，虽然不知道结果会是如何。</p>
+          <p> </p>
+          <p>埃雷修兰塔那边，我会派别人过去。你就不用操心了。</p>
+          <p> </p>
+          <p>[%username]，像你这样的守护者，总是找得到的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，对不起。</p>
+          <p> </p>
+          <p>因为已经饿了很长时间，我就不自觉地说肚子饿了。</p>
+          <p> </p>
+          <p>对了，您找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是伊奥尼亚因派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊奥尼亚因大人终于找到合适的人啦。</p>
+          <p> </p>
+          <p>上面一直在催我，您能过来，真是太好了。</p>
+          <p> </p>
+          <p>让您大老远地跑到埃雷修兰塔来，真是辛苦了。</p>
+          <p> </p>
+          <p>当然，今后您可能会更辛苦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔和[%dic:STR_DIC_N_Barono]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">埃雷修兰塔好像有什么重要的任务。去特米伦据点见见巴洛诺吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温幻影要塞的情报参谋伊奥尼亚因说埃雷修兰塔那边有重要的任务，让我到那里去一趟。</p>
+          <p> </p>
+          <p>在她的介绍下，见到了特米伦要塞的巴洛诺。他非常高兴，说一直在等着我的到来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

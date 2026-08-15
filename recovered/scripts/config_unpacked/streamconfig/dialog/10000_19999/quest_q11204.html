@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，真是，看来人手真的很缺乏啊。</p>
+          <p> </p>
+          <p>竟然让我这么优秀的战斗员去执行研究任务！</p>
+          <p> </p>
+          <p>我到英吉斯温来，是来消灭提亚马特和它的手下的，不是来对付罗克哈之类的东西的。</p>
+          <p> </p>
+          <p>但是我绝不会因此而感到失望，这种时候才是表现出我的超强能力的时候。</p>
+          <p> </p>
+          <p>不仅要在战斗方面拥有出众的能力，还要力争成为一名无所不能的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，对罗克哈精髓的调查终于暂时告一段落了。这次要调查的是流入地下的硫磺。</p>
+          <p> </p>
+          <p>你也看到了，安格利浦火山口地区到处都是喷出有毒气体的火山口。</p>
+          <p> </p>
+          <p>地上到处都是吸收了酸性气体的液体……看上去很可怕。</p>
+          <p> </p>
+          <p>为了可以去火山口采集标本，我们事先用药物进行了处理。</p>
+          <p> </p>
+          <p>因为我们需要各种状态的硫磺标本。</p>
+          <p> </p>
+          <p>既然你帮过我一次，这次采集硫磺的事情能交给你去办吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我给你一个采集工具箱，你只要把标本装到瓶里就行了。</p>
+          <p> </p>
+          <p>为了可以看到火山口硫磺的不同状态，我已经事先做了处理。根据使用的药品的不同，分别会呈现固态和液态等不同状态。</p>
+          <p> </p>
+          <p>火山口很显眼，应该不难找到。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就失去耐心了？</p>
+          <p> </p>
+          <p>这可是绝好的机会！</p>
+          <p> </p>
+          <p>在这种危险的战场上，能够悠闲地执行研究任务，你以为这样的任务经常有吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在对硫磺标本进行分类的过程中，以及在写临时报告的过程中，都不能松懈。</p>
+          <p> </p>
+          <p>在休息的时候和吃饭的时候也不能松懈。</p>
+          <p> </p>
+          <p>一旦松懈下来，可能就会发现自己倒在了冰冷的地上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出硫磺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>火山口样本还没采集到吗？</p>
+          <p> </p>
+          <p>不快一点的话，撒在火山口的药物的效果就要消失了。</p>
+          <p> </p>
+          <p>如果你不想让我的辛苦白费，就快点去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了。这么困难的任务你都能轻松完成，你将来一定会成为大人物！</p>
+          <p> </p>
+          <p>有你这样的守护者在我身边，我感到很放心。</p>
+          <p> </p>
+          <p>但是我不会阻挡英雄前进的道路！</p>
+          <p> </p>
+          <p>希望有一天你能超越我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_E_Q11204]采集硫磺，然后交给[%dic:STR_DIC_N_Totus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照托图斯的委托，去安格利浦火山口搜集硫磺标本。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托图斯说研究硫磺的任务还没结束，让我去安格利浦火山口地区搜集火山口的硫磺标本。</p>
+          <p> </p>
+          <p>于是去采集了四个地方的标本，回去之后，他好像非常感动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

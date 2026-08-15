@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center">  - 作战命令书 - </p>
+          <p></p>
+          <p>发件人: 极乐世界特殊作战部</p>
+          <p></p>
+          <p>收件人: [%username]</p>
+          <p></p>
+          <p>为了对抗魔族，极乐世界特殊作战部英吉斯温支部决定在所有地区开展游击战。用我们手中的武器，在各个地区消灭魔族。</p>
+          <p></p>
+          <p>特此下令，请迅速执行。</p>
+          <p></p>
+          <p>  1. 不管在什么地方执行什么任务，都必须保持警惕，搜索魔族的位置。</p>
+          <p></p>
+          <p>  2. 发现魔族后，采取任何手段和方法，消灭5人以上。</p>
+          <p></p>
+          <p>  3. 但不要消灭能力太差的敌人，以免损害特殊作战部的名誉。</p>
+          <p></p>
+          <p>  4. 确认敌人失去斗志后，向[%dic:STR_DIC_E_35503]报告。</p>
+          <p></p>
+          <p>祝特殊作战部全体成员好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦， [%username] 大人。</p>
+          <p> </p>
+          <p>今天是什么任务呢？执行得顺利吗？</p>
+          <p> </p>
+          <p>消灭魔族的任务如果已经完成，请向我报告详细的情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认完毕，[%username] 大人。</p>
+          <p> </p>
+          <p>大家如此努力，魔族一定会感到恐惧的！</p>
+          <p> </p>
+          <p>这是极乐世界特殊作战部发给您的奖励。</p>
+          <p> </p>
+          <p>为了极乐世界的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_Daily]消灭[%dic:STR_DIC_E_Daily_1]([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35503]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">每日指令：在所有地方消灭魔族，然后向英吉斯温支部官员报告</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界特殊作战部下达了在所有地方消灭魔族的每日指令。</p>
+          <p> </p>
+          <p>完成任务后，向英吉斯温支部的官员报告，并得到了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

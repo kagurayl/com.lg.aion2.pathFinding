@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，鲁凯天天在那里炫耀，真是看不下去了！</p>
+          <p> </p>
+          <p>就知道装样子，其实胆小得要死，都不敢从村里出去。</p>
+          <p> </p>
+          <p>没事的时候，我会喝一点酒。他就不停地唠叨我...</p>
+          <p> </p>
+          <p>因为酒是免费的，我才会喝，又不会喝很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了…你能过来一下吗？</p>
+          <p> </p>
+          <p>我让鲁凯去村外侦察，但他说有僵尸和布奇，不愿意出去。</p>
+          <p> </p>
+          <p>所以我拍着胸脯说不就是一些不死族吗？我一个人就能搞定。</p>
+          <p> </p>
+          <p>但是出去一看才发现，那可不是闹着玩的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过这关系到我科拉碧斯的面子问题，绝不能在鲁凯面前丢脸。</p>
+          <p> </p>
+          <p>他说马上就要开始扫荡僵尸和布奇了，让我记着自己说过的话。</p>
+          <p> </p>
+          <p>现在你明白我的处境了吧？[%username]，你得帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去村外帮我除掉一些[%dic:STR_DIC_M_Zombie_38_An]和[%dic:STR_DIC_M_Bookie_38_An]。</p>
+          <p> </p>
+          <p>听说你的实力很强，对付僵尸和布奇应该没问题吧？</p>
+          <p> </p>
+          <p>嘘！被鲁凯听到的话，不知道又会说些什么了。他好像在偷听。</p>
+          <p> </p>
+          <p>请你悄悄地去帮我清除僵尸和布奇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来想打倒那些僵尸和布奇，让鲁凯气歪鼻子的...</p>
+          <p> </p>
+          <p>嘿嘿，刚才喝了一点酒，仿佛有了去和他们战斗的勇气！</p>
+          <p> </p>
+          <p>就让我来对付它们吧。</p>
+          <p> </p>
+          <p>呃！哎呀，肚子好像有点不舒服...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是谁？呃！</p>
+          <p> </p>
+          <p>啊，[%username]。我想起来了。</p>
+          <p> </p>
+          <p>啊哈，我怎么会忘记呢！你去帮我清除僵尸和布奇了。</p>
+          <p> </p>
+          <p>事情办的怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我就知道[%username]你一定可以做到。</p>
+          <p> </p>
+          <p>喂，鲁凯！僵尸和布奇消失了。现在你可以出去侦察了吧？</p>
+          <p> </p>
+          <p>你这个胆小鬼！我把僵尸和布奇全部打倒了！</p>
+          <p> </p>
+          <p>(小声说)谢谢你，[%username]。这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去村外打猎不死族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Zombie_38_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Bookie_38_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kravis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助吹牛说可以扫荡村外不死族的西风的守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>科拉碧斯说想到村外去侦察，但由于不死族太多，鲁凯不愿意出去。</p>
+          <p> </p>
+          <p>因为好面子，他和同伴吹牛说可以清除掉不死族。为他清除掉了僵尸和布奇，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

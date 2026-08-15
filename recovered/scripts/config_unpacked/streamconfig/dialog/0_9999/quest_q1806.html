@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，真让人不敢相信。硫磺树要塞竟然被敌人夺走了。</p>
+          <p> </p>
+          <p>我的任务虽然是研究硫磺和火焰，但是在这种情况下，我无法专心地进行研究。</p>
+          <p> </p>
+          <p>不管怎样，我必须协助他们把要塞从敌人手里夺回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说我们的计划是在魔族占领要塞的时候，去清除魔族的精锐驻军。</p>
+          <p> </p>
+          <p>最重要的是要塞可以占领状态下，展开战斗的时候过去。</p>
+          <p> </p>
+          <p>我可以相信的人只有[%username]大人您一个。这件事您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去把由魔族精锐战斗兵、魔族精锐弓兵、魔族精锐法师和魔族精锐祭司组成的[%dic:STR_DIC_M_1806_all]清除掉。不管是上级也好，还是中级、下级也好。</p>
+          <p> </p>
+          <p>在除掉魔族精锐兵力之后，请您把他们身上别着的[%dic:STR_DIC_I_QUEST_1806a]带回来作为证据。</p>
+          <p> </p>
+          <p>虽然是很危险的任务，但是以[%username]大人的实力，应该没有问题的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然不是守卫，但是对于失去硫磺树要塞，我也觉得非常痛心。</p>
+          <p> </p>
+          <p>我以为[%username]大人也会这么想，难道是我的错觉吗？</p>
+          <p> </p>
+          <p>这虽然说是守护者的使命，但也不能够强迫。</p>
+          <p> </p>
+          <p>我知道了。看来我得去找其他愿意帮助我把要塞夺回来的人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您安然回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您去硫磺树要塞把[%dic:STR_DIC_M_1806_all]清除掉了吗？</p>
+          <p> </p>
+          <p>那就请您把[%dic:STR_DIC_I_QUEST_1806a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出刺藤之徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道[%username]大人的任务，应该不止我交给您的这一个。</p>
+          <p> </p>
+          <p>不过我还是希望您能先处理这件事情。</p>
+          <p> </p>
+          <p>所以，请您快去硫磺树要塞把[%dic:STR_DIC_M_1806_all]清除掉，然后把[%dic:STR_DIC_I_QUEST_1806a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道[%username]大人一定可以手到擒来。</p>
+          <p> </p>
+          <p>现在精锐兵力减少了，这对夺回要塞会有很大的帮助。</p>
+          <p> </p>
+          <p>真是谢谢您。我在向特米伦要塞提交报告的时候，会把[%username]大人帮助我的事情一起写上去的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_1806_all]，然后把证据交给[%dic:STR_DIC_N_Nemea]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须在魔族占领硫磺树要塞的时候对他们进行打击才有胜算。在进入可以占领状态后，除掉要塞的魔族精锐驻军，搜集刺藤之徽章。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内梅亚说想要从敌人手里夺回硫磺树要塞的话，必须在魔族占领要塞的时候把精锐驻军清除掉。</p>
+          <p> </p>
+          <p>于是去清除掉了魔族精锐战斗兵、精锐弓兵、精锐法师和精锐祭司，并把刺藤之徽章作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

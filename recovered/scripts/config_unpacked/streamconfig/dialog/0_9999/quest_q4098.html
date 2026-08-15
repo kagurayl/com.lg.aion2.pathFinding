@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还记得上次帮助过的那个不死族吗？</p>
+          <p> </p>
+          <p>就是那个虽然成为了不死族却无法忘记过去，被不停的劳动所折磨的人。</p>
+          <p> </p>
+          <p>名字好像叫做赫尔尼尔……</p>
+          <p> </p>
+          <p>总之，那个时候往他的身上注入了利奇的宝珠所具有的不死族的力量，让他完全成为了不死族，我当时还以为已经完全解决了问题。</p>
+          <p> </p>
+          <p>没想到那种方法也不是完美的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问出了什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近赫尔尼尔又开始找回记忆，总是说很累很累。</p>
+          <p> </p>
+          <p>看来只凭利奇的宝珠拥有的不死族力量是无法让赫尔尼尔完全成为不死族的。</p>
+          <p> </p>
+          <p>我倒是想到了一个解决方法。已经想出个大概，可是那件事比较麻烦……</p>
+          <p> </p>
+          <p>不过，也不能让赫尔尼尔一直遭受苦。救人救到底，送佛送到西，你愿意再试一试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫尔尼尔的意识之所以恢复得这么快，是因为他是大崩溃之前的人。</p>
+          <p> </p>
+          <p>这就意味着只用在魔界的不死族的力量是无法让赫尔尼尔得到完全的安息，也就是说，还需要在天界不死族的力量。</p>
+          <p> </p>
+          <p>去位于天界的因特尔蒂卡，会找到叫做梅德乌斯的庄园。请去那里消灭 [%dic:STR_DIC_M_Graveknight_42_An]和 [%dic:STR_DIC_M_Skeleton_42_An]，将温佩斯特的精髓和阿努拜特的精髓带来。</p>
+          <p> </p>
+          <p>只要把精髓注入赫尔尼尔的身体里，他就可以完全失去意识，成为不死族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你不太清楚“救人救到底，送佛送到西”这句话的意思。</p>
+          <p> </p>
+          <p>这句话的意思是说你当初接受了赫尔尼尔委托，说要帮助他，所以你要坚持到底。</p>
+          <p> </p>
+          <p>怎么能这么没有信誉呢……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来舒服了一段时间……现在又开始痛苦了。</p>
+          <p> </p>
+          <p>只要稍微休息会……就一直传来声音，要我继续干活。</p>
+          <p> </p>
+          <p>我真的很想忘记一切，好好休息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将不死族的精髓注入到他的身体。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您当初说要帮助我……所以我一直相信着您……</p>
+          <p> </p>
+          <p>可是我只是享受了短暂时间的休息……现在又痛苦起来，觉得比以前更难受了。</p>
+          <p> </p>
+          <p>请一定要帮我解除痛苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……我看到了一道亮光。</p>
+          <p> </p>
+          <p>浑身变得暖和……心里感觉特别舒服。</p>
+          <p> </p>
+          <p>感觉这样下去……我能忘记一切，好好的休息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去天界收集[%dic:STR_DIC_M_Graveknight_42_An]和 [%dic:STR_DIC_M_Skeleton_42_An]的精髓，交给[%dic:STR_DIC_N_Heirnir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">赫尔尼尔又开始痛苦起来了。去位于因特尔蒂卡的梅德乌斯庄园，消灭温佩斯特战士和阿努拜特战士，收集他们的精髓。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞兹内克表示赫尔尼尔又开始痛苦起来了，并表示想要完全解除他的痛苦，需要天界不死族的精髓。</p>
+          <p> </p>
+          <p>因此，去位于因特尔蒂卡的梅德乌斯庄园消灭了温佩斯特战士和阿努拜特战士，收集了他们的精髓，帮助赫尔尼尔解除了痛苦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

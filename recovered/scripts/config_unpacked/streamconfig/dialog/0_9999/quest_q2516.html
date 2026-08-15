@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝鲁斯兰要塞的居民们要比其他要塞的人们更为不安。</p>
+          <p> </p>
+          <p>因为有碎片不断掉落，要塞说不定会因此崩溃。</p>
+          <p> </p>
+          <p>而且要塞周围还有很多危险的生命体。</p>
+          <p> </p>
+          <p>但是因为兵力不足，所以执政官卫兵们不可能处理一切。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以由我在这里向普通守护者委托任务，提供银铸币作为奖励。</p>
+          <p> </p>
+          <p>任务是清除[%dic:STR_DIC_M_VespaD_29_n]和[%dic:STR_DIC_M_XipetoD_30_An]。</p>
+          <p> </p>
+          <p>维斯帕虽然看上去不是很危险，但翅膀上的毒粉很成问题。不小心弄到眼睛里的话，就会造成失明。</p>
+          <p> </p>
+          <p>至于黒枝阿斯科，有很多居民以为它们是树桩，靠近之后受了伤。</p>
+          <p> </p>
+          <p>您能为了居民们接受这项任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_VespaD_29_n]在贝鲁斯兰要塞的前面有很多。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_XipetoD_30_An]在黑色平原的各地都可以看到。</p>
+          <p> </p>
+          <p>为了居民们的安全，请您把它们清除掉。</p>
+          <p> </p>
+          <p>虽然可能会花一点时间，但是可以获得银铸币作为报酬，对[%username]大人也没什么坏处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你觉得看不上眼的话，不接受任务也没关系。</p>
+          <p> </p>
+          <p>要是因为太花时间而中途放弃，还不如一开始就拒绝的好。</p>
+          <p> </p>
+          <p>不过如果您改变了主意，可以随时过来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您回来啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_VespaD_29_n]和[%dic:STR_DIC_M_XipetoD_30_An]全都清除掉了吗？</p>
+          <p> </p>
+          <p>跟我详细地报告一下一共除掉了多少吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为居民们做了一件大事。真是谢谢您。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，居民们又可以在要塞周围和黑色平原安心的出入了。</p>
+          <p> </p>
+          <p>来，请您收下。这是说好的银铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除对贝鲁斯兰要塞的居民构成威胁的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_VespaD_29_n]([%2]/24)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_XipetoD_30_An]([%5]/17)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Govanon]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说要塞周围的维斯帕和阿斯科对居民们造成了威胁。去清除贝鲁斯兰要塞前面的平原上的维斯帕和黑色平原上的黒枝阿斯科吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>高巴农说有很多威胁着要塞居民的生命体，但由于执政官兵力不足，只能将任务交给普通的守护者。让我为了居民们去执行任务。</p>
+          <p> </p>
+          <p>于是清除掉了对居民造成威胁的平原维斯帕和黒枝阿斯科，获得了银铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

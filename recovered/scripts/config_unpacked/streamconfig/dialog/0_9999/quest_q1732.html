@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我用坚硬的骨头制作短剑，是想送给某个人做礼物。</p>
+          <p> </p>
+          <p>要说是谁的话...是一个名叫雷米亚的在黄昏的战场进行调查的生态学者。</p>
+          <p> </p>
+          <p>因为她是生态学者，所以在调查的时候有可能会遇到危险的东西...</p>
+          <p> </p>
+          <p>所以我做了这把骨质短剑，希望能对她有所帮助...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我现在成了这个模样，不能自己把东西送过去。</p>
+          <p> </p>
+          <p>看到我的样子的话，她一定会被吓一跳的。</p>
+          <p> </p>
+          <p>即使没被吓着，过去跟她说我是因为不服从命令才会变成这个样子的也太丢脸了...</p>
+          <p> </p>
+          <p>所以，[%username]大人您能帮我把这把短剑交给[%dic:STR_DIC_N_Lamia]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。我正在担心该怎么把它送给她呢。</p>
+          <p> </p>
+          <p>您跟雷米亚说是我送的...嗯，到底要不要说是我送的呢？</p>
+          <p> </p>
+          <p>还是应该告诉她，这个处罚总有一天会撤销的。</p>
+          <p> </p>
+          <p>请您把这把骨质短剑交给[%dic:STR_DIC_N_Lamia]，然后悄悄地告诉她是我送的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不喜欢介入别人的恋爱生活吗？</p>
+          <p> </p>
+          <p>如果是正常状态的话，我也就不会拜托别人去做这种事情了。我不是那么没有自信的人。</p>
+          <p> </p>
+          <p>现在情况是这样，所以我才来拜托您...</p>
+          <p> </p>
+          <p>帮我送一趟有什么不好的？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚来欧比斯的时候，我很雄心勃勃。</p>
+          <p> </p>
+          <p>因为有很多可以调查和研究的东西。</p>
+          <p> </p>
+          <p>但是干来干去却见不到底，现在开始感觉有点累了。</p>
+          <p> </p>
+          <p>不过反正用于研究的时间很多，放下心来慢慢研究就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出骨质短剑，并转达拉布达库斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您说是拉布达库斯为我做的？</p>
+          <p> </p>
+          <p>挺让人吃惊的。那个喜欢激动的人还有这样的一面啊。</p>
+          <p> </p>
+          <p>而且没想到他还在暗恋我。</p>
+          <p> </p>
+          <p>这把短剑我是收下好呢，还是不收下好呢...要是以后变成烫手山芋就不好了...</p>
+          <p> </p>
+          <p>不过又能怎么样呢？反正研究生活很枯燥，有个追求者也不错啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把骨质短剑交给[%dic:STR_DIC_N_Lamia]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">拉布达库斯想把骨质短剑送给雷米亚，但是因为变成了温佩斯特的样子而不能亲自去。帮助拉布达库斯把骨质短剑送给黄昏的战场的雷米亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉布达库斯用破坏的灵魂的骨头为雷米亚做了一把短剑，但是因为自己的外貌没有亲自去送给她的勇气。</p>
+          <p> </p>
+          <p>于是来到黄昏的战场把短剑交给了雷米亚，雷米亚好像有一点吃惊。她说虽然不想接受拉布达库斯的心，但是有个追求者也挺好，于是收下了短剑。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

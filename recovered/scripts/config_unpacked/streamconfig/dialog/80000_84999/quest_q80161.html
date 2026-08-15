@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>怎么老是刮这么冷的风啊。</p>
+          <p></p>
+          <p>我现在很怕冷，一直在抖个不停。</p>
+          <p></p>
+          <p>最大的问题是手太冷，连拐杖都快握不住了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">问为什么站在这里。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我在等我的儿子们。咳咳，咳咳……</p>
+          <p></p>
+          <p>(擦了擦眼泪)我的儿子们说一定会到这里来的。</p>
+          <p></p>
+          <p>故乡……遭到袭击的时候，我们分开了……之后就再也没有见面……</p>
+          <p></p>
+          <p>儿子们如果到伏魔殿来，我想第一个迎接他们，所以才在这里等。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>哎呀，年轻人，算了……</p>
+          <p></p>
+          <p>别为了我这种老太婆浪费你宝贵的时间。</p>
+          <p></p>
+          <p>但是……如果你有空的话，能为我冰冷的手做一件事吗……？</p>
+          <p></p>
+          <p>虽然寒风可以忍耐，但手冷得让人受不了。咳咳，咳咳。</p>
+          <p></p>
+          <p>听说在[%shoplink]中可以免费买到手套，但是我年纪大了，没力气过去……</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">既然是免费的，答应去买。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">太麻烦，拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>在[%shoplink]中就能买到。</p>
+          <p></p>
+          <p>不需要买贵的。</p>
+          <p></p>
+          <p>只要用布拉克斯皮做成的手套就行了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好吧……你走吧……</p>
+          <p></p>
+          <p>做大事的守护者怎么会有时间管我这种老人呢……咳咳，咳咳。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>年轻人动作就是快。</p>
+          <p></p>
+          <p>我要的手套买到了吗？咳咳，咳咳。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出布拉克斯皮手套。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>哎呀……白期待一场……你是在跟我这个老太婆开玩笑吗？</p>
+          <p></p>
+          <p>你确认过特急邮箱了吗……？</p>
+          <p></p>
+          <p>别忘了。那是在[%shoplink]中免费出售的手套。咳咳，咳咳。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>年轻人，真是谢谢你！</p>
+          <p></p>
+          <p>(快要哭出来一样)看见这幅手套，我又想起了我的儿子们……</p>
+          <p></p>
+          <p>他们经常用卖剩下的布拉克斯皮为我做衣服……</p>
+          <p></p>
+          <p>多亏了你，现在感觉又有了力气……！</p>
+          <p></p>
+          <p>拿着，我这个老太婆用不着这些，不过对你来说一定会很有帮助。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">为在寒风中发抖的[%dic:STR_DIC_NPC_event_Hinjel]%购买[%dic:STR_DIC_I_junk_world_event_webshop_02a]%。</font>
+              </p>[%collectitem]</step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">辛捷尔说手很冷，去帮她买布拉克斯皮手套吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>离开了故乡，又失去了儿子们的老人辛捷尔在伏魔殿的入口处等待儿子。</p>
+          <p></p>
+          <p>辛捷尔说风吹得手很冷，需要手套。于是帮她买来了布拉克斯皮手套，她对我表示感谢，并给了我谢礼。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你出色地执行了任务，给英德拉图军团造成了巨大的打击。</p>
+          <p> </p>
+          <p>现在是给龙族以致命一击的绝好机会。</p>
+          <p> </p>
+          <p>必须打倒他们的头目，让他们再也无法在因特尔蒂卡横行。</p>
+          <p> </p>
+          <p>虽然这件事很困难，但我想把它交给[%username]你。一直以来所有困难的任务你都出色地完成了，所以我相信你。</p>
+          <p> </p>
+          <p>这也是你为极乐世界立功扬名的好机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去把英德拉图军团的军团长英德拉图除掉。</p>
+          <p> </p>
+          <p>听说他不在因特尔蒂卡，而在英德拉图要塞。英德拉图要塞就是通过克拉尔和龙族制造的次元之门之后可以到达的地方。</p>
+          <p> </p>
+          <p>我会把你送到克拉尔图玛格纳洞穴的因特尔蒂卡次元之门附近，你可以通过次元之门前往英德拉图要塞。</p>
+          <p> </p>
+          <p>不管发生什么事情，你都必须到达要塞的最深处，把[%dic:STR_DIC_M_NagaFighterNM_47_Ah]除掉。</p>
+          <p> </p>
+          <p>[%username]，你一定会取得成功的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">移动到因特尔蒂卡次元之门。</Act>
+      <Act href="HACTION_SETPRO2">说直接去找次元之门。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你终于回来了，[%username]！</p>
+          <p> </p>
+          <p>我一直在期待着你把军团长英德拉图除掉之后凯旋归来。</p>
+          <p> </p>
+          <p>任务已经完成了吧？</p>
+          <p> </p>
+          <p>跟我报告一下详细的结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了，干得太棒了！</p>
+          <p> </p>
+          <p>我虽然很信任你，但说实话还是有点不放心。</p>
+          <p> </p>
+          <p>军团长英德拉图很不好对付，而且还有很多负责护卫他的部下。即便是你应该也会很吃力，所以我有点担心。</p>
+          <p> </p>
+          <p>但是看到你取得了这么伟大的成功，看来我的担心是多余的。</p>
+          <p> </p>
+          <p>我得马上把这个好消息通知极乐世界。你快去直接向[%dic:STR_DIC_N_Fasimedes]总司令官大人报告！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来找我，一定是有什么重要的事情吧，[%username]？</p>
+          <p> </p>
+          <p>希望你带来的不是坏消息，而是好消息。</p>
+          <p> </p>
+          <p>跟我详细报告一下到底是什么事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久没听到这么振奋人心的消息了。</p>
+          <p> </p>
+          <p>因为龙族的入侵，我一直在担心因特尔蒂卡方面的情况。真是太好了。</p>
+          <p> </p>
+          <p>[%username]你把军团长英德拉图除掉了，要除掉剩下的龙族就易如反掌了。</p>
+          <p> </p>
+          <p>真是太好了！你为亚特雷亚立下了大功！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Perento]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">通过[%dic:STR_DIC_OBJ_LF3_Dragonportal_Q1062]前往英德拉图要塞，除掉[%dic:STR_DIC_M_NagaFighterNM_47_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">通过[%dic:STR_DIC_OBJ_IDLF3_Castle_Indratoo_DragonPortal_Q1063]逃出要塞，向[%dic:STR_DIC_N_Perento]报告</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">向[%dic:STR_DIC_N_Fasimedes]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：听说有一个能让英德拉图军团彻底完蛋的任务。去见见佩兰托军团长吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩兰托说破坏了龙族守护石之后，是给龙族致命一击的好机会。</p>
+          <p> </p>
+          <p>于是按照他的命令，通过克拉尔图玛格纳洞穴最深处的英特尔迪卡次元之门来到龙族的欧比斯要塞，除掉了军团长英德拉图。</p>
+          <p> </p>
+          <p>回去向佩兰托做了报告，他说任务完成得非常出色，让我直接去向帕西美达斯总司令官报告。</p>
+          <p> </p>
+          <p>听完报告后，帕西美达斯对我大加称赞，说我为亚特雷亚立下了大功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

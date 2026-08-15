@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去一直觉得行政官的任务多了一点，但是最近感觉除了提供铸币的任务之外，就没有其他的任务了。</p>
+          <p> </p>
+          <p>也就是说行政官的地位变低了。</p>
+          <p> </p>
+          <p>另外，虽然我们在提供铸币任务，但是需要除掉的危险的野兽却越来越多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于沙漠化，埃尔特内地区面临着很多的危机。饮用水不足、由于没有可以耕种的地而造成的粮食问题，等等。</p>
+          <p> </p>
+          <p>野兽们的生存也同样变困难了，因此要比以前要残暴得多。所以居民们就更加危险了。</p>
+          <p> </p>
+          <p>所以我们就通过提供铸币的方式，向守护者们请求帮助。不过由于任务很危险，不是所有的人都可以接受我们的任务。</p>
+          <p> </p>
+          <p>[%username]大人如果对铸币感兴趣的话，请先通过我的考试。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去打猎[%dic:STR_DIC_M_around_Eltenen]，搜集10个[%dic:STR_DIC_I_QUEST_1418a]给我。</p>
+          <p> </p>
+          <p>只有具备轻松完成这种任务的能力，我才能把任务委托给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您对铸币不怎么感兴趣啊。</p>
+          <p> </p>
+          <p>也是，不是所有的守护者都那么看重物质生活的。</p>
+          <p> </p>
+          <p>如果您以后改变了主意的话，请再来接受考试。我随时都表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把我说的东西带回来了吗？</p>
+          <p> </p>
+          <p>也有守护者抱怨说为什么接受铸币任务还需要考试，不过我也是按指示办事。</p>
+          <p> </p>
+          <p>即使守护者不会死去，我也不能把任务随便交给没有能力的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出里皮纽姆结晶体。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您不想参加考试的话就应该一早就说啊。</p>
+          <p> </p>
+          <p>这样不负责任的话，会让我很为难。</p>
+          <p> </p>
+          <p>请您快去搜集10个[%dic:STR_DIC_I_QUEST_1418a]带回来。不愿意的话，就干脆放弃任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等一下。我要看看数量对不对。</p>
+          <p> </p>
+          <p>(数了一下结晶体的个数)嗯，刚好是10个。</p>
+          <p> </p>
+          <p>您通过了考试，现在我可以向您提供铸币任务了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_around_Eltenen]，搜集[%dic:STR_DIC_I_QUEST_1418a]后交给[%dic:STR_DIC_N_Ferenna]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">如果想接铸币任务的话就必须通过考试。去捕捉佩兰娜指定的动物，搜集里皮纽姆结晶体吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想获得执行铸币任务的资格，必须通过考试。</p>
+          <p> </p>
+          <p>于是按照佩兰娜的要求，去捕捉要塞周围的野兽，搜集里皮纽姆结晶体后交给了她。她说会告诉我可以获得铸币的任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

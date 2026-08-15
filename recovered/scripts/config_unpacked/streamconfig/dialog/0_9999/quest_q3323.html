@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说革命团从极乐世界偷走了东西。</p>
+          <p> </p>
+          <p>很久前我就发现有看上去像调查团的雷帕尔成员在附近活动，我觉得很可疑。</p>
+          <p> </p>
+          <p>我还在想应该好好教训教训他们，让他们不敢在那里游荡，没想到这么快就有东西失窃了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您得帮帮我。</p>
+          <p> </p>
+          <p>他们偷走的东西，我会送回极乐世界，您能帮我去把他们消灭掉吗？</p>
+          <p> </p>
+          <p>据我所知，那群人好像是由调查团袭击兵和调查团战斗兵组成的。</p>
+          <p> </p>
+          <p>请您去狠狠地教训教训他们，让他们再也不敢打物资的主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去的话，他们不知道会躲在沙漠侦察基地里做出什么事情。</p>
+          <p> </p>
+          <p>请您去消灭5个[%dic:STR_DIC_M_LehparAs_25_An]和5个[%dic:STR_DIC_M_LehparWa_25_An]，让他们再也不敢出现。</p>
+          <p> </p>
+          <p>回来之后，我会给你相应的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮我找到了被偷走的东西，我就已经很感谢了。</p>
+          <p> </p>
+          <p>虽然偷走的东西找到了，但是如果不能抓住小偷的话，总有一天还会发生同样的事情。</p>
+          <p> </p>
+          <p>如果您改变了主意，请回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把我所说的5个调查团袭击兵和5个调查团战斗兵消灭掉了吗？</p>
+          <p> </p>
+          <p>那些该死的革命团，冒充调查团在附近游荡，伺机偷窃城市的物资，真是该死。</p>
+          <p> </p>
+          <p>那些雷帕尔团员装得好像在做什么了不起的事情，在我看来不过是一群小偷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人真是找对人了。</p>
+          <p> </p>
+          <p>这样的话，革命团暂时就不敢在附近出没了。</p>
+          <p> </p>
+          <p>这是说好的报酬。老实说，跟上次您找到的东西相比，价值稍微低了一些。</p>
+          <p> </p>
+          <p>请您收下，不要有什么负担。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭雷帕尔革命团的调查团</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparAs_25_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparWa_25_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Alexis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿莱克西斯让我去消灭组成调查团，伺机偷窃城市物资的雷帕尔革命团成员。应该接受他的委托。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把丢失的物品交给阿莱克西斯之后，他让我去消灭偷窃物资的革命团。</p>
+          <p> </p>
+          <p>消灭了调查团袭击兵和调查团战斗兵并回去进行了报告，他对我表示感谢，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

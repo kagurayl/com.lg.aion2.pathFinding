@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我想尽量避免进入龙崇拜者聚集的神殿内部，但现在好像别无选择了。</p>
+          <p> </p>
+          <p>必须直接进入荒废的乌达斯神殿，对他们隐藏的秘密、终极的目标进行具体的调查才行。</p>
+          <p> </p>
+          <p>不过即使能够进入，能不能查清楚他们的目的也不一定。</p>
+          <p> </p>
+          <p>不过我想至少比放着不管要好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上相比我们，查明他们的目标也许对你们天族更加重要。</p>
+          <p> </p>
+          <p>如果那些发了疯的龙信徒的目标不是我们，就和我没什么关系了。</p>
+          <p> </p>
+          <p>但是对于想占领整个英吉斯温的你们来说就不同了。</p>
+          <p> </p>
+          <p>好了，你愿意去荒废的乌达斯神殿看看他们到底隐藏着什么东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你马上到[%dic:STR_DIC_E_IDTemple_LF4]去。通过堕落地下要塞就可以进入神殿的入口。</p>
+          <p>  </p>
+          <p>我没去过乌达斯神殿，所以帮不上你什么忙。我也没办法告诉你在什么地方可以发现什么东西。</p>
+          <p> </p>
+          <p>但是在神殿内部仔细寻找，应该可以找到他们的头目。消灭他们的头目狂暴的支配者马里卡，一定可以发现什么线索。</p>
+          <p> </p>
+          <p>希望这次你能找到[%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这也许是个明智的选择。</p>
+          <p> </p>
+          <p>来到龙族的土地，闯入一个不知道有什么的神殿，无疑需要巨大的勇气。</p>
+          <p> </p>
+          <p>勇敢和鲁莽是不同的，这时就需要依靠你的智慧来判断。</p>
+          <p> </p>
+          <p>如果是自己做不到的事情，要学会拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，这次给我带回好消息了吗？</p>
+          <p> </p>
+          <p>除了龙信徒的目的之外，我还想知道荒废的乌达斯神殿的状态。</p>
+          <p> </p>
+          <p>请跟我说明一下那里的状态，以及他们隐藏的东西是什么吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说明结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么说这次又没能发现他们隐藏的东西咯。</p>
+          <p> </p>
+          <p>不过在乌达斯神殿发现有地下空间存在，就是一个巨大的收获了。看来他们的秘密一定就隐藏在地下。</p>
+          <p> </p>
+          <p>继续追踪，一定可以查明他们隐藏的到底是什么东西。</p>
+          <p> </p>
+          <p>乌达斯神殿地下的门不能打开，好像是因为[%username]你没有正确地发动钥匙的力量。</p>
+          <p> </p>
+          <p>阅读上面的文字，钥匙的气息就会渗透到[%username]你的身上。(念诵什么东西)好了，现在你身上已经有钥匙的气息了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]，搜集证据，找到[%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003]%</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Honeus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">进入荒废的乌达斯神殿，寻找龙信徒们隐藏的目的。先去消灭狂暴的支配者马里卡吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+      <notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">发现通往乌达斯神殿地下的入口！快去向胡内乌斯报告吧。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡内乌斯说要想知道龙信徒的目的，必须直接进入荒废的乌达斯神殿。</p>
+          <p> </p>
+          <p>胡内乌斯说要想知道龙信徒的目的。</p>
+          <p> </p>
+          <p>但还是没有弄清楚他们的目的，不过发现了一个通往神殿地下的通道。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

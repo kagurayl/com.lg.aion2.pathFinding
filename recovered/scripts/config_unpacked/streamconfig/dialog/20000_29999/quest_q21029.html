@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然还没有获得什么成果，但和阿武拉乌战斗了这么长时间，我们总算对他们的战斗方式多少有了一定的了解。</p>
+          <p> </p>
+          <p>值得注意的是，他们的行动要比我们想象的更有组织性。</p>
+          <p> </p>
+          <p>他们有自己的头目，并根据头目的命令行事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果能把头目消灭掉，对削弱阿武拉乌的势力应该会很有帮助。我尝试过几次，但是每次都以失败告终。</p>
+          <p> </p>
+          <p>连对付小阿武拉乌都这么吃力了，这样的结果是当然而然的。</p>
+          <p> </p>
+          <p>因此我想拜托你一件事。</p>
+          <p> </p>
+          <p>你能帮我除掉阿武拉乌的头目吗？如果你能帮我，我会好好地酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要消灭的阿武拉乌的头目是[%dic:STR_DIC_M_DF4_Owllau_Wi_NmdQ_52_Ae]。</p>
+          <p> </p>
+          <p>不要觉得他是副族长而轻视他。在凶恶的阿武拉乌之中，他是最最暴躁的一个。</p>
+          <p> </p>
+          <p>准备好了之后，就马上出发吧。希望你能带回好消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道了。每次都来麻烦你，就算你拒绝，我也无话可说。</p>
+          <p> </p>
+          <p>如果你改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_DF4_Owllau_Wi_NmdQ_52_Ae]消灭掉了吗？</p>
+          <p> </p>
+          <p>我想应该很容易找到吧……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起。这么快就除掉了副族长乌尔罗罗。</p>
+          <p> </p>
+          <p>来，拿着。谢谢你帮助我们执行任务。这是给你的报答。</p>
+          <p> </p>
+          <p>真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭阿武拉乌[%dic:STR_DIC_M_DF4_Owllau_Wi_NmdQ_52_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Varca]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须消灭掉阿武拉乌的头目副族长乌尔罗罗，削弱他们的势力，然后向巴尔卡报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴尔卡说阿武拉乌过着群体生活，因此如果能把他们的头目除掉，应该可以削弱他们的势力。</p>
+          <p> </p>
+          <p>消灭了阿武拉乌的副族长乌尔罗罗，向巴尔卡报告了结果。他感谢我帮助他们执行任务，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

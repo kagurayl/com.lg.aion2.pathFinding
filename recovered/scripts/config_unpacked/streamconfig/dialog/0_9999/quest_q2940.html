@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的手艺真不错，[%username]！这种程度的质量的话，即使供奉给主神也毫不逊色。</p>
+          <p> </p>
+          <p>不过您要记住。没有付出就没有回报。 </p>
+          <p> </p>
+          <p>如果只相信才能而疏于学习的话，才能也会很快消失。所以必须一直以开始的姿态研究再研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊呀，我又在罗嗦了。年纪大了，有长进的好像只有担心和罗嗦。</p>
+          <p> </p>
+          <p>好了，我有件事情，可以拜托您吗？请您把这些钛质锁链手套给欧比斯的[%dic:STR_DIC_N_Baht]送过去。</p>
+          <p> </p>
+          <p>他说预计马上就有大规模的战斗，所以继续这些东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那您就马上出发吧，免得耽误战斗准备。</p>
+          <p> </p>
+          <p>为了方便携带，我把手套包成了包裹，您把这个包裹送过去就行了。</p>
+          <p> </p>
+          <p>哦，对了。[%dic:STR_DIC_N_Baht]在普利姆据点，您去那里找他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有其他的事情吗？</p>
+          <p> </p>
+          <p>欧比斯是个危险的地方，不是谁都可以去的。所以我才特地拜托您。</p>
+          <p> </p>
+          <p>真的不乐意的话我也没办法，如果您改变了主意的话，请您再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有您想要的东西吗。不好意思，现在的这些是我尽最大努力做出来的。</p>
+          <p> </p>
+          <p>即使你去欧比斯的其他地方应该也不会有什么太大的差别。</p>
+          <p> </p>
+          <p>所以如果还可以的话，您就在里面挑两件吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出金泰伦的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是来送金泰伦大人的物品的啊。</p>
+          <p> </p>
+          <p>东西能准时送到真是太好了。 卡尔巴盖斯军团长让我在今天之内把钛质锁链手套给他送过去。</p>
+          <p> </p>
+          <p>谢谢您准时把东西送过来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把金泰伦的包裹交给[%dic:STR_DIC_N_Baht]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把金泰伦给的黄麻长袍交给欧比斯的防具商人巴赫特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金泰伦说有件东西需要马上送给普利姆据点的防具商人巴赫特，拜托我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把金泰伦给的包裹交给了巴赫特，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

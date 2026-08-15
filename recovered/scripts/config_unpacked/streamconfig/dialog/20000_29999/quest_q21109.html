@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是用[%mainslotitem]把克拉尔和莱卡恩消灭掉的吗？</p>
+          <p> </p>
+          <p>那把[%mainslotitem]很重吗？</p>
+          <p> </p>
+          <p>我这样的黑暗术古也能用吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说只有守护者才能用。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(很失望的样子)看来我是没法亲手报仇了……</p>
+          <p> </p>
+          <p>事实上，我很希望能亲自去教训教训他们。</p>
+          <p> </p>
+          <p>我说的是残忍的嘉路塔和贪心的鲁卡卡。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一辈子都忘不了他们的声音。</p>
+          <p> </p>
+          <p>他们用脚肆意践踏苦苦哀求的黑暗术古和布洛尼，说他们没有活着的价值。</p>
+          <p> </p>
+          <p>为了向他们复仇，我一直在磨我的牙齿。</p>
+          <p> </p>
+          <p>看到了吗？这里，磨得太厉害，牙齿都磨坏了。</p>
+          <p> </p>
+          <p>拜托了。以我的力量好像是没办法复仇了，希望你能帮我报仇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我再说一遍，我的仇人的名字叫[%dic:STR_DIC_M_DF4_KrallFi_DR_NmdQ_54_An]和[%dic:STR_DIC_M_DF4_LycanPr_DR_NmdQ_54_An]。</p>
+          <p></p>
+          <p>如果你能帮我复仇，我会好好酬谢你的。</p>
+          <p> </p>
+          <p>我以黑暗术古的自尊发誓。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么又改主意了？</p>
+          <p> </p>
+          <p>刚才那么爽快就答应我，现在怎么就不行了呢？</p>
+          <p> </p>
+          <p>你是觉得酬劳太少吗？</p>
+          <p> </p>
+          <p>你到底要多少啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道我们这些难民今后应该怎么生活。</p>
+          <p> </p>
+          <p>虽然我们种族不同，语言也不同，但必须同心协力。</p>
+          <p> </p>
+          <p>隆博斯也是这么说的。</p>
+          <p> </p>
+          <p>对了，你帮我复仇了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(带着复杂的表情)做得好。</p>
+          <p> </p>
+          <p>但是为什么会感觉很空虚呢？</p>
+          <p> </p>
+          <p>难道是因为没能亲手杀死仇人……</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">杀死钱奇奇的仇人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_KrallFi_DR_NmdQ_54_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_LycanPr_DR_NmdQ_54_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shulack_DF4_4]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">残忍的嘉路塔和贪心的鲁卡卡嘲笑黑暗术古和布洛尼，说他们没有活着的价值。必须把它们除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>钱奇奇说：残忍的嘉路塔和贪心的鲁卡卡面对哀求的黑暗术古和布洛尼，嘲笑说他们连活下去的价值都没有，因此想向他们复仇。</p>
+          <p> </p>
+          <p>帮助他杀死了他们，回去之后，他说可能是因为自己没有亲手杀死仇人，所以感到有点空虚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

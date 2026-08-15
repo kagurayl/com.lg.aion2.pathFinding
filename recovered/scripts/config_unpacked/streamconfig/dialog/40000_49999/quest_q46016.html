@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了搜集鸢族很久以前丢失的遗物的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 目标: [%dic:STR_DIC_OBJ_FOBJ_Q46016a]</p>
+          <p></p>
+          <p> 2. 位置: [%dic:STR_DIC_W_SZ_DF4_B6]</p>
+          <p></p>
+          <p> 3. 详情: 曾经是鸢族的东西，现在被崇拜者占有的装着古代遗物的箱子。据说里面装着金银财宝，以及各种古代的遗物。</p>
+          <p> </p>
+          <p>在受到诅咒的地下城市找到黄金遗物箱的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的委托完成了吗？</p>
+          <p> </p>
+          <p>刚才我看见好几个守护者到地下城市那边去了……</p>
+          <p> </p>
+          <p>不知道你有没有找到遗物箱，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出主神雕像。</Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果是在地下城市发现的遗物，至少也是大崩溃之前的东西，呐呐。</p>
+          <p> </p>
+          <p>它的价值相信你也应该清楚。</p>
+          <p> </p>
+          <p>请你快去[%dic:STR_DIC_W_SZ_DF4_B6]%，寻找黄金遗物箱吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(被雕像的重量吓了一跳)哎呦，这个雕像怎么这么沉？</p>
+          <p> </p>
+          <p>看来不光箱子是黄金做的啊。</p>
+          <p> </p>
+          <p>你从黄金遗物箱找到了宝物，我把委托费交给你。不要抱怨报酬太少，这样是没办法的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_W_SZ_DF4_B6]寻找[%dic:STR_DIC_OBJ_FOBJ_Q46016a]，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了寻找格尔克马洛斯的珍贵宝物的委托书。</p>
+          <p> </p>
+          <p>前往受到诅咒的地下城市找到了黄金遗物箱，交给格尔克马洛斯管理部职员之后，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭贪婪的皮凯拉的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_KrallFi_DR_53_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_B1]</p>
+          <p></p>
+          <p> 3. 详情：追随龙族的克拉尔，战斗力需要确认。推测可能很难对付。</p>
+          <p> </p>
+          <p>找到贪婪的皮凯拉，并直接将其杀死者，将可以获得委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>待在这里，经常听到各种可怕的消息，呐呐。</p>
+          <p> </p>
+          <p>术古们因为害怕，不敢到处乱走。</p>
+          <p> </p>
+          <p>你该不会是因为害怕而逃回来了吧？</p>
+          <p> </p>
+          <p>不知道委托完成了没有。你快老实跟我说吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把它消灭掉啦。真让人高兴，呐呐。</p>
+          <p> </p>
+          <p>来，这是给你的证物。只要努力工作，很快就会成为有钱人，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_DayQ_KrallFi_DR_53_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭贪婪的皮凯拉的委托书。</p>
+          <p> </p>
+          <p>前往毁坏的侬术古部落，执行任务后，向格尔克马洛斯管理部职员报告。他很满意，并给了我证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

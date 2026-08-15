@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兄弟，你知道为什么说史匹格笨吗？</p>
+          <p> </p>
+          <p>简单地说，是因为它们没有学习能力。</p>
+          <p> </p>
+          <p>比方说，存下的东西总是变少的话，最起码应该找找原因或者是换个地方吧？但它们从来不。</p>
+          <p> </p>
+          <p>每次都被我们偷，可是东西还始终放在相同的地方。当然，对于我们来说，省了不少事儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">问他到底想要说什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>史匹格会把各种各样的果实摘下来，放到自己巢穴里的 [%dic:STR_DIC_E_2]里。</p>
+          <p> </p>
+          <p>所以，想要解馋的话，去找到那个篮子，把里面的果实悄悄拿过来就可以了。</p>
+          <p> </p>
+          <p>所以呢，兄弟，你去[%dic:STR_DIC_W_DF1_22]拿点儿[%dic:STR_DIC_I_2104a]%来吧。</p>
+          <p> </p>
+          <p>我要写指令书，有点忙，拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿戴尔坡上处处都有[%dic:STR_DIC_W_DF1_22]。用篱笆围起来的，很容易找到。</p>
+          <p> </p>
+          <p>你去它们的巢穴，把篮子里的果实拿过来就行了。</p>
+          <p> </p>
+          <p>我想，五个就差不多了。</p>
+          <p> </p>
+          <p>那么，就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像不大想吃点心。是吗？</p>
+          <p> </p>
+          <p>最近都没有吃过什么好的，我非常想吃点开味的东西。</p>
+          <p> </p>
+          <p>没办法，只好一会儿我自己去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个果实的篮子并不难找吧？</p>
+          <p> </p>
+          <p>又不是藏得很深，就那么随便放着，明摆着是让我们随便拿过来吃嘛。</p>
+          <p> </p>
+          <p>来，看看都有些什么果实。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿果实。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>磨蹭什么呢？</p>
+          <p> </p>
+          <p>快去呀，快去把篮子里的果实拿来呀。</p>
+          <p> </p>
+          <p>如果头叫我们过去，给个什么差事的话，可是有一阵子吃不到点心呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哟！你真的按我说的，把五个篮子里的果实都拿来了？</p>
+          <p> </p>
+          <p>这些愚蠢的史匹格，虽然蠢，不过倒很会挑水果嘛。瞧瞧这些，都是些新鲜又好吃的。</p>
+          <p> </p>
+          <p>这些做为点心，再合适不过了。</p>
+          <p> </p>
+          <p>给，这是你的。别的弟兄，我会好好分给他们的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">偷史匹格的[%dic:STR_DIC_E_2]交给[%dic:STR_DIC_N_Vanar]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_W_DF1_22]里有装着果实的篮子。把[%dic:STR_DIC_I_2104a]偷了，拿到巴纳尔处吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴纳尔对史匹格巢穴的果实篮子垂涎三尺。</p>
+          <p> </p>
+          <p>照他的要求偷了那个篮子里的果实，拿给他，他很高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

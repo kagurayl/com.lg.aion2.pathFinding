@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你不知道我听说你到这里来了之后有多么高兴。有件事情我想拜托你。</p>
+          <p> </p>
+          <p>你也知道，现在埃尔特内正在走向死亡。</p>
+          <p> </p>
+          <p>奥德正急剧走向枯竭，即使是尤斯迪埃主神也很难遏制这种趋势。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以尤斯迪埃大人为首的无数生命的守护者正在为拯救埃尔特内而努力。</p>
+          <p> </p>
+          <p>其中最重要的是要阻止奥德的枯竭和土壤的变化。</p>
+          <p> </p>
+          <p>所以他们正在为了挽救埃尔特内的一草一木而奋斗。因为如果没有草木的话，土地会在瞬间变成黄沙。</p>
+          <p> </p>
+          <p>但是在这曼杜里森林里，现在出现了问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蓝莓树和榆树是防止土壤变化的重要的植物。但是巴拉努斯和维斯帕们现在涌到了曼杜里森林，几乎把榆树全部吃光了。</p>
+          <p> </p>
+          <p>问题是它们经常会涌过来，而且还非常凶恶。</p>
+          <p> </p>
+          <p>所以我才来拜托你。你能帮着除掉一些[%dic:STR_DIC_M_Varanus_22_An]和[%dic:STR_DIC_M_Vespa_22_n]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在曼杜里森林里有很多巴拉努斯和维斯帕。</p>
+          <p> </p>
+          <p>杀掉活的野兽虽然有些残忍，但是为了拯救整个埃尔特内，也是没办法的事情。</p>
+          <p> </p>
+          <p>如果埃尔特内完全变成沙漠的话，巴拉努斯和维斯帕也会全部死掉。</p>
+          <p> </p>
+          <p>所以请你去把它们除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢...听说[%username]你来到了埃尔特内，我还挺相信你的。</p>
+          <p> </p>
+          <p>我听说你的使命意识和责任感很强，这难道是谣言吗？</p>
+          <p> </p>
+          <p>啊哈，这可真是够狼狈的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前鲍莫娜经过这里，她说发现曼杜里森林里的巴拉努斯和维斯帕的数量一下子减少了很多。</p>
+          <p> </p>
+          <p>于是我告诉她这都是托[%username]你的福。</p>
+          <p> </p>
+          <p>那些家伙凶不凶恶啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>杀死活着的生命虽然令人不太愉快，但是为整个埃尔特内着想的话，这也是没有办法的事情...</p>
+          <p> </p>
+          <p>来，这是一点谢意。请你收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉危害草木的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Varanus_22_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Vespa_22_n]([%5]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Seora]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须到曼杜里森林去，除掉吃掉保护土壤的植物的巴拉努斯和维斯帕。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>接到了塞奥拉的拜托，让我去除掉吃掉森林里的植物的巴拉努斯和维斯帕。</p>
+          <p> </p>
+          <p>按照他的拜托完成了打猎，他说虽然杀死生命令人遗憾，但是为了保护整个埃尔特内，这是没办法的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

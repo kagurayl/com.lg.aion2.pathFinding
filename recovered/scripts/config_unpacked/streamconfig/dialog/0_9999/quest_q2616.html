@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去计划失败了，想用破坏巢穴的手段，赶走它们是行不通的。</p>
+          <p> </p>
+          <p>自从您破坏了特洛尔的巢穴后，我们收到了报告，称那些丧失巢穴的特洛尔跑到村子附近捣乱。</p>
+          <p> </p>
+          <p>不仅如此，它们还攻击没有任何抵抗能力的人类和莱卡恩。</p>
+          <p> </p>
+          <p>看上去，那些家伙们完全没有离开栖息地的打算。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最终，军团方面下达了大规模消灭特洛尔的作战命令。</p>
+          <p> </p>
+          <p>如果它们能够明白我的用意，早早离开这里该有多好...哎，愚蠢的家伙们！</p>
+          <p> </p>
+          <p>所以，我想拜托您协助军团去尖牙特洛尔部落消灭那些家伙，不知道您意下如何？</p>
+          <p> </p>
+          <p>既然已经到了这个地步，只能执行命令，消灭那些特洛尔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然事情已经发生了，由 [%username] 大人来负责收尾工作确实是最佳选择。</p>
+          <p> </p>
+          <p>由于是大规模的特洛尔歼灭战，如果看到 [%dic:STR_DIC_M_TrollRe2D_41_An]和 [%dic:STR_DIC_M_TrollkinReD_41_An]，请立刻消灭它们。</p>
+          <p> </p>
+          <p>用不着心慈手软。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想继续插手这件事了吗？</p>
+          <p> </p>
+          <p>不过也是，如果特洛尔知道破坏自己巢穴的人就是 [%username] 大人，它们会把矛头都指向您的。</p>
+          <p> </p>
+          <p>没办法。我会负责处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幸好特洛尔的攻击带来的损失不大，还算幸运。</p>
+          <p> </p>
+          <p>不过一开始，我还是低估了它们的能力。</p>
+          <p> </p>
+          <p>看样子，您是不是已经消灭了尖牙特洛尔猎手和托尔金工人呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然，干脆利落地除掉它们才是捷径。</p>
+          <p> </p>
+          <p>总之谢谢您所做的一切。这是我的一点心意。</p>
+          <p> </p>
+          <p>希望能对您的辛苦付出有所补偿。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭尖牙特洛尔猎手和托尔金工人。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_TrollRe2D_41_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_TrollkinReD_41_An]([%5]/30)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Mostin]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">执行歼灭特洛尔作战计划，消灭尖牙特洛尔猎手和托尔金工人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫斯庭表示，用破坏特洛尔巢穴的方式赶走特洛尔的计划失败了，最终军团方面下达了消灭特洛尔的作战命令。</p>
+          <p> </p>
+          <p>接受她的委托，消灭了尖牙特洛尔猎手和托尔金工人，并向她做了汇报。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

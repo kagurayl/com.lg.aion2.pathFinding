@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你来的正好。你能帮我处理红色大地神殿的事情吗？</p>
+          <p> </p>
+          <p>有一件急事，希望你能尽快帮着处理。</p>
+          <p> </p>
+          <p>你在要塞周围见到过德拉科比吗？它们是魔界没有的生物，你应该对它们还比较陌生。</p>
+          <p> </p>
+          <p>它们好像是昆虫类变异之后形成的种族。和外表不同，它们其实非常狡猾。</p>
+          <p> </p>
+          <p>它们会悄悄地看着我们战斗，等我们变弱的时候，就成群结队地发动攻击，抢夺我们的东西。</p>
+          <p> </p>
+          <p>上次攻城的时候，它们潜伏在我们撤退的路上发动攻击，让我们吃了不少苦头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间一直没有机会消灭它们，现在我们占领了要塞，应该好好地教训教训它们了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_DragonFly_54_An]就栖息在要塞的周围地区。</p>
+          <p> </p>
+          <p>[%username]，请你去消灭它们，然后把证据带回来。</p>
+          <p> </p>
+          <p>因为需要发放奖励。只要是证据就行，不管什么东西都无所谓。对了，就用它们的翅膀吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些该死的[%dic:STR_DIC_M_DF4_DragonFly_54_An]……必须好好教训它们，让它们以后再也不敢攻击我们。</p>
+          <p> </p>
+          <p>它们不仅很狡猾，数量也很多，因此想要消灭它们并不容易。</p>
+          <p> </p>
+          <p>[%username]，相信你一定会拿出和你的名声相符的实力的。我在这里等你。</p>
+          <p> </p>
+          <p>准备好了的话，就快到巴卡巴塔激战地去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不消灭德拉科比，红色大地神殿的安全就会受到威胁。</p>
+          <p> </p>
+          <p>你也不希望在下次的战斗中受到它们的骚扰吧？</p>
+          <p> </p>
+          <p>消灭它们，不仅是为了巴卡巴塔封印塔，也是为了你自己。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>见到科杰特了吗？</p>
+          <p> </p>
+          <p>那个孩子小时候的样子仿佛还在眼前，没想到这么快就长大成人，出来执行任务了。</p>
+          <p> </p>
+          <p>虽然他经历了很多痛苦的事情，但却是个聪明可爱的孩子。</p>
+          <p> </p>
+          <p>哎呀，我又只顾着说自己的事情了。让我们来谈谈任务吧。德拉科比消灭了的话，请把翅膀交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉科比的翅膀。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像还没去消灭德拉科比吧？</p>
+          <p> </p>
+          <p>它们的气焰虽然很嚣张，但对[%username]你而言，应该不难对付。</p>
+          <p> </p>
+          <p>请你再到巴卡巴塔激战地去，消灭德拉科比。</p>
+          <p> </p>
+          <p>虽然不是什么急事，不过早解决总比晚解决好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我知道你很快就能完成。</p>
+          <p> </p>
+          <p>但是只是几次扫荡，是不会让德拉科比放弃的。</p>
+          <p> </p>
+          <p>趁红色大地神殿由我们占领的时候，必须把它们清理干净。</p>
+          <p> </p>
+          <p>[%username]，如果你愿意，希望你继续过来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF4_DragonFly_54_An]的翅膀，然后交给[%dic:STR_DIC_N_Svidar]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照斯比达尔的委托，消灭德拉科比监视者，搜集翅膀。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯比达尔说德拉科比非常狡猾，对魔族造成了威胁，让我去消灭它们。</p>
+          <p> </p>
+          <p>消灭了巴卡巴塔激战地的德拉科比，把翅膀作为证据交给了他。他说趁占领红色大地神殿的时候，必须把它们清理干净，让我继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>由于同志们的积极活动，结界守护工作正在有条不紊地进行之中。</p>
+          <p> </p>
+          <p>但是松懈是最大的敌人，我们委托伏魔殿研究所，开发出了一种有用的装置。</p>
+          <p> </p>
+          <p>那就是可以随时对结界的状态进行监视的结界水晶球。</p>
+          <p> </p>
+          <p>特此通知全体结界守护团会员，请到设置在贝鲁斯兰主要地区的[%dic:STR_DIC_OBJ_FOBJ_Q45007]上将水晶球取回来，然后交给[%dic:STR_DIC_E_45007]。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天又有什么事情吗？</p>
+          <p> </p>
+          <p>您把贝鲁斯兰的水晶塔记录带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水晶塔记录。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有接到结界守护团的委托书吗？</p>
+          <p> </p>
+          <p>上面应该写着，需要从贝鲁斯兰结界水晶塔上，将水晶塔记录取回来啊。</p>
+          <p> </p>
+          <p>确认结界状态的事情，是绝对不能松懈的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要先来确认一下。</p>
+          <p> </p>
+          <p>(查看水晶塔记录)咦，这是？</p>
+          <p> </p>
+          <p>暂时好像没什么问题。我得把您拿回来的记录送到结界守护团去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">对[%dic:STR_DIC_OBJ_FOBJ_Q45007]进行调查，然后将结果物交给[%dic:STR_DIC_E_45007]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，在贝鲁斯兰的主要道路上，设置了可以记录结界塔的状态的结界水晶塔。</p>
+          <p> </p>
+          <p>找到了水晶塔，将水晶塔记录交给了贝鲁斯兰支部团员。他说没有什么大的问题，但会向结界守护团报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

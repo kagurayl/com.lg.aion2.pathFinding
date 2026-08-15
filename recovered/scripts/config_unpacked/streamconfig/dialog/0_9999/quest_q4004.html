@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我会跟智慧的神庙联系，但是这个地方自身也要努力找到解决粮食问题的方法才行啊。</p>
+          <p> </p>
+          <p>毕竟不能什么时候都跟我要粮食、都依靠伏魔殿啊。</p>
+          <p> </p>
+          <p>我们军团抛开一切致力于研究本身也是为了最终能够解决这样的问题。</p>
+          <p> </p>
+          <p>提高布鲁斯特豪宁的自给自足能力才是首要课题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们在分析了这个地方的地质后，对种子进行了改良，使种子适合在这里种植。 </p>
+          <p> </p>
+          <p>不久前，终于培育出了值得一试的成果。 </p>
+          <p> </p>
+          <p>必须要在播种完改良后的种子后，确认它们是否顺利成长。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮助我们吗？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_ACCEPT_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请收下这改良后的种子吧。这是倾注了我们心血的成果，请小心使用。  </p>
+          <p> </p>
+          <p>南部污染地带那里到处都有田地。那里可能会有值得尝试播撒种子的[%dic:STR_DIC_OBJ_DF2A_FOBJ_Q4004]。</p>
+          <p> </p>
+          <p>请在那里帮我们种下种子，确认成果。 </p>
+          <p> </p>
+          <p>我们已经把种子改良成，只要播撒出去就会立刻冒出芽来，所以请一定要实地观察是否冒出了芽。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，关于您接受任务意识强的传闻难道是假的吗？ </p>
+          <p> </p>
+          <p>我还以为我拜托您的这种小事您一定会接受呢...</p>
+          <p> </p>
+          <p>从我的角度讲，您要是非要拒绝的话，我当然是无可奈何了。</p>
+          <p> </p>
+          <p>虽然有点冒险，但我也只能派我的军团团员们去了。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您啊，[%username]大人。</p>
+          <p> </p>
+          <p>因为是要确认这期间的研究结果是否有成效，所以心里一直放心不下。 </p>
+          <p> </p>
+          <p>您往地里撒种了吗？立刻冒出芽来了吗？ </p>
+          <p> </p>
+          <p>请快快告诉我。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太幸运了。大概是鲁米埃尔主神的祝福也同时应验了吧。 </p>
+          <p> </p>
+          <p>现在一有空闲就要去确认生长速度。 </p>
+          <p> </p>
+          <p>培育出改良的种子，一定要尽可能地多种才行啊。</p>
+          <p> </p>
+          <p>谢谢您帮助我，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_OBJ_DF2A_FOBJ_Q4004]种改良种子([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Randet]报告</font></p></step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">要想解决粮食不足的问题，就要先做到粮食自给自足。把我们智慧的宝珠军团改良的种子种到地里后，向岚黛特报告结果吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岚黛特说，虽然她会与智慧的神庙取得联系，但从长远来看，还是要实现布鲁斯特豪宁的粮食自给自足。 </p>
+          <p> </p>
+          <p>还说，在分析了这个地方的地质后，对种子进行了改良，使种子适合在这里种植，要我帮忙去南部污染地带试种改良后的种子。</p>
+          <p> </p>
+          <p>按照她的请求，把种子种到地里，确认了冒出新芽之后，向她报告了结果，她高兴地说粮食自给自足有希望了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

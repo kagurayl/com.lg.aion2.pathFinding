@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杜奇隆不在，凯鲁宾就很嚣张。</p>
+          <p> </p>
+          <p>由于凯鲁宾发掘无法进行怎么行呢，要除掉它才行啊。</p>
+          <p> </p>
+          <p>为什么有工会呢？是为了工会成员利益最大化吗？不，是为了支援遗迹发掘能够顺利进行！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过还是有些担心啊。</p>
+          <p> </p>
+          <p>因为我们工会里没有能和凯鲁宾抗衡的家伙。</p>
+          <p> </p>
+          <p>贸易团警卫员？提都别提。 </p>
+          <p> </p>
+          <p>特洛尔那帮家伙没有脑子只有蛮力连文物都会一起给毁了的。</p>
+          <p> </p>
+          <p>所以说想让你帮我们去把它们消灭掉，行吗？当然，报酬一定是会有的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想好了。</p>
+          <p> </p>
+          <p>那么，请你到红色荒地上的美华灵发掘场，把那个地方的凯鲁宾都赶走吧。</p>
+          <p> </p>
+          <p>红色荒地第1发掘场和第2发掘场埋着很多值钱的东西。</p>
+          <p> </p>
+          <p>虽然我相信你的实力，但还是小心为上啊。 </p>
+          <p> </p>
+          <p>尽管不清楚[%dic:STR_DIC_M_DigCherubimL_21_n]的实力，但是[%dic:STR_DIC_M_Cherubim2Wp_21_An]的实力可不一般。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>“通过发掘遗迹来查明天界历史为首要目标”，这是我们美华灵发掘工会一贯秉持的信念。</p>
+          <p> </p>
+          <p>连术古都在为天界如此努力着，你看看自己都在干什么呢？</p>
+          <p> </p>
+          <p>见到我们，你都不觉得羞愧吗？</p>
+          <p> </p>
+          <p>趁我好声好气拜托你的时候赶紧答应吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是从发掘场延伸过来的路吗？</p>
+          <p> </p>
+          <p>守护者离开的这段期间我见了见工会的成员，听说凯鲁宾可不是一般的惹是生非。</p>
+          <p> </p>
+          <p>好像在找什么似的居然把角角落落都挖开了。</p>
+          <p> </p>
+          <p>真不知这到底是怎么回事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在听到的消息中算是好消息了。</p>
+          <p> </p>
+          <p>谢谢了，守护者。</p>
+          <p> </p>
+          <p>现在捣乱的家伙都消失了可以重新开始发掘了吧。</p>
+          <p> </p>
+          <p>得把这个消息尽快告诉工会成员们啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_W_LF2A_SZ_00]把妨碍发掘的凯鲁宾消灭掉</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DigCherubimL_21_n]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Cherubim2Wp_21_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_LF2a_1]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了美华灵发掘工会成员们可以安心发掘，把占据发掘场的凯鲁宾消灭掉，把结果告诉雅达蒙吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雅达蒙说，使工会成员可以安心干活是工会的职责，一定要把发掘场的凯鲁宾赶出去。</p>
+          <p> </p>
+          <p>但是，工会里没有能和凯鲁宾抗衡的兵力，拜托你代为抗衡。</p>
+          <p> </p>
+          <p>帮雅达蒙，除掉了占据美华灵发掘场的凯鲁宾。雅达蒙以后可以重新开始发掘了，所以很开心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

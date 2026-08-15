@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然相信你的实力，但这还不够，克拉！</p>
+          <p> </p>
+          <p>我也不能确定你是不是完全相信我，克拉拉。</p>
+          <p> </p>
+          <p>我能再试验你一次吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去除掉纽特，然后把背壳带回来。</p>
+          <p> </p>
+          <p>纽特其实要比看上去聪明。一头受到攻击的话，其他的就会聚拢过来。</p>
+          <p> </p>
+          <p>即使是这样你还愿意去打猎纽特吗，克拉拉？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到山坡上面的[%dic:STR_DIC_W_LF2_SZ_E1_SUB_2]去打猎纽特吧。</p>
+          <p> </p>
+          <p>此外，作为显示你能力的证据，把[%dic:STR_DIC_I_QUEST_1366a]带回来，克拉！</p>
+          <p> </p>
+          <p>我会根据结果来看是否可以相信你的能力和诚意，克拉拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉地之精灵是不是也是在骗人啊，克拉？</p>
+          <p> </p>
+          <p>这种事情都做不到的话，我是无法相信你的能力的，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去除掉纽特了吗，克拉？</p>
+          <p> </p>
+          <p>如果除掉了的话，就把证据[%dic:STR_DIC_I_QUEST_1366a]给我，克拉拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纽特的背壳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不把证据拿来的话，我就无法相信你的能力，克拉！</p>
+          <p> </p>
+          <p>快去把纽特的背壳带回来，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把我要的东西带回来啦，克拉！</p>
+          <p> </p>
+          <p>这样我就可以相信你的能力和诚意了。</p>
+          <p> </p>
+          <p>以后我们必须一起把乌尔卡托除掉，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉纽特，把[%dic:STR_DIC_I_QUEST_1366a]交给[%dic:STR_DIC_N_NPC_Mabangta]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到[%dic:STR_DIC_W_LF2_SZ_E1_SUB_2]去除掉纽特，把[%dic:STR_DIC_I_QUEST_1366a]交给[%dic:STR_DIC_N_NPC_Mabangta]以证明自己的能力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马邦塔说需要再次证明诚意和能力。于是按照他的指示打猎了纽特，把纽特的背壳交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

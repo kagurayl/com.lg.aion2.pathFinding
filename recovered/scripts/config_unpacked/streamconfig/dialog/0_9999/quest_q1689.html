@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您需要好的防具上衣吗？</p>
+          <p> </p>
+          <p>样子好看，功能又好的防具可不是什么地方都能买到的。</p>
+          <p> </p>
+          <p>[%username]大人身上的东西虽然也很好看...但是和提格拉齐工房制作的东西相比，就不可同日而语了。</p>
+          <p> </p>
+          <p>您也知道，不管您多么有钱，提格拉齐工匠们制作的防具都很难买到。</p>
+          <p> </p>
+          <p>现在有一个可以购买到提格拉齐工房制作的上衣的机会，您感兴趣吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然不是白送给您，需要您帮我执行一个任务。</p>
+          <p> </p>
+          <p>请您帮我搜集一些魔界的德拉乌伯尼尔洞穴龙族的[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_01]、[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]。</p>
+          <p> </p>
+          <p>我也知道这件事很麻烦，所以才和极乐世界商量，用提格拉齐工房的术古们制作的最高级的防具作为交换条件。</p>
+          <p> </p>
+          <p>只有像[%username]大人这样的守护者，我才会这样提议。</p>
+          <p> </p>
+          <p>我听说您出色地完成了德拉乌伯尼尔洞穴的任务。您已经有了经验，这次的事情我想应该不会有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。老实说，我正发愁这件事情应该交给谁呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_01]可以从善良的萨拉斯瓦提、美丽的拉克休米和指挥官尼姆巴尔卡身上获得。[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]可以从懒惰的德拉加休、训练教官阿克巴尔和大学者尤迪休提拉身上获得。</p>
+          <p> </p>
+          <p>龙族的黑色魔法结晶和龙族的蓝血只有在强大且年龄很大的龙族身上才能获得。但是据说在德拉乌伯尼尔洞穴的普通龙族身上也偶尔可以获得。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]在德拉乌伯尼尔洞穴的大部分龙族身上都能找到，所以应该不难搜集。</p>
+          <p> </p>
+          <p>通过英德拉图军团驻地的时空的裂缝，可以前往德拉乌伯尼尔洞穴。那就祝您好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您一定对身上穿着的防具很满意吧。</p>
+          <p> </p>
+          <p>竟然拒绝这么好的提议。</p>
+          <p> </p>
+          <p>我觉得提格拉齐工房制作的上衣要比这更好...</p>
+          <p> </p>
+          <p>虽然任务有点麻烦。</p>
+          <p> </p>
+          <p>不过本人要是不愿意的话，我也没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德拉乌伯尼尔洞穴的龙族身上的材料好像很珍贵，所以提格拉齐工房的术古们好像很着急。</p>
+          <p> </p>
+          <p>不然也不会向远在边疆的我下达公文了。</p>
+          <p> </p>
+          <p>大概是想让我帮着寻找可以来往于龙族阵营中强力的守护者。</p>
+          <p> </p>
+          <p>[%username]大人能答应接受任务，真是帮了我的大忙。</p>
+          <p> </p>
+          <p>您把东西带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的黑色魔法结晶、蓝血和五色鳞片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才也有一个人接受了任务。好像刚刚和同伴们一起到魔界去了。</p>
+          <p> </p>
+          <p>[%username]大人也最好能快一点。</p>
+          <p> </p>
+          <p>提格拉齐工房虽说准备好了足够的防具上衣用作奖励，但是不可能无限地供应。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把龙族的黑色魔法结晶、蓝血和五色鳞片都带回来啦。</p>
+          <p> </p>
+          <p>为什么这些材料只有在德拉乌伯尼尔洞穴的龙族身上才能搜集到呢？</p>
+          <p> </p>
+          <p>不过只要能用它们换到好的防具和武器，到底是什么原因并不重要。</p>
+          <p> </p>
+          <p>不管怎样，真是辛苦您了。</p>
+          <p> </p>
+          <p>这是提格拉齐工房制作的防具上衣。来，请您收好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往魔界的德拉乌伯尼尔洞穴，搜集[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_01]、[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_02]和[%dic:STR_DIC_I_JUNK_DRAUPNIR_QUEST_03]，然后交给[%dic:STR_DIC_N_Brosia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说极乐世界和龙语工房签订了协议。按照布洛西亚的提议，通过英德拉图军团驻地的时空的裂缝前往魔界的德拉乌伯尼尔洞穴，搜集龙语工房所需的材料，交换防具上衣吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说如果我能去魔界的德拉乌伯尼尔洞穴搜集提格拉齐工房需要的材料，就能给我一件很好的防具上衣。</p>
+          <p> </p>
+          <p>于是通过时空的裂缝前往魔界的德拉乌伯尼尔洞穴，搜集到了龙族的黑色结晶、龙族的蓝血和龙族的五色鳞片。</p>
+          <p> </p>
+          <p>交给布洛西亚之后，他给了我一件很好的防具上衣。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

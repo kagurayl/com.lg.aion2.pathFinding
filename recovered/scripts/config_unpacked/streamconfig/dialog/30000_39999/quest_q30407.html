@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30407</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑卡泰大人说用这个魔法笼子，就能活捉光晕精灵，对吧？</p>
+          <p> </p>
+          <p>既然精灵星的老师这么说，就一定不会有错。</p>
+          <p> </p>
+          <p>但是[%username]大人您也知道，我不能离开这里。</p>
+          <p> </p>
+          <p>所以您得再帮帮我……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">答应帮助她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您拿着这个[%dic:STR_DIC_I_QUEST_30407A]。</p>
+          <p> </p>
+          <p>对着[%dic:STR_DIC_M_IDElementalN_ElementalLightM_60_Ah]使用笼子，就能把它们关在里面。</p>
+          <p> </p>
+          <p>您只要把关着精灵的笼子交给我就行了。</p>
+          <p> </p>
+          <p>虽然我很想让您多抓几个，但是笼子只有一个，没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我再跟您说一遍。</p>
+          <p> </p>
+          <p>请您用[%dic:STR_DIC_I_QUEST_30407A]去捕捉[%dic:STR_DIC_M_IDElementalN_ElementalLightM_60_Ah]。</p>
+          <p> </p>
+          <p>我之所以说两遍，不是我不相信[%username]大人。</p>
+          <p> </p>
+          <p>而是因为我的心太急切了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到了这一步您却拒绝的话，让我怎么办啊！</p>
+          <p> </p>
+          <p>魔法笼子已经弄到了，剩下的事情就是捕捉光晕精灵了</p>
+          <p> </p>
+          <p>如果您突然装不知道的话……</p>
+          <p> </p>
+          <p>您是怕我出名之后风头盖过您吗？</p>
+          <p> </p>
+          <p>[%username]大人，我好像真的看错您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦！</p>
+          <p> </p>
+          <p>[%username]大人，知道您离开之后我是什么感觉吗？</p>
+          <p> </p>
+          <p>我感觉血液就快要凝固了。</p>
+          <p> </p>
+          <p>虽然我知道不可能，但是我真的很担心您会失败。</p>
+          <p> </p>
+          <p>抓到了光晕精灵的话，请快点交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出关着精灵的笼子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没抓到光晕精灵吗？</p>
+          <p> </p>
+          <p>您不知道我的心里有多着急。</p>
+          <p> </p>
+          <p>今后我的前程全掌握在[%username]大人的手中。</p>
+          <p> </p>
+          <p>请您快去捕捉[%dic:STR_DIC_M_IDElementalN_ElementalLightM_60_Ah]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦！</p>
+          <p> </p>
+          <p>[%username]大人，知道您离开之后我是什么感觉吗？</p>
+          <p> </p>
+          <p>我感觉血液就快要凝固了。</p>
+          <p> </p>
+          <p>虽然我知道不可能，但是我真的很担心您会失败。</p>
+          <p> </p>
+          <p>抓到了光晕精灵的话，请快点交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出关着精灵的笼子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于捉到光晕精灵了。</p>
+          <p> </p>
+          <p>这段时间的辛苦总算没有白费。啊，当然[%username]大人您也帮了我的大忙。</p>
+          <p> </p>
+          <p>如果这次我能出人头地，绝对不会忘记您的恩惠。</p>
+          <p> </p>
+          <p>如果下次您能继续帮我捕捉更多的光晕精灵，就更感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用[%dic:STR_DIC_I_QUEST_30407A]捕捉 [%dic:STR_DIC_M_IDElementalN_ElementalLightM_60_Ah]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">把关在笼子里的精灵交给[%dic:STR_DIC_N_Hytaion]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">使用魔法笼子，去拉迪斯森林捕捉圆光晕精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希塔伊温让我用黑卡泰制作的魔法笼子去捕捉圆光晕精灵。</p>
+          <p></p>
+          <p>按照她的委托，到拉迪斯森林去捕捉到了圆光晕精灵。交给她之后，她非常高兴，说绝不会忘记我的恩惠。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

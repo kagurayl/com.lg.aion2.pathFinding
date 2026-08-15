@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>为了维护永恒之塔的尊严，守护亚特雷亚的结界，我们需要更多人的帮助。</p>
+          <p> </p>
+          <p>为了对抗在格尔克马洛斯给守护团的事业造成妨碍的敌对势力，我们需要黑暗求道者军团的情报。</p>
+          <p> </p>
+          <p>从现在的情况看，[%username]你是守护团中最合适的人选。看到本文件后，请立即开始行动。</p>
+          <p> </p>
+          <p>请秘密和[%dic:STR_DIC_N_Gehlen]接触，将他的话转告给[%dic:STR_DIC_E_45021]。</p>
+          <p> </p>
+          <p>传话的内容是绝密事项，希望你能注意保密。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天，您祈祷了吗？</p>
+          <p> </p>
+          <p>马勒库坦主神会永远倾听我们的祈祷。</p>
+          <p> </p>
+          <p>[%username]大人，在遇到困难的时候，您也可以祈祷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问需要转达的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您应该知道，格尔克马洛斯的环境和亚特雷亚的力量之间存在着很大的联系吧？</p>
+          <p> </p>
+          <p>最近我们在异变比较严重的地区发现了新的情报。</p>
+          <p> </p>          
+          <p>(低声说)这次需要您转达的情报，和毁坏的侬术古部落有关。</p>
+          <p> </p>
+          <p>因为需要注意的事情太多，暂时我只能集中精力对侬术古进行调查。</p>
+          <p> </p>
+          <p>您只要把这些告诉格尔克马洛斯支部团员就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看着格尔克马洛斯，我的心里就很郁闷。</p>
+          <p> </p>
+          <p>格尔克马洛斯是最需要结界守护团的帮助的地方。</p>
+          <p> </p>
+          <p>但是我们能做的事情，却又那么的少……真是郁闷。</p>
+          <p> </p>
+          <p>对了，您来找我有什么事吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达听到的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔兰大人让您告诉我有关侬术古部落的事情？</p>
+          <p> </p>
+          <p>听说毁坏的侬术古部落里隐藏着什么秘密，看来盖尔兰大人已经找到了什么头绪。</p>
+          <p> </p>
+          <p>[%username]大人告诉我的情况，我会妥善处理的。</p>
+          <p> </p>
+          <p>辛苦您了。这是守护团为您准备的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Gehlen]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_45021]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，去见见协助守护团进行调查的黑暗求道者军团士兵，获取情报。</p>
+          <p> </p>
+          <p>见到了盖尔兰，获得情报之后，告诉了格尔克马洛斯支部的职员。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

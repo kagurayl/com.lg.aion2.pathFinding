@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(埋头思考，嘴里在嘟囔着什么。)</p>
+          <p> </p>
+          <p>啊呀，不好意思。我正在想事情。</p>
+          <p> </p>
+          <p>每天在这里站岗，这份枯燥是很难忍受的。</p>
+          <p> </p>
+          <p>所以我最近正在学习雕刻，刚才我正在想应该雕什么东西</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>世界上有很多值得用雕刻留下来的美好的东西。开始学习雕刻之后，我觉得每一只鸟、每一束花都是独特的。</p>
+          <p> </p>
+          <p>要是可以的话，我想把整个大陆都雕刻下来。也许退休之后，我可以实现这个梦想。</p>
+          <p> </p>
+          <p>嗯……但是雕刻用的材料不够了。我是个完美主义者，只要有一点不满意的地方，就会重来从头开始。</p>
+          <p> </p>
+          <p>您能帮我去搜集一些材料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_3322a]是最好的雕刻材料。虽然很硬，雕刻的时候会费一点力，但是可以保存很久。</p>
+          <p> </p>
+          <p>虽然我只是雕着玩，但我想既然要雕刻，就要用最好的材料。</p>
+          <p> </p>
+          <p>在勒布莱恩荒地和古代遗迹那里有很多[%dic:STR_DIC_M_Baku_25_An]。请您帮我搜集一些它们的角。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，看来我是逮住了一个大忙人啊。</p>
+          <p> </p>
+          <p>没关系。巴库的角等我有空的时候再去搜集吧。</p>
+          <p> </p>
+          <p>但是什么时候才有空呢……不知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>迷上雕刻之后，我就一直在等着退休。</p>
+          <p> </p>
+          <p>当然，我不会疏忽职责。我对出人头地也很感兴趣。</p>
+          <p> </p>
+          <p>但是一旦我忘了工资和竞争，埋头雕刻的时候，啊，我觉得这才是人生真正的喜悦。</p>
+          <p> </p>
+          <p>我要的东西搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出巴库的大角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，您是没听清我的话吗？</p>
+          <p> </p>
+          <p>在其他人看来，可能只不过是个兴趣而已，但我真的是很认真的。</p>
+          <p> </p>
+          <p>好了，请您快去帮我搜集角吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这就是我说的巴库的大角。</p>
+          <p> </p>
+          <p>听说那些家伙长得很滑稽，力气却很大……您可真了不起。</p>
+          <p> </p>
+          <p>因为没有材料，我一直没办法做自己想做的事情，觉得很郁闷。这下好了。</p>
+          <p> </p>
+          <p>请您收下这个。这是我心爱的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_Baku_25_An]身上搜集角，然后交给[%dic:STR_DIC_N_Tyndareus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">庭纳雷乌斯正在因为没有雕刻材料而担心，帮他搜集巴库的大角吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守卫卫兵庭纳雷乌斯负责守卫埃尔特内要塞的入口。</p>
+          <p> </p>
+          <p>他的爱好是雕刻，但是因为材料不足，让我帮他搜集巴库的大角。</p>
+          <p> </p>
+          <p>帮他搜集到了巴库的大角，他很高兴，送了我一件礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

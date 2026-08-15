@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(碎裂的奥尔卡尼姆中掉落的碎片。)</p>
+          <p> </p>
+          <p>(可以感觉到奇异的奥德气息。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Rentia]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在是从哪里来啊，[%username]大人。</p>
+          <p> </p>
+          <p>您看上去好像很疲惫的样子。</p>
+          <p> </p>
+          <p>您来找我，一定是有什么事情要问我吧？</p>
+          <p> </p>
+          <p>跟我说说是什么事情，我会尽我所能为您解答。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出奥尔卡尼姆碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……我还是第一次见到这种东西。不知道是什么东西的碎片。</p>
+          <p> </p>
+          <p>但是不要太失望。我知道一个人，他一定可以给您答案。</p>
+          <p> </p>
+          <p>您去过埃雷修兰塔下层中央的[%dic:STR_DIC_W_AB1_Sub_add20]吗？</p>
+          <p> </p>
+          <p>您去那里问问[%dic:STR_DIC_N_Ab1_NPC_LugBug]，应该就能得到答案。</p>
+          <p> </p>
+          <p>祝您好运，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！</p>
+          <p> </p>
+          <p>我们以前见过吗，波波？</p>
+          <p> </p>
+          <p>不管有没有见过都没关系。</p>
+          <p> </p>
+          <p>今天有什么事吗，波波？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出奥尔卡尼姆碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不知道掉落这个碎片的生命体的名字，波波。</p>
+          <p> </p>
+          <p>但有一点可以肯定，里面凝聚着永恒之塔的奥德。</p>
+          <p> </p>
+          <p>这个生命体应该也是奥德的力量形成的。</p>
+          <p> </p>
+          <p>除了这个生命体之外，应该还有其他的生命体。</p>
+          <p> </p>
+          <p>凝聚着奥德的碎片变成了种子，诞生了生命体，波波。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听兰提亚说，你拿着一个奇怪的东西，到处打听是什么东西。</p>
+          <p> </p>
+          <p>如果发现了那种东西，应该尽早向我报告才对啊！</p>
+          <p> </p>
+          <p>怎么样？弄清楚那个碎片是什么了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是凝聚着奥德的碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是说奥尔卡尼姆碎片中凝聚着奇异的奥德？</p>
+          <p> </p>
+          <p>而且是永恒之塔的奥德？</p>
+          <p> </p>
+          <p>这个碎片是创造出新生命的源泉？</p>
+          <p> </p>
+          <p>这可不是普通的问题。必须尽快采取措施才行。</p>
+          <p> </p>
+          <p>辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Rentia]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Ab1_NPC_LugBug]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在深渊残骸中发现了含有奇怪奥德的奥尔卡尼姆碎片。问问特米伦要塞的兰提亚是什么东西吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在深渊残骸中发现了含有奇怪奥德的奥尔卡尼姆碎片。</p>
+          <p> </p>
+          <p>拿去给特米伦要塞的情报官兰提亚看过之后，她说雷伊布岛上的卢葛布格应该知道是什么东西。</p>
+          <p> </p>
+          <p>卢葛布格看过之后，说那是凝聚着永恒之塔的奥德的碎片，是这个碎片诞生出了新的生命体。</p>
+          <p> </p>
+          <p>把这件事告诉阿拉图斯之后，他显得很紧张，说必须尽快采取措施。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

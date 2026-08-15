@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好。我正想找人帮我。</p>
+          <p> </p>
+          <p>不久前我收到了联系，说伏魔殿要向阿姆斯尼尔港口派遣调查团。</p>
+          <p> </p>
+          <p>说是想调查一下设施，看看是否可以用于军事目的。</p>
+          <p> </p>
+          <p>突然说要派人来，不知道是因为什么...</p>
+          <p> </p>
+          <p>不知道是不是上面的人知道这一地区的情况要比想象的严重？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果港口的设施可以使用的话，是不是会正式派一个军团过来...</p>
+          <p> </p>
+          <p>不过这些都是推测。我只是一介行政官，又怎么能知道上面的意思呢。</p>
+          <p> </p>
+          <p>不管怎样，我想在附近招募一些守护者，先做一些准备工作。</p>
+          <p> </p>
+          <p>为了让调查顺利展开，首先得把在周围游荡的幽灵们清除掉。</p>
+          <p> </p>
+          <p>这件事是公务，所以会提供金铸币作为报酬。您愿意参加吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_UndeadDarkFiD_41_An]、[%dic:STR_DIC_M_UndeadDarkWiD_41_An]和[%dic:STR_DIC_M_UndeadDarkRaD_40_An]清除掉。</p>
+          <p> </p>
+          <p>其他的东西也很危险，但我会另外想办法。</p>
+          <p> </p>
+          <p>[%username]大人只要帮我把阿姆斯尼尔港口的幽灵们清除掉就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是吗？</p>
+          <p> </p>
+          <p>我刚才看到您在那里闲逛，还以为您会有空呢。</p>
+          <p> </p>
+          <p>如果您有事的话，就先去把事情做完吧。</p>
+          <p> </p>
+          <p>不过事情做完之后，请您一定要来帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是因为污染吗？</p>
+          <p> </p>
+          <p>我是说这附近大量出现幽灵的原因。</p>
+          <p> </p>
+          <p>即使没有直接暴露在龙族的污染物质中，通过空气或土壤也足以受到污染。</p>
+          <p> </p>
+          <p>不然的话，就不可能从港口到针叶林全都是幽灵。</p>
+          <p> </p>
+          <p>对了，我让您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>这是我为辛辛苦苦捕捉幽灵的[%username]大人准备的奖励。</p>
+          <p> </p>
+          <p>在调查团过来之前，有时间的话，请您再来帮我清除几次幽灵。</p>
+          <p> </p>
+          <p>啊，当然到时我还会给你报酬。和这次一样，我会给您金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除阿姆斯尼尔港口的幽灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadDarkFiD_41_An]([%2]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadDarkWiD_41_An]([%5]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_UndeadDarkRaD_40_An]([%8]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Coventina]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须在港口设施调查团过来之前，清除阿姆斯尼尔港口的幽灵，并向行政官克贝蒂纳报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官克贝蒂纳说接到了消息，伏魔殿会派遣调查团，对阿姆斯尼尔港口的设施进行调查。</p>
+          <p> </p>
+          <p>因此需要事先清除在港口游荡的幽灵，请求我帮助她。</p>
+          <p> </p>
+          <p>按照她的指示，清除了阿姆斯尼尔港口的幽灵。她给了我金铸币作为报酬，并让我在调查团来之前继续帮着清除幽灵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

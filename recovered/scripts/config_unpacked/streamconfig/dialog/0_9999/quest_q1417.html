@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，我没有期待[%username]大人能成功地完成所有的任务。</p>
+          <p> </p>
+          <p>我想如果能成功一半就已经很了不起了。</p>
+          <p> </p>
+          <p>活了这么长的时间，看了这么多的守护者，我觉得自己挺有眼光的，看来还是不行。</p>
+          <p> </p>
+          <p>现在所有的任务都已经完成了，剩下的工作就只是报告了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您回到埃尔特内要塞去，向[%dic:STR_DIC_N_Telemachus]军团长大人报告一下现在为止所执行的任务和结果吧。</p>
+          <p> </p>
+          <p>如果能亲耳听到[%username]大人的报告的话，泰雷马科斯大人一定也会很高兴的。</p>
+          <p> </p>
+          <p>他一定很想知道详细的过程。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您马上去要塞见见[%dic:STR_DIC_N_Telemachus]队长大人吧。</p>
+          <p> </p>
+          <p>我已经向他传了信，他应该已经在等您了。</p>
+          <p> </p>
+          <p>能够最终摧毁凯丹大本营，这段时间您真是辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您做出了这么伟大的壮举，难道不想向队长大人报告吗？</p>
+          <p> </p>
+          <p>我虽然已经进行了简单的报告，但是泰雷马科斯大人应该希望听到直接的报告。</p>
+          <p> </p>
+          <p>谦虚过了头也不是好事。请您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经从艾奥洛斯那里听到了简单的报告。</p>
+          <p> </p>
+          <p>虽然把你派了过去，但是如果说一点都不担心那是假的。</p>
+          <p> </p>
+          <p>你建立了不朽的功绩，可以尽情地自豪了。</p>
+          <p> </p>
+          <p>跟我仔细说说你是怎么完成任务的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你建立的功绩，不管我怎么称赞都是不够的。</p>
+          <p> </p>
+          <p>很多人都说都是因为[%username]您，才让埃尔特内找回了和平。虽然这个和平只是暂时的。</p>
+          <p> </p>
+          <p>来，我为立功的英雄准备了奖赏。</p>
+          <p> </p>
+          <p>这是为你准备的，请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去要塞向[%dic:STR_DIC_N_Telemachus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">泰雷马科斯在等着我。去埃尔特内要塞向他报告吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾奥洛斯说任务已经成功完成，让我回到要塞，向泰雷马科斯军团长报告。</p>
+          <p> </p>
+          <p>泰雷马科斯军团长说多亏了我埃尔特内找回了和平，并大大地奖赏了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

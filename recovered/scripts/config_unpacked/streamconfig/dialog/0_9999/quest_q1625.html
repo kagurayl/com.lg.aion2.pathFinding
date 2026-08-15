@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们在这种地方又再见面了！真让人高兴！</p>
+          <p></p>
+          <p>从你的表情来看，像是不记得我了。毕竟您那时候正在举行仪式。</p>
+          <p></p>
+          <p>就是在极乐世界大圣所的守护者仪式啊。我那时候也在那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">表示见到他很高兴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>居然在这里见到了你，真让人意外。</p>
+          <p></p>
+          <p>成为守护者好像还是一眨眼之前的事情，真是瞬息万变啊。</p>
+          <p></p>
+          <p>你能帮我一个忙吗？</p>
+          <p></p>
+          <p>我马上要带着队员们去消灭拉斯贝尔格，在此之前还有事情要准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是何事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据我所知，去往拉斯贝尔格的暗黑领地的道路非常险峻。要经过到处都是灵魂的波特玛废墟。</p>
+          <p></p>
+          <p>因此队员们为了不迷路，想用火炬照亮前方的道路。</p>
+          <p></p>
+          <p>波特玛废墟中有古代鲁力人从阿斯卡尔伦的须博山带回的7个火炬。</p>
+          <p></p>
+          <p>但是问题是，没有能够点燃这些火炬的油脂。</p>
+          <p></p>
+          <p>[%username]大人如果能找到灯油给我的话，我一定会让舰长重重的酬谢你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么现在就上路吧。</p>
+          <p></p>
+          <p>村子周围的海岸上有很多[%dic:STR_DIC_M_Starturtle_40_n]。</p>
+          <p></p>
+          <p>请你帮我除掉他们，搜集[%dic:STR_DIC_I_QUEST_1625a]。</p>
+          <p></p>
+          <p>要点燃7个火炬，因此至少需要7块。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的想法太短浅了。您一定还有许多其他的任务。</p>
+          <p></p>
+          <p>没办法了。只好让我的几名队员去做这件事情了。</p>
+          <p></p>
+          <p>虽然大战迫在眉睫，实在不想在别的事情上浪费精力...唉，没办法啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着。</p>
+          <p></p>  
+          <p>您带回我托您带的[%dic:STR_DIC_I_QUEST_1625a]了吗？</p>
+          <p></p> 
+          <p>如果带来的话就快给我吧。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙龟油。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须用龙龟油才能点燃火炬。</p>
+          <p></p>
+          <p>只有点燃了火炬，所有的队员们才能安全的通过波特玛废墟，到达拉斯贝尔格的暗黑领地。</p>
+          <p></p>
+          <p>请快去帮我搜集吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你安全的带回了龙龟的油脂！</p>
+          <p></p>
+          <p>龙龟油在很低的温度下也可以点燃，即使遇到强风也绝对不会熄灭。</p>
+          <p></p>
+          <p>现在终于完成了前往拉斯贝尔格的第一项准备工作。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Starturtle_40_n]，收集龙龟油带给[%dic:STR_DIC_N_Voluptes]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了点燃波特玛废墟的火炬，需要收集龙龟油交给布鲁博德斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蓝色舰队副官布鲁博德斯为了能到达拉斯贝尔格，需要点燃波特玛废墟的火炬照亮进攻的道路。</p>
+          <p></p>
+          <p>要点燃古代鲁力人从阿斯卡尔伦的须博山带回的很难点燃的火炬，需要龙龟油。因此按照布鲁博德斯的拜托，打猎龙龟，收集到了龙龟油。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

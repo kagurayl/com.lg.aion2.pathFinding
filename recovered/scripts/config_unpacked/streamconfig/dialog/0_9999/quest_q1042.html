@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管发生什么事情，都必须阻止凯丹克拉尔打开次元之门。</p>
+          <p> </p>
+          <p>如果龙族通过次元之门入侵的话...想想就不寒而栗。</p>
+          <p> </p>
+          <p>这不光是埃尔特内地区的问题，而是会威胁到整个亚特雷亚的大事件。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想从根本上解决问题，就必须进入次元之门，堵住通向龙族的世界的门。</p>
+          <p> </p>
+          <p>因此必须要找到[%dic:STR_DIC_I_QUEST_1043a]。没有它的话就无法进入次元之门。</p>
+          <p> </p>
+          <p>寻找钥匙的事情，我能拜托[%username]大人您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"在凯丹凯丹大本营,可以看到[%dic:STR_DIC_M_FeC_KrallWarriorHK_40_Ae]、[%dic:STR_DIC_M_FeB_KrallKeeperHK_40_Ae]和[%dic:STR_DIC_M_FeC_KrallKeeperHK_40_Ae]。"</p>
+          <p> </p>
+          <p>请除掉他们，找出[%dic:STR_DIC_I_QUEST_1043a]在谁的身上。我想一定可以找到和钥匙有关的线索。</p>
+          <p> </p>
+          <p>如果在组长身上没有找到线索，请你去调查一下凯丹大本营入口处的[%dic:STR_DIC_I_QUEST_1042a]。运气好的话，应该可以找到和次元之门钥匙有关的线索。</p>
+          <p> </p>
+          <p>[%username]，埃尔特内的未来就寄托在你的身上了。请你一定要找到钥匙，交给[%dic:STR_DIC_N_Telemachus]军团长。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]。 </p>
+          <p> </p>
+          <p>我接到了艾奥洛斯的报告，说让你去执行寻找[%dic:STR_DIC_I_QUEST_1043a]的任务了。</p>
+          <p> </p>
+          <p>钥匙找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出钥匙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么重要的任务你没有好好执行，就这么空着手回来了？</p>
+          <p> </p>
+          <p>我对你非常失望，[%username]！</p>
+          <p> </p>
+          <p>快去把次元之门的钥匙找回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说任务交给了你，我就放心了。</p>
+          <p> </p>
+          <p>到现在为止，你一次都没有令我失望。</p>
+          <p> </p>
+          <p>真是辛苦了！我不会忘记你的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Aeolus]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_M_FeC_KrallWarriorHK_40_Ae]、[%dic:STR_DIC_M_FeB_KrallKeeperHK_40_Ae]、[%dic:STR_DIC_M_FeC_KrallKeeperHK_40_Ae]和[%dic:STR_DIC_I_QUEST_1042a]身上寻找有关次元之门钥匙的线索</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">消灭[%dic:STR_DIC_M_Krall_KeyMaster]和[%dic:STR_DIC_M_LF2_KrallShaQnmd_39_An]，搜集[%dic:STR_DIC_I_QUEST_1043a]，然后交给[%dic:STR_DIC_N_Telemachus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：艾奥洛斯说有关于次元之门的事情要和我说。去结界塔见见艾奥洛斯吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到凯丹克拉尔正在建造次元之门之后，艾奥洛斯说必须找到打开次元之门的钥匙。</p>
+          <p> </p>
+          <p>按照他的拜托，除掉凯丹克拉尔并找到了钥匙，交给了泰雷马科斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

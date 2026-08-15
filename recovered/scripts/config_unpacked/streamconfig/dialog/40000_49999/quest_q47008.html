@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：妨碍雷帕尔革命团基地建设</p>
+          <p> </p>
+          <p>现在到了用接近实战的训练提高[%username]你的能力的时候了，而且同时还能对魔界有所帮助。</p>
+          <p>这次训练的内容是到[%dic:STR_DIC_W_DF2_SUB_D5]去，给雷帕尔革命团造成打击。</p>
+          <p>请您去消灭掉雷帕尔革命团的头目之一[%dic:STR_DIC_M_LehparFiCrazyNamedQ_39_Ae]。</p>
+          <p>这是非常危险的任务，请您一定要找一个导师，组成组队之后一起过去。</p>
+          <p>和[%dic:STR_DIC_E_Mentor]距离太远的话，训练就无法完成，因此您最好一直跟在他身边。</p>
+          <p>训练完成之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘻啦唔吧喃！</p>
+          <p> </p>
+          <p>这次的训练怎么样了，[%username]大人？</p>
+          <p> </p>
+          <p>接近研究所长闻西酷兹并不是一件容易的事，不过和导师在一起的话，应该不难完成这个任务吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道，只要得到一点帮助，您就能出色地完成这次的训练。</p>
+          <p> </p>
+          <p>您从预备神庙毕业的日子应该不远了。</p>
+          <p> </p>
+          <p>我想[%username]大人将来一定可以成为一个优秀的导师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭[%dic:STR_DIC_M_LehparFiCrazyNamedQ_39_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Titorea]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭研究所长闻西酷兹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我去消灭掉雷帕尔革命团的研究所长闻西酷兹。</p>
+          <p> </p>
+          <p>于是到革命团建筑基地去，和导师一起消灭掉了研究所长闻西酷兹。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

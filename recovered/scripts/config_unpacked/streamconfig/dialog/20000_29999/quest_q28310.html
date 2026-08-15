@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最初潜入阿图拉姆空中要塞的时候，我成功地潜入了兵站区域和管理区域，但是潜入指挥区域的时候却遇到了问题。</p>
+          <p> </p>
+          <p>不仅因为指挥区域是在浮游岛上面，还因为那里有很多的德拉坎，我一个人对付不过来。</p>
+          <p> </p>
+          <p>如果是愚蠢的塔伦和黑暗术古也许还可以，但要骗过德拉坎确实很不容易。</p>
+          <p> </p>
+          <p>真的，如果没有飞艇的话，任务是不可能进行到现在这一步的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们虽然破坏掉了新型苏尔卡纳，但空中要塞的指挥体系仍然完好无损。</p>
+          <p> </p>
+          <p>只要指挥区域的德拉坎们还活着，他们就可能重新制造出新型苏尔卡纳。</p>
+          <p> </p>
+          <p>因此我们必须不断发动攻击，让他们没有时间重建要塞。</p>
+          <p> </p>
+          <p>这件事你能协助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么我不去？</p>
+          <p> </p>
+          <p>飞艇只能坐一个人，我就算想去也没办法去啊，不是吗？</p>
+          <p> </p>
+          <p>你该不会是想不借助飞艇的力量，直接冲过去吧？</p>
+          <p> </p>
+          <p>必须利用飞艇的武器。否则的话，在指挥官巴鲁斯还没出来之前，你自己可能就会陷入危险。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，就算你不愿意也没关系，反正有很多其他天族在帮助我。</p>
+          <p> </p>
+          <p>实在不行的话，我还可以去找西里安帮忙。</p>
+          <p> </p>
+          <p>你也用不着多说什么了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>空中要塞附近有很多浮游岛，又有德雷得奇安的保护，可以说是易守难攻。</p>
+          <p> </p>
+          <p>所以我才选择了单独潜入的方法。</p>
+          <p> </p>
+          <p>不过从[%username]大人您的成果来看，这是个明智的决定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把指挥官巴鲁斯消灭掉啦。</p>
+          <p> </p>
+          <p>虽然飞艇的武器很强，但有些人却不善于操纵飞艇，我因此很担心。</p>
+          <p> </p>
+          <p>现在指挥区域陷入了瘫痪，我终于可以暂时放心了。</p>
+          <p> </p>
+          <p>来，这是给您的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭阿图拉姆[%dic:STR_DIC_W_IDStation_SZ_03_B]的 [%dic:STR_DIC_M_IDStation_DrakanBoss_58Re2]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Silion]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈里肯所说，突破空中要塞指挥区域，消灭指挥官巴鲁斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈里肯说为了阻止空中要塞的重建，必须对指挥区域进行牵制。</p>
+          <p> </p>
+          <p>于是乘坐飞艇前往指挥区域，利用飞艇的炮火消灭了指挥官巴鲁斯，然后在西里安那里获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在精灵之山路，有一个朋友。</p>
+          <p> </p>
+          <p>他为生活艰难的我和兄弟们制造过药品。</p>
+          <p> </p>
+          <p>但是我听到了不好的消息。</p>
+          <p> </p>
+          <p>听说他的研究室，被破坏了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说他藏身在不远的地方。</p>
+          <p> </p>
+          <p>我想知道他现在怎么样，我的朋友[%dic:STR_DIC_N_Kistig]。</p>
+          <p> </p>
+          <p>帮我找到他，看看他是否安然无恙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说[%dic:STR_DIC_N_Kistig]，藏在还没到精灵之山路的陈旧的窝棚里。</p>
+          <p> </p>
+          <p>帮我去向他问好，告诉他卡因多尔和兄弟们都很好。</p>
+          <p> </p>
+          <p>让他不要失望，打起精神继续研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>随着岁月流逝，朋友也慢慢地少了。</p>
+          <p> </p>
+          <p>奇斯提克，是我所剩不多的朋友。</p>
+          <p> </p>
+          <p>现在我已经没有力气去远的地方。</p>
+          <p> </p>
+          <p>以前的老朋友，就这样丢掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为活了这么久，什么事情都经历过了...</p>
+          <p> </p>
+          <p>没想到我的研究会因为精灵而中断。</p>
+          <p> </p>
+          <p>虽然那里本来就有很多精灵，但是不知道它们为什么会突然攻击我的研究室。</p>
+          <p> </p>
+          <p>不然的话，怎么会现在都回不了研究室。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达卡因多尔的问候。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，卡因多尔！看来他听到我被赶出实验室的消息了。</p>
+          <p> </p>
+          <p>我的情况很艰难，其他的事情全都给忘了。</p>
+          <p> </p>
+          <p>谢谢你来转达问候。听到了他的鼓励，我会打起一点精神的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Kistig]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡因多尔听说朋友奇斯提克的研究室被破坏，奇斯提克也去避难了，他因此很担心。找到奇斯提克，转达卡因多尔的问候吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡因多尔说他听说精灵之山路的朋友奇斯提克的研究室被破坏了，他因此很担心。</p>
+          <p> </p>
+          <p>帮助担心奇斯提克安危的卡因多尔，来到博塔摩尔森林的窝棚找到了躲藏在那里的奇斯提克，并转达了他的问候。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

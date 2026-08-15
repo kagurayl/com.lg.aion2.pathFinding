@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这可怎么办才好呢？</p>
+          <p> </p>
+          <p>用维斯帕的毒针和德布里的皮膜制作的解毒剂没用。</p>
+          <p> </p>
+          <p>看样子要救那个人的话，需要更强力的解毒剂。</p>
+          <p> </p>
+          <p>没想到要用到这种方法...不过，看样子不得不采取特殊措施了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为事情非常紧急，我才会告诉[%username]大人听的，但是请千万不要和别人说。</p>
+          <p> </p>
+          <p>我说过这些话，我拜托你去做的事情，千万不能和其他人讲。</p>
+          <p> </p>
+          <p>你可以拒绝我，但是绝对不能和其他人说。</p>
+          <p> </p>
+          <p>你能答应我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去魔界寻找解毒剂的材料。</p>
+          <p> </p>
+          <p>你到莫尔海姆去，那里有一个名叫[%dic:STR_DIC_W_DF2_SUB_A2]的地方。</p>
+          <p> </p>
+          <p>你去那里捕捉[%dic:STR_DIC_M_OctasideD_22_An]，搜集它的毒腺。</p>
+          <p> </p>
+          <p>你也知道，这是非常危险的事情。如果遇到魔界的守护者的话，就必须跟他们战斗。你能做到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要去莫尔海姆的[%dic:STR_DIC_W_DF2_SUB_A2]去的话，最好是通过时空的裂缝过去。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_directportal]经常在埃尔特内要塞的后面打开，你去那边等一下看看。</p>
+          <p> </p>
+          <p>几种蜘蛛中，只有[%dic:STR_DIC_M_OctasideD_22_An]的毒腺才行。</p>
+          <p> </p>
+          <p>不要问我是怎么知道这会有效果。什么都别问，只管去把蜘蛛的毒腺带回来就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不会强迫你去做危险的事情。</p>
+          <p> </p>
+          <p>我不会强迫你去魔族的巢穴，做这么危险的任务。</p>
+          <p> </p>
+          <p>但是刚才我和你说的事情，你一定要帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你安然回来啦，[%username]！</p>
+          <p> </p>
+          <p>真是太好了。拜托你过去之后，我就开始担心，担心[%username]大人会不会出什么事。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1462a]找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜘蛛的毒腺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道这很不容易。</p>
+          <p> </p>
+          <p>但是你也应该知道是多么困难才接下来的，不是吗？</p>
+          <p> </p>
+          <p>病人现在命在旦夕。</p>
+          <p> </p>
+          <p>请你快去莫尔海姆把[%dic:STR_DIC_I_QUEST_1462a]带回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，你把蜘蛛的毒腺带回来啦！</p>
+          <p> </p>
+          <p>有了这个的话，就能配制救命的解毒剂了。</p>
+          <p> </p>
+          <p>谢谢你帮我做这么危险的事。这是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_OctasideD_22_An]的毒腺，然后交给[%dic:STR_DIC_N_Seora]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要救病人的话，需要更强力的解毒剂。去莫尔海姆搜集蜘蛛的毒腺吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞奥拉说用维斯帕的毒针和德布里的皮膜配制的解毒剂没有用，必须配制更强力的解毒剂。</p>
+          <p> </p>
+          <p>她让我一定要保密，然后让我去魔界搜集蜘蛛的毒腺。于是去打猎了水草蜘蛛，搜集到了制作解毒剂的材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

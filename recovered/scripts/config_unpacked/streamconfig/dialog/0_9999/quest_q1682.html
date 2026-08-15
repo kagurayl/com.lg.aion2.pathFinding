@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，我真的快要疯了。</p> 
+          <p> </p>
+          <p>学者到底为什么要经常到处跑啊。</p>
+          <p> </p>
+          <p>还能是谁啊。这里的学者除了卡利奥内还能有谁？</p>
+          <p> </p>
+          <p>本来要做的事情就多的要死，卡利奥内每次出去调查的时候，还得跟在身边护卫。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？那我就拜托您一件事。</p>
+          <p> </p>
+          <p>最近因为压力太大，我饱受失眠的困扰。我听人说用[%dic:STR_DIC_LF3_herb_n_c_40a]晒干后泡茶喝，会有所帮助。</p>
+          <p> </p>
+          <p>不过我一直得跟着卡利奥内，根本没时间去搜集加纳籽。</p>
+          <p> </p>
+          <p>可以的话，您能帮我去搜集那种药草吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说[%dic:STR_DIC_LF3_herb_n_c_40a]只生长在波特玛废墟或斯泰浓海岸之类的海边，不久前我看到这儿附近好像也有。</p>
+          <p> </p>
+          <p>您不用跑很远，就在监视基地的周围找找看吧。</p>
+          <p> </p>
+          <p>如果效果好的话，可能我会长期服用，所以请您多搜集一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？您是在跟我开玩笑吗？</p>
+          <p> </p>
+          <p>卡利奥内老是说话不算数，已经让人很烦了，连您也...</p>
+          <p> </p>
+          <p>好了。我不想多说，您快走吧。</p>
+          <p> </p>
+          <p>再说也只是让我血压升高罢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，最近本来安宁一点了，谁知道又开始了。</p>
+          <p> </p>
+          <p>就是那个卡利奥内。他说明天要去调查地之精灵。</p>
+          <p> </p>
+          <p>啊，一想到这个，我的脑袋就发胀。我让您帮我搜集的[%dic:STR_DIC_LF3_herb_n_c_40a]找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出加纳籽。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，本来就很头疼，[%username]大人您也来凑热闹。</p>
+          <p> </p>
+          <p>附近没有[%dic:STR_DIC_LF3_herb_n_c_40a]吗？</p>
+          <p> </p>
+          <p>那您就去波特玛废墟和斯泰浓海岸找找看吧。</p>
+          <p> </p>
+          <p>难道非得我跟您一一说明白不可吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，味道好像还不错。</p>
+          <p> </p>
+          <p>这清爽的香气，闻闻就让人感觉头脑清新。</p>
+          <p> </p>
+          <p>要晒干泡茶太费时间，我先把它弄成汁喝吧。</p>
+          <p> </p>
+          <p>虽然好像有点苦，但只要能睡得着觉，这些又算什么。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_LF3_herb_n_c_40a]，然后交给[%dic:STR_DIC_N_Kuobe]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助被失眠所折磨的库奥贝搜集有镇定效果的加纳籽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库奥贝说好奇心很强的卡利奥内让自己压力很大，因此被失眠所困扰。</p>
+          <p> </p>
+          <p>问他是否需要帮忙后，他说听说加纳籽茶好像对睡眠有帮助，让我帮他搜集那种药草。</p>
+          <p> </p>
+          <p>帮他搜集到了加纳籽，他非常高兴，说光闻闻味道就觉得头脑清新。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

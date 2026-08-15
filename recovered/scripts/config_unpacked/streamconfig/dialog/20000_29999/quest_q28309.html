@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，有些东西我想告诉您。</p>
+          <p> </p>
+          <p>在德雷得奇安管理区域，有一些叫做德雷得奇安动力装置的巨大装置。</p>
+          <p> </p>
+          <p>苏尔卡纳的能量非常强大，可以驱动整艘德雷得奇安，但是却很难控制。</p>
+          <p> </p>
+          <p>因此黑暗术古们利用德雷得奇安动力装置来控制苏尔卡纳的能量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也就是说，如果能破坏掉德雷得奇安动力装置，黑暗术古就会很难控制德雷得奇安。</p>
+          <p> </p>
+          <p>不仅如此，我也很想知道没有德雷得奇安动力装置的话，黑暗术古可以在何种程度上控制苏尔卡纳。</p>
+          <p> </p>
+          <p>为了完成空中要塞的任务，为了我，您能去破坏掉德雷得奇安动力装置吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每个动力装置都有负责管理的黑暗术古。</p>
+          <p> </p>
+          <p>平时他们待在达人波普亲身边，[%dic:STR_DIC_N_IDStation_FOBJ_TOWER1]一旦出现问题，他们就会马上出现。</p>
+          <p> </p>
+          <p>在他们出现之前把动力装置破坏掉不是不可以，但如果能把他们消灭掉，将来对付达人波普亲的时候就会方便很多。</p>
+          <p> </p>
+          <p>那么破坏动力装置的事情就交给您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不会强迫[%username]大人去执行这个任务。</p>
+          <p> </p>
+          <p>除了对执行空中要塞的任务有帮助之外，我只是想满足自己的好奇心而已。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我很想知道是否适应了龙界的环境。</p>
+          <p> </p>
+          <p>但作为从永恒之塔中获得生命的创造物，不管他们有多适应龙界的环境，德拉纳都不是他们可以使用的东西。</p>
+          <p> </p>
+          <p>所以我很想知道黑暗术古对德拉纳具有何种程度的免疫力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把动力装置全部破坏掉啦！您没被浓缩的德拉纳气体污染到吧？</p>
+          <p> </p>
+          <p>西里安正在为进攻空中要塞做准备，这应该会对他有很大的帮助。</p>
+          <p> </p>
+          <p>以后有机会的话，我得让哈里肯大人帮我调查一下黑暗术古的反应。</p>
+          <p> </p>
+          <p>这是我的一点小小心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏阿图拉姆 [%dic:STR_DIC_W_IDStation_SZ_02_A]的 [%dic:STR_DIC_N_IDStation_FOBJ_TOWER1]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Rifn]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照里芬的委托，破坏德雷得奇安动力装置。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里芬让我帮他去阿图拉姆空中要塞破坏黑暗术古管理的德雷得奇安动力装置。</p>
+          <p> </p>
+          <p>于是去破坏了德雷得奇安动力装置，并消灭了出现的守护者。回去告诉里芬之后，他非常高兴，并送了我一份礼物作为感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了居民们的安全，要塞军团长命令我消灭要塞附近所有的危险生物。</p>
+          <p> </p>
+          <p>我很愉快地接受了任务，但是事情却怎么做也做不完。</p>
+          <p> </p>
+          <p>大概是我一直都在研究学问，战斗力下降了。</p>
+          <p> </p>
+          <p>需要研究的资料还堆积如山，而接手的这个任务却总是没法结束，心里越来越着急。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有没有什么能够帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的能帮我吗？</p>
+          <p> </p>
+          <p>其实我也是觉得太丢脸，所以都没法跟其他的执政官说。</p>
+          <p> </p>
+          <p>请到要塞外面的[%dic:STR_DIC_W_DF1A_2]，把那周围的[%dic:STR_DIC_M_LobniteD_10_n]消灭掉。</p>
+          <p> </p>
+          <p>把那些家伙解决掉的话，真是帮了我的大忙了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢您了。</p>
+          <p> </p>
+          <p>在解决[%dic:STR_DIC_M_LobniteD_10_n]的时候，请一定小心它的壳里藏着的触角。</p>
+          <p> </p>
+          <p>请您帮我消灭10只。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。我也知道这是个不情之请。</p>
+          <p> </p>
+          <p>寄居蟹还是由我来消灭吧，请不用担心。</p>
+          <p> </p>
+          <p>名分上是百夫长，要是连这点小事都不能自己处理，脸面还往哪搁啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LobniteD_10_n]消灭了吗？</p>
+          <p> </p>
+          <p>没有被它们的触角伤到吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道拜托[%username]，是找对人了啊。</p>
+          <p> </p>
+          <p>真没想到您这么快就解决了。</p>
+          <p> </p>
+          <p>感谢您为我和要塞们的居民们着想。</p>
+          <p> </p>
+          <p>这是我对您的一点谢意，请不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去抓要塞周围的[%dic:STR_DIC_M_LobniteD_10_n] ([%2]/10)。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Morn]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助莫伦，消灭要塞周围攻击人类的寄居蟹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫伦在完成消灭寄居蟹的任务时十分吃力。</p>
+          <p> </p>
+          <p>帮助他消灭了要塞周围的寄居蟹。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

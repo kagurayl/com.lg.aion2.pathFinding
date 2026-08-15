@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30561</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您知道兰图斯前哨基地的情况吧？</p>
+          <p> </p>
+          <p>虽然鸢族受到打击并不是值得高兴的事，但我们必须利用这次机会。</p>
+          <p> </p>
+          <p>我们必须让鸢族更信任我们，而不是天族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去[%dic:STR_DIC_W_ZONE_NAME_IDYun]消灭龙族的话，对鸢族应该有很大的帮助。</p>
+          <p> </p>
+          <p>消灭提亚马特的兵力，对我们自己也有好处。</p>
+          <p> </p>
+          <p>您愿意去执行这个任务吗，[%username]大人？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您到兰图斯前哨基地去，消灭掉[%dic:STR_DIC_M_Q30511_ALL]。</p>
+          <p> </p>
+          <p>然后把[%dic:STR_DIC_I_QUEST_30511A]带回来作为证据。</p>
+          <p> </p>
+          <p>如果有很多守护者去执行这个任务，我们就能获得鸢族的信任。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我再说一遍，这个任务非常重要。</p>
+          <p> </p>
+          <p>这是我们改善和鸢族关系的绝好机会。</p>
+          <p> </p>
+          <p>请您再想一想，希望您不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您消灭了巴萨尔迪军团的龙族，搜集到证据了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出巴萨尔迪军团之印。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没到兰图斯前哨基地去吗？</p>
+          <p> </p>
+          <p>您是不知道获得鸢族的信任有多重要吗？</p>
+          <p> </p>
+          <p>这是非常重要的事情，请您快去消灭龙族，搜集[%dic:STR_DIC_I_QUEST_30511A]作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集到证据啦。</p>
+          <p> </p>
+          <p>辛苦您了，[%username]大人。</p>
+          <p> </p>
+          <p>您也知道，这个任务不是一次就能解决的。</p>
+          <p> </p>
+          <p>今后希望您能继续来执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30511A]，然后交给[%dic:STR_DIC_N_Vasa]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去兰图斯前哨基地消灭巴萨尔迪军团兵，搜集印章。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴萨说利用目前兰图斯前哨基地的情况，可以获得鸢族的信任。</p>
+          <p> </p>
+          <p>于是去消灭了巴萨尔迪军团的龙族，搜集到了印章。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

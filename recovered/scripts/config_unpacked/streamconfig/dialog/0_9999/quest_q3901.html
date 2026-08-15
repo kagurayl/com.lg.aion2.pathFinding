@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好，[%username]大人。正想拜托你一点事情。</p>
+          <p> </p>
+          <p>事情非常简单，只要帮我把这本书送到守护者殿堂里的布雷亚斯大人那里就行。</p>
+          <p> </p>
+          <p>这是和剑星和守护星技能相关的一部秘典，是属于正义之神庙的书，分为好几卷。</p>
+          <p> </p>
+          <p>目前这部秘典由布雷亚斯大人保管，不久前我借出了其中一本。</p>
+          <p> </p>
+          <p>已经到了还书日期，可是不能把这么重要的书随便交给别人，不是吗？</p>
+          <p> </p>
+          <p>不过对身为[%userclass]的[%username] 大人，我是完全信任的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看一下您就知道，这些都是[%username]大人知道的内容。和我出售的技能书内容完全一样。</p>
+          <p> </p>
+          <p>[%username]大人需要的应该是秘典的第二卷之后的书。</p>
+          <p> </p>
+          <p>很遗憾，我没有能力教第二卷书。但布雷亚斯大人比我厉害得多，您可以请教他。</p>
+          <p> </p>
+          <p>好，那我把第一卷交给您。请您转交布雷亚斯大人，顺便代我向他道谢。</p>
+          <p> </p>
+          <p>还有，如果您想继续学习[%userclass]的技能，最好去向布雷亚斯大人求教。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是说自己知道就一定可以教会别人。</p>
+          <p> </p>
+          <p>我的能力还不足以教授秘典第二卷的内容。即便有第二卷，我也没有实力将内容传授给他人。</p>
+          <p> </p>
+          <p>但是，[%username]大人已经有足够的资格学习第二卷秘典。</p>
+          <p> </p>
+          <p>把这本秘典交给守护者殿堂里的布雷亚斯大人之后，他一定会给您一些指点的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您把我的委托没当做一回事。</p>
+          <p> </p>
+          <p>我之所以选择[%username]大人帮我还书，是有深意的。</p>
+          <p> </p>
+          <p>我打算向布雷亚斯大人推荐您。</p>
+          <p> </p>
+          <p>但如果您本人不愿意的话，我也没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事情？[%username]。</p>
+          <p> </p>
+          <p>你找我是想了解正义的真理吗？</p>
+          <p> </p>
+          <p>或者只是想来学习技能？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出秘典。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马库斯不会随便让人把书送过来。</p>
+          <p> </p>
+          <p>既然他选择你作为还书的人，表示他认可你的实力，并且希望把你托付给我。</p>
+          <p> </p>
+          <p>[%username]，你是备受期待的守护者，这我很清楚。不过要想成为内扎坎主神忠实的追随者，你要学的东西还很多。</p>
+          <p> </p>
+          <p>我暂时先帮你学习秘典后面部分的内容。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Boreas]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary"></font>把从马库斯处得到的秘典交给布雷亚斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马库斯拜托我将记载着剑星和守护星技能的书籍送还给布雷亚斯。</p>
+          <p> </p>
+          <p>布雷亚斯收到秘典后表示，我现在可以学习秘典后面的内容了，并答应给予帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>公告官负责通知人们城市里发生的事情。</p>
+          <p> </p>
+          <p>从结婚、生孩子之类的生活琐事，到伏魔殿下发的公文、天族的动态等等，发布的公告内容相当广泛。</p>
+          <p> </p>
+          <p>通过响亮的嗓门，把消息传递到城市的各个角落。</p>
+          <p> </p>
+          <p>虽然很辛苦，但我的声音和名字人尽皆知，这让我感到很自豪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是并不是每个地区都有公告官。</p>
+          <p> </p>
+          <p>泰奥勃莫斯的定居者营地别说是公告官了，那里根本连村子都称不上。</p>
+          <p> </p>
+          <p>但是那里也有很多需要情报的人。</p>
+          <p> </p>
+          <p>那里虽然有智慧的宝珠军团派驻，但是他们对那里的居民生活漠不关心。</p>
+          <p> </p>
+          <p>(拿出一个厚实的信封给我看)现在我这里有很多需要传达给定居者营地的消息，但还没来得及送过去。</p>
+          <p> </p>
+          <p>这是很简单的事情，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从公告到个人的事情……消息的种类太多，所以不可能送到每个人手里。</p>
+          <p> </p>
+          <p>我已经把需要传达的消息全部放进了信封，你只要把它交给那里的代表比塔就行了。</p>
+          <p> </p>
+          <p>听说智慧的宝珠军团的人把消息全部封锁了，但比塔却是例外。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这又不是什么难事。</p>
+          <p> </p>
+          <p>只要拿着这封信到空间移动师那里去，到达布鲁斯特豪宁之后，把它交给比塔就行了。</p>
+          <p> </p>
+          <p>这么简单的事情你也要拒绝吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，[%username]大人？</p>
+          <p> </p>
+          <p>您是来帮助重建布鲁斯特豪宁的吗？</p>
+          <p> </p>
+          <p>如果是那样的话，我们随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出书信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是佩因达送来的信啊。</p>
+          <p> </p>
+          <p>他帮了我们很多忙，我真应该向他表示感谢。</p>
+          <p> </p>
+          <p>对于勉强活下来的定居者营地的居民们来说，听到新的消息也是一种喜悦。</p>
+          <p> </p>
+          <p>我会把信里的内容告诉大家。[%username]大人，请您收下这个，好好休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Vitda]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把佩因达的书信交给布鲁斯特豪宁的比塔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩因达说有消息需要送到没有公告官的布鲁斯特豪宁的定居者营地去。</p>
+          <p> </p>
+          <p>于是帮他把写有消息的书信交给了比塔。比塔对我表示感谢，说辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

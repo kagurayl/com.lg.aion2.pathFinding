@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(小声说)如果可以的话，能帮我个忙吗？</p>
+          <p> </p>
+          <p>鲁凯好像马上就要到村外去进行侦察，但老实说，上次消灭掉那些怪物还不足以保证安全。</p>
+          <p> </p>
+          <p>我本来想自己出去消灭不死族，但一两个还可以，要一次对付那么多，我完全没有自信，咕嘟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我说，[%username]，请你帮帮我。</p>
+          <p> </p>
+          <p>当然，我不会让你白辛苦的，咕嘟。</p>
+          <p> </p>
+          <p>上次的酬劳你觉得怎么样？那样就可以了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘘，鲁凯又在看我们。</p>
+          <p> </p>
+          <p>再说下去的话，就会被鲁凯发现了。就说到这里，你快去帮我消灭[%dic:STR_DIC_M_Zombie_38_An]和[%dic:STR_DIC_M_Bookie_38_An]吧。</p>
+          <p> </p>
+          <p>不能让村里的人发现……你知道我的意思吧，咕嘟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，怎么！你是有什么不满意的吗？</p>
+          <p> </p>
+          <p>是嫌报酬太少吗？</p>
+          <p> </p>
+          <p>也许你会这么觉得，但这已经是我能给的全部了。</p>
+          <p> </p>
+          <p>不愿意的话就算了，我就用这些钱来喝酒好了，咕嘟！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是谁啊？咕嘟！</p>
+          <p> </p>
+          <p>啊，[%username]。我记起来了……</p>
+          <p> </p>
+          <p>啊，我想起来了！我让你去帮我消灭僵尸和布奇了，对吧？</p>
+          <p> </p>
+          <p>事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！[%username]，看来我没找错人。</p>
+          <p> </p>
+          <p>喂，鲁凯！我到村外去一趟。我想应该在你出去侦察之前，把僵尸和布奇消灭掉。</p>
+          <p> </p>
+          <p>啊，不用你帮忙。你不是很怕不死族的吗？</p>
+          <p> </p>
+          <p>跟在我身边的话，反而碍手碍脚的。</p>
+          <p> </p>
+          <p>(突然压低声音)谢谢你，[%username]。这是我的一点心意。</p>
+          <p> </p>
+          <p>你应该知道吧，这次的事情是我俩之间的秘密。在我们有生之年！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去村外打猎不死族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Zombie_38_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Bookie_38_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kravis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去村外消灭不死族，让西风的守护者们可以安心侦察。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>科拉碧斯说鲁凯很快就要去村外侦察，但是村外还有很多不死族，他为此很不安。</p>
+          <p> </p>
+          <p>他说自己没有自信对付不死族，让我帮忙。于是帮他消灭掉了僵尸和布奇，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

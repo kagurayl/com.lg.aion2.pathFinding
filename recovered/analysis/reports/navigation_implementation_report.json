@@ -1,0 +1,31 @@
+{
+  "unity_version": "2022.3.62f3",
+  "managed_bridge": {
+    "world_to_navigation": {
+      "method": "GameDllInvoke.unity_scene_worldtonavigation",
+      "rva": "0x167B910",
+      "implementation": "UnityEngine.AI.NavMesh.SamplePosition(source, out hit, range, -1)",
+      "failure_behavior": "returns the original input coordinates"
+    },
+    "path": {
+      "method": "GameDllInvoke.unity_scene_path",
+      "rva": "0x167B9B8",
+      "implementation": "UnityEngine.AI.NavMesh.CalculatePath(start, end, -1, new NavMeshPath())",
+      "success_behavior": "copies NavMeshPath.corners to the native float buffer",
+      "failure_behavior": "returns zero corners"
+    }
+  },
+  "downloaded_scenes": [
+    {"name":"lf1.unity.scene","navmesh_settings":38,"non_null_navmesh_data":0,"detour_magic_hits":0},
+    {"name":"df1.unity.scene","navmesh_settings":51,"non_null_navmesh_data":0,"detour_magic_hits":0},
+    {"name":"login2.unity.scene","navmesh_settings":1,"non_null_navmesh_data":0,"detour_magic_hits":0}
+  ],
+  "dynamic_navmesh_managed_apis_found": {
+    "NavMeshSurface": false,
+    "BuildNavMesh": false,
+    "AddNavMeshData": false,
+    "UpdateNavMeshData": false,
+    "NavMeshBuilder": false
+  },
+  "conclusion": "The Lua/native bridge uses Unity's standard NavMesh runtime directly. No baked Unity NavMeshData object or managed runtime builder/load path was found in the currently downloaded scenes/client code."
+}

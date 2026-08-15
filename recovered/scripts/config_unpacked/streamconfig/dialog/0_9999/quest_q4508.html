@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族守护者们好像觉得红色气息的效果非常不错。</p>
+          <p> </p>
+          <p>欧内尔今天又来找我了。</p>
+          <p> </p> 
+          <p>让我再多做一些红色气息，然后给托尔大人送过去，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为要求尽快做好，所以我得开始为制作红色气息做准备了，咳嗬。</p>
+          <p> </p>
+          <p>请你快去帮我搜集两种角吧，咳昂。</p>
+          <p> </p>
+          <p>是的，就是增强魔力的[%dic:STR_DIC_I_QUEST_2626a]和提高毒性抵抗力的[%dic:STR_DIC_I_QUEST_2626b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>霜精灵峡谷里应该还有很多的[%dic:STR_DIC_M_TricoD_43_n]和[%dic:STR_DIC_M_TricornD_44_An]，咳昂。</p>
+          <p> </p>
+          <p>请你快去搜集它们的角吧。</p>
+          <p> </p>
+          <p>我在这里等你，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我对魔族守护者的一片好意，没想到你竟然无情地拒绝了。</p>
+          <p> </p>
+          <p>反正我又没什么损失，咳嗬。</p>
+          <p> </p>
+          <p>制作红色气息本来就是很麻烦的事情，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦。我已经做好了制作红色气息的准备。</p>
+          <p> </p>
+          <p>为了制作红色气息，需要准备很多的东西，咳嗬。</p>
+          <p> </p>
+          <p>现在只要有[%dic:STR_DIC_M_TricoD_43_n]和[%dic:STR_DIC_M_TricornD_44_An]的角就行了。你把角拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出两种角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去搜集吗，咳昂？</p>
+          <p> </p>
+          <p>如果因为你而耽搁了红色气息的制作，托尔会怎么想呢？</p>
+          <p> </p>
+          <p>我再给你一些时间，请你快去搜集[%dic:STR_DIC_M_TricoD_43_n]和[%dic:STR_DIC_M_TricornD_44_An]的角吧，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是我要的角，咳嗬。</p>
+          <p> </p>
+          <p>多亏了你，这下可以帮魔族守护者们制作很多的红色气息了。</p>
+          <p> </p>
+          <p>我不能让你看制药的过程。之前我也跟你说过，那是红鬃莱卡恩的秘药。</p>
+          <p> </p>
+          <p>完成之后，我会亲自给托尔送过去，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_TricoD_43_n]和[%dic:STR_DIC_M_TricornD_44_An]的角，然后交给[%dic:STR_DIC_N_Borvo]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary"></font>搜集制作红色气息所需的峡谷特莱科和爽鬃特莱科的角，然后交给波尔波。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>波尔波说托尔委托他制作更多的红鬃莱卡恩战斗秘药——红色气息，因此让我帮他搜集两种特莱科的角。</p>
+          <p> </p>
+          <p>去霜精灵峡谷打猎峡谷特莱科和爽鬃特莱科，把搜集到的角交给了波尔波。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

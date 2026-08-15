@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您收下。</p>
+          <p> </p>
+          <p>这是极乐世界特殊作战部交给[%username]大人的紧急作战命令书。</p>
+          <p> </p>
+          <p>好像是非常紧急的事情，请马上确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center">  - 作战命令书 - </p>
+          <p></p>
+          <p>发件人：极乐世界特殊作战部</p>
+          <p></p>
+          <p>收件人：[%username]</p>
+          <p> </p>
+          <p>经特殊作战部确认，最近从莫尔海姆和贝鲁斯兰渗透到天界的魔族数量在不断增加。必须在事态进一步扩大之前，阻止魔族进入天界。</p>
+          <p></p>
+          <p>特此下令，请迅速执行。</p>
+          <p></p>
+          <p>  1. 通过[%dic:STR_DIC_E_directportal]潜入[%dic:STR_DIC_E_DF2_name]和[%dic:STR_DIC_E_DF3_name]。</p>
+          <p></p>
+          <p>  2. 消灭莫尔海姆和贝鲁斯兰的魔族1人以上。</p>
+          <p></p>
+          <p>  3. 但不要消灭能力太差的敌人，以免损害特殊作战部的名誉。</p>
+          <p></p>
+          <p>  4. 确认敌人失去斗志后，向[%dic:STR_DIC_N_Valentius]报告。</p>
+          <p></p>
+          <p>祝特殊作战部全体成员好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于来啦。</p>
+          <p> </p>
+          <p>光是消灭潜入天界的魔族，并不能从根本上解决问题。</p>
+          <p> </p>
+          <p>我会向上面报告说[%username]接受了本次任务。</p>
+          <p> </p>
+          <p>任务完成后，请向我报告。请注意安全。</p>
+          <p> </p>
+          <p>为了极乐世界的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想执行这次的任务吗？</p>
+          <p> </p>
+          <p>也是，这件事不是那么轻易可以决定的。</p>
+          <p> </p>
+          <p>因为必须深入敌阵……</p>
+          <p> </p>
+          <p>明白了。[%username]的意思我会如实向上面报告的。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您今天消灭了多少敌人呢？</p>
+          <p> </p>
+          <p>[%username]大人，请向我报告一下您的活动情况。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认任务完成，[%username]大人。</p>
+          <p> </p>
+          <p>在敌人的领地上经常会遇到突发情况，真是辛苦您了。</p>
+          <p> </p>
+          <p>这是极乐世界特殊作战部发给您的奖励。</p>
+          <p> </p>
+          <p>为了极乐世界的荣耀！ </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">潜入[%dic:STR_DIC_E_DF2_name]或[%dic:STR_DIC_E_DF3_name]，消灭[%dic:STR_DIC_E_Daily_1]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Valentius]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">紧急指令：潜入莫尔海姆或贝鲁斯兰，消灭魔族，然后向埃雷修兰塔支部官员报告</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界特殊作战部下达了潜入莫尔海姆和贝鲁斯兰，消灭魔族的紧急指令。</p>
+          <p> </p>
+          <p>完成任务后，向埃雷修兰塔支部的官员报告，并得到了奖励。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

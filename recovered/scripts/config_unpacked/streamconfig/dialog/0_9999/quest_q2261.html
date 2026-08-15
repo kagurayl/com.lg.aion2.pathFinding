@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Sueron]当上要塞队长之后，就下令让所有执政官卫兵每天写管辖区域的报告，并定期上交。</p>
+          <p> </p>
+          <p>要是以前，如果没有特殊情况的话从来不会让写报告的。</p>
+          <p> </p>
+          <p>也许有人认为做这些工作是在浪费时间，不过我认为做了这些工作至少能够了解和掌握阿尔特盖德地区的情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是由于对新的体系的不了解，有些执政官不能及时提交报告。</p>
+          <p> </p>
+          <p>现在还没收到守护要塞东部关隘的黛拉伦特的报告书，要是再不交上来的话队长会发火的。</p>
+          <p> </p>
+          <p>你要是到要塞外面去的话，请顺便去一趟[%dic:STR_DIC_W_DF1A_16]，让[%dic:STR_DIC_N_Dellalont]把报告书交上来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>自从苏埃伦队长上任以来制度上发生了很多变化，有部分执政官们不能适应新的制度。</p>
+          <p> </p>
+          <p>能够理一下之前所做的事情也是一件不错的主意。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Dellalont]在 [%dic:STR_DIC_W_DF1A_16]。一定要转告他，把报告书交上来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然没人敢提意见，但有不少的执政官对于苏埃伦队长很不满。</p>
+          <p> </p>
+          <p>他们这些人认为我是在拍队长的马屁。</p>
+          <p> </p>
+          <p>不管怎样对于我们执政官来 说最大的使命就是维护该地区的和平，坚守欧比斯关隘。</p>
+          <p> </p>
+          <p>不过既然你所不想做，我也不会硬要你去做的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑脚士兵的动向很可疑。</p>
+          <p> </p>
+          <p>他们好像在做什么训练，也好像是在研究什么特殊武器，所以我一直在关注他们的一举一动。</p>
+          <p> </p>
+          <p>不过暂时还没有发现什么异常，我还在继续观察。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">让他交报告书。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>报告书？我知道。</p>
+          <p> </p>
+          <p>不过那些家伙的情况非常可疑。我就怕交了报告后事态会发生变化，所以想多观察一段时间...</p>
+          <p> </p>
+          <p>军团长一定很生气。</p>
+          <p> </p>
+          <p>我保证不会让梅比雅尔百夫长为难，一定及时将报告书交上去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Dellalont] 转告[%dic:STR_DIC_N_Meibjar]的话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮梅比雅尔向黛拉伦特传话，让他尽快把报告书交上去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自从苏埃伦军团长来这里之后，要塞发生了不少的变化。</p>
+          <p> </p>
+          <p>所有执政官必须定期交报告书，但守护东部关隘的黛拉伦特却迟迟没有把报告书交上来。</p>
+          <p> </p>
+          <p>受梅比雅尔委托到黛拉伦特转达要及时交报告书的命令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

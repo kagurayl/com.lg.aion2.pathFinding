@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(脑袋大小的铁块。)</p>
+          <p> </p>
+          <p>(仔细查看，组成铁块的结构好像非常精巧。)</p>
+          <p> </p>
+          <p>(看上去腐蚀得很厉害，应该是古代的东西。)</p>
+          <p> </p>
+          <p>(应该拿去给研究所长[%dic:STR_DIC_N_Wolfgang]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到格尔克马洛斯之后，一直忙得不可开交。</p>
+          <p> </p>
+          <p>除了研究所的事情之外，还要处理和军队有关的事情……</p>
+          <p> </p>
+          <p>真怀念在书房里看书的日子，看来我真的只适合做个学者。</p>
+          <p> </p>
+          <p>对了，[%username]，你找我有事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出生锈的铁块。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，这是？</p>
+          <p> </p>
+          <p>好像是大崩溃以前的东西。虽然还得进一步研究才能知道，不过出于一个学者的直觉，我可以感觉得到。</p>
+          <p> </p>
+          <p>你是从哪里找到的？残骸之海？</p>
+          <p> </p>
+          <p>要是以前，我会马上进行调查，但是现在我还得忙要塞的事情。你最好去找其他学者……</p>
+          <p> </p>
+          <p>在残骸之海一定可以找到与之相关的线索。(翻阅文件)谁被派到了那里呢……最近人手太少了……</p>
+          <p> </p>
+          <p>对了！贺尔兰在那里。现在他是亚龙追踪者，但在神庙的时候曾经是我的得意门生。</p>
+          <p> </p>
+          <p>你帮我告诉[%dic:STR_DIC_N_Helen]，如果他能帮我对这个装置进行调查，我就会遵守“那个约定”。你就这样跟他说就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到这里来，一路上很辛苦吧。</p>
+          <p> </p>
+          <p>这个地区是格尔克马洛斯最为危险的地方之一。</p>
+          <p> </p>
+          <p>但是我们很强，如果有什么请求，请只管说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出铁块，并转达沃夫冈的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等！你说什么？</p>
+          <p> </p>
+          <p>沃夫冈大人说会遵守“那个约定”？</p>
+          <p> </p>
+          <p>真的吗？如果是真的的话，我怎么会不答应呢！</p>
+          <p> </p>
+          <p>(查看铁块)嗯，好像在哪里见到过这东西？好像是在欧比斯。</p>
+          <p> </p>
+          <p>我不做研究已经很久了，但是手艺却没有放下。这件事就交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Wolfgang]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把生锈的铁块交给[%dic:STR_DIC_N_Helen]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在残骸之海捡到了一个生锈的铁块。应该拿去给沃夫冈看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在残骸之海发现了一个生锈的铁块，拿去给沃夫冈看了之后，他说好像是很重要的东西，让我去让贺尔兰帮着调查。</p>
+          <p> </p>
+          <p>见到贺尔兰之后，告诉他沃夫冈答应遵守过去的约定。贺尔兰好像很高兴，欣然答应了下来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

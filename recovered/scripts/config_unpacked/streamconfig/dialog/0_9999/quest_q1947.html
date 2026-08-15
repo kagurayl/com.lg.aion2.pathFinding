@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你来找我，我就帮你看看你的未来吧。</p>
+          <p> </p>
+          <p>来，把你的右手给我。</p>
+          <p> </p>
+          <p>闭上眼睛，然后深呼吸。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">闭上眼睛，然后深呼吸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我好想看到了什么东西。</p>
+          <p> </p>
+          <p>好像是丰裕的殿堂……耶蒙好像把什么东西交给了你。</p>
+          <p> </p>
+          <p>嗯，是什么东西呢……哎呀，影像中断了。</p>
+          <p> </p>
+          <p>你可以把眼睛睁开了。</p>
+          <p> </p>
+          <p>我看到耶蒙好像把什么东西交给了你，你要去他那里拿什么东西吗？</p>
+          <p> </p>
+          <p>即使没有东西，你也最好去见他一趟，相信我的占星术吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，很好。</p>
+          <p> </p>
+          <p>快去见见[%dic:STR_DIC_N_Shugo_c4]吧。</p>
+         <p> </p>
+         <p>以我的感觉，去见他的话，一定会有什么好事发生。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不相信我的占星术吗？</p>
+          <p> </p>
+          <p>我费了那么大的功夫，啧啧。看来还是不应该随便帮人看。</p>
+          <p> </p>
+          <p>信不信我全在你自己。我累了，需要休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？[%username]，你是怎么知道我在找你的。</p>
+          <p> </p>
+          <p>我刚想让人去找你呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说[%username]你已经超过了29级。</p>
+          <p> </p>
+          <p>真是可庆可贺。我们天加隆工房为你准备了一份礼物。</p>
+          <p> </p>
+          <p>也不是什么了不起的事情，就是帮你把箱子放大。</p>
+          <p> </p>
+          <p>希望你能喜欢，今后多照顾照顾我们工房，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去丰裕的殿堂见见[%dic:STR_DIC_N_Shugo_c4]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">德莫托克斯占卜后说我去见耶蒙会有好事发生。应该去丰裕的殿堂见见耶蒙，看看德莫托克斯占卜的结果对不对。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让福德莫托克斯为我占卜一下未来，他说遇见耶蒙就可以发横财。</p>
+          <p> </p>
+          <p>以侥幸的心态去找耶蒙，他说为了祝贺成长为守护者，为我放大了背包。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新人任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

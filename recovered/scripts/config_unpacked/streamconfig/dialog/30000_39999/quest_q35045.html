@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>凯西内尔主神的军队前往龙界的消息，相信所有的会员都应该知道了。</p>
+          <p> </p>
+          <p>我们必须站出来，帮助英吉斯温！英吉斯温是最最需要我们神圣守护会帮助的地方。</p>
+          <p> </p>
+          <p>会员们贡献的每一份奥德，都会像甘霖一样滋润那里贫瘠的土地。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，采集[%dic:STR_DIC_G_QUEST_35045]，献给[%dic:STR_DIC_E_35021]。大家的努力将会给结界的安宁做出贡献。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>如果您是从神圣守护会来，我随时表示欢迎。</p>
+          <p> </p>
+          <p>英吉斯温急需各位的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您仔细阅读过神圣守护会发给您的委托书了吗？</p>
+          <p> </p>
+          <p>需要你们搜集的奥德是魔力奥德。</p>
+          <p> </p>
+          <p>其他种类的奥德起不到多大作用，希望您去搜集[%dic:STR_DIC_G_QUEST_35045]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把奥德送来啦！</p>
+          <p> </p>
+          <p>在永恒之塔的恩宠无法到达的英吉斯温，奥德是非常珍贵的。</p>
+          <p> </p>
+          <p>您捐献的奥德我们会妥善使用，为天族赢得胜利。</p>
+          <p> </p>
+          <p>能用守护会证物报答[%username]大人，是我的荣幸。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_35045]，然后交给[%dic:STR_DIC_E_35021]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，龙界的英吉斯温由于缺少奥德，正面临困境，号召会员捐献奥德。</p>
+          <p> </p>
+          <p>搜集奥德，交给英吉斯温支部会员之后，他对我的协助表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料搜集到了，现在可以举行召唤仪式了。</p>
+          <p> </p>
+          <p>不知道能不能像龙信徒的古代文献中记录的那样，召唤出灵魂。</p>
+          <p> </p>
+          <p>但是现在是骡子是马，只能在试了之后才知道。</p>
+          <p> </p>
+          <p>不然的话，就没办法揭开鲁德拉的秘密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据龙信徒的古代文献中的记载，召唤仪式必须在特定的场所举行。</p>
+          <p> </p>
+          <p>只有在帕休曼迪尔寺院的神圣追悼室里，才能举行召唤仪式。</p>
+          <p> </p>
+          <p>据说把香油倒在[%dic:STR_DIC_OBJ_IDCatacombs_Altar_Q30208]上，就会有一个名叫[%dic:STR_DIC_E_IDCatacombs_NPC_DrakanUtra]的灵魂出现。</p>
+          <p> </p>
+          <p>仅是进入帕休曼迪尔寺院，就已经很不容易了。不过我相信[%username]大人应该可以办到。</p>
+          <p> </p>
+          <p>您愿意去那里召唤出忠实的应答者乌特拉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，请您拿着。这是用[%username]大人搜集到的芳香油腺提炼出来的香油。</p>
+          <p> </p>
+          <p>把它洒在神圣追悼室里的[%dic:STR_DIC_OBJ_IDCatacombs_Altar_Q30208]上，[%dic:STR_DIC_E_IDCatacombs_NPC_DrakanUtra]应该就会出现。</p>
+          <p> </p>
+          <p>请您问问他鲁德拉到底是什么，封印守护者伊斯巴里亚举行的仪式到底是什么仪式，仪式中断会造成什么后果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说要到帕休曼迪尔寺院去，您就害怕了吗？</p>
+          <p> </p>
+          <p>进入锡兰泰拉回廊就已经很不容易了，因此我也可以理解……</p>
+          <p> </p>
+          <p>不过到了这一步再放弃，我都不知道该说什么才好了。</p>
+          <p> </p>
+          <p>那个名叫鲁德拉的东西好像是非常不祥的东西，以后如果发生什么大事，那个责任您能承担得起吗！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有……什么事……</p>
+          <p> </p>
+          <p>你想知道什么……</p>
+          <p> </p>
+          <p>说吧……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问鲁德拉是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙……</p>
+          <p> </p>
+          <p>伟大的……</p>
+          <p> </p>
+          <p>提亚马特的……宿敌……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">询问封印守护者举行的是什么仪式。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲁德拉……</p>
+          <p> </p>
+          <p>封印……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1_1">询问封印解开后会发生什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲁德拉……醒来……</p>
+          <p> </p>
+          <p>英吉斯温……血雨……混沌……</p>
+          <p> </p>
+          <p>一切……全部倒塌……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我一直在等您回来。</p>
+          <p> </p>
+          <p>召唤仪式成功了吗？</p>
+          <p> </p>
+          <p>忠实的应答者乌特拉是怎么说的？</p>
+          <p> </p>
+          <p>鲁德拉到底是什么东西？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲁德拉是龙，是提亚马特的宿敌？</p>
+          <p> </p>
+          <p>这么说，鲁德拉应该是可以和龙帝匹敌的强大的龙。</p>
+          <p> </p>
+          <p>我们杀死了守护他的封印的守护者……</p>
+          <p> </p>
+          <p>不知道今后会发生什么事。希望不会出现血雨腥风。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把香油洒在[%dic:STR_DIC_OBJ_IDCatacombs_Altar_Q30208]上，召唤出[%dic:STR_DIC_E_IDCatacombs_NPC_DrakanUtra]并与之对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Pilomenes]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">前往帕休曼迪尔寺院的神圣追悼室，召唤出忠实的应答者乌特拉，询问有关鲁德拉的事情。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗梅内斯说必须前往帕休曼迪尔寺院，举行召唤仪式，揭开鲁德拉的秘密。</p>
+          <p> </p>
+          <p>把香油洒在了神圣追悼室的招魂祭坛上，忠实的应答者乌特拉出现了。向他询问有关鲁德拉的事情，他说那是可以和提亚马特匹敌的龙，封印守护者正在举行封印他的仪式。</p>
+          <p> </p>
+          <p>把听到的话告诉了皮罗梅内斯，他非常担心，说不知道今后会发生什么事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

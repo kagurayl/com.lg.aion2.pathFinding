@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子您被吓了一跳吧？</p>
+          <p> </p>
+          <p>不要做出那种表情。我没有想过要攻击[%username]大人。</p>
+          <p> </p>
+          <p>当然，[%username]大人也不会攻击我。因为我认识的[%username]大人，是个不会随意使用暴力的人。</p>
+          <p> </p>
+          <p>啊，您问我是怎么知道的？这个嘛。自然而然就知道了。</p>
+          <p> </p>
+          <p>即使[%username]大人不说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来阿祖图兰要塞，一定是找雷帕尔革命团有事吧？我们其实可以相互帮助，您觉得怎么样？</p>
+          <p> </p>
+          <p>[%username]大人如果能帮我除掉妨碍侦察的家伙，我就送给您一件重要的东西。</p>
+          <p> </p>
+          <p>我会告诉您阿祖图兰革命团的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您对状况的判断是如此准确，果然名不虚传。</p>
+          <p> </p>
+          <p>在阿祖图兰要塞，有很多革命团秘密研究所制造的实验体。既有人类型，也有动物型。</p>
+          <p> </p>
+          <p>动物型是集合各种动物的优点制作而成的，因此能力非常强。代表性的是普雷尔和切尔路斯，它们的嗅觉和听觉非常敏锐，对我的侦察造成了很大的妨碍。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_IDLF3CL_LehparAsBreeder_44_Ae]和[%dic:STR_DIC_M_IDLF3CL_LehparWaBreeder_44_Ae]清除掉。让普雷尔和切尔路斯不再继续增加。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事对大家都有好处，您有什么不满意的地方吗？</p>
+          <p> </p>
+          <p>您是因为我是天族，不愿意为我做事吗？</p>
+          <p> </p>
+          <p>好像是我太性急了。请您好好考虑一下，如果改变了主意，请您再来找我。</p>
+          <p> </p>
+          <p>反正没什么其它的事情，我会一直待在这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看到那些人了吗？他们好像在向要塞里搬运什么东西，上面还盖着黑布...</p>
+          <p> </p>
+          <p>一定是革命团送来了新的实验体，但是因为那些切尔路斯和普雷尔而无法靠近，真是郁闷死了。</p>
+          <p> </p>
+          <p>如果[%username]大人把阿祖图兰专业饲养师和合成研究员除掉了的话，我想现在过去看看。事情到底怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。</p>
+          <p> </p>
+          <p>我得赶紧去确认革命团送来的是什么东西。切尔路斯和普雷尔？您不用为我担心。</p>
+          <p> </p>
+          <p>失去主人之后，他们和断了线的木偶没什么区别。</p>
+          <p> </p>
+          <p>如果您看到有人带着普雷尔或切尔路斯，请先把主人干掉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除操纵普雷尔和切尔路斯的雷帕尔革命团员</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDLF3CL_LehparAsBreeder_44_Ae]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDLF3CL_LehparWaBreeder_44_Ae]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Acestes]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于普雷尔和切尔路斯的妨碍，阿凯斯泰斯很难在阿祖图兰要塞进行侦察。为了使普雷尔和切尔路斯的数量不再增加，清除阿祖图兰专业饲养师和合成研究员。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天族阿凯斯泰斯问我是不是有事找雷帕尔革命团，说如果我能帮助他的话，他就告诉我有用的情报，并给我相应的报酬。</p>
+          <p> </p>
+          <p>他说普雷尔和切尔路斯妨碍了他的侦察工作，于是帮他除掉了阿祖图兰专业饲养师和合成研究员。他说辛苦了，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

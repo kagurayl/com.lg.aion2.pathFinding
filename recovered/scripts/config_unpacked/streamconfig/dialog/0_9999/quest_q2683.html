@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>爸爸...爸爸要害我。</p>
+          <p> </p>
+          <p>呜呜...太...太可怕了。</p>
+          <p> </p>
+          <p>妈妈...说爸爸变成那样是...因为龙族。</p>
+          <p> </p>
+          <p>说只要向主神虔诚的祈祷...爸爸就会好起来。</p>
+          <p> </p>
+          <p>我每天都祈祷...可是却没有任何效果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过大人们...大人们这样说。</p>
+          <p> </p>
+          <p>只要拥有月长石...心愿就会成真。</p>
+          <p> </p>
+          <p>要是我有 [%dic:STR_DIC_DF3_jewelry_n_c_30c]的话...爸爸...或许就会好起来。</p>
+          <p> </p>
+          <p>守护者大人...能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我问...问了大人们。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_DF3_gb_source_jewelry_d_30c]就在阿姆斯尼尔港口...拉盖乌姆矿山等地方。</p>
+          <p> </p>
+          <p>一定...一定要帮我找来哦...拜托了。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人难道不相信有了月长石...愿望就会成真吗？</p>
+          <p> </p>
+          <p>要是有月长石...爸爸...爸爸就会好起来的啊...</p>
+          <p> </p>
+          <p>...</p>
+          <p> </p>
+          <p>（不再说话。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昨天...爸爸...也出现在我的梦里。</p>
+          <p> </p>
+          <p>神色好恐怖...一直在追我。</p>
+          <p> </p>
+          <p>就像大人们说的一样...只要有...月长石...爸爸就会好起来的。</p>
+          <p> </p>
+          <p>找来...[%dic:STR_DIC_DF3_jewelry_n_c_30c]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将月长石原石交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊...</p>
+          <p> </p>
+          <p>一定要有[%dic:STR_DIC_DF3_jewelry_n_c_30c]...才可以啊...</p>
+          <p> </p>
+          <p>...</p>
+          <p> </p>
+          <p>（不再说话。）</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在已经有了...月长石原石...我会...认真祈祷的。</p>
+          <p> </p>
+          <p>直到爸爸...复原为止...</p>
+          <p> </p>
+          <p>谢谢...守护者大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_DF3_gb_source_jewelry_d_30c]收集月长石原石，并交给 [%dic:STR_DIC_N_Rotenan]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">洛泰楠认为，只要拥有月长石，愿望一定会成真。为洛泰楠收集月长石原石，并交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被成为不死族的爸爸追赶的可怕记忆一直困扰着洛泰楠。</p>
+          <p> </p>
+          <p>听妈妈说，爸爸之所以会变成这样都是因为龙族，只要虔诚地向神祈祷，爸爸就会好起来。为此，洛泰楠一直认真地祈祷，可是爸爸还没有好起来。</p>
+          <p> </p>
+          <p>他从大人们口中得知只要拥有月长石，愿望就会成真。他非常渴望得到月长石原石。接受他的请求，帮助他找到了月长石，并交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

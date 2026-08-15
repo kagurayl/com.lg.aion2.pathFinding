@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间，为了让守护的实体正常运转，我们付出了不少的努力。</p>
+          <p> </p>
+          <p>但是最终全都失败了。</p>
+          <p> </p>
+          <p>不管通过什么方法，都必须让守护的实体恢复运转，为我们所用才行……</p>
+          <p> </p>
+          <p>不好意思，恐怕还得麻烦你一趟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问具体的任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最重要的，是要让[%dic:STR_DIC_OBJ_IDAbRe_Core_Artifact]能为我们所用。</p>
+          <p> </p>
+          <p>那样的话，就必须把[%dic:STR_DIC_M_IDAbRe_Core_Boss_ElementalkingE_Wi_55_Al]消灭掉。</p>
+          <p> </p>
+          <p>由于对实体的执着，守护者亚曼内斯失去了理智，变得非常疯狂。</p>
+          <p> </p>
+          <p>估计会很不好对付。你愿意去消灭掉实体守护者亚曼内斯吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>进入残骸中心，触碰守护的实体，实体守护者亚曼内斯就会出现。</p>
+          <p> </p>
+          <p>虽然会很困难，不过希望你能打败实体守护者亚曼内斯。</p>
+          <p> </p>
+          <p>只有这样，守护的实体才能恢复正常。</p>
+          <p> </p>
+          <p>实体恢复正常之后，请你确认一下它是否可以正常运转。如果我们不能使用它，就没有任何意义。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和之前的任务相比，这个任务要重要得多，难道你不知道吗？</p>
+          <p> </p>
+          <p>如果守护的实体不能为我们所用，那我们之前的那些任务又有什么意义！</p>
+          <p> </p>
+          <p>没想到你竟然会拒绝这个任务……</p>
+          <p> </p>
+          <p>完全没有守护者的使命感。[%username]，我对你真是太失望了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我收到了阿拉图斯的报告，一直在等你。</p>
+          <p> </p>
+          <p>你打败实体守护者亚曼内斯，让守护的实体恢复原来状态了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告说成功了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了！</p>
+          <p> </p>
+          <p>守护的实体能为我们所用，真是太好了。</p>
+          <p> </p>
+          <p>这件事，会在你的经历中画上浓墨重彩的一笔。</p>
+          <p> </p>
+          <p>再次对你表示感谢，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打败[%dic:STR_DIC_M_IDAbRe_Core_Boss_ElementalkingE_Wi_55_Al][%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">启动[%dic:STR_DIC_OBJ_IDAbRe_Core_Artifact]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">向[%dic:STR_DIC_N_Taranis]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要想让守护的实体恢复原来状态，必须打败实体守护者。消灭实体守护者亚曼内斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿拉图斯说为了让守护的实体恢复正常，他们付出了很多努力，但都失败了。</p>
+          <p> </p>
+          <p>于是按照他的委托，打倒了实体守护者亚曼内斯，亚曼内斯恢复了理性，实体终于恢复正常了。</p>
+          <p> </p>
+          <p>回到特米伦要塞，向塔拉尼斯总司令官报告了结果。他说辛苦了，并对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

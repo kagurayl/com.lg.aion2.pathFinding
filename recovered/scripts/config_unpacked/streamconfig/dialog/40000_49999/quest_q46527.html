@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭[%dic:STR_DIC_M_DF4_DayQ_DrakanFi_Re_55_An]的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_DrakanFi_Re_55_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_C3]</p>
+          <p></p>
+          <p> 3. 详情：据说由于龙族战斗员的反击，巴卡巴塔激战地的建筑内部现在正展开激战。委托的内容是消灭其核心人物副队长。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_DF4_DayQ_DrakanFi_Re_55_An]的人，将得到证物作为奖励。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>激战地和要塞的守护者们好像遇到了困难。</p>
+          <p> </p>
+          <p>不然的话，他们也不会找我们侦探事务所帮忙，呐呐。</p>
+          <p> </p>
+          <p>派遣到激战地去的守护者中，一定有人很有钱。呐。</p>
+          <p> </p>
+          <p>不管怎样都无所谓。我们侦探事务所就是靠这个吃饭的，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>激战地一般人根本无法靠近，我想执行任务应该会需要一点时间。</p>
+          <p> </p>
+          <p>没想到你这么快就完成了，真是太感谢了，呐呐。</p>
+          <p> </p>
+          <p>我们必须更快更好地完成委托，才会有更多的人来委托我们。只有这样侦探事务所才会繁荣发展。不是吗？</p>
+          <p> </p>
+          <p>来，这是给你的证物，快收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_DayQ_DrakanFi_Re_55_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_E_46500]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了消灭巴卡巴塔激战地的德拉坎副队长的委托。</p>
+          <p> </p>
+          <p>执行委托，然后找到了格尔克马洛斯管理部职员，获得了证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我好像应该把南瓜帽摘下来了。</p>
+          <p></p>
+          <p>我没资格再戴南瓜帽了吗？</p>
+          <p></p>
+          <p>因为我遭到了部下们的背叛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说加油。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，有件事我想问你。</p>
+          <p></p>
+          <p>听说偷糖黑暗术古正在把从我这里偷走的[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]发给怪物们？</p>
+          <p></p>
+          <p>现在外面到处都是糖果。是谣言吗？</p>
+          <p></p>
+          <p>这段时间，大家都帮了我很多忙，我想给大家发万圣节纪念糖果……</p>
+          <p></p>
+ 	  <p>你能不能帮我搜集一些[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助他。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">答应下次帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有10个[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]就够了。</p>
+          <p></p>
+          <p>我会把它们和剩下的糖果一起制作成礼物。</p>
+	  <p></p>
+          <p>虽然不是什么好东西，但对小孩子们来说，这会是最好的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出南瓜棒棒糖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是个无情的守护者。</p>
+          <p> </p>
+          <p>早知道这样的话，就别来和我说话嘛！</p>
+          <p> </p>
+	  <p>就算你不帮我，还是有很多守护者愿意帮我的。你走吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有10个[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]就够了。</p>
+          <p></p>
+          <p>我会把它们和剩下的糖果一起制作成礼物。</p>
+	  <p></p>
+          <p>虽然不是什么好东西，但对小孩子们来说，这会是最好的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出南瓜棒棒糖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真的很需要[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]。</p>
+          <p></p>
+          <p>孩子们喜欢五颜六色的东西。</p>
+	  <p></p>
+          <p>听说怪物们身上会有棒棒糖掉落。</p>
+	  <p></p>
+          <p>搜集到10个棒棒糖之后，你再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我闻到了甜美的糖果的味道！</p>
+          <p></p>
+          <p>让我看看。虽然棒棒糖的边上有点碎了，不过好像还不错。</p>
+          <p></p>
+          <p>这样就能维持南瓜大王的面子了。</p>
+          <p></p>
+          <p>你也辛苦了，这是我给你的万圣节礼物！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A]交给[%dic:STR_DIC_N_event_Minis]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">应该去搜集怪物掉落的南瓜棒棒糖，交给米尼斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集怪物掉落的南瓜棒棒糖，并交给了米尼斯。</p>
+          <p></p>
+          <p>米尼斯对我表示感谢，说终于可以向孩子们发放万圣节礼物了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

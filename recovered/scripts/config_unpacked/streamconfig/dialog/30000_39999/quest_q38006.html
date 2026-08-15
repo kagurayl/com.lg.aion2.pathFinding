@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来得正好。我有个重要的口信要告诉[%username]大人。</p>
+          <p> </p>
+          <p>您知道极乐世界预备神庙吗？</p>
+          <p> </p>
+          <p>那是为刚觉醒的守护者提供帮助，把他们培养成天界的优秀人才的地方。</p>
+          <p> </p>
+          <p>对于[%username]大人这样没有任何人的帮助，自己觉醒成为守护者的人来说，这些支持是非常重要的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>口信是极乐世界预备神庙的[%dic:STR_DIC_N_Dethcaoi]传来的。</p>
+          <p> </p>
+          <p>他说会在贝尔特伦要塞等您，让您收到口信之后马上过去。</p>
+          <p> </p>
+          <p>您现在就过去吗？去了的话，他会告诉您很多有用的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>成为守护者，就意味着获得了强大的力量。</p>
+          <p> </p>
+          <p>强大的力量根据其使用方法，可以成为毒药，也可以成为灵药。</p>
+          <p> </p>
+          <p>此外，根据个人的努力程度，可能会变得更强，也可能会变得衰弱。</p>
+          <p> </p>
+          <p>请您去贝尔特伦见见[%dic:STR_DIC_N_Dethcaoi]大人，他应该会给您一个好的答案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于获得新的能力的人来说，需要一个引路人来告诉他如何控制那种能力。</p>
+          <p> </p>
+          <p>没有方向性的能力，可能会成为危险的东西。</p>
+          <p> </p>
+          <p>在您迷失和彷徨的时候，您到底想得到什么呢？</p>
+          <p> </p>
+          <p>如果您想获得想要的东西，最好去见见德斯凯奥大人。如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们终于见面了，[%username]大人。</p>
+          <p> </p>
+          <p>弗里伊杜斯向您转达我的口信了吗？</p>
+          <p> </p>
+          <p>我等待[%username]大人已经很久了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问有什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得您是最需要我们帮助的人，所以才把您叫到这里。</p>
+          <p> </p>
+          <p>觉醒之后您感觉如何？是不是觉得不知道应该去哪，感觉有点彷徨？</p>
+          <p> </p>
+          <p>我们极乐世界预备神庙可以向[%username]大人这样的新手守护者提供各种支持，让你们逐步提高自己的能力。</p>
+          <p> </p>
+          <p>其中的一项，就是你们将有机会和战斗经验丰富的守护者一起执行任务。</p>
+          <p> </p>
+          <p>如果您还没加入极乐世界预备神庙的话，请您现在就加入吧。那样的话，您就可以更快地提高自己的能力。</p>
+          <p> </p>
+          <p>我要和您说的就是这些。剩下的就要看[%username]大人如何选择了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Dethcaoi]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说极乐世界预备神庙事务员在找我。去贝尔特伦要塞见见德斯凯奥吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>空间移动师弗里伊杜斯说极乐世界预备神庙事务员德斯凯奥正在找我。</p>
+          <p> </p>
+          <p>见到贝尔特伦要塞的德斯凯奥之后，他给我详细说明了极乐世界预备神庙的情况，劝我加入预备神庙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

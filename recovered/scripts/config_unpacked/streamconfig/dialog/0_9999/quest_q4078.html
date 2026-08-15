@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也知道，布鲁斯特豪宁的垦荒作业对魔界来说是非常重要的事件。</p>
+          <p> </p>
+          <p>垦荒团已经从南部地区开拓中部、北部地区，这可是令人瞩目的成果。</p>
+          <p> </p>
+          <p>刚开始只是不死族讨伐队和几位元老守护者，现在已经有很多守护者主动来到这里为我们提供帮助。</p>
+          <p> </p>
+          <p>所以，我觉得布鲁斯特豪宁的垦荒作业会比预想的进展快一些。对此，我感到很高兴。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们要消灭不死族和各种危险的生物，把垦荒作业进行到布鲁斯特豪宁的每个地方，不过现在遇到了一个麻烦。</p>
+          <p> </p>
+          <p>从贝达扎尔村出去就是马加洛原始森林，由于树木茂盛，光线昏暗，在那里行走很容易受到狂暴的野兽的攻击，或者一不小心就会陷入到沼泽中。</p>
+          <p> </p>
+          <p>这给在那里执行任务的守护者造成很多不便。</p>
+          <p> </p>
+          <p>因此，我想了个能够照亮马加洛原始森林的方法，可是我一个人很难做到。[%username]能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了能够照亮马加洛原始森林，我想制作路灯。</p>
+          <p> </p>
+          <p>设置路灯的事情由我来负责， [%username]只要去帮我找来照亮的东西就可以了。</p>
+          <p> </p>
+          <p>我调查了一下，发现丛林莫斯奇的身体可以发光。把它们打晕后装进路灯里，这样就可以照亮路面了。</p>
+          <p> </p>
+          <p>在马加洛原始森林有很多[%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]，只要去打晕几只带过来就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的意思是看不上这种小任务吗？</p>
+          <p> </p>
+          <p>我活了这么长时间也见到了很多守护者。</p>
+          <p> </p>
+          <p>我可以明确告诉你，就算小事也不推辞，认真去完成，才会成为伟大的守护者。</p>
+          <p> </p>
+          <p>看来[%username]想成为伟大的守护者将会很难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来了啊，[%username]。</p>
+          <p> </p>
+          <p>带来我拜托的丛林莫斯奇了吗？</p>
+          <p> </p>
+          <p>路灯我已经都设置好了，现在只剩下[%dic:STR_DIC_I_QUEST_4078a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将晕过去的莫斯奇交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到底你去做什么了，[%username]？</p>
+          <p> </p>
+          <p>难道你在我去马加洛原始森林设置路灯的时候，跑去哪里玩了？</p>
+          <p> </p>
+          <p>像[%username]一样有实力的守护者不是应该多帮助别人吗？</p>
+          <p> </p>
+          <p>请赶紧去打晕[%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]并把他们带过来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还得从这些莫斯奇中挑选最亮的装进路灯。</p>
+          <p> </p>
+          <p>请稍等。</p>
+          <p> </p>
+          <p>(给晕过去的莫斯奇撒上发光的粉后) 好了。现在请把它装进路灯里点亮吧。</p>
+          <p> </p>
+          <p>从村子里出去顺着路从原始森里的东部走到西部，就能找到路灯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+   </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝达扎尔村是关系到布鲁斯特豪宁垦荒作业的非常重要的地方。</p>
+          <p> </p>
+          <p>只要村子周围变得安全，守护者们就可以方便地进行往来，垦荒的成果也自然会变得更好。</p>
+          <p> </p>
+          <p>那么，你点亮路灯了吗？</p>
+          <p> </p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了，[%username].</p>
+          <p> </p>
+          <p>多亏了[%username]，以后往来马加洛原始森里的人们都会非常安全的。</p>
+          <p> </p>
+          <p>请收下吧。就算我是元老，也不能对辛苦工作的人毫无表示啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打晕[%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]，并交给[%dic:STR_DIC_N_Helmut]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">点亮[%dic:STR_DIC_OBJ_DF2a_Light_Q4078A][%5]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">点亮[%dic:STR_DIC_OBJ_DF2a_Light_Q4078B][%8]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">点亮[%dic:STR_DIC_OBJ_DF2a_Light_Q4078C][%11]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">向[%dic:STR_DIC_N_Helmut]报告</font></p></step>
+     </steps>
+          <p><font font_xml="quest_summary">需要照亮马加洛原始森里的路灯所需要的光源。要去抓来丛林莫斯奇。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>元老守护者黑尔穆特表示有很多守护者为了帮助布鲁斯特豪宁的垦荒作业而来到了这里，黑尔穆特打算为了他们制作路灯照亮灰暗而危险的马加洛原始森林。</p>
+          <p> </p>
+          <p>按照黑尔穆特的委托，抓来丛林莫斯奇，点亮了马加洛原始森林的路灯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

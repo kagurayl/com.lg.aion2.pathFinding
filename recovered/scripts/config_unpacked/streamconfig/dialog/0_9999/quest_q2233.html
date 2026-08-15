@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来得正好！</p>
+          <p> </p>
+          <p>正有事想拜托您。</p>
+          <p> </p>
+          <p>不知道您会不会答应，咕噜噜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>路皮里尼特别招人讨厌。</p>
+          <p> </p>
+          <p>咕噜噜，不过我是伟大的曼太伽。</p>
+          <p> </p>
+          <p>像[%dic:STR_DIC_M_lupylliniD_15_n]这种小鸟，我不能去抓。</p>
+          <p> </p>
+          <p>能帮我消灭它们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜噜噜，谢啦。</p>
+          <p> </p>
+          <p>那就去巴斯佩尔特猎场，把那里的[%dic:STR_DIC_M_lupylliniD_15_n]消灭吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>居然拒绝曼太伽的请求？</p>
+          <p> </p>
+          <p>不是我抓不到路皮里尼才拜托你的。</p>
+          <p> </p>
+          <p>伟大的曼太伽是不对鸟类动物出手的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭[%dic:STR_DIC_M_lupylliniD_15_n]那些家伙了吗？</p>
+          <p> </p>
+          <p>咕噜噜，那些家伙最近倒是不那么烦了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜噜，谢啦。</p>
+          <p> </p>
+          <p>那些讨厌鬼们没了，可以消停一阵子了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_lupylliniD_15_n]([%2]/3)。</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_MantigarD_Q_16_An]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">曼太伽认为路皮里尼很烦，帮助消灭路皮里尼。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼太伽认为路皮里尼很烦，但不愿亲自动手消灭鸟类这样的小动物。因此替他消灭了路皮里尼。</p>    
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

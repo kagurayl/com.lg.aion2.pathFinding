@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您来这里有什么特别的事吗？</p>
+          <p> </p>
+          <p>如果不是什么急事的话，您能帮帮我吗？</p>
+          <p> </p>
+          <p>之前我也说过，如果能把头目消灭掉，秃鹫的气焰就不会那么嚣张。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>长舌克穆尔消失了，龙之垫脚石的秃鹫暂时应该会安静下来。</p>
+          <p> </p>
+          <p>但是过了一段时间之后，一定会有新的头目出现，就会变成和以前一样。</p>
+          <p> </p>
+          <p>如果可以的话，我想趁这个机会把龙之垫脚石的秃鹫全部消灭掉。</p>
+          <p> </p>
+          <p>因此我迫切需要[%username]大人的帮助。</p>
+          <p> </p>
+          <p>我不想强迫您，不过希望您能尽量从肯定的角度考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您一定会接受我的请求。</p>
+          <p> </p>
+          <p>准备好了之后，请您帮我把[%dic:STR_DIC_M_DF4_Condor_DR_51_An]全部消灭掉。</p>
+          <p> </p>
+          <p>我想最好是在捕食者秃鹫的势力恢复之前，尽快动手……</p>
+          <p> </p>
+          <p>当然，相信[%username]大人一定会知道怎么去做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，就算是[%username]大人，要想把秃鹫全部消灭掉，也是非常不容易的事。</p>
+          <p> </p>
+          <p>估计它们会安静一段时间，我得趁这段时间想想办法。</p>
+          <p> </p>
+          <p>这次我就不勉强您了。下次来的时候，您一定要帮我这个忙哦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我猜您应该快回来了。</p>
+          <p> </p>
+          <p>[%username]大人走了之后，秃鹫的叫声就小了很多。[%dic:STR_DIC_M_DF4_Condor_DR_51_An]全都消灭掉了吗？</p>
+          <p> </p>
+          <p>我很想知道结果怎样。快跟我说说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。这下我终于可以放心了。去格尔克马洛斯要塞的时候，也更加方便了。</p>
+          <p></p>
+          <p>讨厌的捕食者秃鹫终于消失了，一想到这，我的心里就感觉很痛快。</p>
+          <p> </p>
+          <p>来，这是我给您的答谢。请不要客气。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭龙之垫脚石的[%dic:STR_DIC_M_DF4_Condor_DR_51_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Carabel]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须在龙之垫脚石的秃鹫出现新的头目之前，把捕食者秃鹫全部消灭掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡拉贝尔说头目消失之后，是将捕食者秃鹫从龙之垫脚石赶走的绝好机会，让我去扫荡捕食者秃鹫。</p>
+          <p> </p>
+          <p>按照她的委托消灭了捕食者秃鹫，回去之后，她对我表示感谢，并给了我酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

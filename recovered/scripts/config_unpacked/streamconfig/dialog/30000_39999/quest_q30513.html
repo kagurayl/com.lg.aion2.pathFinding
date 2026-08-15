@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30513</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰图斯前哨基地现在有很多问题。</p>
+          <p> </p>
+          <p>我的任务就是解决那些问题。</p>
+          <p> </p>
+          <p>虽然看上去我的工作就是给守护者们布置任务，但这其实也是需要有全局观的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在目前的情况下，兰图斯前哨基地最需要的支援是清除战斗中的妨碍。</p>
+          <p> </p>
+          <p>从基地内现在的情况来看，希卡拉狙击士官给我们造成了很大的困难。</p>
+          <p> </p>
+          <p>需要有人去解决这个问题。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到兰图斯前哨基地去消灭[%dic:STR_DIC_M_IDYun_DrakanRider_60_Ae]，然后把[%dic:STR_DIC_I_QUEST_30513A]拿回来作为证据。</p>
+          <p> </p>
+          <p>他们会在空中向下面的守护者和鸢族射箭，对我们的攻击造成妨碍。</p>
+          <p> </p>
+          <p>如果能把他们消灭掉，夺回兰图斯前哨基地就会容易得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您不感兴趣的话，我也不会勉强。</p>
+          <p> </p>
+          <p>除了[%username]大人之外，还有很多人重视我们和鸢族之间的关系。</p>
+          <p> </p>
+          <p>希望所有的守护者都能明白，在目前的情况下，我们和鸢族的合作是多么的重要。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须尽快重建兰图斯前哨基地，才能最终在和龙族的战争中获胜。</p>
+          <p> </p>
+          <p>因此消灭希卡拉狙击士官是非常重要的事情。</p>
+          <p> </p>
+          <p>您消灭掉他们了吗？龙族的箭矢拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族的箭矢。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>忠实地完成肩负的任务，是守护者的义务！</p>
+          <p> </p>
+          <p>我不想多说什么。</p>
+          <p> </p>
+          <p>请您马上到兰图斯前哨基地去消灭掉[%dic:STR_DIC_M_IDYun_DrakanRider_60_Ae]，把[%dic:STR_DIC_I_QUEST_30513A]拿回来作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您忠实地完成了任务。</p>
+          <p> </p>
+          <p>[%username]大人，谢谢您。</p>
+          <p> </p>
+          <p>希望您下次继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30513A]，然后交给XXX</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了夺回兰图斯前哨基地，决定去消灭精锐希卡拉狙击士官，搜集证据。 </font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了夺回兰图斯前哨基地，必须消灭精锐希卡拉狙击士官。</p>
+          <p> </p>
+          <p>于是去消灭了希卡拉狙击士官，将龙族的箭矢作为证据带了回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才，革命团的一个人给我送食物来了。</p>
+          <p> </p>
+          <p>是我刚潜入不久结识的一名团员，关系很不错。</p>
+          <p> </p>
+          <p>虽然他做事顾前不顾后，不过挺喜欢聊天，对我收集情报有很大的帮助。</p>
+          <p> </p>
+          <p>不过今天，他突然向我问了一些奇怪的问题，比如我是不是和精锐兵有矛盾。</p>
+          <p> </p>
+          <p>他说，最近精锐兵们时常聚在一起，谈论我的来历等等。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听到那些话后，我的心凉了半截。</p>
+          <p> </p>
+          <p>其实，曾经发生的一件事情让我非常担心。</p>
+          <p> </p>
+          <p>因为不久前，有个缺心眼的守护者总是来跟我说话，结果被精锐兵发现了。</p>
+          <p> </p>
+          <p>或许那个精锐兵察觉到了什么...</p>
+          <p> </p>
+          <p>在事情变得严重之前，必须要赶紧动手，你能帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了任务的顺利进行，首先要封住他们的嘴。</p>
+          <p> </p>
+          <p>那次距离很远，不是很清楚，看装扮好像是 [%dic:STR_DIC_M_KeB_LehparKnD_42_Ae]， [%dic:STR_DIC_M_AeB_LehparAsD_42_Ae]， [%dic:STR_DIC_M_WeA_LehparWiD_42_Ae] 中的一个。</p>
+          <p> </p>
+          <p>但如果事情已经传开，把所有的人都干掉比只干掉某一个人要更安全。</p>
+          <p> </p>
+          <p>这样的话，既可以堵住他们的嘴，也可以把先前对我的注意力转移到其他地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，你想置我于危险而不顾吗？</p>
+          <p> </p>
+          <p>我们这些谍报员冒着生命危险在这里搜集情报，还不都是为了包括你在内的魔族啊。</p>
+          <p> </p>
+          <p>可是竟然拒绝帮助我...真是个自私的守护者！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内心憎恨革命团，外表上却要装作若无其事，还要和他们共事，这可不是件容易的事情啊。</p>
+          <p> </p>
+          <p>为了伏魔殿，我只能甘愿接受这一切。</p>
+          <p> </p>
+          <p>那么，是不是已经除掉了怀疑我的家伙？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得好，[%username]！ </p>
+          <p> </p>
+          <p>看来以后我得更加小心。如果再发生这样的事情，那我恐怕就没办法活着离开这里了。</p>
+          <p> </p>
+          <p>来，这是你执行艰苦任务应得的酬劳，请收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉监视队的精锐兵。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KeB_LehparKnD_42_Ae]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeB_LehparAsD_42_Ae]([%5]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_WeA_LehparWiD_42_Ae]([%8]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Dewi]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">混沌森林中的精锐兵已经开始怀疑德威。为了保证德威的安全，需要消灭他们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>混入雷帕尔革命团的谍报员德威，正受到部分精锐兵的怀疑。</p>
+          <p> </p>
+          <p>在德威的身份暴露之前，除掉了监视队的精锐武装兵，暗杀兵，法师，并将敌人的注意力转移到别的地方。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

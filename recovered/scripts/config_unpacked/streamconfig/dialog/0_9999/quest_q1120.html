@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，[%username]！有时间吗？</p>
+          <p> </p>
+          <p>有空的话帮我个忙吧。</p>
+          <p> </p>
+          <p>最近我是腹背受敌，身边的人手有点不够用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能你也有所耳闻，我们被派到这儿来是为了监视栖息在[%dic:STR_DIC_FLA07]的克拉尔和布洛尼的动态。</p>
+          <p> </p>
+          <p>可是最近让我们费神的就是被叫作[%dic:STR_DIC_MLA10]的家伙。</p>
+          <p> </p>
+          <p>他们动不动就来营地偷窃我们的粮食仓库，危害很大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最好能教训一下这些可恶的[%dic:STR_DIC_MLA10]。</p>
+          <p> </p>
+          <p>吓唬他们一下，让他们有所顾忌，他们就不会随便来抢我们的粮食了。</p>
+          <p> </p>
+          <p>我当然希望能把他们一网打尽了，不过这估计不太可能…希望你能帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去捕捉9头[%dic:STR_DIC_MLA10]吧。</p>
+          <p> </p>
+          <p>如果能答应我的话，哪怕就是把我所有私房钱都搭上，我也要答谢你。</p>
+          <p> </p>
+          <p>再也不想天天盯着那些野狼，耽误我晚上睡觉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你最近很忙吗？</p>
+          <p> </p>
+          <p>那真可惜。</p>
+          <p> </p>
+          <p>你要是能帮我，本想重重酬谢你来着呢。</p>
+          <p> </p>
+          <p>要是同事里有人有空的话，麻烦您叫他来我这儿一下行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，抓到[%dic:STR_DIC_MLA10]了吗？</p>
+          <p> </p>
+          <p>那帮家伙的牙齿和爪子可不是一般的锋利。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说抓住了野狼。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦了。我感觉那帮家伙的叫声少了些了。</p>
+          <p> </p>
+          <p>最近，克拉尔和布洛尼那帮家伙们好像在筹划着什么似的，侦察报告也是这么显示。现在本来就忙，连野狼都那么猖獗，真不是一般的辛苦啊。</p>
+          <p> </p>
+          <p>来，这是说好的酬金。</p>
+          <p> </p>
+          <p>以后等我侦察任务结束了咱们一块儿到酒馆儿喝一杯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉偷窃粮仓的[%dic:STR_DIC_MLA10]([%2]/9) </font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和图拉谈话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">梅尔普内营地的图拉让我帮他捕捉9头[%dic:STR_DIC_MLA10]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图拉因为[%dic:STR_DIC_MLA10]经常侵入梅尔普内营地而头疼。</p>
+          <p> </p>
+          <p>于是接受了他要求教训那帮家伙的请求，捕捉了9头野狼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

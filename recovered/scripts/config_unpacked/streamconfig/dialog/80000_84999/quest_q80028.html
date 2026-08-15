@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你好像很陌生，你经常到这里来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久没有到京城里来了，这里怎么这么多守护者啊……看得人眼都花了。</p>
+          <p> </p>
+          <p>这里好像和以前不一样了，谁来了谁走了，大家好像都不怎么在意。</p>
+          <p> </p>
+          <p>特别是像我这样的老人，根本没有守护者会看我一眼。</p>
+          <p> </p>
+          <p>你竟然会和我打招呼……真是个特别的守护者。</p>
+          <p> </p>
+          <p>你的眼光很不错。</p>
+          <p> </p>
+          <p>遇上你也是缘分，我们来握个手吧。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">伸出手。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>见到你很高兴。</p>
+          <p></p>
+          <p>真是个热心的守护者。</p>
+          <p></p>
+          <p>握着你的手我就知道。</p>
+          <p></p>
+          <p>稍等一下。我要给你一件东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你要走了吗！？</p>
+          <p> </p>
+          <p>看来是我看错人了。你只不过是个普通的守护者罢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>给，虽然不是什么好东西，不过请你收下。</p>
+          <p> </p>
+          <p>用不着客气。</p>
+          <p> </p>
+          <p>啊，快点拿着！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">伸出手。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就当作是我的小小心意吧。</p>
+          <p></p>
+          <p>不管里面是什么东西，都不要吃惊。呵呵呵。</p>
+          <p> </p>
+          <p>就像你今天主动和我打招呼一样，希望你能继续热情地向其他人伸出友谊之手。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收下[%dic:STR_DIC_N_event_Lotus]给的礼物</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说去和鲁图斯打招呼，可以获得有趣的礼物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和鲁图斯打了招呼，他称赞我是个有眼光的守护者，并给了我一个有趣的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

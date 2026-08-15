@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看上去好像是剑的剑柄。)</p>
+          <p> </p>
+          <p>(像新的一样闪闪发光。)</p>
+          <p> </p>
+          <p>(握住剑柄的时候，感觉有一种未知的巨大力量席卷而来。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Dmytro]百夫长看看。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的脸色是怎么回事？</p>
+          <p> </p>
+          <p>发生什么事了吗？</p>
+          <p> </p>
+          <p>感觉你好像是见到了幽灵一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出折断的剑柄。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？咦，这是……</p>
+          <p> </p>
+          <p>(匆忙把剑柄放进箱子)我知道你为什么会这样了。</p>
+          <p> </p>
+          <p>幸亏你拿回来交给了我。</p>
+          <p> </p>
+          <p>不然的话，你就要遭殃了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把折断的剑柄交给[%dic:STR_DIC_N_Dmytro]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在阿拉卡龙族身上发现了一把折断的剑柄。应该拿去给德米特尔百夫长看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在打倒的阿拉卡龙族身上发现了一把折断的剑柄。</p>
+          <p> </p>
+          <p>因为从上面可以感觉到奇怪的气息，于是拿回去给德米特尔百夫长看。他匆忙地把它放进了箱子，说我差点就要遭殃。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

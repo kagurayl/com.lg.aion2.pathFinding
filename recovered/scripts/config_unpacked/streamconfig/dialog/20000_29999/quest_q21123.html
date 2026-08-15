@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听希兰说，你是魔界有名的[%userclass]？</p>
+          <p> </p>
+          <p>太好了，请你帮帮我。</p>
+          <p> </p>
+          <p>我要找点东西，但是一个人太困难了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那，那是……塞内加尔的东西。现在再也无法见到的我的爱人……</p>
+          <p> </p>
+          <p>(飞快地擦了一下眼角)哈，现在连眼泪都流干了。</p>
+          <p> </p>
+          <p>他在救我的时候，被龙崇拜者抓走了。找到他的时候，他已经被洗了脑。因此我作出了痛苦的选择，按照我们的约定，亲手夺走了他的生命。让他可以尊严地死去……</p>
+          <p> </p>
+          <p>我正在对他的遗物进行整理，但是有几样东西不见了。我从抓走他的龙信徒身上搜集他的东西，但现在[%dic:STR_DIC_I_QUEST_21123a]还没找到。[%username]，请你帮我找回塞内加尔的箭矢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞内加尔一直弓不离身，一定是抓走他的龙信徒把[%dic:STR_DIC_I_QUEST_21123a]拿走了。</p>
+          <p> </p>
+          <p>请你到受到诅咒的地下城市去，在龙崇拜者的物品中仔细寻找。</p>
+          <p> </p>
+          <p>塞内加尔使用的是用鸟妖的羽毛制作的箭矢，应该很容易就能分辨出来。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也觉得我过于迷恋过去了吗？</p>
+          <p> </p>
+          <p>奥尔提兹是这样说我的，说这样下去的话，我也可能会遇到危险。</p>
+          <p> </p>
+          <p>我并不害怕死亡，只是不想让塞内加尔的东西留在肮脏的龙信徒的手中。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。</p>
+          <p> </p>
+          <p>嗯……[%dic:STR_DIC_I_QUEST_21123a]找到了吗？</p>
+          <p> </p>
+          <p>我得看看对不对。请把找到的东西交给我，快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塞内加尔的箭矢。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你好像很喜欢把人一下子送进天堂，然后又一下子坠入地狱的感觉。</p>
+          <p> </p>
+          <p>怎么样你才能了解我的心呢？</p>
+          <p> </p>
+          <p>请你一定要帮我把[%dic:STR_DIC_I_QUEST_21123a]找回来。拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸟妖羽毛……是他的箭矢没错。</p>
+          <p> </p>
+          <p>现在再也看不到这个箭矢在天上飞了。</p>
+          <p> </p>
+          <p>谢谢你，[%username]。虽然没有全部找回来，但能找到这么多已经不容易了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_SZ_DF4_B6]的龙崇拜者，搜集[%dic:STR_DIC_I_QUEST_21123a]，然后交给[%dic:STR_DIC_N_hildisvini]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了哈尔迪斯比尼，去受到诅咒的地下城市的龙崇拜者身上搜集塞内加尔的箭矢。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈尔迪斯比尼说自己的恋人塞内加尔因为龙信徒而死去了，让我去把塞内加尔的箭矢找回来。</p>
+          <p> </p>
+          <p>在受到诅咒的地下城市的龙信徒身上找到了塞内加尔的箭矢，哈尔迪斯比尼对我表示真心的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

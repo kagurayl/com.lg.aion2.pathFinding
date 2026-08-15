@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一句话都不说。)</p>
+          <p> </p>
+          <p>(但是从手势和眼神中好像可以感觉到些什么。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否有话要说。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明白了吗？我内心的想法？</p>
+          <p> </p>
+          <p>不管你能多么熟练地掌握和控制自己的感情表现，但是表现出来的东西和内心的想法还是会不一致。</p>
+          <p> </p>
+          <p>在无意识的状态下做出来的动作才是真正的感情表现。</p>
+          <p> </p>
+          <p>[%username]%，如果你需要，我可以把秘诀交给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把我写的教材借给你，你好好读一读吧。</p>
+          <p> </p>
+          <p>不要只看封面，一定要仔细阅读里面的内容！</p>
+          <p> </p>
+          <p>读完之后，你就能学会我的秘诀了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……真让人伤心！</p>
+          <p> </p>
+          <p>[%username]%，我是想把我的真心传授给你啊！</p>
+          <p> </p>
+          <p>在能够做出源自真心的感情表现之前，必须努力练习才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的读完了吗？</p>
+          <p> </p>
+          <p>该不会是只看了第1行吧？[%username]%，我能相信你吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你已经熟读了，我来送你一件礼物，让你可以学习新的动作。</p>
+          <p> </p>
+          <p>如果你还想学习更多的东西，必须支付规定的费用才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用箱子里的[%dic:STR_DIC_I_Q19048A][%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Andreas]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阅读安德雷亚斯的教材，接受和动作有关的指点。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感情表现的老师安德雷亚斯说无意识的动作更加重要，说可以指点我一下。</p>
+          <p> </p>
+          <p>于是阅读了安德雷亚斯的教材，获得了和动作有关的指点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

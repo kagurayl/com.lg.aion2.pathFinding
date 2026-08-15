@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你叫什么名字？</p>
+          <p> </p>
+          <p>[%username]？好像在什么地方听说过。</p>
+          <p> </p>
+          <p>不管你之前立下了多少功劳，这都不重要。</p>
+          <p> </p>
+          <p>从现在开始，你就是连第1阶段也通不过的训练生[%username]。明白了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望你不要改变你现在的决心。</p>
+          <p> </p>
+          <p>在正式开始训练之前，我来告诉你几件事。</p>
+          <p> </p>
+          <p>第一，你将在第1神庙训练所中接受训练。</p>
+          <p> </p>
+          <p>第二，第1神庙训练所中的训练全部以团体方式进行。</p>
+          <p> </p>
+          <p>第三，训练采用生存模式。在你们被全部打倒，或者对方被全部打倒之前，战斗不会停止。</p>
+          <p> </p>
+          <p>这些内容都理解了的话，我来跟你说明一下训练的规则。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道这些的话，训练的时候应该不会有什么问题了。</p>
+          <p> </p>
+          <p>请你先去寻找和自己一起训练的同伴。然后从那边的第1神庙训练所出入门进去，开始训练。</p>
+          <p> </p>
+          <p>训练生[%username]的第一个训练内容是完成第3阶段。</p>
+          <p> </p>
+          <p>请你打倒第3阶段的最终训练对象火之特兰和风之特兰，然后过来向我报告。</p>
+          <p> </p>
+          <p>希望你能取得好的结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+    <CutScene id="475"/>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没能理解吗？还是想放弃训练？</p>
+          <p> </p>
+          <p>(凝视着我)嗯，看样子你一定是害怕了。</p>
+          <p> </p>
+          <p>今天就说到这里吧。</p>
+          <p> </p>
+          <p>你再考虑一下，如果下定了决心，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，训练生[%username]！</p>
+          <p> </p>
+          <p>现在适应神庙训练所的生活了吗？</p>
+          <p> </p>
+          <p>第一项训练怎么样了？完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了！</p>
+          <p> </p>
+          <p>我通过雷加尔向训练所记录官进行了确认。</p>
+          <p> </p>
+          <p>我要授予你完成第3阶段的称号。训练生[%username]，请端正姿态。</p>
+          <p> </p>
+          <p>你还有很长的路要走。不要因此自满，希望今后你能继续努力训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打倒第3阶段的最终训练对象</font></p>
+                     <p visible="[%0]"><font color="[%1]">  火之特兰([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  风之特兰([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Anja]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">打倒第3阶段的最终训练对象火之特兰和风之特兰，然后向安雅战斗教官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦神庙训练所的战斗教官安雅告诉了我战斗规则，让我去打倒第3阶段的最终训练对象，然后向她报告。</p>
+          <p> </p>
+          <p>和同伴们一起消灭了火之特兰和风之特兰，回去向安雅报告，她给了我称号，并让我继续努力训练。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说你不了解龙的呼吸，对吧？</p>
+          <p> </p>
+          <p>也是，每天忙着战斗的守护者又怎么会读这种专业的书籍呢？</p>
+          <p> </p>
+          <p>但是提亚马特的历史和龙族的历史，你应该知道一些吧？</p>
+          <p> </p>
+          <p>知己知彼，才能百战不殆，不是吗？</p>
+          <p> </p>
+          <p>既然来到了龙族的土地，就必须尽可能多地知道有关龙族的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对你上次拿回来的石化地形进行研究之后，我有了一个奇怪的发现。</p>
+          <p> </p>
+          <p>就是山丘那边的巨大的石像碎片。</p>
+          <p> </p>
+          <p>刚开始，我就觉得那好像不是用石头做成的。</p>
+          <p> </p>
+          <p>好像是受到了提亚马特呼吸的影响而石化了。但不知道到底是什么东西。</p>
+          <p> </p>
+          <p>我刚好在研究石化现象，所以想一起进行研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是周围有很多危险的东西。</p>
+          <p> </p>
+          <p>有很多凶恶的动物在附近游荡。</p>
+          <p> </p>
+          <p>我一辈子都坐在书桌边上，在战斗力方面一点自信都没有。</p>
+          <p> </p>
+          <p>你能再辛苦一趟吗？请你帮我把那些烦人的家伙消灭掉。</p>
+          <p> </p>
+          <p>怎么样？我会趁此机会去采集石化地形和石像的标本。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能马上帮我去消灭掉那些家伙吗？</p>
+          <p> </p>
+          <p>"他们的名字是[%dic:STR_DIC_M_LF4_B1_Rhinoce_NamedQ_54_n]、[%dic:STR_DIC_M_LF4_B1_Baku_NamedQ_54_n],和[%dic:STR_DIC_M_LF4_B1_Crestlich_NamedQ_54_n]。"</p>
+          <p> </p>
+          <p>我会在收拾好采集工具之后跟着去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没有时间吗？</p>
+          <p> </p>
+          <p>哎呀，我不知道你没时间，还唠叨了这么久。</p>
+          <p> </p>
+          <p>我知道了，你走吧。</p>
+          <p> </p>
+          <p>如果你有急事，就先去处理吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]，是你啊。</p>
+          <p> </p>
+          <p>石化研究有了很大的进展。</p>
+          <p> </p>
+          <p>这全都是因为有了你的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说事情已经完成了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不说我也知道。</p>
+          <p> </p>
+          <p>我跟在你后面去采集石化标本了。</p>
+          <p> </p>
+          <p>你一直忙着对付他们，都没有看到我。</p>
+          <p> </p>
+          <p>真是辛苦你了。这个请你收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭石化地区的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B1_Rhinoce_NamedQ_54_n]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B1_Baku_NamedQ_54_n]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF4_B1_Crestlich_NamedQ_54_n]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Philon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭周围的敌人，让皮罗恩可以采集石化地形标本。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗恩说在对附近的地形进行调查的时候，发现了巨大的石像碎片。</p>
+          <p> </p>
+          <p>他说想进行进一步的调查，但是周围有很多凶恶的生物，因此请我帮忙。</p>
+          <p> </p>
+          <p>帮他消灭了敌人，皮罗恩对我表示感谢，说已经趁此机会采集到了石化地形标本。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

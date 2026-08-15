@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不像其他补给兵一样，只负责接收和发放物品。</p>
+          <p> </p>
+          <p>如果接到了需要特殊物品的申请，我会直接去购买。</p>
+          <p> </p>
+          <p>所以我既是守护者，也是一名补给兵。</p>
+          <p> </p>
+          <p>哈，不过这次申请的东西真不知道该从哪里去弄了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_dislike;HACTION_SELECT1_1">询问申请的是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了请求提供制作急救药的申请。</p>
+          <p> </p>
+          <p>材料是噬人虫皮革、石墓之刺和叙路克前腿。</p>
+          <p> </p>
+          <p>除了石墓之外，叙路克和噬人虫应该见过吧？</p>
+          <p> </p>
+          <p>叙路克的坑坑洼洼的皮肤，噬人虫的恶臭的味道...特别是噬人虫根本不能看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您没什么事情的话，能帮我去搜集材料吗？</p>
+          <p> </p>
+          <p>其他的虽然还行，但是虫子我连看都不敢看，更别说去碰了。</p>
+          <p> </p>
+          <p>您只要帮我搜集4张[%dic:STR_DIC_I_QUEST_2323a]、5个[%dic:STR_DIC_I_QUEST_2323b]和3个[%dic:STR_DIC_I_QUEST_2323c]就行了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，这下得救了。事实上我正觉得为难呢。</p>
+          <p> </p>
+          <p>我是出了名的什么东西都能弄到的补给兵，总不能让人知道我因为害怕虫子而搞不到材料吧。</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到4张[%dic:STR_DIC_I_QUEST_2323a]、5个[%dic:STR_DIC_I_QUEST_2323b]和3个[%dic:STR_DIC_I_QUEST_2323c]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是一点都不理解我的心情啊。</p>
+          <p> </p>
+          <p>我必须要搜集到急救药材料，但是虫子我真的不敢碰，连看都不敢看。</p>
+          <p> </p>
+          <p>如果真的让我碰噬人虫，我也许当场就会吐出来。</p>
+          <p> </p>
+          <p>所以我现在非常为难...请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！您回来啦！</p>
+          <p> </p>
+          <p>我还担心您会忘了我的拜托，去别的地方了呢。</p>
+          <p> </p>
+          <p>我让您去找的急救药材料都搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出急救药材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没把材料搜集齐啊？</p>
+          <p> </p>
+          <p>啊啊，我这么信任[%username]大人...</p>
+          <p> </p>
+          <p>真的拜托您了！</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到[%dic:STR_DIC_I_QUEST_2323a]、[%dic:STR_DIC_I_QUEST_2323b]和[%dic:STR_DIC_I_QUEST_2323c]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。真的非常感谢！</p>
+          <p> </p>
+          <p>多亏您我才能摆脱这个尴尬的处境。</p>
+          <p> </p>
+          <p>下次再有这种我自己不好弄的东西，干脆就拒绝算了。要不就去和术古商人交易。</p>
+          <p> </p>
+          <p>这是我的一点谢意。请您收下，千万别推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_2323a]、[%dic:STR_DIC_I_QUEST_2323b]和[%dic:STR_DIC_I_QUEST_2323c]，然后交给[%dic:STR_DIC_N_Aprily]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去帮助讨厌虫子的阿夫利力搜集急救药的材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>补给兵阿夫利力接到了要求提供急救药材料的申请，但因为材料之一是他非常害怕的虫子而感到非常头疼。</p>
+          <p> </p>
+          <p>帮助他搜集噬人虫皮革、石墓之刺和叙路克前腿，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

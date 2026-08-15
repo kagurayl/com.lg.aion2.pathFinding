@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+		<body>
+          <p>- 制作委托书 -</p>
+		  <p>委托制作以下物品</p>
+		  <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>- 制作状况 -</p>
+		  <p> </p>
+		  <p>进行状况</p>
+		  [%collectitem]
+		  <p> </p>
+          <p>委托物品 </p>
+		  [%task_product_list]
+          <p> </p>
+          <p>支付材料 </p>
+		  [%task_component_list]
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把制作委托的物品给[%dic:STR_DIC_N_[%task_npc_name]]</font></p>[%collectitem]</step>
+    </steps>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%task_npc]委托制作 [%task_product]%物品锻造[%task_product_count]个.</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>委托制造: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>制作中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，对了，我太累太困了。</p>
+          <p> </p>
+          <p>现在这个样子，我站着都能睡着了。</p>
+          <p> </p>
+          <p>就是这样，我还是会在睡觉的时候被它们吵醒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为阿盖伦德雷克，我快活不下去了。</p>
+          <p> </p>
+          <p>不知道它们藏在废墟残骸的什么地方，只要我一睡觉，它们就会蹦出来乱叫。</p>
+          <p> </p>
+          <p>一想到那个声音，呃呃呃，让人直起鸡皮疙瘩。光出声音的话还算好的。</p>
+          <p> </p>
+          <p>它们的恶臭太厉害，走过这里就能把人熏个半死。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神奇的是，拉比乌斯就算阿盖伦德雷克走到鼻子前面，他都不皱一下眉头。他反而让我别那么敏感，真是！</p>
+          <p> </p>
+          <p>哎呀，拉比乌斯怎么想跟我没关系。我现在只有想想怎么能把那些吵闹的肮脏的东西除掉。</p>
+          <p> </p>
+          <p>我一个人肯定是没办法把它们清除干净的，[%username]大人您能帮帮我吗？</p>
+          <p> </p>
+          <p>当然，谢礼我一定不会少给的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿盖伦德雷克就藏在周围的岛上。</p>
+          <p> </p>
+          <p>事实上，我现在还能听到它们的声音。</p>
+          <p> </p>
+          <p>请您到周围转转，发现[%dic:STR_DIC_M_Ab1_1211_Bonedrake_32_An]和[%dic:STR_DIC_M_Ab1_1211_BonedrakeB_32_An]的话，就把它们清除掉。</p>
+          <p> </p>
+          <p>除掉的越多越好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不想帮我啊。</p>
+          <p> </p>
+          <p>没办法，只能先忍一下了。</p>
+          <p> </p>
+          <p>等不当班的时候再抽时间出去。呼，什么时候才能把它们全都清除掉啊...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天可真忙。刚才还和魔族对峙了一会儿。</p>
+          <p> </p>
+          <p>他们的目的可能是侦察，所以没过多久就退回去了。但是我担心以后他们会大量出现。</p>
+          <p> </p>
+          <p>哦，对了，您去办的事情怎么样了？您把阿盖伦德雷克清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是太感谢了。</p>
+          <p> </p>
+          <p>多亏了您，现在我终于可以安心地睡觉了。您不知道我这段时间我有多疲倦。</p>
+          <p> </p>
+          <p>请您收下。再次向您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把妨碍梅尔库斯休息的阿盖伦德雷克清除掉</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1211_Bonedrake_32_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1211_BonedrakeB_32_An]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mercus]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">梅尔库斯梅尔库斯说因为阿盖伦德雷克的拍翅声和恶臭而无法入睡，为了让他能够安心睡觉，帮他去把吵闹的阿盖伦德雷克和复活的阿盖伦德雷克清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅尔库斯说因为阿盖伦德雷克的拍翅声和恶臭而无法入睡，让我去残骸之岛帮他清除阿盖伦德雷克。</p>
+          <p> </p>
+          <p>按照梅尔库斯的拜托除掉了阿盖伦德雷克，并回去找到了他。他非常高兴，说现在终于可以好好睡觉了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

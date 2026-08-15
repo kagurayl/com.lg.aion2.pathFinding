@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你怎么还没走？在这里干嘛？</p>
+          <p> </p>
+          <p>我不是说过铁甲科塞利德的胡子之类的，我已经不吃了吗？</p>
+          <p> </p>
+          <p>你在这里赖着不走，难道我就会网开一面吗？</p>
+          <p> </p>
+          <p>要是被别人看到就麻烦了，你快走吧，呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">央求他提供一点情报。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，真是个执着的守护者。</p>
+          <p> </p>
+          <p>我这么说，一般人早就走了。</p>
+          <p> </p>
+          <p>好吧，我就把那个叫耶蒙还是什么的人想知道的宾塔奇的标准告诉你。</p>
+          <p> </p>
+          <p>但是，我有个条件。最近我的身体不如以前了，所以请你帮我搜集一些补充体力的食物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要找的食物有两种。</p>
+          <p> </p>
+          <p>一种是[%dic:STR_DIC_I_QUEST_1796a]，另一种是[%dic:STR_DIC_I_QUEST_1796b]。</p>
+          <p> </p>
+          <p>如果你能帮我搜集到，我就告诉你想知道的东西。</p>
+          <p> </p>
+          <p>你在干什么？还不快出发？</p> 
+          <p> </p>
+          <p>呐呐，最近的守护者动作太慢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>连这点心理准备都没有，就敢来找我，呐！</p>
+          <p> </p>
+          <p>我看你是个只知道占便宜的守护者。</p>
+          <p> </p>
+          <p>我不想再和你多说，你快走吧。快从我眼前消失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，吓我一跳！</p>
+          <p> </p>
+          <p>是你运气好呢？还是你很执着？</p>
+          <p> </p>
+          <p>怎么这么快又找到我了？</p>
+          <p> </p>
+          <p>呼，不过没办法，约定就是约定。我说的东西带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出格里芬的蛋和克里顿的唾腺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是说的很清楚吗？必须把[%dic:STR_DIC_I_QUEST_1796a]和[%dic:STR_DIC_I_QUEST_1796b]全部拿来，我才会告诉你想要的东西。</p>
+          <p> </p>
+          <p>但是这算什么啊？</p>
+          <p> </p>
+          <p>这是你自己先违背了约定。你不要再来烦我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，你真的拿来了啊。</p>
+          <p> </p>
+          <p>需要从埃尔特内走到因特尔蒂卡，我还以为你会中途放弃呢。</p>
+          <p> </p>
+          <p>活了这么久，我还是头一次见到这么执着的人。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_Griffon_35_An]%和[%dic:STR_DIC_M_Criton_36_An]身上搜集到的东西交给[%dic:STR_DIC_N_Shugo_AB1_7]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">宾塔奇说如果帮他搜集到需要的东西，就告诉我宾塔奇标准。去埃尔特内和因特尔蒂卡搜集凶暴的格里芬的蛋和刀尾克里顿的唾腺吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>宾塔奇说如果能帮他搜集到需要的东西，就把宾塔奇标准告诉我。</p>
+          <p> </p>
+          <p>按照他所说，搜集到栖息在埃尔特内的凶暴的格里芬的蛋和栖息在因特尔蒂卡的刀尾克里顿的唾腺并交给了他，他感叹说没见过这么执着的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

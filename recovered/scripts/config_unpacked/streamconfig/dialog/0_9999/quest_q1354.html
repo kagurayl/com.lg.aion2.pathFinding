@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>飞行课程结束了吗？</p>
+          <p> </p>
+          <p>[%username]你自己去试试吧？</p>
+          <p> </p>
+          <p>光看不练的话又有什么用。当然需要进行练习。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>相信顺序你应该知道了。</p>
+          <p> </p>
+          <p>首先先垂直通过我后面的环，然后依次通过圆塔柱子上的洞。</p>
+          <p> </p>
+          <p>最后到神殿中央最高的圆塔那里穿过尖塔的洞，然后再回到我这里就行了。</p>
+          <p> </p>
+          <p>时间是2分钟。每次从洞里通过的时候速度会变快，所以时间应该足够。</p>
+          <p> </p>
+          <p>你想现在就开始挑战吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的。我再说一遍，时间限制是2分钟。</p>
+          <p> </p>
+          <p>必须在2分钟内通过我说过的所有地方，然后回来。</p>
+          <p> </p>
+          <p>如果时间不够，可能要掉下来的话，最好能先降落到安全的地方。</p>
+          <p> </p>
+          <p>那我就开始计时了。请出发吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">好，马上出发。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还没做好进行上级飞行术考试的准备。</p>
+          <p> </p>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>如果能力不行而勉强参加，不小心从高处掉下来的话，丢脸的只是自己。</p>
+          <p> </p>
+          <p>请你再磨练一下自己的飞行技术，然后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦。</p>
+          <p> </p>
+          <p>已经对飞行术有点熟悉了吧？</p>
+          <p> </p>
+          <p>你应该也是第一次以这么快的速度飞行吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过可惜的是已经过了限定的时间。</p>
+          <p> </p>
+          <p>一开始总是会失败的不是吗？什么事情都需要练习。</p>
+          <p> </p>
+          <p>练习练习之后再来尝试吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你这是在干什么？</p>
+          <p> </p>
+          <p>2分钟时间可并不多。你就这么有自信？</p>
+          <p> </p>
+          <p>别磨磨蹭蹭的，快出发吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也经常说，守护者的翅膀是为了飞行而长的。</p>
+          <p> </p>
+          <p>所以飞行术需要经常练习。</p>
+          <p> </p>
+          <p>你通过了我的考试，现在不管去什么地方都可以自由地飞行了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">完成飞行准备后和[%dic:STR_DIC_N_Marana]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">在2分钟内通过上级飞行考试之后，和[%dic:STR_DIC_N_Marana]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">去向[%dic:STR_DIC_N_Marana]确认上级飞行术考试的结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须按照马拉娜的提议去参加上级飞行术考试。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+       <notify progress="2"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">上级飞行术考试开始</notify>
+       <notify progress="3"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">通过第1圆塔</notify>
+       <notify progress="4"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">通过第2圆塔</notify>
+       <notify progress="5"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">通过第3圆塔</notify>
+       <notify progress="6"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">通过第4圆塔</notify>
+       <notify progress="7"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">通过第5圆塔。请通过埃拉库斯地下神殿的最高层尖塔。</notify>
+       <notify progress="8"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">请去向马拉娜确认飞行结果。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马拉娜说听完课程之后，需要进行考试。于是按照她的说明，两分钟内通过了埃拉库斯地下神殿的环、圆塔柱子上的洞，以及尖塔，并回去找到了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

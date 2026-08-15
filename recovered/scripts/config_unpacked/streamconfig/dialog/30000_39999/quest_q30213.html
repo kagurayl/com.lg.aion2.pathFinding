@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了确认之前有没有类似的事情，我翻阅了各种文献。</p>
+          <p> </p>
+          <p>得知有一种被当作能量源使用的魔法生命体。真是太好了。</p>
+          <p> </p>
+          <p>[%username]大人，您说过在空置的仓库里看见过阿盖伦德雷克，对吧？</p>
+          <p> </p>
+          <p>据说龙族会提取并使用阿盖伦德雷克体内的魔力，因此一定可以有办法利用空置的仓库里的阿盖伦德雷克的魔力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭阿盖伦德雷克，应该可以得到魔力精髓。</p>
+          <p> </p>
+          <p>最好是消灭比普通德雷克更强的家伙。因为它们会比普通阿盖伦德雷克拥有更强的魔力精髓。</p>
+          <p> </p>
+          <p>这应该会是最后一次尝试。</p>
+          <p> </p>
+          <p>您愿意去搜集魔力精髓，重新启动时空之宝珠吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您再去一趟帕休曼迪尔寺院，消灭空置的仓库里的[%dic:STR_DIC_E_IDCatacombsN_BonedrakeNmd_55_Ah]。</p>
+          <p> </p>
+          <p>搜集到魔力精髓之后，请您用它和水晶棒，去启动时空之宝珠。</p>
+          <p> </p>
+          <p>魔力精髓中的能量注入水晶棒之后，应该就能启动时空之宝珠了。</p>
+          <p> </p>
+          <p>启动[%dic:STR_DIC_OBJ_IDCatacombs_BigOrb_Q30211]之后，请您到封印鲁德拉的地方去。下面的事情，就由[%username]大人您来处理了。</p>
+          <p> </p>
+          <p>如果您没有消灭鲁德拉的自信，最好不要勉强。可以等召集到更强的同伴之后一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次真的是最后一次了，您想就此放弃了吗？</p>
+          <p> </p>
+          <p>您辛苦了这么长时间，难道不想知道鲁德拉长成什么样子吗？</p>
+          <p> </p>
+          <p>我想您可能是因为任务迟迟不能完成，所以有点累了。您先去休息一下吧。</p>
+          <p> </p>
+          <p>等恢复精神之后，您一定会改变主意的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(宝珠逐渐开始发光。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">靠近它。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(宝珠发出了耀眼的光芒。)</p>
+          <p> </p>
+          <p>(通往寒冰流放所的次元之门打开了。进去之前，最好先做好心理准备。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(宝珠上的光消失了。)</p>
+          <p> </p>
+          <p>(好像是因为没有用来启动宝珠的魔力精髓。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久不见，[%username]。</p>
+          <p> </p>
+          <p>你回来找我，一定有重要的事情要向我汇报吧？</p>
+          <p> </p>
+          <p>封印守护者的警告的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>仅是查清封印守护者的警告是指鲁德拉，就已经很不容易了。</p>
+          <p> </p>
+          <p>你还找到了鲁德拉封印的场所，今后要对付它就容易多了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDCatacombsN_BonedrakeNmd_55_Ah]，搜集魔力精髓，然后启动[%dic:STR_DIC_OBJ_IDCatacombs_BigOrb_Q30211]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Cainus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集魔力精髓，启动时空之宝珠。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗梅内斯说找到了在水晶棒中注入魔力的方法。</p>
+          <p> </p>
+          <p>按照他所说的，消灭了空置的仓库的不死的斯皮纳特，获得了魔力精髓。</p>
+          <p> </p>
+          <p>同时使用魔力精髓和水晶棒，启动了时空之宝珠，进入了囚禁鲁德拉的寒冰流放所。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

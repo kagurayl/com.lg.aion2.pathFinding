@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30501</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于巴萨尔迪军团入侵兰图斯前哨基地的事情，我始终有一个疑问。</p>
+          <p> </p>
+          <p>虽然那是在提亚玛兰塔建造的前哨基地，但是龙族应该是没有可能找到那里的。</p>
+          <p> </p>
+          <p>那里施加了好几道鸢族的魔法，龙族是绝对不会感觉到那里隐藏着东西的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是那里却遭到了龙族的入侵……我想一定是有人把情报泄露了出去。</p>
+          <p> </p>
+          <p>想到我们中间可能有背叛者，我就感到很痛心。</p>
+          <p> </p>
+          <p>好了，现在不是追究有没有背叛者的时候。</p>
+          <p> </p>
+          <p>必须尽快派人支援，帮助还在那里战斗的同伴。</p>
+          <p> </p>
+          <p>[%username]大人，您能马上到[%dic:STR_DIC_W_ZONE_NAME_IDYun]去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到了兰图斯前哨基地之后，您应该可以见到[%dic:STR_DIC_N_Ariana]大人。</p>
+          <p> </p>
+          <p>她让我逃了出来，请求援军的支援，但她自己应该还在那里战斗。</p>
+          <p> </p>
+          <p>见到阿里亚娜大人之后，她会告诉您兰图斯前哨基地的详细情况。</p>
+          <p> </p>
+          <p>现在不知道她在什么地方，找到她之后，请您按照她的命令行动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不想去援助兰图斯前哨基地的话，当初您就应该拒绝麦奥斯大人啊。</p>
+          <p> </p>
+          <p>跟元老说愿意帮忙，但是跟我又说不行，您到底是什么意思啊？</p>
+          <p> </p>
+          <p>以您的这种态度，我很怀疑鸢族和天族的合作是否还能维持下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等待援军，没想到来的会是天族。</p>
+          <p> </p>
+          <p>不管怎样，现在的情况不允许我挑挑拣拣。</p>
+          <p> </p>
+          <p>我们必须集中力量击退巴萨尔迪军团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问应该怎样帮她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有些事情我得先告诉你。</p>
+          <p> </p>
+          <p>虽然我不想提起，但是我必须告诉你。</p>
+          <p> </p>
+          <p>负责管理兰图斯前哨基地的梅罗伯斯……背叛了我们。</p>
+          <p> </p>
+          <p>巴萨尔迪军团之所以能够袭击这里，是因为梅罗伯斯打开了次元之门，把巴萨尔迪军团放了进来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_ZONE_NAME_IDYun]寻找阿里亚娜</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">帮助陷入危机的[%dic:STR_DIC_N_Ariana]，并和她对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">兰图斯前哨基地需要援军。去那里见见阿里亚娜吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥雷提亚说兰图斯前哨基地马上需要支援。</p>
+          <p> </p>
+          <p>于是到兰图斯前哨基地去，见到了在那里战斗的阿里亚娜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命进行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

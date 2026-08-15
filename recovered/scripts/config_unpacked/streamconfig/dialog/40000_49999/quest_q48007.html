@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近有很多人拜托我向[%username]大人传话。</p>
+          <p> </p>
+          <p>啊，当然作为一名空间移动师，经常有人让我帮着传话，不过找[%username]大人的人好像特别多。</p>
+          <p> </p>
+          <p>这说明[%username]大人的名气很响。</p>
+          <p> </p>
+          <p>这次是……(拿出手册查看)是佩特拉尔卡大人的口信。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他说“如果您相信命运，就到马勒库坦主神殿去找佩特拉尔卡。”</p>
+          <p> </p>
+          <p>佩特拉尔卡大人隶属于马勒库坦兄弟会。看来一定是马勒库坦兄弟会有什么事要和[%username]谈。</p>
+          <p> </p>
+          <p>除了知道他们追随马勒库坦主神之外，没人知道他们到底做什么工作。到底会是什么事情呢？</p>
+          <p> </p>
+          <p>[%username]大人，您去见见[%dic:STR_DIC_N_Petarca]大人，应该就能知道了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道怎么到马勒库坦主神殿去吗？</p>
+          <p> </p>
+          <p>通过非普洛斯特桥旁边的[%dic:STR_DIC_OBJ_DC1_DC2_TELEPORT]就可以到达那里。</p>
+          <p> </p>
+          <p>希望您能顺利完成这次的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会虽然是个神秘的团体，但是他们所作的事情并不是什么坏事。</p>
+          <p> </p>
+          <p>如果您没有别的事情的话，我想最好还是去看看……</p>
+          <p> </p>
+          <p>以后有时间的话，请过来找我。口信我会一直保留着的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]%，我听说了很多关于你的事情。</p>
+          <p> </p>
+          <p>你的过去虽然充满了秘密，但现在马勒库坦主神殿都已经知道了你的名字。</p>
+          <p> </p>
+          <p>我就单刀直入了。</p>
+          <p> </p>
+          <p>[%username]，你愿意成为马勒库坦兄弟会的成员，实践命运的意志吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问马勒库坦兄弟会的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就和它的名字一样，我们是追随马勒库坦主神，施善惩恶的集团。</p>
+          <p> </p>
+          <p>加入兄弟会的人，会把其他人当作亲人，相互帮助，相互学习。</p>
+          <p> </p>
+          <p>我们会根据马勒库坦主神的神谕执行任务，把[%username]%你引向命运的道路。</p>
+          <p> </p>
+          <p>也就说，我们是将伏魔殿和亚特雷亚的未来引向正确的方向的引导者。</p>
+          <p> </p>
+          <p>我不想让您马上做出决定。</p>
+          <p> </p>
+          <p>请慎重考虑，决定之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_W_DC2]的[%dic:STR_DIC_N_Petarca]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说马勒库坦兄弟会的佩特拉尔卡正在找我。到马勒库坦主神殿去见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会下属的佩特拉尔卡托人给我传信，说有事请要跟我说，于是去马勒库坦主神殿见到了他。</p>
+          <p> </p>
+          <p>他跟我说明了马勒库坦兄弟会的情况，说如果想加入马勒库坦兄弟会，可以去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

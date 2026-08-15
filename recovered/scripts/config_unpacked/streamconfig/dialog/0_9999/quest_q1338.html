@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮我去埃拉库斯沙漠进行侦察，真是让我少了很大一桩心事。</p>
+          <p> </p>
+          <p>虽然很想拜托您帮我做其他事情，不过需要帮助的不止我一个人。</p>
+          <p> </p>
+          <p>看到您出色地完成了侦察任务，想要请[%username]大人帮忙的守卫不止一两个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然大家都说需要[%username]大人您的帮助，但是看起来[%dic:STR_DIC_N_Kalikrates]好像最需要您的帮助。</p>
+          <p> </p>
+          <p>由于他是个值得信任的人，所以我委托他去做的任务多了一点。</p>
+          <p> </p>
+          <p>不过一开始他都完成得很出色，只不过最近我看他有点太累了。</p>
+          <p> </p>
+          <p>您去跟他说是我让您去的，让他有什么需要帮助的话就说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>我担心他会不会因为事情太多而感到厌烦，就那样走掉。</p>
+          <p> </p>
+          <p>您去找[%dic:STR_DIC_N_Kalikrates]的话，他一定会让您做很多事情。</p>
+          <p> </p>
+          <p>请您帮助他，不要拒绝。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我让您做了太多辛苦的工作。</p>
+          <p> </p>
+          <p>由于人手不足，我也没什么办法。</p>
+          <p> </p>
+          <p>以后有时间的话，希望您再来侦察队这里帮帮我。</p>
+          <p> </p>
+          <p>[%username]大人您的话，我们随时欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，要做的事情太多了...什么时候才能处理完啊...</p>
+          <p> </p>
+          <p>[%username]大人！您倒是和我打声招呼啊，我都不知道您来了。</p>
+          <p> </p>
+          <p>刚才我又在七想八想了。</p>
+          <p> </p>
+          <p>您找我有什么事吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达德莫克里托斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是太感谢了！</p>
+          <p> </p>
+          <p>感谢德莫克里托斯大人，感谢[%username]大人。</p>
+          <p> </p>
+          <p>我真的很需要帮助。</p>
+          <p> </p>
+          <p>这下我就能放心处理剩下的任务了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Kalikrates]转达德莫克里托斯的话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说卡里克拉泰斯非常需要帮助。去他那里转达德莫克里托斯的话吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德莫克里托斯说卡里克拉泰斯目前非常需要帮助，请我去帮助他。</p>
+          <p> </p>
+          <p>向卡里克拉泰斯转达了德莫克里托斯的话，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看我们傻站在这，觉得很奇怪吧。</p>
+          <p> </p>
+          <p>我们也不喜欢这样啊。可是森林里到处是龙蜥兽，农场里遍地是强盗，不这样也没别的办法啊。</p>
+          <p> </p>
+          <p>本来，刚从托尔巴斯村的[%dic:STR_DIC_N_Eradis]那里收到了帮忙采集[%dic:STR_DIC_I_vegetable_n_c_10a]的委托，可现在连一株也没有弄到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有关库库勒的信息。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>适合[%dic:STR_DIC_I_vegetable_n_c_10a]生长的地方很多，或许是因为土地肥沃，最近农场附近也长出不少。</p>
+          <p> </p>
+          <p>它的根甘甜爽口，加上还含有促进新陈代谢的成分，吃了以后会令你精力充沛。</p>
+          <p> </p>
+          <p>这附近的话，在[%dic:STR_DIC_FLA24]会很容易找到。不过强盗们占据了农场，根本没办法接近。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">同意帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我得遵守同埃尔迪奥的约定，守护者大人能不能帮助我呢？</p>
+          <p> </p>
+          <p>可能是用这些材料做全新的料理吧。</p>
+          <p> </p>
+          <p>如果能得到你的帮助，我将十分感激...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去[%dic:STR_DIC_FLA24]下面的田地，很快就会发现[%dic:STR_DIC_I_vegetable_n_c_10a]。</p>
+          <p> </p>
+          <p>如果认真的训练了采集技能，获取库库勒的工作将会十分顺利。</p>
+          <p> </p>
+          <p>只需要４株就够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我明白了。</p>
+          <p> </p>
+          <p>暂时也没有别的办法。</p>
+          <p> </p>
+          <p>埃尔迪奥或许会埋怨几句，不过也不至于因此而断绝来往。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不可思议，守护者大人竟然接受了委托... </p>
+          <p> </p>
+          <p>那么您采集到[%dic:STR_DIC_I_vegetable_n_c_10a]了吗？</p>
+          <p> </p>
+          <p>雷帕尔革命团的强盗们把农场弄得一团糟，库库勒恐怕也没幸免吧？ </p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">交出采集到的库库勒。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没采到？那就赶紧去，不要多说了。</p>
+          <p> </p>
+          <p>我只是委托采集，可没有趁机结交守护者大人，故意讨好的意思。</p>
+          <p> </p>
+          <p>请赶紧去采集[%dic:STR_DIC_I_vegetable_n_c_10a]吧。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚好４株，太棒了。</p>
+          <p> </p>
+          <p>我现在得回村子去把这些东西交给埃尔迪奥。</p>
+          <p> </p>
+          <p>谢谢你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_I_vegetable_n_c_10a]，并交给[%dic:STR_DIC_N_Ondanius]。 </font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_N_Ondanius]提出委托，内容是协助采集库库勒。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Ondanius]收到了协助采集库库勒的委托，可是由于雷帕尔革命团的存在，采集工作无法进行。</p>
+          <p> </p>
+          <p>接受了他的请求，帮他去巴尔波亚农场使用采集技能获取库库勒，并交给他。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

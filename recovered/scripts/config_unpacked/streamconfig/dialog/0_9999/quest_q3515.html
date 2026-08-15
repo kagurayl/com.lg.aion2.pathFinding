@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏你的帮助，恶臭减轻了不少，但还不够。</p>
+          <p> </p>
+          <p>您也知道，这里没有派来支援的监视兵，尤普罗西内村的情况也很不好。</p>
+          <p> </p>
+          <p>在黑色眼泪沼泽地区腐木原野南侧的路上发出的恶臭消失之前，希望您能继续帮我。</p>
+          <p> </p>
+          <p>因为问题不仅仅是恶臭。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>恶臭的原因是污染的精灵。</p>
+          <p> </p>
+          <p>当然沼泽地带的泥浆发出的味道也很难闻，但却无法和精灵的恶臭相比。</p>
+          <p> </p>
+          <p>长期以来凝聚起来的污染的泥土和石头的恶臭非常厉害。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能帮我把那些让人头疼的精灵除掉。</p>
+          <p> </p>
+          <p>我知道这件事并不容易，但是全靠您了，我会好好酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还担心您会拒绝呢，真是太好了。</p>
+          <p> </p>
+          <p>请您去腐木原野南侧道路消灭[%dic:STR_DIC_M_ElementalEarth2_34_An]和[%dic:STR_DIC_M_ElementalEarth2_35_An]。</p>
+          <p> </p>
+          <p>如果能把他们消灭掉，恶臭一定会减轻不少。</p>
+          <p> </p>
+          <p>每天拼死战斗就已经够辛苦的了，再闻到那种恶臭的话，士气一定会低落的。</p>
+          <p> </p>
+          <p>[%username]大人，这次就全靠您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人也忍受不了那种恶臭吧？看来我是太勉强您了。</p>
+          <p> </p>
+          <p>我似乎让您付出得太多了。</p>
+          <p> </p>
+          <p>这件事我会和其他的守卫一起解决。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在战场上不能有一丝的差池。</p>
+          <p> </p>
+          <p>有时候真希望极乐世界能再给我们提供一些支援。</p>
+          <p> </p>
+          <p>希望他们能把其他地方的预算，花一点在努力战斗的士兵身上。</p>
+          <p> </p>
+          <p>那样的话，我们的情况就会好得多。</p>
+          <p> </p>          
+          <p>对了，[%username]大人，[%dic:STR_DIC_M_ElementalEarth2_34_An]和[%dic:STR_DIC_M_ElementalEarth2_35_An]全部消灭掉了吗？听到他们被全部消灭掉的消息，大家一定会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>您竟然帮我们打倒了因为恶臭而束手无策的污染的精灵……</p>
+          <p> </p>
+          <p>真是辛苦了。这些虽然不多，但却是监视基地给您的一点谢意。</p>
+          <p> </p>
+          <p>希望能以此报答[%username]大人付出的辛苦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭发出恶臭的精灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth2_34_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth2_35_An]([%5]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Brosia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">因为黑色眼泪沼泽地带发出的恶臭，附近的人都非常痛苦。按照布洛西亚的指示，消灭污染的罪魁祸首被污染的土之精灵和大地精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说前往尤普罗西内的路上的被污染的土之精灵和大地精灵发出的臭味很厉害。</p>
+          <p> </p>
+          <p>为了被臭味折磨的人们，消灭掉了发出恶臭的精灵，布洛西亚为此非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

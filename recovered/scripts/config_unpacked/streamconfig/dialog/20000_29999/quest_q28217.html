@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您又来见我，一定已经见过希宁战斗教官了吧？</p>
+          <p></p>
+          <p>您一定需要第3神庙训练所的入场券吧？</p>
+          <p></p>
+          <p>在孤独竞技场和混沌竞技场入场券中，您需要哪一种呢？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说需要混沌竞技场入场券。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>混沌竞技场是一次和多个对象决斗的地方。</p>
+          <p></p>
+          <p>少则需要对付6个，多则需要对付9个。</p>
+          <p></p>
+          <p>所以战略很重要。有时必须根据情况，帮助其他对象打倒其他人。</p>
+          <p></p>
+          <p>但是也有可能会遭到别人的攻击，因此必须看清楚情况。</p>
+          <p></p>
+          <p>好了，您需要混沌竞技场的入场券，对吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>发放混沌竞技场入场券需要一些时间，请稍等一下。</p>
+          <p></p>
+          <p>每人每天只能出入一次，因此我需要确认一下之前有没有领取过。</p>
+          <p></p>
+          <p>除此之外，还要确认[%username]大人是否具有基本的资格。啊，这里是实战训练所，要求达到一定水平以上。</p>
+          <p></p>
+          <p>我很快就能确认完毕，请稍等一下，不要走开。</p>
+          <p></p>
+          <p>确认完之后，我会叫您的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>为什么？您不需要混沌竞技场入场券吗？</p>
+          <p></p>
+          <p>啊哈，您是需要1对1竞技场入场券吗？</p>
+          <p></p>
+          <p>那就应该领取孤独竞技场入场券，而不是混沌竞技场入场券。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]大人？您是[%userclass]，对吧？</p>
+          <p></p>
+          <p>确认完毕。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>来，请收下。这是混沌竞技场入场券。</p>
+          <p></p>
+          <p>每天只能领取一张，小心不要弄丢。</p>
+          <p></p>
+          <p>请多准备一些竞技场专用秘药。在重要的时候如果没有药水，可能会弄得很狼狈。</p>
+          <p></p>
+          <p>希望您能努力参加训练。</p>
+          <p></p>
+          <p>如果您需要混沌竞技场入场券，请再来找我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去雷加尔那里领取混沌竞技场入场券</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">去雷加尔行政官那里领取混沌竞技场入场券。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>去雷加尔行政官那里领取混沌竞技场入场券，他说每天只能领取一次，让我等一下。</p>
+          <p></p>
+          <p>确认完毕之后，他把混沌竞技场入场券给了我，让我努力训练。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

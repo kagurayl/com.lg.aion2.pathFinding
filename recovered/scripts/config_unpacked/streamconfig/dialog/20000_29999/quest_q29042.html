@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我倒是有一个办法，可以找到精炼德拉纳碎片。</p>
+          <p> </p>
+          <p>不知你知不知道，有几个逃到乌云贸易团来的黑暗术古商人。</p>
+          <p> </p>
+          <p>其中有一个说想来伏魔殿看看，所以搭乘上一班船来到了这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看见那个黑暗术古商人的包袱里有精炼德拉纳碎片……</p>
+          <p> </p>
+          <p>嗯……但是……我不想直接和那个黑暗术古商人交易。</p>
+          <p> </p>
+          <p>呐，怎么说了，因为现在是排字论辈的时候。</p>
+          <p> </p>
+          <p>你能帮我去黑暗术古商人那里把东西买过来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你能理解我。</p>
+          <p> </p>
+          <p>黑暗术古商人的名字是[%dic:STR_DIC_N_Shulack_DC1]。</p>
+          <p> </p>
+          <p>要想得到东西，必须要支付代价。她对这里还不了解，一定不会接受基纳或铸币。</p>
+          <p> </p>
+          <p>她一定只肯用她们使用的黑暗术古铸币交易，所以你最好准备一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，那就没办法了。</p>
+          <p> </p>
+          <p>虽然这样就不能遵守和顾客的约定，但我绝不会在自尊心的战斗中认输。</p>
+          <p> </p>
+          <p>我会向贝尔盖米尔说明情况，并请求她的谅解的。</p>
+          <p> </p>
+          <p>你可以走了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>查奥奇奇一定让你很头疼吧？</p>
+          <p> </p>
+          <p>我要的东西拿到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出精炼德拉纳碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，我就知道会这样。</p>
+          <p> </p>
+          <p>我就觉得那个叫查奥奇奇的黑暗术古有点奇怪。</p>
+          <p> </p>
+          <p>商人就应该迎合顾客的口味，她们却想让顾客迎合自己的口味。</p>
+          <p> </p>
+          <p>就算再丢脸，也得放低了架子去迎合她。</p>
+          <p> </p>
+          <p>只要你答应查奥奇奇的要求，应该就可以得到黑暗术古铸币。你去用黑暗术古铸币把东西买回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看东西)呵呵，质量看上去还不错。</p>
+          <p> </p>
+          <p>我应该直接给贝尔盖米尔送过去。</p>
+          <p> </p>
+          <p>其她的事情我会自己去办，你去做你的事情吧。</p>
+          <p> </p>
+          <p>对了，拿着这个。这应该能抵得上你给查奥奇奇的钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_N_Shulack_DC1]那里购买精炼德拉纳碎片，然后交给[%dic:STR_DIC_N_Shugo_DC1_22]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说黑暗术古商人查奥奇奇那里有精炼德拉纳碎片。必须从她手上把东西买过来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩伊灵灵说黑暗术古商人手上有精炼德拉纳碎片，让我去把东西买回来。</p>
+          <p> </p>
+          <p>从黑暗术古商人那里买到了德拉纳碎片，佩伊灵灵说剩下的事情她会自己处理，支付了酬劳之后把东西拿走了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

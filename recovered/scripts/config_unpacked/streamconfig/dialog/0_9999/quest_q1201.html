@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>真是感谢您上次给予帮助。</p>
+       <p> </p>
+       <p>不过[%username]大人，您现在忙吗？</p>
+       <p> </p>
+       <p>知道您现在有很多任务。不过您要是有空…</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然[%username]大人这么说，我就厚着脸皮求您了。</p>
+          <p> </p> 
+          <p>上贡时间没剩几天了，但是到现在处置的肯索利德数量还差一大截。</p>  
+          <p> </p> 
+          <p>上次您不费功夫就能擒获[%dic:STR_DIC_MLA41]，能不能再帮一次忙?</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%userclass]大人，真的谢谢您。</p>
+          <p> </p>
+          <p>那么请您除掉9只[%dic:STR_DIC_MLA41]吧。</p>
+          <p> </p>
+          <p>我脸皮再厚，也不好意思让您全部清除掉。 </p>
+          <p> </p>
+          <p>啊，我肯定会报答您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也明白没有脸再拜托您。</p>
+          <p> </p>
+          <p>不过事情紧急，真的没有办法。</p>
+         <p> </p>
+         <p>您不知道我反省了多少次。希望再变成守护者帮助处于困境的人类。</p>
+         <p> </p>
+         <p>您一定要帮我恢复原来的样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮我除掉9只[%dic:STR_DIC_MLA41]了吗？</p>  
+         <p> </p>
+         <p>对[%userclass]大人来说应该是轻而易举的事情…</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]大人。 </p>
+          <p> </p>          
+          <p>您帮了我的大忙。</p>   
+          <p> </p>   
+          <p>等我重新成为守护者后一定会报答您的恩惠。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去帮托格加伊奥内除掉[%dic:STR_DIC_MLA41]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和托格 [%dic:STR_DIC_LA44]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了托格加伊奥内能再次恢复守护者身份，受他的委托去除掉9只[%dic:STR_DIC_MLA41]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托格加伊奥内说上一次的事情非常感谢，如果不忙的话就在期限内再帮他除掉9只肯索利德。</p>
+          <p> </p>
+          <p>所以按照要求除掉了9只肯索利德，他非常感激，给了我一些报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

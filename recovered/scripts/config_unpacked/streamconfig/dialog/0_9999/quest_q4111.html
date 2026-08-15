@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，象鼻虫全部逃走了。</p>
+          <p> </p>
+          <p>你走了之后，象鼻虫又回来了。</p>
+          <p> </p>
+          <p>你不在的时候，象鼻虫经常过来欺负卢高，象鼻虫真坏。</p>
+          <p> </p>
+          <p>卢高很不高兴。这样下去的话，农田就保不住了。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>象鼻虫不断出现，请你帮我不断地消灭象鼻虫。</p>
+          <p> </p>
+          <p>我没时间去管象鼻虫。卢高的任务是守卫农田。</p>
+          <p> </p>
+          <p>守护者，请你帮帮卢高。</p>
+          <p> </p>
+          <p>帮我把又来欺负我的[%dic:STR_DIC_M_MerdionRedD_21_n]赶走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_MerdionRedD_21_n]在周围有很多。</p>
+          <p> </p>
+          <p>卢高只能吓唬吓唬它们，但你应该可以把它们杀掉吧？</p>
+          <p> </p>
+          <p>请你帮帮卢高，让我可以保护农田。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢高能动的只有脑袋。</p>
+          <p> </p>
+          <p>所以象鼻虫再怎么欺负我，我也只能喊喊罢了。</p>
+          <p> </p>
+          <p>就这样倒下的话，卢高就会变成没用的垃圾。</p>
+          <p> </p>
+          <p>卢高不想就这样倒下……请你帮帮我，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>象鼻虫很烦人。</p>
+          <p> </p>
+          <p>卢高用眼睛盯着它们看，它们却一点不在乎。</p>
+          <p> </p>
+          <p>要是你不来帮我，卢高就要累死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，谢谢你。</p>
+          <p> </p>
+          <p>你走了之后，象鼻虫又会出现。</p>
+          <p> </p>
+          <p>不过我还是要谢谢你，非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_MerdionRedD_21_n]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">[%dic:STR_DIC_N_Scarecrow_Lugo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭欺负稻草人卢高的慢性子麦尔迪温。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稻草人卢高说象鼻虫再次出来欺负他，向我请求帮助。于是帮他消灭掉了慢性子麦尔迪温，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

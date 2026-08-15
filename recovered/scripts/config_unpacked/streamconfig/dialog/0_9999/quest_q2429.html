@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一个人如果沉迷于什么东西的话，就不会有兴趣去管其他的事情。</p>
+          <p> </p>
+          <p>就看看我现在这个样子吧。为了在和斯派尔的打赌中获胜，一直在这个又冷又湿的地方坚持。</p>
+          <p> </p>
+          <p>呆了这么长时间，我感觉最近身体有点吃不消了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想不能老这样呆着，于是我想做一个睡袋。</p>
+          <p> </p>
+          <p>但是那样的话，就必须要有材料。</p>
+          <p> </p>
+          <p>不过我又不能自己去搜集，因为不知道斯派尔什么时候会停止修行...</p>
+          <p> </p>
+          <p>[%username]你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个附近可以使用的材料我想应该是蛇颈龙皮革和布拉克斯毛皮。</p>
+          <p> </p>
+          <p>请你帮我去捕捉[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]，搜集皮革带回来。</p>
+          <p> </p>
+          <p>制作睡袋可以在这里一边看着斯派尔一边做。请你快帮我去搜集材料吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者之间应该互相帮助，干嘛这么无情地拒绝我啊？</p>
+          <p> </p>
+          <p>大家都忙着战斗，一定看不起光顾着打赌的我。</p>
+          <p> </p>
+          <p>但是我，曾经也是在埃雷修兰塔非常出名的人。</p>
+          <p> </p>
+          <p>但是持续的战斗让我失去了生活的意义。后来我在打赌中找回了生活的乐趣，所以希望能继续享受这种乐趣...</p>
+          <p> </p>
+          <p>我已经为亚特雷亚做出了足够多的贡献，不管干什么我都不会觉得愧疚！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在潮湿寒冷中发抖，这样下去的话，不用几天也许就会生病。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2429a]和[%dic:STR_DIC_I_QUEST_2429b]带回来了吗？</p>
+          <p> </p>
+          <p>如果带来的话，就让我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？还没去捕捉[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]吗？</p>
+          <p> </p>
+          <p>你看我的脸色怎么样？</p>
+          <p> </p>
+          <p>如果因此病倒的话，就完蛋了。被瀑布淋着的斯派尔倒还好好的。</p>
+          <p> </p>
+          <p>所以，请你快去帮我搜集蛇颈龙皮革和布拉克斯毛皮吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能是因为刚捕到的，所以还残留着温度。</p>
+          <p> </p>
+          <p>谢谢你。现在只要发挥一下裁缝手艺，把睡袋做出来就行了。</p>
+          <p> </p>
+          <p>来，请你收下。这是你的辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]搜集皮革，然后交给[%dic:STR_DIC_N_Fathir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帕提尔说一直呆在寒冷的地方，所以有点坚持不下去了。去帮他搜集蛇颈龙皮革和布拉克斯毛皮，让他可以做一个温暖的睡袋吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕提尔说因为斯派尔而一直在潮湿寒冷的地方坚持，身体有点吃不消。</p>
+          <p> </p>
+          <p>他说想做个睡袋抵抗寒冷，但是如果去搜集材料的话，就不能继续看着斯派尔了。</p>
+          <p> </p>
+          <p>于是帮助他搜集到了蛇颈龙皮革和布拉克斯毛皮，他说非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找你来是有重要的任务要交给你。</p>
+          <p> </p>
+          <p>我想来想去，还是觉得只有你能做好这件事，[%username]。</p>
+          <p> </p>
+          <p>一直以来，我们为了牵制黑脚部族展开了很多行动，你也在多次行动中表现得很好，不过总的来讲我们还是没能成功地阻止敌人的阴谋。</p>
+          <p> </p>
+          <p>阴谋的第一阶段就是莱卡恩指使姆克尔加工奥黛尔拉，据说它们已经成功了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问详细情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有报告说莱卡恩好像要利用奥德的力量打开与欧比斯相连的次元之门。</p>
+          <p> </p>
+          <p>现在它们在位于黑脚部落内的简卡卡之墓里制造次元之门，据说正把加工好了的奥黛尔拉运到那里。 </p>
+          <p> </p>
+          <p>他们的想法还用说吗？肯定是想把龙族引到魔界来。</p>
+          <p> </p>
+          <p>但我们决不能坐视不管，让它们得逞。</p>
+          <p> </p>
+          <p>如果它们的阴谋得逞了，不仅是这阿尔特盖德，就连伏魔殿也有可能陷入危险。所以我们要一举摧毁它们的计划。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+    <Voice file="Q2022-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据报告，次元之门就在简卡卡的坟墓旁边的巨大的树里。</p>
+          <p> </p>
+          <p>我会把你送过去，请你破坏通往龙界的次元之门。</p>
+          <p> </p>
+          <p>务必要取得成功，把面临灭顶之灾的阿尔特盖德从危机中拯救出来！</p>
+          <p> </p>
+          <p>我马上把你送到阿尔特盖德次元之门所在的地方。你准备好了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快来！你能平安回来我真是太高兴了。</p>
+          <p> </p>
+          <p>看你这样回来了，是不是就意味着任务成功完成了？ </p>
+          <p> </p>
+          <p>黑脚部族想要引到天界来的确实是龙族吗？你亲眼看到的？</p>
+          <p> </p>
+          <p>把那家伙干掉了？次元之门也堵住了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">除掉了纳加兰特，破坏了次元之门。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是想把龙族拉进来！</p>
+          <p> </p>
+          <p>除掉了纳加兰特并破坏了次元之门，真是太好了，太好了。</p>
+          <p> </p>
+          <p>多亏了你，阿尔特盖德和魔界才能躲过这个劫难啊。辛苦你了。</p>
+          <p> </p>
+          <p>我会把你的功劳报告给伏魔殿的克巴西日，他会很满意的。</p>
+          <p> </p>
+          <p>拿着，这是对你立下如此大的功劳的报酬。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sueron]对话 </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">在[%dic:STR_DIC_W_DF1A_31]找出[%dic:STR_DIC_E_14]进入封印的空间</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">阻止维持[%dic:STR_DIC_E_14]的守护石的运转</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">除掉[%dic:STR_DIC_M_NagaFighterSQ_20_An]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">破坏通往龙界的[%dic:STR_DIC_E_14]</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sueron]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：有一项直接关系到魔界安危的秘密任务。要绝对的保密，看到指令，马上与苏埃伦对话，接受任务。</font></p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>得知莱卡恩正在策划一个阴谋，想要打开与欧比斯相连的次元之门。</p>
+          <p> </p>
+          <p>找到了用大树伪装的次元之门进入了被封的空间，看到了一个很大的守护石。</p>
+          <p> </p>
+          <p>守护石停止运转后，纳加兰特出现了，把它除掉之后毁掉了通往龙界的次元之门。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

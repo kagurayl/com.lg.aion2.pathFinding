@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q2484</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔界的安危是沉默审判所最优先考虑的。</p>
+          <p> </p>
+          <p>让所有的魔人过上没有威胁的和平生活，是沉默审判所存在的终极理由。</p>
+          <p> </p>
+          <p>所以如果利益相同的话，我们偶尔也会和敌人联手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_NONE_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我有个任务拜托[%username]大人，希望您在听完详细的说明后，不要被吓到。</p>
+          <p> </p>
+          <p>这绝对是为了魔界的利益，所以希望您不要对沉默审判所抱有怀疑。</p>
+          <p> </p>
+          <p>我相信[%username]大人一定会理解我们，并为我们保守秘密的。所以我才来拜托您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您通过时空的裂缝到天界去，去见见某个人。</p>
+          <p> </p>
+          <p>他虽然是天人，但却希望天界破灭，所以才答应跟我们里应外合。</p>
+          <p> </p>
+          <p>请您去见见他，从他那里获取情报，并执行让天界陷入混乱的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去天界的埃尔特内见见一个名叫[%dic:STR_DIC_N_Hippolyta]的人。在[%dic:STR_DIC_W_DF2_SUB_C5]附近经常会出现通往天界的时空的裂缝，您去那边等待时空的裂缝产生就行了。</p>
+          <p> </p>
+          <p>锡普拉塔是想要颠覆天界的雷帕尔革命团。雷帕尔革命团虽然是伏魔殿的敌人，但为了达到我们的目的，必须时也需要同他们联手。</p>
+          <p> </p>
+          <p>拿着这些红色的干草，然后在[%dic:STR_DIC_W_LF2_SZ_E2]的[%dic:STR_DIC_E_OBJ_LF2_BeaconFire_Q2484]上点着。秘密烽火台在通往普雷尔荒地的桥附近。</p>
+          <p> </p>
+          <p>锡普拉塔看到红色的烟之后，就会去找你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为[%username]大人应该可以理解这个任务的重要性呢，看来是我看错人了。</p>
+          <p> </p>
+          <p>我知道了。看来我得去寻找愿意为魔界积极工作的其他守护者了。</p>
+          <p> </p>
+          <p>对了，请您不要跟别人提起我所说的这个任务。</p>
+          <p> </p>
+          <p>我相信您一定会帮我保密的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是魔界来的人吧？</p>
+          <p> </p>
+          <p>几天前我发出了讯息，说有了重要的情报。我想这个时候应该会有人过来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是盖尔库金派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到这里点燃烽火就已经很危险了，您做得不错嘛。幸好没被人发现。</p>
+          <p> </p>
+          <p>我会按照约定，把那个足以让天界陷入混乱的重要的情报告诉您。</p>
+          <p> </p>
+          <p>不过您大老远地过来，请您先歇一口气。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_E_OBJ_LF2_BeaconFire_Q2484]上点燃烽火，和[%dic:STR_DIC_N_Hippolyta]接触</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Hippolyta]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去埃尔特内的兰克斯高原点燃烽火，和与魔界内通的锡普拉塔见面。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沉默执行者盖尔库金交给了我一个任务，让我去天界和与魔界内通的名叫锡普拉塔的雷帕尔革命团员见面。</p>
+          <p> </p>
+          <p>于是来到了埃尔特内的兰克斯高原，秘密地点燃了烽火，见到了锡普拉塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都说事情只要交给术古，他们就会帮你干净利落地处理好。看来这些都是谣言。</p>
+          <p> </p>
+          <p>如果不是这样的话，那么怎么会连字都不认识呢！</p>
+          <p> </p>
+          <p>这样的事情发生了好几次，这次我真的火大了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把信交给了术古特急邮件，却没有送对地方。</p>
+          <p> </p>
+          <p>信是寄给红鬃洞穴村的普雷伊亚百夫长的，却送到了我这儿。</p>
+          <p> </p>
+          <p>如果名字差不多的话，我也就不说什么了。怎么能把布里阿纳和普雷伊亚弄错的呢！</p>
+          <p> </p>
+          <p>不知道寄给我的信都送到谁那里去了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让术古特急邮件配送的东西，一定是着急的东西。</p>
+          <p> </p>
+          <p>但是我因为还要执行任务，所以无法离开。</p>
+          <p> </p>
+          <p>我也不放心让那些术古特急邮递员送过去...</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我把这封信送给红鬃洞穴村的[%dic:STR_DIC_N_Freyja]百夫长。</p>
+          <p> </p>
+          <p>好像是很重要的信件，请您不要耽搁，马上出发。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您对其他人的事情不怎么关心啊？</p>
+          <p> </p>
+          <p>也是所以您得到了祝福成为了守护者，但却并没成为一名执政官为魔界服务。</p>
+          <p> </p>
+          <p>我知道了。我就是花点钱也要给普雷伊亚百夫长送过去。不过[%username]大人，您可以不用操心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。.</p>
+          <p> </p>
+          <p>您到红鬃洞穴村来有什么事吗？</p>
+          <p> </p>
+          <p>如果您是来帮我的话，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是哥哥的信。谢谢您帮我送过来。</p>
+          <p> </p>
+          <p>他一定想快点送到，所以才会委托术古特急邮件。没想到还要麻烦布里阿纳大人和[%username]大人。</p>
+          <p> </p>
+          <p>我在回信的时候一定会跟他说的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把信交给[%dic:STR_DIC_N_Freyja]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">术古特急邮递员把寄给普雷伊亚的信送给了布里阿纳。去红鬃洞穴村把信交给普雷伊亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布里阿纳说术古特急邮递员又把信送错了，正在那里发火。</p>
+          <p> </p>
+          <p>于是帮他去红鬃洞穴村，把信交给了普雷伊亚。普雷伊亚对我表示感谢，说不好意思给别人添了麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

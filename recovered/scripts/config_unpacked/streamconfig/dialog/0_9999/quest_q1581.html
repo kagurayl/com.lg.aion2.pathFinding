@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打算消灭不死族，却遇到了不小的抵抗。本以为他们只会一个两个地四处徘徊，没想到他们有时候却也成群进攻。</p>
+          <p> </p>
+          <p>我仔细观察了他们的情况，发生他们似乎有时候是有领头人在带领他们有组织地移动。</p>
+          <p> </p>
+          <p>要尽快消灭他们的首领才能更顺利地肃清不死族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人能帮忙去消灭掉幽灵的头领[%dic:STR_DIC_M_SpectreNamedQ_41_An]？</p>
+          <p> </p>
+          <p>不管怎么说，这种事情还是要拜托给实力出众的守护者我才放心。</p>
+          <p> </p>
+          <p>如果我传闻不假的话，这种程度的小任务对您来说应该不算什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幽灵的首领是[%dic:STR_DIC_M_SpectreNamedQ_41_An]。</p>
+          <p> </p>
+          <p>去波特玛废墟，您就能看到石头做的祭坛。听说到了晚上，就可以在那个祭坛附近找到幽灵的首领。</p>
+          <p> </p>
+          <p>以[%username]大人的能力，消灭掉它应该不成问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不会因为是幽灵的首领就害怕了吧？</p>
+          <p> </p>
+          <p>如果不是，那就请您别推辞，接受这项任务吧。</p>
+          <p> </p>
+          <p>得把这事拜托给值得信赖的人，我才能安心，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不死族也是一样，他们居然也有首领，真是有意思。</p>
+          <p> </p>
+          <p>是不是只有生前是大将或者指挥者的人死后才能担任首领？</p>
+          <p> </p>
+          <p>最近一直头疼不死族的问题，动不动就会去胡思乱想。</p>
+          <p> </p>
+          <p>您是否已经消灭了恶灵的盖拉尔了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首领消失了，现在要消灭幽灵就容易多了。</p>
+          <p> </p>
+          <p>这都是[%username]大人的功劳。</p>
+          <p> </p>
+          <p>这是对您顺利完成任务的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_SpectreNamedQ_41_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Rance]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭幽灵的首领恶灵的盖拉尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰斯发现了幽灵是以首领为中心进行移动的。所以为了更加有效地消灭不死族，先要消灭首领恶灵盖拉尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

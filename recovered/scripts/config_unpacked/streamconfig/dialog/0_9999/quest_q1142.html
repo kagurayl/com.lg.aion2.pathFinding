@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每个人都有自己趁手的武器。 </p>
+          <p> </p>
+          <p>不过多好的东西，和自己不相配的话就是无用之物。</p>
+          <p> </p>
+          <p>呼，我也不是想贪心...</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昨天我去了伊沛诺库那里，想买把长剑。但是却见到了这把短剑。上面镶着绿柱石，非常漂亮，于是我毫不犹豫地买了下来。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_LA75]%说可以把武器借给我用几天，然后再决定。</p>
+          <p> </p>
+          <p>但是我固执己见，把短剑买了下来。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，要是我听伊沛诺库的话就好了...别提多后悔了。</p>
+          <p> </p>
+          <p>这把剑不适合我。太轻所以使不上力气，长度也太短，没办法估算和对方之间的距离。</p>
+          <p> </p>
+          <p>如果[%dic:STR_DIC_LA75]同意的话，我想把短剑退还给他，但是我不好意思直接去。</p>
+          <p> </p>
+          <p>你能代我去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_LA75]%应该就在他的店里，就是贝尔特伦要塞的武器商店。</p>
+          <p> </p>
+          <p>把这个退还给他，并跟他说声对不起。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG"> 结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结束对话。看来你很忙。那就没办法了。</p>
+          <p> </p>
+          <p>都是我一时贪心搞出来的事情，只能自己想办法了。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人们一看到好的东西都会起贪心，武器也不例外。</p>
+          <p> </p>
+          <p>看到好的贵的武器就想弄到手。实际上和自己的能力和体力相配的武器才是好武器。</p>
+          <p> </p>
+          <p>不过正是有了这些人，我才能在这儿混口饭吃，呵呵呵。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出绿柱石短剑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是贝里库农买走的短剑吗？</p>
+          <p> </p>
+          <p>你是来退货的吗？我料到今天会拿回来的。</p>
+          <p> </p>
+          <p>因为这把剑和贝里库农不相配。他身高体壮，因此更适合用长剑而不是短剑。</p>
+          <p> </p>
+          <p>如果他当初听我的就好了...不过我还是要谢谢你给我还回来。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把绿柱石短剑拿给[%dic:STR_DIC_LA75]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">无视商人伊沛诺库的忠告买下了短剑的贝里库农想把武器推掉。把绿柱石短剑送去给伊沛诺库。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>          
+<p>被绿柱石短剑迷住的贝里库农无视商人伊沛诺库的忠告买下了短剑，但是后来知道了和自己不相配，想把它退还给伊沛诺库。</p>
+          <p> </p>
+          <p>代替不好意思直接去的贝里库农把武器退还给了伊沛诺库。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

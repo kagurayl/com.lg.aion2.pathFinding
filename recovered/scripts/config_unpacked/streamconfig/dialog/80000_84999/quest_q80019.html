@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，来的路上有没有看到脏兮兮的袜子啊？</p>
+          <p> </p>
+          <p>就是我前不久让您帮助找的袜子，真的没看到吗？</p>
+          <p> </p>
+          <p>快点告诉我，别骗我哦！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说真的没看见。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次您不是帮我找到了袜子吗？</p>
+          <p> </p>
+          <p>我把它们重新挂了起来，但是又被偷了。</p>
+          <p> </p>
+          <p>您能帮我把[%dic:STR_DIC_I_QUEST_80019a]找回来吗？嗯？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮着寻找。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Branch_Event_XmasEvent_Rudolph_99_n]一直以新年活动为借口进进出出。</p>
+          <p> </p>
+          <p>我看见他们进来把袜子偷走了！</p>
+          <p> </p>
+          <p>因为上次已经被偷过一次，现在已经变得脏兮兮的了。他们又把它偷走了。</p>
+          <p> </p>
+          <p>如果找不到袜子，我就没法得到礼物，朋友们会不和我说话的。</p>
+          <p> </p>
+          <p>守护者大人，请您一定要帮我把[%dic:STR_DIC_I_QUEST_80019a]找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我得不到礼物您也不在乎吗？</p>
+          <p> </p>
+          <p>那就算了。再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇！您回来啦！</p>
+          <p> </p>
+          <p>我的袜子呢？</p>
+          <p> </p>
+          <p>真的全都找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出袜子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？奇怪？</p>
+          <p> </p>
+          <p>守护者大人，这次我也不是怀疑您……嗯……但是真的什么都没有吗？</p>
+          <p> </p>
+          <p>啊，不。请不要误会。</p>
+          <p> </p>
+          <p>您帮我找到了袜子，我把准备好的东西送给您。</p>
+          <p> </p>
+          <p>唉，再见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的[%dic:STR_DIC_I_QUEST_80019a]还没找到吗？</p>
+          <p> </p>
+          <p>一定是被[%dic:STR_DIC_M_Branch_Event_XmasEvent_Rudolph_99_n]偷走了。</p>
+          <p> </p>
+          <p>最近正在准备新年活动，所以[%dic:STR_DIC_M_Branch_Event_XmasEvent_Rudolph_99_n]经常在这里进进出出。</p>
+          <p> </p>
+          <p>您慢慢找。我会在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找[%dic:STR_DIC_I_QUEST_80019a]，然后交给[%dic:STR_DIC_N_event_Mayer]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">找到脏兮兮的袜子，然后交给马伊尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到被红鼻格兰盖尔偷走的脏兮兮的袜子，交给了马伊尔，他问我袜子里有没有礼物。</p>
+          <p> </p>
+          <p>告诉他什么都没有之后，他叹了口气，给了我一点辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然已经确认地图是真的，就要好好利用这个情报。</p>
+          <p></p>
+          <p>确认雷帕尔革命团的家伙们到底在进行什么邪恶的实验。</p>
+          <p></p>
+          <p>为了亚特雷亚，必须阻止他们的实验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到侦察过的地方去，阻止他们的邪恶实验。</p>
+          <p></p>
+          <p>如果将实验器材破坏掉，那么研究也就无法进行下去。</p>
+          <p></p>
+          <p>您能去破坏他们的[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您进入革命团研究基地地下，将[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A]破坏掉。</p>
+          <p></p>
+          <p>把您看到的全都破坏掉。</p>
+          <p></p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您去革命团研究基地侦察过，所以您是任务的最佳人选。</p>
+          <p></p>
+          <p>请您就接受这个任务，不要再拒绝。</p>
+          <p></p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p></p>
+          <p>您把[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A]全部破坏掉了吗？</p>
+          <p></p>
+          <p>虽然不能从根本上解决问题，但至少能阻止他们的活体实验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您辛苦了。</p>
+          <p></p>
+          <p>在重新准备好活体实验器具之前，他们应该只能中断实验了。</p>
+          <p></p>
+          <p>来，这是给您的报酬，辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏雷帕尔革命团的[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A]。([%2]/6)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kalendros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">前往革命团研究基地，破坏地下研究室内的活体实验器具。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡兰德罗斯让我去破坏革命团的实验器具，阻止他们的活体实验。</p>
+          <p></p>
+          <p>按照他的拜托，进入革命团研究基地，破坏了活体实验器具，暂时中断了他们的实验，他对此非常感激。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

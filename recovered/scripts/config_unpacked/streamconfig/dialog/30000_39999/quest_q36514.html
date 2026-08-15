@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>龙族精锐部队成员凶暴的翁巴纳塔因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_DrakanWi_55_An]</p>
+          <p></p>
+          <p> 2. 罪行：袭击并抢夺武器</p>
+          <p></p>
+          <p> 3. 详情：袭击奥德兵，将其打成重伤，并抢走武器，然后在哈纳尔卡德方向消失。</p>
+          <p> </p>
+          <p>提供凶暴的翁巴纳塔的下落，或直接杀死他的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在奥德兵的护卫工作加强了，真是太好了。</p>
+          <p> </p>
+          <p>他们经常出入于未开发的地区，因此经常受到龙族的偷袭。</p>
+          <p> </p>
+          <p>现在受到通缉的龙族精锐部队成员也是如此。</p>
+          <p> </p>
+          <p>他们会像幽灵一样埋伏在路边，发动突袭。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您消灭了龙族精锐部队成员，真是太好了！</p>
+          <p> </p>
+          <p>但是这样并不能完全保证奥德兵的安全。</p>
+          <p> </p>
+          <p>即使兵力不足，我仍然希望能多配备几名护卫人员。</p>
+          <p> </p>
+          <p>不管怎样，龙族精锐部队成员的赏金，[%username]，就归你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭袭击奥德兵的[%dic:STR_DIC_M_LF4_DayQ_DrakanWi_55_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以袭击奥德兵、抢走武器的罪名而受到通缉的凶暴的翁巴纳塔之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

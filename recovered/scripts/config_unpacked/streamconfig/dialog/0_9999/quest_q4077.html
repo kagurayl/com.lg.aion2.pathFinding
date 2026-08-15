@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请看这些普古斯，毛色润泽，胖乎乎的，长得多么健康啊！</p>
+          <p> </p>
+          <p>我想等以后和定居者营地的人，还有新来的移民们一起分享，所以精心喂养它们。</p>
+          <p> </p>
+          <p>虽然现在没有几只，不过认真喂养下去，数量一定会增加的。</p>
+          <p> </p>
+          <p>到时候每人分一只，该有多好啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过有一个问题。这些家伙们可能是精力充沛，总是弄坏圈墙逃到外面去，在到村子里乱跑。</p>
+          <p> </p>
+          <p>它们到处挖坑或是找东西吃，当然还一个劲的哼哼叫。</p>
+          <p> </p>
+          <p>艾尔文大人对此非常不满。那些普古斯乱跑乱叫，会影响贝达扎尔大人。</p>
+          <p> </p>
+          <p>我想去把它们抓回来，可是我一离开这里，剩下的家伙就会跟着逃跑……[%username]大人能不能帮助我呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在村子各处都有逃走的普古斯，在艾尔文大人那里也有。</p>
+          <p> </p>
+          <p>也不用您全都抓来，只要2只就可以了。</p>
+          <p> </p>
+          <p>只要把它们赶回圈内就可以了。要是它们不听话，您就轻轻的打它们，直到乖乖的回到圈内。</p>
+          <p> </p>
+          <p>普古斯那些家伙们比较脆弱，所以请您不要使用武器，不然很可能就打死了。</p>
+          <p> </p>
+          <p>啊，还有请不要让讨伐队的人看到。我的普古斯曾经偷吃过讨伐队的食物，所以他们可能一直怀恨在心呢。</p>
+          <p> </p>
+          <p>那么拜托您了，[%username]大人。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾尔文大人太敏感了，其实普古斯也没怎么闹事。</p>
+          <p> </p>
+          <p>它们虽然乱跑，但不会跑到村外惹麻烦的。</p>
+          <p> </p>
+          <p>而且大部分时间都在我的视线范围内，我可以一直盯着它们。</p>
+          <p> </p>
+          <p>就算艾尔文大人生气，这段时间内，我也只能这样下去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是谢谢。</p>
+          <p> </p>
+          <p>逃跑的普古斯终于平安回来了。</p>
+          <p> </p>
+          <p>这都是多亏了[%username]大人。</p>
+          <p> </p>
+          <p>真是非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">跟他说不用客气。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎，您不知道艾尔文大人为了让我赶紧把普古斯抓住，有多生气。</p>
+          <p> </p>
+          <p>现在我可以不用听她的唠叨了。</p>
+          <p> </p>
+          <p>这是我的一点心意，请收下吧，也不值多少钱，只是表达我对您的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把逃跑的普古斯赶到圈里([%2]/2)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Hloekk]对话</font></p></step>
+     </steps>
+          <p><font font_xml="quest_summary">赫鲁埃克表示普古斯从圈里逃走，在村子里乱逛，要把普古斯赶到圈里。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫鲁埃克为了等以后和来到这里的移民们分享，正在饲养普古斯。</p>
+          <p> </p>
+          <p>可是普古斯们从圈里逃跑，在村子里乱逛，因此赫鲁埃克请求了帮助。</p>
+          <p> </p>
+          <p>按照赫鲁埃克的委托，把普古斯赶到了圈里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

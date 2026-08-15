@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你在这儿磨磨蹭蹭的样子一定很闲吧。</p>
+          <p> </p>
+          <p>看来你时间一定很富裕，那就替我办一件事儿吧。</p>
+          <p> </p>
+          <p>你也看到了，我现在为了做铠甲忙得不行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把这个[%dic:STR_DIC_I_2115b]帮我转交给[%dic:STR_DIC_N_Denma]。</p>
+          <p> </p>
+          <p>因为但玛急需皮革已经催了我很多次了。</p>
+          <p> </p>
+          <p>真不知道他要这么多要用在何处。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但玛会在[%dic:STR_DIC_W_DF1_5]的。</p>
+          <p> </p>
+          <p>他肯定都等得望眼欲穿了，所以立刻出发吧。</p>
+          <p> </p>
+          <p>辛苦费但玛一定不会少给你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>无事可做悠哉悠哉是什么时候来着，现在却说忙，切。</p>
+          <p> </p>
+          <p>就是给他钱他都不愿意，还真是富裕了啊。</p>
+          <p> </p>
+          <p>我也不会勉强说不愿意做这事儿的人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是达尔洛特派来的吗？</p>
+          <p> </p>
+          <p>详细情形以后再说，先把东西给我行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递交厚重的皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他只让你送来这么点儿吗？用这个肯定很难全部遮住帐篷啊。</p>
+          <p> </p>
+          <p>那么跟他强调能送多少送多少。算了，没有办法啊。</p>
+          <p> </p>
+          <p>无论如何，把这么重的东西大老远带到这里来真是辛苦了。这是酬劳，收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_N_Dalot]修补过的厚重的皮革给[%dic:STR_DIC_N_Denma]带去</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说但玛需要厚实的皮革。代替忙碌的达尔洛特把皮革转交给但玛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但玛订了厚重的皮革，可达尔洛特总是念叨自己太忙了没有时间送过去。代他把皮革送给但玛，收取了辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务。：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

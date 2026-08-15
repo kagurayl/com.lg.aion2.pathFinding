@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>身体已经消失，只剩下灵魂。但是，我的目标依然十分明确。</p>
+          <p> </p>
+          <p>那就是，消灭入侵贝鲁斯兰的龙族，把结界塔变回以前的样子。</p>
+          <p> </p>
+          <p>虽然无法亲手消灭他们，但在那一天没到来之前，我绝不会回到奥德的怀抱中。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族破坏了结界塔，并在那里建立了阵地。</p>
+          <p> </p>
+          <p>叫做巴卡尔马军团驻地。</p>
+          <p> </p>
+          <p>想要彻底消灭他们，就需要先除掉 [%dic:STR_DIC_M_G6_FeA_LizardFiD_44_Ae]，削弱他们的战斗力。</p>
+          <p> </p>
+          <p> [%username] 大人能替我完成这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么，请您立刻去巴卡尔马军团驻地，消灭 [%dic:STR_DIC_M_G6_FeA_LizardFiD_44_Ae]。</p>
+          <p> </p>
+          <p>单个敌人的战斗力不是很强，但毕竟在龙族的驻地行动，还是需要同伴的协助。</p>
+          <p> </p>
+          <p>愿阿斯佩尔始终保佑着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您觉得消灭龙族的请求是出于私人恩怨？</p>
+          <p> </p>
+          <p>其实，对于死，我没有任何抱怨。我只是恨自己没有守好结界塔。</p>
+          <p> </p>
+          <p>倘若您对龙族入侵魔界的事实丝毫不感到愤怒，那我也没办法了。</p>
+          <p> </p>
+          <p>否则，请一定要消灭他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看着自己游荡着的灵魂，让人很无奈。</p>
+          <p> </p>
+          <p>这样的形态，对那些在结界塔周围耀武扬威的龙族，别说消灭，就连赶走或是震慑也做不到。</p>
+          <p> </p>
+          <p>那么您是不是已经完成了任务，消灭了第47德拉克纽特的精锐步兵？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然[%username] 大人已经消灭了第47德拉克纽特精锐步兵，那么巴卡尔马军团的战斗力应该已经被削弱。</p>
+          <p> </p>
+          <p>虽然，这离全灭他们还早得很。</p>
+          <p> </p>
+          <p>总之，谢谢您能够去龙族的驻地帮我执行任务，辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_G6_FeA_LizardFiD_44_Ae]。([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gwendolin]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">格温杜尔林表示，将破坏结界塔的龙族从贝鲁斯兰赶出去，是自己唯一的目标。接受她的请求，进入巴卡尔马军团驻地，消灭第47德拉克纽特精锐步兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格温杜尔林称，之所以在死后不回到奥德的怀抱，而保持灵魂状态继续留在这里，是为了消灭入侵贝鲁斯兰的所有龙族，将结界塔复原。</p>
+          <p> </p>
+          <p>她表示，想要消灭入侵贝鲁斯兰的巴卡尔马军团，需要先削弱龙族的战斗力。</p>
+          <p> </p>
+          <p>她提出的请求内容是消灭第47德拉克纽特精锐步兵。答应请求后进入龙族的驻地，并消灭了德拉克纽特精锐步兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(翻看厚厚的书)嗯，现在已经搜集到了一定的情报，可以开始了。</p>
+          <p></p>
+          <p>喂，[%userclass]大人！是的，[%username]大人，我在叫您。</p>
+          <p></p>
+          <p>您来这里，是为了亚龙，对吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>太好了。</p>
+          <p></p>
+          <p>赫雷尔代理人下达了召集守护者，消灭亚龙的命令。</p>
+          <p></p>
+          <p>那是非常凶恶的家伙，两个人根本没办法对付，必须组成联盟才行。您觉得怎么样？</p>
+          <p></p>
+          <p>您想参加消灭亚龙行动吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(在厚厚的书上记录着什么)[%userclass][%username]参加……</p>
+          <p></p>
+          <p>啊，我还没说完。我先得跟您说说里面的家伙。</p>
+          <p></p>
+          <p>洞穴里的亚龙名叫[%dic:STR_DIC_M_DF4_Dramata_57_Al]。几天前刚下了蛋，正在孵化。</p>
+          <p></p>
+          <p>(掰着手指头算日子)哎呀！马上就要孵化出来了。</p>
+          <p></p>
+          <p>必须在帕德玛夏的蛋里孵化出德拉坎之前消灭掉帕德玛夏才行。</p>
+          <p></p>
+          <p>请和其他守护者组成联盟，一起进入帕德玛夏的洞穴。</p>
+          <p></p>
+          <p>帕德玛夏的洞穴钥匙可以在守卫这里的德拉坎身上找到。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(歪着头)您该不是想一个人对付亚龙吧？</p>
+          <p></p>
+          <p>如果有和您一起去的联盟还好点，如果没有的话，最好召集一些人一起去。</p>
+          <p></p>
+          <p>现在来的守护者都是赫雷尔代理人派来的，实力都很强。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(上下打量)看您好像没什么事。</p>
+          <p></p>
+          <p>洞穴里乱糟糟的，我还以为出大事了呢。</p>
+          <p></p>
+          <p>也是，那个家伙差点就成为龙，一定不好对付。</p>
+          <p></p>
+          <p>好了，请把结果告诉我吧。[%dic:STR_DIC_M_DF4_Dramata_57_Al]消灭掉了吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您确定打倒了吗？</p>
+          <p></p>
+          <p>龙族的再生能力本来就很强，亚龙尤其惊人。</p>
+          <p></p>
+          <p>只要还有一口气，很快就会恢复。</p>
+          <p></p>
+          <p>[%username]大人不像是会说谎的人，我就按照约定，把奖励给您。</p>
+          <p></p>
+          <p>请收下。这是赫雷尔代理人大人赐予您的奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">打倒[%dic:STR_DIC_M_DF4_Dramata_57_Al]([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%15]">
+                <font color="[%16]">向[%dic:STR_DIC_N_Kimin]报告</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">消灭敏锐的帕德玛夏，阻止德拉坎从帕德玛夏的蛋中孵化。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>基敏说洞穴里的亚龙帕德玛夏产了蛋，正在孵化，很快就会有德拉坎孵化出来。</p>
+          <p></p>
+          <p>他让我在这之前把帕德玛夏消灭掉，于是组成联盟，消灭掉了帕德玛夏。</p>
+          <p></p>
+          <p>向基敏报告结果之后，他代替赫雷尔代理人给了我奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

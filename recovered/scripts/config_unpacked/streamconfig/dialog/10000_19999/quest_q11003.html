@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您有没有害怕过什么人啊？</p>
+          <p> </p>
+          <p>我最近很怕贝尔塞蒂军团长大人。</p>
+          <p> </p>
+          <p>平时我们都见不着面，他怎么会知道那件事的呢？除了我之外，应该没有其他人知道啊……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，不。没什么事情，请别在意。</p>
+          <p> </p>
+          <p>对了，您能帮帮我吗？</p>
+          <p> </p>
+          <p>不是别的，现在幻影珠的材料完全靠极乐世界支援，可能因为价格比较贵，所以材料的补给经常出现问题。</p>
+          <p> </p>
+          <p>我听斯特利本说，好像在枯萎森林可以找到类似的材料。</p>
+          <p> </p>
+          <p>我因为需要进行研究，所以不能离开这里。[%username]大人，您能帮我去搜集材料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是太感谢了。我还担心您会拒绝呢。</p>
+          <p> </p>
+          <p>需要搜集的东西是[%dic:STR_DIC_I_QUEST_11003a]和[%dic:STR_DIC_I_QUEST_11003b]。只要去枯萎森林捕捉[%dic:STR_DIC_M_LF4_A_Foam_Wisp_51_n]和[%dic:STR_DIC_M_LF4_A_Shadowstalker_Leaf_51_An]就能搜集到。</p>
+          <p> </p>
+          <p>搜集到材料后，不要拿来给我，请您帮我交给[%dic:STR_DIC_N_Strabon]。</p>
+          <p> </p>
+          <p>他会帮我确认成分是否和极乐世界送来的材料一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。事实上我也没抱太大的希望。</p>
+          <p> </p>
+          <p>不过这可怎么办呢？</p>
+          <p> </p>
+          <p>如果不够的话，又要被军团长大人叫去了……啊，没关系，您忙您的吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，真是久仰大名啊。</p>
+          <p> </p>
+          <p>听说您从英吉斯温来到了这里，我还想什么时候请您吃顿晚饭呢。没想到能在这里见到您。</p>
+          <p> </p>
+          <p>不好意思，我能问一下您来找我是为了什么事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出材料，转达帕伊洛斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是为帕伊洛斯大人的事情而来啊。</p>
+          <p> </p>
+          <p>听说您会把替代材料给我带过来，东西在哪儿呢？</p>
+          <p></p>
+          <p>我想您是不是搞错了。请您快去搜集[%dic:STR_DIC_I_QUEST_11003a]和[%dic:STR_DIC_I_QUEST_11003b]吧。这样，我才能帮帕伊洛斯大人进行比较。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是为帕伊洛斯大人的事情而来啊。我还以为他会亲自过来的呢，[%username]大人您是代他过来的吧。</p>
+          <p> </p>
+          <p>这就是材料吗？[%dic:STR_DIC_I_QUEST_11003a]和[%dic:STR_DIC_I_QUEST_11003b]也许可以用来制造幻影珠。</p>
+          <p> </p>
+          <p>要想确认成分是否和极乐世界送来的一样，需要一点时间。请您先放在这里吧。结果出来之后，我会通知帕伊洛斯大人的。</p>
+          <p> </p>
+          <p>希望能得出好的结果，真让人期待。帕伊洛斯大人一定也非常期待。不知道结果怎么样，希望能以此代替紧缺的材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_11003a]和[%dic:STR_DIC_I_QUEST_11003b]，然后交给[%dic:STR_DIC_N_Strabon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的帕伊洛斯把发光体的气息和暗影怪的气息交给斯特利本，确认是否可以用来代替幻影珠的材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕伊洛斯说要想维持要塞的幻影，需要很多的幻影珠，但是极乐世界的材料供给很不稳定，因此想去枯萎森林寻找替代材料。</p>
+          <p> </p>
+          <p>帮助忙碌的帕伊洛斯把发光体的气息和暗影怪的气息交给了斯特利本，他说会帮着确认和极乐世界送来的材料是否一样，然后把结果直接告诉帕伊洛斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

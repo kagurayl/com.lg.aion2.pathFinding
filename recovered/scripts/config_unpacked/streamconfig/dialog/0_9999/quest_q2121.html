@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>直到几年前，乌尔古伦盗团还只有男的没有女的。</p>
+          <p> </p>
+          <p>说女人没什么能力，只能碍手碍脚，头儿没有收女的。</p>
+          <p> </p>
+          <p>可是那个规矩被某些人打破了。</p>
+          <p> </p>
+          <p>你问是谁？就是艾瑞和我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">问艾瑞是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不知道[%dic:STR_DIC_N_Erre]吗？</p>
+          <p> </p>
+          <p>因为她的双刀很厉害，很有名，你居然不知道？你连她的名字都没有听说过吗？</p>
+          <p> </p>
+          <p>也是，伊斯夏尔肯收容所离村庄还比较远，有可能不知道。</p>
+          <p> </p>
+          <p>她是我的老朋友了，是跟我一起加入到盗团的。</p>
+          <p> </p>
+          <p>她和我想要加入盗团时，人们都嘲笑我们。说如果跟自己比试一下并且能赢了自己就让我们加入。</p>
+          <p> </p>
+          <p>结果不用说了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Erre]的刀简直到了出神入化的境界。</p>
+          <p> </p>
+          <p>每次她手里的双刀舞动时，都会有好几个人应声倒地。</p>
+          <p> </p>
+          <p>说着话我想起来了，我已经有一阵子没有见到艾瑞了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_DF1_7]是个偏僻的地方，很难找到东西呢...</p>
+          <p> </p>
+          <p>[%username]，你能答应我一件事吗？  </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。不是什么难事，把这个[%dic:STR_DIC_I_2121a]转给[%dic:STR_DIC_W_DF1_7]前面的[%dic:STR_DIC_N_Erre]就行了。</p>
+          <p> </p>
+          <p>你说是我让你去的，她就知道了。</p>
+          <p> </p>
+          <p>啊，对了，去[%dic:STR_DIC_W_DF1_21]往北走就行了。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不想去就没办法了。</p>
+          <p> </p>
+          <p>和外表不同，艾瑞性格豪爽，会给不少辛苦费呢，你居然不想要。真是可惜。</p>
+          <p> </p>
+          <p>那再见了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你怎么会到这儿来？ </p>
+          <p> </p>
+          <p>这里很危险，不是谁都可以随便来的地方呢。</p> 
+          <p> </p>
+          <p>你得到头儿的允许了吗？  </p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递过磨刀石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是[%dic:STR_DIC_N_Mijou]让你来的吧。</p>
+          <p> </p>
+          <p>我正需要磨刀石呢，知已莫若友，还是朋友好啊。</p>
+          <p> </p>
+          <p>这是给您的辛苦费，不要客气，拿着吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_2121a]转给[%dic:STR_DIC_N_Erre]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮妙乌给艾瑞送磨刀石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妙乌说自己的好朋友艾瑞在很偏僻的地方，肯定很难搞到东西，让我把磨刀石带给艾瑞。</p>
+          <p> </p>
+          <p>把新的磨刀石拿给了艾瑞，她很感激并给了辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了救出被天族俘虏的执政官，我们派出了搜索队。</p>
+          <p> </p>
+          <p>听说天族的俘虏收容所在硫磺树要塞的旁边，于是我来到了这里。</p>
+          <p> </p>
+          <p>搜索队一定可以顺利地把俘虏们救出来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>于是要塞向我送来了要求我积极配合搜索队的命令书。</p>
+          <p> </p>
+          <p>应该是想让搜索队不要操心别的事情，把所有的精力集中在拯救俘虏上面。</p>
+          <p> </p>
+          <p>我想我们必须把[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An]除掉。</p>
+          <p> </p>
+          <p>只有那样我们才能不受他们的妨碍，迅速地接近要塞。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>硫磺沼泽是硫磺树要塞那边的浮游岛。</p>
+          <p> </p>
+          <p>请您在[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An]给搜索队造成妨碍之前，把它们清除掉。</p>
+          <p> </p>
+          <p>哦，对了。硫磺可能会使生命力受到伤害，请您一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们这么做是为了拯救被敌人俘虏的同伴。</p>
+          <p> </p>
+          <p>您竟然会拒绝，难道您没有作为守护者的使命感吗？</p>
+          <p> </p>
+          <p>我对[%username]大人真的非常失望！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过硫磺沼泽了吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]和[%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An]全都清除掉了吗？</p>
+          <p> </p>
+          <p>希望能够对搜索队拯救俘虏有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>我们能做的事情都已经做了，下面就是祈祷搜索队能把俘虏们救出来了。</p>
+          <p> </p>
+          <p>愿所有追随黑暗的真理的人找到和平！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">为搜索队清除掉树人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gagnrad]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让搜索队在拯救俘虏的时候不受妨碍，把硫磺沼泽里的粗糙树人和黑色树人清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加格拉德说他接到了命令，让他协助来这里拯救被天族抓去的魔族俘虏的搜索队。</p>
+          <p> </p>
+          <p>于是为了搜索队能够快速接近硫磺树要塞，去硫磺沼泽清除掉了粗糙树人和黑色树人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

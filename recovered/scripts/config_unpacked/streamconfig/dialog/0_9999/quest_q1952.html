@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还是为你只是出色的[%userclass]呢，没想到你在金属盔甲的制作上还有一手。</p>
+          <p> </p>
+          <p>这种程度的质量的话，即使供奉给主神也毫不逊色。我也应该感到紧张了，哈哈哈。</p>
+          <p> </p>
+          <p>好了，我有一件事情要拜托你，你能帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请帮我把这些钛质锁链手套交给欧比斯的米诺恩。</p>
+          <p> </p>
+          <p>几天前给他送了几副手套，但是可能是很快就卖光了，就又让我赶紧给他送点过去。</p>
+          <p> </p>
+          <p>这么快就让我给他送新的武器，看来那边的情况还真是不容乐观。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去一趟可不容易，谢谢你这么爽快就答应我。</p>
+          <p> </p>
+          <p>米诺恩应该已经在等了，你马上出发吧。</p>
+          <p> </p>
+          <p>愿阿里埃保佑你！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你有别的事情吗？</p>
+          <p> </p>
+          <p>欧比斯那种地方太危险，所以我才特意拜托你去。</p>
+          <p> </p>
+          <p>如果你真的不乐意的话，我也没有办法。如果你改变了主意的话，请你再来找我。我会等你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有喜欢的东西吗？ 不好意思，现在的这些是我尽最大努力做出来的。</p>
+          <p> </p>
+          <p>即使你去欧比斯的其他地方应该也不会有什么太大的差别。</p>
+          <p> </p>
+          <p>如果还可以的话，您就在里面挑两件吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出钛质锁链手套。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是给布尔卡奴斯大人送东西来的啊。</p>
+          <p> </p>
+          <p>东西能准时送到真是太好了。沙克密斯军团长让我在今天之内把钛质锁链手套给他送过去。</p>
+          <p> </p>
+          <p>谢谢您把东西送到这么远的地方来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔把钛质锁链手套交给[%dic:STR_DIC_N_Minon]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把布尔卡奴斯的钛质锁链手套交给埃雷修兰塔的特米伦据点的防具商米诺恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尔卡奴斯说有件东西需要马上送给特米伦据点的米诺恩，让我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把布尔卡奴斯给的钛质锁链手套交给了米诺恩，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

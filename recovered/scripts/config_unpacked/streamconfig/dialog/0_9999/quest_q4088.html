@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你身上的味道，最近你是不是去过布鲁斯特豪宁？</p>
+          <p> </p>
+          <p>没什么大惊小怪。那种发霉的气味和海水的味道，只有在那里才能闻得到，咳咳。</p>
+          <p> </p>
+          <p>(观察周围，低声的说) 你在那里见到过叫做 [%dic:STR_DIC_N_Jackspaner]的人了吗？</p>
+          <p> </p>
+          <p>啊，那个人订购了东西，可是我也不知道具体要送到哪里……只说要去布鲁斯特豪宁，后来就没有了联系。</p>
+          <p> </p>
+          <p>我又不是什么算卦的，啧啧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">告诉他知道杰克·斯巴诺在哪里。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是真的吗？那我可以拜托你一件事吗？</p>
+          <p> </p>
+          <p>请守护者把[%dic:STR_DIC_N_Jackspaner]订购的东西送到他那里。</p>
+          <p> </p>
+          <p>虽然为顾客亲自送货是密克隆的原则，但由于最近查得太严，我也没办法，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(观察周围，并快速地拿出箱子) 赶紧放进背包里。</p>
+          <p> </p>
+          <p>费用我已经收到了，只要把这送到 [%dic:STR_DIC_N_Jackspaner]那里就可以了。</p>
+          <p> </p>
+          <p>还有，从现在开始那个东西就算是你的了。</p>
+          <p> </p>
+          <p>就算你被发现，我也只能装作不知道，你要小心，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是受不了。</p>
+          <p> </p>
+          <p>很想亲自送过去，可是害怕被发现。不去的话，那个脾气不好的杰克·斯巴诺可不会放过我，啧啧。</p>
+          <p> </p>
+          <p>守护者，请帮帮我这个可怜的密克隆吧。</p>
+          <p> </p>
+          <p>我一定会报答你的，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每天都对着大海，我浑身直痒，受不了啊。</p>
+          <p> </p>
+          <p>感觉晕晕的，在陆地真是不习惯。</p>
+          <p> </p>
+          <p>就算有罗盘又有什么用？没有船怎么能去寻找宝物呢。</p>
+          <p> </p>
+          <p>这个时候要是能喝一杯朗姆酒，那可就世界太平了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将朗姆酒箱子交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇哇！瞧这是什么！朗姆酒！哈哈！你怎么会知道我喜欢朗姆酒？你这个守护者真是太惹人喜欢了！</p>
+          <p> </p>
+          <p>慢着……难道是我在密克隆那定的吗？原来如此。</p>
+          <p> </p>
+          <p>那家伙一直没送酒过来，我很生气。看来他还是挺怕我的嘛，竟然拜托了你，哈哈哈。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将从密克隆那里拿到的朗姆酒箱子交给 [%dic:STR_DIC_N_Jackspaner]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">替密克隆将朗姆酒箱子交给在布鲁斯特豪宁的杰克·斯巴诺。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>密克隆闻出了布鲁斯特豪宁的味道，并询问见没见到过叫做杰克·斯巴诺的人。</p>
+          <p> </p>
+          <p>密克隆知道了杰克·斯巴诺结交广泛后表示，最近查的很严，所以请求把杰克·斯巴诺订购的东西交给他。</p>
+          <p> </p>
+          <p>把朗姆酒箱子交给了杰克·斯巴诺。他拿到酒后非常高兴，表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

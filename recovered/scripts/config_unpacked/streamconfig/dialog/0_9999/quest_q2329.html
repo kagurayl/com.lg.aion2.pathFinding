@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我跟您说过我正在研究坎塔利吗？</p>
+          <p> </p>
+          <p>不过在研究坎塔利的过程中，我对其他的生物也产生了兴趣。</p>
+          <p> </p>
+          <p>最近我正在对蜘蛛进行简单的研究。</p>
+          <p> </p>
+          <p>因为它们就在这附近，因此也比较容易进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为研究的一部分，我需要蜘蛛的卵，但是却根本抽不出时间去寻找。</p>
+          <p> </p>
+          <p>因为我的任务是对坎塔利进行研究。总不能放下任务然后过去，您说对不对？</p>
+          <p> </p>
+          <p>所以我想拜托[%username]大人。</p>
+          <p> </p>
+          <p>您不像我一样被事情缠住脱不了身，我想应该会有很多时间。</p>
+          <p> </p>
+          <p>您能帮我去奥克塔努的迷雾洞穴搜集[%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>那就请您到奥克塔努的迷雾洞穴去，帮我搜集一些[%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329]吧。</p>
+          <p> </p>
+          <p>有7个左右的话，就足够我研究用的了。</p>
+          <p> </p>
+          <p>蛋很容易碎，所以请您一定要小心一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为是私事，所以跟您说的时候我也很小心。没想到居然被拒绝了，就更让我觉得不安了。</p>
+          <p> </p>
+          <p>最近因为实在太忙，连休息的时间都没有，所以根本没有时间去那里。</p>
+          <p> </p>
+          <p>不过再等等的话，应该会有有空的时候。在那之前，看来只能忍着了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚刚开始研究蜘蛛的生态，但是越研究就越发现有很多神奇的地方。</p>
+          <p> </p>
+          <p>如果能对蛋进行研究的话，应该可以对其诞生的过程有更深入的了解。</p>
+          <p> </p>
+          <p>您把我要的蜘蛛的卵带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜘蛛的卵。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，还没有找到吗？</p>
+          <p> </p>
+          <p>我不是在催您。这是私事，我也不可能那样。</p>
+          <p> </p>
+          <p>您在有时间的时候，再帮我去搜集[%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329]也行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是非常感谢。</p>
+          <p> </p>
+          <p>多亏了您，这下我的研究应该能取得进展了。</p>
+          <p> </p>
+          <p>虽然有人看不惯我，觉得执政官就应该做执政官的事情，做这些没用的事情干嘛。但是进行研究的时候，却是我最幸福的时候。</p>
+          <p> </p>
+          <p>这是您帮助我的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329]，然后交给[%dic:STR_DIC_N_Jorund]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助研究蜘蛛的姚伦德搜集蜘蛛的卵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>姚伦德正在对蜘蛛进行研究，但是因为太忙，没有时间去搜集蜘蛛的卵。</p>
+          <p> </p>
+          <p>于是帮助姚伦德去奥克塔努的迷雾洞穴搜集到了蜘蛛的卵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

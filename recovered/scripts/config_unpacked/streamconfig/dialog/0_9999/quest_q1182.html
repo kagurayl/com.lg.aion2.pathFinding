@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(是扁扁的石雕。)</p>
+          <p> </p>
+          <p>(记载着密密麻麻的未知语言。)</p>
+          <p> </p>
+          <p>(背面上画着神与上贡的神父姿态。)</p>
+          <p> </p>
+          <p>(或许是与供奉神有关的东西吧？)</p>
+          <p> </p>
+          <p>(决定到贝尔特伦要塞的神官塞尔雷內那里问一问。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">学习石雕。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来这里有什么事，供奉神的守护者？</p>
+          <p> </p>
+          <p>(拿出石雕)</p>
+          <p> </p>
+          <p>真是奇怪的石雕…不过只能读懂这些字。这是古代亚特雷亚语。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>释读一下这些文字吗？</p>
+          <p> </p>
+          <p>埃尔用其全知全能的力量与OOO的... 后面的字被切断了。</p>
+          <p> </p>
+          <p>总觉得像是讲述太初之神故事的历史书籍。</p>
+          <p> </p>
+          <p>"虽然不能从中获取太多的内容,但很明显应该是具有较大历史意义的物品。"</p>
+          <p> </p>
+          <p>我会将这件物品细心包起来上贡给极乐世界。这是能够证明我们天族的重要物品，诸神也应该会非常高兴吧？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把石雕交给塞尔雷內。 </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把从克拉尔怀里捡到的神奇石雕交给贝尔特伦要塞的神官塞尔雷內吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>整理克拉尔的战利品时发现了神奇的石雕。</p>
+          <p> </p>
+          <p>记载奇异文字的石雕背面画着神和神官的画，于是去咨询了贝尔特伦要塞的神官塞尔雷內。</p>
+          <p> </p>
+          <p>塞尔雷內这是讲述太初之神故事的历史书籍的一部分，是具有历史意义的物品，要献给极乐世界。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

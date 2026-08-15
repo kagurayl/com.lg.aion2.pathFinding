@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有件事想拜托你，守护者。</p>
+          <p> </p>
+          <p>你能去远一点的地方一趟吗？</p>
+          <p> </p>
+          <p>而且必须答应我，要帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这里爬上去的话，就能看见通往阿尔特盖德的路。</p>
+          <p> </p>
+          <p>请你通过那里，帮我去因派图西姆见见一个名叫[%dic:STR_DIC_N_Shugo_DF1_19]的术古。</p>
+          <p> </p>
+          <p>帮我去问问他，上次让他找的东西找到了没有。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>千万不能说，在别的椰林面前。</p>
+          <p> </p>
+          <p>越快越好。</p>
+          <p> </p>
+          <p>快去把我的话转告[%dic:STR_DIC_N_Shugo_DF1_19]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不愿意吗？</p>
+          <p> </p>
+          <p>既然那样，就没办法了。</p>
+          <p> </p>
+          <p>不过你还是需要帮我保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，呐呐？</p>
+          <p> </p>
+          <p>是需要什么不能和人说的东西吗？</p>
+          <p> </p>
+          <p>只要你说得出，什么东西我都能帮你弄到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达卡因多尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来那个椰林非常想活下去啊。</p>
+          <p> </p>
+          <p>上次路过那里的时候，我说有可以救活快死的椰林的秘药。</p>
+          <p> </p>
+          <p>我说代价是椰林的精髓，当时他让我走。</p>
+          <p> </p>
+          <p>知道了，以后我会去找他的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_DF1_19]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡因多尔说有话有转告鲁伊隆，通过去阿尔特盖德的路到因派图西姆去吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡因多尔说有话要转告因派图西姆的鲁伊隆，告诉了我去阿尔特盖德的路。</p>
+          <p> </p>
+          <p>向鲁伊隆转达了卡因多尔的话，知道了卡因多尔要找的是可以救活椰林的秘药。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

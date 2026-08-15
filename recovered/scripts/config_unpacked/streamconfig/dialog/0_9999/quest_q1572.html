@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等待像[%userclass]这样的守护者。</p>
+          <p> </p>
+          <p>你感觉到了吗？！这天地间漫溢的死亡气息。</p>
+          <p> </p>
+          <p>帕塞尔塔大人在播撒生命的气息，可是和原来已经不一样了。</p>
+          <p> </p>
+          <p>村外被诅咒的敌军实力日益强大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其影响对于我们精灵也是一样的。</p>
+          <p> </p>
+          <p>大地的精气逐渐混浊。</p>
+          <p> </p>
+          <p>与此同时，我们的力量也日趋弱化。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么可以帮忙的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最大的问题是[%dic:STR_DIC_M_XipetoMove_36_An]。</p>
+          <p> </p>
+          <p>它们吸取了大地的奥德，污染了它。</p>
+          <p> </p>
+          <p>如果放任不管的话，不只地表，土地内部也会被污染的。</p>
+          <p> </p>
+          <p>精灵的朋友啊，你能不能帮助我们呢？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快去抓住[%dic:STR_DIC_M_XipetoMove_36_An]。</p>
+          <p> </p>
+          <p>这帮家伙躲在地下，肉眼很难看到。</p>
+          <p> </p>
+          <p>不能以为那是腐烂的树木就轻敌。虽然它们现在变成了怪物，原来可都是椰林，具有奥德的魔力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是和我们精灵缔结了盟约吗？</p>
+          <p> </p>
+          <p>你应该能够理解这个问题的严重性啊。</p>
+          <p> </p>
+          <p>需要我们的时候就向我们求援，现在我们求你了，你居然拒绝我们。</p>
+          <p> </p>
+          <p>真是自私的种族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正等着你呢。</p>
+          <p> </p>
+          <p>从很远的地方就感觉到了你的气息。</p>
+          <p> </p>
+          <p>是很久没有感受到的纯净强烈的气息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告诉他结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经知道你成功了。</p>
+          <p> </p>
+          <p>因为大地的气息变得纯净了。</p>
+          <p> </p>
+          <p>其他精灵看到了你和它们战斗，跑来告诉了我。</p>
+          <p> </p>
+          <p>说看来你是具有特殊能力的人。</p>
+          <p> </p>
+          <p>要不是已经和帕塞尔塔大人缔结了盟约，真想和你缔结盟约啊。太遗憾了。</p>
+          <p> </p>
+          <p>来，请拿着。这是给伟大的[%userclass]的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭吸取了大地精气的[%dic:STR_DIC_M_XipetoMove_36_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和大地精灵[%dic:STR_DIC_N_NPC_Karanus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭不仅吸取大地精气还污染了大地精灵的阿斯科。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大地精灵卡拉努斯抱怨说阿斯科吸取了大地的精气，还污染了它，使得精灵们的力量不能发挥。</p>
+          <p> </p>
+          <p>替他消灭了阿斯科回来。卡拉努斯很感谢你，送了你礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

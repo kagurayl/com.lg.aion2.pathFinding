@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，虫子！虫，虫子在肩上。</p>
+          <p> </p>
+          <p>(赶走虫子) 这是怎么回事？你不是说已经把虫子消灭干净了吗？</p>
+          <p> </p>
+          <p>够了！我最讨厌说谎的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会再去帮他抓虫子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？这次一定要把它们消灭干净！</p>
+          <p> </p>
+          <p>你马上去把马加洛原始森林的虫子消灭掉吧。</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_M_DF2A_SpakleVioletD_45_n]、[%dic:STR_DIC_M_DF2A_MutaMantisD_45_n]、[%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]统统消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。对了，刚才说的话，我是无意的。</p>
+          <p> </p>
+          <p>就是最讨厌说谎的人的那句话。</p>
+          <p> </p>
+          <p>啊，又有一只虫子！</p>
+          <p> </p>
+          <p>(赶走虫子)没事了，你快去原始森林消灭虫子吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是说愿意再去帮我抓虫子吗？这也是谎话吗？</p>
+          <p> </p>
+          <p>我本来不想这么说的。[%username]，你比虫子，不，和虫子一样讨厌。</p>
+          <p> </p>
+          <p>我不想再跟你说话，你走吧。</p>     
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就结束了？</p>
+          <p> </p>
+          <p>马加洛原始森林应该有很多虫子啊。</p>
+          <p> </p>
+          <p>该不会是像上次一样，只抓了几只虫子吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，听了你的话，我总算不用担心虫子了。</p>
+          <p> </p>
+          <p>对于刚才的神经质，我表示抱歉。</p>
+          <p> </p>
+          <p>汉斯大叔说圣水的守护者必须要亲切待人，但是一看到虫子，我就忘得一干二净了。</p>
+          <p> </p>
+          <p>要是我也像汉斯大叔那样不怕虫子该有多好……年纪大了之后会不会好一点呢？</p>
+          <p> </p>
+          <p>请你拿着这个。这是我的心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭马加洛原始森林的虫子</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF2A_SpakleVioletD_45_n]([%2]/25)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF2A_MutaMantisD_45_n]([%5]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]([%8]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ervin]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助非常讨厌虫子的艾尔文消灭栖息在马加洛原始森林里的虫子。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾尔文说虫子又变多了，让我再次去马加洛原始森林扫荡虫子。</p>
+          <p> </p>
+          <p>为艾尔文消灭掉了马加洛原始森林的山坡斯巴克、尖头缪塔和水草莫斯奇，他对我表示感谢，并给了我礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

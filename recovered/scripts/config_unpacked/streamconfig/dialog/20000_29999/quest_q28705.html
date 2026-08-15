@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭拉克莎幽灵军团的作战到了最后的关头。</p>
+          <p> </p>
+          <p>[%username]大人，只要您最后再去执行一次作战，应该就可以结束了。</p>
+          <p> </p>
+          <p>虽然塔梅斯的封印很久前就解开了，拉克莎军团的灵魂们也在那里游荡了很长时间，但是现在差不多都消失了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>平息塔梅斯的骚动，让人们逐渐忘记这件事，是最好的结果。</p>
+          <p> </p>
+          <p>上面的人好像也对这件事非常关心。</p>
+          <p> </p>
+          <p>他们还未参加这次消灭拉克莎幽灵军团作战的[%username]大人发放了奖励。</p>
+          <p> </p>
+          <p>请您最后再去一次塔梅斯，把剩下的任务完成，我就会把奖励送给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对付龙族就已经很麻烦了，还要对付龙族幽灵，[%username]大人一定很辛苦吧。</p>
+          <p> </p>
+          <p>完成这次任务之后，对幽灵军团的压制就可以说是取得了一定的成果，希望您最后再努把力。</p>
+          <p> </p>
+          <p>请您去消灭在塔梅斯游荡的拉克莎幽灵军团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最后再帮我一次的话，任务就可以完成了，我还很高兴呢。真让人意外。</p>
+          <p> </p>
+          <p>请您再考虑一下，如果想到塔梅斯去，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近地震明显减少了，在塔梅斯受伤的守护者的人数也减少了。</p>
+          <p> </p>
+          <p>最后一个任务执行得怎么样啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您竟然能从可怕的地下监狱塔梅斯活着回来，真是了不起。</p>
+          <p> </p>
+          <p>每次发生地震的时候，仿佛就能听到地下监狱传来的幽灵军团的脚步声，会让人禁不住蜷缩成一团。</p>
+          <p> </p>
+          <p>您的身上散发出难闻的味道，好像是收到了塔梅斯内部污浊的空气的污染。现在消灭幽灵军团的作战终于结束了。</p>
+          <p> </p>
+          <p>[%username]大人您在这次任务中立下了大功，这是上面给您的奖励。请收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭塔梅斯的 [%dic:STR_DIC_M_IDRaksah_2F_DrakanFighterCBone_56_Ae]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Lagia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">守卫卫兵让我帮着执行消灭拉克莎幽灵军团的作战。到塔梅斯去一趟吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了消灭拉克莎幽灵军团，守卫卫兵拉吉亚让我到塔梅斯去一趟。</p>
+          <p> </p>
+          <p>消灭了塔梅斯的拉克莎幽灵军团，回去之后，她说任务完成了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

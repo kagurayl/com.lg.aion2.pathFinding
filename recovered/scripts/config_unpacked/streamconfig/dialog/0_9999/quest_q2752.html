@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我不太清楚具体的事情，但是硫磺好像也是一种资源。</p>
+          <p> </p>
+          <p>上次让我搜集火焰浮游石的碎片，这次又轮到硫磺注视者了。</p>
+          <p> </p>
+          <p>上面下达了命令，让我搜集[%dic:STR_DIC_M_Ab1_1141_Flyingeye_27_An]的[%dic:STR_DIC_I_QUEST_2752a]，然后送到要塞去。</p>
+          <p> </p>
+          <p>好像虹膜中含有很多硫磺成分。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面不停地给我下达这种命令，我都快要发疯了。</p>
+          <p> </p>
+          <p>虽然给我们下达这种命令，可能是因为觉得我们红色赫西亚军团的能力很强。但是这样下去的话，我们就无法进行侦察工作了。</p>
+          <p> </p>
+          <p>所谓的喧宾夺主，说的就是这个。</p>
+          <p> </p>
+          <p>哈，不过这也不是赌气可以解决的。既然是命令，就只能执行。</p>
+          <p> </p>
+          <p>我没有时间，[%username]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我的请求。那就请您去打猎[%dic:STR_DIC_M_Ab1_1141_Flyingeye_27_An]，搜集[%dic:STR_DIC_I_QUEST_2752a]吧。</p>
+          <p> </p>
+          <p>硫磺注视者在附近有很多，因此应该不难找到。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次您那么爽快就答应帮忙，我还以为这次也会一样呢...</p>
+          <p> </p>
+          <p>也是。我都对这件事不满，其他人还会愿意帮忙吗？</p>
+          <p> </p>
+          <p>我会自己想办法的。您能在这里听我把话说完，我也已经很感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等着您呢，[%username]大人。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1141_Flyingeye_27_An]除掉了吗？</p>
+          <p> </p>
+          <p>如果您搜集到了[%dic:STR_DIC_I_QUEST_2752a]的话，就请交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色虹膜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一向不喜欢催促别人。</p>
+          <p> </p>
+          <p>但是情况很紧急，我不得不催您。</p>
+          <p> </p>
+          <p>如果您不赶快帮我搜集到[%dic:STR_DIC_I_QUEST_2752a]的话，我就会很难办。</p>
+          <p> </p>
+          <p>所以请您快去打猎[%dic:STR_DIC_M_Ab1_1141_Flyingeye_27_An]，搜集红色虹膜带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，太好了。可以在要塞催促之前送过去了。</p>
+          <p> </p>
+          <p>[%username]大人真是帮了我的大忙。</p>
+          <p> </p>
+          <p>虽然不多，但却是我的一点心意。请您收下，千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1141_Flyingeye_27_An]，并把搜集到的虹膜交给[%dic:STR_DIC_N_Glati]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">这次要塞又下达了搜集红色虹膜的命令。必须去打猎硫磺注视者，为格拉提搜集红色虹膜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格拉提说硫磺好像也是资源，并说这次上面下达了搜集红色虹膜送到要塞去的命令。</p>
+          <p> </p>
+          <p>帮助没有时间的格拉提打猎硫磺注视者，搜集到了红色虹膜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

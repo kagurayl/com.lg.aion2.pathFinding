@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你来得正好，我刚好有话要跟你说。</p>
+          <p></p>
+          <p>马勒库坦神庙训练所向普通守护者开放已经显现出了成果。</p>
+          <p></p>
+          <p>在和龙族的战斗中，我们魔军可以说是百战百胜。其中大部分都是我们神庙训练所出身的人。</p>
+          <p></p>
+          <p>因此原来持不同意见的其他主神也答应支持马勒库坦主神的政策。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>马勒库坦主神对此非常满意，因此决定向训练生们发放奖励。</p>
+          <p></p>
+          <p>当然，是向那些努力训练的训练生。</p>
+          <p></p>
+          <p>上面以此为基准确定了发放勋章时所需的徽章数量。</p>
+          <p></p>
+          <p>(查看卷轴)让我看看……勇气之神庙徽章400个和神庙徽章9800个。</p>
+          <p></p>
+          <p>如果能搜集到400个勇气之神庙徽章和9800个神庙徽章，就能领取白金功勋勋章。</p>
+          <p></p>
+          <p>[%username]大人，您也想参加吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>神庙勋章可以在第1神庙训练所和第2神庙训练所中获得，[%dic:STR_DIC_I_COIN_ARENA_PVP_01]可以通过[%dic:STR_DIC_W_IDArena_pvp_D]中的训练获得。</p>
+          <p></p>
+          <p>根据成果，每次可以获得不同数量的徽章。</p>
+          <p></p>
+          <p>也就是说，什么时候能搜集齐勋章，是由[%username]大人的实力决定的。</p>
+          <p></p>
+          <p>因此请您努力提高自己的实力。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这么好的机会，怎么能这么不在乎呢？</p>
+          <p></p>
+          <p>这是有时间限制的，我先把您的名字写在名录中。</p>
+          <p></p>
+          <p>如果您真的不愿意，到时再取消好了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您是为了白金功勋勋章来找我的吗？</p>
+          <p></p>
+          <p>请您先把徽章给我。</p>
+          <p></p>
+          <p>我得确认一下徽章的数量是否正确。</p>
+          <p></p>
+          <p>啊，我要事先声明，交换之后徽章是绝对无法退还的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出徽章。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>之前我说过，必须有400个[%dic:STR_DIC_I_COIN_ARENA_PVP_01]和9800个[%dic:STR_DIC_I_COIN_ARENA_01]，才能交换白金功勋勋章。</p>
+          <p></p>
+          <p>[%username]大人，您给我的数量不对，我不能把勋章给您。</p>
+          <p></p>
+          <p>请确认一下是不是放在什么地方了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>徽章的数量全部正确。</p>
+          <p></p>
+          <p>要搜集这么多徽章，一定都快吐血了吧？</p>
+          <p></p>
+          <p>给，请收下。这是给您的白金功勋勋章。</p>
+          <p></p>
+          <p>希望您今后能继续为魔界和马勒库坦主神努力训练。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_W_IDArena_D]接受训练，搜集[%dic:STR_DIC_I_COIN_ARENA_PVP_01]%和[%dic:STR_DIC_I_COIN_ARENA_01]%，然后交给[%dic:STR_DIC_N_Reigar]</font>
+              </p>[%collectitem]</step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">听说努力训练的训练生可以获得白金功勋勋章。必须搜集勇气之神庙徽章，交给雷加尔行政官。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>雷加尔行政官说因为神庙训练生们的努力，在和龙族的战斗中节节胜利，为了纪念这一切，目前正在向努力训练的训练生们发放白金功勋勋章。</p>
+          <p></p>
+          <p>搜集作为训练证据的徽章交给了他，他按照约定把白金功勋勋章发给了我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

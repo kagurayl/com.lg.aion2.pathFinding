@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的西部要塞被天族夺走，是无法接受的巨大耻辱。</p>
+          <p> </p>
+          <p>不管用什么手段，都必须把要塞从他们手里夺回来。</p>
+          <p> </p>
+          <p>要想那样的话，就必须破坏他们的防御体系。</p>
+          <p> </p>
+          <p>你应该知道在要塞进入可以占领状态的时候，是攻击的最好机会吧？</p>
+          <p> </p>
+          <p>但是敌人也长着眼睛，他们会召唤更强的精锐兵进行防守。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们派遣了大量的精锐驻军来防守希埃尔的东部要塞。</p>
+          <p> </p>
+          <p>特别是天族的[%dic:STR_DIC_M_2804_all]非常难对付。</p>
+          <p> </p>
+          <p>[%username]，这件事希望能得到你的帮助。你觉得怎样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去把驻守希埃尔的西部要塞的[%dic:STR_DIC_M_2804_all]清除掉。不管是上级也好，还是中级、下级也好。</p>
+          <p> </p>
+          <p>然后把他们身上别着的[%dic:STR_DIC_I_QUEST_2804a]带回来，作为除掉他们的证据。</p>
+          <p> </p>
+          <p>请注意监视希埃尔的西部要塞，最好在进入可以占领状态后，率先发动攻击。</p>
+          <p> </p>
+          <p>精锐驻军虽然很强，但以[%username]你的实力，应该没有任何问题！</p>
+          <p> </p>
+          <p>那就祝你好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底为什么会拒绝我呢？</p>
+          <p> </p>
+          <p>该不会是不敢到被天族占领的要塞去吧？</p>
+          <p> </p>
+          <p>你竟然会害怕这种事情...真让人不敢相信。</p>
+          <p> </p>
+          <p>[%username]的名声难道都是假的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着你，[%username]。</p>
+          <p> </p>
+          <p>你是刚从希埃尔的西部要塞回来吗？</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_M_2804_all]除掉，并把[%dic:STR_DIC_I_QUEST_2804a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出发光的徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道希埃尔的西部要塞没有你需要对付的敌人吗？</p>
+          <p> </p>
+          <p>你该不会还没去希埃尔的西部要塞吗？</p>
+          <p> </p>
+          <p>不要找借口，希望你集中精神完成任务。</p>
+          <p> </p>
+          <p>一旦有了攻击的机会，就去把[%dic:STR_DIC_M_2804_all]清除掉，然后把[%dic:STR_DIC_I_QUEST_2804a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道这种任务难不倒你。名声不是凭空就能获得的。</p>
+          <p> </p>
+          <p>不管怎样，[%username]你这次狠狠地打击了他们的气焰。</p>
+          <p> </p>
+          <p>真是辛苦了。我们会以这个为基础，一定要把希埃尔的西部要塞夺回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2804_all]，并把证据交给[%dic:STR_DIC_N_Aslak]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要夺回希埃尔的西部要塞，需要我的帮助。清除要塞进入可以占领状态时出现的天族要塞驻军，搜集放光的徽章。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯拉克说要想夺回被敌人夺走的希埃尔的西部要塞，就必须要借助我的力量。</p>
+          <p> </p>
+          <p>于是注意观察希埃尔的西部要塞的情况，在天族精锐驻军出现后立即除掉了他们，并把搜集到的发光的徽章作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

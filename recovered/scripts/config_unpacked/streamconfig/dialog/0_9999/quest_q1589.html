@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>光凭椰林的力量是不能给予令天族满意的帮助的。</p>
+          <p> </p>
+          <p>椰林的力量无法影响到不死族。</p>
+          <p> </p>
+          <p>我要替椰林族的朋友们请求帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者呀，去斯泰浓海岸的遗址吧。</p>
+          <p> </p>
+          <p>消灭掉幽灵带回来，[%dic:STR_DIC_I_QUEST_1589a]。</p>
+          <p> </p>
+          <p>它的角是拉斯贝尔格诅咒的象征。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以在梅兰提斯遗址和斯特浓海岸找到，[%dic:STR_DIC_M_Spectre_44_An]和[%dic:STR_DIC_M_Spectre_45_An]。</p>
+          <p> </p>
+          <p>一个人很难消灭它们。</p>
+          <p> </p>
+          <p>和你的同伴们一起去吧。</p>
+          <p> </p>
+          <p>不要忘了[%dic:STR_DIC_I_QUEST_1589a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你已经帮助了椰林。</p>
+          <p> </p>
+          <p>剩下的事就交给椰林自己处理吧。</p>
+          <p> </p>
+          <p>不用费心，去忙你的事吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正在对自然吹气，希望对不死族能够起到影响。</p>
+          <p> </p>
+          <p>所有的椰林都在努力，应该能对天族有所帮助。</p>
+          <p> </p>
+          <p>拜托你的事怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出幽灵的角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是看不起椰林的请求？</p>
+          <p> </p>
+          <p>椰林守护着神意，也期待着神意。</p>
+          <p> </p>
+          <p>快去完成你答应的事。</p>
+          <p> </p>
+          <p>把幽灵的角拿来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>你带来了诅咒的象征幽灵。</p>
+          <p> </p>
+          <p>送去给天人，他们就知道了，椰林信守了承诺。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_M_Spectre_44_An]和[%dic:STR_DIC_M_Spectre_45_An]的角带给[%dic:STR_DIC_N_Tree_Nomove_Trajanus]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">图拉真想消灭不死族，证明椰林的意志。为他们消灭幽灵，获取诅咒的象征——角。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图拉真说除了要完成椰林族能够完成的事，还要向椰林族的朋友请求帮助。于是按照他的请求前往梅兰提斯遗址和斯泰浓海岸，消灭了幽灵，带回了诅咒的象征——角。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

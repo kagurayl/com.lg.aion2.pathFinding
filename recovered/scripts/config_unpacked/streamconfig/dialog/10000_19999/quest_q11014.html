@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，我快疯掉了！不难的事情竟然弄成这个样子。</p>
+          <p> </p>
+          <p>所以我说不能把事情交给新手。</p>
+          <p> </p>
+          <p>现在后悔又有什么用？我就不应该把这件事交给加图索。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_angry;HACTION_SELECT1_1">询问发生了什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>送给苏贝尔斯石山野营地的补给品被加图索全部弄丢了！</p>
+          <p> </p>
+          <p>他让我相信他一次，我就交给了他。唉，没想到被毛球雪人抢走了。</p>
+          <p> </p>
+          <p>这都是因为欧比斯的战斗。有用的人全都派到了那里，要塞里的人手非常缺乏。</p>
+          <p> </p>
+          <p>所以才会让加图索这样没用的人当卫兵。</p>
+          <p> </p>
+          <p>这可怎么办呢？没有人，又不能再让加图索去送补给品……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说可以帮他送。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？我想您仅是军团长的事情就已经够忙了，所以没有问您。</p>
+          <p> </p>
+          <p>不好意思，还要麻烦[%username]大人帮我送东西……</p>
+          <p> </p>
+          <p>啊，您看这么办可不可以？补给品的配送由我们来办，[%username]大人，您帮我们去要塞周围消灭掉一些[%dic:STR_DIC_M_Ettin_30_An]。</p>
+          <p> </p>
+          <p>如果能把他们消灭掉，补给品的配送就会容易得多。</p>
+          <p> </p>
+          <p>怎么样？应该不难吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>请您到要塞通往西艾伦波利斯的路上去消灭[%dic:STR_DIC_M_Ettin_30_An]。只要消灭5个就可以了。</p>
+          <p> </p>
+          <p>这段时间，我要先把补给品准备好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么急事吗？</p>
+          <p> </p>
+          <p>您一会儿说要帮我，一会又说不行。</p>
+          <p> </p>
+          <p>要重新准备补给品，需要一段时间。如果您改变了主意，请再来找我。</p>
+          <p> </p>
+          <p>我在这等着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好。我刚把东西全部包装好。</p>
+          <p> </p>
+          <p>只要解决了雪人问题，我们就可以马上出发了。</p>
+          <p> </p>
+          <p>您帮我把要塞周围的毛球雪人消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就消灭了5个雪人，真不愧是[%username]大人。</p>
+          <p> </p>
+          <p>这下我可以安心地派加图索去送补给品了。</p>
+          <p> </p>
+          <p>谢谢您帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ettin_30_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Loktania]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卫兵安心地配送补给品，必须消灭因特尔蒂卡要塞周围的毛球雪人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢克塔尼亚抱怨说新兵加图索护送的补给品给毛球雪人抢走了。</p>
+          <p> </p>
+          <p>为了可以安全地配送补给品，消灭了要塞周围的毛球雪人。卢克塔尼亚对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，现在的情况太艰难了。在这里看敌人的眼色生活的日子什么时候才能结束啊！</p>
+          <p> </p>
+          <p>如果可以的话，我很想马上动员所有的兵力，把敌人一网打尽。不过目前是不可能的，真让人郁闷。</p>
+          <p> </p>
+          <p>要塞不仅只有这里一个。所以我们军团的兵力也分散到了好几个地方。</p>
+          <p> </p>
+          <p>而且这里的军团士兵们的士气低到了极点...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别是魔族占领要塞的时候最可恨。他们好像是故意的，经常发出一些侮辱我们主神的怪叫。</p>
+          <p> </p>
+          <p>请你去除掉掉几名魔族驻军，提振一下守卫们的士气。</p>
+          <p> </p>
+          <p>任务非常简单。只要除掉[%dic:STR_DIC_M_1811_all]，然后把[%dic:STR_DIC_I_QUEST_1811a]带回来作为证据就行了。</p>
+          <p> </p>
+          <p>你愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要以为对方是魔族就小看他们，搞不好会碰一头灰的。</p>
+          <p> </p>
+          <p>他们也和我们一样，是在欧比斯中经历了无数战斗的磨练的人。</p>
+          <p> </p>
+          <p>所以在要塞进入可以占领状态，展开战斗的时候，偷偷地摸过去会比较好。</p>
+          <p> </p>
+          <p>好了，你注意观察情况，到时候就出发。除掉[%dic:STR_DIC_M_1811_all]之后，请你把[%dic:STR_DIC_I_QUEST_1811a]带回来作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕要塞的敌人吗？</p>
+          <p> </p>
+          <p>那样的话，那就继续在附近抓纽特吧。</p>
+          <p> </p>
+          <p>如果你能帮我去清除纽特的话，我们也会表示感谢的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，烦死我了。李埃乌斯实力是不错，不过怎么话这么多啊。</p>
+          <p> </p>          
+          <p>对了，你去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出执政官的披风。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就实话实说吧。</p>
+          <p> </p>
+          <p>是还没到要塞去呢？还是忘了把披风带回来了？</p>
+          <p> </p>
+          <p>不管是哪一个都没关系。</p>
+          <p> </p>
+          <p>如果你想获得奖赏的话，就请你把[%dic:STR_DIC_I_QUEST_1811a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幸亏是让你去了。</p>
+          <p> </p>
+          <p>多亏了你，现在部下们的士气好像提高了一点。</p>
+          <p> </p>
+          <p>希望以后你能继续来帮我们。</p>
+          <p> </p>
+          <p>请你收下。这是给辛苦执行任务的您的奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_1811_all]%，搜集证据然后交给[%dic:STR_DIC_N_Menelaus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">魔族占领克罗坦要塞的话，守卫的士气会很低落。在要塞进入可以占领状态后，去把魔族驻军除掉，然后向梅内拉乌斯百夫长报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅内拉乌斯百夫长说魔族占领要塞后，会发出侮辱五位主神的怪叫，使守卫们士气低落，让我去把魔族驻军除掉。</p>
+          <p> </p>
+          <p>按照百夫长的拜托，在魔族占领克罗坦要塞的时候除掉了他们的驻军，并把执政官的披风交给了他。他说辛苦了，并让我以后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q3540</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，欢迎光临。</p>
+          <p> </p>
+          <p>你听说过只生长在特殊植物上的蘑菇的事情吗？</p>
+          <p> </p>
+          <p>那是一种香味独特的蘑菇，可以用作食材和多种药物的材料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就是只生长在[%dic:STR_DIC_M_XipetoMove_34_An]上面的[%dic:STR_DIC_I_QUEST_3540A]。</p>
+          <p> </p>
+          <p>西风的守护者阿塔兰特突然说想调查那个东西。</p>
+          <p> </p>
+          <p>她从来都不会轻易告诉别人是什么原因，所以我也不知道她想用来干什么。</p>
+          <p> </p>
+          <p>一定是用来制作变身药或者类似的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来光是守卫这里人手就已经不足了，还接到了搜集这种东西的委托。</p>
+          <p> </p>
+          <p>要是需要的话，就自己去搜集嘛。</p>
+          <p> </p>
+          <p>我们人手不够，[%username]%你能帮我去搜集一些[%dic:STR_DIC_I_QUEST_3540A]%吗？怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不会随便拜托别人去做这种事的。</p>
+          <p> </p>
+          <p>因为[%username]%你看上去值得信赖，所以我才会拜托你。</p>
+          <p> </p>
+          <p>在腐木原野的[%dic:STR_DIC_M_XipetoMove_34_An]身上应该就能搜集到[%dic:STR_DIC_I_QUEST_3540A]%。</p>
+          <p> </p>
+          <p>搜集到芳香蘑菇之后，请你帮我交给[%dic:STR_DIC_N_Atalante]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得不知道用来干什么就帮别人搜集东西太愚蠢了吗？</p>
+          <p> </p>
+          <p>事实上，我自己也是这么认为。</p>
+          <p> </p>
+          <p>我总是在想，那些西风的守护者一天到晚都在想些什么事情。</p>
+          <p> </p>
+          <p>看来我只能让阿塔兰特自己去搜集了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大家都觉得我在偷懒，真让人郁闷。</p>
+          <p> </p>
+          <p>为了获得奇夏尔克拉尔的情报，我不知道付出了多少努力，谁又能知道呢？</p>
+          <p> </p>
+          <p>对了，你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出芳香蘑菇。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说你帮皮洛斯去搜集[%dic:STR_DIC_I_QUEST_3540A]%了？</p>
+          <p> </p>
+          <p>看你空着手，好像什么都没搜集到吧？</p>
+          <p> </p>
+          <p>不管谁去搜集都没关系，只要能帮我搜集到芳香蘑菇就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是我上次让皮洛斯搜集的东西啊。</p>
+          <p> </p>
+          <p>是你帮他搜集的吗？</p>
+          <p> </p>
+          <p>不用说我就知道。皮洛斯一定是嫌麻烦，才会让你去的。</p>
+          <p> </p>
+          <p>不管怎样，我得谢谢你。我搜集这个东西是为了进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_3540A]%，然后交给[%dic:STR_DIC_N_Atalante]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助皮洛斯从破碎的树枝阿斯科上搜集芳香蘑菇，然后交给阿塔兰特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮洛斯说自己非常忙，但是阿塔兰特却让他去做没有用的事情，让我帮他处理一下。</p>
+          <p> </p>
+          <p>于是从破碎的树枝阿斯科身上搜集到了芳香蘑菇，交给了阿塔兰特。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

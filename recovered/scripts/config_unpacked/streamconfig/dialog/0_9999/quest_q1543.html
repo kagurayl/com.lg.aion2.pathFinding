@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是也感觉到毒气了？那是蜈蚣的毒气。</p>
+          <p> </p>
+          <p>一般的毒虫只有在扎了人或者咬了人之后，人才会中毒，可是这东西能让周围的生命体全都中毒。</p>
+          <p> </p>
+          <p>当然我们这种守护者是没有问题的，可是普通人就不行了。稍微接触到毒气就会晕倒，严重的时候还会丧命。</p>
+          <p> </p>
+          <p>所以最近，相比较保护塞内莫内亚大人而言，我们大多数时间都在保护人类调查员不受蜈蚣毒气的侵害！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样下去会很麻烦。我已经给极乐世界的同事们发了信，他们答应会来帮我。</p>
+          <p> </p>
+          <p>我拜托了一位非常有名的毒物研究专家，他答应给我制作一种解毒剂。</p>
+          <p> </p>
+          <p>可是这样就需要蜈蚣的毒囊。这又是个问题。</p>
+          <p> </p>
+          <p>没有人能搞到毒囊。我和其他的守护者不能离开岗位，否则可能会出现危险。</p>
+          <p> </p>
+          <p>所以想请求您帮帮我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么麻烦的事，您却答应帮忙，真是太感谢您了。</p>
+          <p> </p>
+          <p>那么请您消灭掉[%dic:STR_DIC_M_Centipede_37_An]带回[%dic:STR_DIC_I_QUEST_1543a]。考虑到可能会多需要一些做实验，请带回7只。</p>
+          <p> </p>
+          <p>蜈蚣都是在地面上活动，可能不太好找，您要仔细观察。</p>
+          <p> </p>
+          <p>特别要小心不要被它们咬到。就算是守护者被咬到也是很危险的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还有别的事吗？</p>
+          <p> </p>
+          <p>如果不是特别紧急的事，还是请您帮帮我。</p>
+          <p> </p>
+          <p>您也知道，这里很偏僻，很难找到其他人。</p>
+          <p> </p>
+          <p>请您还是再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您回来。</p>
+          <p> </p>
+          <p>嗯，找到它们费了不少力气吧?</p>
+          <p> </p>
+          <p>您弄到[%dic:STR_DIC_I_QUEST_1543a]了吧?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜈蚣的毒囊。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以您的实力对付蜈蚣应该不成问题的，您这段时间究竟在干什么啊？</p>
+          <p> </p>
+          <p>搞到7个[%dic:STR_DIC_I_QUEST_1543a] 有什么难的。</p>
+          <p> </p>
+          <p>请快一点吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这毒气！让人眩晕。</p>
+          <p> </p>
+          <p>我作为守护着尚且如此，普通人类闻到肯定已经丧命了。</p>
+          <p> </p>
+          <p>请包好送到极乐世界去。</p>
+          <p> </p>
+          <p>给您，虽然不多，也是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Centipede_37_An]，集齐毒，带给[%dic:STR_DIC_N_Piera]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了能够研制解毒剂，去找到蜈蚣的毒囊，带给皮埃拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮埃拉抱怨说他是为了保护塞内莫内亚来到野营地，结果却因为蜈蚣而忙于保护人类调查员。</p>
+          <p> </p>
+          <p>他请求帮助，使他能够集中与本职工作。其方法就是拜托极乐世界的毒物专家研制解毒剂。</p>
+          <p> </p>
+          <p>皮埃拉不能离开自己的岗位。你替他弄到了研制解毒剂必需的蜈蚣毒囊，并答应送至极乐世界，他很高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

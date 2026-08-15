@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不觉得现在的情况有什么可羞耻的。</p>
+          <p> </p>
+          <p>战争中总是会有输有赢。</p>
+          <p> </p>
+          <p>从某个方面来看，现在也可以说是一个好机会。因为我们失去的东西很少，而敌人失去的很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否有特别的计划。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>攻占德奇沙斯要塞的计划已经制定完成，但是需要你的帮助。</p>
+          <p> </p>
+          <p>请你召集同伴，攻击[%dic:STR_DIC_M_2790_all]，不断地进行攻击。</p>
+          <p> </p>
+          <p>以此使他们失去判断力。同时让他们变得疲惫和烦躁。</p>
+          <p> </p>
+          <p>你的攻击进行到一定程度之后，我们就会开始正面攻击。</p>
+          <p> </p>
+          <p>怎么样？你愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你答应帮忙，我就放心了。我想你应该会有很多志同道合的同伴。</p>
+          <p> </p>
+          <p>希望你能和同伴们一起，干净利落地完成这项任务。</p>
+          <p> </p>
+          <p>不过，一旦发现危险的话，请你迅速退却。因为没有什么比生命更重要。</p>
+          <p> </p>
+          <p>那就祝你好运。</p>
+          <p> </p>
+          <p>愿黑暗的平安永远伴随着你！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意吗？你这是放弃了一个好机会。</p>
+          <p> </p>
+          <p>如果能成功完成这项任务的话，你在埃雷修兰塔的名声将会进一步提高...</p>
+          <p> </p>
+          <p>不过既然你不愿意，我也不再说什么了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让你去做的事情，进行得怎么样了？</p>
+          <p> </p>
+          <p>我也在想，你差不多该回来了。</p>
+          <p> </p>
+          <p>跟我说说事情进行得怎样了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了。</p>
+          <p> </p>
+          <p>多亏了你，现在我们应该可以顺利地按原计划执行了。</p>
+          <p> </p>
+          <p>请你收下。虽然以你的功绩，应该给你更高的奖励。但是我只能给你这个，实在抱歉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2790_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Menglad]报告结果</font></p></step>              
+    </steps>
+          <p><font font_xml="quest_summary">和同伴们一起，清除德奇沙斯要塞的驻军，然后向蒙哥拉德报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蒙哥拉德百夫长让我一同参与夺回要塞的计划，让我持续攻击要塞驻军，使其陷入混乱。</p>       
+          <p> </p>
+          <p>按照她的指示，清除了要塞驻军，并回去找到了她。她说辛苦了，并给了我奖赏。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

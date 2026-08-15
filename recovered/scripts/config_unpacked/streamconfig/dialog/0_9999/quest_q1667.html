@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前，我去了一趟城市。听那里的人们称赞[%username]大人，说任务只要交给您，您一定会帮着处理好。</p>
+          <p> </p>
+          <p>所以我也想拜托[%username]大人一件事。</p>
+          <p> </p>
+          <p>虽然不太容易，不过我想[%username]大人一定可以成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要您帮我做的，是清除掉梅兰提斯遗迹地的[%dic:STR_DIC_M_Vapor_43_An]和[%dic:STR_DIC_M_DeathKnight_45_Ae]。</p>
+          <p> </p>
+          <p>您也知道贝珀和阿努拜特斗士不好对付。</p>
+          <p> </p>
+          <p>而且周围聚集了很多的不死族，光把他们除掉都是很困难的事情。</p>
+          <p> </p>
+          <p>怎么样？如果您能成功，我会给您金铸币。您想挑战一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您去梅兰提斯遗迹地把[%dic:STR_DIC_M_Vapor_43_An]和[%dic:STR_DIC_M_DeathKnight_45_Ae]清除掉。</p>
+          <p> </p>
+          <p>如果您能成功完成任务，我会按照约定给您金铸币。</p>
+          <p> </p>
+          <p>那就祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝珀和阿努拜特斗士可不容易对付。</p>
+          <p> </p>
+          <p>如果您什么时候想尝试一下的话，可以再来找我。</p>
+          <p> </p>
+          <p>对于[%username]大人，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！您安然回来啦。</p>
+          <p> </p>
+          <p>贝珀和阿努拜特斗士全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真了不起！</p>
+          <p> </p>
+          <p>这样一来，梅兰提斯遗迹地应该可以安静一段时间了。</p>
+          <p> </p>
+          <p>我的心里总算可以踏实点了。</p>
+          <p> </p>
+          <p>真是辛苦您了。这是说好的金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除梅兰提斯遗迹地的不死族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Vapor_43_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DeathKnight_45_Ae]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Yujinius]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">拖雷摩斯说如果帮他清除梅兰提斯遗迹地的不死族，他就给我金铸币。接受他的拜托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拖雷摩斯说梅兰提斯遗迹地有很多不死族，如果我能去清除其中最让人头疼的贝珀和阿努拜特斗士，他就给我金铸币。</p>
+          <p> </p>
+          <p>于是前往梅兰提斯遗迹地，清除掉了贝珀和阿努拜特斗士。按照约定，他给了我金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

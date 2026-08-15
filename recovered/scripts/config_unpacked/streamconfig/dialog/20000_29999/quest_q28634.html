@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，[%username]，你打算用它来干什么呢？</p>
+          <p> </p>
+          <p>我是说我给你的克罗梅内的火焰。</p>
+          <p> </p>
+          <p>虽然可以当作项链装备，但那样的话好像有点太可惜了。</p>
+          <p> </p>
+          <p>如果能把它溶化掉，涂在审判官之枪上，就能大幅提升其性能。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想强化审判官之枪的性能，需要三样东西。</p>
+          <p> </p>
+          <p>那就是克罗梅内的火焰和审判官之枪，以及优秀的铁匠。</p>
+          <p> </p>
+          <p>第一件东西你已经有了，问题是审判官之枪。哎呀，真让人兴奋！</p>
+          <p> </p>
+          <p>只要你能找到审判官之枪，我就可以为你强化武器。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的运气真不错。</p>
+          <p> </p>
+          <p>不是我自吹自擂，能处理那种武器的人，魔界没有几个。因为它非常脆弱，不小心的话，就会被弄坏。</p>
+          <p> </p>
+          <p>你快去寻找审判官之枪吧。</p>
+          <p> </p>
+          <p>听说就在莫尔海姆火之神殿的[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]手上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？你是不相信我吗？</p>
+          <p> </p>
+          <p>我好歹也是魔界有名的铁匠，难道会骗你不成……</p>
+          <p> </p>
+          <p>我可以帮你加工成性能非常出色的枪，希望你再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦？审判官之枪带来了吗？</p>
+          <p> </p>
+          <p>请把审判官之枪和克罗梅内的火焰交给我吧。</p>
+          <p> </p>
+          <p>我马上为你进行强化。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克罗梅内的火焰和武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是说了吗？必须有克罗梅内的火焰和审判官之枪，我才能帮你强化。</p>
+          <p> </p>
+          <p>你手上拿着的是审判官之枪吗？</p>
+          <p> </p>
+          <p>呵呵，如果你拿在手上，我又怎么能对它进行强化呢？</p>
+          <p> </p>
+          <p>你是怕我把审判官之枪弄坏了吗？</p>
+          <p> </p>
+          <p>我好歹也是魔界有名的铁匠。这里的火焰的守护者的武器，全都是我制作的。</p>
+          <p> </p>
+          <p>你就放心吧。请把审判官之枪和克罗梅内的火焰交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(擦了擦汗)唉，累死了。</p>
+          <p> </p>
+          <p>来，给你。我敢保证，你一定会很喜欢。</p>
+          <p> </p>
+          <p>哈，好久没动手了，真累啊。</p>
+          <p> </p>
+          <p>我要休息一下，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集强化审判官之枪所需的材料，交给[%dic:STR_DIC_N_Walter]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴尔特说可以为我强化审判官之枪。搜集审判官之枪和克罗梅内的火焰，然后交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴尔特说可以用克罗梅内的火焰来强化审判官系列武器，让我去搜集审判官之枪。</p>
+          <p> </p>
+          <p>按照他所说，把克罗梅内的火焰和审判官之枪交给了他，巴尔特为我制作出了性能大幅提高的审判官之枪。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

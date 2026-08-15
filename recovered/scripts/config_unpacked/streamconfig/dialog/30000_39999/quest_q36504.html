@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>大喙帕皮尼因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。</p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_LF4_DayQ_Lupyllini_52_n] </p>
+          <p></p>
+          <p> 2. 罪行: 破坏打猎用的陷阱</p>
+          <p></p>
+          <p> 3. 详情: 肆意破坏守卫们用于筹集粮食的陷阱，在物质上和精神上造成了巨大危害。据说经常在枯萎森林北部出没</p>
+          <p> </p>
+          <p>枯萎森林北部设置了 [%dic:STR_DIC_OBJ_LF4_FOBJ_Q36504]%，大喙帕皮尼出现后，最先将其除掉者，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们赏金猎人什么事情都做。</p>
+          <p> </p>
+          <p>只要有赏金，不管是动物、植物，还是人，全都可以！</p>
+          <p> </p>
+          <p>[%username]大人，您应该很清楚赏金猎人的规矩吧？这次您又完成了什么任务呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>破坏打猎用陷阱的比鲁金等于给自己制造了一个陷阱！真是让人哭笑不得。</p>
+          <p> </p>
+          <p>刚好守卫们由于无法获得足够的补给，需要自己动手自给自足，现在他们的抱怨声更加厉害了。</p>
+          <p> </p>
+          <p>您帮我们消灭了让人头疼的动物，我应该给予您适当的奖励。</p>
+          <p> </p>
+          <p>辛苦您了， [%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用[%dic:STR_DIC_OBJ_LF4_FOBJ_Q36504]%引诱并消灭[%dic:STR_DIC_M_LF4_DayQ_Lupyllini_52_n]%([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以妨碍守卫们搜集粮食的罪名而受到通缉的大喙帕皮尼之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

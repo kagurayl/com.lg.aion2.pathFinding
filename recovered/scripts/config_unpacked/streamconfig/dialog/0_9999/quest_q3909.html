@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请等一等，[%userclass]。占用您一点时间，可以吗？</p>
+          <p> </p>
+          <p>我以生命之神庙的名义，特来引导您。</p>
+          <p> </p>
+          <p>您知道复活精灵石吗？您这种水平的守护者肯定应该使用过。</p>
+          <p> </p>
+          <p>那是在精灵石中注入生命力量后制作出的魔法物品。</p>
+          <p> </p>
+          <p>就算不会使用复活技能的守护者，也可以使用复活精灵石，来救助那些生命垂危的守护者，使他们不必通过奇柏利斯克就能复活。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们生命之神庙正在致力于推广复活精灵石，使广大守护者在普通商店里都能买得到、买得起。</p>
+          <p> </p>
+          <p>不过根据最近的报告，使用复活精灵石的人似乎并没想象中的那么多。</p>
+          <p> </p>
+          <p>因此，尤斯迪埃大人让治愈星和护法星以外的其他人都去推广宣传复活精灵石。</p>
+          <p> </p>
+          <p>另外，使用[%dic:STR_DIC_I_SOULSTONE_RESURRECT]还能获得特别奖励。</p>
+          <p> </p>
+          <p>[%userclass]大人，您不想试试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您的决定很明智。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_SOULSTONE_RESURRECT]对于那些和同伴一起战斗的人特别有用。</p>
+          <p> </p>
+          <p>尤其是当擅长复活技能的治愈星或护法星生命垂危的时候，对他们使用复活精灵石尤其管用。</p>
+          <p> </p>
+          <p>请您在使用10次复活精灵石拯救同伴后，去找[%dic:STR_DIC_N_Thrasymedes]大人。</p>
+          <p> </p>
+          <p>对了，复活精灵石的使用是不被认可的。如果不是危急时刻，希望[%username]大人留着自己用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道了，[%userclass]。</p>
+          <p> </p>
+          <p>我只是告诉您有这么个活动，并非强制您参加。</p>
+          <p> </p>
+          <p>那么，愿生命的庇护与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一一实践神庙的教导真不是一件容易的事情。</p>
+          <p> </p>
+          <p>虽然我已经是神庙的老师了，但依然感到很难完美地履行尤斯迪埃主神大人的教导。</p>
+          <p> </p>
+          <p>不过我会继续努力以主神的教导为目标，不断磨练自己的。</p>
+          <p> </p>
+          <p>如果[%userclass]对生命的教诲感兴趣，随时可以问我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是希凯雅让你来找我的。</p>
+          <p> </p>
+          <p>你做得很好，用复活精灵石拯救了许多同伴。</p>
+          <p> </p>
+          <p>使用复活精灵石也是对生命教诲的践行。</p>
+          <p> </p>
+          <p>你完成得相当出色，生命之神庙将给你颁发奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">请使用[%dic:STR_DIC_I_SOULSTONE_RESURRECT]救助倒下的同伴([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Thrasymedes]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按照希凯雅所说，使用复活精灵石救助倒下的同伴。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希凯雅说现在生命的神庙正在鼓励大家使用复活精灵石，说是使用后能够获得奖励。</p>
+          <p> </p>
+          <p>使用10次复活精灵石，救助倒下的同伴。见到特拉希梅德斯之后，他称赞了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

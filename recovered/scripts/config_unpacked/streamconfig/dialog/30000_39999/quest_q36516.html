@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>恶毒的胡可哈因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_LF4_DayQ_Agrint_Acid_55_An]</p>
+          <p></p>
+          <p> 2. 罪行: 释放出恶臭气体，给天族的肉体和精神造成严重伤害</p>
+          <p></p>
+          <p> 3. 详情: 安格利浦废墟的罗克哈之中，恶毒的胡可哈散发出的烟雾的毒性最强，现在监视龙族神殿的守卫们已全部出动，正在想办法消灭它。</p>
+          <p> </p>
+          <p>在安格利浦废墟设置了罗克哈喜欢的[%dic:STR_DIC_OBJ_LF4_FOBJ_Q36516]%利用它将恶毒的胡可哈引诱出来，并将其首先消灭掉的人，将获得重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于胡可哈，我早有耳闻</p>
+          <p> </p>
+          <p>听说他散发出来的味道，让人无法忍受？</p>
+          <p> </p>
+          <p>[%username]大人的身上，好像也能闻到奇怪的味道……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(捏住鼻子)我说呢……怎么您身上会有这种味道。 </p>
+          <p> </p>
+          <p>别靠近我。我的衣服刚洗没多久，我不想这么快就沾上味道。</p>
+          <p> </p>
+          <p>请不要觉得我太失礼。我会多给您一些赏金的</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用[%dic:STR_DIC_OBJ_LF4_FOBJ_Q36516]%引诱并消灭[%dic:STR_DIC_M_LF4_DayQ_Agrint_Acid_55_An]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了以在安格利浦废墟给天族造成危害的罪名而受到通缉的恶毒的胡可哈之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

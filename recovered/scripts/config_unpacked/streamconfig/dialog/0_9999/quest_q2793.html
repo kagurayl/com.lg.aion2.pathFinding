@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您见过龙族战斗母舰德雷得奇安吗？最近因为那个东西，乱得一团糟。</p>
+          <p> </p>
+          <p>他们突然出现，并进行攻击，很多地方遭受了损失。</p>
+          <p> </p>
+          <p>当然，为了破坏德雷得奇安，我们尝试了各种方法。但是却还是一点都伤不了他。</p>
+          <p> </p>
+          <p>反而是我们受到了更多的损失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯研究专家格伦说只要把德雷得奇安的部件给他送过去，他就能帮我们进行分析。不过做起来哪有说的那么容易啊。</p>
+          <p> </p>
+          <p>但是也许是阿斯佩尔主神的保佑，不久之前有一个德雷得奇安坠毁了，残骸还留在那里。</p>
+          <p> </p>
+          <p>怎么样？这是搜集[%dic:STR_DIC_OBJ_Ab1_Module_Q1793]的绝好机会，您愿意帮助我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。这次的事情伏魔殿也很关注，如果成功了的话，对[%username]大人的未来也会很有帮助。</p>
+          <p> </p>
+          <p>那就请您去搜集[%dic:STR_DIC_OBJ_Ab1_Module_Q1793]，并带回来。</p>
+          <p> </p>
+          <p>哦，对了。德雷得奇安的周围有很多原来在母舰里的龙族。</p>
+          <p> </p>
+          <p>所以请您一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事情本来是玛格纳伊尔的任务，我想帮帮他才来拜托[%username]大人的。</p>
+          <p> </p>
+          <p>不行的话就算了。</p>
+          <p> </p>
+          <p>我自己找时间带着玛格纳伊尔一起去一趟也行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_Ab1_Module_Q1793]带回来了吗？</p>
+          <p> </p>
+          <p>大家都在等着[%username]大人回来呢。</p>
+          <p> </p>
+          <p>我很想知道它到底长成什么样子。请您快把部件给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德雷得奇安的部件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么问题吗？</p>
+          <p> </p>
+          <p>您是对任务有什么不清楚的地方吗？</p>
+          <p> </p>
+          <p>您只要去搜集5个[%dic:STR_DIC_OBJ_Ab1_Module_Q1793]，然后带回来就可以了。</p>
+          <p> </p>
+          <p>时间不是问题，所以您晚一点过去也没关系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这就是德雷得奇安的部件吗？</p>
+          <p> </p>
+          <p>不像是金属，也不像是皮革，看了让人直起鸡皮疙瘩。</p>
+          <p> </p>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>我得赶快把它送去分析。看到这个的话，格伦一定会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_Ab1_Module_Q1793]，然后交给[%dic:STR_DIC_N_Lifprasir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说要找的破坏德雷得奇安的方法的话，就需要德雷得奇安的部件。去把坠落在坠落之岛的德雷得奇安的部件拿回来交给里弗斯拉希尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>里弗斯拉希尔说为了找到破坏德雷得奇安的方法，必须从坠落的德雷得奇安那里拿回部件，送到欧比斯研究专家格伦那里进行研究。</p>
+          <p> </p>
+          <p>按照他的指示击退了龙族，搜集到了德雷得奇安的部件。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

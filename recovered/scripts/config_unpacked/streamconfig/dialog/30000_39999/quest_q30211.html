@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在复原的古书中，寻找封印鲁德拉的地方。</p>
+          <p> </p>
+          <p>(查阅古书)相关的内容我差不多找到了，请稍等一下。</p>
+          <p> </p>
+          <p>啊！终于找到了。</p>
+          <p> </p>
+          <p>虽然不知道鲁德拉具体封印在什么地方，但上面说明了怎样才能过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_none_1">询问怎么过去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_none_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在封印守护者伊斯巴里亚的仪式之房里，有一颗巨大的宝珠。</p>
+          <p> </p>
+          <p>利用那颗宝珠的力量，可以瞬间移动到鲁德拉所在的寒冰流放所。</p>
+          <p> </p>
+          <p>但是要想使用宝珠，好像必须要有特殊的动力源。</p>
+          <p> </p>
+          <p>那个动力装置是一根水晶棒……让我看看……好像就在一个名叫空置的仓库的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我没去过帕休曼迪尔寺院，因此不知道[%dic:STR_DIC_W_IDCatacombs_SZ_C]在什么地方。</p>
+          <p> </p>
+          <p>据说在到达英雄墓室之前，有一扇隐藏的门。英雄墓室又在哪里呢……</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去搜集[%dic:STR_DIC_I_QUEST_30211a]吗？</p>
+          <p> </p>
+          <p>找到水晶棒之后，请您去启动[%dic:STR_DIC_OBJ_IDCatacombs_BigOrb_Q30211]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在空置的仓库中消灭[%dic:STR_DIC_M_IDCatacombsN_ShadowStalker_55_Ah]，应该就能得到水晶棒。</p>
+          <p> </p>
+          <p>请您带着[%dic:STR_DIC_I_QUEST_30211a]，到永恒寺院的仪式之房里启动[%dic:STR_DIC_OBJ_IDCatacombs_BigOrb_Q30211]。</p>
+          <p> </p>
+          <p>因为有可能会突然遇到鲁德拉，您最好做好充分的准备之后再去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是害怕可能会突然遇到鲁德拉吗？</p>
+          <p> </p>
+          <p>如果我是[%username]大人的话，辛苦了这么长时间，肯定希望看到最后的结局。</p>
+          <p> </p>
+          <p>算了。我们找到了这么多有关鲁德拉的秘密，卡伊努斯大人也应该满意了吧。</p>
+          <p> </p>
+          <p>我会整理一下，然后向他报告，让他给我派一个[%username]大人之外的人来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(没有任何反应。)</p>
+          <p> </p>
+          <p>(水晶棒好像有什么问题。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(没有任何反应。)</p>
+          <p> </p>
+          <p>(可能是因为没有启动宝珠所需的水晶棒。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕休曼迪尔寺院的事情怎么样了？</p>
+          <p> </p>
+          <p>水晶棒起作用了吗？时空之宝珠启动了吗？</p>
+          <p> </p>
+          <p>您到封印鲁德拉的地方去了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……是吗……</p>
+          <p> </p>
+          <p>虽然有点失望，不过没关系。我也没有期待一次就能成功。</p>
+          <p> </p>
+          <p>不过水晶棒也有了，为什么宝珠一点反应也没有呢？</p>
+          <p> </p>
+          <p>必须查明原因，才能找到新的突破口。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30211a]，然后启动[%dic:STR_DIC_OBJ_IDCatacombs_BigOrb_Q30211]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Pilomenes]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭忠诚的苏拉甘，搜集水晶棒，启动仪式之房里的时空之宝珠。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮罗梅内斯说根据复原的古代文献，必须消灭帕休曼迪尔寺院里的忠诚的苏拉甘，搜集水晶棒，才能启动仪式之房里的时空之宝珠。</p>
+          <p> </p>
+          <p>按照他的委托搜集到了宝珠，尝试启动宝珠，但不知道因为什么原因，时空之宝珠无法启动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30507</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的样子，好像是天族吧。</p>
+          <p> </p>
+          <p>好久没有见到天族了。</p>
+          <p> </p>
+          <p>其实我过去也是天族，也有和我一起奋斗的战友。</p>
+          <p> </p>
+          <p>虽然变成了这个样子，但我想给我的朋友传个口信……不知道他现在是否还活着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他叫阿卡利奥斯，是我在暴风军团中的好朋友。</p>
+          <p> </p>
+          <p>我们一同经历了很多困难。</p>
+          <p> </p>
+          <p>最后一次见到他，是在一个不知名的小型欧比斯中，之后就失去了联系……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说他还活着，换了个名字叫菲尔诺斯。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡利奥斯真的还活着吗？在天界？</p>
+          <p> </p>
+          <p>那么请你帮我去给他传个口信。</p>
+          <p> </p>
+          <p>帮我告诉他，说我在那个时候独自掉进了龙界。</p>
+          <p> </p>
+          <p>虽然样子和以前不一样了，但我还保留着一颗和以前一样的心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能够在这里活下来，真的很不容易。</p>
+          <p> </p>
+          <p>掉入龙界之后，我见到了在这里游荡的鸢族，就和他们待在了一起。</p>
+          <p> </p>
+          <p>虽然我的身上已经找不到天族的样子，但是我的心里还把自己当作一名骄傲的暴风军团的士兵。</p>
+          <p> </p>
+          <p>请你转告他，虽然我现在变成了寄居在香炉里的灵魂，但是我坚信战胜龙族的那一天一定会到来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道阿卡利奥斯在哪里，却不愿意帮我传话？</p>
+          <p> </p>
+          <p>真是个冷漠的朋友。</p>
+          <p> </p>
+          <p>我是信任天族，才会找你帮忙的……</p>
+          <p> </p>
+          <p>够了。知道阿卡利奥斯没事，我就已经很满足了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道你会来找我。</p>
+          <p> </p>
+          <p>因为最近几天我一直梦见你。</p>
+          <p> </p>
+          <p>这次找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达比西奥斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是说比西奥斯？</p>
+          <p> </p>
+          <p>我还以为他死在了欧比斯，没想到他在龙界变成了鸢族？</p>
+          <p> </p>
+          <p>他变成了灵魂寄居在香炉里？……看来他是希望能亲眼见到龙族的灭亡。</p>
+          <p> </p>
+          <p>[%username].，谢谢你给我带来了朋友的消息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去普埃塔和[%dic:STR_DIC_LA12]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了比西奥斯，去普埃塔见见菲尔诺斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>碰了碰战斗训练场的香炉，有个名叫比西奥斯的鸢族灵魂出现了。</p>
+          <p> </p>
+          <p>比西奥斯说自己原来是天族，让我帮他给原来的同伴阿卡利奥斯传话。</p>
+          <p> </p>
+          <p>于是向菲尔诺斯转达了比西奥斯的消息，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

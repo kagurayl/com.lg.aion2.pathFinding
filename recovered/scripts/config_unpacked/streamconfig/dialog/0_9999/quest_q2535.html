@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能没跟您说过，其实我就是在贝斯佩尔村出生，小时候还在那里住过几年。</p>
+          <p> </p>
+          <p>父亲成为守护者以后，全家都搬到了伏魔殿。</p>
+          <p> </p>
+          <p>上次，来村里执行任务，到了以后吓了我一跳。儿时的玩伴都变成了僵尸。</p>
+          <p> </p>
+          <p>一开始还不太敢确定，可当我仔细辨认他们的脸后，才发现他们的确是我小时候的朋友伊穆德和莫尔罗克。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_sad;HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>于是，我找到了贝斯佩尔难民村的人，向他们询问 [%dic:STR_DIC_M_ZombieNamedDQ_36_An]和 [%dic:STR_DIC_M_SkeletonNamedDQ_36_An]变成不死族的经过。</p>
+          <p> </p>
+          <p>村民们告诉我说，从小就非常稳重的伊穆德长大后成为了神官，而小时候就喜欢调皮捣蛋的莫尔罗克则成了自卫团队长。</p>
+          <p> </p>
+          <p>他们为了掩护村民安全逃离，战斗到最后一刻。最终，都成为了不死族。听完以后，我心里十分难受。</p>
+          <p> </p>
+          <p>吉格里泰大人对我说，将朋友们送回奥德的怀抱，才是彼此间友情的真正体现。可是，我实在不忍心亲自动手。</p>
+          <p> </p>
+          <p>[%username] 大人能帮帮我和我的朋友们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我的请求。</p>
+          <p> </p>
+          <p>虽然通过我的双手让朋友回到奥德的怀抱是最好的，可我真的无法动手。</p>
+          <p> </p>
+          <p>请让[%dic:STR_DIC_M_ZombieNamedDQ_36_An]和 [%dic:STR_DIC_M_SkeletonNamedDQ_36_An]摆脱痛苦吧。</p>
+          <p> </p>
+          <p>我会为他们向马勒库坦主神祈祷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人您也认为应该由我亲手送他们回到奥德的怀抱吗？</p>
+          <p> </p>
+          <p>哎...我也不是不清楚这点。</p>
+          <p> </p>
+          <p>但是，我实在无法硬下心来。</p>
+          <p> </p>
+          <p>知道了，我会再考虑的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了啊，[%username] 大人。 </p>
+          <p> </p>
+          <p>刚才，我一直在为伊穆德和莫尔罗克向马勒库坦主神祈祷。</p>
+          <p> </p>
+          <p>我的朋友们...回到奥德的怀抱了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（沉默了片刻）朋友们的灵魂也将安息。</p>
+          <p> </p>
+          <p>不管是为了我的朋友们，还是为了我，真是谢谢您。</p>
+          <p> </p>
+          <p>等目前的困难过后，在适当的时候，我要为他们立一块墓碑。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">让阿尔夫盖尔的朋友，那些变成不死族的勇士们，安详地回到奥德的怀抱。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ZombieNamedDQ_36_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SkeletonNamedDQ_36_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Alfgeir]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿尔夫盖尔儿时的伙伴变成了不死族。代替阿尔夫盖尔，让他的朋友们回到奥德的怀抱。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔夫盖尔小时候曾在贝斯佩尔村住过一段时间。不久前，他得知儿时的伙伴变成了不死族。</p>
+          <p> </p>
+          <p>虽然想让朋友们回到奥德的怀抱，可他实在不忍心亲自下手。答应他的请求，消灭了神官伊穆德，自卫团队长莫尔罗克，让他们回到了奥德的怀抱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

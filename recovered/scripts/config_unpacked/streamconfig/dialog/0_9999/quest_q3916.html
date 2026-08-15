@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我仔细阅读了报告书，发现引起变异的龙胶和德拉兹玛好像是用名叫德拉纳的物质制造的。</p>
+          <p> </p>
+          <p>看来必须对根源性的物质德拉纳进行彻底的研究。</p>
+          <p> </p>
+          <p>报告书上说生产，看来是制造出来的东西。但不知道是用什么方法制造出来的。</p>
+          <p> </p>
+          <p>现在所有的一切都还是谜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，既然你找到了报告书，能再去帮我搜集一些[%dic:STR_DIC_I_quest_3916a]吗？</p>
+          <p> </p>
+          <p>有了德拉纳之后，不仅有助于对其本身进行研究，对龙胶的研究也会有很大的帮助。</p>
+          <p> </p>
+          <p>你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有[%username]你这样的人帮助我进行研究，真是太好了。</p>
+          <p> </p>
+          <p>有很多事情需要守护者的帮助，对龙族的研究尤其如此。</p>
+          <p> </p>
+          <p>如果能搜集到[%dic:STR_DIC_I_quest_3916a]，将会对研究起到很大的帮助。</p>
+          <p> </p>
+          <p>真是谢谢你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可让人难办了。</p>
+          <p> </p>
+          <p>只有对德拉纳标本进行研究，才能知道龙族是如何让生命体产生变异的。</p>
+          <p> </p>
+          <p>我也不能明明知道搜集标本不容易，还非让你去...</p>
+          <p> </p>
+          <p>缺少材料会使研究停滞不前，这可怎么办才好呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究龙族这么久，我还是头一次这么忙。</p>
+          <p> </p>
+          <p>突然出现了这么多可以研究的东西...</p>
+          <p> </p>
+          <p>对了，德拉纳标本搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉纳标本。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_quest_3916a]还没搜集到吗？</p>
+          <p> </p>
+          <p>你应该知道，目前还没有任何和德拉纳有关的文献，所以只能用标本来进行研究。</p>
+          <p> </p>
+          <p>请你一定要帮我把标本采集回来。</p>
+          <p> </p>
+          <p>研究结果将会对整个天界起到巨大的帮助，希望你能意识到这一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看)这就是德拉纳啊。</p>
+          <p> </p>
+          <p>这是用德拉纳和德拉兹玛制造的东西…推测出制造流程，是我的工作。</p>
+          <p> </p>
+          <p>如果研究能因此取得进展，那都是托[%username]你的福。</p>
+          <p> </p>
+          <p>但是要想继续研究，需要更多的德拉纳标本。</p>
+          <p> </p>
+          <p>有时间的话，请再帮我搜集一些。谢谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_3916a]，然后交给[%dic:STR_DIC_N_Creusa]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要想对龙胶和德拉兹玛的材料进行研究，必须要有标本。去黑暗普埃塔搜集德拉纳标本。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到龙族的活体变异计划书之后，克蕾莎说要对龙胶和德拉兹玛的材料德拉纳进行研究。</p>
+          <p> </p>
+          <p>前往黑暗普埃塔搜集到了德拉纳标本，克蕾莎说会用它推测出龙胶的德拉兹玛制造流程。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间你帮了我不少忙，我来告诉你一个好东西。</p>
+          <p> </p>
+          <p>在火之神殿里，有名叫[%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae]和[%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae]的怪物。</p>
+          <p> </p>
+          <p>在守护像的体内有[%dic:STR_DIC_I_QUEST_2378a]。</p>
+          <p> </p>
+          <p>那个火焰石拥有惊人的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你愿意去火之神殿搜集[%dic:STR_DIC_I_QUEST_2378a]吗？</p>
+          <p> </p>
+          <p>如果你能搜集到火焰石，我可以给你做一件好东西。</p>
+          <p> </p>
+          <p>我能报答你的方法，就只有这个了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你进入火之神殿，打猎[%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae]和[%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae]。</p>
+          <p> </p>
+          <p>打猎守护像，可以搜集到[%dic:STR_DIC_I_QUEST_2378a]。</p>
+          <p> </p>
+          <p>你应该知道吧？火之神殿不是一个人可以去的地方。</p>
+          <p> </p>
+          <p>请你召集同伴，然后一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我唯一可以为你做的事情。</p>
+          <p> </p>
+          <p>如果你拒绝，我就没有别的方法报答你了。</p>
+          <p> </p>
+          <p>那你走吧，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，守护者。</p>
+          <p> </p>
+          <p>如果你搜集到了[%dic:STR_DIC_I_QUEST_2378a]，就快给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出火焰石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果没有火焰石，我就无法报答你。</p>
+          <p> </p>
+          <p>请你去打猎守护像，搜集[%dic:STR_DIC_I_QUEST_2378a]。</p>
+          <p> </p>
+          <p>你绝对不会后悔的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等一下。</p>
+          <p> </p>
+          <p>(在火焰石中注入气)</p>
+          <p> </p>
+          <p>来，拿着。你帮助了我和阿克尼塔大人，这是给你的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae]和[%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae]身上搜集火焰石，然后交给[%dic:STR_DIC_N_Bulagan]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">布尔拉甘说要报答我对他的帮助，并说火之神殿中可以搜集到的火焰石具有惊人的力量。打猎蜷缩的火焰石守护像和火焰石守护像，搜集火焰石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布尔拉甘说要报答我对他的帮助，并说火之神殿中可以搜集到的火焰石具有惊人的力量。</p>
+          <p> </p>
+          <p>前往火之神殿打猎守护像，搜集到了火焰石。布尔拉甘在其中注入了气，帮我做成了一个好东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

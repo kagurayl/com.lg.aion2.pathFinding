@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等，[%username]。我有要紧的话要跟你说。</p>
+          <p></p>
+          <p>可能你也知道，我们现在对这里的状况和地形还不太熟悉。如果现在就这么出征的话，不会取得什么大的成果的。</p>
+          <p></p>
+          <p>您好像已经帮了别人很多忙了，可以跟我们合作吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问要做何事。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的军队想在出发之前，先去梅兰提斯遗址和拉斯贝尔格的暗黑领土，与古代的暗黑法师和古代斗士们的灵魂碰面，了解他们是在什么地方、用怎样的方式战斗的。</p>
+          <p></p>
+          <p>并且阻止那些不死族们再次复活。</p>
+          <p></p>
+          <p>在被诅咒的奇柏利斯克，复活的人身上只要被留下过一次烙印，就不会死去，而会再次复活。</p>
+          <p></p>
+          <p>所以请打败他们并收集[%dic:STR_DIC_I_QUEST_1632a]回来吧。这当然不像说起来这么简单。但是因为是您，因为相信您的能力，所以我就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您下定了决心的话，就马上出发去梅兰提斯遗址和拉斯贝尔格的暗黑领土吧。</p>
+          <p></p>
+          <p>我们在您回来之前做好出征的准备。</p>
+          <p></p>
+          <p>请不要忘记了。收集[%dic:STR_DIC_I_QUEST_1632a]比打倒不死族更重要。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>面对不死族并不是谁都能做到的事情。</p>
+          <p></p>
+          <p>但是守护者不是担负着守护人类的义务吗？</p>
+          <p></p>
+          <p>任凭他们就这样嚣张下去，不久就会威胁到因特尔蒂卡，不，整个天界的安全了。</p>
+          <p></p>
+          <p>所以请您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经结束了吗？</p>
+          <p></p>
+          <p>我们还没有结束出征的准备工作，所以还得再耽误一点时间。</p>
+          <p></p>
+          <p>您已经知道不死族是在哪里、怎么分布的了吗？那么，请把您带回来的[%dic:STR_DIC_I_QUEST_1632a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">报告诅咒的烙印和事态。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没有出发吗？</p>
+          <p></p>
+          <p>请您抓紧时间吧。在这些家伙们和拉斯贝尔格一起打入村庄之前，扼杀掉他们的计划。</p>
+          <p></p>
+          <p>请去将不死族身上诅咒的烙印去掉吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>骨头上刻着漆黑的烙印。他们一定也不希望事情变成这样...</p>
+          <p></p>
+          <p>我将会把这些烙印彻底燃烧掉。只有这样才能结束他们长久的彷徨，回归奥德的流动。</p>
+          <p></p>
+          <p>您不顾安危地帮助我们，这是给您的奖赏。有了您告诉我们的情报，就可以很容易的杀死不死族们了。真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_I_QUEST_1632a]，然后交给[%dic:STR_DIC_N_Gorgos]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了阻止古代暗黑法师和古代斗士的灵魂继续复活，收集诅咒的烙印并交给高尔高斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>转达了利希迪盖的话后刚想离开，高尔高斯建议我和他一起作战。</p>
+          <p></p>
+          <p>他让我在不了解地形的蓝色舰队军团出征之前，打败梅兰提斯遗址和拉斯贝尔格的暗黑领土上的不死族们，并收集他们的诅咒烙印。</p>
+          <p></p>
+          <p>将诅咒的烙印和不死族的位置、战斗的方法等全部交给他之后，他表示其他的事情由他自己来处理。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

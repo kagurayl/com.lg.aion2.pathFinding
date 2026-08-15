@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然离死期已经不远，但是我还有一个小小的愿望。</p>
+          <p> </p>
+          <p>我想帮助亚特雷亚的全体椰林。</p>
+          <p> </p>
+          <p>只有这样，我才能以这种面目面对同族，而不感到羞愧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林也会受到，奥德的影响。</p>
+          <p> </p>
+          <p>如果有奥德的力量的话，快要死去的椰林也能活过来。</p>
+          <p> </p>
+          <p>你能帮我去搜集，雾鬃莱卡恩手里的奥德吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雾鬃莱卡恩的手里，有用努努族种植的奥黛尔拉制作的药丸。</p>
+          <p> </p>
+          <p>你去除掉[%dic:STR_DIC_M_ReC_LycanRangerM_40_Ae]和[%dic:STR_DIC_M_KeB_LycanKnightM_38_Ae]，然后把药丸带回来。</p>
+          <p> </p>
+          <p>有了那个[%dic:STR_DIC_I_QUEST_2442a]的话，就能救活很多椰林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你拒绝我，我也没办法。</p>
+          <p> </p>
+          <p>真凄惨啊，连最后的愿望都不能实现。</p>
+          <p> </p>
+          <p>那干脆就不要承认自己是椰林，只能以阿斯科的面貌活下去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰莫吉嘲笑我，说不管怎么伪装都是阿斯科。</p>
+          <p> </p>
+          <p>说奥格林特又有什么不同。</p>
+          <p> </p>
+          <p>我没有理他，我不会浪费时间和他吵架。</p>
+          <p> </p>
+          <p>我拜托你搜集的[%dic:STR_DIC_I_QUEST_2442a]，带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥黛尔拉药丸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要战胜羞愧，并不容易。</p>
+          <p> </p>
+          <p>我想说服自己，作为阿斯科活下去也是有意义的。</p>
+          <p> </p>
+          <p>我想用[%dic:STR_DIC_I_QUEST_2442a]拯救同族。</p>
+          <p> </p>
+          <p>拜托了，快去雾鬃莱卡恩那里吧奥黛尔拉药丸带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这就是奥黛尔拉药丸。</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>这个药丸，可以救活很多的椰林。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_2442a]，然后交给[%dic:STR_DIC_N_Taisan]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">泰山说想要从雾鬃莱卡恩那里抢夺奥黛尔拉药丸，来拯救同族。必须帮助他搜集奥黛尔拉药丸。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰山说为了活下去，他伪装成了阿斯科，对此感到很羞愧。他说如果能帮助到同族的话，即使以那种面目活下去，也有其意义。</p>
+          <p> </p>
+          <p>于是除掉了雾鬃莱卡恩，搜集到了奥黛尔拉药丸，让他可以去拯救其他的椰林。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

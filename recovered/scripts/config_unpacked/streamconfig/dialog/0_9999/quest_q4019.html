@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看您经常来往于哈班雅克农场，您有什么从那里带来的东西吗？</p>
+          <p> </p>
+          <p>比如骸骨、大腿骨、六只脚的昆虫等。</p>
+          <p> </p>
+          <p>只要保存完好，我会以高价收购。有的话请给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">告诉她没有那些东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真是无法理解，人们为什么去那里后还要空手回来。</p>
+          <p> </p>
+          <p>不要用那么奇怪的眼神看着我！我只是有搜集骸骨的爱好，难道这也犯法吗？</p>
+          <p> </p>
+          <p>听说布鲁斯特豪宁有很多不死族，我才志愿来到这里，可是因为岚黛特大人，只能乖乖地待在营地里，真是让人难过。</p>
+          <p> </p>
+          <p>那么[%username]，您会再回哈班雅克农场吗？能不能在回来的路上给我带来几具骸骨呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>慢着，刚才您说在哈班雅克农场有什么来着？</p>
+          <p> </p>
+          <p>啊，您说的是那个。请去带来[%dic:STR_DIC_M_GraveknightD_23_An]和[%dic:STR_DIC_M_SkeletonMagicianD_23_An]的骸骨吧。</p>
+          <p> </p>
+          <p>请尽量带来完好的骸骨。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>切，您还真是小气。顺路给我带来点骸骨有什么难的。</p>
+          <p> </p>
+          <p>知道了，我也不会让您为难的。</p>
+          <p> </p>
+          <p>对了，您不会对别人乱说我的爱好吧？</p>
+          <p> </p>
+          <p>您要敢那样说，我肯定让您后悔的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能够近距离倾听鲁米埃尔主神的教诲，这一点虽然很好，但军团的生活我还真是不习惯。</p>
+          <p> </p>
+          <p>可能周围都是女人，才会没有人理解我的爱好。</p>
+          <p> </p>
+          <p>不能理解就算了，看到我房间里陈列的骸骨后，还像看到怪物一样对我。</p>
+          <p> </p>
+          <p>我有点唠叨了，带来拜托的东西了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出骸骨。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道我在这个世界上最讨厌什么样的人吗？</p>
+          <p> </p>
+          <p>第一种，用僵尸骸骨假冒温佩斯特骸骨卖给我的人。</p>
+          <p> </p>
+          <p>第二种，不守约定的人。</p>
+          <p> </p>
+          <p>您也知道自己属于哪种人吧？请遵守约定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>骸骨的状态都很不错。现在只要再搜集女妖和布奇的骸骨，那么哈班雅克农场里该搜集的都搜集完了。</p>
+          <p> </p>
+          <p>不过，这些骸骨的体积太大，封存的场所可能得换一下。</p>
+          <p> </p>
+          <p>啊，这里的同伴们都不知道我的爱好。就算他们知道了也会用奇怪的眼神看着我，所以还是尽量不惊吓到他们为好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_GraveknightD_23_An]和[%dic:STR_DIC_M_SkeletonMagicianD_23_An]的骸骨，然后交给[%dic:STR_DIC_N_Tala]</font></p>[%collectitem]</step> 
+    </steps>
+          <p><font font_xml="quest_summary">为了爱好搜集骸骨的塔尔拉，去哈班雅克农场搜集温佩斯特和阿努拜特的骸骨交给她。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔尔拉询问有没有从哈班雅克农场带来的骸骨或大腿骨，有的话就卖给自己。</p>
+          <p> </p>
+          <p>告诉她没有那种东西，她让我如果下次再去哈班雅克农场的话，顺便帮她搜集温佩斯特和阿努拜特的骸骨。</p>
+          <p> </p>
+          <p>按照塔尔拉的委托，搜集骸骨交给了她。她说同伴们不会理解自己的爱好，要赶紧把骸骨藏起来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

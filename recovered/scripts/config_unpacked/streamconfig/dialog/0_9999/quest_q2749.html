@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想到要塞被夺走之后，我连觉都睡不好。</p>
+          <p> </p>
+          <p>没想到希埃尔的西部要塞会被那么窝囊地夺走。</p>
+          <p> </p>
+          <p>但是现在再来说这种话又有什么用。</p>
+          <p> </p>
+          <p>还不如想想有什么办法把要塞夺回来更现实，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次去侦察的时候，是天族占领着要塞。</p>
+          <p> </p>
+          <p>但是之后龙族也攻击了要塞，不知道后来结果如何。</p>
+          <p> </p>
+          <p>但是是天族还是龙族又有什么关系。反正目的都是要夺回要塞。</p>
+          <p> </p>
+          <p>请你召集同伴，然后把由要塞战斗兵和要塞弓兵组成的[%dic:STR_DIC_M_2749_all]清除掉。不管是天族也好，龙族也好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你。</p>
+          <p> </p>
+          <p>你应该知道怎么去希埃尔的西部要塞吧？不知道有没有同伴和你一起去。</p>
+          <p> </p>
+          <p>有情报说最近天族的警戒非常严，所以最好不要想一个人过去。</p>
+          <p> </p>
+          <p>一定要挑选武功出众的同伴一起过去。那你就去把[%dic:STR_DIC_M_2749_all]清除掉，然后再回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去敌人占领的要塞清除驻军绝非易事。</p>
+          <p> </p>
+          <p>也不是所有的守护者都具备这样的能力。</p>
+          <p> </p>
+          <p>如果你没有时间执行任务的话，当然应该拒绝。这没什么好抱歉的。</p>
+          <p> </p>
+          <p>这要比执行重要任务失败，使士气低落要好得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，[%username]。</p>
+          <p> </p>
+          <p>你顺利地攻入希埃尔的西部要塞了吗？</p>
+          <p> </p>
+          <p>请你跟我报告一下，到底除掉了多少[%dic:STR_DIC_M_2749_all]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到过[%username]的很多事情，看来果然是名不虚传啊。</p>
+          <p> </p>
+          <p>多亏了你，现在夺回要塞的工作变得容易了。</p>
+          <p> </p>
+          <p>但是要塞的驻军还有很多，必须继续消灭他们。所以如果有时间的话，希望你下次还能来帮我。</p>
+          <p> </p>
+          <p>如果你能持续过来帮忙的话，用不了多久，就应该可以把希埃尔的西部要塞夺回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2749_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Aslak]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了夺回希埃尔的西部要塞，必须削弱要塞的防御力。和同伴们一起攻入要塞，把要塞战斗兵和弓兵清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯拉克说要塞那个夺回被夺走的希埃尔的西部要塞的话，必须削弱他们的防御力。</p>
+          <p> </p>
+          <p>于是按照他的命令，清除了驻军。他对我表示感谢，说这为夺回要塞奠定了基础。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

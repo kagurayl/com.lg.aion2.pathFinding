@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！如果您有时间的话，能稍微帮我一下吗？</p>
+          <p> </p>
+          <p>因为甘达尔芬的传言，我一直被人骚扰，搞得连做自己事情的时间都没有了。</p>
+          <p> </p>
+          <p>如果不是这样的话，我也不会来求别人...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在做一个个人的调查，但是熔岩地狱犬对我的调查有点妨碍。</p>
+          <p> </p>
+          <p>我寻找的痕迹都被它们弄没了。但是如果要腾出时间去把它们清除掉，可能连剩下的痕迹都会消失。</p>
+          <p> </p>
+          <p>所以，如果您能帮我把[%dic:STR_DIC_M_HellhoundD_28_An]清除掉的话，应该对我会有很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这附近，有很多的[%dic:STR_DIC_M_HellhoundD_28_An]。</p>
+          <p> </p>
+          <p>它们在地上爬来爬去，我要寻找的痕迹正在一点一点地消失。它们有两个头，感觉消失的速度好像也快了两倍。</p>
+          <p> </p>
+          <p>如果您能帮我除掉15头左右的话，应该就会起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意帮我吗？</p>
+          <p> </p>
+          <p>那我跟您说明纯粹是在浪费时间啦。</p>
+          <p> </p>
+          <p>我必须尽快着手调查，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道这里的人为什么对别人的事情那么关心。</p>
+          <p> </p>
+          <p>就说甘达尔芬，也动不动就问我在调查什么。</p>
+          <p> </p>
+          <p>不过话说回来，[%dic:STR_DIC_M_HellhoundD_28_An]全都清除掉了吗</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。这对我的调查会很有帮助。</p>
+          <p> </p>
+          <p>啊，请不要跟别人说我正在调查东西。因为是个人的事情，被别人听见了不太好。</p>
+          <p> </p>
+          <p>这是您帮助我的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除妨碍调查的[%dic:STR_DIC_M_HellhoundD_28_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Utgar]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">熔岩地狱犬弄掉了地上的痕迹，对乌特卡尔的调查造成了妨碍。决定帮助乌特卡尔清除熔岩地狱犬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌特卡尔说正在进行个人的调查，但是因为熔岩地狱犬，剩下的线索正在消失。</p>
+          <p> </p>
+          <p>于是清除掉了地狱犬，让乌特卡尔可以继续进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

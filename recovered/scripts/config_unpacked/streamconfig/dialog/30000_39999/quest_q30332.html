@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才火之精灵告诉了我一件惊人的事情。</p>
+          <p> </p>
+          <p>在古代发生在这里的一场战斗中，他们召唤了名叫普拉纳斯的火焰精灵和龙族战斗。</p>
+          <p> </p>
+          <p>但不幸的是他被龙族束缚了起来，遭受了悲惨的命运。</p>
+          <p> </p>
+          <p>你知道他们对普拉纳斯做了什么吗？他们把他关进了焚化炉，用来焚烧垃圾！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不能看着古代的精灵经受这种痛苦的折磨。</p>
+          <p> </p>
+          <p>[%username]，这次希望你能帮帮我。</p>
+          <p> </p>
+          <p>虽然我不能为他做什么事情，但作为一个精灵星，我不能看着他遭受那样的折磨。</p>
+          <p> </p>
+          <p>那个焚化炉在帕休曼迪尔寺院里，一般人很难到达那里，不过我相信[%username]你应该没有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普拉纳斯受到了龙族各种垃圾的污染，身体的颜色都变成了蓝色。</p>
+          <p> </p>
+          <p>据说[%dic:STR_DIC_W_IDCatacombs_SZ_D2]就在帕休曼迪尔寺院里面的亡者庭院的角落里。</p>
+          <p> </p>
+          <p>请你到那里去，把被束缚在焚化炉上的蓝色火焰普拉纳斯送回奥德的流动。</p>
+          <p> </p>
+          <p>消灭一次，也许不能让他得到解脱。如果能重复几次，说不定他可以摆脱龙族的污染，恢复成原来洁净的身体。</p>
+          <p> </p>
+          <p>刚才给你的，是蓝色火焰焚化炉的钥匙。你可以用它把门打开，净化[%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，[%username]，我对你有点失望。</p>
+          <p> </p>
+          <p>听了这件事之后，你难道对龙族没有一点愤慨，对火焰精灵没有一点同情之心吗？</p>
+          <p> </p>
+          <p>蓝色火焰普拉纳斯是为了对抗龙族才变成那样的！</p>
+          <p> </p>
+          <p>作为一个魔族，我对你感到很失望，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到蓝色火焰普拉纳斯，我的心里就很不好受。</p>
+          <p> </p>
+          <p>勇敢战斗的精灵失去了主人，变成了那个样子……</p>
+          <p> </p>
+          <p>你把蓝色火焰普拉纳斯送回奥德的流动了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真希望能马上把蓝色火焰普拉纳斯从焚化炉中解放出来，不过恐怕不会那么容易。</p>
+          <p> </p>
+          <p>不过相信通过[%username]大人的努力，龙族的污染应该会被逐渐净化掉。</p>
+          <p> </p>
+          <p>只要不断努力，一定可以将他完全解放出来。</p>
+          <p> </p>
+          <p>[%username]，希望今后你能继续来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah]，净化龙族的污染([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Yumir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定将被龙族束缚的古代精灵蓝色火焰普拉纳斯送回奥德的流动。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沃米尔说从自己召唤的火之精灵那里听到了惊人的事情，有个古代精灵遭到了龙族的束缚。</p>
+          <p> </p>
+          <p>他说要想把蓝色火焰普拉纳斯从焚化炉中解放出来，只能反复地把他送回奥德的流动。</p>
+          <p> </p>
+          <p>于是前往帕休曼迪尔寺院的蓝色火焰焚化炉，消灭掉了蓝色火焰普拉纳斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

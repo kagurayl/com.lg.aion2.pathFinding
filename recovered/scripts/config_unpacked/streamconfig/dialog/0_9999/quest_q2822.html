@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正好想联系您。</p>
+          <p> </p>
+          <p>情况紧急，我就直奔主题了。</p>
+          <p> </p>
+          <p>您也知道，克罗坦岛这里非常炎热。事实上，不仅是克罗坦岛，三重岛全部被熔岩形成的海洋所包围。</p>
+          <p> </p>
+          <p>因此，我们出了点问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天气炎热，士兵们的体力下降很快。另外还有一个最大的问题，那就是武器。</p>
+          <p> </p>
+          <p>在欧比斯使用的大部分武器都是伏魔殿的著名武器匠制作的，因此不会那么容易化掉的。但或许是因为总处在高温之中，刀箭等武器慢慢变弯曲了。</p>
+          <p> </p>
+          <p>[%username] 大人想必也应该知道，武器重在手感，即便稍微变了形，使用时的感觉也有很大差异。</p>
+          <p> </p>
+          <p>幸运的是，我们找到了解决方法，但还需要人手...您也知道，我和士兵们暂时都无法离开岗位。</p>
+          <p> </p>
+          <p>麻烦您了， [%username] 大人。您愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您的无私帮助。</p>
+          <p> </p>
+          <p>啊，解决方法就是使用 [%dic:STR_DIC_M_Ab1_1221_Pretor_38_An]的心脏。向普利姆据点反映了这个问题后，他们建议我使用贪欲兽的心脏。</p>
+          <p> </p>
+          <p>把像石头一样坚硬的心脏融化后，涂在武器上。这样即使在高温下也不会变形。</p>
+          <p> </p>
+          <p>所以请您帮忙去搜集几个[%dic:STR_DIC_I_QUEST_2822a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去，您还有别的事情要忙。</p>
+          <p> </p>
+          <p>那也没办法。[%username]大人事务繁忙，我也不好强迫您去做。</p>
+          <p> </p>
+          <p>这个问题我会自己解决的，再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正想着您也该回来了。</p>
+          <p> </p>
+          <p>拜托您搜集的[%dic:STR_DIC_I_QUEST_2822a]带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将克罗坦贪欲兽的心脏交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是我催的太紧了？</p>
+          <p> </p>
+          <p>有句话叫说心急吃不了热豆腐。</p>
+          <p> </p>
+          <p>多花些时间也没关系，您先慢慢找吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好神奇啊，听说是非常耐热的东西，我还以为会很热呢，没想到像冰一样凉。</p>
+          <p> </p>
+          <p>得赶紧把这个融化掉，涂在武器上。</p>
+          <p> </p>
+          <p>拿着吧。为了抓贪欲兽，您去了熔岩附近，那里应该很热，喝点冰凉的饮料解解渴吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ab1_1221_Pretor_38_An]，搜集心脏并交给[%dic:STR_DIC_N_Ab1_1221_Quest_Da]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了防止武器变形，搜集克罗坦贪欲兽的心脏并交给希尔德布兰特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希尔德布兰特表示，由于克罗坦岛的高温，士兵们使用的武器出现不同程度的变形，她担心这样下去将会削弱部队的战斗力。</p>
+          <p> </p>
+          <p>幸好普利姆据点方面提出了解决方法，那就是融化耐热的贪欲兽的心脏，然后涂在武器上。</p>
+          <p> </p>
+          <p>于是遵照希尔德布兰特的委托消灭了克罗坦贪欲兽，并把搜集到的心脏交给了她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的正好，[%username] 大人。</p>
+          <p> </p>
+          <p>废话就不说了，我就直奔主题了。</p>
+          <p> </p>
+          <p>要塞的武器都用完了。虽然向普利姆据点申请了补给，可距离到位还需要时日。</p>
+          <p> </p>
+          <p>凭现在拥有的武器，坚持不了多久。所以，只能先赶制一批来救急。</p>
+          <p> </p>
+          <p>幸运的是，阿斯特利亚湖有制作武器的最佳材料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就是特莱科的角。其中又以幼年特莱科的角最为上乘。</p>
+          <p> </p>
+          <p>虽然和成年特莱科相比，在强度上弱一些，不过里外都充满了神圣的气息，可以提高使用者的精神力。</p>
+          <p> </p>
+          <p>要塞里的士兵们因为忙于防守，抽不出身，还是要请 [%username] 大人代替我们去搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Ab1_1251_Trico_31_An]大量分布在要塞前面的时间塔平原，找它们应该不会很难。</p>
+          <p> </p>
+          <p>数量方面，当然越多越好，不过还是先搜集5个吧。</p>
+          <p> </p>
+          <p>对了，搜集到的必须是[%dic:STR_DIC_I_QUEST_2820a]才可以。损坏或有瑕疵的就算拿来了也没有用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这可怎么办。</p>
+          <p> </p>
+          <p>[%username] 大人能不能重新考虑一下？</p>
+          <p> </p>
+          <p>目前实在没有其他人可以拜托啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经过了这么久吗？</p>
+          <p> </p>
+          <p>一整天都在和敌人战斗，都快把时间忘记了。</p>
+          <p> </p>
+          <p>您去办的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将完整的幼年特莱科角交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去，我说的还不够详细。</p>
+          <p> </p>
+          <p>我们要的武器材料是 [%dic:STR_DIC_M_Ab1_1251_Trico_31_An]的角。</p>
+          <p> </p>
+          <p>为了保证质量，我们需要 [%dic:STR_DIC_I_QUEST_2820a]。</p>
+          <p> </p>
+          <p>现在清楚了吧？那就赶快行动吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您带来的东西没有问题，之前我还一直很担心。真是辛苦了。</p>
+          <p> </p>
+          <p>不过直到现在，普利姆据点那里都没有任何消息。看上去，补给品一时半会儿来不了了。</p>
+          <p> </p>
+          <p>所以，这期间如您时间充足，可以继续搜集特莱科角。要求一样，还是这种幼年特莱科角。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Ab1_1251_Trico_31_An]的角，然后交给[%dic:STR_DIC_N_Ab1_1251_Quest_Da]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">斯诺里表示，阿斯特利亚要塞的武器快要用完了。为了让他们能够制作武器，消灭幼年特莱科，并搜集完整的角交给斯诺里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯诺里表示，阿斯特利亚要塞的武器快要用完了，不能坐等补给品的到来，他希望有人能帮忙搜集武器材料。</p>
+          <p> </p>
+          <p>接受委托，搜集到幼年特莱科完整的角，并交给了他，他对此表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭收获者哈比尔塔的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_DrakanPr_Re_55] </p>
+          <p></p>
+          <p> 2. 位置：黄昏德拉纳农场</p>
+          <p></p>
+          <p> 3. 详情：负责收获黄昏德拉纳农场生产的德拉纳的德拉坎管理人。如果能搜集到收获的德拉纳，应该就能掌握龙族的德拉纳生产情况。</p>
+          <p> </p>
+          <p>消灭收获者哈比尔塔，将刚收获的德拉纳带回来的人，将可以获得委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然来到格尔克马洛斯之后，可以经常看到德拉纳，但它的栽培方式还有很多没有解开的谜团。</p>
+          <p> </p>
+          <p>听说龙族把德拉纳的栽培全部交给了装置和手下。从他们身上又能知道些什么呢？</p>
+          <p> </p>
+          <p>但是收获者哈比尔塔却不同，因为他负责直接收获德拉纳，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出德拉纳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没搜集到哈比尔塔收获的德拉纳吗，呐呐？</p>
+          <p> </p>
+          <p>收获者哈比尔塔应该就在黄昏德拉纳农场上，你快去那里看看吧，呐呐。</p>
+          <p> </p>
+          <p>请你抓紧时间处理，免得委托费被别的守护者占了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是龙族直接收获的德拉纳啊。</p>
+          <p> </p>
+          <p>(放进箱子)看着就让人觉得不舒服，呐！一定对身体不好。</p>
+          <p> </p>
+          <p>你出色地完成了任务。委托费非常沉，请小心一点，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭龙族[%dic:STR_DIC_M_DF4_DaQ_DrakanPr_Re_55]，搜集德拉纳，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭德拉坎收获者，搜集德拉纳的委托书。</p>
+          <p> </p>
+          <p>前往黄昏德拉纳农场，消灭了收获者哈比尔塔，搜集到了德拉纳。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

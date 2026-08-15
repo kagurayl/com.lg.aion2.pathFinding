@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，执勤表排来排去，人手还是不够。</p>
+          <p> </p>
+          <p>兵力不足，又没地方请求支援，也不能让执政官们一天到晚地执行任务...</p>
+          <p> </p>
+          <p>所以现在搞的我神经很敏感。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是在这种时候，居然还有守护者闲着没事干在打赌！</p>
+          <p> </p>
+          <p>你见过一个名叫帕提尔的守护者吗？他就在莫尔海姆万年雪原尽头的瀑布附近。</p>
+          <p> </p>
+          <p>你知道他在那儿干什么吗？他和正在瀑布修行的斯派尔打赌他能在那儿坚持多久，所以就一直守在那里。</p>
+          <p> </p>
+          <p>在神庙里的时候就是那个样子，过了一百年现在还是那个样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我去瀑布转告一下[%dic:STR_DIC_N_Fathir]。</p>
+          <p> </p>
+          <p>说南娜正在找他，马上回要塞来！</p>
+          <p> </p>
+          <p>告诉他如果他继续那样的话，我就会向沉默审判所报告，说这儿有个徇私乱纪的守护者了。</p>
+          <p> </p>
+          <p>拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，如果说得太凶的话，他一定会逃到别的地方去的。</p>
+          <p> </p>
+          <p>你就好好跟他说，说百夫长南娜让他来要塞一次。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？我让你去抓动物了吗？我让你去危险的地方侦察了吗？</p>
+          <p> </p>
+          <p>只不过让你到要塞外面去的时候，顺便给我带个话。这你都拒绝吗？</p>
+          <p> </p>
+          <p>我知道了。那就请您呆在要塞里，好好养您的身体吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你怎么到这个人迹罕至的地方来了？</p>
+          <p> </p>
+          <p>该不会是听说了斯派尔的事情过来的吧？居然还有在这么冷的瀑布里让水淋的疯子。</p>
+          <p> </p>
+          <p>虽然他本人说什么悟道啥的，我看应该是觉醒的时候承受不了奥德的力量，变傻了吧。</p>
+          <p> </p>
+          <p>对了，你觉得斯派尔能坚持多久？你想跟我打赌吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达南娜的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，南娜！</p>
+          <p> </p>
+          <p>在神庙的时候就那么不通情理，到了这里还...</p>
+          <p> </p>
+          <p>既然她那么大惊小怪，看来我必须回去一次了。</p>
+          <p> </p>
+          <p>哎呀，我知道了。以后我看有时间会回去一趟的。</p>
+          <p> </p>
+          <p>你也辛苦了，还帮那个管事婆来传话。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Fathir]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮南娜去向帕提尔传话，让他回要塞一趟。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>南娜说缺少人手，让我去要塞外面把闲着打赌的帕提尔叫回来。</p>
+          <p> </p>
+          <p>于是来到莫尔海姆晚年雪原的瀑布附近，让帕提尔回一趟要塞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

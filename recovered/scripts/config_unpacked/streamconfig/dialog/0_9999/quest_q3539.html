@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您也知道，克拉尔是非常危险的怪物。</p>
+          <p> </p>
+          <p>虽然现在习惯了，但刚开始的时候我只要一看见它们，就忍不住会发抖。</p>
+          <p> </p>
+          <p>当然我从来没有想过离开这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说到克拉尔，有样东西希望您能帮我搜集一点。我这么说是不是有点突兀？</p>
+          <p> </p>
+          <p>您看到我的剑了吗？看上去很难看吧？这是因为不久前我把剑柄上的饰品弄丢了。</p>
+          <p> </p>
+          <p>那个饰品同时也是我的护身符，所以我现在心情很不好。</p>
+          <p> </p>
+          <p>希望您能帮我找回那个饰品。我想把它作为我的护身符，让自己重新获得勇气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我，虽然这只是私人的请求。</p>
+          <p> </p>
+          <p>请您帮我搜集一些[%dic:STR_DIC_I_QUEST_3539A]%，很多人都把它用作剑饰。</p>
+          <p> </p>
+          <p>消灭腐木原野上的[%dic:STR_DIC_M_BATRe2_34_An]%，应该就能搜集到。</p>
+          <p> </p>
+          <p>我会在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得这是个人的事情，才不愿意接受的吧？</p>
+          <p> </p>
+          <p>看来不应该太依赖其他人……我总是以任务作为借口，是我太懒惰了。</p>
+          <p> </p>
+          <p>用作饰品的东西，之后我会自己去搜集的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您来拉。我正在等您。</p>
+          <p> </p>
+          <p>蝠妖的爪子搜集到了吗？</p>
+          <p> </p>
+          <p>听说很多人都把它用作武器的装饰，不过我还没亲眼见过呢。</p>
+          <p> </p>
+          <p>快给我看看把。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蝠妖的爪子%。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_3539A]%还没搜集到啊。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_BATRe2_34_An]应该就在原野旁边的悬崖附近飞来飞去。</p>
+          <p> </p>
+          <p>那附近还有其他野兽，请一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是那个爪子啊。</p>
+          <p> </p>
+          <p>您帮我挑了个好东西，一点划痕都没有。真的非常感谢。</p>
+          <p> </p>
+          <p>好像和我的剑很配。</p>
+          <p> </p>
+          <p>我得赶紧挂上去试试。再次对您表示感谢，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_3539A]%，然后交给[%dic:STR_DIC_N_Brosia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮布洛西亚搜集挂在剑上作为装饰的蝠妖的爪子吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛西亚说用作护身符的、可以给自己带来勇气的剑饰不见了，她觉得很遗憾。</p>
+          <p> </p>
+          <p>帮她搜集到了用作新的剑饰的蝠妖的爪子，她非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

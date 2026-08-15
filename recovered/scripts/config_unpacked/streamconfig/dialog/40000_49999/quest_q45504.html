@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 作战命令书 - </p>
+          <p></p>
+          <p>发件人: 伏魔殿特殊司令部</p>
+          <p></p>
+          <p>收件人: [%username]</p>
+          <p></p>
+          <p>经特殊司令部确认，格尔克马洛斯有天族出现，对正在攻击龙族的我军造成了威胁。决不能看着他们阻挡光荣的魔军的前进道路。</p>
+          <p></p>
+          <p>特此下令，请立即执行。</p>
+          <p></p>
+          <p>  1. 尽快掌握渗透到[%dic:STR_DIC_W_ZONE_NAME_DF4]的天族的位置，并消灭5人以上。</p>
+          <p></p>
+          <p>  2. 消灭敌人的方式不限。</p>
+          <p></p>
+          <p>  3. 但对实力太差的敌人应该怀有慈悲之心。</p>
+          <p></p>
+          <p>  4. 确认敌人失去斗志后，向[%dic:STR_DIC_E_45503]报告。</p>
+          <p></p>
+          <p>特殊司令部成员们，愿神的祝福与你们同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">收起命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦, [%username] 大人。</p>
+          <p> </p>
+          <p>是龙族就已经让人很头疼了，现在天族又在格尔克马洛斯出现了……</p>
+          <p> </p>
+          <p>我想[%username]大人一定已经完成任务了吧？快向我报告吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认任务完成， [%username] 大人。</p>
+          <p> </p>
+          <p>天族的家伙再嚣张，在我们特殊司令部面前，也会无可奈何。.</p>
+          <p> </p>
+          <p>这是我们为您准备的奖励。</p>
+          <p> </p>
+          <p>为了伏魔殿的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭渗透到[%dic:STR_DIC_W_ZONE_NAME_DF4]的[%dic:STR_DIC_E_Daily_2]([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_45503]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">每日指令: 消灭潜入格尔克马洛斯的天族，然后向格尔克马洛斯支部官员报告</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿特殊司令部下达了消灭渗透到格尔克马洛斯的天族的命令。</p>
+          <p> </p>
+          <p>完成任务后，向格尔克马洛斯支部官员报告，并得到了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

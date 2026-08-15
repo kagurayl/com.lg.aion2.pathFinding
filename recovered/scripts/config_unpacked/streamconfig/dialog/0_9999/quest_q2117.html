@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些[%dic:STR_DIC_M_Kalnif_6_An]越来越猖獗了。</p>
+          <p> </p>
+          <p>问我为什么那么在意那些畜牲？那是因为跟我们的生存有关系啊。</p>
+          <p> </p>
+          <p>那些家伙不停地在吃掉布拉斯，这样下去的话，我们身边的布拉斯要绝种了。</p>
+          <p> </p>
+          <p>在这附近，我们能吃的也只有布拉斯呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但也不能把手头的活停下去守着布拉斯呀...</p>
+          <p> </p>
+          <p>[%username]，你有时间吗？</p>
+          <p> </p>
+          <p>有空的话就帮我一下吧。把那些该死的[%dic:STR_DIC_M_Kalnif_6_An]好好地给我收拾一番。</p>
+          <p> </p>
+          <p>当然，我不会让你白干的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先给我抓九只[%dic:STR_DIC_M_Kalnif_6_An]。</p>
+          <p> </p>
+          <p>好让它们再也不敢在这附近现身。</p>
+          <p> </p>
+          <p>怎么样？易如反掌吧？那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到要真的去面对[%dic:STR_DIC_M_Kalnif_6_An]了，是不是害怕了？</p>
+          <p> </p>
+          <p>行了，我知道了。看来这回也只好我亲自出马了。</p>
+          <p> </p>        
+          <p>你干嘛还在那儿呆着？快走开，别在那儿碍手碍脚的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，这么快就把[%dic:STR_DIC_M_Kalnif_6_An]全消灭了？</p>
+          <p> </p>  
+          <p>前不久还很难看出来你是跳舞还是耍刀呢。看来现在有进步了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了。让你一个人去对付难为你了。</p>
+          <p> </p>
+          <p>短时间内，剑齿豹会消停一点儿了吧。布拉斯也会长得胖嘟嘟的。</p>
+          <p> </p>
+          <p>给，这是说好要给你的。在我改主意之前赶紧收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去打捕食布拉斯的[%dic:STR_DIC_M_Kalnif_6_An]% ([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mijou]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">剑齿豹总是吃掉布拉斯，妙乌对此很担心。消灭剑齿豹，保住布拉斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剑齿豹疯狂地吃掉盗团主要的食物来源布拉斯，妙乌说他很担心这种情况。替妙乌除掉了剑齿豹，收了酬谢金。</p>                
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

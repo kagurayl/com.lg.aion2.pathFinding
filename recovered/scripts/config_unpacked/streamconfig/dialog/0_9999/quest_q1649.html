@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昨晚我在写调查报告书。</p>
+          <p></p>
+          <p>听到背后有沙沙的声音，于是就回头去看背后。</p>
+          <p></p>
+          <p>但是什么都没有。</p>
+          <p></p>
+          <p>我觉得很奇怪，想要回头继续写字，就在我转身的瞬间，在我眼前出现了一个长毛雪人？</p>
+          <p></p>
+          <p>如果不是有守护者的话，我想我都要心脏麻痹而死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>长毛雪人表面上看起来很迟钝，但是到了晚上就会隐身并到处移动，动作非常迅速。</p>
+          <p></p>
+          <p>因此设立了24小时的岗哨，但是偶尔还是会溜进神殿并进来捣乱。</p>
+          <p></p>
+          <p>虽然我们也可以轻易的除掉长毛雪人，但是这畜生已经把资料折腾的乱七八糟，推迟了调查工作。</p>
+          <p></p>
+          <p>一定要在出现更大的问题之前把这些畜生给处理掉，您能帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要除掉这附近的4只长毛雪人就可以了。</p>
+          <p></p>
+          <p>我也会去其他的地方和守护者们一起搜索并除掉长毛雪人。</p>
+          <p></p>
+          <p>您可以处理掉4只长毛雪人吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么我就去跟别的守护者说了。</p>
+          <p></p>
+          <p>我也不知道这些畜生们什么时候会再来捣乱，因此请您快点。</p>
+          <p></p>
+          <p>已经派了警卫而且也尽了全力，却还发生了这样的事，真让人困窘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你不想做的话，干嘛还要和我说这么多话！</p>
+          <p></p>
+          <p>完全就是浪费时间。我还有堆积如山的调查资料要做呢！</p>
+          <p></p>
+          <p>就算您不愿意帮我的忙，愿意帮我的守护者还有很多呢，您就忙您自个儿的去吧。</p>
+          <p></p>
+          <p>真是太奇怪了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经回来了吗？</p>
+          <p></p>
+          <p>我正打算去找其他的守护者们呢。</p>
+          <p></p>
+          <p>您已经帮我们把长毛雪人给抓住了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告已抓住长毛雪人。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的太感谢了。</p>
+          <p></p>
+          <p>其他的就交给我们来吧。</p>
+          <p></p>
+          <p>可恶的长毛雪人们，居然敢来妨碍我的调查？</p>
+          <p></p>
+          <p>都死定了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎神殿附近的长毛雪人([%2]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向伊贝利亚报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">长毛雪人四处乱闯拖延了研究的进程。捕捉长毛雪人，帮助伊贝利亚进行调查。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在晚上伊贝利亚遭到了长毛雪人的袭击，把资料弄得乱七八糟，导致调查无法进行，伊贝利亚很愤怒。</p>
+          <p></p>
+          <p>她制定了讨伐长毛雪人的计划，并拜托我捕捉几只长毛雪人。</p>
+          <p></p>
+          <p>全都捉到并交给她时，她已经组织了讨伐队，为抓捕长毛雪人做好了准备。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

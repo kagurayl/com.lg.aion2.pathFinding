@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过去我曾经去帕休曼迪尔寺院执行任务。</p>
+          <p> </p>
+          <p>但是我没能完成任务。</p>
+          <p> </p>
+          <p>和我一起去的同伴也牺牲了，只有我一个人活了下来。</p>
+          <p> </p>
+          <p>虽然没有人指责我，但这件事却一直是我的一块心病。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我希望现在可以把那个任务完成。</p>
+          <p> </p>
+          <p>当时我接受的任务是拯救受到诅咒的伟大勇士塔洛斯。</p>
+          <p> </p>
+          <p>他是个非常优秀的勇士，但残酷的命运却给了他巨大的考验。</p>
+          <p> </p>
+          <p>为了保护部下，他受到了龙族的诅咒，遭遇了悲惨的命运。</p>
+          <p> </p>
+          <p>[%username]，你能把塔洛斯大人从残酷的命运中解放出来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔洛斯大人被束缚在帕休曼迪尔寺院的亡者庭院里。</p>
+          <p> </p>
+          <p>请你到亡者庭院去，把变成了龙族的卫兵的[%dic:STR_DIC_E_IDCatacombsN_DeathNightNmd_55_Ah]大人送回奥德的流动。</p>
+          <p> </p>
+          <p>那样的话，他就能从诅咒中解放出来，他的灵魂就能获得自由。</p>
+          <p> </p>
+          <p>拜托你了，[%username]！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>连我都办不到的事情，本来就不应该让别人去做！</p>
+          <p> </p>
+          <p>自己的包袱，必须由自己去解决……</p>
+          <p> </p>
+          <p>只要有希埃尔主神保佑，我相信总有一天我会完成这个任务的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]！</p>
+          <p> </p>
+          <p>你帮我完成任务了吗？</p>
+          <p> </p>
+          <p>塔洛斯终于摆脱了诅咒，回到奥德的流动中了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你，谢谢你！</p>
+          <p> </p>
+          <p>塔洛斯大人终于获得了自由，一想到这个，我就感慨万千！</p>
+          <p> </p>
+          <p>[%username]，如果不是你的话，这是我做梦都不敢想的事情。</p>
+          <p> </p>
+          <p>愿希埃尔主神的永恒祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_IDCatacombsN_DeathNightNmd_55_Ah]，把他从诅咒中解放出来([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Aurbotha]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奥尔博塔接到了将塔洛斯从诅咒中解放出来的任务，但却失败了。帮助他把活捉的勇士塔洛斯从诅咒中解救出来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔博塔说过去曾经去帕休曼迪尔寺院执行过解开活捉的勇士塔洛斯的诅咒的任务，但是却失败了。</p>
+          <p> </p>
+          <p>他让我去解开他的诅咒，于是前往帕休曼迪尔寺院，消灭了活捉的勇士塔洛斯，把他送回了奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

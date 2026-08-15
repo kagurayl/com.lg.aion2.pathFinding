@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(泡在水里之后，上面的字有点模糊。)</p>
+          <p> </p>
+          <p>(上面写着一些不知道是什么意思的记号和数字。)</p>
+          <p> </p>
+          <p>(把可以认出来的字组合起来，好像是加尔隆写的卷轴。)</p>
+          <p> </p>
+          <p>(应该把卷轴拿去交给[%dic:STR_DIC_N_Shugo_DF2_16]。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">捡起被水浸湿的卷轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你需要什么东西啊？</p>
+          <p> </p>
+          <p>封魂石？精灵石？还是奥黛尔拉粉末？</p>
+          <p> </p>
+          <p>有什么需要的话，尽管跟我说。</p>
+          <p> </p>
+          <p>我马上就能给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出卷轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个湿乎乎的卷轴是什么啊？你该不会是想卖给我吧？</p>
+          <p> </p>
+          <p>(查看卷轴)这种东西好像没什么商品价值...嗯？你是从哪里找到的啊？</p>
+          <p> </p>
+          <p>这是我的欠账账簿，自从丢了之后，你不知道我有多着急。</p>
+          <p> </p>
+          <p>啊，其他的字看不清楚也没关系。只要能看到像RS和UK之类的数字，能确认欠了多少钱就行了。</p>
+          <p> </p>
+          <p>请收下。谢谢你帮我找到了欠账的账簿。真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把被水浸湿的卷轴交给甘达尔芬的草屋的[%dic:STR_DIC_N_Shugo_DF2_16]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在忘却盐漠的水坑里捡到了一个卷轴。把它交给甘达尔芬的草屋里的加尔隆吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在忘却盐漠的水坑里捡到了一个卷轴。</p>
+          <p> </p>
+          <p>虽然被水泡得模糊，看不清详细的内容，但卷轴上面写着加尔隆的名字。</p>      
+          <p> </p>
+          <p>于是把卷轴交给了甘达尔芬的草屋里的加尔隆。他表示非常感谢，说那是他丢失的欠账账簿，并给了我谢礼。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

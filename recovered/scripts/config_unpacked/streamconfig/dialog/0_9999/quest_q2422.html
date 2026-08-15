@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您听说过这样的传闻吗？</p>
+          <p> </p>
+          <p>说是有一种酒，喝了之后，那个人就会突然消失。</p>
+          <p> </p>
+          <p>而且据说那样消失的人有好几个。甚至，据说有人消失之后去了天界，然后才回来。</p>
+          <p> </p>
+          <p>您不觉得很神奇吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真的很想知道那样的酒到底存不存在。喝了之后是不是真的会消失。</p>
+          <p> </p>
+          <p>不过即使我真的找到了那种酒，我也没有喝下去的勇气。</p>
+          <p> </p>
+          <p>[%username]大人，您难道不好奇吗？而且您又是守护者，好像也用不着害怕...</p>
+          <p> </p>
+          <p>您能帮我找到那种酒，然后试一下吗？如果您能告诉我结果的话，报酬我绝对不会少给您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的愿意帮我去确认吗？</p>
+          <p> </p>
+          <p>那您先去问问[%dic:STR_DIC_N_Sveinn]，那种酒到底在哪里能买到。</p>
+          <p> </p>
+          <p>他很喜欢喝酒，而且对要塞各个角落发生的事情了如指掌，他应该知道出售那种酒的人是谁。</p>
+          <p> </p>
+          <p>请您试一试，然后一定要把结果告诉我。一定哦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您难道对人会消失一点都不好奇吗？</p>
+          <p> </p>
+          <p>还是觉得这是无聊的人编出来的谎言呢？</p>
+          <p> </p>
+          <p>不过既然您不感兴趣的话就算了。</p>
+          <p> </p>
+          <p>我只能一个人在这里瞎想了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喝了就会消失的酒？</p>
+          <p> </p>
+          <p>我还是头一回听说。您是从那里听到的谣言啊？</p>
+          <p> </p>
+          <p>我以为守护者的话，应该知道怎么分辨什么是事实，什么事谣言的呢。原来不尽如此啊。</p>
+          <p> </p>
+          <p>反正我不知道那种酒，如果你不打算给我施舍的话，那您就走吧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说已经都知道了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看着我的脸，很久没有说话)不知道这种传闻是从谁那里传出去的，不过嘴巴还真是不牢。</p>
+          <p> </p>
+          <p>既然说要保密，就应该守口如瓶才对……</p>
+          <p> </p>
+          <p>既然您说都知道了，那我就告诉您吧。食品商人[%dic:STR_DIC_N_Otter]在秘密地出售。</p>
+          <p> </p>
+          <p>千万别说是我告诉您的。这可关系到信用问题。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不是来买食物的啊？</p>
+          <p> </p>
+          <p>除此之外，守护者找我应该不会有什么事情啊...</p>
+          <p> </p>
+          <p>您有什么事吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT2_1">说要喝了就会消失的酒。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？您是从哪里...</p>
+          <p> </p>
+          <p>看您的表情，您好像已经都知道了吧。</p>
+          <p> </p>
+          <p>我知道了。我把东西给您。但是您一定要帮我保密。</p>
+          <p> </p>
+          <p>还有，如果您喝了之后完全从世界上消失，我也不负任何责任。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">喝酒。</Act>
+      <Act href="HACTION_SELECT2_2">说不会喝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是听我说会完全从世界上消失，所以害怕了吗？</p>
+          <p> </p>
+          <p>刚才要我把酒拿出来的时候，还那么理直气壮。</p>
+          <p> </p>
+          <p>请您快喝一口。省得以后跟我说三道四。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">喝酒。</Act>
+      <Act href="HACTION_FINISH_DIALOG">说还是不会喝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀， [%username]大人！</p>
+          <p> </p>
+          <p>您找到那种酒了吗？就是喝了会消失的酒。</p>
+          <p> </p>
+          <p>您喝了吗？怎么样了呢？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个传闻原来是真的！然后您到了天界？</p>
+          <p> </p>
+          <p>幸亏您是守护者，所以能安然回来。要是我喝了的话，就糟了。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮我解开了这个谜团。</p>
+          <p> </p>
+          <p>这是说好的报酬。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sveinn]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Otter]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">回到魔界和[%dic:STR_DIC_N_Hapenill]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">哈佩尼尔说他听到传言，说有一种人喝了就会消失的酒。去见见斯佩因，套取详细的情报吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+       <notify progress="2"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">真的到了天界！最好马上回去。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈佩尼尔说听说有喝了就会消失的酒，让我帮他确认一下是不是真的有那种酒。</p>
+          <p> </p>
+          <p>于是去向斯佩因询问了酒的情况，得知在奥泰伦那里有卖。去奥泰伦那里，喝了一口酒之后，空间移动到了天界。</p>
+          <p> </p>
+          <p>回到魔界，把这一事实告诉了哈佩尼尔。他表示非常感谢，说我帮他解开了一个谜团。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

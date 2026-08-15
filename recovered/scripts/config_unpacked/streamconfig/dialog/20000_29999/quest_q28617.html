@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还在这里啊？太好了。</p>
+          <p> </p>
+          <p>佩兰托军团长下达了一份命令书，说看到[%username]大人之后，就立即转告您。</p>
+          <p> </p>
+          <p>现在跟您说可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾四周，小声地说)这件事被别人听到的话，好像不太好。请您再靠近一点。 我来读给您听。</p>
+          <p> </p>
+          <p>“关于你看到的恶梦，我已经收到了布里吉特的报告。</p>
+          <p> </p>
+          <p>梦的背景确实是卡里加的宅邸吗？如果他是我认识的沉默审判官，那这会是一件很严重的事情。</p>
+          <p> </p>
+          <p>不好意思，请你重新进入[%dic:STR_DIC_W_IDCromede]，确认一下你看到的那个人是不是卡里加。”</p>
+          <p> </p>
+          <p>[%username]大人，军团长大人让我转告给您的内容就是这些。</p>
+          <p> </p>
+          <p>我应该怎么转告军团长大人呢？说您接受了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，我会如实转告军团长大人。</p>
+          <p> </p>
+          <p>但是到底是什么意思呢？到[%dic:STR_DIC_W_IDCromede]中去找人，我还是头一次听说这种事。</p>
+          <p> </p>
+          <p>不管怎样，内尔图斯军团长大人的任务完成之后，请您向我报告。</p>
+          <p> </p>
+          <p>有件东西，军团长大人让我在[%username]大人完成任务之后交给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，我会转告军团长大人，说[%username]大人拒绝执行任务。</p>
+          <p> </p>
+          <p>不过这可怎么办呢……</p>
+          <p> </p>
+          <p>这是军团长大人让我在[%username]大人完成任务之后交给您的。看来只能还回去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩兰托军团长指示的事情全部完成了吗？</p>
+          <p> </p>
+          <p>就是寻找那个叫卡里加的人的事情。</p>
+          <p> </p>
+          <p>我看您好像在布里吉特的帐篷里睡了一会儿……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个恶梦真的是您之前做的那个恶梦吗？</p>
+          <p> </p>
+          <p>世界上真是无奇不有。</p>
+          <p> </p>
+          <p>我会把[%username]大人告诉我的事情如实转告给军团长大人。</p>
+          <p> </p>
+          <p>我会告诉他恶梦中的人物确实是卡里加，因为他妨碍了您前进的道路，所以您把他打倒了。</p>
+          <p> </p>
+          <p>请您收下。军团长大人让我在[%username]大人完成任务之后把这个送给您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">进入[%dic:STR_DIC_W_IDCromede]，打倒[%dic:STR_DIC_M_IDCromede_Named_Judge_38_An][%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Geirod]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说佩兰托军团长想知道梦的背景。重新回到梦中，确认恶梦中的人物是否是卡里加。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>执政官卫兵格伊罗德说佩兰托军团长下达了命令，让我去确认恶梦的背景是否是卡里加的宅邸。</p>
+          <p> </p>
+          <p>重新进入恶梦，消灭了卡里加，告诉格伊罗德恶梦中发生的事情之后，他把铸币送给了我，说是军团长的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

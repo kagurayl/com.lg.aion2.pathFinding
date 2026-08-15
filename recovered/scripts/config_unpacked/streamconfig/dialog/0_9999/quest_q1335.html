@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您打算以后去哪儿呢？</p>
+          <p> </p>
+          <p>如果没有什么急事的话，我倒有一个提议。</p>
+          <p> </p>
+          <p>有一个经常缺少人手的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么地方。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在埃拉库斯沙漠，有一个由派往那里的守卫们建成的沙漠侦察基地。</p>
+          <p> </p>
+          <p>那是个经常需要守护者的帮助的地方。需要侦察的地方也很多，周围经常有凶恶的野兽们出没，派过去的守卫人手非常不足。</p>
+          <p> </p>
+          <p>[%username]大人，如果没什么急事的话，您能到埃拉库斯沙漠的沙漠侦察基地去见见[%dic:STR_DIC_N_Demokritos]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人过去帮忙的话，那里的人一定也会很高兴的。</p>
+          <p> </p>
+          <p>因为那里非常需要有实力的守护者的帮助。</p>
+          <p> </p>
+          <p>谢谢您答应我的请求。</p>
+          <p> </p>
+          <p>既然您要帮忙，能快一点的话就更好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有什么急事吗？</p>
+          <p> </p>
+          <p>有其他的事情的话，我当然不能硬要让您过去。</p>
+          <p> </p>
+          <p>你拒绝也没关系。反正也不是什么必须要做的任务。</p>
+          <p> </p>
+          <p>不过如果以后有时间的话，请您一定要过去帮忙。大家都会对您表示感谢的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来这儿有什么事吗？是不是来给我们沙漠侦察队帮忙的？</p>
+          <p> </p>
+          <p>如果真是那样的话就太好了。</p>
+          <p> </p>
+          <p>正好我们这儿人手不足，大家都快忙死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是安多让过来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我跟他说如果看见有时间的守护者就派到这儿来，感谢他能遵守约定。</p>
+          <p> </p>
+          <p>安多虽然是神官，但是也许因为在沙塔罗卡的坟墓做事很辛苦，他对我们守卫的难处非常理解。</p>
+          <p> </p>
+          <p>而且派来了像你这么有实力的守护者，以后见到他的话，一定要好好谢谢他。</p>
+          <p> </p>
+          <p>不管怎样，您能过来帮忙，真是非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见埃拉库斯沙漠的[%dic:STR_DIC_N_Demokritos]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去位于埃拉库斯沙漠的沙漠侦察基地见见德莫克里托斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安多劝我说，如果有时间的话，就到位于埃拉库斯沙漠的沙漠侦察基地去帮忙。</p>
+          <p> </p>
+          <p>按照他的话，去沙漠侦察基地见到了德莫克里托斯。他说他们正缺少人手，对我表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

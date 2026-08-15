@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些要塞警卫兵好像已经制定好了计划。</p>
+          <p> </p>
+          <p>现在警卫兵们经常在这附近出没。</p>
+          <p> </p>
+          <p>不久之后，他们应该就会发动破坏守护塔的总攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就长话短说，不跟您绕圈子了。[%username]大人，您必须要帮帮我们。</p>
+          <p> </p>
+          <p>您也看到了，在数量上，我们非常不利。如果现在他们攻过来的话，我们一定会被全灭的。</p>
+          <p> </p>
+          <p>我们虽然向普利姆据点请求了支援，但是援军过来还需要一点时间。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮我们争取一点时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请[%username]大人召集实力接近的同伴，去要塞附近袭击[%dic:STR_DIC_M_2770_all]。</p>
+          <p> </p>
+          <p>那样的话，他们的注意力就会被[%username]大人吸引过去，暂时不会向这边投入兵力。</p>
+          <p> </p>
+          <p>我知道这件事情很危险。但是和同伴们一起去的话，我相信您一定可以做到。</p>
+          <p> </p>
+          <p>愿黑暗的平安永远伴随着您！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在的情况已经不允许拖下去了。如果要塞驻军在这种状态下攻过来的话，我们根本就没有胜算。</p>
+          <p> </p>
+          <p>请您一定要再考虑一下。</p>
+          <p> </p>
+          <p>为了魔族的光荣，到底应该做些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有受伤吧？</p>
+          <p> </p>
+          <p>多亏[%username]大人吸引了他们的注意，今天没怎么看见[%dic:STR_DIC_M_2770_all]在附近出现。</p>
+          <p> </p>
+          <p>请您快跟我说说结果怎么样了吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然做到了。但是事情并没有结束。</p>
+          <p> </p>
+          <p>经过长期的战争，我们也知道了很多东西。他们绝对不是容易放弃的人。</p>
+          <p> </p>
+          <p>这次只是拖延了他们的时间，他们什么时候一定会攻过来的。所以希望您以后能继续过来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2770_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Muirica]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说要塞驻军有攻击魔族守护塔的迹象。召集同伴，先行攻击驻军，为援军的到来争取时间。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>缪里卡说要塞驻军好像很快就会来攻击守护塔，让我为普利姆据点的援军的到来争取时间。</p>
+          <p> </p>
+          <p>按照她的拜托吸引了要塞驻军的注意力，然后回去找到了她。她说辛苦了，并叮嘱我以后要继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

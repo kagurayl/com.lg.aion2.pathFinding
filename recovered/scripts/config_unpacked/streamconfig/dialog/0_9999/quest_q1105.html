@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，天气好又能干嘛？</p>
+          <p> </p>
+          <p>最近都不想种田什么的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+<Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>凯鲁宾还不够，现在连[%dic:STR_DIC_MLA132]都出来作乱了。</p>
+         <p> </p>
+         <p>所以佣兵老爷，您能不能帮帮我？</p>
+         <p> </p>
+         <p>我知道卡利安佣兵团不会管象鼻虫之类的小怪物。我都知道，但毕竟事出紧急。</p>
+         <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是谢谢您了。</p>
+          <p> </p>
+          <p>请捕捉[%dic:STR_DIC_MLA132]，然后搜集4条尾巴带回来。</p>
+          <p> </p>
+          <p>就全靠佣兵老爷了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>年轻的老爷太刻板了。</p>
+         <p> </p>
+         <p>就当是赚点零花钱好了。</p>
+         <p> </p>
+         <p>不管怎样，我知道了。我自己来搞定它们吧。最多也是个死。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+   <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，这么快就回来了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_QILA72]带回来了吗？</p>
+          <p> </p>                
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出象鼻虫的尾巴。</Act>
+    </Selects>
+  </HtmlPage>
+
+<HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能对[%userclass]您来说只是赚点零花钱，但是对我来说可是性命攸关的事情。</p>
+          <p> </p>
+          <p>您别跟我开玩笑，赶紧帮我去抓象鼻虫吧</p>
+        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些家伙偷吃了多少粮食啊，尾巴都这么肥。</p>
+          <p> </p>
+          <p>总算可以吃两天饱饭了。</p>
+          <p> </p>
+          <p>这是您的辛苦费。下次有事的话我会再找您的。</p>
+
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_MLA132]，将证物交给[%dic:STR_DIC_LA36]</font></p>[%collectitem]</step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">由于农场被[%dic:STR_DIC_MLA132]侵入，陷入了困境，[%dic:STR_DIC_LA36]找到了你。必须打猎[%dic:STR_DIC_MLA132]把尾巴带回来。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡尔雷斯个人拜托了一件事情。内容是帮他清除侵入农场偷吃粮食的象鼻虫。</p>
+          <p> </p>
+          <p>于是打猎象鼻虫，并带回了作为证物的尾巴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

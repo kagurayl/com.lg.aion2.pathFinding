@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究基地监视基地的内里森送来了新的报告书。</p>
+          <p> </p>
+          <p>虽然这样的事情本来可以不管，但现在情况比较特殊，因此不管多小的疑点都不能放过。</p>
+          <p> </p>
+          <p>而且这件事情最好秘密进行。因为现在还不方便让别人知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他说几天前，他看到革命团研究基地趁着夜色，把一个巨大的箱子送往别的地方。</p>
+          <p> </p>
+          <p>那是个可以装得下人的大箱子，他们搬运的时候非常小心，好像装着什么非常重要的东西。</p>
+          <p> </p>
+          <p>我让内里森去确认里面装着什么东西，但他说革命团的警卫很森严，没办法靠近。</p>
+          <p> </p>
+          <p>你能去见见[%dic:STR_DIC_N_Nerison]，确认一下之后的情况吗？这件事也许和人类改造实验体有关。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，[%username]。</p>
+          <p> </p>
+          <p>请你马上去因特尔蒂卡，见见研究基地监视基地的[%dic:STR_DIC_N_Nerison]。</p>
+          <p> </p>
+          <p>你跟内里森说是我派你过去的，去追踪雷帕尔革命团制造的实验体。</p>
+          <p> </p>
+          <p>没时间了。赶快出发吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是有什么其他事情吗？</p>
+          <p> </p>
+          <p>看来你还没明白革命团正在策划的是多大的阴谋吧？</p>
+          <p> </p>
+          <p>如果不能尽快阻止他们的话，日后你一定会后悔的。</p>
+          <p> </p>
+          <p>希望你衡量一下事情的轻重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来这里干什么？</p>
+          <p> </p>
+          <p>最近革命团的动态很不寻常，在普依艾密林等阴暗的地方行走的时候一定要小心。</p>
+          <p> </p>
+          <p>即便你是能力很强的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是科赛诺芬派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用尖锐的眼神上下打量)啊哈，帮助科赛诺芬大人秘密执行任务的守护者就是你吗？</p>
+          <p> </p>
+          <p>你来的正好。我刚好了解到了箱子有关的一些信息。</p>
+          <p> </p>
+          <p>请稍等一下。我整理一下报告书，然后再和你细说。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往因特尔蒂卡和[%dic:STR_DIC_N_Nerison]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">科赛诺芬说内里森看到的奇怪的箱子好像和人类改造实验体有关。让我去见见内里森，了解详细的情况。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>科赛诺芬说收到了内里森的报告书，说发现革命团研究基地的举动很异常。</p>
+          <p> </p>
+          <p>他说在深夜看到革命团员在移动一个奇怪的箱子。</p>
+          <p> </p>
+          <p>科赛诺芬说那个箱子可能和革命团研究的人类改造体有关，让我去因特尔蒂卡见见内里森。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"对了, [%username]大人! 您想不想成为一名守卫呢？"</p>
+          <p> </p>
+          <p>我可以向佩兰托军团长大人美言几句呢。</p>
+          <p> </p>
+          <p>以[%username]的实力，说不定可以马上就做到百夫长呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">郑重拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(咂咂嘴)啧，是这样啊？您没有这个意思也没办法。</p>
+          <p> </p>
+          <p>那您能不能继续帮助我们呢？</p>
+          <p> </p>
+          <p>托[%username]大人的福，长毛雪人的数量减少了，可是其他问题也还是有很多。</p>
+          <p> </p>
+          <p>要塞周边的野兽肯定很多。请[%username]大人帮我们清理一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>非常感谢您的慨然允诺。</p>
+          <p> </p>
+          <p>那么如果看到要塞周围苏贝尔斯石山上出现了[%dic:STR_DIC_M_Zaif2_32_An]和[%dic:STR_DIC_M_KalnifRE_30_An]就请您干掉它们。</p>
+          <p> </p>
+          <p>这些家伙说不定随时都会害人，所以还请您快快出发。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有别的事情。</p>
+          <p> </p>
+          <p>哎，那也没办法。虽然加图索还是不够格，不过也只能把事情交给他了。</p>
+          <p> </p>
+          <p>如果以后您改变了主意，请再来找我们。随时欢迎[%username]大人加入。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正想着[%username]大人差不多也该来了。 </p>
+          <p> </p>
+          <p>那么，之前的事怎么样了？</p>
+          <p> </p>
+          <p>苏贝尔斯石山的[%dic:STR_DIC_M_Zaif2_32_An]和[%dic:STR_DIC_M_KalnifRE_30_An]都清理掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>转瞬之间就干掉了他们，真不愧是 [%username]大人。</p>
+          <p> </p>
+          <p>加图索干掉一只都要费好大的力气，[%username]大人却如此利索地完成了任务，真是看着都觉得心里痛快。</p>
+          <p> </p>
+          <p>这是约定好的报酬。非常感谢您的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">干掉苏贝尔斯石山的猛兽。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Zaif2_32_An]([%2]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KalnifRE_30_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Loktania]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定干掉在苏贝尔斯石山周围打转的鬃毛野狼和黑喙剑齿豹，使人们能够放心地出入要塞。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>实力得到了卢克塔尼亚的称赞，并被询问是否想成为一名守卫。遭到郑重拒绝后，卢克塔尼亚觉得很遗憾，但仍然希望能够继续得到帮助。</p>
+          <p> </p>
+          <p>干掉了在苏贝尔斯石山周围打转的鬃毛野狼和黑喙剑齿豹，使人们能够放心地出入要塞。卢克塔尼亚千恩万谢，并奉上谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

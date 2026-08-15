@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从监视基地沿着盐漠坡道往西走，可以看到冰脚莱卡恩的巢穴。</p>
+          <p> </p>
+          <p>[%username]大人，我想您应该有在那里战斗的经验吧？</p>
+          <p> </p>
+          <p>您也知道，冰脚莱卡恩很不好对付。</p>
+          <p> </p>
+          <p>如果不和同伴们一起去，即使是再能干的守护者，也会有力不从心的时候。因此我们会尽量避免单独去那里执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是蒙蒙水参种植地稍微有点不同。因为是外围地区，那里的防御力量要比冰脚部落弱一些。</p>
+          <p> </p>
+          <p>而且据我所知，蒙蒙水参种植地盛产人参。</p>
+          <p> </p>
+          <p>守卫们把兵力集中在部落内部，他们可能是觉得那里并不重要。</p>
+          <p> </p>
+          <p>但是在我看来，这是消灭防守空虚的莱卡恩，建立功勋的好机会。</p>
+          <p> </p>
+          <p>[%username]大人，我想和您分享这次机会……您觉得怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>请您去消灭姆姆部落的[%dic:STR_DIC_M_LycanHunterM_29_An]、[%dic:STR_DIC_M_KeA_LycanKnightM_29_An]和[%dic:STR_DIC_M_LycanFighterM_29_An]。</p>
+          <p> </p>
+          <p>[%username]大人只要稍微花点力气，就能把蒙蒙水参种植地的防御全部摧毁。</p>
+          <p> </p>
+          <p>那样的话，人参的生产就会减少，冰脚莱卡恩的势力就会受到沉重打击。</p>
+          <p> </p>
+          <p>祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么要拒绝呢？</p>
+          <p> </p>
+          <p>这可是可以尽情展示力量的好机会啊。</p>
+          <p> </p>
+          <p>要是我的话，一定会欣然前往的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不喜欢待在一个地方不动。</p>
+          <p> </p>
+          <p>所以很喜欢去消灭凶猛的野兽或者莱卡恩。</p>
+          <p> </p>
+          <p>但是最让人兴奋的战斗还要数和天族之间的战斗。对手越是厉害，我就越高兴！</p>
+          <p> </p>
+          <p>[%username]大人，怎么样？您去蒙蒙水参种植地试过身手了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得好。</p>
+          <p> </p>
+          <p>由于冰脚部落会持续派兵支援，所以完全占领蒙蒙水参种植地是非常困难的。但是[%username]大人这次为我们提供了很大的帮助。</p>
+          <p> </p>
+          <p>在报告这次事情的时候，我一定会提到[%username]大人的名字的。</p>
+          <p> </p>
+          <p>您就等着瞧吧！因为我的计划非常成功。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭蒙蒙水参种植地的莱卡恩</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanHunterM_29_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KeA_LycanKnightM_29_An]([%5]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LycanFighterM_29_An]([%8]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Hakon]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈坤所说，消灭蒙蒙水参种植地的莱卡恩，削弱他们的气势。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈坤说蒙蒙水参种植地的莱卡恩的防御比较薄弱，如果能消灭掉那里的莱卡恩，就能大大削弱他们的气势。</p>
+          <p> </p>
+          <p>于是消灭掉了冰脚猎人、冰脚前哨兵和冰脚武装兵。回去之后，他对我大加称赞，说我做的很好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

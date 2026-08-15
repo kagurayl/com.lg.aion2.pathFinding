@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里的树...和我一样。</p>
+          <p> </p>
+          <p>因为其他的生命体。</p>
+          <p> </p>
+          <p>这里的树木...全都受到了威胁...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其中...最危险的是独眼巨人。</p>
+          <p> </p>
+          <p>浑身充满了火之气息。</p>
+          <p> </p>
+          <p>它们只要从附近经过...树木，就会枯死。</p>
+          <p> </p>
+          <p>为了生活在这里的树...帮我把[%dic:STR_DIC_M_CyclopsSmallD_34_An]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们...在[%dic:STR_DIC_W_DF2_SUB_C4]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_CyclopsSmallD_34_An]...一定要把它们清除掉。</p>
+          <p> </p>
+          <p>只有它们消失了...我才能以平静的心...死去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得这里的树...全都死了吗？</p>
+          <p> </p>
+          <p>树的生命力...要比人类想象的...强得多。</p>
+          <p> </p>
+          <p>你再想想，如果你想...救活这里的森林的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知从什么时候开始...椰林在亚特雷亚的生活...变得越来越艰难。</p>
+          <p> </p>
+          <p>但是总有一天...这里会恢复原来的样子。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_CyclopsSmallD_34_An]清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你...守护者。</p>
+          <p> </p>
+          <p>这对红色熔岩山崖的树木们...会起到很大的帮助。</p>
+          <p> </p>
+          <p>亚特雷亚的所有椰林和树...都会向你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除威胁树木的[%dic:STR_DIC_M_CyclopsSmallD_34_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Magni]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">应该按照玛格尼的嘱托，清除威胁树木的愤怒的独眼巨人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛格尼说带有火之气息的生命体危胁到了树木。</p>
+          <p> </p>
+          <p>于是按照他的嘱托，清除掉了对树木最具威胁的愤怒的独眼巨人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界方面必须赶紧找到驱散毒气的方法，不然...</p>
+          <p> </p>
+          <p>照这样下去，这一带迟早会成为斯莱姆的天下。 </p>   
+          <p> </p>
+          <p>不，应该是斯莱姆和德布里的天下。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听下去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的环境下，德布里的生活竟然没有任何影响，真是件奇怪的事情。 </p>
+          <p> </p>
+          <p>它以沼泽周边的植物为食，也喝沼泽里的水，但什么事也没有。 </p>
+          <p> </p>
+          <p>或许，能在德布里身上找到解毒的线索也未尝可知。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">对她的想法表示赞同。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯!一定是德布里身上含有某种成分，可以化解毒性。 </p>
+          <p> </p>
+          <p>对它的血液进行研究，或许会查出解毒的方法。 </p>
+          <p> </p>
+          <p>不过，我要在这里限制通过被污染沼泽的人们。所以，我想劳烦[%username]去抓一些 [%dic:STR_DIC_MLA56]%并搜集 [%dic:STR_DIC_QILA83]%，不知道你意下如何？</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于你的热情协助，我十分感谢。研究工作可能需要大量材料，我想搜集５个[%dic:STR_DIC_QILA83]%应该够了。</p>
+          <p> </p>
+          <p>要小心，那些家伙的牙齿非常锋利。</p>
+          <p> </p>
+          <p>愿阿里埃保佑你。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能你还没有意识到查出沼泽污染原因的重要性。</p>
+          <p> </p>
+          <p>尽快解决污染，才能确保人们的安全...</p>
+          <p> </p>
+          <p>不过我又能怎样呢？总不能强求那些把守护者的使命看得很轻的人。</p> 
+          <p> </p>
+          <p>我会拜托别人的，请慢走。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？对付德布里是不是很辛苦？</p>
+          <p> </p>
+          <p>你胳膊上仿佛有伤痕，看上去战斗应该很激烈。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将德布里的血液交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究估计至少需要５个德布里的血液。</p>
+          <p> </p>
+          <p>那么，请搜集５个血液回来吧。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>数目已经够了。下一步，就可以着手探究德布里的解毒奥秘了。</p>
+          <p> </p>
+          <p>我得把这些东西送到极乐世界，申请研究。</p>
+          <p> </p>
+          <p>作为答谢，这点礼物，不成敬意，还请收下。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集德布里的血液，并交给[%dic:STR_DIC_LA30]。</font></p>[%collectitem]</step>              
+    </steps>
+          <p><font font_xml="quest_summary">从被污染的沼泽中存活下来的德布里好像有可以缓解沼泽毒气的方法。搜集德布里的血液，并交给罗塞诺研究。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗塞诺表示从被污染的沼泽生存下来的德布里身上含有缓解沼泽毒气的线索。为了能够向极乐世界方面申请研究，帮她搜集了一些德布里的血液。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

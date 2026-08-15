@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>年轻的守护者们想到要塞外面的世界去。</p>
+          <p> </p>
+          <p>我答应今天带他们出去逛逛，但是有一个小小的问题。</p>
+          <p> </p>
+          <p>他们都是些好奇心很强的孩子，真不知道该怎么办才好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我事先去郊游场所踩了一下点，把[%dic:STR_DIC_I_QUEST_80049A]插在了那里。</p>
+          <p> </p>
+          <p>但是昨天去侦察的警卫兵大人说[%dic:STR_DIC_I_QUEST_80049A]全都不见了。</p>
+          <p> </p>
+          <p>他说到那里去郊游好像有点危险，所以我们需要您去挡住周围的怪物，在郊游期间不让它们接近那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助他。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。我还担心会让孩子们失望呢。</p>
+          <p> </p>
+          <p>我把[%dic:STR_DIC_I_QUEST_80049A]放在了霜精灵峡谷，您到那边去看看应该就行了。</p>
+          <p> </p>
+          <p>我不是不相信[%username]大人，但是为了以防万一，您能把[%dic:STR_DIC_I_QUEST_80049A]带回来作为证据吗！？</p>
+          <p> </p>
+          <p>孩子们都很期待。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真遗憾。不过这也是没办法的事。</p>
+          <p> </p>
+          <p>看来我只能去拜托其他守护者了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您回来啦！</p>
+          <p> </p>
+          <p>孩子们都很期待，都在问我什么时候能出去玩。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出白色标识。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，这是我插在那里的[%dic:STR_DIC_I_QUEST_80049A]。</p>
+          <p> </p>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>多亏有[%username]大人的帮助，孩子们很快就能到外面的世界去玩了。</p>
+          <p> </p>
+          <p>郊游的时间稍微有点长，有时间的话，希望您下次再来帮我。</p>
+          <p> </p>
+          <p>真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人，拜托您的事情怎么样了？</p>
+          <p> </p>
+          <p>看来是还没完成啊。嗯……是太难了吗？</p>
+          <p> </p>
+          <p>我把[%dic:STR_DIC_I_QUEST_80049A]放在了霜精灵峡谷，您到那边去看看应该就行了。</p>
+          <p> </p>
+          <p>我不是不相信[%username]大人，但是为了以防万一，您能把[%dic:STR_DIC_I_QUEST_80049A]带回来作为证据吗！？</p>
+          <p> </p>
+          <p>孩子们都很期待。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到霜精灵峡谷去寻找[%dic:STR_DIC_I_QUEST_80049A]，然后交给[%dic:STR_DIC_N_event_Olatis]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到霜精灵峡谷去找到白色标识，然后交给乌拉提斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌拉提斯说打算带年轻的守护者们出去郊游，但是遇到了没有预料到的困难。</p>
+          <p> </p>
+          <p>他说之前确定作为郊游场所的地方遭到了怪物的侵犯，他设置在那里的标记好像被全部吃掉了。</p>
+          <p> </p>
+          <p>为了年轻的守护者们的安全，赶走了在郊游场所附近徘徊的怪物，把场所标识带了回去，乌拉提斯对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

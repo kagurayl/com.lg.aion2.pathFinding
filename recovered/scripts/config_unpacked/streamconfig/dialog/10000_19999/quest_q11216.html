@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>(陈旧的地图。)</p>
+	  <p> </p>
+	  <p>(东西南北四个方向画着四颗星星。)</p>
+	  <p> </p>
+	  <p>(不知道东西南北的四颗星星是什么意思。) </p>
+	  <p> </p>
+	  <p>(应该拿去给龙族专家[%dic:STR_DIC_N_Sulinia]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您想来咨询什么事情呢？</p>
+	  <p> </p>
+	  <p>龙族的文化，还是龙族的遗物？</p>
+	  <p> </p>
+	  <p>这里是提亚马特的土地，到处都有新的发现。</p>
+	  <p> </p>
+	  <p>如果是有关龙族的新情报，我在此表示欢迎。如果是破坏了龙族的遗迹，让我来帮着收拾，那就算了。</p>
+	  <p> </p>
+	  <p>不过，龙族的遗物中含有强力的德拉纳的力量，因此必须小心对待。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">拿出地图。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这是！是用星星表示龙族村庄的四个方位的地图啊。</p>
+          <p> </p>
+	  <p>我曾经写过有关龙族的方位观念的研究报告，所以我对此很了解。</p>
+	  <p> </p>
+	  <p>有趣的是，他们在确定方位时采用的是相对的思考方式，用古代龙之坟墓来确定方位。</p>
+	  <p> </p>
+	  <p>这样标明全部四个方向的东西很少见。当然，是否能找到全部的方位象征物，必须直接确认一下才知道。</p>
+	  <p> </p>
+	  <p>对了，你能把方位象征物全部拿回来吗？</p>
+	  <p> </p>
+	  <p>找到[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C]和[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D]，应该就能获得各个方位的象征物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等你。</p>
+	  <p> </p>
+	  <p>[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C]和[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D]全部找到了吗？</p>
+	  <p> </p>
+	  <p>四个东西都还在吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带回来的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>(拿出放大镜)让我先来看看。</p>
+	  <p> </p>
+	  <p>(眯着眼睛，仔细查看)精致的花纹保存得非常完好。不过，这是……！</p>
+	  <p> </p>
+	  <p>这个花纹，和帕休曼迪尔寺院里看到的完全一样。您知道吗？那是龙帝封印对抗他的鲁德拉的地方。</p>
+	  <p> </p>
+	  <p>嗯……这四个方位象征物应该和用来供奉鲁德拉的祭祀工具有关，虽然目前只是假说。</p>
+	  <p> </p>
+	  <p>听说那个被毁掉的龙族村庄原来是追随鲁德拉的势力。</p>
+	  <p> </p>
+	  <p>真让人兴奋……看来我得进行进一步的研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>怎么？您是不认识路吗？</p>
+	  <p> </p>
+	  <p>嗯……看来您得先学习一下查看地图的方法。</p>
+	  <p> </p>
+	  <p>看地图的时候，先要找到基准。</p>
+	  <p> </p>
+	  <p>比如说这次，最好以村子的入口为基准。假设您站在入口处……</p>
+	  <p> </p>
+	  <p>对吧！终于理解了吧？</p>
+	  <p> </p>
+	  <p>请您快去找到[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C]和[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D]，把方位象征物带回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？还有什么事吗？</p>
+	  <p> </p>
+	  <p>该不会想让我把方位象征物还给您吧？</p>
+	  <p> </p>
+	  <p>啊，看来您是不知道，挖到的遗迹和遗物全都归极乐世界所有。当然，虽然说归极乐世界所有，但还是所有天族的财产。</p>
+	  <p> </p>
+	  <p>偶尔有人进行盗掘或抢夺，但那都是违法行为。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，我犯了一个大错误。</p>
+	  <p> </p>
+	  <p>找到遗物之后太兴奋，都忘了给您报酬了。</p>
+	  <p> </p>
+	  <p>哈哈，这是沉迷于研究的人经常犯的错误。</p>
+	  <p> </p>
+	  <p>希望您能原谅。我会尽量多给您一些报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Sulinia]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">找到[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B]、[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C]和[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D]，把获得的方位象征物交给[%dic:STR_DIC_N_Sulinia]</font></p>[%collectitem]</step>
+               <step><p visible="[%21]"><font color="[%24]">和[%dic:STR_DIC_N_Sulinia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">偶然得到了一张龙族村庄的地图。拿去给索拉利亚看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>偶然得到了一张陈旧的地图。向龙族专家索拉利亚咨询，她说是象征着龙族村庄的四个方位的地图。</p>
+	  <p> </p>
+	  <p>找到了四个方位象征物，回去告诉她之后，她很兴奋，说这好像和供奉鲁德拉的祭祀工具有关。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢？</p>
+          <p> </p>
+          <p>因派图西姆的重建工作好不容易回到了正规，却又发生了这种事。</p>
+          <p> </p>
+          <p>为了推进重建工作，大家都付出了很多的努力。</p>
+          <p> </p>
+          <p>我希望这里能和以前一样，成为所有魔族挥洒汗水，重建家园的地方。</p>
+          <p> </p>
+          <p>没想到竟然会在发现哈拉梅尔……那些妨碍因派图西姆重建的人，我一定不会放过他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对策还是其次，身为负责监视因派图西姆的百夫长，我竟然事先一点都没发觉，真是感觉没脸见人。</p>
+          <p> </p>
+          <p>但是我绝不会就此放弃！</p>
+          <p> </p>
+          <p>必须尽快扫荡哈拉梅尔，让工人们安心下来，继续因派图西姆的重建工作。</p>
+          <p> </p>
+          <p>请您马上到哈拉梅尔去，消灭[%dic:STR_DIC_E_Q28504]。</p>
+          <p> </p>
+          <p>此外，请您把驱使布洛尼和姆格尔的哈梅伦消灭掉！消灭得越干净越好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在哈拉梅尔毁灭之前，我们决不能停下脚步。</p>
+          <p> </p>
+          <p>必须找回丢失的名誉，安抚不安的民心。</p>
+          <p> </p>
+          <p>既然事情已经变成了这样，必须在他们察觉之前，先下手为强。</p>
+          <p> </p>
+          <p>请您抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真遗憾。</p>
+          <p> </p>
+          <p>您去过哈拉梅尔，我还以为您一定会答应这件事……</p>
+          <p> </p>
+          <p>不过这样没办法。看来我只能去找别人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的气氛非常不好。</p>
+          <p> </p>
+          <p>光是那些违背伏魔殿的意志，做出奇怪行动的人，就已经很让人头疼了……</p>
+          <p> </p>
+          <p>现在又牵涉到了天界的布洛尼。</p>
+          <p> </p>
+          <p>不过要是能在不安扩散之前把这件事处理掉，应该就不会出现问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把哈拉梅尔的敌人全部消灭掉了吗？</p>
+          <p> </p>
+          <p>您把布洛尼、姆格尔，还有哈梅伦全部消灭掉了，真是辛苦您了！</p>
+          <p> </p>
+          <p>但是……那个名叫哈梅伦的人最终还是逃走了，这一点让我很担心。</p>
+          <p> </p>
+          <p>他拥有迷惑亚人种的能力，只要他愿意，他就可以重新培养自己的势力。</p>
+          <p> </p>
+          <p>必须加紧对哈拉梅尔的监视，防止他有什么不良企图。[%username]大人，您一定会继续帮我的吧？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡[%dic:STR_DIC_W_IDNovice_SZ_IDNovice_Da]的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Q28504]([%2]/65)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gulkalla]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照酷卡拉的委托，扫荡哈拉梅尔内部的邪恶势力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>酷卡拉对因派图西姆周围存在哈拉梅尔的事情感到很愤怒，让我去把那里扫荡干净。</p>
+          <p> </p>
+          <p>于是去哈拉梅尔消灭了哈梅伦和他的部下。回去之后，酷卡拉对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

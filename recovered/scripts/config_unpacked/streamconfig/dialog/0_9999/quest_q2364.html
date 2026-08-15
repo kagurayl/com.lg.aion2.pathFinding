@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不知道...椰林为什么会变成奥格林特。</p>
+          <p> </p>
+          <p>以椰林的力量，没办法阻止，也没办法挽回。</p>
+          <p> </p>
+          <p>但是魔族...应该可以找到方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我体内的...精髓。</p>
+          <p> </p>
+          <p>已经完全改变了。不再是椰林的精髓...而成了奥格林特的精髓。</p>
+          <p> </p>
+          <p>你能把这件事...告诉[%dic:STR_DIC_W_DF2_SUB_D1]的[%dic:STR_DIC_N_Mirka]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>一定要把这件事...告诉[%dic:STR_DIC_W_DF2_SUB_D1]的[%dic:STR_DIC_N_Mirka]。</p>
+          <p> </p>
+          <p>然后告诉他...让他查清楚...椰林变成奥格林特的原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我什么都没做...就变成了奥格林特。</p>
+          <p> </p>
+          <p>今后也会有很多的椰林...会变成奥格林特。</p>
+          <p> </p>
+          <p>必须阻止这件事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么事情吗？</p>
+          <p> </p>
+          <p>发生了什么紧急的事情了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出奥格林特的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以这就是由椰林变成的奥格林特的精髓？</p>
+          <p> </p>
+          <p>我知道了。我会把这件事向伏魔殿报告，并对椰林为什么会变成奥格林特进行调查。</p>
+          <p> </p>
+          <p>但是那个叫玛格尼的奥格林特真可怜。如果像其他的奥格林特一样，不知道自己是椰林变成的，反而会好一点...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把奥格林特的精髓交给[%dic:STR_DIC_N_Mirka]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须按照玛格尼的拜托，把奥格林特的精髓交给伊拉西克村的米尔卡百夫长。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>变成奥格林特的玛格尼，为了让其他椰林不变成奥格林特，请求魔族的帮助。</p>
+          <p> </p>
+          <p>于是把玛格尼给我的奥格林特的精髓交给了米尔卡百夫长。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

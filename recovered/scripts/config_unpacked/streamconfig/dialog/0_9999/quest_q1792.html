@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在战场上，尤其是在这种情况下...</p>
+          <p> </p>
+          <p>我知道不能为个人的感情而左右，但是一想到失去了的朋友，我就忍不住伤心。</p>
+          <p> </p>
+          <p>最近，我经常想起最后见到他的样子。想起他微笑着走向消灭的样子。</p>
+          <p> </p>
+          <p>越是想念朋友，对龙族的愤怒就变得越深。要是可以的话，我真想一个人冲过去把他们全部干掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我还肩负着其他的责任。要是我离开岗位的话，也许就会给其他的同伴造成危害。</p>
+          <p> </p>
+          <p>(紧紧咬住嘴唇。) </p> 
+          <p> </p>
+          <p>[%username]大人...虽然不知道这个请求是不是过分。您能帮我去为死去的朋友报仇吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杀死我朋友的凶手就是[%dic:STR_DIC_M_Ab1_1241_LizardmanFi_40_An]、[%dic:STR_DIC_M_Ab1_1241_LizardmanAs_40_An]和[%dic:STR_DIC_M_Ab1_1241_LizardmanRa_40_An]。</p>
+          <p> </p>
+          <p>我亲眼看到它们聚集在我朋友倒下的地方的四周。</p>
+          <p> </p>
+          <p>所以，我想请您把它们全部清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来还是太过分了...您就是拒绝我，我也不会说什么的。</p>
+          <p> </p>
+          <p>即使报了仇，又会有什么不同呢？我朋友又不会因此而复活。</p>
+          <p> </p>
+          <p>没关系，和您说了一通，我的心里就舒服多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(呆呆地望着天空，被吓了一跳。)</p>
+          <p> </p>
+          <p>啊，这不是[%username] 大人吗！怎么样了？我拜托您的事情？ </p>
+          <p> </p>
+          <p>您帮我把杀死朋友的凶手全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，谢谢您。听[%username]大人这么一说，我的心里感觉轻松多了。</p>
+          <p> </p>
+          <p>回到奥德的流动里的朋友，也会感谢[%username]大人的。</p>
+          <p> </p>
+          <p>再次对您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除坠落之岛上的第38部队德拉克纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1241_LizardmanFi_40_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1241_LizardmanAs_40_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1241_LizardmanRa_40_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Baucis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">巴乌奇斯拜托我帮他为在欧比斯中消灭的朋友报仇，去帮他把第38德拉克纽特布兵、强袭兵和警戒兵清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴乌奇斯想起了因为龙族而消灭了的朋友而非常痛苦。</p>
+          <p> </p>
+          <p>帮助巴乌奇斯除掉了杀死朋友的凶手德拉克纽特步兵、强袭兵和警戒兵。他对我表示感谢，说他的朋友一定也会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

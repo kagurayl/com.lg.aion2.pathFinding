@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我刚好正在找你。</p>
+          <p> </p>
+          <p>这次有一件新的工作，[%username]大人好像是最合适的人选。</p>
+          <p> </p>
+          <p>请看一看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏公告 - </p>
+          <p> </p>
+          <p>悬赏从格尔克马洛斯的米特拉坎德回收龙族黄金收纳箱。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字 : [%dic:STR_DIC_OBJ_FOBJ_Q36017a]</p>
+          <p></p>
+          <p> 2. 价值 : 格尔克马洛斯 [%dic:STR_DIC_W_SZ_DF4_C2_2]流传下来的龙族的珍贵宝物</p>
+          <p></p>
+          <p> 3. 详情 : 据说在[%dic:STR_DIC_W_LF4_SZ_C5]可以找到的宝物箱，里面装着大崩溃之前流传下来的龙族的秘宝。</p>
+          <p> </p>
+          <p>先找到装有龙族秘宝的龙族黄金收纳箱中的宝物的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道[%username]大人一定会参加。</p>
+          <p> </p>
+          <p>虽然我相信您的能力，但[%dic:STR_DIC_W_SZ_DF4_C2_2]的龙族实力不容小觑，请千万小心。</p>
+          <p> </p>
+          <p>祝你一路平安。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我以为[%username]大人一定会参加的呢……</p>
+          <p> </p>
+          <p>不管怎样，您的意思我知道了。</p>
+          <p> </p>
+          <p>这原本就是很危险的事情，我也不会勉强您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦， [%username] 大人。</p>
+          <p> </p>
+          <p>看您的表情，好像一点事情也没有。</p>
+          <p> </p>
+          <p>我虽然喜欢宝物，却没那个胆子到龙族的巢穴里去，而且是格尔克马洛斯。</p>
+          <p> </p>
+          <p>如果您找到了龙族的宝物的话，我也想开开眼界。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族黄金头盔。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还没去[%dic:STR_DIC_W_SZ_DF4_C2_2]啊。</p>
+          <p> </p>
+          <p>龙族代代传下来的宝物……</p>
+          <p> </p>
+          <p>[%username] 大人，您不想知道是什么吗？我真的很想知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，眼睛都花了。</p>
+          <p> </p>
+          <p>是用纯金制成的头盔啊。应该不是实际使用的东西，好像是用来举行仪式的东西……</p>
+          <p> </p>
+          <p>很难想象这到底值多少钱。</p>
+          <p> </p>
+          <p>啊, [%username]大人，请您先把赏金收下。我只顾着看黄金头盔，都忘了给您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到隐藏在格尔克马洛斯的[%dic:STR_DIC_W_SZ_DF4_C2_2]里的[%dic:STR_DIC_OBJ_FOBJ_Q36017a]，然后交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从英吉斯温赏金管理人那里收到了悬赏公告传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温赏金管理人拿出了一张悬赏公告传单，说任务虽然危险，但是报酬很丰厚。</p>
+          <p> </p>
+          <p>去米特拉坎德找到龙族黄金收纳箱之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

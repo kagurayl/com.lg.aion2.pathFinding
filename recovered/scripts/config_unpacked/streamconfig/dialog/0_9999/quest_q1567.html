@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自然真是令人感恩的存在。</p>
+          <p> </p>
+          <p>大部分人虽然在生活中忘记了这个事实，可是不管是凡人还是守护者离开了森林江河都是无法生存的。</p>
+          <p> </p>
+          <p>我在生活中一直对自然心存感激。所以一想到死亡之歌森林就无比担心。</p>
+          <p> </p>
+          <p>不知什么时候，这许多树木和椰林都变成了这幅模样…</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可是横行在死亡之歌森林的奥格林特和洛特伦正在威胁居民们的安全。</p>
+          <p> </p>
+          <p>普通人已经不能从这附近经过了。所以守护者们接到命令，以钱财为酬金，务必完成这个任务。</p>
+          <p> </p>
+          <p>我个人也觉得，应该把他们送回奥德的流动中。</p>
+          <p> </p>
+          <p>您能消灭奥格林特和洛特伦，完成任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"那就请您去死亡之歌丛林，消灭[%dic:STR_DIC_M_Rottentree_36_An]和[%dic:STR_DIC_M_Agrint_36_An], [%dic:STR_DIC_M_AgrintBaby_35_An]。"</p>
+          <p> </p>
+          <p>数量太多，要全部消灭它们不是件容易事，但还是请您为了居民们多辛苦点吧。</p>
+          <p> </p>
+          <p>作为报酬，我会奉上银铸币的。对[%username]大人来说也不算一件亏本的买卖。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>说不定与龙族和雷帕尔革命团相比，奥格林特和洛特伦还算不上什么危险呢。</p>
+          <p> </p>
+          <p>可是不管危险不危险，为人类铲除这些危险是守护者的职责所在。</p>
+          <p> </p>
+          <p>另外让奇异了的椰林和其他树木获得安息，也是报答自然的一种方式。</p>
+          <p> </p>
+          <p>如果您改变了心意，请回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>岁月流逝，亚特雷亚好像变得非常贫瘠了。</p>
+          <p> </p>
+          <p>曾经美丽的埃尔特内变成了沙漠，因特尔蒂卡变成了不死族和树木妖灵徘徊的地方。</p>
+          <p> </p>
+          <p>到底要怎么做才能把变成这样的地方恢复成以前的模样？就像大崩溃之前一样，在亚特雷亚，让奥德之水泛滥就可以解决问题了吗？</p>
+          <p> </p>
+          <p>您有没有把洛特伦和奥格林特送回奥德的流动？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您令奥格林特和洛特伦重回奥德的流动，重新找回了平安。</p>
+          <p> </p>
+          <p>如果他们有灵魂的话，希望他们在奥德的流动中获得安息。</p>
+          <p> </p>
+          <p>[%username]真是辛苦了。</p>
+          <p> </p>
+          <p>来，这是约定好的银铸币。希望您能用在所需之时。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在死亡之歌森林消灭洛特伦和奥格林特。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Rottentree_36_An]([%2]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Agrint_36_An]([%5]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AgrintBaby_35_An]([%8]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lomulias]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说死亡之歌森林的洛特伦和奥格林特危害到了居民们的生活。消灭干皮洛特伦，食虫奥格林特，还有细枝奥格林特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗莫里亚斯说，曾经的树木和椰林异变成了洛特伦和奥格林特，令他非常心痛。希望你为了居民们消灭它们。</p>
+          <p> </p>
+          <p>按他所说的，来到死亡之歌森林，消灭了干皮洛特伦，食虫奥格林特，还有细枝奥格林特。得到了银铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要了解那种叫做普雷尔的怪物的详细情报，最好是直接去天界搜集情报。</p>
+          <p> </p>
+          <p>如果那个名叫密克隆的术古所说的是实话，在埃尔特内的革命团建设基地应该就能找到普雷尔。</p>
+          <p> </p>
+          <p>虽然有点危险，但是必须派个人过去...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>麻烦您有点不太好意思，但这件事情[%username]大人您能帮帮我吗？</p>
+          <p> </p>
+          <p>请您穿过时空的裂缝到天界的埃尔特内去执行任务。</p>
+          <p> </p>
+          <p>您在革命团建筑基地见到过普雷尔，我想[%username]大人应该是最适合去做这个任务的人选。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>时空的裂缝在[%dic:STR_DIC_W_DF2_SUB_D3]附近经常出现。</p>
+          <p> </p>
+          <p>到埃尔特内之后，在[%dic:STR_DIC_W_LF2_SZ_J]那里应该可以获得普雷尔的细胞组织。</p>
+          <p> </p>
+          <p>普雷尔研究日志应该也不难找到。</p>
+          <p> </p>
+          <p>请您把搜集到的[%dic:STR_DIC_I_QUEST_2487a]和[%dic:STR_DIC_I_QUEST_2487b]交给[%dic:STR_DIC_N_Kvasir]队长大人。因为即使您拿到这里来，这里也没有懂得分析的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不愿意去天界啊。</p>
+          <p> </p>
+          <p>您这么辛苦地到处搜集情报，我还让您去做这种事情。看来是我太过分了。</p>
+          <p> </p>
+          <p>可以理解。如果我是[%username]大人的话，应该也会犹豫的。</p>
+          <p> </p>
+          <p>这件事情我会去找别人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于又见面了，[%username]。</p>
+          <p> </p>
+          <p>你应该按照我的指示，去和米尔卡一起制定了对策了吧？</p>
+          <p> </p>
+          <p>跟我仔细说说任务的执行情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出细胞组织和研究日志。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有任何成果就这样空着手回来了？</p>
+          <p> </p>
+          <p>米尔卡什么对策都没有指示吗？还是你没有好好执行任务？</p>
+          <p> </p>
+          <p>我认识的米尔卡应该不会什么对策都不制定。</p>
+          <p> </p>
+          <p>所以，你快去好好地执行任务，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是天界的普雷尔的细胞组织？嗯...必须把它送到专家那里去研究一下。</p>
+          <p> </p>
+          <p>这是...嗯，是研究日志啊。</p>
+          <p> </p>
+          <p>(阅读研究日志)原来如此...原来是天界的雷帕尔革命团制造的生物。</p>
+          <p> </p>
+          <p>不管怎样，辛苦你了。多亏了你，我们获得了很多普雷尔的情报。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_2487a]和[%dic:STR_DIC_I_QUEST_2487b]，然后交给[%dic:STR_DIC_N_Kvasir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">米尔卡说最好应该去天界搜集有关普雷尔的资料。去埃尔特内的革命团建设基地搜集资料吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>接到克巴西日的命令，收到了有关普雷尔的情报之后，米尔卡说最好应该直接去天界搜集资料。</p>
+          <p> </p>
+          <p>于是去埃尔特内的革命团建设基地搜集到了普雷尔的细胞组织和研究日志，然后交给了伏魔殿的克巴西日。</p>
+          <p> </p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

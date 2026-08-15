@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看什么看？你是头一次看见魔女吗？</p>
+          <p> </p>
+          <p>这样直愣愣地盯着身处危机之中的可怜的魔女，实在太没有礼貌了。</p>
+          <p> </p>
+          <p>就算我是魔女。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么危机。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到你这个人还挺通情达理的。太好了。</p>
+          <p> </p>
+          <p>对不起，我刚才说话不该那么冲。</p>
+          <p> </p>
+          <p>事实上，我现在的处境有点困难。我希望能得到你的帮助，可以吗？</p>
+	  <p> </p>
+          <p>当然，我会酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">欣然接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">看上去有点危险，还是走吧。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮助一位素不相识的魔女，看来你真是个好人。</p>
+          <p> </p>
+          <p>要做的事情很简单。你只要帮我处理掉一直纠缠着我的[%dic:STR_DIC_M_Branch_Event_UndeadLightWiD_35_An]和[%dic:STR_DIC_M_Branch_Event_UndeadLightPrd_35_An]一伙就行了。</p>
+          <p> </p>
+	  <p>就因为我是魔女，他们就追着我不放，我又没做过什么坏事！</p>
+          <p> </p>
+          <p>真是太累了。因为没有安全感，晚上连觉都睡不着。唉……</p>
+          <p> </p>
+          <p>处理完之后，你能把他们的[%dic:STR_DIC_I_QUEST_80088A]拿回来吗？</p>
+          <p> </p>
+          <p>那就全靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人丧气。</p>
+          <p> </p>
+          <p>你也因为我是魔女，所以不相信我吗？</p>
+          <p> </p>
+          <p>好吧，知道了。你走你的路吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真郁闷。要是没有他们的话，我就可以出去了。</p>
+          <p> </p>
+          <p>我能不能离开这里，就全取决于你了。</p>
+          <p> </p>
+          <p>我拜托你的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出黄色灵魂碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是热呼呼的。</p>
+          <p> </p>
+          <p>本事不错嘛。没有一点缺损，状态非常好。</p>
+          <p> </p>
+          <p>好的，再搜集几个的话，那些家伙就逃不出我的手心了。呵呵～</p>
+          <p> </p>
+          <p>我是在自说自话，请不要在意。希望你下次再来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不能快一点吗？我没有多少时间了。</p>
+          <p> </p>
+          <p>知道了吗？[%dic:STR_DIC_I_QUEST_80088A]。</p>
+          <p> </p>
+          <p>你最好不要试探我的耐心。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80088A]，然后交给[%dic:STR_DIC_N_event_Blair]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集黄色灵魂碎片，然后交给布雷尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔女说自己正在被什么东西追赶，按照她的委托，帮他搜集到了灵魂碎片。</p>
+          <p> </p>
+          <p>作为帮她搜集灵魂碎片的报答，收到了一份小礼物，但魔女自言自语的话，听起来有点奇怪。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

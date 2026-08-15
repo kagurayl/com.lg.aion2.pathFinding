@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布尔拉甘既然已经将深渊之钥匙的力量注入了[%username]大人的身体，那现在您随时可以进入火之神殿啰。</p>
+          <p> </p>
+          <p>拯救阿克尼塔大人的任务到现在才算真正开始。</p>
+          <p> </p>
+          <p>既然您已经开始做了，就请您做到底吧。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。 </Act>
+    </Selects>
+    <Voice file="Q2036-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，守护者。</p>
+          <p> </p>
+          <p>你做好进入火之神殿，拯救阿克尼塔大人的准备了吗？</p>
+          <p> </p>
+          <p>那就请你飞到西北边的巨大的熔岩瀑布那边去。 [%dic:STR_DIC_OBJ_DF2_DragonDoor_In]在瀑布的中间。</p>
+          <p> </p>
+          <p>请你打开门进入神殿，把[%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]大人救出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿克尼塔被关在什么东西里面。我能隐约地感觉到，但是不知道那是什么东西。</p>
+          <p> </p>
+          <p>我只能感觉到他应该在火之神殿的最深处。</p>
+          <p> </p>
+          <p>克罗梅内在神殿里设置了看守宝物的监视者。除掉[%dic:STR_DIC_M_TreasureGuardianQ_36_Ae]的话，应该可以找到拯救阿克尼塔大人的线索。</p>
+          <p> </p>
+          <p>把他除掉，然后把[%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]大人救出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了啊？</p>
+          <p> </p>
+          <p>您把阿克尼斯大人救出来了吗？</p>
+          <p> </p>
+          <p>您手里拿着的是什么啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_salute;HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出圣杯，并报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿克尼塔大人终于被放出来啦！这对阿克尼塔大人和我们沉默审判所来说都是好事情。</p>
+          <p> </p>
+          <p>不过克罗梅内的力量还真是强大。</p>
+          <p> </p>
+          <p>竟然能把阿克尼塔大人关在这么小的圣杯里。</p>
+          <p> </p>
+          <p>对了！[%dic:STR_DIC_N_Anund]大人一定正在担心呢。您快去要塞向他报告吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+    <Voice file="Q2036-3.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有任何成果，就那样回来了吗？</p>
+          <p> </p>
+          <p>我经常听到赞扬[%username]大人的声音，难道那都是谣言吗？</p>
+          <p> </p>
+          <p>请您快去把阿克尼塔大人救出来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，你回来啦。</p>
+          <p> </p>
+          <p>对了，拯救阿克尼塔的事情怎么样了？</p>
+          <p> </p>
+          <p>你是有什么好消息才回来找我的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦了。</p>
+          <p> </p>
+          <p>听你一说，才知道火之神殿这件事情这么困难啊。</p>
+          <p> </p>
+          <p>不过你救出了阿克尼塔，现在沉默审判所总算挽回了自己的颜面。</p>
+          <p> </p>
+          <p>来，这是你为沉默审判所工作的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Gelkugin]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Bulagan]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">进入[%dic:STR_DIC_OBJ_DF2_DragonDoor_In]，除掉[%dic:STR_DIC_M_TreasureGuardianQ_36_Ae]，并寻找救出[%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]的线索。</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">找到关着阿克尼塔的圣杯，然后交给[%dic:STR_DIC_N_Gelkugin]</font></p>[%collectitem]</step>
+               <step><p visible="[%12]"><font color="[%13]">向[%dic:STR_DIC_N_Anund]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：必须救出阿克尼塔。去和盖尔库金谈谈吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+       <notify progress="3" pos="2" fontsize="16" showframe="true" time="5" color="yellow">获得陈旧的羊皮纸！</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔库金说到了救出阿克尼塔的时候。按照盖尔库金的指示来到了火之神殿，圣杯守护者丹拉比斯挡在了面前。</p>
+          <p> </p>
+          <p>除掉了圣杯守护者丹拉比斯，从他身上掉落的羊皮纸上得知了阿克尼塔被关在圣杯中的事实。于是在堆积如山的宝物中找到了关着阿克尼塔的圣杯，把他解放了出来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+
+</HtmlPages>

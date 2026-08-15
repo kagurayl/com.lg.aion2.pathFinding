@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是没有奥德飞行装置可以到达格尔克马洛斯瀑布吗？</p>
+          <p> </p>
+          <p>那就糟了。您也看到了，我只是个人类，没办法离开要塞。</p>
+          <p> </p>
+          <p>本来我连格尔克马洛斯都不能来，我是向瑟巴斯德大人的后台老板求情之后才过来的。条件是绝对不离开要塞半步。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，我想再麻烦您一件事。</p>
+          <p> </p>
+          <p>您好像对这里的情况很熟悉。</p>
+          <p> </p>
+          <p>您能到[%dic:STR_DIC_W_SZ_DF4_A3]去，帮我寻找瑟巴斯德大人吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，您可真是个大好人。要是瑟巴斯德大人也能像您一样知道照顾其他人，那该有多好？</p>
+          <p> </p>
+          <p>啊，请别误会。我不是说他性格不好，只是因为他喜欢自由。</p>
+          <p> </p>
+          <p>如果瑟巴斯德大人去了[%dic:STR_DIC_W_SZ_DF4_A3]的话，一定在瀑布下的什么地方。</p>
+          <p> </p>
+          <p>因为他最喜欢听瀑布的水声。如果没见到瑟巴斯德大人，请您帮我找找有没有什么线索。</p>
+          <p> </p>
+          <p>他一直带着那个陈旧的旅行背包，如果您发现了那个东西，请拿回来给我。那是他放衣服和食物的背包，没有吃的东西的话，他一定会回到要塞来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您很忙吗？那就没办法了。</p>
+          <p> </p>
+          <p>这可怎么办呢……</p>
+          <p> </p>
+          <p>看来我得重新和老板联系才行……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，我一直在这里等您。</p>
+          <p> </p>
+          <p>怎么样？您去过格尔克马洛斯瀑布了吗？</p>
+          <p> </p>
+          <p>(环顾四周)看您一个人回来，难道没见到瑟巴斯德大人吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出瑟巴斯德的旅行背包。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那里没有瑟巴斯德大人的痕迹吗？</p>
+          <p> </p>
+          <p>如果奥德飞行装置管理兵说的没错，他一定是去了格尔克马洛斯瀑布……</p>
+          <p> </p>
+          <p>不好意思，请您再去确认一下……</p>
+          <p> </p>
+          <p>瑟巴斯德大人忘性很强，一定会留下什么线索，比如说陈旧的旅行背包之类的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来瑟巴斯德大人确实去了格尔克马洛斯瀑布。</p>
+          <p> </p>
+          <p>他到底去那里干什么呢？</p>
+          <p> </p>
+          <p>现在他弄丢了背包，应该很快就会回要塞来。</p>
+          <p> </p>
+          <p>这样我就稍微安心一点了。谢谢您的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去格尔克马洛斯瀑布寻找[%dic:STR_DIC_OBJ_DF4_Q21072]，然后交给[%dic:STR_DIC_N_Skilving]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">代替斯齐尔宾去格尔克马洛斯瀑布寻找瑟巴斯德的痕迹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯齐尔宾说自己人类，没办法到要塞外面去，让我去帮他寻找瑟巴斯德。</p>
+          <p> </p>
+          <p>在格尔克马洛斯瀑布找了一圈，没有发现瑟巴斯德，只找到了瑟巴斯德的旅行背包。</p>
+          <p> </p>
+          <p>把背包交给了斯齐尔宾，他舒了一口气，说没有了背包，瑟巴斯德应该很快就会回到要塞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

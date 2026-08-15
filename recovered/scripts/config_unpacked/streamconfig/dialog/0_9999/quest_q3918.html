@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我对德拉纳和龙胶也很感兴趣，但我和他还是不太一样。</p>
+          <p> </p>
+          <p>毕竟那些可是能够制作龙语物品的珍贵材料。</p>
+          <p> </p>
+          <p>我首先需要一些苏尔卡纳。</p>
+          <p> </p>
+          <p>我看到克蕾莎的报告中有提到这个东西，但没有具体的说明。我很想深入了解一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从龙族的报告来看，在次元之门动力供给装置那边，有个装着苏尔卡纳的东西。</p>
+          <p> </p>
+          <p>好像是个什么装置，装置上的东西，应该能够用来制作龙语物品。</p>
+          <p> </p>
+          <p>我想请你帮忙找些[%dic:STR_DIC_I_quest_3918a]。</p>
+          <p> </p>
+          <p>请你帮我多搜集一些，我会好好报答守护者的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然次元之门动力供给装置里有苏尔卡纳，相信其它装置里也应该有苏尔卡纳。</p>
+          <p> </p>
+          <p>那边的龙族士兵身上肯定也携带有苏尔卡纳。</p>
+          <p> </p>
+          <p>到底谁身上有就不清楚了，这个还得你自己去找，呐呐。</p>
+          <p> </p>
+          <p>请你一定要帮席拉灵灵找到[%dic:STR_DIC_I_quest_3918a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不愿意帮我去搜集苏尔卡纳，当初为什么要接受克蕾莎的介绍呢？</p>
+          <p> </p>
+          <p>你是在耍席拉灵灵玩吗？</p>
+          <p> </p>
+          <p>欺负弱小的术古，你是个坏蛋！呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，守护者！</p>
+          <p> </p>
+          <p>为了苏尔卡纳碎片，席拉灵灵等得脖子都疼了。</p>
+          <p> </p>
+          <p>请你快把东西给我吧，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出苏尔卡纳碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么什么？！没找到[%dic:STR_DIC_I_quest_3918a]？</p>
+          <p> </p>
+          <p>席拉灵灵就指望靠守护者找苏尔卡纳碎片回来呢。</p>
+          <p> </p>
+          <p>你太令席拉灵灵失望了。</p>
+          <p> </p>
+          <p>别这样，请你快去搜集苏尔卡纳碎片吧，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来这就是苏尔卡纳碎片。</p>
+          <p> </p>
+          <p>我这就寄回工房，让他们看看能派上什么用场。</p>
+          <p> </p>
+          <p>谢谢你帮忙搜集苏尔卡纳碎片。</p>
+          <p> </p>
+          <p>下次有时间的话，请你再帮我搜集一些。</p>
+          <p> </p>
+          <p>我不会忘记你的恩情，一定会报答你的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_quest_3918a]交给[%dic:STR_DIC_N_Shugo_LC1_28]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助提格拉齐工房搜集苏尔卡纳碎片，制作龙语物品。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>席拉灵灵说，装置里使用的苏尔卡纳应该可以用来制作龙语物品，请我帮忙搜集苏尔卡纳碎片。</p>
+          <p> </p>
+          <p>将在黑暗普埃塔搜集到的苏尔卡纳碎片交给了席拉灵灵。她马上把它送回了提格拉齐工房，研究如何加以利用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用羊皮纸做成的书。)</p>
+          <p> </p>
+          <p>(被水浸湿了，但还没有损坏。)</p>
+          <p> </p>
+          <p>(打开一看，上面用芝麻大的字写满了料理法。)</p>
+          <p> </p>
+          <p>(把它交给[%dic:STR_DIC_N_Marica]吧。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我来看看这本羊皮纸书。</p>
+          <p> </p>
+          <p>(接过羊皮纸书，翻阅里面的内容。) </p>
+          <p> </p>
+          <p>把图卡筋切碎，把塞拉图的皮煮熟后冷却，使其凝固……</p>
+          <p> </p>
+          <p>嗯，好像是黑暗术古的料理。我听说黑暗术古会吃图卡。</p>
+          <p> </p>
+          <p>而且周围会用羊皮纸做成书的种族，只有黑暗术古。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是在迪迈亚水源地的瀑布下捡到的？</p>
+          <p> </p>
+          <p>奇怪，瀑布附近好像没有发现过黑暗术古啊……</p>
+          <p> </p>
+          <p>不过这倒是我需要的东西。</p>
+          <p> </p>
+          <p>请您帮我交给那边的[%dic:STR_DIC_N_Armond]。他的爱好是料理，一直在寻找有特色的料理法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这本羊皮纸书中写着黑暗术古的料理法？</p>
+          <p> </p>
+          <p>让我看看，到底写了些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出羊皮纸书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞拉图竟然可以吃，真让人吃惊！</p>
+          <p> </p>
+          <p>马里卡也知道，怎么就我不知道呢？</p>
+          <p> </p>
+          <p>这本秘方，能送给我吗？</p>
+          <p> </p>
+          <p>我想仔细阅读一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Marica]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Armond]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">捡到了一本写有料理法的羊皮纸书。拿去给马里卡看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在瀑布下面捡到了一本写着料理法的羊皮纸书。</p>
+          <p> </p>
+          <p>把它交给马里卡之后，他说从用图卡作为食材来看，应该是黑暗术古的料理书。让我给爱好料理的阿尔蒙德送过去。</p>
+          <p> </p>
+          <p>阿尔蒙德对我表示感谢，说想要仔细阅读一下，让我把书送给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

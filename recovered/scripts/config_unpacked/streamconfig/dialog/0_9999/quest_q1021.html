@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到龙蜥兽的数量突然增加的原因了！</p>
+          <p> </p>
+          <p>派去调查森林的污染问题的[%dic:STR_DIC_LA09]报告说找到了龙蜥兽增加的原因。</p>
+          <p> </p>
+          <p>他说原因在于[%dic:STR_DIC_MLA17_5]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>东边的森林被严重污染，奥德的均衡被打破。某些动物发生变异也不是什么奇怪的事情。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_MLA17_5]变异后变得很奇怪，并且在森林深处产了大量的卵。</p>
+          <p> </p>
+          <p>那么多的卵同时孵化，龙蜥兽的数量当然就会呈几何倍数地增长。</p>
+          <p> </p>
+          <p>这次你的任务就是找到[%dic:STR_DIC_MLA17_5]，并把它们清除掉。清除了变异的原因之后，奇怪的现象想必就会消失了。</p>
+          <p> </p>
+          <p>头目特兰迪拉现在还在产卵。必须赶快！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1021-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。事情都完成了吗？</p>
+          <p> </p>
+          <p>除掉[%dic:STR_DIC_MLA17_5]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">回答已经清除完毕。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。我还以为这样下去森林就会完全被龙蜥兽占领了呢。</p>
+          <p> </p>
+          <p>清除了[%dic:STR_DIC_MLA17_5]，森林应该会慢慢恢复原貌。首先应该派人去仔细寻找头目特兰迪拉产的卵，然后把它们打碎。</p>
+          <p> </p>
+          <p>太好了，总算是保持了森林物种的多样性。要不然每天的菜谱都只有龙蜥兽可吃，就太可怕了。</p>
+          <p> </p>
+          <p>事情办得不错，真是谢谢你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA154]对话 </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_FLA15]清除[%dic:STR_DIC_MLA17_5]([%5]/1) </font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_LA154]对话 </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：接受[%dic:STR_DIC_LA154]的指示，清除头目特兰迪拉.</font></p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于知道了龙蜥兽突然增加的原因。是因为[%dic:STR_DIC_MLA17_5]产了大量的卵。</p>
+          <p> </p>
+          <p>应[%dic:STR_DIC_LA154]的拜托，清除了[%dic:STR_DIC_MLA17_5]，解决了问题。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：和托尔巴斯村的百夫长莱托对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

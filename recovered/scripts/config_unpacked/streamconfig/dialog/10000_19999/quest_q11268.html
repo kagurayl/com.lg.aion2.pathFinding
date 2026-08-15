@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你有我的证物吗？</p>
+          <p> </p>
+          <p>我向为了占领要塞而浴血奋战的人发放了写有我的名字的证物。</p>
+          <p> </p>
+          <p>那样做，是为了记住那些为了天族的荣耀而帮助过我的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我问他们想要什么。</p>
+          <p> </p>
+          <p>他们全都异口同声地说，希望得到我的权能和力量。</p>
+          <p> </p>
+          <p>守护者，你也想得到我的权能和力量吗？如果是那样的话，你能给我什么呢？</p>
+          <p> </p>
+          <p>如果你有6个证物，我就把含有我的权能和力量的东西送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你想获得证物，可以去和傲慢的魔族和贪婪的龙族战斗，从他们手里夺回要塞。</p>
+          <p> </p>
+          <p>如果你能在占领要塞的过程中做出贡献，就可以得到[%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A]。</p>
+          <p> </p>
+          <p>如果你能交给我6个证物，我就把凯西内尔赐给我的防具送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果拥有我的证物，那你就是有资格获得我的权能和力量的守护者。</p>
+          <p> </p>
+          <p>守护者，证物是我的承诺，防具是我的权能和力量。</p>
+          <p> </p>
+          <p>如果你把证物交给我，我就把凯西内尔赐给我的防具中的上衣送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以凯西内尔赐予我的权能之名问你，你从傲慢的魔族和贪婪的龙族手中夺回要塞了吗？</p>
+          <p> </p>
+          <p>如果是那样的话，你一定会有我的证物。</p>
+          <p> </p>
+          <p>那个证物代表着我的承诺。只要你把承诺的象征[%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A]交给我，我就把我防具中的上衣送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出赫拉纳斯的证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你想获得证物，可以去和傲慢的魔族和贪婪的龙族战斗，从他们手里夺回要塞。</p>
+          <p> </p>
+          <p>如果你能在占领要塞的过程中做出贡献，就可以得到证物。</p>
+          <p> </p>
+          <p>如果你能把[%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A]交给我，我就把凯西内尔赐给我的防具中的上衣送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和我一起战斗的守护者啊，这是象征着我的权能的东西。</p>
+          <p> </p>
+          <p>希望你能和我一起战斗，共同开创凯西内尔心中的亚特雷亚。</p>
+          <p> </p>
+          <p>为了天界的胜利。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A]，然后交给[%dic:STR_DIC_N_Heranas]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">赫拉纳斯说为夺回要塞而战的守护者可以获得赫拉纳斯的证物，把6个证物交给她，可以获得防具上衣。去见见赫拉纳斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫拉纳斯说会把自己的防具送给为夺回要塞而战的守护者。</p>
+          <p> </p>
+          <p>为了夺回要塞，和守护神将展开了激战。然后把搜集到的赫拉纳斯的证物交给了她，她把防具送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

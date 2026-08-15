@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(宝珠上显现出光芒组成的字迹)</p>
+          <p> </p>
+          <p>(“忠于马勒库坦的强大的仆人在守护着格尔克马洛斯。”)</p>
+          <p> </p>
+          <p>(“打倒马勒库坦的代理人泰格拉克，打击敌人的士气。”)</p>
+          <p> </p>
+          <p>"(“打击马勒库坦的自尊心，让魔族颤抖吧。”"")"</p>
+          <p> </p>
+          <p>"(""[%dic:STR_DIC_N_Temenos]会给予你帮助。"")"</p>
+          <p> </p>
+          <p>(宝珠上的字消失了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次你又接到了什么指令啊？</p>
+          <p> </p>
+          <p>主神好像对你充满了期待……</p>
+          <p> </p>
+          <p>你完成了那么困难的事情，这次不知道又会让你去做什么。</p>
+          <p> </p>
+          <p>我应该可以帮助到你吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">把宝珠给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天哪！连我都感到非常吃惊。</p>
+          <p> </p>
+          <p>竟然命令你去打倒马勒库坦的代理人[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]。</p>
+          <p> </p>
+          <p>泰格拉克是代替马勒库坦主神守卫格尔克马洛斯防御基地的人，是马勒库坦最最信任的心腹。</p>
+          <p> </p>
+          <p>格尔克马洛斯防御基地地区是魔族防御非常森严的地区。一般的部队根本接近不了代理人泰格拉克。</p>
+          <p> </p>
+          <p>我想你最好做好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到代理人泰格拉克的惨叫在整个格尔克马洛斯回响。</p>
+          <p> </p>
+          <p>魔族一定在害怕得发抖，马勒库坦也一定非常愤怒！</p>
+          <p> </p>
+          <p>[%username]，你完成了一件了不起的事情！凯西内尔主神一定会很高兴的。</p>
+          <p> </p>
+          <p>看到你的宝珠在发光了吗？那是凯西内尔主神在召唤你。</p>
+          <p> </p>
+          <p>现在由代理人卡伊努斯代行他的职责，你最好回到要塞去见见他。</p>
+          <p> </p>
+          <p>你完成了这么多艰难的任务，我再次对你表示祝贺！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了天族的捷报。</p>
+          <p> </p>
+          <p>我听到了泰格拉克的惨叫，也听到了龙帝的士兵倒下的声音。</p>
+          <p> </p>
+          <p>我还听到了格尔克马洛斯的天族的欢呼声。</p>
+          <p> </p>
+          <p>你就是完成了凯西内尔大人的指令的人吗？</p>
+          <p> </p>
+          <p>把证据给我看看。如果确实是你，应该会有泰格拉克的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出泰格拉克的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你完成了惊人的壮举。</p>
+          <p> </p>
+          <p>曾经因为龙族和魔族而危急万分的龙界的局势，现在完全逆转了。</p>
+          <p> </p>
+          <p>你是天族的英雄，你有资格获得这把武器。</p>
+          <p> </p>
+          <p>[%username]，收下这把武器吧。</p>
+          <p> </p>
+          <p>凯西内尔主神的恩宠，会和这把武器一起永远伴随着你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Temenos]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭马勒库坦的代理人[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Temenos]对话</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">向凯西内尔的代理人[%dic:STR_DIC_N_Cainus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">紫色宝珠上又出现了新的命令。去泰美诺斯那里了解泰格拉克代理人的事情。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>紫色宝珠的下一个指令是接受泰美诺斯的帮助，消灭格尔克马洛斯防御基地的马勒库坦的代理人泰格拉克。</p>
+          <p> </p>
+          <p>按照泰美诺斯的建议，组织部队消灭了泰格拉克。回去之后，卡伊努斯说我完成了一件壮举，并赐给了我一件带有凯西内尔的恩宠的武器。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

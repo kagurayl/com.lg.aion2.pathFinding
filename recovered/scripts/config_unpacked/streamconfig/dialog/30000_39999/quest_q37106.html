@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：阿拉克内姊妹会,吉尤尼亚</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>我们收到报告说，在埃尔特内结界塔附近的兰克斯高原上经常有魔族出现，姐妹们在周围监视时，发现了魔族情报员。</p>
+          <p> </p>
+          <p>埃尔特内执行守护者们想抓住他们，但是他们利用名叫[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]的魔法物品隐藏了起来，行动以失败而告终。</p>
+          <p> </p>
+          <p>听到这一消息后，8位圣女指示说“将傲慢的魔族送回奥德的流动”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为[%dic:STR_DIC_E_Li_30_39]的导师，和他们一起消灭掉[%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An]%。</p>
+          <p> </p>
+          <p>结果请向[%dic:STR_DIC_N_Velatris]姐妹报告。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到兰克斯高原去了吗？我很想知道[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]到底长成什么样子。</p>
+          <p> </p>
+          <p>据说魔族会将情报员们在欧比斯中搜集到的情报用于战斗，很多人都表示担忧。</p>
+          <p> </p>
+          <p>因此极乐世界认为消灭情报员是一切的重中之重。</p>
+          <p> </p>
+          <p>请向我报告任务结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们是为了自己的种族才会潜入这里，对于他们的命运，我感到一丝同情。</p>
+          <p> </p>
+          <p>但是他们的傲慢是不可原谅的，因为他们威胁到了我们的和平。</p>
+          <p> </p>
+          <p>谢谢您消除了我们对魔族情报活动的担忧。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_30_39]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]的魔族情报员([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须成为埃尔特内执行守护者的导师，消灭躲藏在兰克斯高原的隐身召唤体中的魔族情报员。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是消灭在兰克斯高原出现的魔族情报员。</p>
+          <p> </p>
+          <p>和埃尔特内执行守护者一起消灭了躲藏在隐身召唤体中的魔族情报员之后，向贝拉特里斯报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

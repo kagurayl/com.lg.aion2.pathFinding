@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎，先别走！</p>
+          <p> </p>
+          <p>我正在做东西，不过好像缺点材料。</p>
+          <p> </p>
+          <p>看来我得请你帮助了。请稍等片刻。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">问他在做什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想知道吗？</p>
+          <p> </p>
+          <p>不知道告诉你合不合适。</p>
+          <p> </p>
+          <p>啊，不管了，既然叫你帮我做事情，就应该告诉你实情啊。</p>
+          <p> </p>
+          <p>我所卖的这些药不是倒卖，而是我亲手做的。</p>
+          <p> </p>
+          <p>假如说这是术古做的，怕别人不喜欢，所以一直保密。</p>
+          <p> </p>
+          <p>不要跟其他的守护者提这件事情啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经准备好了制作药材的所有材料，不过还缺一样东西。</p>
+          <p> </p>
+          <p>我需要[%dic:STR_DIC_I_quest_2263a]。</p>
+          <p> </p>
+          <p>你能不能马上帮我搞一些？</p>
+          <p> </p>
+          <p>现在已经把所有的材料混在一起了，假如不尽快把那个材料放进去，这些材料都要扔掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵呵，非常感谢。</p>
+          <p> </p>
+          <p>在这些材料坏掉之前，你可得快一点了。</p>
+          <p> </p>
+          <p>请在规定时间内尽快把[%dic:STR_DIC_I_quest_2263a]搞到手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经把所有材料都放进去了，该怎么办才好啊。</p>
+          <p> </p>
+          <p>假如现在不赶紧把[%dic:STR_DIC_I_quest_2263a]放进去，这些都要坏掉了。</p>
+          <p> </p>
+          <p>你一定要帮帮我啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搞到[%dic:STR_DIC_I_quest_2263a]了吗？</p>
+          <p> </p>
+          <p>没时间了，赶紧给我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出丛林猪笼草的花粉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么还没弄到手啊！</p>
+          <p> </p>
+          <p>要是浪费掉了投进去的材料，砸了生意，是不是守护者大人您负责任啊？</p>
+          <p> </p>
+          <p>既然已经答应了，就要说到做到！</p>
+          <p> </p>
+          <p>赶紧给我去把[%dic:STR_DIC_I_quest_2263a]弄过来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于搞到[%dic:STR_DIC_I_quest_2263a]了！</p>
+          <p> </p>
+          <p>呵呵，太好了，能够避免损失了。</p>
+          <p> </p>
+          <p>太感谢了，多亏你帮忙啊。</p>
+          <p> </p>
+          <p>这是你的辛苦费，拿着吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]">
+<font color="[%1]">在5分钟内从[%dic:STR_DIC_M_RafflesiaD_16_An]%和[%dic:STR_DIC_M_RafflesiaD_17_An]身上搜集汤药材料，交给[%dic:STR_DIC_N_Shugo_DF1_9]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">马布伦制作汤药缺少材料。搜集丛林猪笼草的花粉后并给他送过去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马布伦制作汤缺少一种材料，他让我尽快找到后给他送过去。</p>
+          <p> </p>
+          <p>因此在规定时间内把丛林猪笼草的花粉给送了过去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

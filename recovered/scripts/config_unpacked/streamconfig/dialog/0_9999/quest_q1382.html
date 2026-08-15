@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您在来的路上见到过难民吗？</p>
+          <p> </p>
+          <p>听微风商会的人说，在离这里有一段距离的地方看到了难民。</p>
+          <p> </p>
+          <p>好像是因为沙漠化而失去了村庄，到处流浪的人，我对此非常担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说他们好像就在[%dic:STR_DIC_W_LF2_SZ_F2]的附近。</p>
+          <p> </p>
+          <p>那里到处有雷帕尔革命团活动，我担心他们会被那帮人抓走。</p>
+          <p> </p>
+          <p>而我们没办法离开这里，所以[%username]大人您能去找到难民，然后把他们带回阿盖伦村吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道您会欣然答应的。</p>
+          <p> </p>
+          <p>那就请您快去寻找难民吧。微风商会的人说昨天在阿纳斯神秘泉附近看到了他们，所以应该不会走得太远。</p>
+          <p> </p>
+          <p>据说他们的头领的名字叫[%dic:STR_DIC_N_Turiel]，请您去见见她。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙漠的白天比熔炉还要热，晚上比冰窖还要冷。</p>
+          <p> </p>
+          <p>我们守护者都很辛苦了，何况是人类！</p>
+          <p> </p>
+          <p>这样下去的话，也许会有人死掉的。如果您没有急事的话，请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦！永恒之塔啊，感谢你。</p>
+          <p> </p>
+          <p>见到了守护者大人，我就安心了。</p>
+          <p> </p>
+          <p>我们都快被那些马艾奇吓死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">让他们一起回阿盖伦村。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您的关心，不过现在好像有点困难。</p>
+          <p> </p>
+          <p>可能是旅程太艰辛，很多人都虚脱了。现在出发的话，不论是守护者大人还是我们都会很辛苦的。</p>
+          <p> </p>
+          <p>不管怎样，现在我们必须留在这里修整一下。</p>
+          <p> </p>
+          <p>如果需要什么帮助的话，我们会马上和守护者大人联系的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Turiel]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">听说有在[%dic:STR_DIC_W_LF2_SZ_F2]周边徘徊的难民。必须找到难民，把他们带回阿盖伦村。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃塞奥斯从微风商会的人那里听说沙漠中有流浪的难民，于是拜托我把他们带回阿盖伦村。</p>
+          <p> </p>
+          <p>找到难民的首领图丽尔之后，她说感谢我们的好意，但是会靠自己的力量活下去，让我不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

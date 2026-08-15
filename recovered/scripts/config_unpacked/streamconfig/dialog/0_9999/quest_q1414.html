@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先要执行的任务是阻止奥德石的生产。</p>
+          <p> </p>
+          <p>我们知道奥德石除了可以用于打开次元之门之外，还可以用来增强克拉尔的力量。</p>
+          <p> </p>
+          <p>所以我们不能眼睁睁地看着他们提炼奥德石。</p>
+          <p> </p>
+          <p>您做好潜入凯丹执行任务的准备了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>潜入凯丹大本营之后稍微往里走一点，过了桥之后可以看到有一架风车。那个风车就是为提炼奥德石提供动力的装置。</p>
+          <p> </p>
+          <p>在风车的旁边，可以看到一个[%dic:STR_DIC_LF2_Gear_Q1414]。那是使风车转动的球形装置。把[%dic:STR_DIC_I_QUEST_1414a]拿下来的话，风车就会停止转动。</p>
+          <p> </p>
+          <p>破坏风车，阻止奥德石的提炼就是这次的任务。</p>
+          <p> </p>
+          <p>您能做到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。那就请您潜入凯丹大本营，把风车破坏掉吧。</p>
+          <p> </p>
+          <p>为了使他们无法修好风车，别忘了把[%dic:STR_DIC_I_QUEST_1414a]带回来。</p>
+          <p> </p>
+          <p>这样的话，他们在一段时间之内就无法提炼奥德石了。</p>
+          <p> </p>
+          <p>请您一路小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没做好准备吗？</p>
+          <p> </p>
+          <p>凯丹大本营是非常危险的地方，如果没有做好准备的话，最好不要贸然过去。</p>
+          <p> </p>
+          <p>等您做好了准备之后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(是操纵风车的齿轮。)</p>
+          <p> </p>
+          <p>(中间看上去好像是巨大的固定轴。)</p>
+          <p> </p>
+          <p>(好像只要把它拔掉的话，齿轮就会错位，风车就无法转动。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">拔出固定轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您安然回来啦！</p>
+          <p> </p>
+          <p>任务顺利完成了吗？</p>
+          <p> </p>
+          <p>那就请您把[%dic:STR_DIC_I_QUEST_1414a]给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出固定轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个固定轴是核心部件。</p>
+          <p> </p>
+          <p>这下就能安心了，暂时凯丹克拉尔应该无法生产奥德石了。</p>
+          <p> </p>
+          <p>但是现在高兴还为时太早。</p>
+          <p> </p>
+          <p>进攻凯丹大本营现在才只是开始。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_LF2_Gear_Q1414]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Aeolus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把为提炼奥德提供动力的风车破坏掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾奥洛斯说克拉尔通过奥德石使自己的力量变强，必须阻止奥德石的提炼。</p>
+          <p> </p>
+          <p>于是按照他的指令，去凯丹大本营破坏了为提炼奥德石提供动力的风车。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

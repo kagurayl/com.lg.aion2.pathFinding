@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我被派遣到这里已经很久了。</p>
+          <p> </p>
+          <p>名义上是来协助守卫工作，但其实我的大部分工作是搜集情报送往自由的神殿。</p>
+          <p> </p>
+          <p>所以守卫朋友们好像不高兴了。</p>
+          <p> </p>
+          <p>说真正需要我的时候，却看不到我的影子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是和守卫这个地方相比，搜集克拉尔和龙族的有关情报更为重要。</p>
+          <p> </p>
+          <p>他们不理解，一个重要的情报有可能关系到守卫军团的胜败...</p>
+          <p> </p>
+          <p>不过克拉尔就在眼皮底下横行，我也可以理解他们的心情。</p>
+          <p> </p>
+          <p>我想要是能清除掉一些克拉尔，守卫们对我的不满是不是就会少一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天我想清除掉一些奇夏尔克拉尔，但是要塞的格拉亚大人下了紧急命令。</p>
+          <p> </p>
+          <p>所以我说，你能帮我到[%dic:STR_DIC_W_LF3_SZ_E1]去清除一些克拉尔吗？</p>
+          <p> </p>
+          <p>我看你在这里坦然地走来走去，这样的小事应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我把[%dic:STR_DIC_M_KrallFighterK_38_Ae]、[%dic:STR_DIC_M_KrallFighterK_41_Ae]和[%dic:STR_DIC_M_krallpriestK_39_Ae]除掉一些</p>
+          <p> </p>
+          <p>不需要给我证据。</p>
+          <p> </p>
+          <p>守卫们出去巡查的时候，应该就会发现他们的数量减少了。</p>
+          <p> </p>
+          <p>那就拜托了。在这段时间，我得赶紧去一趟极乐世界才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，你不知道情报是多么的重要吗？</p>
+          <p> </p>
+          <p>如果你有什么急事，我也没办法。不过我还是希望你能帮帮我。</p>
+          <p> </p>
+          <p>我知道了。我只能先冲到奇夏尔部落去乱砍一通，然后再赶到极乐世界去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚从极乐世界回来。</p>
+          <p> </p>
+          <p>让你去做的事情完成了吗？</p>
+          <p> </p>
+          <p>要是一开始就说明我是来搜集情报的就好了。非得给我安一个帮助守卫工作的名份...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。真是辛苦你了。</p>
+          <p> </p>
+          <p>希望你不要以为是我自己干不了才让你去干的。如果不是忙着干其他事情，我会自己动手的...</p>
+          <p> </p>
+          <p>不管怎样，多亏了你，我总算挽回了一些面子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除奇夏尔克拉尔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KrallFighterK_38_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KrallFighterK_41_Ae]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_krallpriestK_39_Ae]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Atalante]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的阿塔兰特清除奇夏尔克拉尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿塔兰特说因为情报搜集任务而无法帮助守卫，遭到了他们的埋怨。</p>
+          <p> </p>
+          <p>他决定去清除奇夏尔克拉尔，但是由于有急事而抽不开身。于是帮助他清除了奇夏尔克拉尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

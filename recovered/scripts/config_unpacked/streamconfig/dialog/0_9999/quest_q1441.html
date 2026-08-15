@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(翻书)等一下。我要找个东西。</p>
+          <p> </p>
+          <p>应该就在这里的什么地方。啊，找到了！没错，就是它！小萝卜胭脂鱼卷！</p>
+          <p> </p>
+          <p>不好意思，让您久等了。因为今天是我当班准备食物。</p>
+          <p> </p>
+          <p>因为要准备下一餐的食物，所以现在忙得晕头转向。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问准备的是什么食物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>下一餐的食物我想做小萝卜胭脂鱼卷。</p>
+          <p> </p>
+          <p>因为长期生活在沙漠上没什么可吃的，大家吃的都腻了。小萝卜胭脂鱼卷绝对是可以激发大家食欲的料理！</p>
+          <p> </p>
+          <p>(在补给品箱子中翻找)等一下。需要的材料是胭脂鱼、小萝卜、贝尔特伦胡椒、菲斯勒黄油...怎么会这样，小萝卜没有了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么办呢？其他的都有，就缺小萝卜。</p>
+          <p> </p>
+          <p>现在开始做料理时间就很紧了，又没有时间去采集小萝卜...</p>
+          <p> </p>
+          <p>这可怎么办呢？[%username]大人，您能在我加工其他材料的这段时间里，帮我搜集一点[%dic:STR_DIC_E_vegetable_n_c_20b]回来啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人就是好说话。</p>
+          <p> </p>
+          <p>那就请您帮我采集12个[%dic:STR_DIC_E_vegetable_n_c_20b]吧。小萝卜在埃拉库斯沙漠和阿纳斯神秘泉周围有很多，您去那边看看吧。</p>
+          <p> </p>
+          <p>时间不多了，请您快一点吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您就不能不帮帮忙吗？</p>
+          <p> </p>
+          <p>我如果不急的话，会拜托[%username]大人您做这种事情吗！</p>
+          <p> </p>
+          <p>当然谢礼我不会少给的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等[%username]大人回来，都快急死我了。</p>
+          <p> </p>
+          <p>其他的准备已经完成很久了，还没看见您回来。</p>
+          <p> </p>
+          <p>请您快把小萝卜给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出小萝卜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？您想看我急死吗？</p>
+          <p> </p>
+          <p>如果这样的话，您干脆当初就别答应帮我。</p>
+          <p> </p>
+          <p>唉，现在说这种话又有什么用？请您现在就去帮我采集12个[%dic:STR_DIC_E_vegetable_n_c_20b]回来。快一点！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把东西带回来啦。等一下。</p>
+          <p> </p>
+          <p>(切好小萝卜，放进锅里。)</p>
+          <p> </p>
+          <p>呼，总算可以喘口气了。多亏了守护者大人。</p>
+          <p> </p>
+          <p>这是我的谢意，请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_vegetable_n_c_20b]，然后交给[%dic:STR_DIC_N_Aron]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让阿伦可以顺利准备好食物，必须帮他去采集小萝卜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金刺军团士兵阿伦说他正在准备小萝卜胭脂鱼卷，但是没有主要材料小萝卜，他正在为此苦恼。</p>
+          <p> </p>
+          <p>于是在他准备其他材料的时间里，帮他采集到了小萝卜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

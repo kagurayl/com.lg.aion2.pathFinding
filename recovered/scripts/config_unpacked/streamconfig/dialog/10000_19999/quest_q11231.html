@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔之枪是在结界外面执行任务的军团。</p>
+          <p> </p>
+          <p>为了在恶劣的环境中和强大的敌人战斗，我们做了很多准备。</p>
+          <p> </p>
+          <p>我们召集了很多优秀的工匠，倾注心血打造装备。</p>
+          <p> </p>
+          <p>随着希埃尔之枪的解散，那些装备也消失了，只留下很少的几件。</p>
+          <p> </p>
+          <p>其中之一就在我手上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿出一个闪光的东西)就是这个耳环。</p>
+          <p> </p>
+          <p>虽然很旧了，但这是希埃尔主神的工匠们制作的东西，性能非常出色。</p>
+          <p> </p>
+          <p>我想把这个珍贵的耳环送给您，您能答应我一个请求吗？</p>
+          <p> </p>
+          <p>请您帮我搜集散落在英吉斯温各地的风化的旧印章。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>风化的旧印章只能在风之气息强烈的地方才能找到。</p>
+          <p> </p>
+          <p>本来那些印章早就应该风化不见了，正是因为风之气息的存在，它们才保留了下来。</p>
+          <p> </p>
+          <p>因此经常在英吉斯温的风路和间歇泉周围的动物和采集物上发现。</p>
+          <p> </p>
+          <p>如果您能帮我搜集132个印章，我就把这个耳环送给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事并不着急。</p>
+          <p> </p>
+          <p>如果您得到了风化的旧印章，可以随时来找我。</p>
+          <p> </p>
+          <p>如果找不到其他主人，这个耳环我会一直保留着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(抚摸着耳环)看到这个东西，让我想起了以前的往事。</p>
+          <p> </p>
+          <p>我曾经也是个受到众人瞩目的军团士兵。</p>
+          <p> </p>
+          <p>现在那段记忆已经变得越来越模糊了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出风化的旧印章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须搜集132个风化的旧印章才行。</p>
+          <p> </p>
+          <p>不是我吹牛，这个耳环确实有那样的价值。</p>
+          <p> </p>
+          <p>请您搜集到132个风化的旧印章之后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您帮我搜集到了想要的东西。</p>
+          <p> </p>
+          <p>我和同伴们很长时间都没有完成的事情，没想到您这么快就完成了。</p>
+          <p> </p>
+          <p>我会按照约定，把这个耳环送给您。</p>
+          <p> </p>
+          <p>只要是送给您，不管什么东西我都不会觉得可惜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_air_collection_treasure01]，然后交给[%dic:STR_DIC_N_Zaniah]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">把风化的旧印章交给扎尼亚，换取耳环。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎尼亚说要把希埃尔之枪特别制作的耳环送给我，让我帮她搜集风化的旧印章。</p>
+          <p> </p>
+          <p>在风路和间歇泉周围搜集到了印章，扎尼亚按照约定把耳环送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

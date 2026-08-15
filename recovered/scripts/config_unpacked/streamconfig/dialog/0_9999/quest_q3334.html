@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……[%username]大人，您来啦？</p>
+          <p> </p>
+          <p>请稍等一下，我的眼睛里进了沙子……</p>
+          <p> </p>
+          <p>再怎么揉好像都没办法弄出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，行了。现在终于可以看清前面了。</p>
+          <p> </p>
+          <p>穿越库里乌鲁岩石山的时候，经常会发生这种情况。</p>
+          <p> </p>
+          <p>因为精灵们扬起的沙尘暴，每次穿越岩石山的时候眼睛都会发涩，全身都是沙尘。</p>
+          <p> </p>
+          <p>和袭击人的怪物相比，这些沙尘要麻烦得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有时间的话，您能帮我消灭掉一些精灵吗？</p>
+          <p> </p>
+          <p>啊，我绝不是因为自己不想去才让您去的。</p>
+          <p> </p>
+          <p>我的任务是守卫这里。</p>
+          <p> </p>
+          <p>而且消灭它们对[%username]大人而言应该只是举手之劳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您这么爽快地答应，看来[%username]大人您真是名不虚传啊。</p>
+          <p> </p>
+          <p>好的，请您帮我去[%dic:STR_DIC_W_LF2_SZ_I1]消灭掉一些[%dic:STR_DIC_M_elementalair3_32_An]和[%dic:STR_DIC_M_elementalair3_33_An]。</p>
+          <p> </p>
+          <p>如果它们消失的话，人们就能更快、更安全地通过库里乌鲁岩石山。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不想管这些小事吗？</p>
+          <p> </p>
+          <p>虽然对[%username]大人来说只是小事情，但对我们来说会有很大的帮助。</p>
+          <p> </p>
+          <p>如果您以后改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>真是一眨眼的功夫就消灭掉了。</p>
+          <p> </p>
+          <p>[%username]大人的名声我已经听说很久了，果然人如其名。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>处理得干净利落，真是名不虚传。</p>
+          <p> </p>
+          <p>谢谢您帮我除掉了讨厌的精灵。</p>
+          <p> </p>
+          <p>我找[%username]大人帮忙，真是找对人了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭库里乌鲁岩石山的精灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_elementalair3_32_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_elementalair3_33_An]([%5]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Elram]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说风之精灵给穿越库里乌鲁岩石山造成了很大的麻烦。帮助忙碌的守卫消灭风之精灵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说因为风之精灵扬起的沙尘暴，使穿越库里乌鲁岩石山变得非常危险。</p>
+          <p> </p>
+          <p>于是去库里乌鲁岩石山消灭掉了强力沙暴精灵和旋风精灵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

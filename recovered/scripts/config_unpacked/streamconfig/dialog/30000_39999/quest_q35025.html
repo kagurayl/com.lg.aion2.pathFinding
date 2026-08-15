@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>不久前，发生了一件不好的事情。几个怀疑是沉默审判官的魔族袭击了神圣守护会高层，抢走了会员名单和写有暗号的文件。</p>
+          <p> </p>
+          <p>幸运的是那些文件施加了魔法，如果被没有经过承认的人打开，就会爆炸。但为了以防万一，我们决定更改全部的暗号。</p>
+          <p> </p>
+          <p>请你马上到英吉斯温的索泰利亚圣所村去，把新的暗号告诉[%dic:STR_DIC_N_Atalos]。</p>
+          <p> </p>
+          <p>新的暗号是“山上山上有塞拉图，地上地上有德拉科比”。把新暗号告诉阿塔洛斯之后，请你再把相同的暗号告诉[%dic:STR_DIC_E_35021]。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经听说了。</p>
+          <p> </p>
+          <p>由于遭到魔族的袭击，因此更改了暗号，对吧？</p>
+          <p> </p>
+          <p>(小声说)快把新的暗号告诉我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">转述新暗号。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>山上山上有塞拉图，地上地上有德拉科比……怎么这么长？</p>
+          <p> </p>
+          <p>路皮里尼，红色羽毛多简单啊。</p>
+          <p> </p>
+          <p>看来我得注意不要搞混了才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去见过阿塔洛斯了吧？</p>
+          <p> </p>
+          <p>(低声说)新暗号是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述新暗号。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>山上山上有塞拉图，地上地上有德拉科比！对吧？</p>
+          <p> </p>
+          <p>希望这次的暗号能用的时间长一点……最近经常发生袭击事件，真让人担心。</p>
+          <p> </p>
+          <p>我得把这次的暗号告诉其他会员才行。请一路小心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Atalos]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_35021]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说会员名单和写有暗号的文件被几个怀疑是沉默审判官的人抢走了，让我把新的暗号告诉英吉斯温的会员。</p>
+          <p> </p>
+          <p>于是把新的暗号告诉了阿塔洛斯、泰尔山德拉和泰尔希克雷。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

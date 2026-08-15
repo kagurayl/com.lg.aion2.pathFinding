@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之前，我和警卫团长莱图大人一起去村子的东边巡查。</p>
+          <p> </p>
+          <p>发现那里有很多提波里德，为了防止它们对三尖树田造成危害，我们把它们全部除掉了。</p>
+          <p> </p>
+          <p>但是昨天有一个村民找到了我，说三尖树田被提波里德糟蹋了。</p>
+          <p> </p>
+          <p>莱图大人说已经都清除掉了，不可能有那样的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也许是没有清除掉的漏网之鱼，但是莱图大人不喜欢承认自己的失误。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人您能帮我去把提波里德清除掉吗？</p>
+          <p> </p>
+          <p>然后我会跟她说，我发现有从哈拉巴纳露天温泉那里过来的提波里德，我把它们清除掉了。这样的话就不会伤到莱图大人的自尊心，不是一举两得吗？</p>
+          <p> </p>
+          <p>这是我获得莱图大人的信任的好机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人给人的第一印象就很亲切。</p>
+          <p> </p>
+          <p>那就请您去哈拉巴纳露天温泉那边，把[%dic:STR_DIC_M_hippolizardReD_37_An]清除掉。</p>
+          <p> </p>
+          <p>除掉之后请您告诉我，我会去向莱图大人报告，在她面前表现一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱图大人发一次神经的话，我们警卫团员们都会死得很惨。</p>
+          <p> </p>
+          <p>所以，在其他村民报告又有提波里德的问题之前，请您一定要帮帮我。</p>
+          <p> </p>
+          <p>都说好人做到底。请您一定要再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等着您呢。</p>
+          <p> </p>
+          <p>莱图大人的心情好像越来越差了。这种时候才是立功的最好机会。</p>
+          <p> </p>
+          <p>您把勺尾提波里德全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。多亏了[%username]大人，我总算可以在莱图大人面前表现一下了。</p>
+          <p> </p>
+          <p>如果能因此而在警卫团占有一席之地就更好了。</p>
+          <p> </p>
+          <p>来，这是您帮我除掉提波里德的报答。</p>
+          <p> </p>
+          <p>对了，千万不要和别人说是[%username]大人您除掉了提波里德哦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除对三尖树田造成问题的[%dic:STR_DIC_M_hippolizardReD_37_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mirmak]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照米尔马克的拜托，去哈拉巴纳露天温泉那边把勺尾提波里德清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔马克说想要解决提波里德问题，赢取警卫团长莱图的信任。</p>
+          <p> </p>
+          <p>于是去哈拉巴纳露天温泉清除了勺尾提波里德，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

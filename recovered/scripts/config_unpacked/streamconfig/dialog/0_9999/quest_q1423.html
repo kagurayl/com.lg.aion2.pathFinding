@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>觉醒成为守护者之后，虽然受到了多种祝福，但我想其中最棒的祝福也许就是飞行的祝福。</p>
+          <p> </p>
+          <p>战斗能力之类的话，人类经过刻苦锻炼也能获得，但是只有飞行能力不是谁都可以获得的。</p>
+          <p> </p>
+          <p>当然可能因为我是飞行教官，所以会这么想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管怎样，[%username]好像没有浪费从五位主神那里受到的飞行的祝福。</p>
+          <p> </p>
+          <p>你已经除掉了蜷缩的埃拉库斯守护像，搜集到了黑色的石头。</p>
+          <p> </p>
+          <p>这种程度的话，基础的东西应该都学会了，你愿意跟我学习上级飞行术吗？</p>
+          <p> </p>
+          <p>其中有很多在初级飞行术中学不到的东西。</p>
+          <p> </p>
+          <p>如果你想在战斗的时候酷一点，就必须学习上级飞行术。因为里面有很多重要的内容。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，那我们就开始上级飞行术的课程吧。</p>
+          <p> </p>
+          <p>有很多重要的内容，所以请你一定要集中注意力。</p>
+          <p> </p>
+          <p>那就让我们开始吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得学了初级飞行术就足够了吗？</p>
+          <p> </p>
+          <p>你还真是不通世事啊...</p>
+          <p> </p>
+          <p>学习上级飞行术可以开阔你的视野。这样的东西都不愿意学，你还想干什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你理解我说的意思了吧？</p>
+          <p> </p>
+          <p>上级飞行术要比初级飞行术难得多。</p>
+          <p> </p>
+          <p>希望能对锻炼你的飞行技术有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说很有帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮助当然会有。但是要想熟练掌握的话，练习非常重要。</p>
+          <p> </p>
+          <p>有时间的时候别忘了练习。</p>
+          <p> </p>
+          <p>那样的话，你的实力就可以大幅提高。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">学习上级飞行术</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Marana]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去马拉娜那里听取上级飞行术课程。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说要想在欧比斯战斗的话，必须具有出色的飞行能力，于是去马拉娜那里听取了上级飞行术课程。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

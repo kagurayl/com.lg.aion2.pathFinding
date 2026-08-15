@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过有件事情我必须弄清楚。</p>
+          <p> </p>
+          <p>你怎么知道这是我掉的呢？</p>
+          <p> </p>
+          <p>我拥有神圣吊坠的事情应该只有一个人知道啊。</p>
+          <p> </p>
+          <p>我只让希格尼悄悄帮我寻找，并且叮嘱他过绝对不要跟别人说的。</p>
+          <p> </p>
+          <p>希格尼应该不会泄漏出去...你到底是从谁那里听说的呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说是斯佩因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯佩因？是那个在要塞里乞讨的叫花子吗？</p>
+          <p> </p>
+          <p>嗯...我想起来了。我和希格尼说话的时候，斯佩因似乎刚好从旁边经过。</p>
+          <p> </p>
+          <p>他竟然听到了我们的谈话，之前我真是太不小心了。</p>
+          <p> </p>
+          <p>神圣的保护者的任务并不仅仅是祈祷。守护人们的平安也是我的任务。</p>
+          <p> </p>
+          <p>现在我想照顾照顾[%dic:STR_DIC_N_Sveinn]，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我把这个粮食口袋交给[%dic:STR_DIC_N_Sveinn]。</p>
+          <p> </p>
+          <p>你跟他说，以后我会定期给他发放生活必需品，让他可以过上安定的生活。</p>
+          <p> </p>
+          <p>除此以外...帮我叮嘱他，让他不要把我弄丢了神圣吊坠的事情告诉其他人。</p>
+          <p> </p>
+          <p>来，拿着。请你拿去交给他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，我一直有个心结没解开。</p>
+          <p> </p>
+          <p>因为你和斯佩因都知道我弄丢了神圣吊坠的这件事。</p>
+          <p> </p>
+          <p>你应该不会故意泄露出去，但是我不能相信斯佩因。他不是已经告诉你了吗？</p>
+          <p> </p>
+          <p>如果大神官大人知道我把他给我的神圣吊坠弄丢了的话，我的名誉和他对我的信任肯定会一落千丈的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您怎么又回来啦？难道是上次给您的情报没什么价值，您来找我退钱？</p>
+          <p> </p>
+          <p>怎么利用那些情报靠的是个人的能力，这跟我可没关系。</p>
+          <p> </p>
+          <p>再说了，您见过有人让乞丐把施舍的钱再还给自己的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出粮食口袋，并转达布尔贝尔克的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈，活了这么长时间，没想到会遇到这种横财。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，我现在受到了布尔贝尔克大人的保护。</p>
+          <p> </p>
+          <p>只要我不说话的话，应该就可以不饿肚子了吧？这很容易做到。</p>
+          <p> </p>
+          <p>都说真正的朋友是在困难的时候给自己帮助的人。那么对我而言，[%username]大人就是真正的朋友。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把粮食口袋交给[%dic:STR_DIC_N_Sveinn]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">布尔贝尔克好像对斯佩因知道自己的秘密非常不安。帮他把粮食口袋交给斯佩因，并让他帮布尔贝尔克保守秘密吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布尔贝尔克问我是从谁那里听说他丢了神圣吊坠的，当听说是斯佩因之后，他好像非常不安。</p>
+          <p> </p>
+          <p>他给了我一个粮食口袋，让我去收买斯佩因。于是去找到了斯佩因，他非常高兴，说终于可以不用饿肚子了。</p>
+          <p> </p>
+          <p>然后说我帮他摆脱了困境，说今后我们就是真正的“朋友”了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

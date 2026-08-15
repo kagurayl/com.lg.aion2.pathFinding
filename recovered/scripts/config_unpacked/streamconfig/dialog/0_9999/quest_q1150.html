@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，昨晚一夜没睡，弄得现在全身酸痛，哎哟...</p>
+          <p> </p>
+          <p>我也知道这样不好，可有担心的事，怎么能睡得着呢。</p>
+          <p> </p>
+          <p>我觉得我快不行了，然后就给儿子写了这封信，把心事都说出来，这才松了口气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听下去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，我不知道该把这封信交给谁。 </p>
+          <p> </p>
+          <p>术古族的邮递服务？才不相信他们咧，说不定会把信随便扔到没人的地方呢！</p>
+          <p> </p>
+          <p>得让靠得住的人帮我把信带给托尔巴斯村的儿子，这样我才能放心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">跟他说正好有事要去托尔巴斯村，可以帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样啊！那太好了，能不能顺便帮帮我啊？</p>
+          <p> </p>
+          <p>要是守护者大人肯帮助我，那就放一百个心了。</p>
+          <p> </p>
+          <p>请把这封信带给我的儿子[%dic:STR_DIC_LA23]，他就住在 [%dic:STR_DIC_FLA10]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真谢谢你了。</p>
+          <p> </p>
+          <p>我的儿子[%dic:STR_DIC_LA23]住在[%dic:STR_DIC_FLA10]。</p>
+          <p> </p>
+          <p>这封信对我来说非常重要，一定拜托送到我儿子手上啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我明白，我不会提出无理要求让守护者大人为难的。</p>
+          <p> </p>
+          <p>可是没有其他可相信的人，唉，真是麻烦...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昨天晚上梦到父亲。</p>
+          <p> </p>
+          <p>他看上去很忧愁，好像有什么话要说...该不是出什么事情吧？</p>
+          <p> </p>
+          <p>虽然梦和现实是两码事，可还是放心不下。</p>
+          <p> </p>
+          <p>身为学者，应该追求真理，怎么能在这胡思乱想呢，哎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把信递过去。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这封信是父亲委托守护者大人交给我的？！</p>
+          <p> </p>
+          <p>哎，我总跟他说可以拜托邮递服务，可他总是充耳不闻。</p>
+          <p> </p>
+          <p>您也很忙，还劳烦您特意送来，真是不好意思。</p>
+          <p> </p>
+          <p>而且都是家庭琐事，让您见笑了... </p>
+          <p> </p>
+          <p>这是一点小小的礼物，不成敬意，请您务必收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_LA20]的信交给[%dic:STR_DIC_LA23]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">马诺斯有封信要交给儿子。代替他把信送到奎德罗那里。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔特伦要塞的马诺斯写了一封信给住在托尔巴斯村的儿子奎德罗，可是他不信任术古族的邮递服务，帮助马诺斯把信送到托尔巴斯村的奎德罗那里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……[%username]大人！你终于来啦。</p>
+          <p> </p>
+          <p>时间紧迫，要是我说得太快，希望您能原谅。</p>
+          <p> </p>
+          <p>我的朋友泰伊洛从卡斯帕内部回来之后，就一直在发高烧。病情非常严重，他现在连我都不认识了。</p>
+          <p> </p>
+          <p>我实在看不下去，就四处打听，得知这好像是奥德中毒症。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不仅是泰伊洛，还有很多守护者因为患了奥德中毒症而痛苦万分。</p>
+          <p> </p>
+          <p>但是不知道为什么直到现在还没有治疗剂。听说有个名叫[%dic:STR_DIC_N_Schiemann]的学者声称要制造出一种灵药。</p>
+          <p> </p>
+          <p>他好像只是为了以此为借口申请研究经费……但是事到如今，只能死马当活马医了。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去问问情况怎么样了吗？我都快急死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他开始研究已经好久了……但到现在还没有消息，一定是遇到了什么问题。</p>
+          <p> </p>
+          <p>如果他需要帮助，希望[%username]大人能帮帮他。</p>
+          <p> </p>
+          <p>我好像听到了朋友痛苦的呻吟。无论如何，我都要弄到治疗剂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>这可怎么办呢？除了泰伊洛之外，还有很多守护者在进入卡斯帕内部之后受到痛苦的折磨，却没有可以治疗的药物。</p>
+          <p> </p>
+          <p>对于生病的守护者而言，永恒的生命不是一种祝福，反而是一种痛苦。</p>
+          <p> </p>
+          <p>我想您应该不会是这么无情的人。您真的就这样走了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙界的守护者们好像喜欢把鲁莽当作勇敢。听说进入卡斯帕内部之后可以获得巨大的力量，就全都涌向了那里。</p>
+          <p> </p>
+          <p>你知道结果怎么样吗？所有的人都患上了奥德中毒症，一个个变得病泱泱的。想要获得力量，必然得付出代价……</p>
+          <p> </p>
+          <p>真是愚蠢。不过我又不能看着他们痛苦，所以我正在制作可以根治奥德中毒症的药物。</p>
+          <p> </p>
+          <p>本来以为很快就能制作出来，但是因为找不到材料，所以迟迟没有进展。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达维斯波拉的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……看来问题很严重。必须尽快把治疗剂制作出来才行。</p>
+          <p> </p>
+          <p>但是这件事不是我一个人能够完成的……要想制作奥德中毒症治疗剂，必须进入卡斯帕内部搜集材料。</p>
+          <p> </p>
+          <p>你听说过以毒攻毒吗？因为进入卡斯帕内部而生了病，就只能在卡斯帕内部寻找解决方法。</p>
+          <p> </p>
+          <p>但是关于卡斯帕的可怕传闻已经传了出去，不知道还有没有人愿意进去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Schiemann]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">维斯波拉说她的朋友泰伊洛患上了奥德中毒症。去问问休里曼治疗剂的进展情况吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维斯波拉说朋友泰伊洛进入卡斯帕之后就生了病，让我去问问休里曼奥德中毒症治疗剂制作得怎么样了。</p>
+          <p> </p>
+          <p>询问休里曼之后，他说必须进入卡斯帕内部才能搜集到材料，治疗剂的制作遇到了困难。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

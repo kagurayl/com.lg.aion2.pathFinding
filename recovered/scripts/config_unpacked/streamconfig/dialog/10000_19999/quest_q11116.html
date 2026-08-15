@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们一家人在失散之前，每天都在一起吃好吃的东西。</p>
+          <p> </p>
+          <p>妈妈经常采很多[%dic:STR_DIC_I_QUEST_11116b]埋在地下，留着慢慢吃。</p>
+          <p> </p>
+          <p>她还经常给塞茨奇奇花花绿绿的[%dic:STR_DIC_I_QUEST_11116c]玩。</p>
+          <p> </p>
+          <p>我想见妈妈，想吃妈妈做的菜，想吃罐头糖。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞茨奇奇想见妈妈，不想再躲在这里了。</p>
+          <p> </p>
+          <p>塞茨奇奇觉得自己就要死了。</p>
+          <p> </p>
+          <p>我想吃妈妈做的[%dic:STR_DIC_I_QUEST_11116b]。帮我弄一点酱图卡吧。</p>
+          <p> </p>
+          <p>还有极乐世界的[%dic:STR_DIC_I_QUEST_11116c]……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哥哥说不能哭，必须坚持下去，爸爸妈妈会来找我们的。</p>
+          <p> </p>
+          <p>但是我知道，妈妈已经去世了。</p>
+          <p> </p>
+          <p>塞茨奇奇只要有[%dic:STR_DIC_I_QUEST_11116b]和[%dic:STR_DIC_I_QUEST_11116c]的话，就会乖乖的不哭了。</p>
+          <p> </p>
+          <p>虽然爸爸妈妈不会来找我们，但我哭的话，哥哥就会伤心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞茨奇奇经常把路边的石头看成吃的东西。</p>
+          <p> </p>
+          <p>肚子很饿，身体也很不舒服。</p>
+          <p> </p>
+          <p>哥哥虽然很努力地想救我，但是我知道。我马上就要死了。</p>
+          <p> </p>
+          <p>哥哥说妈妈马上就会来找我们，但是我知道他在说谎。</p>
+          <p> </p>
+          <p>这样饿着肚子待在这么冷的地方，还不如去天上见妈妈呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>酱图卡？</p>
+          <p> </p>
+          <p>嗯，那不是黑暗术古吃的东西吗？</p>
+          <p> </p>
+          <p>我也尝过，但是又酸又咸，根本吃不下去。</p>
+          <p> </p>
+          <p>您去[%dic:STR_DIC_M_LF4_A5_Fungy_Cactus_51_n]身上搜集刺，然后让[%dic:STR_DIC_N_Hestia]帮您制作吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>食物是一种记忆。</p>
+          <p> </p>
+          <p>让我们感到幸福的食物，不是山珍海味，而是可以让我们回忆起美好的记忆的食物。</p>
+          <p> </p>
+          <p>所以也有人说食物是一种思念。</p>
+          <p> </p>
+          <p>要是我能再吃上一回小时候奶奶做的炖库库勒就好了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出图卡刺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>咦，这不是黑暗术古的食物[%dic:STR_DIC_I_QUEST_11116b]的材料吗？</p>
+	  <p> </p>
+	  <p>黑暗术古会一下子做很多，然后埋在地下，每次过节的时候拿出来吃。</p>
+	  <p> </p>
+	  <p>那种保存方法非常先进，让人很难相信那是黑暗术古传统的储藏方法，所以我特意学过。</p>
+	  <p> </p>
+	  <p>来，拿着。必须在坏掉之前埋在地里才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+	  <p>你说是酱图卡？</p>
+	  <p> </p>
+	  <p>你是听谁说我会制作这种料理的？</p>
+	  <p> </p>
+	  <p>我是好不容易从黑暗术古那里学来的。</p>
+	  <p> </p>
+	  <p>但是要制作酱图卡，必须要有[%dic:STR_DIC_I_QUEST_11116a]。请你先去搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么了？您是需要什么特殊的材料吗？</p>
+	  <p> </p>
+	  <p>我这里有各种常用的料理材料。但是偶尔也会有人找一些特殊的材料，所以我特地准备了一些。有什么需要请尽管说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">询问有没有罐头糖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是小孩子非常喜欢吃的东西。但是最近没有卖了。</p>
+          <p> </p>
+          <p>那是用水果做成的糖，对身体没什么坏处，但是因为会让小孩子蛀牙，所以被列为不健康食品，禁止销售了。</p>
+          <p> </p>
+          <p>不过我这里还有过去卖剩的东西。</p>
+          <p> </p>
+          <p>等等……放在哪里了呢？</p>
+          <p> </p>
+          <p>啊，这里还有一罐。请您拿着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想吃[%dic:STR_DIC_I_QUEST_11116b]和[%dic:STR_DIC_I_QUEST_11116c]。</p>
+          <p> </p>
+          <p>塞茨奇奇越来越没力气，肚子也越来越饿了。</p>
+          <p> </p>
+          <p>我可能就要死了。</p>
+          <p> </p>
+          <p>如果能吃到酱图卡和罐头糖，应该就能恢复一点力气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出酱图卡和罐头糖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……妈妈做的酱图卡就是这个。</p>
+          <p> </p>
+          <p>哥哥买的罐头糖……</p>
+          <p> </p>
+          <p>塞茨奇奇好幸福。我不哭了。</p>
+          <p> </p>
+          <p>谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Fabius]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">搜集[%dic:STR_DIC_I_QUEST_11116b]材料，然后交给[%dic:STR_DIC_N_Hestia]</font></p>[%collectitem]</step>
+               <step><p visible="[%6]"><font color="[%7]">去[%dic:STR_DIC_N_Luelas]那里购买罐头糖</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Shulack_LF4_2]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">可怜的难民塞茨齐齐说想吃酱图卡和罐头糖，答应她的请求吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可怜的难民塞茨齐齐说想吃去世的母亲做的酱图卡。</p>
+          <p> </p>
+          <p>另外她还想吃装在罐头里的罐头糖。</p>
+          <p> </p>
+          <p>帮助塞茨奇奇找到了酱图卡和罐头糖。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次您帮我搜集的东西。</p>
+          <p> </p>
+          <p>您忘了吗？(环顾四周，小声地说)就是生长在阿鲁齐纳的宫殿里的珊瑚草。</p>
+          <p> </p>
+          <p>您能再帮我搜集一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">你不是说不值钱吗？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您居然还记得我上次说的话，记忆力真是好啊，哈哈……</p>
+          <p> </p>
+          <p>就像您说的那样，[%dic:STR_DIC_OBJ_DF3_Coral_Q2585]并不很值钱，但至少比大麻和普雷沙值钱。</p>
+          <p> </p>
+          <p>我总不能一直过着难民的生活吧。有机会的话，我希望能赚一点钱。</p>
+          <p> </p>
+          <p>请您帮我搜集9个[%dic:STR_DIC_I_QUEST_2585a]。我会拿去卖个好价钱，然后分您一部分钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我有个条件。</p>
+          <p> </p>
+          <p>因为是我给您提供的情报，东西也由我来处理，所以分给您多少钱由我来决定。</p>
+          <p> </p>
+          <p>还有，对周围的人必须保密。</p>
+          <p> </p>
+          <p>如果大家都去[%dic:STR_DIC_OBJ_DF3_Coral_Q2585]采集[%dic:STR_DIC_I_QUEST_2585a]，我们就赚不了什么钱了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是那时候的事情伤到您的感情了吗？</p>
+          <p> </p>
+          <p>哎呀，身为守护者，怎么能为这种事情生气呢？</p>
+          <p> </p>
+          <p>因为我一开始很期待，后来又太失望，所以才会说出那种话。请您消消气，再考虑一下吧。嗯？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾四周，把我拉到角落里。)</p>
+          <p> </p>
+          <p>您去阿鲁齐纳的宫殿的事情怎么样了？</p>
+          <p> </p>
+          <p>我要的东西拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出珊瑚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么还是空着手啊！都这么长时间了。</p>
+          <p> </p>
+          <p>该不会是没能在[%dic:STR_DIC_OBJ_DF3_Coral_Q2585]采到[%dic:STR_DIC_I_QUEST_2585a]吧？</p>
+          <p> </p>
+          <p>啧，我还以为让有经验的人去办会好一些呢……</p>
+          <p> </p>
+          <p>不能就这样放弃。请您再去一次。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看珊瑚)东西好像很不错。</p>
+          <p> </p>
+          <p>来，请您收下。本来应该等卖了东西之后再给您的，但是为了您的方便，我就先给您了。</p>
+          <p> </p>
+          <p>我再强调一遍，这件事不能跟任何人说。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_OBJ_DF3_Coral_Q2585]，然后交给[%dic:STR_DIC_N_Baugi]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去阿鲁齐纳的宫殿采集珊瑚，然后交给巴乌奇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自卫团员巴乌奇说有机会的话想赚两个钱，让我再去阿鲁齐纳的宫殿帮他采集珊瑚。</p>
+          <p> </p>
+          <p>接受了他的提议，把搜集到的珊瑚交给了他。他说会把我的一份给我，结果只给了我很少的一部分钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

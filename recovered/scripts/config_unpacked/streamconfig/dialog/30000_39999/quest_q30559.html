@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30559</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您有时间的话，能帮我一个忙吗？</p>
+          <p> </p>
+          <p>我需要到兰图斯前哨基地去找一件东西，但是您也知道，我现在没办法到那里去。</p>
+          <p> </p>
+          <p>那是非常重要的东西，我必须找到它。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我父亲的遗物。</p>
+          <p> </p>
+          <p>我父亲是希埃尔之枪军团的士兵。</p>
+          <p> </p>
+          <p>他把[%dic:STR_DIC_I_QUEST_30560A]作为遗物留给了我，但是我在和龙族战斗的时候把它弄丢了。</p>
+          <p> </p>
+          <p>[%username]大人，请您一定要帮我找到它。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是在和[%dic:STR_DIC_M_IDYun_DrakanStrider_60_Ae]战斗的时候把遗物弄丢的。</p>
+          <p> </p>
+          <p>消灭它们，应该就能找到丢失的[%dic:STR_DIC_I_QUEST_30560A]。</p>
+          <p> </p>
+          <p>对我来说，那是比生命还要重要的东西，请您一定要帮我找到它。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是别的，是我父亲的遗物。</p>
+          <p> </p>
+          <p>对于我来说，我只有一个父亲。</p>
+          <p> </p>
+          <p>他让我经常看看希埃尔之枪徽章，不要忘记自己的根。</p>
+          <p> </p>
+          <p>所以那是非常重要的东西……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您，[%username]大人。</p>
+          <p> </p>
+          <p>我父亲的遗物找到了吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出希埃尔之枪徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是请您帮忙，所以我也不想催您。</p>
+          <p> </p>
+          <p>但是时间拖得越久，东西就越难找到。</p>
+          <p> </p>
+          <p>请您快点去消灭[%dic:STR_DIC_M_IDYun_DrakanStrider_60_Ae]，帮我找回[%dic:STR_DIC_I_QUEST_30560A]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到啦！</p>
+          <p> </p>
+          <p>太好了！真是太好了！</p>
+          <p> </p>
+          <p>[%username]大人，您一定想象不到我有多高兴。</p>
+          <p> </p>
+          <p>再次对您表示感谢，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_QUEST_30560A]，然后交给[%dic:STR_DIC_N_Wurus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">乌鲁斯说把父亲的遗物弄丢了。去消灭第55精锐帕卡提战斗军官，寻找希埃尔之枪徽章吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌鲁斯说把父亲的遗物希埃尔之枪徽章弄丢了，让我帮着寻找。</p>
+          <p> </p>
+          <p>于是到兰图斯前哨基地去消灭龙族，帮他找到了徽章，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

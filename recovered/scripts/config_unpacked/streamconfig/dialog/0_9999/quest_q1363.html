@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道离开了家会很辛苦。但是自从村子完全消失，踏上避难的道路之后，我才意识到避难的道路要远比想象的艰难得多。</p>
+          <p> </p>
+          <p>在来这里的路上，[%username]您不知道我们经历了多少次死亡的威胁。</p>
+          <p> </p>
+          <p>但是在来的途中，我们也获得了没有想到的帮助。</p>
+          <p> </p>
+          <p>事实上，一开始我们并没有意识到得到了帮助，还在想这下可死定了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问获得了什么帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在穿越沙漠的时候，我们吃光了所有的食物和水。就在我们连动的力气都没有的时候，看见远远地来了一群克拉尔。</p>
+          <p> </p>
+          <p>我们连逃走的力气也没有。于是我想，与其辛辛苦苦走到这里被克拉尔杀掉，还不如就那样留在村里呢。</p>
+          <p> </p>
+          <p>但是其中有个克拉尔走到附近，放下了一个小包袱就走了。刚开始我们有点莫名其妙，打开包袱一看，里面装的是水和食物。</p>
+          <p> </p>
+          <p>多亏有了那些食物，我们才能活着来到这里。我们虽然很想表示感谢，但是首先必须得知道那是什么克拉尔才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_ASK_QUEST_ACCEPT">询问仔细的印象。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个嘛。那时候本来就有点不太清醒。而且克拉尔全都长得差不多...</p>
+          <p> </p>
+          <p>(拍了一下脑袋)哦，对了，我想起来了。其他的克拉尔都叫那个放下包袱的克拉尔[%dic:STR_DIC_N_NPC_Mabangta]。</p>
+          <p> </p>
+          <p>那个克拉尔好像是他们的头领，您能帮我们向他表示一下感谢吗？</p>
+          <p> </p>
+          <p>如果不能表示感谢的话，我会一直放在心上的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您！请您拿着这个。</p>
+          <p> </p>
+          <p>这是我亲手绣的手帕。虽然不知道对克拉尔有没有用，但却是我的一点心意。</p>
+          <p> </p>
+          <p>请您一定要把它交给那个叫马邦塔的克拉尔。请您一定要跟他说我们对他是多么的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子[%username]大人也不知道那个名叫[%dic:STR_DIC_N_NPC_Mabangta]的克拉尔在哪儿啊。</p>
+          <p> </p>
+          <p>也是，让您去找克拉尔表示感谢，好像是太难为您了。</p>
+          <p> </p>
+          <p>不过我们多亏了他才能活下来，真的很想感谢感谢他...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，克拉！</p>
+          <p> </p>
+          <p>乌尔卡托又再策划什么事情了吗，克拉拉？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出手帕并转达图丽尔的感谢。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想起来了，克拉拉。</p>
+          <p> </p>
+          <p>在给他们送食物去之前，我看见他们在沙漠里徘徊。</p>
+          <p> </p>
+          <p>我只不过是不希望他们那样死掉，克拉。</p>
+          <p> </p>
+          <p>请你转告她，说她的礼物我收下了，克拉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就回来啦？</p>
+          <p> </p>
+          <p>见到那个叫马邦塔的克拉尔了吗？</p>
+          <p> </p>
+          <p>他收下我的礼物了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转告马邦塔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他收下我的礼物？</p>
+          <p> </p>
+          <p>能向他表达我的感谢，真是太好了。我一直很想谢谢他。</p>
+          <p> </p>
+          <p>谢谢[%username]大人接受了我的请求。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把图丽尔制作的手帕交给[%dic:STR_DIC_N_NPC_Mabangta]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Turiel]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">图丽尔说在穿越沙漠的时候，受到了名叫[%dic:STR_DIC_N_NPC_Mabangta]的克拉尔的帮助。帮助她去表示谢意吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图丽尔说在他们穿越沙漠，没有食物而快要死去的时候，获得了克拉尔的帮助。那个克拉尔的名字好像叫马邦塔，她很想对他表示感谢。</p>
+          <p> </p>
+          <p>于是按照她的拜托找到了马邦塔，把图丽尔绣的手帕交给了他，并转达了她的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

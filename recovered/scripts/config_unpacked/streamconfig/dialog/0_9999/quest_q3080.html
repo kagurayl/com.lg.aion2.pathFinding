@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咳咳，坏事情真是接二连三的出现啊，现在竟然又刮起了沙尘暴。</p>
+          <p> </p>
+          <p>这样下去，也不知道今年内能不能完成发掘作业……</p>
+          <p> </p>
+          <p>哎，本来那些家伙就已经让我难受得要死了，咳咳</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是不是在说什么人。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看一下不就知道了吗。那里不到处都是[%dic:STR_DIC_M_LF2A_MaidengolemY_48_An]和 [%dic:STR_DIC_M_LF2A_CyclopsServant_48_An]吗？</p>
+          <p> </p>
+          <p>据说在大崩溃之前，阿郎凯港比极乐世界还要繁荣，怎么现在多了这么多该死的石块，咳咳。</p>
+          <p> </p>
+          <p>只要我们一接近遗迹附近，就疯狂地向我们进攻，发掘工作根本无法展开。目前，活动经费也所剩无几了，咳咳。</p>
+          <p> </p>
+          <p>哎，没办法了，守护者，来跟我做个交易吧。</p>
+          <p> </p>
+          <p>我把剩下活动经费的一半交给你，你帮我去消灭那些让人头痛的家伙吧，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就这样定下了。</p>
+          <p> </p>
+          <p>可不要到时候再说，“太辛苦，不干”，或者“报酬太少”这些话啊。</p>
+          <p> </p>
+          <p>事实上，活动经费的一半也算不少了。</p>
+          <p> </p>
+          <p>那么，你就不要想些无谓的事情，赶紧去阿郎凯港消灭全部的 [%dic:STR_DIC_M_LF2A_MaidengolemY_48_An]和 [%dic:STR_DIC_M_LF2A_CyclopsServant_48_An]吧，知道了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？你不愿意吗？难道是嫌弃报酬太少吗？</p>
+          <p> </p>
+          <p>没看出来，原来你还挺贪心的。活动经费的一半对我们来说可是很数额巨大的一笔钱啊。</p>      
+          <p> </p>
+          <p>啊，现在该怎么办呢？如果其他伙伴知道我们到现在还没有开始发掘，又要发牢骚了，咳咳。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么快就回来了？</p>
+          <p> </p>
+          <p>不是吧？这么快就消灭了那些石头怪物？</p>
+          <p> </p>
+          <p>最好不要说那种无谓的谎话，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的，真的把那些家伙全都消灭了啊？</p>
+          <p> </p>
+          <p>这样看来，在港口还真找不到潘多兰盖伦和独眼巨人了啊。</p>
+          <p> </p>
+          <p>对不起，刚才我还对你有怀疑。现在终于可以放心地开始发掘了。</p>
+          <p> </p>
+          <p>我一定要找到最宝贵，最有价值的古董，让那些小看我的人闭上嘴巴。</p>
+          <p> </p>
+          <p>收下吧，这是说好的报酬。</p>
+          <p> </p>
+          <p>怎么那种表情啊？这可真的是一半的活动经费呢，咳咳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭在阿郎凯港妨碍发掘作业的石像们</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_MaidengolemY_48_An]([%2]/17)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CyclopsServant_48_An]([%5]/21)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_LF2a_16]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了能让吉乌华灵一行人能够安心进行发掘作业，必须消灭游荡在阿郎凯港的潘多兰盖伦和独眼巨人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉乌华灵表示因为一些家伙们的出现，直到现在还没有开始对阿郎凯港的发掘作业，并感到非常担心。</p>
+          <p> </p>
+          <p>他表示，只要消灭潘多兰盖伦和石拳独眼巨人，就馈赠一半的活动经费。因此接受委托，消灭了那些家伙，结果他给的报酬比预想要少得多得多……</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

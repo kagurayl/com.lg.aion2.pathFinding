@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我对上次[%username]搜集的红尾路皮里尼的尾羽进行了分析，发现路皮里尼的营养状态好像不太好。</p>
+          <p> </p>
+          <p>看样子是吃不到食物，缺乏必需的营养元素才使他们变得凶暴。</p>
+          <p> </p>
+          <p>和人类一样，动物如果不能吃到所需的东西，就会陷入异常状态。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>于是我想了一下原因，应该不是要塞周边环境变得贫瘠造成的。</p>
+          <p> </p>
+          <p>如果是那样的话，其他的动物也会出现相同的现象。但是现在其他动物却没有出现问题。</p>
+          <p> </p>
+          <p>我仔细地想了一下，原因应该是[%dic:STR_DIC_M_Spakle_19_n]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问为什么原因会是斯巴克。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯巴克和路皮里尼生活在同一地区，而且食物也是一样的。它们都以昆虫和虫子为食。</p>
+          <p> </p>
+          <p>由于斯巴克的数量增长得太快，导致路皮里尼没有东西可以吃。</p>
+          <p> </p>
+          <p>为了维持自然的平衡，必须清除掉一些[%dic:STR_DIC_M_Spakle_19_n]。</p>
+          <p> </p>
+          <p>[%username]大人，这次的事情您能帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您到要塞下面的森林里去清除[%dic:STR_DIC_M_Spakle_19_n]吧。</p>
+          <p> </p>
+          <p>为了路皮里尼，为了被路皮里尼而受苦的居民，这是必须做到事情。</p>
+          <p> </p>
+          <p>那就幸苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这种情况下如果袖手旁观的话，路皮里尼就会完全消失。没有足够的食物的话，它们会逐渐死亡。</p>
+          <p> </p>
+          <p>而且它们有可能会更快地灭绝。如果继续受到路皮里尼的伤害的话，人们一旦忍无可忍，就会去捕捉路皮里尼的。.</p>
+          <p> </p>
+          <p>只需要您的一点点帮助就能解决的事情，您就这么不愿意去做吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Spakle_19_n]清除掉了吗？</p>
+          <p> </p>
+          <p>自然的平衡就是这么微妙的事情。</p>
+          <p> </p>
+          <p>一方增长或者减少的话，影响就会波及到其他地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说清除了斯巴克。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>虽然路皮里尼不会马上就变得温顺，但是重新获得充足的食物之后，它们会逐渐安静下来。</p>
+          <p> </p>
+          <p>谢谢您为维持自然的平衡所作的努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_LF2_SZ_OP]周边打猎[%dic:STR_DIC_M_Spakle_19_n]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gaia]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除和路皮里尼抢夺食物的斯巴克。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经过盖亚的调查，发现路皮里尼是由于食物不足而变得凶暴。她说如果能清除由于数量增长而抢走路皮里尼食物的斯巴克，就能让自然回归均衡，把问题解决。</p>
+          <p> </p>
+          <p>于是按照盖亚的拜托，前往要塞附近的森林清除了斯巴克。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

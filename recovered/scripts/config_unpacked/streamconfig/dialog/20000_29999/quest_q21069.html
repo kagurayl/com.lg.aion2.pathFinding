@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。我不会浪费你太长时间的。</p>
+          <p> </p>
+          <p>如果我的推理没错，这件事应该不是简单的失踪事件。</p>
+          <p> </p>
+          <p>好像是有计划的、带有可怕阴谋的犯罪。</p>
+          <p> </p>
+          <p>为了找到罪犯，我需要确凿的证据。对手是个不好对付的人物，光靠推理是无法让他吐露自己的罪行的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你能帮帮我吗？</p>
+          <p> </p>
+          <p>你还记得赫梅吉安说的话吗？他最后一次看到失踪的夫人，是在安塔格尔峡谷的[%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069]。</p>
+          <p> </p>
+          <p>夫人说有事要去那里，在周围的草和石头上一定会留下痕迹。</p>
+          <p> </p>
+          <p>你能帮我去搜集几棵被踩过的草和石头回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事件过的越久，证据被破坏的可能性越大。希望你能快一点。</p>
+          <p> </p>
+          <p>在这段时间，我还有其他事情需要调查。</p>
+          <p> </p>
+          <p>要想在[%username]你回来之前完成，必须抓紧时间才行。</p>
+          <p> </p>
+          <p>再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？你是有急事要做吗？</p>
+          <p> </p>
+          <p>看你的眼珠不停地转动，一定是在说谎吧？</p>
+          <p> </p>
+          <p>不愿意的话就直说。我也没兴趣勉强别人帮我做事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好。</p>
+          <p> </p>
+          <p>我的调查也刚好完成了。</p>
+          <p> </p>
+          <p>拜托你去搜集的东西拿来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的证据。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事有什么难的啊？到现在还没完成？</p>
+          <p> </p>
+          <p>只要到安塔格尔峡谷的[%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069]去，取回一些被踩过的草和沾有水迹的石头进行了。</p>
+          <p> </p>
+          <p>快去把证据拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看草)果然和我预想的一样。</p>
+          <p> </p>
+          <p>(添了添石头上的水汽)嗯，这是……</p>
+          <p> </p>
+          <p>(拿出一本厚厚的书，放在桌子上)好像什么地方应该有。</p>
+          <p> </p>
+          <p>找到了，在这里。</p>
+          <p> </p>
+          <p>所有的谜团终于解开了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069]搜集证据，然后交给[%dic:STR_DIC_N_Sherockian]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">谢尔奇安说为了找到罪犯，需要有确凿的证据。搜集证据，交给谢尔奇安侦探吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢尔奇安说为了找到罪犯，需要有确凿的证据，让我到最后看到赫梅吉安夫人的地方去拿一些沾有水汽的石头和踩过的草回来。</p>
+          <p> </p>
+          <p>按照他的委托搜集到了证据，他说所有的谜团终于解开了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

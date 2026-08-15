@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是让人担心啊。</p>
+          <p> </p>
+          <p>发掘场的凯鲁宾那帮家伙啊。</p>
+          <p> </p>
+          <p>那些家伙实在是太蛮横，我们什么都没准备好就被赶出来了，这叫什么事儿啊？</p>
+          <p> </p>
+          <p>连这些日子辛辛苦苦收集的文物也都不得已扔下了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可惜了那些陶器...还有神殿的柱子！还有石像的头...</p>
+          <p> </p>
+          <p>为了挖这些辛苦了这么多月啊。</p>
+          <p> </p>
+          <p>居然一下子全被那帮无知的凯鲁宾抢了去...</p>
+          <p> </p>
+          <p>一想到这件事，我就算是睡着了也能给气醒了。这样下去我就肯定得得抑郁症了。</p>
+          <p> </p>
+          <p>守护者，你就当是救一个术古，帮帮我吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去发掘场收集[%dic:STR_DIC_OBJ_Q3004]吧。 </p>
+          <p> </p>
+          <p>知道，我也知道。 </p>
+          <p> </p>
+          <p>这段时间，那些被凯鲁宾挖走了的不少文物，也破坏了不少文物。 </p>
+          <p> </p>
+          <p>不过我还是有一丝侥幸，兴许还有一两件没被那帮家伙们发现的文物呢？</p>
+          <p> </p>
+          <p>哪怕空手回来也好，总之我不去确认一下就不放心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也太薄情寡义了。</p>
+          <p> </p>
+          <p>我这样拜托其他守护者的话，他们肯定会答应的... </p>
+          <p> </p>
+          <p>呐，不是不是。我只是随便自言自语请不要放在心上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你这一身尘土，刚从红色荒地回来吧。</p>
+          <p> </p>
+          <p>去发掘场看过了吗？</p>
+          <p> </p>
+          <p>咕咚，[%dic:STR_DIC_OBJ_Q3004]还有吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交古代文物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不会吧？我说空手回来也行，你就真空手回来了？</p>
+          <p> </p>
+          <p>看你挺聪明的，怎么这样啊。没找到古代文物就别想回来，把发掘场给我仔仔细细地翻个遍。</p>
+          <p> </p>
+          <p>我说的是全部3个美华灵发掘场！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，文物居然还没被毁掉！</p>
+          <p> </p>
+          <p>万幸，真是万幸啊。 </p>
+          <p> </p>
+          <p>看来傻瓜凯鲁宾们根本不知道这是文物的昂贵，不，是珍贵价值。</p>
+          <p> </p>
+          <p>真是谢谢啊，守护者。</p>
+          <p> </p>
+          <p>你收了这个，可要对文物的事守口如瓶啊。特别是对雅达蒙！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把红色荒地发掘场的[%dic:STR_DIC_OBJ_Q3004]给[%dic:STR_DIC_N_Shugo_LF2a_5]带回去</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到红色荒地的美华灵发掘场去，把利安明留下的古代文物收集回来交给它。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>利安明遭遇了凯鲁宾的袭击，不得已把古代文物原封不动地留在了发掘场，心里十分不甘心。</p>
+          <p> </p>
+          <p>帮利安明，去红色荒地的发掘场把古代文物收集回来交给了利安明，利安明非常高兴，拜托我不要对别人提起。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

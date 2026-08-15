@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是[%username]大人吗？听说您到[%dic:STR_DIC_W_IDf4re_Drana_Li]去侦察过。</p>
+          <p> </p>
+          <p>我们幻想之光军团对阿拉卡很感兴趣。</p>
+          <p> </p>
+          <p>[%username]大人您也知道，现在天军正面临着前所未有的困难。安格利浦大战之后，我们一直在努力缩小和龙族之间的差距。</p>
+          <p> </p>
+          <p>所以我们开放了神庙训练所，但是光是这样还不够。就在这个时候，我们听说发现了大规模的德拉纳农场，如果我们不关心的话，反倒奇怪了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说发现阿拉卡之后，上面执行了相关的对策，称为阿拉卡孤立作战。</p>
+          <p> </p>
+          <p>主要内容是阻止阿拉卡生产和制造的龙族粮食及苏尔卡纳运往其他地区。</p>
+          <p> </p>
+          <p>我正在招募参加这项工作的人，[%username]大人您愿意参加吗？</p>
+          <p> </p>
+          <p>您去那里侦察过，应该比其他人更容易上手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您能答应参加，我就觉得踏实多了。</p>
+          <p> </p>
+          <p>请您先去搜集龙族粮食。</p>
+          <p> </p>
+          <p>根据我们的调查，龙族粮食在[%dic:STR_DIC_M_18403]身上。</p>
+          <p> </p>
+          <p>请您去消灭他们，把龙族粮食箱子带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我还以为您一定会参加的呢。</p>
+          <p> </p>
+          <p>知道了。看来您还有别的事要做吧。</p>
+          <p> </p>
+          <p>如果您以后改变了主意，请再来找我。</p>
+          <p> </p>
+          <p>[%username]大人的话，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从阿拉卡回来吗？</p>
+          <p> </p>
+          <p>看上去非常累的样子。</p>
+          <p> </p>
+          <p>具体的事情我们以后再说，请把拿回来的龙族粮食箱子交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族粮食箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道您很努力，但是这么一点是无法取得好的效果的。</p>
+          <p> </p>
+          <p>请您按照我所说，去搜集20个龙族粮食箱子。</p>
+          <p> </p>
+          <p>一个人会很危险，请您一定要和同伴一起去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开箱子查看)量还蛮多的嘛。</p>
+          <p> </p>
+          <p>这么多的话，差不多是军团一天的粮食了。</p>
+          <p> </p>
+          <p>把这么重的东西搬回来，一定很累吧？真是辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_18403]身上搜集龙族粮食箱子，然后交给 [%dic:STR_DIC_N_derna]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说幻想之光军团正在进行阿拉卡孤立作战。参加作战，搜集龙族粮食箱子吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幻想之光军团的德尔娜说正在寻找参加阿拉卡农场孤立作战的人，劝我参加。</p>
+          <p> </p>
+          <p>她让我首先去搜集龙族粮食，于是去消灭阿拉卡德拉坎精锐兵，把搜集到的龙族粮食箱子交给了她，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

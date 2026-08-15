@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都已经有守护者过来了，哈拉梅尔马上就要完了！</p>
+          <p> </p>
+          <p>就算这里有一些布洛尼和姆格尔，也不是守护者的对手，不是吗？</p>
+          <p> </p>
+          <p>我也得随机应变才行。</p>
+          <p> </p>
+          <p>妈妈经常跟我说，强者就是正义，善良的术古必须跟着正义走，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是我很担心我的弟弟可可宾。</p>
+          <p> </p>
+          <p>我就在入口附近，很容易就能逃走，但是弟弟却在哈拉梅尔的中央。</p>
+          <p> </p>
+          <p>你能帮我消灭一些布洛尼，让我弟弟逃跑的时候更容易吗？</p>
+          <p> </p>
+          <p>反正布洛尼是你们的敌人，这样做刚好可以一举两得，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭掉之后，请你去哈拉梅尔塔那边告诉我弟弟一声。</p>
+          <p> </p>
+          <p>就说退路已经打通了，让他马上离开那里。</p>
+          <p> </p>
+          <p>那就全靠你了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你为什么会拒绝我呢？</p>
+          <p> </p>
+          <p>布洛尼不是你们必须消灭的敌人吗？</p>
+          <p> </p>
+          <p>要是顺便能接受我的委托，那该多好，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说怎么乱糟糟的，原来是你干的啊。</p>
+          <p> </p>
+          <p>你来这里有什么事吗？</p>
+          <p> </p>
+          <p>哥哥应该在入口那边……他没说什么吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？退路打通了？</p>
+          <p> </p>
+          <p>哥哥真的是那么说的吗？他应该不会丢下奥德石和奥黛尔拉，就这样逃跑的啊……</p>
+          <p> </p>
+          <p>好的，我知道了。</p>
+          <p> </p>
+          <p>既然你这么帮我们，我把这个送给你吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭哈拉梅尔奥德石提炼所的布洛尼</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDNovice_02_DbrownieWWa_smelt_18_an]([%2]/2)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDNovice_02_DBrownieMWa_18_an]([%5]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDNovice_02_DBrownieWWa_18_an]([%8]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_IDNovice_2]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照可可隆所说，消灭布洛尼，让可可宾可以逃走。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可可隆说弟弟在哈拉梅尔里面，让我去消灭布洛尼，让他弟弟可以逃走。</p>
+          <p> </p>
+          <p>于是去消灭了布洛尼并告诉了可可宾，他给了我谢礼，但好像有点不相信。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

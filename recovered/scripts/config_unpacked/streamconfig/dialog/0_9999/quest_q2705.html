@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了[%username]你的努力，目前埃雷修兰塔的战事变得对魔族有利了。</p>
+          <p> </p>
+          <p>越是在这种对我们有利的时候，就越应该抓住机会给他们以沉重一击。</p>
+          <p> </p>
+          <p>现在到了对他们的核心兵力进行打击的时候。</p>
+          <p> </p>
+          <p>可以完成这一任务的，我想应该只有[%username]你一个人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次请你去把[%dic:STR_DIC_E_Lgrade6]清除掉。</p>
+          <p> </p>
+          <p>6级兵的话应该是在欧比斯久经沙场的老兵了，不过你也已经积累了丰富的经验，足以和他们对抗。</p>
+          <p> </p>
+          <p>而且6级兵应该是在天族阵营里执行重要任务的兵力，应该可以给天族造成巨大的打击。</p>
+          <p> </p>
+          <p>这次的任务，你也愿意执行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定会欣然答应的。</p>
+          <p> </p>
+          <p>那就请你快去把[%dic:STR_DIC_E_Lgrade6]清除掉。</p>
+          <p> </p>
+          <p>对了，别忘了要消灭和你实力接近的天军。</p>
+          <p> </p>
+          <p>如果对方的实力和[%username]你相差太大，就算消灭再多也没用。</p>
+          <p> </p>
+          <p>希望你能和之前一样，顺利击败天军。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是不敢去和天军6级兵战斗啊。</p>
+          <p> </p>
+          <p>没有必要那么害怕。[%username]你的经验也不比他们差。</p>
+          <p> </p>
+          <p>我随时都愿意把任务交给你。如果你改变了主意，可以回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>展现在守护者面前的岁月似乎没有尽头。所以与人类相比，更容易失去目标和热情。</p>
+          <p> </p>
+          <p>但是在欧比斯根本没有想这些事情的时间。</p>
+          <p> </p>
+          <p>如果不能把对方击败的话，我们自己就得面对破灭。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_E_Lgrade6]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然完成得非常出色。</p>
+          <p> </p>
+          <p>只要是让你去执行任务，我就根本用不着担心。</p>
+          <p> </p>
+          <p>因为我相信不管是什么事情，你一定会取得成功的。</p>
+          <p> </p>
+          <p>多亏了你，我们军团士兵在对抗天族的时候变得更容易了。真是谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade6]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lasanya]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族在欧比斯战场上取得胜利，必须战胜天军6级兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚说必须给天族沉重一击，扭转战事，让我去除掉天族那边执行重要任务的天军6级兵。</p>
+          <p> </p>
+          <p>于是清除掉了天军6级兵，回去找到了他。他说多亏了我，军团士兵们执行任务会变得更容易。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

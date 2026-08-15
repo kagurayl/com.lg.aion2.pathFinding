@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜噜，还有一件事能拜托你吗？</p>
+          <p> </p>
+          <p>还有一个烦我的东西。</p>
+          <p> </p>
+          <p>但是伟大的曼太伽当然不能亲自动手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是[%dic:STR_DIC_M_OctasideD_15_An]。</p>
+          <p> </p>
+          <p>咕噜噜，烦人的程度不亚于路皮里尼。</p>
+          <p> </p>
+          <p>帮我消灭它们吧，别让它们来这吵吵闹闹的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜噜，你又帮了我一次，谢啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_OctasideD_15_An]就在棕熊栖息地。</p>
+          <p> </p>
+          <p>一有空就来我这惹我烦。</p>
+          <p> </p>
+          <p>快给我消灭它们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次我也说了，我不是打不过蜘蛛才拜托你的。</p>
+          <p> </p>
+          <p>咕噜噜，要是我亲自去抓蜘蛛的话，还能算伟大吗？</p>
+          <p> </p>
+          <p>可既然你不愿意，那就没办法了。咕噜噜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">对话结束。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜噜，回来啦。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_OctasideD_15_An]都消灭了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然[%username]%把它们都消灭了，又能清静几天了。</p>
+          <p> </p>
+          <p>咕噜噜，不会忘记你帮助过伟大的曼太伽的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_OctasideD_15_An]。([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_MantigarD_Q_16_An]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭让曼太伽心烦的蜘蛛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼太伽认为蜘蛛很烦，要消灭它们。为了不折损曼太伽的伟大，替他消灭了蜘蛛。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

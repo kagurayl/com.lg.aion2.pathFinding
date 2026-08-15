@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稍等一下。我来告诉你实情。</p>
+          <p> </p>
+          <p>以前我在贝尔特论工作过。爱南特就是在那时候遇见的。当然开始我是爱她的。但是她太执着。</p>
+          <p> </p>
+          <p>后来我渐渐开始厌烦她的那种样子。结果我的心从她身上移走了。但是从我不见她开始，她就完全像疯了一样。</p>
+          <p> </p>
+          <p>天天缠着要见面，竟然追到工作场所…真是无法忍受。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>后来她好像从术古商人那里，求到了可以捕获异性心理的药水。就是为了挽回我的心，不过结果却很悲惨。</p>
+          <p> </p>
+          <p>服用药水后变得丑陋无比。但这不是最坏的。性格也变得暴躁，还攻击人。</p>
+          <p> </p>
+          <p>结果守卫出面除掉了她，我因为是引起这个事件的元凶，也被撤销了守卫地位。</p>
+          <p> </p>
+          <p>但是她好像到死也没能安息。虽说只想见一次面，不过她看到肯定会杀了我。</p>
+          <p> </p>
+          <p>您能不能帮我替她找回平静?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问应该怎么做。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您见她时是正常的，不过一到晚上就会变成女妖。不除掉她的话会危害很多人。</p>
+          <p> </p>
+          <p>除掉女妖的方法只有一个，那就是武力处置。</p>
+          <p> </p>
+          <p>我从守卫退下来已经很久，都忘记怎么拿剑了。</p>
+          <p> </p>
+          <p>请您帮我让她回归奥德的流动，让她得以安息。 </p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>白天女妖的样子跟生前一样。就像活人。</p>
+          <p> </p>
+          <p>但是一到晚上就变成女妖随处害人。</p>
+          <p> </p>
+          <p>您等到晚上再除掉她，让她回归奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拒绝我也就没有办法。</p>
+          <p> </p>
+          <p>我不能忍受她变成女妖，但不能亲手除掉她…</p>
+          <p> </p>
+          <p>您再考虑一下吧</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你让爱南特安息了吗？</p>
+          <p> </p>
+          <p>女妖很邪恶凶暴，不好对付。</p>
+          <p> </p>
+          <p>您告诉我把她怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">回答说已经除掉了爱南特。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，真的感谢！</p>
+          <p> </p>
+          <p>她已经找到了平静，我也安心了。</p>
+          <p> </p>
+          <p>因为爱南特不能安心去贝尔特伦，现在可以放心去了。</p>
+          <p> </p>
+          <p>这都是您的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">请清除一到晚上就出现的[%dic:STR_DIC_BansheeQ_18_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">回到[%dic:STR_DIC_N_Tersites]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说一到晚上爱南特就变成女妖害人。为了不伤害更多人让爱南特回归奥德的流动。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特尔希特斯称爱南特为了挽回他的心喝了奇怪的药水。但是喝了药水后变得凶暴，结果丧命在守卫手中。</p>
+          <p> </p>
+          <p>接受让爱南特安息的请求，清除变成女妖的她，让她回归到了奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>          
+<p>水泡精灵在很久以前，在神殿还没有建造之前就生活在湖边。</p>
+          <p> </p>
+          <p>埃尔德斯神殿建成之后，水泡精灵能够保护神殿免受格力玛和其他生物的玷污。</p>
+          <p> </p>
+          <p>但是最近精灵突然变得暴躁起来。</p>
+          <p> </p>
+          <p>更严重的问题是，到现在为止还没有找到原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>变得暴躁的精灵在攻击巡礼者。甚至对守护者也表现出了敌意。 </p>
+          <p> </p>
+          <p>找到精灵突然变得那么愤怒的原因，真让人心急。</p>
+          <p> </p>
+          <p>虽然不想加害保护神殿的生物，但它们毕竟对巡礼者造成了危胁。为了确保访问圣所的人类的安全，只得如此。</p>
+          <p> </p>
+          <p>所以我们需要像您这样的守护者的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问需要什么帮助。  </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>精灵不是好惹的。最好是不要惹它们，但是不能眼看着它们加害天人不管。</p>
+          <p> </p>          
+<p>如果能捕捉[%dic:STR_DIC_MLA148]减少它们的数量，应该就可以减少访问者被精灵攻击的事件。</p>
+          <p> </p>
+          <p>可以帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>          
+<p>那么，请您抓回幻影神圣所周围的6只[%dic:STR_DIC_MLA148]。</p>
+          <p> </p>
+          <p>虽然我们和精灵就好像共事很久的同事一般有感情，不过实在没有其他办法，才只好出这种下策。</p>
+          <p> </p>
+          <p>完成任务后请您回到我这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还有其他任务吗？</p>
+          <p> </p>
+          <p>那么先去执行那个任务吧。</p>
+          <p> </p>
+          <p>五主神不允许守护者偷懒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务完成了吗？</p>
+          <p> </p>
+          <p>其实它们没有理由受到这样的待遇。要是能找到其中原因就好了...真可惜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了。</p>
+          <p> </p>
+          <p>最近很多宝贵的东西在接二连三地丢失，所以我的心情很不好。</p>
+          <p> </p>
+          <p>要是精灵的愤怒能够平息，灵魂能够找到安宁，那该多好。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">狩猎威胁幻影神圣所安全的[%dic:STR_DIC_MLA148]([%2]/6)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Lunax]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说变得暴躁的精灵威胁到了访问圣所的天族人的安全。为了保护天族，必须清除水泡精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>          
+<p>长久以来在幻影神圣所保护埃尔德斯神殿的水泡精灵，最近开始变得暴躁。</p>
+          <p> </p>
+          <p>因为没有确认原因延迟了清除的时间，增加了天人被害数量。 </p>
+          <p> </p>
+          <p>最后得出了必须把精灵除掉的结论，于是受卢纳斯之托清除掉了水泡精灵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

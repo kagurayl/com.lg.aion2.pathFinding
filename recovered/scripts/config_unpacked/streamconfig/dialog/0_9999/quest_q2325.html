@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到手册，我稍微想起来一些了。</p>
+          <p> </p>
+          <p>飞艇好像剧烈地撞上了什么东西，然后就坠落了。</p>
+          <p> </p>
+          <p>(把手册给我看)这是那时写的内容。这里画着的线，是因为在碰撞的时候受到了冲击。</p>
+          <p> </p>
+          <p>没错。飞艇坠落之后，所有的人都死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是为什么只有我变成了灵魂留了下来呢？</p>
+          <p> </p>
+          <p>死了之后，应该回到奥德的流动里去才对。难道我还有什么没有解开的怨恨吗？</p>
+          <p> </p>
+          <p>手册已经找到了，好像没有什么怨恨啊...</p>
+          <p> </p>
+          <p>(仔细地想了想)啊啊啊，书！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我买了一本书，想在旅行的时候读。</p>
+          <p> </p>
+          <p>那是伏魔殿非常畅销的书，内容是发生了严重的犯罪之后，有个聪明的少年追踪罪犯的故事。</p>
+          <p> </p>
+          <p>我正看得津津有味呢。死了之后就读不了了。</p>
+          <p> </p>
+          <p>也许是因为不知道那本书的结局，所以我才没有回到奥德的流动之中。</p>
+          <p> </p>
+          <p>[%username] 大人！您既然帮我找到了手册，能帮我把书一起找到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>坠落的时候，书应该就放在包里。但是包现在...</p>
+          <p> </p>
+          <p>啊，对了！我在处于灵魂状态，还没缓过神的时候，看见泰图德把东西全都捡走了。</p>
+          <p> </p>
+          <p>也许它把我的书也一起拿走了。请您去除掉[%dic:STR_DIC_M_ShellizardNamedDQ_25_An]，然后帮我把书找回来吧。</p>
+          <p> </p>
+          <p>书的名字是“[%dic:STR_DIC_I_QUEST_2325a]”。拜托您了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道我得在这里想着谁是最终的罪犯，一直呆下去吗？</p>
+          <p> </p>
+          <p>那是不是太无聊了...</p>
+          <p> </p>
+          <p>如果您希望我能安然回归奥德的流动的话，就帮我把书找回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在努力地接受我已经成为灵魂的事实。</p>
+          <p> </p>
+          <p>但还是很难接受。</p>
+          <p> </p>
+          <p>话说回来，我让您去找的书找到了吗？就是那本“[%dic:STR_DIC_I_QUEST_2325a]”。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没找到啊。</p>
+          <p> </p>
+          <p>反正我已经死了，有很多时间...我就再等等吧。</p>
+          <p> </p>
+          <p>我会在这里推测罪犯会是谁，您有时间的时候慢慢找好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是这本书。</p>
+          <p> </p>
+          <p>这下我能知道罪犯是谁了。</p>
+          <p> </p>
+          <p>真是谢谢您。我得赶紧把书看完，赶快回归奥德的流动才行！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_ShellizardNamedDQ_25_An]，然后把书交给[%dic:STR_DIC_N_Hermod]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让希望回归奥德的流动的海尔莫德消除遗憾，帮他把书找回来吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海尔莫德说他觉得只有自己没有回归奥德的流动的原因，可能是没读完书而留下了遗憾。</p>
+          <p> </p>
+          <p>于是除掉了基因突变的恐龟，帮他找到了名叫“骨头会说话”的书。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

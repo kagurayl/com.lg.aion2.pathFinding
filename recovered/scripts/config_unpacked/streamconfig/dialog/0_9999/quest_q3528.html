@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，守护者大人，听说您要去泰奥勃莫斯？</p>
+          <p> </p>
+          <p>我没有打听您的私事，我是偶然听其他人说的。呵呵呵，您该不会生气吧？</p>
+          <p> </p>
+          <p>我有样东西要送到那里去，可以的话，我想麻烦您一下。</p>
+          <p> </p>
+          <p>是个小东西，所以不会有什么负担。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿出一个银色的徽章)就是这个。很小吧？</p>
+          <p> </p>
+          <p>在您来我们村之前，来了一群赏金猎人。</p>
+          <p> </p>
+          <p>是两女一男，那个男的好像对我有意思。</p>
+          <p> </p>
+          <p>他长得很英俊，但可能是不好意思，一直都没有和我说话。在离开的那一天，他把这个东西扔在我的面前就走了。</p>
+          <p> </p>
+          <p>我虽然收下了，但心里却觉得不是滋味。老实说，我不喜欢流浪者。</p>
+          <p> </p>
+          <p>我想把它还给那个人，明确地表示拒绝，但是我又没办法去泰奥勃莫斯。</p>
+          <p> </p>
+          <p>所以我想请您帮我交给他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，请您拿好。那个赏金猎人的名字叫[%dic:STR_DIC_N_Esclados]。</p>
+          <p> </p>
+          <p>请您和他好好说说，就说他的心意我心领了，但是我们好像没什么缘分。今后他一定会遇到比我更好的女人的。</p>
+          <p> </p>
+          <p>他们离开这里的时候，说是要去泰奥勃莫斯结界塔。现在过去的话，应该还能见到他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我搞错了吗？</p>
+          <p> </p>
+          <p>我明明听说您要去泰奥勃莫斯的来着……</p>
+          <p> </p>
+          <p>该不会是嫌麻烦吧？我知道了。不去的话就算了。</p>
+          <p> </p>
+          <p>我得再找找有没有别的人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来这里干什么？</p>
+          <p> </p>
+          <p>对于我们赏金猎人来说，泰奥勃莫斯就是天堂。但是一般的人好像都不喜欢这个地方……</p>
+          <p> </p>
+          <p>你有什么好差事吗？有的话，就让我也插一腿好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出徽章，转达艾佩弥斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看徽章)啊，我把它掉在尤普罗西内村了啊。</p>
+          <p> </p>
+          <p>我说怎么找不到了呢。</p>
+          <p> </p>
+          <p>那个叫艾佩米还是阿佩米的女人到底说了些什么？让我忘了她？</p>               
+          <p> </p>
+          <p>真是，她的想象力还真是丰富。我都快笑出来了。我都不知道那个村子还有那样一个女人。</p>
+          <p> </p>
+          <p>不管怎样，谢谢你帮我把徽章送过来。这是发给抓住100个赏金犯的赏金猎人的徽章，是我很珍惜的东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把银色徽章交给[%dic:STR_DIC_N_Esclados]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说埃斯特拉多斯把银色徽章作为证物留给了艾佩弥斯，然后去了泰奥勃莫斯。帮艾佩弥斯把徽章还回去，并谢绝他的好意。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾佩弥斯说赏金猎人埃斯特拉多斯在离开村子的时候给了她一个银色徽章，好像是想向她表白。但是她不想接受，让我去泰奥勃莫斯的时候顺便把徽章还给他。</p>
+          <p> </p>
+          <p>在泰奥勃莫斯见到了埃斯特拉多斯，把银色徽章交给他之后，他说一直没找到徽章，还以为弄丢了，并对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

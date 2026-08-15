@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>由于同志们的积极活动，结界的守护工作正在有条不紊的进行。</p>
+          <p> </p>
+          <p>但是松懈是最大的敌人，神圣守护会委托杂学大师巴托尼亚发明了一个神奇的装置。</p>
+          <p> </p>
+          <p>那就是当不是天族的人经过时，就会发生反应的[%dic:STR_DIC_OBJ_FOBJ_Q35021]。它会记录下可疑人员的模糊的影像。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，请到设置在英吉斯温主要道路上的警戒之眼，然后交给[%dic:STR_DIC_E_35021]。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>来的时候，没被人跟踪吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出警戒记忆。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务应该是从警戒之眼上，把警戒记忆取回来啊？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_FOBJ_Q35021]由我设置在了英吉斯温的主要道路上。</p>
+          <p> </p>
+          <p>虽然关卡士兵和要塞警备兵都在观察敌人的动态，但我们神圣守护会需要有神圣守护会自己的情报收集途径。</p>
+          <p> </p>
+          <p>如果您想被认可为神圣守护会的一员，就把警戒之眼拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，让我来看一看。</p>
+          <p> </p>
+          <p>(凝视着警戒记忆，上面出现了模糊的影像。)</p>
+          <p> </p>
+          <p>嗯……这是！好像是长着黑色翅膀的人。必须尽快向神圣守护会报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_FOBJ_Q35021]的记忆，然后交给[%dic:STR_DIC_E_35021]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据神圣守护会发来的委托书，在英吉斯温的主要道路上设置了警戒之眼，有可疑人员经过时会记录下影像。</p>
+          <p> </p>
+          <p>找到警戒之眼，取回了警戒记忆，交给了英吉斯温支部会员。他说看到了长着黑色翅膀的人，必须向神圣守护会报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

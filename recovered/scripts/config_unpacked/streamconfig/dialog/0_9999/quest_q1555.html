@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(叠起手中的信) 来得正好，我正要找你呢。</p>
+          <p> </p>
+          <p>你有没有听说过帕塞尔塔这个名字？说是因特尔蒂卡北部的一种树木，具有神奇的力量。能够阻挡邪恶来袭，激发植物的活力。</p>
+          <p> </p>
+          <p>帕塞尔塔村椰林族特别多，不死族不能在村子周边游荡也都是因为它。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过听说不久前，村子周围的植物都枯萎了。帕塞尔塔的气息逐渐减弱了。</p>
+          <p> </p>
+          <p>生命的守护者似乎为了查找原因正在展开调查，不过进展得不顺利。</p>
+          <p> </p>
+          <p>他们现在向我请求帮助。要我把能令植物起死回生的东西给他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>依我看像是土壤的营养成分不够。你把这句话带给生命守护者[%dic:STR_DIC_N_Erone]吧。</p>
+          <p> </p>
+          <p>这里面装有密林的土壤。我挑了植物长得好的地方的土壤，请把它撒在树木周围。</p>
+          <p> </p>
+          <p>我也不确定这样是不是就能解决问题。不过只有试试看了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去帕塞尔塔村，出了密林往东走就行。路上有一个不死村，路过那里要小心。</p>
+          <p> </p>
+          <p>来，拿着。把这个带给[%dic:STR_DIC_N_Erone]，告诉他我说的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你有什么急事吗？除了你我就没有别的什么人可以拜托了。</p>
+          <p> </p>
+          <p>路途确实很远，可路上会经过不死村，拜托给别人也不合适。</p>
+          <p> </p>
+          <p>现在还有时间，如果你改变了想法再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这是从哪来啊？</p>
+          <p> </p>
+          <p>先喘口气。</p>
+          <p> </p>
+          <p>看您都被汗水浸湿了，看上去非常累。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出口袋，转达塞内莫内亚的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来您是塞内莫内亚大人派来的。您不辞辛苦，提着这么重的东西，穿过密林来到这里，真是太感谢您了。</p>
+          <p> </p>
+          <p>(打开口袋) 你说这是密林的土壤？</p>
+          <p> </p>
+          <p>果然十分肥沃。可是...我觉得感觉很奇怪。</p>
+          <p> </p>
+          <p>虽然非常微弱，我仍然能感觉到些许毒气。无论如何这个是不能用了。</p>
+          <p> </p>
+          <p>塞内莫内压大人特意送来的东西，就这样浪费了确实可惜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把土壤口袋带给[%dic:STR_DIC_N_Erone]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说帕塞尔塔村周围的植物正在枯萎。为了解决问题，把塞内莫内亚给的土壤口袋带给生命守护者埃尔奥内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞内莫内亚请你费心跑一趟帕塞尔塔村。他说村子周边的植物正在枯萎，埃尔奥内请求帮助。</p>
+          <p> </p>
+          <p>把塞内莫内亚给的土壤口袋带给埃尔奥内，他却说感觉土壤有毒，不能使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

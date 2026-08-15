@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭龙族技术兵萨特巴昆的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_DF4_DaQ_DrakanFi_Re_55]</p>
+          <p></p>
+          <p> 2. 位置: [%dic:STR_DIC_SEN_DF4_SensoryArea_Q46512]</p>
+          <p></p>
+          <p> 3. 详情: 负责设置和管理德拉纳生长器的德拉坎技术兵。如果不尽快把他除掉，比斯肯沼泽的污染可能会变得更加严重。</p>
+          <p> </p>
+          <p>找到并消灭技术兵萨特巴昆的人，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦，守护者。</p>
+          <p> </p>
+          <p>最近侦探事务所的认知度原来越高，但同时无聊的委托也越来越多，我对此很担心。</p>
+          <p> </p>
+          <p>我们是侦探事务所，怎么能帮他们去寻找丢失的宠物呢？</p>
+          <p> </p>
+          <p>消灭技术兵萨特巴昆？是的，这样的事情才能称为委托嘛，呐呐。</p>
+          <p> </p>
+          <p>这样的事情，守护者们才会感兴趣，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好，守护者！</p>
+          <p> </p>
+          <p>只要是龙族，就必须统统消灭掉，呐呐。</p>
+          <p> </p>
+          <p>如果还可以拿到委托费，那就更好了。</p>
+          <p> </p>
+          <p>来，这是为你准备的委托费。希望你以后继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往[%dic:STR_DIC_SEN_DF4_SensoryArea_Q46512]，找到并消灭[%dic:STR_DIC_M_DF4_DaQ_DrakanFi_Re_55]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭龙族技术兵萨特巴昆的委托书。</p>
+          <p> </p>
+          <p>确认委托内容后，消灭了技术兵萨特巴昆。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

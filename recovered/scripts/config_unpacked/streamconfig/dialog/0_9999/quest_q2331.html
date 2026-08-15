@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，清除坎塔利我也觉得有些于心不忍。</p>
+          <p> </p>
+          <p>虽然已经是数百年前的事情了，但是它们曾经是魔族却是事实。</p>
+          <p> </p>
+          <p>虽然也有人觉得这是很久以前的传说，不值得相信。但是我认为它们帮助了天族，并因此受到主神的诅咒，这应该是事实。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是这只是个人的想法，作为一名执政官，只能遵守要塞和伏魔殿的命令。</p>
+          <p> </p>
+          <p>上面下达了命令，说为了有效地清除坎塔利，让我去把它们的头目[%dic:STR_DIC_M_TauricDNamedQ_29_An]除掉。</p>
+          <p> </p>
+          <p>据传说讲，他是受到诅咒时村里的村长。</p>
+          <p> </p>
+          <p>但是，那时候的村长怎么可能现在还活着？一定是新的头目。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然收到了清除[%dic:STR_DIC_M_TauricDNamedQ_29_An]的命令，但是自己去做的话，总感觉有些于心不忍。</p>
+          <p> </p>
+          <p>[%username]大人呢，您能帮我去除掉它吗？</p>
+          <p> </p>
+          <p>我看您好像并不在意坎塔利曾经是魔族的事情，所以想拜托您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我，真是太感谢了。</p>
+          <p> </p>
+          <p>那就请您去[%dic:STR_DIC_W_DF2_SUB_B2]把[%dic:STR_DIC_M_TauricDNamedQ_29_An]除掉。</p>
+          <p> </p>
+          <p>只有它个头最大，浑身长着黑毛，所以应该不会很难找。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人也和我一样，相信他们曾经是魔族啊。</p>
+          <p> </p>
+          <p>那样的话，我也不能勉强您。</p>
+          <p> </p>
+          <p>我知道了。我去拜托其他对传说之类的不感兴趣的守护者好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。</p>
+          <p> </p>
+          <p>您把族长普罗马奇斯除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>按照他们的命令除掉了头目，要塞这下也该满意了吧。</p>
+          <p> </p>
+          <p>这是我的一点谢意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_TauricDNamedQ_29_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Jorund]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助姚德伦除掉坎塔利部落的族长普罗马奇斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>姚德伦说接到了除掉坎塔利部落的头目族长普罗马奇斯的命令，但是面对过去曾经是魔族的坎塔利，他觉得于心不忍。</p>
+          <p> </p>
+          <p>于是帮助姚德伦除掉了族长普罗马奇斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

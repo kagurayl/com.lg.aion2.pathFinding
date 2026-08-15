@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]大人，您能接受我一个委托吗？</p>
+          <p></p>
+          <p>根据我们的情报，魔族发现了锡兰泰拉回廊的存在。</p>
+          <p></p>
+          <p>不知道他们什么时候会通过回廊进入英吉斯温。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>赫拉纳斯代理人大人在英吉斯温前哨基地，所以用不着太担心，但要是古代龙神殿和贪婪祭坛被魔族占领，那就糟了。</p>
+          <p></p>
+          <p>如果发生这种事，希望您能助[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]代理人大人一臂之力。</p>
+          <p></p>
+          <p>我们非常需要像[%username]大人这样有能力的[%userclass]的帮助。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>谢谢。</p>
+          <p></p>
+          <p>[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]代理人大人受到魔族攻击时，请启动赫拉纳斯的奥德集中器。</p>
+          <p></p>
+          <p>有奥德集中器的帮助的话，代理人大人战斗的时候就能得到很大的帮助。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>赫拉纳斯代理人大人是凯西内尔主神心爱的代理人。</p>
+          <p></p>
+          <p>要是她有什么损伤，主神一定会非常不高兴。</p>
+          <p></p>
+          <p>而且好不容易才占领的英吉斯温会被长着黑色翅膀的家伙夺走……他一定会非常愤怒的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>真是一场混乱的战斗。</p>
+          <p></p>
+          <p>[%username]大人，您启动奥德集中器了吗？</p>
+          <p></p>
+          <p>您尽全力帮助赫拉纳斯大人战斗了吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这是送给帮助赫拉纳斯代理人大人的人的礼物。</p>
+          <p></p>
+          <p>请您收下。</p>
+          <p></p>
+          <p>凯西内尔主神一定也会非常高兴的。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">使用[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]的奥德集中器，将力量传递给代理人[%2]</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">向[%dic:STR_DIC_N_Yushin]报告</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">凯西内尔的代理人赫拉纳斯受到魔族攻击时，使用赫拉纳斯的奥德集中器，向代理人传递力量。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>莱斯·特里格斯让我在赫拉纳斯代理人和魔族战斗的时候为她提供力量支持。</p>
+          <p></p>
+          <p>按照他的指示，使用赫拉纳斯的奥德集中器，将力量传递给礼物代理人，获得了奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

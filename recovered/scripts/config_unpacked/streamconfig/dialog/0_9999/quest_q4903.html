@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您现在为了成为[%userclass]而努力地修行，是吗？[%username] 。</p>
+          <p> </p>
+          <p>奥德的力量是越熟练越没有境界。</p>
+          <p> </p>
+          <p>对于拥有永恒的生命的我们也是，智慧没有极限。</p>
+          <p> </p>
+          <p>但是为了不让自己无知，只能努力学习，直到懂得世界上的所有道理。
+</p>
+          <p> </p>
+          <p>还有当领悟到一个道理，就要为了进入到下个阶段而前进。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人，您也到了进入到下个阶段的时候了。</p>
+          <p> </p>
+          <p>现在我已经没什么东西可以交给您了。</p>
+          <p> </p>
+          <p>我会介绍别的老师给您的。</p>
+          <p> </p>
+          <p>是在中央议事堂的锡普大人。他抛弃了这世界上所有的诱惑，把一生献给追求智慧的事业当中。</p>
+          <p> </p>
+          <p>我会给您写推荐书，请您交给锡普大人吧。看到您他也会非常高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>或许您已经认识锡普大人。</p>
+          <p> </p>
+          <p>不过您最好还是把推荐书交给他。</p>
+          <p> </p>
+          <p>看过我对[%username] 大人的推荐书，锡普大人会对您另眼看待的。</p>
+          <p> </p>
+          <p>以后您要和锡普大人经常接触。这样对您也很有好处的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好不容易写的推荐书就这样浪费掉了。</p>
+          <p> </p>
+          <p>您拒绝那也没办法。</p>
+          <p> </p>
+          <p>啊，还有以后请不要来找我学习技能。</p>
+          <p> </p>
+          <p>很遗憾，我已经没什么可以教您的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对话是人们沟通的非常重要的手段之一。</p>
+          <p> </p>
+          <p>但是太多的话又会让事实变得模糊。</p>
+          <p> </p>
+          <p>我的意思是说在追求智慧的事情上，闲聊只会成为绊脚石。</p>
+          <p> </p>
+          <p>但是如果是向我请教智慧方面的事情，我会非常荣幸，您想要知道什么呢？[%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将推荐书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>学习没有止境，[%username] 大人。</p>
+          <p> </p>
+          <p>虽然别人称呼我老师，但我和其他人一样，不懂的事情远远比知道的事情要多。</p>
+          <p> </p>
+          <p>不过我还是可以给予 [%username] 大人帮助的。</p>
+          <p> </p>
+          <p>您要学习新的技能的时候请找我，我会把我所知道的都告诉您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将推荐书交给[%dic:STR_DIC_N_Sif]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将贝的推荐书交给锡普。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝表示现在已经没什么东西可以教的了，并写了一封推荐书，建议拿去交给锡普。</p>
+          <p> </p>
+          <p>锡普看到推荐书后表示，想要成为出色的守护者，还需要学习很多，并承诺以后会多给予指点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

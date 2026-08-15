@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次你为我搜集的蓝珍珠真的起到了很大的帮助。</p>
+          <p> </p>
+          <p>蓝珍珠的柔和的光彩、低语般的歌声，让我的悲伤得到安慰。</p>
+          <p> </p>
+          <p>我突然想到了一个主意，如果把蓝珍珠做成什么东西，说不定可以治好我心底的创伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>于是我决定把蓝珍珠串起来，做成一条裙子。</p>
+          <p> </p>
+          <p>就像[%dic:STR_DIC_OBJ_DF3_Pearl_Q2602]的痛苦诞生了蓝珍珠一样，我也想穿上蓝珍珠做的裙子，获得新生。</p>
+          <p> </p>
+          <p>拜托你了。你能帮我去搜集一些[%dic:STR_DIC_I_QUEST_2602a]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也应该知道，[%dic:STR_DIC_I_QUEST_2602a]就在阿鲁齐纳的宫殿的[%dic:STR_DIC_OBJ_DF3_Pearl_Q2602]里。</p>
+          <p> </p>
+          <p>请你去减轻珍珠蚌的痛苦，把它们的眼泪带回来。</p>
+          <p> </p>
+          <p>一定要小心去那里采珍珠的其他塞伊兰。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得这是一个被爱情所折磨的塞伊兰的无聊的想法吗？</p>
+          <p> </p>
+          <p>你真是个不懂得理解和照顾别人的人。</p>
+          <p> </p>
+          <p>我不想再和你说话了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我远远地听到了塞伊兰的歌声。</p>
+          <p> </p>
+          <p>这是可以安慰珍珠蚌的痛苦的歌声。</p>
+          <p> </p>
+          <p>多亏了你，我的心又恢复了平静。</p>
+          <p> </p>
+          <p>搜集到了吗？珍珠蚌的眼泪——[%dic:STR_DIC_I_QUEST_2602a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蓝珍珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去搜集吗？</p>
+          <p> </p>
+          <p>现在正是蓝珍珠的光泽最美的时候。</p>
+          <p> </p>
+          <p>快去帮我搜集[%dic:STR_DIC_I_QUEST_2602a]吧。</p>
+          <p> </p>
+          <p>让我可以完成我的蓝珍珠裙子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看这个珍珠蚌的眼泪。</p>
+          <p> </p>
+          <p>克服了无尽的痛苦之后发出的美丽的光。</p>
+          <p> </p>
+          <p>蓝珍珠的美丽就是这样得来的。</p>
+          <p> </p>
+          <p>拿着。这是我的一点心意。</p>
+          <p> </p>
+          <p>你帮我完成了心愿，我感到很欣慰。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_OBJ_DF3_Pearl_Q2602]里面搜集珍珠，然后交给[%dic:STR_DIC_N_Esnu]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去阿鲁齐纳的宫殿的珍珠蚌里搜集蓝珍珠，然后交给埃斯努。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃斯努说蓝珍珠给了她很大的安慰，因此想用蓝珍珠做一条裙子。</p>
+          <p> </p>
+          <p>为了让埃斯努可以制作裙子，帮她搜集到了蓝珍珠。她对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到过很多关于[%username]大人的传闻。</p>
+          <p> </p>
+          <p>听说您虽然觉醒还没多久，但却为魔界立下了大功。</p>
+          <p> </p>
+          <p>您能为我们发挥一下您的实力吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯特利亚要塞被占领的事情，相信[%username]大人已经知道了吧。</p>
+          <p> </p>
+          <p>虽然很痛心，不过又能怎样呢？必须尽快集结兵力，寻找夺回要塞的办法才行。</p>
+          <p> </p>
+          <p>因此我正在制定重新夺回要塞的战略，但问题还是兵力问题。</p>
+          <p> </p>
+          <p>要展开正面战的话，现在的兵力严重不足，而且普利姆据点说近期也无法派遣援军支援。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在准备发动奇袭战。</p>
+          <p> </p>
+          <p>必须同时从多个方向向要塞驻军发动攻击，使他们陷入混乱。目的是在援军到来之前，使他们无法构筑有效的防御。</p>
+          <p> </p>
+          <p>为了让奇袭战能够顺利进行，我有件事想拜托[%username]大人。</p>
+          <p> </p>
+          <p>请您帮我们去攻击天族驻军。龙族由我们来对付，但目前还缺少攻击天族的人员。</p>
+          <p> </p>
+          <p>您愿意帮帮我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人说愿意帮我，我就安心多了。您做好准备之后就出发吧。</p>
+          <p> </p>
+          <p>虽然减少天族的数量也很重要但是更重要的是要打击敌人的士气。</p>
+          <p> </p>
+          <p>效果最好的方法是抢走他们的武器。没有新武器的话，他们的战斗力就会大大下降。</p>
+          <p> </p>
+          <p>所以请您去把[%dic:STR_DIC_M_2807_all]清除掉，然后把[%dic:STR_DIC_I_QUEST_2807a]带回来。</p>
+          <p> </p>
+          <p>别忘了只有在天族占领要塞，要塞进入可以占领状态之后，他们才会出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，这可怎么办呢。</p>
+          <p> </p>
+          <p>[%username]大人呢！您不能再考虑一下吗？</p>
+          <p> </p>
+          <p>执行奇袭作战的人员非常不足。就算我求您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着您什么时候回来呢。</p>
+          <p> </p>
+          <p>您去要塞的深处了吗？您比和您一起出发的人要回来的晚。</p>
+          <p> </p>
+          <p>您看上去有点疲惫，把我要的[%dic:STR_DIC_I_QUEST_2807a]交给我，然后就去休息吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出阿斯特利亚守卫的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是因为太累了吗？</p>
+          <p> </p>
+          <p>那就先去休息一下再出发。</p>
+          <p> </p>
+          <p>那样比匆匆忙忙地过去，最后把事情搞砸更好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次看到了我就会想，天族的手艺真不怎么样。</p>
+          <p> </p>
+          <p>这么杂乱的纹样，到底是...还不如没有的好呢。</p>
+          <p> </p>
+          <p>啊，对不起。我又在您面前瞎唠叨了。</p>
+          <p> </p>
+          <p>请您收下。[%username]大人充分具有收下它的资格。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2807_all]%，搜集武器然后交给[%dic:STR_DIC_N_Arnora]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">参加了夺回阿斯特利亚要塞的奇袭战。清除要塞进入可以占领状态后出现的天族要塞驻军，搜集他们的武器后交给阿尔诺拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔诺拉说由于兵力不足，难以开展正面战，只能展开小规模的奇袭战，并让我一同参加。</p>
+          <p> </p>
+          <p>按照他的指示清除掉了阿斯特利亚要塞里的天族要塞驻军，并把搜集到的武器交给了他。他对我表示感谢，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面下达了命令，命令进入克罗坦地下要塞消灭敌人。</p>
+          <p> </p>
+          <p>原先只是把通道封锁了起来，现在终于要开始采取行动了。</p>
+          <p> </p>
+          <p>命令的内容是消灭克罗坦要塞的所有敌人。</p>
+          <p> </p>
+          <p>封印的门现在虽然很稳定，但谁都无法保证不会有意外发生。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>问题是执政官们都忙于要塞的防守。</p>
+          <p> </p>
+          <p>所以我希望能借助[%username]你的力量。</p>
+          <p> </p>
+          <p>只要把前往[%dic:STR_DIC_W_IDAbRe_Up3_Crotan_SZ_All]，消灭尽可能多的敌人就行。包括深渊守护者阿克纳缪在内。</p>
+          <p> </p>
+          <p>执行任务的时候如果看见宝物，你还可以尽情地拿。所以这个提议相当不错哦。</p>
+          <p> </p>
+          <p>当然任务的奖励也相当丰厚。怎么样？你愿意帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好！</p>
+          <p> </p>
+          <p>虽然不知道龙族的目的是什么，但听说他们在克罗坦地下要塞积累了很多值钱的东西。</p>
+          <p> </p>
+          <p>执行任务的时候，有时间的话，可以打开宝物箱看看。运气好的话，也许可以得到什么好的武器。</p>
+          <p> </p>
+          <p>但是宝物上有魔法，经过一段时间之后就会消失。如果你想获得更多的宝物，最好动作快一点。</p>
+          <p></p>
+          <p>好了，请你通过那个门前往[%dic:STR_DIC_W_IDAbRe_Up3_Crotan_SZ_All]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我们还不知道龙族是在什么时候进入克罗坦地下要塞的。</p>
+          <p> </p>
+          <p>可以确定的是，我们必须尽快把龙族清除掉。</p>
+          <p> </p>
+          <p>没想到你会拒绝... </p>
+          <p> </p>
+          <p>不管你有什么原因，我只能当你是不履行自己的义务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+           <p>现在我们还不知道龙族是在什么时候、用什么方法进入克罗坦地下要塞的。</p>
+          <p> </p>
+          <p>还好我们尽早发现了他们，挡住了他们的通道。</p>
+          <p> </p>
+          <p>但是我们必须在龙族反击之前先下手为强。你必须尽快执行任务才行。</p>
+          <p> </p>
+          <p>如果你已经完成了任务，那就太好了。到底怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你果然没有让我失望。虽然这个任务很困难，但我知道你一定可以完成。</p>
+          <p> </p>
+          <p>来，这是说好的奖励。希望你能喜欢。</p>
+          <p> </p>
+          <p>今后也许还需要你的帮助。因为我们还没发现龙族使用的通道... </p>
+          <p> </p>
+          <p>但是我很安心，因为我知道[%username]你一定会帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up3_Crotan_SZ_All]的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Up3_Crotan]([%2]/80)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Crotan_DrakanNamed_45_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1221_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照利普顿的委托，消灭克罗坦地下要塞的敌人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>利普顿让我去和克罗坦要塞相连的克罗坦地下要塞消灭所有的敌人。</p>
+          <p> </p>
+          <p>于是通过要塞里的门来到克罗坦地下要塞，消灭了那里的龙族。回去见到他之后，他说今后仍然需要我的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您愿意挑战成为炼金术达人吗？</p>
+          <p> </p>
+          <p>您成功地制作出了发光的毕达尔之法书，说明您确实很有才能。</p>
+          <p> </p>
+          <p>现在只要客观地证明您的炼金术能力很出色就行了……</p>
+          <p> </p>
+          <p>怎么样？您对成为达人感兴趣吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么请您去制作[%dic:STR_DIC_E_Q2981]。</p>
+          <p> </p>
+          <p>有足够的实力成为达人的话，那种东西可以说是手到擒来。</p>
+          <p> </p>
+          <p>如果您能制作出发光的毕达尔之法书，就不会有任何人会再怀疑[%username]大人的能力。</p>
+          <p> </p>
+          <p>当然这不会很容易，不过却充分具有挑战的价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发光的毕达尔之法书图案可以在[%dic:STR_DIC_N_Grid]那里买到。</p>
+          <p> </p>
+          <p>不过这是测试是否有资格成为达人的考试，即使购买到了图案，制作起来也不会很容易。</p>
+          <p> </p>
+          <p>只有熟悉掌握炼金术，并且足够专注的人，才能通过这个考试。</p>
+          <p> </p>
+          <p>我会在这里等着您。请您快去制作[%dic:STR_DIC_E_Q2981]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>炼金术有着悠久的历史，说明炼金术是一项不可或缺的技术。</p>
+          <p> </p>
+          <p>不管您是怎样开始接触炼金术的，既然开始了，难道就不想一直走到底吗？</p>
+          <p> </p>
+          <p>虽然不知道您为什么不愿意成为达人，不过请您记住我的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎欢迎，[%username]。</p>
+          <p> </p>
+          <p>我正在想您制作发光的毕达尔之法书是不是成功了。</p>
+          <p> </p>
+          <p>好的，发光的毕达尔之法书制作得怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出发光的毕达尔之法书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您好像很忙。</p>
+          <p> </p>
+          <p>不过从现在开始，请您先去制作发光的毕达尔之法书吧。</p>
+          <p> </p>
+          <p>不管您怎么忙，都不应该放弃炼金术。</p>
+          <p> </p>
+          <p>我再给您一些时间，您快去制作[%dic:STR_DIC_E_Q2981]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然成功了。</p>
+          <p> </p>
+          <p>我早就发现[%username]大人在炼金术上有着过人的天赋。</p>
+          <p> </p>
+          <p>所以我才给您出了两次很难的题目，希望能把您带上达人的道路。</p>
+          <p> </p>
+          <p>我已经充分确认了您的炼金术实力，剩下的事情就是成为达人了。祝贺您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">制作[%dic:STR_DIC_E_Q2981]%，然后交给[%dic:STR_DIC_N_Honir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">制作发光的毕达尔之法书，向豪尼尔证明自己的炼金术实力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>豪尼尔说只要再稍微努力一下，就可以成为炼金术达人，让我去制作发光的毕达尔之法书。</p>
+          <p> </p>
+          <p>于是按照他的要求，制作出发光的毕达尔之法书交给了他。他说从一开始就知道我在炼金术上很有天赋，并说会推荐我成为炼金术达人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

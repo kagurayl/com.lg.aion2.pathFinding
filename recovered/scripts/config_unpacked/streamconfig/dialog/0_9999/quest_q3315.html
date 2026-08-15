@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们生命的守护者对拥有生命的事物有着无限的热爱。</p>
+          <p> </p>
+          <p>但是对于违反尤斯迪埃的规则的东西，我们也会作出冷静的判断。</p>
+          <p> </p>
+          <p>因为对于生命的守护者来说，重要的是在总体层面上保护生命，而不是滥用同情心。</p>
+          <p> </p>
+          <p>这次的曼杜里事件也一样。虽然那些野兽什么都不知道，但他们玷污神秘泉的行为是无法饶恕的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，多亏了您，曼杜里粮食储藏处的那些家伙才能受到教训。但是这样还不够。</p>
+          <p> </p>
+          <p>他们没有停止污染神秘泉的行为，反而在图谋报复。</p>
+          <p> </p>
+          <p>乍一看，曼杜里很像是人类，而不是无辜的动物。但这也是他们的可恨之处！</p>
+          <p> </p>
+          <p>我想我们需要狠狠地教训教训他们。</p>
+          <p> </p>
+          <p>[%username]大人，我需要借助您的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>您去过一次，应该知道了，只要去[%dic:STR_DIC_W_LF2_SZ_A1_SUB_1]把[%dic:STR_DIC_M_ManduriT_23_An]和[%dic:STR_DIC_M_ManduriB_23_An]消灭掉就可以了。</p>
+          <p> </p>
+          <p>如果能把他们消灭掉，神秘泉应该就能恢复往日的洁净。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不是什么十万火急的事情，但希望您能帮帮我。</p>
+          <p> </p>
+          <p>我在打猎野兽方面根本一窍不通。</p>
+          <p> </p>
+          <p>而且我忙着清理神秘泉，没有时间去对付他们。</p>
+          <p> </p>
+          <p>请您一定要再帮我一次。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才我又去清理了一次神秘泉。</p>
+          <p> </p>
+          <p>那些曼杜里也不知道累，这么快就又堆满了污物。他们不知道又从哪里招来了很多新的同伴。</p>
+          <p> </p>
+          <p>这样下去的话，在神秘泉恢复之前，我就要疯掉了。</p>
+          <p> </p>
+          <p>对了，您把曼杜里消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]大人。</p>
+          <p> </p>
+          <p>只要曼杜里能停止捣乱，神秘泉就能很快恢复原状，虽然可能还得清理好几次。</p>
+          <p> </p>
+          <p>希望[%username]大人能继续帮我，直到去要塞的人们能喝上纯净的泉水。</p>
+          <p> </p>
+          <p>好了，这是我的一点心意。请您收下，千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭污染神秘泉的曼杜里</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriT_23_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriB_23_An]([%5]/6)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Iandeus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照伊安德乌斯的委托，消灭向神秘泉中投掷污物的曼杜里掠夺者和曼杜里战士。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯说在曼杜里森林的神秘泉里投掷泥土、吃剩的果实和排泄物的曼杜里仍然在引起问题。</p>
+          <p> </p>
+          <p>于是按照伊安德乌斯的委托，去曼杜里粮食储藏处消灭了曼杜里掠夺者和曼杜里战士。伊安德乌斯非常高兴，说神秘泉一定可以恢复原状，让我以后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

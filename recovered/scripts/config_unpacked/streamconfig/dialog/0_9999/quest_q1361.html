@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在好像所有的希望都没了。</p>
+          <p> </p>
+          <p>刚开始离开村子的时候，以为在什么地方一定可以找到希望...</p>
+          <p> </p>
+          <p>像这样死在路上，我想也许就是我们的命运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_otl;HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们原来生活在达尔塔斯村里。但是村子完全变成了沙漠，变得无法继续生活下去，所以我们踏上了避难的道路。</p>
+          <p> </p>
+          <p>我们出发的时候决定先到南边的阿盖伦村去，但是来到这里就已经非常不容易了。</p>
+          <p> </p>
+          <p>所以我们打算在阿纳斯神秘泉休息一下，等恢复了力气之后再继续走。谁知道就在这时，雷帕尔革命团的人出现了。</p>
+          <p> </p>
+          <p>我们匆匆忙忙地跑到这里藏了起来。但是由于没有打到一滴水，所以大家都快渴死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然饥饿也是问题，但是最大的问题是饮水问题。</p>
+          <p> </p>
+          <p>这种状态再持续一段时间的话，也许人们都会拼死冲到阿纳斯神秘泉那里去的。</p>
+          <p> </p>
+          <p>我把水罐给您，请您帮我们打一点水回来。</p>
+          <p> </p>
+          <p>如果能缓解口渴、确保饮水的话，应该就能制定出转移到其他地方的计划。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于得救了！我不知道该怎么表示我们的感激...</p>
+          <p> </p>
+          <p>请您到[%dic:STR_DIC_W_LF2_SZ_F2]那里用水罐打一点水回来。把这里的[%dic:STR_DIC_E_LF2_watertank]装满。</p>
+          <p> </p>
+          <p>我们的希望就全寄托在守护者大人您身上了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人。这是人命关天的事情。</p>
+          <p> </p>
+          <p>守护者虽然是不死之身，但是人类却不行。</p>
+          <p> </p>
+          <p>如果不能马上把水打回来的话，这里的所有人都会因为口渴而死掉。</p>
+          <p> </p>
+          <p>请您千万不要丢下我们！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦。</p>
+          <p> </p>
+          <p>大家都已经多少出现了脱水的症状。</p>
+          <p> </p>
+          <p>蓄水池灌满了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_thanks;HACTION_SELECT_QUEST_REWARD">说把水装满了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感谢您，阿里埃大人！感谢您，[%username]大人！</p>
+          <p> </p>
+          <p>现在有了饮用水，应该可以养足力气走到阿盖伦村了。</p>
+          <p> </p>
+          <p>我不知道该怎么感谢您。</p>
+          <p> </p>
+          <p>虽然不多，但却是我们的一片心意。请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_W_LF2_SZ_F2]中间打水，装满水罐</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">用水罐的水灌满难民营中间的[%dic:STR_DIC_E_LF2_watertank]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Turiel]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">难民们正在经受干渴的折磨。帮他们打回可以饮用的水吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>离开达尔塔斯村踏上旅途的难民们在阿纳斯神秘泉休息，但是因为雷帕尔革命团的出现没有来得及打水就躲了起来。</p>
+          <p> </p>
+          <p>为了让他们能够安全到达阿盖伦村，帮他们去阿纳斯神秘泉打取了饮用水。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

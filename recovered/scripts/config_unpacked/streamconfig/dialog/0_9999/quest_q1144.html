@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个南瓜长得真好。</p>
+          <p> </p>
+          <p>其他的庄稼都死了，只有它活了下来。</p>
+          <p> </p>
+          <p>虽然没有主人的照看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是这样放着的话，它就会烂掉。</p>
+          <p> </p>
+          <p>如果有主人的话，应该早就把它卖给[%dic:STR_DIC_LA76]了。</p>
+          <p> </p>
+          <p>然后买酒，给诺拉买新衣服。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>熟了的南瓜如果烂掉的话，主人一定会很难过的。</p>
+          <p> </p>
+          <p>你愿意摘了南瓜，给[%dic:STR_DIC_LA76]送过去吗？</p>
+          <p> </p>
+          <p>埃尔迪奥会把南瓜钱给你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="PLAYEMOTION_sad;HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。主人回来的话我会和他说的。</p>
+          <p> </p>
+          <p>到时候，主人应该会给你一个礼物。因为我们主人人很好。</p>
+          <p> </p>
+          <p>摘了南瓜，给食品商[%dic:STR_DIC_LA76]送过去吧。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有了主人，没人可以帮诺拉了。</p>
+          <p> </p>
+          <p>啊，我想你主人。</p>
+          <p> </p>
+          <p>诺拉太难过了，真伤心。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的日子里应该喝一碗热乎乎的南瓜汤。特别是巴尔波亚农场的南瓜，更是一绝。</p>
+          <p> </p>
+          <p>不知道巴尔波亚现在到底怎么样了。</p>
+          <p> </p>
+          <p>这么长时间都没有消息了。村里的人都在问。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出南瓜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来这儿干嘛？</p>
+          <p> </p>
+          <p>看你不像是来买东西的，是来卖东西的吗？</p>
+          <p> </p>
+          <p>我看你好像空着两只手...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这不是巴尔波亚农场的南瓜吗！看颜色就知道了。</p>
+          <p> </p>
+          <p>今年还以为喝不上巴尔波亚农场的南瓜做的汤了...</p>
+          <p> </p>
+          <p>一定是诺拉让你送过来的吧。谢谢你帮我送过来。</p>
+          <p> </p>
+          <p>来，这是南瓜钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">摘了南瓜给[%dic:STR_DIC_LA76]送过去</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴尔波亚农场上的南瓜熟了。在它烂掉之前给食品商[%dic:STR_DIC_LA76]送过去。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稻草人诺拉说主人巴尔波亚每年这个时候都会摘了南瓜卖给商人埃尔迪奥。</p>
+          <p> </p>
+          <p>接受了诺拉在烂掉之前把南瓜卖给[%dic:STR_DIC_LA76]的委托。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

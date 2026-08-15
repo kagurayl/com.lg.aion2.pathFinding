@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，兄弟。不想偷偷做点赚钱的买卖吗？</p>
+          <p> </p>
+          <p>嘘！安静，安静。小点声。</p>
+          <p> </p>
+          <p>这件事可没向头儿报告啊。被发现了会让那些家伙捷足先登的。</p>
+          <p> </p>
+          <p>怎么样，有没有兴趣？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你见过在[%dic:STR_DIC_FLA187]的[%dic:STR_DIC_M_GhostD_7_An]吧？</p>
+          <p> </p>
+          <p>不过你恐怕没想到，那些亡灵还带着昂贵的装备吧。</p>
+          <p> </p>
+          <p>虽然被伏魔殿驱逐后落得那种下场，不管怎样活着的时候地位还是很高的吧。</p>
+          <p> </p>
+          <p>所以，那个装备可不是一两分钱的便宜货啊。</p>
+          <p> </p>
+          <p>不仅如此。据说还有来魔界后死亡的天族亡灵，估计那个装备肯定会更值钱。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过那些亡灵太贪心了，都不让别人靠近装备。</p>
+          <p> </p>
+          <p>我试了一下，结果差点去见阎王了。</p>
+          <p> </p>
+          <p>不过要是兄弟你的话，肯定没问题。</p>
+          <p> </p>
+          <p>好，到[%dic:STR_DIC_FLA187]%处置[%dic:STR_DIC_M_GhostD_7_An]，弄点[%dic:STR_DIC_I_QUEST_2003A]%回来吧。</p>
+          <p> </p>
+          <p>就咱俩分的话，收获肯定不小啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2003-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，去过[%dic:STR_DIC_FLA187]吗？</p>
+          <p> </p>
+          <p>装备一定到手了吧？</p>
+          <p> </p>
+          <p>哈哈哈，那些亡灵肯定闹着想要回自己装备吧。</p>
+          <p> </p>
+          <p>让我也见识一下，那些亡灵珍藏的宝物到底是什么样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递给亡者的宝物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，到底是为什么没去？</p>
+          <p> </p>
+          <p>反正谁也不会知道，这是空手套白狼的事情啊。</p>
+          <p> </p>
+          <p>其实说不定[%dic:STR_DIC_M_GhostD_7_An]也期待着被消灭，重返奥德的循环之中呢。</p>
+          <p> </p>
+          <p>马上去[%dic:STR_DIC_FLA187]%处置亡灵，拿回亡者的宝物吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起！果然贵重东西的外表都不一样。</p>
+          <p> </p>
+          <p>沉甸甸的，出去肯定能卖出个好价钱的。</p>
+          <p> </p>
+          <p>别人就不敢说，至于兄弟你，我坚信一定会成功。</p>
+          <p> </p>
+          <p>靠你这实力，以后共事肯定没问题。</p>
+          <p> </p>
+          <p>当然只有我们俩。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA415]%对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">从[%dic:STR_DIC_M_GhostD_7_An]那里抢夺[%dic:STR_DIC_I_QUEST_2003A]，然后交给[%dic:STR_DIC_LA415]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：接受[%dic:STR_DIC_LA415]的指示，搜集亡者的宝物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗盖说他知道收容所的亡灵拥有装备，提出除掉亡灵并抢夺装备，然后由两个人分享。</p>
+          <p> </p>
+          <p>事成之后他非常高兴，提出今后两个人要一起共事。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命执行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

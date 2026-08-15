@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者，椰林的老朋友。</p>
+          <p> </p>
+          <p>听到我痛苦的呻吟后，你来找我啦。</p>
+          <p> </p>
+          <p>但是谁也不能治好，我的痛苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道吗？鸢族。</p>
+          <p> </p>
+          <p>他们是，已经消失了的英吉斯温的椰林的朋友。</p>
+          <p> </p>
+          <p>我体内的变异昆虫，把他们抓住了，但我无法阻止。</p>
+          <p> </p>
+          <p>我没办法帮他们，请帮帮他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他们被困在，昆虫的茧里。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_OBJ_IDElim_Cocoon]，只能用[%dic:STR_DIC_I_QUEST_11463a]溶化。</p>
+          <p> </p>
+          <p>拜托你了，守护者。</p>
+          <p> </p>
+          <p>用杀死[%dic:STR_DIC_M_IDElim_1F_Sheluk_KeyNM_52_Ae]后得到的东西，救救他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸢族到这里来是为了帮助我，而我却无法帮助他们。</p>
+          <p> </p>
+          <p>椰林会帮助朋友，但病重的我无法帮助他们。</p>
+          <p> </p>
+          <p>悲伤的命运，现在我变成了一棵生病的古树。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(茧在蠕动。)</p>
+          <p> </p>
+          <p>(里面好像有什么东西。)</p>
+          <p> </p>
+          <p>(听到了有人呼救的声音。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">拿出须希尔的腐蚀液。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(好像需要[%dic:STR_DIC_I_QUEST_11463a]。)</p>
+          <p> </p>
+          <p>(呼救的声音变小了。)</p>
+          <p> </p>
+          <p>(必须从瘤背须希尔身上搜集腐蚀液。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(洒了一点须希尔的腐蚀液在上面，茧开始溶化。)</p>
+          <p> </p>
+          <p>(把须希尔的腐蚀液洒在上面，应该就能把鸢族救出来。)</p>
+          <p> </p>
+          <p>(茧里传来了呼救的声音。)</p>
+          <p> </p>
+          <p>(茧正在溶化，稍等一下。)</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDElim_1F_Sheluk_KeyNM_52_Ae]，搜集腐蚀液，救出困在[%dic:STR_DIC_N_OBJ_IDElim_Cocoon]中的鸢族</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">卡斯帕的灵魂出现，让我去帮助困在茧里的鸢族。去搜集须希尔的腐蚀液吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>进入卡斯帕内部之后，卡斯帕的灵魂出现，说谢谢我过来帮他。</p>
+          <p> </p>
+          <p>他说过来帮助自己的其他人遇到了困难，让我去帮助他们，于是去救出了困在茧中的鸢族。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

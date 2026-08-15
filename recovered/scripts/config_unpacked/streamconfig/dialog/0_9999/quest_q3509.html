@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，守护者，你有时间吗？</p>
+          <p> </p>
+          <p>有时间的话，请你帮帮修奥朗朗。</p>
+          <p> </p>
+          <p>只要一会儿时间就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是上次你帮我搜集到的[%dic:STR_DIC_I_QUEST_1645a]。</p>
+          <p> </p>
+          <p>出乎意料的受欢迎。</p>
+          <p> </p>
+          <p>所以我又收到了新的订单，和上次不是同一位客人。</p>
+          <p> </p>
+          <p>我想请你再帮我搜集几个[%dic:STR_DIC_I_QUEST_1645a]，呐呐。</p>
+          <p> </p>
+          <p>拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呐，我就知道你一定会答应我的。</p>
+          <p> </p>
+          <p>收到了客人的订单，如果没有[%dic:STR_DIC_I_QUEST_1645a]的话，天加隆商团的信誉就会受损。</p>
+          <p> </p>
+          <p>如果天加隆商团的信誉受损，修奥朗朗会非常伤心的。</p>
+          <p> </p>
+          <p>你快去帮我搜集东西吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对你来说，噬人虫应该不成问题吧？</p>
+          <p> </p>
+          <p>但是修奥朗朗去抓噬人虫的话，一下子就会被杀掉。</p>
+          <p> </p>
+          <p>你是希望我去死吗？</p>
+          <p> </p>
+          <p>是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊？订购噬人虫牙齿的客人之前已经来过一趟了。</p>
+          <p> </p>
+          <p>要不是我应对得当，他可能就要取消订单了。</p>
+          <p> </p>
+          <p>快把[%dic:STR_DIC_I_QUEST_1645a]交给我吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出噬人虫牙齿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你太过分了。</p>
+          <p> </p>
+          <p>修奥朗朗这么相信[%username]你……</p>
+          <p> </p>
+          <p>快去帮我搜集噬人虫牙齿吧。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>噬人虫牙齿搜集到啦，呐呐。</p>
+          <p> </p>
+          <p>修奥朗朗终于可以松一口气了。</p>
+          <p> </p>
+          <p>拿着这个。你动作这么慢，我本来应该扣钱的，但考虑到之前的情谊，我特别多给了一些。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_ClodwormRe_41_An]的牙齿，然后交给[%dic:STR_DIC_N_Shugo_LF3_8]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说有人订购了尖嘴噬人虫的牙齿。搜集噬人虫牙齿，然后交给修奥朗朗吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>修奥朗朗说有客人订购了噬人虫牙齿，让我帮她再去搜集一个。</p>
+          <p> </p>
+          <p>帮她搜集到了尖嘴噬人虫，但是她说为什么这么慢，最后只给了很少的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

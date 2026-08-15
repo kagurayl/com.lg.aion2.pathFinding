@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想在战争中获胜，战斗并不是唯一重要的因素。</p>
+          <p> </p>
+          <p>即使在战斗中失败，只要士兵们的士气没有受到打击，就仍然有希望。不管是胜是败，如果能减少损失，从长期来看，就会使自己站在有利的地位。</p>
+          <p> </p>
+          <p>有的时候虽然在所有的战斗都取得了胜利，但由于兵力损失太大，最终会导致在战争中失败。</p>
+          <p> </p>
+          <p>因此从我这个总司令官的角度看，必须制定尽量减少本方的损失，给敌人造成更大打击的方案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我才把你叫过来，[%username]。</p>
+          <p> </p>
+          <p>我想对埃雷修兰塔上层的敌人进行打击，但目前灰风军团和内扎坎之盾军团中抽调不出兵力。</p>
+          <p> </p>
+          <p>由于是需要大量人员的任务，所以我想了一下，像你这样有名望的人，一定可以召集到很多人。</p>
+          <p> </p>
+          <p>任务的内容是在展开要塞战的时候，清除埃雷修兰塔上层的[%dic:STR_DIC_E_Q1738]。</p>
+          <p> </p>
+          <p>怎么样？你想试试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你接受如此艰巨的任务，[%username]。</p>
+          <p> </p>
+          <p>请你召集人手，把古代城市娄要塞和克罗坦要塞的[%dic:STR_DIC_E_Q1738]清除掉。不管是魔族还是龙族，不管是上级、中级还是下级，全都没关系。</p>
+          <p> </p>
+          <p>光带一两个人过去可不行。必须召集几个组队组成部队。</p>
+          <p> </p>
+          <p>还有，关隘兵只有在要塞战开始之后才会出现。你一定要仔细观察地图，等要塞进入可以占领状态之后再过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没有自信吗？</p>
+          <p> </p>
+          <p>也是，光是下级关隘兵就很不好对付了。</p>
+          <p> </p>
+          <p>不过这个任务非常重要。而我能相信的人，只有你一个。</p>
+          <p> </p>
+          <p>希望你在召集到愿意参加任务的人之后，再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读埃雷修兰塔战况报告书)战斗一天比一天激烈。</p>
+          <p> </p>
+          <p>必须给予龙族和魔族致命一击才行...</p>
+          <p> </p>
+          <p>如果你能除掉埃雷修兰塔上层要塞的关隘兵，对他们的打击一定很大。</p>
+          <p> </p>
+          <p>跟我详细报告一下情况吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我选择你果然没有错！</p>
+          <p> </p>
+          <p>谢谢你出色地完成了如此艰巨的任务，[%username]。</p>
+          <p> </p>
+          <p>像你这样的守护者如果能再多几个的话，就不难把龙族和魔族赶出埃雷修兰塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除埃雷修兰塔上层的[%dic:STR_DIC_E_Q1738]</font></p>
+                     <p visible="[%0]"><font color="[%1]">  古代城市娄要塞([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  克罗坦要塞([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Taranis]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接到了清除埃雷修兰塔上层要塞的关隘兵的任务。组成部队后，在要塞战开始后清除掉关隘兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔总司令官塔拉尼斯说为了给龙族和魔族进行打击，让我去清除埃雷修兰塔上层要塞的关隘兵。</p>
+          <p> </p>
+          <p>于是组成部队，清除了守卫古代城市娄要塞和克罗坦要塞的关隘兵，并回去向他进行了报告。他称赞了我，说我出色地完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是，[%username]大人！看您这么快就回来了，我就厚着脸皮再拜托您一件事情。</p>
+          <p> </p>
+          <p>我也找过其他人，但大家不是受了伤，就是中途放弃了。</p>
+          <p> </p>
+          <p>唉……虽然以前听说革命团的家伙非常狠毒，但没想到这么厉害。</p>
+          <p> </p>
+          <p>听说他们全都经过了严格的训练，所以很难对付。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是要是他们敢小看我们，一定会尝到苦头的。</p>
+          <p> </p>
+          <p>特别是像[%username]大人这么勇敢的人过去的话，他们应该就没办法继续嚣张了。</p>
+          <p> </p>
+          <p>我想教训教训那些给善良的守护者造成威胁的革命团成员……请您一定要帮帮我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然！我知道[%username]大人您一定会答应我的。</p>
+          <p> </p>
+          <p>请您去把[%dic:STR_DIC_M_LehparWa3_33_An]和[%dic:STR_DIC_M_LehparKnight_33_An]消灭掉。</p>
+          <p> </p>
+          <p>他们在周围招摇过市，简直把这里当成了自己的地盘，我再也看不下去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。这件事确实很麻烦。</p>
+          <p> </p>
+          <p>但是我有点失望。本以为您会欣然接受的呢。</p>
+          <p> </p>
+          <p>啊……看来今天又要睡不着了。</p>
+          <p> </p>
+          <p>如果您改变了注意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真正的守护者，在强大的敌人面前也不会退缩。</p>
+          <p> </p>
+          <p>发光的智慧和坚强的勇气，再加上一点幸运，就可以对付任何敌人。</p>
+          <p> </p>
+          <p>我认为您拥有成为英雄的素质，但是千万不能松懈。</p>
+          <p> </p>
+          <p>对了，这次的任务顺利完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我期待的还要好。您真的把他们击退了吗？</p>
+          <p> </p>
+          <p>真是遗憾。本来应该是我来完成的……</p>
+          <p> </p>
+          <p>请您把战斗的方法告诉我，我想告诉其他的守护者。</p>
+          <p> </p>
+          <p>来，这是我的一点心意。请您收下。欢迎您再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭雷帕尔革命团</font></p>
+                     <p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_M_LehparWa3_33_An]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_M_LehparKnight_33_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Iorene]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照伊奥雷内的委托，消灭雷帕尔革命团。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊奥雷内说一直受到革命团的威胁，向我请求帮助。</p>
+          <p> </p>
+          <p>消灭雷帕尔革命团之后，他对我表示感谢，说可以随时再去找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

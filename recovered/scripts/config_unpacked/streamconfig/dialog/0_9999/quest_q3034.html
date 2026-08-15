@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去拉格托斯海岸消灭克鲁比埃尔的时候，你看到[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]了吗？</p>
+          <p> </p>
+          <p>那个家伙就是实体守护者。</p>
+          <p> </p>
+          <p>啊，最近有位学者给我寄来了一封信，所以我才知道的。</p>
+          <p> </p>
+          <p>这里发现实体的消息很快传了出去，各地研究实体的人都纷纷给我写信。</p>
+          <p> </p>
+          <p>据学者们说，因为在没有结界的地方放置了很久，所以实体丧失了力量。要想发动实体，需要使用发动石，并说发动石就在实体守护者的身上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]就是实体守护者的话，[%dic:STR_DIC_I_QUEST_3034a]一定就在他的身上。</p>
+          <p> </p>
+          <p>必须先得到那个发动石。</p>
+          <p> </p>
+          <p>你能再去一趟拉格托斯海岸吗？</p>
+          <p> </p>
+          <p>请你确认一下[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]的身上是否有[%dic:STR_DIC_I_QUEST_3034a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我感觉我已经接近实体的秘密了。</p>
+          <p> </p>
+          <p>很多人都在期待着，请你快一点。</p>
+          <p> </p>
+          <p>目击的地点虽然不一致，但[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]如果真的是实体守护者，就应该在离实体不远的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你居然拒绝了发现实体秘密的机会，真让人意外。</p>
+          <p> </p>
+          <p>要是早点收到那封信就好了。</p>
+          <p> </p>
+          <p>我知道了。这件事我会交给其他守卫，你走吧。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>我正在研究学者们寄来的资料。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]身上真的有[%dic:STR_DIC_I_QUEST_3034a]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出古代的发动石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没找到[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]吗？</p>
+          <p> </p>
+          <p>有守卫说在[%dic:STR_DIC_W_LF2B_SZ_B2]见到过他，你再去找一下吧。</p>
+          <p> </p>
+          <p>要想发动实体，就必须要有他身上的发动石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来信上说的没错。</p>
+          <p> </p>
+          <p>(查看发动石)嗯，从外形来看确实是实体发动石，看上去好像很古老了。</p>
+          <p> </p>
+          <p>下面只需知道怎么用它发动实体就行了。</p>
+          <p> </p>
+          <p>来，请不要推辞。这是你帮我两次忙的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_LF2A_Cherubim4Gi200NamedQ_47_An]身上找到发动石，然后交给[%dic:STR_DIC_N_Atropos]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说守护者阿克拉埃尔的身上有发动实体的发动石。杀死阿克拉埃尔，找到发动石，然后交给阿特洛浦斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿特洛浦斯说从研究实体的学者那里收到了信，得知实体附近的守护者阿克拉埃尔身上有实体发动石。</p>
+          <p> </p>
+          <p>于是再次来到实体所在的拉格托斯海岸，杀死了阿克拉埃尔，把发动石交给了阿特洛浦斯。</p>
+          <p> </p>
+          <p>阿特洛浦斯看到发动石后，说好像是很古老的发动石，说下面只要找到发动石的使用方法就行了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

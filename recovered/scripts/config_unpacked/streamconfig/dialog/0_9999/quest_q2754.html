@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人清除了德拉克纽特，那些龙族应该也会感到害怕了吧。</p>
+          <p> </p>
+          <p>这种时候必须乘胜追击。战斗靠的就是气势。</p>
+          <p> </p>
+          <p>看到了胜利的希望之后，就应该继续向前，更进一步。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了德拉克纽特之外，如果这次能把纳加除掉的话，他们就会更加害怕。</p>
+          <p> </p>
+          <p>但是那是很危险的事情，所以这个任务我不能随便交给什么人。</p>
+          <p> </p>
+          <p>[%username]大人，您这次也愿意接受任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去把[%dic:STR_DIC_M_Ab1_1141_NagaWizard_28_An]清除掉，然后把[%dic:STR_DIC_I_QUEST_2754a]带回来作为证据。</p>
+          <p> </p>
+          <p>上次您也去过了，他们所在的地方因为有硫磺，所以非常危险。</p>
+          <p> </p>
+          <p>那会给生命力造成巨大的伤害，所以请您一定要格外注意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您既然帮过我一次，要是能帮到底就好了...</p>
+          <p> </p>
+          <p>看样子您是有什么重要的任务吧。我也不能非逼着您帮忙。</p>
+          <p> </p>
+          <p>那就再见吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了吗？</p>
+          <p> </p>
+          <p>我虽然知道您实力很强，但是好像比我想象的要厉害得多。</p>
+          <p> </p>
+          <p>如果您除掉了第30纳加法师，请把[%dic:STR_DIC_I_QUEST_2754a]交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纳加的法杖。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去清除纳加吗？</p>
+          <p> </p>
+          <p>还是忘了把法杖带回来了呢？</p>
+          <p> </p>
+          <p>我向上司报告的时候，必须要提供证据。</p>
+          <p> </p>
+          <p>那就请您去把[%dic:STR_DIC_M_Ab1_1141_NagaWizard_28_An]除掉，然后把[%dic:STR_DIC_I_QUEST_2754a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这就是第30部队的纳加使用的法杖啊。</p>
+          <p> </p>
+          <p>嗯...魔族也能使用吗？</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮助我。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，我们应该可以很快把龙族从克雷提温纷争地带赶出去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1141_NagaWizard_28_An]，然后把证据交给[%dic:STR_DIC_N_Asynja]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了将龙族赶出克雷提温纷争地带，决定去清除纳加。清除纳加法师，然后把纳加的法杖交给阿西尼亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿西尼亚说要想把龙族赶出克雷提温纷争地带，就必须在龙族受到打击的时候持续进行攻击。</p>
+          <p> </p>
+          <p>于是为了给龙族造成更大的打击，清除掉了纳加法师，并把纳加的法杖作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

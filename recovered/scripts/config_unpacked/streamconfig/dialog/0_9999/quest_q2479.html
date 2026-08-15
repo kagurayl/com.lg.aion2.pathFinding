@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说连贝鲁姆斯都变成了石头之后，感觉一下子就泻了气。</p>
+          <p> </p>
+          <p>为了拯救椰林族，我进行了很多努力，但是好像没什么用。</p>
+          <p> </p>
+          <p>感觉这段时间的努力的方向，好像有一点问题。得找找有没有新的办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为魔族的守护者，虽然不应该说这种话，但是没有办法。</p>
+          <p> </p>
+          <p>之前我只是想过...但是现在好像应该付诸实施了。</p>
+          <p> </p>
+          <p>事实上，天界也有椰林族。天界的光线比我们魔界充足，所以那里的椰林族应该没有遇到危机。</p>
+          <p> </p>
+          <p>如果能向天界的椰林族请求帮助的话，应该就能拯救这里的椰林族。</p>
+          <p> </p>
+          <p>[%username]，这件事你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先去[%dic:STR_DIC_N_Tree_Move_Nabalu]那里，把我的话告诉他。</p>
+          <p> </p>
+          <p>他就会告诉你天界有哪些椰林族，应该去向谁请求帮助。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你对椰林族一点都不关心吗？</p>
+          <p> </p>
+          <p>虽然很多人认为亚特雷亚是人类和守护者的土地，但是那是傲慢的想法。</p>
+          <p> </p>
+          <p>生活在这里的所有生命体都有同等的权利。</p>
+          <p> </p>
+          <p>所以，我们守护者的士兵并不仅仅是保护人类和守护者，我们必须保护所有的生命体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想起来了，守护者。</p>
+          <p> </p>
+          <p>你曾经帮助过我，拯救贝鲁姆斯大人的时候。</p>
+          <p> </p>
+          <p>你来找我，有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达莱卡尔卢斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天界的椰林族...我并不是没有想过。</p>
+          <p> </p>
+          <p>我们，是没有办法过去的。</p>
+          <p> </p>
+          <p>谢谢你能来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Tree_Move_Nabalu]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">莱卡尔卢斯说要想拯救椰林族的话，就必须请求天界的椰林族的帮助。去见见纳巴鲁并转达莱卡尔卢斯的话吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱卡尔卢斯说拯救椰林族的最后方法是请求环境比较好的天族的椰林族的帮助。</p>
+          <p> </p>
+          <p>于是去向纳巴鲁转达了莱卡尔卢斯的话，纳巴鲁对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

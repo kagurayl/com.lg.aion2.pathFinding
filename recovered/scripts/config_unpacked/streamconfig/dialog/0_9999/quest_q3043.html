@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在清除萨里瓦多的时候，您有没有看到一个特别的家伙？</p>
+          <p> </p>
+          <p>我之前在荒地巡逻的时候曾经看到过，看上去好像是萨里瓦多中最凶恶、最强的家伙。</p>
+          <p> </p>
+          <p>据加易斯百夫长大人说，它就是[%dic:STR_DIC_M_LF2A_SalivadoRedQ_46_An]。</p>
+          <p> </p>
+          <p>我想它也许是萨里瓦多的头目。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是头长着巨大的舌头的萨里瓦多，力量要比其它萨里瓦多强的多。</p>
+          <p> </p>
+          <p>这一带的萨里瓦多之所以特别凶残，我想可能是因为它的原因。</p>
+          <p> </p>
+          <p>所以我想去把[%dic:STR_DIC_M_LF2A_SalivadoRedQ_46_An]除掉，但之后我就再也没有见到过它。</p>
+          <p> </p>
+          <p>要想除掉它，需要花时间去寻找。[%username]大人，您能帮我找到它吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LF2A_SalivadoRedQ_46_An]可以在偏僻的地方找到。所有见过它的人，都是在偏僻的地方发现的。</p>
+          <p> </p>
+          <p>找到它之后，[%username]大人，请您帮我把它除掉。</p>
+          <p> </p>
+          <p>必须除掉头目，才能打击其他萨里瓦多的气焰。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上，阿特洛浦斯大人让我做的事情已经做得差不多了。但既然要做，就要做的更好。</p>
+          <p> </p>
+          <p>好吧，我就实话实说吧。我想打猎长舌普洛尔，然后送给阿特洛浦斯大人看看。</p>
+          <p> </p>
+          <p>让他知道我不是光在那里玩的人。</p>
+          <p> </p>
+          <p>[%username]大人，请您帮帮我，让我受伤的自尊心可以恢复。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您找到长舌普洛尔了吗？</p>
+          <p> </p>
+          <p>真的和传说中一样凶残吗？您该不会是没找到就回来了吧？</p>
+          <p> </p>
+          <p>快告诉我结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。长舌普洛尔消失之后，萨里瓦多应该会安静些了。</p>
+          <p> </p>
+          <p>阿特洛浦斯大人对待我的态度，相信也会有所不同。</p>
+          <p> </p>
+          <p>这是我为您准备的礼物。</p>
+          <p> </p>
+          <p>[%username]大人，您不知道您的帮助对我来说有多重要。</p>
+          <p> </p>
+          <p>请您收下，千万不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_LF2A_SalivadoRedQ_46_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Noridia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">好像是因为萨里瓦多的头目长舌普洛尔，所以荒地一带的萨里瓦多格外的凶残。帮助诺里迪亚除掉长舌普洛尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除完萨里瓦多回去之后，诺里迪亚问我能不能帮他除掉萨里瓦多的头目。</p>
+          <p> </p>
+          <p>他说它们的头目叫做长舌普洛尔，比普通萨里瓦多要凶残的多。</p>
+          <p> </p>
+          <p>找到并除掉了隐藏的长舌普洛尔之后，诺里迪亚说终于可以在结界守护者面前挽回名誉，并给我了礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(折得皱巴巴的纸条。)</p>
+          <p> </p>
+          <p>(打开纸条一看，上面画着一幅地图。)</p>
+          <p> </p>
+          <p>(某个地点用红色表示，上面还有很多血痕。)</p>
+          <p> </p>
+          <p>(好像是有人在请求帮助，应该去那个地方看看。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，感谢阿里埃主神。</p>
+          <p> </p>
+          <p>您是看到我给齐尔齐尔的纸条之后来的吗？</p>
+          <p> </p>
+          <p>是的，是卡伊里尼。上面标着这里的位置，绑在他的腿上...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说发现了纸条。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在死了的卡伊里尼身上发现了纸条？</p>
+          <p> </p>
+          <p>啊，可怜的齐尔齐尔…也是，他在这里几天都没吃没喝了，呜呜。</p>
+          <p> </p>
+          <p>啊，都是我的错。要是我不那么贪心的话，就不会被人抓住，齐尔齐尔也不会死了，呜呜呜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往地图上标记的地方，寻找卡伊里尼的主人</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在倒在路边的卡伊里尼的腿上发现了沾血的纸条。去纸条上标记的地方寻找卡伊里尼的主人吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看了在卡伊里尼腿上发现的纸条，上面画着地图，某个地点用血标了出来。</p>
+          <p> </p>
+          <p>上面沾满了血，觉得事情严重，于是来到地图标记的地点，发现有个名叫路利亚的赏金猎人被抓住了关在卡里顿村落里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

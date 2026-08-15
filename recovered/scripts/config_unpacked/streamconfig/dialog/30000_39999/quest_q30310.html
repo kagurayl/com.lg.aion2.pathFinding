@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为是非常古老的东西，想要修复的话，需要很多种不同的材料。</p>
+          <p> </p>
+          <p>不过大部分的材料我都有，请不要担心。</p>
+          <p> </p>
+          <p>不过有一个问题，有一种复原必须用到的重要材料用光了。</p>
+          <p> </p>
+          <p>那就是使浑浊的墨水重新变黑的液体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我本来还在想应该怎样才能搜集到材料。您愿意帮我，真是太好了。</p>
+          <p> </p>
+          <p>能让浑浊的墨水变黑的液体，是动物的胆汁。</p>
+          <p> </p>
+          <p>其中德拉科比和德拉努斯的胆汁效果最好。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我搜集一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是在格尔克马洛斯制作的文件，用生活在那里的生物的胆汁，效果应该会更好。</p>
+          <p> </p>
+          <p>请您到巴卡巴塔激战地去，搜集[%dic:STR_DIC_M_DF4_DragonFly_54_An]和[%dic:STR_DIC_M_DF4_Varanus_DR_54_An]的红褐色胆汁吧。</p>
+          <p> </p>
+          <p>有了[%dic:STR_DIC_I_QUEST_30310b]，就能让浑浊的墨水重新变黑，用来修复古书了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是说过吗？没有德拉科比和德拉努斯的胆汁的话，就无法复原古书。</p>
+          <p> </p>
+          <p>如果您还是拒绝的话，看来这并不是什么重要的文件。</p>
+          <p> </p>
+          <p>如果不是重要的东西，您就不用去了。</p>
+          <p> </p>
+          <p>我也不用费力去复原它了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您来啦。</p>
+          <p> </p>
+          <p>其他的材料，我已经全部准备好了。</p>
+          <p> </p>
+          <p>只要有了红褐色胆汁，我就可以马上开始复原。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红褐色胆汁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次我好像跟您说过了啊……</p>
+          <p> </p>
+          <p>没有[%dic:STR_DIC_I_QUEST_30310b]的话，就无法复原文件。</p>
+          <p> </p>
+          <p>我虽然复原过很多古代文书，但没有材料的话，我也没有办法。</p>
+          <p> </p>
+          <p>请您快去消灭[%dic:STR_DIC_M_DF4_DragonFly_54_An]和[%dic:STR_DIC_M_DF4_Varanus_DR_54_An]，搜集红褐色胆汁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，没错。就是这样。</p>
+          <p> </p>
+          <p>请稍等一下。</p>
+          <p> </p>
+          <p>(用调配好的材料，对龙信徒的古代文献进行修复。)</p>
+          <p> </p>
+          <p>来，好了。请您拿着。</p>
+          <p> </p>
+          <p>内容好像非常重要，因此我在修复的时候格外的小心。</p>
+          <p> </p>
+          <p>虽然不能恢复原貌，不过应该可以看清楚上面的内容了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把复原的古书放进箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我一直在等您回来。</p>
+          <p> </p>
+          <p>您见到昆泰尔大人了吗？</p>
+          <p> </p>
+          <p>龙族的古代文献成功复原了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出复原的古书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古书复原真是神奇。</p>
+          <p> </p>
+          <p>原来模糊的地方全都可以看清楚了。</p>
+          <p> </p>
+          <p>这样的话，就应该可以找到封印鲁德拉的位置了。</p>
+          <p> </p>
+          <p>真是辛苦您了，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30310b]，然后交给[%dic:STR_DIC_N_Gunter]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Herka]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">复原古书所需的材料不足。消灭德拉科比监视者和荒野德拉努斯，搜集红褐色胆汁吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>昆泰尔说缺少复原文件所需的材料。</p>
+          <p> </p>
+          <p>于是帮他搜集到了红褐色胆汁，他帮我复原了古书。</p>
+          <p> </p>
+          <p>把复原的古书交给了赫尔卡，他说这样的话，应该可以知道鲁德拉被封印在什么地方了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

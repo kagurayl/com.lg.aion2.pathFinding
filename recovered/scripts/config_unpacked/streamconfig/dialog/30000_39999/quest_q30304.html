@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们必须弄清楚我们到底犯下了什么错误。</p>
+          <p> </p>
+          <p>我们必须弄清楚封印守护者伊斯巴里亚的警告到底是什么，他们到底希望通过仪式阻止什么事情。</p>
+          <p> </p>
+          <p>还必须弄清楚那会给我们造成什么样的影响。</p>
+          <p> </p>
+          <p>只有这样，我们才能做好有效的准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说他们正在帕休曼迪尔寺院中举行仪式。</p>
+          <p> </p>
+          <p>那是封印守护者秘密举行的仪式，所以要搜集到相关的情报可能会很不容易。</p>
+          <p> </p>
+          <p>必须去咨询一下专家，看看到底应该从什么地方入手。</p>
+          <p> </p>
+          <p>你能继续帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你先去向[%dic:STR_DIC_N_Herka]请求帮助。</p>
+          <p> </p>
+          <p>你去跟他说明之前发生在帕休曼迪尔寺院的事情。</p>
+          <p> </p>
+          <p>然后问问应该去哪里搜集情报。</p>
+          <p> </p>
+          <p>知道之后，不要马上回来。希望你能搜集到具体的情报，解决问题之后，再回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事你也有责任。</p>
+          <p> </p>
+          <p>今后不知道会发生什么事情，难道你想置身事外吗？</p>
+          <p> </p>
+          <p>如果你真的不愿意，我也不会勉强，但我绝对不会给你好的评价。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我到格尔克马洛斯来，真是来对了。</p>
+          <p> </p>
+          <p>没想到这里有这么多可以研究的东西。当然，我知道龙界会有很多新的东西。</p>
+          <p> </p>
+          <p>但没想到见到的每一样东西都是那么的新鲜。</p>
+          <p> </p>
+          <p>啊，你来找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达赫雷尔话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真让人吃惊。龙族的警告……</p>
+          <p> </p>
+          <p>这样的事情，最好是去找找传说记录物。</p>
+          <p> </p>
+          <p>赫雷尔大人也说过了，这可能是龙族社会中没有公开的事情。</p>
+          <p> </p>
+          <p>那样的事情，在神话传说中说不定反而能找到什么线索。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Herka]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">向赫尔卡询问封印守护者的警告是什么。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫雷尔说既然消灭了封印守护者，就必须查明危险到底是什么。</p>
+          <p> </p>
+          <p>向龙族专家赫尔卡请求帮助，他说在龙族的传说记录物中寻找，应该会有有用的线索。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

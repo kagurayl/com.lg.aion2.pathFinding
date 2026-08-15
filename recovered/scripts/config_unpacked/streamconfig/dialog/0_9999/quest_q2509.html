@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您来的正好。</p>
+          <p> </p>
+          <p>我刚好收到了吉格里泰大人请求帮助的传信，正在寻找合适的人。</p>
+          <p> </p>
+          <p>他说本来生活在玛西沙的巢穴地区的拉盖乌姆特雷基来到了黑色平原。</p>
+          <p> </p>
+          <p>虽然还没有造成大的危害，但它们的数量在逐渐增加。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是幼崽的[%dic:STR_DIC_M_MahishaDrakyD_31_An]竟然会在黑色平原出现...</p>
+          <p> </p>
+          <p>我想会不会是玛西沙平原的特雷基数量太多，所以才挤到了这边。特雷基的繁殖力本来就非常强。</p>
+          <p> </p>
+          <p>必须在他们的数量继续增加，占据黑色平原之前，把它们清除掉。</p>
+          <p> </p>
+          <p>[%username]大人，这件事您能帮着处理一下吗？您刚巧过来找我，这应该是五位主神的意志，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_MahishaDrakyD_31_An]是紫色的，不动的时候不容易看见。所以请您仔细地观察地面。</p>
+          <p> </p>
+          <p>它们虽然是幼崽，但绝对不能轻视。它们会使用魔法，所以必须认真对付。</p>
+          <p> </p>
+          <p>[%username]大人去扫荡过一次之后，那些特雷基应该就不敢再越过黑色平原了。</p>
+          <p> </p>
+          <p>拉盖乌姆特雷基清除掉之后，请您去向[%dic:STR_DIC_N_Gigrite]大人报告情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您竟然会拒绝。</p>
+          <p> </p>
+          <p>吉格里泰大人因为要解决贝斯佩尔幽灵村的不死族问题，所以没时间管其他的事情。</p>
+          <p> </p>
+          <p>所以才会向[%username]大人您请求帮助...</p>
+          <p> </p>
+          <p>我知道了。既然您不愿意，我总不能强迫您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近附近出现了拉盖乌姆特雷基，弄得乱糟糟的。</p>
+          <p> </p>
+          <p>贝斯佩尔幽灵村的不死族的问题还没解决，那些家伙又来捣乱...</p>
+          <p> </p>
+          <p>怎么，你找我有事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是洛奇派来的人啊。</p>
+          <p> </p>
+          <p>我虽然向他传信请求帮助，但没想到他的动作这么快。</p>
+          <p> </p>
+          <p>看来我得好好地向洛奇道谢。当然也得感谢你，谢谢你帮我清除了特雷基。</p>
+          <p> </p>
+          <p>多亏了你，我才能集中精神解决不死族的问题。</p>
+          <p> </p>
+          <p>愿在你前进的道路上，马尔库塔主神的保佑与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_MahishaDrakyD_31_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gigrite]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">洛奇说神圣保护者吉格里泰由于拉盖乌姆特雷基的问题而遇到了困难。按照他的拜托，清除黑色平原上的拉盖乌姆特雷基。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>洛奇说来处理贝斯佩尔幽灵村问题的神圣保护者吉格里泰正在因为拉盖乌姆特雷基而头疼。</p>
+          <p> </p>
+          <p>为了让吉格里泰专心执行任务，接受了他的委托，清除了黑色平原上的拉盖乌姆特雷基，并向吉格里泰进行了报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在称赞宠物的技能，您已经掌握了吗？</p>
+          <p> </p>
+          <p>守护者如果得到称赞，心情就会很好，宠物也一样。</p>
+          <p> </p>
+          <p>但是称赞的时候也不应该盲目称赞。如果能了解宠物的心，然后再加以称赞，那样效果会更好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是要想了解宠物的心，是一件非常不容易的事。</p>
+          <p> </p>
+          <p>上次有一只皮比龙看上去非常不开心，但是却不肯透露出自己内心的想法，我因此觉得很难过。</p>
+          <p> </p>
+          <p>看到我痛苦的样子，有个守护者说宠物之类的东西，完全没有必要去在意它们的心情。</p>
+          <p> </p>
+          <p>怎么可以这样呢！[%username]大人，您想了解宠物的心吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说出售宠物蛋的[%dic:STR_DIC_NPC_Katin]%很了解宠物的心。</p>
+          <p> </p>
+          <p>[%username]大人如果感兴趣的话，可以去问问他如何才能了解宠物的心。</p>
+          <p> </p>
+          <p>我也很想去问问他的秘方，但是我有很多宠物需要照顾，很少能抽出时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定！有什么问题的话，就应该去请教那个领域的专家。</p>
+          <p> </p>
+          <p>您快去见见[%dic:STR_DIC_NPC_Katin]吧。他就在附近，应该不难找到。</p>
+          <p> </p>
+          <p>以后有时间的话，请您一定要来跟我说说如何才能了解宠物的心！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，看来我又白激动了。</p>
+          <p> </p>
+          <p>我还以为[%username]大人和我一样，也很想了解宠物的心呢。</p>
+          <p> </p>
+          <p>看来是我误会了。</p>
+          <p> </p>
+          <p>您想必也很忙，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多人来问我了解宠物内心的方法……</p>
+          <p> </p>
+          <p>最重要的就是要经常把它们带在身边。如果看都不看它们一眼，怎么能奢望能了解它们的心呢？</p>
+          <p> </p>
+          <p>经常注意它们的情绪，总有一天就会理解宠物的心了。</p>
+          <p> </p>
+          <p>就算是那些看上去傻乎乎的宠物，如果主人对自己关心的话，它们也会很开心的。另外，偶尔也要向它们透露自己的内心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，了解宠物的心并不是一件容易的事。但是以[%username]大人的热情，一定很快就能了解宠物的心的。</p>
+          <p> </p>
+          <p>请收下这个。它应该可以让您和宠物变得更亲密。</p>
+          <p> </p>
+          <p>宠物会从照顾自己的守护者那里感受到爱。知道主人在为自己努力之后，它们很快就会打开自己的心扉。</p>
+          <p> </p>
+          <p>如果有什么不明白的地方，请随时来找我！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_NPC_Katin]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">希尔盖说如果想了解宠物的心，就去问问卡丁。应该去见见卡丁。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希尔盖说宠物的心是很难了解的，如果想了解宠物的心，最好去问问卡丁。</p>
+          <p> </p>
+          <p>卡丁说宠物是感情非常丰富的生物，只要经常带在身边，就能了解宠物的心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

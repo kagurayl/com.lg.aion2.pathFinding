@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界好像也了解到了我的苦衷。</p>
+          <p> </p>
+          <p>虽说鸢族和天族建立了合作关系，但是为了进攻提亚玛兰塔，有很多需要准备的地方。潜入空中要塞的事情，没能获得太多的支援。</p>
+          <p> </p>
+          <p>但是现在他们答应为我提供天族的铸币，这样的话，我就能从天族守护者那里得到更多的帮助了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想拜托您的任务很简单。</p>
+          <p> </p>
+          <p>您只要潜入阿图拉姆空中要塞，消灭掉空中要塞里的敌人就行。</p>
+          <p> </p>
+          <p>敌人的名字是[%dic:STR_DIC_M_IDStation_Hugen_NM_58An]、[%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An]和[%dic:STR_DIC_M_IDStation_DrakanNinja_NM_58_An]。</p>
+          <p> </p>
+          <p>任务完成之后，我会给您天族的铸币作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乘坐战舰，就可以到达空中要塞的码头。</p>
+          <p> </p>
+          <p>到达之后，请您沿着通道，走到尽头的升降机那里。</p>
+          <p> </p>
+          <p>在升降机上面，哈里肯大人化装成了龙族，正在那里待命。</p>
+          <p> </p>
+          <p>请您在哈里肯大人的指导下继续前进。左侧入口是仓库区域、中央入口是管理区域，右边通往指挥区域。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是极乐世界直接下达的任务，希望您能帮助我。</p>
+          <p> </p>
+          <p>为了所有人的胜利，我需要[%username]大人的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>得到极乐世界的支援之后，来帮助我执行任务的人确实多了起来。</p>
+          <p> </p>
+          <p>要是能有更多的支援，当然会更好，不过这样我已经很满足了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务顺利完成了吗？</p>
+          <p> </p>
+          <p>多亏了[%username]大人，我们向着征服提亚玛兰塔又迈进了一步。</p>
+          <p> </p>
+          <p>按照约定，我把铸币送给您作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭阿图拉姆空中要塞的强敌。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDStation_Hugen_NM_58An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDStation_DrakanNinja_NM_58_An]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Silion]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照西里安的请求，消灭空中要塞的强敌，获取铸币作为奖励吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>西里安说空中要塞的任务得到了极乐世界的支援，如果帮他执行任务，可以获得铸币作为奖励。</p>
+          <p> </p>
+          <p>于是潜入了空中要塞，消灭了胡根、波普亲和阿修纳塔，回去之后，从他那里得到了铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

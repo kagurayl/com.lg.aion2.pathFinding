@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>同魔族和龙族的战争总有一天会结束的。</p>
+          <p> </p>
+          <p>但是在漫长的岁月里，经历了和他们的无数的战争，有时候我也会自问，这场战争到底会不会有尽头。</p>
+          <p> </p>
+          <p>虽然我们为了战胜他们而尽了全力，但战争至今还没有结束。我有时会想，我现在到底是在干什么。</p>
+          <p> </p>
+          <p>但是如果深陷这样的疑问而不能自拔的话，就不能称为是军人了。不管如何困难，我们都必须继续为了胜利而战斗，不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要交给你一件可能成为结束战争的基石的重要任务。</p>
+          <p> </p>
+          <p>这次我需要你去除掉[%dic:STR_DIC_E_Dgrade2]。</p>
+          <p> </p>
+          <p>哈哈哈，给你的任务越来越重，虽然觉得不太好意思，但是这也是表示我对你的信任。</p>
+          <p> </p>
+          <p>你能出色完成这次的任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在你的名声逐渐在埃雷修兰塔传扬开来。</p>
+          <p> </p>
+          <p>不用多久，魔族和龙族只要听到你的名字就会瑟瑟发抖。</p>
+          <p> </p>
+          <p>如果期待那一天的到来的话，就必须从现在开始努力。</p>
+          <p> </p>
+          <p>好了，快去把[%dic:STR_DIC_E_Dgrade2]消灭掉吧。</p>
+          <p> </p>
+          <p>对了，和你实力相差太大的人，消灭再多也没用。你一定要记住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是厌倦了持续的战斗了吗?</p>
+          <p> </p>
+          <p>如果不是的话，拒绝执行任务可不像你的作风。</p>
+          <p> </p>
+          <p>也是，偶尔的休息也是必要的。</p>
+          <p> </p>
+          <p>你去亚特雷亚冷静一下头脑，然后再回来找我。</p>
+          <p> </p>
+          <p>那我就等着你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦，[%username]。</p>
+          <p> </p>
+          <p>这么短的时间你就把[%dic:STR_DIC_E_Dgrade2]全部除掉了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是名不虚传啊，[%username]。</p>
+          <p> </p>
+          <p>通过这件事，魔族一定遭受了重大打击。</p>
+          <p> </p>
+          <p>他们在派遣守护者执行任务的时候一定有得头疼了。</p>
+          <p> </p>
+          <p>这都是你的功劳！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Dgrade2]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sakmis]%报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去除掉魔军2级兵，给魔族的气焰以沉重一击</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙克密斯让我去除掉魔军2级兵，说这是可能成为结束战争的基石的重要任务。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了魔军2级兵，他非常高兴，说魔族因此受到了重大打击。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

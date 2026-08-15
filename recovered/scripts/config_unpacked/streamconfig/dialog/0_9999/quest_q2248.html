@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然您已经帮了我了，我能再麻烦您一次吗？</p>
+          <p> </p>
+          <p>或许您觉得我脸皮真厚，不过我也是没办法。因为现在这副样子，我有很多难处理的事呢。 </p>
+          <p> </p>
+          <p>守护者大人，您用过特级邮递吗？虽然有点儿贵，不过据说可以送到任何想送到的地方呢。</p>
+          <p> </p>
+          <p>或许能送到我想送到的地方...您看，我这儿有一堆写完了却寄不出去的信呀。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说只要去贸易团港口向术古族委托，就可以使用特级邮递。</p>
+          <p> </p>
+          <p>对了，如果您去那儿，替我跟术古族委托一下。不一定现在就去，没关系的。</p>
+          <p> </p>
+          <p>当然，我会付您辛苦费的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者您还真是热心肠。 </p>
+          <p> </p>
+          <p>来，拿着这个包袱，把它交给贸易团港口的那个、那个...谁 来着？啊，对了，交给[%dic:STR_DIC_N_Shugo_DF1_6]。</p>
+          <p> </p>
+          <p>邮寄费绰绰有余，守护者您可以再拿些零用钱。</p>
+          <p> </p>
+          <p>虽然有点儿不大合情理，但是您绝对不能打开这个包袱看哦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我能去的话，我还来麻烦您吗？</p>
+          <p> </p>
+          <p>别说寄信了，不被抓住就是万幸了。</p>
+          <p> </p>
+          <p>请您就帮帮可怜的盖尔盖尔吧，求求您，答应我的请求吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事？</p>
+          <p> </p>
+          <p>啊，不用说了。</p>
+          <p> </p>
+          <p>你来是不是有什么私密的请求呀？</p>
+          <p> </p>
+          <p>看你的眼神就知道了啦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出盖尔缪的包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是啥呀！给我这东西，看来这不是封普通书信。</p>
+          <p> </p>
+          <p>(打开包袱，确认信件地址。)</p>
+          <p> </p>
+          <p>什么，这个！嗯，明白了。我一定负责送到，放心吧！</p>
+          <p> </p>
+          <p>还有，拿着这个...我是个有良心的商人。虽然邮寄费用昂贵，但也不能收这么多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_quest_2248a]交给[%dic:STR_DIC_N_Shugo_DF1_6]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">盖尔缪没寄出信去，焦急万分。把盖尔缪的信件包拿给内帕灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖尔缪说有几封信没寄出去，想用特级邮件邮寄。</p>
+          <p> </p>
+          <p>于是帮盖尔缪把包袱交给了贸易团港口的内帕灵。内帕灵看到信后，惊讶了片刻，就答应负责把东西送到。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

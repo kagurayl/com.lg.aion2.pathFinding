@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>不久前，发生了一件非常不好的事。</p>
+          <p> </p>
+          <p>一群推测是雷帕尔革命团的人，袭击了神圣守护会的高层守护者，抢走了机密文件。</p>
+          <p> </p>
+          <p>不幸中的万幸，就是那份机密文件施加了魔法，如果被没有经过承认的人打开，就会爆炸。</p>
+          <p> </p>
+          <p>最近我们收到了报告，说因特尔蒂卡的主要道路上，发生了原因不明的爆炸。</p>
+          <p> </p>
+          <p>全体神圣守护会会员，请尽快对因特尔蒂卡的主要道路进行搜索，找到[%dic:STR_DIC_OBJ_FOBJ_Q35008]之后，交给[%dic:STR_DIC_E_35007]。</p>
+          <p> </p>
+          <p>那份秘密文件绝对不能泄露出去，请抓紧时间。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道为什么，最近经常发生类似的事情。</p>
+          <p> </p>
+          <p>对了，变成碎片的机密文件找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出变成碎片的机密文件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没找到吗？</p>
+          <p> </p>
+          <p>据公告官说，在因特尔蒂卡的主要道路上发生了小规模的爆炸事件。</p>
+          <p> </p>
+          <p>虽然没有证据表明那是神圣守护会被抢走的机密文件引起的，但我怀疑就是这个原因。</p>
+          <p> </p>
+          <p>请您快去把变成碎片的机密文件找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幸好上面施有封印魔法！</p>
+          <p> </p>
+          <p>不过雷帕尔革命团为什么要抢夺神圣守护会的文件呢？</p>
+          <p> </p>
+          <p>对于这个问题，看来我们得好好研究一下。</p>
+          <p> </p>
+          <p>来，拿着。这是给您的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_FOBJ_Q35008]，然后交给[%dic:STR_DIC_E_35007]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据神圣守护会发来的委托书，一群推测是雷帕尔革命团的人袭击了神圣守护会的高层抢走了机密文件。</p>
+          <p> </p>
+          <p>还好文件上施有封印魔法，未经承认的人打开时会发生爆炸，刚好最近在因特尔蒂卡的主要道路上发生了爆炸。</p>
+          <p> </p>
+          <p>于是对因特尔蒂卡进行搜索，找到了机密文件。交给帕尔拉斯之后，他说辛苦了，并给了我酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

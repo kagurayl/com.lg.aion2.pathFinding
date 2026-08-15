@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们查理隆侦探事务所的名气好像更响了。</p>
+          <p> </p>
+          <p>最近刚收到了到天族地区去消灭守卫的委托。</p>
+          <p> </p>
+          <p>报酬相当丰厚，你想看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看委托书。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭天族精锐守卫胜负师扎乌西斯的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_Light_Fi_53] </p>
+          <p></p>
+          <p> 2. 位置：英吉斯温安格利浦废墟</p>
+          <p></p>
+          <p> 3. 详情：自称胜负师的精锐守卫剑星。实际上只是一个喜欢魔族鲜血的屠夫，消灭他的时候用不着手下留情。</p>
+          <p> </p>
+          <p>找到并消灭渗透到英吉斯温的胜负师扎乌西斯的人，将得到重谢。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你果然没有放过这个机会。</p>
+          <p> </p>
+          <p>虽然必须到[%dic:STR_DIC_W_ZONE_NAME_LF4]去，但风险和收益是对应的！</p>
+          <p> </p>
+          <p>不过这次你最好小心一点。</p>
+          <p> </p>
+          <p>很多人都在[%dic:STR_DIC_M_DF4_DaQ_Light_Fi_53]面前吃了苦头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？不感兴趣吗？</p>
+          <p> </p>
+          <p>这样的任务应该很划算啊？</p>
+          <p> </p>
+          <p>当然会有点危险，不过要想获得这么多的奖励，当然需要冒点险，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好不容易适应了龙界的生活，就又要派到别的地方去了，一定会很不适应吧，呐呐。</p>
+          <p> </p>
+          <p>守护者们可真是辛苦啊。</p>
+          <p> </p>
+          <p>因为你们必须来往于格尔克马洛斯和英吉斯温之间，执行任务，呐呐。</p>
+          <p> </p>
+          <p>这次的任务也需要到英吉斯温去吧？完成了的话，请向我报告吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>你完成了任务。</p>
+          <p> </p>
+          <p>我可以把委托费给你了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">潜入英吉斯温，消灭[%dic:STR_DIC_M_DF4_DaQ_Light_Fi_53]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_46500]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从查理隆侦探事务所的格尔克马洛斯管理部职员那里收到了委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所的格尔克马洛斯管理部职员给了我一个委托书，让我去消灭天族守卫胜负师扎乌西斯。</p>
+          <p> </p>
+          <p>前往英吉斯温，找到并消灭了胜负师扎乌西斯。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

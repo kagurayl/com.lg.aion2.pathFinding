@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>小偷如果不偷，那他还怎么能叫小偷呢！</p>
+          <p> </p>
+          <p>砍柴的就是樵夫，钓鱼的就是垂钓者。</p>
+          <p> </p>
+          <p>我这个一天到晚就给酷酷喂食的充其量就是个养酷酷的，怎么能算是大盗呢。</p>
+          <p> </p>
+          <p>还加上这些该死的酷酷一点儿都不听话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>头儿肯定是不喜欢我。</p>
+          <p> </p>
+          <p>他总是给别人这样那样的任务，今天叫这个把什么偷来，明天叫那个去除掉什么什么的，可是为什么偏偏就不派我去执行这样的任务。</p>
+          <p> </p>
+          <p>现在倒好，酷酷圈被弄坏了，酷酷全跑掉了。虽然是我因为火大一脚把酷酷圈给踢坏了吧。</p>
+          <p> </p>
+          <p>总之呢，今天一整天我都在跑来跑去抓那些酷酷，现在连动个指头的力气都没有了。</p>
+          <p> </p>
+          <p>再找一只就行了，可是我的脚实在是挪不动了。</p>
+          <p> </p>
+          <p>[%username]，你能不能帮我一下？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把这个[%dic:STR_DIC_I_2111a]带上吧。</p>
+          <p> </p>
+          <p>是以前抢牧场的时候弄来的，对酷酷也一样有用。</p>
+          <p> </p>
+          <p>用这个轻轻赶它们，很听话。</p>
+          <p> </p>
+          <p>如果找到了酷酷，用这个把它带到圈里来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真过分。</p>
+          <p> </p>
+          <p>人家都因为酷酷要死要活的了，你连这点儿忙都不帮？</p>
+          <p> </p>
+          <p>算了，你就好好地偷你的东西吧。</p>
+          <p> </p>
+          <p>怎么会管人家是为了酷酷死还是活呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼～，终于都逮回来了。</p>
+          <p> </p>
+          <p>如果不是你的话，肯定会被头儿骂的。因为放跑了酷酷。</p>
+          <p> </p>
+          <p>真谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把逃跑的酷酷抓回圈里来。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Sraht]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">看管酷酷圈的斯拉特因为要抓逃跑的酷酷已经精疲力竭了。帮助斯拉特找出酷酷用赶羊的棍子把它带回圈里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自从来到阿戴尔村庄以来，一直在看管着酷酷圈的斯拉特对此很是不满。</p>
+          <p> </p>
+          <p>加上因为一气之下用脚踢了一下圈，没想到居然踢坏了，把酷酷全弄跑了。为了再把它们抓回来，他已经筋疲力尽了。</p>
+          <p> </p>
+          <p>于是就帮斯拉特去找了酷酷，用赶羊的棍子把它赶回了圈里。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

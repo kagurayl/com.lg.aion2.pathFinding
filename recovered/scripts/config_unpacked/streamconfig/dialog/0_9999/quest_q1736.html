@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间，你好像积累了很多的经验。可以感觉到你老成了很多。</p>
+          <p> </p>
+          <p>说实话，你第一次来找我的时候，我对你的印象非常强烈。</p>
+          <p> </p>
+          <p>虽然很多方面还显得稚嫩，但全身却充满了霸气。</p>
+          <p> </p>
+          <p>让人不由地想，这个人值得期待。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在看来，那时我对你的感觉没有错。</p>
+          <p> </p>          
+          <p>而且听说你的威信很高，有很多的守护者追随你。现在不管什么任务，我都可以放心地交给你了。</p>
+          <p> </p>
+          <p>刚好我有一个重要任务，我正在想应该交给谁。刚好[%username]你来了。</p>
+          <p> </p>
+          <p>虽然任务会有点困难，但是这好像是阿里埃主神的意志。你愿意接受吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久之后，灰风和内扎坎之盾联军就会对埃雷修兰塔下层要塞发动总攻。</p>
+          <p> </p>
+          <p>之前需要把守卫要塞的[%dic:STR_DIC_E_Q1736]除掉。因为必须首先削弱他们的防御力。</p>
+          <p> </p>
+          <p>请你召集一些人，然后把希埃尔的西部要塞、希埃尔的东部要塞和硫磺树要塞的关隘兵清除掉。任何关隘兵都可以，不管是上级、中级，还是下级。</p>
+          <p> </p>
+          <p>光一两个人去是不行的，必须召集多个组队组成部队。</p>
+          <p> </p>
+          <p>对了，关隘兵只有在要塞战开始之后才会出现，因此需要注意查看地图，等到要塞进入可以占领状态后再去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？以前那个充满霸气的新兵到底上哪儿去了？</p>
+          <p> </p>
+          <p>你在埃雷修兰塔混了这么长时间，看来知道关隘兵不好对付吧？</p>
+          <p> </p>
+          <p>不过如果你能组成部队前往的话，应该不难对付。</p>
+          <p> </p>
+          <p>你再考虑一下，召集齐一起去的人之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦！</p>
+          <p> </p>
+          <p>我刚刚向灰风和内扎坎之盾联军下达了出征命令。</p>
+          <p> </p>
+          <p>因为侦察兵报告说你已经打倒了关隘兵。</p>
+          <p> </p>
+          <p>不过我还是想听听你的报告。跟我仔细说说是怎么把他们除掉的吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得非常好，[%username]！</p>
+          <p> </p>
+          <p>我虽然知道你一定可以成功，但没想到你这么快就完成了任务。</p>
+          <p> </p>
+          <p>看来你的战斗实力要比我想象的更高。</p>
+          <p> </p>
+          <p>来，请收下。你出色地完成了任务，这是为你准备的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除埃雷修兰塔下层的[%dic:STR_DIC_E_Q1736]</font></p>
+                     <p visible="[%0]"><font color="[%1]">  希埃尔的西部要塞([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  希埃尔的东部要塞([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  硫磺树要塞([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Taranis]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让灰风和内扎坎之盾联军顺利攻占埃雷修兰塔下层要塞，决定去清除关隘兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷修兰塔总司令官塔拉尼斯说我成长了很多，想要交给我一项重要任务。</p>
+          <p> </p>
+          <p>任务的内容是清除关隘兵，以便让灰风和内扎坎之盾联军顺利地攻占埃雷修兰塔下层要塞。</p>
+          <p> </p>
+          <p>于是去清除掉了希埃尔的东部要塞、希埃尔的西部要塞和硫磺树要塞的关隘兵。布塔恩非常高兴，说我出色地完成了任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

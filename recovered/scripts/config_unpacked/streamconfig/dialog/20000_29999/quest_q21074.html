@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你相信命运吗？</p>
+          <p> </p>
+          <p>我一直以为一见钟情只是喜欢说谎的人编出来的谎言。</p>
+          <p> </p>
+          <p>但是没想到世界上真的有这种事。</p>
+          <p> </p>
+          <p>那是平凡的一天。听说伏魔殿派来了远征军，我想去看看有没有能用的人。</p>
+          <p> </p>
+          <p>在那里，我遇到了她。看见她的一瞬间，我感觉全身无力，耳边嗡嗡作响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她叫美素伶。名字是不是很美？</p>
+          <p> </p>
+          <p>啊，总之那天之后，为了引起她的注意，我费了很多力气，可以说能做的都做了。</p>
+          <p> </p>
+          <p>最后我终于击败了众多的竞争者，获得了美素伶的心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">表示祝贺。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。最近不用张开翅膀，就感觉自己在天上飞一样。</p>
+          <p> </p>
+          <p>但是她和我负责的任务不同，我们没有多少时间可以约会。</p>
+          <p> </p>
+          <p>唉，今天[%dic:STR_DIC_N_Misorin]休息，要是能去见见她就好了……</p>
+          <p> </p>
+          <p>[%username]，听说你是个能力不错的[%userclass]，你愿意帮帮我吗？</p>
+          <p> </p>
+          <p>我一定会好好酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是人人都像你这样知道变通就好了，但是布吕希尔德百夫长……啧啧。</p>
+          <p> </p>
+          <p>我让他帮我调整一下任务时间，但是怎么求他都没用。有时间的话，我一定要跟父亲说说，让他换个百夫长。</p>
+          <p> </p>
+          <p>啊，[%username]，你要做的就是消灭[%dic:STR_DIC_M_DF4_Rhinoce_DR_51_An]。因为它们，我没办法通过龙之垫脚石，请你帮我把它们全部消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？你不愿意吗？我说过会好好酬谢你的。</p>
+          <p> </p>
+          <p>看来你是不知道，我父亲是魔界首屈一指的富翁。你以为我会计较这些小钱吗？</p>
+          <p> </p>
+          <p>唉，不愿意的话就算了。顽固的家伙有布吕希尔德百夫长一个就够了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]。多亏了你，我终于和美素伶约会了。</p>
+          <p> </p>
+          <p>本来想多待一会儿，但因为收到要塞的紧急呼叫，所以我急忙赶了回来。唉，本来想趁这个机会乘胜追击的呢……</p>
+          <p> </p>
+          <p>对了，我拜托你的事情怎么样了？一定完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。今后可能还要继续麻烦你。</p>
+          <p> </p>
+          <p>来，请收下。这是给你的酬劳。</p>
+          <p> </p>
+          <p>我的报酬一向很丰厚，看了可别吃惊哦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭龙之垫脚石周围的[%dic:STR_DIC_M_DF4_Rhinoce_DR_51_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gyorvin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让乔尔滨可以和美素伶约会，帮乔尔滨执行任务吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乔尔滨说他对美素伶一见钟情，后来好不容易才获得了她的芳心，但是因为执行的任务不同，没有时间约会。</p>
+          <p> </p>
+          <p>刚好美素伶休息，他说如果我能帮他执行任务，他就能去约会了，让我帮他消灭悬崖莱诺斯。回去之后，他说终于和美素伶约了会，并给了我酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

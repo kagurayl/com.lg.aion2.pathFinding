@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：确认结界辅助装置的异常</p>
+          <p> </p>
+          <p>配置在莫尔海姆结界塔附近的结界保护装置好像无法正常运转了。</p>
+          <p>这次的训练内容，就是找出并消除[%dic:STR_DIC_OBJ_Q47006]%无法正常运转的原因。</p>
+          <p>结界保护装置无法一个人确认。因此必须找一个导师，组成组队之后一起执行任务。</p>
+          <p>和[%dic:STR_DIC_E_Mentor]距离太远的话，就无法完成训练，因此建议您要经常跟在导师身边。</p>
+          <p>完成训练之后，请您一定要回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘻啦唔吧喃！</p>
+          <p> </p>
+          <p>我一直在等着[%username]大人确认完结界保护装置之后回来找我。</p>
+          <p> </p>
+          <p>无法正常运转的原因是什么呢？如果发现了原因，您应该把它消除掉了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来是雷帕尔革命团在搞鬼。</p>
+          <p> </p>
+          <p>我就知道背后一定有什么。多亏了[%username]大人，这下我终于可以松口气了。</p>
+          <p> </p>
+          <p>莫尔海姆因此变得更安全了。当然对于[%username]大人，这也应该是一次宝贵的经历。</p>
+          <p> </p>
+          <p>希望今后您能继续成长。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起消除[%dic:STR_DIC_OBJ_Q47006]的异常([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Titorea]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，确认莫尔海姆结界辅助装置，消除异常的原因。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，说莫尔海姆结界辅助装置出现异常，让我去找出并消除异常的原因。</p>
+          <p> </p>
+          <p>于是和导师一起消灭了入侵结界辅助装置的雷帕尔革命团。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

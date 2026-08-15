@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你来找我，一定是想知道研究结果吧。</p>
+          <p> </p>
+          <p>我就从结论说起吧。我成功了！我知道了龙族烙印之石研究的所有情况。</p>
+          <p> </p>
+          <p>那些德拉坎研究员的研究记录还蛮详细的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其他人我可能还要犹豫一下，不过[%username]大人就不同了。</p>
+          <p> </p>
+          <p>(环顾四周，小声说)龙族好像对开启烙印之石凹槽的方法进行过研究。</p>
+          <p> </p>
+          <p>它们的目的好像是为了提高战斗能力，以克拉尔、来卡恩和龙信徒为对象的临床试验好像已经完成了。</p>
+          <p> </p>
+          <p>如果可以的话，我想用我了解到的方法，为[%username]大人开启烙印之石凹槽。</p>
+          <p> </p>
+          <p>我可以发誓，绝不会有任何的副作用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。</p>
+          <p> </p>
+          <p>那我马上开始准备开启烙印之石。</p>
+          <p> </p>
+          <p>开启烙印之石凹槽，不光是我，[%username]大人也会消耗大量的体力和精神力。</p>
+          <p> </p>
+          <p>所以您最好做好心理准备。现在可以开始了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为这是龙族的研究结果，所以您觉得有点担心吧？您完全没有必要担心。</p>
+          <p> </p>
+          <p>虽然我不愿意承认，但龙族的研究水平比我们魔族要高。特别是在活体试验方面，更要高出一筹。</p>
+          <p> </p>
+          <p>所以请不要担心。因为是[%username]大人您，我才这样劝您。其他人我是不会这样恳求的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做心理准备花了这么长时间啊。</p>
+          <p> </p>
+          <p>现在您做好开启烙印之石凹槽的准备了吗？</p>
+          <p> </p>
+          <p>可以的话，我马上为您开启新的烙印之石凹槽。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，结束了。</p>
+          <p> </p>
+          <p>您有没有感觉全身发热啊？那是因为开启了新的烙印之石凹槽。</p>
+          <p> </p>
+          <p>愿在[%username]大人前进的路上，新的烙印之石凹槽能有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Garath]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">加拉斯说通过在纳杜卡活体研究所发现的烙印之石研究记录，他发现了开启烙印之石的方法，可以为我开启新的烙印之石凹槽。去见见加拉斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加拉斯说多亏了我，终于知道了龙族的烙印之石研究情况。作为报答，他为我开启了新的烙印之石凹槽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

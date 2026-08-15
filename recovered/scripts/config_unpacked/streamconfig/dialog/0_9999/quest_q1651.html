@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>革命团研究基地的侦察工作主要由我负责。</p>
+          <p> </p>
+          <p>如果艾奥齐娜能帮助我的话就好了，不过她最近看上去很疲惫。</p>
+          <p> </p>
+          <p>虽然我也很疲惫，但是没办法。我们需要互相体谅。</p>
+          <p> </p>
+          <p>不过这次任务中，最重要的是侦察。</p>
+          <p> </p>
+          <p>前去侦察的话，就不必帮卡利奥内收拾残局，也能暂时从和革命团的战斗中脱身出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是最近侦察遇到了很大的困难。革命团在研究基地周围派遣了大量的[%dic:STR_DIC_M_Pretor_40_An]和[%dic:STR_DIC_M_Kuillus_40_An]。</p>
+          <p> </p>
+          <p>它们比人类的感觉更敏锐。因此最近在侦察的时候，需要加一百倍的小心才行。</p>
+          <p> </p>
+          <p>即便是这样...还是好几次被它们发现了。</p>
+          <p> </p>
+          <p>必须想办法把它们收拾掉...您能帮帮我吗？</p>
+          <p> </p>
+          <p>有时间的事情，请您到研究基地去帮我清除普雷尔和切尔路斯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Pretor_40_An]和[%dic:STR_DIC_M_Kuillus_40_An]在革命团研究基地附近有很多。</p>
+          <p> </p>
+          <p>虽然它们看上去很凶恶，但其实并不太强，以您的实力足够对付得了。</p>
+          <p> </p>
+          <p>请您帮我把它们清除干净。我不想在侦察的时候看到它们。</p>
+          <p> </p>
+          <p>还有什么需要问的吗？那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还有事情要做吗？</p>
+          <p> </p>
+          <p>那您去忙您的吧。</p>
+          <p> </p>
+          <p>该不会是害怕普雷尔和切尔路斯，或者对在前线辛苦工作的守卫的艰辛漠不关心吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>革命团到底是怎么培养出普雷尔和切尔路斯的呢？</p>
+          <p> </p>
+          <p>卡利奥内说活体实验什么的，是和那有关吗？</p>
+          <p> </p>
+          <p>虽然我对那些一窍不通，但是我也觉得革命团最近做的事情让人毛骨悚然。</p>
+          <p> </p>
+          <p>您是已经回来啦吧？去办的事情怎样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情完成得很不错。</p>
+          <p> </p>
+          <p>谢谢您。多亏了您，终于可以和以前一样散步...不，侦察了。</p>
+          <p> </p>
+          <p>革命团一定还会放普雷尔和切尔路斯出来，但至少暂时不用担心了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除守卫革命团研究基地的普雷尔和切尔路斯</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Pretor_40_An]([%2]/30)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Kuillus_40_An]([%5]/25)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kuobe]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让库奥贝可以安心侦察，清除革命团研究基地周边的普雷尔和切尔路斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库奥贝说因为革命团放出来的普雷尔监视者和凶暴的切尔路斯，自己无法执行侦察任务。</p>
+          <p> </p>
+          <p>于是帮他清除掉了革命团研究基地附近的普雷尔和切尔路斯，库奥贝似乎觉得很意外。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

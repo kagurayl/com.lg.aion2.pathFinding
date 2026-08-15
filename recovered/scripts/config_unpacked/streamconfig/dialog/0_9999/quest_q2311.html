@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你会发现它们很异常。我是说博塔摩尔森林的蘑菇。</p>
+          <p> </p>
+          <p>虽然不知道是什么原因，但它们正在发生变异，并逐渐污染着整个森林。</p>
+          <p> </p>
+          <p>不过，似乎有什么其他的东西在加速森林中污染的传播。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是因为什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我怀疑是[%dic:STR_DIC_M_MutaD_21_n]。</p>
+          <p> </p>
+          <p>污染的物质，可以粘在它们的脚和翅膀上进行传播。</p>
+          <p> </p>
+          <p>你能把它们清除掉吗？为了森林和椰林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你到[%dic:STR_DIC_W_DF2_SUB_A2]上去，把[%dic:STR_DIC_M_MutaD_21_n]清除掉。</p>
+          <p> </p>
+          <p>然后把缪塔的[%dic:STR_DIC_I_QUEST_2311a]带回来，作为除掉它们的证据。</p>
+          <p> </p>
+          <p>拜托了，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想视而不见吗？面对森林和椰林的威胁。</p>
+          <p> </p>
+          <p>你去了解一下，它们已经污染到了什么地方。</p>
+          <p> </p>
+          <p>如果想帮助我们的话，就再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>带回来了吗，缪塔的[%dic:STR_DIC_I_QUEST_2311a]？</p>
+          <p> </p>
+          <p>必须防止森林受到进一步的污染。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色的翅膀。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果放着缪塔不管的话，污染会继续扩散。</p>
+          <p> </p>
+          <p>时间非常紧急。</p>
+          <p> </p>
+          <p>快去把缪塔清除掉，然后把[%dic:STR_DIC_I_QUEST_2311a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经把缪塔清除掉了啊。</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>森林被污染、椰林消失的日子，应该会被延迟一点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_MutaD_21_n]，然后把证据交给[%dic:STR_DIC_N_Tree_Move_Anoramas]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了阻止森林被污染，防止椰林族灭亡，去把缪塔清除掉，然后把缪塔的红色的翅膀交给阿诺拉马斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿诺拉马斯说蘑菇正在变得异常，森林正在受到污染。</p>
+          <p> </p>
+          <p>让我把将森林的污染扩散到远方的缪塔清除掉，把证据交给他。于是去清除了霞翅缪塔，并把翅膀作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

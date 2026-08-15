@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近巴鲁埃林接受的任务不多，可以让他去讨伐黑脚部族。</p>
+          <p> </p>
+          <p>虽然他有时会对我的命令提些异议，不过自己负责的事情全都出色完成了，应该靠得住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我想想...交给巴鲁埃林一个去消灭黑脚部族士兵的任务吧。</p>
+          <p> </p>
+          <p>他应该不会对这个任务提什么异议或表示反对吧。 </p>
+          <p> </p>
+          <p>你能帮我把这个命令传达给巴鲁埃林吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮我把这个任务书交给[%dic:STR_DIC_N_Valuerin]。</p>
+          <p> </p>
+          <p>他应该在要塞东边的出入口附近。</p>
+          <p> </p>
+          <p>这是个重要任务，现在马上就去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是觉得送个命令书什么的太简单了，不想去做？</p>
+          <p> </p>
+          <p>没想到你是这样的人。</p>
+          <p> </p>
+          <p>知道了，那我交给别的守护者好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说你找我，以为你会很快到呢。</p>
+          <p> </p>
+          <p>好的，找我什么事啊？</p>
+          <p> </p>
+          <p>是不是有事求我啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转交苏埃伦的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(读完命令书，折起来) 原来是命令我去消灭黑脚 部族的精锐兵呀。</p>
+          <p> </p>
+          <p>我就知道早晚会派给我这样的任务。</p>
+          <p> </p>
+          <p>魔族和莱卡恩是不共戴天的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把苏埃伦的命令书转交给[%dic:STR_DIC_N_Valuerin]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把要塞队长苏埃伦的命令书交给巴鲁埃林。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃伦准备多方出击，消灭黑脚部族。</p>
+          <p> </p>
+          <p>所以给巴鲁埃林下了消灭黑脚精锐兵的命令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

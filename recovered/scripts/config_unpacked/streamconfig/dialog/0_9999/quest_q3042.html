@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卫兵的工作，表面看上去好像很轻松，但其实是非常累的。</p>
+          <p> </p>
+          <p>因为不知道何时会有事情发生，所以必须随时保持警惕。</p>
+          <p> </p>
+          <p>但是阿特洛浦斯大人经过的时候看到我，却骂我在这里游手好闲。</p>
+          <p> </p>
+          <p>他自己却在结界塔里什么都不干，切。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他威胁我说，把[%dic:STR_DIC_W_LF2B_SZ_A]的[%dic:STR_DIC_M_LF2A_SalivadoRed_45_An]清除干净之前不准休息，然后就走了。</p>
+          <p> </p>
+          <p>您说这像话吗？即使动员这里所有的兵力都难以做到的事情，我一个人怎么可能做到。</p>
+          <p> </p>
+          <p>说实话，我很想破罐子破摔了，但却觉得就此放弃守卫的生活有点遗憾。</p>
+          <p> </p>
+          <p>但是我一个人又清理不掉那么多的萨里瓦多...[%username]大人，您能不能帮帮我？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LF2A_SalivadoRed_45_An]非常凶恶。</p>
+          <p> </p>
+          <p>而且数量又非常多，可以说控制了这一地区。</p>
+          <p> </p>
+          <p>您只要帮我清除掉28头就行，其余的我会自己再想办法。</p>
+          <p> </p>
+          <p>这么多应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>萨里瓦多是非常可怕的家伙。</p>
+          <p> </p>
+          <p>要我一个人把它们清除掉是几乎不可能的。</p>
+          <p> </p>
+          <p>如果您不愿意帮我，我就又会被结界守护者大人骂的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把28头萨里瓦多除掉了？</p>
+          <p> </p>
+          <p>我虽然也很努力了，但连十头都没有除掉呢。</p>
+          <p> </p>
+          <p>您该不会是中途放弃了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然没有食言。</p>
+          <p> </p>
+          <p>真是太感谢了。这样的话，阿特洛浦斯大人应该也会满足了。</p>
+          <p> </p>
+          <p>谢谢您帮我清除凶恶的萨里瓦多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_LF2A_SalivadoRed_45_An]([%2]/28)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Noridia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">结界守护者阿特洛浦斯命令诺里迪亚在清除烈士荒地的萨里瓦多之前不准休息。为了让诺里迪亚可以完成任务，帮助他扫荡萨里瓦多吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诺里迪亚说自己在努力工作，却冤枉地受到了结界守护者阿特洛浦斯的责备。</p>
+          <p> </p>
+          <p>阿特洛浦斯命令他清除掉荒地的所有萨里瓦多，为了让他能够完成任务，帮他清除了萨里瓦多。诺里迪亚表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

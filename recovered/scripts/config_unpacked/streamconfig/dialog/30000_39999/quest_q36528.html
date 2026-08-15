@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Wisp_55_n]%因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。</p>
+          <p> </p>
+          <p> 1. 名字: [%dic:STR_DIC_M_LF4_DayQ_Wisp_55_n] </p>
+          <p></p>
+          <p> 2. 罪行: 异常急速强化</p>
+          <p></p>
+          <p> 3. 详情: 受到从主神的剑中散发出的奥德的影响，变得非常强大。如果放任不管，可能会有危险发生。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_LF4_DayQ_Wisp_55_n]%，并将证据交给[%dic:STR_DIC_I_QUEST_36528a]%的人，将获得重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥德的影响真的非常大。</p>
+          <p> </p>
+          <p>据说能让一棵不起眼的小草在一瞬间长成参天大树。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Wisp_55_n]也是受到了奥德的影响，所以力量才会那么强大，真让人担心</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出粘稠的浓缩奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一看到漂浮在圣战的痕迹上空的粘稠的发光体，就让人感觉很不舒服。</p>
+          <p> </p>
+          <p>它的形态很模糊，不知道里面到底凝聚了多少的奥德。</p>
+          <p> </p>
+          <p>如果放任不管，总有一天会出事，必须尽快把它处理掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！看来我是白担心了。</p>
+          <p> </p>
+          <p>这么多的浓缩奥德真的是从鲁米诺斯的核中得到的吗？</p>
+          <p> </p>
+          <p>[%username]! 您完成了一件了不起的事。</p>
+          <p> </p>
+          <p>这是今天的证物。希望您明天继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_LF4_DayQ_Wisp_55_n]身上搜集奥德，然后交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭受到奥德的影响而变得强大的粘稠的鲁米诺斯，在鲁米诺斯的核中提取出浓缩奥德，交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

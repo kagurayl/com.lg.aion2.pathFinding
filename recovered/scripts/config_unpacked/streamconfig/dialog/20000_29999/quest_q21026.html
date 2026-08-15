@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们来到这里，是为了了解阿武拉乌森林的生态状况，寻找将这里的奥德气息激活的方法。</p>
+          <p> </p>
+          <p>但是没想到这里会是这么贫瘠的地方。</p>
+          <p> </p>
+          <p>虽然来这里还没多久，但别说调查生态环境了，来了之后，我们就只顾着消灭路上的哈尔积温和佩里亚了。</p>
+          <p> </p>
+          <p>因为叫阿武拉乌森林，我以为只要消灭阿武拉乌就可以了。没想到这里还有哈尔积温和佩里亚肆虐，真让人头疼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，在伏魔殿的时候，我就对你的实力有所耳闻。能在这里见到你，真的很高兴。没什么事的话，希望你能帮帮我。</p>
+          <p> </p>
+          <p>你能帮我把通往阿武拉乌森林的路上的[%dic:STR_DIC_M_DF4_Mosbear_DR_51_An]和[%dic:STR_DIC_M_DF4_Fellial_DR_51_An]消灭掉吗！？</p>
+          <p> </p>
+          <p>我们来到这里，是为了了解阿武拉乌森林的生态状况，寻找将这里的奥德气息激活的方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沿着前面的路一直走，就可以看到很多[%dic:STR_DIC_M_DF4_Mosbear_DR_51_An]和[%dic:STR_DIC_M_DF4_Fellial_DR_51_An]了。</p>
+          <p> </p>
+          <p>请你把它们全部消灭掉。</p>
+          <p> </p>
+          <p>拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说了这么多开拓阿武拉乌森林的重要性，你还是不想帮我，那就算了吧。</p>
+          <p> </p>
+          <p>以后如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把我所说的家伙消灭掉了吗？</p>
+          <p> </p>
+          <p>可能是由于龙界的状态非常不稳定，因此生存下来的生命体的战斗力全都非常强。</p>
+          <p> </p>
+          <p>哈尔积温和佩里亚也一样。怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不愧是[%username]。这么快就把它们消灭掉了。</p>
+          <p> </p>
+          <p>现在剩下的事情就交给我们吧。</p>
+          <p> </p>
+          <p>这样的话，就能消灭阿武拉乌，继续前进了。</p>
+          <p> </p>
+          <p>来，这是说好的报酬。请收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭阿武拉乌森林入口处的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Mosbear_DR_51_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Fellial_DR_51_An]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Varca]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于哈尔积温和佩里亚挡住了阿武拉乌森林的入口，开拓工作没有什么进展。帮助巴尔卡消灭哈尔积温和佩里亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来阿武拉乌森林进行开拓的先遣队长巴尔卡说因为哈尔积温和佩里亚的妨碍，连进入森林都很困难。</p>
+          <p> </p>
+          <p>消灭了哈尔积温和佩里亚之后向他报告，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想了想，只从外部查找线索好像没什么用。</p>
+          <p> </p>
+          <p>要想知道他们在策划什么阴谋，必须直接到他们所在的地方去，寻找线索。</p>
+          <p> </p>
+          <p>从龙信徒的移动方向来看，他们的目的地好像是锡兰泰拉回廊。</p>
+          <p> </p>
+          <p>锡兰泰拉回廊可能有守护者的地方只有一个。没错，就是帕休曼迪尔寺院。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然没能弄清楚他们的仪式是什么东西，但我想我们必须先阻止他们。</p>
+          <p> </p>
+          <p>那样的话，就必须先把守护者消灭掉。</p>
+          <p> </p>
+          <p>但是[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]是无法轻易接近的地方。[%dic:STR_DIC_E_UnderPass_Li]也不是随时可以去的地方。</p>
+          <p> </p>
+          <p>[%username]，消灭守护者的事情，希望你能帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以之前的经验来看，守护者应该就在帕休曼迪尔寺院的最深处。</p>
+          <p> </p>
+          <p>要到达那里虽然会很困难，但我相信你一定可以做到。</p>
+          <p> </p>
+          <p>请你先把保护封印守护者的寺院守护者消灭掉。</p>
+          <p> </p>
+          <p>此外，请你把[%dic:STR_DIC_E_IDCatacombsN_DrakanMonkBossNmd_55_Ah]也一起除掉。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]只有在锡兰泰拉回廊打开的时候才能到达，千万不要错过机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说是帕休曼迪尔寺院，你连话都没听完就一口拒绝了吗？</p>
+          <p> </p>
+          <p>上次我就在想，你的名声到底是从哪里得来的呢？</p>
+          <p> </p>
+          <p>像你这种明哲保身的人，好像不可能有那么高的名气啊？</p>
+          <p> </p>
+          <p>如果你真的不愿意，那就算了。你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我正在等你。</p>
+          <p> </p>
+          <p>你去过帕休曼迪尔寺院了吗？</p>
+          <p> </p>
+          <p>封印守护者伊斯巴里亚和寺院守护者消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？封印守护者说了那样的话？</p>
+          <p> </p>
+          <p>而且还听到了奇怪的吼声……我感觉我们好像是弄错了什么。</p>
+          <p> </p>
+          <p>为了阻止他们的阴谋，我们消灭了封印守护者，也许这是个错误的选择。</p>
+          <p> </p>
+          <p>但是事情已经这样了，后悔也来不及了。</p>
+          <p> </p>
+          <p>我们先得考虑一下这会产生什么影响，怎样才能阻止这种影响。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭帕休曼迪尔寺院的守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_DrakanMonk1Nmd_55_Ah] ([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_DrakanMonk2Nmd_55_Ah] ([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_DrakanMonk3Nmd_55_Ah] ([%8]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_DrakanMonk4Nmd_55_Ah] ([%11]/1)</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">消灭[%dic:STR_DIC_E_IDCatacombsN_DrakanMonkBossNmd_55_Ah]([%14]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Cainus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭正在帕休曼迪尔寺院举行奇怪仪式的封印守护者伊斯巴里亚和寺院守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡伊努斯说不知道龙族在策划什么阴谋，因此决定消灭举行仪式的守护者，将阴谋扼杀在摇篮之中。</p>
+          <p> </p>
+          <p>按照他的指示，前往帕休曼迪尔寺院消灭了封印守护者伊斯巴里亚。但是他临死的时候说出了警告的话，某个地方还传来了奇怪的吼声。</p>
+          <p> </p>
+          <p>向卡伊努斯报告了结果，他觉得有点担心，说感觉好像做错了事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

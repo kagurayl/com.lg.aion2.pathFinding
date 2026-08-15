@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你们的卫兵好像觉得消灭掉拉克莎的部下，让拉克莎变得愤怒，对消灭拉克莎会有所帮助。</p>
+          <p> </p>
+          <p>但是我却不这样认为。</p>
+          <p> </p>
+          <p>您知道吗？在塔梅斯这种德拉纳气息很强的地方，他的直觉要比我们鸢族强得多。</p>
+          <p> </p>
+          <p>您最好是相信我的话，而不是拉吉亚的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉克莎已经很久没有发怒了。</p>
+          <p> </p>
+          <p>继续让他发怒，只会让塔梅斯覆灭。</p>
+          <p> </p>
+          <p>必须在不惊动他手下的情况下，悄悄地消灭掉拉克莎。</p>
+          <p> </p>
+          <p>虽然您是天族，但您应该会按照我的话去做，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您帮助我的事情，我是不会和你们的卫兵讲的。</p>
+          <p> </p>
+          <p>作为一个天族，我知道您也有自己的立场。</p>
+          <p> </p>
+          <p>我只是希望您能消灭掉傲慢的拉克莎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还是更愿意相信天族卫兵们的话啊。</p>
+          <p> </p>
+          <p>明白了。但是请您记住。让拉克莎变得愤怒，只会让你们今后的战斗更加困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我可以感觉到，傲慢的拉克莎已经死了。</p>
+          <p> </p>
+          <p>聚集在塔梅斯的可怕的德拉纳气息中的一部分，就像是随时会爆炸的气球一样，在爆炸的时候可以感觉到震动。</p>
+          <p> </p>
+          <p>您把傲慢的拉克莎消灭掉了，对吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉克莎的傲慢。龙族的本性都很傲慢，但是在森严的等级制度中，是不允许存在那种傲慢的。</p>
+          <p> </p>
+          <p>提亚马特在敢于挑战龙帝的众多龙族之中，挑选拉克莎作为复活的对象，说明拉克莎不是普通的龙族。</p>
+          <p> </p>
+          <p>您必须继续帮我，直到完全消灭掉拉克莎为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDRaksha_5F_Raksha_Nmd_57_Ae]</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Gelion]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">鸢族格里文说自己的看法和卫兵们不同。应该相信他的话，消灭掉傲慢的拉克莎。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鸢族格里文说守卫们虽然下达了消灭愤怒的拉克莎的任务，但是他认为应该消灭掉傲慢的拉克莎。</p>
+          <p> </p>
+          <p>相信鸢族的直觉，消灭掉了傲慢的拉克莎，并获得了铸币作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

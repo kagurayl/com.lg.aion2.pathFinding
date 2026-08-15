@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从不久前开始，克拉尔的动向就有点不太寻常。</p>
+          <p> </p>
+          <p>最近也不袭击梅尔普内的营地了，去巡查的人们发现他们大部分都蜷缩在[%dic:STR_DIC_FLA08]。</p>
+          <p> </p>
+          <p>感觉有点不太对...</p>
+          <p> </p>
+          <p>你有时间的话能帮我个忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近听说布洛尼在把[%dic:STR_DIC_FLA07]采到的矿石搬运到[%dic:STR_DIC_FLA08]%里面。</p>
+          <p> </p>
+          <p>不管怎么看都不像是一般的矿石。</p>
+          <p> </p>
+          <p>在运输矿石的车周围有很多的克拉尔进行看护。</p>
+          <p> </p>
+          <p>你最好能去拿几块矿石回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去[%dic:STR_DIC_FLA08]里面翻一翻那些奇怪的像箱子一样的东西。</p>
+          <p> </p>
+          <p>矿石应该就放在那个里面。 </p>
+          <p> </p>
+          <p>不需要太多，只要在6个箱子里每个箱子拿一个就行。</p>
+          <p> </p>
+          <p>拿回来分析一下，看看他们到底在搞什么鬼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在你有什么急事吗？</p>
+          <p> </p>
+          <p>你到这么危险的地方来干嘛？</p>
+          <p> </p>
+          <p>没有什么重要的事情的话，你最好还是回村里去。</p>
+          <p> </p>
+          <p>克拉尔可不是你这种没有实力的佣兵可以对付的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了？你翻了那些木头箱子了吗？</p>
+          <p> </p>
+          <p>我们必须知道他们在搜集什么，才能制定对策。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没能把矿石都拿回来？</p>
+          <p> </p>
+          <p>如果那些矿石会威胁到我们的生存的话，我们佣兵团很可能会因为你的懒惰而全军覆没。</p>
+          <p> </p>
+          <p>快去把剩余的矿石拿回来。快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个怎么看都像是奥德石。但是从透明的颜色来看应该不是刚采出来的矿石。</p>
+          <p> </p>
+          <p>他们应该是想加工这些东西来干什么的。不过我想不出他们到底在打什么主意。</p>
+          <p> </p>
+          <p>必须把矿石送到村里进行仔细的检查。</p>
+          <p> </p>
+          <p>来，这是你的辛苦费。</p>
+          <p> </p>
+          <p>本来是应该我去拿回来的，但是昨天和克拉尔战斗的时候扭伤了脚。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_FLA08]的木头箱子中找到透明的矿石，带回去交给[%dic:STR_DIC_LA21]</font></p>[%collectitem][%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">最近克拉尔的动向不太寻常。接受了调查[%dic:STR_DIC_FLA08]的木头箱子，把矿石带回来的委托。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正在[%dic:STR_DIC_FLA08]附近侦察的[%dic:STR_DIC_LA21]%说最近克拉尔的动向不太寻常。</p>
+          <p> </p>
+          <p>他让我调查[%dic:STR_DIC_FLA08]的木头箱子并带回矿石样本。</p>
+          <p> </p>
+          <p>普亚看到矿石之后知道这不是普通的奥德石，让我把样本带回村里检查。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说[%username]扫荡了哈拉梅尔。</p>
+          <p> </p>
+          <p>成功地赶走了幕后元凶哈梅伦。</p>
+          <p> </p>
+          <p>之后我们一直在对残党进行清理，没有了哈梅伦，将哈拉梅尔完全清理干净只是时间问题。</p>
+          <p> </p>
+          <p>但是光这样好像还不够。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈拉梅尔要比想象的更大，设施也更完备。</p>
+          <p> </p>
+          <p>不仅有采集奥德石和奥黛尔拉的地方，还有加工的地方。</p>
+          <p> </p>
+          <p>此外还有将加工好的产品运送到其他房间去的自动装备。</p>
+          <p> </p>
+          <p>即使把那里的布洛尼和姆格尔全部消灭掉，那里的设施还是可能会被别人利用。</p>
+          <p> </p>
+          <p>为了让哈拉梅尔丧失功能，必须把设施全部破坏掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我给您一个火焰水晶球。</p>
+          <p> </p>
+          <p>这是可以产生出魔法火焰的宝珠，连含有奥德的物体都可以烧掉。</p>
+          <p> </p>
+          <p>请您用它把奥德运输车破坏掉。</p>
+          <p> </p>
+          <p>然后把加工好的奥黛尔拉也破坏掉。不知道他们用了什么药物，那些奥黛尔拉受到了污染，已经无法使用了。</p>
+          <p> </p>
+          <p>破坏掉奥德运输车之后，再用火焰宝珠烧毁加工中的奥黛尔拉。明白了吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是对和哈拉梅尔有关的任务不感兴趣吗？</p>
+          <p> </p>
+          <p>好的，明白了。</p>
+          <p> </p>
+          <p>这件事我会让别人去处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您，[%username]大人。</p>
+          <p> </p>
+          <p>我想您差不多也应该回来了。</p>
+          <p> </p>
+          <p>请跟我说说事情的结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>奥德运输车和加工好的奥黛尔拉都烧掉了，现在没有人可以利用哈拉梅尔了。</p>
+          <p> </p>
+          <p>要是可以的话，我真想把所有的东西都破坏掉。但据说那样会对地面造成影响，所以只能就此算了。</p>
+          <p> </p>
+          <p>为了表示感谢，我把这个送给您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_OBJ_IDNovice_Ore_cart]([%2]/3)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">用火焰宝珠烧掉[%dic:STR_DIC_OBJ_IDNovice_Burning_Odella]([%5]/3)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">向[%dic:STR_DIC_N_Zephyros]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照捷皮卢斯所说，破坏掉哈拉梅尔的奥德运输车和加工好的奥黛尔拉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>捷皮卢斯说为了防止哈拉梅尔的设施被别人利用，必须把它们全部破坏掉。</p>
+          <p> </p>
+          <p>于是破坏了奥德运输车，烧掉了加工好的奥黛尔拉。回去之后，他向我表示感谢，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

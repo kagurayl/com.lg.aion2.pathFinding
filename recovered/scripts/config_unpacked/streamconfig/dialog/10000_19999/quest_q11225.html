@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前，在哈纳尔卡德发生了一个小规模军团被全灭的事件。</p>
+          <p> </p>
+          <p>不是凯西内尔下属的军团，而是一些志同道合的人组成的为英吉斯温做事的军团。</p>
+          <p> </p>
+          <p>就在他们马上要扫平哈纳尔卡德的时候……却全部倒下了，所有的人都在我这里得到了治愈。</p>
+          <p> </p>
+          <p>担任军团长职务的守护星叹了一口气说。</p>
+          <p> </p>
+          <p>“要是能注意一下把守之阿修拉赞的话……”。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然他们在行动时很谨慎，但还是被巡逻的阿修拉赞发现，结果被全部杀死。</p>
+          <p> </p>
+          <p>虽然没有任何人把责任归结到军团长身上，但是他说的那一句充满自责的话，我现在还没有忘记。</p>
+          <p> </p>
+          <p>因此我想帮他小小地报一次仇。</p>
+          <p> </p>
+          <p>监视入侵者的把守之阿修拉赞好像给进攻哈纳尔卡德的很多守护者都造成了威胁。</p>
+          <p> </p>
+          <p>为了那个守护星，为了英吉斯温的天族，您能帮我去消灭阿修拉赞吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LF4_C5_Evileye_55_Ae]负责监视德拉坎居住的哈纳尔卡德。</p>
+          <p> </p>
+          <p>它们会沿着道路巡查，一旦发现入侵者就发动袭击。</p>
+          <p> </p>
+          <p>它们虽然不是很聪明，但那里是哈纳尔卡德，因此绝对不能轻敌。</p>
+          <p> </p>
+          <p>希望您尽可能多带几个同伴过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人今后也会到哈纳尔卡德去的。</p>
+          <p> </p>
+          <p>如果能把把守之阿修拉赞消灭掉，不是更好吗？</p>
+          <p> </p>
+          <p>请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在这里治愈了很多灵魂。</p>
+          <p> </p>
+          <p>很多时候，连我的生命都会受到威胁。</p>
+          <p> </p>
+          <p>但是这让我更真实地感觉到，我正在这里为天族做贡献。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去哈纳尔卡德一定很不容易吧？辛苦您了。</p>
+          <p> </p>
+          <p>多亏了您，现在那个守护星应该可以平静下来了。</p>
+          <p> </p>
+          <p>英吉斯温虽然有很多困难，但请不要失去勇气，一定要尽自己最大的努力。</p>
+          <p> </p>
+          <p>因为有我们这些灵魂治愈师在保护着天人们的灵魂。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_C5_Evileye_55_Ae]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Crasus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照克拉苏斯的委托，前往哈纳尔卡德，消灭把守之阿修拉赞。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克拉苏斯跟我讲述了因为把守之阿修拉赞而全灭的军团的故事，让我为他们复仇。</p>
+          <p> </p>
+          <p>于是前往哈纳尔卡德，消灭了把守之阿修拉赞。回去之后，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也知道，需要在德雷得奇安内部执行的任务有很多。</p>
+          <p> </p>
+          <p>这次的任务是接受伏魔殿的委托，对武器进行试验。</p>
+          <p> </p>
+          <p>[%username]，不知你知不知道……伏魔殿用从暗黑普埃塔得到的德拉纳开发出了新武器。</p>
+          <p> </p>
+          <p>[%username]，你能帮着对新武器进行试验吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>用德拉纳制作的新武器是[%dic:STR_DIC_I_QUEST_3722a]。</p>
+          <p> </p>
+          <p>制作的目的是为了打击龙族，但首先必须确认一下到底可以给龙族造成多大的伤害。</p>
+          <p> </p>
+          <p>但是在伏魔殿没有合适的试验环境。</p>
+          <p> </p>
+          <p>[%username]，你能去确认一下，新武器到底会给它们造成什么影响，到底能在战斗中如何应用吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是[%dic:STR_DIC_I_QUEST_3722a]，请收下。</p>
+          <p> </p>
+          <p>只要设置在德雷得奇安内部就行，不管什么地方都可以。</p>
+          <p> </p>
+          <p>启动[%dic:STR_DIC_I_QUEST_3722a]之后，请你确认一下会给龙族造成什么影响，会给战斗带来怎样的帮助。</p>
+          <p> </p>
+          <p>我会在这里等你把试验结果带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你对新武器不感兴趣吗？</p>
+          <p> </p>
+          <p>但这是伏魔殿关注的事情，即使你不感兴趣，也最好能帮帮我。</p>
+          <p> </p>
+          <p>而且据我判断，新武器一定能给战斗带来帮助……</p>
+          <p> </p>
+          <p>不过我不想别人说我强人所难，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>伏魔殿一直在焦急地等待试验结果，所以我一直放心不下。</p>
+          <p> </p>
+          <p>怎么样？冲击波生成器试验过了吗？跟我说说效果如何吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冲击波生成器可以让靠近它的龙族摔倒？</p>
+          <p> </p>
+          <p>那样的话，应该会对战斗很有帮助。我得马上向伏魔殿报告。</p>
+          <p> </p>
+          <p>不过你也知道，这种试验需要好几次才能得到正确的结果。</p>
+          <p> </p>
+          <p>也许会有其他的附加效果或副作用。有时间的话，希望你能再来帮我，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去德雷得奇安试验[%dic:STR_DIC_I_QUEST_3722a]%[%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Yorgen]%报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说伏魔殿用黑暗普埃塔搜集到的德拉纳标本开发出了新武器。去赞特拉德雷得奇安试验冲击波生成器的性能吧。.</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>约尔根说伏魔殿用黑暗普埃塔搜集到的德拉纳标本开发出了新武器，让我去赞特拉德雷得奇安以龙族为对象进行试验。</p>
+          <p> </p>
+          <p>告诉他冲击波生成器可以击倒龙族之后，约尔根说要想完全了解新武器的影响，还需要进行更多的试验，让我以后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命执行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

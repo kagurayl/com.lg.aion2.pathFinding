@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过...</p>
+          <p> </p>
+          <p>三尖树农场...没发生什么事情吗？</p>
+          <p> </p>
+          <p>我是说，没出现什么奇怪的东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问在说什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了，看来您没碰到啊。</p>
+          <p> </p>
+          <p>事实上，从不久之前开始，就有一个奇怪的传闻。</p>
+          <p> </p>
+          <p>据说一到晚上，三尖树农场上就会有怪物出现。</p>
+          <p> </p>
+          <p>有几个人差点被那些怪物抓住，好不容易才逃了出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">那不是谣言吗？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一开始也以为是谣言。因为一个人在黑黢黢的农场上工作，难免会因为害怕而产生幻觉。</p>
+          <p> </p>
+          <p>但是我后来亲眼见到了那个[%dic:STR_DIC_M_TrifidMon]。就在我的农场上。</p>
+          <p> </p>
+          <p>有一天很晚的时候，我在农场上施肥。突然觉得背后凉飕飕的，回头一看，那个家伙就站在那里。没错，就是三尖树怪物！</p>
+          <p> </p>
+          <p>事实上，我的腰也是那个时候，因为太吃惊而不小心给撞到了。现在腰疼已经好了，得开始干活了。但我实在是有心理阴影了，不敢再到农场上去了。</p>
+          <p> </p>          
+          <p>守护者大人！您既然帮过我一次，能帮我把那个[%dic:STR_DIC_M_TrifidMon]也一起除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。如果您能帮我把[%dic:STR_DIC_M_TrifidMon]除掉的话，我会给您丰厚的谢礼的。</p>
+          <p> </p>
+          <p>您不用担心钱的问题。我其实攒了不少钱。</p>
+          <p> </p>
+          <p>那我就全靠守护者大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您以为我是为了我一个人才拜托您的吗？被三尖树怪物伤到的人可不止一两个。</p>
+          <p> </p>
+          <p>这样下去的话，被害的人可能会继续增加。它们的数量也会越来越多。</p>
+          <p> </p>
+          <p>请您把那些怪物除掉，让人们可以安心地种地。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着您呢。等得脖子都酸了。</p>
+          <p> </p>
+          <p>对了，怎么样了？到了晚上，那些三尖树怪物就会出现吧？</p>
+          <p> </p>
+          <p>您把它们全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是辛苦您了。</p>
+          <p> </p>
+          <p>现在即使到了晚上，也能安心地在农场上干活了。</p>
+          <p> </p>
+          <p>来，请您收下。这是说好的谢礼。</p>
+          <p> </p>
+          <p>等等，守护者大人！我被三尖树怪物吓着，伤到了腰的事情，可千万不能跟别人说啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除一到晚上就会出现的[%dic:STR_DIC_M_TrifidMon]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tekor]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说一到晚上，三尖树农场上就会出现怪物。去泰高尔的农场把三尖树怪物清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰高尔抱怨说一到晚上，三尖树农场上就会出现怪物，危害周围的居民。</p>
+          <p> </p>
+          <p>于是来到泰高尔的农场，帮他清除掉了三尖树怪物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

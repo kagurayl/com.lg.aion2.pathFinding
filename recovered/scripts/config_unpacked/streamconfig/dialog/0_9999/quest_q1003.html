@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等了你很久了，[%username]！听说你最近干得很不错。</p>
+          <p> </p>
+          <p>有件头疼的事情需要帮忙，真高兴你能过来。</p>
+          <p> </p>
+          <p>现在这里由于布洛尼的问题，要说多乱就有多乱。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近布洛尼在[%dic:STR_DIC_FLA04]恣意砍伐树木。</p>
+          <p> </p>
+          <p>应该是由于他们巢穴附近的[%dic:STR_DIC_FLA05]没有木材。</p>
+          <p> </p>
+          <p>由于他们的采伐，人们寻找木材和木柴都变得困难了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然砍点树没什么大不了的，但是他们竟敢无视[%dic:STR_DIC_FLA04]，我们不能放任不管。</p>
+          <p> </p>
+          <p>在他们继续侵犯丛林前，得好好给他们点颜色看看。直接杀到他们的巢穴中去。</p>
+          <p> </p>
+          <p>请你到[%dic:STR_DIC_FLA07]去，把看到的[%dic:STR_DIC_MLA137]全部除掉。</p>
+          <p> </p>
+          <p>我们只相信你。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1003-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经扫荡了杜卡基族了吗?果然名不虚传。</p>
+          <p> </p>
+          <p>不过出了件大事。</p>
+          <p> </p>
+          <p>布洛尼到处砍树，好像有什么阴谋。</p>
+          <p> </p>
+          <p>我收到了侦察队的报告，他们好像在精炼[%dic:STR_DIC_ELA19]!</p>
+          <p> </p>
+          <p>他们砍树是用来当作木柴。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">在精炼奥德石吗?</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，是含有[%dic:STR_DIC_ELA13]的矿石。</p>
+          <p> </p>
+          <p>连人类都无法操纵奥德的力量，布洛尼当然也不可能能够使用。但是那些家伙如果真的提取出奥德的话就糟了。</p>
+          <p> </p>
+          <p>克拉尔好像是在监督杜卡基族。如果是和克拉尔有关的事情，就应该马上阻止他们。</p>
+          <p> </p>
+          <p>不仅是阿卡利奥斯村，整个普埃塔地区都会陷入危险。</p>
+          <p> </p>
+          <p>请你马上去[%dic:STR_DIC_FLA07]，清除[%dic:STR_DIC_MLA139]。</p>
+          <p> </p>
+          <p>必须阻止他们精炼奥德石。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1003-2.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经去[%dic:STR_DIC_FLA07]扫荡[%dic:STR_DIC_MLA139]了吗?</p>
+          <p> </p>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>虽然我有点担心他们这段时间挖[%dic:STR_DIC_ELA19]的矿石，但是能够阻止他们已经很幸运了。</p>
+          <p> </p>
+          <p>来，这是辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+    </HtmlPage>
+ <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见哨兵[%dic:STR_DIC_LA143]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_FLA07]把[%dic:STR_DIC_MLA137]清除掉([%5]/12)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">回去找[%dic:STR_DIC_LA143]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">除掉[%dic:STR_DIC_MLA139]([%11]/3)</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">回去找[%dic:STR_DIC_LA143]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令:杜卡基族正在威胁达弥努丛林。找到[%dic:STR_DIC_FLA05]的哨兵[%dic:STR_DIC_LA143]，然后除掉他们。</font></p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到[%dic:STR_DIC_FLA05]的哨兵[%dic:STR_DIC_LA143]后，他就会告诉你最近由于[%dic:STR_DIC_MLA137]乱伐树木，问题正在变的严重。</p>
+          <p> </p>
+          <p>击退那些家伙之后，有一个更严重的问题在等待着你。布洛尼砍树是在为精炼奥德石准备木柴。</p>
+          <p> </p>
+          <p>因此必须前往[%dic:STR_DIC_FLA05]除掉[%dic:STR_DIC_MLA137]，并阻止他们精炼奥德石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令:去见见[%dic:STR_DIC_FLA05]的哨兵[%dic:STR_DIC_LA143]。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

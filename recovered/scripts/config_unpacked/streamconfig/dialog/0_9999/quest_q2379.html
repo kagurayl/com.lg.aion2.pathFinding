@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，找你来是有件事想找你帮忙。</p>
+          <p> </p>
+          <p>你也知道，我来这里的目的是为了调查失踪的守护者的下落。</p>
+          <p> </p>
+          <p>但是我不能因此不管这里发生的事情。</p>
+          <p> </p>
+          <p>必须和各地的执政官们紧密协作，搜查才能顺利地进行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>摩尔海姆有很多问题，但最近最大的问题是莱卡恩。</p>
+          <p> </p>
+          <p>莱卡恩之中，雾鬃莱卡恩部族好像最让人头疼。</p>
+          <p> </p>
+          <p>因此为了破坏雾鬃莱卡恩的团结，我计划暗杀他们的头目。</p>
+          <p> </p>
+          <p>但结果计划失败了。因为被守卫部落的警备兵和搜索兵发现，每次都以失败告终。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我考虑了一下，要想完成暗杀，必须首先将守卫部落的家伙除掉。</p>
+          <p> </p>
+          <p>但只是说起来容易，这并不是那么容易的任务。</p>
+          <p> </p>
+          <p>因为这个任务必须去他们的根据地无踪部落执行。</p>
+          <p> </p>
+          <p> 我想把这个任务交给[%username]…你愿意接受吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要除掉的是[%dic:STR_DIC_M_ReA_LycanRangerM_40_Ae]、[%dic:STR_DIC_M_ReB_LycanRangerM_40_Ae]、[%dic:STR_DIC_M_AeA_LycanAssassinM_39_Ae]和[%dic:STR_DIC_M_HeB_LycanHunterM_39_Ae]。</p>
+          <p> </p>
+          <p>他们散布在雾鬃部落和卡萨卡的木头洞穴的周围，请你仔细寻找。</p>
+          <p> </p>
+          <p>除掉他们之后，请把[%dic:STR_DIC_I_QUEST_2379a]带回来。他们就是吹了那个东西，去暗杀头目的沉默执行者们才会失败的。</p>
+          <p> </p>
+          <p>那里是他们的根据地，你最好小心一点。不要一个人去，一定要和同伴一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到你会拒绝，真让人吃惊。</p>
+          <p> </p>
+          <p>像[%username]这样名声在外的守护者，居然会拒绝如此重要的任务... </p>
+          <p> </p>
+          <p>不过我也不能强迫不愿意的人去...</p>
+          <p> </p>
+          <p>我会找其他守护者的，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须集中人力调查守护者失踪事件才行，但却总是有其他事情发生。</p>
+          <p> </p>
+          <p>尽快解决莱卡恩的问题之后，应该就能安心调查失踪事件了...</p>
+          <p> </p>
+          <p>对了，让你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>快把[%dic:STR_DIC_I_QUEST_2379a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出莱卡恩的骨笛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该不会是还没去雾鬃部落吧？</p>
+          <p> </p>
+          <p>我是相信[%username]才没催你，看来是我错了。</p>
+          <p> </p>
+          <p>虽然我不喜欢催人，但情况紧急，没有办法。</p>
+          <p> </p>
+          <p>请你快去除掉守卫雾鬃部落的人，并把[%dic:STR_DIC_I_QUEST_2379a]作为证据带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务完成的非常出色。</p>
+          <p> </p>
+          <p>我听说过很多[%username]的传闻，但看来你的实力还在想像之上。 </p>
+          <p> </p>
+          <p>不管怎样，谢谢你帮助我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_I_QUEST_2379a]，并且送到 [%dic:STR_DIC_N_Anund]处。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说暗杀雾鬃莱卡恩头目的计划由于警备兵的存在而总是失败。前往雾鬃部落和卡萨卡的木头洞穴，清除雾鬃精锐警备兵、雾鬃精锐搜索兵、雾鬃精锐奇袭兵和雾鬃精锐操练师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了调查守护者失踪事件外，还策划了暗杀雾鬃莱卡恩头目的计划</p>
+          <p> </p>
+          <p>但是由于警备兵的存在而总是失败</p>
+          <p> </p>
+          <p> 前往雾鬃部落和卡萨卡的木头洞穴，清除雾鬃精锐警备兵、雾鬃精锐搜索兵、雾鬃精锐奇袭兵和雾鬃精锐操练师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

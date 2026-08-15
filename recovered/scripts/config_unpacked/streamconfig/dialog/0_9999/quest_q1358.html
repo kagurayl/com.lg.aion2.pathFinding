@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，看见在那里游荡的东西了吗？</p>
+          <p> </p>
+          <p>就是那个东西，那个。挥舞着尾巴和触手漂在水上的东西。</p>
+          <p> </p>
+          <p>那是非常珍贵的泉水精灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问为什么珍贵。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你不知道。</p>
+          <p> </p>
+          <p>精灵们出生的时候体内就有某种东西。就是类似人类灵魂的东西，呐呐。</p>
+          <p> </p>
+          <p>和人类不同的是，它们死了之后虽然肉体消失，但是那个东西却会留下来。</p>
+          <p> </p>
+          <p>人们都把那个东西叫做精灵的精髓，非常珍贵，价钱也很高，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们微风商会最近打算引进的新商品就是精灵的精髓，呐呐。</p>
+          <p> </p>
+          <p>那个泉水精灵体内的泉水的精髓的价钱尤其贵。</p>
+          <p> </p>
+          <p>但是那种精灵太凶恶，到现在我们一个都没弄到。</p>
+          <p> </p>
+          <p>你能帮我去打猎[%dic:STR_DIC_M_ElementalWater2_28_An]，搜集一点[%dic:STR_DIC_I_QUEST_1358a]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝，</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你。</p>
+          <p> </p>
+          <p>我们微风商会受到别人的帮助的话，一定会有重谢。</p>
+          <p> </p>
+          <p>如果你能帮我们搜集到5个[%dic:STR_DIC_I_QUEST_1358a]的话，我们一定会报答你的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意的话拒绝我也没关系，呐呐。</p>
+          <p> </p>
+          <p>不过请你介绍介绍其他的守护者。</p>
+          <p> </p>
+          <p>不管找谁也得把它弄到手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想象我就高兴！</p>
+          <p> </p>
+          <p>如果弄到泉水的精髓的话，监督官一定会称赞我的。</p>
+          <p> </p>
+          <p>做得好的话，还可能升迁，呐呐。</p>
+          <p> </p>
+          <p>快把泉水的精髓交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出泉水的精髓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是说好你会帮我把[%dic:STR_DIC_I_QUEST_1358a]带回来的吗！</p>
+          <p> </p>
+          <p>但是为什么空着手回来了啊，呐呐。</p>
+          <p> </p>
+          <p>快去打猎泉水精灵，把约好的东西带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是泉水的精髓啊，呐呐。</p>
+          <p> </p>
+          <p>一看就知道是很值钱的东西。</p>
+          <p> </p>
+          <p>如果我升职的话，绝对不会忘了你的。</p>
+          <p> </p>
+          <p>这是辛苦的报答。收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_ElementalWater2_28_An]，把获得的精髓交给[%dic:STR_DIC_N_Shugo_LF2_11]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助需要搜集泉水的精髓的布里隆。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布里隆说虽然想弄到泉水的精髓，但是由于精灵太凶恶而没有弄到，他因此正在苦恼。</p>
+          <p> </p>
+          <p>于是帮助他打猎了泉水精灵，把搜集到的泉水的精髓交给了他，他说非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

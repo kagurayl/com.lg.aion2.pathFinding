@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个前哨基地最大的麻烦就是雷帕尔革命团。</p>
+          <p></p>
+          <p>附近有他们的巢穴。</p>
+          <p></p>
+          <p>虽然现在还不知道他们到底在那儿做什么，但可以确定的是，这里是聚集了大量人员的大基地。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须定期进行侦察，了解他们在策划什么阴谋才行，但因为人手短缺，最近以来一直都没去侦察。</p>
+          <p></p>
+          <p>[%username]大人，您能帮我们去侦察一下吗？</p>
+          <p></p>
+          <p>只要进入雷帕尔革命团的巢穴，找到可以揭开他们阴谋的东西就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这儿往西走一点就能看到他们的巢穴，也就是革命党研究基地。</p>
+          <p></p>
+          <p>请您在看守那个地方的[%dic:STR_DIC_M_LehparAsLF3_40_An]和[%dic:STR_DIC_M_LehparBiochemist_40_An]的身上寻找，应该就能找到什么线索。</p>
+          <p></p>
+          <p>我们已经有一段时间没有进行侦察了，请您快点行动吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到[%username]大人会拒绝这个任务...</p>
+          <p></p>
+          <p>听说您经常帮守卫或生命的守护者执行任务，难道不是吗？</p>
+          <p></p>
+          <p>唉，我还是去找别人吧...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去雷帕尔革命团的巢穴侦察过了吗？</p>
+          <p></p>
+          <p>查清楚这些家伙们在策划什么阴谋了吗？</p>
+          <p></p>
+          <p>唉，一想到这些家伙，就感觉如鲠在喉，真让人烦心啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出实验计划书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么都没找到吗？这可怎么办呢？</p>
+          <p></p>
+          <p>请您实话实话吧。您真的去侦察了吗？</p>
+          <p></p>
+          <p>请您快去抓捕[%dic:STR_DIC_M_LehparAsLF3_40_An]和[%dic:STR_DIC_M_LehparBiochemist_40_An]，寻找他们策划阴谋的证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这些家伙把椰林族当作实验对象？</p>
+          <p></p>
+          <p>奇怪的树木渐渐多起来了，这一定是他们的阴谋吧。</p>
+          <p></p>
+          <p>但是，他们到底为什么要对椰林族...</p>
+          <p></p>
+          <p>越是侦察，事情反倒多起来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_LehparAsLF3_40_An]和[%dic:STR_DIC_M_LehparBiochemist_40_An]身上搜集证据，带给[%dic:STR_DIC_N_Hestonos]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去雷帕尔革命团研究基地找出他们策划阴谋的证据吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫斯托诺思说最近无法对雷帕尔革命团研究基地进行侦察，让我去对研究基地进行侦察，并找出可以证明他们在策划阴谋的东西。</p>
+          <p></p>
+          <p>把在革命团研究基地发现的实验计划书带回去交给了他，赫斯托诺思说需要调查的事情又增加了，他为此很担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

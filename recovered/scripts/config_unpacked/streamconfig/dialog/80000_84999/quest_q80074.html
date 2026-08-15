@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，现在您的身上正在散发出很强的幸运的气息。您知道吗？</p>
+          <p> </p>
+          <p>您是不是有可以交换什么东西的奖券啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说好像是的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！我真是个天才。</p>
+          <p> </p>
+          <p>好的，如果您听懂了我的话，请不要不好意思，快拿出来给我看看吧。</p>
+          <p> </p>
+          <p>我会确认[%dic:STR_DIC_I_WORLD_EVENT_SUMMERDAY_SWIMSUIT_EXCHANGE]是不是真的，然后帮您交换成泳装。</p>
+          <p> </p>
+          <p>最近出现了很多伪造的交换券。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">拿出交换券。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯！是真的啊！</p>
+          <p></p>
+          <p>您知道吗？您真的很幸运。</p>
+          <p></p>
+          <p>这个交换券发行了几张来着？总之没有发行几张。竟然被您得到了！</p>
+          <p></p>
+          <p>哎呀，不是感叹这些的时候。我来把泳装给您。</p>
+          <p></p>
+          <p>让我看看，泳装的大小合适吗……别，别动，请站在那里！好像还行？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出交换券。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么要走开啊？</p>
+          <p> </p>
+          <p>现在心情不好吗？还是手上的交换券是伪造的啊？</p>
+          <p> </p>
+          <p>如果您真的想获得泳装，可以在搜集到[%dic:STR_DIC_I_WORLD_EVENT_SUMMERDAY_SWIMSUIT_EXCHANGE]之后来找我！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道吗？您真的很幸运。</p>
+          <p></p>
+          <p>这个交换券发行了几张来着？总之没有发行几张。竟然被您得到了！</p>
+          <p></p>
+          <p>哎呀，不是感叹这些的时候。我来把泳装给您。</p>
+          <p></p>
+          <p>让我看看，泳装的大小合适吗……别，别动，请站在那里！好像还行？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出交换券。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦？您好像没有[%dic:STR_DIC_I_WORLD_EVENT_SUMMERDAY_SWIMSUIT_EXCHANGE]啊？</p>
+          <p></p>
+          <p>请您再到背包中确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">到背包中重新确认一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是位充满了幸运的守护者，希望您能积极乐观地生活！</p>
+          <p> </p>
+          <p>对了，穿泳装的时候，应该收腹挺胸。这您应该知道吧？</p>
+          <p> </p>
+          <p>希望您能打扮得漂亮一些。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_WORLD_EVENT_SUMMERDAY_SWIMSUIT_EXCHANGE]交给[%dic:STR_DIC_N_event_Pritta]，交换性感泳装。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说把泳装交换券交给弗利塔，可以获得让其他守护者惊叹的礼物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把泳装交换券交给了弗利塔，获得了让其他守护者惊叹的性感泳装。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务 [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

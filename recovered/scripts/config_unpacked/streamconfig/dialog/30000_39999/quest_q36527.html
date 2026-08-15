@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p></p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Condor_Dr_55_An]因犯以下罪状，现悬赏通缉。</p>
+          <p> </p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_Condor_Dr_55_An]</p>
+          <p></p>
+          <p> 2. 罪行：阻碍道路，伤害他人</p>
+          <p></p>
+          <p> 3. 详情：潜入在流经英吉斯温深渊的气流附近，阻碍道路，伤害路过的守护者。</p>
+          <p> </p>
+          <p>提供和[%dic:STR_DIC_M_LF4_DayQ_Condor_Dr_55_An]下落有关的决定性情报或直接将其杀死，并将[%dic:STR_DIC_I_QUEST_36527a]作为证据带回来的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您曾经沿着穿过英吉斯温深渊的气流飞行过吗？</p>
+          <p> </p>
+          <p>据来往于此地的守护者们说，感觉自己好像是风的一部分一样。</p>
+          <p> </p>
+          <p>如果没有人妨碍，就可以尽情地享受飞行的乐趣，真是遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出妨碍者的翅膀。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_Condor_Dr_55_An]受到悬赏通缉的事情，您不知道吗？</p>
+          <p> </p>
+          <p>在赏金被其他守护者领走之前，[%username]，希望您能抓紧时间。</p>
+          <p> </p>
+          <p>据说它经常在穿过英吉斯温深渊的气流附近。</p>
+          <p> </p>
+          <p>祝您好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我老远就认出您了。</p>
+          <p> </p>
+          <p>翅膀切口非常平整。</p>
+          <p> </p>
+          <p>[%username]……喜欢利用气流飞行的守护者们一定不会忘记您的名字的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_DayQ_Condor_Dr_55_An]，然后把证据交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭妨碍气流流动的妨碍者凯利安，并把翅膀切下来作为证据交给了英吉斯温赏金管理人。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

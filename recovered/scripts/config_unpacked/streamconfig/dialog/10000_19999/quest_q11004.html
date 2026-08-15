@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听斯特利本说了。[%username]大人送去的材料质量很好，因此很快就能得出结论。</p>
+          <p> </p>
+          <p>如果能得到好的结果，我一定会报答[%username]大人的。</p>
+          <p> </p>
+          <p>最近我都快要死了，多亏了[%username]大人，我才重新看到了希望。</p>
+          <p> </p>
+          <p>不管是什么问题，总是会慢慢过去的。现在只剩下两个问题了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一个是个人的问题，另一个是和炼金术有关的事情。要同时处理，时间有点紧张，让我很头疼。</p>
+          <p> </p>
+          <p>您看这么办怎么样？个人的问题没人能帮我解决。和炼金术有关的问题呢，希望[%username]大人能帮帮我。</p>
+          <p> </p>
+          <p>这样一来，两个问题就能同时解决了。[%username]大人，您觉得怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是太感谢了。我还以为您会拒绝我呢。</p>
+          <p> </p>
+          <p>需要您帮忙的，是搜集[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11004A]和[%dic:STR_DIC_I_al_part_stone3_04a]的事情。</p>
+          <p> </p>
+          <p>要想制作幻影珠，必须将精灵石粉放在阴凉的地方进行一段时间的熟化，放置的时间会决定最后成品的品质。时间太短或太长都不好，现在时间刚刚好。</p>
+          <p> </p>
+          <p>我把精灵石粉末放在厚实的绸布包里了，请您帮我去回收一下。不要把粉末拿出来，直接把绸布包拿回来就行。我把它们放在了枯萎森林的各处，应该不难找到。</p>
+          <p> </p>
+          <p>上级魔力结晶可以用上级精灵石粉末提取获得。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。您拒绝我，我也无话可说。</p>
+          <p> </p>
+          <p>您已经帮过我一次，我又来麻烦您，好像有点太过意不去了。</p>
+          <p> </p>
+          <p>这件事我会自己想办法的，请不要担心。</p>
+          <p> </p>
+          <p>谢谢您之前的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(正在写什么东西，看见我来了急忙把纸折起来)没想到您这么快就回来了。</p>
+          <p> </p>
+          <p>啊，这个嘛？我正在处理个人的事情。</p>
+          <p> </p>
+          <p>我在给军团长大人写报告，可真不容易啊，哈哈。</p>
+          <p> </p>
+          <p>拜托您的东西拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拿回来的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11004A]和[%dic:STR_DIC_I_al_part_stone3_04a]呢？您还没出发吗？</p>
+          <p> </p>
+          <p>呵呵，这可不像[%username]大人的做事风格。</p>
+          <p> </p>
+          <p>本来我也不想催您的，不过再晚的话，精灵石粉末的品质就会下降。</p>
+          <p> </p>
+          <p>既然您答应帮我，希望您抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开绸布包查看)时间刚刚好。这样的品质是最好的。</p>
+          <p> </p>
+          <p>上级魔力结晶也非常好。真是辛苦您了。</p>
+          <p> </p>
+          <p>等我自己的事情做完之后，事情就处理得差不多了。您帮了我这么多忙，真是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11004A]和[%dic:STR_DIC_I_al_part_stone3_04a]，然后交给[%dic:STR_DIC_N_Phailos]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的帕伊洛斯搜集装有熟化好的精灵石粉末的绸布包和上级魔力结晶。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕伊洛斯说从斯特利本那里收到了消息，谢谢我帮他解决了一个大问题。</p>
+          <p> </p>
+          <p>但是他说手上还有两个问题，希望我能再帮他一次。于是按照他的委托，帮他搜集到了熟化好的精灵石粉末和上级魔力结晶。</p>
+          <p> </p>
+          <p>收到材料之后，帕伊洛斯对我表示感谢，说多亏我帮他解决了头疼的问题。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！上次的事情实在太感谢了。</p>
+          <p> </p>
+          <p>因为那些熔岩地狱犬，搜查工作耽搁了很长时间。多亏了[%username]大人，才取得了一定的进展。</p>
+          <p> </p>
+          <p>我现在正在搜索新的线索。</p>
+          <p> </p>
+          <p>现在事情差不多快结束了……只要找到决定性的线索，这次的任务就完成了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想加快搜查的步伐。</p>
+          <p> </p>
+          <p>但是下一个线索也是地上残留的痕迹，所以我很担心。</p>
+          <p> </p>
+          <p>而且，嗯，这是秘密……(小声说)那种痕迹现在还在继续出现。</p>
+          <p> </p>
+          <p>如果像上次一样，[%dic:STR_DIC_M_HellhoundD_28_An]出来妨碍的话，就完蛋了。</p>
+          <p> </p>
+          <p>必须消灭[%dic:STR_DIC_M_HellhoundD_28_An]，把祸根除掉才行。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>附近有很多的[%dic:STR_DIC_M_HellhoundD_28_An]。</p>
+          <p> </p>
+          <p>它们在地上到处走动，把我要寻找的痕迹全都弄没了。它们长着两个脑袋，所以痕迹消失得速度也格外的快。</p>
+          <p> </p>
+          <p>只要您能帮我消灭掉15只，就帮了我的大忙了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意帮我吗？</p>
+          <p> </p>
+          <p>看来我跟您说了这么久，完全是在浪费时间了。</p>
+          <p> </p>
+          <p>我得尽快进行调查才行，请您回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您想知道我在调查什么事情？</p>
+          <p> </p>
+          <p>不好意思，我不能告诉您。我只能告诉[%username]大人，我不是在做什么坏事。</p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_M_HellhoundD_28_An]全部消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。这对我的调查工作很有帮助。</p>
+          <p> </p>
+          <p>到了寻找决定性线索的时候了……那个家伙怎么还不出现。啊，这些内容是秘密……我让您帮我做的事情，一定要帮我保密。</p>
+          <p> </p>
+          <p>这是给您的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_HellhoundD_28_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Utgar]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让乌特卡尔顺利进行调查，帮助他消灭熔岩地狱犬。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌特卡尔说调查即将结束，但担心熔岩地狱犬破坏线索，因此让我去把祸根除掉。</p>
+          <p> </p>
+          <p>于是消灭了地狱犬，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

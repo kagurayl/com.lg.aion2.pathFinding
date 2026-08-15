@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道为了雇佣兵花了我们村民多少钱吗？</p>
+          <p> </p>
+          <p>但是，现在我再也不想交这份儿钱了！</p>
+          <p> </p>
+          <p>和佣兵签约已经好一阵子了，可是有什么改变吗？阿盖尔的农场里的凯鲁宾还是那么多！</p>
+          <p> </p>
+          <p>你看看四周吧。凯鲁宾正在享用我的前院！</p>
+          <p> </p>
+          <p>对于农夫来说土地就是生命！农夫连命都没了还要佣兵干什么呢！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要是说得太过火了请不要介意。不是故意要破坏您的心情。</p>
+          <p> </p>
+          <p>我也是堂堂正正交了钱的，你要是能帮我该多好啊。</p>
+          <p> </p>
+          <p>为了防范凯鲁宾，我深夜还要站岗呢。但是，我连买蜡和油的钱都没有。</p>
+          <p> </p>
+          <p>农事也不能照常进行，收入拮据啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，我正好想到了萤火虫！</p>
+          <p> </p>
+          <p>这么明显的事情我怎么就没想到呢。只要有了它，哪怕没有别的东西，夜里也能变得亮堂堂的。</p>
+          <p> </p>
+          <p>你能帮我捕捉[%dic:STR_DIC_MLA08]，找到[%dic:STR_DIC_QILA12]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢啊。</p>
+          <p> </p>
+          <p>我收回我说过的不想付佣兵报酬的那些话。</p>
+          <p> </p>
+          <p>有6个左右的[%dic:STR_DIC_QILA12]的话就应该能很亮了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道你把我当笨蛋看不起我吗？</p>
+          <p> </p>
+          <p>听说你失去了记忆，看来是连人情味也丧失了。</p>
+          <p> </p>
+          <p>要是不愿意帮我的话就赶紧走！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>抓到[%dic:STR_DIC_MLA08]了吗？</p>
+          <p> </p>
+          <p>能找到[%dic:STR_DIC_QILA12]吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    	<Selects>
+      	<Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出萤火虫的发光体。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没去[%dic:STR_DIC_FLA04]吗？</p>
+          <p> </p>
+          <p>本想着能在天黑前拿到[%dic:STR_DIC_QILA12]呢...还要很久吗？</p>
+          <p> </p>
+          <p>我在这儿等你，你快去搜集6个回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是一闪一闪地发光呢！都晃眼了。</p>
+          <p> </p>
+          <p>只要有这个，夜里就能明亮点了。</p>
+          <p> </p>
+          <p>真是太谢谢了。这是我的一点心意就不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_MLA08]，搜集发光体，然后交给[%dic:STR_DIC_LA08]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">独自一人守护农场的普拉诺亚需要能照亮夜色的东西。需要捕捉灵敏的萤火虫之后把发光体交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>农夫普拉诺亚为了守护农场，一直以来夜以继日地辛苦劳作。</p>
+          <p> </p>
+          <p>但是，由于凯鲁宾的入侵，收入减少，买不起夜里要用的油和蜡烛。所以，捕捉萤火虫，把得到的发光体给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

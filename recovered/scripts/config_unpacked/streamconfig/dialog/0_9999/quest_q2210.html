@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞军团长肯定是不喜欢我。</p>
+          <p> </p>
+          <p>那些费力不讨好的事，全都安排给我了。</p>
+          <p> </p>
+          <p>这次又派我去找被派往要塞外边的执政官们，然后收集他们的装备情况和要求。</p>
+          <p> </p>
+          <p>派出去的执政官们散在各处，一一地联络，再写报告书，这要干到什么时候去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管怎么样，现在调查得也差不多了，就差在茅斯兰岔路的哨所还没有报告。</p>
+          <p> </p>
+          <p>[%username]，最近有没有事可以顺便去茅斯兰森林或者巴斯佩尔特村？</p>
+          <p> </p>
+          <p>请告诉那里的[%dic:STR_DIC_N_Lovinja]，让他尽快把目前的装备情况和必需物品整理出来告诉我。</p>
+        </body>
+        </html>             
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢了。去茅斯兰岔路的哨所就可以见到[%dic:STR_DIC_N_Lovinja]。</p>
+          <p> </p>
+          <p>最近在茅斯兰森林有很多剑齿豹在那里兴风作浪，一定要小心啊。</p>
+          <p> </p>
+          <p>因为很着急，所以请您抓紧出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是有别的急事啊。</p>
+          <p> </p>
+          <p>这可怎么办...报告书马上就要交了。 </p>
+          <p> </p>
+          <p>可我又不能直接去茅斯兰森林。</p>
+          <p> </p>
+          <p>看来得找别人去了。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来这里有什么事吗？</p>
+          <p> </p>
+          <p>如果是去树林那边的巴斯佩尔特村的话，就更要多加小心了。</p>
+          <p> </p>
+          <p>那里有很多剑齿豹和棕熊出没。</p>
+          <p> </p>
+          <p>这些家伙本来只在树林深处活动，不知怎么回事突然都到路边来了，经常攻击路过的行人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达里翁的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是为报告书而来的啊。</p>
+          <p> </p>
+          <p>本来马上就要发出去了，但是因为防护用品和武器的数量出了些差错，所以我正在调查。</p>
+          <p> </p>
+          <p>原来的数量和目前的情况仔细调查后，我会向给里翁报告的，您请放心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_N_Rion]的话转告[%dic:STR_DIC_N_Lovinja]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在茅斯兰岔路的哨所还没有发来报告书。把里翁的要求告诉罗比尼亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>茅斯兰森林的哨所还没有发来报告书，正在写装备补充报告书的里翁让我去催一下。</p>
+          <p> </p>
+          <p>去找罗比尼亚，转达了里翁的话，罗比尼亚说因为出现了错误正在调查，完成后会立即把报告书交上去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>别忘了，珍贵的东西，全都是不容易得到的东西。</p>
+          <p> </p>
+          <p>守护者们之所以生病，就是想不经过努力就获得力量。</p>
+          <p> </p>
+          <p>希望用我的果实，可以治好他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有一件重要的事，必须记住。</p>
+          <p> </p>
+          <p>果实离开我的身体之后，很快就会失去力量。</p>
+          <p> </p>
+          <p>必须尽快交给[%dic:STR_DIC_N_Schiemann]，否则就太迟了。</p>
+          <p> </p>
+          <p>明白了吗……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要让我的，痛苦白费。</p>
+          <p> </p>
+          <p>如果你能尽可能地去努力，就会得到奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我无法理解，你的决定。</p>
+          <p> </p>
+          <p>我的痛苦，到底是为了什么？</p>
+          <p> </p>
+          <p>强迫自己结果，是非常痛苦的。</p>
+          <p> </p>
+          <p>再想一想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你终于来啦！你去了之后就一直没有消息，我都快急死了。</p>
+          <p> </p>
+          <p>解毒果实拿来了吗？</p>
+          <p> </p>
+          <p>我担心时间拖得太久，果实的特殊力量就会消失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出解毒果实。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是解毒果实吗！</p>
+          <p> </p>
+          <p>味道还很新鲜，好像还不晚。</p>
+          <p> </p>
+          <p>我都忘了跟你说了……看来米埃奈尔一定叮嘱过你吧？</p>
+          <p> </p>
+          <p>事不宜迟，我得马上开始工作。</p>
+          <p> </p>
+          <p>(把很多材料混合在一起)成功了！这个奥德解毒剂，应该可以让患上奥德中毒症的人康复。</p>
+          <p> </p>
+          <p>请把这个解毒剂交给神官[%dic:STR_DIC_N_Unset]。他会把解毒剂分给需要帮助的人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。您就是那个有名的[%username]吗？</p>
+          <p> </p>
+          <p>我一直很想见您一面。听说您进入了卡斯帕内部，又安然无恙地回来了。</p>
+          <p> </p>
+          <p>有时间的话，请您跟我说说卡斯帕内部的经历。我想把它记下来，然后告诉我的同伴们。</p>
+          <p> </p>
+          <p>您找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出奥德解毒剂。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！真让人吃惊。休里曼终于开发出可以治疗奥德中毒症的药了吗？</p>
+          <p> </p>
+          <p>[%username]大人，这一切全都多亏了您。</p>
+          <p> </p>
+          <p>来，请您不要推辞，这是我送给您的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在果实失效之前，交给[%dic:STR_DIC_N_Schiemann]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把奥德解毒剂交给[%dic:STR_DIC_N_Unset]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米埃奈尔说果实经过一段时间之后效果就会消失。必须尽快给休里曼送过去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米埃奈尔说自己的果实经过一段时间之后效果就会消失，让我在失效之前给休里曼送过去。</p>
+          <p> </p>
+          <p>在失效之前交给了休里曼，他成功地制作出了奥德解毒剂。</p>
+          <p> </p>
+          <p>把奥德解毒剂交给了神官，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

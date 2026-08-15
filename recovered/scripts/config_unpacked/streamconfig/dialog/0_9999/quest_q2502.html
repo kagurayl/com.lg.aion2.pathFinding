@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然要塞崩塌的原因仍旧没有找到，但是要尽可能的防止要塞崩溃。</p>
+          <p></p>
+          <p>虽然现阶段在裂缝处涂抹粘合剂的修缮工作没有出现异常。</p>
+          <p></p>
+          <p>但是粘合剂出现短缺，这样连救一时之急的修补工作也无法顺利进行了。</p>
+          <p></p>
+          <p>寻找粘合剂以及修复裂痕的工作都需要守护者的帮助，但是现在人手极为不足。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的附近生活着一种蓝下巴巴拉努斯，如果可能的话去把它们抓住，取得他们带有粘性的唾液拿来可以吗？</p>
+          <p> </p>
+          <p>巴拉努斯的唾液非常粘稠，凝固起来很结实，是作粘合剂最合适的材料。</p>
+          <p> </p>
+          <p>只要把带有粘性的唾液仔细地涂在要塞的裂痕上，短时间内它就不会继续崩塌了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你帮这个忙。</p>
+          <p> </p>
+          <p>要塞前面的丘陵中有很多叫做[%dic:STR_DIC_M_VaranusRe2D_29_n]的怪物</p>
+          <p> </p>
+          <p>把他们除掉收集 [%dic:STR_DIC_I_QUEST_2502a]回来吧</p>
+          <p> </p>
+          <p>为了阻止要塞的崩塌，尽可能快掉收集到唾液赶回来，拜托了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者即使被巨大的石壁碎块砸中也不会受到很大的伤害，但是人类一不小心就可能因此而遭受灭顶之灾。</p>
+          <p> </p>
+          <p>情况进一步恶化的话，可能所有的居民都要转移到其他地方避难。大家都把这里作为生存基地。。。</p>
+          <p> </p>
+          <p>所以无论如何都应该要保护人类的安全，不是吗？改变主意的话就回来吧</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>柏斯特拉得要快些找到建筑再次崩塌的原因真让人担心啊。</p>
+          <p> </p>
+          <p>填补裂缝的临时填充物也是有限的吧。</p>
+          <p> </p>
+          <p>无论如何请把巴拉努斯的[%dic:STR_DIC_I_QUEST_2502a]采集回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把带有粘性的唾液带回来吧。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是没去除掉[%dic:STR_DIC_M_VaranusRe2D_29_n]吗？</p>
+          <p> </p>
+          <p>接下来想让要塞崩溃吗？</p>
+          <p> </p>
+          <p>趁还来得及快点去把巴拉努斯的[%dic:STR_DIC_I_QUEST_2502a]取回来吧，快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你把带有粘性的唾液取回来了。</p>
+          <p> </p>
+          <p>快点让执政官把裂开的部分填补上吧。</p>
+          <p> </p>
+          <p>为了要塞和居民的安全，辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉怪物[%dic:STR_DIC_M_VaranusRe2D_29_n]收集唾液，拿给 [%dic:STR_DIC_N_Hod]吧。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">阻止要塞的崩塌需要巴拉努斯粘稠的唾液。收集蓝下巴巴拉努斯的唾液带给胡德。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>胡德为了阻止要塞的崩塌，在裂缝的地方抹上了粘着剂，进行了暂时的修复。</p>
+          <p> </p>
+          <p>但是作为粘合剂原料的蓝下巴巴拉努斯的唾液不足了，所以接受要求去取一些唾液回来。</p>
+          <p> </p>
+          <p>所以除掉了要塞附近的巴拉努斯收集到了唾液，居民对此表示了极大的感谢</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

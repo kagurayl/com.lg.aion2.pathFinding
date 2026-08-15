@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是，[%username]大人！腐木原野上还有很多奥格林特吧？</p>
+          <p> </p>
+          <p>喜爱和平的椰林族人也许正在为自己的变化而感到悲哀。</p>
+          <p> </p>
+          <p>可怜的椰林族……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以的话，您能去腐木原野继续帮我消灭[%dic:STR_DIC_M_Agrint_34_An]吗？</p>
+          <p> </p>
+          <p>他们发生了变异，其他椰林族看到他们，一定会非常悲伤的。</p>
+          <p> </p>
+          <p>必须把他们全部送回奥德的流动，直到一个不剩为止。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>实在是太感谢了。</p>
+          <p> </p>
+          <p>您为附近的居民和椰林族做了一件好事。</p>
+          <p> </p>
+          <p>您去消灭12个[%dic:STR_DIC_M_Agrint_34_An]，我会给您相应的报答。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不愿意，我也没办法。</p>
+          <p> </p>
+          <p>看来我得和卡马娜商量一下，然后再去找别人帮忙了。</p>
+          <p> </p>
+          <p>不能对变成奥格林特的椰林置之不理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤普罗西内也有很多椰林，虽然没有帕塞尔塔村多。</p>
+          <p> </p>
+          <p>虽然他们看上去很笨拙，但却教会了我们很多与森林和自然有关的事情。</p>
+          <p> </p>
+          <p>没想到喜爱和平的椰林族竟然变成了[%dic:STR_DIC_M_Agrint_34_An]……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说已经消灭掉了奥格林特。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次都要麻烦您，真是太感谢了。</p>
+          <p> </p>
+          <p>变成奥格林特的椰林们的悲惨命运终于结束了。</p>
+          <p> </p>
+          <p>谢谢你。我的报答微不足道，请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭腐木原野的[%dic:STR_DIC_M_Agrint_34_An]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Mirborante]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米尔布兰特说想把腐木原野的奥格林特送回奥德的流动。去腐木原野看看，看到须根奥格林特的话，就把他们消灭掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尔布兰特说想把腐木原野的奥格林特送回奥德的流动。</p>
+          <p> </p>
+          <p>于是去腐木原野消灭了奥格林特，并回去进行了报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

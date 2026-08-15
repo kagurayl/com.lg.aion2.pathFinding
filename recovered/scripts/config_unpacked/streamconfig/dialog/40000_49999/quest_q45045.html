@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>致全体结界守护团团员。</p>
+          <p> </p>
+          <p>在各种奥德中，有一种只有在龙界才能找到的奥德。</p>
+          <p> </p>
+          <p>那就是[%dic:STR_DIC_G_QUEST_45045a]。为了守护结界，需要大量采集这种奥德。</p>
+          <p> </p>
+          <p>因此我们正通过出入龙界的团员搜集魔力奥德。</p>
+          <p> </p>
+          <p>为了结界守护团的活动，请搜集[%dic:STR_DIC_G_QUEST_45045a]，然后交给守护团成员[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格尔克马洛斯是守护团成员人数相对较少的地方。</p>
+          <p> </p>
+          <p>因此接受指令的人也少，执行指令的人更少。</p>
+          <p> </p>
+          <p>虽然只有为数不多的团员，但他们都很热心，搜集到的采集物要比其他地区更多。</p>
+          <p> </p>
+          <p>我得向他们表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔力奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人好像应该也收到信了吧？[%dic:STR_DIC_G_QUEST_45045a]还没搜集到吗？</p>
+          <p> </p>
+          <p>虽然其他人帮我们搜集了很多，但还是不够。</p>
+          <p> </p>
+          <p>搜集到了之后，别忘了拿来交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，魔力奥德终于全部搜集到啦。</p>
+          <p> </p>
+          <p>其他同志也提取到了很多魔力奥德，但还差一点，所以我一直在焦急地等待。</p>
+          <p> </p>
+          <p>只要每天为结界守护团而努力，就会得到报答。这个请您收下。</p>
+          <p> </p>
+          <p>希望您今后能继续参加守护团的活动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45045a]，然后交给[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，让我搜集魔力奥德，然后交给安皮比亚或穆鲁斯卡。</p>
+          <p> </p>
+          <p>按照信上的指示，将提取到的魔力奥德送了过去，获得了作为奖励的证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

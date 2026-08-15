@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是为了因派图西姆的重建而来到这里的。虽然来之前有一定的心理准备，但是这里的情况比我想象得还要糟。</p>
+          <p> </p>
+          <p>位于偏僻的地方，很难找到材料，而且又有幽灵和精灵捣乱，不是一般的累。</p>
+          <p> </p>
+          <p>最累人的是预算不足。虽然几次向伏魔殿要求增加支援，但是他们却只当没听见。 </p>
+          <p> </p>
+          <p>既然这样，我不能理解当初为什么要打算重建。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看见那根柱子了吗？就是那根两抱粗的大柱子。要想重新把它树起来需要很多的钢筋。</p>
+          <p> </p>
+          <p>但是现在没有钱，没办法购买钢筋。没办法，只能熔化倒塌的建筑物的碎片来做。</p>
+          <p> </p>
+          <p>就是这个如果能多弄一点的话也就好了，但是劳工们被幽灵和精灵吓怕了。</p>
+          <p> </p>
+          <p>您是守护者，应该不会害怕那些东西，您愿意帮我吗？请您在各处散落的[%dic:STR_DIC_E_24]上搜集[%dic:STR_DIC_I_quest_2257a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>虽然不知道什么时候可以完成，重建工程完工之后，我一定会把守护者大人的名字刻在纪念碑上。</p>
+          <p> </p>
+          <p>那就拜托您帮我搜集[%dic:STR_DIC_I_quest_2257a]吧。</p>
+          <p> </p>
+          <p>日程已经拖延了很久，必须得快一点了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者不帮助我们的话，还有谁能帮助我们啊？</p>
+          <p> </p>
+          <p>到了这个时候又不能就这样放弃工程了。</p>
+          <p> </p>
+          <p>请您一定要帮帮我，让工程可以继续下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正是时候。</p>
+          <p> </p>
+          <p>我正想熔化搜集的碎片，制造柱子呢。</p>
+          <p> </p>
+          <p>把您带回来的[%dic:STR_DIC_I_quest_2257a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出铁制碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为您会比劳工们好一点呢！</p>
+          <p> </p>
+          <p>帮忙又不是空口说说。</p>
+          <p> </p>
+          <p>既然您答应帮忙，就请您快一点儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您搜集到15个[%dic:STR_DIC_I_quest_2257a]了啊。</p>
+          <p> </p>
+          <p>守护者还是要比劳工们强啊。</p>
+          <p> </p>
+          <p>来，这是说好的报酬。我给您的要比给劳工的多，您知道就行了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_E_24]搜集的材料交给[%dic:STR_DIC_N_Banatisai]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴纳提西亚说以伏魔殿的支援很难获得重建因派图西姆的足够材料。帮助他搜集铁制碎片。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正在进行因派图西姆重建工程的巴纳提西亚抱怨说物资不足，人手也不足。</p>
+          <p> </p>
+          <p>他拜托我搜集重建柱子所需的铁制碎片，交给他之后，他表示感谢，并给了辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有个好消息，[%username]。</p>
+          <p> </p>
+          <p>你听说过凯西内尔主神殿吧？那是幻象和恐惧的掌管者凯西内尔主神所在的地方。</p>
+          <p> </p>
+          <p>我收到了消息，说那里正在找你。找你的人是幻影大神官[%dic:STR_DIC_N_Eremitia]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>详细的事情没有说，所以我也不太清楚，我想可能是为了对你之前的功勋表示感谢吧。</p>
+          <p> </p>
+          <p>总之不会是什么坏事，请不要担心。</p>
+          <p> </p>
+          <p>在[%dic:STR_DIC_FLA30]左侧，可以看到通往凯西内尔主神殿的瞬间移动石像，你可以通过那个过去。</p>
+          <p> </p>
+          <p>快去吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是拉比临托斯团长派来的人啊。</p>
+          <p> </p>
+          <p>我听说过很多有关你的事情。听说每次天界遇到危机的时候，你总会站在最前沿。</p>
+          <p> </p>
+          <p>真是个奇特的人。希望你永远能保持这样的一颗心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(露出满意的微笑)很好，很好。</p>
+          <p> </p>
+          <p>你一定想知道我为什么把你叫过来吧？</p>
+          <p> </p>
+          <p>不知你知不知道，凯西内尔主神现在不在这里，他正在参加英吉斯温的战争。</p>
+          <p> </p>
+          <p>还好目前的战局还可以，但那里奥德稀薄，因此我很担心。</p>
+          <p> </p>
+          <p>希望你能去那里贡献一份力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+       <html>
+       <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Lavirintos]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_W_LC2]和[%dic:STR_DIC_N_Eremitia]对话</font></p></step>
+    </steps> 
+          <p><font font_xml="quest_summary">指令：米拉詹特圣骑士团长拉比临托斯在找我。去见见他吧。</font></p>
+       </body>
+       </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了拉比临托斯的呼叫，去极乐世界见到他之后，他说凯西内尔主神殿正在找我，让我去看看。</p>
+          <p> </p>
+          <p>见到了凯西内尔主神殿的幻影大神官艾尔米提亚，询问召唤自己的原因，他说希望我去英吉斯温贡献自己的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务执行： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你到了这里来，能顺便帮我一个忙再走吗？</p>
+          <p> </p>
+          <p>救了我却对我视而不见，就有点太不公平了。</p>
+          <p> </p>
+          <p>所以请你帮帮我，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了救我之外，再帮我一个忙。</p>
+          <p> </p>
+          <p>我有事情经常要来雾鬃部落，但是每次都会因为白虎而被抓住。它们可以闻得到术古的味道。</p>
+          <p> </p>
+          <p>如果没有白虎的话，就可以悄悄地进来，做完事情之后再悄悄地出去，呐呐。</p>
+          <p> </p>
+          <p>你能帮我除掉白虎吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>请你帮我除掉[%dic:STR_DIC_M_PetA_DireBeastSD_38_An]、[%dic:STR_DIC_M_PetA_DireBeastSD_40_An]和[%dic:STR_DIC_M_PetB_DireBeastSD_39_An]。</p>
+          <p> </p>
+          <p>然后把[%dic:STR_DIC_I_QUEST_1473a]带回来作为证据。</p>
+          <p> </p>
+          <p>只要你把证据带回来，我就会给你酬谢，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这种事情对守护者来说不就是小菜一碟吗？</p>
+          <p> </p>
+          <p>你要能帮我就好了，太过分了，呐呐。</p>
+          <p> </p>
+          <p>知道我是乌云贸易团的，你还这么无情的拒绝我？</p>
+          <p> </p>
+          <p>等我们奇多伦盗墓团强大了之后，走着瞧吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为一名合格的术古，在任何情况下都要想到赚钱。</p>
+          <p> </p>
+          <p>虽然被雾鬃部落关了起来，也要顺便把碍事的白虎除掉，这就是合格的术古的姿态。</p>
+          <p> </p>
+          <p>你除掉白虎，把[%dic:STR_DIC_I_QUEST_1473a]带回来啦吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出白虎的盔甲。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在干什么啊！说好了就要遵守。</p>
+          <p> </p>
+          <p>这么不遵守约定的话，不光在奇多伦盗墓团，就是在乌云贸易团你也会出名的。</p>
+          <p> </p>
+          <p>那样的话，你就别想再和术古做生意了，呐呐。</p>
+          <p> </p>
+          <p>所以请你快去除掉白虎，把[%dic:STR_DIC_I_QUEST_1473a]带回来，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。下次来的时候应该就方便多了。</p>
+          <p> </p>
+          <p>现在可以正式开始盗墓...啊，不，没有。我什么都没说。</p>
+          <p> </p>
+          <p>来，这是辛苦的报答。你既然拿到了报酬，就快走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_PetA_DireBeastSD_38_An]、[%dic:STR_DIC_M_PetA_DireBeastSD_40_An]或者[%dic:STR_DIC_M_PetB_DireBeastSD_39_An]，把搜集到的证据交给[%dic:STR_DIC_DF2_15]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉妨碍做生意的白虎，搜集白虎的盔甲交给查奥明吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>查奥明说因为白虎，每次到雾鬃部落来就会被抓住，给他的生意造成了障碍。</p>
+          <p> </p>
+          <p>于是除掉了雾鬃部落的白虎，把白虎的盔甲作为证据交给了他，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在可以执行下一阶段的任务了。</p>
+          <p> </p>
+          <p>这次的任务是搜集苏尔卡纳。</p>
+          <p> </p>
+          <p>没有了苏尔卡纳，龙族启动机械的时候就会出现问题，因此可以有效地削弱他们的兵力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏尔卡纳存放在[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_02_1]。</p>
+          <p> </p>
+          <p>听说是装在箱子里，你只要原封不动地拿回来就行。</p>
+          <p> </p>
+          <p>你想马上出发吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏有你帮忙，作战应该很快就能结束。</p>
+          <p> </p>
+          <p>苏尔卡纳对于龙族来说是非常珍贵的东西，[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_02_1]的警戒一定很森严。</p>
+          <p> </p>
+          <p>请你一定要和同伴一起去，要千万小心。</p>
+          <p> </p>
+          <p>祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能问问是因为什么吗？</p>
+          <p> </p>
+          <p>为什么突然不想参加作战了呢……</p>
+          <p> </p>
+          <p>如果你不喜欢这个任务，我还可以告诉你其他任务。</p>
+          <p> </p>
+          <p>(翻阅文件)等等，还有搜集德拉兹玛的任务。</p>
+          <p> </p>
+          <p>怎么样？你用不着马上做决定。你可以好好想想，等想好了再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像花的时间比上次要多一些。</p>
+          <p> </p>
+          <p>看来苏尔卡纳的警戒要比龙族粮食的警戒更森严吧。</p>
+          <p> </p>
+          <p>对了，我能看看苏尔卡纳的状态吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出苏尔卡纳箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是因为苏尔卡纳的事情来找我的吗？</p>
+          <p> </p>
+          <p>你该不会把任务给忘了吧？</p>
+          <p> </p>
+          <p>这次让你去搜集的是存放在[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_02_1]的苏尔卡纳箱子。</p>
+          <p> </p>
+          <p>如果能把那里的东西全部搬回来，那当然更好，不过在现实当中很难办到，所以只要搜集3个就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细查看苏尔卡纳)我不是专家，所以不太清楚，不过这和我之前见过的苏尔卡纳不太一样。</p>
+          <p> </p>
+          <p>怎么说呢？感觉好像是浓缩的苏尔卡纳。</p>
+          <p> </p>
+          <p>这么多的话，足够支持好几架德雷得奇安的运转了。</p>
+          <p> </p>
+          <p>真是辛苦你了。这是我们军团为你准备的奖励。</p>
+          <p> </p>
+          <p>虽然不是什么好东西，但希望你能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_02_1]搜集德拉纳箱子，然后交给 [%dic:STR_DIC_N_loqui]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说命运之天平正在执行德拉纳孤立作战。参加作战，搜集苏尔卡纳箱子吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗库伊说下一个阶段的任务是搜集苏尔卡纳。</p>
+          <p> </p>
+          <p>按照他的指示，德拉纳活体研究所中搜集到了苏尔卡纳箱子。交给他之后，他非常满意，说这么多足够支持好几架德雷得奇安的运转了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

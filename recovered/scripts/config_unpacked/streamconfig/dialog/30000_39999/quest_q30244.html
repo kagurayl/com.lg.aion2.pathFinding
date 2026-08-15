@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"[%username],有件事我想拜托你。"</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]的事情让我感觉很不安。</p>
+          <p> </p>
+          <p>我想必须尽可能地减少他们的数量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据我的调查，[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]最有威胁的，是提亚马特麾下的龙族。</p>
+          <p> </p>
+          <p>请你到那里去，消灭帕休曼迪尔寺院入口、英雄墓室和永恒走廊的[%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard]。</p>
+          <p> </p>
+          <p>你之前去过一次，我想派你去，要比派其他守卫去好得多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了惩罚龙族，消灭提亚马特，我们需要更多像你这样勇敢的守护者。</p>
+          <p> </p>
+          <p>我想你一定可以做到。请你到帕休曼迪尔寺院去，把那里的[%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard]全部消灭掉。</p>
+          <p> </p>
+          <p>相信你一定不会让我失望的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次执行任务之后，还没能缓过劲来吧？看来是我太急了。</p>
+          <p> </p>
+          <p>这件事我会交给其他守卫去处理，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕休曼迪尔龙族守护者全部消灭掉了吗？</p>
+          <p> </p>
+          <p>你该不会是完成不了任务，才来找我的吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定可以完成，[%username]！</p>
+          <p> </p>
+          <p>眼中钉终于拔掉了。</p>
+          <p> </p>
+          <p>有机会的话，请你再来找我。我会永远欢迎你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭帕休曼迪尔龙族守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_Entrance] ([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_tomb] ([%5]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_priest] ([%8]/40)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Cainus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡伊努斯让我去帕休曼迪尔寺院消灭帕休曼迪尔龙族守护者，让他可以缓解自己的不安。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡伊努斯说正在为守卫帕休曼迪尔寺院的龙族势力担心，让我去持续地消灭他们。</p>
+          <p> </p>
+          <p>在守卫帕休曼迪尔寺院的龙族势力进一步集结之前，消灭了龙族守护者，削弱了它们的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

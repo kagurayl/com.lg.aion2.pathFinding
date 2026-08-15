@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人！您来的正好。</p>
+          <p> </p>
+          <p>我刚好需要人手帮忙，您就出现了。</p>
+          <p> </p>
+          <p>您在我需要帮助的时候出现，这都是阿斯佩尔主神的安排。所以，请您一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯里生活着多种生命体。</p>
+          <p> </p>
+          <p>听学者们说，大部分都是大崩溃之后和亚特雷亚大陆一起被吸进欧比斯里去的。</p>
+          <p> </p>
+          <p>它们现在的样子和亚特雷亚的生物有很大不同，那是为了适应环境生存下去而发生了变化。</p>
+          <p> </p>
+          <p>但是神奇的是，也有的生命体的样子完全没有变化，仍然保持着生活在亚特雷亚的时候的样子。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么生物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就是纽特。如果您在埃尔特内看到过的话就应该知道，它们是一种非常奇特的生命体。</p>
+          <p> </p>
+          <p>虽然外表看上去是不起眼的虫子，但是却具有高度秩序的社会体系。特别是受到敌人攻击的时候，会显示出非常高的智能。</p>
+          <p> </p>
+          <p>而且适应能力非常强，各地的个体数正在逐渐增加，领地也在逐渐扩大。</p>
+          <p> </p>
+          <p>我觉得必须在它们的数量继续增长，对我们形成妨碍之前采取措施。这件事情我想拜托您去做。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我特地请教了研究纽特的纽特专家，希望能有所帮助，但是却没有听到什么特别好的方法。</p>
+          <p> </p>
+          <p>就现在而言，把它们清除掉是减少它们数量的最好办法。</p>
+          <p> </p>
+          <p>"所以请您先去燃烧之血星云把[%dic:STR_DIC_M_Ab1_1241_NeutL1_40_An], [%dic:STR_DIC_M_Ab1_1241_NeutH1_40_An], [%dic:STR_DIC_M_Ab1_1221_NeutL1_39_An], [%dic:STR_DIC_M_Ab1_1221_NeutH1_39_An]清除掉。"</p>
+          <p> </p>
+          <p>因为它们的数量是最多的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有什么急事要做吗？</p>
+          <p> </p>
+          <p>真可惜。如果这次您能帮我，我打算给您金铸币作为报酬...</p>
+          <p> </p>
+          <p>我知道了。看您好像很忙的样子，您先走吧。我会去找其他人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就把纽特都清除掉了吗？</p>
+          <p> </p>
+          <p>必须把我跟您说的那些全部除掉，我才能给您金铸币哦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是名不虚传啊。</p>
+          <p> </p>
+          <p>我还担心您会不会因为太困难而中途放弃呢。</p>
+          <p> </p>
+          <p>来，请您收下。这是说好的金铸币。</p>
+          <p> </p>
+          <p>纽特不会一下子就消失，所以如果有时间的话，请您再来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡栖息在燃烧之血星云的[%dic:STR_DIC_A_Ab1_1716all]([%2]/23)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Fias]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说栖息在欧比斯的纽特在逐渐增多。帮助菲亚斯除掉栖息在燃烧之血星云的拉米兰纽特侦察兵和卫兵，克罗坦纽特搜查兵和卫兵。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>菲亚斯说纽特凭借快速适应能力，在欧比斯的数量逐渐增加，让我帮他把它们清除掉。</p>
+          <p> </p>
+          <p>于是按照他的拜托清除了栖息在燃烧之血星云的纽特，他跟我说辛苦了，并给了我金铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

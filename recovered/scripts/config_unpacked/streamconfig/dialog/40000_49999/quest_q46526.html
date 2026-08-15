@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>这次委托是伏魔殿的研究员们的私人委托。</p>
+          <p></p>
+          <p>需要帮他们搜集用于研究的[%dic:STR_DIC_I_quest_46526a]。</p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_C4]</p>
+          <p></p>
+          <p> 3. 详情：[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]是通过根进行交流的生命体。为了进行研究，根的标本不能有任何的损伤。</p>
+          <p> </p>
+          <p>搜集到[%dic:STR_DIC_I_quest_46526a]的人，将得到证物作为奖励。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说有种名叫费拉塔的植物会把根深深地扎入亚特雷亚的土地，通过根相互进行交流，呐呐。</p>
+          <p> </p>
+          <p>说不定在亚特雷亚的地下，到处都是费拉塔说话的声音！</p>
+          <p> </p>
+          <p>好像很多学者都想对这种独特的植物进行研究。但不知道为什么，伏魔殿拒绝提供支援。</p>
+          <p> </p>
+          <p>据说在费拉塔中，[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]的相互作用最强烈。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出洛特斯兰的根。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>学者们对学问的好奇心真是强，没有资金支持，就算自己掏腰包也要进行研究，呐呐。</p>
+          <p> </p>
+          <p>这对术古来说，是无法想象的事情。</p>
+          <p> </p>
+          <p>穷困的学者们好不容易凑了点钱来委托我们，这次的事情一定要帮他们解决。</p>
+          <p> </p>
+          <p>希望这次你能去搜集[%dic:STR_DIC_I_quest_46526a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是洛特斯兰的根？看上去好像和普通植物的根没什么两样。该不会是假的吧？</p>
+          <p> </p>
+          <p>费拉塔会用根互相交流，放到耳朵上，可以听到说话声吗，呐呐？</p>
+          <p> </p>
+          <p>学者们一定会很高兴的。拿着，这是给你的证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]的根，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>研究员们希望在支援中断后能继续研究，因此委托侦探事务所搜集植物标本。</p>
+          <p> </p>
+          <p>据说神奇的植物费拉塔会通过地底的根进行交流。于是去搜集到了它们的头目洛特斯兰的根，拿回去之后，获得了证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

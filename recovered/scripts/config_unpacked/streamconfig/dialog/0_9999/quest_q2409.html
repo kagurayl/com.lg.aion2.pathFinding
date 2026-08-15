@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(手掌一样大的传单。)</p>
+          <p> </p>
+          <p>(上面写着可以帮人变成守护者的内容。)</p>
+          <p> </p>
+          <p>(最好拿去给[%dic:STR_DIC_N_Aegir]军团长看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你的表情很严肃，是不是发生了什么严重的事情？</p>
+          <p> </p>
+          <p>快说说是什么事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_SELECT2_1">拿出传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这、这到底是什么意思啊？</p>
+          <p> </p>
+          <p>可以把任何人变成守护者...真让人不敢相信...</p>
+          <p> </p>
+          <p>这可能吗？不过，如果万一真的...</p>
+          <p> </p>
+          <p>这件事情好像不是我们能够处理的。你马上去伏魔殿，把它交给雷帕尔革命团研究专家[%dic:STR_DIC_N_Kushar]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你到这黑乎乎的图书馆里来找我有什么事吗？</p>
+          <p> </p>
+          <p>是关于雷帕尔革命团的事情吗？</p>
+          <p> </p>
+          <p>最好是给我带来了什么有价值的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？把人类变成守护者？</p>
+          <p> </p>
+          <p>啊哈...这个...嗯...</p>
+          <p> </p>
+          <p>我得先调查一下这是否属实。</p>
+          <p> </p>
+          <p>因为有可能是他们为了吸引团员加入而编造的谎言，也有可能是有一定依据的事实。</p>
+          <p> </p>
+          <p>我会通知沉默审判所和执政官司令部等相关机构。</p>
+          <p> </p>
+          <p>谢谢你给我送来这么重要的资料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把传单交给[%dic:STR_DIC_N_Aegir]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把传单交给伏魔殿的[%dic:STR_DIC_N_Kushar]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">偶然发现的传单的内容很可疑。最好把传单交给军团长看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在偶然获得的传单上，写着可以把人类变成守护者的可疑的内容。</p>
+          <p> </p>
+          <p>把它交给军团长和雷帕尔团研究专家看过之后，他们说会通知沉默审判所和执政官司令部，并着手进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

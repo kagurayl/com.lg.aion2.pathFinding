@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>由于同志们的积极活动，结界守护工作正在有条不紊地进行之中。</p>
+          <p> </p>
+          <p>你也应该知道，我们正准备在龙界设置魔族的结界。</p>
+          <p> </p>
+          <p>为了了解格尔克马洛斯的大气运动情况，我们正在通过格尔克马洛斯结界水晶塔对力量的流动进行观察，因此需要各位团员的协助。</p>
+          <p> </p>
+          <p>特此通知全体结界守护团会员，请到设置在格尔克马洛斯主要地区的[%dic:STR_DIC_OBJ_FOBJ_Q45021]上将水晶塔记录取回来，然后交给[%dic:STR_DIC_E_45021]。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团一直以为只要守住现在的魔界就可以了。</p>
+          <p> </p>
+          <p>在龙界设置结界，真的可能吗？</p>
+          <p> </p>
+          <p>现在连我们使用的奥德都无法确保。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水晶塔记录。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团对龙界的情况非常关心。</p>
+          <p> </p>
+          <p>[%username]大人应该也收到了搜集格尔克马洛斯水晶塔记录的任务吧？</p>
+          <p> </p>
+          <p>希望您没有忘记自己的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看水晶塔记录)看来还是不行啊。</p>
+          <p> </p>
+          <p>龙界奥德的运动还是没有大的变化。</p>
+          <p> </p>
+          <p>我会用[%username]大人带回来的记录，向结界守护团报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">对[%dic:STR_DIC_OBJ_FOBJ_Q45021]进行调查，然后将结果物交给[%dic:STR_DIC_E_45021]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，在格尔克马洛斯的主要道路上，设置了可以记录结界塔的状态的结界水晶塔。</p>
+          <p> </p>
+          <p>找到了水晶塔，将水晶塔记录交给了格尔克马洛斯支部团员。他说没有什么大的问题，但会向结界守护团报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

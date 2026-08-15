@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为图尔斯神前哨基地出现了异常情况，所以我正在观察敌人收集情报呢。</p>
+          <p> </p>
+          <p>既然能听懂克拉尔的语言，那得要施展绝技了。</p>
+          <p> </p>
+          <p>根据我收集到的情报，克拉尔好像正在准备攻打攻贝尔特伦要塞。</p>
+          <p> </p>
+          <p>到时候了。真不知道它们为什么每次攻打都得被打得狗血淋头，还要重复同样的事情。</p>
+          <p> </p>
+          <p>再笨的家伙，也该有开窍的时候吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在想，有没有什么办法能够从根本上杜绝克拉尔对贝尔特伦要塞的进攻呢。</p>
+          <p> </p>
+          <p>最好的解决办法还是定期削减匪徒的数目。</p>
+          <p> </p>
+          <p>因为匪徒们经常仗着自己人多势重，一味攻击。</p>
+          <p> </p>
+          <p>所以只要定期减少匪徒的数量，他们就不敢出击了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请到图尔斯神前哨基地处置[%dic:STR_DIC_MLA60]%和[%dic:STR_DIC_MLA27_1]%。</p>          
+          <p> </p>
+          <p>每次只需处置10头就可以打击匪徒们的战斗力，他们就不不会攻入贝尔特伦要塞。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"好的, [%username]!"</p>
+          <p> </p>
+          <p>那么请马上到图尔斯神前哨基地处置匪徒。</p>
+          <p> </p>
+          <p>啊，还有一件事。要是一个人去，图尔斯神前哨基地会很危险。虽说一个克拉尔不值一提，但那里毕竟是是克拉尔的巢穴啊。</p>
+          <p> </p>
+          <p>所以请您一定要跟其他伙伴一起去。</p>
+          <p> </p>
+          <p>要是几个人一起去，处理10头[%dic:STR_DIC_MLA60]%和 [%dic:STR_DIC_MLA27_1]%是小菜一碟的事情。</p>
+          <p> </p>
+          <p>完成任务后请务必向我报告。不然没法给您报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您不愿意也没有办法。毕竟是危险的事情。</p>
+          <p> </p>
+          <p>万一要是改变了主意，还是再来找我吧。因为下次还会有消灭克拉尔的任务。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">   
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您回来了。一定是跟伙伴一起去的吧？</p>
+          <p> </p>
+          <p>怎么样，削减敌人的数量了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说您能力超凡，真是名副其实。</p>
+          <p> </p>
+          <p>暂时不用担心克拉尔。即使过不了多久，他们还会闹着要攻击贝尔特伦要塞。</p>
+          <p> </p>
+          <p>到时候又得消灭一些敌人的数目了。反正不是一次能解决的事情。</p>
+          <p> </p>          
+<p>以后有时间的话请您一定要来找我。像您这样优秀的守护者，随时都欢迎。</p>   
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">处理[%dic:STR_DIC_FLA22]的</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA60]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA27_1]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_LA39]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">图尔斯神的克拉尔正在虎视眈眈酝酿着攻击贝尔特伦要塞的机会。处理图尔斯神前哨基地的克拉尔。 </font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马特伊娜想出了阻止克拉尔进攻要塞的好办法，那就是定期削减敌人的数量。</p>
+          <p> </p>
+          <p>集结伙伴处理了敌人后，领取了报酬。</p>  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

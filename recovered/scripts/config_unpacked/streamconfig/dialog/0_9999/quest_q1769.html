@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚好需要人帮忙，您来的正是时候。</p>
+          <p> </p>
+          <p>您应该知道阿斯特利亚要塞被敌人夺走的事情了吧？</p>
+          <p> </p>
+          <p>如果我们的兵力再多一点的话，就绝对不会被夺走。</p>
+          <p> </p>
+          <p>啊，想到这件事情，我就禁不住感叹。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是任何时候都不能沉浸在失落之中。因为战争还没有结束。</p>
+          <p> </p>
+          <p>所以我现在在制定重新夺回要塞的计划，问题是兵力。</p>
+          <p> </p>
+          <p>要展开正面战的话，人员非常不足，而且特米伦据点说暂时无法向我们派遣援军。</p>
+          <p> </p>
+          <p>不过我想到了一个办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>正面战不行的话，就展开奇袭战呗。</p>
+          <p> </p>
+          <p>我们要有计划地展开奇袭，打得[%dic:STR_DIC_M_Asteria_Guard]闻风丧胆。在援军到来之前，我们必须阻止他们建立有效的防御。</p>
+          <p> </p>
+          <p>那样的话，[%username]，我们就非常需要向您这样的守护者的帮助。</p>
+          <p> </p>
+          <p>为了天界，我想借用一下您的力量，可以吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地答应。</p>
+          <p> </p>
+          <p>[%username]，请您和志同道合的守护者们一起，去把[%dic:STR_DIC_M_Asteria_Guard]清除掉。</p>
+          <p> </p>
+          <p>让后面出发的守护者们可以顺利地接近要塞。</p>
+          <p> </p>
+          <p>准备好的之后马上出发。愿光之祝福伴随着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是有其他的任务吗？</p>
+          <p> </p>
+          <p>也是，向您这么优秀的人，怎么可能没有事情做呢。</p>
+          <p> </p>
+          <p>但是请您答应我。做完手上的事情之后，一定要先来这里帮帮我们。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去办的事情怎么样了？</p>
+          <p> </p>
+          <p>据先回来的人报告，有个守护者和他的同伴们狠狠地打击了敌军。</p>
+          <p> </p>
+          <p>那是您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您辛苦了。您的行动对要塞的战略起到了很大的帮助。</p>
+          <p> </p>
+          <p>真庆幸您是我们天族。</p>
+          <p> </p>
+          <p>请您收下。虽然不多，但却是给为我们天军作出努力的人的报答。</p>
+          <p> </p>
+          <p>以后希望您还能来帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Asteria_Guard]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Garpedo]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">和同伴们一起把守卫阿斯特利亚要塞要塞的驻军除掉，然后向加尔佩多报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加尔佩多说因为兵力不足，无法展开正面战，只能进行小规模的奇袭战，希望我能帮助他。</p>
+          <p> </p>
+          <p>按照他的指示除掉了占领阿斯特利亚要塞的驻军，然后回去找到了他。他说辛苦了，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

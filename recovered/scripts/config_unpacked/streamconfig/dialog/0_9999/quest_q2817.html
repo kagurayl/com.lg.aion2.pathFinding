@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>活人就算了，现在连幽灵也来捣乱。啊，这些天族的家伙们。</p>
+          <p> </p>
+          <p>天族在黄昏的战场立起了守护塔，于是我派了一批士兵们去破坏，可是他们反而吃了败仗逃回来。</p>
+          <p> </p>
+          <p>听士兵们讲，开始他们只看到守护塔前面两个学者模样的天族和一个术古商人。因为对方人数很少，所以他们大胆冲了上去，结果没想到天族的幽灵突然出现，向士兵们发起了攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黄昏的战场是在欧比斯诞生初期，双方展开大规模战争的地方，那时候死去的守护者的幽灵们在四处游荡。</p>
+          <p> </p>
+          <p>对于这些幽灵，之前和他们没什么摩擦，他们也没有妨碍过我们。因此一直也没留意。可是今天竟然遭到这样的袭击，就算他们是幽灵，也不能放任不管了。</p>
+          <p> </p>
+          <p>请[%username] 大人去好好教训那些天族的幽灵吧。让他们不敢再靠近黄昏的战场。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有一点您要注意，黄昏的战场不仅有天族，还有我们魔族的幽灵。</p>
+          <p> </p>
+          <p>所以，也不要见了幽灵就统统消灭。只要消灭天族幽灵 [%dic:STR_DIC_M_Ab1_1131_UndeadLightFi_25_An]和 [%dic:STR_DIC_M_Ab1_1131_UndeadLightWi_25_An]就可以了。</p>
+          <p> </p>
+          <p>那么请慢走。</p>
+          <p> </p>
+          <p>愿阿斯佩尔始终保佑着您！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不是有难处，我怎么会麻烦 [%username] 大人呢？</p>
+          <p> </p>
+          <p>眼下，我手里可以派出去的只有那些伤兵。</p>
+          <p> </p>
+          <p>您也不希望他们带伤上战场吧？所以，请您务必重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎，要塞里的麻烦事还真不少。</p>
+          <p> </p>
+          <p>像补给品的管理，人员补充等事情，远比想象的还要麻烦。</p>
+          <p> </p>
+          <p>咳，瞧我，和您这样忙碌的人竟然还说了这么多废话。</p>
+          <p> </p>
+          <p>对了，事情办得怎么样了？是不是已经消灭了黄昏的战场里飘荡的 [%dic:STR_DIC_M_Ab1_1131_UndeadLightFi_25_An]和 [%dic:STR_DIC_M_Ab1_1131_UndeadLightWi_25_An]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然名不虚传。</p>
+          <p> </p>
+          <p>现在，我可以放心调派人手来破坏黄昏的战场中的天族守护塔了。真是辛苦您了。</p>
+          <p> </p>
+          <p>不过想来想去，只除掉几个幽灵，还不能把危险完全解除。如果有可能，将黄昏的战场中所有的天族幽灵都消灭吧，您觉得怎么样？</p>
+          <p> </p>
+          <p>啊，当然，也不是要您现在就做。先去休息，等以后有时间了再找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭黄昏的战场里的天族幽灵。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1131_UndeadLightFi_25_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1131_UndeadLightWi_25_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Ab1_1131_Quest_Da]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">李尔赫尔称，天族的幽灵妨碍他们破坏天族的守护塔。帮助她消灭徘徊在黄昏的战场上的永恒的战斗兵和永恒的魔道兵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李尔赫尔称，派到黄昏的战场破坏天族守护塔的侦察兵被天族的幽灵攻击。她希望得到支援。</p>
+          <p> </p>
+          <p>接受她的请求，去黄昏的战场，消灭了游荡的永恒的战斗兵和魔道兵。对此，她表示，只消灭部分敌人可能还不够，需要在适当的时候将他们一网打尽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

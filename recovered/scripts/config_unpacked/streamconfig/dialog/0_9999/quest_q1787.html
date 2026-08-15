@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办啊！听说极乐世界的高官们要过来，现在乱得一塌糊涂！</p>
+          <p> </p>
+          <p>他们好像是要来特米伦要塞查看战况，没有安排日程就过来了。</p>
+          <p> </p>
+          <p>说得给我们守卫们打气来了。</p>
+          <p> </p>
+          <p>哎呀！总觉得又是来添事的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知不知道，他们让我们把周围的龙族全部清除掉，一个不留。</p>
+          <p> </p>
+          <p>那些纳加和纳加兰特，为什么偏偏今天这么多呢。是嗅到了什么味道吗？</p>
+          <p> </p>
+          <p>我也不想天天在这里抱怨，[%username]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，谢谢您。多亏了[%username]大人，我总算放下了心里的一块石头。</p>
+          <p> </p>
+          <p>请您去把[%dic:STR_DIC_M_Ab1_1231_NagaFighter_40_An]、[%dic:STR_DIC_M_Ab1_1231_NagaKnight_39_An]和[%dic:STR_DIC_M_Ab1_1231_NagaWizard_39_An]各除掉7头、5头和3头。</p>
+          <p> </p>
+          <p>其余的我会自己想办法的。</p>
+          <p> </p>
+          <p>哦，对了！不知道您知不知道，那个武器。没错，就是纳加和纳加兰特拿着的武器。</p>
+          <p> </p>
+          <p>虽然看上去很粗糙，但却不容小视，您一定要小心。事情处理完之后，请您回来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感觉有点难过。您答应了巴图斯的拜托，却无情地拒绝了我的请求。</p>
+          <p> </p>
+          <p>哎呀，那就没办法了。</p>
+          <p> </p>
+          <p>事情很紧急，我必须出去找找人了。不知道能不能找到人手...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把纳加和纳加兰特全部清除了吗？</p>
+          <p> </p>
+          <p>我看周围清静多了，您好像是遵守了约定...</p>
+          <p> </p>
+          <p>没发生什么其他事情吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您接受我的请求的时候，我就去打听过了。都说您是位实力出众的人。</p>
+          <p> </p>
+          <p>不过不好意思。极乐世界的那些人说不过来了。因为时间安排不开，所以就直接回去了。</p>
+          <p> </p>
+          <p>但是多亏您帮忙扫荡了纳加和纳加兰特，我的心里舒服多了。真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除德奇沙斯岛的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1231_NagaFighter_40_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1231_NagaKnight_39_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1231_NagaWizard_39_An]([%8]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Luptinai]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">鲁普提耐接到了清除周围的纳加和纳加兰特的命令，帮助她把纳加兰特暗黑战士、纳加兰特斗士和纳加暗黑法师清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鲁普提耐说为了应付极乐世界的视察，必须把周围的纳加和纳加兰特全部清除掉。</p>
+          <p> </p>
+          <p>帮助她清除了第38部队的纳加和纳加兰特，她表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

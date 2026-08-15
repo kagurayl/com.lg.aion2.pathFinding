@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您没有什么急事，我能再拜托您一件事情吗？</p>
+          <p> </p>
+          <p>最近蜥蜴经常接近帐篷，给我们造成了麻烦。</p>
+          <p> </p>
+          <p>它们看上去虽然很温顺，但决不是什么温顺的动物。</p>
+          <p> </p>
+          <p>平时动作虽然慢，但是攻击人的时候，会以飞快的速度跑过来，用全身的力量进行猛烈攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了让守卫卫兵们可以集中精力执行任务，请您帮着清除掉[%dic:STR_DIC_M_Basilisk_28_An]吧。</p>
+          <p> </p>
+          <p>虽然我也可以自己做，不过去打猎蜥蜴的话一会儿一天就过去了，别的事情就别想做了。</p>
+          <p> </p>
+          <p>它们的数量有很多，不管怎么抓都抓不完。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。我还担心您会说没有时间呢。</p>
+          <p> </p>
+          <p>那就请您去埃拉库斯沙漠清除掉7头[%dic:STR_DIC_M_Basilisk_28_An]吧。</p>
+          <p> </p>
+          <p>谢礼我决不会少了您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我太为难您了。因为自己很难全部清除掉，才来拜托[%username]大人的...</p>
+          <p> </p>
+          <p>又能怎么办呢，即使累点，也得抽出时间去做啊。</p>
+          <p> </p>
+          <p>这都是守卫的命，我的心态很好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，这么快就除掉了？</p>
+          <p> </p>
+          <p>真是让人吃惊。实力好像比身为守卫的我还要强很多。</p>
+          <p> </p>
+          <p>跟我说说是怎么把它们清除掉的吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次虽然也见识到了，不过[%username]大人的实力真是越来越让人吃惊了。</p>
+          <p> </p>
+          <p>我交给了您好几件很困难的事情，您二话不说就答应了。您不知道我在心里是多么感激您。</p>
+          <p> </p>
+          <p>这些虽然不多，却是我一点心意。请您收下，不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃拉库斯沙漠清除[%dic:STR_DIC_M_Basilisk_28_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Kalikrates]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了守卫们可以安心地执行任务，去把蜥蜴清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡里克拉泰斯说因为蜥蜴的缘故，守卫们无法安心地执行自己的任务。</p>
+          <p> </p>
+          <p>于是为了侦察兵们可以安心执行任务，去清除掉了蜥蜴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看到那些在拉米兰要塞周围游荡的家伙了吗？对，就是那些火焰族和贪欲兽。</p>
+          <p> </p>
+          <p>它们既不是精灵，也不是野兽，而且生活在熔岩里。刚开始见到它们的时候，我都有点不相信自己的眼睛。</p>
+          <p> </p>
+          <p>不久之前普利姆据点传来了指示。说是要制作不怕火的剑，让我们搜集材料送过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是[%dic:STR_DIC_I_QUEST_2791a]和[%dic:STR_DIC_I_QUEST_2791b]。</p>
+          <p> </p>
+          <p>火焰族的角用来制作把手，贪欲兽的心脏镶在剑尖上。</p> 
+          <p> </p>
+          <p>两种材料都是经过熔岩煅炼的东西，因此在火焰中毫发无损。要是其他时候都没关系，偏偏在这个时候让我搜集...</p>
+          <p> </p>
+          <p>因为天族和龙族随时可能攻打过来。</p>
+          <p> </p>
+          <p>所以我说，您能帮我去搜集材料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您真的，真的愿意帮我吗？您可千万不要反悔哦。</p>
+          <p> </p>
+          <p>那我就相信您。请您帮我搜集60个[%dic:STR_DIC_M_Ab1_1241_Tauric_38_An]的角和30个[%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，[%username]大人应该也很忙。</p>
+          <p> </p>
+          <p>这件事情我会想办法的，请您不用操心。</p>
+          <p> </p>
+          <p>不过仔细一看，您的盔甲怎么这么脏啊。不知从哪里散发出一种奇怪的味道，哼哼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(擦拭剑刃)稍等一下，稍等一下。</p>
+          <p> </p>
+          <p>啊，好了。您去办的事情怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2791a]和[%dic:STR_DIC_I_QUEST_2791b]都搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出角和心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么啊！</p>
+          <p> </p>
+          <p>数量明明不对嘛！</p>
+          <p> </p>
+          <p>数量不足的话，还不如没有呢。</p>
+          <p> </p>
+          <p>请您搜集到了足够的数量再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，总算可以松一口气了。</p>
+          <p> </p>
+          <p>我怕您担心，所以没跟您说。普利姆据点很快就会派人来取材料。</p>
+          <p> </p>
+          <p>您帮我按时搜集到了材料，真是太好了。</p>
+          <p> </p>
+          <p>再次对您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1241_Tauric_38_An]和[%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]，搜集角和心脏，然后交给[%dic:STR_DIC_N_Grid]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须给普利姆据点搜集制作剑的材料。帮助忙着战斗的格里德打猎拉米兰火焰族和贪欲兽，搜集角和心脏吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格里德说必须为普利姆据点搜集所需的剑的材料，但是他因为战斗没有时间去搜集。</p>
+          <p> </p>
+          <p>于是帮助忙碌的格里德搜集到了拉米兰火焰族的角和拉米兰贪欲兽的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

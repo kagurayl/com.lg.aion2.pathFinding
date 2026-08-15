@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫尔罗塔的事情你也听说了吧？</p>
+          <p> </p>
+          <p>对，就是站在那下面的女咒术师，咳。</p>
+          <p> </p>
+          <p>在龙族的那次突袭中，她失去了孩子。</p>
+          <p> </p>
+          <p>因为受不了巨大的打击，她才变得疯疯癫癫，真的很可怜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>她就那样整天不吃不喝地寻找孩子。我真担心她最终支持不住，咳。</p>
+          <p> </p>
+          <p>得让她吃点东西，可是她什么都不愿意吃...</p>
+          <p> </p>
+          <p>对了，我记得莫尔罗塔以前好像很喜欢吃吉特罗内。如果采来一些吉特罗内，或许她会吃，咳。</p>
+          <p> </p>
+          <p>魔族的朋友，拜托你采集几个[%dic:STR_DIC_DF3_berry_d_n_c_40b]来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_DF3_berry_d_n_c_40b]一般生长在霜眉要塞或霜精灵峡谷那样的高山地带，咳。</p>
+          <p> </p>
+          <p>在峭壁上会有很多，你要仔细找找。</p>
+          <p> </p>
+          <p>愿祖先的祝福与你同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竟然一口回绝，真是无情，咳。</p>
+          <p> </p>
+          <p>看着可怜的莫尔罗塔就这样死去，你也无动于衷吗？</p>
+          <p> </p>
+          <p>看来，你们和龙族也是一路货色！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么这么晚才来啊，咳。</p>
+          <p> </p>
+          <p>莫尔罗塔刚晕过去了。</p>
+          <p> </p>
+          <p>好不容易才把她弄醒。看她那样子，恐怕坚持不了多久了，咳。</p>
+          <p> </p>
+          <p>赶紧把带来的 [%dic:STR_DIC_DF3_berry_d_n_c_40b]交给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将吉特罗内交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到现在你都干什么了啊，咳。</p>
+          <p> </p>
+          <p>性命攸关，赶紧去吧。</p>
+          <p> </p>
+          <p>采到 [%dic:STR_DIC_DF3_berry_d_n_c_40b]后马上带过来，咳。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幸亏把东西带来了。</p>
+          <p> </p>
+          <p>直接给她吃，她可能会不愿意，得榨成汁给她喝，咳。</p>
+          <p> </p>
+          <p>刚才向你发脾气，不好意思， [%username]。</p>
+          <p> </p>
+          <p>都是因为太担心莫尔罗塔，怕她坚持不住，我一时激动，请你不要介意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_DF3_berry_d_n_c_40b]，并交给 [%dic:STR_DIC_N_DF3_NPC_Hasyaditan]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">哈夏迪坦非常担心因为受到失去孩子的打击而变得茶饭不思的莫尔罗塔。为了让莫尔罗塔能够振作起来，采集她喜欢吃的吉特罗内，并交给哈夏迪坦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈夏迪坦非常担心因为受到失去孩子的打击而变得茶饭不思的莫尔罗塔。</p>
+          <p> </p>
+          <p>并表示以前她最喜欢吃的吉特罗内或许能解决目前的问题。为了让莫尔罗塔能够振作起来，采集吉特罗内，并交给了哈夏迪坦。</p>
+          <p> </p>
+          <p>哈夏迪坦表示感谢，并打算将吉特罗内榨成汁给莫尔罗塔喝。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

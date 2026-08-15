@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你听说这次进贡的事情了吗？</p>
+          <p> </p>
+          <p>向内扎坎主神进贡的手工品目录已经到了，由于量太大，连学习手工品制作的修炼者每人都被分配了几样活。</p>
+          <p> </p>
+          <p>像耳环、项链之类需要精致的手艺的事情由我亲自负责，寻找各种所需材料的活都交给了修炼生。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想让你帮我去搜集比尔克木材。</p>
+          <p> </p>
+          <p>事情不是很难，你虽然刚开始学习手工活，但是应该没什么问题。虽然看似很简单的事情，但是对于匠人来说，准备基础材料也是件很重要的事情。</p>
+          <p> </p>
+          <p>制作3个比尔克木材交给我的话，我会以你的名义进贡的。</p>
+          <p> </p>
+          <p>怎么样，想试试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比尔克木材是用[%dic:STR_DIC_I_GB_SOURCE_TREE_10A]加工而成的。</p>
+          <p> </p>
+          <p>你去托尔巴斯森林采集比尔克树，然后用旁边的手工车床加工成木材就可以了。</p>
+          <p> </p>
+          <p>做好3个比尔克木材之后交给我。</p>
+          <p> </p>
+          <p>刚开始大家都手忙脚乱，失败是很正常的。所以材料要准备得充分一点，省得你又得去托尔巴斯森林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你很忙。</p>
+          <p> </p>
+          <p>虽然还有其他的修炼生，但是我没时间把他们叫过来再嘱咐他们了...</p>
+          <p> </p>
+          <p>你做完事情回来一定要来帮我。</p>
+          <p> </p>
+          <p>进贡是普通的事情吗？这是向内扎坎主神表是忠诚的重要的机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比尔克木材做好了吗？</p>
+          <p> </p>
+          <p>也不是什么难找的树，应该很容易准备。</p>
+          <p> </p>
+          <p>让我看看你做得怎么样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出比尔克木材。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>制作比尔克木材失败了？</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_I_GB_SOURCE_TREE_10A]加工成木材是手工基础中的基础，连这个你都不会吗？</p>
+          <p> </p>
+          <p>是不是你觉得太麻烦根本就没做？</p>
+          <p> </p>
+          <p>不要觉得进贡是很好笑的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好！木材的纹理既平滑又均匀。</p>
+          <p> </p>
+          <p>这个水平的话和最高级的相比也毫不逊色。</p>
+          <p> </p>
+          <p>看到你能用心准备基础材料，我很是欣慰。</p>
+          <p> </p>
+          <p>这个木材我会以你的名义进贡。</p>
+          <p> </p>
+          <p>辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在手工车床上加工好[%dic:STR_DIC_I_GB_SOURCE_TREE_10A]%后交给[%dic:STR_DIC_N_Utisda]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助忙碌的乌提斯达去托尔巴斯森林寻找比尔克树，并用手工车床加工成比尔克木材后交给他。 </font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>进贡给内扎坎主神的手工品目录下来了，但是量很大，乌提斯达一个人忙不过来。因此他决定把一些简单的基础活交给修炼生们去做。</p>
+          <p> </p>
+          <p>接受他的拜托，到托尔巴斯森林采集比尔克树，并加工成了木材。</p>
+          <p> </p>
+          <p>乌提斯达看到比尔克木材后赞不绝口。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

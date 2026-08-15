@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>图尔辛前哨基地的上级克拉尔攻击了阿拉克内姊妹会的马车，把运送的补给品全抢走了。</p>
+          <p> </p>
+          <p>8位圣女指示说“为了避免此类事情再次发生，必须惩罚图尔辛克拉尔，以儆效尤”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为[%dic:STR_DIC_E_Mentor]，和[%dic:STR_DIC_E_Li_15_25]一起消灭掉[%dic:STR_DIC_M_37101]。</p>
+          <p> </p>
+          <p>然后请向[%dic:STR_DIC_N_Seira]姐妹报告任务结果。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说了。克拉尔竟敢攻击我们姊妹会的马车，真是件可怕的事情。</p>
+          <p> </p>
+          <p>还好是补给品马车，如果里面装的是人或其他东西，那又该怎么办呢？</p>
+          <p> </p>
+          <p>为了防止此类事情再次发生，必须好好教训教训那些[%dic:STR_DIC_M_37101]才行。</p>
+          <p> </p>
+          <p>对了，您去办的事情怎么样了？一定顺利完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。</p>
+          <p> </p>
+          <p>您看上去很累，请您去休息一下吧。剩下的我会让贝尔特伦执行守护者去处理。</p>
+          <p> </p>
+          <p>和[%username]大人在一起，他们应该学到了很多东西。请不要担心。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>希望今后您能多多行善。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_15_25]的[%dic:STR_DIC_E_Mentor]，消灭[%dic:STR_DIC_M_37101]%([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Seira]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说图尔辛上级克拉尔袭击了运送补给品的马车。和贝尔特伦执行守护者一起消灭克拉尔，然后向塞拉姐妹报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是消灭袭击阿拉克内姊妹会的补给马车的图尔辛克拉尔。</p>
+          <p> </p>
+          <p>按照信中的指示，和贝尔特伦执行守护者一起消灭了上级克拉尔之后，向塞拉报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

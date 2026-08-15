@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据极乐世界的政策，这里也应该要有守卫。</p>
+          <p> </p>
+          <p>但是由于这里太危险，人员也不足，所以没有能派遣守卫过来。</p>
+          <p> </p>
+          <p>所以就由我在执行任务的空隙，给来往的守护者提供任务，并提供铸币作为报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里的治安问题，当然是需要镇压雷帕尔革命团了。</p>
+          <p> </p>
+          <p>革命团战斗兵和斥候兵在这里四处横行。</p>
+          <p> </p>
+          <p>怎么样，[%username]大人？</p>
+          <p> </p>
+          <p>以您的实力，清除[%dic:STR_DIC_M_LehparFiSoldier_38_An]和[%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An]应该不在话下。</p>
+          <p> </p>
+          <p>您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是明智的决定。除了[%username]大人之外，还有谁能对付他们啊？</p>
+          <p> </p>
+          <p>请您帮我除掉[%dic:STR_DIC_M_LehparFiSoldier_38_An]和[%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An]各10名。</p>
+          <p> </p>
+          <p>那就请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？为什么啊？</p>
+          <p> </p>
+          <p>为了埃尔特内的治安，这点事情您都不能帮忙吗？</p>
+          <p> </p>
+          <p>如果手头有急事的话，您可以以后过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着您呢。</p>
+          <p> </p>
+          <p>看您好像没受伤，事情顺利完成了吗？</p>
+          <p> </p>
+          <p>请快点告诉我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是那么了不起啊。</p>
+          <p> </p>
+          <p>谢谢您帮助我们除掉了让人头疼的革命团的那些家伙。</p>
+          <p> </p>
+          <p>但是只是一次无法把他们清除干净，请您有时间的话继续帮我。</p>
+          <p> </p>
+          <p>来，这是我的一点谢意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡革命团建设基地的雷帕尔革命团</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LehparFiSoldier_38_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Elram]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说革命团建设基地的革命团战斗兵和革命团斥候兵在四处横行。去把他们清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说革命团员威胁到了埃尔特内的治安。于是去革命团建设基地除掉了革命团战斗兵和斥候兵</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以你的实力，应该可以获得达人的称号。</p>
+          <p> </p>
+          <p>怎么样？有没有兴趣成为裁缝达人？</p>
+          <p> </p>
+          <p>你要是成了达人，说不定以后还能像我一样成为裁缝名人呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你有兴趣成为达人的话，就去做一件发光的毕达尔之长袍腰带。</p>
+          <p> </p>
+          <p>你要是能出色的完成这个任务，就证明你有绝对的实力成为裁缝达人。</p>
+          <p> </p>
+          <p>[%username]，我相信以你的能力，做出发光的毕达尔之长袍腰带没有问题。</p>
+          <p> </p>
+          <p>怎么样？要不要挑战一下试试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也应该知道，制作发光的毕达尔之长袍腰带并不简单。</p>
+          <p> </p>
+          <p>不过你也不用太担心。</p>
+          <p> </p>
+          <p>只要有耐心和毅力，坚持不懈，就一定能做出发光的毕达尔之长袍腰带。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不打算成为裁缝达人？</p>
+          <p> </p>
+          <p>我知道[%username]向来视称号和名誉为身外之物，但没想到你的气度竟不过如此。</p>
+          <p> </p>
+          <p>获取达人称号对你百利而无一害，何不试试看呢？</p>
+          <p> </p>
+          <p>再说，不成为裁缝达人就无法继承我裁缝名人的头衔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎回来，[%username]！ </p>
+          <p> </p>
+          <p>发光的毕达尔之长袍腰带做得怎么样了？</p>
+          <p> </p>
+          <p>不会已经做好了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出发光的毕达尔之长袍腰带。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我太心急了。我对你可是寄予了很大的期望啊。</p>
+          <p> </p>
+          <p>不过，你也不要觉得压力太大。</p>
+          <p> </p>
+          <p>保持一颗平常心，慢慢做，你肯定能够做出发光的毕达尔之长袍腰带。</p>
+          <p> </p>
+          <p>即便失败了，你就把它当成是学习好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的已经做好了？</p>
+          <p> </p>
+          <p>上次你制作的发光的加齐亚之长袍腰带虽然也很不错，但这次的手艺比上次的还要出色。</p>
+          <p> </p>
+          <p>光是在布料和针脚的处理就已经趋于完美了。</p>
+          <p> </p>
+          <p>你很有潜力，将来一定能成为我的接班人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">制作[%dic:STR_DIC_E_Q2983]，然后交给[%dic:STR_DIC_N_Zyakia]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">制作发光的毕达尔之长袍腰带，向加齐亚证明自己的裁缝实力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>加齐亚说要证明自己拥有成为裁缝达人的实力，就得做出发光的毕达尔之长袍腰带。</p>
+          <p> </p>
+          <p>按照他的要求，制作出了发光的毕达尔之长袍腰带。他对我的手艺赞不绝口，表示我将来肯定能继承他的衣钵，成为裁缝名人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

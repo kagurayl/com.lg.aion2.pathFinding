@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您收下。</p>
+          <p> </p>
+          <p>这是伏魔殿特殊司令部交给[%username]大人的紧急作战命令书。</p>
+          <p> </p>
+          <p>好像是非常紧急的事情，请马上确认一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center">  - 作战命令书 - </p>
+          <p></p>
+          <p>发件人：伏魔殿特殊司令部</p>
+          <p></p>
+          <p>收件人：[%username]</p>
+          <p></p>
+          <p>经特殊司令部确认，锡兰泰拉回廊有天族军队出现，给魔族造成了威胁。如果不尽快将其消灭，可能会对格尔克马洛斯要塞造成威胁。</p>
+          <p></p>
+          <p>特此下令，请立即执行。</p>
+          <p></p>
+          <p>  1. 尽快消灭[%dic:STR_DIC_E_UnderPass_Da]的天族，必须消灭5人以上。</p>
+          <p></p>
+          <p>  2. 消灭敌人的方式不限。</p>
+          <p></p>
+          <p>  3. 但对实力太差的敌人应该怀有慈悲之心。</p>
+          <p></p>
+          <p>  4. 确认敌人失去斗志后，向[%dic:STR_DIC_E_45503]报告。</p>
+          <p></p>
+          <p>特殊司令部成员们，愿神的祝福与你们同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上面非常高兴。</p>
+          <p> </p>
+          <p>有[%username]大人出手，我也觉得很放心。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_UnderPass_Da]的[%dic:STR_DIC_E_Daily_2]恶名昭著，必须是有实力的人才能对付他们。</p>
+          <p> </p>
+          <p>祝你好运。</p>
+          <p> </p>
+          <p>愿黑暗的平安与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不想执行这次任务吗？</p>
+          <p> </p>
+          <p>也是，下决心是非常困难的。</p>
+          <p> </p>
+          <p>锡兰泰拉回廊除了天族之外，还有很多其他敌人……</p>
+          <p> </p>
+          <p>明白了。我会向上面如实报告[%username]大人的决定。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来啦，[%username]大人。</p>
+          <p> </p>
+          <p>锡兰泰拉回廊好像发生了激战。</p>
+          <p> </p>
+          <p>我需要根据[%username]大人的贡献度为您准备奖励，请向我报告确切的结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认任务完成，[%username]大人。</p>
+          <p> </p>
+          <p>这是伏魔殿特殊司令部为您准备的奖励。</p>
+          <p> </p>
+          <p>为了伏魔殿的荣耀！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_UnderPass_Da]的[%dic:STR_DIC_E_Daily_2]([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_45503]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">紧急指令：消灭锡兰泰拉回廊的天族，然后向格尔克马洛斯支部官员报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿特殊司令部下达了消灭出现在锡兰泰拉回廊的天族的紧急命令。</p>
+          <p> </p>
+          <p>完成任务后，向格尔克马洛斯支部官员报告，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

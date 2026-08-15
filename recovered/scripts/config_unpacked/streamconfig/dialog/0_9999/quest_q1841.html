@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您是怎么认为的呢？</p>
+          <p> </p>
+          <p>是魔族容易对付？还是龙族容易对付呢？</p>
+          <p> </p>
+          <p>我的话，一定会选择魔族。</p>
+          <p> </p>
+          <p>大崩溃之后，魔族的外形发生了很大的变化，但还是和我们一样使用奥德的力量。</p>
+          <p> </p>
+          <p>但龙族的力量却和我们有着本质的区别，所以很难对付。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>古代城市娄地下要塞的龙族没有遭到讨伐，也是因为这个原因。</p>
+          <p> </p>
+          <p>因为我们还不清楚他们入侵的方法和通道。也不知道为什么要塞那里存放了那么多的宝物。</p>
+          <p> </p>
+          <p>不过因为那些宝物，有很多人志愿前往[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]。</p>
+          <p> </p>
+          <p>虽然任务有点困难，必须消灭地下要塞的所有龙族才行。</p>
+          <p> </p>
+          <p>[%username]大人，您愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那样的话，我就不用多说了。</p>
+          <p> </p>
+          <p>任务是潜入[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]，消灭那里的所有龙族。</p>
+          <p> </p>
+          <p>地下要塞的入口处设置了保护魔法阵，一旦有人入侵，宝物箱就会消失。</p>
+          <p> </p>
+          <p>不过只要你动作够快，就既能完成任务，又能获得宝物箱。</p>
+          <p></p>
+          <p>要想进入地下要塞，只要敲打那边的石像就行。那就祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您不愿意吗？</p>
+          <p> </p>
+          <p>以后如果想进入古代城市娄地下要塞，请随时跟我说。</p>
+          <p> </p>
+          <p>虽然任务很困难，但报酬也非常丰厚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我从朋友那里借了几本有关龙族的书，因为不能老是看见龙族就躲着走。</p>
+          <p> </p>
+          <p>其中《看我如何征服龙族》的书对我最有帮助。</p>
+          <p> </p>
+          <p>那是一个和我一样憎恨龙族的守护者写的，所以引起了我的很多共鸣。</p>
+          <p> </p>
+          <p>对了！地下要塞的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了！</p>
+          <p> </p>
+          <p>您没有受伤，真是太好了。</p>
+          <p> </p>
+          <p>来，这是给您的奖励。怎么样，很不错吧？</p>
+          <p> </p>
+          <p>以后有时间的话，请您继续来帮我。在阻止龙族的入侵之前，必须继续战斗才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up_Rhoo_SZ_All]的所有龙族([%2]/39)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1211_TreasureGate_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照拉比内的委托，消灭古代城市娄地下要塞的龙族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉比内让我去和古代城市娄要塞相连的古代城市娄地下要塞消灭所有的龙族。</p>
+          <p> </p>
+          <p>于是前往古代城市娄地下要塞消灭了敌人，他给了我谢礼，并让我有空的时候再去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

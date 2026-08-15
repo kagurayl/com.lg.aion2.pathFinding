@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您来啦。</p>
+          <p> </p>
+          <p>请看看这个。这是我用您之前搜集到的提波里德的角制作的装饰品。</p>
+          <p> </p>
+          <p>虽然说是装饰品，其实只是把它装在玻璃箱子里而已。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我只做了几个装饰品，想送给周围的人。</p>
+          <p> </p>
+          <p>最近村里的情况不太好，大家的生活都很困难。如果能把这个送给他们，也许会给大家带来一点勇气。不是吗？</p>
+          <p> </p>
+          <p>[%username]大人，有时间的话，您能帮我把礼物送过去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我把这个[%dic:STR_DIC_I_QUEST_3337A]%送给[%dic:STR_DIC_N_Magarites]。</p>
+          <p> </p>
+          <p>从小到大，他一直都很关照我。在我最困难的时候，他给了我很多帮助。</p>
+          <p> </p>
+          <p>虽然不是什么好东西，但我希望能报答他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>礼物还是应该自己送过去吧。</p>
+          <p> </p>
+          <p>也许是因为[%username]大人帮了我很多忙，所以我开始有点依赖您了。</p>
+          <p> </p>
+          <p>等到休息的时候，我会抽空把东西送过去的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然村子变成了这副模样，但依旧是我的故乡。</p>
+          <p> </p>
+          <p>像我这样的老头子还能到哪里去呢？就算只剩我一个，我也要留在村子里。</p>
+          <p> </p>
+          <p>你找我这个老头子有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出红色的角饰。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是奥蕾妮娅让你送过来的？</p>
+          <p> </p>
+          <p>真漂亮啊。放在家里一定很好看。</p>
+          <p> </p>
+          <p>我一直把她当作小孩子，不知不觉都已经长大了，还给我送礼物……真让人欣慰。</p>
+          <p> </p>
+          <p>你一定很忙吧？谢谢你专程给我送过来。</p>
+          <p> </p>
+          <p>这是我的一点心意，请收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把角饰交给[%dic:STR_DIC_N_Magarites]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把奥蕾妮娅的礼物交给马卡李泰斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥蕾妮娅说用搜集到的角制成了装饰，她想把装饰送给从小照顾自己的马卡李泰斯。</p>
+          <p> </p>
+          <p>帮助忙碌的奥蕾妮娅把礼物送给了马卡李泰斯，他带着慈爱的微笑，对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢这段时间你帮了我们银鬃部族很多忙，咳昂。</p>
+          <p> </p>
+          <p>不好意思，又有件事情要拜托你，请你再帮我一次。</p>
+          <p> </p>
+          <p>身为族长，我有为死去的部族成员复仇，照顾好活下来的部族成员的义务，咳昂。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你帮我把杀害我们银鬃部族成员的雾鬃部族的战斗兵清除掉。</p>
+          <p> </p>
+          <p>只要他们还活着，同族们的怨恨就无法解开，咳嗬。</p>
+          <p> </p>
+          <p>虽然不容易，但是请你一定要帮帮我，咳昂！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，答应这么艰难的任务。</p>
+          <p> </p>
+          <p>那就请你去把[%dic:STR_DIC_M_HeA_LycanHunterM_39_Ae]、[%dic:STR_DIC_M_FeA_LycanFighterM_38_Ae]、[%dic:STR_DIC_M_FeA_LycanFighterM_40_Ae]、[%dic:STR_DIC_M_ReA_LycanRangerM_38_Ae]和[%dic:STR_DIC_M_ReB_LycanRangerM_39_Ae]清除掉。</p>
+          <p> </p>
+          <p>他们就是杀害我们部族成员的主要兵力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事情好像太勉强你了吧，咳昂。</p>
+          <p> </p>
+          <p>谢谢你这段时间帮了我这么多忙。</p>
+          <p> </p>
+          <p>现在，我得召集剩下的银鬃部族成员，然后自己想办法复仇，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>寻找幸存的部族成员并不容易。</p>
+          <p> </p>
+          <p>但是如果不能找到他们的话，他们好不容易保住的生命，就又会被雾鬃的人夺走，咳昂。</p>
+          <p> </p>
+          <p>从这个角度看，清除雾鬃的精锐兵力是非常重要的，咳嗬。</p>
+          <p> </p>
+          <p>我拜托你的那些家伙全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，真的非常感谢！</p>
+          <p> </p>
+          <p>现在我才能在死去的部族成员面前抬起头来。</p>
+          <p> </p>
+          <p>但是还差得远呢，咳昂！</p>
+          <p> </p>
+          <p>直到我死去的那一天，我会不断地向雾鬃的那帮家伙复仇！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除雾鬃莱卡恩</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_HeA_LycanHunterM_39_Ae]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeA_LycanFighterM_38_Ae]([%5]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FeA_LycanFighterM_40_Ae]([%8]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ReA_LycanRangerM_38_Ae]([%11]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ReB_LycanRangerM_39_Ae]([%14]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF2_NPC_Chaikata]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除杀害银鬃部族的雾鬃莱卡恩的精锐兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>银鬃莱卡恩族长查卡塔说想要向杀害同族的雾鬃部族复仇。</p>
+          <p> </p>
+          <p>于是按照他的拜托，清除掉了雾鬃部族的精锐兵力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

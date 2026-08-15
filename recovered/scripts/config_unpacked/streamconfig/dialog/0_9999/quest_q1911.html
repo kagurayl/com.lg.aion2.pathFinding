@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天我的运气好像不错。我刚好需要你的帮助。</p>
+          <p> </p>
+          <p>我最近正在写一本书。内容是关于布洛尼的风俗信仰，是之前写的“克拉尔宗教意识研究”一书的续篇。</p>
+          <p> </p>
+          <p>[%username]大人您也知道，克拉尔和布洛尼是主从关系。所以布洛尼的服装和生活方式和克拉尔的基本相似。但是有趣的是宗教方面却有很大的不同。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么不同。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克拉尔崇拜龙帝及山杜卡族长之类的英雄，而布洛尼则推崇石头、树、大型野兽之类自然的东西。</p>
+          <p> </p>
+          <p>特别是贝尔特伦地区的杜卡基族，这种倾向尤为明显。他们把自己供奉的神刻在木头上，戴在身上当作护身符。</p>
+          <p> </p>          
+          <p>所以护身符的样子各不相同。好像是受到阶级、职业和性别的影响，准确地资料还有待查证。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>      
+          <p>您能帮我的话当然再好不过了。 </p>
+          <p> </p> 
+          <p>写书需要到处搜集资料，但是因为乌拉咕噜的缘故，我脱不开身。因为只有我才能管住这个家伙。 </p>
+          <p> </p>
+          <p>又不能带着他到处走。[%username]大人，您能帮我搜集[%dic:STR_DIC_I_junk_k_s_13d]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage> 
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。总算了却了一桩心事。</p>
+          <p> </p>
+          <p>杜卡基族在贝尔特伦地区的[%dic:STR_DIC_FLA12]和[%dic:STR_DIC_FLA13]有很多。</p>
+          <p> </p>
+          <p>去把[%dic:STR_DIC_I_junk_k_s_13d]带回来吧。虽然可能不太容易找，但是仔细找找的话，应该能找得到。</p>
+          <p> </p>
+          <p>不过要是那些家伙不乖乖地交出来的话怎么办呢？呵呵呵，相信[%username]大人能办妥的。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还觉得您会帮我的，原来是浪费感情。</p>
+          <p> </p>
+          <p>啊，该找谁呢...</p>
+          <p> </p>
+          <p>如果您以后改变了主意，随时来找我。</p>  
+          <p> </p>
+          <p>报酬方面绝对不会亏待您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来了。</p>
+          <p> </p>
+          <p>我拜托您去找的[%dic:STR_DIC_I_junk_k_s_13d]找到了吗？</p> 
+          <p> </p>
+          <p>因为没有资料写不了书，这段时间真是无聊透了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出护身符。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人失望。</p>
+          <p> </p>
+          <p>我还以为[%username]大人是位说话算话的人...</p>
+          <p> </p>
+          <p>我写书都是以真实的资料为基础的。凭自己的想象写书和骗人没什么两样。</p>
+          <p> </p>
+          <p>请您按照约定帮我搜集[%dic:STR_DIC_I_junk_k_s_13d]，让我把书写下去。拜托您了！</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇，护身符的样子果然各不相同。</p>
+          <p> </p>
+          <p>这是树的样子，这个长得像布拉克斯！</p>
+          <p> </p>
+          <p>啊，对不起。好不容易看到了资料，太兴奋了，忘了[%username]大人您还在这儿呢。</p>
+          <p> </p>
+          <p>谢谢。多亏了您我的书才能继续写下去。</p> 
+          <p> </p>
+          <p>这是我的一点心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从贝尔特伦地区的杜卡基族那里搜集[%dic:STR_DIC_I_junk_k_s_13d]，然后交给[%dic:STR_DIC_N_Mameia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">玛梅娅正在写一本关于布洛尼风俗信仰的书，需要搜集资料。搜集杜卡基采矿场和杜卡基部落上的杜卡基族携带的护身符，然后交给玛梅娅。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>玛梅娅在写一本关于布洛尼风俗信仰的书，正因为缺乏资料而苦恼。</p>
+          <p> </p>
+          <p>帮助需要照看乌拉咕噜而无法离开极乐世界的玛梅娅搜集杜卡基的护身符，她对此表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一提到欧比斯，大部分人都认为是荒凉危险的地方。但其实欧比斯也有自己独特的美。</p>
+          <p> </p>
+          <p>特别是阿斯特利亚湖，那是埃雷修兰塔最美的地方。</p>
+          <p> </p>
+          <p>那里有着长期未受侵扰的土地和生命…那里可以让你深切体会到，古代的亚特雷亚是个多么美丽的乐园。</p>
+          <p> </p>
+          <p>阿斯特利亚要塞下面的阿斯特利亚深渊也是个美丽的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是有龙族在那种地方出没，真是让人不爽。</p>
+          <p> </p>
+          <p>最初的时候，龙族并不排斥永恒之塔和亚特雷亚。</p>
+          <p> </p>
+          <p>但他们违法了自然的规律，就没有留在阿斯特利亚深渊的权利。</p>
+          <p> </p>
+          <p>[%username]，你能去[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]把敌人消灭掉吗？</p>
+          <p> </p>
+          <p>[%username]，希望你能发挥自己的全力，消灭敌人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请记住，必须清除所有的龙族。如果你没有自信，可以向同伴请求帮助。</p>
+          <p> </p>
+          <p>在执行任务的时候，还可以获得龙族的宝物。宝物施有魔法，经过一段时间之后就会消失，所以最好能动作快一点。</p>
+          <p> </p>
+          <p>好了，请你敲打墙上的美丽的风景画。</p>
+          <p> </p>
+          <p>魔法的力量会把你送往[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是有别的事情吗？</p>
+          <p> </p>
+          <p>没关系，反正还有很多其他的守护者。</p>
+          <p> </p>
+          <p>有时间的话，你可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于你这样的守护者而言，对付龙族应该只是小菜一碟。</p>
+          <p> </p>
+          <p>不过这个任务并不容易。</p>
+          <p> </p>
+          <p>阿斯特利亚深渊的龙族会誓死保护宝物的。</p>
+          <p> </p>
+          <p>怎么样，[%username]？任务完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也许是你打倒了龙族，空气仿佛变得干净了。</p>
+          <p> </p>
+          <p>多亏了你，阿斯特利亚湖好像变得更美丽了。</p>
+          <p> </p>
+          <p>不管怎样，真是辛苦你了。</p>
+          <p> </p>
+          <p>希望以后你能继续过来帮忙，需要消灭的敌人还有很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up_Asteria_SZ_All]的敌人([%2]/44)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1251_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照巴尔丹的委托，消灭阿斯特利亚深渊的龙族</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴尔丹让我去消灭阿斯特利亚要塞下面的阿斯特利亚深渊的龙族。</p>
+          <p> </p>
+          <p>于是前往阿斯特利亚深渊完成了任务。他说需要消灭的敌人还有很多，让我以后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

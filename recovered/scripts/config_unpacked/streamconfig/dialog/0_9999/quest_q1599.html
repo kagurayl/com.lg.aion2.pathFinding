@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去有点眼熟，您是[%username]大人吗？</p>
+          <p> </p>
+          <p>没错吧？那样的话，说话就更方便了。</p>
+          <p> </p>
+          <p>因为您已经知道我的事情了。</p>
+          <p> </p>
+          <p>上次的事情之后，我一直在梅德乌斯庄园里寻找死去的工人。然后像您上次做的那样，把迷路的灵魂送回奥德的流动。</p>
+          <p> </p>
+          <p>不过我看到了一样东西，那就是温佩斯特战士的盾牌。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是梅德乌斯领主大人生前很喜欢的青铜镜。听说是他母亲的遗物，他每天都会擦得很亮。</p>
+          <p> </p>
+          <p>战争之后，领主大人的城被烧成了灰烬，我还以为镜子也被烧化了。没想到却被温佩斯特战士用做了盾牌！这是绝不允许的。</p>
+          <p> </p>
+          <p>拜托您，守护者大人！请您帮我从[%dic:STR_DIC_M_Graveknight_42_An]那里把[%dic:STR_DIC_I_QUEST_1599a]抢回来。</p>
+          <p> </p>
+          <p>求您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Graveknight_42_An]就在东北方向的梅德乌斯庄园的东部。</p>
+          <p> </p>
+          <p>没错，就是原来拉顿的那边。但是周围有很多相似的家伙，所以我很难说明究竟是哪一个。</p>
+          <p> </p>
+          <p>请您过去，把附近的温佩斯特战士的盾牌全部查看一遍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道了。我死了之后对东西还这么执着，您一定觉得很寒心吧？</p>
+          <p> </p>
+          <p>但是我想安慰领主大人的在天之灵。庄园现在变得一团糟，希望领主大人看到[%dic:STR_DIC_I_QUEST_1599a]之后，能够获得一丝希望。</p>
+          <p> </p>
+          <p>真的不行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？</p>
+          <p> </p>
+          <p>找到拿着领主大人的[%dic:STR_DIC_I_QUEST_1599a]的[%dic:STR_DIC_M_Graveknight_42_An]了吗？</p>
+          <p> </p>
+          <p>请您把镜子交给我吧。我来看看到底对不对。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出梅德乌斯的青铜镜。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还担心呢，没想到真的弄错了。</p>
+          <p> </p>
+          <p>也是，[%username]大人没有见过[%dic:STR_DIC_I_QUEST_1599a]，弄错了也很正常。</p>
+          <p> </p>
+          <p>对不起，您能再去一趟吗？把其他温佩斯特战士的盾牌带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用袖子擦了擦镜子，仔细查看。)</p>
+          <p> </p>
+          <p>这个纹样！就是令主大人心爱的青铜镜。</p>
+          <p> </p>
+          <p>虽然生了很多锈，但是这么点锈没有问题。只要用心擦擦，就能和新的一样闪亮。</p>
+          <p> </p>
+          <p>不知道该怎么感谢[%username]大人才好。请您收下。</p>
+          <p> </p>
+          <p>这是原来城里的东西，虽然有点旧了，但却是件好东西，现在用完全没问题。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_Graveknight_42_An]身上寻找梅德乌斯的青铜镜，然后交给[%dic:STR_DIC_N_UndeadManager_Kacias]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说温佩斯特战士把梅德乌斯心爱的青铜镜用作了盾牌。把盾牌抢回来，然后交给管家卡西亚斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡西亚斯说他在寻找在庄园里徘徊的工人的时候，发现温佩斯特战士把梅德乌斯心爱的青铜镜用作了盾牌。</p>
+          <p> </p>
+          <p>不忍心拒绝卡西亚斯的恳求，帮他从温佩斯特战士手里抢回了梅德乌斯的青铜镜，他给了我一件原来城里的东西作为答谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

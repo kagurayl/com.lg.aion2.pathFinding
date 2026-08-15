@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于守护者大人的努力，塔梅斯才避免了崩溃的危险。</p>
+          <p> </p>
+          <p>[%username]大人帮了我这么多忙，真的非常感谢。</p>
+          <p> </p>
+          <p>最后我想请您帮我再去消灭一次塔梅斯的龙族看守。</p>
+          <p> </p>
+          <p>虽然地基安全了，但不稳定的熔岩层的问题还摆在那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔梅斯最深处的熔岩层由于积聚了过量的德拉纳的气息，因此变得非常不稳定。</p>
+          <p> </p>
+          <p>虽然地基稳定了，但如果龙族看守们继续让德拉纳的气息变形，不知道又会发生什么变化。</p>
+          <p> </p>
+          <p>请您最后再到矿石地层去一趟，把龙族幽灵全部消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于塔梅斯崩溃的危险，肯认真听从我的劝告的，只有[%username]大人一个人。</p>
+          <p> </p>
+          <p>希望您能完成矿石地层的最后一个任务，让事情有始有终。</p>
+          <p> </p>
+          <p>消灭掉龙族幽灵之后，您再来找我一下，我会给您一份礼物以表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔梅斯一旦崩溃，其余波将会造成很大的破坏。塔梅斯的地层对这里造成的影响要比想象的更大。</p>
+          <p> </p>
+          <p>必须立即采取措施，才能阻止发生更大的问题。请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最后一个任务完成了吗！？</p>
+          <p> </p>
+          <p>长久以来一直萦绕在我心中的塔梅斯崩溃的威胁消失了，我就没有理由待在这里了。</p>
+          <p> </p>
+          <p>但是这里是非常不稳定的地区，随时可能出现新的问题，我必须继续坚守岗位。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔梅斯的地形终于稳定了，我终于可以睡个好觉了。</p>
+          <p> </p>
+          <p>[%username]大人，谢谢您听从我的建议，解决了塔梅斯崩溃的威胁。我会永远记住您对我的帮助的。</p>
+          <p> </p>
+          <p>您帮我完成了最后一个任务，这是我的一点心意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭矿物堆积层的[%dic:STR_DIC_M_IDRaksha_2F_Spaller_56_Ae]%([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kenros]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">坎洛斯说从地形学上来说，塔梅斯的地基存在崩溃的危险，为了阻止地基崩溃，必须消灭矿物堆积层的龙族幽灵。应该帮帮他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>建筑学者坎洛斯说从地形学上来说，塔梅斯的地基存在崩溃的危险，为了阻止地基崩溃，必须消灭矿物堆积层的龙族幽灵。</p>
+          <p> </p>
+          <p>听从他的劝告，去塔梅斯消灭了龙族幽灵。回去向他报告之后，他说崩溃的威胁终于消失了，他可以放心了</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

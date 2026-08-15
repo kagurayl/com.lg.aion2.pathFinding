@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]！您来得正好。</p>
+          <p> </p>
+          <p>我正在想一定要去见您一次呢。</p>
+          <p> </p>
+          <p>我有件事想和您说，不知道您感不感兴趣。</p>
+          <p> </p>
+          <p>您能先听我说完吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想说的是，[%username]大人已经具备了前往欧比斯的实力。</p>
+          <p> </p>
+          <p>在觉醒之后，您已经积累了不少经验，我想现在应该是时候了。</p>
+          <p> </p>
+          <p>但是欧比斯是很危险的地方，不经过一些必要的准备我是不能让您去的。</p>
+          <p> </p>
+          <p>为了让您打好心理基础，我想让您接受考试。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。 </Act>
+    </Selects>
+	<Movie id="5"/>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前您的对手都是亚人种和雷帕尔革命团，但到了欧比斯您就必须和守护者或龙族战斗。</p>
+          <p> </p>
+          <p>因此和其他守护者进行战斗练习，应该会对您有所帮助。</p>
+          <p> </p>
+          <p>您去见见[%dic:STR_DIC_W_DC1_8]的[%dic:STR_DIC_N_Therf]大人，听听他的介绍，然后体验一下决斗吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话</Act>
+    </Selects>
+    <Voice file="Q2945-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你是来获取进入欧比斯的资格的吧。</p>
+          <p> </p>
+          <p>那你就必须去特里尼埃尔竞技场和其他的守护者竞技。</p>
+          <p> </p>
+          <p>在欧比斯，不管去哪儿，你都可能会遇到天族。有可能是和大部队一起和他们展开大规模的战斗，也可能在执行任务的时候遇到他们。</p>
+          <p> </p>
+          <p>这种时候，总不能不知所措，站在那里瑟瑟发抖吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以必须在这里进行练习，做好充分的心理准备。</p>
+          <p> </p>
+          <p>你来到这里，就是为了要进行决斗。请你挑选合适的守护者进行决斗吧。</p>
+          <p> </p>
+          <p>练习做得越多越好，所以最好可以和更多的人比试比试。</p>
+          <p> </p>
+          <p>觉得自己练习得很充分了之后，请你回去见见[%dic:STR_DIC_N_Balder]大神官。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2945-2.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去特里尼埃尔竞技场体验过决斗了吗？</p>
+          <p> </p>
+          <p>虽然这样还无法为去欧比斯做好万全的准备，不过对于打好心理基础应该还是有帮助的。</p>
+          <p> </p>
+          <p>您觉得自己已经为和天族、龙族在欧比斯战斗做好准备了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么有自信真是太好了。</p>
+          <p> </p>
+          <p>但是在去欧比斯之前，还有好多准备工作需要做。</p>
+          <p> </p>
+          <p>您必须再进行几项考试，所以请您作好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Balder]对话 </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Therf]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Balder]对话 </font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">巴黛尔传话说关于欧比斯有一些要和我说。到大圣所去见见他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴黛尔说到了为进入欧比斯做准备的时候，让我去特里尼埃尔竞技场体验一下决斗。</p>
+          <p> </p>
+          <p>在德尔普的指导下进行了决斗，巴黛尔说还有很多测试在等待着我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

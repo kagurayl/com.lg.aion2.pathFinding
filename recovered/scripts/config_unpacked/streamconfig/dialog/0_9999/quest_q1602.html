@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近不说别的，光是塔乌利就让人头疼得要死。</p>
+          <p></p>
+          <p>刚开始只是一两个人偷偷地在附近侦察，现在干脆拉来了大部队，打算进攻基地。</p>
+          <p></p>
+          <p>所以我想杀杀这帮家伙的气焰，顺便扫荡一下他们的部落。</p>
+          <p></p>
+          <p>不过话说回来，要我一个人对付这么多还是有点吃力。</p>
+          <p></p>
+          <p>所以我想向[%username]大人求助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能去捕捉在附近游荡的塔乌利掠夺者，然后把[%dic:STR_DIC_I_QUEST_1602a]带回来吗？</p>
+          <p></p>
+          <p>讨伐这些家伙的目的其实并不是为了它们的皮革，不过讨伐的时候顺便赚点钱也是好的。</p>
+          <p></p>
+          <p>这些家伙的皮革非常高级，据说就算在极乐世界也能卖个好价钱。</p>
+          <p></p>
+          <p>怎么样？您愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了！请您去塔乌利部落捕捉[%dic:STR_DIC_M_Tauric_39_An]，搜集15张[%dic:STR_DIC_I_QUEST_1602a]带回来吧。</p>
+          <p></p>
+          <p>如果刀痕太大的话，皮革的价格就会下降，请您务必小心。</p>
+          <p></p>
+          <p>我也要做好准备，一定要给这些家伙点颜色瞧瞧。</p>
+          <p></p>
+          <p>当然也要做好剥皮的准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在人手不足，我有点担心。</p>
+          <p></p>
+          <p>我是觉得对大家都有好处，所以才向您提议。</p>
+          <p></p>
+          <p>请您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我和极乐世界联系过了，试探了一下贝内斯的口风，他好像很感兴趣的样子。</p>
+          <p></p>
+          <p>他有点强迫症，总是想创造新的流行趋势，所以一定会非常感兴趣。</p>
+          <p></p>
+          <p>不过不管他的兴趣有多大，不把塔乌利的皮革拿回来就都是空话</p>
+          <p></p>
+          <p>好了，请你快把[%dic:STR_DIC_I_QUEST_1602a]给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出塔乌利皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我好不容易试探到了买家，您什么都没带回来的话，让我怎么办啊？</p>
+          <p></p>
+          <p>除掉塔乌利掠夺者当然是最重要的任务，但此事关系到我的信用。</p>
+          <p></p>
+          <p>在贝内斯改变主意之前，请快把15张塔乌利的皮革带回来。要快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么多的话，样品就够了。</p>
+          <p></p>
+          <p>要是用塔乌利的皮革制成的衣服很畅销的话，我就可以大赚一笔。</p>
+          <p></p>
+          <p>不过，我在附近的居民那儿听到了有意思的话。</p>
+          <p></p>
+          <p>我先把事情搞清楚，然后再来拜托您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_M_Tauric_39_An]身上得到的皮革交给[%dic:STR_DIC_N_Seniferes]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">塞尼佩雷斯想借清除塔乌利之机赚上一笔，收集塔乌利的皮革交给塞尼佩雷斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞尼佩雷斯想借清除塔乌利之机赚上一笔，收集塔乌利的皮革交给塞尼佩雷斯之后，他告诉我极乐世界的服装设计师对此很感兴趣。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

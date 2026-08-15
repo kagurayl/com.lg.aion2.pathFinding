@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拍了一下脖子)啊，好疼！该死的黄蜂！</p>
+          <p> </p>
+          <p>唉，赫尔卡大人说的没错，蜂巢又出现了。啊，就是上次下达清除蜂巢的命令的人。</p>
+          <p> </p>
+          <p>他说只要有一只蜂王，很快就会聚集起一大群黄蜂。如果不把蜂王消灭掉，蜂巢很快就会出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>学者们真是了不起。</p>
+          <p> </p>
+          <p>他们不需亲眼看见，就能预测将来会发生什么事情。</p>
+          <p> </p>
+          <p>这可怎么办呢？现在最好的方法就是把看见的[%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017]统统清除掉，但是建造防御壁的工作还没有完成……</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去清除掉蜂巢吗？您已经有了经验，处理起来应该会更快一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>(把停在盔甲上的黄蜂掸掉)它们飞到了这里，看来粗暴蜂群一定又在安塔格尔激战地建造了[%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017]。</p>
+          <p> </p>
+          <p>请您到激战地周围去看一看，清除掉那里的蜂巢。</p>
+          <p> </p>
+          <p>您已经有了经验，应该比我更清楚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我并不是想把自己的工作推给别人。</p>
+          <p> </p>
+          <p>不好意思。看来这次的事情只能由我自己来解决了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把蜂巢清除掉了吗？</p>
+          <p> </p>
+          <p>它们的巢穴到底在哪里呢？</p>
+          <p> </p>
+          <p>数量又和上次一样多了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，可怕的东西。</p>
+          <p> </p>
+          <p>才清理了没多长时间，又变得和以前一样多了。它们是经过改良的生命体，繁殖力真是惊人。</p>
+          <p> </p>
+          <p>不管怎样，我还是要谢谢您。多亏了您，这件事终于完成了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找并破坏粗暴蜂群栖息的[%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017]([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vyuin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">安塔格尔激战地的粗暴蜂群又出现了。放着不管的话，可能会有危险，找到并破坏掉蜂群聚居的格尔克马洛斯蜂巢吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维因说粗暴蜂群很快就增多了，必须按照专家赫尔卡的建议，继续清除格尔克马洛斯蜂巢。</p>
+          <p> </p>
+          <p>他说自己忙着建造要塞防御壁，让我帮他去破坏蜂巢。于是去清除了蜂巢，回去之后，维因对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

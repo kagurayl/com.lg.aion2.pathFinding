@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，[%username]。一会不见，你的实力好像又长进了不少。</p>
+          <p> </p>
+          <p>不久前看到你做料理的样子，我都不知不觉流下了口水。现在你的实力几乎可以和我媲美了。</p>
+          <p> </p>
+          <p>你想参加料理名人考试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问考试内容。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要制作供奉给主神殿的料理就可以了。</p>
+          <p> </p>
+          <p>当然，这说难就难，说容易就容易。[%username]，我想以你的实力，应该可以通过。</p>
+          <p> </p>
+          <p>怎么样？你想参加料理名人考试吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚好我正在准备献给凯西内尔主神殿的艾尔米提亚大神官的料理，[%username]，我想可以由你来制作。</p>
+          <p> </p>
+          <p>图案我已经做好了，你去让[%dic:STR_DIC_N_Luelas]给你看一看。</p>
+          <p> </p>
+          <p>你说是为了名人考试，他就会给你看了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是怕通不过考试吗？</p>
+          <p> </p>
+          <p>我观察了你很久，你已经拥有了成为名人的实力。</p>
+          <p> </p>
+          <p>这次上供的料理，你应该闭着眼睛都能做出来。</p>
+          <p> </p>
+          <p>需要考虑的时间？那你就好好想想，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>外面摆着的东西里，没有您想要的东西吗？</p>
+          <p> </p>
+          <p>跟我说说你需要什么样的东西吧。</p>
+          <p> </p>
+          <p>太贵或者稀有的材料，我们不会放在外面，只卖给特别订购的人。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">说需要名人考试所需的图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我听赫斯蒂亚名人说了。</p>
+          <p> </p>
+          <p>这次是[%dic:STR_DIC_E_QUEST_19038]，也就是说[%username]大人要想成为料理名人，必须制作4种料理。</p>
+          <p> </p>
+          <p>那就是美味的艾尔米提亚的蔬菜料理、美味的艾尔米提亚的水果料理、美味的艾尔米提亚的鱼料理和美味的艾尔米提亚的蛤蛎料理。</p>
+          <p> </p>
+          <p>各种料理的制作方法请参考赫斯蒂亚名人制作的这个图案。</p>
+          <p> </p>
+          <p>"每个图案售价6,500基纳，需要注意的是各种图案只能使用1次。为了防止人们滥用图案，赫斯蒂亚大人在上面施加了消失魔法。"</p>
+          <p> </p>
+          <p>请您先收下美味的艾尔米提亚的蔬菜料理图案把。希望您一次就能取得成功。</p>
+          <p> </p>
+          <p>如果失败的话，请再来找我。在我这里可以重新购买新的料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO10">获取第一种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把第一种料理做好了？</p>
+          <p> </p>
+          <p>请把做好的料理给我看看。</p>
+          <p> </p>
+          <p>我得确认一下是否有资格上供给凯西内尔主神殿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO11">拿出第一种料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，看上去味道很不错的样子。</p>
+          <p> </p>
+          <p>(尝了一下蔬菜料理)啧啧，不仅色泽诱人，味道也很好。</p>
+          <p> </p>
+          <p>第一种料理合格，你再去[%dic:STR_DIC_N_Luelas]那里领取第二种料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人。您之前不是说要挑战料理名人，从我这里购买了图案吗？</p>
+          <p> </p>
+          <p>美味的艾尔米提亚的蔬菜料理制作成功了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说需要名人考试的第二种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(从陈列柜中拿出图案)给您。请收下。</p>
+          <p> </p>
+          <p>这是美味的艾尔米提亚的水果料理图案。</p>
+          <p> </p>
+          <p>"这个图案和之前一样，只能使用1次。价格也是6,500基纳。"</p>
+          <p> </p>
+          <p>来，请您把图案收好。希望您一次就能取得成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO20">获取第二种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次是水果料理吗？</p>
+          <p> </p>
+          <p>把你做好的料理给我看看吧。</p>
+          <p> </p>
+          <p>我得确认一下是否有资格上供给凯西内尔主神殿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO21">拿出第二种料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，看上去好像很甜美的样子。</p>
+          <p> </p>
+          <p>(尝了一下水果料理)不仅色泽诱人，味道也很好。</p>
+          <p> </p>
+          <p>第二种料理合格，你再去[%dic:STR_DIC_N_Luelas]那里领取第三种料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，最近经常可以见到您嘛。</p>
+          <p> </p>
+          <p>上次的美味的艾尔米提亚的水果料理制作成功了吗？</p>
+          <p> </p>
+          <p>看您又过来找我，结果一定不错吧</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">说需要名人考试的第三种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(从陈列柜中拿出图案)给您。请收下。这是美味的艾尔米提亚的鱼料理图案。</p>
+          <p> </p>
+          <p>"您应该知道了吧？它只能使用1次，价格是6,500基纳。"</p>
+          <p> </p>
+          <p>如果失败的话，请再来找我。在我这里可以重新购买新的料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO30">获取第三种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次是第三种料理了吧？</p>
+          <p> </p>
+          <p>鱼料理的制作非常麻烦。你先把做好的料理给我看看吧。</p>
+          <p> </p>
+          <p>我得确认一下是否有资格上供给凯西内尔主神殿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO31">拿出第三种料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕嘟，看起来很好吃的样子。</p>
+          <p> </p>
+          <p>(尝了一下鱼料理)完全没有腥味，味道也很淡，艾尔米提亚大神官一定会喜欢的。</p>
+          <p> </p>
+          <p>第三种料理合格。只剩下最后一种料理了。你再去[%dic:STR_DIC_N_Luelas]那里领取第四种料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看您很高兴的样子，第三种料理一定制作成功了吧？</p>
+          <p> </p>
+          <p>赫斯蒂亚名人一定非常高兴。</p>
+          <p> </p>
+          <p>您想接着挑战第四种料理吗？</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">说需要名人考试的第四种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(从陈列柜中拿出图案)给您。请收下。这是美味的艾尔米提亚的蛤蛎料理图案。</p>
+          <p> </p>
+          <p>只要做好了这个，凯西内尔主神殿的[%dic:STR_DIC_E_QUEST_19038]就全部完成了。</p>
+          <p> </p>
+          <p>来，请您收下图案。希望您一次就能取得成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO40">获取第四种图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把料理做好了？</p>
+          <p> </p>
+          <p>如果我记得没错的话，这次应该是美味的艾尔米提亚的蛤蛎料理吧。把你做好的料理给我看看吧。</p>
+          <p> </p>
+          <p>我得确认一下是否有资格上供给凯西内尔主神殿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO41">拿出第四种料理。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>献给艾尔米提亚大神官的[%dic:STR_DIC_E_QUEST_19038]在哪里呢？</p>
+          <p> </p>
+          <p>啧啧，[%username]，看来你是没有理解我的话。</p>
+          <p> </p>
+          <p>不是说学会了图案，就可以通过名人考试了。</p>
+          <p> </p>
+          <p>必须用图案中的方法，制作美味的料理才行。</p>
+          <p> </p>
+          <p>要想做好4种料理，已经没有时间可以浪费了。请你快去制作献给艾尔米提亚大神官的美味的料理吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select7">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>献给艾尔米提亚大神官的[%dic:STR_DIC_E_QUEST_19038]在哪里呢？</p>
+          <p> </p>
+          <p>(打开箱子查看)嗯，怎么图案还在这里？</p>
+          <p> </p>
+          <p>啧啧，看来你是太紧张了。竟然会犯这种错误。</p>
+          <p> </p>
+          <p>不要太着急，先学会图案，然后去制作上供给艾尔米提亚大神官的料理吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select8">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次上供给艾尔米提亚大神官的料理是美味的艾尔米提亚的蔬菜料理、美味的艾尔米提亚的水果料理、美味的艾尔米提亚的鱼料理和美味的艾尔米提亚的蛤蛎料理。</p>
+          <p> </p>
+          <p>少了一样都不行。</p>
+          <p> </p>
+          <p>如果有哪种料理制作失败了，请你去[%dic:STR_DIC_N_Luelas]那里重新要一份料理图案。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select9">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，我说……您的基纳好像不够啊？</p>
+          <p> </p>
+          <p>请您确认一下，是不是放在仓库里了。</p>
+          <p> </p>
+          <p>"我再说一遍，赫斯蒂亚大人制作的料理图案每个售价6,500基纳。"</p>
+          <p> </p>
+          <p>请您准备好费用之后再来找我。图案我先帮你保管着。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来找我，该不会是第一种料理——蔬菜料理制作失败了吧？</p>
+          <p> </p>
+          <p>哎呀，真是可惜。我还以为[%username]大人一定一次就能制作完成的呢……</p>
+          <p> </p>
+          <p>不过考试就是这个样子。</p>
+          <p> </p>
+          <p>平时做得很好的东西，考试的时候却偏偏做不好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">请再给我一份第一种料理图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来找我，该不会是第二种料理——水果料理制作失败了吧？</p>
+          <p> </p>
+          <p>哎呀，真是可惜。我还以为[%username]大人一定一次就能制作完成的呢……</p>
+          <p> </p>
+          <p>不过考试就是这个样子。</p>
+          <p> </p>
+          <p>平时做得很好的东西，考试的时候却偏偏做不好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">请再给我一份第二种料理图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10_3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来找我，该不会是第三种料理——鱼料理制作失败了吧？</p>
+          <p> </p>
+          <p>哎呀，真是可惜。我还以为[%username]大人一定一次就能制作完成的呢……</p>
+          <p> </p>
+          <p>不过考试就是这个样子。</p>
+          <p> </p>
+          <p>平时做得很好的东西，考试的时候却偏偏做不好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">请再给我一份第三种料理图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10_4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来找我，该不会是第死种料理——蛤蛎料理制作失败了吧？</p>
+          <p> </p>
+          <p>哎呀，真是可惜。我还以为[%username]大人一定一次就能制作完成的呢……</p>
+          <p> </p>
+          <p>不过考试就是这个样子。</p>
+          <p> </p>
+          <p>平时做得很好的东西，考试的时候却偏偏做不好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">请再给我一份第四种料理图案。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10_4_4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，我说……您的基纳好像不够啊？</p>
+          <p> </p>
+          <p>请您确认一下，是不是放在仓库里了。</p>
+          <p> </p>
+          <p>"您选择的料理图案的价格是6,500基纳。请您准备好钱之后再来找我。"</p>
+          <p> </p>
+          <p>这个图案我会帮您好好保管的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕嘟，看起来很好吃的样子。</p>
+          <p> </p>
+          <p>但是现在高兴还太早。因为还需要经过最终的验证。</p>
+          <p> </p>
+          <p>我得试吃一下，看看味道是不是和看上去的一样好。料理你先放在这里，然后在边上等一下。结果出来之后，我会叫你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Luelas]那里领取名人考试所需的第一份图案</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">制作美味的艾尔米提亚的蔬菜料理，然后交给[%dic:STR_DIC_N_Hestia]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">去[%dic:STR_DIC_N_Luelas]那里领取名人考试所需的第二份图案</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">制作美味的艾尔米提亚的水果料理，然后交给[%dic:STR_DIC_N_Hestia]</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">去[%dic:STR_DIC_N_Luelas]那里领取名人考试所需的第三份图案</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">制作美味的艾尔米提亚的鱼料理，然后交给[%dic:STR_DIC_N_Hestia]</font></p></step>
+               <step><p visible="[%18]"><font color="[%19]">去[%dic:STR_DIC_N_Luelas]那里领取名人考试所需的第四份图案</font></p></step>
+               <step><p visible="[%21]"><font color="[%22]">制作美味的艾尔米提亚的蛤蛎料理，然后交给[%dic:STR_DIC_N_Hestia]</font></p></step>
+               <step><p visible="[%24]"><font color="[%25]">[%dic:STR_DIC_N_Hestia]对话</font></p></step>
+
+               <step><p visible="[%27]"><font color="[%28]">去[%dic:STR_DIC_N_Luelas]那里重新领取名人考试所需的第一份料理图案</font></p></step>
+               <step><p visible="[%30]"><font color="[%31]">去[%dic:STR_DIC_N_Luelas]那里重新领取名人考试所需的第二份料理图案</font></p></step>
+               <step><p visible="[%33]"><font color="[%34]">去[%dic:STR_DIC_N_Luelas]那里重新领取名人考试所需的第三份料理图案</font></p></step>
+               <step><p visible="[%36]"><font color="[%37]">去[%dic:STR_DIC_N_Luelas]那里重新领取名人考试所需的第四份料理图案</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">赫斯蒂亚说我具备了参加料理名人考试的资格。制作献给艾尔米提亚大神官的料理，证明自己具有成为名人的资格吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫斯蒂亚说我的料理实力可以和自己媲美了，让我参加料理名人资格考试。</p>
+          <p> </p>
+          <p>接受了赫斯蒂亚的建议，制作了献给凯西内尔主神殿的艾尔米提亚大神官的四种美味的料理。送过去之后，她对我大加称赞，说做得很不错。</p>
+          <p> </p>
+          <p>但她说为了作出最后的决定，还需要确认一下，让我等待结果。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

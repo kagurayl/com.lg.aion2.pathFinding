@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>贝尔特伦要塞周边污染的雪莉不断增加，给作为水源的埃尔伦江造成了污染。贝尔特伦见习守护者们正在努力阻止它们，但是因为它们坚硬的皮，进展很不顺利。</p>
+          <p> </p>
+          <p>听到这一消息后，8位圣女指示说“消除污染的根源，保护饮用水”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为[%dic:STR_DIC_E_Li_10_19]的[%dic:STR_DIC_E_Mentor]，消灭污染的雪莉。</p>
+          <p> </p>
+          <p>然后搜集研究污染所需的[%dic:STR_DIC_I_QUEST_37100A]%，交给[%dic:STR_DIC_N_Seira]姐妹。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是收到联络之后过来找我的吗？</p>
+          <p> </p>
+          <p>有很多人来问我污染的雪莉的事情，我正在等着[%username]大人呢。</p>
+          <p> </p>
+          <p>作为导师，您一定给了他们很多好的建议吧？对于刚觉醒不久的守护者来说，导师的建议是非常重要的。</p>
+          <p> </p>
+          <p>您能把[%dic:STR_DIC_I_QUEST_37100A]给我看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出变异的雪莉皮。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_37100A]还没搜集到啊。是我太着急了吗？</p>
+          <p> </p>
+          <p>但是时间拖得越久，污染的雪莉的扩散就会越快，埃尔伦江的污染就会更加严重。请您抓紧时间。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看雪莉皮)嗯，谁会觉得这是雪莉的皮呢？比石灰还硬，比化石还厚。</p>
+          <p> </p>
+          <p>必须确认一下到底是什么污染，会让它们变成这个样子。</p>
+          <p> </p>
+          <p>那些[%dic:STR_DIC_E_Li_10_19]%怎么样了？他们觉醒还没多久，非常需要[%username]大人的帮助……</p>
+          <p> </p>
+          <p>总之，我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_10_19]的[%dic:STR_DIC_E_Mentor]，搜集[%dic:STR_DIC_I_QUEST_37100A]，然后交给[%dic:STR_DIC_N_Seira]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">和贝尔特伦见习守护者一起，清除贝尔特伦要塞周边污染的雪莉，然后向塞拉姐妹报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是和贝尔特伦见习守护者一起清除贝尔特伦要塞周边污染的雪莉。</p>
+          <p> </p>
+          <p>清除了雪莉，把用作研究资料的变异的雪莉皮交给塞拉之后，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>“生命”这个词，很难用一句话来解释。</p>
+          <p> </p>
+          <p>不过有一点 [%userclass] [%username] 大人应该很清楚。那就是修复和兴建远比破坏困难。</p>
+          <p> </p>
+          <p>生命之神殿不断祈祷和试验后获得的知识就是治愈之力量。</p>
+          <p> </p>
+          <p>有一部书，记载了尤斯迪埃主神和他的追随者们曾经使用过的技术。</p>
+          <p> </p>
+          <p>(把手中的书摆了一下) 就是这本生命之秘典。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命之秘典分为好几卷，之前我曾借了其中的这本第一卷。</p>
+          <p> </p>
+          <p>剩下的密书由特拉希梅德斯大人保管。</p>
+          <p> </p>
+          <p>现在，我已经完全熟悉密书的内容，也到了应该归还的时候了。</p>
+          <p> </p>
+          <p>[%username] 大人，能把这本密书交给守护者殿堂里的特拉希梅德斯大人吗？</p>
+          <p> </p>
+          <p>作为诚实的 [%userclass]，您值得信任，所以我可以放心交给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是很想知道密书的内容呢。[%username] 大人也是继承生命意志的人，有这样的想法是很正常的。</p>
+          <p> </p>
+          <p>但说到内容，密书的第一卷您应该都学过。</p>
+          <p> </p>
+          <p>里面都是和我出售过的技能书相同的内容。</p>
+          <p> </p>
+          <p>[%username] 大人没有学过的部分都在特拉希梅德斯大人那里保管着。</p>
+          <p> </p>
+          <p>特拉希梅德斯大人将会把您想知道全部都告诉您，请您现在就去找他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过分贪心也是 [%userclass]的美德之一。</p>
+          <p> </p>
+          <p>不论是对金钱、名誉、还是密书中的知识。</p>
+          <p> </p>
+          <p>其实，这件事非常希望由您来完成。我希望您能去见一见特拉希梅德斯大人。</p>
+          <p> </p>
+          <p>当然，我不会，也无法强求您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命的根源在于秩序。</p>
+          <p> </p>
+          <p>因此，使用生命力量的人不能怀有混乱或邪恶的内心。</p>
+          <p> </p>
+          <p>就算内心稍微动摇，秩序也将悄然垮掉。</p>
+          <p> </p>
+          <p>[%username]，希望你能够谨记这一点，如果你是一位追随手中密书意志的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将密书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这本密书中记载了生命之神殿的所有精华。</p>
+          <p> </p>
+          <p>希凯雅既然把书交给了你，看来你也将会成为前途无量的守护者。</p>
+          <p> </p>
+          <p>想要成为更出色的守护者，需要学习密书的所有内容。</p>
+          <p> </p>
+          <p>如果你想学习新的知识就找我吧。在接受了希凯雅的指点后，你会在我这里学到更多的知识，这些会对你有帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Thrasymedes]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将从希凯雅处得到的密书送到特拉希梅德斯那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希凯雅请求把治愈星和护法星的密书送到特拉希梅德斯那里。</p>
+          <p> </p>
+          <p>拿到密书的特拉希梅德斯表示，如果想成为更出色的守护者，需要学习密书中的所有内容，并承诺会给予帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了去沙漠的人类，我们在各个有危险野兽的地方竖立了注意标志牌。</p>
+          <p> </p>
+          <p>但是用生长在周围的树木制作的标志牌，由于木质太软，很快就会烂掉。</p>
+          <p> </p>
+          <p>如果不用好一点的木材制作的话，这个措施就会变得毫无用处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要在不太远的地方找到合适的木材的话，应该就是榆树了。</p>
+          <p> </p>
+          <p>那是经常用来制作家具的木材，用来制作标志牌应该很合适。</p>
+          <p> </p>
+          <p>虽然我很想自己去搜集，但这里有很多野兽对村子虎视眈眈，因此无法离开。</p>
+          <p> </p>
+          <p>您能帮我搜集一点[%dic:STR_DIC_E_tree_n_c_20b]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。那就请您帮我去采集[%dic:STR_DIC_E_tree_n_c_20b]吧。</p>
+          <p> </p>
+          <p>如果能在附近竖立说明马艾奇和露盘特的危险性的标志牌，应该会对居民们有所帮助。</p>
+          <p> </p>
+          <p>我并不是空口要您帮我采集木材的无耻的人，这点请您不用担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿盖伦村周围到处都是危险的东西。</p>
+          <p> </p>
+          <p>但是又不能让居民们一直呆在村里，哪儿也不去。</p>
+          <p> </p>
+          <p>如果能在非常危险的地方竖立标志牌，对居民们应该多少会有所帮助。</p>
+          <p> </p>
+          <p>今后有时间的话，请您再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近以来，野兽们变得越来越凶恶了。</p>
+          <p> </p>
+          <p>虽然不知道到底是什么原因造成的，但必须再次告诫居民们注意。</p>
+          <p> </p>
+          <p>如果能在各个危险的地方竖立标志牌的话，效果应该会更好。</p>
+          <p> </p>
+          <p>对了，您采集到[%dic:STR_DIC_E_tree_n_c_20b]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出榆树。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>榆树在以前很常见，该不会是马艾奇和露盘特连榆树都不放过吧？</p>
+          <p> </p>
+          <p>如果不是的话，怎么到现在还没搜集到呢？</p>
+          <p> </p>
+          <p>我再拜托您一次。</p>
+          <p> </p>
+          <p>请您快去帮我采集[%dic:STR_DIC_E_tree_n_c_20b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>木质坚硬，纹理清晰，果然是好木材。</p>
+          <p> </p>
+          <p>本来想先对付一下的，没想到一次就解决问题了。</p>
+          <p> </p>
+          <p>这次做成的标志牌应该绝对不会坏了。</p>
+          <p> </p>
+          <p>这是你您帮我搜集木材的报酬。真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_tree_n_c_20b]，然后交给[%dic:STR_DIC_N_Arkel]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助想在危险的地方竖立标志牌，维护居民安全的阿尔凯尔搜集木材。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔凯尔担心居民们被危险的野兽伤到，他为此非常担心。</p>
+          <p> </p>
+          <p>他说他虽然在各个危险的地方竖立了标志牌，但是因为木材不好，很快就烂掉了。</p>
+          <p> </p>
+          <p>于是帮助阿尔凯尔搜集到了榆树。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

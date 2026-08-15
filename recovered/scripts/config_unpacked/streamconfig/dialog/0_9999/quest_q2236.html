@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道守护者们的喜好与常人不同，可没想到又这么不同！</p>
+          <p> </p>
+          <p>今天米罗金来这里，居然让我搜集[%dic:STR_DIC_I_quest_2236a]！</p>
+          <p> </p>
+          <p>说是什么要当作礼物送人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>像我这样做买卖的，哪能进入姆姆部落呢，所以我拒绝了。</p>
+          <p> </p>
+          <p>可守护者说他得讨好百夫长才行，不管用什么办法，一定要我帮他找到。</p>
+          <p> </p>
+          <p>您有没有要去姆姆部落办的事呢？姆姆族对[%username]来说肯定不成问题，您能帮我搜集[%dic:STR_DIC_I_quest_2236a]吗？</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太谢谢您了。</p>
+          <p> </p>
+          <p>请您去姆姆部落找到[%dic:STR_DIC_M_RatmanHair_15_An]和[%dic:STR_DIC_M_RatmanGathererM_15_An]，然后搜集5个[%dic:STR_DIC_I_quest_2236a]。</p>
+          <p> </p>
+          <p>米罗金给我的钱，我会全都交给[%username]大人。</p>
+          <p> </p>
+          <p>那就全靠您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我只是随便问问，您别放在心上。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_quest_2236a]，这是不是太离谱了？</p>
+          <p> </p>
+          <p>不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去姆姆部落了吗？</p>
+          <p> </p>
+          <p>姆姆族那些家伙戴头饰了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出姆姆族头饰。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是拜托您找5个[%dic:STR_DIC_I_quest_2236a]吗？</p>
+          <p> </p>
+          <p>数量不够和没有没什么区别。</p>
+          <p> </p>
+          <p>请一定去姆姆部落帮我找到5个头饰。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是[%dic:STR_DIC_I_quest_2236a]啊。</p>
+          <p> </p>
+          <p>还是头一次见，比我想象的要精致漂亮很多啊。还有一种独特的魅力。</p>
+          <p> </p>
+          <p>怪不得米罗金要这个东西呢。给您，这是答应给您的钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_I_quest_2236a]找到交给[%dic:STR_DIC_N_Bogurt]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">伯古鲁特答应帮米罗金找到姆姆族头饰。帮伯古鲁特找到姆姆族头饰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伯古鲁特虽然答应了帮米罗金找到姆姆族头饰，但因为去姆姆部落很危险，他因此很苦恼。</p>
+          <p> </p>
+          <p>帮助伯古鲁特前往姆姆部落消灭姆姆族，搜集到了头饰。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

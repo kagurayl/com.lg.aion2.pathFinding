@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(非常古老的羊皮纸卷。)</p>
+          <p> </p>
+          <p>(用皮绳捆得很紧。打开发现羊皮纸上画的是一幅地图。)</p>
+          <p> </p>
+          <p>(看地图上的地形和建筑的位置，像是周围一座村子的地图。)</p>
+          <p> </p>
+          <p>(有一座房子用红色的X标记出来。)</p>
+          <p> </p>
+          <p>(得去那个地方看看。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">不再看了。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一只木箱盖着盖子。)</p>
+          <p> </p>
+          <p>(地图上标识的东西好像就是这只箱子。)</p>
+          <p> </p>
+          <p>(打开箱子看看，发现被锁锁住了。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">用力把锁扯了下来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(也许是时间太久被腐蚀了，锁很容易就被扯了下来。)</p>
+          <p> </p>
+          <p>(打开箱子盖，有一只布袋。)</p>
+          <p> </p>
+          <p>(打开口袋，发现里面有10块白金矿石。)</p>
+          <p> </p>
+          <p>(看来是伊斯克洛在做凡人时收藏的宝物。)</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找地图上标识出的地方。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在守财奴伊斯克洛那里发现了一幅古老的地图。确认地图上标识出的地方是哪里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在守财奴伊斯克洛身上发现了一幅古老的地图。</p>
+          <p> </p>
+          <p>去寻找地图上标识出的地点，结果发现了一只箱子。打开箱子一看，里面有10块白金矿石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

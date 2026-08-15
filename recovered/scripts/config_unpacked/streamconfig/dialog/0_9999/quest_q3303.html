@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到这里之后，有一件事我一直很好奇。</p>
+          <p> </p>
+          <p>革命团建设基地里的革命团，到底是怎么解决饮水问题的。</p>
+          <p> </p>
+          <p>虽然守护者出身的人应该没有问题，但那么多的工人和修炼生应该需要大量的饮用水。而且埃尔特内的气候非常炎热干燥。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想对此进行调查。</p>
+          <p> </p>
+          <p>对他们喝的水的成分进行调查，应该就能知道是哪里来的水。那样的话，应该对解决我们的饮用水问题有所帮助。</p>
+          <p> </p>
+          <p>但问题是…要想进行调查，需要有他们喝的水。而我的战斗实力不是很强。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我搜集调查所需的资料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我观察了几天，未能觉醒成守护者或实力较差的[%dic:STR_DIC_M_LF2_3303all]的腰里挂着[%dic:STR_DIC_I_QUEST_3303a]。</p>
+          <p> </p>
+          <p>那好像是水桶。请您去把水桶带回来。</p>
+          <p> </p>
+          <p>我会送您金色革命团徽章作为报答。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得这是件不起眼的小事，所以才会拒绝吗？</p>
+          <p> </p>
+          <p>在我看来，这件事不知要比除掉几个革命团员重要多少倍。</p>
+          <p> </p>
+          <p>您可以不帮我。但希望通过这件事，可以让您改变仅靠战斗和破坏就能拯救天界的想法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人！</p>
+          <p> </p>
+          <p>这么快就回来啦？真快啊。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_3303a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出木桶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是还没去吗？还是忘了把木桶带回来？</p>
+          <p> </p>
+          <p>这件事的目的不是消灭革命团，而是搜集他们身上的粗糙的木桶。</p>
+          <p> </p>
+          <p>请您回去，把[%dic:STR_DIC_I_QUEST_3303a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呦，怎么这么重？</p>
+          <p> </p>
+          <p>天气这么热，还要带着这个东西来回走，难道不觉得累吗？</p>
+          <p> </p>
+          <p>(打开木桶的盖子)但是几乎是空的。光有这个好像还不够... </p>
+          <p> </p>
+          <p>不管怎样，您帮我搜集到了木桶，我就应该把约定的东西给您。来，这是金色革命团徽章。</p>
+          <p> </p>
+          <p>莱卡斯最近正在搜集这个东西，您可以去看一看。</p>
+          <p> </p>
+          <p>有时间的话，您能再来找我吗？这件事情，您还得继续帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_W_LF2_SZ_J]的[%dic:STR_DIC_M_LF2_3303all]身上搜集[%dic:STR_DIC_I_QUEST_3303a]，然后交给[%dic:STR_DIC_N_Deurone]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让戴乌罗内可以调查雷帕尔革命团的水源地，必须帮她从革命团建设基地中的革命团成员身上搜集水桶。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>戴乌罗内说很想知道革命团建设基地里的革命团员是怎么解决饮水问题的，她想对此进行调查。</p>
+          <p> </p>
+          <p>帮助战斗能力较弱的她搜集到了革命团用作水桶的木桶，她对我表示感谢，并给了我金色革命团徽章。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

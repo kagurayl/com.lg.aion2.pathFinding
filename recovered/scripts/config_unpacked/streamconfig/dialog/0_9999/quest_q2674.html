@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>第一次看到德雷克的时候，我就想到这是和龙族有某种关系的生物。</p>
+          <p> </p>
+          <p>名字是，长相也是。</p>
+          <p> </p>
+          <p>看到德拉克纽特后，我更坚定了我的想法。怎么看两者都很像。尾巴是，角也是。</p>
+          <p> </p>
+          <p>只有一点例外——德雷克可以飞行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>或许正因为是这样，龙族才会训练德雷克并投入到战斗。并有专门的驯兽师。</p>
+          <p> </p>
+          <p>龙族控制那些会飞的德雷克，为他们扭转战局提供了巨大的帮助。</p>
+          <p> </p>
+          <p>因为那些家伙，我们也曾吃了不少的亏。</p>
+          <p> </p>
+          <p>所以，请 [%username] 大人去一趟巴卡尔玛军团驻地，消灭 [%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae]和 [%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae]， [%dic:STR_DIC_M_G6_LizardBreederD_44_Ae]，您意下如何？</p>
+          <p> </p>
+          <p>与其在今后的战斗中为德雷克而伤脑筋，还不如现在提前除掉他们，是吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"那么，请您去巴卡尔玛军团驻地消灭 [%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae]和 [%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae], [%dic:STR_DIC_M_G6_LizardBreederD_44_Ae]。"</p>
+          <p> </p>
+          <p>战斗特雷基和德雷克虽然还很小，不过十分强大，要对它们提起注意。它们的旁边总是有驯兽师跟随，请一定小心。</p>
+          <p> </p>
+          <p>这次的任务要进入敌人的根据地，所以一定要集结同伴一起去，这点您也应该清楚吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还有其他更重要的事情吗？</p>
+          <p> </p>
+          <p>结界塔被破坏，龙族入侵到了这里，还有比这还重要的事情吗？真是无法理解。</p>
+          <p> </p>
+          <p>总之，我明白了。我会拜托其他守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人们都说后悔没有任何用处。而我这样死后的后悔就更没用了。</p>
+          <p> </p>
+          <p>但是，我要让后悔变得有意义。</p>
+          <p> </p>
+          <p>以先前的错误为诫，时刻警惕，决不再吃他们的亏。</p>
+          <p> </p>
+          <p>已经消灭[%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae]， [%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae]和 [%dic:STR_DIC_M_G6_LizardBreederD_44_Ae]了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了，[%username] 大人。 </p>
+          <p> </p>
+          <p>驯兽师和德雷克总是如影相随，想要消灭他们可没那么容易。</p>
+          <p> </p>
+          <p>谢谢您为赶走在贝鲁斯兰的龙族所付出的努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭特雷基、德雷克和驯兽师。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae]([%5]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_G6_LizardBreederD_44_Ae]([%8]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gwendolin]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">格温杜尔林称，要在和龙族的战斗中获胜，就要提前除掉特雷基、德雷克和驯兽师。按照她的委托，去巴卡尔玛军团驻地，消灭战斗特雷基，战斗德雷克和第47德拉克纽特精锐驯兽师。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只剩下灵魂的格温杜尔林心中只有一个念头。就是用消灭龙族来打消心中的愤怒。</p>
+          <p> </p>
+          <p>她表示，想要在和龙族的战斗中获胜，就要提前下手，除掉可以在空中攻击的德雷克。</p>
+          <p> </p>
+          <p>帮助她消灭了战斗特雷基，战斗德雷克和第47德拉克纽特精锐驯兽师。对于为赶走在贝鲁斯兰的龙族所付出的努力，她表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

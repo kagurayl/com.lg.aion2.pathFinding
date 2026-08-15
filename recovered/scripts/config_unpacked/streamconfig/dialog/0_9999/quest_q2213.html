@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，这可怎么办呢。没有几天的时间了...</p>
+          <p> </p>
+          <p>啊，对不起。一直想着别的事情，都没看到您来了。</p>
+          <p> </p>
+          <p>您是为草药而来的吗？</p>
+          <p> </p>
+          <p>要是不急的话，您能不能下次再来呢？我现在有点事，所以...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是这样的，我答应要给[%dic:STR_DIC_N_Dellalont]找样东西，但是现在有些困难。</p>
+          <p> </p>
+          <p>有一种叫欧卡鲁的树，它的果实要是涂在伤口上的话，伤口马上就可以痊愈，要是榨成汁喝下去的话，就有治愈头痛和退烧的效果。</p>
+          <p> </p>
+          <p>总之就是包治百病的药啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可是[%dic:STR_DIC_E_23]有毒气，人只要一靠近，就会浑身浮肿起来。</p>
+          <p> </p>
+          <p>我戴着手套试了几次，但是憋着气实在是受不了。</p>
+          <p> </p>
+          <p>离约定的日子已经没几天了，要是放弃的话，肯定会被黛拉伦特骂，可要是去摘[%dic:STR_DIC_I_quest_2213a]，我的命就保不住了...唉，真不知道该怎么办才好了。</p>
+          <p> </p>
+          <p>可要是守护者您的话，毒气就奈何不了您了。</p>
+          <p> </p>
+          <p>您能不能帮助我呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的会帮我吗？能答应我这样卑贱人的请求，您真是大慈大悲的好人啊。</p>
+          <p> </p>
+          <p>对了，还有一点要注意。一摘到果实，就请马上交给我。 </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_quest_2213a]的毒性十分强烈，就算是守护者您，拿着它太久的话也会气衰力竭的。</p>
+          <p> </p>
+          <p>那就请您快去快回吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。是我不好，本来是我该做的事，反倒麻烦您。</p>
+          <p> </p>
+          <p>我直接去告诉[%dic:STR_DIC_N_Dellalont]好了。</p>
+          <p> </p>
+          <p>哪还会有什么事？不过挨一顿训罢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找欧卡鲁树很难吧？</p>
+          <p> </p>
+          <p>要是摘到了[%dic:STR_DIC_I_quest_2213a]，就快给我吧。</p>
+          <p> </p>
+          <p>别放在手上，请放在这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出欧卡鲁果实。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（盖上盖子）真是辛苦您了。</p>
+          <p> </p>
+          <p>已经泡进了解毒剂里，现在只要等毒气消失就行了。</p>
+          <p> </p>
+          <p>您哪里不舒服吗？要是感觉晕的话，就请坐下休息一下吧。您是守护者，马上就会好的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">[%dic:STR_DIC_E_23] 摘果实</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">将[%dic:STR_DIC_E_23]的果实交给[%dic:STR_DIC_N_Titt]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">答应给黛拉伦特摘欧卡鲁果实的提特，因为欧卡鲁树的毒性正在犯愁。摘下果实交给提特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提特答应黛拉伦特找到欧卡鲁果实，但是却抱怨欧卡鲁树的毒性太强让人无法靠近。帮提特摘下果实。提特非常高兴并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

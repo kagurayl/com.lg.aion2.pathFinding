@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于已经去阿尔奎米亚城寨进行过报告，这段时间就没有借口重新回到那了。</p>
+          <p></p>
+          <p>假如没有要事而返回到本部，会引起怀疑。</p>
+          <p> </p>
+          <p>所以，饮用水放入麻醉药的事情也不得不靠 [%username]帮忙了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这项任务十分危险，要深入到阿尔奎米亚城寨内部，绝不是容易的事情。</p>
+          <p> </p>
+          <p>没有一定的觉悟，将很难成功。</p>
+          <p> </p>
+          <p>不过我实在没法做，所以才拜托你。如果没有自信，最好拒绝。</p>
+          <p> </p>
+          <p>怎么样，你能做到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，那么你先拿着这些药。</p>
+          <p> </p>
+          <p>进入阿尔奎米亚城寨后，会发现革命团的营帐。在帐篷里摆着饭桌，共有2处。</p>
+          <p> </p>
+          <p>在营帐周围有木制的 [%dic:STR_DIC_OBJ_Q2664A]。只要将药物放进那些桶里面就可以了。</p>
+          <p> </p>
+          <p>那么一切小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去，你还没有完成任务的自信啊。</p>
+          <p> </p>
+          <p>那样的话，现在放弃对你我都好。</p>
+          <p> </p>
+          <p>假如你在执行任务的时候，被他们抓住，暴露了我的身份，那就麻烦了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了啊，[%username]。</p>
+          <p> </p>
+          <p>已经在敌人的饮用水里下药了吧？</p>
+          <p> </p>
+          <p>没让革命团的家伙们察觉到吧？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦了，[%username]。</p>
+          <p> </p>
+          <p>革命团的家伙们每次吃饭时都会喝那些水。这样一来，雷帕尔革命团的战斗力下降只是时间问题了。</p>
+          <p> </p>
+          <p>来，这是你认真执行任务应得的酬劳，请收下。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在雷帕尔革命团的 [%dic:STR_DIC_OBJ_Q2664A]里放入麻醉药。([%2]/5)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Dewi]报告。</font></p></step>
+     </steps>
+          <p><font font_xml="quest_summary">把得到的麻醉药放进雷帕尔革命团的饮用水桶中。去阿尔奎米亚城寨的革命团营帐，寻找饮用水桶。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德威表示，由于不久前刚去阿尔奎米亚城寨进行过报告，所以暂时没有借口重新回去。</p>
+          <p> </p>
+          <p>根据他的委托，在革命团的营帐，找到了饮用水桶，并把从红鬃莱卡恩那里得到的麻醉药放了进去。</p>
+          <p> </p>
+          <p>完成任务后向德威报告。德威对此非常高兴，并表示雷帕尔革命团的战斗力将会因此而下降。</p>
+          <p> </p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

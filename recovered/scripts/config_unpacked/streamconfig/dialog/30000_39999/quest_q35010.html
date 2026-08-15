@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>在神圣守护会中活动的神官特洛乌发来了一份奇怪的报告。</p>
+          <p> </p>
+          <p>说魔族可能会在00月00日袭击因特尔蒂卡结界塔。</p>
+          <p> </p>
+          <p>但是之前他曾经发送过错误的情报，所以我们必须确认情报的真实性。</p>
+          <p> </p>
+          <p>[%username]，请你去见见[%dic:STR_DIC_N_Trou]，了解一下情况，然后向[%dic:STR_DIC_E_35007]报告。</p>
+          <p> </p>
+          <p>如果事态紧急，我们就必须尽快采取措施，做好万全的准备。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(焦急地说)您有什么事吗？</p>
+          <p> </p>
+          <p>您是从神圣守护会来的吗？</p>
+          <p> </p>
+          <p>啊！为什么这么晚才来？</p>
+          <p> </p>
+          <p>我一个人都快担心死了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问具体情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这个嘛……</p>
+          <p> </p>
+          <p>没有什么特别的征兆……</p>
+          <p> </p>
+          <p>是我在梦里见到的。</p>
+          <p> </p>
+          <p>长着黑色翅膀的家伙包围了因特尔蒂卡结界塔。</p>
+          <p> </p>
+          <p>希望我的梦不会是真的……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？</p>
+          <p> </p>
+          <p>神官特洛乌报告的事情是真的吗？</p>
+          <p> </p>
+          <p>如果是真的，就必须尽快通知极乐世界。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什，什么？</p>
+          <p> </p>
+          <p>梦？真是荒唐。</p>
+          <p> </p>
+          <p>他好歹也是个神官，怎么能做了个梦就瞎说呢？感觉完全被他骗了。</p>
+          <p> </p>
+          <p>不过算了，有时候那种荒唐的情报中间，也会有有用的信息。</p>
+          <p> </p>
+          <p>要想守护好结界塔，难免会遇到这样的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Trou]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35007]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说收到了神官特洛乌的报告，说魔族会袭击因特尔蒂卡结界塔，让我去确认真实性。</p>
+          <p> </p>
+          <p>见到特洛乌之后，他说是在梦里见到的。</p>
+          <p> </p>
+          <p>把这件事告诉了帕尔拉斯，他说荒唐的情报中有时也会有有用的信息，要想守护结界塔，这也是没办法的事情。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

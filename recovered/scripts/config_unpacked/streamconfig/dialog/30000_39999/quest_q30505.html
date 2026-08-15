@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30505</QuestId>    <QuestName>???</QuestName>    <QuestType>未输入</QuestType>  </QuestInfo>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(后半部分被撕掉的卷轴。)</p>
+          <p> </p>
+          <p>(好像是鸢族的重要文件。)</p>
+          <p> </p>
+          <p>(应该拿去交给[%dic:STR_DIC_N_Oreitia]。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰图斯前哨基地发生什么事了吗？</p>
+          <p> </p>
+          <p>您手里拿的是什么东西？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出撕碎的卷轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开卷轴阅读)咦，这是……</p>
+          <p> </p>
+          <p>梅罗伯斯大人，不，这是背叛者梅罗伯斯的日记。</p>
+          <p> </p>
+          <p>可惜的是后半部分被人撕走了。</p>
+          <p> </p>
+          <p>如果能找到完整的内容，就可以知道梅罗伯斯为什么背叛我们了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_QUEST_Scroll_30505]交给[%dic:STR_DIC_N_Oreitia]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在兰图斯前哨基地发现了一个撕碎的卷轴。把它交给奥雷提亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在兰图斯前哨基地发现了一个撕碎的卷轴。</p>
+          <p> </p>
+          <p>觉得好像是重要的文件，于是把它交给了奥雷提亚，她说是背叛者梅罗伯斯的日记。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我的心情很沉重。</p>
+          <p> </p>
+          <p>每天都会做同样的梦，随着时间的推移，那个梦变得越来越真实了。</p>
+          <p> </p>
+          <p>每天晚上都会看到守护者的灵魂在受着痛苦的煎熬，听到他们悲惨的哭喊声，感觉真的很可怕。</p>
+          <p> </p>
+          <p>我觉得可能不是梦，一定是发生在什么地方的真实的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然感觉好象是真实的事情，但背景却很模糊，所以我也不知道这是发生在什么地方的事情。</p>
+          <p> </p>
+          <p>为了消除这个心中的重担，必须知道那是在什么地方。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+          <p> </p>
+          <p>只要有[%dic:STR_DIC_I_QUEST_30226a]，就能在醒着的状态下看见梦的幻影，希望您能帮我去搜集。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在哈纳尔卡德，有一种名叫[%dic:STR_DIC_M_LF4_C5_FlyingFoam_55_An]的东西。</p>
+          <p> </p>
+          <p>消灭粘稠的发光体，就能搜集到梦幻泡沫。</p>
+          <p> </p>
+          <p>只要有了[%dic:STR_DIC_I_QUEST_30226a]的力量，应该就能知道守护者的灵魂在哪里，应该用什么方法把他们解救出来了。</p>
+          <p> </p>
+          <p>那就拜托您了，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得我的梦太奇怪，所以不相信会是事实吗？</p>
+          <p> </p>
+          <p>如果您不相信，我也没有办法，但那真的是我反复梦到的梦。</p>
+          <p> </p>
+          <p>我想一定是发生在英吉斯温的事情。</p>
+          <p> </p>
+          <p>不过如果您不相信的话就算了，我只能找其他相信我的话的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您回来啦。</p>
+          <p> </p>
+          <p>昨天晚上，我又做了那个梦。</p>
+          <p> </p>
+          <p>他们那痛苦的表情，现在还在我的眼前。</p>
+          <p> </p>
+          <p>我要的梦幻泡沫搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出梦幻泡沫。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是没仔细听清楚我的话。</p>
+          <p> </p>
+          <p>有那么多守护者的灵魂在经受痛苦的煎熬，您还有时间在这里磨蹭吗？</p>
+          <p> </p>
+          <p>必须尽快把他们从痛苦的煎熬中解救出来。</p>
+          <p> </p>
+          <p>请您快去消灭[%dic:STR_DIC_M_LF4_C5_FlyingFoam_55_An]，搜集[%dic:STR_DIC_I_QUEST_30226a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梦幻泡沫终于找到啦。</p>
+          <p> </p>
+          <p>我得尽快弄清楚守护者的灵魂被囚禁在什么地方才行。</p>
+          <p> </p>
+          <p>(用手抓着梦幻泡沫，闭上眼睛。)</p>
+          <p> </p>
+          <p>啊！我好像知道是哪里了。[%username]大人，多亏了您，我终于知道了！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30226a]，然后交给[%dic:STR_DIC_N_Kailaus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卡伊拉乌斯看清梦到的内容，去消灭粘稠的发光体，搜集梦幻泡沫吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡伊拉乌斯说梦见守护者的灵魂在受苦，必须把他们拯救出来。</p>
+          <p> </p>
+          <p>于是帮他搜集到了梦幻泡沫，让他可以在醒着的状态下看到梦的内容。他说终于知道是什么地方了。</p>
+          <p> </p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(这是一把在手柄部分刻着装饰的锄头。)</p>
+          <p> </p>
+          <p>(刃非常锋利，发着光，看来是被精心保养过。) </p>
+          <p> </p>
+          <p>(好像就是姆格尔采集人参用的锄头。) </p>
+          <p> </p>
+          <p>(应该问问蹦蹦族，是不是他们丢失的。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束调查。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是不是又给蹦蹦敦带来了人参？呐呐。</p>
+          <p> </p>
+          <p>人参真的很好吃。</p>
+          <p> </p>
+          <p>真想吃个够，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">将锄头给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那不是蹦蹦敦的锄头，呐呐。</p>
+          <p> </p>
+          <p>蹦蹦敦虽然种地不太认真，但还不至于丢掉自己的锄头。</p>
+          <p> </p>
+          <p>不是我的，去找[%dic:STR_DIC_N_DF2a_NPC_Bumbum_Taan]问问吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦潭工作很认真。</p>
+          <p> </p>
+          <p>现在只是暂时休息，呐呐。</p>
+          <p> </p>
+          <p>不要告诉族长大人，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出锄头给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蹦蹦族不使用这种锄头，呐呐。</p>
+          <p> </p>
+          <p>这种有装饰的锄头都是喜欢人参的守护者的东西。</p>
+          <p> </p>
+          <p>去拿给[%dic:STR_DIC_N_Hlebard] 看看吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这两天真不顺。</p>
+          <p> </p>
+          <p>昨天，我想去稍微远点的地方采人参，结果碰上了布洛浑。</p>
+          <p> </p>
+          <p>虽然我也是守护者，可当时手里没有武器，只有锄头，怎么可能打得过布洛浑？只好拼命逃跑。</p>
+          <p> </p>
+          <p>最后，平安回到了村子，可是锄头找不到了。自从丢了锄头后，感觉浑身无力，什么事情也不想做。</p>
+          <p> </p>
+          <p>您知道那是什么样的锄头吗？那是用纯亚德曼金属制作的，手柄上还刻着华丽的装饰，是最上级的锄头。</p>
+          <p> </p>
+          <p>当然外表和蹦蹦族使用的锄头是一样的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将锄头给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么！您是从哪里找到的？</p>
+          <p> </p>
+          <p>终于回来了！真是谢谢您！</p>
+          <p> </p>
+          <p>我以为再也找不到了，没想到它还是认得主人的嘛！</p>
+          <p> </p>
+          <p>这应该是鼓励我继续研究人参的阿斯佩尔主神的旨意。</p>
+          <p> </p>
+          <p>我不会忘记您的大恩，[%username] 大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_DF2a_NPC_Bumbum_Don]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">与[%dic:STR_DIC_N_DF2a_NPC_Bumbum_Taan]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">与[%dic:STR_DIC_N_Hlebard]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭布洛浑后获得了手柄上刻着华丽装饰的锄头，好像是用来采集人参的，拿到蹦蹦族那里问问。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭布洛浑后得到了手柄上刻着纹理的非常漂亮的锄头。</p>
+          <p> </p>
+          <p>好像和姆格尔采集人参使用的锄头相似，先拿回村子给蹦蹦敦和蹦蹦潭看一下。</p>
+          <p> </p>
+          <p>蹦蹦潭表示，这把锄头是喜欢人参的守护者的东西。拿给赫雷巴罗特确认后，他承认这是他的锄头，是在去采集人参的时候，被布洛浑追赶，慌忙之中丢失的。对于能够重新找到锄头，他表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

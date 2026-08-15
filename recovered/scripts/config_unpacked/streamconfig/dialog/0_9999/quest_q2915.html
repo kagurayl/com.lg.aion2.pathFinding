@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还好客人很多，奥黛尔拉酒的价款马上就能支付了。</p>
+          <p> </p>
+          <p>不过既然您来了，我能求您一件事情吗？</p>
+          <p> </p>
+          <p>客人多了，厨房里的人手就缺了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          
+<p>现在制作小菜的材料不够了，而且即使有了材料也没人手去做。</p>
+          <p> </p>
+          <p>但是又不能因为缺乏人手而不卖菜。</p>
+          <p> </p>
+          
+<p>您能帮我搜集一些[%dic:STR_DIC_I_shell_d_n_c_10a]，然后加工成烤阔尼玳吗？</p>
+          <p> </p>
+          
+<p>如果您能做好了交给我，辛苦费我会多给您一些的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          
+<p>制作烤阔尼玳只要有[%dic:STR_DIC_I_shell_d_n_c_10a]和盐就可以了。</p>
+          <p> </p>
+          
+<p>您可以在阿尔特盖德搜集材料之后，用匠人的会堂里的[%dic:STR_DIC_E_LF3_Cook_production]进行加工。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我这边真的很急...</p>
+          <p> </p>
+          
+<p>真的不行吗？辛苦费我真的不会亏待您的。</p>
+          <p> </p>
+          <p>您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，您回来啦。您不知道我等得有多着急。</p>
+          <p> </p>
+          
+<p>烤阔尼玳做好了吗？</p>
+          <p> </p>
+          <p>现在上菜就一直在推。</p>
+          <p> </p>
+          <p>您快点给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出烤阔尼玳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我跟您说过多少次现在厨房人手不足。</p>
+          <p> </p>
+          
+<p>现在大家都忙得不可开交，您不把让您找的东西拿回来，光在这儿和我说话，您想怎么样啊？</p>
+          <p> </p>
+          
+<p>真的很着急。快把我要的东西带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，多亏您这下有救了。</p>
+          <p> </p>
+          
+<p>正好有人点了烤阔尼玳，我正着急呢。</p>
+          <p> </p>
+          
+<p>这里是烤阔尼玳的钱。亚特雷亚不管在什么地方都不会给您这个价钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]">
+<font color="[%1]">烤制[%dic:STR_DIC_I_shell_d_n_c_10a]，然后交给[%dic:STR_DIC_N_Genpels]</font></p>[%collectitem]</step>
+    </steps>
+          <p>
+<font font_xml="quest_summary">坎佩尔斯说因为缺少食材和人手而正在头疼。于是决定去阿尔特盖德采集阔尼玳，并在伏魔殿的匠人的会堂里的料理台上加工成烤阔尼玳。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          
+<p>坎佩尔斯说厨房里缺少人手，让我做好食物之后交给他。</p>
+          <p> </p>
+          
+<p>于是采集了阔尼玳加工成烤阔尼玳之后交给了他。他说非常感谢，并给了谢礼</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

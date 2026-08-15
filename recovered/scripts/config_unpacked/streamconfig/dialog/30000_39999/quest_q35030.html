@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>在神圣守护会中活动的[%dic:STR_DIC_N_Temenos]百夫长发来了紧急请求。</p>
+          <p> </p>
+          <p>我就长话短说了，他让我帮他找一个嘴巴比较紧的人。</p>
+          <p> </p>
+          <p>泰美诺斯百夫长最近正在为了占领格尔克马洛斯的[%dic:STR_DIC_W_DF4_SZ_3021_A]而执行任务。</p>
+          <p> </p>
+          <p>请你通过[%dic:STR_DIC_W_ZONE_NAME_Underpass]渗透到格尔克马洛斯，见见泰美诺斯百夫长。</p>
+          <p> </p>
+          <p>这种情况并不多见，可能是有什么不能用信告诉我们的重要情报。从格尔克马洛斯回来之后，请你向[%dic:STR_DIC_E_35021]报告。</p>
+          <p> </p>
+          <p>如果事态严重，我们就必须做好万全的准备。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你手里拿着的，是[%mainslotitem]吗？</p>
+          <p> </p>
+          <p>(仔细查看)没错。啊，没想到能亲眼看到有人用它。</p>
+          <p> </p>
+          <p>(小声说)没想到你来的这么快。</p>
+          <p> </p>
+          <p>不过手续还是要履行的。山上山上塞拉图！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">地上地上德拉科比！</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，上面派你过来，看来一定很着急吧？</p>
+          <p> </p>
+          <p>我需要你转告的话是这个。</p>
+          <p> </p>
+          <p>红色星星，黑暗术古胡子，金色箭矢，透明黄金！</p>
+          <p> </p>
+          <p>都记住了吗？顺序千万不能搞错哦。</p>
+          <p> </p>
+          <p>好的，记住了的话，就快回去吧。</p>
+          <p> </p>
+          <p>魔族随时可能过来，你最好快点回去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说您去了格尔克马洛斯。</p>
+          <p> </p>
+          <p>上面着急想知道到底是什么事？</p>
+          <p> </p>
+          <p>泰美诺斯百夫长大人为什么要我们派人去啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达泰美诺斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他说“红色星星，黑暗术古胡子，金色箭矢，透明黄金”吗？</p>
+          <p> </p>
+          <p>这是神圣守护会上层使用的暗号。</p>
+          <p> </p>
+          <p>嗯，奇怪。虽然我也不知道暗号的全部意义，不过现在居然会发生那种……</p>
+          <p> </p>
+          <p>看来必须尽快向上面报告才行。</p>
+          <p> </p>
+          <p>请您拿着。这是给您的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Temenos]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_35021]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说红色大地神殿的泰美诺斯百夫长让他们派一个嘴巴紧的人过去，因此让我去见见他。</p>
+          <p> </p>
+          <p>潜入格尔克马洛斯，见到泰美诺斯之后，他告诉了我一句不知道是什么意思的话。转告给英吉斯温支部负责人之后，他说这是上层使用的暗号，他必须马上报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

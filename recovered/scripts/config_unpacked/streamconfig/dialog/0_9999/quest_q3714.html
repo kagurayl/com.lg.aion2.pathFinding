@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，这段时间你对德雷得奇安造成了很大的打击。致使巴拉那特军团一片混乱。</p>
+          <p> </p>
+          <p>听说他们为了了解不断遭受打击的原因，向德雷得奇安派遣了监查官。</p>
+          <p> </p>
+          <p>也就是说，龙族已经发现了事态的异常。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>派往德雷得奇安的监查官在调查完情况之后，就会回去报告。</p>
+          <p> </p>
+          <p>如果我们能把那个监查官杀掉，就可以阻止巴拉那特军团的上层了解事态的状况。</p>
+          <p> </p>
+          <p>也就是说，要想让德雷得奇安继续处于混乱状态，就必须除掉监查官。</p>
+          <p> </p>
+          <p>你能做到吗，[%username]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]应该就在司令室。</p>
+          <p> </p>
+          <p>不过，他应该正在对各处进行调查，所以不太容易找到。</p>
+          <p> </p>
+          <p>因此如果在司令室见到尼尔夏卡，一定要毫不犹豫地除掉他。</p>
+          <p> </p>
+          <p>那就辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得这件事不重要吗？还是没有自信？</p>
+          <p> </p>
+          <p>为什么就没有肯用心办事的守护者呢！</p>
+          <p> </p>
+          <p>大家都想做既容易又能挣钱的事情…这样下去的话，天族的未来将变成什么样子！</p>
+          <p> </p>
+          <p>[%username]，和你说这些又有什么用。反正你和其他人没什么两样。</p>
+          <p> </p>
+          <p>我知道了，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在现在的形势下，只要再对他们进一步施压，德雷得奇安很可能就会被迫撤出埃雷修兰塔。</p>
+          <p> </p>
+          <p>当然，必须在巴拉那特军团的人了解情况之前，对他们发动猛攻才行。</p>
+          <p> </p>
+          <p>对了，你除掉监查官尼尔夏卡，阻止他向上司发送报告了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>这样巴拉那特军团暂时就无法掌握情况，会继续处于混乱之中了。</p>
+          <p> </p>
+          <p>抓住这次机会，应该可以大大削弱龙族在埃雷修兰塔的势力。</p>
+          <p> </p>
+          <p>来，请你收下！这段时间你为削弱德雷得奇安付出了很多努力，这是给你的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mias]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉前来调查德雷得奇安的监查官尼尔夏卡，让巴拉那特军团无法掌握事情的情况。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>麦亚斯说巴拉那特军团为了了解德雷得奇安陷入混乱的原因，派出了监查官尼尔夏卡。</p>
+          <p> </p>
+          <p>于是去除掉了监查官，让巴拉那特军团无法掌握混乱的原因。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

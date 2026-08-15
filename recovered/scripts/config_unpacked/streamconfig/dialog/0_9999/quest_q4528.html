@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近在年轻的守护者中间，好像流行着一种割[%dic:STR_DIC_M_RM78]耳朵的危险的锻炼方法。</p>
+          <p> </p>
+          <p>很多人纷纷通过时空裂缝跑到因特尔蒂卡去。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_RM78]是经过多次活体实验制造出来的产物。</p>
+          <p> </p>
+          <p>绝对不是可以轻易对付的对象。据说他把守护者们当作练习用的沙袋一样打。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我既担心年轻的守护者会因为[%dic:STR_DIC_M_RM78]而受伤，更担心他们冒冒失失地到天界去会遇到危险。</p>
+          <p> </p>
+          <p>如果能把[%dic:STR_DIC_M_RM78]消灭掉，他们就没有理由要到天界去了。</p>
+          <p> </p>
+          <p>虽然他们很快就会找到其他的目标，但至少不会在天界遇到危险了。</p>
+          <p> </p>
+          <p>[%username]大人，这件事您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您参与到保护年轻守护者的工作中来。</p>
+          <p> </p>
+          <p>这件事虽然很危险，但可以获得金铸币作为奖励，对[%username]大人来说也是很划算的。</p>
+          <p> </p>
+          <p>请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子您现在很忙啊。</p>
+          <p> </p>
+          <p>有时间的话，请随时来找我。</p>
+          <p> </p>
+          <p>我会在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前又有一些年轻的守护者说要去锻炼胆量，到时空裂缝那边去了。</p>
+          <p> </p>
+          <p>唉……希望他们能安然回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从革命团秘密研究所回来吗？</p>
+          <p> </p>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>今后我还需要[%username]大人您的帮助。</p>
+          <p> </p>
+          <p>希望您能经常来帮助年轻的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_RM78]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Govanon]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去教训一下把年轻的守护者当成训练用沙包的RM-78c，然后向高巴农报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>高巴农说最近年轻的守护者中间流行的锻炼胆量的方法很危险，他对此很担心。</p>
+          <p> </p>
+          <p>他担心他们没锻炼成胆量，反而在去天界的时候遇到危险。</p>
+          <p> </p>
+          <p>为了保护年轻的守护者，消灭了RM-78c。回去告诉高巴农之后，他对我表示感谢，并说希望我今后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

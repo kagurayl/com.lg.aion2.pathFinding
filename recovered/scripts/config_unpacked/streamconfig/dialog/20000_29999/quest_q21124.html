@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>受到诅咒的地下城市的内部就像迷宫一样，一般人很难进去。真是太好了。</p>
+          <p> </p>
+          <p>有了这个的话，我去拯救兄弟们的时候就更方便了。</p>
+          <p> </p>
+          <p>谢谢你帮我搜集到了这么有用的东西。</p>
+          <p> </p>
+          <p>(仔细查看图纸)但是这个X标记是什么呢？</p>
+          <p> </p>
+          <p>好像写着什么东西，但是是龙族语，不知道是什么意思。如果你看得懂的话，能告诉我是什么意思吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说上面写着马里卡·努拉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说什么？马里卡·努拉？真的是马里卡·努拉吗？</p>
+          <p> </p>
+          <p>哎呀……你找到了一件很重要的东西。</p>
+          <p> </p>
+          <p>马里卡·努拉是催眠术士，抓去的兄弟们大部分是经过他的手被洗脑的。</p>
+          <p> </p>
+          <p>不知你有没有听哈尔迪斯比尼说，塞内加尔也是被他洗脑的。</p>
+          <p> </p>
+          <p>[%username]，我就长话短说了。请你帮我消灭[%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个X标记所在的位置好像就是[%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae]的住处，你去把他找出来。</p>
+          <p> </p>
+          <p>虽然他是催眠术士，但并不是说战斗能力就不强，因此千万不能大意。</p>
+          <p> </p>
+          <p>他的身边一定会有一些保护他的龙信徒，请你一起好好教训教训他们。</p>
+          <p> </p>
+          <p>[%username]，祝你成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么拒绝呢？不过我也可以理解。</p>
+          <p> </p>
+          <p>大老远地跑到受到诅咒的地下城市去找马里卡·努拉，而且他也没有给你造成什么危害。</p>
+          <p> </p>
+          <p>知道了。这是我们的事情，我会自己解决的。</p>
+          <p> </p>
+          <p>虽然目前有点困难，但总有一天我会把他除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，希埃尔主神，感谢你。</p>
+          <p> </p>
+          <p>你离开之后，我一直在向希埃尔主神祈祷，祈祷你能安然归来。</p>
+          <p> </p>
+          <p>看你好像没有受伤，看来我的祈祷奏效了。</p>
+          <p> </p>
+          <p>咕嘟，你去办的事情怎么样了？你把催眠术士马里卡·努拉消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，希埃尔主神，谢谢你。</p>
+          <p> </p>
+          <p>谢谢你，[%username]。你帮我们报了仇。</p>
+          <p> </p>
+          <p>当然除掉催眠术士一个人，并不能完全解决龙崇拜者的问题，但至少会好一点。</p>
+          <p> </p>
+          <p>能把他除掉，感觉别提有多爽快了。想到被他洗脑的同伴……</p>
+          <p> </p>
+          <p>(飞快地擦了一下眼角)抽泣，眼睛里好像进了什么东西。</p>
+          <p> </p>
+          <p>[%username]，拿着这个。我能给你的只有这个，不好意思。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ortiz]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在画有受到诅咒的地下城市地图的纸上，标有催眠术士马里卡·努拉的位置。消灭马里卡·努拉，为鸢族报仇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔提兹说想知道纸上X标记下面的龙族语是什么意思。</p>
+          <p> </p>
+          <p>告诉他是马里卡·努拉之后，他说那是对同伴们进行洗脑的催眠术士，让我去把他除掉。</p>
+          <p> </p>
+          <p>来到纸上标记的位置，消灭了催眠术士马里卡·努拉。回去之后，奥尔提兹含着泪水，对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

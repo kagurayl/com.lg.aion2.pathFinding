@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想制作新的料理。</p>
+          <p> </p>
+          <p>我刚刚想到了一种新的料理方法，因此必须在忘记之前把它做出来。</p>
+          <p> </p>
+          <p>但是我现在没有制作料理的材料，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能帮我吗？</p>
+          <p> </p>
+          <p>啊，真是太好了。多亏了你，这种新的料理方法没有消失。</p>
+          <p> </p>
+          <p>那你就去帮我搜集[%dic:STR_DIC_I_QUEST_2334a]、[%dic:STR_DIC_I_QUEST_2334b]、[%dic:STR_DIC_I_QUEST_2334c]和[%dic:STR_DIC_I_QUEST_2334d]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你！如果料理做成的话，我会把料理方法告诉你的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2334a]可以在下面的忘却盐漠的湖里采集到。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2334b]也可以在打猎忘却盐漠的慢性子恐龟获得。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2334c]和[%dic:STR_DIC_I_QUEST_2334d]在伏魔殿的料理商人达莱亚那里都能买到。</p>
+          <p> </p>
+          <p>那就请你帮我找到这些东西，千万别忘了什么，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥拉雄虽然做料理很能干，但是却很弱。</p>
+          <p> </p>
+          <p>我太害怕了，所以没办法弄到恐龟肉。</p>
+          <p> </p>
+          <p>新料理方法就这样消失的话，就太可惜了，呐呐。</p>
+          <p> </p>
+          <p>你不能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，守护者！</p>
+          <p> </p>
+          <p>奥拉雄让你去找的东西，都找到了吗？</p>
+          <p> </p>
+          <p>那就快点交给我吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去找吗？</p>
+          <p> </p>
+          <p>这样下去的话，我会把新料理方法忘记的，呐呐！</p>
+          <p> </p>
+          <p>所以请你快去帮我搜集[%dic:STR_DIC_I_QUEST_2334a]、[%dic:STR_DIC_I_QUEST_2334b]、[%dic:STR_DIC_I_QUEST_2334c]和[%dic:STR_DIC_I_QUEST_2334d]！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你稍等一下。我得做做试试看。</p>
+          <p> </p>
+          <p>(做好了料理，尝了尝味道)好了！太完美了！奥拉雄果然是最棒的料理师。</p>
+          <p> </p>
+          <p>来，这是整理好的料理方法。你也自己做点尝尝，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_2334all]，然后交给[%dic:STR_DIC_N_Shugo_DF2_8]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">奥拉雄说要制作新的料理。必须去帮他搜集需要的材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥拉雄说想到了新的料理，但是因为没有材料而正在苦恼。于是帮他搜集到了所需的材料，他说非常感谢，并把料理方法告诉了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

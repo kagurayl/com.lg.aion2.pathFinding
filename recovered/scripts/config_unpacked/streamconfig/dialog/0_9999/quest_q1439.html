@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是去过曼杜里森林啊？</p>
+          <p> </p>
+          <p>在你身上带有神圣的草木的味道，克拉！</p>
+          <p> </p>
+          <p>埃尔特内还有草木剩下的地方只有曼杜里森林。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我就拜托你一件事，克拉！</p>
+          <p> </p>
+          <p>你去曼杜里森林的时候，帮我搜集15个[%dic:STR_DIC_E_tree_n_c_20a]。</p>
+          <p> </p>
+          <p>我要做枪，但是在沙漠里只有正在死去的犹科，克拉。</p>
+          <p> </p>
+          <p>只有用新鲜的犹科做枪杆，才是好枪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_E_tree_n_c_20a]生长在曼杜里森林的各处。</p>
+          <p> </p>
+          <p>还有在马上就要完全变成沙漠的艾易隆沙漠里也生长着一些。</p>
+          <p> </p>
+          <p>帮我搜集15个。那么多就够了，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是我们能做的话，也不会来找你了，克拉！</p>
+          <p> </p>
+          <p>人类不喜欢我们克拉尔。我们去曼杜里森林的话，一定会攻击我们的。</p>
+          <p> </p>
+          <p>你再考虑一下吧。克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，克拉！</p>
+          <p> </p>
+          <p>乌尔卡托的动态很异常。</p>
+          <p> </p>
+          <p>必须尽快做好武器，做好准备。快把带来的东西给我，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出犹科树。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要跟我开玩笑，守护者。</p>
+          <p> </p>
+          <p>我们现在是赌上了生命和乌尔卡托对敌。</p>
+          <p> </p>
+          <p>快去曼杜里森林搜集15个[%dic:STR_DIC_E_tree_n_c_20a]，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者！</p>
+          <p> </p>
+          <p>很不错的[%dic:STR_DIC_E_tree_n_c_20a]。用它做成的枪杆绝对不会坏。</p>
+          <p> </p>
+          <p>祝福你，克拉拉！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_tree_n_c_20a]，然后交给[%dic:STR_DIC_N_NPC_Mabangta]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">马邦塔说需要犹科树来制作枪杆。必须去曼杜里森林搜集犹科树交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马邦塔说需要犹科树来制作对抗乌尔卡托的武器，但是因为人类厌恶克拉尔而不能到曼杜里森林附近去，因此请我帮他搜集犹科树。</p>
+          <p> </p>
+          <p>为马邦塔一行搜集到了犹科树，他说非常高兴，并郑重地向我道谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

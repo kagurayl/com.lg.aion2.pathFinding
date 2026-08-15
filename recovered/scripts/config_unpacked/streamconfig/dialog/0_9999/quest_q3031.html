@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>以下列罪名，通缉克拉赫姆斯船员和克拉努姆船员。</p>
+          <p> </p>
+          <p> 1. 驾驶海盗船，掠夺海边的村庄</p>
+          <p> 2. 杀害和劫持无辜的人</p>
+          <p> 3. 妨碍拉格托斯海岸整顿工作</p>
+          <p> </p>
+          <p>扫荡[%dic:STR_DIC_M_LF2A_TesinonSeamanM_46_An]和[%dic:STR_DIC_M_LF2A_TesinonSeamanR_46_An]的人，将会获得奖励。</p>
+          <p> </p>
+          <p>行政官[%dic:STR_DIC_N_Eunomia]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Background name="Doc_bg_q3031"/>
+    <Selects>
+      <Act href="HACTION_SETPRO1">挑战赏金。</Act>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉格托斯海岸的海盗团越来越猖獗，我对此很担心。</p>
+          <p> </p>
+          <p>他们甚至攻击了来这里进行调查的守护，所以就没什么好谈的了。</p>
+          <p> </p>
+          <p>我在村里张贴了悬赏公告，但是到现在还没有消息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赏金的主人终于出现了！</p>
+          <p> </p>
+          <p>祝贺您。</p>
+          <p> </p>
+          <p>来，这是约定的赏金。</p>
+          <p> </p>
+          <p>谢谢您帮我教训了那些该死的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除悬赏通缉的海盗团员</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_TesinonSeamanM_46_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_TesinonSeamanR_46_An]([%5]/12)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">去行政官[%dic:STR_DIC_N_Eunomia]那里领取赏金</font></p></step> 
+    </steps>
+          <p><font font_xml="quest_summary">清除遭到通缉的克拉赫姆斯船员和克拉努姆船员，从行政官埃乌诺米亚那里领取赏金。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在结界塔村的公告栏中看到了通缉海盗团员的传单。</p>
+          <p> </p>
+          <p>前往拉格诺斯海岸清除了克拉赫姆斯船员和克拉努姆船员，并向行政官埃乌诺米亚报告。他说辛苦了，并给了我赏金。</p>    
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

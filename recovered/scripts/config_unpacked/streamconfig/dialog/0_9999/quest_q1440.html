@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>今天的风沙又很严重。这样的天气需要格外注意。因为这种时候沙漠里的野兽比平时更活跃。</p>
+          <p> </p>
+          <p>[%username]大人应该也能想象得到，这里的野兽要比其他地方的凶恶得多。而且还有从叙路克到食人花、阿斯科等很多种类。</p>
+          <p> </p>
+          <p>因此，卫兵们几乎每天都有人受伤。</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被野兽伤到之后，需要用捣烂的八角茴香敷在伤口上做应急处理。但是现在受伤的人实在太多了...</p>
+          <p> </p>
+          <p>靠我一个人搜集根本不够用。</p>
+          <p> </p>
+          <p>如果您没什么急事的话，能稍微帮帮我吗？</p>
+          <p> </p>
+          <p>请您帮我搜集18个[%dic:STR_DIC_E_herb_n_c_20b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就不要拖延，马上就出发吧。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_herb_n_c_20b]是生长在沙漠里的药草，在这周围很容易可以找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有其他事情啊。</p>
+          <p> </p>
+          <p>也是，如果没有事情的话，您是不会到沙漠里来的。</p>
+          <p> </p>
+          <p>看您也很忙的样子，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，我拜托您采集的药草怎么样了？</p>
+          <p> </p>
+          <p>您该不会是把小萝卜挖回来了吧？</p>
+          <p> </p>
+          <p>我要看一看您带回来的是不是八角茴香，请您把药草给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出八角茴香。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还说呢，果然弄错了。</p>
+          <p> </p>
+          <p>我让您采集的是18个[%dic:STR_DIC_E_herb_n_c_20b]。</p>
+          <p> </p>
+          <p>八角茴香长着草绿色的叶子和浅紫色的话，这次请您不要再搞错了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您原来就对药草很了解吗？</p>
+          <p> </p>
+          <p>很多人分不清八角茴香和小萝卜，不过您找对了。</p>
+          <p> </p>
+          <p>请收下这个。这是对于您帮助我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_herb_n_c_20b]，然后交给[%dic:STR_DIC_N_Makarios]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">听说需要用于治疗伤者的药草。必须去沙漠采集八角茴香，然后交给马卡利安。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马卡利安抱怨很多人因为凶恶的野兽受伤了，但仅靠自己挖的药草很难满足需求。</p>
+          <p> </p>
+          <p>帮他到沙漠中采集到了八角茴香，马卡利安说非常感谢，让我以后采集到了八角茴香，就拿去给他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

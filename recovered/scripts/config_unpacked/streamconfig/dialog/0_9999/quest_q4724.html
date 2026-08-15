@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次德雷得奇安攻击作战的主要目的是阻止物资和兵力的补充。</p>
+          <p> </p>
+          <p>但是除此之外，还需要执行其他的作战。</p>
+          <p> </p>
+          <p>如果一次攻击能造成多方面的打击，对我们就会有利得多。</p>
+          <p> </p>
+          <p>这是我们一直以来对付德雷得奇安的办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想把埃雷修兰塔使用的方法用来对付赞特拉德雷得奇安。</p>
+          <p> </p>
+          <p>那就是消灭德雷得奇安的主要官员。</p>
+          <p> </p>
+          <p>上次你去执行过任务，应该知道这个任务并不容易。</p>
+          <p> </p>
+          <p>不过这件事总要有人来做。[%username]，你愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去把德雷得奇安的龙族队长和副官全部消灭掉。</p>
+          <p> </p>
+          <p>然后把[%dic:STR_DIC_I_QUEST_3724a]和[%dic:STR_DIC_I_QUEST_3724b]拿回来作为证据。</p>
+          <p> </p>
+          <p>请你顺便把[%dic:STR_DIC_M_IDDreadgion_02_DrakanRaInspector_55_Ah]和[%dic:STR_DIC_M_IDDreadgion_02_DrakanFiSupply_55_Ae]也消灭掉。把[%dic:STR_DIC_I_QUEST_3724c]%和[%dic:STR_DIC_I_QUEST_3724d]拿回来作为消灭它们的证据。</p>
+          <p> </p>
+          <p>你也知道，这种任务必须要有证物，所以一定不要忘了拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不想执行这么困难的任务吗？</p>
+          <p> </p>
+          <p>这件事确实很困难，我也可以理解。</p>
+          <p> </p>
+          <p>但是如果你不愿意执行任务，会让我很为难……</p>
+          <p> </p>
+          <p>当然，我就是再为难也不会强迫你去的，请别担心。</p>
+          <p> </p>
+          <p>难道就没人可以帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了约尔根的报告。</p>
+          <p> </p>
+          <p>他说你去执行消灭德雷得奇安的主要官员的任务了。</p>
+          <p> </p>
+          <p>你来找我，任务一定完成了吧？</p>
+          <p> </p>
+          <p>快把证物交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一向不能忍受失误。</p>
+          <p> </p>
+          <p>[%username]，我再给你一次机会。</p>
+          <p> </p>
+          <p>看在之前你立了那么多功的面子上。</p>
+          <p> </p>
+          <p>希望你快点去德雷得奇安消灭龙族的主要官员，把[%dic:STR_DIC_I_QUEST_3724_all]带回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]！</p>
+          <p> </p>
+          <p>这是个非常困难的任务，你却很好地完成了，看来你的责任感确实很强。</p>
+          <p> </p>
+          <p>这是给你的奖励。希望你好好使用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭赞特拉德雷得奇安的主要官员，搜集[%dic:STR_DIC_I_QUEST_3724_all]，然后交给[%dic:STR_DIC_N_Barretta]%</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">要想削弱德雷得奇安，必须消灭龙族的主要官员。消灭主要官员，搜集证物吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>约尔根说想将对付埃雷修兰塔的德雷得奇安的方法用在格尔克马洛斯，让我去消灭主要官员。</p>
+          <p> </p>
+          <p>于是渗透进赞特拉德雷得奇安内部，消灭了主要官员，并把证物交给了巴雷塔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

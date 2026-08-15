@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你的运气真好。</p>
+          <p> </p>
+          <p>又有了新的工作，我刚刚做好委托书。</p>
+          <p> </p>
+          <p>报酬很不错，你想看看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看委托书。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了在英吉斯温的龙族城市里寻找隐藏的宝物的委托。</p>
+          <p></p>
+          <p>查理隆侦探事务所成员，请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 目标：[%dic:STR_DIC_OBJ_FOBJ_Q46017a]</p>
+          <p></p>
+          <p> 2. 位置：英吉斯温[%dic:STR_DIC_W_LF4_SZ_C5]</p>
+          <p></p>
+          <p> 3. 详情：哈纳尔卡德的龙族宝物箱。据说里面装着大崩溃之前流传下来的龙族的秘密。</p>
+          <p> </p>
+          <p>渗透到英吉斯温的哈纳尔卡德，找到装载龙族宝物保管箱中的宝物的人，将会得到重谢。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你果然没有放过这个机会。</p>
+          <p> </p>
+          <p>虽然必须到[%dic:STR_DIC_W_LF4_SZ_C5]去，但风险和收益是对应的！</p>
+          <p> </p>
+          <p>你必须把[%dic:STR_DIC_OBJ_FOBJ_Q46017a]的宝物拿回来，我才会把奖励送给你。请别忘了把宝物从保管箱中拿出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？不感兴趣吗？</p>
+          <p> </p>
+          <p>这样的任务应该很划算啊？</p>
+          <p> </p>
+          <p>当然会有点危险，不过要想获得这么多的奖励，当然需要冒点险，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来啦，呐呐。</p>
+          <p> </p>
+          <p>看你的样子，好像没什么事。</p>
+          <p> </p>
+          <p>就算是多么好的宝物，到英吉斯温的龙族巢穴去，也有点太鲁莽了，呐呐。</p>
+          <p> </p>
+           <p>龙族的宝物找到了的话，就快让我看看吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色德拉纳魔法石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就算是德拉坎，也一样喜欢宝物。</p>
+          <p> </p>
+          <p>你难道不知道他们藏着什么宝物吗？</p>
+          <p> </p>
+          <p>别在这里待着，快去[%dic:STR_DIC_W_LF4_SZ_C5]寻找龙族宝物保管箱吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是保管箱里的东西？</p>
+          <p> </p>
+          <p>用血一样红的德拉纳制成的魔法石……</p>
+          <p> </p>
+          <p>应该会有一定的价值。</p>
+          <p> </p>
+          <p>啊，这些委托费你先收下。我只顾着看宝物，差点忘了给你了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">寻找藏在英吉斯温[%dic:STR_DIC_W_LF4_SZ_C5]的[%dic:STR_DIC_OBJ_FOBJ_Q46017a]，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从查理隆侦探事务所的格尔克马洛斯管理部职员那里收到了委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所的格尔克马洛斯管理部职员给了我一个委托书，让我去寻找藏在哈纳尔卡德的宝物。</p>
+          <p> </p>
+          <p>前往哈纳尔卡德找到了红色德拉纳魔法石，交给格尔克马洛斯管理部职员之后，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

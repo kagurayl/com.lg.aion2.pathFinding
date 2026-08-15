@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为听说[%dic:STR_DIC_W_LF2B_SZ_B2]有荒废的实体，所以我几次派守卫去调查，但每次都因为克鲁比埃尔的阻挠而失败。</p>
+          <p> </p>
+          <p>不知道为什么克鲁比埃尔为什么不愿离开实体。</p>
+          <p> </p>
+          <p>在泰奥勃莫斯发现实体，是一件重大的发现…极乐世界也对那个实体非常关心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要把克鲁比埃尔除掉，就可以开始调查，但到目前为止，派去的守卫们全都以失败而告终。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+          <p> </p>
+          <p>请你帮我把在实体周围徘徊的[%dic:STR_DIC_M_LF2A_Cherubim3_46_An]和[%dic:STR_DIC_M_LF2A_Cherubim4_46_An]扫荡干净。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>实体在[%dic:STR_DIC_W_LF2B_SZ_B2]。</p>
+          <p> </p>
+          <p>据之前去调查的守卫说，实体上可以感觉到不寻常的气息。</p>
+          <p> </p>
+          <p>好像具有某种强大的力量，请你把周围的克鲁比埃尔扫荡干净，让我们可以开始对实体进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里虽然有守卫在，但和广阔的地区相比，人员非常不足。</p>
+          <p> </p>
+          <p>不然我又怎么会向[%username]你请求帮助呢？</p>
+          <p> </p>
+          <p>希望你能重新考虑一下我的请求。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去做的事情怎么样了？</p>
+          <p> </p>
+          <p>克鲁比埃尔监视者和阿克克鲁比埃尔卫兵聚集在实体周围，实体应该不难找到吧？</p>                 </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。这样一来，那些妨碍调查的克鲁比埃尔的气焰就会受到打击。</p>
+          <p> </p>
+          <p>这下应该就能安心地对实体进行调查了。</p>
+          <p> </p>
+          <p>我虽然在其他地方守护过结界，但发现实体还是头一次，所以很兴奋。</p>
+          <p> </p>
+          <p>谢谢你帮我完成了这么重要的任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除守卫实体的克鲁比埃尔</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Cherubim3_46_An]([%2]/13)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Cherubim4_46_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Atropos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在拉格托斯海岸发现了实体。为了让阿特洛浦斯可以进行调查，清除实体周围的克鲁比埃尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿特洛浦斯说泰奥勃莫斯发现了实体，他因此非常兴奋。</p>
+          <p> </p>
+          <p>他希望实体可以对泰奥勃莫斯的重建起到帮助。</p>
+          <p> </p>
+          <p>按照他的拜托，清除掉了调查最大的绊脚石克鲁比埃尔和阿克克鲁比埃尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

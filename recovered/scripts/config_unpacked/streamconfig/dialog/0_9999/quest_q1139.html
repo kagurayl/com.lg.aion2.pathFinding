@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>讨生活越来越难了。</p>
+          <p> </p>
+          <p>现在想去托尔巴斯森林采集的话，得豁出性命才行。</p>
+          <p> </p>
+          <p>不过人要想生存下去也只能这样。</p>
+          <p> </p>
+          <p>即使困难也得赚钱。但是现在赔上了性命，却什么都得不到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来龙蜥兽和托格栖息在森林深处，而野狼则栖息在大路的旁边。</p>
+          <p> </p>
+          <p>但是由于龙蜥兽数量的突然增加，托格迁徙到了原来野狼的领地。</p>
+          <p> </p>
+          <p>可能是因为被夺走了领地，野狼比以前更凶恶了。连一般的路人都会袭击。</p>
+          <p> </p>
+          <p>所以现在我们根本不能安心采集。</p>
+          <p> </p>
+          <p>您能帮忙清除野狼，让我可以不必再担心生命安全吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>请您去大路边帮我清除那些不知好歹的[%dic:STR_DIC_MLA129]和[%dic:STR_DIC_MLA130]。</p>
+          <p> </p>
+          <p>帮我清除他们之后，我一定会给您酬谢的。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有急事。</p>
+          <p> </p>
+          <p>我知道了。</p>
+          <p> </p>
+          <p>看来应该去要塞和奇内索斯说说看。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来了。</p>
+          <p> </p>
+          <p>您清除野狼了吗？</p>
+          <p> </p>
+          <p>现在可以放心地采集了吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">叙述打猎结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。</p>
+          <p> </p>
+          <p>看来一段时间内都不用担心野狼了。</p>
+          <p> </p>
+          <p>这是说好的酬谢。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎威胁人类安全的野狼</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA129]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_MLA130]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ondanius]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">野狼无端攻击经过托尔巴斯的人们。清除大路周边野狼，让温达尼乌斯可以安心进行采集。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于凶暴、残忍的野狼，人们无法安全地通过托尔巴斯森林。</p>
+          <p> </p>
+          <p>清除了大路周边野狼，让温达尼乌斯可以安心进行采集。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

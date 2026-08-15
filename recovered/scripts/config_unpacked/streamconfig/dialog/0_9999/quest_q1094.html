@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>不好意思，让你到这么远的地方来。</p>
+          <p> </p>
+          <p>因为上次是[%username]你在卡里顿村落发现了拓本，所以不得不把[%username]你叫过来，请你谅解。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也收到了一份拓本的复印本，并进行了仔细的研究。也对泰奥勃莫斯相关的记录进行了仔细的研究。</p>
+          <p> </p>
+          <p>我觉得泰奥勃莫斯城寨的巨神兵的残骸，绝对不是偶然才留在那里的。</p>
+          <p> </p>
+          <p>他一定对巨神兵进行过研究，但要想了解对哪个部分研究到什么程度，需要具体的资料。</p>
+          <p> </p>
+          <p>[%username]，请你再辛苦一趟。你了解情况，调查起来应该会容易些，不是吗？</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1094-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我收到了奈斯托尔大人的信。他说他把泰奥勃莫斯的巨神兵的相关调查工作交给了[%username]你。</p>
+          <p> </p>
+          <p>我事先派人去泰奥勃莫斯进行了调查，希望能对你有所帮助。</p>
+          <p> </p>
+          <p>研究巨神兵的地点是个问题，但巨神兵的研究工作好像并不是在泰奥勃莫斯进行的。</p>
+          <p> </p>
+          <p>我们对城寨内外进行了搜索，除了巨神兵的残骸之外，没有发现其他东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从没有留下任何资料这一点看，一定是在某个秘密的地方进行研究。</p>
+          <p> </p>
+          <p>我想应该是离泰奥勃莫斯不远的地方，但现在还没有任何与研究地点有关的线索。唯一存在希望的地方就是阿郎凯海岸。</p>
+          <p> </p>
+          <p>据前往阿郎凯港口搜索的守卫的报告，在搁浅的船舶附近发现了一本丢弃的书。从位置上看，那本书很可能是从泰奥勃莫斯城寨流过去的。</p>
+          <p> </p>
+          <p>请你去阿郎凯海岸，找到他们所说的那本[%dic:STR_DIC_OBJ_LF2a_Book_Q1094A]，然后在泰奥勃莫斯找到研究巨神兵的场所。</p>
+          <p> </p>
+          <p>找到研究所的话，请你一定要确认一下泰奥勃莫斯对巨神兵已经研究到了什么程度。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(翻看了一下书，上面写着难以看懂的文字和图画。) </p>
+          <p> </p>
+          <p>(有四个巨大的兵器的图画。)  </p>
+          <p> </p>
+          <p>(各个兵器分别镶着黄球、红球、蓝球和绿球。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">把书放进箱子。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(非常陈旧的书。)</p>
+          <p> </p>
+          <p>(书页很破烂，完全看不到内容。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者殿堂一直在和我们联系。</p>
+          <p> </p>
+          <p>询问[%username]你对巨神兵的调查进展如何。 </p>
+          <p> </p>
+          <p>帕西美达斯大人好像对巨神兵抱有很大的希望。</p>
+          <p> </p>
+          <p>对了，调查完成了吗？泰奥勃莫斯对巨神兵的研究到底到了什么程度，你找到线索了吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么说巨神兵原来是永恒之塔创造的，而泰奥勃莫斯则成功地让破碎的巨神兵重新站了起来。</p>
+          <p> </p>
+          <p>虽然巨神兵站起来之后以破竹之势击退了德拉坎，但却没能抵挡住龙帝的攻击，重新被击碎了。</p>
+          <p> </p>
+          <p>知道巨神兵虽然不能和龙帝对抗，但能击退德拉坎，就已经是很大的收获了。</p>
+          <p> </p>
+          <p>必须马上把[%username]的调查结果写成报告给守护者殿堂送过去才行。</p>
+          <p> </p>
+          <p>这么困难的事情，你完成得非常出色。真是辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往极乐世界和[%dic:STR_DIC_N_Nestor]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">前往泰奥勃莫斯和[%dic:STR_DIC_N_Atropos]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">去阿郎凯海岸寻找[%dic:STR_DIC_OBJ_LF2a_Book_Q1094A]，寻找秘密研究所的线索[%8]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">杀死[%dic:STR_DIC_M_teobomos_all]，搜集球，进入[%dic:STR_DIC_OBJ_LF2a_Door_Q1094]寻找助手的研究日志</font></p>[%collectitem]</step>
+               <step><p visible="[%12]"><font color="[%13]">阅读[%dic:STR_DIC_E_LF2B_Q1094]，去极乐世界向[%dic:STR_DIC_N_Nestor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：奈斯托尔有关于巨神兵的事情要说，去极乐世界贤者的书库见见奈斯托尔吧。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+       <notify progress="4"  pos="3" fontsize="16" showframe="true" time="5" color="yellow">找到了助手的日志！</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收到了奈斯托尔大人的信。他说他把泰奥勃莫斯的巨神兵的相关调查工作交给了守护者。</p>
+          <p> </p>
+          <p>泰奥勃莫斯的研究材料无法寻找。需要在秘密研究所查找线索。</p>
+          <p></p>
+          <p>进入秘密实验室之后发现助手的日记。根据记录回到极乐世界进行报告！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>主线进行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去哪儿啦？现在才出现。</p>
+          <p> </p>
+          <p>拉泰尼行政官一直在找你。</p>
+          <p> </p>
+          <p>本来因为莱卡恩和姆格尔间谍就已经很忙了，现在她更加忙得焦头烂额了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我又不是算命的，我怎么知道。</p>
+          <p> </p>
+          <p>你去直接问行政官好了。</p>
+          <p> </p>
+          <p>怎么样？你去，还是不去？</p>
+          <p> </p>
+          <p>拉泰尼行政官让我在你出发之后通知她一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Lateni]行政官在因派图西姆的心脏。</p>
+          <p> </p>
+          <p>走着去的话，会花费不少时间，你最好还是通过飞行移动过去。</p>
+          <p> </p>
+          <p>我要说的就是这些。我会转告行政官，说你马上就会出发的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真的不想去吗？</p>
+          <p> </p>
+          <p>我就这样如实告诉拉泰尼行政官？</p>
+          <p> </p>
+          <p>如果你之后改变了主意，就爽爽快快告诉我，别犹犹豫豫的了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚刚收到了艾格泰尔的联系，说您马上就会过来。</p>
+          <p> </p>
+          <p>哎呀，请不要紧张。</p>
+          <p> </p>
+          <p>我让[%username]大人过来，是为了给您奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次我们决定选出几位对阿尔特盖德作出卓越贡献的人，对他们进行奖励。[%username]大人也在其中。</p>
+          <p> </p>
+          <p>虽然其他人也很优秀，但推荐[%username]大人的人非常多。</p>
+          <p> </p>
+          <p>很多人都对您大加称赞，真是让人羡慕。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Lateni]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说拉泰尼行政官在找我。到因派图西姆去见见她吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾格泰尔说拉泰尼行政官正在找我，让我快点过去。</p>
+          <p> </p>
+          <p>找到拉泰尼之后，她说让我过去，是为了给对阿尔特盖德作出贡献的人进行奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，我好像经常让你去执行任务。现在还有一个任务要交给你。</p>
+          <p> </p>
+          <p>要想让德雷得奇安完全瘫痪，光把舰长除掉是不够的。</p>
+          <p> </p>
+          <p>也就是说，必须在其它方面给予他们更大的打击。</p>
+          <p> </p>
+          <p>你听明白是怎么回事了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也就是说，必须把德雷得奇安的设备破坏掉。</p>
+          <p> </p>
+          <p>然后再把那里的巴拉那特军团的精锐士兵消灭掉，德雷得奇安就会彻底陷入混乱。</p>
+          <p> </p>
+          <p>你能进入德雷得奇安，破坏掉那里的主要设备，清除精锐士兵吗？</p>
+          <p> </p>
+          <p>反正要除掉舰长的话，也是要去德雷得奇安进行搜索的。所以这件事应该并不困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要破坏的设备是[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_13]。</p>
+          <p> </p>
+          <p>控制德雷得奇安的地方是司令室，把那里的苏尔卡纳破坏掉，德雷得奇安就会陷入瘫痪。</p>
+          <p> </p>
+          <p>然后再把德雷得奇安的核心兵力[%dic:STR_DIC_M_IDAb1_Dreadgion_Elite]清除掉。</p>
+          <p> </p>
+          <p>也就是说，必须破坏掉设备，消灭巴拉那特军团的精锐士兵，德雷得奇安才会完全瘫痪。</p>
+          <p> </p>
+          <p>这件事和除掉舰长的事同样重要，希望你能重视起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没有自信吗？</p>
+          <p> </p>
+          <p>连这点自信都没有，还想渗透到德雷得奇安内部？</p>
+          <p> </p>
+          <p>真是，没想到塔拉尼斯总司令官大人推荐的人竟然是这个样子...</p>
+          <p> </p>
+          <p>我知道了。看来我得去找其他人了，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>对了，你破坏掉德雷得奇安的设备，清除掉巴拉那特军团的精锐士兵了吗？</p>
+          <p> </p>
+          <p>请向我正式报告一下结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。德雷得奇安虽然没有从埃雷修兰塔完全消失，但应该会受到很大的打击。</p>
+          <p> </p>
+          <p>也就是说，我们必须继续破坏德雷得奇安司令室的动力装置，清除巴拉那特军团的精锐士兵。</p>
+          <p> </p>
+          <p>但依靠[%username]你和其他守护者的不懈努力，我相信德雷得奇安总有一天会完全消失。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">攻击德雷得奇安，使其陷入混乱</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_13] ([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAb1_Dreadgion_Elite] ([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Mias]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了使德雷得奇安陷入瘫痪，决定去破坏主要设备和清除精锐兵力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>麦亚斯说要想让德雷得奇安完全瘫痪，光除掉舰长是不行的。</p>
+          <p> </p>
+          <p>于是按照他的指示，破坏了司令室的动力装置，清除掉了巴拉那特军团的精锐兵力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

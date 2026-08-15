@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>据说有人喝了布鲁斯特豪宁的佩罗费图乌姆瀑布水之后，引起了强烈的腹痛。</p>
+          <p> </p>
+          <p>对原因进行调查后，发现栖息在瀑布下游的野生库雷斯的数量最近正在急剧增加。</p>
+          <p> </p>
+          <p>这样下去的话，污染也许会进一步恶化，瀑布水将不能再用作饮用水源。请全体结界守护团团员积极消灭[%dic:STR_DIC_M_DF2A_CuresSpotD_47_An]，完成任务后立即向[%dic:STR_DIC_E_45014]报告。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次您执行了什么任务呢？</p>
+          <p> </p>
+          <p>最近团员人数增加了很多，事情也多了起来，我没办法全部记住了。</p>
+          <p> </p>
+          <p>请把这次执行的任务和处理结果告诉我。我会根据事情的重要性给予您相应的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去解决佩罗费图乌姆瀑布的污染问题了啊。</p>
+          <p> </p>
+          <p>太好了。终于在污染进一步恶化前，把野生库雷斯消灭掉了。</p>
+          <p> </p>
+          <p>来，这是这次任务的奖励。</p>
+          <p> </p>
+          <p>希望您继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_DF2A_CuresSpotD_47_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">[%dic:STR_DIC_E_45014]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到了紧急信件，内容是消灭对布鲁斯特豪宁的水源佩罗费图乌姆瀑布造成污染的野生库雷斯。</p>
+          <p> </p>
+          <p>在污染进一步恶化前消灭了库雷斯，向布鲁斯特豪宁支部团员报告后，他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

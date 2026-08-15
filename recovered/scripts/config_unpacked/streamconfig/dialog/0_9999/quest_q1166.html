@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>森林里的每一个生物都受到污染的威胁。</p>
+          <p> </p>
+          <p>森林正在失去绿意，人们的足迹也早已从那里消失。</p>
+          <p> </p>
+          <p>必须在情况恶化之前，拿出切实可行的解决方法。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别是大耙爪龙蜴兽、毒刺蜘蛛和丛林路皮里尼，它们受污染的影响特别严重。</p>
+          <p> </p>
+          <p>本来我打算亲自出马去搜集标本，然而，前不久我不幸被受污染的蜘蛛咬伤，身体还没复原，真是可恶。</p>
+          <p> </p>
+          <p>我打算分析它们的体液，那样或许就会查出污染的原因。您是不是能有时间帮我搜集它们的体液标本呢？</p>
+          <p> </p>
+          <p>这将会对研究起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢了。 </p>
+          <p> </p>
+          <p>消灭受污染的大耙爪龙蜴兽，毒刺蜘蛛，丛林路皮里尼，然后将受污染的体液标本搜集起来交给我。</p>
+          <p> </p>
+          <p>１０份左右就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到森林污染原因是非常重要。 </p>
+          <p> </p>
+          <p>连守护者大人都袖手旁观，谁还会帮忙呢？</p>
+          <p> </p>
+          <p>请体谅体谅我们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经搜集完了体液标本了吗？</p>
+          <p> </p>
+          <p>因为被污染的动物们非常凶恶，我非常担心它们伤害到您。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将体液标本交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么，没有搜集到体液标本，空手来了？</p>
+          <p> </p>
+          <p>找到森林污染的原因是非常重要的，这件事我想守护者大人比我更清楚...</p>
+          <p> </p>
+          <p>那么请赶快去搜集标本吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您对我的支持。</p>
+          <p> </p>
+          <p>我一定会查出森林污染原因，决不会让守护者大人您失望的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集污染的体液标本，并交给[%dic:STR_DIC_LA29]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">森林的污染非常严重，必须查出原因。消灭受污染的大耙爪龙蜴兽，毒刺蜘蛛，丛林路皮里尼，并将搜集到的受污染的体液标本交给莱费奥斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱费奥斯因为森林污染日益严重的事情而忧心忡忡。</p>
+          <p> </p>
+          <p>为了查出被污染的原因，消灭受污染的大耙爪龙蜴兽、毒刺蜘蛛以及丛林路皮里尼，并搜集到被污染的体液标本交给了莱费奥斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

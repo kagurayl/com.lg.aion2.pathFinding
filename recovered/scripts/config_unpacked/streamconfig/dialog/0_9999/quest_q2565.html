@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你想赚钱吗？</p>
+          <p> </p>
+          <p>我正在构想一个伟大的事业，你也可以参加。</p>
+          <p> </p>
+          <p>啊，不是让你出资或者帮我去卖东西，所以不要担心。</p>
+          <p> </p>
+          <p>你只要帮我搜集材料就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事业。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我怎么才能相信你呢？</p>
+          <p> </p>
+          <p>要是告诉你之后，你又说不干怎么办。那我岂不是竹篮打水一场空。</p>
+          <p> </p>
+          <p>你就先答应我吧。我就把详细的内容告诉你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是明智的决定。你靠近一点，免得被人听见...</p>
+          <p> </p>
+          <p>(小声地说)贝鲁斯兰是个寒冷的地方，所以经常有冻伤的人。</p>
+          <p> </p>
+          <p>我的计划是制作冻伤药，卖给他们。怎么样？很不错的主意吧？</p>
+          <p> </p>
+          <p>要制作冻伤药，需要[%dic:STR_DIC_I_QUEST_2565a]和[%dic:STR_DIC_DF3_plant_d_n_c_30a]。你只要帮我搜集材料就行。</p>
+          <p> </p>
+          <p>只要你能帮我搜集到材料，其他的事情就由我来处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道会这样。所以才不能先告诉你。</p>
+          <p> </p>
+          <p>天上掉馅饼你竟然不要...不愿意的话就算了。</p>
+          <p> </p>
+          <p>以后等我成功了的话，别装着认识我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊？</p>
+          <p> </p>
+          <p>等了这么就都不来，我还以为你逃走了呢。不过你就是逃走，也逃不出卡姆亲亲的五指山。</p>
+          <p> </p>
+          <p>冻伤药材料都找到了吗？[%dic:STR_DIC_I_QUEST_2565a]和[%dic:STR_DIC_DF3_plant_d_n_c_30a]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出冻伤药材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？这么慢才过来，而且材料也没搜集到？</p>
+          <p> </p>
+          <p>看来是我看错人了。我是看你老实才会跟你说的。</p>
+          <p> </p>
+          <p>如果不是有白虎的话，我就自己去搜集材料了。</p>
+          <p> </p>
+          <p>不要再让我失望，快去搜集冻伤药材料吧。要是其他人也制作出了冻伤药的话，我的损失就大了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然晚了点，但材料总算搜集到了。</p>
+          <p> </p>
+          <p>啊，用这些做成冻伤药以后出售的话...呐，卡姆亲亲就能翻身了。</p>
+          <p> </p>
+          <p>拿着，这是材料钱。对了，你回来晚了吧！</p>
+          <p> </p>
+          <p>(把口袋里的钱拿走了一些)这是迟到的价钱。</p>
+          <p> </p>
+          <p>干嘛那样看我？你不知道时间就是金钱吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_MerdionWhiteD_38_n]的油脂和[%dic:STR_DIC_DF3_gb_source_plant_d_30b_1]的棉花，然后交给[%dic:STR_DIC_N_Shugo_DF3_9]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须去搜集冰雪象鼻虫的油脂和大麻棉，让卡姆亲亲可以制作冻伤药。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡姆亲亲说正在构想一个伟大的事业，劝我一起参加。</p>
+          <p> </p>
+          <p>所谓的事业计划，就是制作冻伤药，卖给寒冷的贝鲁斯兰地区的人们。</p>
+          <p> </p>
+          <p>按照卡姆亲亲的要求搜集到了冻伤药材料冰雪象鼻虫的油脂和大麻棉。但是她说我去晚了，给的报酬比约定的少了很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

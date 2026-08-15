@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你认识在[%dic:STR_DIC_W_DF1A_16]做生意的[%dic:STR_DIC_N_Shugo_DF1_9]吗？</p>
+          <p> </p>
+          <p>那你会去那边吗？</p>
+          <p> </p>
+          <p>不是别的，是有件事情想拜托你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Shugo_DF1_9]让我帮他找的东西，现在已经到了。</p>
+          <p> </p>
+          <p>但是那件东西不是普通的东西，需要偷偷地送过去，不能让人看见。</p>
+          <p> </p>
+          <p>不要问到底是什么，打死我也不会告诉你的。</p>
+          <p> </p>
+          <p>而且我也不知道他为什么要找那个东西。你也知道，不管是什么东西，只要给钱，我们乌云贸易团就一定能弄到手。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好不容易弄到手的，一定要尽快送过去。</p>
+          <p> </p>
+          <p>不过要是我亲自送过去很容易引起别人的注意。这样一来就违反了先前说好的要偷偷送过去的约定了。</p>
+          <p> </p>
+          <p>所以你能不能替我把这个东西送去给[%dic:STR_DIC_N_Shugo_DF1_9]呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿尔特盖德东部关隘有一个卖杂货的[%dic:STR_DIC_N_Shugo_DF1_9]。</p>
+          <p> </p>
+          <p>你把这个东西交给那个术古族人。</p>
+          <p> </p>
+          <p>马布伦他会给你丰厚的报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马布伦应该会给你不少报酬的。</p>
+          <p> </p>
+          <p>要是不愿意的话也没办法，我只好找其他的守护者了。</p>
+          <p> </p>
+          <p>但我给马布伦东西的事情一定替我保密啊。</p>
+          <p> </p>
+          <p>一定要保密。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来买东西的吗？</p>
+          <p> </p>
+          <p>那是不是扎帕灵派你过来的？</p>
+          <p> </p>
+          <p>那趁着没人注意的时候赶紧把东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出扎帕灵的包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(确认包裹里面的东西)</p>
+          <p> </p>
+          <p>我要的东西都在里面了。</p>
+          <p> </p>
+          <p>非常感谢你能把这包东西送过来。你也听扎帕灵说了吧，你给我送这包东西的事情一定要保密。</p>
+          <p> </p>
+          <p>这是你的辛苦费和保密费，收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_N_Shugo_DF1_9]转交给[%dic:STR_DIC_I_quest_2262a]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把扎帕灵委托的那包东西送到阿尔特盖德东部关隘的马布伦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说马布伦暗地里向扎帕灵购买了什么东西。</p>
+          <p> </p>
+          <p>因为要求不能让人看见，所以到阿尔特盖德东部关隘将包裹交给了对方。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

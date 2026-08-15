@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚好有件事想确认一下，你来的正是时候。</p>
+          <p> </p>
+          <p>我们术古看上去和[%dic:STR_DIC_E_Ship_Li]的黑暗术古很像吗？</p>
+          <p> </p>
+          <p>他们自称是乌云贸易团，到处招摇撞骗，把我们的中介生意全部抢走了。</p>
+          <p> </p>
+          <p>我们和他们长得完全不一样，为什么有人会把他们当成术古呢？不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多客户都遭受了损失。</p>
+          <p> </p>
+          <p>因为[%dic:STR_DIC_E_Ship_Li]，乌云贸易团的信用正在下降。</p>
+          <p> </p>
+          <p>必须阻止卑鄙的黑暗术古冒充术古。</p>
+          <p> </p>
+          <p>(小声说)我这里有很多没用的金铸币……你难道不想要这些东西吗？</p>
+          <p> </p>
+          <p>希望你能帮帮我们，维护乌云贸易团的名誉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑暗术古的头目是[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]。</p>
+          <p> </p>
+          <p>他的铁钩指向哪里，就会有无数的黑暗术古船员为他出生入死。</p>
+          <p> </p>
+          <p>如果你能帮我教训教训[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]，他们暂时应该就不敢冒充乌云贸易团了。</p>
+          <p> </p>
+          <p>我会在这里像望夫石一样等你回来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你现在不需要金铸币啊。</p>
+          <p> </p>
+          <p>不过你可以随时来找我。</p>
+          <p> </p>
+          <p>我会举双手对你表示欢迎的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼噜！怎么去了这么久？</p>
+          <p> </p>
+          <p>像石头一样一动不动地待着……真是难受。</p>
+          <p> </p>
+          <p>对了，我拜托你的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话，铁耙号暂时就动弹不得了！</p>
+          <p> </p>
+          <p>但是等胡特金重新恢复之后，他们一定又会冒充乌云贸易团四处抢劫。</p>
+          <p> </p>
+          <p>这也许是一场没有尽头的战斗。</p>
+          <p> </p>
+          <p>谢谢你的帮助，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Ship_Li]的船长[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">回到[%dic:STR_DIC_N_Shugo_LC1_27]那里去</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭冒充乌云贸易团的铁耙号的头目胡特金，然后回到库噜明那里去。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库噜明说铁耙号冒充乌云贸易团，给贸易团的信誉造成了损害。</p>
+          <p> </p>
+          <p>他说如果能教训一下智慧铁耙号的船长胡特金，他们应该就暂时不敢冒充乌云贸易团了。</p>
+          <p> </p>
+          <p>消灭了胡特金，回去见到库噜明之后，他对我表示感谢，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

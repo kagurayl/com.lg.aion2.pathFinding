@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我并不恨……村里的人。</p>
+          <p> </p>
+          <p>大家都是不幸的黑暗术古。</p>
+          <p> </p>
+          <p>大家都很胆小，他们只不过是为了保护自己而已。</p>
+          <p> </p>
+          <p>爸爸被逐出村子的事情，我也可以理解……</p>
+          <p> </p>
+          <p>但是……就算我再怎么宽容，有一些黑暗术古我还是不能原谅。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就是为了生存而出卖同族的叛徒！</p>
+          <p> </p>
+          <p>龙族看到黑暗术古之后，一般都会把他们杀死。但如果向它们献上祭品，有时就不会被杀死。</p>
+          <p> </p>
+          <p>在我们被赶出村子之后，妈妈和我，还有塞茨奇奇在附近躲了起来。</p>
+          <p> </p>
+          <p>但是那些投靠了龙族的黑暗术古们……找到了我们，劫走了妈妈。</p>
+          <p> </p>
+          <p>他们把她当作献给龙族的祭品！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妈妈临死的时候都没能见我一眼。后来见到的时候，她已经死了，浑身都是伤痕。</p>
+          <p> </p>
+          <p>我们四处逃亡。</p>
+          <p> </p>
+          <p>但是妈妈浑身是血的样子，我却一直没有忘记。</p>
+          <p> </p>
+          <p>要不是有塞茨奇奇的话……我早就去报仇了。</p>
+          <p> </p>
+          <p>但我只是个弱小的黑暗术古。要是我去报仇的时候被人杀死，塞茨奇奇就没人照顾了。</p>
+          <p> </p>
+          <p>如果你是站在正义一边的，希望你能帮我们报仇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道。</p>
+          <p> </p>
+          <p>龙族绝对不会成为黑暗术古的伙伴。</p>
+          <p> </p>
+          <p>投靠龙族的黑暗术古一定会死掉。</p>
+          <p> </p>
+          <p>但是我还是想要报仇。守护者，拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你为什么不愿意帮我呢？</p>
+          <p> </p>
+          <p>你是觉得向黑暗术古报仇之类的事情不重要吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然一直都很辛苦……</p>
+          <p> </p>
+          <p>但塞茨奇奇给了我很大的力量。</p>
+          <p> </p>
+          <p>我要成为一个优秀的人，把塞茨奇奇养大成人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(哗啦啦地流下了眼泪。)</p>
+          <p> </p>
+          <p>你真的，真的帮我报仇了吗？</p>
+          <p> </p>
+          <p>现在妈妈终于可以安息了。呜呜！真是谢谢你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Q11141]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shulack_LF4_1]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭让塞伊金的母亲惨死的叛徒黑暗术古。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞伊金说因为投靠龙族的黑暗术古，母亲惨遭杀害，他希望为母亲报仇。</p>
+          <p> </p>
+          <p>于是帮他消灭了黑暗术古叛徒，塞伊金流着泪向我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

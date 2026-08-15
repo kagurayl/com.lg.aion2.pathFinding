@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有件紧急的事情要拜托您，正想让您来一趟呢。</p>
+          <p> </p>
+          <p>情况很紧急，我就单刀直入了。</p>
+          <p> </p>
+          <p>您知道，克罗坦岛这里是个热气非常强的地方。事实上不仅是克罗坦岛，整个三重岛都是熔岩的海洋。</p>
+          <p> </p>
+          <p>因此产生了一些问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然因为天气太热，士兵们的体力下降也是问题。但比这更为严重的问题是武器的变形。</p>
+          <p> </p>
+          <p>欧比斯中使用的武器大部分都是出自极乐世界的名人之手，因此不容易被熔化。但是由于长时间暴露在高温下，像剑和弓之类的偶尔会变形。</p>
+          <p> </p>
+          <p>[%username]大人您也知道，武器是非常敏感的东西，只要有一点变形，功能就会产生很大的差异。</p>
+          <p> </p>
+          <p>还好我们想到了解决方法，不过需要有人帮忙...您也看到了，现在士兵们都离不开各自的岗位。</p>
+          <p> </p>
+          <p>不好意思，[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了，我就知道您会答应的！</p>
+          <p> </p>
+          <p>啊，解决的方法就是贪欲兽的心脏。不久之前我们抓住了一个在要塞附近徘徊的魔族侦察兵，发现他的剑没有任何问题。</p>
+          <p> </p>
+          <p>审问之下才知道，那是他们将[%dic:STR_DIC_I_QUEST_1822a]和金属一起熔化制作而成的剑。贪欲兽的心脏非常耐热，在熔岩里都不会熔化。</p>
+          <p> </p>
+          <p>所以我们也想使用这种方法。请您去打猎周围的[%dic:STR_DIC_M_Ab1_1221_Pretor_38_An]，搜集几个它们的心脏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢？我以为[%username]大人一定会答应的。</p>
+          <p> </p>
+          <p>现在再去找别人就太晚了...</p>
+          <p> </p>
+          <p>[%username]大人，您能重新考虑一下吗？</p>
+          <p> </p>
+          <p>这次的事情如果能顺利完成，我会好好地向上面称赞[%username]大人的功劳。当然，还会有很丰厚的谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就想您差不多该回来了。</p>
+          <p> </p>
+          <p>我让您帮着搜集的[%dic:STR_DIC_I_QUEST_1822a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克罗坦贪欲兽的心脏。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以[%username]大人的实力，几头贪欲兽我想应该是小菜一碟。是我期望太高了吗？</p>
+          <p> </p>
+          <p>没时间了。武器的变形越来越严重了。</p>
+          <p> </p>
+          <p>这样下去的话，士兵们就无法发挥自己的能力了！</p>
+          <p> </p>
+          <p>请您抓紧时间，把[%dic:STR_DIC_I_QUEST_1822a]带回来。快。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真神奇。我想不怕火的东西应该很烫，没想到反而和冰块一样。</p>
+          <p> </p>
+          <p>我得赶快把它熔化，镀到武器上去。啊，最好是重新铸造，但是现在没有那个时间，只能先镀一层了。</p>
+          <p> </p>
+          <p>请收下。要捕捉贪欲兽必须靠近熔岩，请您去喝点凉爽的饮料降降温吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_Ab1_1221_Pretor_38_An]搜集心脏，然后交给[%dic:STR_DIC_N_Ab1_1221_Quest_Li]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了制造不怕火的武器，搜集克罗坦贪欲兽的心脏，然后交给莫伊拉伊。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莫伊拉伊说由于克罗坦岛的热气，武器产生了变形，这样下去的话，士兵们将无法发挥自己的实力。</p>
+          <p> </p>
+          <p>还好在魔族俘虏的剑上找到了解决方法，那就是用不怕火的贪欲兽的心脏制作武器。</p>
+          <p> </p>
+          <p>于是去打猎克罗坦贪欲兽，把心脏交给了莫伊拉伊。她说没时间了，得赶紧把心脏熔化镀到武器上。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你想搜集黑暗术古铸币吗？</p>
+          <p> </p>
+          <p>那就接受我的委托吧。</p>
+          <p> </p>
+          <p>我需要一样东西，如果你能帮我搜集到，我就把黑暗术古铸币送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要红色迪欧纳埃的花瓣。</p>
+          <p> </p>
+          <p>那是制作染色剂时需要用到的东西。</p>
+          <p> </p>
+          <p>守护者，你能帮我搜集到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须是栖息在布鲁斯特豪宁的[%dic:STR_DIC_M_DF2A_DionaeaSwampD_45]的花瓣才行。</p>
+          <p> </p>
+          <p>其他的商用价值比较低。</p>
+          <p> </p>
+          <p>如果你能帮我搜集10片花瓣，我就把黑暗术古铸币送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愿意的话就算了。</p>
+          <p> </p>
+          <p>反正除了你之外，还有很多人愿意帮我。</p>
+          <p> </p>
+          <p>你怎么还不走啊？</p>
+          <p> </p>
+          <p>因为你，我的客人都吓跑了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>是从我这里买的东西有问题吗？</p>
+          <p> </p>
+          <p>我已经说过了，我这里是绝对不可以交换或退货的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色迪欧纳埃的花瓣。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_DF2A_DionaeaSwampD_45]的花瓣在哪里啊？</p>
+          <p> </p>
+          <p>该不会说你的手掌就是花瓣吧？</p>
+          <p> </p>
+          <p>魔界的人真奇怪。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你是去搜集红色迪欧纳埃的花瓣的人吗？</p>
+          <p> </p>
+          <p>魔族全都长得一模一样，我都分不清谁是谁。</p>
+          <p> </p>
+          <p>你等一下。</p>
+          <p> </p>
+          <p>1、2、3...10！10片没错。</p>
+          <p> </p>
+          <p>拿着。这是说好的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF2A_DionaeaSwampD_45]的花瓣，然后交给[%dic:STR_DIC_N_Shulack_DC1]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说只要搜集到红色迪欧纳埃的花瓣，就可以获得黑暗术古铸币。去布鲁斯特豪宁搜集红色迪欧纳埃的花瓣吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>黑暗术古商人查奥奇奇说想获得黑暗术古铸币的话，就帮她做一件事。</p>
+          <p> </p>
+          <p>于是按照她的要求，搜集到了红色迪欧纳埃的花瓣，她按照约定把黑暗术古铸币送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

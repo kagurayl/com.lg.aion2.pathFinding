@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为你就做[%userclass]做得很好，没想到你的料理手艺还真不错。</p>
+          <p> </p>
+          <p>这种程度的手艺的话，即使去制作供奉给主神的料理也毫不逊色。当然还需要我的帮助，呵呵呵。</p>
+          <p> </p>
+          <p>好了，[%username]！我有件急事要拜托你，你能抽出时间吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是什么困难的事情，你不必紧张。 </p>
+          <p> </p>
+          <p>只要把这个包裹给欧比斯的迪内克斯送过去就可以了。里面装的是小萝卜面包粉，一点都不重。</p>
+          <p> </p>
+          <p>怎么样？你能帮帮我吗？当然不是让你白帮我干活。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就喜欢你的爽快劲儿。</p>
+          <p> </p>
+          <p>这是要送给迪内克斯的包裹。他说着急要，所以请你快一点。 </p>
+          <p> </p>
+          <p>哦，对了，辛苦费迪内克斯会给你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我以为你会爽快地答应呢。老实说我有点失望。</p>
+          <p> </p>
+          <p>费迪内克斯说明天做晚饭必须要有小萝卜面包粉，这下怎么办呢...</p>
+          <p> </p>
+          <p>你还不走在那里干什么？不帮忙的话就别在那儿妨碍我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您需要什么呢？对不起。我今天有点晕头。</p>
+          <p> </p>
+          <p>我负责为特米伦据点提供食材，最近忙得两只手都忙不过来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出小萝卜面包粉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是赫斯蒂亚大人让您来的啊。</p>
+          <p> </p>
+          <p>我正在等我订的小萝卜面包粉什么时候能送过来呢，真是来得太是时候了。</p>
+          <p> </p>
+          <p>谢谢您把东西送到这么远的地方来。这是一点谢意，请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔把小萝卜面包粉交给[%dic:STR_DIC_N_Denegos]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把赫斯蒂亚给的小萝卜面包粉交给埃雷修兰塔的特米伦据点的杂货商人迪内克斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫斯蒂亚说有件东西需要马上送给特米伦据点的杂货商人迪内克斯，让我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把赫斯蒂亚给的小萝卜面包粉交给了迪内克斯，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

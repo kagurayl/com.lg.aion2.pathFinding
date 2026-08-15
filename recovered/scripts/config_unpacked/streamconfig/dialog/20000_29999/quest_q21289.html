@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]，有件紧急的事情。</p>
+          <p></p>
+          <p>(查看四周，小声地说)我收到了情报，说天族通过锡兰泰拉回廊进入了格尔克马洛斯。</p>
+          <p></p>
+          <p>为了以防万一，最好事先做好准备。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>从内部来说，格尔克马洛斯防御基地是心理上的最前线。</p>
+          <p></p>
+          <p>因此巴卡巴塔封印塔和红色大地神殿被天族占领时，[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]代理人大人就会亲自守卫格尔克马洛斯防御基地。</p>
+          <p></p>
+          <p>[%username]%，希望那时你能在旁边为他提供力量。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你能答应，我就放心了。你一定会为代理人大人提供有力的支持。</p>
+          <p></p>
+          <p>对了，[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]代理人大人受到天族攻击时，请你启动泰格拉克的奥德集中器。</p>
+          <p></p>
+          <p>那是可以将[%username]你内在的奥德理论传送给代理人的装置，在这个奥德稀薄的地方会非常有帮助。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我无法理解你为什么会拒绝。</p>
+          <p></p>
+          <p>需要泰格拉克代理人大人亲自出马，情况一定非常紧急。</p>
+          <p></p>
+          <p>因此才更需要[%username]你的帮助。</p>
+          <p></p>
+          <p>只有像你这样有实力的人，才能为泰格拉克代理人大人提供力量支持。希望你能重新考虑一下，拜托。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%userclass]，你叫什么名字？</p>
+          <p></p>
+          <p>你在混乱中沉着应战的样子，让人印象深刻。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说出名字。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]……你就是那个人啊。</p>
+          <p></p>
+          <p>请收下。这是泰格拉克代理人大人给你的礼物。</p>
+          <p></p>
+          <p>因为你通过奥德集中器传送的力量，我们在能在天族的攻势下守住格尔克马洛斯防御基地。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">使用[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]的奥德集中器，将力量传递给代理人[%2]</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">和[%dic:STR_DIC_N_Mijien]对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">马勒库坦的代理人泰格拉克受到天族攻击时，使用泰格拉克的奥德集中器，向代理人传递力量。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>贝尔德·普尼尔让我在泰格拉克代理人和天族战斗的时候为她提供力量支持。</p>
+          <p></p>
+          <p>按照他的指示，使用泰格拉克的奥德集中器，将力量传递给礼物代理人，获得了奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

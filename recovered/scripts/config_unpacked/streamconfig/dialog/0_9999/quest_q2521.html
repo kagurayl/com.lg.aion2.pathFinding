@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好，[%username]。</p>
+          <p> </p>
+          <p>我有件秘密的事情想拜托您...您愿意接受吗？</p>
+          <p> </p>
+          <p>这是个人的耻辱，所以我不想让斯贝拉和其他的执政官知道。</p>
+          <p> </p>
+          <p>你能帮我保密，接受我的请求吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有爬虫类恐惧症。只要一看到它们，就会浑身瘫软，头晕眼花。</p>
+          <p> </p>
+          <p>只要从帐篷出去，就有很多巴拉努斯，所以让我很受不了。</p>
+          <p> </p>
+          <p>你可能会说连不死族都能对付的人，怎会怕那种东西。但是这是天生的毛病，我也没有办法。</p>
+          <p> </p>
+          <p>但是我要是这么说的话，我的权威就会下降，所以我只能不动声色。</p>
+          <p> </p>
+          <p>所以我想拜托你，帮我把那些[%dic:STR_DIC_M_VaranusRe2D_31_n]清除掉？要是让它们从我眼前消失就好了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。那就请你去帮我把黑色平原上的[%dic:STR_DIC_M_VaranusRe2D_31_n]清除掉。</p>
+          <p> </p>
+          <p>先从营地前面的家伙开始。然后再把通往贝斯佩尔幽灵村的路上的家伙清除掉。</p>
+          <p> </p>
+          <p>那条路我每天都要走，如果红刺巴拉努斯消失了的话，我就会感觉轻松很多。</p>
+          <p></p>
+          <p>还有，这件事一定要帮我保密，千万别跟别人说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为你是值得信任的人，才把这个秘密告诉你。没想到你竟然会拒绝。</p>
+          <p> </p>
+          <p>我知道了。不愿意的话，你就走吧。</p>
+          <p> </p>
+          <p>但是千万别跟人说我害怕巴拉努斯哦。</p>
+          <p> </p>
+          <p>如果这样的传言传到我的耳朵里，我一定不会放过你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]。</p>
+          <p> </p>
+          <p>我刚好看到周围的巴拉努斯好像减少了，知道那一定是[%username]你干的。</p>
+          <p> </p>
+          <p>对了，红刺巴拉努斯全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你，[%username]。</p>
+          <p> </p>
+          <p>巴拉努斯虽然没有完全消失，但这样的话我就会好很多。</p>
+          <p> </p>
+          <p>看不见它们，我的心情也好了，胃口也有了。</p>
+          <p> </p>
+          <p>来，请你收下。这是你帮我的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_VaranusRe2D_31_n]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gigrite]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">吉格里泰说他正在因为爬虫类恐惧症而痛苦。帮他清除黑色平原的红刺巴拉努斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来清除不死族的神圣保护者吉格里泰说自己有爬虫类恐惧症，一看到巴拉努斯就一身冷汗，头晕眼花。</p>
+          <p> </p>
+          <p>但是因为担心权威受损，不能把这件事告诉手下的神官和执政官。于是秘密地帮他清除掉了红刺巴拉努斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

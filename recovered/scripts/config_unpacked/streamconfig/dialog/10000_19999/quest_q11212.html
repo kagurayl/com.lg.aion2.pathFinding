@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(长长的半透明的东西。)</p>
+          <p> </p>
+          <p>(仔细查看，上面密密麻麻地写满了龙族的文字。)</p>
+          <p> </p>
+          <p>(好像是龙族的情报记忆水晶。)</p>
+          <p> </p>
+          <p>(最上面写着“亚龙的战斗”。)</p>
+          <p> </p>
+          <p>(应该拿去给亚龙追踪者[%dic:STR_DIC_N_Wivius]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为到了龙界之后，一定很容易就能找到，看来没那么容易。</p>
+          <p> </p>
+          <p>手头的情报实在太少了。</p>
+          <p> </p>
+          <p>如果能发现并消灭亚龙，我的名字就会在极乐世界流芳百世。</p>
+          <p> </p>
+          <p>如果你有什么发现，千万不要告诉别人，一定要先告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出龙族的记忆水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这是什么？</p>
+          <p> </p>
+          <p>是德拉坎写的书啊。虽然样子很奇怪，但确实是一本书。</p>
+          <p> </p>
+          <p>什么？名字是“亚龙的战斗”难道内容和亚龙有关？你到底是在哪里找到的！</p>
+          <p> </p>
+          <p>(埋头阅读内容。)</p>
+          <p> </p>
+          <p>什么啊！这不是和亚龙的战斗方法有关的书，讲述的是如何像保护蛋的亚龙一样，进行顽强的防御。</p>
+          <p> </p>
+          <p>该死的龙族，竟然用这种比喻法来迷惑人……</p>
+          <p> </p>
+          <p>真让人扫兴。[%dic:STR_DIC_N_Kerus]喜欢研究兵法，他也许会喜欢的，你给他送过去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>方法论是一门科学的学问。</p>
+          <p> </p>
+          <p>指挥官不仅掌握着无数部下的生命，还掌握着城市的命运和世界的未来。</p>
+          <p> </p>
+          <p>因此必须选择更加可靠的方法，你说对不对？</p>
+          <p> </p>
+          <p>如果你也想成为一名优秀的指挥官，可以来找我。我可以告诉你成为一名指挥官的基本方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出龙族的记忆水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是龙族的记忆水晶吗？</p>
+          <p> </p>
+          <p>德拉坎的兵法书？</p>
+          <p> </p>
+          <p>我在兵法方面颇有研究，但是对龙族的兵法却不甚了解。多亏了你，让我得到了这么珍贵的东西。</p>
+          <p> </p>
+          <p>我得赶紧看一看。德拉坎在漫长的战斗中，到底积累了什么智慧呢。我要亲自确认一下！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Wivius]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Kerus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了龙族的记忆水晶。把它交给维比乌斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在太古森林里发现了记录着和亚龙的战斗有关的龙族的记忆水晶。</p>
+          <p> </p>
+          <p>把它交给了亚龙追踪者维比乌斯，但是他说内容和亚龙没什么关系，亚龙只是个比喻。</p>
+          <p> </p>
+          <p>于是拿去交给了凯鲁斯，他非常高兴，说多亏了我才能得到这么珍贵的魔族兵法书。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

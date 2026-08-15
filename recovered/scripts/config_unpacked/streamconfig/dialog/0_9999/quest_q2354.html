@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我因为个子很矮，所以从小受到了不少嘲笑。而且又长得很胖，所以经常有人说我长得像姆格尔。</p>
+          <p> </p>
+          <p>不知道那些嘲笑有没有对我产生影响。因为您也看到了，我现在和姆格尔一起生活。</p>
+          <p> </p>
+          <p>但是现在如果有谁说我像姆格尔的话，我绝对不会放过他。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是比那更不能让人忍受的，是觉得我个子小，什么事情都做不了的歧视。</p>
+          <p> </p>
+          <p>父母对我也从来没有抱有任何期待。做错了事，他们也觉得是因为个子小，没办法，所以从来不责备我。</p>
+          <p> </p>
+          <p>但是活了这么长时间，我之所以从家里出来，也是为了给别人看看，我也可以做些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然已经离开家很久了，但是还是没能做成什么特别的事情。唯一的不同，是我现在带领着一群姆格尔。</p>
+          <p> </p>
+          <p>我想做点什么伟大的事情，然后回到家乡扬名立万。</p>
+          <p> </p>
+          <p>所以我想了一下，如果我能扫荡塔兰的龙岩洞穴的纽特的话，应该就能出名了。</p>
+          <p> </p>
+          <p>但是它们的数量有很多。我一个人要想把它们全都清除掉实在是太困难了。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去塔兰的熔岩洞穴，帮我捕捉[%dic:STR_DIC_M_NeutL1_25_Ae]和[%dic:STR_DIC_M_NeutH1_26_Ae]吧。</p>
+          <p> </p>
+          <p>从山坡上下去会看到一个洞穴，您从那里进去就行。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是，是！知道，我知道。</p>
+          <p> </p>
+          <p>自己的事情应该自己做。麻烦别人，给自己增光，是很不好的事情。</p>
+          <p> </p>
+          <p>但是，如果自己做不了的话，把人组织起来取得成功难道不也是了不起的事情吗？</p>
+          <p> </p>
+          <p>不过既然您不愿意，我也没有办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为想要捕捉纽特，所以在这里待了一段时间，姆格尔们都不耐烦了。</p>
+          <p> </p>
+          <p>也许是呆在这里太无聊了吧。</p>
+          <p> </p>
+          <p>我必须尽快扬名立万，然后回到家乡去。</p>
+          <p> </p>
+          <p>我拜托您去清除的[%dic:STR_DIC_M_NeutL1_25_Ae]和[%dic:STR_DIC_M_NeutH1_26_Ae]全都抓住了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>我回故乡的日子应该不远了。</p>
+          <p> </p>
+          <p>我绝对不会忘记[%username]大人对我的帮助的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1_25_Ae]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutH1_26_Ae]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kimci]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助金西去塔兰的熔岩洞穴，把纽特上级巡查兵和纽特上级境界兵清除掉。 </font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金西说想要做点什么大事，扬名立万之后再回到家乡。</p>
+          <p> </p>
+          <p>于是他树立了扫荡塔兰的熔岩洞穴的目标，但是因为纽特数量太多而无法实现。</p>
+          <p> </p>
+          <p>他向我请求帮助，于是帮助他清除了纽特上级巡查兵和纽特上级警戒兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

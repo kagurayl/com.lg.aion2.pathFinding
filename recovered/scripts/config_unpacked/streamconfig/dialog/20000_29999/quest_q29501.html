@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，每次看到你的时候，都会让我感到惊讶。</p>
+          <p> </p>
+          <p>我想用不了多久，就要把老师的饭碗抢走了，哈哈。</p>
+          <p> </p>
+          <p>对了，技能学习得怎么样了？学会上级烙印之石技能了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，看来你也是得到了贝尔盖米尔的帮助，对吧？干得好。</p>
+          <p> </p>
+          <p>在上级烙印之石中有龙族的东西，因此有些人不愿意使用。我觉得这是一种偏见。</p>
+          <p> </p>
+          <p>我觉得如果能利用其它种族的技能来对付天族和龙族，会有更好的效果。</p>
+          <p> </p>
+          <p>还好破坏之神庙也是这么想的。为了让剑星和护法星能够熟练使用上级烙印之石技能，他们下发了公文，决定对他们提供支援。</p>
+          <p> </p>
+          <p>啊，当然不是任何人都能得到支援，必须是能够熟练使用上级烙印之石的人才行。</p>
+          <p> </p>
+          <p>[%username]，你知道如何使用上级烙印之石，因此符合资格条件。怎么样？你愿意参加吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。破坏之神庙知道你也参加的话，一定会很高兴的。</p>
+          <p> </p>
+          <p>事实上，神庙之所以制定这次的支援政策，是为了培养更多可以派往龙界的人才。不知道你有没有听说，最近格尔克马洛斯的情况不是太好。</p>
+          <p> </p>
+          <p>具体的情况我们以后再说。我必须确认你是否可以熟练使用上级烙印之石技能，用什么办法好呢……</p>
+          <p> </p>
+          <p>你是护法星，就用***吧。请你去使用***10次。</p>
+          <p> </p>
+          <p>那样的话，其他的上级烙印之石应该也不会有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？我也说过，并不是要求所有护法星都参加，只有会使用上级烙印之石的人才能获得机会。</p>
+          <p> </p>
+          <p>只要使用指定的上级烙印之石技能，就能获得稀有的上级烙印之石。你这都不愿意吗？</p>
+          <p> </p>
+          <p>呵呵，那些想参加却没有机会的人知道之后，一定会哭笑不得的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>练习结束了吗？</p>
+          <p> </p>
+          <p>来，我得确认你是否学会了。</p>
+          <p> </p>
+          <p>靠近一点，让我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">靠近一些。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用手放在我的头上)嗯，你按照约定，努力地练习了上级烙印之石的使用。</p>
+          <p> </p>
+          <p>辛苦你了。这是破坏之神庙赐给你的奖励。希望你能和***一样熟练掌握。</p>
+          <p> </p>
+          <p>接下去你想干什么呢？没特别的事情的话，希望你能去格尔克马洛斯看看。</p>
+          <p> </p>
+          <p>最近连天族都到了那里，我们陷入了苦战。[%username]，如果有你这么优秀的护法星参战，一定可以大大提高我们魔族的战斗力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用上级烙印之石技能([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Traufnir]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">据说破坏之神庙正在向能够熟练使用上级烙印之石的护法星发放上级烙印之石。使用***，证明自己可以熟练使用上级烙印之石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉乌普尼尔说破坏之神庙正在向能够熟练使用上级烙印之石的剑星和守护星发放上级烙印之石。</p>
+          <p> </p>
+          <p>按照特拉乌普尼尔的指示，熟练掌握了***。回去之后，他按照约定，给了我一块新的上级烙印之石。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

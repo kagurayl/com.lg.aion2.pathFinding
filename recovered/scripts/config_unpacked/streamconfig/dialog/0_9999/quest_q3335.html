@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是吵死了！</p>
+          <p> </p>
+          <p>啊，您好。</p>
+          <p> </p>
+          <p>[%username]大人，我不是说您，请不要误会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看见前面的格里芬和普雷尔了吗？</p>
+          <p> </p>
+          <p>那些家伙一直在这里打架。</p>
+          <p> </p>
+          <p>打的时候也不安静一些，到处都是嘈杂的声音。因为它们，我都快发疯了。</p>
+          <p> </p>
+          <p>刚把它们赶走，没过一会儿它们又都回来了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来因为护卫的事情，我就已经够忙了。</p>
+          <p> </p>
+          <p>所以我说，您能帮我把前面吵闹的家伙消灭掉一些吗？</p>
+          <p> </p>
+          <p>我想让那些吵闹的家伙见识一下什么是守护者的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人能答应帮我，真是太好了。</p>
+          <p> </p>
+          <p>因为它们，我的神经一直很敏感，这下终于可以松一口气了。</p>
+          <p> </p>
+          <p>请您快去把前面的[%dic:STR_DIC_M_Griffon_35_An]%和[%dic:STR_DIC_M_Pretor_36_An]%消灭掉。</p>
+          <p> </p>
+          <p>有时候它们会成群地冲上来，请一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不是很着急的任务，但我还以为您应该会帮我呢……</p>
+          <p> </p>
+          <p>是因为这只是个人的小事，所以您不想帮忙吗？</p>
+          <p> </p>
+          <p>如果您是那样想的，我就没办法了。我不想勉强您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我看见了您战斗的样子。</p>
+          <p> </p>
+          <p>您可真了不起。看到您那么轻而易举就消灭了它们，真让我惊叹不已。</p>
+          <p> </p>
+          <p>多亏了您，周围好像安静一些了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>虽然我没有告诉过别人，其实因为普雷尔和格里芬，我的神经真的非常敏感，所以经常发脾气。</p>
+          <p> </p>
+          <p>这下我终于可以集中精神做事了。</p>
+          <p> </p>
+          <p>这全都是托[%username]大人的福。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭吵闹的怪物</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Griffon_35_An]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Pretor_36_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Laigas]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去消灭岩石山监视基地前面吵闹的格里芬和普雷尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说岩石山监视基地附近的格里芬和普雷尔经常打架，弄得沸沸扬扬。</p>
+          <p> </p>
+          <p>帮助为此而头疼的莱卡斯消灭了它们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

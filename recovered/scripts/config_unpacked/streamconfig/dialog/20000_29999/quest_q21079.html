@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在担任执政官的过程中，我领悟到了一件事。</p>
+          <p> </p>
+          <p>那就是“擒贼必须先擒王。”</p>
+          <p> </p>
+          <p>小兵再怎么厉害都只是小兵。很快会有新的人来代替。</p>
+          <p> </p>
+          <p>但是头目却不同，不是说代替就能代替得了的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们准备攻打米特拉坎德，因为那里是指挥格尔克马洛斯的龙族的头目所在的地方。</p>
+          <p> </p>
+          <p>但是必须做好充分的事前准备，第一步是摧毁米特拉坎德烽火台。让米特拉坎德无法提前知道我们的进攻。</p>
+          <p> </p>
+          <p>但是去那里的路非常难走，守卫烽火台的敌人也很强，所以我们还没找到合适的人选。</p>
+          <p> </p>
+          <p>我想[%username]大人应该是合适的人选，这件事能交给您吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_W_DF4_SZ_C1_Fire]建在悬崖上，用一般的方法是无法到达的。</p>
+          <p> </p>
+          <p>请您利用风路过去。在德拉纳农场监视哨所，有通往米特拉坎德烽火台的风路。</p>
+          <p> </p>
+          <p>到达米特拉坎德烽火台之后，请您消灭那里的头目[%dic:STR_DIC_M_DF4_W_C1_DrakanFi_Re_Nmd_55_An]和[%dic:STR_DIC_M_DF4_W_C1_DrakanWi_Re_Nmd_55_An]。</p>
+          <p> </p>
+          <p>让他们无法通过烽火台，告诉其他龙族有敌人入侵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是很重要的事情，所以我才会拜托[%username]大人……</p>
+          <p> </p>
+          <p>如果您有其他的事要办的话，那就算了。</p>
+          <p> </p>
+          <p>我会再找找有没有别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说您去了德拉纳农场监视哨所那边。</p>
+          <p> </p>
+          <p>烽火看守和[%dic:STR_DIC_M_21079]全部消灭掉了吗？</p>
+          <p> </p>
+          <p>通过风路过去的时候，有没有遇到什么问题呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人真是找对人了。</p>
+          <p> </p>
+          <p>让人头疼的烽火兵消失了，我们终于可以放心地进攻米特拉坎德了。</p>
+          <p> </p>
+          <p>我们会观察一下情况，然后再发动进攻。</p>
+          <p> </p>
+          <p>谢谢您的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭守卫[%dic:STR_DIC_W_DF4_SZ_C1_Fire]的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_21079]([%2]/2)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_W_C1_DrakanFi_Re_Nmd_55_An]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_W_C1_DrakanWi_Re_Nmd_55_An]([%8]/1)</font></p>
+               </step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Brynhild]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让格尔克马洛斯的执政官能够进攻米特拉坎德，必须消灭守卫米特拉坎德烽火台的龙族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布吕希尔德百夫长说他们准备进攻龙族头目所在的米特拉坎德，为了能够获胜，必须做好事前准备工作。</p>
+          <p> </p>
+          <p>其中第一件事，是消灭守卫米特拉坎德烽火台的烽火兵，并把这件事交给了我。</p>
+          <p> </p>
+          <p>利用德拉纳农场监视哨所的风路潜入米特拉坎德烽火台，消灭了烽火看守和烽火兵。回去之后，布吕希尔德对我表示感谢，说终于可以执行下一步计划了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

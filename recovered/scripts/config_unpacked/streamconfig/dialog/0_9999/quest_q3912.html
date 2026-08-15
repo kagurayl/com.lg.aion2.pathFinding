@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你现在是堂堂的[%userclass]了，最好能花时间回顾一下自己的过去。</p>
+          <p> </p>
+          <p>你想过生命之神庙为什么要设置这样的课程吗？</p>
+          <p> </p>
+          <p>尤斯迪埃主神担心治愈星和护法星忘记生命的含义。</p>
+          <p> </p>
+          <p>我相信神庙的弟子们一定不会忘记他的教诲。</p>
+          <p> </p>
+          <p>在这个充满了破坏和死亡的世界，我知道弟子们也面临着很多困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但现在的天界充满了愤怒。</p>
+          <p> </p>
+          <p>对龙族的愤怒，对魔族的愤怒…根本没有人关心生命的价值。</p>
+          <p> </p>
+          <p>这种时候，正是我们挺身而出的时候。</p>
+          <p> </p>
+          <p>[%username]！尤斯迪埃主神的弟子。</p>
+          <p> </p>
+          <p>请你回到执行任务的地方。向倒下的同伴伸出救援之手，传播生命的教诲。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你把手伸给倒下的同伴。</p>
+          <p> </p>
+          <p>即使是和自己没有任何关系，甚至是自己讨厌的人。先把手伸出去，是生命的弟子们应有的姿态。</p>
+          <p> </p>
+          <p>看到倒下的人，请让他复活。看到失去力量的人，请帮他恢复力量。</p>
+          <p> </p>
+          <p>用你的手让足够数量的人复活之后，请你再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，请你最好听从老师的话。</p>
+          <p> </p>
+          <p>神庙不会让弟子们做不好的事情。</p>
+          <p> </p>
+          <p>我相信你一定会改变想法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沿着生命之路前行的人，必须注意的一件事就是自满。</p>
+          <p> </p>
+          <p>绝对不能因为对方的生命掌握在自己手中，就产生自满。</p>
+          <p> </p>
+          <p>那种想法只有堕落的魔族才有。</p>
+          <p> </p>
+          <p>怎么样，[%username]？我让你去做的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道这件事很不容易。</p>
+          <p> </p>
+          <p>虽然你是追随尤斯迪埃主神的人，但说到底，[%userclass]你也曾经是一个有着各种烦恼的人类。</p>
+          <p> </p>
+          <p>生命的教诲会因为你的善行而发光。</p>
+          <p> </p>
+          <p>真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_RESURRECT]，复活倒下的同伴([%2]/20)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Thrasymedes]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按特拉希梅德斯所说，向倒地的同伴使用复活技能。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉希梅德斯说生命的教诲正在被人遗忘，让我去行善，传播生命的教诲。</p>
+          <p> </p>
+          <p>于是用生命的力量复活了倒地的人，回去见到他之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

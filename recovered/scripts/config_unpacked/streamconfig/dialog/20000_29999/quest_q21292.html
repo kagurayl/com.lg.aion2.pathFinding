@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(环顾四周)今天好像会有大事发生。</p>
+          <p></p>
+          <p>你是来抓亚龙的吗？</p>
+          <p></p>
+          <p>我说怎么这么多人。</p>
+          <p></p>
+          <p>(突然两眼放光)喂，我能拜托你一件事吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我们到这里来，是为了寻找某种东西。</p>
+          <p></p>
+          <p>哎呀，别误会。不是武器或者宝石之类的宝物，可以说是一种采集物。</p>
+          <p></p>
+          <p>还好用不着到太深的地方去，问题是亚龙守护队哨兵。</p>
+          <p></p>
+          <p>他们一直来回巡逻，我都没办法干活。请你把它们消灭掉。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这可以说是天上掉下来的馅饼。</p>
+          <p></p>
+          <p>要想消灭帕德玛夏，反正必须消灭那些家伙，所以我才会拜托你。</p>
+          <p></p>
+          <p>但是别担心，我不会让你白帮我的。只要你能把事情做好，我一定会好好酬谢你。</p>
+          <p></p>
+          <p>记住！是守护队德拉坎精锐警戒兵和守护队德拉坎精锐管理兵。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这人怎么一点都不懂变通呢？</p>
+          <p></p>
+          <p>其他人也这么说吗？还是只有你不愿意啊？</p>
+          <p></p>
+          <p>要想去消灭帕德玛夏，难道不应该先清理掉入口处的敌人吗？那样的话，帕德玛夏守护队哨兵也需要清理掉，为什么不愿意呢？</p>
+          <p></p>
+          <p>啊，你是怕口说无凭吗？这人，把我当成什么人了！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>啊，真是太危险了。</p>
+          <p></p>
+          <p>我还以为整个洞穴都要塌了呢。</p>
+          <p></p>
+          <p>对了，我要的东西怎么样了？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>哈哈，这下今后做起事来就容易多了。</p>
+          <p></p>
+          <p>下面该我来履行约定了吗？</p>
+          <p></p>
+          <p>拿着，这是报答。</p>
+          <p></p>
+          <p>(眨了眨眼睛)下次一定要再来帮我哦。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">消灭[%dic:STR_DIC_M_Q21292]([%2]/5)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%15]">
+                <font color="[%16]">和[%dic:STR_DIC_N_Pilot]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">为了让皮罗提能安心地搜集采集物，去消灭帕德玛夏守护队哨兵吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>皮罗提说为了搜集特殊的采集物，必须潜入帕德玛夏的洞穴深处，但是因为帕德玛夏守护队哨兵的监视，事情遇到了困难，让我帮帮他。</p>
+          <p></p>
+          <p>按照皮罗提的委托，消灭了帕德玛夏守护队哨兵，他说今后做事就容易多了，并给了我奖励。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

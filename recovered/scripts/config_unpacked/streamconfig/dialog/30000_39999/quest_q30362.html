@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在首先要做的，是清除奥尔卡尼姆碎片。</p>
+          <p> </p>
+          <p>如果那个碎片留在那里，将对我们控制深渊残骸造成妨碍。</p>
+          <p> </p>
+          <p>为了防止出现更多的生命体，必须首先清除掉碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也这么认为？那我就放心了。</p>
+          <p> </p>
+          <p>[%username]，你对深渊残骸的情况比较了解，这次你能再帮我跑一趟吗？</p>
+          <p> </p>
+          <p>如果让不熟悉情况的人去，还需要跟他说明详细的情况，那样的话就太麻烦了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，谢谢你这么爽快地答应。</p>
+          <p> </p>
+          <p>请你到深渊残骸去消灭[%dic:STR_DIC_OBJ_IDAbRe_Core_Seed]。</p>
+          <p> </p>
+          <p>据我推测，消灭奥尔卡尼姆碎片，将会对你今后的战斗起到很大的帮助。</p>
+          <p> </p>
+          <p>如果能破坏掉碎片，你的神圣力就会恢复。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也许你觉得这只是一件小事，但其实绝对不是小事。</p>
+          <p> </p>
+          <p>从长期来看，要想控制深渊残骸，就必须完成这个任务。</p>
+          <p> </p>
+          <p>没想到你竟然会拒绝，这可让我怎么办呢？</p>
+          <p> </p>
+          <p>看来只能请其他守护者帮忙，或者向要塞请求支援了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过深渊残骸了吗？</p>
+          <p> </p>
+          <p>拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>奥尔卡尼姆碎片破坏掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>你也应该知道，清除深渊残骸中的奥尔卡尼姆碎片的工作现在才刚刚开始。</p>
+          <p> </p>
+          <p>希望下次你能再来帮我。</p>
+          <p> </p>
+          <p>只要你继续帮我，一定会有好事发生的，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_OBJ_IDAbRe_Core_Seed]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于奥尔卡尼姆碎片的存在，深渊残骸中不断有生命体出现。去清除掉奥尔卡尼姆碎片吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格沃尔说要想控制深渊残骸，必须消灭掉碍事的生命体。</p>
+          <p> </p>
+          <p>于是去清除了创造出生命体的奥尔卡尼姆碎片。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

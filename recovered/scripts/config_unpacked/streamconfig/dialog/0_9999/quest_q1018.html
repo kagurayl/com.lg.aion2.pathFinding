@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近克拉尔好像在各处策划着阴谋。我们无法忍受卑贱的亚人种如此狂妄。</p>
+          <p> </p>
+          <p>以前的要塞队长好像一直把精力放在维持状况不再恶化，但是我却不这么认为。只有攻击才是最好的防守。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人都在背后说我只关心击退克拉尔。说我因为个人的怨恨而一直和克拉尔为敌。</p>
+          <p> </p>
+          <p>我的妻子和年幼的儿子死在克拉尔的手上确实是事实。曾经有一段时间我很自责为什么只有我一个人活了下来。</p>
+          <p> </p>
+          <p>是复仇的信念支撑我活到了现在，这也是事实。</p>
+          <p> </p>
+          <p>但这并不是全部。我绝不是因为个人的怨恨而如此憎恶克拉尔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>图尔辛克拉尔是分裂亚特雷亚的龙族的帮凶，不断地威胁着人类，难道不是令人憎恶的东西吗？</p>
+          <p> </p>
+          <p>当然应该把他们从这块地方赶走。 </p>
+          <p> </p>
+          <p>在把他们完全消失之前，我是绝对不会放手的。</p>
+          <p> </p>
+          <p>来，跟我说说看吧。你已经清除了图尔辛克拉尔，并把5个证物带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出图尔辛克拉尔的证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么，还没有清除克拉尔？你到底在干什么？</p>
+          <p> </p>
+          <p>为什么让这些该死的家伙逍遥法外！ </p>
+          <p> </p>
+          <p>我不是让你带5个图尔辛克拉尔的证物回来吗？</p>
+          <p> </p>
+          <p>那才是我想要的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1018-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起！ </p>
+          <p> </p>
+          <p>如果所有的人都有你的意志和出色的能力的话该有多好！那样的话就能马上斩断他们的根。</p>
+          <p> </p>
+          <p>克拉尔灭亡的那一天总会到来。</p>
+          <p> </p>
+          <p>首先，我要给予你与你的意志和勇气相符的奖赏。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集5个[%dic:STR_DIC_QILA66]，然后交给[%dic:STR_DIC_LA19]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：清除图尔辛克拉尔可以获得[%dic:STR_DIC_QILA66]。收集5个证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在要塞队长的指令书上，写着清除图尔辛克拉尔，并带回5个[%dic:STR_DIC_QILA66]。</p>
+          <p> </p>
+          <p>收集证物是需要耐心的工作，但是完成任务之后，斯帕塔洛斯队长给予了丰厚的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：清除图尔辛克拉尔，收集证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

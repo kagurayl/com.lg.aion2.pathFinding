@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>在凯西内尔主神的恩宠和众多守护者的努力下，我们终于在英吉斯温站稳了脚跟。</p>
+          <p> </p>
+          <p>最大的问题奥德问题也通过永恒之塔碎片和欧柏利斯克解决了，现在终于可以放手进行下一阶段的准备了。</p>
+          <p> </p>
+          <p>那就是建造英吉斯温结界塔。</p>
+          <p> </p>
+          <p>我们已经派遣了几个会员去寻找建造结界塔的地点，请你去确认一下情况。</p>
+          <p> </p>
+          <p>请你先去见见贪婪祭坛的[%dic:STR_DIC_N_Keios]，了解一下目前的情况，然后向[%dic:STR_DIC_E_35021]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，稍微一放松警惕，就会遭到攻击，真是头疼死了。</p>
+          <p> </p>
+          <p>好吧，你来这里有什么事吗？</p>
+          <p> </p>
+          <p>看你好像是个自由守护者……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说明情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来是神圣守护会的同志啊。</p>
+          <p> </p>
+          <p>(环顾四周，小声说)接到指示之后，我进行了调查，以现在的情况，好像还没办法在这里建造结界塔。</p>
+          <p> </p>
+          <p>这里离幻影要塞很远，奥德含量不足，敌人的攻击也太频繁了。</p>
+          <p> </p>
+          <p>如果不能占领锡兰泰拉回廊和防御壁的那一边，就很难在贪婪祭坛建造结界塔。</p>
+          <p> </p>
+          <p>不好意思，我现在很忙！从这里被赶出去的家伙，说不定还在外面，出去的时候，一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有被人跟踪吧？</p>
+          <p> </p>
+          <p>最近经常发生针对神圣守护会会员的袭击事件，[%username]大人您也要小心。</p>
+          <p> </p>
+          <p>对了，您见过凯奥斯了吗？</p>
+          <p> </p>
+          <p>贪婪祭坛的情况怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达凯奥斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不出我所料。现在还无法在贪婪祭坛建造结界塔。</p>
+          <p> </p>
+          <p>那里每天都会遭到龙族和魔族的攻击，那样是没办法建造结界塔的。</p>
+          <p> </p>
+          <p>真是辛苦您了。我会如实向上面报告的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Keios]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35021]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说到了在英吉斯温寻找建造结界塔的地点的时候了，让我去贪婪祭坛见见凯奥斯，确认一下那里的情况。</p>
+          <p> </p>
+          <p>见到凯奥斯之后，询问前哨基地的情况。他说以目前的情况来看，还无法建造结界塔。回去告诉了英吉斯温支部负责人之后，他说会向上面如实报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，现在你应该已经熟悉佣兵团的事务了吧？</p>
+          <p> </p>
+          <p>听说你觉得现在的任务太容易，很无聊？大白天还在那里睡觉。</p>
+          <p> </p>
+          <p>那我就给你一件可以发挥你实力的任务吧。</p>
+          <p> </p>
+          <p>看看你能不能做得好。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>知道[%dic:STR_DIC_FLA03]对面的那个农场吧？就是阿盖尔的那个农场。</p>
+          <p> </p>
+          <p>听说农场被[%dic:STR_DIC_MLA116]%占领了。</p>
+          <p> </p>
+          <p>人们都被赶了出来，现在连庄稼都种不了。</p>
+          <p> </p>
+          <p>所以向[%dic:STR_DIC_ELA15]上缴的租金也逐渐减少了。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村里的人想驱赶凯鲁宾，但却被那些家伙给击败，很多村民都受了伤。</p>
+          <p> </p>
+          <p>老实说，一帮天天拿着锄头干活的人怎么可能打得过那些残暴的怪物呢。</p>
+          <p> </p>
+          <p>可能是和[%dic:STR_DIC_ELA15]有关的问题，所以神官特地让你去。</p>
+          <p> </p>
+          <p>去好好教训一下那帮家伙吧。</p>
+          <p> </p>
+          <p>当然，我们只要能得到报酬就行。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1001-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把[%dic:STR_DIC_MLA116]给消灭了？看起来你还挺强的嘛。</p>
+          <p> </p>
+          <p>听说你丢失了记忆，我还担心你会完成不了这个任务。</p>
+          <p> </p>
+          <p>看来你比我想象的还要厉害一点，可以给你一些难度更大的任务了。</p>
+          <p> </p>
+          <p>先歇一歇。休息好之后我还有新任务给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问新任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然你击退了凯鲁宾，但是要完全把他们清除还早得很。</p>
+          <p> </p>
+          <p>经调查，据说凯鲁宾有聚集在强大的家伙身边的习性。</p>
+          <p> </p>
+          <p>先把那个强大的家伙给除掉，再去清理其他的家伙会比较容易一些。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去除掉[%dic:STR_DIC_MLA117]，然后带5个[%dic:STR_DIC_QILA67]回来。</p>
+          <p> </p>
+          <p>从外表上看，虽然和小角凯鲁宾没什么区别，但是却极其凶残，所以你一定要小心。我们也不是老农民，如果佣兵被凯鲁宾打败了，那就成别人笑柄了。</p>
+          <p> </p>
+          <p>对了!神官说只有把证据带回来，才会给我们辛苦费。</p>
+          <p> </p>
+          <p>所以要收好大脚凯鲁宾的犬牙，然后带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1001-2.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>事情都办完了吧？</p>
+          <p> </p>
+          <p>把[%dic:STR_DIC_QILA67]交给我吧。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递出凯鲁宾的犬牙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然给你布置了任务，但却没指望你能完成。你倒是给了我一个意外。</p>
+          <p> </p>
+          <p>听说你丢失了记忆，我原本还担心你会成为佣兵团的负担。不过，以你现在的实力，完全可以排在我前面了。</p>
+          <p> </p>
+          <p>去[%dic:STR_DIC_LA139]团长那里报告一下。他会给你报酬的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">结束对话。</Act>
+    </Selects>
+    <Voice file="Q1001-3.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select3_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？没能清除那些家伙？我就知道结果会这样。</p>
+          <p> </p>
+          <p>真不明白当初怎么会相信你这个丢失了记忆的家伙的？居然还让你加入佣兵团……</p>
+          <p> </p>
+          <p>作为佣兵，只有完成任务才能拿到报酬。</p>
+          <p> </p>
+          <p>快去把事情干完。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务完成得很漂亮，我很满意。</p>
+          <p> </p>
+          <p>在神官面前，你也维护了我们的面子。</p>
+          <p> </p>
+          <p>好，这些是说好的报酬。以后要继续为我们卡利安佣兵团出力。</p>
+          <p> </p>
+          <p>为了卡利安佣兵团的光荣!</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_LA149]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">除掉[%dic:STR_DIC_MLA116]([%5]/5)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">回去找[%dic:STR_DIC_LA149]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">搜集[%dic:STR_DIC_QILA67]之后，带给[%dic:STR_DIC_LA149]</font></p>[%collectitem]</step>
+               <step><p visible="[%12]"><font color="[%13]">去见佣兵团[%dic:STR_DIC_LA139]团长</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令:凯鲁宾占领了[%dic:STR_DIC_FLA209]，危害很大。 去找[%dic:STR_DIC_LA149]，接受任务。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去[%dic:STR_DIC_LA149]那里接受任务，击退侵入阿盖尔的农场的小角凯鲁宾和大脚凯鲁宾。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：去见佣兵团副团长[%dic:STR_DIC_LA149]%。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

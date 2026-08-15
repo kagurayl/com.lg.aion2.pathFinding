@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我有件急事想交给你。</p>
+          <p> </p>
+          <p>这是个非常困难的任务，需要潜入天界深处，消灭强大的敌人。</p>
+          <p> </p>
+          <p>但是运气好的话，可能有机会获得很好的奖励。</p>
+          <p> </p>
+          <p>怎么样？胃口是不是被吊起来了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的英德拉图军团的势力，渗透到了天界因特尔蒂卡南部地区。不仅是我们魔族，天族也同样无法接近那里。</p>
+          <p> </p>
+          <p>在那里的尽头，有个叫做永恒之岛的神秘地方。</p>
+          <p> </p>
+          <p>从表面上看，那是树立在海面之上的3个岛，没有翅膀的帮助，似乎无法到达那里。</p>
+          <p> </p>
+          <p>但那里其实有一座肉眼看不见的桥连接着。那座桥虽然很难找到，但只要注意调查四周，就应该可以找到。</p>
+          <p> </p>
+          <p>只有洞察力和耐心兼备的人，才有机会接近永恒之岛。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在每个岛上，各有一个守护岛屿的史匹格。</p>
+          <p> </p>
+          <p>那些史匹格不是普通的怪物，它们守护着古代的秘密，拥有强大的力量。</p>
+          <p> </p>
+          <p>[%username]，明白了吗？我们的目标是那些守护者。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]、[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]和[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]就是这次的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要渗透到因特尔蒂卡，在执行任务的时候还得避开龙族和天族的骚扰，任务执行起来会很有难度。因此我建议你和可以信赖的同伴一起去。</p>
+          <p> </p>
+          <p>任务越困难，可以获得的奖励就越有价值，这一点希望你能明白。</p>
+          <p> </p>
+          <p>好了，[%username]，相信你一定会取得成功。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道这个任务很困难，所以我也不会强求。</p>
+          <p> </p>
+          <p>如果你改变了主意，可以再来找我。</p>
+          <p> </p>
+          <p>祝你好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然贝鲁斯兰的情况不太好，但因特尔蒂卡的问题好像更严重。</p>
+          <p> </p>
+          <p>过去那里曾经是天界和魔界最美丽的地方。</p>
+          <p> </p>
+          <p>必须击败龙族，我们才能让它恢复本来的面目。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>为了实现我们的目的，还需要多次消灭那里的守护者。</p>
+          <p> </p>
+          <p>但是我为完成任务的勇敢的人准备了很多东西。</p>
+          <p> </p>
+          <p>如果运气好的话，可能会得到超出期待的奖励！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_LF3_name]永恒之岛的守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Nerthus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照内尔图斯的指示，潜入因特尔蒂卡，消灭永恒之岛的守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>内尔图斯交给了我一个任务，让我潜入因特尔蒂卡，消灭永恒之岛上的史匹格守护者。</p>
+          <p> </p>
+          <p>召集同伴，消灭了岛上的守护者。回去之后，她说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

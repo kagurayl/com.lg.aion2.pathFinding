@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原本精灵对人类和守护者来说，都是比较友好的。</p>
+          <p> </p>
+          <p>可是这里的精灵，不但不友好，而且还攻击人。</p>
+          <p> </p>
+          <p>看样子，它们觉得伤害人类很有意思。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为古代魔人灵魂的骚扰，重建工程已经被迫中断，现在连[%dic:STR_DIC_M_WElemental1stD_18_An]也来捣鬼...越来越觉得困难重重啊。</p>
+          <p> </p>
+          <p>[%username]大人，您很忙吗？希望您能帮帮我。 </p>
+          <p> </p>
+          <p>因为我一个人对付那些家伙太费劲了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感激了。您只要除掉3个[%dic:STR_DIC_M_WElemental1stD_18_An]就可以了。</p>
+          <p> </p>
+          <p>这些家伙虽然凶暴，可对您来说应该是小菜一碟。</p>
+          <p> </p>
+          <p>那么，请您注意安全！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道你怕精灵吗？</p>
+          <p> </p>
+          <p>您都是守护者了，区区精灵有什么好怕的？</p>
+          <p> </p>
+          <p>我给您一些时间，您想一想再来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经除掉[%dic:STR_DIC_M_WElemental1stD_18_An]了吗？</p>
+          <p> </p>
+          <p>这些家伙肯定垂死挣扎了一番。</p>
+          <p> </p>
+          <p>有没有哪儿受伤啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了！</p>
+          <p> </p>
+          <p>托您的福，又少一件烦心事。</p>
+          <p> </p>
+          <p>来，这是我的一点儿心意，不成敬意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除在[%dic:STR_DIC_W_DF1A_25]徘徊的[%dic:STR_DIC_M_WElemental1stD_18_An]%([%2]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Grak]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说因为水雾精灵的攻击，因派图西姆的重建工程被迫中断。我们去帮助克拉克除掉水雾精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守卫因派图西姆的克拉克诉苦说，继古代魔人之后，又出现了水雾精灵，重建工程被迫中断。他帮助克拉克除掉了攻击人类的水雾精灵。
+
+</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

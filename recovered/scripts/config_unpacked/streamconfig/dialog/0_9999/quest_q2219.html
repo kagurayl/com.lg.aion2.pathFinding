@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还是觉得很奇怪。本来普斯谷种子是黄嫩嫩的，这些却泛着绿光啊。</p>
+          <p> </p>
+          <p>而且居然和拇指一般粗！</p>
+          <p> </p>
+          <p>难道是姆姆族改良了普斯谷...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来得去看一下普斯谷了。</p>
+          <p> </p>
+          <p>真是不好意思，能不能麻烦您再跑一趟？</p>
+          <p> </p>
+          <p>请到姆姆耕地那里去摘些普斯谷来吧。</p>
+          <p> </p>
+          <p>我得等看了普斯谷以后，再决定是不是要栽培。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么拜托守护者您真是过意不去。</p>
+          <p> </p>
+          <p>可帮人帮到底，守护者您能不能再帮我一次呢？ </p>
+          <p> </p>
+          <p>那就请您帮我摘3棵普斯谷吧。一定要亲手摘啊。</p>
+          <p> </p>
+          <p>拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我明白了。守护者大人这么忙，我还给您添麻烦，真是失礼啊。</p>
+          <p> </p>
+          <p>我还是等一等有没有路过的猎手吧。</p>
+          <p> </p>
+          <p>我要是去的话，肯定会被农夫们赶回来的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您带回普斯谷了吗？</p>
+          <p> </p>
+          <p>看种子的大小，普斯谷的个头肯定也不小，到底有多大呢？</p>
+          <p> </p>
+          <p>之前您带回来的普斯谷种子可以用吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出普斯谷并报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者您怎么能不守信约呢？</p>
+          <p> </p>
+          <p>不是拜托您找回3棵普斯谷嘛？</p>
+          <p> </p>
+          <p>请给我找全3棵回来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？一折断普斯谷的茎，就会有怪物跳出来？</p>
+          <p> </p>
+          <p>您这是开我的玩笑吧？做了这么久的采集者，这还是第一听说呢。</p>
+          <p> </p>
+          <p>不过这普斯谷还真是硬实啊。</p>
+          <p> </p>
+          <p>一般的昆虫肯定奈何不了它。</p>
+          <p> </p>
+          <p>居然把普斯谷改良成这样，姆姆族的农耕实力真是不可小觑啊！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_W_DF1A_17]摘普斯谷，然后交给[%dic:STR_DIC_N_Titt]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">提特觉得普斯谷的种子很奇怪，因此想要看一看普斯谷。去姆姆耕地找到普斯谷，交给提特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>提特觉得普斯谷的种子很奇怪，因此觉得还是再看一看普斯谷比较好。于是去摘普斯谷，但一掰断普斯谷的茎，就出来了怪物。</p>
+          <p> </p>
+          <p>把这件事告诉了提特，但提特觉得是开玩笑，一点也不相信。</p>
+          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚开始被派来这的时候，心里特别沮丧，现在好多了。</p>
+          <p> </p>
+          <p>姆姆族比想象中要老实多了，林子里的那些畜牲们也算安静。</p>
+          <p> </p>
+          <p>不仅如此，现在不用见苏埃伦军团长了，真是太好了。</p>
+          <p> </p>
+          <p>啊，现在只要没有剑齿豹了，就可以高枕无忧了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就因为这些家伙，我最近一天的安生日子都过不得。本来只在树林深处活动，不知道为什么都跑到路边来攻击行人了！</p>
+          <p> </p>
+          <p>越来越多的人遭到攻击，我们两个人又要监视姆姆族，又要消灭这些家伙，有点忙不过来啊！</p>
+          <p> </p>
+          <p>[%username]要是能帮帮我们就好了？可以吗</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么痛快地就答应了。</p>
+          <p> </p>
+          <p>那就请为我们处理路边的那些[%dic:STR_DIC_M_Kalnif_10_An]%吧。</p>
+          <p> </p>
+          <p>只要能消灭10只，相信剩下的就都会害怕起来，逃回去的。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊。</p>
+          <p> </p>
+          <p>那就没办法了，真可惜。遭殃的人会越来越多的。</p>
+          <p> </p>
+          <p>以后要是有空了，请一定帮助我们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Kalnif_10_An]%都消灭掉了吗</p>
+          <p> </p>
+          <p>这些家伙都很凶恶，您没受伤吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      
+<Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太了不起了！居然一次消灭了10只[%dic:STR_DIC_M_Kalnif_10_An]%！</p>
+          <p> </p>
+          <p>它们要是都聚集起来的话，可危险了。</p>
+          <p> </p>
+          <p>现在这些家伙肯定都害怕了。</p>
+          <p> </p>
+          <p>这都是托[%username]您的福。谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">扫荡那些[%dic:STR_DIC_W_DF1A_3]的不法分子</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Kalnif_10_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Okkolenja]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">剑齿豹经常攻击路过树林的行人。奥克雷亚和同事忙于监视姆姆族，帮她们消灭路边的剑齿豹。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥克雷亚说原来在树林里活动的剑齿豹到路边袭击行人，她十分担心。</p>
+          <p> </p>
+          <p>为奥克雷亚消灭了剑齿豹，她非常开心，并且给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

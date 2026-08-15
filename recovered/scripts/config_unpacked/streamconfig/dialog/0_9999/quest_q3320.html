@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直认为自己是个很会做生意的人。</p>
+          <p> </p>
+          <p>但是最近不知道为什么，收入一直不太好，我因此很苦恼。</p>
+          <p> </p>
+          <p>要想实现我统治要塞的梦想，必须要赚很多的钱才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>光靠卖食品看来赚不了什么钱。</p>
+          <p> </p>
+          <p>看见旁边的夏奥兰兰了吗？她靠向富有的客人们出售宝石，赚了很多钱。我也想换点利润高的商品卖卖。</p>
+          <p> </p>
+          <p>听说用[%dic:STR_DIC_M_FrillfaimamFemale_23_An]的鬃毛制成的扇子在宴会上很受欢迎，因此卖得非常贵。</p>
+          <p> </p>
+          <p>既然让我知道了这个，我就不能放过这个机会。[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，那我就在这里等您。</p>
+          <p> </p>
+          <p>您先去帮我搜集5个[%dic:STR_DIC_I_QUEST_3320a]。我得看看到底是不是很好卖。</p>
+          <p> </p>
+          <p>对了，请您小心不要弄坏了鬃毛。如果有了残次，就不好卖了。</p>
+          <p> </p>
+          <p>想到能让经常跟我炫耀有钱的夏奥兰兰气歪鼻子，我就很激动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊……真让人失望。</p>
+          <p> </p>
+          <p>没办法。谁都有自己的事情要做。</p>
+          <p> </p>
+          <p>请别担心。我不会因为您拒绝我而放弃的。</p>
+          <p> </p>
+          <p>我要再想想别的办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于回来啦！</p>
+          <p> </p>
+          <p>刚才夏奥兰兰又在向我炫耀自己多么有钱，我正在难过呢。</p>
+          <p> </p>
+          <p>但是等着瞧把。用不了多久，我一定会赚得比她多的。</p>
+          <p> </p>
+          <p>我要的东西搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙蜥兽的鬃毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不是说要帮我的吗……这是什么啊？</p>
+          <p> </p>
+          <p>请您遵守自己的承诺。</p>
+          <p> </p>
+          <p>我会在这里等您，请您不要忘记自己的承诺。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是这个！和传说中的一样，颜色和手感都很棒。一定会让有钱的客人看红了眼的。</p>
+          <p> </p>
+          <p>听说大扇鬃龙蜥兽很难捉到……真是辛苦您了。</p>
+          <p> </p>
+          <p>扇形的鬃毛上一点瑕疵都没有。这样的东西，一定能卖个好价钱。</p>
+          <p> </p>
+          <p>来，请您收下。您帮助了我，这是您应得的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_FrillfaimamFemale_23_An]身上搜集鬃毛，然后交给[%dic:STR_DIC_N_Octavia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭大扇鬃龙蜥兽，把获得的鬃毛交给奥克塔比亚。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>野心勃勃的奥克塔比亚在埃尔特内要塞出售食品。</p>
+          <p> </p>
+          <p>她说想赚大钱，但是仅靠出售食品好像赚不了什么钱，因此让我帮她搜集扇形鬃毛。</p>
+          <p> </p>
+          <p>答应了她的请求，她非常高兴，送给了我一件礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

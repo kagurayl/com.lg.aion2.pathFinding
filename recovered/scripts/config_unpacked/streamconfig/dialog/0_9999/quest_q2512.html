@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有件急事，但是却找不到人手...不知道这件事该怎么解决才好。</p>
+          <p> </p>
+          <p>必须马上给伏魔殿派遣来的人发送粮食，但是却没有人送过去。</p>
+          <p> </p>
+          <p>他们是为了解决贝鲁斯兰的问题而被派过来的，总不能把他们饿死。</p>
+          <p> </p>
+          <p>而且黑色平原和基侬加夫冰冻都市有很难找到粮食。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>连好不容易从外地搜集到的粮食都吃光了，真的让我很难办。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人能帮我把粮食送过去吗？</p>
+          <p> </p>
+          <p>由于需要通过危险的地方，不能随便派个人过去。</p>
+          <p> </p>
+          <p>如果是[%username]大人的话，我就不用担心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能答应帮我把粮食送过去，真是太感谢了！</p>
+          <p> </p>
+          <p>我给您两个粮食口袋，其中一个请您帮我送给黑色平原的[%dic:STR_DIC_N_Gigrite]大人。</p>
+          <p> </p>
+          <p>另一个请您帮我送给基侬加夫冰冻都市的[%dic:STR_DIC_N_Kistenian]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为您一定会答应我，没想到您竟然会拒绝...这下可难办了。</p>
+          <p> </p>
+          <p>我得赶紧找找别人才行。</p>
+          <p> </p>
+          <p>但是哪里去找[%username]这样值得信任的人啊...真让人头疼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿来到这里的时候，我就做好了心理准备。</p>
+          <p> </p>
+          <p>但是现在又出现了其他没有想到的问题，所以就更困难了。</p>
+          <p> </p>
+          <p>不死族的问题就已经忙不过来了，还要担心粮食问题...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出粮食口袋。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>洛奇百夫长没忘记我们啊。</p>
+          <p> </p>
+          <p>我知道他是忠于职守的人，但眼看着粮食越来越少，我还是稍微有点不安。</p>
+          <p> </p>
+          <p>谢谢你把粮食送过来。</p>
+          <p> </p>
+          <p>回去见到洛奇百夫长的话，帮我跟他说声谢谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次想到基侬加夫原来的样子，我就很心痛。</p>
+          <p> </p>
+          <p>因为一个人的傲慢，酿成了这么大的悲剧...</p>
+          <p> </p>
+          <p>不管发生什么事情，都必须恢复原来的样子。</p>
+          <p> </p>
+          <p>不过，您找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出粮食口袋。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您是送粮食来的啊。</p>
+          <p> </p>
+          <p>刚好粮食吃光了，我正在头疼应该怎么办呢。</p>
+          <p> </p>
+          <p>我想要塞那边估计也是被什么其他事情给拖住了，才会没时间送过来，所以也不太好意思催促。附近只有该死的野狼，我正在想是不是应该抓一头来吃呢。</p>
+          <p> </p>
+          <p>现在粮食送来了，大家就又能好好地工作了。真是太感谢了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把粮食口袋交给[%dic:STR_DIC_N_Gigrite]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把粮食口袋交给[%dic:STR_DIC_N_Kistenian]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把粮食口袋交给黑色平原的吉格里泰和基侬加夫冰冻都市的吉斯泰尼安。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>百夫长洛奇说必须给伏魔殿派来的人送粮食，但是因为找不到人，他正在苦恼。</p>
+          <p> </p>
+          <p>于是帮他把粮食口袋送给了来解决不死族问题的吉格里泰和来融化基侬加夫冰冻都市的吉斯泰尼安。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

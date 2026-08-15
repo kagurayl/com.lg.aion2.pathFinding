@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了[%username]大人，这次出征用的武器终于准备齐了。</p>
+          <p> </p>
+          <p>但是事实上，这样并不能解决所有的问题。</p>
+          <p> </p>
+          <p>在战斗中虽然武器很重要，但是防具也同样重要。</p>
+          <p> </p>
+          <p>防具也需要用奥德进行处理，但是手头的高纯度奥德不够了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问其他还有什么需要帮助的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为觉得又来麻烦您不太好意思，所以我一直没敢开口。既然您说愿意帮助我，那我就安心了。</p>
+          <p> </p>
+          <p>这次需要从[%dic:STR_DIC_G_od_40_1]中提取[%dic:STR_DIC_G_od_n_r_40a]。</p>
+          <p> </p>
+          <p>因为防具要比武器大，所以需要大一点的碎片。</p>
+          <p> </p>
+          <p>如果您能帮我的话，应该会对保证补给品的供给有很大的帮助，这次您还愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次需要的是从[%dic:STR_DIC_G_od_40_1]中提取的[%dic:STR_DIC_G_od_n_r_40a]。</p>
+          <p> </p>
+          <p>这要比上次您帮我搜集的高纯度奥德碎片要更难搜集一点。同时必须具备比较高的奥德提取能力才行。</p>
+          <p> </p>
+          <p>我会为[%username]大人祈祷，愿好运永远伴随着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您拒绝我，我也可以理解。搜集高纯度奥德确实很困难。</p>
+          <p> </p>
+          <p>而且不是一两个，而是要搜集10个之多。</p>
+          <p> </p>
+          <p>不好意思，麻烦您了。</p>
+          <p> </p>
+          <p>但是，如果您改变了主意的话，请回来找我。我随时都需要帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_G_od_40_1]找起来容易吗？</p>
+          <p> </p>
+          <p>听说提取出[%dic:STR_DIC_G_od_n_r_40a]的几率非常之低...</p>
+          <p> </p>
+          <p>您搜集到我需要的量了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出高纯度奥德。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能理解。[%dic:STR_DIC_G_od_n_r_40a]不是那么好搜集的。</p>
+          <p> </p>
+          <p>我也知道拜托别人帮忙，就不应该催的。</p>
+          <p> </p>
+          <p>不过现在情况紧急，请您尽量快一点儿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人这么善于提取奥德啊？</p>
+          <p> </p>
+          <p>这么多高纯度奥德的话，应该可以做很多套了。</p>
+          <p> </p>
+          <p>来，请收下。这是您帮助我的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_G_od_40_1]中提取[%dic:STR_DIC_G_od_n_r_40a]，然后交给[%dic:STR_DIC_N_Cymaon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">据说制作欧比斯中使用的防具的时候，需要使用高纯度奥德。提取高纯度奥德并交给希玛安吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希玛安说不仅武器，欧比斯中使用的防具也同样能够需要用高纯度奥德处理。而且防具要比武器大，所以需要使用高纯度奥德，而不是高纯度奥德碎片。</p>
+          <p> </p>
+          <p>于是在燃烧的奥德中提取高纯度奥德交给了他，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

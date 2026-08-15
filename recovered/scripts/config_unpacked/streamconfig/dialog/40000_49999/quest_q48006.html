@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人！</p>
+          <p> </p>
+          <p>见到您真是太好了。</p>
+          <p> </p>
+          <p>刚好卡鲁姆让我帮着推荐几个素质好一点的守护者。</p>
+          <p> </p>
+          <p>我想[%username]大人应该就是卡鲁姆大人要找的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Gallum]大人是伏魔殿预备神庙的管理员。[%username]大人，您知道伏魔殿预备神庙吗？</p>
+          <p> </p>
+          <p>在那里，刚觉醒的守护者可以向经历丰富的守护者学习经验。</p>
+          <p> </p>
+          <p>也就是说，可以和经验丰富的守护者战斗，亲身体验他们的战斗力。这在执行任务时会有很大的帮助。</p>
+          <p> </p>
+          <p>详细的情况，您最好还是亲自去看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您到阿尔特盖德要塞去见见[%dic:STR_DIC_N_Gallum]大人。</p>
+          <p> </p>
+          <p>见到他之后，他会跟你详细地说明伏魔殿预备神庙的情况。</p>
+          <p> </p>
+          <p>愿黑暗的平安与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好不容易推荐一个人，真是遗憾。</p>
+          <p> </p>
+          <p>和伏魔殿预备神庙的人搞好关系，并不是什么坏事。</p>
+          <p> </p>
+          <p>如果您今后改变了主意，请再来找我。我会把您介绍给卡鲁姆大人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是杜曼大人推荐您来的吗？</p>
+          <p> </p>
+          <p>我让他帮我推荐一些发展可能性高的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来得正好，[%username]大人。</p>
+          <p> </p>
+          <p>伏魔殿预备神庙是为了解放守护者的能力而成立的团体，主要以刚觉醒不久的守护者为对象。</p>
+          <p> </p>
+          <p>我们的目的，是让你们和战斗经验丰富的守护者战斗，直接体验他们的实力，学习他们的经验。</p>
+          <p> </p>
+          <p>和优秀的守护者在一起，可以学习到很多东西。</p>
+          <p> </p>
+          <p>帮助有潜力的守护者成长为优秀的守护者，这就是我们的工作。</p>
+          <p> </p>
+          <p>如果您还有什么疑问，请随时来问我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去阿尔特盖德和[%dic:STR_DIC_N_Gallum]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说伏魔殿预备神庙在招人。去阿尔特盖德要塞见见卡鲁姆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿的空间移动师杜曼说伏魔殿预备神庙的卡鲁姆正在招人。</p>
+          <p> </p>
+          <p>去阿尔特盖德要塞见到了卡鲁姆，他为我说明了伏魔殿预备神庙的情况。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

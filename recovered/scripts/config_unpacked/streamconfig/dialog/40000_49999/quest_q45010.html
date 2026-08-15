@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>神圣保护者格伦特要求和结界守护团接触。</p>
+          <p> </p>
+          <p>说是和贝鲁斯兰要塞有关的事情，出于安全的考虑，不能用文件形式传递。</p>
+          <p> </p>
+          <p>从现在的情况看，[%username]你是守护团中最合适的人选。看到本文件后，请立即开始行动。</p>
+          <p> </p>
+          <p>请你去和[%dic:STR_DIC_N_Grundt]接触，然后把他的话转告给[%dic:STR_DIC_E_45007]。</p>
+          <p> </p>
+          <p>详细的事情，我会之后直接去告诉你的。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么事吗？</p>
+          <p> </p>
+          <p>您是从结界守护团来吗？</p>
+          <p> </p>
+          <p>我刚好正在等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问需要转达的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，转达的话嘛……</p>
+          <p> </p>
+          <p>(为难的表情)他们应该叮嘱过您，绝对不能口头传递，只能用暗号传递吧？</p>
+          <p> </p>
+          <p>请您转告结界守护团，就说“黑暗截断流水”。</p>
+          <p> </p>
+          <p>只要是负责贝鲁斯兰事务的人，随便告诉谁都可以。</p>
+          <p> </p>
+          <p>希望能够顺利……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说有人去帮守护团传话了。</p>
+          <p> </p>
+          <p>原来是[%username]大人啊。</p>
+          <p> </p>
+          <p>快把听到的话告诉我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述听到的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次又是“黑暗截断流水”吗？</p>
+          <p> </p>
+          <p>看来贝鲁斯兰的情况还是那样。</p>
+          <p> </p>
+          <p>啊，[%username]大人，和您没什么关系。这是有关贝鲁斯兰的事情。</p>
+          <p> </p>
+          <p>辛苦您了。我会给您相应的报答的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Grundt]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_45007]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，神圣保护者格伦特有话要转达给神圣守护团，让我去处理这件事。</p>
+          <p> </p>
+          <p>见到格伦特，然后把他的话转告给了贝鲁斯兰支部职员。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

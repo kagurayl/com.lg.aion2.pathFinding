@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来的正好，[%username]！</p>
+          <p> </p>
+          <p>因为毒虫的事情，我正想找人帮忙。你来的真是太巧了。</p>
+          <p> </p>
+          <p>你知道格尔克马洛斯的地下，有一个名叫锡兰泰拉回廊的地方吗？</p>
+          <p> </p>
+          <p>那里好像和剧毒洞穴一样，有好几种毒虫。最近有很多去那里的人，被毒虫咬伤了。</p>
+          <p> </p>
+          <p>上次制作的解毒剂差不多用完了，如果受伤的人进一步增加，我就难以为继了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>先不说解毒剂的问题，我想最好的解决办法就是消灭掉锡兰泰拉回廊的毒虫</p>
+          <p> </p>
+          <p>因为重新搜集解毒剂的材料需要时间，如果能消灭掉毒虫，就能争取到一些时间。</p>
+          <p> </p>
+          <p>而且如果不消灭掉毒虫，受伤的人数就会继续增加。</p>
+          <p> </p>
+          <p>[%username]，你能帮我去锡兰泰拉回廊消灭毒虫吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说锡兰泰拉回廊里有[%dic:STR_DIC_M_Underpass_Sheluk_55_Ae]、[%dic:STR_DIC_M_Underpass_Octacide_55_Ae]和[%dic:STR_DIC_M_Underpass_Scorpion_55_Ae]。</p>
+          <p> </p>
+          <p>我曾经去过剧毒洞穴，知道毒虫有时会聚集在一起，因此非常危险。请你一定要小心一点。</p>
+          <p> </p>
+          <p>你知道进入锡兰泰拉回廊的方法吗？</p>
+          <p> </p>
+          <p>那里应该会有很多天族，去的时候，一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，没想到你竟然会拒绝。</p>
+          <p> </p>
+          <p>你是觉得只要自己没事，其他人怎么样都没关系吗？</p>
+          <p> </p>
+          <p>如果不把锡兰泰拉回廊的毒虫消灭掉，魔族的战斗力就会受到影响。</p>
+          <p> </p>
+          <p>到底是为什么！(突然闭上嘴)也是，本人不愿意的话，我说再多的话也没用。</p>
+          <p> </p>
+          <p>我得看看有没有其他守护者愿意去。你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然目前面临解毒剂紧缺的危机，不过换个角度看，也许是一次好机会。</p>
+          <p> </p>
+          <p>这里的毒虫和魔界的完全不同，如果能进行深入的研究，说不定可以研发出新的药物。</p>
+          <p> </p>
+          <p>对了，你去锡兰泰拉回廊把毒虫消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？锡兰泰拉回廊的毒虫那么弱吗？</p>
+          <p> </p>
+          <p>啊哈……这可真奇怪……怎么想都想不明白。</p>
+          <p> </p>
+          <p>如果那里的毒虫那么好对付的话，为什么会有那么多的守护者中毒受伤呢！</p>
+          <p> </p>
+          <p>如果不是因为这个原因的话，一定还有别的原因……看来必须进一步研究才行。</p>
+          <p> </p>
+          <p>总之辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去锡兰泰拉回廊消灭毒虫</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Underpass_Sheluk_55_Ae]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Underpass_Octacide_55_Ae]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Underpass_Scorpion_55_Ae]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sulbanyer]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说被锡兰泰拉回廊的毒虫咬伤的守护者的人数在不断增加。去那里消灭毒针叙路克、青苔蜘蛛和黑脚蝎兽吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索尔班耶尔说有很多守护者去了锡兰泰拉回廊之后中了毒，让我去消灭那里的毒虫。</p>
+          <p> </p>
+          <p>按照他的委托消灭了毒虫，回去之后告诉他毒虫并不是很强之后，索尔班耶尔说一定有什么别的原因，必须进行进一步调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

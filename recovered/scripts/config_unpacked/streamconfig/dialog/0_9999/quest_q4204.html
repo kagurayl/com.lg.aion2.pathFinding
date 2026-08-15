@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在只要把书送到埃雷修兰塔去就行了吧？</p>
+          <p> </p>
+          <p>(睁大眼睛看着我)你在干什么，守护者？</p>
+          <p> </p>
+          <p>还不去做出发的准备？必须马上出发，才能在规定时间内送到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问在说什么。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？干嘛装不知道啊？</p>
+          <p> </p>
+          <p>你不是帮我搜集到了曼杜里训练书吗？</p>
+          <p> </p>
+          <p>难道不应该负责到底吗？</p>
+          <p> </p>
+          <p>快把书送给埃雷修兰塔的库普灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，拿着吧，这就是你给我找来的书。</p>
+          <p> </p>
+          <p>还有我提前说一下，这本书可是我自己得到的。</p>
+          <p> </p>
+          <p>如果别的人知道是守护者帮我找到的这本书，我会变得很难堪。</p>
+          <p> </p>
+          <p>所以你要注意点，不要让别人看出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，我对你真是失望。</p>
+          <p> </p>
+          <p>帮得好好的，到现在才拒绝我。</p>
+          <p> </p>
+          <p>穆武灵真是失望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我以为来到这里后就能尽情旅游。</p>
+          <p> </p>
+          <p>没想到整天就守着码头，早知道如此，我绝对不会来这里的。</p>
+          <p> </p>
+          <p>守护者真是幸福，可以来去自如。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出曼杜里训练书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？啊，是穆武灵叫你送过来的啊。</p>
+          <p> </p>
+          <p>不过我觉得这本书是守护者找到的，我说的没错吧？</p>
+          <p> </p>
+          <p>你也用不着隐瞒。我又不是不知道穆武灵，这样的事情又不是只有一两次。</p>
+          <p> </p>
+          <p>(翻看书)切，是用暗号写成的啊。解读起来需要一点时间，呐。</p>
+          <p> </p>
+          <p>不管怎样，这对抓到恐怖的塔昆应该会很有帮助。</p>
+          <p></p>
+          <p>来，拿着，这是给你的谢礼。我认为守护者比穆武灵更适合得到。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将曼杜里训练书交给[%dic:STR_DIC_N_Shugo_AB1_4]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将从铁耙号上得到的曼杜里训练书，交给在埃雷修兰塔的库普灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>穆武灵说帮忙就要帮到底，让我帮他把曼杜里训练书送到在埃雷修兰塔的库普灵那里。</p>
+          <p> </p>
+          <p>把训练书交给了库普灵。洞悉其中情况的库普灵除了表示感谢，还送了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

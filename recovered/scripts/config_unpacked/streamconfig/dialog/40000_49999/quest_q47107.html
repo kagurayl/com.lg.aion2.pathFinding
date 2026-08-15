@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会的亲爱的亲人们！</p>
+          <p> </p>
+          <p>命运把你们引向阿尔特盖德要塞。</p>
+          <p> </p>
+          <p>在那里，你可以见到正在阿尔特盖德修炼的守护者，他们是和你命运相连的人，是我们马勒库坦兄弟会需要关心的人。</p>
+          <p> </p>
+          <p>请成为[%dic:STR_DIC_E_Da_10_19]%的[%dic:STR_DIC_E_Mentor]，去确认[%dic:STR_DIC_OBJ_Q47000]%。魔法球无法一个人确认，必须同时确认</p>
+          <p> </p>
+          <p>任务完成之后，请你向[%dic:STR_DIC_N_Rancier]兄弟报告，领取兄弟会的奖励。</p>
+          <p> </p>
+          <p>请不要忘记，我们的任务是将亚特雷亚的一切命运引向正确的道路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦兄弟会是秘密活动的组织。</p>
+          <p> </p>
+          <p>[%username]大人和我都无法了解兄弟会所作的所有事情。</p>
+          <p> </p>
+          <p>但是有一件事非常明确，马勒库坦主神绝不会把我们引向错误的道路。</p>
+          <p> </p>
+          <p>只要默默地执行任务，总有一天我们一定可以了解他的意志。</p>
+          <p> </p>
+          <p>这次的任务顺利完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出水晶球。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去执行兄弟会的任务吗？</p>
+          <p> </p>
+          <p>您该不会是对兄弟会的指示有什么怀疑吧？</p>
+          <p> </p>
+          <p>如果不是的话，请您马上去帮助[%dic:STR_DIC_E_Da_10_19]%执行任务。</p>
+          <p> </p>
+          <p>帮助他们确认[%dic:STR_DIC_OBJ_Q47000]%，把[%dic:STR_DIC_I_quest_47000a]%拿回来，是兄弟会交给您的任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔特盖德的任务顺利完成啦。</p>
+          <p> </p>
+          <p>这次见到的守护者怎么样？看样子会成长成优秀的守护者吗？</p>
+          <p> </p>
+          <p>教导他人是一件需要耐心的事情，需要您时时用心去做。</p>
+          <p> </p>
+          <p>总有一天，[%username]大人会遇到和您的命运相连的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Da_10_19]%的[%dic:STR_DIC_E_Mentor]，确认[%dic:STR_DIC_OBJ_Q47000]，搜集[%dic:STR_DIC_I_quest_47000a]%，然后交给[%dic:STR_DIC_N_Rancier]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了马勒库坦兄弟会的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从马勒库坦兄弟会收到了一封信，让我到阿尔特盖德去执行兄弟会的任务。</p>
+          <p> </p>
+          <p>按照信中的指示，和阿尔特盖德的守护者一起确认了警卫魔法球。回去报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

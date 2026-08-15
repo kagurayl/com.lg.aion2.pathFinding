@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您听说过屠杀者科瑟斯吗？</p>
+          <p> </p>
+          <p>最近因为他，极乐世界闹得不可开交。</p>
+          <p> </p>
+          <p>协会下令消灭科瑟斯，有兴趣的话，请看一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">查看命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>屠杀者科瑟斯因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_DGaurdFi_53_An] </p>
+          <p></p>
+          <p> 2. 罪行：残忍的精锐执政官</p>
+          <p></p>
+          <p> 3. 详情：在英吉斯温、格尔克马洛斯、锡兰泰拉回廊等地袭击天族，给天族造成巨大损失的精锐执政官。必须立即将其消灭。</p>
+          <p> </p>
+          <p>经确认，目前屠杀者科瑟斯正在格尔克马洛斯的巴卡巴塔激战地。潜入格尔克马洛斯，消灭屠杀者科瑟斯的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您答应去消灭[%dic:STR_DIC_M_LF4_DayQ_DGaurdFi_53_An]%，真是再好不过了。</p>
+          <p> </p>
+          <p>不过我还是有点担心。那个家伙本来就不好对付，而且还必须到格尔克马洛斯去……</p>
+          <p> </p>
+          <p>小心不要被魔族抓住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人担心。连[%username]都不敢去做的时候，还有谁能去做……</p>
+          <p> </p>
+          <p>好的，[%username]大人的意思我知道了。</p>
+          <p> </p>
+          <p>如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您看上去没事，太好了。</p>
+          <p> </p>
+          <p>对了，您到格尔克马洛斯去了吗？</p>
+          <p> </p>
+          <p>臭名昭著的屠杀者科瑟斯消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还在想谁会第一个消灭掉科瑟斯呢，没想到会是[%username]大人！</p>
+          <p> </p>
+          <p>科瑟斯是个非常恶毒的家伙，听说他在魔界的名声也不怎么好。</p>
+          <p> </p>
+          <p>只要有我们赏金猎人协会在，就绝不会让任何一个恶毒的魔族逃走。</p>
+          <p> </p>
+          <p>真是辛苦你了。这是准备好的赏金，请您拿走吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">渗透到格尔克马洛斯，消灭给天族造成巨大伤害的[%dic:STR_DIC_M_LF4_DayQ_DGaurdFi_53_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从英吉斯温赏金管理人那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温赏金管理人拿出了一张悬赏通缉传单，说任务虽然危险，但是报酬很丰厚。</p>
+          <p> </p>
+          <p>前往格尔克马洛斯，消灭了在龙界各地给天族造成巨大伤害的屠杀者科瑟斯之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

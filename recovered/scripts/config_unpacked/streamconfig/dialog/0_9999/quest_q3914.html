@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(好像是龙族的报告书。)</p>
+          <p> </p>
+          <p>(上面写着和活体改造有关的内容。)</p>
+          <p> </p>
+          <p>(应该拿去给[%dic:STR_DIC_N_Jucleas]大神官看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在黑暗普埃塔得到了龙族的文件？</p>
+          <p> </p>
+          <p>上面写着什么内容啊？</p>
+          <p> </p>
+          <p>我对龙族的东西不太了解，看了估计也不知道是什么东西。不过还是给我看看吧。</p>
+          <p> </p>
+          <p>至少可以知道应该向谁报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出活体改造报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从内容看，龙族好像正在按照自己的意愿对生命体和天然的东西进行改造。</p>
+          <p> </p>
+          <p>这应该是非常重要的情报...</p>
+          <p> </p>
+          <p>应该送去给[%dic:STR_DIC_FLA38]的[%dic:STR_DIC_N_Creusa]看看。</p>
+          <p> </p>
+          <p>她应该知道到底是什么内容，以及需不需要进行进一步的研究。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在极乐世界研究龙族，既有容易的地方，也有困难的地方。</p>
+          <p> </p>
+          <p>这里是汇聚了天界所有的资料的地方，所以有利于进行研究。</p>
+          <p> </p>
+          <p>但由于不是直接获得的情报，只能依靠文献，所以针对性不足，也缺少实际的体验…在这个方面，可以说相当不方便。</p>
+          <p> </p>
+          <p>但是我又不能到天界和欧比斯的各个地方去，所以只能满足于在这里搜集资料。</p>
+          <p> </p>
+          <p>你找我有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出活体改造报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(大吃一惊)嗯，这是！</p>
+          <p> </p>
+          <p>这是非常重要的资料！到目前为止，我还没见到任何和龙族的活体改造有关的情报。</p>
+          <p> </p>
+          <p>谢谢你给我送来这么重要的资料。</p>
+          <p> </p>
+          <p>我得先来分析一下内容。要想对此进行进一步的研究，也许还需要[%username]你继续帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Jucleas]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Creusa]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在德拉坎身上发现了疑似报告书的东西。拿去给尤克雷阿斯大神官看看吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>将在黑暗普埃塔发现的报告书交给了尤克雷阿斯大神官，他说最好拿去给克蕾莎看看。</p>
+          <p> </p>
+          <p>把报告书交给了克蕾莎，她非常兴奋，说这是之前从未见过的重要资料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经过这一地带的运输车有过两次被袭击的经历。</p>
+          <p> </p>
+          <p>刚开始以为只是意外事故而已，但接二连三的发生，看样子不像是偶然事件。</p>
+          <p> </p>
+          <p>假如要塞知道这件事情的话肯定会责怪下来的。</p>
+          <p> </p>
+          <p>肯定会说我没守好结界塔，发生了这样的事故等等的一些话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在寻找原因，但我和内佩恩梅尔的意见无法达成一致。</p>
+          <p> </p>
+          <p>内佩恩梅尔说是人为原因，但说到人类附近除了革命团还有别人吗？</p>
+          <p> </p>
+          <p>既不是粮食又不是武器，革命团难道是疯了，会袭击这些东西？</p>
+          <p> </p>
+          <p>他们抢了这些帽子和手套到底有什么用呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据我推测袭击运输车辆的肯定是身形魁梧的家伙。</p>
+          <p> </p>
+          <p>"对, 就是[%dic:STR_DIC_M_CockatriceD_17_An]。"</p>
+          <p> </p>
+          <p>虽然内佩恩梅尔说根本没那个可能，但我想来想去还是觉得就是他们干的。</p>
+          <p> </p>
+          <p>清除掉蛇妖后，如果不再发生袭击运输车的事情，就证明我是正确的。</p>
+          <p> </p>
+          <p>请您到[%dic:STR_DIC_W_DF1A_27]去帮我清除那帮家伙吧。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在[%dic:STR_DIC_W_DF1A_27]有很多[%dic:STR_DIC_M_CockatriceD_17_An]。</p>
+          <p> </p>
+          <p>一定要给那帮家伙点颜色看看，让他们再也不敢来袭击运输车。</p>
+          <p> </p>
+          <p>我得让内佩恩梅尔知道我是正确的。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也认为我的想法是错的？</p>
+          <p> </p>
+          <p>你看看周围，除了[%dic:STR_DIC_M_CockatriceD_17_An]还有谁能做出这种事情啊？</p>
+          <p> </p>
+          <p>跟一帮饭桶共事真是费劲啊！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您清除[%dic:STR_DIC_M_CockatriceD_17_An]了吗？</p>
+          <p> </p>
+          <p>内佩恩梅尔一直在嘲笑我，所以我一直在等[%username]大人您回来。</p>
+          <p> </p>
+          <p>必须要有决定性地证据他才会相信我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">汇报情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把蛇妖都除掉了啊。 </p>
+          <p> </p>
+          <p>等着瞧吧，以后肯定不会再发生类似的袭击事件了。</p>
+          <p> </p>
+          <p>那样内佩恩梅尔就会相信我的话了。</p>
+          <p> </p>
+          <p>这是我的一点谢意，谢谢您相信并帮助我。</p>
+          <p> </p>
+          <p>请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_CockatriceD_17_An]%([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Urnir]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">乌勒尼尔坚信袭击运输车的一定是长脖子蛇妖。受他委托决定清除长脖子蛇妖。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近结界塔附近接连发生了两起袭击运输车的事件。</p>
+          <p> </p>
+          <p>乌勒尼尔认为长脖子蛇妖是罪犯，所以决定除掉他们。</p>
+          <p> </p>
+          <p>乌勒尼尔的话有可能是事实，所以接受了他的拜托。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

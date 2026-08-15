@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听，那是海中生物们充满抱怨的声音。</p>
+          <p> </p>
+          <p>空气中弥漫着一股令人不愉快的奇怪味道。</p>
+          <p> </p>
+          <p>如果估计准确...引发这一切的原因，就是海上猪笼草的过度繁殖。</p>
+          <p> </p>
+          <p>看来，无数海上猪笼草的排泄物已经开始污染阿鲁齐纳的宫殿。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，海上猪笼草是我们海中生物大家庭不可缺少的一员。</p>
+          <p> </p> 
+          <p>但一个物种的过度繁殖会加重周围环境的负担。</p>
+          <p> </p>
+          <p>不能因保护猪笼草而对阿鲁齐纳的宫殿被污染的情况不管不顾。</p>
+          <p> </p>
+          <p>因此，如果你想表示诚意，就去做一些让我高兴的事情——阻止海上猪笼草的过度繁殖。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_RafflesiaSeaD_44_Ae]和 [%dic:STR_DIC_M_RafflesiaSeaBigD_45_Ae]大多栖息在那上面巨大的珊瑚礁中。</p>
+          <p> </p>
+          <p>重点是多消灭幼年海上猪笼草。</p>         
+          <p> </p>
+          <p>刚出生的幼年海上猪笼草为了尽快成长，会摄取更多食物并排泄更多污染物质。</p>
+          <p> </p>
+          <p>那么，你快去吧。我相信你的诚意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你拒绝我对你的友好吗？</p>
+          <p> </p>
+          <p>看来魔族果然是没有信义的种族。</p>
+          <p> </p>
+          <p>我不会再相信你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>海上的空气似乎清新了许多。</p>
+          <p> </p>
+          <p>我已经预感到你将会带来好消息。</p>
+          <p> </p>
+          <p>已经消灭了污染阿鲁齐纳的宫殿的猪笼草吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>原来魔族也不乏注重信义的人。</p>
+          <p> </p>
+          <p>我不会忘记你的慷慨相助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭污染海水的猪笼草。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_RafflesiaSeaD_44_Ae]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_RafflesiaSeaBigD_45_Ae]([%5]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Esnu]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">因为猪笼草过度繁殖，阿鲁齐纳的宫殿正在被污染。帮助埃斯努阻止猪笼草的肆意繁殖。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃斯努称，因为猪笼草的过度繁殖，阿鲁齐纳的宫殿正被污染。</p>
+          <p> </p>
+          <p>为了向埃斯努表示诚意，消灭了海上猪笼草和幼年海上猪笼草。对此，她表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

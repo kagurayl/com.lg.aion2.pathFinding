@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：消灭阿尔卡尼斯空中神殿的守护者</p>
+          <p> </p>
+          <p>现在到了提高难度的时候了。请您到阿尔卡尼斯空中神殿去，消灭那里的守护者，积累经验。</p>
+          <p>这次训练的内容是到水之房间、风之房间和火之房间去，消灭掉[%dic:STR_DIC_M_Elementalwater3NMDQ_31_An]、[%dic:STR_DIC_M_ElementalEarth3NamedD_32_Ae]和[%dic:STR_DIC_M_ElementalFire4NamedQ_33_Ae]。</p>
+          <p>那里非常危险，请您一定要找一个[%dic:STR_DIC_E_Mentor]，组成组队之后一起过去。</p>
+          <p>和导师距离太远的话，就无法完成训练，因此请您一定要一直跟着他。</p>
+          <p>完成训练之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘻啦唔吧喃！</p>
+          <p> </p>
+          <p>我正在等您，[%username]大人。</p>
+          <p> </p>
+          <p>这次的训练完成了吗？</p>
+          <p> </p>
+          <p>我说的是消灭阿尔卡尼斯空中神殿守护者的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然和我预想的一样，您做得很好。</p>
+          <p> </p>
+          <p>您近距离观看了导师的战斗，这一定会对[%username]大人今后的战斗有所帮助。</p>
+          <p> </p>
+          <p>每个人都是通过这些过程慢慢成长起来的。</p>
+          <p> </p>
+          <p>[%username]大人，愿阿斯佩尔的庇佑与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起消灭阿尔卡尼斯空中神殿的守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Elementalwater3NMDQ_31_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth3NamedD_32_Ae]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalFire4NamedQ_33_Ae]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Titorea]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭守护阿尔卡尼斯空中神殿的守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，然我去阿尔卡尼斯空中神殿和导师一起积累经验。</p>
+          <p> </p>
+          <p>于是去消灭掉了守护阿尔卡尼斯空中神殿的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

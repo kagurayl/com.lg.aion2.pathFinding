@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>贝鲁斯兰结界水晶塔的水晶经常遭到破坏，经过调查，发现是[%dic:STR_DIC_M_VaranusRe2D_29_n]所为。</p>
+          <p> </p>
+          <p>如果对巴拉努斯坐视不理，对结界的监视就会出现问题，因此必须迅速处理。</p>
+          <p> </p>
+          <p>请全体结界守护团团员积极消灭蓝下巴巴拉努斯，完成任务后立即向[%dic:STR_DIC_E_45007]报告。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>您去消灭蓝下巴巴拉努斯了吗？</p>
+          <p> </p>
+          <p>它们的胃口怎么这么好，连结界水晶塔的水晶都吃掉了，真是群奇怪的家伙。</p>
+          <p> </p>
+          <p>对了，任务执行的怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦您了。</p>
+          <p> </p>
+          <p>您去狠狠地教训了巴拉努斯，现在它们应该不会轻易靠近结界塔了。</p>
+          <p> </p>
+          <p>让人头疼的东西消失了，应该赶紧向上面报告，尽快修复结界水晶塔才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_VaranusRe2D_29_n]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_45007]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到了紧急信件，内容是消灭吃掉贝鲁斯兰结界水晶塔的水晶的蓝下巴巴拉努斯。</p>
+          <p> </p>
+          <p>迅速地消灭了巴拉努斯，并向贝鲁斯兰支部团员报告。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

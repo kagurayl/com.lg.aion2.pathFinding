@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先要从减少草原上凯鲁宾的数量开始。</p>
+          <p> </p>
+          <p>以前光注意阿盖尔农场了，没想到这里会变成这个样子。</p> 
+          <p> </p>
+          <p>已经有一个农场变成了凯鲁宾的巢穴， 其他农场也被他们骚扰得快不行了。 </p> 
+          <p> </p>
+          <p>一不留神就会被他们抢走粮食，把农作物全都拔掉。所以只能这样了。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+         <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body> 
+         <p>神官觉得如果连这里都变成凯鲁宾的巢穴的话就麻烦了，所以找到了团长。</p>
+         <p> </p>
+           <p>不管怎样，我们能赚钱的事情当然越多越好。</p> 
+           <p> </p>   
+           <p>其他人都已经来过了，都去抓[%dic:STR_DIC_MLA131]了。</p>
+           <p> </p>  
+           <p>怎么样？你能去清除凯鲁宾吗？</p>     
+       </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>先从周围的[%dic:STR_DIC_MLA131]开始。如果附近没有的话，就去草原上的农场看看。</p>
+          <p> </p>
+          <p>在其他团员把凯鲁宾都抓光，把报酬都领走之前，你最好动作快一点。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>你为什么会拒绝呢？</p>
+         <p> </p>
+         <p>看来你不光丢失了记忆，连判断力都丢失了。 </p>
+         <p> </p>
+         <p>知道了。反正没有你的话也有很多人去做，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经完成了吗？</p>
+          <p> </p>
+          <p>别想在我面前蒙混过关。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>速度比我想象的快嘛，[%username]。</p>
+          <p> </p>
+          <p>这是说好的报酬。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除阿卡利奥斯草原的[%dic:STR_DIC_MLA131]([%2]/3)</font></p></step>
+                      <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_LA148]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米雷斯给了新的任务。内容是清除威胁阿卡利奥斯草原的[%dic:STR_DIC_MLA131]。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米雷斯让你清除偷走农场粮食的[%dic:STR_DIC_MLA131]。清除凯鲁宾之后领取了报酬。</p>
+  
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务:[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

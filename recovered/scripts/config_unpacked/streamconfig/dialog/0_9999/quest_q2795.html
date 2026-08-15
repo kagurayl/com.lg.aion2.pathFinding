@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉米兰要塞被夺走的事情，没有必要耿耿于怀。</p>
+          <p> </p>
+          <p>活在世上，总有顺利的时候和不顺的时候。</p>
+          <p> </p>
+          <p>只要继续努力，把它夺回来就行了。</p>
+          <p> </p>
+          <p>以我们魔族的能力，这是完全可以做到的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只不过要想实现这一目标，需要守护者们的积极帮助。</p>
+          <p> </p>
+          <p>我们的能力再怎么出色，以我们的数量，是很难对付要塞里的那么多敌人的。</p>
+          <p> </p>
+          <p>[%username]，我经常听到您的英雄事迹。</p>
+          <p> </p>
+          <p>如果您能和我们联手的话，应该会对夺回要塞起到很大的帮助。能愿意帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您应该不会后悔吧？</p>
+          <p> </p>
+          <p>既然您答应了我，请您马上去召集几名同伴。然后马上去把[%dic:STR_DIC_M_2795_all]清除掉。</p>
+          <p> </p>
+          <p>让我们先把驻军打败，然后再想办法把隐藏在深处的守护神将打倒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果我没听错的话，您应该是拒绝了，对吧？</p>
+          <p> </p>
+          <p>我知道了。您拒绝我应该也有您的理由，我也不再多问了。</p>
+          <p> </p>
+          <p>请您去处理自己的事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听几个魔族说，[%dic:STR_DIC_M_2795_all]像落叶一样被纷纷打倒。</p>
+          <p> </p>
+          <p>那是您和同伴们干的吗？</p>
+          <p> </p>
+          <p>感觉应该像是您干的...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然没有让我失望。</p>
+          <p> </p>
+          <p>辛苦您了。但是这件事并不是到此就结束了。</p>
+          <p> </p>
+          <p>现在只是开始。今后希望您能为魔族做出更大的贡献。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_2795_all]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Rossjof]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">和同伴们一起，清除拉米兰要塞的驻军，并向罗斯肖普报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗斯肖普百夫长邀请我一起参加夺回要塞的计划，让我攻击要塞的驻军。</p>       
+          <p> </p>
+          <p>按照他的指示，清除了驻军并回去找到了他。他说辛苦了，并给了我奖赏。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30562</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select1" accept="true">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老实说，我想不明白兰图斯基地为什么会遭到龙族的入侵。</p>
+          <p> </p>
+          <p>这么重要的计划，却因为一个背叛者而泄露了……</p>
+          <p> </p>
+          <p>不管怎样，现在最重要的是重建兰图斯基地。必须把龙族残党消灭干净。</p>
+          <p> </p>
+          <p>因此必须把[%dic:STR_DIC_M_Q30512_ALL]消灭掉。</p>
+          <p> </p>
+          <p>请您到兰图斯基地去，消灭掉[%dic:STR_DIC_M_IDYun_DrakanFi_60_Ae]、[%dic:STR_DIC_M_IDYun_DrakanWi_60_Ae]和[%dic:STR_DIC_M_IDYun_DrakanClew_60_Ae]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_SIMPLE">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_SIMPLE">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到兰图斯基地去了吗？</p>
+          <p> </p>
+          <p>巴萨尔迪军团的精锐战士消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">请求奖励。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>持续执行任务的话，兰图斯基地的重建就会快得多。</p>
+          <p> </p>
+          <p>龙族也会感受到我们的恐怖。</p>
+          <p> </p>
+          <p>希望下次您能再来帮我，[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Q30512_ALL]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和卡尔斯路西%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定去消灭入侵兰图斯基地的巴萨尔迪军团的精锐战士——第55德拉坎精锐战斗士官、第55德拉坎精锐魔法士官和第55德拉坎精锐杀手士官。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡尔斯路西说要想重建兰图斯基地，必须消灭龙族残党。</p>
+          <p> </p>
+          <p>于是按照她的委托，到基地去消灭了巴萨尔迪军团的精锐战士。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

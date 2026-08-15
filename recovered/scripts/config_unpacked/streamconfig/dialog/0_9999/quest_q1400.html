@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是[%username]大人吗？</p>
+          <p> </p>
+          <p>能够见到您真是我的荣耀。</p>
+          <p> </p>
+          <p>我听到过很多[%username]大人的英雄事迹。</p>
+          <p> </p>
+          <p>我有个朋友在贝尔特伦要塞，他一个劲儿地跟我称赞您的实力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，怎样才能成为像[%username]大人这么优秀的[%userclass]啊？</p>
+          <p> </p>
+          <p>最近[%dic:STR_DIC_M_Troll_35_An]和[%dic:STR_DIC_M_Trollkin_35_An]的恶行越来越严重，必须把它们除掉，但是做起来却发现要比想象的困难得多。</p>
+          <p> </p>
+          <p>我的动作比较慢。抓一头就要花上一天时间，所以被希尔拉斯大人批评了。</p>
+          <p> </p>
+          <p>今天之内我必须要抓20头，但是到现在只抓到了两头。</p>
+          <p> </p>
+          <p>[%username]大人您能不能帮帮我？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>那就请您帮我抓7头[%dic:STR_DIC_M_Troll_35_An]和3头[%dic:STR_DIC_M_Trollkin_35_An]。</p>
+          <p> </p>
+          <p>我还想可能得放弃了，现在终于又能打起精神了。</p>
+          <p> </p>
+          <p>那我就先走了。要抓到剩下的数量的话，我必须分秒必争才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不行吗？</p>
+          <p> </p>
+          <p>对不起，拜托您做这种事情。</p>
+          <p> </p>
+          <p>我心里着急，但是身体又跟不上，所以刚才我的精神好像有点问题。</p>
+          <p> </p>
+          <p>我会尽力，实在不行也没办法。被批评就被批评吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>已经结束了吗？</p>
+          <p> </p>
+          <p>我才刚抓到两头。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是了不起。</p>
+          <p> </p>
+          <p>虽然都说您实力很强，但没想到这么厉害。</p>
+          <p> </p>
+          <p>多亏您我终于挽回了面子。</p>
+          <p> </p>
+          <p>哦，对了。这次的事情要对别人保密啊。虽然不好意思，但还是要拜托您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉作恶的特洛尔和托尔金</font></p>
+                     <p visible="[%0]"><font color="[%1]"></font></p>
+                     <p visible="[%0]">  [%dic:STR_DIC_M_Troll_35_An]([%2]/7)<font color="[%1]"></font></p></step>
+               <step><p visible="[%15]"><font color="[%16]"></font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">  [%dic:STR_DIC_M_Trollkin_35_An]([%5]/3)</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p></p>
+          <p>向[%dic:STR_DIC_N_Paion]报告</p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act></Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>必须去捕捉特洛尔无法者和长臂托尔金，让长帕伊温可以顺利完成任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

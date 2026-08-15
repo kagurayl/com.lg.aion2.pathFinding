@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎你，[%username]大人。</p>
+          <p> </p>
+          <p>正好有事找您呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Lasanya]百夫长大人对我说，见到[%username]大人的话，让您去趟普利姆训练所。</p>
+          <p> </p>
+          <p>说是有重要的事情要找您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>具体的我也不清楚，好像是和龙族有关的事情。</p>
+          <p> </p>
+          <p>去找拉莎尼亚百夫长大人吧，他会告诉您详细的内容。</p>
+          <p> </p>
+          <p>总之是非常着急和重要的事情。</p>
+          <p> </p>
+          <p>您能现在马上去[%dic:STR_DIC_N_Lasanya]百夫长大人那里吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Lasanya]百夫长大人就在普利姆训练所入口。</p>
+          <p> </p>
+          <p>请不要忘记，一定要去。</p>
+          <p> </p>
+          <p>他说是很着急的事情，您最好快点过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莎尼亚百夫长大人说是很重要的事情啊……</p>
+          <p> </p>
+          <p>因为相信[%username]大人，所以让我特地来找您，没想到您竟然会拒绝……</p>
+          <p> </p>
+          <p>没办法，我只好告诉拉莎尼亚百夫长大人，[%username]大人您拒绝了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我有任务要交给你。</p>
+          <p> </p>
+          <p>任务很重要，因此我特意向阿尔特盖德和伏魔殿的人征求意见，他们都向我推荐[%username]你。</p>
+          <p> </p>
+          <p>所以，我最后决定把任务交给[%username]你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问是什么任务。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是攻击龙族训练所的任务。</p>
+          <p> </p>
+          <p>守护者们在进入欧比斯战斗之前，要在普利姆训练所进行训练，龙族的士兵也会有专门训练的地方，以适应欧比斯的战斗。</p>
+          <p> </p>
+          <p>接受训练的德拉克纽特士兵固然对我们并没有多大威胁，但是完成训练后，他们会投入到欧比斯的各个战场，那将给我们带来很大威胁。</p>
+          <p> </p>
+          <p>所以我们决定在那些家伙们接受训练变得强大之前，扼杀他们。</p>
+          <p> </p>
+          <p>我想把这次的任务交给[%username]你。请你好好考虑，做完准备后再从我和雷班那里接受任务吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Lasanya]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说拉莎尼亚百夫长正有事找我。应该去普利姆训练所见见他。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧比斯的传令人康托表示，普利姆训练所的拉莎尼亚百夫长正有事找我。</p>
+          <p> </p>
+          <p>见到了拉莎尼亚，他说有个和龙族训练所有关的重要任务要交给我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

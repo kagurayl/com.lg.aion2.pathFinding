@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你已经拥有了成为达人的资格，我已经没什么好教你的了。</p>
+          <p> </p>
+          <p>[%username]，你制造的盔甲，无论从设计还是工艺上看，都找不到任何缺点。</p>
+          <p> </p>
+          <p>现在我能做的，就是给你写一封推荐信，让你获得达人的称号。</p>
+          <p> </p>
+          <p>你听说过金属盔甲制作达人的称号吗，[%username]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">回答没听说过。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达到金属盔甲制作最高境界的人，才能获得金属盔甲制作达人的称号。</p>
+          <p> </p>
+          <p>也就是伏魔殿正式认可了你在制作方面的能力。</p>
+          <p> </p>
+          <p>这是非常光荣的称号。</p>
+          <p> </p>
+          <p>怎么样，你愿意接受这个称号吗？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要获得达人的称号，需要获得[%dic:STR_DIC_N_Vidar]总司令官的许可。</p>
+          <p> </p>
+          <p>我给你写一封推荐信，你去毕达尔大人那里接受称号，并举行任命式。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不是太谦虚了？</p>
+          <p> </p>
+          <p>还是你觉得拘泥于形式很可笑？</p>
+          <p> </p>
+          <p>如果你以后想成为名人，最好是接受达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在我还有点忙。</p>
+          <p> </p>
+          <p>如果不是非得找我，你可以去找斯卡迪或者克巴西日。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>做得很不错嘛，[%username]。</p>
+          <p> </p>
+          <p>能得到金泰伦的认可，说明你的实力很不一般。</p>
+          <p> </p>
+          <p>以后你不仅要给你自己，还要给无数的执政官和守护者制作保护他们的金属盔甲。</p>
+          <p> </p>
+          <p>一套套高品质的盔甲会对伏魔殿起到很大的帮助。</p>
+          <p> </p>
+          <p>最后，你回去见见[%dic:STR_DIC_N_Kinterun]，向名人行礼，并重新请求学习金属盔甲制作。</p>
+          <p> </p>
+          <p>从现在开始，你可以使用达人的称号了。</p>
+          <p> </p>
+          <p>祝贺你，新的金属盔甲制作达人！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Vidar]举行达人的任命式。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接受了金属盔甲制作名人金泰伦的推荐，去找毕达尔总司令官举行达人的任命式。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金属盔甲制作名人金泰伦说已经没有什么可以教给我，他认为我已经具备了成为达人的资格。</p>
+          <p> </p>
+          <p>于是我拿着他的推荐信去毕达尔总司令官那里举行了任命式，接受了达人的称号。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

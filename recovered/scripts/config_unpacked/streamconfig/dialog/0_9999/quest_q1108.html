@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，这下我完了。</p>
+          <p> </p>
+          <p>20年的料理人生就这么完蛋了。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+    <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>几天之后，将会在[%dic:STR_DIC_ELA07]召开大规模的料理大会。天界所有的料理师都会参加。</p>
+          <p> </p>
+          <p>这次我想参展的是用鲜奶油勾芡的海伊布鸟排，但是却怎么都买不到海伊布肉。</p>
+          <p> </p>
+          <p>也想过自己去打猎，但是我只会和死了的畜生打交道，害怕活的东西。</p>
+          <p> </p>
+          <p>如果你没有急事的话，能先帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>打猎[%dic:STR_DIC_MLA05]，搜集6个[%dic:STR_DIC_QILA05]就可以。 </p>
+          <p> </p>
+          <p>去克利奥尼湖边上看看，那边应该有很多。</p>
+          <p> </p>
+          <p>我在这儿准备其他材料，请你快一点儿。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+         <p>现在只剩下3天了，如果今天之内找不到的话，唉...</p>
+         <p> </p>
+         <p>虽然很郁闷，但是又能怎样呢？去拜托佩拉的话应该能搞到鱼，看来只能把主菜改成鱼了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢？</p>
+          <p> </p>        
+          <p>烤好牛排的话，料理就准备好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出海伊布肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+<HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要和你说多少次啊，我很着急的！</p>
+          <p> </p>
+          <p>如果这次料理大会上我被淘汰的话，全都怪你。</p>       
+
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>颜色看起来很新鲜，肉汁一定很丰富。</p>
+          <p> </p>
+          <p>谢谢啊。总算了却了一桩心事。</p>
+          <p> </p>
+          <p>现在不是想这些的时候。我得赶紧去做准备了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+                     <step><p visible="[%0]"><font color="[%1]">搜集料理材料，交给[%dic:STR_DIC_LA05]</font></p>[%collectitem]</step>          
+    </steps>
+          <p><font font_xml="quest_summary">找到[%dic:STR_DIC_LA05]之后，他说由于参加大会的料理缺少材料，正在担心。打猎[%dic:STR_DIC_MLA05]，搜集[%dic:STR_DIC_QILA05]后交给他。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>乌诺说由于缺少参加大会的料理材料，现在很郁闷。打猎海伊布之后把肉交给了他。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

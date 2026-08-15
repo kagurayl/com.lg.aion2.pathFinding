@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，上次你去看过的悬崖上的小屋。</p>
+          <p> </p>
+          <p>你说那里有一个变成德布里的人？</p>
+          <p> </p>
+          <p>要是大家知道那个德布里是被诅咒的人的话，传言就会消失。</p>
+          <p> </p>
+          <p>但是想到那个人的情况，我觉得他很可怜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你能再去那里一趟吗？</p>
+          <p> </p>
+          <p>那个名叫希尔德的德布里如果已经离开了那个地方，就没办法了。如果他还在的话，我希望能帮他找到解开诅咒的方法。</p>
+          <p> </p>
+          <p>知道好好的人变成了德布里，我不能见死不救。</p>
+          <p> </p>
+          <p>知道他为什么会变成德布里之后，应该可以找到解除诅咒的方法。</p>
+          <p> </p>
+          <p>解除诅咒虽然不容易，但以[%username]你的实力，应该没有问题。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你再去悬崖上的小屋一趟。</p>
+          <p> </p>
+          <p>很抱歉让你又到那么危险的地方去，但这是守护者的义务，不是吗？</p>
+          <p> </p>
+          <p>请你过去，尽可能地帮助希尔德恢复成人类。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你难道没有守护者的义务感和使命意识吗？</p>
+          <p> </p>
+          <p>好好的人变成了德布里。</p>
+          <p> </p>
+          <p>你还不愿意帮助他？</p>
+          <p> </p>
+          <p>真是！知道了，我会找其他比[%username]更好的守护者的，你就别操心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">你还不愿意帮助他？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p> 真是！知道了，我会找其他比[%username]更好的守护者的，你就别操心了。</p>
+          <p> </p>
+          <p>我还以…以为是猎人，吓…吓了我一跳。</p>
+          <p> </p>
+          <p>你…找我有事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是来帮助他的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你这么关心我…真的非常感谢。</p>
+          <p> </p>
+          <p>我还以为…这下一定没…没有人和我说话了。</p>
+          <p> </p>
+          <p>你…把我当人看…我就很…很感谢了。</p>
+          <p> </p>
+          <p>你不…不知道我有多…多高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_NPC_Debrie_Hild]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">走去帮忙德布里变身的希尔德吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格纳林一边说变成德布里的希尔德的身世凄惨一边请求帮助他重新变会人类</p>
+          <p> </p>
+          <p>和去悬崖上的小屋要帮助希尔德的人说话也是一种荣幸。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

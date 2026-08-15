@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你听说过雷帕尔革命团吗？</p>
+          <p> </p>
+          <p>他们自称是亚特雷亚的救赎者。</p>
+          <p> </p>
+          <p>其他人都觉得没什么，但是我却看他们很不顺眼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问理由。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>      
+          <p>雷帕尔革命团的渗透方式很不寻常。</p>    
+          <p> </p>
+          <p>与布洛尼或者克拉尔一时的入侵不同，他们经常散布流言蜚语，说什么永恒之塔的崩溃是因为五位主神的原因，说极乐世界的守护者们堕落了等等，以此来煽动人民。</p>
+          <p> </p>
+          <p>虽然方法很简单，但是在军事战略上却是最可怕、最有效的方法。一旦对支配层的不信任扩散，整个均衡有可能会在一瞬间被打破。</p>
+          <p> </p>
+          <p>这样下去的话也学真的会动摇极乐世界的根基。所以必须在他们的势力壮大之前，把他们连根拔掉。[%username]，你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage> 
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。你先去把贝尔特伦地区的革命团抓起来。我听说他们占领了那里的[%dic:STR_DIC_FLA24]。</p>
+          <p> </p>
+          <p>抓住他们，然后把证据带给我。最好的证据就是画着骷髅的[%dic:STR_DIC_I_junk_v_s_09d]。</p>
+          <p> </p>   
+          <p>虽然证据不是很容易找，但是如果是[%username]你的话，相信应该没什么问题。 </p>  
+          <p> </p>         
+          <p>哦，对了。这件事情你不要和其他人说。因为还没有找到他们的幕后黑手以及其目的的相关证据。</p> 
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不想到处跑吧？</p>
+          <p> </p>
+          <p>像你这么懒的人怎么能当上守护者的呢。又不是让你白干。</p>
+          <p> </p>
+          <p>知道了。这件事我就去找别人吧。不过如果你改变主意的话还可以来找我。</p>  
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找我有什么事吗？啊，雷帕尔革命团！</p>
+          <p> </p>
+          <p>事情已经过去很久了，我都忘了。</p> 
+          <p> </p> 
+          <p>比我想象的要慢嘛。对了，革命团的人除掉了吗？把证据拿给我看一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纹章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你到底在干什么？</p>
+          <p> </p>
+          <p>在你偷懒的这段时间里，他们的势力又扩张了。</p>
+          <p> </p>
+          <p>难道你一个都没找到吗？请你快点。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等一下。骷髅纹样刻得很精致，是[%dic:STR_DIC_I_junk_v_s_09d]没错。</p>
+          <p> </p>
+          <p>最近有很多假的徽章。我不是不信任你，但是还是确认一下比较放心。</p>
+          <p> </p>
+          <p>辛苦了。从这里到贝尔特伦一来一回，一定很累吧。收下这个吧。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除占领巴尔波亚农场的雷帕尔革命团，搜集证据后交给[%dic:STR_DIC_N_Xenophon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">科赛诺芬说应该在雷帕尔革命团的实力扩张之前铲除他们的根基。击退占领[%dic:STR_DIC_FLA24]的雷帕尔革命团，把证据带回来。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>科赛诺芬说应该在雷帕尔革命团的实力扩张之前铲除他们的根基。击退占领[%dic:STR_DIC_FLA24]的雷帕尔革命团，把证据带回来。</p>
+          <p> </p>
+          <p>先去清除了占领巴尔波亚农场的雷帕尔革命团，搜集纹章作为证据交给了科赛诺芬。</p>
+          <p> </p>
+          <p>科赛诺芬说辛苦了，并给了我辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

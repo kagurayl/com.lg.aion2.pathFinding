@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该死！这下可难办了！</p>
+          <p> </p>
+          <p>我去太古森林进行调查，但是那些该死的德雷克却出来攻击我。</p>
+          <p> </p>
+          <p>面对几十头德雷克，就算是肩负着消灭亚龙重任的我也束手无策。</p>
+          <p> </p>
+          <p>还好没有受伤，但我身上的东西却弄丢了。</p>
+          <p> </p>
+          <p>那些该死的德雷克袭击了我，把我的背包抢走了。</p>
+          <p> </p>
+          <p>不光是背包！背包里面的东西全都抢走了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可能是它们闻到了里面的盒饭的味道……没想到香草酱图卡这么受德雷克的欢迎……</p>
+          <p> </p>
+          <p>无论如何都必须找回我的东西！</p>
+          <p> </p>
+          <p>背包里装着过去恋人送给我的几套衣服，记录着有关亚龙的情报的手册，还有紧急时使用的药水。</p>
+          <p> </p>
+          <p>让我去买新的？你知道在这种地方，买东西是多么困难吗？</p>
+          <p> </p>
+          <p>而且那些东西陪了我很长时间了，就像是好朋友一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects> 
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你看上去好像很闲的样子，你能帮我把东西找回来吗？</p>
+          <p> </p>
+          <p>背包被德雷克抢走的时候，我看见背包被打开了，里面的东西全都散落了出来。必须去它们的巢穴里仔细寻找才行。</p>
+          <p> </p>
+          <p>其他的没关系，不过[%dic:STR_DIC_OBJ_FOBJ_Q11211A]、[%dic:STR_DIC_OBJ_FOBJ_Q11211B]、[%dic:STR_DIC_OBJ_FOBJ_Q11211C]和[%dic:STR_DIC_OBJ_FOBJ_Q11211D]一定要找到！</p>
+          <p> </p>
+          <p>请你一定要全部找到！少了一个我都不会认可的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在太古森林里，有个德雷克的巢穴。</p>
+          <p> </p>
+          <p>如果你不想和我一样狼狈，最好不要带着盒饭去。</p>
+          <p> </p>
+          <p>要是我的东西被弄坏了的话，该怎么办呢？要是手册浸了水或者药瓶打破了，那就遭了。</p>
+          <p> </p>
+          <p>越想越让人着急。现在不是说这些的时候。[%username]！你快去吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是！</p>
+          <p> </p>
+          <p>没想到[%username]你竟然会拒绝。</p>
+          <p> </p>
+          <p>我还以为你很好说话，不管多么难得请求都会帮我的呢。</p>
+          <p> </p>
+          <p>不愿意的话就算了！看来只能自己去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来想消灭亚龙，提高我的名声。没想到这么快就遭遇了危机！</p>
+          <p> </p>
+          <p>如果找不到我的东西，我就根本打不起精神去追踪亚龙。</p>
+          <p> </p>
+          <p>真的，[%username]，我就全靠你了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_FOBJ_Q11211A]、[%dic:STR_DIC_OBJ_FOBJ_Q11211B]、[%dic:STR_DIC_OBJ_FOBJ_Q11211C]和[%dic:STR_DIC_OBJ_FOBJ_Q11211D]全都找到了吗？快告诉我吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出丢失的物品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没到德雷克的巢穴去吗？</p>
+          <p> </p>
+          <p>如果你能帮我把丢失的东西找回来，我一定会好好酬谢你的。</p>
+          <p> </p>
+          <p>丢失了这么多重要的东西，希望你能理解一下我的心情。</p>
+          <p> </p>
+          <p>快点到太古森林去吧！我的东西说不定会被它们弄坏的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看到东西之后，叹了一口气)还好东西都没事。</p>
+          <p> </p>
+          <p>这些东西都没事，看来它们的目标果然是我的酱图卡。</p>
+          <p> </p>
+          <p>(在手册上记录)我获得了一个有关德雷克的重要情报。</p>
+          <p> </p>
+          <p>东西找到了！真是太高兴了。</p>
+          <p> </p>
+          <p>按照约定，我会报答[%username]你的。不知道你能不能满意。过去我曾经过得还可以，但成为追踪者之后，手头就一直很紧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_OBJ_FOBJ_Q11211A]、[%dic:STR_DIC_OBJ_FOBJ_Q11211B]、[%dic:STR_DIC_OBJ_FOBJ_Q11211C]和[%dic:STR_DIC_OBJ_FOBJ_Q11211D]，然后交给[%dic:STR_DIC_N_Wivius]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">维比乌斯说由于受到德雷克的袭击，他的东西掉在了太古森林里。去帮他把东西找回来吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>维比乌斯说受到了德雷克的袭击，有一些重要的东西丢了，让我帮他找回来。</p>
+          <p> </p>
+          <p>于是去太古森林，找回了维比乌斯丢失的东西，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

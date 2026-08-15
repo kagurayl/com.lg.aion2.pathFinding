@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了掌握克拉尔的动态，我已经被派过来很长时间了。</p>
+          <p> </p>
+          <p>但是他们一直盘踞在特姆利亚废矿中，让我很难完成任务。</p>
+          <p> </p>
+          <p>但是只在外围观察无法确切地掌握他们的动态。</p>
+
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你能帮帮我吗？</p>
+          <p> </p>
+          <p>我想最好能直接去他们的巢穴搜集一下情报。</p>
+          <p> </p>
+          <p>您能替我去废矿看一看吗？ 虽然路很窄，而且到处都有埋伏，但是以您的身手应该不会有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看看他们使用的犁和其他东西，应该能看出他们到底在策划什么事情。</p>
+          <p> </p>
+          <p>所以，请你清除克拉尔，看看他们手上的东西，并带回来给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你马上前往特姆利亚废矿捕捉[%dic:STR_DIC_MLA57]、[%dic:STR_DIC_MLA14_1]和[%dic:STR_DIC_MLA14_2]，寻找线索。</p>
+          <p> </p>
+          <p>他们都是些不好对付的家伙，你最好是先把旁边的收拾掉，然后再逐步清除里面的家伙。 </p>
+          <p> </p>
+          <p>希望你能找到足够的线索。</p>
+          <p> </p>
+          <p>那你路上小心！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来还是太勉强了。</p>
+          <p> </p>
+          <p>连我都不想去的地方，何况是你呢。</p>
+          <p> </p>
+          <p>看来我得请求队长补充一点人手了。几个人一起去应该会好一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，你看过他们手上的东西了吗？</p>
+          <p> </p>
+          <p>线索应该找到了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出动力装置部件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...样子看起来很眼熟，但是不知道到底是用在什么地方的。</p>
+          <p> </p>
+          <p>看来应该再去搜集一点。</p>
+          <p> </p>
+          <p>如果有其他部件的话，应该就能知道它的用途。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦了。</p>
+          <p> </p>
+          <p>嗯，这看起来像是连接其他装置的部件。</p>
+          <p> </p>
+          <p>(把部件组装起来。)</p>
+          <p> </p>
+          <p>啊？这看起来好象是传送某种能量的动力装置。</p>
+          <p> </p>
+          <p>看这些齿轮，还有这儿可以放什么东西...</p>
+          <p> </p>
+          <p>不管怎样，对克拉尔来说这应该是非常重要的东西。应该直接向队长报告。</p>
+          <p> </p>
+          <p>谢谢你帮我搜集线索。去休息一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_MLA57]、[%dic:STR_DIC_MLA14_1]和[%dic:STR_DIC_MLA14_2]手上的物品带回去给普亚</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">决定要帮助观察克拉尔动态的普亚。必须捕捉[%dic:STR_DIC_MLA57]、[%dic:STR_DIC_MLA14_1]和[%dic:STR_DIC_MLA14_2]，寻找克拉尔到底在策划什么的线索。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普亚从很久之前就一直在特姆利亚废矿观察克拉尔的动态。</p>
+          <p> </p>
+          <p>但是克拉尔盘踞在废矿里不出来，他觉得他们的举动很奇怪，所以请求帮助。</p>
+          <p> </p>
+          <p>按照他的请求捕捉克拉尔搜集线索，普亚说那个东西看起来像是动力装置的部件。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

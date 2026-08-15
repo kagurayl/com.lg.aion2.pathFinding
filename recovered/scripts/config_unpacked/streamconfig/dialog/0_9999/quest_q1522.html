@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人去清除克鲁比埃尔的时候，尤普罗西内村子里的村民来找了灵魂治疗师米尔布兰特。</p>
+          <p> </p>
+          <p>好像是米尔布兰特家里出了什么事，前来通风报信的。</p>
+          <p> </p>
+          <p>他们俩嘀嘀咕咕说了半天。我一直听着。后来说到克鲁比埃尔的事情，就仔细问了问。</p>
+          <p> </p>
+          <p>听他们说，克鲁比埃尔突然出现在结界塔附近，这一点和沼泽地带突然诡异地生长出了腐烂之树似乎有某种联系。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克鲁比埃尔抢了基地，现在又追到黑暗湿地来，窥视结界塔。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Cherubim4_33_An]是带头的，听说是他们把克鲁比埃尔带来的。</p>
+          <p> </p>
+          <p>动不动在结界塔前打转的克鲁比埃尔到不算什么，干掉阿克-克鲁比埃尔才是最根本的对策。</p>
+          <p> </p>
+          <p>真过意不去还得再次拜托您，能不能请您再辛苦一下呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是不好意思一次又一次地麻烦您。非常感谢您再次答应相助。</p>
+          <p> </p>
+          <p>请您去黑暗湿地消灭[%dic:STR_DIC_M_Cherubim4_33_An]吧。</p>
+          <p> </p>
+          <p>他们比克鲁比埃尔更凶猛，反抗可能会更激烈。可是对于[%username]大人来说，应该也不成问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>仅仅是消灭克鲁比埃尔这一件事就已经让人很感激了。</p>
+          <p> </p>
+          <p>阿克-克鲁比埃尔并没有造成迫在眉睫的问题，就算缓一缓处理也都可以的。</p>
+          <p> </p>
+          <p>[%username]大人要忙的事情那么多，看来是向您提出了太过分的要求。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您比我想的回来的还要快啊。</p>
+          <p> </p>
+          <p>看来您的实力果然出众，名不虚传。</p>
+          <p> </p>
+          <p>阿克-克鲁比埃尔全都消灭了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。现在克鲁比埃尔再也不敢觊觎结界塔了吧。</p>
+          <p> </p>
+          <p>但是这帮家伙被从原先住的地方赶出来，想想还是会觉得有点可怜啦。</p>
+          <p> </p>
+          <p>如果龙族攻入的话，这里的居民也会落到如此下场的。</p>
+          <p> </p>
+          <p>哎呀，我怎么说起如此沉重的话题了。这也是杞人忧天。请不要为此费心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Cherubim4_33_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Rahelio]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭引领克鲁比埃尔的阿克-克鲁比埃尔，使他们不能再觊觎结界塔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉赫里奥得知了克鲁比埃尔被从黑色眼泪沼泽地区赶出来才来到结界塔附近的情况。所以请求你消灭掉带领他们的阿克-克鲁比埃尔。</p>
+          <p> </p>
+          <p>按照请求干掉了阿克-克鲁比埃尔，得到了感谢。但是对于克鲁比埃尔被从栖息地赶出来之后进犯结界塔而被消灭掉一事也感到很遗憾。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来得太好了，[%username]。</p>
+          <p> </p>
+          <p>我正在找个合适的人选去执行一项任务呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_12]又出现在要塞附近了。</p>
+          <p> </p>
+          <p>是一些想要颠覆伏魔殿的五位主神的叛贼。</p>
+          <p> </p>
+          <p>即使不能除根，也有必要好好教训教训它们，好让它们吓得不敢再来惹事生非。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在它们正驻扎在阿尔特盖德冰湖上，肯定是在侦察要塞的动向。</p>
+          <p> </p>
+          <p>居然敢打阿坎守护的要塞，这些家伙胆子可真不小啊。</p>
+          <p> </p>
+          <p>对这样一群不知道天高地厚的家伙，就要好好地教训教训它们。</p>
+          <p> </p>
+          <p>你能去把他们处理掉吗？</p>
+          <p> </p>
+          <p>虽说不是[%dic:STR_DIC_N_Sueron]队长亲自下的指示，不过这种小事是应该看着办的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1_1">答应去做。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你到要塞外面去，把驻扎在阿尔特盖德冰湖的雷帕尔革命团清除掉。</p>
+          <p> </p>
+          <p>作为一个守护魔族的守护者，除掉那些挑战主神权威的反动分子是我应尽的义务。</p>
+          <p> </p>
+          <p>好像也没有来太多的人，只要处理三四个，估计它们就会害怕了。</p>
+          <p> </p>
+          <p>那就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+       <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q2012-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷帕尔革命团都消灭掉了吗？</p>
+          <p> </p>
+          <p>它们的反抗也不容小视，不过看来你已经处理干净了？</p>
+          <p> </p>
+          <p>对于那些扰乱魔界秩序的家伙，就应该早早地收拾掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">回答已经消灭了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把任务完成得这样利落，真是谢谢你了。</p>
+          <p> </p>
+          <p>尝到了厉害，我想今后那些雷帕尔革命团就不会在到要塞附近捣乱了。</p>
+          <p> </p>
+          <p>以后有什么事情还会拜托你，希望到时候也能得到你的帮助。</p>
+          <p> </p>
+          <p>我是说不管有没有队长的命令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Meibjar]%对话 </font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">清除潜伏在[%dic:STR_DIC_W_DF1A_2]的雷帕尔革命团([%5]/4)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">回去找[%dic:STR_DIC_N_Meibjar]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">返回[%dic:STR_DIC_N_Meibjar]那儿</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅比雅尔要求除掉入侵阿尔特盖德要塞外围冰湖的雷帕尔革命团。</p>
+          <p> </p>
+          <p>所以就按他的要求除掉了雷帕尔革命团，然后回去报告了结果。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>指令：[%questname] </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

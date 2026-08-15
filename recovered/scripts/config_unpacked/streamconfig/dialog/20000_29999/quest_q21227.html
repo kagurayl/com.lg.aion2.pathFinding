@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴卡巴塔封印塔被敌人攻陷了。</p>
+          <p> </p>
+          <p>命运之天平军团虽然拼尽了全力，但还是没能阻止要塞落入敌人的手中。</p>
+          <p> </p>
+          <p>现在很多军团都在努力夺回巴卡巴塔封印塔，但是情况还是非常紧急。如果集合兵力的速度太慢，连格尔克马洛斯防御基地都会陷入危机。</p>
+          <p> </p>
+          <p>我的任务是万一巴卡巴塔封印塔失守的时候，来巴卡巴塔侦察哨所请求帮助。</p>
+          <p> </p>
+          <p>[%username]大人，我也在此把我的任务告诉您。</p>
+          <p> </p>
+          <p>希望您能参加夺回巴卡巴塔封印塔的战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然有凯西内尔主神和代理人大人在，但如果龙族和魔族同时发动攻击，我也不敢断言我们可以守得住。</p>
+          <p> </p>
+          <p>因此，希望[%username]大人能一同参加夺回红色大地神殿的战斗。</p>
+          <p> </p>
+          <p>请您先把敌人的警备兵消灭掉，破坏巴卡巴塔封印塔的防线。那样的话，夺回要塞就会容易得多。</p>
+          <p> </p>
+          <p>您愿意帮我执行这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>连巴卡巴塔封印塔都被敌人夺走的话，别说是按照原来的计划消灭提亚马特了，我们在龙界站住脚跟都将会变得很困难。</p>
+          <p> </p>
+          <p>为了来到格尔克马洛斯，魔族的军队付出了大量的牺牲，花费了大量的人力和物力。[%username]大人来到这里，应该也是为了打倒提亚马特吧。</p>
+          <p> </p>
+          <p>准备好了的话，请您快一点。</p>
+          <p> </p>
+          <p>现在夺回巴卡巴塔封印塔还不算太晚。封印塔进入可以占领状态后，请您去消灭[%dic:STR_DIC_E_Q21227all]，破坏他们的防线。</p>
+          <p> </p>
+          <p>一个人的力量可能会比较困难，请您召集尽可能多的魔族同伴一起去执行任务。任务完成后，请您去向[%dic:STR_DIC_N_Krizarid]报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没准备好吗？</p>
+          <p> </p>
+          <p>还是因为其他的原因，让您不能去巴卡巴塔封印塔呢？</p>
+          <p> </p>
+          <p>[%username]大人，我们需要您的帮助。请您重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能夺回巴卡巴塔封印塔，真是太好了。</p>
+          <p> </p>
+          <p>如果不是这么多人的帮助，我们不可能这么快就夺回要塞。</p>
+          <p> </p>
+          <p>[%username]大人也参加了这次的要塞战吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来如此！[%username]大人，真的非常感谢。</p>
+          <p> </p>
+          <p>您消灭了敌人的警备兵，我会给您相应的报答。</p>
+          <p> </p>
+          <p>在大家的帮助下，我们夺回了巴卡巴塔封印塔，但现在还有很多不稳定因素。</p> 
+          <p> </p>
+          <p>希望您能继续帮助我们。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Q21227all]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Krizarid]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">巴卡巴塔封印塔落入了敌人手中。消灭警备兵，破坏敌人的防御，然后向克拉扎里德报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李纳尔说巴卡巴塔封印塔落入了敌人之手，他正在向魔族守护者们请求帮助。</p>
+          <p> </p>
+          <p>按照他的委托，前往巴卡巴塔封印塔，打倒了警备兵。向克拉扎里德报告之后，得到了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

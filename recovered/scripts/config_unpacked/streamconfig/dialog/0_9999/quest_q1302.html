@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人您感觉到大气中奥德的密度越来越低了吗？</p>
+          <p> </p>
+          <p>我可以用身体感觉奥德的密度。因为要歌唱可以治愈精神的歌曲的话，就必须使用奥德。</p>
+          <p> </p>
+          <p>如果不使用奥德的话，歌声的效果就会变弱。</p>
+          <p> </p>
+          <p>虽然亚特雷亚的其他地方的奥德也在逐渐枯竭，但是埃尔特内这里的问题更为严重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥德的流动并不总是安定不变的。</p>
+          <p> </p>
+          <p>在发生大规模地壳运动或者自然灾害的时候，奥德的流动就会发生急剧的变化。</p>
+          <p> </p>
+          <p>但是从要塞周围的森林里感觉到的奥德的流动什么地方好像有点异常。虽然我不知道确切的原因。</p>
+          <p> </p>
+          <p>我想我们好像需要一直在努力挽救森林的鲍莫娜的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是森林里发生了什么事情的话，身为森林的守护者的鲍莫娜应该可以凭自身的力量感觉到它。</p>
+          <p> </p>
+          <p>[%username]大人，您能去查看一下情况吗？如果需要的话，请您帮助一下鲍莫娜，可以吗？</p>
+          <p> </p>
+          <p>一想到她在独自奋战，我就非常担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_thanks;HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。我听说[%username]大人是使命感很强的守护者，看来真是名不虚传。</p>
+          <p> </p>
+          <p>您乘着浮游石从要塞下去，沿着通向[%dic:STR_DIC_W_LF2_SZ_A1]的小路一直走，就能见到[%dic:STR_DIC_N_Phomona]。</p>
+          <p> </p>
+          <p>她和椰林族在一起，应该很容易找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为[%username]大人的话一定会欣然答应的呢...</p>
+          <p> </p>
+          <p>看来您还有别的急事，那就没办法了。</p>
+          <p> </p>
+          <p>我会找找其他守护者，您不要太担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是克里奥派来的吗？</p>
+          <p> </p>
+          <p>最近几天森林的奥德有点异常，我还在想这次克里奥是不是又会派人来帮我。</p>
+          <p> </p>
+          <p>曼杜里们胡乱地砍伐树木，打乱了奥德的流动。也不知道他们砍了树用来干什么。</p>
+          <p> </p>
+          <p>现在已经解决了，您不用再担心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在埃尔特内的大部分地区都正在变成沙漠，这片森林是最后的希望。</p>
+          <p> </p>
+          <p>这是我们绝对不能放弃的地方。</p>
+          <p> </p>
+          <p>这次虽然没有什么需要您帮忙的，但是下次有了困难的话，我会向您请求帮助的。</p>
+          <p> </p>
+          <p>谢谢您还特意过来一趟。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见[%dic:STR_DIC_N_Phomona]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克里奥让我去给鲍莫娜帮忙。去见见鲍莫娜吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>歌唱之守护者克里奥说他感觉到奥德的流动有异常，好象是森林出现了问题。</p>
+          <p> </p>
+          <p>不知道森林的守护者鲍莫娜是否需要帮助，于是按照克里奥的拜托来到了森林。</p>
+          <p> </p>
+          <p>鲍莫娜说是由曼杜里引起的，已经全部解决了，让我下次有事情的时候再去帮助她。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

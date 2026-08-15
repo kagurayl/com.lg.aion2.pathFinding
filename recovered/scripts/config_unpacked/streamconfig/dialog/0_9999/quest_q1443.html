@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者应该很爽。还能在天上飞。</p>
+          <p> </p>
+          <p>拉莫隆，从来没像现在这么羡慕守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事实上我呆在这里的原因，除了生意的目的之外，还为了搜集奥德结晶体。</p>
+          <p> </p>
+          <p>在要塞那边有很多竞争者，所以特地来到了这里。没有竞争者又能干嘛！漂在空中什么都得不到。</p>
+          <p> </p>
+          <p>不过就这样放弃也不甘心，呐呐。</p>
+          <p> </p>
+          <p>守护者你能帮我搜集奥德结晶体吗？我绝对不会亏待你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你。听了您的话，我的心里就好像爽快多了。</p>
+          <p> </p>
+          <p>请你帮我到地下神殿空中的[%dic:STR_DIC_LF3_ae_source_od_20a]中提取[%dic:STR_DIC_LF3_od_n_c_20a]，然后拿来给我。</p>
+          <p> </p>
+          <p>不要多也不要少，有10个就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>矮小懦弱的术古请求你帮助，真是没人情味。</p>
+          <p> </p>
+          <p>知道了。守护者这么说的话，我也有办法。</p>
+          <p> </p>
+          <p>我会把这次的事情告诉我们商团。说[%username]是个冷酷的守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦？</p>
+          <p> </p>
+          <p>我躲在这里，没看见你在天上飞。</p>
+          <p> </p>
+          <p>如果你把说好的[%dic:STR_DIC_LF3_od_n_c_20a]带来了的话，就快给我吧。我想赶快看一看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥德结晶体。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是在跟我看玩笑嘛？之前浪费了那么多时间就已经够冤枉了，现在还要被守护者...</p>
+          <p> </p>
+          <p>过一段时间我得去别的地方做生意了。</p>
+          <p> </p>
+          <p>请你不要和我看玩笑，快把说好的[%dic:STR_DIC_LF3_od_n_c_20a]给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是这个！早知道这样的话，我就去拜托守护者们了。</p>
+          <p> </p>
+          <p>不管怎么样，多亏你让我得偿所愿。</p>
+          <p> </p>
+          <p>拿着这个。这是我的一片心意，希望你能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将从[%dic:STR_DIC_LF3_ae_source_od_20a]中提取的东西交给[%dic:STR_DIC_N_Shugo_LF2_3]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从巨大的奥德中提取奥德结晶体，然后交给拉莫隆吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉莫隆说自己之所以来地下神殿，是为了寻找奥德结晶体，希望我能帮助不能飞行的他搜集奥德结晶体。</p>
+          <p> </p>
+          <p>把从巨大的奥德中提取到的奥德结晶体交给拉莫隆后，他非常高兴，给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

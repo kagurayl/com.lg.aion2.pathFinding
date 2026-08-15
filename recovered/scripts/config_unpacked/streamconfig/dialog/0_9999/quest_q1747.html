@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的西部要塞被夺走了！真是越想越心痛。</p>
+          <p> </p>
+          <p>如果城门不被破坏的话，他们应该也攻不到要塞的里面。</p>
+          <p> </p>
+          <p>不过到现在再来感慨又有什么用呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以这里为基础尝试重新夺回要塞，要比后退好上一万倍。</p>
+          <p> </p>
+          <p>既然这样就应该开始为夺回要塞做准备了。</p>
+          <p> </p>
+          <p>首先必须把在这附近游荡的不死族除掉。</p>
+          <p> </p>
+          <p>它们在那里飞来飞去，就是平时就很麻烦了，更别说战斗的时候了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过现在守卫这个据点也很重要。</p>
+          <p> </p>
+          <p>我想去清除不死族，但却又不能离开这里...</p>
+          <p> </p>
+          <p>[%username]你能帮帮我吗？</p>
+          <p> </p>
+          <p>如果你能帮我除掉在周围飞来飞去的[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]的话，应该会对我们很有帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你能帮我。</p>
+          <p> </p>
+          <p>[%username]，你身为守护者的使命感好像非常强嘛。</p>
+          <p> </p>
+          <p>那你就去清除记忆破坏者吧，我在这儿等着你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你到底为什么会拒绝呢？</p>
+          <p> </p>
+          <p>为在欧比斯为占领要塞而努力的军团提供帮助，难道不是一名守护者应该做的吗？</p>
+          <p> </p>
+          <p>最近的守护者们真是让人难以理解。有的人不想成为守卫，有的人拒绝执行任务。</p>
+          <p> </p>
+          <p>在过去的话，这是让人无法相信的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在制定战略，到底怎么样才能重新占领要塞。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]清除掉了吗？</p>
+          <p> </p>
+          <p>没有它们的话，执行作战战略就会容易多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>你真是守护者们的榜样。最近的年轻守护者们如果都能像你一样的话，就不用我担心了。</p>
+          <p> </p>
+          <p>哦，对了。记忆破坏者的数量好像有很多，以后你有时间的话，可以再来帮我清除一点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1131_Specter_27_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Chrysaor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克里撒奥尔说记忆破坏者对夺回希埃尔的西部要塞造成了妨碍。按照他的拜托去把记忆破坏者除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克里撒奥尔觉得希埃尔的西部要塞被夺走很让人心痛，并在制定夺回要塞的战略。但是他担心在周围游荡的记忆破坏者会对战略的执行形成妨碍。</p>
+          <p> </p>
+          <p>越是帮助他清除了记忆破坏者，他非常高兴，称赞我是守护者们的榜样。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不能相信，艾易隆森林已经消失了的事实。</p>
+          <p> </p>
+          <p>对我来说，几棵树和小草仍然是森林。</p>
+          <p> </p>
+          <p>但是连这些都有人要破坏。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是残暴的库雷斯三兄弟。</p>
+          <p> </p>
+          <p>它们在沙漠的各地游荡，挖掘草根，剥树木的皮。</p>
+          <p> </p>
+          <p>要是对它们坐视不理的话，森林会完全消失。</p>
+          <p> </p>
+          <p>您能帮我把它们除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库雷斯三兄弟是[%dic:STR_DIC_M_CuresNamedQ1_25_An]、[%dic:STR_DIC_M_CuresNamedQ2_24_An]和[%dic:STR_DIC_M_CuresNamedQ3_23_An]。</p>
+          <p> </p>
+          <p>他们分散在艾易隆沙漠的各处活动。</p>
+          <p> </p>
+          <p>出没的时间也不同，所以要想把他们全部除掉的话，必须等待。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是想说艾易隆森林已经没有了吗？</p>
+          <p> </p>
+          <p>我不会放弃，虽然也许只是愚蠢的希望。</p>
+          <p> </p>
+          <p>如果你不愿意，我也不能勉强。</p>
+          <p> </p>
+          <p>你走你的路吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来啦，守护者。</p>
+          <p> </p>
+          <p>你把危害草丛和树木的库雷斯三兄弟除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">告诉他结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>在你的帮助下，艾易隆森林会复活的。</p>
+          <p> </p>
+          <p>即使过一千年，我也要等到那一天。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉库雷斯三兄弟</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_CuresNamedQ1_25_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_CuresNamedQ2_24_An]([%5]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_CuresNamedQ3_23_An]([%8]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_NoMove_Lodas]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">库雷斯三兄弟正在危险艾易隆沙漠所剩不多的草和树木。按照罗达斯的拜托，把胖子阿托斯、小鬼普尔托斯和敏捷的阿拉米斯除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗达斯说虽然艾易隆森林变成了沙漠，但是仅剩的草和树木对自己来说还是森林。</p>
+          <p> </p>
+          <p>但是库雷斯三兄弟在危害草和树木，所以拜托我把它们除掉。</p>
+          <p> </p>
+          <p>于是找到并除掉了在艾易隆沙漠各处出没的胖子阿托斯、小鬼普尔托斯和敏捷的阿拉米斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

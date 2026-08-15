@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>"发件人：阿拉克内姊妹会,吉尤尼亚"</p>
+          <p> </p>
+          <p>阿拉克内姊妹会的会员们请注意。</p>
+          <p> </p>
+          <p>我们收到报告说，在埃尔特内要塞附近经常有革命团情报员出现，姐妹们在附近监视时，在曼杜里森林中发现了[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37003]%。</p>
+          <p> </p>
+          <p>埃尔特内见习守护者们本想搜索藏身处，抓住革命团情报员，但是却以失败告终。</p>
+          <p> </p>
+          <p>听到这一消息后，8位圣女指示说“去帮助年轻的守护者完成任务”。</p>
+          <p> </p>
+          <p>特此向兄弟姐妹们发布指示，请你们成为[%dic:STR_DIC_E_Li_20_29]的导师，和他们一起消灭掉[%dic:STR_DIC_M_LF2_DQ_LehparAs_43_An]%。</p>
+          <p> </p>
+          <p>结果请向[%dic:STR_DIC_N_Velatris]姐妹报告。</p>
+          <p> </p>
+          <p>请记住您内心的誓言。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到曼杜里森林去了吗？找到[%dic:STR_DIC_M_LF2_DQ_LehparAs_43_An]的藏身处了吗？</p>
+          <p> </p>
+          <p>要想知道革命团情报员到底想干什么，就必须活捉他，但是他们太危险了。</p>
+          <p> </p>
+          <p>因此极乐世界下达了指示，决定暂时不去调查情报员的目的，先把他们消灭掉。</p>
+          <p> </p>
+          <p>我很想知道结果如何。请快向我报告吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您果然出色地完成了任务。</p>
+          <p> </p>
+          <p>他们到底在打什么主意呢？竟然会向曼杜里森林派遣情报员……必须尽快查明革命团的目的才行。</p>
+          <p> </p>
+          <p>我会把[%username]大人的善行告诉阿拉克内姊妹会的所有兄弟姐妹，让他们把您作为榜样。</p>
+          <p> </p>
+          <p>愿凯西内尔的祝福与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">成为[%dic:STR_DIC_E_Li_20_29]的[%dic:STR_DIC_E_Mentor]，消灭躲藏在[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37003]里的革命团员([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Velatris]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须成为埃尔特内见习守护者的导师，消灭躲藏在伪装藏身处中的革命团情报员。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从阿拉克内姊妹会收到了请求支援的信。</p>
+          <p> </p>
+          <p>内容是消灭掉埃尔特内要塞周边出现的革命团情报员。</p>
+          <p> </p>
+          <p>和埃尔特内见习守护者一起找到了曼杜里森林中的伪装藏身处，消灭了革命团情报员，然后向贝拉特里斯报告，她对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

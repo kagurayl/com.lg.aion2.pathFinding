@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……您来找我，一定是有什么解不开的问题吧？</p>
+          <p> </p>
+          <p>对吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以说别人的事情，特别是和爱情有关的问题，是不能随便干涉的。</p>
+          <p> </p>
+          <p>不过我也可以理解。</p>
+          <p> </p>
+          <p>[%username]大人，我来稍微帮您一下，应该没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说是的。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说再考虑一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您能帮我搜集到我所说的材料……我就把您想要的东西送给您。</p>
+          <p> </p>
+          <p>我需要[%dic:STR_DIC_I_QUEST_80061A]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_80061A]……您应该知道是用来干什么的吧？信这个东西……啊，我不能透露太多东西。</p>
+          <p> </p>
+          <p>我会在这里等您把[%dic:STR_DIC_I_QUEST_80061A]拿回来。</p>
+          <p> </p>
+          <p>请不要着急。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是，好的。</p>
+          <p> </p>
+          <p>您慢慢想。如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您来啦。</p>
+          <p> </p>
+          <p>我说的东西呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>信封褪色褪得很厉害嘛。</p>
+          <p> </p>
+          <p>好的，这么多就够了。</p>
+          <p> </p>
+          <p>我把您要的东西给您。</p>
+          <p> </p>
+          <p>这件事是我和[%username]大人之间的秘密，那些可怜的恋人们您不用去管。</p>
+	  <p> </p>
+          <p>好了，再见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_80061A]还没弄到吗？</p>
+          <p> </p>
+          <p>哈哈，您还真是悠闲。</p>
+          <p> </p>
+          <p>没事，我会一直在这里等着，等您把[%dic:STR_DIC_I_QUEST_80061A]拿过来。</p>
+          <p> </p>
+          <p>您不用着急。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80061A]，然后交给[%dic:STR_DIC_N_event_Kardinal]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集褪色的信封，然后交给卡迪纳尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有个守护者说能帮我制作在交易所中无法买到的信，于是去见到了他。</p>
+          <p> </p>
+          <p>他说如果我能帮他搜集褪色的信封，他就把我要的信给我，于是去帮他搜集到了材料。</p>
+          <p> </p>
+          <p>虽然他那略显狡猾的笑容让人有点不太喜欢，不过总算弄到了信。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

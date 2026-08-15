@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想问你一个问题。</p>
+          <p> </p>
+          <p>是你吗？为了解除布鲁斯特豪宁的污染而努力的守护者……</p>
+          <p> </p>
+          <p>你愿意帮助我吗？为了遭受痛苦的椰林族。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多因为污染而遭受痛苦的椰林族同胞们，就在[%dic:STR_DIC_W_DF2B_SZ_B3]。</p>
+          <p> </p>
+          <p>会减轻痛苦的，只要消灭污染。</p>
+          <p> </p>
+          <p>你能为他们收集净化之角吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去伊奥鲁森林的话，可以见到[%dic:STR_DIC_M_DF2A_TricoD_48_n]和 [%dic:STR_DIC_M_DF2A_TriconD_48_An]。</p>
+          <p> </p>
+          <p>它们的角可以净化污染。</p>
+          <p> </p>
+          <p>收集[%dic:STR_DIC_I_QUEST_4054a]和 [%dic:STR_DIC_I_QUEST_4054b]，交给在马加洛原始森林的 [%dic:STR_DIC_N_Tree_Moving_Fadinar]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我感到很惭愧。</p>
+          <p> </p>
+          <p>我知道，为了椰林族牺牲其他生命是很自私的一件事情。</p>
+          <p> </p>
+          <p>同胞们正在遭受痛苦，我却无能为力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>经常会想到……活着的意义。</p>
+          <p> </p>
+          <p>一定是有理由的，被污染，却还能生存下来。</p>
+          <p> </p>
+          <p>找出理由，是战胜痛苦的动力……</p>
+          <p> </p>
+          <p>找我有什么事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将净化之角交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没什么事情的话，找我做什么？</p>
+          <p> </p>
+          <p>现在就连说话也很困难，对于正在忍受着痛苦的我来说。</p>
+          <p> </p>
+          <p>没什么事情就请回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>丽迪塔斯……又送来什么了。</p>
+          <p> </p>
+          <p>他总是觉得对不起我们，只有他们没有被污染这件事情上。</p>
+          <p> </p>
+          <p>我不知道那一天会不会真的到来，就像丽迪塔斯说的那样，我们得到净化的日子……</p>
+          <p> </p>
+          <p>总之，谢谢了，不管是你，还是丽迪塔斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_DF2A_TricoD_48_n]和 [%dic:STR_DIC_M_DF2A_TriconD_48_An]那里收集净化之角，并交给 [%dic:STR_DIC_N_Tree_Moving_Fadinar]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">丽迪塔斯想要净化那些饱受污染之苦的椰林族同胞。去消灭神圣特莱科幼崽和神圣特莱科，并收集净化之角。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>丽迪塔斯对于生活在马加洛原始森林北部的椰林族同胞们因为污染而遭受痛苦的事情，感到非常难过。</p>
+          <p> </p>
+          <p>接受他的委托，消灭神圣特莱科幼崽和神圣特莱科，收集净化之角，并交给了帕迪尼尔。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

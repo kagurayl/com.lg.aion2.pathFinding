@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把正在阅读的报告书合起来)嗯，这次又发生了这种事……</p>
+          <p> </p>
+          <p>这是安格利浦地区送上来的报告书，说最近经常发生奇怪的事情。</p>
+          <p> </p>
+          <p>抓到的龙族俘虏一个个地消失了，但却完全没有受到外部攻击，也没有潜入的痕迹。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在古代龙神殿和贪婪祭坛也发生了类似的事件，看来那里一定有我们不知道的龙族的秘密。</p>
+          <p> </p>
+          <p>还好派去的调查员们说好像找到了线索，还算万幸……</p>
+          <p> </p>
+          <p>[%username]，不好意思，你能帮我到安格利浦地区去一趟吗？</p>
+          <p> </p>
+          <p>你去见见那里的[%dic:STR_DIC_N_IDF4Re_Drana_Li_NPC]，确认一下到底发生了什么事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。那里是非常危险的地方，如果不是有一定能力的人，我还真不太放心让他过去的。你能答应，真是太好了。</p>
+          <p> </p>
+          <p>准备好了之后，请你马上去见见[%dic:STR_DIC_N_IDF4Re_Drana_Li_NPC]。</p>
+          <p> </p>
+          <p>我会事先联系好，说[%username]你马上会过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢……啊，没关系。</p>
+          <p> </p>
+          <p>突然跟你提这种要求，是我的问题。你用不着觉得抱歉。</p>
+          <p> </p>
+          <p>我看你好像有什么急事吧？快去做你的事吧。</p>
+          <p> </p>
+          <p>抱歉让你操心了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]？我听雷阿赫百夫长大人说过了。</p>
+          <p> </p>
+          <p>你是来调查龙族俘虏失踪事件的？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我之前通知了雷阿赫百夫长大人，说找到了失踪事件的线索。</p>
+          <p> </p>
+          <p>这件事我们最好以后再说。</p>
+          <p> </p>
+          <p>我看你好像需要先休息一下。</p>
+          <p> </p>
+          <p>你先去喘口气，等状态好一点之后再来找我。到时候我会把详细的情况全部告诉你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_IDF4Re_Drana_Li_NPC]对话</font></p></step>
+
+    </steps>
+          <p><font font_xml="quest_summary">据说古代龙神殿和贪婪要塞发生了龙族俘虏失踪的时间。极乐世界远征军调查员说找到了线索，去见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷阿赫百夫长说不断收到报告，古代龙神殿和贪婪要塞经常有龙族俘虏失踪，他对此感到很不安。</p>
+          <p> </p>
+          <p>还好极乐世界远征军调查员说找到了事件的线索，代替雷阿赫去见见调查员吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

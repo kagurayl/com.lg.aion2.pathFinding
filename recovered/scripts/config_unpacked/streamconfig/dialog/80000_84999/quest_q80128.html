@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>爱撒娇的女孩子比较受人欢迎，不是吗？</p>
+          <p> </p>
+          <p>一直都有人说我很会撒娇。</p>
+          <p> </p>
+          <p>我自己倒不太清楚。</p>
+          <p> </p>
+          <p>我看上去真是那样的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不这么认为。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，您是不会知道。因为我现在非常克制，尽量让自己不要撒娇。</p>
+          <p> </p>
+	  <p>否则的话，想和我约会的人就会太多，我就没时间为新年做准备了。</p>
+          <p> </p>
+          <p>唉……不久前有个鸢族男人突然向我求婚，搞得我很为难。</p>
+          <p> </p>
+          <p>他不停地派分身来找我，希望我能见见他。因为他听说我很漂亮。</p>
+          <p> </p>
+          <p>这可怎么办呢？我还不想这么快就成为某个男人的女人。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">询问该怎么帮她。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">太麻烦了，直接走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>向我求婚的鸢族男人长得很帅，也很勇敢，我的压力有点大。</p>  
+          <p> </p>
+	  <p>我郑重地拒绝了他，但是他却给我派来了几千个分身。</p>
+          <p> </p>
+          <p>所以我想请您帮我把追求我的那个人的分身[%dic:STR_DIC_M_Branch_Event_AncientClanFi_LIGHT_99_n]赶走。</p>
+          <p> </p>
+          <p>但是我想把[%dic:STR_DIC_I_QUEST_80128A]的证物留下来，作为纪念。</p>
+          <p> </p>
+          <p>[%username]大人，我就全靠你了。请您快去快回～</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太过分了！</p>
+          <p> </p>
+          <p>我太漂亮了，所以无法直接去解决这件事。</p>
+          <p> </p>
+          <p>呜呜呜……哎呀，化的妆都弄坏了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Branch_Event_AncientClanFi_LIGHT_99_n]呢？[%dic:STR_DIC_I_QUEST_80128A]的证物呢？</p>
+	  <p> </p>
+          <p>嗯？嗯？快告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出燃烧的心的证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！这就是他的心！还留有他的体温呢！</p>
+          <p> </p>
+          <p>希望他能就此放弃，不过我觉得好像不会。</p>
+          <p> </p>
+          <p>是因为我太漂亮了吗？</p>
+          <p> </p>
+          <p>[%username]大人，希望有一天您也能收到这种表白～加油！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人，[%dic:STR_DIC_M_Branch_Event_AncientClanFi_LIGHT_99_n]怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_80128A]的证物呢？</p>
+          <p> </p>
+          <p>啊……还没搜集到吗？</p>
+          <p> </p>
+          <p>那我再等一会儿。</p>
+          <p> </p>
+          <p>请您快去快回～</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_80128A]的证物，然后交给[%dic:STR_DIC_N_event_Sunshine]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集燃烧的心的证物，然后交给桑夏。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>娇媚的新年吉祥物女孩桑夏说有鸢族男人向她求婚，她为此感到很困惑。</p>
+          <p> </p>
+          <p>按照她的委托，消灭了坠入爱河的鸢族的分身，把他留下来的证物带了回去。她对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

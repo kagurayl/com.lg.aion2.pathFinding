@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(向人工奥德生成器那边看了一下)又过来了。</p>
+          <p> </p>
+          <p>又没有什么吃的，为什么老是聚在这里呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是人工奥德生成器。</p>
+          <p> </p>
+          <p>不知道怎么回事，经常有野兽被吸引过来。</p>
+          <p> </p>
+          <p>赶走之后，用不了多久就又回来了，唉。</p>
+          <p> </p>
+          <p>上面让我确认装置是否运转正常，它们给我造成了很大的麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为闪光吗？</p>
+          <p> </p>
+          <p>除此之外，我就想不出其他理由了。</p>
+          <p> </p>
+          <p>在吸收周围的能量的时候，生成器会闪光。好像就是这种光，把野兽们吸引了过来。</p>
+          <p> </p>
+          <p>那样的话，只要生成器一直在运转，就会一直有这种情况发生。看来只能把那些聚在旁边的野兽消灭掉了。</p>
+          <p> </p>
+          <p>对了，您能帮我把它们消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次去查看人工奥德生成器的时候，都要费很大的力气，还得清理那边的会走路的石人。</p>
+          <p> </p>
+          <p>我觉得您应该很快就能完成，所以才来拜托您。</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_DF4_Hellhound_Wolf_53_An]和[%dic:STR_DIC_M_DF4_BAT_DR_53_n]消灭掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还有别的事啊？那就算了。</p>
+          <p> </p>
+          <p>您快去忙您的吧。</p>
+          <p> </p>
+          <p>我也要干活了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>遗迹的发掘什么时候才能好啊？</p>
+          <p> </p>
+          <p>不管是马尔提内兹回去也好，我回去也好，总之我是不想看到他那副自命清高的样子了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(向人工奥德生成器那边看了一下)野兽好像少了不少。</p>
+          <p> </p>
+          <p>辛苦您了。请您收下这个。</p>
+          <p> </p>
+          <p>我要去确认生成器的情况了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭聚集在人工奥德生成器周围的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Hellhound_Wolf_53_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_BAT_DR_53_n]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_reptilia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让雷波提利亚可以去查看人工奥德生成器，消灭周围危险的野兽。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷波提利亚说由于人工奥德生成器发出的闪光，很多野兽被吸引了过来，因此很难靠近。</p>
+          <p> </p>
+          <p>为了让他可以确认人工奥德生成器的运转情况，帮他消灭了周围的野兽。他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

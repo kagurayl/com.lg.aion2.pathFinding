@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>竟然和他打这样的赌，我肯定是疯了。</p>
+          <p> </p>
+          <p>就算再生气，也不应该拿性命开玩笑，我真是个糊涂蛋...</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问发生了什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都是艾斯蒂诺不好！他竟然在我面前大放厥词！</p>
+          <p> </p>
+          <p>说自己守卫图尔斯神前哨基地很辛苦！难道我们守卫要塞就那么轻松吗？还吹嘘说只有像他那样有能力的人才会被派到那么辛苦的岗位上。</p>
+          <p> </p>
+          <p>我当然要反驳了。我对他说岗位的不同是跟上级的命令有关，守卫要塞和前哨基地，职责不同而已，只要有心，像克拉尔这些根本不算什么。</p>
+          <p> </p>
+          <p>可他竟然嘲笑我，说让我去图尔斯神前哨基地消灭几个克拉尔回来，他才肯信服。</p>
+          <p> </p>
+          <p>虽然我有些迟疑，但是强烈的自尊心让我一口就答应了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_yes;HACTION_ASK_QUEST_ACCEPT">询问需要什么帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦...是的，我想请求您一件事。</p>
+          <p> </p>
+          <p>虽然我也...可以亲自前往，可是我目前军务在身，无法离开岗位。所以，想请您代替我去图尔斯神前哨基地，拿回相应的证据。</p>
+          <p> </p>        
+          <p>那么，您能帮我这个忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>十分感谢！ [%dic:STR_DIC_QILA82]是最好的证明，请多多收集。营地附近会有装克拉尔武器的箱子。</p>
+          <p> </p>                    
+          <p>请收集8个，并交给埃尔伦河口的[%dic:STR_DIC_LA27]，就可以了。</p>
+          <p> </p>
+          <p>请说明是我拜托送过去的，把箱子给他，他会付钱，因为他和我打了赌。</p> 
+          <p> </p>
+          <p>有件事我要特别提醒您，就是这件事您一定要保密，绝不能告诉别人，希望最好能烂在您的肚子里。十分感谢您出手相助，作为报答，请收下艾斯蒂诺的赌金。</p>
+          <p> </p>
+          <p>那么，请赶快动身前往图尔斯神前哨基地吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道，您肯定有很重要的事情要做。</p>
+          <p> </p>
+          <p>哎，这可怎么办呢？要是输了，这会成为整个贝尔特伦的笑话。</p>
+          <p> </p>
+          <p>如果您改变主意，或者有时间的话，请随时来找我。能保全我自尊心的人，只有大人您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是[%username]大人啊，什么风把您吹来了？</p>
+          <p> </p>
+          <p>佩里内斯送来的？真是个难缠的女人...</p>
+          <p> </p>
+          <p>也好，现在也该是她认输的时候了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把克拉尔的武器交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是她自己弄到的？那她为什么要托您送来？</p>
+          <p> </p>
+          <p>光凭这几句话，无法让我相信她曾去过图尔斯神前哨基地。</p>
+          <p> </p>
+          <p>请转告她，让她拿出更有利的证据。 </p>
+          <p> </p>
+          <p>不然就痛快认输，把钱送到我手上。哼！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这，这是[%dic:STR_DIC_QILA82]！竟然是高级克拉尔使用的武器！这种东西别的地方肯定找不到的。</p>
+          <p> </p>
+          <p>难道佩里内斯真的去了图尔斯神前哨基地，还拿到了这么高级的武器...靠！我竟然输给一个女人...</p> 
+          <p> </p>
+          <p>算了，愿赌服输，这是赌金，还请大人转交给她，唉... </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从克拉尔的补给品箱中找到证据并交给[%dic:STR_DIC_LA27]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_LA78]和艾斯蒂诺打赌去图尔斯神前哨基地消灭克拉尔。代替忙碌的佩里内斯去图尔斯神前哨基地，收集克拉尔的武器并转交给艾斯蒂诺。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>佩里内斯对取笑自己没有战斗能力的艾斯蒂诺很恼火，和他打了赌。</p>
+          <p> </p>
+          <p>帮助为了自尊心而夸下海口的佩里内斯，去艾斯图尔斯神前哨基地收集克拉尔的武器，并交给了艾斯蒂诺。</p> 
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

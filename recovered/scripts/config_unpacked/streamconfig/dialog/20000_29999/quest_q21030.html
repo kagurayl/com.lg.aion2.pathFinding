@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(是个陷阱。)</p>
+          <p> </p>
+          <p>(是用草做成的，但是编得好像很牢固。)</p>
+          <p> </p>
+          <p>(好像是用来捕猎动物的。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">仔细查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(在草叶中间，可以看到一个被陷阱抓住的小动物。)</p>
+          <p> </p>
+          <p>(小动物在挣扎。)</p>
+          <p> </p>
+          <p>(这样下去的话，小动物一定会死掉。)</p>
+          <p> </p>
+          <p>(应该把陷阱里的动物放走，把陷阱还给主人。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(生态学家[%dic:STR_DIC_N_feles]可能会使用这种陷阱。)</p>
+          <p> </p>
+          <p>(去见见费雷斯吧。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(就这样放着。)</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了捕捉阿武拉乌，我设置了陷阱，但是阿武拉乌没抓到，老是有一些可怜的小动物中了陷阱死掉。不久前，我就直接出去打猎了。</p>
+          <p> </p>
+          <p>好久没去打猎了，弄得全身酸疼。</p>
+          <p> </p>
+          <p>研究专家就应该专注于研究，你说这叫什么事儿。</p>
+          <p> </p>
+          <p>阿武拉乌太聪明了，很难用陷阱抓住。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出草叶编成的陷阱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这个怎么还在森林里？我以为都收起来了呢……</p>
+          <p> </p>
+          <p>真是谢谢你。看到小动物中了陷阱死去，我觉得很伤心。</p>
+          <p> </p>
+          <p>这个陷阱虽然看上去很粗糙，但其实非常精巧，小动物中了陷阱之后，越挣扎就越受罪。</p>
+          <p> </p>
+          <p>我觉得太残忍，最近已经不用了。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把草叶编成的陷阱交给[%dic:STR_DIC_N_feles]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现有个小动物被可能是费雷斯设置的陷阱抓住了。应该放了动物，把陷阱交给费雷斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿武拉乌森林里发现了一个草叶编成的陷阱。仔细一看，上面抓住了一个小动物，在那里挣扎。</p>
+          <p> </p>
+          <p>放了动物，把草叶编成的陷阱交给了费雷斯。他对我表示感谢，说是为了抓捕阿武拉乌而设置的，但是却抓不住阿武拉乌，反倒抓了很多可怜的小动物，现在已经不用那种陷阱了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

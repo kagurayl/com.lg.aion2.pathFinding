@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(比较地图)哎呀，又错了。看来又得从头开始调查了……</p>
+          <p> </p>
+          <p>哎呀，[%userclass]大人，您是什么时候来的？</p>
+          <p> </p>
+          <p>索罗罗伯在想一件头疼的事，没发现您过来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，风路的路径和之前调查的结果不太一样。</p>
+          <p> </p>
+          <p>啊，不是我的错。索罗罗伯做事一向不会有错。</p>
+          <p> </p>
+          <p>都是因为那些堕落的大地精灵。只有通过失败者的坟墓的风路出现了问题，原因很明显。</p>
+          <p> </p>
+          <p>啊，什么时候才能修正风路的路径，什么时候才能把那些堕落的大地精灵消灭掉呢？</p>
+          <p> </p>
+          <p>要是有人能帮帮我就好了……啊，[%userclass]大人您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%userclass]大人，您真是个好人！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_Elementalair4_55_An]就在[%dic:STR_DIC_W_SZ_DF4_C4]的浮游岛上。</p>
+          <p> </p>
+          <p>因此必须通过风路才能到达。请稍等一下。</p>
+          <p> </p>
+          <p>(查看地图)利用[%dic:STR_DIC_W_DF4_C4_Q1]的风路应该就可以。沿着风路飞行，看到精灵的话，从风路中出来就行了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？真的不行吗？</p>
+          <p> </p>
+          <p>索罗罗伯这么求您，还是不行吗？</p>
+          <p> </p>
+          <p>切，知道了。不愿意去的话，我也不会抓着您不放。</p>
+          <p> </p>
+          <p>如果您不想帮我，请您走开。我心情本来就不好……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，这是谁啊？</p>
+          <p> </p>
+          <p>这不是乐于助人的[%userclass]大人吗？</p>
+          <p> </p>
+          <p>您的脸被晒黑了，我还以为是其他人呢。</p>
+          <p> </p>
+          <p>您一定是去了失败者的坟墓吧？听说那里的沙暴很厉害，您应该戴着头巾去才行啊……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。堕落的大地精灵消失了，现在只要等一等就行了。</p>
+          <p> </p>
+          <p>希望是大地精灵造成的……要是重新调查之后发现风路的位置还是没有恢复，那就真的难办了。</p>
+          <p> </p>
+          <p>哎呀，怎么办呢？我很想报答[%userclass]大人，但身上只有这个东西。</p>
+          <p> </p>
+          <p>虽然不多，但却是我的一片心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">利用[%dic:STR_DIC_W_DF4_C4_Q1]的风路，消灭[%dic:STR_DIC_M_DF4_Elementalair4_55_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Sorolov]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说风路的路径由于受到堕落的大地精灵的影响而发生了改变。帮助索罗罗伯消灭堕落的大地精灵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>索罗罗伯说上次画的风路的路径最近发生了改变，好像是受到了堕落的大地精灵的影响。</p>
+          <p> </p>
+          <p>按照索罗罗伯所说，利用勘探队野营地的风路前往失败者的坟墓，消灭了大地精灵。回去之后，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

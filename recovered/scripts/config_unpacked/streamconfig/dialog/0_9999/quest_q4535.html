@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冷死了！</p>
+          <p> </p>
+          <p>真不知道这里为什么会这么冷。在欧比斯的时候可不像这个样子……</p>
+          <p> </p>
+          <p>今后可能会比现在还要冷。我试着去适应这里，但是怎么都没办法适应。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问发生了什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我非常怕冷。</p>
+          <p> </p>
+          <p>其实不光是我，这里的好几个哨兵都因为太冷而生了病。虽然我旁边的阿尔夫盖尔之类的家伙已经适应了这里的气候，所以觉得没什么，但是我却受不了了，真不知道还可以在这种天气里忍受多久。</p>
+          <p> </p>
+          <p>我们都在这里冻得发抖，[%username]大人，您能帮我搜集一些[%dic:STR_DIC_I_QUEST_4535A]吗？</p>
+          <p> </p>
+          <p>那种皮革又厚又暖和，用它制作成衣服的话，应该就不怕刺骨的寒风了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>到[%dic:STR_DIC_W_STR_DF3_SZ_C2]去的话，应该可以见到[%dic:STR_DIC_M_KalnifReD_34_An]%。</p>
+          <p> </p>
+          <p>请您去消灭它们，把它们的皮剥回来。</p>
+          <p> </p>
+          <p>它们虽然很凶恶，但以[%username]大人的实力，应该不会有什么问题！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们站在寒风中发抖，随时都有冻伤的危险，您觉得这和您无关吗！</p>
+          <p> </p>
+          <p>没想到您这么不讲情理。</p>
+          <p> </p>
+          <p>我们在这里互相盯着只会让心情变得更差，您快走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为我要冻死了呢！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_4535A]%搜集到了吗？</p>
+          <p> </p>
+          <p>快点给我看看，</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出剑齿豹的厚实皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，这么点还不够给所有的人做衣服。</p>
+          <p> </p>
+          <p>您能再去搜集一些吗？</p>
+          <p> </p>
+          <p>我要的是[%dic:STR_DIC_I_QUEST_4535A]。千万别忘了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这个手感！</p>
+          <p> </p>
+          <p>摸一下就感觉暖融融的。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，我们终于可以在这里坚持下去，不用再担心得感冒了！谢谢您！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_KalnifReD_34_An]的皮革，然后交给[%dic:STR_DIC_N_Sorgrim]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">索尔格林说因为天气太冷而感到很痛苦。去帮他搜集剑齿豹的厚实皮革吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>索尔格林抱怨说黑色平原的气候和欧比斯完全不同，让他感觉很痛苦。为了让他可以在寒冷的天气中坚持下去，帮他去搜集到了咆哮的剑齿豹的皮革。</p>
+          <p> </p>
+          <p>索尔格林对我表示感谢，并支付了皮革的钱。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

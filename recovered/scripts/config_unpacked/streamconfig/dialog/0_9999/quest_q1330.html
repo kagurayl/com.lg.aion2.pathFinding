@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您听得到这个声音吗？沙塔罗卡的心脏跳动的声音。</p>
+          <p> </p>
+          <p>肉体虽然很久以前就消失了，虽然只剩下了心脏，但还是可怕的存在。</p>
+          <p> </p>
+          <p>出现阿盖伦德雷克的事情让人惊讶，现在甚至对周围的生命体也好像产生了影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么影响。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的路上不知道看到没有。库雷斯和蜥蜴。</p>
+          <p> </p>
+          <p>我刚来这里的时候，它们和沙漠里的其他生物没有什么大的差异。</p>
+          <p> </p>
+          <p>但是现在，它们变得越来越凶恶，体型也越来越大。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>它们虽然还没有侵入沙塔罗卡的墓穴，不过这样下去的话会很危险。</p>
+          <p> </p>
+          <p>如果它们和阿盖伦德雷克一起冲进来的话，封印沙塔罗卡心脏的事情就会遭遇困难。所以，必须在出事之前把它们除掉。</p>
+          <p> </p>
+          <p>[%username]大人您能帮着去做这件事情吗？以[%username]大人的实力的话，应该不是什么困难的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说您乐于助人，果然是名不虚传。</p>
+          <p> </p>
+          <p>那就请您把沙塔罗卡的坟墓入口处的[%dic:STR_DIC_M_Cures3st_26_An]和[%dic:STR_DIC_M_Basilisk_26_An]清除掉。</p>
+          <p> </p>
+          <p>如果您能做好这件事情，我会给您1枚铜铸币。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不能改变主意了吗？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Cures3st_26_An]和[%dic:STR_DIC_M_Basilisk_26_An]都是些谁都无法对付的危险的家伙。</p>
+          <p> </p>
+          <p>所以我才特地找[%username]大人帮忙的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去办的事情怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Cures3st_26_An]和[%dic:STR_DIC_M_Basilisk_26_An]全都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我找[%username]大人您果然找对人了。</p>
+          <p> </p>
+          <p>现在暂时可以不再为这件事情担心了。</p>
+          <p> </p>
+          <p>请您收下。这是说好的铜铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除在沙塔罗卡的墓穴入口处徘徊的凶恶的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Cures3st_26_An]([%2]/14)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Basilisk_26_An]([%5]/13)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ando]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为[%dic:STR_DIC_N_Ando]去扫荡威胁沙塔罗卡的坟墓安全的[%dic:STR_DIC_M_Cures3st_26_An]和[%dic:STR_DIC_M_Basilisk_26_An]吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安多说受到沙塔罗卡心脏的影响，大块头库雷斯和大利爪蜥蜴逐渐变得凶残起来，让我在出事之前去扫荡他们。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了库雷斯和蜥蜴，他给了我1枚铜铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

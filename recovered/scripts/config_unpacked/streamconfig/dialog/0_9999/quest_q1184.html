@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近埃尔德斯神殿周围很吵闹。</p>
+          <p> </p>
+          <p>因为风精灵突然变得暴躁，威胁人类。</p>
+          <p> </p>
+          <p>受其影响，来访埃尔德斯神殿的巡礼者也在减少，让人担忧。</p>
+     </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>风精灵变得暴躁肯定有什么理由，但是极乐世界还没有找到确切的原因。</p>
+          <p> </p>
+          <p>据说被污染的森林中有奇怪的动物出没，不知道是不是已经波及到了这里…实在无从得知。</p>
+          <p> </p>
+          <p>极乐世界下达了提交调查目前状况和原因的命令。</p>
+          <p> </p>
+          <p>虽然还没有掌握确切的原因，不过暂时编制了状况说明的相关报告。可惜没有可以送去贝尔特伦要塞的人。</p>
+          <p> </p>
+          <p>或许您有去顺便要塞的事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了！那您能替我们转交调查报告吗？</p>
+          <p> </p>
+          <p>守护神殿的守护者只有几个人，如果有一人离开就无法阻挡克拉尔的侵入。</p>
+          <p> </p>
+          <p>拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那请您把这个调查报告转交给贝尔特伦要塞的 [%dic:STR_DIC_LA18]百夫长。</p>
+          <p> </p>
+          <p>再转告说我们要完成调查，还需要一些时间。</p>
+          <p> </p>
+          <p>由于任务距离较远，所以您最好把附近的事情处理好了后再去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像没有马上去要塞的事情。</p>
+          <p> </p>
+          <p>这怎么办…</p>
+          <p> </p>
+          <p>那就得叫来术古族发快递了...</p>
+          <p> </p>
+          <p>不管怎样我知道了。我会处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有什么事，[%username]?</p>
+          <p> </p>
+          <p>啊，是受卡利奥斯之托的吗？</p>
+          <p> </p>
+          <p>正好，我正在想问问前些日子指示的调查进行得怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">递交调查报告的同时转告卡利奥斯的话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在还没有掌握确切的原因。</p>
+          <p> </p>
+          <p>奥德的能量没有变化。任何守护者也感觉不到。不过风精灵变得暴躁起来，好像有什么特别的原因。</p>
+          <p> </p>
+          <p>谢谢您把报告送过来，辛苦了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_LA18]转交[%dic:STR_DIC_LA32]调查报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要把埃尔德斯神殿的[%dic:STR_DIC_LA32]%交代的调查报告转交给贝尔特伦要塞的百夫长 [%dic:STR_DIC_LA18]。 </font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近幻影神圣所附近的风精灵变得暴躁起来。</p>
+          <p> </p>
+          <p>极乐世界虽然下令调查，但是目前还没有找到原因。 </p>
+          <p> </p>
+          <p>卡利奥斯请求把目前状况的整理报告转交给贝尔特伦要塞的百夫长惠亚金泰。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿希尔澜湖找到的海盗日记。</p>
+          <p> </p>
+          <p>还是觉得什么黑珍珠的呀，就算找到了也不值什么钱。</p>
+          <p> </p>
+          <p>看那日记就知道了，为了找那家伙的什么珍珠，那些船员们不都死了！</p>
+          <p> </p>
+          <p>那种受了诅咒的东西，还是不找为妙啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT1_1">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可是，还是觉得就这么放弃太可惜了。</p>
+          <p> </p>
+          <p>老兄你为了找那本日记，可受了不少苦啊！</p>
+          <p> </p>
+          <p>就算摔倒了，也得攥一把土起来，这不是我们盗贼的精神嘛。</p>
+          <p> </p>
+          <p>所以我就想了一招。我虽然不那么心急，不过换作守护者的话，肯定会对这个主意感兴趣的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我们就把日记给[%dic:STR_DIC_N_Lidun]。</p>
+          <p> </p>
+          <p>要是守护者能找到，我们也能分一杯羹呀。</p>
+          <p> </p>
+          <p>怎么样？好主意吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好！把这个交给后面的[%dic:STR_DIC_N_Lidun]。</p>
+          <p> </p>
+          <p>别忘了告诉他，虽说这是个大买卖，可因为我是队长，没办法只能放弃，以后他要是赚了大钱，可别忘了分我们一份。</p>
+          <p> </p>
+          <p>那就拜托啦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道就因为没法马上赚钱就放弃？</p>
+          <p> </p>
+          <p>你这样怎么能赚到大钱啊？</p>
+          <p> </p>
+          <p>老兄，我这队长是白当的吗？</p>
+          <p> </p>
+          <p>就是因为我有能力，才能坐上这个位子的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>老兄来这有什么事？</p>
+          <p> </p>
+          <p>听说头儿给了你特殊任务，你正忙着呢。</p>
+          <p> </p>
+          <p>可看起来还挺闲的啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转交海盗日记。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（读海盗日记）呦，黑珍珠？</p>
+          <p> </p>
+          <p>闻到点钱的味道了。</p>
+          <p> </p>
+          <p>哈哈，我就说克罗盖干嘛平白无故地给我这个，原来有诅咒啊。</p>
+          <p> </p>
+          <p>看来是那家伙太迷信，害怕不过才给我的。</p>
+          <p> </p>
+          <p>知道了。告诉他以后要是发财了就分他一份。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把海盗日记交给[%dic:STR_DIC_N_Lidun]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克罗盖似乎害怕黑珍珠的诅咒。按照他说的把海盗日记交给守护者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗盖说他害怕黑珍珠，要把这事交给守护者，日后分一杯羹。</p>
+          <p> </p>
+          <p>于是受他所托将海盗日记带给守护者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

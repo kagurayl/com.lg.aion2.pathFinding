@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>非常出色，[%username]。</p>
+          <p> </p>
+          <p>你经受了很多考验，成长非常迅速。已经不需要我的指点了。</p>
+          <p> </p>
+          <p>不过你也不能满足现状，要想成为真正的[%userclass]，就要像以前，不，比以前更加努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想给你介绍新的老师。</p>
+          <p> </p>
+          <p>特拉乌普尼尔这个人或许你已经见到过。他是神圣的破坏技术的宗师，在亚特雷亚声名显赫。</p>
+          <p> </p>
+          <p>如果是他的话，将会在[%username]成为真正的 [%userclass]的道路上，给予更多的指点。</p>
+          <p> </p>
+          <p>那么请收下吧。这是我向特拉乌普尼尔大人介绍你的推荐书。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉乌普尼尔大人就在中央议事堂。</p>
+          <p> </p>
+          <p>见到他后请把推荐书交给他。</p>
+          <p> </p>
+          <p>那样的话他就会收你为弟子的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道你已经拜了特拉乌普尼尔大人为老师了吗？</p>
+          <p> </p>
+          <p>那样的话最好把推荐书还给我。</p>
+          <p> </p>
+          <p>我推荐的人的话，特拉乌普尼尔大人会更加关照的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>觉醒不过是成为真正的守护者的第一阶段。</p>
+          <p> </p>
+          <p>除了得到了翅膀和永恒的生命外，和人类是没有什么不同的。</p>
+          <p> </p>
+          <p>想要成为真正的守护者，就要持续的打破自己的极限。</p>
+          <p> </p>
+          <p>啊，不过你也不用害怕。因为有我们在帮助你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将推荐书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(读着推荐书) 卡尔斯坦对你赞不绝口，看来他还是非常看重你。</p>
+          <p> </p>
+          <p>我也知道你到达目前的地步，经过了很大的努力。不过来到这里，只凭这样是不行的。</p>
+          <p> </p>
+          <p>因为来到这里的人基本上都是和你差不多的。</p>
+          <p> </p>
+          <p>啊，我不是说我不教你。</p>
+          <p> </p>
+          <p>我对渴望学习的人非常欣赏，有需要你可以随时找我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将推荐书交给[%dic:STR_DIC_N_Traufnir]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将卡尔斯坦的推荐书交给特拉乌普尼尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡尔斯坦表示现在已经没什么可以教的了，并给出推荐书，建议拿去交给特拉乌普尼尔。</p>
+          <p> </p>
+          <p>看到推荐书后，特拉乌普尼尔表示，想要成为出色的守护者，以后就要更加努力，并表示以后如果需要指点，可以随时找他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

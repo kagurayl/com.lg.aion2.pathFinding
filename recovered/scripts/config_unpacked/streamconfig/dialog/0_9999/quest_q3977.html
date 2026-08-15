@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，有件事我想拜托你。</p>
+          <p> </p>
+          <p>虽然我没有担任公职，但这是个正式的任务。</p>
+          <p> </p>
+          <p>因为必须对外部保密，因此这件事由我来负责。</p>
+          <p> </p>
+          <p>你想听我说说看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界上层对黑暗普埃塔搜集到的龙族的各种能量源抱有很大的期待。</p>
+          <p> </p>
+          <p>具体的原因我还不能告诉你，只能告诉你现在正在进行非常重要的研究。</p>
+          <p> </p>
+          <p>但是那些能量源被龙族用来做各种事情，因此很难搜集到以德拉纳为代表的此类物质。</p>
+          <p> </p>
+          <p>因此希望你能去消灭使用那种能量源的龙族的创造物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来告诉你使用从德拉纳中派生出来的能源的龙族的创造物有哪些。</p>
+          <p> </p>
+          <p>在玛拉巴塔湖，可以看到[%dic:STR_DIC_M_IDLF1_NM_WaterGolem1_50_Ah]、[%dic:STR_DIC_M_IDLF1_NM_WaterGolem2_50_Ah]和[%dic:STR_DIC_M_IDLF1_NM_WaterGolem3_50_Ah]。</p>
+          <p> </p>
+          <p>还有，德拉纳栽培场上的[%dic:STR_DIC_M_IDLF1_F_Spaller_50_Ah]、[%dic:STR_DIC_M_STR_IDLF1_F_Spaller2_50_Ah]和[%dic:STR_DIC_M_STR_IDLF1_F_Spaller3_50_Ah]也是龙族的创造物。</p>
+          <p> </p>
+          <p>特姆利亚废矿的[%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah]、[%dic:STR_DIC_M_IDLF1_Generator1_50_Ah]、[%dic:STR_DIC_M_IDLF1_Generator2_50_Ah]和[%dic:STR_DIC_M_IDLF1_Generator3_50_Ah]也是如此。</p>
+          <p> </p>
+          <p>这个任务虽然有点难，但却很重要，因此希望你务必完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不想去黑暗普埃塔了吗？</p>
+          <p> </p>
+          <p>那些地方非常危险，我也可以理解你的担忧。</p>
+          <p> </p>
+          <p>但是这是正式的任务，希望你也能体谅一下我的难处。</p>
+          <p> </p>
+          <p>请你好好考虑一下，如果改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你，[%username]。</p>
+          <p> </p>
+          <p>上次拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>就是消灭龙族创造物的任务。</p>
+          <p> </p>
+          <p>上面一直在等我报告结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说完成了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了，[%username]。</p>
+          <p> </p>
+          <p>相信你一定遇到了很多困难，谢谢你帮我完成了这个任务。</p>
+          <p> </p>
+          <p>来，这是给你的报答。希望你能好好使用。</p>
+          <p> </p>
+          <p>下次有时间的话，请你再来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDLF1_Drakan_Creature]%([%2]/8)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Creusa]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克蕾莎说为了搜集龙族的能量源，需要执行特殊的任务。去黑暗普埃塔消灭龙族创造的创造物吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克蕾莎说有个正式的任务要交给我，她说要想搜集到黑暗普埃塔的龙族使用的能量源，必须消灭使用那些能量源的龙族创造物。</p>
+          <p> </p>
+          <p>于是去消灭了玛拉巴塔采集虫和次元之门动力源之类的东西，她说辛苦了，并给了我铸币作为报酬。</p>
+          <p> </p>
+          <p></p>
+          <p> </p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

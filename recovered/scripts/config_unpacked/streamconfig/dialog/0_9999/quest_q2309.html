@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知从什么时候开始，蘑菇开始逐渐变得异常。</p>
+          <p> </p>
+          <p>蘑菇发生变化的同时，彭基和彭克斯也发生了变化。</p>
+          <p> </p>
+          <p>一定是有什么污染了它们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为它们，土壤和树受到了污染。</p>
+          <p> </p>
+          <p>这样下去的话，所剩无几的椰林也会最终消失。</p>
+          <p> </p>
+          <p>帮我把[%dic:STR_DIC_M_FungyReD_23_An]和[%dic:STR_DIC_M_FungusReD_23_An]清除掉，为了椰林和自然。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>帮我把[%dic:STR_DIC_M_FungyReD_23_An]和[%dic:STR_DIC_M_FungusReD_23_An]清除掉，为了椰林。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林们正在死亡。</p>
+          <p> </p>
+          <p>这样下去的话，我们会最终消失。</p>
+          <p> </p>
+          <p>再好好想想吧，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道我们还能坚持多久。</p>
+          <p> </p>
+          <p>椰林族最后消失的日子，希望能够晚一点到来。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_FungyReD_23_An]和[%dic:STR_DIC_M_FungusReD_23_An]都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，守护者。</p>
+          <p> </p>
+          <p>森林的污染应该会有所改善。</p>
+          <p> </p>
+          <p>如果椰林消失了，人类有一天也会消失。</p>
+          <p> </p>
+          <p>为了阻止这件事情发生，我们必须互相帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除污染土地的蘑菇</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FungyReD_23_An]([%2]/25)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FungusReD_23_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_Move_Kaindor]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说彭基和彭克斯在污染土地，威胁到了椰林的生存。按照卡因多尔的拜托，去把它们清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林族卡因多尔说彭基和彭克斯在污染土地，使椰林族难以生存。</p>
+          <p> </p>
+          <p>因此按照他的拜托，帮他清除了彭基和彭克斯。他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

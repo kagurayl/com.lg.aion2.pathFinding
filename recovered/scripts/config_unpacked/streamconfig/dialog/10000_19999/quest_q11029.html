@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然天界有补给品送过来，但我却很担心。</p>
+          <p> </p>
+          <p>运送补给品的战舰有时可能会迟到，战争也很可能会一直拖下去，虽然我并不这么希望。</p>
+          <p> </p>
+          <p>因此必须在本地解决粮食问题才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是脑袋里这么想，实际却做不到。</p>
+          <p> </p>
+          <p>为了解决粮食问题，多利亚大人经常让我尝各种各样的东西……</p>
+          <p> </p>
+          <p>那些东西的味道很奇怪，有时还会吃到有毒的东西，患上严重的后遗症。</p>
+          <p> </p>
+          <p>上次我吃了某种蘑菇，舌头变得僵硬，好几天都不能说话。</p>
+          <p> </p>
+          <p>这样的事情日复一日地发生，我经常怀疑我到底为什么要到这里来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你看看那些费拉塔。</p>
+          <p> </p>
+          <p>虽然看上去像树一样，但只要有人靠近，它们就会突然冲过来。</p>
+          <p> </p>
+          <p>消灭它们也是我的工作之一，但是我经常因为后遗症而休息，所以它们的数量越来越多了。</p>
+          <p> </p>
+          <p>这样下去的话，就会变得很危险。您能帮我消灭掉几个[%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An]吗？</p>
+          <p> </p>
+          <p>我知道这样有点太恬不知耻了，但是我实在看不下去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，真是太感谢了。</p>
+          <p> </p>
+          <p>要是我身体没问题的话，应该可以自己解决。</p>
+          <p> </p>
+          <p>我觉得把事情推给别人是一种耻辱。</p>
+          <p> </p>
+          <p>但是您也知道，情况很紧急。</p>
+          <p> </p>
+          <p>用不着太多，请您帮我消灭20个[%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An]就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是说就这样放着不管吗？</p>
+          <p> </p>
+          <p>不，这绝对不行。</p>
+          <p> </p>
+          <p>这条路是设置欧柏利斯克的守卫们经常走的路。</p>
+          <p> </p>
+          <p>必须要彻底清理干净才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(脸色惨白，擦了擦额头的冷汗)呼，您看。</p>
+          <p> </p>
+          <p>为了对付费拉塔，我浑身都在冒冷汗。</p>
+          <p> </p>
+          <p>看来我的身体还是没有完全恢复。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我真是找对人了。</p>
+          <p> </p>
+          <p>您应该也有自己的事要做，谢谢您帮助我。</p>
+          <p> </p>
+          <p>我得快点恢复精神，把积下来的事情处理掉才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Delus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助因为来不及完成工作而苦恼的迪鲁斯消灭费拉塔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了筹集到粮食，迪鲁斯正在寻找合适的食材，因此试吃了多利亚给的几种食物。</p>
+          <p> </p>
+          <p>但是在这过程中，他吃了有毒的食物，患上了严重的后遗症，手上的工作只能拖着。</p>
+          <p> </p>
+          <p>帮助他消灭了费拉塔，他对我表示感谢，并说要尽快恢复精神，把积下来的事情处理掉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

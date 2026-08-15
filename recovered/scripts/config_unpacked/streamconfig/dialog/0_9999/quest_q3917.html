@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间你一直在帮忙搜集德拉纳标本和龙胶标本，真是谢谢了。</p>
+          <p> </p>
+          <p>[%username]，多亏有你帮忙，我的研究才能够有所进展。</p>
+          <p> </p>
+          <p>虽然还不够公开发表的水平，但只要再做几项辅助调查，就差不多有些眉目了。</p>
+          <p> </p>
+          <p>这全都是托[%username]你的福。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为报答，我有一个人想介绍给你。不，不是人类，是一个术古。</p>
+          <p> </p>
+          <p>你认识提格拉齐工房的[%dic:STR_DIC_N_Shugo_LC1_28]吗？是那个在名人的殿堂的术古。</p>
+          <p> </p>
+          <p>上次偶然说起德拉纳，她好像很感兴趣。</p>
+          <p> </p>
+          <p>大概是因为提格拉齐工房总是用龙族的身体制作物品，所以才会对德拉纳也这么关心。</p>
+          <p> </p>
+          <p>要是能和席拉灵灵联手的话，哪怕辛苦点，但肯定能得到珍贵物品的。要不要试一试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去找[%dic:STR_DIC_N_Shugo_LC1_28]，就说是我介绍的，她就知道是怎么回事了。</p>
+          <p> </p>
+          <p>想必你也了解术古族吧？跟他们合作一点都不轻松。</p>
+          <p> </p>
+          <p>不过，只要能够挺过来，获得的报酬也是相当丰厚的。希望你能坚持到最后。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还没做好与术古族合作并吃苦的准备。</p>
+          <p> </p>
+          <p>虽然合作过程越辛苦，最后的报答也越丰厚……但那份苦确实不是谁都能受得了的。</p>
+          <p> </p>
+          <p>[%username]，希望你能想清楚。</p>
+          <p> </p>
+          <p>如果你改变了主意，我随时都能帮你介绍席拉灵灵。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你找席拉灵灵有什么事？</p>
+          <p> </p>
+          <p>有什么关于龙族的重要发现吗？</p>
+          <p> </p>
+          <p>要是有的话，就向我透露一点点吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是克蕾莎介绍来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚听说有个守护者在帮克蕾莎寻找德拉纳和龙胶，正想打听呢。</p>
+          <p> </p>
+          <p>我对那些龙族的新材料很感兴趣。</p>
+          <p> </p>
+          <p>守护者要是能帮我找到我想要的材料，我一定会好好报答你的。一言为定哦！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_LC1_28]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">席拉灵灵对德拉纳很感兴趣。去名人的殿堂见见她。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克蕾莎感谢我帮她寻找材料，说多亏了我才能取得研究方面的进展。作为报答，她说要把我介绍给席拉灵灵。</p>
+          <p> </p>
+          <p>克蕾莎提醒我与席拉灵灵合作可能会很辛苦，但却能因此获得珍贵的物品。</p>
+          <p> </p>
+          <p>去名人的殿堂见到了席拉灵灵。席拉灵灵希望我能帮忙寻找材料。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

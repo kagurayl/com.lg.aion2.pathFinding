@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰格拉克竟然亲自出来迎接，看来主神说的那个人，就是你吧。</p>
+          <p> </p>
+          <p>马勒库坦主神在很久以前就预见到了今天。</p>
+          <p> </p>
+          <p>因此他提前做了很多准备，包括这个要塞、鲁米埃尔水晶、命运之天平军团等等……</p>
+          <p> </p>
+          <p>并且他还预言，格尔克马洛斯要塞出现德雷得奇安的时候，击败提亚马特的人就会出现。</p>
+          <p> </p>
+          <p>就像他预言的一样，你来到这里的时候，一艘德雷得奇安在格尔克马洛斯要塞出现了。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问德雷得奇安怎么样了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦主神说希埃尔的遗物，就在那艘德雷得奇安里。</p>
+          <p> </p>
+          <p>因此他派遣命运之天平军团进行追击，然后在坠落的德雷得奇安中寻找遗物。</p>
+          <p> </p>
+          <p>[%username]，你愿意一起参与进来吗？</p>
+          <p> </p>
+          <p>你去见见[%dic:STR_DIC_N_Barretta]军团长，他会告诉你需要做哪些事的。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-1.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫雷尔代理人大人好像已经说完了。</p>
+          <p> </p>
+          <p>代理人大人好像认为你就是预言中的那个人。不过到底是不是，还需要时日来验证。</p>
+          <p> </p>
+          <p>现在我们没有这个时间。</p>
+          <p> </p>
+          <p>在坠落的德雷得奇安上，还没有找到遗物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是知道希埃尔的遗物长成什么样子，找起来应该就会容易一些。但是现在我们只知道遗物就在坠落的德雷得奇安上，没有任何其他线索，所以很难找到。</p>
+          <p> </p>
+          <p>因此我们封锁了德雷得奇安坠落点，正在进行仔细的调查，任何一个碎片都不放过。</p>
+          <p> </p>
+          <p>但是有一部分龙族试图逃走，这让人非常头疼。如果有人带走了遗物，那就糟了……</p>
+          <p> </p>
+          <p>我们分出了一部分兵力，正在追击逃跑的龙族，但是我担心这样下去，可能两边都无法兼顾。</p>
+          <p> </p>
+          <p>[%username]，希望你能去德雷得奇安那边进行支援。</p>
+          <p> </p>
+          <p>如果发现有幸存的龙族，就把他们全部消灭掉。然后把从[%dic:STR_DIC_M_QUEST_20022]身上搜集到的东西全部交给我，任何细小的东西都不能放过。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_SZ_DF4_A1_Q3]就在安塔格尔激战地那边。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-2.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族应该不会把那么珍贵的东西放在显眼的地方。</p>
+          <p> </p>
+          <p>为了避开追踪者的目光，也许被伪装了起来。</p>
+          <p> </p>
+          <p>因此任何一个细小的、不起眼的线索都不能放过。</p>
+          <p> </p>
+          <p>对了，德雷得奇安坠落点周围的情况怎么样？还有很多活着的龙族吗？你把他们身上的东西全部拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出龙族持有品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像全部拿回来了。</p>
+          <p> </p>
+          <p>但是不知道中间是否有我们想要的东西。即使就在其中，我也没有自信可以把它分辨出来。</p>
+          <p> </p>
+          <p>你把这些东西送到[%dic:STR_DIC_N_Wolfgang]研究所长那里去。</p>
+          <p> </p>
+          <p>他是伏魔殿最优秀的第1研究所的所长，如果里面有希埃尔主神的遗物，他一定可以找出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-3.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还在那里干什么呢？</p>
+          <p> </p>
+          <p>要是龙族带着遗物逃走，这个责任你能负得起吗？</p>
+          <p> </p>
+          <p>赫雷尔代理人相信你就是预言中的那个人，啧啧。</p>
+          <p> </p>
+          <p>要是希埃尔的遗物落入了提亚马特的手中，不仅会出现黑暗普埃塔，也许还会出现黑暗伊斯夏尔肯。</p>
+          <p> </p>
+          <p>快去消灭幸存的龙族，把[%dic:STR_DIC_M_QUEST_20022]的持有品拿回来。马上就去！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你就是那个人吗？在德雷得奇安坠落之日到来的预言中的那个人。</p>
+          <p> </p>
+          <p>看来应该是你。(上下打量)看上去好像没什么特别的，代理人大人为什么……</p>
+          <p> </p>
+          <p>但是巴雷塔那边怎么这么慢啊？封锁德雷得奇安，搜查里面的物品，有那么困难吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT4_1">拿出沉重的箱子，并转达巴雷塔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>终于送过来了。(打开箱子查看)东西太多了，可能需要一些时间。稍等一下。</p>
+          <p> </p>
+          <p>(花了很长一段时间对东西进行调查。)</p>
+          <p> </p>
+          <p>可以依稀地感觉到希埃尔主神的气息，遗物应该就摆放在这些东西的附近……但是却不在这些东西里面。</p>
+          <p> </p>
+          <p>看来用现在的方法很难找到遗物。</p>
+          <p> </p>
+          <p>我有一个建议。用伏魔殿第1研究所发明的监视之眼，可以在龙族不知道的情况下对德雷得奇安周围进行监视。</p>
+          <p> </p>
+          <p>我会和巴雷塔军团长说的，你去[%dic:STR_DIC_W_DC2]见见[%dic:STR_DIC_N_Ehate]老师吧。</p>
+          <p> </p>
+          <p>就说是我让你去的，他就会把监视之眼给你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO4">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-4.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不是来学习技能的啊？</p>
+          <p> </p>
+          <p>那你来找我是为了什么呢？</p>
+          <p> </p>
+          <p>与魔道星和精灵星无关的事情也没关系，请随便说。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT5_1">转达沃夫冈的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那个孩子还是离不开我的帮助啊。</p>
+          <p> </p>
+          <p>离开研究所这么久了，每次遇到问题的时候还是会来找我……我当然不能拒绝心爱的弟子的请求。</p>
+          <p> </p>
+          <p>这就是监视之眼。这是为了在对方不知情的情况下进行监视而制造的东西。只要把它设置在需要监视的地方，设置好区域，就可以持续地发送影像。</p>
+          <p> </p>
+          <p>需要注意的是，它只能使用一次。因此在使用之前，你必须去向巴雷塔军团长确认需要监视的区域。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO5">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-5.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是从马勒库坦主神殿来吗？</p>
+          <p> </p>
+          <p>我听沃夫冈研究所长说了。送去的东西中没有希埃尔的遗物，对吧？</p>
+          <p> </p>
+          <p>很遗憾，不过没有办法。我想龙族应该不会这么轻易就把遗物交出来。</p>
+          <p> </p>
+          <p>对了，沃夫冈所长说只要用监视之眼还是什么的就可以了。你拿回来了吗？</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT6_1">拿出监视之眼，并转达艾哈特的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>用了这个的话，在这里也能看到远处发生的事情吗？</p>
+          <p> </p>
+          <p>好吧，应该把它设置在某个地方，然后假装撤退。那样的话，就可以知道龙族把遗物藏在什么地方了。</p>
+          <p> </p>
+          <p>[%username]，你去把监视之眼设置在德雷得奇安坠落点。</p>
+          <p> </p>
+          <p>一定要小心设置，不要让龙族发现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO6">结束对话。</Act>
+    </Selects>
+    <Voice file="Q20020-6.ogg"/>
+  </HtmlPage>
+
+  <HtmlPage name="select6_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你怎么空着手回来了？</p>
+          <p> </p>
+          <p>没时间了。我们必须尝试所有可能的办法。</p>
+          <p> </p>
+          <p>你快去见见艾哈特，把监视之眼拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select8">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>监视之眼设置好了吗？相信你一定没有让龙族发觉吧？</p>
+          <p> </p>
+          <p>好的，让我来看看有没有用。</p>
+          <p> </p>
+          <p>这是沃夫冈所长送给我的，说通过这个水晶球可以看到监视之眼发回来的影像。</p>
+          <p> </p>
+          <p>让我来看看他们到底在打什么主意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT8_1">查看监视之眼发回来的影响。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select8_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那是！刚才你看到了吗？</p>
+          <p> </p>
+          <p>有个德拉坎挡住了好几个德拉坎的攻击。那一定是遗物的力量。</p>
+          <p> </p>
+          <p>希埃尔的遗物被一个名叫昆班达的德拉坎拿走了。</p>
+          <p> </p>
+          <p>快去追那个家伙！</p>
+          <p> </p>
+          <p>现在去追应该还来得及。你快去他逃走的方向搜索。不管是洞穴还是森林，只要是龙族可能藏身的地方，全部！</p>
+          <p> </p>
+          <p>特别是那个叫[%dic:STR_DIC_SEN_DF4_SensoryArea_Q20020]的洞穴，一定要仔细搜查！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO8">结束对话。</Act>
+    </Selects>
+    <CutScene id="552"/>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去的时候，我一直在观察影像。</p>
+          <p> </p>
+          <p>看来龙族之间好像发生了什么问题。</p>
+          <p> </p>
+          <p>为什么都是龙族，还要偷了遗物逃走呢？</p>
+          <p> </p>
+          <p>对了，逃走的德拉坎抓住了吗？找到希埃尔的遗物了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>该死，被他逃走了吗！</p>
+          <p> </p>
+          <p>看来他手上的遗物的力量非常强大。</p>
+          <p> </p>
+          <p>不过还好，至少他不是提亚马特龙帝一伙的。</p>
+          <p> </p>
+          <p>这样的话，就为我们争取到了一些时间。我们必须在提亚马特的部下找到昆班达之前，抓住那个家伙。</p>
+          <p> </p>
+          <p>知道昆班达的位置之后，我会再找你的。这段时间，你先去帮着做其他事情吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和马勒库坦的代理人[%dic:STR_DIC_N_Hler]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Barretta]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">搜集[%dic:STR_DIC_M_QUEST_20022]的持有品，然后回到[%dic:STR_DIC_N_Barretta]那里</font></p>[%collectitem]</step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Wolfgang]对话</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">去马勒库坦主神殿的[%dic:STR_DIC_N_Ehate]那里领取监视之眼</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">把监视之眼交给[%dic:STR_DIC_N_Barretta]</font></p></step>
+               <step><p visible="[%18]"><font color="[%19]">将[%dic:STR_DIC_I_QUEST_20020a]设置在[%dic:STR_DIC_W_SZ_DF4_A1_Q3][%20]</font></p></step>
+               <step><p visible="[%21]"><font color="[%22]">向[%dic:STR_DIC_N_Barretta]报告结果</font></p></step>
+               <step><p visible="[%24]"><font color="[%25]">去[%dic:STR_DIC_SEN_DF4_SensoryArea_Q20020]追踪背叛者昆班达。</font></p></step>
+               <step><p visible="[%27]"><font color="[%28]">昆班达逃走了！向[%dic:STR_DIC_N_Barretta]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">指令：必须在格尔克马洛斯执行任务。去马勒库坦的代理人赫雷尔那里接受指示。</font></p>
+        </body>
+        </html>
+    </Contents>
+    <notifies>
+      <notify progress="7" pos="2" fontsize="16" showframe="true" time="5" color="yellow">监视之眼设置失败！回到巴雷塔那里。</notify>
+    </notifies>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马勒库坦的代理人赫雷尔说不能让德雷得奇安运送的希埃尔的遗物落入提亚马特的手中。</p>
+          <p> </p>
+          <p>按照巴雷塔的命令，消灭坠落的德雷得奇安周围的龙族，回收了持有品，但是其中没有发现遗物。</p>
+          <p> </p>
+          <p>沃夫冈研究所长说利用监视之眼可以知道龙族的计划，于是在艾哈特的帮助下，得到了监视之眼，设置在了德雷得奇安坠落点。</p>
+          <p> </p>
+          <p>通过监视之眼知道了希埃尔的遗物的下落，但是拥有遗物的龙族的力量太强，夺回遗物的行动失败了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务执行： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

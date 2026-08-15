@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为我没有天赋吗？每天熬夜练习，却还是不能熟练掌握魔石去除的手艺。</p>
+          <p> </p>
+          <p>不行。必须提高练习的强度才行。</p>
+          <p> </p>
+          <p>必须先从最没有把握的生命力+60，命中+20和盾牌防御+20魔石开始。</p>
+          <p> </p>
+          <p>那样的话，需要有更多的魔石才行。您有这些魔石吗？有的话，我想以10个为单位回收。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>太好了。没想到竟然可以从[%username]大人这里回收到魔石。</p>
+          <p> </p>
+          <p>请给我生命力+60，命中+20和盾牌防御+20魔石各10个。</p>
+          <p> </p>
+          <p>数量正确的话，我会把好不容易搜集到的魔石作为报答送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可以的话，您就帮帮我好了……</p>
+          <p> </p>
+          <p>您也看到了，这里只有我一个魔石去除师，我根本没办法离开这里。</p>
+          <p> </p>
+          <p>真的不行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是刚从仓库那边过来吧？</p>
+          <p> </p>
+          <p>我一直在等您。</p>
+          <p> </p>
+          <p>这里人多眼杂，快把拿来的东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说过，我需要的是生命力+60，命中+20和盾牌防御+20魔石各10个……</p>
+          <p> </p>
+          <p>魔石有很多种类，您一定是搞错了吧？</p>
+          <p> </p>
+          <p>不好意思，请您下次确认清楚。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>种类没错，数量也没错。</p>
+          <p> </p>
+          <p>请您收下。这本来是我打算留着以后用的，反正暂时也用不上，就送给[%username]大人吧。</p>
+          <p> </p>
+          <p>以后如果有生命力+60，命中+20和盾牌防御+20魔石的话，请您一定要拿来给我。</p>
+          <p> </p>
+          <p>我必须努力练习，直到熟练掌握为止。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，然后交给达尼亚</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让达尼亚可以练习去除魔石，必须帮她搜集生命力+60，命中+20和盾牌防御+20魔石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达尼亚说对生命力+60，命中+20和盾牌防御+20魔石没有把握，让我帮她搜集这些魔石各10个，让她可以进行练习。</p>
+          <p> </p>
+          <p>搜集到了达尼亚所说的魔石，她对我表示感谢，并给了我一个不错的魔石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

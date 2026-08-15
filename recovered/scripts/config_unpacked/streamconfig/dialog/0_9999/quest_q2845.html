@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您有时间吗？有件事我想和您说一下。</p>
+          <p> </p>
+          <p>我收到了新的命令。</p>
+          <p> </p>
+          <p>命令的内容是消灭和拉米兰要塞相连的拉米兰地下要塞中的敌人。</p>
+          <p> </p>
+          <p>让我寻找可以执行任务的魔族，并劝说他们执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人应该是执行任务的适当人选。</p>
+          <p> </p>
+          <p>请您到[%dic:STR_DIC_W_IDAbRe_Up3_LaMiren_SZ_All]去，消灭沾污要塞的龙族。</p>
+          <p> </p>
+          <p>必须把敌人全部消灭，然后打倒头目[%dic:STR_DIC_M_Lamiren_DrakanNamed_45_Ah]。</p>
+          <p> </p>
+          <p>现在已经获得了上面的许可，执行任务的人可以随意处置地下要塞里的龙族的宝物。</p>
+          <p> </p>
+          <p>怎么样，[%username]大人？您愿意执行这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>敲打那面墙上的门，就可以前往[%dic:STR_DIC_W_IDAbRe_Up3_LaMiren_SZ_All]。</p>
+          <p> </p>
+          <p>请您在那里除掉尽可能多的龙族。</p>
+          <p> </p>
+          <p>您拿走多少宝物都可以。但宝物箱施有魔法，经过一定时间之后就会消失，所以必须抓紧时间。</p>
+          <p> </p>
+          <p>希望您顺利完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好的，我知道了。</p>
+          <p> </p>
+          <p>上面的指示是劝说，并没有指示我们强迫。</p>
+          <p> </p>
+          <p>没事，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，[%username]大人？</p>
+          <p> </p>
+          <p>如果有什么问题，请尽管问。</p>
+          <p> </p>
+          <p>如果您完成了任务，请向我报告结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务确认完毕。</p>
+          <p> </p>
+          <p>辛苦您了，[%username]大人。</p>
+          <p> </p>
+          <p>奖励已经准备好了。如果您有什么不满，请及时跟我说。</p>
+          <p> </p>
+          <p>有其它任务的话，我会及时通知您的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Up3_LaMiren_SZ_All]的敌人</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Up3_LaMiren]([%2]/80)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Lamiren_DrakanNamed_45_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1241_TreasureGate_Da]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照赫尔德的委托，消灭拉米兰地下要塞的敌人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫尔德让我去和拉米兰要塞相连的拉米兰地下要塞消灭所有的敌人。</p>
+          <p> </p>
+          <p>于是前往拉米兰地下要塞消灭了龙族，回去之后，赫尔德给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！</p>
+          <p> </p>
+          <p>我正在找您呢。见到您真是太好了。</p>
+          <p> </p>
+          <p>啊，不是我自己有什么事情，而是有件事情要跟[%username]大人说。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>极乐世界的守护者[%dic:STR_DIC_N_Likasas]大人正在找[%username]大人您。</p>
+          <p> </p>
+          <p>我收到了里卡萨斯大人的联系，所以正在找您。</p>
+          <p> </p>
+          <p>好像是很重要的事情...您愿意去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Likasas]大人在[%dic:STR_DIC_FLA29]。</p>
+          <p> </p>
+          <p>您去极乐世界的话，请务必去找他。</p>
+          <p> </p>
+          <p>好像是有很重要的事情，所以最好能尽快过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您最近不打算去极乐世界吗？</p>
+          <p> </p>
+          <p>也是，即使使用空间移动，要去那边也不太方便。</p>
+          <p> </p>
+          <p>如果以后改变主意的话，请随时来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快过来，[%username]。</p>
+          <p> </p>
+          <p>看来你终于接到了我的传话。</p>
+          <p> </p>
+          <p>我需要一个可以执行重要任务的守护者，问了问周围的人，大家都极力推荐[%username]你。</p>
+          <p> </p>
+          <p>所以才让人四处找你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近亚特雷亚出现了假的烙印之石。</p>
+          <p> </p>
+          <p>很多守护者因此遇到了困难。</p>
+          <p> </p>
+          <p>于是我进行了调查，发现这件事好像和乌云贸易团有关联。</p>
+          <p> </p>
+          <p>如果正式进行搜查的话，可能会给极乐世界造成大的风波，所以我才想把这件事交给你。</p>
+          <p> </p>
+          <p>你先去极乐世界外港的[%dic:STR_DIC_N_Shugo_c16]那里套取一下情报吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？假烙印之石？你在说什么啊！</p>
+          <p> </p>
+          <p>我只不过在背地里交易一些贵重物品罢了，不知道这件事情，呐呐。</p>
+          <p> </p>
+          <p>我可以对天发誓，我没有听说过假烙印之石的事情。</p>
+          <p> </p>
+          <p>真的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_no;HACTION_SELECT3_1">说已经都知道了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真的不知道假烙印之石是怎么交易的。</p>
+          <p> </p>
+          <p>真的，请你相信我，呐呐。</p>
+          <p> </p>
+          <p>要说知道什么的话，就是埃尔特内的[%dic:STR_DIC_N_Shugo_LF2_4]也许知道假烙印之石的事情。</p>
+          <p> </p>
+          <p>他在[%dic:STR_DIC_W_LF2_SZ_J]做生意，因为雷帕尔革命团而躲了起来，偶尔出来做生意。</p>
+          <p> </p>
+          <p>即使出来做生意，也马上就会回去，所以很难找到他。</p>
+          <p> </p>
+          <p>如果你真想知道的话，就去问问奇克灵吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你怎么不买东西，光问些奇怪的问题啊。</p>
+          <p> </p>
+          <p>假烙印之石是什么东西？我还是头一次听说。</p>
+          <p> </p>
+          <p>是吃的东西吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_panic;HACTION_SELECT4_1">说已经都知道了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select4_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干、干嘛啊...好可怕。</p>
+          <p> </p>
+          <p>老实说我也不知道。</p>
+          <p> </p>
+          <p>据我所知，假烙印之石是从欧比斯来的。</p>
+          <p> </p>
+          <p>其他的我也不知道，你别再问我了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO3">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，[%username]。</p>
+          <p> </p>
+          <p>我拜托你调查的事情怎么样了？</p>
+          <p> </p>
+          <p>有什么成果吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯...乌云贸易团的术古也只知道是通过欧比斯流进来的吗。</p>
+          <p> </p>
+          <p>这么说来，只能直接去欧比斯进行调查了...</p>
+          <p> </p>
+          <p>我知道了。辛苦你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Likasas]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">调查[%dic:STR_DIC_N_Shugo_c16]</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">调查[%dic:STR_DIC_N_Shugo_LF2_4]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Likasas]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说极乐世界的守护者里卡萨斯正在找我。去极乐世界见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内结界塔的卫兵迪奥内拉说极乐世界的守护者里卡萨斯真正找我。来到极乐世界见到了他，他说有假烙印之石出现，让我去调查这件事情。</p>
+          <p> </p>
+          <p>去向乌云贸易团的术古进行了调查，知道了假烙印之石是通过欧比斯流进来的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

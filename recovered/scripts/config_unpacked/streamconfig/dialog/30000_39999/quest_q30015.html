@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，[%username]大人！</p>
+          <p> </p>
+          <p>您手上的那把剑，是希埃尔的力量长剑吗？</p>
+          <p> </p>
+          <p>啊，您能拥有那样的东西，看来您一定是个实力超群的[%userclass]。</p>
+          <p> </p>
+          <p>而且运气也非常好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过有点遗憾。</p>
+          <p> </p>
+          <p>希埃尔的力量长剑好像有点问题。</p>
+          <p> </p>
+          <p>它本来的能力好像被封印了，又好像受到了严重的损坏。</p>
+          <p> </p>
+          <p>如果能恢复到原来的状态，应该就能变成比原来更好的长剑。</p>
+          <p> </p>
+          <p>如果您感兴趣的话，需要我告诉您复原的方法吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。武器如果不能发挥出本身的威力，就和死了没什么分别。</p>
+          <p> </p>
+          <p>我也希望我能为您修理武器，但是我却没有那样的实力。</p>
+          <p> </p>
+          <p>不过我可以向您介绍一个可以帮助您的人。</p>
+          <p> </p>
+          <p>您去见见索泰利亚圣所村的[%dic:STR_DIC_N_Gefeios]大人。</p>
+          <p> </p>
+          <p>他虽然是鸢族，但要想得到更好的武器，就顾不得太多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您是觉得一个人的能力和武器完全无关吗？</p>
+          <p> </p>
+          <p>听说您实力出众……看来您真的很有自信。</p>
+          <p> </p>
+          <p>如果您本人觉得没有必要，我也不会强求。</p>
+          <p> </p>
+          <p>只有了解长剑的人，才知道好长剑的价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？找我有事吗？</p>
+          <p> </p>
+          <p>你来找我，一定是为了魔力武器吧？</p>
+          <p> </p>
+          <p>有什么需要的话，就请说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">我想修复希埃尔的力量长剑。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的力量长剑！</p>
+          <p> </p>
+          <p>你知道这件武器的渊源吗？它曾经是我们鸢族的始祖希埃尔之枪军团使用的武器。</p>
+          <p> </p>
+          <p>但是到底是怎么保存的，怎么弄成了这个样子？</p>
+          <p> </p>
+          <p>你找我就找对人了。我会尽我的能力，让它恢复原来的性能。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Gefeios]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说可以让失去原有能力的希埃尔的力量长剑恢复能力。去见见盖菲奥斯吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德雷尼亚看到我手上拿着的希埃尔的力量长剑之后，说武器虽然是好武器，但却失去了本来的面目，损毁很严重。</p>
+          <p> </p>
+          <p>在他的介绍下，找到了鸢族盖菲奥斯。盖菲奥斯说会尽自己的能力，为我修复武器。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

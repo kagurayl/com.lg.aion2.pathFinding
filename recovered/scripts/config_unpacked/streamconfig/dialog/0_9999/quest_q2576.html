@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人不是这里的人吧？</p>
+          <p></p>
+          <p>好像听人说过，您是从伊斯夏尔肯来的...</p>
+          <p> </p>
+          <p>那样，您应该不太清楚痛哭针叶林的事情。</p>
+          <p> </p>
+          <p>这个地方从荒废之前，就流传着很多关于那个森林的可怕故事。</p>
+          <p> </p>
+          <p>啊，我也不太清楚具体的内幕。总之，只要有人提到那个话题，人们就会设法回避。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，任何故事背后都应该有一定的事实根据。</p>
+          <p> </p>
+          <p>森林里那股阴森的气息，并且还有 [%dic:STR_DIC_M_SpectreD_38_An]和 [%dic:STR_DIC_M_ShadowStalkerD_38_An]在活动，仅看到这些就明白了。</p>
+          <p> </p>
+          <p>气氛本来就够压抑了，那些家伙还在附近出没，很让人担心。</p>
+          <p> </p>
+          <p>假如没有了那些家伙，这里会不会好一些呢...</p>
+          <p> </p>
+          <p>[%username] 大人能去消灭它们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你能欣然接受。即便只是幽灵的笑声减少了，难民们也会安心一些的。</p>
+          <p> </p>
+          <p>刚才也说过，[%dic:STR_DIC_M_SpectreD_38_An]和 [%dic:STR_DIC_M_ShadowStalkerD_38_An]就在对面痛哭的针叶林里面。</p>
+          <p> </p>
+          <p>森林里的一些地方有很浓的雾气，请您小心点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我明白，这本应该是我们做的事情。</p>
+          <p> </p>
+          <p>可这里要忙的事情实在太多了，我们真的是难于分身去顾及其他。</p>
+          <p> </p>
+          <p>既然您也有事，那我也没什么可说的，一旦改变注意，请跟我说一下。</p>
+          <p> </p>
+          <p>就算和这件事无关，要帮助这里的居民也有很多途径和方法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感觉今天幽灵们的笑声更大了。</p>
+          <p> </p>
+          <p>希望难民们不要受影响...</p>
+          <p> </p>
+          <p>阴沉的幽灵和怨恨的影魔都消灭了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太好了。我得赶紧把这个好消息告诉村民们。</p>
+          <p> </p>
+          <p>他们要是知道后，应该也能安心一些了吧？</p>
+          <p> </p>
+          <p>还有，这是为了酬谢[%username]大人的慷慨相助而送给您的礼物。</p>
+          <p> </p>
+          <p>谢谢您帮助我们摆脱了恐惧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭徘徊在痛哭的针叶林里的阴沉的幽灵和怨恨的影魔。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_SpectreD_38_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ShadowStalkerD_38_An]([%5]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Noarynt]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让难民们能够安心生活，必须要消灭徘徊在痛哭的针叶林里的阴沉的幽灵和怨恨的影魔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诺伦特表示，村民们好像非常害怕散发着阴森恐怖气息的痛哭的针叶林。</p>
+          <p> </p>
+          <p>为了让村民们能够安心，接受诺伦特的委托，消灭了阴沉的幽灵和怨恨的影魔。对此，他表示感谢，并馈赠了礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

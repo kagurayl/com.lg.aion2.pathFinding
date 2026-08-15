@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在水草都干了。</p>
+          <p> </p>
+          <p>数量也很充足，这些足以装满比尔胡的身体。</p>
+          <p> </p>
+          <p>其实，我很想亲自去修理比尔胡。</p>
+          <p> </p>
+          <p>并告诉他，再多等一会，一定能够再次见到主人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是如果我离开了村子，那些爱捣乱的普古斯机就会把村子弄得乱七八糟的。</p>
+          <p> </p>
+          <p>而且哈班雅克农场到处都是不死族，我一个人去那里实在太危险了。</p>
+          <p> </p>
+          <p>您能去把这些水草装进比尔胡的身体里吗？</p>
+          <p> </p>
+          <p>对于[%username] 大人来说，那些不死族根本不会形成威胁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要忘记带上这些晒干的水草。</p>
+          <p> </p>
+          <p>只要装进[%dic:STR_DIC_N_Scarecrow_Virhu]的衣服里，他就会恢复到以前的样子。</p>
+          <p> </p>
+          <p>还有，请转告他，我会给他祈祷，希望他能够再次见到主人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您既然都拿来了水草，由您来把水草装进比尔胡不是更好吗？</p>
+          <p> </p>
+          <p>就算哈班雅克农场有很多不死族，可是他们见到 [%username] 大人，肯定会害怕不敢攻击您的。</p>
+          <p> </p>
+          <p>虽然说这些话有点过分……您真是无情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为是主人来了。</p>
+          <p> </p>
+          <p>比尔胡会一直等待主人的。</p>
+          <p> </p>
+          <p>总有一天一定会回来，给我讲很多有趣的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把晒干的水草装进他的身体里。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是为了让我能够安心等候主人，所以来帮助我的吗？</p>
+          <p> </p>
+          <p>真是谢谢你。</p>
+          <p> </p>
+          <p>比尔胡会加油的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Scarecrow_Virhu]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把从赫鲁埃克那得到的水草装进比尔胡的衣服里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赫鲁埃克那里得到了晒干的水草。他请求去哈班雅克农场，把水草装进比尔胡的衣服里。</p>
+          <p> </p>
+          <p>去找到比尔胡，把水草装进他身体里。比尔表示感谢，并称会继续努力地等待主人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

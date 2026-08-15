@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔石去除师协会又下达了新的任务。</p>
+          <p> </p>
+          <p>让我以10个为单位，回收人们不常用的魔石。</p>
+          <p> </p>
+          <p>不是所有的魔石都可以，只有生命力+50，命中+18和盾牌防御+18魔石可以交换。</p>
+          <p> </p>
+          <p>[%username]大人，如果您想交换的话，可以带着魔石来找我。反正是用不着的东西，能交换到新的魔石，不是很好吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您在仓库和军团仓库中好好找找，一定会有放置了很久都没有用的魔石。</p>
+          <p> </p>
+          <p>但不是没有用的魔石都可以用来交换。</p>
+          <p> </p>
+          <p>必须是生命力+50，命中+18和盾牌防御+18魔石才行。数量也必须是各10个才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您不急着想要更好的魔石啊。</p>
+          <p> </p>
+          <p>以后如果您获得了我所说的魔石，请拿来给我。</p>
+          <p> </p>
+          <p>我会随时用其他魔石和您交换。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有机会的话，我很想到伏魔殿去，学习更多有关魔石的知识。</p>
+          <p> </p>
+          <p>为此，我必须更加努力工作才行。因为去那里学习，需要花费很多的钱。</p>
+          <p> </p>
+          <p>啊，现在不是闲聊的时候。必须赶紧工作，工作！</p>
+          <p> </p>
+          <p>[%username]大人，您找我有什么事吗？是想去除魔石吗？还是交换魔石的啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出魔石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像不太对啊……请重新确认一下。</p>
+          <p> </p>
+          <p>我要的是生命力+50，命中+18和盾牌防御+18魔石。</p>
+          <p> </p>
+          <p>错了一个都不行。规定是必须遵守的。</p>
+          <p> </p>
+          <p>反正不是急事，等有了魔石之后您再来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>生命力+50，命中+18和盾牌防御+18……确认无误。</p>
+          <p> </p>
+          <p>您拿来的东西全都没错。</p>
+          <p> </p>
+          <p>来，我用新的魔石和您交换。希望您能喜欢。</p>
+          <p> </p>
+          <p>如果您搜集到了我要的魔石，请拿来给我。我会随时和您交换。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集魔石，然后交给卡多克</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">搜集不常用的魔石交给卡多克，交换新的魔石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡多克说从魔石去除师协会收到了通知，要求他以10个为单位回收用于教育的魔石，让我帮助忙碌的他搜集魔石。</p>
+          <p> </p>
+          <p>搜集到了卡多克所说的魔石，作为答谢，他送了我一块不错的魔石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

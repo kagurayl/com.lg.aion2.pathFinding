@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有些人觉得在防具上镶嵌宝石是件奢侈的事情。</p>
+          <p> </p>
+          <p>那是因为他们对此不了解才这么说的。</p>
+          <p> </p>
+          <p>宝石不仅可以用来装饰防具，还能赋予防具特殊的力量。</p>
+          <p> </p>
+          <p>那种力量可以阻挡物理的攻击，也可以保护主人不受魔法的伤害。因此，越是有经验的战士和法师，就越喜欢镶有宝石的防具。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是因为价格很贵，平时实际购买的人很少。不过奇怪的是，最近购买的人却多了起来。</p>
+          <p> </p>
+          <p>今天就有很多守护沙塔罗卡的坟墓的封印之守护者来我这里订购石榴石戒指和项链！</p>
+          <p> </p>
+          <p>他们说非常继续，让我尽快做好后给他们送过去，但是最重要的宝石石榴石没有了。</p>
+          <p> </p>
+          <p>等待术古商人供货好像太迟了，不知道守护者大人能不能帮帮我？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。请您帮我去[%dic:STR_DIC_E_gb_source_jewelry_30a]采集5个原石吧。</p>
+          <p> </p>
+          <p>时间比较紧急，请您稍微快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？</p>
+          <p> </p>
+          <p>如果您能帮我找到[%dic:STR_DIC_E_jewelry_n_c_20d]的话，我一定会重重地答谢您的。请您再好好考虑一下吧。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我想象的要快得多嘛。</p>
+          <p> </p>
+          <p>为了节约时间，在您去找原石的时间里，我先把戒指和项链的其他部分做好了。</p>
+          <p> </p>
+          <p>现在只要把宝石加工一下，然后镶上去就行了。来，把您带回来的[%dic:STR_DIC_E_jewelry_n_c_20d]给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出石榴石原石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我没说清楚吗？</p>
+          <p> </p>
+          <p>我需要5个[%dic:STR_DIC_E_jewelry_n_c_20d]。</p>
+          <p> </p>
+          <p>如果少了一个的话，就不够这次用的。所以请您一定要搜集齐5个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是不错的原石。</p>
+          <p> </p>
+          <p>虽然还没有切割，但是只要看这个红色的光就知道了。</p>
+          <p> </p>
+          <p>应该能做出不错的东西。真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_E_gb_source_jewelry_30a]中采集原石，然后交给[%dic:STR_DIC_N_Krato]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让克拉托可以制作防具，帮助他搜集石榴石原石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克拉托说接到了石榴石项链和戒指的订单，但是因为缺少石榴石而正在为难。</p>
+          <p> </p>
+          <p>为了让他可以顺利完成防具的制作，帮助他采集到了石榴石原石。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

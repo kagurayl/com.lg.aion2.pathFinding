@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想让凯丹克拉尔不继续为非作歹，最好是把他们的头目除掉。</p>
+          <p> </p>
+          <p>他们的头目名叫[%dic:STR_DIC_M_KrallWarriorHKBoss_40_An]，是个很厉害的家伙。</p>
+          <p> </p>
+          <p>体型很大，力气和战斗力也非常强。</p>
+          <p> </p>
+          <p>把他除掉应该并不容易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你召集同伴一起到凯丹大本营去。</p>
+          <p> </p>
+          <p>除掉[%dic:STR_DIC_M_KrallWarriorHKBoss_40_An]就是这次的任务。</p>
+          <p> </p>
+          <p>虽然要把他除掉很不容易，但[%username]你应该具备这个能力。</p>
+          <p> </p>
+          <p>怎么样，你想试一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>山杜卡在凯丹大本营的深处。保护他的克拉尔的数量也很多。</p>
+          <p> </p>
+          <p>即使把卫兵全部除掉，还得直接面对山杜卡，所以一定要注意调节体力。</p>
+          <p> </p>
+          <p>要想打倒山杜卡，必须要看准他变弱的一瞬间。如果错过那个瞬间的话，所有的努力都会白费。</p>
+          <p> </p>
+          <p>那就祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事非常困难，所以你拒绝也没关系。</p>
+          <p> </p>
+          <p>我还那么相信你，这下计划就有问题了...</p>
+          <p> </p>
+          <p>不管怎样，我知道了。我找找其他守护者吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安然回来啦，[%username]。</p>
+          <p> </p>
+          <p>你把大族长山杜卡除掉了吗？</p>
+          <p> </p>
+          <p>如果除掉了的话，就把证据给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出山杜卡的面具。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我知道这次的任务并不容易，但是你也应该把接下来任务执行完，不是吗？</p>
+          <p> </p>
+          <p>快去除掉大族长山杜卡，把山杜卡的面具带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_surprise;HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你完成了几乎不可能完成的任务！真让人吃惊！</p>
+          <p> </p>
+          <p>如果所有的守护者都像你一样的话，我们就没有什么可担心的了。</p>
+          <p> </p>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>这些虽然比起你的辛苦来说少了点，但是你应得的报偿。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_KrallWarriorHKBoss_40_An]，把证据交给[%dic:STR_DIC_N_Telemachus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉凯丹克拉尔的头目大族长山杜卡。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰雷马科斯说要想完全制约住克拉尔，必须把他们的头目除掉。</p>
+          <p> </p>
+          <p>于是和同伴们一起来到凯丹大本营除掉了大族长山杜卡，并把山杜卡的面具作为证据带了回去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

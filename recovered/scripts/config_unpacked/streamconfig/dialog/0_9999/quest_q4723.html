@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在德雷得奇安执行的最重要的任务之一，就是破坏龙族的补给品。</p>
+          <p> </p>
+          <p>但是补给品的问题，我们也可以从其他视角来看。</p>
+          <p> </p>
+          <p>如果能把龙族的补给品抢回来，不是对我们更有好处吗？</p>
+          <p> </p>
+          <p>即能给它们造成打击，又能获得和它们有关的情报。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你要去德雷得奇安，能顺便帮我搜集它们的补给品吗？</p>
+          <p> </p>
+          <p>如果是其他人的话，我是不会提这件事的。因为一边战斗一边搜集补给品并不容易。</p>
+          <p> </p>
+          <p>但是[%username]，以你的能力，搜集补给品应该只需要花费很少的时间。</p>
+          <p> </p>
+          <p>所以我想拜托你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我并不需要你把所有的补给品全都拿回来。</p>
+          <p> </p>
+          <p>请你把一般的东西破坏掉，把可以带回来的[%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723]拿回来。</p>
+          <p> </p>
+          <p>补给品应该可以在补给品仓库找到，负责搬运的黑暗术古奴役身上可能也会有。</p>
+          <p> </p>
+          <p>不要太专注于战斗，别忘了把龙族的补给品带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不想给自己的战斗增加负担吗？</p>
+          <p> </p>
+          <p>啊，我不是在责备你。要是我的话，可能也会拒绝。</p>
+          <p> </p>
+          <p>我只是因为没有人帮我执行任务，有点担心罢了。</p>
+          <p> </p>
+          <p>如果你改变了主意，请再来找我。对于你的帮助，我随时表示欢迎。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不能通过德雷得奇安获得补给，龙族一定会陷入混乱。</p>
+          <p> </p>
+          <p>战斗时需要消耗大量的补给品。如果得不到补给，士气可能会受到影响。</p>
+          <p> </p>
+          <p>对了，龙族的补给品拿回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">我不想催促你。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>世界上没有谁会喜欢催促别人。</p>
+          <p> </p>
+          <p>但是这是我的工作，我也没办法。</p>
+          <p> </p>
+          <p>而且我已经向伏魔殿报告过了，不能一直拖下去。</p>
+          <p> </p>
+          <p>请你快点渗透到德雷得奇安内部，把[%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723]拿回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你帮我搜集到了龙族的补给品。</p>
+          <p> </p>
+          <p>我会马上送到伏魔殿去。</p>
+          <p> </p>
+          <p>要是分析之后能获得有用的情报，就更好了。</p>
+          <p> </p>
+          <p>啊，下次有时间的话，请你再来帮我。</p>
+          <p> </p>
+          <p>既能获得情报，又能切断敌人的补给，这不就是所谓的一石二鸟吗？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723]%，然后交给[%dic:STR_DIC_N_Yorgen]%</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照约尔根所说，搜集龙族的补给品要比破坏补给品更有利。去搜集龙族的补给品吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>约尔根说如果能搜集到龙族的补给品，就能获得各种情报，比单纯破坏掉补给品效果要好得多。</p>
+          <p> </p>
+          <p>于是帮他搜集到了龙族补给品，他说会送到伏魔殿进行分析。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

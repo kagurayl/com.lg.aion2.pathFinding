@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然已经决定攻击黑脚部族了 ，那就应该多方出击，把这些家伙彻底消灭 。</p>
+          <p> </p>
+          <p>不过局部作战最好交给百夫长们去做。</p>
+          <p> </p>
+          <p>因为我没必要操心到每件事，百夫长们也需要积累些经验。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想过了，除去黑脚部族的咒术师这件事，最好交给莫伦去做。</p>
+          <p> </p>
+          <p>他很了解莱卡恩，应该能很好地完成这个任务。</p>
+          <p> </p>
+          <p>你帮我把这个命令书交给莫伦，行吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就把这命令书交给 [%dic:STR_DIC_N_Morn]吧。</p>
+          <p> </p>
+          <p>莫伦应该在奇柏隆前面的奇柏利斯克附近。</p>
+          <p> </p>
+          <p>任务重大，现在就去给他吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你竟敢违抗我的命令？</p>
+          <p> </p>
+          <p>别认为这是小事而小看它。</p>
+          <p> </p>
+          <p>你这样做的话，我就不能再派给你什么重要任务了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直想问问你莱卡恩的情况。</p>
+          <p> </p>
+          <p>听说[%username]您常常和黑脚部族交战，所以我觉得您应该知道。</p>
+          <p> </p>
+          <p>对了，你手里拿着的是什么？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转交苏埃伦的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读命令书)把解决黑脚部族的咒术师的任务交给我了？</p>
+          <p> </p>
+          <p>嗬嗬，军团长看来有点心急啊。</p>
+          <p> </p>
+          <p>知道了。谢谢你转交给我命令书。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把苏埃伦的命令书转交给 [%dic:STR_DIC_N_Morn]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把要塞队长苏埃伦的命令书交给莫伦。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>苏埃伦准备多方出击黑脚部族，消灭他们。</p>
+          <p> </p>
+          <p>帮他把解决黑脚咒术师的命令书交给了莫伦。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

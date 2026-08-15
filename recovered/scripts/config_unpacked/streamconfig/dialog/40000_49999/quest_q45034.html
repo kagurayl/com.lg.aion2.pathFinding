@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>致全体结界守护团团员。</p>
+          <p> </p>
+          <p>目前结界守护团极度缺少药品。</p>
+          <p> </p>
+          <p>很多结界守护团团员不得不在没有药品的情况下开展活动。</p>
+          <p> </p>
+          <p>因此我们决定自行筹集并发放药品。</p>
+          <p> </p>
+          <p>我们需要团员们积极捐献制造药品的基本材料[%dic:STR_DIC_G_QUEST_45034_a]。请采集羽扁豆，并通过[%dic:STR_DIC_N_Columba]交给守护团。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团是独立的团体，因此几乎不从中央领取补给。</p>
+          <p> </p>
+          <p>因此虽然很多团员们都很热情，但却一直深受物资不足的困扰。</p>
+          <p> </p>
+          <p>我们缺少很多物资，但药品的补给是最紧急的问题。</p>
+          <p> </p>
+          <p>虽然上面说要采集羽扁豆，自行制作药品。但我也不知道具体是怎么回事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出羽扁豆。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>制作药品，需要大量的药草。因此我们需要团员们的积极协助。</p>
+          <p> </p>
+          <p>必须所有的人一起来搜集羽扁豆，守护团才能实现药品的自给自足。</p>
+          <p> </p>
+          <p>请你快去搜集3个[%dic:STR_DIC_G_QUEST_45034_a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>羽扁豆搜集到啦。希望守护团自行制作药品的计划能够成功。</p>
+          <p> </p>
+          <p>这些羽扁豆我会交给上面。</p>
+          <p> </p>
+          <p>来，请收下证物。希望您明天继续参加守护团的活动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45034_a]，然后交给[%dic:STR_DIC_N_Columba]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了写有结界守护团指令的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，为了改善守护团缺少药品的现象，需要大量的羽扁豆。</p>
+          <p> </p>
+          <p>搜集到羽扁豆之后，交给了库尔伦巴，他把证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

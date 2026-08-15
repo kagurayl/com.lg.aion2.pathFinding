@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉呀，我的腰啊！呃...</p>
+          <p> </p>
+          <p>可能是背肥料的时候伤到了腰。现在走一步都很累。</p>
+          <p> </p>
+          <p>马上就要收获三尖树了，这样一动都不能动，真让人郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问有没有人帮忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不知道村里的情况。巴洛姆天天盯着，还有谁有空帮我啊？</p>
+          <p> </p>
+          <p>如果让别人帮忙，可能会让他们丢了工作。我怕给别人惹麻烦，所以干脆就没有请他们帮忙。</p>
+          <p> </p>
+          <p>所以我说，[%username]大人您能帮帮我吗？请您到我的农场去，帮我收割三尖树。</p>
+          <p> </p>
+          <p>[%username]大人反正不是村里的人，巴洛姆也拿你没办法。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，谢谢您。这下总算得救了。</p>
+          <p> </p>
+          <p>我还担心三尖树农场会因此荒废掉呢。急得我嘴巴都干了。</p>
+          <p> </p>
+          <p>请您到我的农场去，把[%dic:STR_DIC_I_QUEST_2381a]收起来。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，哎呀！连[%username]大人都不帮我的话，让我怎么办啊！</p>
+          <p> </p>
+          <p>如果今明两天不收割的话，三尖树就会全部蔫掉。</p>
+          <p> </p>
+          <p>那样的话，今年一年就完蛋了。您不会是希望看到我这样吧？</p>
+          <p> </p>
+          <p>请您一定要再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_2381a]带回来了吗？</p>
+          <p> </p>
+          <p>今年是用新工艺栽培的，怎么样啊？</p>
+          <p> </p>
+          <p>结果的树多吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出三尖树果实。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像还没去农场啊。</p>
+          <p> </p>
+          <p>种植植物，最重要的是时期。</p>
+          <p> </p>
+          <p>就像不在合适的时期播种的话，植物就无法很好的生长一样，如果不能按时收获，就无法收获好的果实。</p>
+          <p> </p>
+          <p>错过了时期的话，之前的努力就有可能白费。所以希望您能尽快帮我把果实收下来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果实饱满，光泽鲜艳，果然长得不错。看来新技术还是有效的，哈哈哈！</p>
+          <p> </p>
+          <p>看了这个，高兴得连腰都不觉得怎么疼了。</p>
+          <p> </p>
+          <p>[%username]大人，真是谢谢您。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收获[%dic:STR_DIC_I_QUEST_2381a]，然后交给[%dic:STR_DIC_N_Tekor]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助腰部受伤，行动不便的泰高尔收获三尖树。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>泰高尔说必须收获三尖树，但是因为腰受了伤，无法行动，所以让我帮他去收获农作物。</p>
+          <p> </p>
+          <p>来到他的农场，收获了三尖树的果实交给他，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

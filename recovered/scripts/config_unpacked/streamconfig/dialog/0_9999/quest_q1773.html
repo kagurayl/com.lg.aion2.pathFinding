@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您应该知道，欧比斯里的生命体都很独特。</p>
+          <p> </p>
+          <p>残骸之岛这里漂浮着的破灭的冤魂也是其中之一。</p>
+          <p> </p>
+          <p>我虽然在天界看到过类似的生命体，但和他相比还是存在一些差异的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么差异。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么说呢，他们更有攻击性，也更残忍。</p>
+          <p> </p>
+          <p>天界的灵魂一般会躲开人们的视线，藏在地下或者阴暗的地方。但是这里的冤魂却一看到移动的东西就会冲过来。</p>
+          <p> </p>
+          <p>甚至影响到了我们执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，如果像以前一样的话，我们早就该完成了这里的事情，回到特米伦要塞去了...</p>
+          <p> </p>
+          <p>如果有谁能帮忙把他们除掉的话，事情应该可以处理得更快一些。</p>
+          <p> </p>
+          <p>那个人如果是[%username]大人的话就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮助我。</p>
+          <p> </p>
+          <p>请您帮们我除掉尽可能多的[%dic:STR_DIC_M_Ab1_1211_ShadowStalkerB_32_An]。</p>
+          <p> </p>
+          <p>让我们在残骸之岛进行侦察的时候可以不受妨碍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我这样求您，竟然被您拒绝，真是丢人。</p>
+          <p> </p>
+          <p>我知道了，您走吧。</p>
+          <p> </p>
+          <p>我不想拉着不想帮我的人不放。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把破灭的冤魂全都除掉了吗？</p>
+          <p> </p>
+          <p>也许是有了[%username]大人的帮助，今天他们好像没那么碍事了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我的直觉果然没错。</p>
+          <p> </p>
+          <p>现在终于可以放心地去周围侦察了。真是谢谢您了。</p>
+          <p> </p>
+          <p>虽然不多，但请您收下。希望能对[%username]大人有所帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉在残骸之岛上漂浮的[%dic:STR_DIC_M_Ab1_1211_ShadowStalkerB_32_An]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Livy]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说破灭的冤魂给在残骸之岛上进行侦察的守护者们造成了妨碍。去把破灭的冤魂清除掉，然后向拉比乌斯报告吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉比乌斯说破灭的冤魂对他们在残骸之岛上的侦察工作形成了妨碍，让我帮他们把冤魂清除掉，好让他们可以安心地进行侦察。</p>
+          <p> </p>
+          <p>于是按照他的拜托除掉了破灭的冤魂，他说非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

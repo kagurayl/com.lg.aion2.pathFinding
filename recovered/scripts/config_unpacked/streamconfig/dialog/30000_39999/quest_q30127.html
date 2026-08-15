@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人！</p>
+          <p> </p>
+          <p>如果我没看错的话，您手上拿着的，应该是希埃尔的力量弓吧？</p>
+          <p> </p>
+          <p>天哪……竟然被您得到了！</p>
+          <p> </p>
+          <p>我对[%username]大人早已久仰大名，看来实力真的非常出色。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的力量弓能让我看看吗？</p>
+          <p> </p>
+          <p>(仔细查看弓)哎呀……真是好弓啊，不过可惜了。弓有个地方好像损坏很严重。</p>
+          <p> </p>
+          <p>如果能恢复原来的状态，一定可以发挥出更强的力量。</p>
+          <p> </p>
+          <p>您对弓的复原感兴趣吗？如果感兴趣的话，我可以帮您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽说我可以帮您，但不是我直接帮您修理，因为我没有那样的能力。</p>
+          <p> </p>
+          <p>但是我可以告诉[%username]大人一个可以帮助您的地方。</p>
+          <p> </p>
+          <p>您去隆博斯难民村见见布洛尼铁匠[%dic:STR_DIC_N_DF4_NPC_Nehmatan]。他虽然是个布洛尼，但却对所有的武器都非常精通。</p>
+          <p> </p>
+          <p>只要是和提高武器性能有关的事情，他会二话不说帮助您的，我想您应该可以从他那里获得帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是不是对自己的实力过分自信了？</p>
+          <p> </p>
+          <p>以[%username]大人的实力，武器对您来说已经不重要了吗？</p>
+          <p> </p>
+          <p>不感兴趣的话，我也不会劝您。</p>
+          <p> </p>
+          <p>好的弓只有对懂得欣赏它的人才有价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，有什么事吗？</p>
+          <p> </p>
+          <p>你是为武器的事情来得吗？你想要干什么呢？</p>
+          <p> </p>
+          <p>布洛尼可以帮你修理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说想复原希埃尔的力量弓。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的力量弓!</p>
+          <p> </p>
+          <p>那是鸢族的始祖希埃尔之枪军团用过的武器。</p>
+          <p> </p>
+          <p>但是状态好像不太好。这样的话，基本上没法使用。</p>
+          <p> </p>
+          <p>布洛尼会帮你恢复它的性能的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_DF4_NPC_Nehmatan]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说有办法让丧失了原来能力的希埃尔的力量弓恢复力量。去隆博斯难民村见见塔塔卡吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞普希看到我拿着希埃尔的力量弓之后，说武器虽然很好，但却损坏严重，失去了原来的能力。</p>
+          <p> </p>
+          <p>在他的介绍下，见到了布洛尼铁匠塔塔卡，他说可以帮我复原武器。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

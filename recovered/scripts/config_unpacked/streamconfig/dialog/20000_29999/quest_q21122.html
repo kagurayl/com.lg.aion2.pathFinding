@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知你了解了多少……贝里克跟你说过龙崇拜者的事情吗？</p>
+          <p> </p>
+          <p>好的，那说起话来就容易多了。</p>
+          <p> </p>
+          <p>听说龙信徒们正在劫持鸢族，对他们进行洗脑。在你来之前，又有一个人被抓走了。</p>
+          <p> </p>
+          <p>要是可以的话，我真想冲进他们的老巢乌达斯神殿，救出我们的兄弟。但是以我们的实力根本做不到。</p>
+          <p> </p>
+          <p>啊，我不是不相信你的实力，只是龙信徒人数众多，而且神殿内部就像迷宫一样。</p>
+          <p> </p>
+          <p>所以我们必须等待执政官的支援，才能进行大规模的拯救行动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">那需要我做什么呢？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你保护我们，让我们不再受到伤害。</p>
+          <p> </p>
+          <p>啊，不是让你站岗，是让你去消灭在通往受到诅咒的地下城市的路口的龙崇拜者。</p>
+          <p> </p>
+          <p>地下城市里的龙崇拜者一般不会出来，因此只要把他们消灭掉，就能安静一段时间。</p>
+          <p> </p>
+          <p>怎么样？你愿意帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>动作越快越好。</p>
+          <p> </p>
+          <p>请你把守卫路口的[%dic:STR_DIC_M_FanaticFi_53_An]、[%dic:STR_DIC_M_FanaticAs_53_An]和[%dic:STR_DIC_M_FanaticRa_53_An]消灭掉。一个都不要留下！</p>
+          <p> </p>
+          <p>我得叮嘱你一声，去的时候一定要小心。</p>
+          <p> </p>
+          <p>要是不小心被他们抓走，说不定你也会被洗脑，变成龙信徒。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不知道你为什会拒绝？</p>
+          <p> </p>
+          <p>是事情太简单了吗？还是对自己没有自信呢？</p>
+          <p> </p>
+          <p>你是贝里克派来的人，我想应该不会是后者……虽然对你来说可能只是些小事，但对我们来说，这可是性命攸关的事情。</p>
+          <p> </p>
+          <p>希望你能认真考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是你啊。对不起。</p>
+          <p> </p>
+          <p>我觉得魔族都长得差不多。</p>
+          <p> </p>
+          <p>拜托你的事情怎么样了？应该已经完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝里克的眼光果然不错。老实说，刚开始看到你的时候，我稍微有点失望。</p>
+          <p> </p>
+          <p>没想到他会派个普通的守护者过来。但是现在我全明白了。</p>
+          <p> </p>
+          <p>虽然大崩溃之前的记忆已经模糊了，但那个时候好像也很少有像你这么有能力的守护者。</p>
+          <p> </p>
+          <p>这个请你收下。这是我拥有的最值钱的东西，不知道你喜不喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭守卫受到诅咒的地下城市入口的龙崇拜者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FanaticFi_53_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FanaticAs_53_An]([%5]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_FanaticRa_53_An]([%8]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ortiz]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说龙崇拜者正在劫持鸢族。为了不再让他们受到伤害，消灭受到诅咒的地下城市入口处的龙崇拜者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔提兹说龙崇拜者经常劫持鸢族，为了不让鸢族继续受到伤害，让我去消灭守卫受到诅咒的地下城市入口的龙信徒。</p>
+          <p> </p>
+          <p>消灭龙信徒之后，奥尔提兹说贝里克果然没看错人，并对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

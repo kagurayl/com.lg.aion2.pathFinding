@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一本用线装订起来的书。)</p>
+          <p> </p>
+          <p>(纸张很旧，而且纸质不是太好，已经破烂不堪，几乎无法阅读。)</p>
+          <p> </p>
+          <p>(不知道曼杜里部落为什么会有书，书的内容到底是什么。)</p>
+          <p> </p>
+          <p>([%dic:STR_DIC_N_Phomona]也许知道些什么。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听着水流动的声音，我就想到了过去。</p>
+          <p> </p>
+          <p>想起了过去埃尔特内地区水流潺潺的时候。</p>
+          <p> </p>
+          <p>因为很久以前，我曾经到这里来过。</p>
+          <p> </p>
+          <p>想起那个时候，根本让人无法相信眼前的景象。</p>
+          <p> </p>
+          <p>对不起。一想起过去的事情，不知不觉又说多了。有什么事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT2_1">把陈旧的书给他看，并寻求帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纸张的颜色变成了黄色，看来是很古老的东西。而且字好像是用树枝烧成的炭写的。</p>
+          <p> </p>
+          <p>您说这是在曼杜里部落发现的？曼杜里再怎么贪婪，也没有道理要偷书啊...</p>
+          <p> </p>
+          <p>我能告诉您就只能是这些。如果想知道更详细的情况，您最好去问问别的人。</p>
+          <p> </p>
+          <p>极乐世界的[%dic:STR_DIC_N_Vatonia]大人一定可以告诉您这是本什么书。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊～几天没好好休息，有点困了。</p>
+          <p> </p>
+          <p>三四天前来了一批新书，所以这几天我一直在读书。</p>
+          <p> </p>
+          <p>因为有很多新领域的有趣的书，经常读着读着就忘了睡觉，现在还是有点累。</p>
+          <p> </p>
+          <p>刚想进去睡一会儿呢，你有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把陈旧的书给他看，并寻求帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，这...看到这个，我就完全清醒了！</p>
+          <p> </p>
+          <p>这应该是用曼杜里部落产的植物的茎秆捶打后做成的纸...曼杜里部落里没有人类，到底是谁制作的呢？</p>
+          <p> </p>
+          <p>要是能读的话就好了，不过也许是书太旧了，根本没办法看了。</p>
+          <p> </p>
+          <p>对了！我知道有位可以修复这种东西的守护者。去拜托他的话，应该就能把书修复到可以阅读的程度。</p>
+          <p> </p>
+          <p>我会把这件事情委托给他，你先把书放在我这儿，过一些时间再过来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Phomona]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Vatonia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去向鲍莫娜询问有关从曼杜里部落捡到的陈旧的书的事情吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在曼杜里部落捡到了一本书。看起来好象是很古老的东西，上面的字褪了色，没办法阅读。</p>
+          <p> </p>
+          <p>给鲍莫娜看了看，她说详细的东西她也不知道，让我去极乐世界的杂学博士巴托尼亚那里问问看。</p>
+          <p> </p>
+          <p>找到巴托尼亚之后，他说他会委托修复专家修复古书，让我过一段时间再去找他。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

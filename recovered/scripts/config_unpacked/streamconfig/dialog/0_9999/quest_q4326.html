@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有一些守护者好像觉得别人的痛苦和自己无关。</p>
+          <p> </p>
+          <p>有一些人明明看到别人去了[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame]之后受了伤，但还是要到那里去。我看到之后，觉得既寒心，又担忧。</p>
+          <p> </p>
+          <p>那种态度真不知道应该说是勇气，还是鲁莽。我不能就这样看着不管。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，我想拜托您一件事。</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame]消灭掉审判官克罗梅内。</p>
+          <p> </p>
+          <p>当然，要想消灭掉克罗梅内，必须先消灭掉神殿里的其他人，所以会很困难。</p>
+          <p> </p>
+          <p>您想去尝试一下吗？如果您能成功，我会给您铸币作为奖励。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame]去消灭克罗梅内吧。</p>
+          <p> </p>
+          <p>这件事虽然很困难……但希望您能拿出勇气。</p>
+          <p> </p>
+          <p>祝您好运！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来……这个任务对您来说太难了。</p>
+          <p> </p>
+          <p>如果您想帮我，请随时来找我。</p>
+          <p> </p>
+          <p>我会在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦！</p>
+          <p> </p>
+          <p>克罗梅内消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道[%username]大人一定可以做到。</p>
+          <p> </p>
+          <p>多亏了您，火之神殿那边终于安静了。</p>
+          <p> </p>
+          <p>如果您能继续帮我，请随时跟我说。</p>
+          <p> </p>
+          <p>真的非常感谢。这是给您的铸币。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]%([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Schwaben]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">罗亚说如果能帮她消灭掉火之神殿的审判官克罗梅内，会送我铸币作为报酬。接受她的委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗亚说很多守护者都在火之神殿受了伤，如果能帮她消灭审判官克罗梅内，会送我铸币作为报酬。</p>
+          <p> </p>
+          <p>于是去消灭了审判官克罗梅内，回去之后，她把说好的铸币交给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

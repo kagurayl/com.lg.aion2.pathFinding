@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，您听说过那件事了吗？</p>
+          <p> </p>
+          <p>听说不久之前，在这附近野营的守护者失踪了。</p>
+          <p> </p>
+          <p>东西都还在，只是人失踪了。不知道这到底是怎么回事...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>更可怕的是，这已经不是第一次了。</p>
+          <p> </p>
+          <p>莫尔海姆已经有几十名守护者这样莫名其妙地失踪了。</p>
+          <p> </p>
+          <p>呼，本来就因为有很多野兽，而没办法去村外...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，守护者大人，我能拜托您一件事吗...</p>
+          <p> </p>
+          <p>您能不能帮我去采集12朵[%dic:STR_DIC_G_plant_d_n_c_30a]啊？</p>
+          <p> </p>
+          <p>衣服破了，需要重新做一件，但是之前采的棉花刚好全都用完了！</p>
+          <p> </p>
+          <p>我知道不应该来为难您，但是我很怕到村外去。请您帮帮我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊呀，真是太感谢了。那就请您帮我采集12个[%dic:STR_DIC_G_plant_d_n_c_30a]吧。</p>
+          <p> </p>
+          <p>大麻在村子周围有很多。而且白色闪闪发光，应该很容易找到。</p>
+          <p> </p>
+          <p>最近很不太平，请您一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到您竟然会拒绝。但是您一定也很忙，我也不想来纠缠您。</p>
+          <p> </p>
+          <p>看来我得去拜托塞库利斯，让他有空的时候陪我一起出去了。</p>
+          <p> </p>
+          <p>他虽然比不上守护者大人，但好歹也是警卫团的人，应该比我要好一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我拜托您采集的东西找到了吗？就是[%dic:STR_DIC_G_plant_d_n_c_30a]。</p>
+          <p> </p>
+          <p>让我看看您采到的对不对。虽然我拜托您帮我，但我一直在担心您会不会受到什么伤害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出大麻棉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还没搜集到吗？</p>
+          <p> </p>
+          <p>我这么相信您，您却...</p>
+          <p> </p>
+          <p>我知道您很忙，但是请您尽量快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把大麻采回来了啊。啊，真是太感谢了。</p>
+          <p> </p>
+          <p>我得赶紧用它把衣服做出来。</p>
+          <p> </p>
+          <p>现在穿的衣服太破了，天气稍微凉一点就觉得有点冷了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_G_gb_source_plant_d_30a]上采集棉花，然后交给[%dic:STR_DIC_N_Capone]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助卡普内采集大麻棉，让她可以制作出暖和的衣服。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡普内说需要大麻棉来做衣服，但是因为守护者失踪事件而不敢从村里出去。</p>
+          <p> </p>
+          <p>于是帮助她采集到了大麻棉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

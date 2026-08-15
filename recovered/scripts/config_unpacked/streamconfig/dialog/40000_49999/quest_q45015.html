@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>最近发生了大气中的奥德含量急剧下降的事件，在守护团内部造成了混乱。</p>
+          <p> </p>
+          <p>因此我们决定对大气中以奥德为首的各种物质进行检测和调查。</p>
+          <p> </p>
+          <p>在伏魔殿研究所的帮助下，我们在布鲁斯特豪宁的主要地区设置了检测魔法石，但是没有人手去回收检测结果。</p>
+          <p> </p>
+          <p>全体守护团成员，请尽快对[%dic:STR_DIC_OBJ_FOBJ_Q45015]进行调查，将回收到的检测结果交给[%dic:STR_DIC_E_45014]。</p>
+          <p> </p>
+          <p>时间太长的话，检测出来的物质会失效，因此请抓紧时间。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团正在为了魔族的安全而努力。</p>
+          <p> </p>
+          <p>有的人可能会想，我们付出了那么多的努力，但得到的却很少……</p>
+          <p> </p>
+          <p>这是不对的。不管在什么时候，我们都必须付出全力！</p>
+          <p> </p>
+          <p>[%username]大人，如果您搜集到了检测物质，请快点交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出检测物质。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您快去回收。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_OBJ_FOBJ_Q45015]就设置在布鲁斯特豪宁的各个地方。</p>
+          <p> </p>
+          <p>从上面的举动来看，这件事好像很严重……希望您能抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(小心地收下)布鲁斯特豪宁的检测物质……我收下了。</p>
+          <p> </p>
+          <p>不知道调查之后，能不能获得正面的结果。</p>
+          <p> </p>
+          <p>谢谢您帮助我们完成了这次任务。</p>
+          <p> </p>
+          <p>请收下，这是送给[%username]大人的酬劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_OBJ_FOBJ_Q45015]上回收检测物质，然后交给[%dic:STR_DIC_E_45014]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，奥德的含量突然降低，为了找到原因，在布鲁斯特豪宁的各个主要地区设置了检测魔法石。</p>
+          <p> </p>
+          <p>找到了检测魔法石，将回收到的检测物质交给了布鲁斯特豪宁支部团员。他说会交给结界守护团，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

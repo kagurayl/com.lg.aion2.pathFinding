@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p> </p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p>以下列罪名，通缉逃亡者司考宾得。</p>
+          <p> </p>
+          <p> 1. 袭击交易中介所，伤害术古</p>
+          <p> 2. 涉嫌参与雷帕尔革命团活动</p>
+          <p> 3. 从极乐世界监狱越狱后逃脱</p>
+          <p> </p>
+          <p>提供[%dic:STR_DIC_M_LF2A_LehparFiPrisonerNMQ_50_An_1]行踪的决定性证据，或直接杀死他，把纹身工具箱带回来者，将会受到重谢。</p>
+          <p> </p>
+          <p>行政官[%dic:STR_DIC_N_Iphigenia]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Background name="Doc_bg_q3055"/>
+    <Selects>
+      <Act href="HACTION_SETPRO1">决定去抓捕司考宾得。</Act>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请等一下，让我先把这个处理完。</p>
+          <p> </p>
+          <p>(在文件上盖好图章，然后放好。) </p>
+          <p> </p>
+          <p>对不起，让您久等了。您找我有什么事吗、</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纹身工具箱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把公告的内容搞错了吧？</p>
+          <p> </p>
+          <p>要想获得赏金，必须把杀死司考宾得的证据带过来。</p>
+          <p> </p>
+          <p>请您去把[%dic:STR_DIC_I_QUEST_3055a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这就是所说的司考宾得的纹身工具箱啊。</p>
+          <p> </p>
+          <p>他和传言的一样，全身都是纹身吧？据说他连手指尖上都纹了身，想想都觉得恐怖。</p>
+          <p> </p>
+          <p>来，请您收下。这是他的赏金。</p>
+          <p> </p>
+          <p>知道您抓到了司考宾得之后，奥伊雷乌斯一定会心痛的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">杀死[%dic:STR_DIC_M_LF2A_LehparFiPrisonerNMQ_50_An_1]，然后把证据交给[%dic:STR_DIC_N_Iphigenia]</font></p>[%collectitem]</step>        
+    </steps>
+          <p><font font_xml="quest_summary">杀死悬赏通缉的逃亡者司考宾得，把纹身工具箱交给伊皮盖尼亚并领取赏金。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杀死从监狱中越狱而遭到通缉的逃亡者司考宾得，把纹身工具箱作为证据交给了伊皮盖尼亚，并领取了赏金。</p>        
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

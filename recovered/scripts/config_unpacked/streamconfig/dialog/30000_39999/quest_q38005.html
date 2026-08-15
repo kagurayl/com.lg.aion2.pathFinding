@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我都快成为宣传委员了，不过既然答应帮别人传话，我就得完成我的承诺。</p>
+          <p> </p>
+          <p>不久前，有一些赏金猎人工会的成员过来找我。</p>
+          <p> </p>
+          <p>他们的工作是在天界和龙界追踪赏金犯，在谈到[%username]大人在追踪逃犯方面的卓越能力时，他们都纷纷表示赞叹。</p>
+          <p> </p>
+          <p>您在要塞执行了那么多任务，看来名声已经传出去了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特别是英吉斯温来的阿尼托斯大人，说希望能邀请[%username]大人加入赏金猎人工会。</p>
+          <p> </p>
+          <p>他说如果见到[%username]大人，让我转告您，让您去见他一面。您觉得怎么样？</p>
+          <p> </p>
+          <p>不是让您马上加入，只要去见见工会的负责人就可以了。应该不难吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您去过英吉斯温吗？说实话，我一次都没去过。听说那是个很危险的地方……</p>
+          <p> </p>
+          <p>赏金猎人工会不仅追捕赏金犯，还会消灭危险任务，为天界的和平做贡献。</p>
+          <p> </p>
+          <p>加入赏金猎人工会，对[%username]大人的名声不会有丝毫的损害，反而会提高您的声望。</p>
+          <p> </p>
+          <p>详细的情况，您去听听[%dic:STR_DIC_N_Anitos]大人的介绍吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得赏金猎人是私人组织，会对[%username]大人您的名声造成不好的影响吗？</p>
+          <p> </p>
+          <p>如果是那样的话，您完全不必担心。</p>
+          <p> </p>
+          <p>虽然他们不是执行正式任务的组织，但从来没有做出过违反公共利益的事情。而且因为他们执行的都是一些困难的任务，因此名望反而很高。</p>
+          <p> </p>
+          <p>又不是让您马上加入，只是让您去和阿尼托斯大人谈谈而已。如果您改变了主意，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您终于来啦。我付钱让极乐世界的弗里伊杜斯帮着联系您，看来是做对了。</p>
+          <p> </p>
+          <p>您也应该知道，我们赏金猎人工会凭借出色的情报搜集能力和卓越的执行力，在天界已经拥有了很高的声望。</p>
+          <p> </p>
+          <p>以守卫为首的很多身居高位的人，都加入了我们。</p>
+          <p> </p>
+          <p>您想详细了解一下赏金猎人工会吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>首先，我们通过每日任务发放证物，这一点和其他团体是一样的。而执行的任务，一般都是带有赏金猎人工会特色的任务。</p>
+          <p> </p>
+          <p>我们追踪的人，是亚特雷亚受到通缉的人。</p>
+          <p> </p>
+          <p>之所以会悬赏通缉，说明他们都是些不好对付的家伙。谁都拿他们没办法，只能在极乐世界悬赏通缉的人——这就是我们要对付的人。</p>
+          <p> </p>
+          <p>您想和我们一起执行这些有趣的任务吗？当然，加入和退出都是自由的，希望您仔细考虑之后再做决定。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Anitos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说赏金猎人工会的阿尼托斯正在找我。去英吉斯温幻影要塞见见他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>弗里伊杜斯告诉我说，赏金猎人工会的阿尼托斯想见见我。</p>
+          <p> </p>
+          <p>前往英吉斯温见到了阿尼托斯，他劝我加入赏金猎人工会。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

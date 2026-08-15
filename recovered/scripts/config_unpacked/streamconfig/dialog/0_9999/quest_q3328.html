@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然名义上是守卫，但最近我感觉自己都快变成行政官了。</p>
+          <p> </p>
+          <p>别说是守护村庄了，光是为村民们筹集粮食和物资，就已经忙得焦头烂额了。</p>
+          <p> </p>
+          <p>必须尽快把给居民们的安全造成威胁的野兽们消灭掉才行，但是我实在抽不出时间。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是努力一点，也许可以把这两个任务都处理好，但是我只有一个人，实在有点力不从心。</p>
+          <p> </p>
+          <p>但是又不能装做不知道……</p>
+          <p> </p>
+          <p>[%username]大人，我能拜托您一件事吗？请您帮我把村子周围的[%dic:STR_DIC_M_Rhinoce_33_An]消灭掉一些。</p>
+          <p> </p>
+          <p>对您这样有实力的人来说，应该很简单吧。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。我就知道[%username]大人一定会帮我的。</p>
+          <p> </p>
+          <p>对您这样有实力的人而言，这种事情应该不难吧？</p>
+          <p> </p>
+          <p>到了村外之后再走一段，在神秘泉附近就可以看到[%dic:STR_DIC_M_Rhinoce_33_An]了。那就拜托您了。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您实在太忙的话，那就算了。</p>
+          <p> </p>
+          <p>反正是我的工作，我就算是熬夜也要把它完成。</p>
+          <p> </p>
+          <p>真羡慕像您这样无忧无虑的守护者啊。</p>
+          <p> </p>
+          <p>对于您来说，没有什么非做不可的事情。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Rhinoce_33_An]全部消灭掉了吗？</p>
+          <p> </p>
+          <p>现在居民们可以安全地出去了吗？</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您的帮助。</p>
+          <p> </p>
+          <p>虽然还有很多事情等着我去做。</p>
+          <p> </p>
+          <p>这是我给您的报答。虽然不算什么，但这是我的一点心意，请您一定要收下。</p>
+          </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Rhinoce_33_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和%[%dic:STR_DIC_N_Beramones]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">决定帮助忙碌的贝拉莫内斯消灭角牙莱诺斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了居民们的安全，帮助忙于照料阿盖伦的居民们的贝拉莫内斯消灭了角牙莱诺斯。</p>
+          </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

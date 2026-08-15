@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把万圣节搞砸了还不够，他们现在又把手伸向了南瓜帽！</p>
+          <p> </p>
+          <p>真是越来越猖狂了！</p> 
+          <p> </p>
+          <p>该死的家伙，看来苦头还没吃够！</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+         <Act href="HACTION_ASK_QUEST_ACCEPT">询问发生了什么事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body> 
+           <p>那些[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]，不知道他们跟我有什么仇，竟然想抢走我的南瓜帽！</p>
+           <p> </p>
+           <p>越来越不像话了。</p> 
+           <p> </p>   
+           <p>我要让他们感受一下我南瓜大王的愤怒。</p>
+           <p> </p>  
+           <p>可以的话，你能帮我去教训一下[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]吗？</p>
+       </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说会帮助他。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说还是算了吧。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好，我就知道你会这么说的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]好像还没醒悟，正在[%dic:STR_DIC_FLA09]附近徘徊。</p>
+          <p> </p>
+          <p>这是非常确切的情报。</p>
+	  <p> </p>
+          <p>他们需要你去狠狠地教训一下！如果发现他们，就不要手下留情。</p>
+	  <p> </p>
+          <p>那就拜托你了！</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+
+        <html>
+        <body>
+         <p>什么算了！</p>
+         <p> </p>
+         <p>要是你的话，你能就这样算了吗？</p>
+         <p> </p>
+         <p>唉……好吧。就算你不帮我，还是有很多守护者愿意帮我的。你走吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道巧克力为什么甜中带苦吗？</p>
+          <p> </p>
+          <p>那是因为其中加入了我的愤怒。</p>
+          <p> </p>
+          <p>你帮我让那些偷糖贼尝到痛苦的滋味了吗？</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不愧是[%username]！</p>
+          <p> </p>
+          <p>这个礼物虽然不成敬意，但却是我的一片心意，请你收下吧。</p>
+	  <p> </p>
+          <p>明年这个时候，我会用亲手酿制的啤酒来招待你！</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_FLA09]周边的[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]([%2]/12)</font></p></step>
+                      <step><p visible="[%15]"><font color="[%16]">向南瓜大王[%dic:STR_DIC_N_event_Minis]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">米尼斯让我帮他消灭背叛自己，把万圣节搞砸的偷糖黑暗术古。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米尼斯说偷糖黑暗术古竟然打起了自己的南瓜帽的主意，让我去消灭他们。</p>
+  	  <p> </p>
+	  <p>消灭了偷糖黑暗术古之后，他对我表示感谢，并给了我一份小礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天加隆野营地的利希迪盖正在研究不死族。我也不知道他研究他们要做什么，反正看他研究得还挺认真。</p>
+          <p> </p>
+          <p>上一次他也拜托过我，说如果了解到关于不死族的知识，一定要告诉他。</p>
+          <p> </p>
+          <p>我虽然不是专门搞研究的，不过在执行任务的过程中也自然了解一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上一次在执行任务的过程中发现，梅德乌斯庄园之所以会变得如此荒凉，是因为一些只在夜晚出现的古代剑斗士和古代法师所举行的诅咒仪式。</p>
+          <p> </p>
+          <p>如果把这一点告诉[%dic:STR_DIC_N_Lisidike]，肯定会非常有意思。</p>
+          <p> </p>
+          <p>[%username]大人能不能替我去天加隆野营地转达一下呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>皮托内恩沼泽地带和梅兰提斯遗址的分界地区有一条新路，沿着那条路走就能找到[%dic:STR_DIC_N_Lisidike]，天加隆野营地就在那里。</p>
+          <p> </p>
+          <p>那附近有很多危险的不死族，请一定小心。</p>
+          <p> </p>
+          <p>那就拜托您向他转达了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>利希迪盖如果听说了，肯定会非常感兴趣的。</p>
+          <p> </p>
+          <p>[%username]大人既然这么忙不能转达，那也没办法。您要完成的任务也很多...</p>
+          <p> </p>
+          <p>以后如果利希迪盖来了再告诉他也不迟。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来这么危险的地方是做什么呢？</p>
+          <p> </p>
+          <p>这附近到处都是不死族，除了研究不死族的人，别的人是不会对这里感兴趣的。</p>
+          <p> </p>
+          <p>您是否和米奥贝拉大人一样是一位考古学者呢？说起来这附近遗址确实很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">转达兰斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>幽灵魔法师还做这种勾当？</p>
+          <p> </p>
+          <p>嗯…为什么呢？本来就已经很荒凉的地方，有什么必要让它更荒凉呢？</p>
+          <p> </p>
+          <p>天哪！您向我转达了如此重要的消息，我却忘了您的存在，只顾沉浸在自己的思路里。</p>
+          <p> </p>
+          <p>对不起。非常感谢您前来告诉我这个重要的消息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Lisidike]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把古代剑斗士的灵魂和古代法师的灵魂仍在举行诅咒仪式的事情告诉研究不死族的利希迪盖。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰斯说利希迪盖拜托他如果了解到关于不死族的新知识一定要告诉他。</p>
+          <p> </p>
+          <p>去天加隆野营地，把古代剑斗士和古代法师的灵魂通过可疑的仪式令梅德乌斯庄园变得更加荒凉的事实告诉利希迪盖。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

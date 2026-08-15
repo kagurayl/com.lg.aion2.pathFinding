@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，最近经常听到你的名字，看来很多任务你都完成得不错。</p>
+          <p> </p>
+          <p>所以我想让你去做一件重要的事情。</p>
+          <p> </p>
+          <p>是比之前所做的任何事情都要更困难、更重要的事情。</p>
+          <p> </p>
+          <p>你做好准备了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你得帮我完成侵入凯丹大本营的任务。</p>
+          <p> </p>
+          <p>虽然我很想动员守卫把他们一次就消灭掉，但是除了克拉尔之外，要做的事情还有很多，重新配置兵力并不容易。</p>
+          <p> </p>
+          <p>所以我决定相信你一次。</p>
+          <p> </p>
+          <p>怎么样？这件事你能做到吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你现在就去见见埃尔特内结界塔的[%dic:STR_DIC_N_Aeolus]。</p>
+          <p> </p>
+          <p>详细的指令，他会告诉你的。</p>
+          <p> </p>
+          <p>交给你一件这么重的任务，我的心里也很有负担。</p>
+          <p> </p>
+          <p>不过我相信你一定可以做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是没有自信吗？</p>
+          <p> </p>
+          <p>也是，也许这件事情不应该让单独的一个守护者去做。</p>
+          <p> </p>
+          <p>我明白了。不管怎么困难，我也必须重新配置兵力，派遣守卫去解决。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]。</p>
+          <p> </p>
+          <p>我听军团长大人说您会过来。他好像给了您一件很困难的任务。</p>
+          <p> </p>
+          <p>那我就把泰雷马科斯大人指示的任务告诉您。</p>
+          <p> </p>
+          <p>这将是困难得超出你的想象的事情，请您一定要做好心理准备。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在这之前，有件事情我想告诉您。</p>
+          <p> </p>
+          <p>进入凯丹大本营决不是普通的事情。</p>
+          <p> </p>
+          <p>不管您接到的是什么任务，请您一定要和自己信任的同伴一起去。</p>
+          <p> </p>
+          <p>独自一人去凯丹大本营无异于是在自杀。这一点请您要牢记。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去[%dic:STR_DIC_N_Aeolus]那里接受指令</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">接到了进攻凯丹大本营的任务。去艾奥洛斯那里接受指令吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了阻止凯丹大本营的异动，泰雷马科斯下令进攻凯丹大本营。接受任务之后，他让我去结界守护者艾奥洛斯那里接受详细的指示。 </p>
+          <p> </p>
+          <p>艾奥洛斯说将是非常困难的任务，劝我一定要和同伴一起去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

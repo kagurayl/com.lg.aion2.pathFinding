@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，不可能……到底是怎么回事？</p>
+          <p> </p>
+          <p>[%username]大人明明帮我搜集的是山林鸟妖的喙，对吧/</p>
+          <p> </p>
+          <p>但是很奇怪，这种喙却和其他鸟妖的喙没有什么区别。</p>
+          <p> </p>
+          <p>真的是我搞错了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(摇头)不对，不可能。我明明听到鸟妖说话了。</p>
+          <p> </p>
+          <p>而且那种鸟妖好像有点特别。</p>
+          <p> </p>
+          <p>它们不停地跑来跑去，根本抓不住它们。绝对不是普通的鸟妖！</p>
+          <p> </p>
+          <p>[%username]大人，不好意思，能再辛苦您一趟吗？</p>
+          <p> </p>
+          <p>请您帮我去枯萎森林寻找[%dic:STR_DIC_M_LF4_A1_Crestlich_NamedQ_52_n]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您这么爽快地答应我。</p>
+          <p> </p>
+          <p>如果找到了[%dic:STR_DIC_M_LF4_A1_Crestlich_NamedQ_52_n]，只要把[%dic:STR_DIC_I_QUEST_11025a]带回来交给我就行。其他的随便[%username]大人怎么处置。</p>
+          <p> </p>
+          <p>准备好之后请您马上出发。我担心会不会有别人去抓它们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没关系。您已经帮了我一次了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_A1_Crestlich_NamedQ_52_n]我会自己想办法去找的。</p>
+          <p> </p>
+          <p>虽然不知道能不能抓到，但尝试各种方法，总有一种方法可以抓到吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。</p>
+          <p> </p>
+          <p>嗯……抓到那个家伙了吗？</p>
+          <p> </p>
+          <p>就是[%dic:STR_DIC_M_LF4_A1_Crestlich_NamedQ_52_n]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出大喙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没找到[%dic:STR_DIC_I_QUEST_11025a]吗？</p>
+          <p> </p>
+          <p>它和普通的鸟妖不同，应该一眼就能看出来……</p>
+          <p> </p>
+          <p>您到枯萎森林南部去过了吗？我刚才想起来了，我好像就是在那里看到它的。</p>
+          <p> </p>
+          <p>不好意思，您能帮我再去看一眼吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总算找到了。真是辛苦您了。</p>
+          <p> </p>
+          <p>(查看喙)我看到的鸟妖就是这个家伙。</p>
+          <p> </p>
+          <p>喙的构造和人的嘴非常相似。</p>
+          <p> </p>
+          <p>这将是非常有力的证据。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_A1_Crestlich_NamedQ_52_n]的喙，然后交给[%dic:STR_DIC_N_Veloso]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助贝鲁索进行研究，寻找快脚克里特，搜集大喙吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>查看了鸟妖的喙之后，贝鲁索说和普通鸟妖没什么区别，好像是找错了对象。</p>
+          <p> </p>
+          <p>他又想了想，说好像是快脚克里特，让我再帮他一次。</p>
+          <p> </p>
+          <p>找到了快脚克里特，把搜集到的喙交给了贝鲁索。他非常高兴，说这次总算找对了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

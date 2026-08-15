@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和达拉尼乌斯约好的晚饭时间快到了。</p>
+          <p> </p>
+          <p>我得马上到埃尔特内要塞去才行。</p>
+          <p> </p>
+          <p>磨磨蹭蹭的话，很可能会迟到。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，我忘了报告了。</p>
+          <p> </p>
+          <p>但是要是现在不出发的话就太晚了……</p>
+          <p> </p>
+          <p>[%username]大人，不好意思，您能帮我去向[%dic:STR_DIC_N_Aerope]大人送个口信吗？</p>
+          <p> </p>
+          <p>说周围的莱诺斯和提波里德全部清理掉了。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Aerope]大人就在村里的建筑里面。</p>
+          <p> </p>
+          <p>请您帮我转告她，说莱诺斯和提波里德已经清理掉了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，那就没办法了。</p>
+          <p> </p>
+          <p>让您帮我去清理野兽，还要让您帮我报告，是我太不知廉耻了。</p>
+          <p> </p>
+          <p>虽然可能会迟到，但达拉尼乌斯应该会理解的吧。</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>您有什么事吗？</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达吉纳斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，知道了。</p>
+          <p> </p>
+          <p>村子附近的莱诺斯和提波里德消失了，这下终于可以安心地出去了。</p>
+          <p> </p>
+          <p>您也一定很忙吧？谢谢您特地过来告诉我。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Aerope]转达吉纳斯的话</font></p></step>
+               
+    </steps>
+          <p><font font_xml="quest_summary">决定代替晚上要去赴约的吉纳斯，向阿埃洛佩神官报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉纳斯说必须向阿埃洛佩报告情况，但离约会所剩的时间不多了。</p>
+          <p> </p>
+          <p>于是代替他向阿埃洛佩报告了情况。</p>
+          </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

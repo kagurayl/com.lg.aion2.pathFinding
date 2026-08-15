@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，你的背包里到底装着什么啊？</p>
+          <p> </p>
+          <p>是从之前我给你的箱子里得到的[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_20A]卦吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！能得到这种卦的守护者不是很多。</p>
+          <p> </p>
+          <p>[%username]大人，你好像是个很特别的守护者。</p>
+          <p> </p>
+          <p>我想看看[%username]大人的手掌，可以吗？</p>
+          <p> </p>
+          <p>然后我还需要你背包里的那个[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_20A]卦。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">拿出凶卦，并伸出手。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">走开。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯……果然和我预想的一样。</p>
+          <p></p>
+          <p>(用非常小的声音说)喝凉水都会塞牙……啧啧！</p>
+          <p></p>
+          <p>(吃了一惊，放开了手)我，我只是在自言自语！</p>
+          <p></p>
+          <p>占卜只是娱乐罢了。别在意。</p>
+          <p></p>
+          <p>哎呀，现在不应该说这些。</p>
+          <p></p>
+          <p>有样东西我要给你。稍等一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为占卦的事情，你好像心情不太好吧。</p>
+          <p> </p>
+          <p>等心情好点之后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，这个请你收下。</p>
+          <p> </p>
+          <p>这是我特别为得到[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_20A]卦的守护者准备的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">伸出双手。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>诶? [%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_20A] 好像没有占挂么。</p>
+          <p></p>
+          <p>确认包里是否持有好么?</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">确认包再回来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所谓人定胜天。</p>
+          <p> </p>
+          <p>不要执著于占卜，要向前看。</p>
+          <p> </p>
+          <p>刚才给你的礼物一定不要扔掉，要好好使用。</p>
+          <p> </p>
+          <p>所有守护者都会因此惊叹的。虽然惊叹可能有多种的含义。</p>
+          <p> </p>
+          <p>总之祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_WORLD_EVENT_LUNAR_SCROLL_SHIELD_ALL_20A]交給[%dic:STR_DIC_N_event_Lotus]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说去见见鲁图斯，可以获得让其他守护者惊叹的礼物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把凶卦交给了鲁图斯，他让我把手掌给他看，并给了我一个据说会让其他守护者惊叹的奇怪的礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

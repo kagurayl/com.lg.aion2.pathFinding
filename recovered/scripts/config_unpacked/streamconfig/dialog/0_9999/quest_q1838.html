@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在天族占据优势的西部要塞，和平的景象不知能持续多久。</p>
+          <p> </p>
+          <p>在魔族偃旗息鼓的时候，我收到了情报，说龙族即将入侵。</p>
+          <p> </p>
+          <p>虽然不知道他们会进攻哪里，但有一个地方值得我们注意。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body> 
+          <p>不知道您有没有去那里搜集过宝物，里面的龙族数量很多。</p>
+          <p> </p>
+          <p>如果能把它们除掉，对龙族的气焰将会是很大的打击。</p>
+          <p> </p>
+          <p>您能帮我去[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]消灭龙族吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>准备好了之后，请您启动前面的发光的魔法阵。通过发光的魔法阵可以前往[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]。</p>
+          <p> </p>
+          <p>请您去那里消灭包括[%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]在内的尽可能多的龙族。</p>
+          <p> </p>
+          <p>我想告诉你一件有用的情报。</p>
+          <p> </p>
+          <p>进入左翼阴影之后，龙族的保护魔法阵就会启动，他们的宝物箱就会逐个消失。如果您想弄点什么好东西出来，最好动作快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是害怕龙族吗？</p>
+          <p> </p>
+          <p>哼，我是不会劝您的。</p>
+          <p> </p>
+          <p>在战斗之前就害怕，您根本没有获胜的可能。</p>
+          <p> </p>
+          <p>如果您不再害怕龙族，请到时再来找我。希望那一天早日到来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦。我正在等您。</p>
+          <p> </p>
+          <p>您把在[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]徘徊的龙族消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起!</p>
+          <p> </p>
+          <p>野蛮的魔族偃旗息鼓了，龙族的势力也受到了打击，和平终于可以继续维持下去。</p>
+          <p> </p>
+          <p>但我们决不能放松警惕。龙族总有一天会卷土重来。</p>
+          <p> </p>
+          <p>希望您经常过来帮忙。这是一点小小的心意，希望您笑纳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_E_Low_Wciel]([%2]/40)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Ab1_1131_TreasureGate_Li]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照希普达米亚的提议，消灭左翼阴影的龙族，打击他们的气焰。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希普达米亚说魔族虽然偃旗息鼓了，但龙族还是很嚣张，即将发动攻击。</p>
+          <p> </p>
+          <p>为了打击龙族的气焰，让我去消灭聚集在左翼阴影的敌人。</p>
+          <p> </p>
+          <p>消灭了左翼阴影的龙族和宝物守护者纳巴特玛，她向我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

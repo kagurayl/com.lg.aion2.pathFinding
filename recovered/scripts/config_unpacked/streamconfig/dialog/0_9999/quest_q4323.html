@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有时候觉得加入自卫团也挺好的。</p>
+          <p> </p>
+          <p>种田的时候，一碰到危险，我就很害怕，跑到士兵们那里请求帮助。</p>
+          <p> </p>
+          <p>守护者大人应该不会理解，一个人连自己的安全都无法保证的时候，是什么样的心情。</p>
+          <p> </p>
+          <p>但是现在我可以保护这里的居民，有时还可以去教训那些坏蛋。</p>
+          <p> </p>
+          <p>有一件事，在我当农夫的时候，就一直想去做了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就是消灭史匹格！</p>
+          <p> </p>
+          <p>它们在对自己的粮食和家园很满足的时候，不会给人类造成什么危害。但如果不能满足，就会经常出来骚扰人类。</p>
+          <p> </p>
+          <p>我的农场附近就是它们的根据地，所以经常受到它们的侵犯……</p>
+          <p> </p>
+          <p>最后庄家全被它们毁了。一想到这些痛苦的往事，我就恨的牙痒痒</p>
+          <p> </p>
+          <p>在伊拉西克村前面也栖息着一群史匹格。我想好好教训教训它们，让它们不敢再到村子附近来。您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您只要帮我消灭掉[%dic:STR_DIC_M_Sprigg2_32_An]和[%dic:STR_DIC_M_Sprigg3_33_An]就行了。</p>
+          <p> </p>
+          <p>从伊拉西克村往北走，就可以看到了。它们的胆子真的非常大！</p>
+          <p> </p>
+          <p>虽然我是自卫团员，可以自己去除掉它们……但是原来种地的农民即使穿上了盔甲，也不可能一下子就变成军人，您说对不对？</p>
+          <p> </p>
+          <p>那就全靠您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我也想自己去处理……</p>
+          <p> </p>
+          <p>但是我是农民出身，战斗能力实在太差。</p>
+          <p> </p>
+          <p>您就不能再考虑一下吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我为了生存而成为了自卫团员，但是干着干着却发现自卫团的工作还不错。</p>
+          <p> </p>
+          <p>也许比种田更适合我。</p>
+          <p> </p>
+          <p>当然，有机会的话，我还是希望回去种田。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些史匹格这下应该尝到苦头了吧！</p>
+          <p> </p>
+          <p>但是它们很难缠。如果不把它们斩草除根，就会不断出现。</p>
+          <p> </p>
+          <p>今后可能还得继续麻烦您。</p>
+          <p> </p>
+          <p>这是我送您的礼物，就算是这件事的报答。希望能对您有用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭村子周围的史匹格</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Sprigg2_32_An]([%2]/22)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Sprigg3_33_An]([%5]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Contineo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照康提内奥的委托，消灭伊拉西克村周围的斯普利根战士和斯普利甘特掠夺者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>康提内奥说过去种田的时候受到过史匹格的骚扰，让我帮他消灭村子周围的史匹格。</p>
+          <p> </p>
+          <p>于是帮他消灭掉了斯普利根战士和斯普利甘特掠夺者，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

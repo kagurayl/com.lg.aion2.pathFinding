@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(刻有凯西内尔主神的纹样的卷轴上写着烫金大字。)</p>
+          <p></p>
+          <p>(“向将英吉斯温前哨基地从肮脏的魔族手中拯救出来的[%username]%致谢。”)</p>
+          <p></p>
+          <p>(“[%dic:STR_DIC_N_Laestrygos]会把武器交给您，”)</p>
+          <p></p>
+          <p>(“成为幻影和恐怖之刃，消灭敌人吧。”)</p>
+          <p></p>
+          <p>(“凯西内尔的代理人，赫拉纳斯”) </p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>人们只相信眼睛看到的东西。</p>
+          <p></p>
+          <p>当发现眼睛看到的不是全部的时候，您猜会怎么样？</p>
+          <p></p>
+          <p>他们马上就会陷入极度的恐惧之中。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出赫拉纳斯的命令书。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>咦，这个命令书是……</p>
+          <p></p>
+          <p>[%username]大人好像帮助赫拉纳斯代理人大人立下了大功。</p>
+          <p></p>
+          <p>我会按照指示，把武器给您。武器会根据[%username]大人的努力，展现出自己真正的形态。</p>
+          <p></p>
+          <p>愿那份力量能帮助您成为幻影和恐怖之刃！</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">把赫拉纳斯的命令书交给[%dic:STR_DIC_N_Laestrygos]</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">把赫拉纳斯的命令书交给莱斯·特里格斯，领取武器。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>帮助代理人赫拉纳斯守住了英吉斯温前哨基地，作为奖励，获得了赫拉纳斯的命令书。</p>
+          <p></p>
+          <p>把命令书交给莱斯·特里格斯，获得了武器。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

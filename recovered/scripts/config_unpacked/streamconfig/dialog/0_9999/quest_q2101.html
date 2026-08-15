@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么回事？</p>
+          <p> </p>
+          <p>你突然晕倒，把我吓了一跳。</p>
+          <p> </p>
+          <p>是被史匹格打到后脑勺了吗？</p>
+          <p> </p>
+          <p>怎么会弄成这样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说不太清楚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>反正现在醒了就去[%dic:STR_DIC_N_Vandarnt]那儿看看吧。</p>
+          <p> </p>
+          <p>听说你晕过去了，他好像很担心。  </p>
+          <p> </p>
+          <p>也有可能是，我们的攻击延迟了，担心史匹格们采取什么防御措施。</p>
+          <p> </p>
+          <p>总之，他让你醒来之后马上跑到他那儿，所以你现在快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>翻过我身后的小坡，顺着路走的话，可以看见 [%dic:STR_DIC_N_Vandarnt] 站在里程碑旁边。</p>
+          <p> </p>
+          <p>快去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说你，让那么多的弟兄们担心了，醒过来了应该说一声啊！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Vandarnt]因为 你，没完成自己的指标呢。</p>
+          <p> </p>
+          <p>做为成员，至少应该讲点儿义气吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来没什么事嘛。</p>
+          <p> </p>
+          <p>现在没事儿了吗？</p>
+          <p> </p>
+          <p>你突然倒下去了 ，大家都有些慌了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说没什么大碍。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然要没什么大碍。</p>
+          <p> </p>
+          <p>因为晕倒，大伙都没有控制住史匹格，全部都脱缰了，你知道吗？</p>
+          <p> </p>
+          <p>所以要完成今天的目标，得加快动作了。</p>
+          <p> </p>
+          <p>当然我是说你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去见见[%dic:STR_DIC_N_Vandarnt]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">说班达仁特等着，顺着路去见了他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好像刚一见到他就晕过去了。等一醒来，阿斯克让我去见班达仁特，所以就去找了他。</p>
+          <p> </p>
+          <p>他说都是因为我史匹格全跑了，要完不成当天的指标了，都怪我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

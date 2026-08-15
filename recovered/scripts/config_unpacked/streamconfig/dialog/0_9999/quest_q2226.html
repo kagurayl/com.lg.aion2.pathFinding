@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在这巴斯佩尔特村里大家生活都很困难。</p>
+          <p> </p>
+          <p>棕熊的数量越来越多，而且越来越具有攻击性，因此打猎变得十分困难。村里本来就不种粮食，现在粮食的供给出现了不小的问题。</p>
+          <p> </p>
+          <p>人们都要活不下去了，越来越恐慌。</p>
+          <p> </p>
+          <p>不过就算这样也还是要比高尔好多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问高尔怎么了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是棘手啊。也许您也见过他。</p>
+          <p> </p>
+          <p>小的时候还好好的，可是长大了后就越来越不正常了。</p>
+          <p> </p>
+          <p>他总是在湖边呆呆地坐着，可突然有一天说非要去城里。不知道是不是湖水炫目的光影让他精神失常了。</p>
+          <p> </p>
+          <p>我曾经试着想给他治疗，可他却跑到[%dic:STR_DIC_W_DF1A_18]那里不回来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听着。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是能坚持接受治疗的话，也许能恢复正常。</p>
+          <p> </p>
+          <p>本来想亲自去找他，可我现在在这里没法脱身。</p>
+          <p> </p>
+          <p>要是守护者您有空的话，能不能把这个[%dic:STR_DIC_I_quest_2226a]交给[%dic:STR_DIC_N_Gor]呢？</p>
+          <p> </p>
+          <p>要是有了这个水晶，虽说不一定能痊愈，但是肯定会变得正常一些的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者您真是有慈悲之心啊！</p>
+          <p> </p>
+          <p>对了，要是高尔胡说些什么或者要和你打架，您不必理会他，他不会真和你打架的。</p>
+          <p> </p>
+          <p>本来是很聪明的人，怎么会变成这样呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊。这可怎么办呢。</p>
+          <p> </p>
+          <p>湖周围到处都是棕熊，不是随便哪个人都能去的。</p>
+          <p> </p>
+          <p>好吧。我去跟神官说吧。不过神官肯定不会理我的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>只要你听我的，我就带你去城里。</p>
+          <p> </p>
+          <p>只要一进了城里，什么都能干！所有事！</p>
+          <p> </p>
+          <p>成了城主，就了不起了！那些守护者们，连个脚趾头都比不上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出记忆水晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？不会是毒药吧？</p>
+          <p> </p>
+          <p>哈哈，原来你和[%dic:STR_DIC_N_Garuntat]%是一伙的！</p>
+          <p> </p>
+          <p>那家伙总是想拿这水晶害我。</p>
+          <p> </p>
+          <p>以为我会上当？想都别想！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_I_quest_2226a]交给[%dic:STR_DIC_N_Gor]。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡伦达特很担心伊顿湖边的疯子高尔。帮卡伦达特把记忆水晶交给高尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡伦达特很担心疯了以后独自呆在伊顿湖边的高尔。</p>
+          <p> </p>
+          <p>因为无法亲自治疗，他拜托我把记忆水晶转交给高尔。把水晶交给高尔之后，他说这是要害他，十分激动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(用皮制作的项链。)</p>
+          <p> </p>
+          <p>(挂着一条金属手链。)</p>
+          <p> </p>
+          <p>(手链上刻着微小的字。)</p>
+          <p> </p>
+          <p>(要问问西风的守护者[%dic:STR_DIC_N_Ibelia]这是什么东西。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">不再仔细端详。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对不起。我必须完成写给白杰尔神殿的报告。</p>
+          <p> </p>
+          <p>一有思路就得赶紧写，不然的话很快就会忘了。</p>
+          <p> </p>
+          <p>这先不说，有什么事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出项链，询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说这是长毛雪人丢下的？</p>
+          <p> </p>
+          <p>长毛雪人没道理会戴这种装饰物...嗯，看来很明显了。</p>
+          <p> </p>
+          <p>肯定是这帮家伙又从哪里偷了东西来。</p>
+          <p> </p>
+          <p>这里倒是没听说有谁丢了东西，请去要塞那边问问看吧。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Sulates]神官对于这种事情明察秋毫，你可以去问问他。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+<HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你跑得气喘吁吁的，出什么大事了吗？</p>
+          <p> </p>
+          <p>如果是有什么事情需要我的帮助，请尽管开口。</p>
+          <p> </p>
+          <p>能帮助守护者做事是我的荣幸。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">拿出项链，询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您说长毛雪人戴着这东西？</p>
+          <p> </p>
+          <p>嗯，怎么说呢，其实我也不是这里土生土长的，也不太清楚。啊，请稍等一下！</p>
+          <p> </p>
+          <p>(用袖子擦了擦手链，仔细端详。)</p>
+          <p> </p>
+          <p>虽然十分模糊，不过这手链上刻的字好像是亚特雷亚文。只要知道说的是什么，应该就能搞清楚这是什么东西了。 不过我也不懂亚特雷亚文...</p>
+          <p> </p>
+          <p>找[%dic:STR_DIC_N_Biesa]大人看看怎么样？他应该能看懂亚特雷亚文。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您想要什么书？</p>
+          <p> </p>
+          <p>记录了各种魔法的书？记录有破解各种诅咒的书？记录有医治各种疑难杂症的书？ </p>
+          <p> </p>
+          <p>只要您吩咐，我都可以为您找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出项链，询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您说这是苏贝尔斯石山上的长毛雪人丢下的东西？</p>
+          <p> </p>
+          <p>请等一下，手链上好像写着什么东西。不过字迹实在模糊...嗯嗯。</p>
+          <p> </p>
+          <p>姓名...莫洛克。居住地，苏贝尔斯神殿。哈哈哈！我还以为是什么东西，原来是宠物的项链。</p>
+          <p> </p>
+          <p>看来居住在苏贝尔斯神殿的人曾经养过长毛雪人。这东西还真有意思！</p>
+          <p> </p>
+          <p>[%username]大人应该用不上这东西。请送给我吧。我也会送您一个东西。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Ibelia]对话。</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Sulates]对话。</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Biesa]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">猎杀长毛雪人的时候发现了一条项链。看起来有些年头，于是想了解是什么东西。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>猎杀长毛雪人的时候发现了一条项链。</p>
+          <p> </p>
+          <p>向西风的守护者询问。他说也不清楚，告诉你向索拉特伦询问。带给索拉特伦看。他说最好确认一下手链上刻的字，叫你去找贤者的书库的比埃萨。</p>
+          <p> </p>
+          <p>把项链带给比埃萨看。他说是宠物项链。似乎是苏贝尔斯神殿生活过的人养的宠物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

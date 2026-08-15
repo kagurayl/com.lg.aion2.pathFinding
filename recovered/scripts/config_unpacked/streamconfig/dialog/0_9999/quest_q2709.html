@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自从来到这里之后，，我的想法就是一定要打败天族和龙族。</p>
+          <p> </p>
+          <p>虽然现在这个愿望还没有实现，但是我绝对不会放弃。</p>
+          <p> </p>
+          <p>不到魔族成为亚特雷亚的主人的那一天，我绝对不会退却。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我要交给[%username]你一件可能成为结束战争的基石的重要任务。</p>
+          <p> </p>
+          <p>这次请你去把[%dic:STR_DIC_E_Lgrade2]清除掉。</p>
+          <p> </p>
+          <p>相信这次你也一定可以出色地完成任务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在你在埃雷修兰塔的名声也在逐渐提高。。</p>
+          <p> </p>
+          <p>过不了多久，天族和龙族只要听到[%username]的名字就会瑟瑟发抖。</p>
+          <p> </p>
+          <p>为了那一天的早日到来，请你快去把[%dic:STR_DIC_E_Lgrade2]清除掉。</p>
+          <p> </p>
+          <p>[%username]，既然要去，就应该消灭实力和你接近的人。</p>
+          <p> </p>
+          <p>实力相差太多的话，消灭了也没什么用。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是厌倦了持续的战斗了吗?</p>
+          <p> </p>
+          <p>如果不是的话，拒绝执行任务可不像你的作风。</p>
+          <p> </p>
+          <p>也是，偶尔的休息也是必要的。你去亚特雷亚冷静一下头脑，然后再回来找我。</p>
+          <p> </p>
+          <p>那我就在这儿等[%username]你回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦，[%username]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_Lgrade2]全部清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告战斗结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是名不虚传啊，[%username]。</p>
+          <p> </p>
+          <p>因为[%username]你，天族一定遭受了重大打击。</p>
+          <p> </p>
+          <p>他们在派遣守护者执行任务的时候一定有得头疼了。</p>
+          <p> </p>
+          <p>这都是你的功劳。谢谢你！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Lgrade2]战斗并取得胜利([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Semotor]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让魔族在欧比斯取得胜利，必须战胜天军2级兵</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞摩托尔说要交给我一个可能成为结束战争的基石的重要任务，让我去除掉天军2级兵。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了天军2级兵，他非常高兴，说终于做成了一件大事。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

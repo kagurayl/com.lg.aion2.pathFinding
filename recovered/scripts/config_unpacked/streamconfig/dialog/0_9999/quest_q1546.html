@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听特里利安说起过你。听说你以前击退了沙漠纽特，现在来了这里，我想拜托你一件事。</p>
+          <p> </p>
+          <p>现在大家都忙于对付龙族和雷帕尔革命团，可是就我看来纽特也必须警惕。</p>
+          <p> </p>
+          <p>它们长得很像昆虫，很小，不起眼，却非常聪明。</p>
+          <p> </p>
+          <p>而且还很有同类意识，有很多人还不明白怎么回事就被它们干掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在它们的势力变得更大之前，我们应该尽量减少它们的数量。可是您也知道我们现在能够战斗的人手不够了。</p>
+          <p> </p>
+          <p>你在埃尔特内有经验，对付纽特应该不成问题，您能帮我吗？</p>
+          <p> </p>
+          <p>当然也要你的时间允许才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽特的巢穴在因特尔蒂卡北部道路上，不过除了那里，密林全域都能找到它们。</p>
+          <p> </p>
+          <p>不管去哪个地方，都请您消灭掉[%dic:STR_DIC_M_NeutH1_38_An]和[%dic:STR_DIC_M_NeutL1_37_An]。</p>
+          <p> </p>
+          <p>您各消灭10只就可以了。拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要没有时间了。</p>
+          <p> </p>
+          <p>说起来也是，像你这样能力出众的守护者怎么可能有闲暇时间呢？</p>
+          <p> </p>
+          <p>如果你以后有时间，就来帮我，拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我说，这是谁啊？不是[%username]吗？</p>
+          <p> </p>
+          <p>你来找我是不是我拜托你的事情已经办完了？</p>
+          <p> </p>
+          <p>和纽特的战斗顺利吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>辛苦你了。数量不少，速度还挺快的嘛。</p>
+          <p> </p>
+          <p>我看您差不多消灭了20只，看来这段时间不担心它们也可以了。</p>
+          <p> </p>
+          <p>来，这是我的心意。请你收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭普依艾密林的纽特。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutH1_38_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1_37_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Zeuclid]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要降低纽特的繁殖速度。消灭普依艾密林的纽特。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杰乌克利德说纽特迟早要成为威胁天界的一个要素，强调有必要牵制它们。</p>
+          <p> </p>
+          <p>他向在埃尔特内有着与纽特战斗经验的我请求帮助，按他的要求消灭纽特。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

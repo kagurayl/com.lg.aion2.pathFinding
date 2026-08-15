@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里散发的毒气对人类是很致命的。</p>
+          <p> </p>
+          <p>因此必须限制人类在这里通行，可还不清楚什么时候才会解除这样的限制。</p> 
+          <p> </p>
+          <p>现在是巡礼期间，从这里去幻影神圣所的巡礼者也越来越多...</p>  
+          <p> </p>
+          <p>那些人即使冒着生命危险也要通过这里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听下去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>    
+          <p>沼泽的毒气已经很可怕，斯莱姆的出现更是雪上加霜。</p>
+          <p> </p>     
+          <p>它们喜欢躲藏在沼泽里，攻击路过的人们。</p>
+          <p> </p>
+          <p>如果被它们咬到，即便是守护者也会中毒。它们的毒再加上沼泽的毒气，这种危害将会是致命的。 </p>
+         <p> </p>
+         <p>所以我一直在努力消灭它们，不过仅凭我一个人的力量，效果微乎其微。</p>
+          <p> </p>
+         <p>[%username]，你能帮助我吗？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+  
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，那么就请到被污染的沼泽去消灭[%dic:STR_DIC_MLA147]吧，然后来向我汇报。</p>
+          <p> </p>
+          <p>我想消灭１２只就可以了。 </p>  
+          <p> </p>
+          <p>不过不用提醒您也知道，千万要小心。斯莱姆的毒比想像中更可怕。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你还有其他事情，真是可惜...</p>
+          <p> </p>
+          <p>不过，要是对[%dic:STR_DIC_MLA147]%放任不管的话，从这里经过的巡礼者们将会很危险...</p>  
+          <p> </p>
+          <p>总之这件事情我会处理的，请慢走。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_MLA147]没有给你带来太大的麻烦吧？ </p>
+          <p> </p>
+          <p>即便在沼泽里生活了这么长时间，对斯莱姆，我也从不敢小视... </p>
+          <p> </p>
+          <p>这么说来，这一带斯莱姆的数量会相应减少吧？</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过程一定很艰苦，十分感谢。 </p>
+          <p> </p>
+          <p>[%username]，由于你的协助，事情变得轻松了一些。 </p>
+          <p> </p>
+          <p>再次对你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">帮助罗塞诺消灭[%dic:STR_DIC_MLA147]([%2]/12)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_LA30]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">被污染沼泽地区的斯莱姆正在威胁过往路人的安全。帮助罗塞诺消灭这些斯莱姆。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗塞诺表示，由于斯莱姆的出现，被污染的沼泽变得更加危险。为了帮助巡礼者们较为安全地通过沼泽，答应罗塞诺，协助她消灭了沼泽里的部分斯莱姆。</p>               
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

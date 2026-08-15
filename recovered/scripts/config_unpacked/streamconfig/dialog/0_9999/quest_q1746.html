@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是从哪儿来的啊？您听说了希埃尔的西部要塞的消息了吗？</p>
+          <p> </p>
+          <p>最后收到的情报说，希埃尔的西部要塞被敌人夺走了。</p>
+          <p> </p>
+          <p>听说是在不断地和魔族交战的时候，龙族攻了过来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结果守护神将被打倒，要塞也被夺走了。.</p>
+          <p> </p>
+          <p>为了防止战力受损，士兵们尽快地撤退了。</p>
+          <p> </p>
+          <p>所以，现在我们不知道占领希埃尔西部要塞的到底是魔族还是龙族。</p>
+          <p> </p>
+          <p>但是，不管是哪一方占领了要塞，我们都必须把要塞夺回来。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去削弱他们的兵力吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您把由战斗兵和弓兵组成的[%dic:STR_DIC_title_1746]清除掉，然后把[%dic:STR_DIC_I_QUEST_1746a]带回来。</p>
+          <p> </p>
+          <p>不管是魔族也好，龙族也好。您只要把他们全部清除掉就行了。</p>
+          <p> </p>
+          <p>虽然我知道[%username]很厉害，但是以一个人的力量太危险了。希望您能召集同伴一起过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希埃尔的西部要塞被夺走了，难道您一点都不痛心吗？</p>
+          <p> </p>
+          <p>越是这种时候，就更需要集合每一个人的力量。</p>
+          <p> </p>
+          <p>难道因为要去敌人占领的要塞就害怕了吗？</p>
+          <p> </p>
+          <p>即使死了，还可以通奇柏利斯克复活，您还有什么可害怕的呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您从希埃尔的西部要塞回来了吗？</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_title_1746]除掉了吗？</p>
+          <p> </p>
+          <p>那就把搜集到的证据交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出监视兵的证件。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到底去干什么了啊？</p>
+          <p> </p>
+          <p>我们要尽快把要塞夺回来才行。</p>
+          <p> </p>
+          <p>请您快去要塞把他们清除掉，然后把[%dic:STR_DIC_I_QUEST_1746a]带回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您按照约定把守卫要塞的防御兵力除掉了啊。</p>
+          <p> </p>
+          <p>干得真出色。这种实力的话，我就能拜托您其他事情了。</p>
+          <p> </p>
+          <p>我想在夺回要塞之前，削弱他们的防御兵力的作战还需继续。</p>
+          <p> </p>
+          <p>有时间的话就请您过来帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_title_1746]，并把搜集到的证据交给[%dic:STR_DIC_N_Damathus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须削弱希埃尔的西部要塞的防御兵力。召集同伴，除掉战斗兵和弓兵，并搜集证据吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达马图斯说希埃尔的西部要塞被占领了，必须削弱敌人的防御兵力。</p>
+          <p> </p>
+          <p>于是去清除了希埃尔的西部要塞的驻军，把监视兵的证件交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]大人！上次是您帮我搜集到了克鲁比安的武器吧？</p>
+          <p> </p>
+          <p>那件事真是太谢谢您了。我的研究因此有了很大的进展。最近我开始研究其他亚人种的武器了。</p>
+          <p> </p>
+          <p>有很多亚人种都使用武器，虽然没有克鲁比安的精致。</p>
+          <p> </p>
+          <p>特洛尔也使用很强力的武器。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚好见到了您，能请您再帮我一个忙吗？</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我搜集一些[%dic:STR_DIC_I_QUEST_1481a]吗？</p>
+          <p> </p>
+          <p>我想最好能亲手摸摸，亲手试试，然后再进行分析。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内的盖洛克火山地带的[%dic:STR_DIC_M_Troll_35_An]使用锤子。</p>
+          <p> </p>
+          <p>是用磨圆了的石头装上木头柄做成的锤子。</p>
+          <p> </p>
+          <p>如果您能帮我找到的话，我一定会好好地酬谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不想去埃尔特内啊。</p>
+          <p> </p>
+          <p>那我就没有必要强迫你。</p>
+          <p> </p>
+          <p>我可以拜托其他要去那里办事的守护者，请您不用担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着您呢，[%username]大人。</p>
+          <p> </p>
+          <p>由于没有实物，我的研究没有一点进展。</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_M_Troll_35_An]的武器带来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出特洛尔的武器。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去埃尔特内吗？ </p>
+          <p> </p>
+          <p>既然您接受了请求，希望您快一点去，这难道很过分吗？</p>
+          <p> </p>
+          <p>在[%username]大人看来也许不算什么，但对我来说这却是非常重要的研究。</p>
+          <p> </p>
+          <p>所以，请您快去除掉[%dic:STR_DIC_M_Troll_35_An]，把[%dic:STR_DIC_I_QUEST_1481a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>表面很光滑，打磨的工艺很精良。</p>
+          <p> </p>
+          <p>不过和克鲁比安的武器相比还有不少差距。</p>
+          <p> </p>
+          <p>谢谢您帮助我进行研究。可以看着实物进行研究，研究应该会有所进展。</p>
+          <p> </p>
+          <p>如果能以此为基础，制作出对守护者有帮助的新武器的话就好了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_Troll_35_An]的武器，然后交给[%dic:STR_DIC_N_Coeus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">科伊奥斯说正在研究亚人种的武器，而这次正在研究的是特洛尔的武器。决定去盖洛克火山地带除掉特洛尔无法者，搜集到武器然后交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>武器研究家科伊奥斯说最近在研究亚人种的武器。这次研究的是特洛尔的武器，需要看着实物进行研究，才可能会取得进展。</p>
+          <p> </p>
+          <p>于是去埃尔特内的盖洛克火山地带除掉了特洛尔无法者，然后把搜集到的武器交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

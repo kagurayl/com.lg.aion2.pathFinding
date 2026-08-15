@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>今天是高兴的一天。</p>
+          <p></p>
+          <p>猖狂的天族终于知道了我们魔族的恐怖。</p>
+          <p></p>
+          <p>泰格拉克代理人大人说今天的胜利要归功于和他一起战斗的守护者。</p>
+          <p></p>
+          <p>[%userclass]，您也参加了这次战斗吧？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">点头。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">摇头</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>泰格拉克代理人大人说今天的胜利值得纪念，想要和参加战斗的守护者们分享喜悦。</p>
+          <p></p>
+          <p>并因此准备了一份小礼物。</p>
+          <p></p>
+          <p>因为数量有限，每人只能获得一个。您能把名字告诉我吗？</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说出名字。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>真遗憾。</p>
+          <p></p>
+          <p>向您这么有实力的[%userclass]竟然没能参战。</p>
+          <p></p>
+          <p>您当时一定是在别的地方吧？等听到消息后赶来，一切都已经结束了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>干嘛想那么久？</p>
+          <p></p>
+          <p>你该不会连自己的名字都忘了吧？</p>
+          <p></p>
+          <p>呵呵，一定是胜利的喜悦让你太兴奋了。请镇静下来，把名字告诉我。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说出名字。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>谢谢您，[%username]。</p>
+          <p></p>
+          <p>因为有您的热情，我们才能守住格尔克马洛斯防御基地。</p>
+          <p></p>
+          <p>今天请尽情地享受欢乐，从明天开始就应该继续为我们的使命而努力了。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">和[%dic:STR_DIC_N_Mijien]对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">听说为了纪念格尔克马洛斯防御基地守城成功，会发放奖励。去见见泰格拉克代理人的心腹米吉安吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>击退了进攻格尔克马洛斯防御基地的天族，代理人的心腹米吉安出现，说要庆祝今天的胜利，并把泰格拉克代理人的奖励给了我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

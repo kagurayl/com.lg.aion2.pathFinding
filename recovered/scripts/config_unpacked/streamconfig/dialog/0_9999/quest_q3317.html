@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(有力的声音)真的浑身充满了力量！</p>
+          <p> </p>
+          <p>听喜欢保养身体的守护者们说，科塞利奇肉是最好的滋补材料之一，看来是真的啊。</p>
+          <p> </p>
+          <p>老实说味道比我想象的要差，但是效果好像确实很好。您看，在中午炎热的沙漠里，我连一滴汗都没有出。</p>
+          <p> </p>
+          <p>同伴们都非常好奇，问我怎么突然变得神清气爽了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想和同伴们分享这种料理。但是大家都很忙，所以我想自己去搜集料理材料。</p>
+          <p> </p>
+          <p>那样的话，大家就能打起精神执行任务了……我在同伴们之间的威望也会因此提高。</p>
+          <p> </p>
+          <p>[%username]大人，希望您能再去帮我搜集一些[%dic:STR_DIC_I_QUEST_1353a]。</p>
+          <p> </p>
+          <p>您愿意接受我的委托吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在埃拉库斯沙漠里有很多种科塞利奇。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_ShellizardBaby_28_An]、[%dic:STR_DIC_M_ShellizardBabyL_28_An]、[%dic:STR_DIC_M_ShellizardBaby_30_An]、[%dic:STR_DIC_M_ShellizardBabyL_30_An]，不管哪一种都可以，只要是科塞利奇肉就行。</p>
+          <p> </p>
+          <p>您也应该知道，成年的科塞利奇肉是没有效果的吧？</p>
+          <p> </p>
+          <p>我在这里为制作料理做准备。请您快去快回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到守卫们在执行任务的时候无精打采的样子，居民们该会多么不安啊？</p>
+          <p> </p>
+          <p>如果能吃上科塞利奇料理，不止是我，同伴们就都能恢复精神了。</p>
+          <p> </p>
+          <p>请您不要拒绝，一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>感觉有点累了，看来滋补食品的效果过去了。</p>
+          <p> </p>
+          <p>要是每顿饭都能吃上科塞利奇料理，那该有多好……</p>
+          <p> </p>
+          <p>我让您搜集的[%dic:STR_DIC_I_QUEST_1353a]怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出科塞利奇肉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>肉还没搜集到吗？</p>
+          <p> </p>
+          <p>同伴们都在问我哪里来的料理，我已经没办法隐瞒下去了。</p>
+          <p> </p>
+          <p>请您快去帮我搜集[%dic:STR_DIC_I_QUEST_1353a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，太好了。我得赶紧把料理准备好。不是给我自己的，而是给同伴们准备的。</p>
+          <p> </p>
+          <p>吃了料理之后，大家一定会很高兴的。</p>
+          <p> </p>
+          <p>[%username]大人，谢谢您帮助我。</p>
+          <p> </p>
+          <p>对了，这种料理如果受欢迎的话，以后我还得继续麻烦您。我想您应该会欣然接受吧？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_ShellizardBaby_28_An]、[%dic:STR_DIC_M_ShellizardBabyL_28_An]、[%dic:STR_DIC_M_ShellizardBaby_30_An]、[%dic:STR_DIC_M_ShellizardBabyL_30_An]的肉，然后交给[%dic:STR_DIC_N_Acaste]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照阿卡斯泰的委托，搜集制作滋补料理所需的科塞利奇肉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡斯泰说吃了科塞利奇肉之后恢复了力气，因此想给同伴们也制作一些。</p>
+          <p> </p>
+          <p>于是帮她从埃拉库斯沙漠的科塞利奇身上搜集到了肉，她非常高兴，说今后还要继续让我帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

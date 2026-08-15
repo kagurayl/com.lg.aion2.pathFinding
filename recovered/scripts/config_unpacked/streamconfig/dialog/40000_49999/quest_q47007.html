@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q47007</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：伏魔殿预备神庙，[%dic:STR_DIC_N_Titorea] </p>
+          <p>训练内容：消灭雾鬃部落莱卡恩</p>
+          <p> </p>
+          <p>这次的训练内容是消灭给莫尔海姆的安全造成威胁的雾鬃部族。</p>
+          <p>请您在导师的帮助下，和[%dic:STR_DIC_E_Q48607]战斗，提高战斗实力。</p>
+          <p>我一直强调，这是在危险的地方执行的任务，请您一定要找到导师组成组队之后一起执行。</p>
+          <p>和[%dic:STR_DIC_E_Mentor]距离太远的话，就无法完成训练，因此请一定要跟好他。</p>
+          <p>完成训练之后，请您回来向我报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嘻啦唔吧喃！</p>
+          <p> </p>
+          <p>看您好像很高兴的样子，训练一定是顺利完成了吧？</p>
+          <p> </p>
+          <p>雾鬃部落的莱卡恩怎么样了？</p>
+          <p> </p>
+          <p>和导师一起去的话，对付起来应该并不难吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是这样。</p>
+          <p> </p>
+          <p>这次训练应该会对[%username]大人有很大的帮助，我也感到非常高兴。</p>
+          <p> </p>
+          <p>相信在不久的将来，[%username]大人一定可以成为一名优秀的导师。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]%一起消灭[%dic:STR_DIC_E_Q48607]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Titorea]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">伏魔殿预备神庙发来了公文。寻找导师，消灭雾鬃莱卡恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从伏魔殿预备神庙收到了公文，让我去对付雾鬃莱卡恩。</p>
+          <p> </p>
+          <p>于是和导师一起，到雾鬃部落去消灭掉了雾鬃莱卡恩。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

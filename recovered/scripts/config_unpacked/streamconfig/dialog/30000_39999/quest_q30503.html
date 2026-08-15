@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30503</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说你去了兰图斯前哨基地。</p>
+          <p> </p>
+          <p>那你能接受我的一个请求吗？</p>
+          <p> </p>
+          <p>如果不马上解决，很多人的生命就会受到威胁，所以是非常紧急的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_W_ZONE_NAME_IDYun]还有一些同伴。</p>
+          <p> </p>
+          <p>我虽然和奥雷提亚一起逃了出来，但是夜里站完岗之后正在睡觉的同伴们却没能逃出来。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_IDYun_SZ_3]连武器都没有，不知道现在怎么样了……</p>
+          <p> </p>
+          <p>[%username]%，请你去把居住区的同伴们救出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Rodelion]就在[%dic:STR_DIC_W_IDYun_SZ_3]。请你找到那些人，把他们救出来。</p>
+          <p> </p>
+          <p>我想他们也许被关在建筑物里面。</p>
+          <p> </p>
+          <p>在逃出来的时候，我看到居住区遭到了攻击，燃起了熊熊大火。</p>
+          <p> </p>
+          <p>拜托你了，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>和救出同伴相比，夺回基地的任务更加重要。</p>
+          <p> </p>
+          <p>这一点我很清楚，但是我的心里却无法接受。</p>
+          <p> </p>
+          <p>如果不能救出同伴的话，我可能一辈子都会生活在自责之中。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>还好我们没有放弃希望。</p>
+          <p> </p>
+          <p>我知道援军一定会到来的。</p>
+          <p> </p>
+          <p>所以我们避开了龙族的眼睛，等待着援军的到来。</p>
+          <p> </p>
+          <p>现在我们终于可以和同伴们会合了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你。</p>
+          <p> </p>
+          <p>拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>罗黛里安救出来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>干得好。</p>
+          <p> </p>
+          <p>这样我就可以稍微安心一点了。</p>
+          <p> </p>
+          <p>谢谢你，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_N_Rodelion]%，并和他对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Lition]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">李迪安说很担心留在兰图斯前哨基地的同伴的安危。去寻找罗黛里安吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>李迪安说很担心留在兰图斯前哨基地的同伴的安危。</p>
+          <p> </p>
+          <p>按照他的委托，找到了罗黛里安，把他从倒塌的建筑里救了出来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

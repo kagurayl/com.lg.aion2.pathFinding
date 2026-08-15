@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯莱姆的毒虽然消失了，但是还有其他问题。</p>
+          <p> </p>
+          <p>在埃尔特内的土地变化的同时，很多生物在折磨树木。</p>
+          <p> </p>
+          <p>所有的生命都很艰难，在现在的情况下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问是什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Mudthorn_23_An]，在吸走树木摄取的养分。</p>
+          <p> </p>
+          <p>这对因为斯莱姆的毒而变得衰弱的树木来说，这是巨大的痛苦。</p>
+          <p> </p>
+          <p>它们会死掉，如果刺魔继续抢走树木的养分的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我在拜托你一次，守护者。</p>
+          <p> </p>
+          <p>为了这里的树木，帮我们除掉[%dic:STR_DIC_M_Mudthorn_23_An]。</p>
+          <p> </p>
+          <p>树消失的话，人也会陷入困境。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Mudthorn_23_An]就在寂静沼泽的周围。</p>
+          <p> </p>
+          <p>在树木们的力气进一步下降之前，把刺魔除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在，树木们需要帮助。</p>
+          <p> </p>
+          <p>每失去一棵树，森林就会变小一点。</p>
+          <p> </p>
+          <p>即使你以后后悔，也没办法挽回。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>寂静沼泽的树木正逐渐衰弱。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_M_Mudthorn_23_An]除掉了吗，为了它们？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在精神会好起来的，树木们。</p>
+          <p> </p>
+          <p>森林活过来的话，椰林和人类都会受益。</p>
+          <p> </p>
+          <p>这是我的一份谢意，给你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去寂静沼泽打猎[%dic:STR_DIC_M_Mudthorn_23_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Tree_Move_virdi]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉抢夺树木吸收的养分的刺魔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比尔迪说刺魔正在抢走树木吸收的养分，他对此非常担心。</p>
+          <p> </p>
+          <p>按照他的拜托除掉了刺魔，他很高兴，说森林会活下去的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

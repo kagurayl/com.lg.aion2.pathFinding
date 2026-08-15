@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>(垂下头)真是的。</p>
+          <p></p>
+          <p>极乐世界也没落了……</p>
+          <p></p>
+          <p>竟然连我赫尔提内斯大人的笑话都听不懂。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">转过头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>你真是一点幽默感都没有。</p>
+          <p></p>
+          <p>好吧，好吧，让我们直奔主题吧。</p>
+          <p></p>
+          <p>如果你能完成我的任务，我就请求那边的那位大人，让他对你另眼相看。</p>
+          <p></p>
+          <p>如果能成功，你的前途就有保障了。啊，我绝对不会骗你！</p>
+          <p></p>
+          <p>但是！这次任务可能相当危险。</p>
+          <p></p>
+          <p>必须在第1神庙训练所中通过第7阶段才行。</p>
+          <p></p>
+          <p>别太担心。只要好好跟训练所记录官说，就能直接进入第7阶段。</p>
+          <p></p>
+          <p>怎么样？你想挑战吗？！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说想试试。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说没关系，拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好的，那就试试看吧！</p>
+          <p></p>
+          <p>别忘了，通过第1神庙训练所第7阶段中的奖励训练，就能获得特殊的证物。</p>
+          <p></p>
+          <p>(眨了眨眼睛)一定要把那个东西拿来给我。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">打开背包给他看。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>连这点胆量也没有吗……看来你对出人头地不怎么感兴趣啊。</p>
+          <p></p>
+          <p>将来后悔也没用。谁也不知道我会什么时候离开这里。</p>
+          <p></p>
+          <p>感兴趣的话，就来找我！我会帮你留一个位子的。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这么快就回来啦！真了不起。</p>
+          <p></p>
+          <p>好了，快把证物给我看看。别磨蹭！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">打开背包给他看。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>[%username]……是我对你的期待太高了吗？</p>
+          <p></p>
+          <p>一开始别觉得沮丧，时间还有很多。</p>
+          <p></p>
+          <p>我会把你的东西留着，不用太着急。</p>
+          <p></p>
+          <p>明天再来找我，我会再给你一次机会。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>没想到真的有人能搜集到[%dic:STR_DIC_I_WORLD_EVENT_ARENA_SCROLL_SHIELD_ALL_50A]%！</p>
+          <p></p>
+          <p>看这个光彩！</p>
+          <p></p>
+          <p>你真是个特殊的守护者！</p>
+          <p></p>
+          <p>给，这是给你的东西。我会把你的名字记下来。你用不着为自己的前途担心～！</p>
+          <p></p>
+          <p>明天有时间的话，你再来找我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">在第1神庙训练所中搜集[%dic:STR_DIC_I_WORLD_EVENT_ARENA_SCROLL_SHIELD_ALL_50A]，然后交给[%dic:STR_DIC_NPC_event_Heltiness]。</font>
+              </p>[%collectitem]</step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">搜集闪光的第1神庙证物，然后交给赫尔提内斯。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>说要给我看手相的奇怪青年让我去第1神庙训练所搜集证物。</p>
+          <p></p>
+          <p>好不容易搜集到了证物，他说辛苦了，并给了我谢礼。</p>
+          <p></p>
+          <p>但是好像又被骗了。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

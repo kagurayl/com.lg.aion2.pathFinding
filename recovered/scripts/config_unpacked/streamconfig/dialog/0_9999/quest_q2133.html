@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，可能是兄弟你年轻吧，看起来活蹦乱跳的。我全身上下没一块儿好地方。</p>
+          <p> </p>
+          <p>没法儿不这样啊！光是偷东西就已经动不动就受伤了，我还要面对[%dic:STR_DIC_N_Ran_1]大人。</p>
+          <p> </p>
+          <p>老是说要较量较量武术就猛扑过来，我真是要疯了。</p>
+          <p> </p>
+          <p>上次挨打的地方现在还隐隐作痛呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">让他喝康复药水。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谁是因为不知道康复药水好才不用啊？实在是太贵了所以才不敢动这个念头啊。</p>
+          <p> </p>
+          <p>所以，我用药草代替药水。就是[%dic:STR_DIC_I_herb_d_n_c_10a]啊。</p>
+          <p> </p>
+          <p>虽然有些可惜，不过，它和药水有相似的疗效。听说康复药水里也有天涯草的成分。</p>
+          <p> </p>
+          <p>可是最近[%dic:STR_DIC_M_SpriggD_3_n]那帮家伙把天涯草都给铲除了，实在不好弄到啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听故事。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兄弟你能从附近帮我找点儿[%dic:STR_DIC_I_herb_d_n_c_10a]%吗？</p>
+          <p> </p>
+          <p>以前找到的都用光了。</p>
+          <p> </p>
+          <p>因为要急用，拜托你帮我找10根来，怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_herb_d_n_c_10a]%在草丛茂盛的地方长得好，你去[%dic:STR_DIC_W_DF1_3]或者[%dic:STR_DIC_W_DF1_4]%找找看，应该能找到。</p>
+          <p> </p>
+          <p>那，10根就拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看看，看看。</p>
+          <p> </p>
+          <p>我怎么会空口求你办事呢？</p>
+          <p> </p>
+          <p>酬劳一定不会少的，你好好想想再来吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，这么快就回来啦！</p>
+          <p> </p>
+          <p>那，找到天涯草了吗？</p>
+          <p> </p>
+          <p>吐纳普蕾湖边和穆尼海尔树林附近应该有很多啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交天涯草。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你说看不到[%dic:STR_DIC_I_herb_d_n_c_10a]？</p>
+          <p> </p>
+          <p>别骗我了！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_W_DF1_3]%和[%dic:STR_DIC_W_DF1_4]附近到处不都是天涯草嘛！</p>
+          <p> </p>
+          <p>再去找找看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不错，顺利找到了啊！</p>
+          <p> </p>
+          <p>把这个碾碎了做成柔软的材质的话，不仅仅是对伤口恢复有好处，还能治疗肌肉酸痛呢。</p>
+          <p> </p>
+          <p>来，为了找这个肯定奔波了好一阵子，这点酬劳还是要给的。</p>
+          <p> </p>
+          <p>（自言自语）嗳，至少也应该从头儿那里得到一点药草钱啊，这下全完了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_herb_d_n_c_10a]给[%dic:STR_DIC_N_Nobekk]送去</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">努贝克正在寻找能够治疗伤口的天涯草。给他送去10根天涯草。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          
+<p>努贝克的身体还在隐隐作痛，请帮他找能治愈伤口的天涯草。找到10根天涯草给他送了过去，他给了辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

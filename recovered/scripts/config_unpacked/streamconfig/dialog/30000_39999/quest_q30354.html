@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，多亏了你，我们终于通过了卡鲁巴巢穴，来到了明暗圆盘。但遗憾的是，之后就再也无法前进了。</p>
+          <p> </p>
+          <p>看来调查队的能力和你相比还有一定的差距。</p>
+          <p> </p>
+          <p>要想对深渊残骸深处进行调查，就必须通过明暗圆盘。</p>
+          <p> </p>
+          <p>[%username]，我能相信的人只有你一个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在明暗圆盘的中间，可以见到一个名叫[%dic:STR_DIC_M_IDAbRe_Core_FiNmd_Combine]的怪物。</p>
+          <p> </p>
+          <p>调查队靠近它的时候，它会分成[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al]和[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al]两个个体。</p>
+          <p> </p>
+          <p>调查队之所以陷入苦战，是因为必须同时消灭掉两个部分，才能把它完全消灭。</p>
+          <p> </p>
+          <p>本来我们想自己解决这件事，但看来还是不行。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把调查队了解到的一些情况告诉你，也许会对你有所帮助。</p>
+          <p> </p>
+          <p>明暗原型体会分裂成[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al]和[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al]，走向两边的圆盘。</p>
+          <p> </p>
+          <p>在战斗的时候，他们会产生保护膜。同时，光辉之卢克利尔会产生光辉碎片，黑暗之阿特拉会产生暗黑碎片。</p>
+          <p> </p>
+          <p>必须把暗黑碎片引到光辉之卢克利尔那一边去，它的保护膜才会消失。黑暗之阿特拉则必须使用光辉碎片。</p>
+          <p> </p>
+          <p>最重要的是，必须把它们差不多同时消灭掉才行。因为一边倒下之后，另一边会变得非常凶残，可能会非常不好对付。这些希望你能记住。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，我们不能总是依赖你。</p>
+          <p> </p>
+          <p>你也知道，这件事非常紧急，所以我们才会向最值得信任的人寻求帮助。</p>
+          <p> </p>
+          <p>看来只能请求要塞增派人手了。</p>
+          <p> </p>
+          <p>那样的话，就能把光辉之卢克利尔和黑暗之阿特拉同时消灭掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拜托你的事情怎么样了？</p>
+          <p> </p>
+          <p>光辉之卢克利尔和黑暗之阿特拉消灭掉了吗？到明暗圆盘下面去看过了吗？</p>
+          <p> </p>
+          <p>那里有什么东西？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？残骸的中心有守护的实体？</p>
+          <p> </p>
+          <p>这可怎么办呢？守护的实体和实体守护者好像都不太正常。</p>
+          <p> </p>
+          <p>必须想办法让实体恢复正常才行。</p>
+          <p> </p>
+          <p>这次你真是帮了我们的大忙。谢谢你，[%username]。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭守护明暗圆盘的守护者</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">由于光辉之卢克利尔和黑暗之阿特拉守护着明暗圆盘，调查无法继续进行。消灭它们，到深渊残骸深处进行侦察吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格沃尔说调查队虽然来到了明暗圆盘，但是因为对付不了那里的守护者，因此无法继续向下调查。</p>
+          <p> </p>
+          <p>于是按照他所说的方法，消灭了光辉之卢克利尔和黑暗之阿特拉，在残骸中心发现了守护的实体。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

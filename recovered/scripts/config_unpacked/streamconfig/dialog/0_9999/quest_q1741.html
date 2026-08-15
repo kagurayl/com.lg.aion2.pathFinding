@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这里被叫做黄昏的战场的原因，是因为这里漂浮着很多因为激战而死去的灵魂。</p>
+          <p> </p>
+          <p>虽然死去了很久，已经分不清谁是敌人谁是自己人，但是战斗的命令还是深深地刻印在他们的心中。</p>
+          <p> </p>
+          <p>因为这些灵魂，我的研究遭遇到了非常大的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问原因。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个地方因为存在多样的地层，所以能找到很多线索，研究这里在被吸进来之前是亚特雷亚的哪个地区。</p>
+          <p> </p>
+          <p>要想进行正确的推论，必须要对这里的地质进行研究，但是因为那些精神破坏者，使我无法安心地工作。</p>
+          <p> </p>
+          <p>你能帮我把它们除掉一些吗？</p>
+          <p> </p>
+          <p>只有在它们消失之后，我的研究才有可能会有进展。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>往这里的东边走一点，应该就可以找到[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]。</p>
+          <p> </p>
+          <p>由于它们漂浮在空中，所以必须飞着和它们战斗。所以战斗的时候需要注意飞行时间。</p>
+          <p> </p>
+          <p>而且魔族和龙族也有可能出现，所以一定要小心。那就祝你好运。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得研究没有战斗重要吗？</p>
+          <p> </p>
+          <p>你这样的人竟然会这么想，真让人失望。</p>
+          <p> </p>
+          <p>你以为在欧比斯取得胜利就是战斗的全部吗...真是鼠目寸光。</p>
+          <p> </p>
+          <p>不用再说了，[%username]。你应该有足够的经验来了解这个世界了，就由你自己来判断吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]除掉了吗？</p>
+          <p> </p>
+          <p>被它们杀死再复活的话，有时候会丧失记忆。</p>
+          <p> </p>
+          <p>我想那些精神破坏者也许具有破坏记忆的能力。</p>
+          <p> </p>
+          <p>对于我这样的学者来说，记忆无疑是最重要的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多谢你帮忙，我应该很快就能知道这里原来是树木茂盛的地方，还是曾经有亚人种生活的地方。</p>
+          <p> </p>
+          <p>运气好的话，也许能解开永恒之塔创造亚特雷亚之后到大崩溃之间的那段历史。</p>
+          <p> </p>
+          <p>这全都是托你的福。真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Ab1_1131_Specter_25_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Deidamia]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了在黄昏的战场研究地质的考古学家德伊达米亚的研究，应该把精神破坏者除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>考古学家德伊达米亚说正在分析黄昏的战场的地层，研究那里的历史。</p>
+          <p> </p>
+          <p>但是由于精神破坏者太多，她的研究遭到了很大的困难。</p>
+          <p> </p>
+          <p>于是按照她的拜托除掉了精神破坏者，她表示非常感谢，说她的研究一定会因此取得进展。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者们老是制作一些看上去没用的东西。</p>
+          <p> </p>
+          <p>包括用各种金属制作而成的铸币、勋章、证物等等……</p>
+          <p> </p>
+          <p>对于我们术古来说，只要有基纳就行了。</p>
+          <p> </p>
+          <p>如果任务做得好，就多给点基纳，如果做得不好，就少给点基纳。多么简单易懂！</p>
+          <p> </p>
+          <p>不过守护者们制作的东西很闪亮，我很喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在守护者们使用的铸币之中，有一种名叫证物的东西。</p>
+          <p> </p>
+          <p>我对其中的神圣证物最感兴趣……</p>
+          <p> </p>
+          <p>那是神圣守护会发放的东西。</p>
+          <p> </p>
+          <p>如果你有神圣证物的话，能送给我吗？我会用你想要的其他证物和你交换。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果你能给我神圣证物，我就把特殊作战部证物送给你，呐呐。</p>
+          <p> </p>
+          <p>如果你不想要特殊作战部证物，我这里还有猎人的证物！</p>
+          <p> </p>
+          <p>听朋友说，守护者很喜欢特殊作战部证物或者猎人的证物。你是不是觉得很心动啊？</p>
+          <p> </p>
+          <p>如果你能给我8个神圣证物，我会给你1个特殊作战部证物或1个猎人的证物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神圣证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？是觉得不划算？</p>
+          <p> </p>
+          <p>还是对特殊作战部证物或猎人证物不关心？</p>
+          <p> </p>
+          <p>如果你改变了主意，可以再来找我哦！我会随时为你准备好证物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么要搜集神圣证物？</p>
+          <p> </p>
+          <p>我还不能告诉你。以后你会知道的。</p>
+          <p> </p>
+          <p>快把神圣证物交给我吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出神圣证物。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不是说过吗？必须要有8个神圣证物才行，呐呐。</p>
+          <p> </p>
+          <p>如果不满8个，我就不能把其他证物送给你。</p>
+          <p> </p>
+          <p>快去搜集神圣证物吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等一下。</p>
+          <p> </p>
+          <p>有人会在证物里夹杂假的证物，我得一个一个确认一下。</p>
+          <p> </p>
+          <p>啊，好像没问题。</p>
+          <p> </p>
+          <p>好了，你想要什么证物？特殊作战部证物，还是猎人证物？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_COIN_PROTECTION_01]，然后交给[%dic:STR_DIC_N_Shugo_Exchange_03]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">马伊隆说正在搜集神圣证物。应该帮他搜集神圣证物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马伊隆说自己是铜钱收藏家，正在搜集神圣证物。</p>
+          <p> </p>
+          <p>把搜集到的神圣证物交给了马伊隆，他把其他团体的证物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

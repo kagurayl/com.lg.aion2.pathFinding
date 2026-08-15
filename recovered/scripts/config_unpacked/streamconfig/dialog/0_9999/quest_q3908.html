@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然已经集齐了八块碎片，就该开始举行仪式了。</p>
+          <p> </p>
+          <p>现在奥德的力量正在不断地增加，合适的时刻就要到了。</p>
+          <p> </p>
+          <p>龙剑的灵魂被封印在英德拉图要塞中。</p>
+          <p> </p>
+          <p>我会给你一个能够召唤出龙剑化身的[%dic:STR_DIC_I_quest_3908a]。</p>
+          <p> </p>
+          <p>这个东西平时没什么用，但在奥德力量充沛的现在却能发挥出巨大的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你去[%dic:STR_DIC_W_IDLF3_Castle_Indratoo]，找到[%dic:STR_DIC_OBJ_IDLF3Indratoo_FOBJ_Q3908]。</p>
+          <p> </p>
+          <p>在实体附近使用发动石，就会看到德雷克出现。</p>
+          <p> </p>
+          <p>那个德雷克便是龙剑的化身。战胜它，龙剑便会承认你为自己的主人。</p>
+          <p> </p>
+          <p>击倒[%dic:STR_DIC_M_LC1_DrakeVioletNamedQ_47_Ae]，将它身上的[%dic:STR_DIC_I_quest_3908b]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族的实体在[%dic:STR_DIC_W_IDLF3_Castle_Indratoo]外面。</p>
+          <p> </p>
+          <p>那边戒备森严，你一定要小心行事。</p>
+          <p> </p>
+          <p>去吧，攻克最后的难关，把[%dic:STR_DIC_I_quest_3908b]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是想便宜别人吗？</p>
+          <p> </p>
+          <p>所有的碎片都集齐了，差最后一步你就能成为龙剑的主人了。</p>
+          <p> </p>
+          <p>真是个出尔反尔的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙剑的化身仅凭一人的力量很难对付。它可不会轻易承认谁为自己的主人。</p>
+          <p> </p>
+          <p>不过，只有通过这场试炼，才能真正获得龙剑。</p>
+          <p> </p>
+          <p>击败龙剑的化身，拿到[%dic:STR_DIC_I_quest_3908b]后，请立刻回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出灵魂碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你怎么还没出发？</p>
+          <p> </p> 
+          <p>龙剑正在焦急地等待着自己的主人，你要我说几次啊？</p>
+          <p> </p>
+          <p>赶紧去击败龙剑的化身，取回灵魂碎片吧。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这果然是灵魂碎片。</p>
+          <p> </p>
+          <p>看到剑身和魂之间的相互感应了吗？</p>
+          <p> </p>
+          <p>这便是龙剑承认你为主人的证据。</p>
+          <p> </p>
+          <p>来，接住这件武器吧，它会带给你巨大的力量。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_OBJ_IDLF3Indratoo_FOBJ_Q3908]召唤出[%dic:STR_DIC_M_LC1_DrakeVioletNamedQ_47_Ae]并征服它，获得[%dic:STR_DIC_N_Anusis]并带回来</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照阿努西斯的提示，去英德拉图要塞打败龙剑的化身，取回灵魂碎片。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿努西斯说要想成为龙剑的主人，就必须打倒龙剑的化身，获取灵魂碎片。</p>
+          <p> </p>
+          <p>带着阿努西斯所给的发动石，去位于英德拉图要塞的龙族实体，就能看到龙剑的化身出现。</p>
+          <p> </p>
+          <p>打败了龙剑的化身，将获得的灵魂碎片交给了给阿努西斯，请他完成龙剑。</p>           
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

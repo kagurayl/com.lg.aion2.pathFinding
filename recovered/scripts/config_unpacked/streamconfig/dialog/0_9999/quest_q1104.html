@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡利奥斯草原的事情好像可以告一段落了。</p>
+          <p> </p>
+          <p>应该去报告一下这次事情的结果，总结一下。</p>        
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+    <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剩下的事情由我来处理，你回村里去见见神官弗里尼亚。</p>
+          <p> </p>
+           <p>告诉他这边的事情已经基本结束，并把事情的详细经过和他说一下。</p>              
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>弗里尼亚应该在村庄[%dic:STR_DIC_ELA15]的前面。</p>
+          <p> </p>
+          <p>报告的时候在旁边看好他有没有都记下来。不管做什么事情，总是应该越细越好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么？有其他的事情吗？</p>
+          <p> </p>
+          <p>很久没回村子了，回去做个报告，换换衣服也是好的。</p>
+          <p> </p>
+          <p>唉，知道了。反正也不是什么急事，以后我去说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+   <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为何在此吵闹？</p>
+          <p> </p>
+          <p>[%username]，在这神圣的[%dic:STR_DIC_ELA15]面前，请不要在此喧哗！</p>
+       </body>
+        </html>
+    </Contents>
+    <Selects>
+   <Act href="HACTION_SELECT_QUEST_REWARD">转达米雷斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿卡利奥斯草原那边的事情结束了，真是太好了。 </p>
+          <p> </p>
+          <p>我表兄的农场也在那儿，我一直非常担心。那是一个名叫卡尔雷斯的很大的农场。</p>
+          <p> </p>
+          <p>我现在就把您说的内容记录下来。</p>
+          <p> </p>
+          <p>干嘛那么看着我？怕我因为是表兄的事情而写成别的内容？</p>
+          <p> </p>
+          <p>干嘛那么看我？别在没用的地方费心，快回去吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_LA03]报告阿卡利奥斯草原的事情</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">说阿卡利奥斯草原的事情好像已经告一段落了。应该回到[%dic:STR_DIC_FLA02]去向神官弗里尼亚报告。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米雷斯说阿卡利奥斯草原的事情已经基本告一段落，让我回到村里向弗里尼亚报告。</p>
+          <p> </p>
+          <p>在旁边仔细地确认了弗里尼亚是否如实进行了记录。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

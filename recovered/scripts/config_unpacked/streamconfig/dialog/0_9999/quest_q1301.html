@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在要塞周围飞行的时候，应该可以在空中看到[%dic:STR_DIC_I_AG_SOURCE_OD_10A]。</p>
+          <p> </p>
+          <p>因为靠近欧比斯关隘，由奥德的流动产生了那些碎片。</p>
+          <p> </p>
+          <p>虽然看上去不太起眼，但是您知道吗？这些奥德可是很大的资源</p>
+          <p> </p>
+          <p>因为从中可以提取出奥德粉末。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥德粉末可以用来制作很多物品，因此是不可或缺的必需品。</p>
+          <p> </p>
+          <p>目前由于克拉尔和布洛尼，很难弄到奥德石。因此不用我跟你说明，你就应该知道这是多么重要的资源。</p>
+          <p> </p>
+          <p>所以我想要拜托您，您能从[%dic:STR_DIC_I_AG_SOURCE_OD_10A]中提取[%dic:STR_DIC_I_od_n_c_10b]然后交给我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要一边飞行一边提取粉末不是很容易，不过您也知道，这件事情只有守护者才能做。</p>
+          <p> </p>
+          <p>请您从[%dic:STR_DIC_W_LF2_SZ_OP]的欧比斯关隘周围空中的[%dic:STR_DIC_I_AG_SOURCE_OD_10A]中提取[%dic:STR_DIC_I_od_n_c_10b]，然后带回来交给我。</p>
+          <p> </p>
+          <p>一共需要10个，要一次收集完成的话，一定要注意飞行时间，不要掉下来受伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果人类也能做的话，我就不会来麻烦[%username]大人您了。</p>
+          <p> </p>
+          <p>守护者的使命并不只是和龙族或者亚人种战斗。</p>
+          <p> </p>
+          <p>为亚特雷亚服务也是守护者的使命之一。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您提取到奥德粉末了吗？</p>
+          <p> </p>
+          <p>这应该不是您第一次提取粉末，应该不是很难吧？</p>
+          <p> </p>
+          <p>请您把奥德粉末交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出奥德粉末。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>难道我还得跟您一一说明奥德粉末为什么是重要的资源吗？</p>
+          <p> </p>
+          <p>虽然搜集奥德粉末看起来很简单，但是却决不是琐碎的杂事。</p>
+          <p> </p>
+          <p>请您快去搜集粉末吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦了。</p>
+          <p> </p>
+          <p>虽然10个奥德粉末看上去很少，但是却能用来做很多事情。</p>
+          <p> </p>
+          <p>实际上，如果去欧比斯提取奥德粉末，可以提取出更多。</p>
+          <p> </p>
+          <p>但是那里不是谁都能去的地方，而且那里正在战斗，搜集起来也不会很容易。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把从[%dic:STR_DIC_I_AG_SOURCE_OD_10A]中提取出的东西交给[%dic:STR_DIC_N_Machaon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到要塞上空的小奥德中提取奥德的粉末。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>按照[%dic:STR_DIC_N_Machaon]的委托，到要塞上空的小奥德中提取出奥德粉末交给了他，他表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

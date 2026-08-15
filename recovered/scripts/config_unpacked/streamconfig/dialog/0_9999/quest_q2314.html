@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了[%username]你，巴拉努斯消失了，我终于可以开始钓贝尔斯了。</p>
+          <p> </p>
+          <p>不过...肚子有点饿了。[%username]，你不饿吗？</p>
+          <p> </p>
+          <p>钓鱼的时候需要集中精力，如果肚子饿了的话，就无法集中了。</p>
+          <p> </p>
+          <p>我想应该先吃点什么再开始钓鱼。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>周围有什么可以吃的呢...</p>
+          <p> </p>
+          <p>(环顾四周)好像有很多甲壳类。</p>
+          <p> </p>
+          <p>肯索利德和开普拉只要烤一下，就能做成很好吃的料理。</p>
+          <p> </p>
+          <p>龙龟也比看上去的好吃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然擅长钓鱼，但是却没有一点打猎的才能。</p>
+          <p> </p>
+          <p>要我去捕捉肯索利德和开普拉的话，估计几个小时都追不到，白白消耗体力。</p>
+          <p> </p>
+          <p>[%username]，请你帮我去捕捉一些[%dic:STR_DIC_M_PotcrabD_24_An]、[%dic:STR_DIC_M_StarcrabD_24_An]和[%dic:STR_DIC_M_StarturtleD_25_An]%吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你。</p>
+          <p> </p>
+          <p>捕捉到之后，请你帮我把[%dic:STR_DIC_I_QUEST_2314a]、[%dic:STR_DIC_I_QUEST_2314b]和[%dic:STR_DIC_I_QUEST_2314c]烤一下。</p>
+          <p> </p>
+          <p>只要点上火烤一烤，它们就会成为非常美味的食物。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么会这样！没想到你竟然会拒绝...</p>
+          <p> </p>
+          <p>我完全没有打猎的才能，这下可糟了。饿着肚子就什么也做不了...</p>
+          <p> </p>
+          <p>啊啊，这样饿着肚子是没办法钓到贝尔斯的。但是我一定要钓到...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把[%dic:STR_DIC_I_QUEST_2314a]、[%dic:STR_DIC_I_QUEST_2314b]和[%dic:STR_DIC_I_QUEST_2314c]带回来了吗？</p>
+          <p> </p>
+          <p>我都饿得快要倒下了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出食物材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还没去捕捉它们吗？</p>
+          <p> </p>
+          <p>你想看着我倒下吗？如果在这里倒下的话，一定会掉到桥下，然后一头载进水里。</p>
+          <p> </p>
+          <p>如果你不希望看到那样的话，就快去帮我搜集[%dic:STR_DIC_I_QUEST_2314a]、[%dic:STR_DIC_I_QUEST_2314b]和[%dic:STR_DIC_I_QUEST_2314c]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊啊，真是太感谢了。</p>
+          <p> </p>
+          <p>吃了这个之后，我一定要努力钓到贝尔斯。</p>
+          <p> </p>
+          <p>来，这是[%username]你的一份。你尝尝味道怎样。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">捕捉[%dic:STR_DIC_M_PotcrabD_24_An]、[%dic:STR_DIC_M_StarcrabD_24_An]和[%dic:STR_DIC_M_StarturtleD_25_An]%，然后把食物材料交给[%dic:STR_DIC_N_Lif]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助因为肚子饿而无法集中精神钓鱼的利夫搜集食物材料。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帮她清除了妨碍钓鱼的巴拉努斯之后，利夫这次又说肚子太饿而无法集中精神钓鱼。</p>
+          <p> </p>
+          <p>于是帮她搜集到了多种食物材料，她非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

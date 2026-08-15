@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是可以自由地在卡斯帕出入的[%username]大人吗？</p>
+          <p> </p>
+          <p>我正在等您。希望您一定要答应我的请求。</p>
+          <p> </p>
+          <p>我的同伴泰伊洛不顾劝阻，进入了卡斯帕的内部，结果受了伤，到现在还没好。</p>
+          <p> </p>
+          <p>随着时间的推移，状态好像变得越来越差了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了泰伊洛之外，听说还有好几个守护者在卡斯帕内部受了伤，但是目前还没有合适的治疗药。</p>
+          <p> </p>
+          <p>听说炼金术士[%dic:STR_DIC_N_Phailos]正在开发治疗药，但不知现在进展如何……</p>
+          <p> </p>
+          <p>军团长大人一直在催促我报告伤者的情况，这下可糟了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大家都在焦急地等待治疗药，但帕伊洛斯却好像一点都不着急……</p>
+          <p> </p>
+          <p>拜托您了，您能帮我到炼金术士[%dic:STR_DIC_N_Phailos]那里去一趟吗？</p>
+          <p> </p>
+          <p>帮我问问他制作治疗药的事情进展如何。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_N_Phailos]说守护者又不会死，干嘛那么着急。</p>
+          <p> </p>
+          <p>虽然守护者不会死，但面对痛苦，他们和普通人没有什么区别。</p>
+          <p> </p>
+          <p>请帮我去催促一下帕伊洛斯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您太过分了。</p>
+          <p> </p>
+          <p>因为是别人的事情，您就不管了吗？</p>
+          <p> </p>
+          <p>我不想和你这种人说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>我好像没有找过你啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说明情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你是说那些鲁莽的守护者啊？我曾经警告过他们，让他们不要随便进入卡斯帕的内部。</p>
+          <p> </p>
+          <p>但是他们却无视我的警告，进入了卡斯帕的内部。虽然他们这是自找苦吃，但我还是得给他们制作治疗药。</p>
+          <p> </p>
+          <p>用不着你催促，我已经很努力了。你就放心吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Phailos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">应该去见见正在为进入卡斯帕内部而受伤的守护者们开发治疗药的帕伊洛斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗希亚说同伴泰伊洛进入卡斯帕内部之后受了伤，现在症状越来越严重，让人非常担心。</p>
+          <p> </p>
+          <p>她说帕伊洛斯正在开发治疗药，于是帮她去打听消息，帕伊洛斯说正在努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>喂，您是天族吗？</p>
+          <p> </p>
+          <p>是吗？真让人高兴！这一定是主神保佑。</p>
+          <p> </p>
+          <p>我已经不知道有多长时间没看到天族了。看来我没有放弃希望，在这里等待还是值得的。</p>
+          <p> </p>
+          <p>我是米拉詹特的司令官拉比临托斯手下的守卫，来这里执行侦察任务的时候被抓住了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问详细的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>都是因为那个该死的魔族！</p>
+          <p> </p>
+          <p>都是他拖住了我的腿，所以一起被黑暗术古抓到了这里！</p>
+          <p> </p>
+          <p>(用很小的声音说)不知道那个魔族能不能听懂我们的话，但有件事我想告诉您。</p>
+          <p> </p>
+          <p>事实上，有一份重要的文件被魔族抢走了。您能帮我找回来吗？</p>
+          <p> </p>
+          <p>文件里写有秘密内容，绝不能落入敌人的手中。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在监视那个魔族，还好他好像不知道那份文件的内容。</p>
+          <p> </p>
+          <p>但是我看他一直在试图逃走，这样下去的话，写有秘密内容的侦察报告书就会落入敌人手中。</p>
+          <p> </p>
+          <p>请您把[%dic:STR_DIC_M_IDShip_Dprisoner1_44_Ae]杀死，把报告书找回来。</p>
+          <p> </p>
+          <p>虽然我很想亲自动手，但被抓来的时候，我的腰受了伤，所以使不出力气。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不相信还会有什么事情比这件事更重要。</p>
+          <p> </p>
+          <p>您知道侦察报告的内容是什么吗？</p>
+          <p> </p>
+          <p>不过既然您拒绝了我的请求，我就没有必要把秘密告诉你。</p>
+          <p> </p>
+          <p>算了，我会想办法把侦察报告找回来的。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到了您和魔族战斗的声音。</p>
+          <p> </p>
+          <p>虽然很高兴，但总觉得有点伤感。</p>
+          <p> </p>
+          <p>我们一起度过了艰难的俘虏生活，我也不知不觉对他产生了同情。</p>
+          <p> </p>
+          <p>不过我必须忘掉这种感情。当初要不是他的话，我也不会被抓住了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出侦察报告书。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我的侦察报告书！能在落入魔族的手中之前找回来，真是太好了。</p>
+          <p> </p>
+          <p>现在只要再去侦察一个地方就行了。我能再请您帮一个忙吗？</p>
+          <p> </p>
+          <p>请您向[%dic:STR_DIC_N_Lavirintos]大人转告我的消息。如果不在规定的时间内回去，他一定会为我担心的。</p>
+          <p> </p>
+          <p>请您告诉他，纳斯利被黑暗术古抓住了，吃了一些苦头，但很快就会安然回去。</p>
+          <p> </p>
+          <p>那我就先走了。您也一路小心！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要是[%dic:STR_DIC_M_IDShip_Dprisoner1_44_Ae]逃走了该怎么办呢？</p>
+          <p> </p>
+          <p>必须找回侦察报告书，我才能离开这里。</p>
+          <p> </p>
+          <p>请您快去把侦察报告书抢回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你先去向极乐世界总司令官行礼。</p>
+          <p> </p>
+          <p>不管多么紧急的事情，都应该先和总司令官行礼才对。</p>
+          <p> </p>
+          <p>对了，你找我有什么事吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告纳斯利的情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纳斯利发生了这种事？</p>
+          <p> </p>
+          <p>他长期在外侦察，没想到中间吃了这么多的苦头。</p>
+          <p> </p>
+          <p>但是以纳斯利的实力，不管遇到什么危险，他应该都能机智地度过。</p>
+          <p> </p>
+          <p>不管怎样，你帮助了我的部下，我会给你奖励。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_M_IDShip_Dprisoner1_44_Ae]身上找回[%dic:STR_DIC_I_quest_3217a]，然后交给[%dic:STR_DIC_N_Nasuri]</font></p>[%collectitem]</step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Nasuri]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Lavirintos]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">纳斯利说有份机密文件被同是俘虏的魔族抢走了。找回纳斯利的侦察报告书。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在铁耙号上偶然遇到的天族俘虏纳斯利说在和魔族的战斗中，写有机密内容的侦察报告书被魔族抢走，自己也成了黑暗术古的俘虏。</p>
+          <p> </p>
+          <p>杀死了魔族俘虏，找回了纳斯利的侦察文件，他说他要去下一个地点侦察，让我去向拉比临托斯司令官转告他的消息。</p>
+          <p> </p>
+          <p>向拉比临托斯转告了纳斯利的消息，他非常高兴，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

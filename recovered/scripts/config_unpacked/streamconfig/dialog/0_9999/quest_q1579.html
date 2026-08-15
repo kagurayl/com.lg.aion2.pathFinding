@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅德乌斯庄园完全变成了不死族的巢穴。</p>
+          <p> </p>
+          <p>看到曾经善良的居民如今变成这样真让人心痛。这种情形再也不能任其发展下去了。</p>
+          <p> </p>
+          <p>现在当务之急是查明他们变成不死族的原因。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我发现梅德乌斯西部有[%dic:STR_DIC_I_QUEST_1579a]。</p>
+          <p> </p>
+          <p>一般的骨头时间长了就会变色。可是你看这遗骨。。。不像是骨头自然腐败后的颜色，反而呈现出人造的颜色。</p>
+          <p> </p>
+          <p>说不定分析一下就可以知道其中的原因了。[%username]大人能帮忙收集一些这种遗骨吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1579a]在梅德乌斯庄园的建筑周围。</p>
+          <p> </p>
+          <p>只要搞到5个，就足够分析用的了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那些变成不死族的人们不可怜吗？</p>
+          <p> </p>
+          <p>看来你全然没有一名守护者应有的使命感和同情心。</p>
+          <p> </p>
+          <p>知道了，是我不该拜托你这么一个冷血的人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你回来了。</p>
+          <p> </p>
+          <p>带回褪色的遗骨了吗？</p>
+          <p> </p>
+          <p>必须得有遗骨才能对人们变成不死族的原因进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出褪色的遗骨。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我是喜欢开一些无聊的玩笑，不过你这也有点过分了吧？</p>
+          <p> </p>
+          <p>玩笑是玩笑，任务是任务。</p>
+          <p> </p>
+          <p>快去把褪色的遗骨带回来!</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然带来了我要的东西。</p>
+          <p> </p>
+          <p>要送到极乐世界，分析它和人类的变化有什么关系。</p>
+          <p> </p>
+          <p>辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_I_QUEST_1579a]，带给[%dic:STR_DIC_N_Edoras]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了调查人们变成不死族的原因，需要搜集褪色的遗骨。去梅德乌斯庄园西部寻找。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃多拉斯说为了揭示梅德拉斯居民变成不死族的原因，需要褪色的遗骨。于是去梅德乌斯庄园西部，找了一些回来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

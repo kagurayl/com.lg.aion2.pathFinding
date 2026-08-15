@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>上次谢谢你。</p>
+          <p> </p>
+          <p>马邦塔大人很高兴。</p>
+          <p> </p>
+          <p>布洛尼报答你的恩惠。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布洛尼告诉你一个秘藏的料理。</p>
+          <p> </p>
+          <p>克拉尔和布洛尼全都喜欢的最好的料理。</p>
+          <p> </p>
+          <p>但是有问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有制作料理的材料。</p>
+          <p> </p>
+          <p>但是材料很难找。</p>
+          <p> </p>
+          <p>你能帮我去寻找材料吗？</p>
+          <p> </p>
+          <p>那样我就告诉你秘藏的料理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我告诉你需要什么。</p>
+          <p> </p>
+          <p>需要[%dic:STR_DIC_I_QUEST_1368a]、[%dic:STR_DIC_I_QUEST_1368b]、[%dic:STR_DIC_I_QUEST_1368c]和[%dic:STR_DIC_I_QUEST_1368d]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1368b]可以采集到。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1368c]得从术古那里买。</p>
+          <p> </p>
+          <p>卖微风辣香料的只有术古行商。晚上在埃拉库斯地下神殿可以见到他。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_1368d]只有在极乐世界可以找到。从料理商人[%dic:STR_DIC_N_Luelas]那里购买就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是拒绝布洛尼的诚意吗？</p>
+          <p> </p>
+          <p>布洛尼很不高兴。</p>
+          <p> </p>
+          <p>真的是最好的料理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_1368a]、[%dic:STR_DIC_I_QUEST_1368b]、[%dic:STR_DIC_I_QUEST_1368c]和[%dic:STR_DIC_I_QUEST_1368d]都拿来了吗？</p>
+          <p> </p>
+          <p>只有新鲜的东西才能做出美味的料理。</p>
+          <p> </p>
+          <p>把找到的交给布洛尼吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料不足。</p>
+          <p> </p>
+          <p>如果没有东西的话，就做不成料理。</p>
+          <p> </p>
+          <p>你再去找找吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在知道了吧？</p>
+          <p> </p>
+          <p>下次也这样做就行了。</p>
+          <p> </p>
+          <p>布洛尼现在报答你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集料理材料交给[%dic:STR_DIC_N_Brownie_Cook]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">料理师布洛尼说会告诉我秘藏的料理。去搜集[%dic:STR_DIC_I_QUEST_1368a]、[%dic:STR_DIC_I_QUEST_1368b]、[%dic:STR_DIC_I_QUEST_1368c]和[%dic:STR_DIC_I_QUEST_1368d]吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为帮他搜集料理材料的报答，料理师布洛尼说要告诉我秘藏的料理法。</p>
+          <p> </p>
+          <p>他说只要帮他搜集到材料就告诉我，于是帮他搜集到了火鸟胸脯肉、小萝卜、微风辣香料和库库勒粉末，从他那里学到了料理方法。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

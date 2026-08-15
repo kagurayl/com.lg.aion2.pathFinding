@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里森林是埃尔特内非常重要的一块地方。</p>
+          <p> </p>
+          <p>它是这块森林退化、逐渐变成沙漠的地方仅剩的一片森林。</p>
+          <p> </p>
+          <p>不仅对于人类，对于生活在森林里的所有的动物和植物来说都很重要。</p>
+          <p> </p>
+          <p>这是他们延续生命的摇篮。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是最近以来，曼杜里森林的生态系统也陷入了混乱。</p>
+          <p> </p>
+          <p>草食动物急剧减少，发生了很多树枝被折断，草丛被挖掉的事情。</p>
+          <p> </p>
+          <p>对，这都是因为龙蜥兽。由于它们的数量突然增加，随意捕食草食动物，并连草都挖掉了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里森林是守卫埃尔特内的最后屏障。不管发生什么事情，都必须守住它。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去除掉破坏生态系统的[%dic:STR_DIC_M_FrillfaimamMale_22_An]吗？</p>
+          <p> </p>
+          <p>特别是，如果能除掉最凶恶的雄性的话，情况应该会好转很多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请您去清除[%dic:STR_DIC_M_FrillfaimamMale_22_An]吧。</p>
+          <p> </p>
+          <p>也许因为它们是雄性，所以在所有的龙蜥兽中最最凶恶和残暴。</p>
+          <p> </p>
+          <p>把它们除掉的话，曼杜里森林应该可以重获和平。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不明白守护森林是多么的重要。</p>
+          <p> </p>
+          <p>或者您是觉得龙蜥兽和森林没有什么关系。</p>
+          <p> </p>
+          <p>不管是哪一个，都让人感觉很遗憾。</p>
+          <p> </p>
+          <p>请不要认为只有和雷帕尔革命团以及亚人种战斗才是最重要的。</p>
+          <p> </p>
+          <p>不管是什么，只要是守护亚特雷亚、保护人类的工作，全都一样重要。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您回来啦，[%username]大人。</p>
+          <p> </p>
+          <p>我拜托您去做的事情完成了吗？</p>
+          <p> </p>
+          <p>就是除掉大门牙龙蜥兽的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>大门牙龙蜥兽数量减少了，破坏森林的事情应该也会减少的。</p>
+          <p> </p>
+          <p>草食动物也应该会逐渐增加。</p>
+          <p> </p>
+          <p>如果曼杜里森林能恢复原貌，那都是托[%username]大人的福。</p>
+          <p> </p>
+          <p>谢谢您帮我除掉龙蜥兽。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_FrillfaimamMale_22_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Iandeus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">因为龙蜥兽破坏了曼杜里森林的生态，伊安德乌斯对此非常担心。为了让曼杜里森林恢复原貌，去把凶恶的大门牙龙蜥兽清除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯极力强调埃尔特内最后的森林曼杜里森林的重要性，并为生态系统遭到破坏而担忧。</p>
+          <p> </p>
+          <p>造成生态系统混乱的原因是龙蜥兽捕食草食动物和挖掉草丛。</p>
+          <p> </p>
+          <p>于是帮他除掉了非常凶恶的大门牙龙蜥兽，他非常高兴，说我挽救了曼杜里森林。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚开始被派到这里来的时候，都没什么事情可干，非常无聊。</p>
+          <p> </p>
+          <p>因为当时到森林来的人，也就是些采集工，或者走错了路的旅行者。</p>
+          <p> </p>
+          <p>但是最近不知道为什么，有很多人到森林里来。因此我也变得忙碌了起来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>人多了之后，启动奇柏利斯克也变得吃力了。</p>
+          <p> </p>
+          <p>虽然看上去很容易，但是要启动一次奇柏利斯克的话，需要很大的集中力。</p>
+          <p> </p>
+          <p>如果能喝点阿沛果汁的话，应该就会好一点，但是又离不开这里...</p>
+          <p> </p>
+          <p>您能帮帮我吗？请您帮我采集15个[%dic:STR_DIC_E_berry_d_n_c_20a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人真是位心地善良的人。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_berry_d_n_c_20a]在博塔摩尔森林有很多，应该不难找到。</p>
+          <p> </p>
+          <p>那我就在这儿等着您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有必要感到抱歉。</p>
+          <p> </p>
+          <p>[%username]大人应该也有自己的事情。</p>
+          <p> </p>
+          <p>阿沛我会拜托其他人帮我搜集的。您走吧，不用担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您已经把[%dic:STR_DIC_E_berry_d_n_c_20a]带回来了吗？</p>
+          <p> </p>
+          <p>好像还没过多久呢...</p>
+          <p> </p>
+          <p>不管怎样，先把东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出阿沛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么点的话，是不够做阿沛果汁的。</p>
+          <p> </p>
+          <p>所以请您按照约定，帮我搜集15个[%dic:STR_DIC_E_berry_d_n_c_20a]。</p>
+          <p> </p>
+          <p>拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我找守护者大人您，果然是找对人了。</p>
+          <p> </p>
+          <p>太感谢了。多亏了您，我终于可以喝到果汁了。</p>
+          <p> </p>
+          <p>请您收下这个。您为我这么辛苦，这么多的谢礼是应该的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_berry_d_n_c_20a]，然后交给[%dic:STR_DIC_N_Snor]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">去博塔摩尔森林搜集阿沛，让斯诺尔可以制作果汁吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯诺尔说最近启动奇柏利斯克很吃力，说也许喝了阿沛果汁的话，就会好一点。</p>
+          <p> </p>
+          <p>帮助无法离开岗位的她搜集到了阿沛，她说非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

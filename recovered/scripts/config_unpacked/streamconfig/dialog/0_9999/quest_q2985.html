@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你已经成为达人，以后必须更加努力地为伏魔殿制作物品。</p>
+          <p> </p>
+          <p>那样的话，仓库的空间当然需要放大。</p>
+          <p> </p>
+          <p>你需要经常进行采集，也需要放置制作用品。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select10">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多守护者都想放大仓库。但我没办法帮助所有的人。</p>
+          <p> </p>
+          <p>所以只为成为达人的人提供机会，但是你现在还不是达人。</p>
+          <p> </p>
+          <p>请你在成为达人之后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你也想放大仓库吗？</p>
+          <p> </p>
+          <p>我可以破例帮你放大仓库。</p>
+          <p> </p>
+          <p>这可是用钱无法衡量的宝贵机会。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去见见黄金的会堂的[%dic:STR_DIC_N_Roskva]吧，我已经事先打过招呼了。</p>
+          <p> </p>
+          <p>只要说是我让你去的，罗斯科巴就会帮你处理的。</p>
+          <p> </p>
+          <p>你马上去[%dic:STR_DIC_W_DC1_4]一趟吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你现在的仓库空间已经足够充分了吗？</p>
+          <p> </p>
+          <p>看你这么不当回事。</p>
+          <p> </p>
+          <p>一切都是你的选择。不想要的话，我绝不会强迫你。</p>
+          <p> </p>
+          <p>如果你以后改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有其他的事情吗？</p>
+          <p> </p>
+          <p>我可以做的，只有和仓库有关的事情。是和仓库有关吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达毕达尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是毕达尔总司令官介绍来的啊？</p>
+          <p> </p>
+          <p>请稍等一下。我马上帮您放大。</p>
+          <p> </p>
+          <p>好了。现在仓库应该大一点了。</p>
+          <p> </p>
+          <p>衷心祝福您成为达人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Roskva]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说作为成为达人的纪念，可以放大仓库。去丰裕的殿堂见见罗斯科巴吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿总司令官毕达尔说成为达人之后需要更大的仓库，说可以帮我放大仓库。</p>
+          <p> </p>
+          <p>于是来到黄金的会堂放大了仓库。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

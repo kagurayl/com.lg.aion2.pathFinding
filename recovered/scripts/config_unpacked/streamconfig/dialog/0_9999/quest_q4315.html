@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说用蛇颈龙和布拉克斯毛皮制作的睡袋非常暖和。</p>
+          <p> </p>
+          <p>比要塞的硬邦邦的睡袋要好得多。有了它的话，我就能睡个好觉了。</p>
+          <p> </p>
+          <p>铺在地上就是很好的褥子，白天可以批在肩上，晚上可以当睡袋用。</p>
+          <p> </p>
+          <p>但是没想到有个路过这里的商人看中了我的睡袋。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我告诉他不卖，但是他纠缠不休，说肯花高价购买。最后我实在看不过去，就收了他的钱，把睡袋卖给了他。</p>
+          <p> </p>
+          <p>睡袋嘛只要再做一个不就行了？斯派尔好像还没有要走的打算，所以时间很充分。</p>
+          <p> </p>
+          <p>但是一时半会儿却找不到睡袋的材料。当时觉得不会再制作睡袋了，所以没有把材料留下来。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要的材料和上次一样。</p>
+          <p> </p>
+          <p>你只要去周围捕捉[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]，帮我搜集一些皮革就行。</p>
+          <p> </p>
+          <p>我会把卖掉睡袋的钱分你一点，希望你能快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好意思，我把[%username]你帮我制作的睡袋给卖了。</p>
+          <p> </p>
+          <p>但是那个商人不停地哀求，让我不忍心拒绝。</p>
+          <p> </p>
+          <p>你能再帮我一次吗？</p>
+          <p> </p>
+          <p>现在我兜里有了钱，我会好好酬谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有了睡袋之后，感觉比原来更冷了。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_I_QUEST_2429a]和[%dic:STR_DIC_I_QUEST_2429b]搜集到了吗？</p>
+          <p> </p>
+          <p>拿来了的话，就给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出皮革。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？你还没去捕捉[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]吗？</p>
+          <p> </p>
+          <p>它们就在前面，应该不难捉到。</p>
+          <p> </p>
+          <p>请你快去帮我搜集蛇颈龙皮革和布拉克斯毛皮吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>毛皮剥得非常干净。[%username]的手艺真是越来越好了。</p>
+          <p> </p>
+          <p>谢谢你。我得动手制作新的睡袋了。</p>
+          <p> </p>
+          <p>哈哈，要是再把这个睡袋卖掉就完蛋了……</p>
+          <p> </p>
+          <p>来，请你收下。这是给你的辛苦费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_BraxD_21_n]和[%dic:STR_DIC_M_PhainiD_22_n]身上搜集毛皮，然后交给[%dic:STR_DIC_N_Fathir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帕提尔说把毛皮睡袋卖给了商人，需要搜集材料制作新的睡袋。去打猎蛇颈龙和布拉克斯，帮他搜集毛皮吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕提尔说把毛皮睡袋卖给了商人，需要搜集材料制作新的睡袋。</p>
+          <p> </p>
+          <p>于是重新帮他搜集到了蛇颈龙皮革和布拉克斯毛皮，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会的各位同仁。</p>
+          <p> </p>
+          <p>天界各地的神殿和圣所已经陈旧不堪，需要会员们积极参与重建工作。</p>
+          <p> </p>
+          <p>虽然对由于古代战争而荒废的圣所的发掘工作一直在持续进行，但极乐世界对重建工作好像不是非常关心。</p>
+          <p> </p>
+          <p>因此我们作为旨在守护永恒之塔和主神的权威，维护天族的神圣的团体，必须站出来推进这项事业。</p>
+          <p> </p>
+          <p>特此通知全体神圣守护会会员，请搜集用于重建神殿和圣所的[%dic:STR_DIC_G_QUEST_35041_01]和[%dic:STR_DIC_G_QUEST_35041_02]，然后交给[%dic:STR_DIC_E_35014]。我们需要大家的帮助，这样才能守护好亚特雷亚的神殿和圣所。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>您在帮助神殿和圣所的重建工作啊。</p>
+          <p> </p>
+          <p>只要是永恒之塔的光芒照耀的地方，哪里都是守护者的家园，但是没有祈祷的地方是绝对不行的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出带回来的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请稍等一下。</p>
+          <p> </p>
+          <p>(查看文件)好像和要求的东西不太一样啊。</p>
+          <p> </p>
+          <p>我们需要的材料是[%dic:STR_DIC_G_QUEST_35041_01]和[%dic:STR_DIC_G_QUEST_35041_02]。</p>
+          <p> </p>
+          <p>请重新确认，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集材料本身不是很困难的事。</p>
+          <p> </p>
+          <p>但是因为需要的量很大，因此我们才会向会员们请求协助。</p>
+          <p> </p>
+          <p>[%username]大人捐献的材料，守护会会妥善使用的。我会用证物来报答[%username]大人的这种献身精神。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_Q35041]，然后交给[%dic:STR_DIC_E_35014]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从神圣守护会那里收到的委托书上说，需要搜集材料，用于神殿和圣所的重建。</p>
+          <p> </p>
+          <p>于是去搜集到了世界树和山铜矿石，交给了泰奥勃莫斯支部会员。他对我表示感谢，并给了我证物作为报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

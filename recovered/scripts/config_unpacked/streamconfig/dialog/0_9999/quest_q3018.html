@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> -  悬赏通缉 - </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p>长耳洛克斯因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p> 1. 冒充仓库管理员夺取巨额财物</p>
+          <p> 2. 伪造土地文件等各种公文</p>
+          <p> 3. 骗取欧比斯土地 </p>
+          <p></p>
+          <p>提供[%dic:STR_DIC_M_CriminalLightAsNamedQ_23_An]行踪重要线索的人，或者直接将洛克斯除掉上交其项链作为证物的人，将获得丰厚谢礼。</p>
+          <p></p>
+          <p>- 赏金猎人[%dic:STR_DIC_N_Crios]敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Background name="Doc_bg_q3018"/>
+
+    <Selects>
+      <Act href="HACTION_SETPRO1">决定捉拿长耳洛克斯。 </Act>
+      <Act href="HACTION_FINISH_DIALOG">情节展开到此告一段落。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>"看了[%mainslotitem],觉得他似乎是个实战经验丰富的人啊。专家们一看就应该能认出来。"</p>
+          <p> </p>
+          <p>那么，您来找我是为了什么事呢？</p>
+          <p> </p>
+          <p>您要是没什么特别的事，不如挑战一下，来抓捕通缉犯吧。</p>
+          <p> </p>
+          <p>以你的实力，我觉得费不了多大力气就能成功...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">递交洛克斯的项链。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈，真是位性格乖僻的大人呢。</p>
+          <p> </p>
+          <p>看起来像是看过有关悬赏通缉[%dic:STR_DIC_M_CriminalLightAsNamedQ_23_An]的传单了，真是太好了。</p>
+          <p> </p>
+          <p>借此机会挑战一下吧。</p>
+          <p> </p>
+          <p>只要除掉那家伙把他的项链作为证据带回来，我就按照约定给您赏金。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，这不是洛克斯的项链吗？</p>
+          <p> </p>
+          <p>难道您已经除掉长耳洛克斯了吗？</p>
+          <p> </p>
+          <p>这家伙实在是太狡猾了，原以为很难抓到他呢...我果然很会看人啊，哈哈哈。</p>
+          <p> </p>
+          <p>请收下。这是约好的赏金。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_CriminalLightAsNamedQ_23_An]，把证物交给[%dic:STR_DIC_N_Crios]</font></p>[%collectitem]</step>        
+    </steps>
+          <p><font font_xml="quest_summary">除掉悬赏通缉犯长耳洛克斯，把洛克斯的项链交给克里奥斯，领取赏金吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉被通缉的恶毒诈骗犯长耳洛克斯，带着洛克斯的项链作为证物，从克里奥斯那里领到了赏金。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

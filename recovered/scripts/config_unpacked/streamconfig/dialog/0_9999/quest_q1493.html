@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>鞋子也找到了，手套也找到了，真是太好了。</p>
+          <p> </p>
+          <p>但是[%dic:STR_DIC_LF3_1493]还没找到，就配不齐了。</p>
+          <p> </p>
+          <p>既然你帮了我这么多次，能再辛苦一趟吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">问应该怎么做。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么做！和以前一样到凯丹大本营去把装在天加隆木箱里的[%dic:STR_DIC_LF3_1493]找回来就行了。</p>
+          <p> </p>
+          <p>你什么时候出发啊？</p>
+          <p> </p>
+          <p>你要是能马上出发就好了。送货的日子都已经过了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了！[%dic:STR_DIC_LF2_Kraaitem]也帮我多弄一点回来。</p>
+          <p> </p>
+          <p>刚开始只是为了解气，仔细看了才发现它们很坚硬，好像能用来做点什么。</p>
+          <p> </p>
+          <p>我会连牙齿的钱一起给你的，你把它们和[%dic:STR_DIC_LF3_1493]一起带回来。</p>
+          <p> </p>
+          <p>那就全靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？</p>
+          <p> </p>
+          <p>你是不愿意帮我去找护肩呢？还是现在不能马上出发呢？</p>
+          <p> </p>
+          <p>跟我说清楚一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(感到有人来了，急忙把什么东西藏了起来。)</p>
+          <p> </p>
+          <p>(好像是之前帮他找回的东西。)</p>
+          <p> </p>
+          <p>克鲁蒙能遇到你真是运气好。</p>
+          <p> </p>
+          <p>把东西弄丢是人生中最糟糕的失误，多亏你帮我差不多都找回来了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出护肩和克拉尔的牙齿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来想等你把说好的东西拿回来的话，我就把事实告诉你。呐...</p>
+          <p> </p>
+          <p>你没能把最后的东西拿回来，我不能告诉你真相。</p>
+          <p> </p>
+          <p>想知道的话，就快去把[%dic:STR_DIC_LF3_1493]和[%dic:STR_DIC_LF2_Kraaitem]拿回来，呐呐。</p>
+          <p> </p>
+          <p>我还等再等一会儿！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(仔细地查看护肩。)</p>
+          <p> </p>
+          <p>现在我可以告诉你，你帮我找回来的东西不是普通的东西。</p>
+          <p> </p>
+          <p>而是天加隆商团的3大宝物！当然我送过去也不是为了把它们卖掉。</p>
+          <p> </p>
+          <p>不过我不能事先告诉你。因为那样的话，很可能就会被你抢走！</p>
+          <p> </p>
+          <p>不管怎样，真的非常感谢。来，拿着。这是我做的护肩。</p>
+          <p> </p>
+          <p>干嘛？为什么摆出这幅表情？虽然比不上术古工匠做的东西，但是我做的护具也挺好的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_LF3_1493]和[%dic:STR_DIC_LF2_Kraaitem]，然后交给[%dic:STR_DIC_N_Shugo_LF2_15]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">到凯丹大本营去打猎克拉尔，搜集克鲁蒙被抢走的护肩和克拉尔的牙齿，然后交给克鲁蒙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克鲁蒙说少了护肩的话，就不齐全，让我帮他去凯丹大本营寻找护肩。</p>
+          <p> </p>
+          <p>打猎克拉尔，把东西找到后交给了克鲁蒙，他告诉了我惊人的事实。</p>
+          <p> </p>
+          <p>之前帮他找到的鞋子、手套和护肩是天加隆商团的3大宝物。因为担心被我抢走，才没敢事先告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

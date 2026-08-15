@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不好了。听说结界塔南面出现了塔乌利。</p>
+          <p> </p>
+          <p>虽然听说最近出现了奇怪的野兽，但是一直没有精力去管。因为凯丹克拉尔就已经忙不过来了。</p>
+          <p> </p>
+          <p>但是原来那是塔乌利干的...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问有什么问题。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？您不知道塔乌利吗？那个被诅咒的塔乌利？</p>
+          <p> </p>
+          <p>只要是它们出现的地方，就一定会有不好的事情发生。</p>
+          <p> </p>
+          <p>本来好好的村庄会发生传染病，或者家畜在一夜之间全部死掉...真是些不详的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不能就这样对它们坐视不理。</p>
+          <p> </p>
+          <p>别人笑我迷信也好。总之我不能看着它们给生活已经很困难的人们再带来不安。</p>
+          <p> </p>
+          <p>所以，[%username]大人能帮我去把[%dic:STR_DIC_M_TauricRe_36_An]除掉一些吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应我的请求。</p>
+          <p> </p>
+          <p>请您把结界塔入口附近的[%dic:STR_DIC_M_TauricRe_36_An]全部清除掉，然后再回来找我。</p>
+          <p> </p>
+          <p>小心它们的前爪。它们会用尖锐的爪子突然地进行攻击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来因为沙漠化的缘故，气氛就不怎么好，如果放着塔乌利不管，出了其它问题该怎么办！</p>
+          <p> </p>
+          <p>出了问题的话就迟了。</p>
+          <p> </p>
+          <p>请您再好好考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把塔乌利清除掉了吗？</p>
+          <p> </p>
+          <p>不知道的话也许还不怎么样，现在知道了之后，感觉四面全都是邪恶的气息。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您。</p>
+          <p> </p>
+          <p>这下人们的不安应该会减少了。</p>
+          <p> </p>
+          <p>这全都是托[%username]的福。</p>
+          <p> </p>
+          <p>来，请您收下这个。</p>
+          <p> </p>
+          <p>请不要推辞。您是消除塔乌利的诅咒的人，完全具有资格收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉结界塔入口处的[%dic:STR_DIC_M_TauricRe_36_An]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Kibelle]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说会带来不幸的塔乌利在结界塔的附近出现。必须除掉塔乌利卫兵，消除人们的不安。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇贝尔拉说会带来不幸的塔乌利在结界塔入口出现。于是帮她除掉了塔乌利卫兵，她说非常感谢，并给予了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您能帮我一个忙吗？</p>
+          <p> </p>
+          <p>根据我们搜集到的情报，魔族好像发现了锡兰泰拉回廊的存在。</p>
+          <p> </p>
+          <p>不知道他们什么时候会通过回廊，进攻英吉斯温。</p>
+          <p> </p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫拉纳斯代理人大人现在正在英吉斯温前哨基地，所以我并不是很担心。但是如果古代龙神殿和贪婪祭坛被魔族占领，情况就会变得很糟糕。</p>
+          <p> </p>
+          <p>如果发生这种事情，请您为[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]代理人补充力量。</p>
+          <p> </p>
+          <p>我们很需要像[%username]大人这样优秀的[%userclass]的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>在前往英吉斯温前哨基地之前，请您到物资补给兵吉奥巴尼那里购买[%dic:STR_DIC_I_QUEST_11129a]。</p>
+          <p> </p>
+          <p>如果[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]代理人大人遭到魔族的攻击，请您在赫拉纳斯的奥德集中器上使用集中祝福。</p>
+          <p> </p>
+          <p>奥德集中器上必须积累100次以上的祝福，代理人大人才能使用主神的封魂石。因此希望[%username]大人最好能祝福10次以上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>赫拉纳斯代理人大人是凯西内尔主神喜爱的代理执行者。</p>
+          <p> </p>
+          <p>如果代理人大人受伤，主神一定会非常不高兴的。</p>
+          <p> </p>
+          <p>如果好不容易占领的英吉斯温被长着黑色翅膀的家伙抢走的话……他一定会大为震怒的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您在赫拉纳斯的奥德集中器上使用集中祝福了吗？</p>
+          <p> </p>
+          <p>代理人大人一定会获得很大的支持的。</p>
+          <p> </p>
+          <p>集中祝福是包含有主神的愿望的重要物品。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是给予帮助过赫拉纳斯代理人大人的奖励。</p>
+          <p> </p>
+          <p>请您收下。</p>
+          <p> </p>
+          <p>凯西内尔主神一定会很高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_M_LF4_2111_Boss_Li_1]的奥德集中器上使用[%dic:STR_DIC_I_QUEST_11129a]，将力量传递给代理人([%2]/10)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Laestrygos]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在凯西内尔的代理人赫拉纳斯受到魔族攻击的时候，在赫拉纳斯的奥德集中器上使用集中祝福，向代理人传递力量。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>莱斯·特里格斯让我在赫拉纳斯代理人和魔族战斗的时候为他补充力量。</p>
+          <p> </p>
+          <p>按照他的指示，在赫拉纳斯的奥德集中器上使用集中祝福，向代理人传递了力量。回去之后，他对我表示感谢，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

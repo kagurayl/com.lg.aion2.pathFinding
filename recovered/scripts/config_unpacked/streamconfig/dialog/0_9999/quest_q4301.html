@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要塞的补给最近有点不太顺利，因此我很担心。</p>
+          <p> </p>
+          <p>什么补给？我们也要有补给才能执行任务，不是吗？</p>
+          <p> </p>
+          <p>我向立功的人发放的奖励也全是要塞的补给物资。</p>
+          <p> </p>
+          <p>莫尔海姆要塞会定期派补给兵过来，但是经常不能按时到达，给我造成了很大的困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我询问了一下原因，据说是因为受到了周围常见的恐龟的骚扰。</p>
+          <p> </p>
+          <p>它们的个头虽然大，但我们觉得它们不会造成什么威胁，所以没去管它们，没想到会变成这个样子……</p>
+          <p> </p>
+          <p>这样下去的话，即使收到了铸币，我也没有奖励可以提供了。</p>
+          <p> </p>
+          <p>必须尽早把恐龟群清理掉，让补给品可以顺利送到。</p>
+          <p> </p>
+          <p>[%username]大人，这件事您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>需要消灭的是葫芦瓢恐龟和慢性子恐龟。</p>
+          <p> </p>
+          <p>因为之前一直没去管它们，所以需要消灭的数量有点多。</p>
+          <p> </p>
+          <p>对了，请您把牙齿作为证据带回来。再怎么说我也是行政官，必须有看得见的证物才行，不能口说无凭。</p>
+          <p> </p>
+          <p>请您帮我消灭18个[%dic:STR_DIC_M_ShellizardD_25_An]和22个[%dic:STR_DIC_M_ShellizardD_27_An]。</p>
+          <p> </p>
+          <p>好的，那就辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有别的事情要忙吧。</p>
+          <p> </p>
+          <p>莫尔海姆的任务本来就很难，这一点我很清楚。</p>
+          <p> </p>
+          <p>那么再见了。我得去找找有没有别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您想领取铸币奖励，请把铸币给我看看。</p>
+          <p> </p>
+          <p>啊，是[%username]大人啊。</p>
+          <p> </p>
+          <p>我拜托您的事情怎么样了？进展顺利吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出恐龟的牙齿。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我长期担任行政官一职，所以喜欢数量一丝不差。</p>
+          <p> </p>
+          <p>好像不是18个葫芦瓢恐龟的牙齿和22个慢性子恐龟的牙齿啊？</p>
+          <p> </p>
+          <p>请您确认一下，然后再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>数量没错。</p>
+          <p> </p>
+          <p>我会给您铸币……啊，对不起。我已经习惯了……</p>
+          <p> </p>
+          <p>我会送您一件礼物作为报答。</p>
+          <p> </p>
+          <p>恐龟的数量很多，也许我还要请您帮忙。希望您能继续帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_ShellizardD_25_An]和[%dic:STR_DIC_M_ShellizardD_27_An]，把证据交给[%dic:STR_DIC_N_Skataon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">按照斯卡塔文的委托，消灭对补给兵造成妨碍的恐龟，搜集牙齿作为证据。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>斯卡塔文说因为恐龟补给品迟迟不能送到，希望我能帮他解决这个问题。</p>
+          <p> </p>
+          <p>于是消灭掉了葫芦瓢恐龟和慢性子恐龟，把牙齿作为证据交给了他，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

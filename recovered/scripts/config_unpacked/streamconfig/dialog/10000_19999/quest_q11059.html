@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(发出红色光芒的石头碎片。)</p>
+          <p> </p>
+          <p>(仔细查看，红色的光组成了一个纹样。)</p>
+          <p> </p>
+          <p>(好像是在警告什么。)</p>
+          <p> </p>
+          <p>(最好拿去给贪婪结界塔的[%dic:STR_DIC_N_Queesia]看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你手上拿着的是什么东西啊？</p>
+          <p> </p>
+          <p>难道是巴尔伦的碎片？</p>
+          <p> </p>
+          <p>听说守护者巴尔伦被打倒了，没想到是[%username]大人干的啊。</p>
+          <p> </p>
+          <p>真的是巴尔伦的碎片的话，请快给我看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把碎片给他看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然和凯西内尔主神所说的一样，上面有红色的纹样。</p>
+          <p> </p>
+          <p>事实上，凯西内尔主神曾经让我们消灭守护者巴尔伦，确认碎片的纹样。</p>
+          <p> </p>
+          <p>没想到[%username]大人抢在我们之前把这件事完成了。</p>
+          <p> </p>
+          <p>(拿出一个紫色的球)这个请您收下。</p>
+          <p> </p>
+          <p>这是凯西内尔主神下达指令用的特殊的工具。</p>
+          <p></p>
+          <p>[%username]大人，您帮我们解决了这件事，现在您拥有了接受指令的资格。</p>
+          <p> </p>
+          <p>查看宝珠，就能看到凯西内尔大人的指令了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Queesia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了巴尔伦的碎片。把它交给奎希亚吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>消灭守护者巴尔伦之后，发现了一个带有奇怪纹样的巴尔伦的碎片。</p>
+          <p> </p>
+          <p>把它交给奎希亚之后，她说我完成了凯西内尔主神下达的任务，并给了我一个紫色的球，让我通过它接受接下去的指令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

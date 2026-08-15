@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q30455</QuestId>
+    <QuestName>???</QuestName>
+    <QuestType>未输入</QuestType>
+  </QuestInfo>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者……有件事……我想拜托你。</p>
+          <p> </p>
+          <p>是关系到拉迪斯森林安危的……重要的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>森林的守护者尤尔丁大人……中了诅咒。</p>
+          <p> </p>
+          <p>他是从很久以前开始……用智慧守护着拉迪斯森林和光之树的……守护者。</p>
+          <p> </p>
+          <p>曾经温柔的他……受到了德拉坎魔法师的诅咒……充满了黑暗的气息。</p>
+          <p> </p>
+          <p>守护者……请你……救救尤尔丁大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤尔丁大人……被自己的黑暗的影子抓住了。</p>
+          <p> </p>
+          <p>必须消灭那个影子……才能拯救尤尔丁大人。</p>
+          <p> </p>
+          <p>请拯救尤尔丁大人……拯救森林……拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉迪斯森林……会受到尤尔丁大人的影响。</p>
+          <p> </p>
+          <p>这样下去的话，光之树……不知道会变成什么样子。</p>
+          <p> </p>
+          <p>请你再想一想……守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>拉迪斯森林的气息……好像稍微明朗了一些。</p>
+          <p> </p>
+          <p>你去拯救尤尔丁大人了吗……守护者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说拯救了尤尔丁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你……守护者。</p>
+          <p> </p>
+          <p>谢谢你把尤尔丁……和拉迪斯森林从德拉坎魔法师的诅咒中……解救了出来。</p>
+          <p> </p>
+          <p>光之树……也不再危险了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭被诅咒的尤尔丁[%2]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和净化了的尤尔丁对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和安德巴尔对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说拉迪斯森林的守护者尤尔丁受到了扎德拉的诅咒。去解开尤尔丁的诅咒吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>安德巴尔说拉迪斯森林的守护者尤尔丁受到了扎德拉的诅咒。</p>
+          <p> </p>
+          <p>必须将尤尔丁从诅咒中解救出来，才能解决拉迪斯森林和光之树的危险。</p>
+          <p> </p>
+          <p>于是消灭掉了尤尔丁的黑色影子，解除了诅咒。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命进行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

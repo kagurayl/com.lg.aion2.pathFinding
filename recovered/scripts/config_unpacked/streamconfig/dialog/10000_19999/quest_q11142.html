@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞茨奇奇不会再哭了！</p>
+          <p></p>
+          <p>每次哭的时候，哥哥都很难过。</p>
+          <p> </p>
+          <p>看到哥哥那么辛苦，我很想帮帮他。</p>
+          <p> </p>
+          <p>晚上我哭着说冷，哥哥把他的衣服脱下来盖在了我的身上。</p>
+          <p> </p>
+          <p>但是哥哥却在一边冷得发抖。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我想为哥哥做一张黑暗术古床。</p>
+          <p> </p>
+          <p>塞茨奇奇看到妈妈和哥哥用树枝和羽毛制作黑暗术古床。</p>
+          <p> </p>
+          <p>用结实的树枝做成骨架，然后铺上羽毛，架在树上，就可以做成一张床。</p>
+          <p> </p>
+          <p>塞茨奇奇和他们一起做过。</p>
+          <p> </p>
+          <p>如果能有那样一张床，晚上睡觉就不会冷了。</p>
+          <p> </p>
+          <p>守护者，你能帮我搜集材料吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要粗糙但却暖和的羽毛，以及新鲜而又坚韧的树枝。</p>
+          <p> </p>
+          <p>妈妈说[%dic:STR_DIC_M_LF4_B3_Condor_Dr_53_An]的羽毛和[%dic:STR_DIC_M_LF4_B3_Agrint_Green_53_An]的树枝是最好的。</p>
+          <p> </p>
+          <p>守护者，你能帮我搜集吗？一定要帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你很忙吗？</p>
+          <p> </p>
+          <p>不能帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我们只是躲在石头底下，但和哥哥在一起，这里就是我们的家。</p>
+          <p> </p>
+          <p>不回村里去也没关系。</p>
+          <p> </p>
+          <p>但是晚上有点冷。</p>
+          <p> </p>
+          <p>要是能做张床，让哥哥睡觉的时候暖和一点，那就好了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出搜集到的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我需要[%dic:STR_DIC_M_LF4_B3_Condor_Dr_53_An]的羽毛和[%dic:STR_DIC_M_LF4_B3_Agrint_Green_53_An]的树枝。</p>
+          <p> </p>
+          <p>有了那些我才能制作床。</p>
+          <p> </p>
+          <p>拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。</p>
+          <p> </p>
+          <p>(抱起羽毛和树枝)唉，怎么这么重啊？</p>
+          <p> </p>
+          <p>看来我得找哥哥帮忙。</p>
+          <p> </p>
+          <p>哥哥做什么都很厉害。他一定可以把床做好。</p>
+          <p> </p>
+          <p>哥哥！塞伊金哥哥！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_Q11142]，然后交给塞茨奇奇</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了帮助塞茨奇奇制作床，去搜集西莫罗格的羽毛和奥格林特的树枝吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞茨奇奇说想帮哥哥做张床，她说想制作黑暗术古使用的床。</p>
+          <p> </p>
+          <p>于是帮她搜集到了西莫罗格羽毛和奥格林特树枝，但好像是塞伊金才会制作床。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

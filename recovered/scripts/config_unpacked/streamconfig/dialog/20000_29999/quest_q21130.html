@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，[%username]，你来的正好。</p>
+          <p> </p>
+          <p>我想派人到格尔克马洛斯防御基地去，我想交给你应该就可以了。</p>
+          <p> </p>
+          <p>请您去为防御基地的[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]代理人大人补充力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果巴卡巴塔封印塔和红色大地神殿被天族占领，[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]代理人大人就会亲自参加战斗。希望你能在那个时候，为他提供力量。</p>
+          <p> </p>
+          <p>啊，不是让你去和他一起战斗。你能那样做当然最好，但你要做的是在泰格拉克的奥德集中器上施加祝福，让代理人大人可以更加集中精力战斗。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去格尔克马洛斯防御基地见见物资补给兵宾森佐，购买[%dic:STR_DIC_I_QUEST_21127a]。</p>
+          <p> </p>
+          <p>当[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]代理人大人受到天族攻击的时候，请你在奥德集中器上使用专注祝福。</p>
+          <p> </p>
+          <p>奥德集中器上必须积累10次以上的祝福，代理人大人才能使用主神的封魂石。因此希望[%username]你能祝福10次以上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真不理解你为什么会拒绝。</p>
+          <p> </p>
+          <p>泰格拉克代理人大人都需要直接参加战斗，可见情况是多么的危急。</p>
+          <p> </p>
+          <p>因此[%username]，我们才更需要你的帮助。</p>
+          <p> </p>
+          <p>像你这样有能力的人，应该可以为泰格拉克代理人大人提供很强的力量。请你再考虑一下，拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊！[%username]，怎么样了？</p>
+          <p> </p>
+          <p>怎么这么快就回来了？</p>
+          <p> </p>
+          <p>泰格拉克代理人大人怎么样了……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你用专注祝福为泰格拉克代理人大人提供力量了吗？</p>
+          <p> </p>
+          <p>这一切多亏你行动迅速。</p>
+          <p> </p>
+          <p>要是晚一点的话……想想都很可怕。</p>
+          <p> </p>
+          <p>这个请您收下。在你的帮助下，我们终于击退了天族。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_M_DF4_3111_Boss_Da_1]的奥德集中器上使用[%dic:STR_DIC_I_QUEST_21127a]，将力量传递给代理人([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Vedrfonir]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">在马勒库坦的代理人泰格拉克受到天族攻击的时候，在泰格拉克的奥德集中器上使用集中祝福，向代理人传递力量。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝尔德·普尼尔让我在泰格拉克代理人和天族战斗的时候为他补充力量。</p>
+          <p> </p>
+          <p>按照他的指示，在泰格拉克的奥德集中器上使用集中祝福，向代理人传递了力量。回去之后，他对我表示感谢，并给了我奖励。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

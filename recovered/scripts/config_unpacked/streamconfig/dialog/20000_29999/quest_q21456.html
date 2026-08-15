@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你也应该知道，大崩溃之后的数十年间，这里的生态发生了急剧的变化。</p>
+          <p> </p>
+          <p>特别是圣树卡斯帕，在内部形成了未知的空间。</p>
+          <p> </p>
+          <p>当然，那个空间并不是空的。那里生活着很多受到奥德力量影响而发生变异的生命体。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，当然我没有亲眼见过，都是道听途说。</p>
+          <p> </p>
+          <p>卡斯帕内部不是随便可以进去的，不是吗？</p>
+          <p> </p>
+          <p>但是我知道卡斯帕内部的生命体对于守护者而言是很危险的东西，特别是[%dic:STR_DIC_E_Q11048_1F]。</p>
+          <p> </p>
+          <p>你能帮我把[%dic:STR_DIC_E_Q11048_1F]消灭掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望你能立刻就去。</p>
+          <p> </p>
+          <p>一想到[%dic:STR_DIC_E_Q11048_1F]，我的心情就很沉重。</p>
+          <p> </p>
+          <p>这段时间，我会继续寻找和卡斯帕内部的生态有关的资料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我多嘴了。</p>
+          <p> </p>
+          <p>请忘了我说过的话吧。</p>
+          <p> </p>
+          <p>虽然很遗憾，但我不想把不愿意的人送到那么危险的地方去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个世界好像变得越来越难懂了。</p>
+          <p> </p>
+          <p>越是这种时候，就越应该提前做好准备。</p>
+          <p> </p>
+          <p>你把[%dic:STR_DIC_E_Q11048_1F]消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就知道你一定可以顺利完成任务。</p>
+          <p> </p>
+          <p>想到[%dic:STR_DIC_E_Q11048_1F]的数量减少了一些，我的心情就好了很多。</p>
+          <p> </p>
+          <p>虽然你这次安然无恙，但一定有遇到过危险的时候吧？辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_E_Q11048_1F]([%2]/100)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Angrad]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">安格拉德说栖息在卡斯帕内部蛀空的根部的生物对守护者们构成了威胁。按照他的委托，进入卡斯帕内部，消灭蛀空的根部的昆虫。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>命运之天平军团的士兵安格拉德说生活在卡斯帕内部的生命体对守护者构成了威胁，他对此很担心。</p>
+          <p> </p>
+          <p>于是按照他的委托，进入卡斯帕内部，消灭了蛀空的根部的昆虫。回去向他报告之后，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近龙族好像经常在克雷提温纷争地带这里出现。</p>
+          <p> </p>
+          <p>德拉克纽特在这里大摇大摆地来来去去，龙族战斗母舰德雷得奇安也经常出现。</p>
+          <p> </p>
+          <p>感觉情况好像不太寻常。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然无法把龙族赶出埃雷修兰塔，但是我们必须阻止他们扩大势力。</p>
+          <p> </p>
+          <p>首先应该打击一下德拉克纽特的气焰。</p>
+          <p> </p>
+          <p>如果能把他们清除掉一些的话，他们就不敢再在克雷提温纷争地带招摇过市了。</p>
+          <p> </p>
+          <p>这是很重要的任务，不能随便交给什么人...[%username]大人您愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还担心如果您拒绝的话，我该怎么办呢。</p>
+          <p> </p>
+          <p>那就请您快去把[%dic:STR_DIC_M_Ab1_1141_LizardmanAs_27_An]和[%dic:STR_DIC_M_Ab1_1141_LizardmanRa_28_An]清除掉。请您帮我狠狠地教训教训他们。</p>
+          <p> </p>
+          <p>对了，他们所在的地方因为有硫磺，所以非常危险。</p>
+          <p> </p>
+          <p>一直呆在熔岩地区的话，生命力会急速下降，所以请您一定要千万注意。还有，在那里飞行也会比较困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您怎么能拒绝清除龙族的请求呢？</p>
+          <p> </p>
+          <p>克雷提温纷争地带到了龙族的手中，您就舒服了？</p>
+          <p> </p>
+          <p>虽然分清楚什么时候应该站出来，什么时候不应该站出来是件好事。但是现在是[%username]大人您应该站出来的时候。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等着您呢。</p>
+          <p> </p>
+          <p>您把[%dic:STR_DIC_M_Ab1_1141_LizardmanAs_27_An]和[%dic:STR_DIC_M_Ab1_1141_LizardmanRa_28_An]清除掉了吗？</p>
+          <p> </p>
+          <p>您有没有感觉到他们的举动有什么奇怪吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没什么奇怪的地方，真是太好了。</p>
+          <p> </p>
+          <p>不过这次真是辛苦您了。</p>
+          <p> </p>
+          <p>这下他们应该不把克雷提温纷争地带当成是自己的地盘了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除在克雷提温纷争地带横行的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_LizardmanAs_27_An]([%2]/5)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1141_LizardmanRa_28_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Asynja]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">克雷提温纷争地带的龙族最近大量增加。为了阻止龙族扩张势力，去把第30德拉克纽特强袭兵和第30德拉克纽特警戒兵清除掉.</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿西尼亚说最近克雷提温纷争地带的龙族突然增加，他担心他们是在扩张势力。</p>
+          <p> </p>
+          <p>于是为了警告龙族，去清除掉了第30德拉克纽特强袭兵和警戒兵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

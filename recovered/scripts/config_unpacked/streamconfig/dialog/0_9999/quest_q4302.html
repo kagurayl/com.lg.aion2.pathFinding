@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们的主要任务是为守护者们治愈受损的灵魂。</p>
+          <p> </p>
+          <p>除了我之外，还有很多灵魂治愈师被派到了世界的各个地方。</p>
+          <p> </p>
+          <p>但是您也知道，这里是非常难以生活的地方。大崩溃的伤痕还没有愈合，而且一直以来都处于战争状态。</p>
+          <p> </p>
+          <p>所以我们治愈师会和其他执政官一起，帮着处理一些日常的事务。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不久前，我为一些受伤的居民进行了治疗。</p>
+          <p> </p>
+          <p>从伤口看，很多人是中了毒。和凶恶的野兽造成的咬伤相比，中毒之后造成的伤害更加危险，也更加难治疗。</p>
+          <p> </p>
+          <p>如果能把周围的有毒生物清理掉，受伤的情况就会减少，执政官的工作量也会因此降低。</p>
+          <p> </p>
+          <p>[%username]大人，您觉得怎么样？如果您赞成我的想法，希望您能帮帮我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我。</p>
+          <p> </p>
+          <p>请您把周围的[%dic:STR_DIC_M_merdionD_27_n]和[%dic:STR_DIC_M_ScorpionD_27_An]清理掉。</p>
+          <p> </p>
+          <p>它们的毒性很强，守护者可能还可以，但人类或亚人种中毒之后，会受到非常严重的伤害。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真遗憾。</p>
+          <p> </p>
+          <p>[%username]大人如果肯帮忙，我想大家一定会很感激的……</p>
+          <p> </p>
+          <p>没办法。我只能再想想别的办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>灵魂虽然可以治愈，但伤痕却永远不会消失。</p>
+          <p> </p>
+          <p>[%username]大人在执行任务的时候，也必须小心不要受伤。</p>
+          <p> </p>
+          <p>我拜托您的事情如果完成了的话，请告诉我一声。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>多亏了[%username]大人，居民们终于可以安全地在周围活动，执政官们的工作量也减轻了。</p>
+          <p> </p>
+          <p>但是象鼻虫和蝎兽都是繁殖力非常强的生物，所以我有点担心。</p>
+          <p> </p>
+          <p>相信下次找您帮忙的时候，您一定还会帮我的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭有毒的生命体</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_merdionD_27_n]([%2]/13)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ScorpionD_27_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Maxeldor]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照马克塞多尔的委托，消灭有毒的象鼻虫和蝎兽，确保居民的安全，减轻执政官的工作量。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>马克塞多尔说周围的有毒生命体给居民们造成了很大的危害，执政官的工作量也因此加重了。</p>
+          <p> </p>
+          <p>于是去消灭了舔盐象鼻虫和黑尾蝎兽，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

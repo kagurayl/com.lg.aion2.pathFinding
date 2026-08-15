@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>路过这里的守护者，大都是去龙之垫脚石办事的，但是秃鹫让所有的人都很头疼。</p>
+          <p> </p>
+          <p>龙界幸存下来的秃鹫非常凶恶，和其他地区的秃鹫完全不同。</p>
+          <p> </p>
+          <p>颜色火红火红的，看上去很可怕。看到它们扇动巨大的红色翅膀的样子，连我都会感到害怕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我让路过的人帮我去龙之垫脚石搜集一些矿石，但大部分人都因为秃鹫的原因而拒绝了。</p>
+          <p> </p>
+          <p>特别是它们的头目长舌克穆尔，所有的人听了都直摇头。</p>
+          <p> </p>
+          <p>但是以[%username]大人您的实力，对付秃鹫应该并不难吧？</p>
+          <p> </p>
+          <p>请您帮我把[%dic:STR_DIC_M_DF4_Condor_DR_51_An]消灭掉，如果能把[%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An]一起除掉，将对我的工作起到很大的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您把[%dic:STR_DIC_M_DF4_Condor_DR_51_An]全部消灭掉，一个都不要剩下。更重要的是，必须把[%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An]一起除掉。</p>
+          <p> </p>
+          <p>消灭掉了头目之后，栖息在龙之垫脚石的秃鹫应该就不会那么嚣张了。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，就算是[%username]大人，对付秃鹫应该也不容易。</p>
+          <p> </p>
+          <p>因为最近捕食者秃鹫实在太猖獗，所以我才拜托您的。那就算了吧。</p>
+          <p> </p>
+          <p>如果您以后有事过来，请一定要帮我这个忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把捕食者秃鹫全部消灭掉了吗！</p>
+          <p> </p>
+          <p>我听说长舌克穆尔消失了。</p>
+          <p> </p>
+          <p>我拜托您的事情，应该完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了。这下我终于可以放心了，可以放心地拜托其他人帮我搜集矿石了。</p>
+          <p></p>
+          <p>红色的捕食者秃鹫全部消失了，感觉真是痛快。</p>
+          <p> </p>
+          <p>来，您帮了我的大忙，这是给您的酬谢。请不要推辞。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去龙之垫脚石消灭秃鹫</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Condor_DR_51_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An]([%5]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Carabel]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说捕食者秃鹫会攻击路过龙之垫脚石的人。去龙之垫脚石消灭秃鹫以及头目长舌克穆尔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡拉贝尔说捕食者秃鹫占领了龙之垫脚石，经常攻击路过的人，他对此很担心。</p>
+          <p> </p>
+          <p>如果不管的话，可能会变得更加危险。因此帮他消灭了捕食者秃鹫和它们的头目长舌克穆尔。</p>
+          <p> </p>
+          <p>回去告诉了卡拉贝尔，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

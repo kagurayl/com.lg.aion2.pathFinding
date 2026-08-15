@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>坎塔斯虽然离图尔斯神前哨基地很近，却是克拉尔不经常出现的地方。</p>
+          <p> </p>
+          <p>肯定是因为没有奥德石矿产。</p>
+          <p> </p>
+          <p>不必担心天族和魔族之间对抗，也不必发愁亚人种族之间的战斗，可以安享和平生活。</p>
+          <p> </p>
+          <p>这里只有一个隐患，那就是肯索利德。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>四周观望您就可以知道，周围到处都是肯索利德。</p>
+          <p> </p>
+          <p>我刚开始工作那阵还没有这么多。但是可能因为没有天敌，它们的数量在呈几何倍数地增长。</p>
+          <p> </p>
+          <p>虽然没有带来特别大的危害，但是数量太多的话会很烦恼。还有家伙会闯入结界塔。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您有空的时候，可不可以俘获[%dic:STR_DIC_MLA150]？</p>
+          <p> </p>
+          <p>我们是希望自己处理，不过因为附近出现了不稳定势力雷帕尔革命团，所以不能擅离职守。</p>
+          <p> </p>
+          <p>总不能为了消灭肯索利德而疏忽结界塔的守护。</p>
+          <p> </p>
+          <p>能帮助我们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">答应。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。</p>
+          <p> </p>
+          <p>请您立即捉拿附近的[%dic:STR_DIC_MLA150]，拿回[%dic:STR_DIC_QILA88]作为证据。</p>
+          <p> </p>
+          <p>搜集7个左右就可以。</p>
+          <p> </p>
+          <p>只要把那些挂在前面，那些家伙也就不敢接近吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您好像有急事。</p>
+          <p> </p>
+          <p>那就没有办法了。要是您以后有空的话再来帮忙吧。</p>
+          <p> </p>
+          <p>我看消灭这些肯索利德也不是一朝一日的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话. </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>肯索利德好对付吗？</p>
+          <p> </p>
+          <p>虽然不够成威胁，不过皮太硬不容易杀死。</p>
+          <p> </p>
+          <p>是些烦人的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出锋利的前螯。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不会是怕肯索利德吧？</p>
+          <p> </p>
+          <p>您还是赶紧去吧。时间越长繁殖越快。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_thanks;HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的辛苦您了。</p>
+          <p> </p>
+          <p>这下不用因为经常驱赶靠近结界塔的家伙而烦恼了。</p>
+          <p> </p>
+          <p>提出这么琐碎的要求真是对不起。不过对我们来说守护结界塔是首要任务。</p>
+          <p> </p>
+          <p>下次有空请您再来帮忙。</p>
+          <p> </p>
+          <p>因为过段时间肯索利德数量还会增加。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">到结界塔附近处置[%dic:STR_DIC_MLA150]，把证据交给 [%dic:STR_DIC_LA34]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清楚以惊人速度增加的肯索利德，搜集7个锋利的前螯并领取奖赏。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为栖息坎塔斯的肯索利德急剧增加，让守护结界塔的守卫感到很厌烦。</p>
+          <p> </p>
+          <p>但是因为周围的雷帕尔革命团不能离守，只好放任不管。</p>
+          <p> </p>
+          <p>帮他们捕猎肯索利德，交给锋利的前螯作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>          
+          <p>看来调查沼泽污染的原因并加以解决，完成这项工作比预想要困难的多。</p>
+          <p> </p>
+          <p>极乐世界方面也在催要标本。</p>
+          <p> </p>
+          <p>哎，可再怎样着急，我也不能一分为二啊... </p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问发生了什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次派给我的任务是取回生长在污染沼泽中的植物标本。据说，那里生长的植物中可能含有抵消毒性的成分。</p>
+          <p> </p>
+          <p>可我实在是忙不过来，监管人类的出入就已经占去了大半精力，还要采集标本，伤脑筋啊。</p>
+          <p> </p>
+          <p>对了，[%username]，你能不能帮我这个忙呢？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">答应这项请求。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务呢，就是在污染的沼泽中寻找一些球形的植物。</p>
+          <p> </p>
+          <p>它们即便在那种毒气盛行的地方也能够顽强地生存。去调查那植物的根，也许能从中找到消除毒素的办法。</p>
+          <p> </p>
+          <p>那么，尊敬的[%username]，能不能帮我寻找[%dic:STR_DIC_QILA85]呢？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对于你的慷慨相助，我致以崇高的敬意。一直以来我还在为这件事苦恼呢。</p>
+          <p> </p>          
+          <p>那么，请赶快动身去污染沼泽周围的[%dic:STR_DIC_ELA82]，找到[%dic:STR_DIC_QILA85]，并交给我。</p> 
+          <p> </p>
+          <p>极乐世界方面需要２０株，现在已经采到１３株，再采集７株就够了。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然有点可惜，不过也没办法。 </p>
+          <p> </p>
+          <p>本来就是我的任务，即使再困难我也会努力完成。 </p>
+          <p> </p>
+          <p>那么下次再见了。</p>
+           </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前拜托你搜集的[%dic:STR_DIC_QILA85]全部搜集到了吗？</p>
+          <p> </p>
+          <p>估计是因为样子奇特，找起来没那么困难...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将植物的根交给她</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道那植物长什么样子？</p>
+          <p> </p>
+          <p>那种植物是红颜色的，圆圆的，形色怪异，不过能够生长在这个沼泽也真是奇迹了。</p>
+          <p> </p>
+          <p>那么，请赶快出发吧。</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务已经完成，极乐世界方面估计也会满意的。</p>
+          <p> </p>
+          <p>希望能用这些标本找到解毒的方法...</p>
+          <p> </p>
+          <p>为了表示感谢，请收下这份小小的礼物。</p>             
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_ELA82]中采集[%dic:STR_DIC_QILA85]，并交给 [%dic:STR_DIC_LA30]。</font></p>[%collectitem]</step>               
+    </steps>
+          <p><font font_xml="quest_summary">极乐世界方面称，需要沼泽植物标本。采集沼泽中的植物并交给罗塞诺。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罗塞诺委托了采集极乐世界需要的植物标本。目前已将从污染的沼泽采集到的植物标本交给了她。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中： [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

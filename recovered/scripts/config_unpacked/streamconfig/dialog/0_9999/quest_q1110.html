@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我虽然是佣兵团的战斗兵，但我的父亲是一位有学识的人。</p>
+          <p> </p>
+          <p>他在[%dic:STR_DIC_ELA07]的书库工作，所以学识渊博。</p>
+          <p> </p>
+          <p>虽然他想让我好好学习，将来有点出息，但是老实说他寄过来的书我一本都不读。</p>
+          <p> </p>
+          <p>像我这种人和书没什么缘分，现在再让我读几本书有什么用？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我不读，但是我还是很在意父亲的这份心意。</p>
+          <p> </p>
+          <p>如果有人想要看的话我就借给他们。</p>
+          <p> </p>
+          <p>之前纳姆斯曾经找到我，想借有关仙女的书。</p>
+          <p> </p>
+          <p>虽然我不知道伐木工为什么会关心这些，但是当时手头没有书，所以没借给他。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是父亲给我的书中有一本叫做[%dic:STR_DIC_QILA73]的书。</p>
+          <p> </p>
+          <p>虽然我不能确定这是不是纳姆斯想要的书，但是也许最好能给他送过去。</p>
+          <p> </p>
+          <p>我要在这儿站岗，所以去不了。你能帮我把这本书送给纳姆斯吗？ </p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没什么特别的事情的话，[%dic:STR_DIC_LA10]应该在达弥努森林的入口处伐木。</p>
+          <p> </p>
+          <p>他是个很憨直的人，应该不会在家里偷懒。</p>
+          <p> </p>
+          <p>把书交给他，就说是我给他的。拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就算了。</p>
+          <p> </p>
+          <p>反正纳姆斯来借书已经是很久以前的事情了，可能早就忘了吧。</p>
+          <p> </p>
+          <p>也许连他自己都想不起来，没必要非得给他送过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>佣兵应该也不会来找伐木工帮忙...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出梅尔蓝普斯的书。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_QILA73]？是梅尔蓝普斯让你送来的吗？</p>
+          <p> </p>
+          <p>啊！好像是之前我让他找的书。是的，是我让他找的...</p>
+          <p> </p>
+          <p>你回去跟梅尔蓝普斯说，谢谢他还记得帮我找书。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把书交给[%dic:STR_DIC_LA10]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">[%dic:STR_DIC_LA68]拜托你把书转交给[%dic:STR_DIC_LA10]。必须把[%dic:STR_DIC_QILA73]送给[%dic:STR_DIC_FLA04]入口处的纳姆斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纳姆斯曾经向有很多书的梅尔蓝普斯借一本关于仙女的书。当时因为没有合适的书，所以没能借给他。现在他说手头有一本叫做“传说和仙女”的书。</p>
+          <p> </p>
+          <p>帮助因站岗而不能去送书的梅尔蓝普斯把书送给纳姆斯。</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，狡猾的昆都真的是你除掉的吗？</p>
+          <p> </p>
+          <p>昆都野心很大，心计也很深，曾经是最让我们头疼的一个。他经常唆使部下攻击行人，抢夺物品。</p>
+          <p> </p>
+          <p>但是最近比他更让人头疼的是曼杜里。</p>
+          <p> </p>
+          <p>就是叫做[%dic:STR_DIC_M_ManduriBNamedQ_23_An]的家伙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里们曾经污染了神秘泉，让我头疼了好一阵子，让他们这么干的就是丑陋的钦都。</p>
+          <p> </p>
+          <p>不仅如此。他们不吃灯笼海棠和大黄，但是却把它们挖出来踩烂，或者从高处扔下，让人们无法使用。</p>
+          <p> </p>
+          <p>他们好像是看见人类和守护者采集这些东西，所以才故意破坏掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你能帮我去把[%dic:STR_DIC_M_ManduriBNamedQ_23_An]除掉吗？</p>
+          <p> </p>
+          <p>你既然有能力除掉狡猾的昆都，对付丑陋的钦都应该也不会太困难。</p>
+          <p> </p>
+          <p>其他的不说，我们再也不能看着他们污染饮用水源了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>丑陋的钦都在曼杜里森林的各处游荡。</p>
+          <p> </p>
+          <p>请您把他除掉，让他无法再继续污染曼杜里森林和神秘泉。</p>
+          <p> </p>
+          <p>我相信[%username]的能力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到底为什么要拒绝我啊？</p>
+          <p> </p>
+          <p>您好歹也算出了一点名，对付曼杜里就不敢去了吗？</p>
+          <p> </p>
+          <p>守护者的使命就是奉献。必须为人类和亚特雷亚做所有力所能及的事情。</p>
+          <p> </p>
+          <p>不管事情是困难还是容易，不管是大是小，决不能挑三拣四。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>由于曼杜里的肆虐，森林渐渐变得乱七八糟。</p>
+          <p> </p>
+          <p>虽然他们也有生命，也应该保护他们，但是他们威胁到了其他生命，就只能把他们除掉。</p>
+          <p> </p>
+          <p>当然，身为生命的守护者，我对此也有所怀疑。</p>
+          <p> </p>
+          <p>哈，您把[%dic:STR_DIC_M_ManduriBNamedQ_23_An]除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉了丑陋的钦都，我的心总算放下来了。</p>
+          <p> </p>
+          <p>现在神秘泉应该不会再被污染，大黄和灯笼海棠也应该能采集到了。</p>
+          <p> </p>
+          <p>谢谢您帮助我。这是我的一点谢意，请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_ManduriBNamedQ_23_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Seora]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">丑陋的昆都正在正在污染神秘泉和糟蹋采集物。为了保护神秘泉和采集物，去把丑陋的钦都除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塞奥拉问我是不是真的是我除掉了狡猾的昆都，并说有件事想拜托我。</p>
+          <p> </p>
+          <p>名叫丑陋的钦都的曼杜里正在污染神秘泉和糟蹋采集物，给森林和人类造成了危害。</p>
+          <p> </p>
+          <p>于是按照他的拜托除掉了钦都，但是塞奥拉说作为生命的守护者，对为了其他生命而除掉一种生命持怀疑态度。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

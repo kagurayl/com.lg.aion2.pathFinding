@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，见到你真高兴，[%username]。</p>
+          <p> </p>
+          <p>听说你在贝尔特伦做了很多事情。</p>
+          <p> </p>
+          <p>那里的朋友一个劲儿地称赞你。</p>
+          <p> </p>
+          <p>他说你的能力很强，为人也很好，什么请求都不会拒绝。他说的是真的吗？</p>
+          <p> </p>
+          <p>(挠挠头)如果这些都属实的话，我也想拜托您一件事...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是这样的。我有个朋友在泰奥勃莫斯，他写信给我说那里的环境太贫瘠，很难找到想要的东西。</p>
+          <p> </p>
+          <p>他让我帮他在这边找一些需要的东西，但是我也得有时间才行啊。</p>
+          <p> </p>
+          <p>最近魔族频繁地在要塞周围出现，所以我一直在执勤。</p>
+          <p> </p>
+          <p>不过我还是找到了他要的东西，问题是配送。因为包裹太大，所以和风特急邮件也说不行。</p>
+          <p> </p>
+          <p>如果您要去[%dic:STR_DIC_W_ZONE_Path_LF2A]的话，我想让您帮我带过去。不知道可不可以？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来，您拿好。可能会有点重。</p>
+          <p> </p>
+          <p>为了以防万一，我稍微多准备了一些。</p>
+          <p> </p>
+          <p>请您把它交给美华灵发掘工会窝棚的[%dic:STR_DIC_N_Crios]。</p>
+          <p> </p>
+          <p>名字我记不太清楚了，他是个赏金猎人。他在那边很有名，只要这么说，所有的人都知道他是谁。</p>
+          <p> </p>
+          <p>您知道怎么去[%dic:STR_DIC_W_ZONE_Path_LF2A]吗？没错，通过空间移动过去就行。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没有去泰奥勃莫斯的计划吗？</p>
+          <p> </p>
+          <p>如果您没去过的话，趁这次机会过去看看也好...</p>
+          <p> </p>
+          <p>以后如果您改变了主意。反正我暂时也没时间过去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我好像还是头一次见到你，你来这里有什么事吗？</p>
+          <p> </p>
+          <p>是来卖情报的吗？</p>
+          <p> </p>
+          <p>先跟我说说是什么事情吧。我会判断有没有花钱买的价值。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">拿出物品包袱。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你应该早说嘛。</p>
+          <p> </p>
+          <p>我给特兰那个家伙写信已经很久了。但是却没有一点消息，我还以为他已经搬到别的地方去了呢。</p>
+          <p> </p>
+          <p>(打开物品包袱查看)连我没说的东西都送来了，果然还是朋友好啊，呵呵。</p>
+          <p> </p>
+          <p>这么多东西一定很沉吧？真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把物品包袱交给[%dic:STR_DIC_W_ZONE_Path_LF2A]的[%dic:STR_DIC_N_Crios]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须帮助忙碌的特兰，把物品包袱交给美华灵发掘工会窝棚的克里奥斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特兰说泰奥勃莫斯的朋友克里奥斯写信给他，让他帮着找一些需要的东西。但自己正在执勤，没办法离开，让我帮他送过去。</p>
+          <p> </p>
+          <p>按照他的拜托，前往泰奥勃莫斯的美华灵发掘工会窝棚，把特兰的东西交给了克里奥斯。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

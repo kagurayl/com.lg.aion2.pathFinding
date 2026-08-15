@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当我清醒过来的时候...已经变成了这个样子。</p>
+          <p> </p>
+          <p>想不起来了，我是什么时候为什么会变成奥格林特的。</p>
+          <p> </p>
+          <p>幸亏被闪电击中烧成了焦炭...我才找回了...曾经是椰林的过去的回忆。</p>
+          <p> </p>
+          <p>我不知道...找回记忆是幸运...还是不幸。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要说有什么希望的话...我希望可以摆脱这份痛苦。</p>
+          <p> </p>
+          <p>每次在烧焦的身体里...传送树液的时候...感觉根都快要撕裂了。</p>
+          <p> </p>
+          <p>只要痛苦可以消失...我就平静地...等待最后的时刻。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那么...你能帮我搜集[%dic:STR_DIC_I_QUEST_2362a]和[%dic:STR_DIC_I_QUEST_2362b]吗？</p>
+          <p> </p>
+          <p>蜥蜴的鳞片和尾鳍...有麻醉的效果。</p>
+          <p> </p>
+          <p>如果埋在脚下的土里...应该会有所帮助...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请你从[%dic:STR_DIC_M_BasiliskD_30_An]那里搜集7个[%dic:STR_DIC_I_QUEST_2362a]...从[%dic:STR_DIC_M_BasiliskD_32_An]那里搜集5个[%dic:STR_DIC_I_QUEST_2362b]。</p>
+          <p> </p>
+          <p>拜托了...为了让我...可以不再痛苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>叶子已经消失...树液也正在干涸。</p>
+          <p> </p>
+          <p>没有其他的...希望了...</p>
+          <p> </p>
+          <p>这份痛苦...应该也不用忍受很长时间了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>蜥蜴的鳞片和尾鳍...都带回来了吗？</p>
+          <p> </p>
+          <p>那是消除痛苦的...小小愿望。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蜥蜴的鳞片和尾鳍。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是忘了吗...和我的约定？</p>
+          <p> </p>
+          <p>虽然对你来说是小事一桩...但是对我来说，却很重要...</p>
+          <p> </p>
+          <p>拜托你帮我去搜集[%dic:STR_DIC_I_QUEST_2362a]和[%dic:STR_DIC_I_QUEST_2362b]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢...</p>
+          <p> </p>
+          <p>我要把它们...埋在脚下...</p>
+          <p> </p>
+          <p>如果我能因此减少一点痛苦，那都是托你的福。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">打猎[%dic:STR_DIC_M_BasiliskD_30_An]和[%dic:STR_DIC_M_BasiliskD_32_An]，并把获得的东西交给[%dic:STR_DIC_N_Magni]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">被火烧焦的玛格尼每次输送树液时，都会感到痛苦。必须帮他搜集可以减轻痛苦的蜥蜴的鳞片和尾鳍。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>被火烧焦，正在走向死亡的玛格尼说每次输送树液时，就会感到根被撕裂一样的疼痛。</p>
+          <p> </p>
+          <p>于是去捕捉了红磷蜥蜴和熔岩蜥蜴，为他搜集到了具有麻醉效果的蜥蜴鳞和熔岩尾鳍。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

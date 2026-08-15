@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，这些亚德曼金属矿石应该怎么送给哈克内呢...</p>
+          <p> </p>
+          <p>[%username]，您既然帮了我的忙，我能再麻烦您一次吗？</p>
+          <p> </p>
+          <p>我不能离开这里，所以请您帮我把这些矿石交给哈克内。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。请您稍等一会儿。</p>
+          <p> </p>
+          <p>我再放几件方便拿的东西在里面。</p>
+          <p> </p>
+          <p>(把亚德曼金属矿石和几件杂货放进包里。)</p>
+          <p> </p>
+          <p>不好意思让您久等了。我把要送给[%dic:STR_DIC_N_Hagne]的东西都放在了这个包里，您把它交给她就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把包交给哈克内的时候，请帮我跟她说。</p>
+          <p> </p>
+          <p>让她在需要帮助的时候随时跟我说。</p>
+          <p> </p>
+          <p>虽然做不到丹拉比斯那么好，但我会尽力帮助她的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙啊。那就没办法了。</p>
+          <p> </p>
+          <p>没关系，我可以叫术古特急邮件送过去，您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还说是谁呢，原来是帮我送信的守护者啊。</p>
+          <p> </p>
+          <p>对了，你帮我把信送给欧佩罗斯了吗？</p>
+          <p> </p>
+          <p>如果他收到了信的话，现在东西应该就快到了...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出包裹，并转达欧佩罗斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧佩罗斯还是那么善良，傻瓜...</p>
+          <p> </p>
+          <p>(匆忙地擦掉了眼中的泪水。)</p>
+          <p> </p>
+          <p>看我的记性。把你晾在一边，光顾着瞎想了。</p>
+          <p> </p>
+          <p>你帮我送信我就很感激了，现在还把亚德曼金属矿石给我送来了。真的非常感谢。</p>
+          <p> </p>
+          <p>这样一来，阿斯科雷皮乌斯大人的长剑应该就能做出来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把欧佩罗斯的包裹交给[%dic:STR_DIC_N_Hagne]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的欧佩罗斯把装着亚德曼金属的包裹送给哈克内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧佩罗斯说他很忙，脱不开身，拜托我帮他把装着亚德曼金属的包送给哈克内。</p>
+          <p> </p>
+          <p>把包裹交给了哈克内，她表示非常感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

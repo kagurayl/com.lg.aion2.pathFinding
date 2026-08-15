@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，现在的情况太困难了。在这里看魔族驻军的眼色的生活什么时候才能结束啊！</p>
+          <p> </p>
+          <p>如果可以的话，我很想马上动员所有的兵力，把他们一网打尽。不过目前是不可能的，真让人郁闷。</p>
+          <p> </p>
+          <p>要塞不仅只有这里一个。所以我们军团的兵力也分散到了好几个地方。</p>
+          <p> </p>
+          <p>而且这里的军团士兵们的士气低到了极点...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以，希望你能为削弱敌人的兵力出把力。</p>
+          <p> </p>
+          <p>请你帮我把[%dic:STR_DIC_M_Crohtan_Guard]除掉几个，振作一下守卫们的士气。</p>
+          <p> </p>
+          <p>任务非常简单。只要和同伴们过去稍微消灭一些敌人的驻军就行了。</p>
+          <p> </p>
+          <p>你愿意接受这个任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不要以为对方只是驻军就小看他们，搞不好会碰一头灰的。</p>
+          <p> </p>
+          <p>他们也和我们一样，是在欧比斯中经历了无数战斗的磨练的人。</p>
+          <p> </p>
+          <p>所以一定要召集和你实力相当的同伴一起过去。</p>
+          <p> </p>
+          <p>战斗的时候要注意，不要把要塞里面的敌人引出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕要塞的敌人吗？</p>
+          <p> </p>
+          <p>那样的话，那就继续在附近抓纽特吧。</p>
+          <p> </p>
+          <p>如果你能帮我去做那个的话，我们也会表示感谢的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，烦死我了。李埃乌斯实力是不错，不过怎么话这么多啊。</p>
+          <p> </p>          
+          <p>对了，你把[%dic:STR_DIC_M_Crohtan_Guard]都除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我本来没怎么指望你的，幸亏拜托你去了。</p>
+          <p> </p>
+          <p>多亏了你，现在部下们的士气好像提高了一点。</p>
+          <p> </p>
+          <p>希望以后你能继续来帮我们。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Crohtan_Guard]%([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Menelaus]报告结果</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让守卫们恢复士气，召集同伴，除掉克罗坦要塞的驻军，然后向梅内拉乌斯百夫长报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅内拉乌斯百夫长说自从敌人把克罗坦要塞夺走之后，部下们的士气非常低落。让我去帮他消灭敌人，提振士气。</p>
+          <p> </p>
+          <p>按照百夫长的拜托除掉了克罗坦要塞的驻军，他表示非常感谢，并让我以后继续去帮他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

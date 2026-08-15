@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你没看见我很忙吗？该死的龙族，要来就赶紧来，真是要把人逼疯了。</p>
+          <p> </p>
+          <p>你怎么一个人在那里晃悠啊？附近就是黄昏德拉纳农场，不知道有多危险。</p>
+          <p> </p>
+          <p>(上下打量)不过你的装备倒全都是最高级的。看你拿着[%mainslotitem]，应该也有点本事。</p>
+          <p> </p>
+          <p>你叫什么啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说是[%username]。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好吧，[%username]。你想为魔界办一件大事吗？</p>
+          <p> </p>
+          <p>有个名叫伊格特利斯的女学者说要对这一地区的生态进行调查，让我去搜集栖息在比斯肯沼泽里的各种鱼类。因为龙族突然发动进攻，搞得我手忙脚乱，鱼竿和抓到的鱼全都忘了拿回来了。</p>
+          <p> </p>
+          <p>我想去拿回来，但是听说龙族很快又要发动进攻了。</p>
+          <p> </p>
+          <p>你能帮我去找回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你很容易说话，我很喜欢你的这种性格。</p>
+          <p> </p>
+          <p>鱼竿应该还在沼泽里，边上还有一个带盖子的铁桶。之前钓到的鱼全都装在铁桶里，请你把它一起拿回来。</p>
+          <p> </p>
+          <p>千万别忘了！一定要把[%dic:STR_DIC_E_QUEST_21200]拿回来。</p>
+          <p> </p>
+          <p>那就辛苦你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么？我这么忙，你想让我自己去吗？</p>
+          <p> </p>
+          <p>要是龙族攻了进来，你来承担责任吗？</p>
+          <p> </p>
+          <p>算了，算了。连这种事情都做不了，看来那个[%mainslotitem]全都是唬人的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我都快忙死了。干嘛？</p>
+          <p> </p>
+          <p>啊，是[%username]啊。不好意思。</p>
+          <p> </p>
+          <p>我只顾着做事，都给忘了。我要的东西找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鱼竿和铁桶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看鱼竿)让我看看。还好没有折断。</p>
+          <p> </p>
+          <p>(打开铁桶的盖子，冲里面看了一眼)钓到的鱼也还在。</p>
+          <p> </p>
+          <p>这么多的话，应该足够研究用的了吧？</p>
+          <p> </p>
+          <p>辛苦你了，[%username]。干得好。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情没做完，干嘛又来烦我？</p>
+          <p> </p>
+          <p>我不是说了吗？我现在很忙。</p>
+          <p> </p>
+          <p>找到鱼竿和铁桶之前，请不要来烦我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_E_QUEST_21200]，然后交给[%dic:STR_DIC_N_Lucal]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">由于龙族的攻击，卢卡尔把鱼竿和装着鱼的铁桶忘在了沼泽里。帮助忙碌的卢卡尔把东西找回来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卢卡尔说他按照伊格特利斯的请求，去捕捉栖息在比斯肯沼泽里的鱼的时候，由于受到龙族的袭击，把鱼竿和鱼全都忘在了沼泽里，让我帮他把东西拿回来。</p>
+          <p> </p>
+          <p>去比斯肯沼泽把鱼竿和装着鱼的铁桶拿了回来，卢卡尔说东西好像都在。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

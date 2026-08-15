@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你一直待在这里吗？要是被人看到该怎么办啊，啧啧...</p>
+          <p> </p>
+          <p>不过正好。我需要一个人帮我去报告拯救阿特拉作战的情况，这件事就交给你吧。</p>
+          <p> </p>
+          <p>你是当事人，应该可以说明的更具体一些。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问向谁报告。</Act>
+    </Selects>
+  </HtmlPage> 
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是一个名叫[%dic:STR_DIC_N_Kushar]的人，不知道你认不认识。</p>
+          <p> </p>
+          <p>他是雷帕尔革命团研究专家，不过更多的人只知道他是糜糜尔大贤者的大徒弟。</p>
+          <p> </p>
+          <p>我向上面报告说有个名叫阿特拉的人被关在阿尔奎米亚城寨里面之后，他让我一定要救出阿特拉。(晃着钱袋)并给了我这么多的活动资金。</p>
+          <p> </p>
+          <p>看来他一定和那个名叫阿特拉的人有什么关系。</p>
+          <p> </p>
+          <p>不管怎样，你愿意去向[%dic:STR_DIC_N_Kushar]报告吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。在学者之中，他是个比较大方的人，听到这个好消息之后，一定不会让你空手而归的。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Kushar]在伏魔殿。听说他一直待在知识会堂里，请你去那里找他。</p>
+          <p> </p>
+          <p>报告的内容嘛…你比我更清楚，你自己看着办吧。</p>
+          <p> </p>
+          <p>只要告诉他是怎么把阿特拉救出来的就可以了。啊，他是革命团研究专家，如果你能把在阿尔奎米亚城寨里看到的情况告诉他，他一定会更高兴的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？又不是什么坏消息，只要告诉他阿特拉已经安全救出来了就可以了。</p>
+          <p> </p>
+          <p>如果你直接去找他，他一定会好好酬谢你的。要知道，那个库夏尔是个很大方的人。</p>
+          <p> </p>
+          <p>实在不愿意的话，我也没办法。如果你改变了主意，可以再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那天我应该把你送回家的。</p>
+          <p> </p>
+          <p>要是我把你送回家，就不会发生那样的事情了...</p>
+          <p> </p>
+          <p>(用头撞着书桌)啊，阿特拉…你还活着吗...</p>
+          <p> </p>
+          <p>啊，你有什么事吗？不好意思，我现在没什么精神，没有急事的话，你以后再来找我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告救出阿特拉的事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是真的吗？你把阿特拉从阿尔奎米亚城寨救出来了？</p>
+          <p> </p>
+          <p>呼，真是太好了。</p>
+          <p> </p>
+          <p>你叫[%username]吗？今后如果有什么需要帮忙的，请尽管来找我。我会尽我的能力帮助你的。</p>
+          <p> </p>
+          <p>啊，对了。你给我带来了这么好的消息，我不能让你空着手回去。</p>
+          <p> </p>
+          <p>请你收下。谢谢你救出了阿特拉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Kushar]报告救出阿特拉的事情。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">库夏尔在等待拯救阿特拉作战的结果。代替情报员德威前往知识会堂，向库夏尔报告结果。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>情报员德威说有个人正在等待拯救阿特拉作战的结果，问我愿不愿意直接去向他报告。</p>
+          <p> </p>
+          <p>去伏魔殿的知识会堂找到了库夏尔，得知阿特拉安然无恙之后，他终于放下了心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

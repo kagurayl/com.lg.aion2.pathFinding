@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>约定就是约定，我来把宾塔奇标准告诉你。</p>
+          <p> </p>
+          <p>不过这真的是克里顿的唾腺吗？</p>
+          <p> </p>
+          <p>你拿回来的该不是毒腺吧？</p>
+          <p> </p>
+          <p>为了以防万一，你能先尝尝吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+     <Act href="HACTION_ASK_QUEST_ACCEPT">吃下克里顿的唾液。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看脸色)呐，看你没事，应该不是毒腺。</p>
+          <p> </p>
+          <p>如果是毒腺的话，你现在已经倒下了。</p>
+          <p> </p>
+          <p>我会把宾塔奇标准告诉你，不过请稍等一下。</p>
+          <p> </p>
+          <p>因为没有文字的东西，所以我需要整理，可能需要一点时间。</p>
+          <p> </p>
+          <p>你在这里等着我，哪儿也别去。明白了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(在卷轴上仔细地写着什么。)</p>
+          <p> </p>
+          <p>(写了好长时间，然后把卷轴卷好，并封印了起来。)</p>
+          <p> </p>
+          <p>来，拿着吧。你把它交给那个叫[%dic:STR_DIC_N_Shugo_c4]还是什么的家伙吧。</p>
+          <p> </p>
+          <p>然后帮我转告他。这次是因为你，我不得已才会告诉他。以后不会有这样的好事了。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？我没有写好的东西，你想怎样！</p>
+          <p> </p>
+          <p>如果你不想等的话，就说话。</p>
+          <p> </p>
+          <p>反正遗憾的是你，而不是我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，好久不见。</p>
+          <p> </p>
+          <p>你去见监督乌蒙之后就没了消息，我还以为你已经逃走了呢。</p>
+          <p> </p>
+          <p>你回来找我，一定是打听到了些什么。乌蒙告诉你宾塔奇大人的位置了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出宾塔奇的卷轴。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？</p>
+          <p> </p>
+          <p>(打开卷轴，确认内容。)</p>
+          <p> </p>
+          <p>呐！守护者，你找到了宾塔奇大人？</p>
+          <p> </p>
+          <p>真了不起，真了不起。</p>
+          <p> </p>
+          <p>耶蒙是知道报恩的术古。拿到了这么贵重的东西，我也不能没有表示。把你的箱子给我。</p>  
+          <p> </p>
+          <p>(查看拿到的箱子，加工了一下。)</p>
+          <p> </p>
+          <p>好了，做好了。你看看吧。现在格数已经增加，可以放更多的东西了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把宾塔奇的卷轴交给[%dic:STR_DIC_N_Shugo_c4]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把写着宾塔奇标准的卷轴交给极乐世界的耶蒙。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>宾塔奇说会把约定的宾塔奇标准告诉我，让我稍等一下。然后拿出了一个卷轴，让我交给耶蒙。</p>
+          <p> </p>
+          <p>回到极乐世界把卷轴交给了耶蒙，作为报答，他帮我放大了箱子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

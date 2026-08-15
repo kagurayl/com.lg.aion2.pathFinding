@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来格尔克马洛斯的理由只有一个，那就是发现新的精灵。</p>
+          <p> </p>
+          <p>虽然之前我没有什么出色的业绩，但如果能发现龙界特有的精灵，应该会对魔族有所帮助。</p>
+          <p> </p>
+          <p>那样的话，人们对我就会另眼相待了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是格尔克马洛斯有很多危险的东西，出去寻找龙界特有的生命体会很困难。</p>
+          <p> </p>
+          <p>[%username]大人，你能帮帮我吗？</p>
+          <p> </p>
+          <p>要想发现龙界特有的精灵，必须先要找到材料。</p>
+          <p> </p>
+          <p>如果[%username]你能帮我搜集到材料，其他的事情我会自己解决。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你答应帮我。</p>
+          <p> </p>
+          <p>我需要的东西是[%dic:STR_DIC_I_QUEST_30328a]。 </p>
+          <p> </p>
+          <p>在比斯肯沼泽里，可以看到[%dic:STR_DIC_M_DF4_Cellatu_DR_54_An]和[%dic:STR_DIC_M_DF4_CellatuDR_Baby_54_An]。</p>
+          <p> </p>
+          <p>请你消灭它们，搜集不透明的鱼鳔。有了它的话，我就能召唤出龙界的水之精灵了。</p>
+          <p> </p>
+          <p>那就拜托你了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是看我是个穷老头子，所以不愿意接受我的委托吗？</p>
+          <p> </p>
+          <p>伟大的功绩不是只有英雄才能创造的！</p>
+          <p> </p>
+          <p>有时候，向我这样卑贱的人，也能做出伟大的事情。</p>
+          <p> </p>
+          <p>[%username]，你的名气很大，可能完全不能理解我在说什么吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，我正在等你。</p>
+          <p> </p>
+          <p>只要有了不透明的鱼鳔，应该就能召唤出龙界的水之精灵了。</p>
+          <p> </p>
+          <p>搜集到鱼鳔的话，快交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出不透明的鱼鳔。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，看来你对别人的事情不怎么上心啊。</p>
+          <p> </p>
+          <p>当然我是求人办事，不应该抱怨什么。</p>
+          <p> </p>
+          <p>不过如果你还有同情心的话，请你能尽量帮帮我这个老头子。</p>
+          <p> </p>
+          <p>快去比斯肯沼泽消灭[%dic:STR_DIC_M_DF4_Cellatu_DR_54_An]和[%dic:STR_DIC_M_DF4_CellatuDR_Baby_54_An]，搜集[%dic:STR_DIC_I_QUEST_30328a]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是这个。</p>
+          <p> </p>
+          <p>我得马上把精灵召唤出来。</p>
+          <p> </p>
+          <p>(双手拿着不透明的鱼鳔，念诵咒语。)嗯……为什么没有反应？这不可能……</p>
+          <p> </p>
+          <p>看来这次的尝试好像是失败了。我以为一定可以成功的呢……</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_I_QUEST_30328a]，然后交给[%dic:STR_DIC_N_Yumir]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">沃米尔说召唤龙界的精灵必须要有材料。去消灭刺块塞拉图和刺块塞拉图幼崽，搜集不透明的鱼鳔吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沃米尔说他想从龙界的生命体中召唤出精灵，但是需要材料。</p>
+          <p> </p>
+          <p>于是按照他的委托，消灭塞拉图，搜集到了不透明的鱼鳔。</p>
+          <p> </p>
+          <p>但是结果却和想象的不同，召唤水之精灵的尝试失败了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

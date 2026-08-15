@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>杜奇隆真的死了吗？</p>
+          <p> </p>
+          <p>不要吃惊。是旁边的雅达蒙那么说的。我又不是龙族，当然会听到。</p>
+          <p> </p>
+          <p>这下完蛋了。今后该怎么活啊？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说时间可以冲淡伤痛。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你在说什么啊？</p>
+          <p> </p>
+          <p>啊，你是觉得我在为杜奇隆的死而悲伤吧？</p>
+          <p> </p>
+          <p>虽然不太人道，但我并不悲伤。老实说，我和他没说过几句话，所以没什么感情。</p>
+          <p> </p>
+          <p>我之所以担心，是因为凯鲁宾的问题。如果能找到杜奇隆，就可以阻止凯鲁宾，没想到事情变成了这个样子。</p>
+          <p> </p>
+          <p>看来只有一个办法了。守护者，你能帮我把捣乱的凯鲁宾清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我很想把泰奥勃莫斯的凯鲁宾全部清除掉，但这是不可能的。请你帮我把[%dic:STR_DIC_M_DIC_M_DigCherubimL_24_n]和[%dic:STR_DIC_M_Cherubim2Wp_24_An]清除掉。</p>
+          <p> </p>
+          <p>让他们不能再来发掘处捣乱，搞得乌烟瘴气。</p>
+          <p> </p>
+          <p>哈，在太阳下站了这么久，真累啊。</p>
+          <p> </p>
+          <p>我得休息一下，那就辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道凯鲁宾多么无知吗？</p>
+          <p> </p>
+          <p>他们在发掘处胡乱挖掘，弄坏了很多文物，搞得到处都是灰尘。</p>
+          <p> </p>
+          <p>看吧。我那像丝绸一样光滑的毛，现在沾满了灰尘。</p>         
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈，交给你的事情已经完成了吧？</p>
+          <p> </p>
+          <p>嗯，这是什么味道啊？</p>
+          <p> </p>
+          <p>(捂住鼻子)该不会是从那里回来之后没有洗澡吧？</p>
+          <p> </p>
+          <p>快跟我说说结果吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这件事总算结束了。</p>
+          <p> </p>
+          <p>谢谢你。现在我不用担心灰尘问题了。</p>
+          <p> </p>
+          <p>拿着，这是你的辛苦费。</p>
+          <p> </p>
+          <p>现在事情做完了，你去好好洗一下吧。我看你的头发都粘在一起了，呼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除发掘处的凯鲁宾</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DIC_M_DigCherubimL_24_n]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Cherubim2Wp_24_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_LF2a_2]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让咕噜明可以进行发掘，必须把在发掘处胡乱挖掘，弄得到处都是灰尘的凯鲁宾宝物猎人和凯鲁宾监视者清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咕噜明问杜奇隆的死讯是不是真的，并大声叹气。</p>
+          <p> </p>
+          <p>劝他不要伤心，他说不是因为杜奇隆的死而伤心，而是因为没有人可以阻止凯鲁宾而伤心。</p>
+          <p> </p>
+          <p>他让我帮他清除凯鲁宾，让自己可以安心进行发掘工作。于是帮他清除掉了占据发掘处的凯鲁宾宝物猎人和凯鲁宾监视者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

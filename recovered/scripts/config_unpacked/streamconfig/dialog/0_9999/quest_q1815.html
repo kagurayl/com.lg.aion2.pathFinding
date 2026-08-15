@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听米内尔巴百夫长大人说，拉米兰要塞被夺走之后，魔族正在计划以此为跳板，在欧比斯各地发动总攻势。</p>
+          <p> </p>
+          <p>那样的话，我们天族会怎么样呢？如果埃雷修兰塔被魔族夺走的话，又该怎么办呢？</p>
+          <p> </p>
+          <p>不管用什么手段，都必须把要塞夺回来，扭转目前的战局！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听百夫长大人说，如果能减少驻守要塞的魔族驻军的数量的话，情况就会比现在会好得多。</p>
+          <p> </p>
+          <p>但是他们的数量很多，很难一次就给他们造成致命的打击。只有反复进行奇袭攻击，才能削弱他们的力量。</p>
+          <p> </p>
+          <p>问题是谁能去冲破敌阵...想来想去，光凭我们好像太困难了。</p>
+          <p> </p>
+          <p>怎么样，[%username]大人？您愿意为消灭[%dic:STR_DIC_M_1815_all]打头阵吗？</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有实力的人回答果然就是爽快。</p>
+          <p> </p>
+          <p>那就请你在魔族占领拉米兰要塞的时候，在进入可以占领状态之后采取行动。</p>
+          <p> </p>
+          <p>去把[%dic:STR_DIC_M_1815_all]清除掉，然后把[%dic:STR_DIC_I_QUEST_1815a]带回来。</p>
+          <p> </p>
+          <p>魔族的监视非常森严，所以行动必须要隐秘。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，面对魔族势力的扩张，您不感到害怕吗？</p>
+          <p> </p>
+          <p>要是我的话，您没说完我就会一口答应的...</p>
+          <p> </p>
+          <p>您先别这样，请您再好好想想吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您回来，[%username]大人！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_1815_all]奇袭作战成功了吗？</p>
+          <p> </p>
+          <p>拉米兰要塞周围的情况怎么样？您把[%dic:STR_DIC_I_QUEST_1815a]带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出拉米兰执政官的徽章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就比较难办了。</p>
+          <p> </p>
+          <p>不是我不相信[%username]大人，但是要向上司报告的话，就必须要有证据。</p>
+          <p> </p>
+          <p>所以请您去把[%dic:STR_DIC_I_QUEST_1815a]摘下带回来。不好意思，麻烦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我现在知道其他的人为什么要称赞[%username]大人了。</p>
+          <p> </p>
+          <p>对付魔族驻军一定很累了吧？您快去休息一下吧。这些徽章我会帮您交给米内尔巴百夫长大人的。</p>
+          <p> </p>
+          <p>啊，当然我会跟他说是[%username]大人搜集到的。请您不要担心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_1815_all]，搜集[%dic:STR_DIC_I_QUEST_1815a]，然后交给[%dic:STR_DIC_N_Sarpedon]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">天族躲回了要塞之后，一直采取守势。在可以占领状态下清除魔族驻军，阻止他们的总攻势。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沙尔佩顿说拉米兰要塞被夺走之后，魔族正在准备展开总攻，让我为阻止魔族的攻势而贡献一份力量。</p>
+          <p> </p>
+          <p>按照他的请求除掉了魔族驻军，把搜集到的徽章交给了他。他说他会代我向百夫长报告，让我去休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

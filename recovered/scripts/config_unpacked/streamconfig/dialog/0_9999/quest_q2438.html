@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为雾鬃的那些家伙，现在都不能出去打猎，咳昂。</p>
+          <p> </p>
+          <p>所以本来粮食情况就很紧张。现在又有剑齿豹，问题就变得更多了。</p>
+          <p> </p>
+          <p>每次我们出去打猎的时候，它们就会进行妨碍，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以如果你能帮我们除掉一些的话就好了，咳昂。</p>
+          <p> </p>
+          <p>我们因为雾鬃部族而不能随便出去。</p>
+          <p> </p>
+          <p>可以吗，咳嗬？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>过了两座桥之后，那里有很多剑齿豹。</p>
+          <p> </p>
+          <p>请你帮我们把[%dic:STR_DIC_M_KalnifNmD_37_An]和[%dic:STR_DIC_M_KalnifD_37_An]清除掉，咳昂！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次打猎的时候，还得和剑齿豹战斗。</p>
+          <p> </p>
+          <p>它们的皮很坚硬，所以很难对付，而且腥臭味也很重，咳昂！</p>
+          <p> </p>
+          <p>即使抓到了，也是白费力气，又不能吃。</p>
+          <p> </p>
+          <p>所以，为了我们银鬃部族，请你再想一想。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把妨碍打猎的剑齿豹除掉了吗，咳昂？</p>
+          <p> </p>
+          <p>跟我说说怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，咳昂咳昂！</p>
+          <p> </p>
+          <p>这下打猎的时候，不会因为剑齿豹而让猎物逃走了。</p>
+          <p> </p>
+          <p>谢谢你帮助我们银鬃部族，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除妨碍打猎的剑齿豹</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KalnifNmD_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KalnifD_37_An]([%5]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF2_NPC_Kuriuta]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说剑齿豹妨碍了银鬃部族打猎。最好帮他们把剑齿豹清除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>库里乌塔说剑齿豹会在打猎的时候造成妨碍，他们为此很头疼。</p>
+          <p> </p>
+          <p>于是帮助他们清除了剑齿豹，他表示感谢，说这下打猎变容易了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

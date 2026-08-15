@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还是为你是出色的[%userclass]呢，没想到你在裁缝方面还有一手。</p>
+          <p> </p>
+          <p>这种程度的手艺的话，即使去制作供奉给主神的贡品也毫不逊色。</p>
+          <p> </p>
+          <p>好了，[%username]！我可以拜托你一件事情吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>实际上，这件长袍是委托欧比斯的米诺恩做的。</p>
+          <p> </p>
+          <p>是有个老客户委托他修补的，但是他说以他的手艺做不了。</p>
+          <p> </p>
+          <p>你修补得这样好。怎么样，愿意直接给他送过去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去一趟可不容易，谢谢你这么爽快地答应。</p>
+          <p> </p>
+          <p>米诺恩应该已经在等了，你马上出发吧。</p>
+          <p> </p>
+          <p>那就拜托你了。愿光明引导你！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你是有什么事情吧？那就没办法了。</p>
+          <p> </p>
+          <p>但是如果你以后改变了主意，请你再来找我。</p>
+          <p> </p>
+          <p>我会等着你的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+ 
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没有你喜欢的东西吗？不好意思，现在的这些是我尽最大努力做出来的。</p>
+          <p> </p>
+          <p>即使你去欧比斯的其他地方，应该也不会有太大的差别。</p>
+          <p> </p>
+          <p>如果觉得还可以的话，您就在里面挑两件吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出修好的长袍。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，是达普尼斯大人让您来的啊。</p>
+          <p> </p>
+          <p>哇，这真的是我的长袍吗？真的像新的一样！</p>
+          <p> </p>
+          <p>啊，不好意思让你久等了。修补的手艺太好了，我都忘了[%username]大人您还在这儿呢。</p>
+          <p> </p>
+          <p>谢谢您把东西送到这么远的地方来。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去埃雷修兰塔把修好的长袍交给[%dic:STR_DIC_N_Minon]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把达普尼斯给的长袍下衣交给埃雷修兰塔的特米伦据点的防具商人米诺恩。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>达普尼斯说有件东西需要马上送给特米伦据点的米诺恩，让我帮他去做这件事情。</p>
+          <p> </p>
+          <p>把达普尼斯给的修好的露西长袍下衣交给了米诺恩，他表示感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

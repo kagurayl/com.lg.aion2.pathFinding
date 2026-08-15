@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来我的任务不是对付亚人种，但是在这里不可能不留心冰脚莱卡恩。</p>
+          <p> </p>
+          <p>实体竟然落入了亚人种手中...</p>
+          <p> </p>
+          <p>什么时候一定要把实体从它们的手上抢回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是实体的守护者在守护着它们，所以要抢回来并不容易。</p>
+          <p> </p>
+          <p>所以首先必须削弱冰脚莱卡恩的实力。</p>
+          <p> </p>
+          <p>使敌人变弱的方法有很多种，但是用最少的力量取得大的成果的，是心理战。</p>
+          <p> </p>
+          <p>可以通过持续地向它们施加压力，让它们自取灭亡。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因此我进行了调查，发现冰脚莱卡恩有很多象征物。</p>
+          <p> </p>
+          <p>其中它们认为最重要的是旗帜。</p>
+          <p> </p>
+          <p>它们的房子之间插满了旗帜，好象是象征着繁荣和丰裕。</p>
+          <p> </p>
+          <p>如果能把[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344]破坏掉的话，就会给整个部族造成巨大的心里打击。</p>
+          <p> </p>
+          <p>你愿意执行这个任务吗，[%username]？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你立刻跑步到[%dic:STR_DIC_W_DF2_SUB_B4]去。</p>
+          <p> </p>
+          <p>然后把它们房子之间的[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344]破坏掉。</p>
+          <p> </p>
+          <p>只要破坏掉5个左右的话，就能给它们造成巨大的打击。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你觉得实体掌握在莱卡恩手里不是什么大事了？</p>
+          <p> </p>
+          <p>身为魔族和守护者的自尊心都上哪儿去了呢？</p>
+          <p> </p>
+          <p>你还活的真是够潇洒！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在想还有什么方法可以给冰脚莱卡恩造成打击。</p>
+          <p> </p>
+          <p>必须逐步收紧脖子上的绳套，把它们逼上绝路。 </p>
+          <p> </p>
+          <p>对了，[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344]全都破坏掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈哈！做得太好了，[%username]。</p>
+          <p> </p>
+          <p>想到它们不知所措的样子，我都要忍不住笑出来了。</p>
+          <p> </p>
+          <p>来，这是辛苦的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">破坏[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Tofa]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">破坏冰脚莱卡恩象征繁荣和丰裕的冰脚旗帜。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>托帕说必须打击掌握实体的冰脚莱卡恩的气焰。</p>
+          <p> </p>
+          <p>于是按照他的拜托，去冰脚部落破坏了象征繁荣和丰裕的旗帜。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请进！</p>
+          <p> </p>
+          <p>作为剑星，你有没有好好磨练自己的实力？</p>
+          <p> </p>
+          <p>如果是战士，培养自己的胆量和物理攻击力是当务之急。</p>
+          <p> </p>
+          <p>优秀的剑星，能够如行云流水一般流畅地使用各种技能，发动猛烈的攻击。</p>
+          <p> </p>
+          <p>要做到这一点，就得将技能烂熟于心，达到浑然一体的境界才行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我给你个任务吧，顺便考察考察你这段时间以来的实力长进，怎么样？</p>
+          <p> </p>
+          <p>任务是对[%dic:STR_DIC_E_DP_Fi]进行10次反复练习。这个技能对剑星的攻击和撤退速度有很高的要求。</p>
+          <p> </p>
+          <p>你要是一名有实力的剑星，自然能顺利完成任务。要是实力不够，就把这次任务当作是熟练自己技能的好机会吧。</p>
+          <p> </p>
+          <p>怎么样，要不要挑战一下？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从你的回答中，我感到了一丝霸气。</p>
+          <p> </p>
+          <p>这很好。不过我要提醒你，没有足够的毅力和耐心，是不能很好地完成任务的。</p>
+          <p> </p>
+          <p>好在有能够补充神圣力的果冻，必要时使用应该能对你有所帮助。</p>
+          <p> </p>
+          <p>我怕你中途会放弃，先忠告你一句，要成为优秀的剑星可不是那么容易的。</p>
+          <p> </p>
+          <p>不过，一旦你到达那个境界后，你就会觉得眼前的世界豁然开朗了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>既然你说自己没准备好，我也无话可说。</p>
+          <p> </p>
+          <p>毕竟不能拔苗助长，等你磨练磨练再来吧。</p>
+          <p> </p>
+          <p>冰冻三尺非一日之寒，这种事情不能心急的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看你那表情就知道有好消息了。</p>
+          <p> </p>
+          <p>上次交给你的任务已经顺利完成了？</p>
+          <p> </p>
+          <p>很好，你已经熟悉了[%dic:STR_DIC_E_DP_Fi]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很不错，很棒。</p>
+          <p> </p>
+          <p>既然你已经完成任务，就没有必要在我面前再演示了。</p>
+          <p> </p>
+          <p>突然想起了你当初选择当剑星时的样子。很有灵性的脸上写满了紧张。</p>
+          <p> </p>
+          <p>希望你能继续磨练自己，成为一名优秀的天族战士。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_E_DP_Fi]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向剑星和守护星的老师[%dic:STR_DIC_N_Boreas]报告</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">完成布雷亚斯给的任务，并回去报告。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布雷亚斯要确认我作为剑星的实力，给了我一个任务，要使用10次突进姿态 I。</p>
+          <p> </p>
+          <p>完成任务，向布雷亚斯报告，他给了我礼物以示鼓励，并希望我能继续磨练自己。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

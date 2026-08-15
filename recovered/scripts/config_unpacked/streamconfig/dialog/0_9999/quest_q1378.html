@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您现在忙吗？</p>
+          <p> </p>
+          <p>有一件紧急的事情...</p>
+          <p> </p>
+          <p>如果[%username]大人您不忙的话，我想请您帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须马上把补给品给火山地带前哨基地送过去，但是却找不到合适的人。</p>
+          <p> </p>
+          <p>我和贝拉莫内斯需要守护村子，无法离开自己的岗位。但让自卫团去的话就太让人不放心了。</p>
+          <p> </p>
+          <p>我们不能把人类派到特洛尔和雷帕尔革命团出没的地方。</p>
+          <p> </p>
+          <p>所以，[%username]大人您能帮帮忙吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。这下我就少了一桩心事。</p>
+          <p> </p>
+          <p>事实上，东西早在几天之前就应该送过去了。</p>
+          <p> </p>
+          <p>来，请您拿好。分量要比看起来的重得多，请您一定要小心。</p>
+          <p> </p>
+          <p>您只要把它交给[%dic:STR_DIC_N_Hylas]就行。他们现在一定在焦急地等待，请您马上出发吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这可怎么办呢。之前送去的补给品差不多应该已经用完了。</p>
+          <p> </p>
+          <p>守护者虽然饿不死，但是只有吃饱肚子才能好好干活，不是吗？</p>
+          <p> </p>
+          <p>我知道了。您要是忙的话就没办法了。看来得我自己抽时间去一趟了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？你到这种偏僻的地方来有什么事吗？</p>
+          <p> </p>
+          <p>你不会是来这里找老婆的吧？</p>
+          <p> </p>
+          <p>哎呀，别那样皱眉头嘛。</p>
+          <p> </p>
+          <p>我实在开玩笑，玩笑。哈哈哈！</p>
+          <p> </p>
+          <p>(收起了笑容，正色地说)好了，你来这里到底有什么事？</p>
+          <p> </p>
+          <p>这里不是来玩的地方。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出补给品包裹。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，原来是送补给品来的啊。</p>
+          <p> </p>
+          <p>对不起，我没认出来。</p>
+          <p> </p>
+          <p>正好粮食都吃光了，我正在犯愁呢。</p>
+          <p> </p>
+          <p>真是谢谢您。一路上一定很辛苦，请您收下这个。虽然不多，但却是我的心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把补给品送去交给[%dic:STR_DIC_N_Hylas]</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">必须到火山地带前哨基地去把阿尔凯尔的补给品交给希尔拉斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔凯尔说必须要把补给品送到火山地带前哨基地去，但是苦于没有合适的人选。</p>
+          <p> </p>
+          <p>把补给品包裹交给了野营地的希尔拉斯之后，他表示非常感谢，并给了谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

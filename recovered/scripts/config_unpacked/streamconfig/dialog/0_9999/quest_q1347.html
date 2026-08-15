@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃尔特内是有着很多奇迹的地方。</p>
+          <p> </p>
+          <p>有不知道用途的巨大的地下神殿，还有很多个实体。</p>
+          <p> </p>
+          <p>不仅如此。还有很多来历不明的奇怪的动物。如果你看到过纽特的话，说明起来就会比较容易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看上去虽然像是没有任何思想的甲壳类动物，但其实却很聪明。</p>
+          <p> </p>
+          <p>观察它们的行动，有时候可以感觉它们是有目的和意识的。而且根据情况，有时也会进行团体行动。</p>
+          <p> </p>
+          <p>总之它们不是一般的甲壳类动物。</p>
+          <p> </p>
+          <p>不过这样就更让人头疼了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近它们开始袭击我们前哨基地。</p>
+          <p> </p>
+          <p>而是趁着我们吃饭或者换岗这种防备比较松懈的时间。</p>
+          <p> </p>
+          <p>虽然很让人头疼，但是因为要做的事情很多，所以无法安排人力去把它们清除掉。</p>
+          <p> </p>
+          <p>你能帮我去把它们除掉吗？</p>
+          <p> </p>
+          <p>如果可以的话，就帮了我的大忙了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那你就去把[%dic:STR_DIC_M_NeutL1_30_An]和[%dic:STR_DIC_M_NeutL1_32_An]除掉。</p>
+          <p> </p>
+          <p>它们是有智能的动物，这样的话一段时间就不敢再来前哨基地了。</p>
+          <p> </p>
+          <p>埃拉库斯沙漠上最多的就是纽特，所以应该不难找到它们。</p>
+          <p> </p>
+          <p>完成任务之后，你去向特里利安报告。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Trillian]负责和纽特有关的事情，所以以后凡是和纽特有关的任务，请你接受他的指示。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕甲壳类吗？</p>
+          <p> </p>
+          <p>不管它们的智能有多高，动物毕竟只是动物。</p>
+          <p> </p>
+          <p>不知道你是不是有要塞队长下达的任务要做，如果不是那样的话，就请你不要拒绝我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您来啦。</p>
+          <p> </p>
+          <p>我从卡斯特罗军团长大人那里听说了。</p>
+          <p> </p>
+          <p>您接下了清除纽特的任务。</p>
+          <p> </p>
+          <p>任务完成了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话，纽特暂时应该不会袭击驻地了。</p>
+          <p> </p>
+          <p>谢谢您，您做得真不错。</p>
+          <p> </p>
+          <p>派遣到驻地这儿来的人手确实太少了。看来以后拜托您的事情还有很多。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉袭击驻地的纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1_30_An]([%2]/15)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_NeutL1_32_An]([%5]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Trillian]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除袭击金刺军图驻地的纽特工人和纽特收集者。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>金刺军团军团长卡斯特罗说袭击驻地的纽特工人和纽特采集工很让人头疼。</p>
+          <p> </p>
+          <p>于是清除了纽特之后去向特里利安报告，他说以后还会交给我其他的任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

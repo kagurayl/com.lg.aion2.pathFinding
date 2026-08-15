@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您就是搜集到龙族防具的那个人吗？</p>
+          <p> </p>
+          <p>我听塞普希说过了。</p>
+          <p> </p>
+          <p>其实那个防具，就在我这里。</p>
+          <p> </p>
+          <p>因为有重要的用途，所以我要了一套。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问用途。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，我是想教训教训一个人。</p>
+          <p> </p>
+          <p>他曾经是我的上司，经常折磨我。</p>
+          <p> </p>
+          <p>要说起来，我到格尔克马洛斯来，也是他的诡计。</p>
+          <p> </p>
+          <p>详细的事情以后再告诉您……怎么样？您愿意帮我报仇吗？</p>
+          <p> </p>
+          <p>您只要穿着龙族的防具，去吓吓他就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想到在这里这么辛苦，我就觉得很冤枉。</p>
+          <p> </p>
+          <p>只要我一说话，他就会把我骂个狗血淋头。因此推荐派往格尔克马洛斯的守护者的时候，他把我的名字写了上去！</p>
+          <p> </p>
+          <p>(拿出什么东西)这是龙族的盾牌。装上去之后，看起来就很像一个龙族了。</p>
+          <p> </p>
+          <p>您穿着它去和[%dic:STR_DIC_N_Soudan]说话。呵呵，他一定会被吓死的。</p>
+          <p> </p>
+          <p>对了！不能让伏魔殿守备队发现，所以请您靠近一点之后再穿上去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得我这么做很幼稚吧？</p>
+          <p> </p>
+          <p>但是如果可以的话，我会做这种事情吗？</p>
+          <p> </p>
+          <p>我不知道怎么得罪了他，事事都要和我作对。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临。怎么样了？</p>
+          <p> </p>
+          <p>吓到苏乌丹了吗？</p>
+          <p> </p>
+          <p>看到伏魔殿有龙族出现，他有没有被吓死？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈哈哈哈，可惜没能亲眼看到。</p>
+          <p> </p>
+          <p>不过仅是听听就觉得很痛快了。</p>
+          <p> </p>
+          <p>他一定想不到是我让你过去的吧？</p>
+          <p> </p>
+          <p>被他发现了的话，不知道又会怎么折磨我了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在[%dic:STR_DIC_N_Soudan]附近穿上龙族的防具</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Soudan]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Boleyn]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">布雷恩说苏乌丹事事都针对自己，他想向他报复。帮助布雷恩报仇吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>布雷恩说自己过去的上司事事都要和自己作对，因此想向苏乌丹复仇。</p>
+          <p> </p>
+          <p>穿上龙族的防具，找到了苏乌丹，把他吓了一跳。回去之后，布雷恩说很痛快。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

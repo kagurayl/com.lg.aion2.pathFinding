@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您来的正好，我刚好需要[%username]大人您的帮助。</p>
+          <p> </p>
+          <p>过一会儿就会有补给品到达，但是守卫有很多德雷克活动，所以我很担心。</p>
+          <p> </p>
+          <p>补给品有可能被它们在途中抢走。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>而且这次补给品的事情是由我在负责，我不希望出现什么问题。</p>
+          <p> </p>
+          <p>所以这次的事情，我希望[%username]大人能帮帮我。</p>
+          <p> </p>
+          <p>作为代价，我会给您很丰厚的辛苦费。</p>
+          <p> </p>
+          <p>[%username]大人要做的，就是清除周围的[%dic:STR_DIC_M_Ab1_1241_drake_38_An]和[%dic:STR_DIC_M_Ab1_1241_drakeB_38_An]，为输送补给品开辟安全的道路。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好了，没时间了，请您马上出发吧。</p>
+          <p> </p>
+          <p>请您把拉米兰岛上的[%dic:STR_DIC_M_Ab1_1241_drake_38_An]和[%dic:STR_DIC_M_Ab1_1241_drakeB_38_An]全部清除掉。</p>
+          <p> </p>
+          <p>之前您也捕捉过不少的德雷克，详细的说明我就不和您说了。</p>
+          <p> </p>
+          <p>啊，事情办完之后，请您马上回来告诉我。因为我得接着做后面的事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>唉，我还以为都是天族，会说得通呢...</p>
+          <p> </p>
+          <p>如果不能按时收到补给品的话，攻城战也会遇到困难。</p>
+          <p> </p>
+          <p>算了。反正有很多人愿意帮我。</p>
+          <p> </p>
+          <p>不好意思，我得去找找别的人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听到要塞外传来了嘈杂的声音，您把[%dic:STR_DIC_M_Ab1_1241_drake_38_An]和[%dic:STR_DIC_M_Ab1_1241_drakeB_38_An]全部清除掉了吗？</p>
+          <p> </p>
+          <p>只有确认您是否把事情办好了，我才能把说好的谢礼给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情完成得不错。</p>
+          <p> </p>
+          <p>不过怎么办呢？[%username]大人出去的时候，他们改变了输送补给品的道路，补给品从其他道路安全地送到了。</p>
+          <p> </p>
+          <p>啊，您不要担心，说好的谢礼我会给您的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉拉米兰岛上的德雷克</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1241_drake_38_An]([%2]/9)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1241_drakeB_38_An]([%5]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Metis]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">美提斯担心要塞周围的德雷克会妨碍补给品的输送。帮助他清除德雷克，开辟补给品输送通道吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>美提斯让我帮他清除德雷克，为补给品的输送开辟安全的通道。</p>
+          <p> </p>
+          <p>他说在我清除德雷克的时候，输送的道路改变了，但是不管怎样，他还是把谢礼给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

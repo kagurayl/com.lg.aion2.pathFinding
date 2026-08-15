@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>关于拉斯贝尔格问题，佩兰托军团长下达了指示。</p>
+          <p> </p>
+          <p>命令从和不死族对峙的区域开始消灭他们。</p>
+          <p> </p>
+          <p>军团长还命令说，除了和龙族对峙的区域外，其他区域的守卫都要尽全力支援。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>帕尔塞塔村的情况比较特殊。</p>
+          <p> </p>
+          <p>虽然我们现在是遭遇了不死族，可是村里几乎没有守卫，只有西风的守护者和椰林。</p>
+          <p> </p>
+          <p>所以非常需要他们的帮助。</p>
+          <p> </p>
+          <p>我已经向西风的守护者请求帮助了。</p>
+          <p> </p>
+          <p>所以请[%username]大人去见[%dic:STR_DIC_N_Tree_Nomove_Trajanus]，请求椰林的援助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人为了椰林族做了很多事，他们应该不会拒绝您的。</p>
+          <p> </p>
+          <p>您只要去转达佩兰托大人的意思，并请求他们尽最大能力支援我们就可以了。</p>
+          <p> </p>
+          <p>如果和不死族展开全面战斗，椰林族也会受到影响的，所以他们肯定会帮助我们的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这不是什么难事，您却拒绝了。</p>
+          <p> </p>
+          <p>您是否与椰林族结过仇怨呢？如果没有应该不会拒绝这种事啊...</p>
+          <p> </p>
+          <p>既然您拒绝了，我也不好强求。以后我自己去说吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>威胁椰林族的敌人有很多。</p>
+          <p> </p>
+          <p>必须要坚守帕塞尔塔，椰林和森林。</p>
+          <p> </p>
+          <p>我们已经麻烦了你太多次，可是以后可能会麻烦到你更多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达兰斯的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>椰林也会和威胁到帕塞尔塔和椰林的不死族战斗的。</p>
+          <p> </p>
+          <p>可是要全力战斗也有一定难度。</p>
+          <p> </p>
+          <p>即便如此我们也会尽全力帮忙的。尽椰林之所能。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Tree_Nomove_Trajanus]转达椰林的话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要塞军团长佩兰托宣布要和不死族展开全面战役。去找图拉真，请椰林族也参与到其中来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兰斯说最近军团长佩兰托宣布要展开和不死族的全面战斗。但是村里没有守卫，请求你去拜托椰林参与到战斗中来。</p>
+          <p> </p>
+          <p>去找了图拉真，说明了情况，他答应帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

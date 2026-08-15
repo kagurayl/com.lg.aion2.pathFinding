@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>在凯西内尔主神的恩宠和众多守护者的努力下，我们终于在英吉斯温站稳了脚跟。</p>
+          <p> </p>
+          <p>最大的问题奥德问题也通过永恒之塔碎片和欧柏利斯克解决了，现在终于可以放手进行下一阶段的准备了。</p>
+          <p> </p>
+          <p>那就是建造英吉斯温结界塔。</p>
+          <p> </p>
+          <p>我们已经派遣了几个会员去寻找建造结界塔的地点，请你去确认一下情况。</p>
+          <p> </p>
+          <p>请你先去见见英吉斯温前哨基地的[%dic:STR_DIC_N_Iaetia]，了解一下目前的情况，然后向[%dic:STR_DIC_E_35021]报告。</p>
+          <p> </p>
+          <p>请记住。行动要迅速！嘴巴要紧！ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的时候没有人跟踪吧？</p>
+          <p> </p>
+          <p>这里是魔界，不用担心被雷帕尔革命团的人跟踪，但是据说偶尔有魔族出现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说明情况。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>接到指示之后，我们进行了调查，以现在的情况，好像还没办法在这里建造结界塔。</p>
+          <p> </p>
+          <p>虽然这里离幻影要塞很近，而且旁边就有欧柏利斯克，因此奥德的含量比较丰富，但这里曾经是龙族的要塞……</p>
+          <p> </p>
+          <p>在德拉纳的气息完全消失之前，恐怕很难建造起结界塔。</p>
+          <p> </p>
+          <p>(向身后瞟了一眼)我要说的就是这些，你走吧。代理人大人非常讨厌有人在执行任务的时候聊天。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在龙界见到守护会的同志，真让人高兴。</p>
+          <p> </p>
+          <p>您去见过伊爱提亚百夫长了吗？</p>
+          <p> </p>
+          <p>他是怎么说的呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达伊爱提亚的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不出我所料。现在还无法在英吉斯温前哨基地建造结界塔。</p>
+          <p> </p>
+          <p>因为在幻影制造出来的要塞里面，还有很多龙族的痕迹。</p>
+          <p> </p>
+          <p>在那种不纯洁的地方，是无法设置神圣的结界塔的。</p>
+          <p> </p>
+          <p>真是辛苦您了。我会如实向上面报告的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Iaetia]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_E_35021]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从神圣守护会那里接到了委托书。按照指示执行。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>神圣守护会说到了在英吉斯温寻找建造结界塔的地点的时候了，让我去英吉斯温前哨基地见见伊爱提亚，确认一下那里的情况。</p>
+          <p> </p>
+          <p>见到伊爱提亚之后，询问前哨基地的情况。她说以目前的情况来看，还无法建造结界塔。回去告诉了英吉斯温支部负责人之后，他说会向上面如实报告。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

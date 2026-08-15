@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>红鬃洞穴村的粮食供应总是不足。</p>
+          <p> </p>
+          <p>由于土地封冻，耕种根本不可能进行。</p>
+          <p></p>
+          <p>粮食主要依靠从伏魔殿送来的一些补给品和通过狩猎获得的肉类。</p>
+          <p> </p>
+          <p>塔鲁和高尔干等动物的肉既含有丰富的脂肪，味道也不错，大家都很喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+ 
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可情况正变得越来越糟糕。最近，塔鲁和高尔干的数量日渐稀少。</p>
+          <p> </p>
+          <p>经过调查，栖息在贝鲁斯兰的屋顶上的皮尤力也在猎食塔鲁和高尔干。</p>
+          <p> </p>
+          <p>虽然我不太想因为争夺食物而和皮尤力战斗，但眼下不是考虑颜面的时候。</p>
+          <p> </p>
+          <p>艰苦的战斗持续不断。这个时候，没有什么能比连饭也吃不饱更悲惨的事情了，不是吗？</p>
+          <p> </p>          
+          <p>不知道您能不能帮助我们消灭那些争抢粮食的皮尤力？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您能够这样想真是太好了。</p>
+          <p> </p>
+          <p>那么，请即刻动身去贝鲁斯兰的屋顶消灭 [%dic:STR_DIC_M_HarpyD_41_An]和 [%dic:STR_DIC_M_HarpyReD_41_An]吧。</p>
+          <p> </p>
+          <p>战果自然是越多越好。</p>
+          <p> </p>
+          <p>随着它们数量的减少，我们的粮食供应才能慢慢好转。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在战场上，最重要的武器就是粮食。</p>
+          <p> </p>
+          <p>一旦粮食补给跟不上，那几乎就等于输掉整场战争。</p>
+          <p> </p>
+          <p>拜托了。请帮助我们吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们德拉坎惩罚者军团的人饭量都很大，确是事实。</p>
+          <p> </p>
+          <p>不过呢，任务也会完成得非常出色，这也无可争辩。</p>
+          <p> </p>
+          <p>但如果将我们到来后，塔鲁和高尔干的数量减少归结为饭量大显然是不合理的。完全是误会！而原因就出在皮尤力身上。</p>
+          <p> </p>
+          <p>啊，事情办的怎么样了？皮尤力已经被消灭了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我预想的要快很多。</p>
+          <p> </p>
+          <p>虽然这次打击还不能让它们完全放弃猎食塔鲁和高尔干，不过一段时间内，我们的粮食供给应该能跟上了。</p>
+          <p> </p>
+          <p>这一切都是您的功劳。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭皮尤力搜索者和皮尤力冷气猎手。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_HarpyD_41_An]([%2]/12)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_HarpyReD_41_An]([%5]/6)</font></p></step>  
+               <step><p visible="[%15]"><font color="[%16]">与[%dic:STR_DIC_N_Bowen]对话。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了保护红鬃洞穴村主要的粮食来源，消灭皮尤力搜索者和皮尤力冷气猎手。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>波文称，作为洞穴村主要粮食来源的塔鲁和高尔干越来越少。原因是皮尤力加入了争夺食物的行列。</p>
+          <p> </p>
+          <p>接受委托，消灭了皮尤力搜索者和皮尤力冷气猎手。对此，波文表示感谢，并馈赠礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

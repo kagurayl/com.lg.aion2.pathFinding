@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏通缉 - </p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An]因犯以下罪状，现悬赏通缉。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An]</p>
+          <p></p>
+          <p> 2. 罪行：连环杀人</p>
+          <p></p>
+          <p> 3. 详情：在天界屠杀无辜难民，逃亡龙界。操纵忧郁的鲁萨尔卡，现在仍然在继续连环杀人。</p>
+          <p> </p>
+          <p>提供和畏罪潜逃的[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An]的下落有关的决定性情报，或直接将其杀死的人，将得到重谢。</p>
+          <p> </p>
+          <p>"- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上"</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我很久以前就在赏金猎人公会工作了，让人吃惊的是，每天的事情一件接着一件。</p>
+          <p> </p>
+          <p>更让人吃惊的是，每天都有很多处理完此类事件的人来找我。</p>
+          <p> </p>
+          <p>今天您是因为什么事来找我呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您竟然消灭了[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An]，真让人吃惊。</p>
+          <p> </p>
+          <p>它是个非常残忍的家伙。它在天界屠杀了大量的难民，因为事情太让人震惊，所以很多人都不愿意提起它的名字。</p>
+          <p> </p>
+          <p>逃亡龙界之后，它操纵着鲁萨尔卡，继续四处杀人。</p>
+          <p> </p>
+          <p>太阳下山之后，除了守卫精锐兵，所有的人都不敢到要塞外面去。您应该知道有多严重了吧？</p>
+          <p> </p>
+          <p>辛苦您了。希望您继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭潜逃中的连环杀人犯[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_36500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>消灭了在天界屠杀无辜难民后逃亡到龙界的逃亡者皮亚坎特之后，向英吉斯温赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

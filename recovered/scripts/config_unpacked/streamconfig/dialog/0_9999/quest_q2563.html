@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么样，[%username]？您不觉得气氛好像有点不同了吗？</p>
+          <p> </p>
+          <p>多亏您帮我除掉了基侬加夫的幽灵，重建工作终于可以开始了。</p>
+          <p> </p>
+          <p>看来您好像不知道啊。哈哈哈，没关系。</p>
+          <p> </p>
+          <p>城市规模本来就很大，不是知情的人的话，很难发现有什么变化。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问重建方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在还处于初级阶段，我们正在使用火焰魔法阵加热这里的空气。</p>
+          <p> </p>
+          <p>也有人直接进行加热，但那是因为他们什么都不懂。</p>
+          <p> </p>
+          <p>那种方法不知道效果如何，但危险性却很大。由于高温，可能会伤及城市的遗迹，引起建筑的崩溃。</p>
+          <p> </p>
+          <p>必须这样逐步地提高大气的温度，慢慢地把冰融化掉才行。当然时间可能会久一些。</p>
+          <p> </p>
+          <p>但是火焰魔法阵的力量好像没有想象中的那么大，因此我很担心。可能是由于周围的气温太低，即使召唤出火焰魔法阵，效果也很差。</p>
+          <p> </p>
+          <p>在这里三个人合力才能召唤出来的魔法阵，在其他地方一个人就能召唤出比它更大的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得其中一定有什么原因，所以和之前在这里工作的火花的守护者取得了联系，得知了一个意外的事实。</p>
+          <p> </p>
+          <p>神官艾杰基艾尔的幽灵会在重要的瞬间出现，把火焰魔法阵消除掉。</p>
+          <p> </p>
+          <p>不知道曾经掌管基侬加夫的神官为什么要妨碍城市的重建，但我们必须阻止她。</p>
+          <p> </p>
+          <p>[%username]，这件事能交给您吗？您有对付基侬加夫幽灵的经验，应该不会太困难。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说神官艾杰基艾尔有一个名叫[%dic:STR_DIC_I_QUEST_2563a]的球，球里会散发出寒冷的气息。</p>
+          <p> </p>
+          <p>从能破坏掉火焰魔法阵来看，好像拥有很强的力量。</p>
+          <p> </p>
+          <p>我们不能让她继续使用那么危险的东西。把[%dic:STR_DIC_M_UndeadDarkWiNamedDQ_38_An]送回奥德的流动之后，请您把冷气之宝珠带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？我知道您也很忙。您的能力那么强，一定有很多事情要您去做。</p>
+          <p> </p>
+          <p>但是请您体谅一下我的心情。</p>
+          <p> </p>
+          <p>您看看周围。难道您想让因为要召唤魔法阵而累得精疲力尽的布里阿纳和塔皮去吗？还是让咳个不停的昂文和滑头的格伊罗德去？</p>
+          <p> </p>
+          <p>现在可以相信的人，只有[%username]你一个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对不起，请稍等一下。</p>
+          <p> </p>
+          <p>(擦了擦额头)啊，好累啊。用尽全身的力气，还只能做到这种程度。用不了多久，魔法阵可能就会消失。</p>
+          <p> </p>
+          <p>现在可以期待的，就是除掉冷气之宝珠。那件事办得怎么样了？您除掉[%dic:STR_DIC_M_UndeadDarkWiNamedDQ_38_An]，把宝珠带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出冷气之宝珠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，看来还没有。也是，能够拥有冷气之宝珠，[%dic:STR_DIC_M_UndeadDarkWiNamedDQ_38_An]一定也不是普通人物。</p>
+          <p> </p>
+          <p>不过您最好快点。</p>
+          <p> </p>
+          <p>我们的力量已经差不多用完了，应该支撑不了太久。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是宝珠吗？怎么说呢，好像有点特别。</p>
+          <p> </p>
+          <p>我生平见过很多宝物，但给人这种感觉的还是第一个。</p>
+          <p> </p>
+          <p>这种东西，怎么会落入艾杰基艾尔的手中的呢？不过过去基侬加夫是个魔法物品非常发达的地区，所以也并是不太奇怪。</p>
+          <p> </p>
+          <p>我最好把它送到伏魔殿去研究一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把[%dic:STR_DIC_M_UndeadDarkWiNamedDQ_38_An]身上的宝珠交给[%dic:STR_DIC_N_Kistenian]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">由于神官艾杰基艾尔的妨碍，火焰魔法阵正在失去力量。除掉艾杰基艾尔，抢夺冷气之宝珠，然后交给火花的守护者吉斯泰尼安。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>吉斯泰尼安说火焰魔法阵的力量正在变弱，原因好像是由于神官艾杰基艾尔的妨碍。</p>
+          <p> </p>
+          <p>他说把冷气之宝珠抢回来，问题就会解决。于是将艾杰基艾尔送回了奥德的流动，把冷气之宝珠交给了吉斯泰尼安。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

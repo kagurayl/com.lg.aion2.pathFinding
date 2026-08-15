@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(一个小宝石箱子。)</p>
+          <p> </p>
+          <p>(好像是谁丢失的东西。)</p>
+          <p> </p>
+          <p>(不知道里面装的是什么。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">打开盖子看看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(是个刻着女人侧脸的吊坠。)</p>
+          <p> </p>
+          <p>(看上去像是有些来历的东西。)</p>
+          <p> </p>
+          <p>(最好能找到东西的主人。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(罗达斯应该看到了这是谁丢下的。)</p>
+          <p> </p>
+          <p>(看来得去[%dic:STR_DIC_N_Tree_NoMove_Lodas]那里问一下。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿着去的话，也许箱子的主人回来会找不到。)</p>
+          <p> </p>
+          <p>(应该把箱子放在原地过去。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚才一直在看它，那只箱子。</p>
+          <p> </p>
+          <p>昨天我还没有见到它。</p>
+          <p> </p>
+          <p>里面是什么呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">说里面装着一个吊坠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这样的话，主人应该是一个名叫[%dic:STR_DIC_N_Justachys]的守卫。</p>
+          <p> </p>
+          <p>我看见他去后面的树荫下休息去了。</p>
+          <p> </p>
+          <p>他的手里好像拿着吊坠之类的东西，箱子应该就是他的。</p>
+          <p> </p>
+          <p>可能是他回去的时候掉在了地上，你给他送过去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>以前在极乐世界的时候，我和一个名叫杰斯梅内的前辈很要好。</p>
+          <p> </p>
+          <p>他那时负责对不稳定的欧比斯进行探查，有一天他给了我一块吊坠。说如果自己万一回不来，让我一定要转交给他的儿子。</p>
+          <p> </p>
+          <p>不久之后他就出了事，再也没能回来。所以我打算去因特尔蒂卡，一定要找到他的儿子，把吊坠交给那孩子，但是...</p>
+          <p> </p>
+          <p>但是今天我把装着吊坠的箱子弄丢了。这下可怎么办才好...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出吊坠。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错！就是这个吊坠。</p>
+          <p> </p>
+          <p>弄丢了为亚特雷亚而献身的人的遗物，您不知道我的负罪感有多么强烈。</p>
+          <p> </p>
+          <p>现在找到了，真是太好了。</p>
+          <p> </p>
+          <p>真是谢谢您。还有，您见到罗达斯的话，帮我向他表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Tree_NoMove_Lodas]询问宝石箱子的情况</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">把吊坠转交给[%dic:STR_DIC_N_Justachys]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在掉在罗达斯前面的宝石箱子里发现了一块吊坠，应该找到吊坠的主人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在掉在罗达斯前面的宝石箱子里发现了一块吊坠，问罗达斯这是谁的东西，他说好像是守卫卫兵尤斯塔奇斯的东西。</p>
+          <p> </p>
+          <p>把吊坠交给了他，他说这是死去的守卫杰斯梅内留给儿子的遗物，对我和罗达斯表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子你好像是个很强的守护者，你能过来和我说会儿话吗，呐呐？</p>
+          <p> </p>
+          <p>别走嘛，快过来。</p>
+          <p> </p>
+          <p>我需要像你这么强的人的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是紫水晶赞特凯尔。</p>
+          <p> </p>
+          <p>我本来想快点赚一笔钱，然后就可以昂头挺胸地回到夸伊灵贸易团里去。但是它们把我盗掘到的东西全部弄坏了。</p>
+          <p> </p>
+          <p>这样下去的话，我找到的东西就要被破坏得一个不剩了呐呐！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Shugo_DF3_11]也非常担心，饭也吃不下，现在还生了病。</p>
+          <p> </p>
+          <p>守护者，你能帮我去把[%dic:STR_DIC_M_MimicAmethystD_32_An]消灭掉吗？！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你！</p>
+          <p> </p>
+          <p>它们就散布在这附近。在它们把东西全部弄坏之前，快点去吧，呐呐！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_MimicAmethystD_32_An]全部消灭掉之后，请你把这件事告诉[%dic:STR_DIC_N_Shugo_DF3_11]。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Shugo_DF3_11]听到这个消息之后，精神一定会马上好起来的！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么！你不愿意帮我吗！</p>
+          <p> </p>
+          <p>你该不会是害怕吧？</p>
+          <p> </p>
+          <p>对于守护者来说，[%dic:STR_DIC_M_MimicAmethystD_32_An]之类的东西应该用一个指头就能对付啊。不是吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是[%dic:STR_DIC_N_Shugo_DF3_10]%请来帮忙的那个守护者吗？</p>
+          <p> </p>
+          <p>你也应该听说了，因为那些家伙把盗掘到的东西全都弄坏了，我因此生了病。真是无妄之灾啊，呐呐。</p>
+          <p> </p>
+          <p>事情解决了吗？我一直在等待着这个消息！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真了不起，呐呐！</p>
+          <p> </p>
+          <p>破坏东西的家伙消失了，我们终于可以安心做事了！</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_N_Shugo_DF3_10]看人的眼光果然不错。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭破坏盗掘物品的[%dic:STR_DIC_M_MimicAmethystD_32_An]([%2]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF3_11]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">奇多伦野营地的术古们让我帮他们消灭破坏盗掘物品的生命体。去消灭紫水晶赞特凯尔，然后把结果告诉古安灵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇多伦盗墓团的扎耀伦说盗掘物品全部被紫水晶赞特凯尔破坏掉了，他因此很担心。他说和他一起的古安灵还因此生了病，因此让我去把它们消灭掉，然后把这个好消息告诉古安灵。</p>
+          <p> </p>
+          <p>于是消灭了紫水晶赞特凯尔，回到野营地把消息告诉了古安灵。他非常高兴，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

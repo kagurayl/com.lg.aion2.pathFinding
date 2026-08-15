@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，你好。</p>
+          <p> </p>
+          <p>文赛特神官要求和结界守护团接触。</p>
+          <p> </p>
+          <p>这件事和格尔克马洛斯要塞有关，但是出于安全考虑，无法以文件形式发送。敬请谅解。</p>
+          <p> </p>
+          <p>考虑到目前的情况，我们认为在所有守护团员中，[%username]你是最合适的人选。看到本文件后，请立即开始执行。</p>
+          <p> </p>
+          <p>请和[%dic:STR_DIC_N_Unset]接触，然后把他的话转告给[%dic:STR_DIC_E_45021]。</p>
+          <p> </p>
+          <p>详细的情况，之后我会直接告诉你。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来到格尔克马洛斯的守护者，请不要因为艰苦的战斗而感到绝望。</p>
+          <p> </p>
+          <p>马勒库坦主神会永远在您身边。</p>
+          <p> </p>
+          <p>结界守护团的团员们也会收到马勒库坦主神的祝福。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">询问需要转达的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为侍奉马勒库坦主神的神官，我想告诉结界守护团。</p>
+          <p> </p>
+          <p>“只有看透命运的人才能看到”。</p>
+          <p> </p>
+          <p>请您把刚才这句话告诉格尔克马洛斯支部团员。</p>
+          <p> </p>
+          <p>这样的话，这次的事情中，我的工作就结束了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的任务需要很多人的帮助。</p>
+          <p> </p>
+          <p>除了伏魔殿研究所之外，还有各个地方的神官。</p>
+          <p> </p>
+          <p>格尔克马洛斯的文赛特大人这次好像也有事找我们，对吧？</p>
+          <p> </p>
+          <p>[%username]大人，您把他的话带回来了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转述听到的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>每次都要麻烦文赛特大人。</p>
+          <p> </p>
+          <p>作为一名神官，他为结界守护团提供了很多的帮助。</p>
+          <p> </p>
+          <p>不管怎样，[%username]大人带回来的话，我知道了。</p>
+          <p> </p>
+          <p>辛苦您了。我会代表守护团给予您奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Unset]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_E_45021]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，神官文赛特有话要转告给守护团，让我去见见他。</p>
+          <p> </p>
+          <p>见到文赛特，听完他的话之后，转告给了格尔克马洛斯支部职员。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

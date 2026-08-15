@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我体内发生的事情，你应该已经知道了……</p>
+          <p> </p>
+          <p>让人无法承受的奥德，使昆虫发生了变异。</p>
+          <p> </p>
+          <p>曾经是我朋友的虫子们，正在吞食我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_IDElim_1F_Sheluk_KeyNM_52_Ae]、[%dic:STR_DIC_M_IDElim_1F_Clodworm_ItemNM_52_Ae]和[%dic:STR_DIC_M_IDElim_2F_Octaside_KeyNM_52_Ae]，它们变成了我的天敌。</p>
+          <p> </p>
+          <p>在它们的体内，形成了拥有强大力量的东西。</p>
+          <p> </p>
+          <p>魔法石的攻击力、保护石的防御力、声响之珠的睡眠，必须在被人利用之前销毁。</p>
+          <p> </p>
+          <p>消灭变成卡斯帕的天敌的虫子，销毁拥有强大力量的东西，你应该可以做到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_IDElim_1F_Sheluk_KeyNM_52_Ae]拥有魔法石，那是拥有强大攻击力的东西。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_IDElim_1F_Clodworm_ItemNM_52_Ae]拥有保护石，那是可以抵挡所有攻击的东西。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_IDElim_2F_Octaside_KeyNM_52_Ae]拥有声响之珠，它可以让周围的生命体沉睡。</p>
+          <p> </p>
+          <p>请你搜集这三样东西，销毁其中蕴含的奥德……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果不销毁拥有强大力量的东西，会很危险。</p>
+          <p> </p>
+          <p>如果被人利用，会造成更大的混乱……</p>
+          <p> </p>
+          <p>守护者，你再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须要把它们消灭，守护者。</p>
+          <p> </p>
+          <p>须希尔、格尔马尔和拉高斯。</p>
+          <p> </p>
+          <p>过去曾经是我的朋友，现在变成了天敌……</p>
+          <p> </p>
+          <p>它们的拥有强大力量的东西，销毁了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我体内的魔法石、保护石和声响之珠，终于消失了。</p>
+          <p> </p>
+          <p>要是没有你的帮助，它们一定会被人利用。</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_M_IDElim_keynamed]身上搜集拥有强大力量的东西，并使用它们</font></p>
+                     <p visible="[%3]"><font color="[%4]">  [%dic:STR_DIC_I_KASPA_DAMAGE_ITEM]([%5]/10)</font></p>
+                     <p visible="[%6]"><font color="[%7]">  [%dic:STR_DIC_I_KASPA_STONESKIN_ITEM]([%8]/5)</font></p>
+                     <p visible="[%9]"><font color="[%10]">  [%dic:STR_DIC_I_KASPA_GROUPSLEEP_ITEM]([%11]/3)</font></p></step>
+               <step><p visible="[%12]"><font color="[%13]">和[%dic:STR_DIC_N_CaspaGhost_01]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">卡斯帕内部的强大奥德，创造出了卡斯帕的天敌。消灭它们，搜集拥有强大力量的东西，并使用它们。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡斯帕说自己体内的奥德让虫子们发生了变异，从朋友变成了天敌。</p>
+          <p> </p>
+          <p>在它们体内形成了拥有强大力量的东西，可能会被人利用，必须把它们销毁。</p>
+          <p> </p>
+          <p>消灭了须希尔、格尔马尔和拉高斯，使用了搜集到的拥有强大力量的东西，卡斯帕对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，真让人担心。本来人手就不足，现在负伤的人数还在持续增加。</p>
+          <p> </p>
+          <p>最近由于革命团建设基地那里的举动有些异常，所以我派了一个监视兵去那里查看动向。</p>
+          <p> </p>
+          <p>但是过了好几天都没有消息，于是我和雷米亚前去寻找。但是老天，我们发现他倒在岩石山的入口处，浑身都是血！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果再去晚一点的话，也许他就死了。</p>
+          <p> </p>
+          <p>采取了急救措施之后，我们问他是怎么回事，他说是遭到了鸟妖的攻击，好不容易才逃了出来。</p>
+          <p> </p>
+          <p>他说鸟妖的数量实在太多，根本就没能去查看建设基地的动态。</p>
+          <p> </p>
+          <p>要监视革命团的那些家伙的话，必须先把悬崖上的鸟妖除掉，但是应该怎么去做现在还是两眼一抹黑。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说可以帮助他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人吗？如果没有一定的实力的话，很难是那些家伙的对手。</p>
+          <p> </p>
+          <p>连受过系统训练的守卫都倒下了，[%username]大人您真的能行吗...</p>
+          <p> </p>
+          <p>明白了。那我就先相信[%username]大人一次。</p>
+          <p> </p>
+          <p>请您去把[%dic:STR_DIC_M_Harpy_32_An]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从这儿往库里乌鲁岩石山那边上去的话，应该就能看到[%dic:STR_DIC_M_Harpy_32_An]。</p>
+          <p> </p>
+          <p>您一看见就应该知道是它们。它们一半是鸟，一半是人。</p>
+          <p> </p>
+          <p>除掉它们，然后把5个[%dic:STR_DIC_I_QUEST_1386a]带回来作为证据。</p>
+          <p> </p>
+          <p>不是不相信[%username]大人，慎重一点对大家都有好处。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就变了主意，当初为什么说要帮我呢？</p>
+          <p> </p>
+          <p>也是，连我们卫兵都干不了的事情，对于[%username]大人来说还是太困难了。</p>
+          <p> </p>
+          <p>看来我得向要塞请求派人支援了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好久不见。您来这里有什么事吗？</p>
+          <p> </p>
+          <p>啊，看我的记性。您去清除鸟妖了吧。</p>
+          <p> </p>
+          <p>对了，您把鸟妖清除掉了吗？</p>
+          <p> </p>
+          <p>说好的[%dic:STR_DIC_I_QUEST_1386a]带回来了吗？</p>          
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鸟妖的尾羽。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯？您把这件事忘了吗？</p>
+          <p> </p>
+          <p>我不是告诉您，除掉鸟妖监视者之后，需要把5个[%dic:STR_DIC_I_QUEST_1386a]带回来作为证据吗？</p>
+          <p> </p>
+          <p>如果没有证据的话，我怎么知道[%username]大人您去捕捉过鸟妖了呢？</p>
+          <p> </p>
+          <p>请您按照约定，把鸟妖的尾羽带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发出隐隐的绿色光泽，确实是鸟妖的尾羽没错。</p>
+          <p> </p>
+          <p>对不起。我不应该怀疑[%username]大人的实力。</p>
+          <p> </p>
+          <p>在沙漠里看多了很多乌合之众，所以不怎么容易相信别人。</p>
+          <p> </p>
+          <p>不管怎样，谢谢您帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将清除掉[%dic:STR_DIC_M_Harpy_32_An]的证据交给[%dic:STR_DIC_N_Leone]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">由于聚集在库里乌鲁岩石山的悬崖上的鸟妖的原因，无法很好地对革命团建设基地进行监视。清除掉鸟妖，然后把证据交给雷欧内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有一个去革命团建设基地进行监视的卫兵遭到鸟妖的攻击而受了重伤。</p>
+          <p> </p>
+          <p>答应帮卫兵去库里乌鲁岩石山的悬崖把鸟妖清除掉，雷欧内说那会很困难，让我不要勉强。</p>
+          <p> </p>
+          <p>除掉鸟妖后把尾羽作为证据交给了他，雷欧内非常吃惊，说不应该怀疑我的实力。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

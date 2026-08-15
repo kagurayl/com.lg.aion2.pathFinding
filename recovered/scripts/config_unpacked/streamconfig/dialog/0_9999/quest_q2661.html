@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的正好！</p>
+          <p> </p>
+          <p>需要找人帮忙，可一直没有合适的人选，正不知道该怎么办呢。</p>
+          <p> </p>
+          <p>就在这时候，正巧见到了[%username]，运气真好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>偶尔，我会到坡下面和其他谍报员接头，不过路上总有 [%dic:STR_DIC_M_PretorVioletD_42_An]和 [%dic:STR_DIC_M_KuillusD_42_An] 找我的麻烦。</p>
+          <p> </p>
+          <p>本来我的行动要绝对保密，不能被别人发现，可是那些家伙们总是攻击我，让我暴露目标。</p>
+          <p> </p>
+          <p>[%username]能帮我除掉它们吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。那么请你在下坡的时候消灭那些 [%dic:STR_DIC_M_PretorVioletD_42_An]和 [%dic:STR_DIC_M_KuillusD_42_An]。</p>
+          <p> </p>
+          <p>普雷尔和切尔路斯的存在，让我在去接头的路上随时有被革命团发现的危险。</p>
+          <p> </p>
+          <p>好不容易才潜伏到雷帕尔革命团，并得到了独自执行任务的机会，可不能让他们发现啊。</p>
+          <p> </p>
+          <p>那么一切就拜托 [%username]了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你知道我是如何潜伏到革命团的吗？</p>
+          <p> </p>
+          <p>为了得到独立执行任务的机会，你知道要付出多大的努力吗？</p>
+          <p> </p>
+          <p>可是你竟然对此不管不顾，是希望我所有的努力都白费吗？</p>
+          <p> </p>
+          <p>如果不想帮助我，你就赶紧走，不要让别人发现。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来了啊，[%username]。</p>
+          <p> </p>
+          <p>那么，已经消灭普雷尔和切尔路斯了吗？</p>
+          <p> </p>
+          <p>现在去接头，也不用担心被发现吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢你了。</p>
+          <p> </p>
+          <p>多亏了[%username] ，我不用再提心吊胆了。</p>
+          <p> </p>
+          <p>虽然还想多和你聊聊，但这样谈话很可能会被人发现。为了您的安全，请尽快离开吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉普雷尔和切尔路斯。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_PretorVioletD_42_An]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_KuillusD_42_An]([%5]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Dewi]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">德威表示，在和其他谍报员接头的路上，经常遭到普雷尔和切尔路斯的攻击，很容易因此而被别人发现。德威希望能消灭普雷尔搜索者和黑曜石切尔路斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>潜入到雷帕尔革命团的谍报员德威称，在和其他谍报员接头的路上，会遭到普雷尔和切尔路斯的攻击，那样容易暴露出自己的身份。</p>
+          <p> </p>
+          <p>帮助他清除了坡路上的普雷尔搜索者和黑曜石切尔路斯。对此，他表示感谢，并处于隐蔽的考虑，不希望过多的人聚在一起，暴露目标。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

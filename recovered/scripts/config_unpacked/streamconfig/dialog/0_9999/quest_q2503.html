@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道由于要塞崩溃，开始有碎片掉落的事情吧？</p>
+          <p> </p>
+          <p>掉落的碎片虽然很危险，但已经掉落的碎片也给居民们造成了很大的不安。</p>
+          <p> </p>
+          <p>您到要塞周围看过吗？地上到处都是掉落的碎片。</p>
+          <p> </p>
+          <p>要是有人能帮着清理掉就好了。但是百夫长们好像都忙着阻止要塞的崩溃，没时间管这种小事情。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，如果可以的话，您帮着把[%dic:STR_DIC_OBJ_DF3_BrokenRocks_Q2503]清理掉吗？</p>
+          <p> </p>
+          <p>建造贝鲁斯兰要塞时使用的石材质地非常坚硬。因此碎裂之后的边缘也非常锋利。</p>
+          <p> </p>
+          <p>只要用手碰一下，就可能被划伤。</p>
+          <p> </p>
+          <p>弄不好还会伤到什么人，希望您能帮着清理掉一些。拜托了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您把要塞周围的[%dic:STR_DIC_OBJ_DF3_BrokenRocks_Q2503]全部清理掉。</p>
+          <p> </p>
+          <p>刚才我也说过，那些碎片的边缘非常锋利，请您一定要小心。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阻止碎片不再掉落当然也很重要。</p>
+          <p> </p>
+          <p>但是掉落的碎片的清理工作也不能疏忽。因为不知道什么时候就会伤到人。</p>
+          <p> </p>
+          <p>没想到谁都不愿意管这种事情...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_OBJ_DF3_BrokenRocks_Q2503]全都清理掉了吗？</p>
+          <p> </p>
+          <p>听说昨天有个要塞的居民不小心撞到了碎片，结果伤到了。</p>
+          <p> </p>
+          <p>还好只是擦伤，但如果不小心的话，很可能会伤得很重。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出碎片。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在继续有人受伤之前，必须把碎片清理干净。</p>
+          <p> </p>
+          <p>碎片的边缘非常锋利，都能用来做刀了。</p>
+          <p> </p>
+          <p>这就好比要塞周围到处都插满了武器一样。</p>
+          <p> </p>
+          <p>所以请您尽快把[%dic:STR_DIC_OBJ_DF3_BrokenRocks_Q2503]清理掉，以免发生大的事故。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把清理掉的碎片都带回来啦。</p>
+          <p> </p>
+          <p>我正好想知道到底是用什么石材建的，会这么坚硬。</p>
+          <p> </p>
+          <p>既然您帮我带了回来，我得拿它分析分析。</p>
+          <p> </p>
+          <p>谢谢您为居民们清除掉了危险的碎片。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_DF3_BrokenRocks_Q2503]，然后交给[%dic:STR_DIC_N_Bestla]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">柏斯特拉说要塞周围掉落的碎片看上去很危险。为了防止伤到居民，去把碎片清理掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>柏斯特拉说要塞周围掉落的碎片非常坚硬锋利，非常危险。</p>
+          <p> </p>
+          <p>于是去清理掉了要塞周围的碎片，他对我表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

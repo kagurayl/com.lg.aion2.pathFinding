@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>最近有很多团员受到了白毛高尔干的攻击。</p>
+          <p> </p>
+          <p>为了知道温顺的高尔干为什么会突然变得凶暴，我们进行了调查。结果发现受到攻击的团员身上全都带着贝鲁斯兰检测物质。</p>
+          <p> </p>
+          <p>受到检测物质污染的高尔干无法恢复到以前的状态，为了人们的安全，我们不得不把[%dic:STR_DIC_M_GorgonWhiteD_37_n]消灭掉。完成任务后，请立即向[%dic:STR_DIC_E_45007]报告。</p>
+          <p> </p>
+          <p>愿永恒之塔的庇佑，与全体团员同在！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等您。</p>
+          <p> </p>
+          <p>您去消灭白毛高尔干了吗？</p>
+          <p> </p>
+          <p>任务怎么样了？应该顺利完成了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然不愧是[%username]。</p>
+          <p> </p>
+          <p>贝鲁斯兰检测物质中到底含有什么成分，竟然让温顺的高尔干变得那么凶恶？</p>
+          <p> </p>
+          <p>如果能知道原因，就没有必要杀死高尔干了。上面也许也是这么想的，因此正在进行相关的调查。</p>
+          <p> </p>
+          <p>希望结果能尽快出来。</p>
+          <p> </p>
+          <p>来，请您收下。这是这次任务的奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_GorgonWhiteD_37_n]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_45007]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到了紧急信件，内容是消灭受到贝鲁斯兰检测物质的污染而变得凶残的白毛高尔干。</p>
+          <p> </p>
+          <p>迅速地消灭了高尔干，并向贝鲁斯兰支部团员报告。他说辛苦了，并给了我奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

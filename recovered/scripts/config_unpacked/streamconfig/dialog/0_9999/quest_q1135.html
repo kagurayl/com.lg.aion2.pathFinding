@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+       <p>原来我的名字是加伊奥内。</p>
+       <p> </p>
+       <p>因为父母都是守护者，所以我比别人觉醒的早，很早就当上了守卫。</p>   
+       <p> </p>
+       <p>但是我生性很懒，不想执行守卫的任务，每天就在这儿睡觉。</p>   
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问为什么成了托格。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在埃尔伦江河口监视克拉尔是我的任务。但是我每天偷懒睡觉，所以克拉尔侵入要塞的时候我没能事先预警。</p> 
+          <p> </p> 
+          <p>极乐世界的高级守护者们知道之后非常愤怒，于是对我进行了处罚。</p> 
+          <p> </p>           
+          <p>所以我就成了托格。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">“那你一辈子都是托格了吗？”</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不是的。如果我能在1000天里面抓到9千头[%dic:STR_DIC_MLA41]的话，就能重新成为守护者。</p>
+          <p> </p>
+          <p>虽然我很想一下子就全部抓到，但是以现在的情况看好像不那么容易。</p>
+          <p> </p>
+         <p>约定的时间没剩多少了，还有需要抓很多肯索利德才行。</p>
+         <p> </p>
+          <p>[%username]，您能帮我一点忙吗？不用太多，帮我抓9头就可以了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢了，[%username]。</p>
+          <p> </p>
+          <p>那就请您帮我抓9头[%dic:STR_DIC_MLA41]吧。</p>
+          <p> </p>
+          <p>离9千头还差很多，虽然我也想让你多帮我抓一点，但是那样就太不知廉耻了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然我的要求有点不知廉耻。</p>
+          <p> </p>
+          <p>但是如果完不成任务的话，只能再等上1000天。</p>
+         <p> </p>
+         <p>[%username]您不知道托格的生活有多悲惨，多可怕。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你帮我捉到[%dic:STR_DIC_MLA41]了吗？</p>  
+         <p> </p>
+         <p>对于[%username]您来说应该是小菜一碟...</p>       
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您，[%username]。 </p>
+          <p> </p>          
+          <p>您可是帮了我的大忙了。</p>   
+          <p> </p>   
+          <p>以后我重新成为守护者的话，一定会报答您的恩情。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">帮助托格 加伊奥内捕捉[%dic:STR_DIC_MLA41]([%2]/9)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和成了托格的[%dic:STR_DIC_LA44]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">托格加伊奥内想要重新成为守护者的话，必须在约定的期限内抓到9千头肯索利德。为了他能重新成为守护者，帮他捕捉9头肯索利德。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在要塞附近碰到了一个托格。他说自己原来是守卫，因为受到处罚而成了托格。</p>
+          <p> </p>
+          <p>他让我帮他完成任务，使其可以再次成为守护者。帮他抓到肯索利德后，他说非常感谢，并把手里的东西作为礼物送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中:[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

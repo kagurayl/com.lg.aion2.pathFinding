@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（好像是革命团研究基地的地图。）</p>
+          <p></p>
+          <p>（仔细观看似乎还标注了地下的建筑物。）</p>
+          <p></p>
+          <p>应该拿去给[%dic:STR_DIC_N_Kuobe]看看。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要执行的任务已经够多了，还得照顾加利奥内，真让人郁闷。</p>
+          <p></p>
+          <p>不过，守护者不是在神庙已经学过保护自己的方法了吗？</p>
+          <p></p>
+          <p>可是每次去调查的时候都还需要人保护…以为自己是公主吗！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">拿出地图。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么啊，这是？</p>
+          <p></p>
+          <p>（留心查看）看起来好像是革命团研究基地的地图。</p>
+          <p></p>
+          <p>怪不得除了茂密的树木之外什么都没有，原来都藏到地下去了。</p>
+          <p></p>
+          <p>不过需要确认一下地图是不是真的。请您到这里标示出的地方去，确认一下地图是否是真的吧。</p>
+          <p></p>
+          <p>侦察完之后，请西风的守护者[%dic:STR_DIC_N_Kalendros]报告。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请快过来。我已经从库奥贝那里听说了。</p>
+          <p></p>
+          <p>听说您发现了革命团研究基地的地图。</p>
+          <p></p>
+          <p>侦察顺利完成了吗？这地图是真的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发现的这份地图是真的，这就给我们一方增添了有力的武器。</p>
+          <p></p>
+          <p>一定要详细分析地图，制定计划，然后揭穿他们的阴谋。</p>
+          <p></p>
+          <p>辛苦您了，真的很感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Kuobe]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">侦察[%dic:STR_DIC_W_LF3_SZ_003]的地下实验室</font></p>
+                     <p visible="[%6]"><font color="[%7]">  [%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607a][%8]</font></p>
+                     <p visible="[%9]"><font color="[%10]">  [%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607b][%11]</font></p>
+                     <p visible="[%12]"><font color="[%13]">  [%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607c][%14]</font></p>
+                     <p visible="[%15]"><font color="[%16]">  [%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607d][%17]</font></p></step>
+               <step><p visible="[%18]"><font color="[%19]">向[%dic:STR_DIC_N_Kalendros]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">发现了可疑地图。应该拿去给库奥贝里看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>发现了可疑的地图，拿去给库奥贝里看了之后，他认为可能是革命团研究基地的地图。</p>
+          <p></p>
+          <p>进入研究基地的地下实验室进行侦察，证明地图是真的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

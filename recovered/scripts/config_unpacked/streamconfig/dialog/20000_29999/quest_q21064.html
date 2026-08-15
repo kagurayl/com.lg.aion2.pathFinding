@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要去哪里？</p>
+          <p> </p>
+          <p>如果没什么特别想去的地方，能去一趟阿武拉乌森林吗？</p>
+          <p> </p>
+          <p>阿武拉乌调查团正在那里进行调查，但是好像遇到了很多困难。</p>
+          <p> </p>
+          <p>费雷斯的自尊心非常强，不到万不得已，他又怎么会向我请求帮助呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>他让我派个战斗能力强，可以对付阿武拉乌，在学问方面又具有一定素养的人过去。我就想到了[%username]大人。</p>
+          <p> </p>
+          <p>从您之前处理事情的效率来看，那边的事情应该也难不倒您。怎么样？</p>
+          <p> </p>
+          <p>您愿意去帮助阿武拉乌调查团吗？</p>
+          <p> </p>
+          <p>虽然费雷斯那个家伙有点挑剔，不过一向很大方，奖励一定会很丰厚的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有[%username]大人过去，我就放心了。</p>
+          <p> </p>
+          <p>穿过前面的峡谷，沿着路一直走，就能到达[%dic:STR_DIC_W_SZ_DF4_A4]了。中间有条岔路，您往右走就行了。</p>
+          <p> </p>
+          <p>在森林的中央是阿武拉乌调查团野营地，在那里就能找到[%dic:STR_DIC_N_feles]。</p>
+          <p> </p>
+          <p>就说是我派您过去的，他就知道是怎么回事了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您还有别的任务要做啊。</p>
+          <p> </p>
+          <p>也是，您到格尔克马洛斯来，应该也不是来玩的。</p>
+          <p> </p>
+          <p>这可怎么办呢？一般的人，可能很难满足费雷斯的要求……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈尔积温竟然会攻击人，吓了我一跳。</p>
+          <p> </p>
+          <p>嗯？你怎么一个人啊？</p>
+          <p> </p>
+          <p>(上下打量)看你好像不是执政官，胆子可真够大的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说是伊尔卡雷派来的。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊尔卡雷终于派人来了。</p>
+          <p> </p>
+          <p>(重新上下打量)看你手上的[%mainslotitem]，应该是个很有能力的人。不知道学问方面的素养怎么样……</p>
+          <p> </p>
+          <p>哎呀，伊尔卡雷总不会给我派个笨蛋来吧。</p>
+          <p> </p>
+          <p>一路过来辛苦了，你先休息一下吧。</p>
+          <p> </p>
+          <p>休息好之后，我会告诉你需要做什么的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_feles]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">听说阿武拉乌调查团需要人手。去阿武拉乌调查团野营地见见费雷斯。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊尔卡雷说如果没什么特别想去的地方，愿不愿意去阿武拉乌森林帮助费雷斯。</p>
+          <p> </p>
+          <p>来到阿武拉乌调查团野营地找到了费雷斯，他说以后要做的事情很多，让我先休息一下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

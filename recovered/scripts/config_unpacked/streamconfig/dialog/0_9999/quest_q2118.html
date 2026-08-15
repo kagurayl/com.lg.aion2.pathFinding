@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>兄弟，你看见海岸上的人了吗？对，就是安图仁海岸坐着船来的人。</p>
+          <p> </p>
+          <p>没有经过允许就停泊在那里本来就很可恶了，而且看到我们也一点都不害怕！</p>
+          <p> </p>
+          <p>按我的性子很想去干掉他们，但是他们的人数太多了。看来我得向头目要求支援。不过那样的话需要进行准备。</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问需要什么准备。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请求支援之前，必须弄清楚他们是什么人，来这里有什么目的。</p>
+          <p> </p>
+          <p>我没办法离开岗位，你能帮我去调查一下吗？</p>
+          <p> </p>
+          <p>你去搜索[%dic:STR_DIC_M_LehparAsD_5_An]和[%dic:STR_DIC_M_LehparWaD_5_An]的话，应该就能找到他们为什么来这里的线索。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道他们是些什么人，最好先进行一下调查。</p>
+          <p> </p>
+          <p>不要去惊动他们，只要悄悄地各除掉一个就行了。你知道我的意思吧？</p>
+          <p> </p>
+          <p>那你快去快回。不要忘记寻找证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你为什么不愿意去啊？</p>
+          <p> </p>
+          <p>看来你是看不起我这个守卫哨所的行动队长嘛。</p>
+          <p> </p>
+          <p>这次就算了，下次我就不会和你客气了，你要小心一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吗？你找到什么没有？</p>
+          <p> </p>
+          <p>他们不可能无缘无故就停泊在这里。</p>
+          <p> </p>
+          <p>我快急死了。你快说啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出阿希尔澜号航海日志。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你真的空着手回来了？</p>
+          <p> </p>
+          <p>兄弟，我给你一个忠告。</p>
+          <p> </p>
+          <p>如果你想继续留在盗贼团里，你最好赶紧去把那些家伙的线索找回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看阿希尔澜号航海日志。)</p>
+          <p> </p>
+          <p>嗯...这很有意思嘛？原来这附近还藏有叫做“黑珍珠”的宝物。</p>
+          <p> </p>
+          <p>有了那个的话就能改变自己的未来？真是越看越有意思。</p>
+          <p> </p>
+          <p>什么？但是要改变未来的话，需要经历生不如死的痛苦？</p>
+          <p> </p>
+          <p>这种东西怎么能叫宝物，明明是受诅咒的东西嘛。到底为什么要寻找这种东西啊？</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">对[%dic:STR_DIC_M_LehparAsD_5_An]和[%dic:STR_DIC_M_LehparWaD_5_An]进行调查，了解他们到岛上来的原因，然后交给[%dic:STR_DIC_N_Derot]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">克罗盖想知道阿希尔澜号停泊在岛上的原因。为了了解他们的目的，去寻找相关线索。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>克罗盖说要教训未经许可停靠的阿希尔澜号的人们的话，就必须请求头目的支援。在请求支援之前，必须弄清楚他们停泊在岛上的目的，于是找到“阿希尔澜号航海日志”并交给了他。</p>
+          <p> </p>
+          <p>上面写着关于可以改变人的未来，但会让人过上痛苦的生活的黑珍珠的事情。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

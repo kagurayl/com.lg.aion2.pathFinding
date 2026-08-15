@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>之前我有事路过龙泪峡谷，却遇到了暴怒的鲁萨尔卡。</p>
+          <p> </p>
+          <p>我的命差点就丢在了那里。</p>
+          <p> </p>
+          <p>我趁它们聚集在一起的时候，逃到了[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]，呐呐！</p>
+          <p> </p>
+          <p>在逃跑的途中，我看到了闪光的东西……那到底是什么啊……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那种黄色的光……难道是金子？</p>
+          <p> </p>
+          <p>它们在峡谷周围走来走去，一定是在寻找金矿吧？</p>
+          <p> </p>
+          <p>如果真的是金子的话，我就不能这样待在这里了，呐呐。</p>
+          <p> </p>
+          <p>我没办法对付那些鲁萨尔卡，你能帮我去把[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]拿回来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果袋子里装的是金子，我一定要分一杯羹，呐呐。</p>
+          <p> </p>
+          <p>你到峡谷里去，多拿些[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]回来。</p>
+          <p> </p>
+          <p>不是金子的话就算了……如果真的是金子，那你就尽量多拿点回来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，我也不敢确定那就是金子，呐呐。</p>
+          <p> </p>
+          <p>不过要是真的是金子的话，该怎么办呢？</p>
+          <p> </p>
+          <p>必须确认一下，我才能放心，呐呐。</p>
+          <p> </p>
+          <p>看来我得找其他守护者了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>确认[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]里装的是什么东西了吗？</p>
+          <p> </p>
+          <p>我这几天连觉都睡不好。</p>
+          <p> </p>
+          <p>怎么想都觉得那是金子……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出鲁萨尔卡的口袋。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我都因此得了失眠症。</p>
+          <p> </p>
+          <p>你快去把[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]拿回来吧，呐呐。</p>
+          <p> </p>
+          <p>如果里面装的是金子，我会分你一份。如果什么都不是，我也会给你辛苦费的，呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(打开口袋)这，这……真的是金子！</p>
+          <p> </p>
+          <p>发财了，发财了！真的是金子，金子，呐呐。</p>
+          <p> </p>
+          <p>嗯哼，但是这些金子的纯度不是很高。</p>
+          <p> </p>
+          <p>好像值不了几个钱。这么多辛苦费已经很多了。拿着吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_OBJ_LF4_FOBJ_Q11112A]，然后交给[%dic:STR_DIC_N_Shugo_LF4_5]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">梅伊宁说好像在鲁萨尔卡的口袋里看到了金子，让我帮他去搜集。答应他的请求吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>梅伊宁说在经过龙泪峡谷的时候遭到了鲁萨尔卡的攻击，好不容易逃了出来。</p>
+          <p> </p>
+          <p>那时在鲁萨尔卡的口袋里看到了黄色发光的东西，推测可能是金子。</p>
+          <p> </p>
+          <p>帮他找到了口袋，里面装的确实是金子，但他却只给了我很少的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

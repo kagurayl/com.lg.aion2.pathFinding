@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我真不想去乌尔通海因。</p>
+          <p> </p>
+          <p>我既害怕蝎兽，又讨厌佩特拉盖伦，最烦人的就是蛇妖啦。</p>
+          <p> </p>
+          <p>再加上它那么大的块头，每次扑楞着大翅膀过来的时候，真是吓死我了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>一想到这些家伙，我连乌尔通海因附近都不想去，可是要在因派图西姆做生意，又不得不经过那里。</p>
+          <p> </p>
+          <p>这是秘密，别想让我告诉你是什么生意。</p>
+          <p> </p>
+          <p>守护者大人，你能去[%dic:STR_DIC_W_DF1A_23]，帮我除掉[%dic:STR_DIC_M_CockatriceD_18_An_2]吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你愿意帮我除掉蛇妖，真幸运。</p>
+          <p> </p>
+          <p>不过，你最好带回干掉那些家伙的证明来。这绝对不是我不相信你哦。</p>
+          <p> </p>
+          <p>好了，请你去[%dic:STR_DIC_W_DF1A_23]干掉[%dic:STR_DIC_M_CockatriceD_18_An_2]，并把[%dic:STR_DIC_I_quest_2251a]带回来作为证据吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要你干掉蛇妖，也不仅仅是为了我好。</p>
+          <p> </p>
+          <p>因为蛇妖攻击所有经过乌尔通海因的人。</p>
+          <p> </p>
+          <p>这对我对大家都是好事。你再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来了？</p>
+          <p> </p>
+          <p>干掉[%dic:STR_DIC_M_CockatriceD_18_An_2]了吧？</p>
+          <p> </p>
+          <p>那么给我看看证据！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出蛇妖尾巴毛。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么没拿回证据？</p>
+          <p> </p>
+          <p>那我就不能给你报酬。</p>
+          <p> </p>
+          <p>乌云贸易团除了相信东西什么都不信的！</p>
+          <p> </p>
+          <p>快回去拿 [%dic:STR_DIC_I_quest_2251a]来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果真把蛇妖干掉了啊。</p>
+          <p> </p>
+          <p>现在可以安心地过乌尔通海因啦。</p>
+          <p> </p>
+          <p>这个是我们说好的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_CockatriceD_18_An_2]，然后把证据交给[%dic:STR_DIC_N_Shugo_DF1_7]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">因为害怕蛇妖的攻击，所以巴巴隆说不敢经过乌尔通海因。去干掉攻击众人的蛇妖并把证明交给他吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴巴隆想去因派图西姆做生意，但必须经过乌尔通海因，他抱怨说那里有蛇妖，所以不敢经过。</p>
+          <p> </p>
+          <p>因此，去乌尔通海因把蛇妖干掉，并取回了羽毛做为证据。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

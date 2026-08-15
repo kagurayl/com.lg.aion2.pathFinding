@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>英吉斯温的裂缝让埋藏了很久的巨人的秘密显露了出来。</p>
+          <p> </p>
+          <p>现在我们对巨人还一无所知。</p>
+          <p> </p>
+          <p>现在我们只知道巨人和巨神兵的力量和奥德，以及德拉纳都不同。那种力量也许可以用来帮助我们鸢族。</p>
+          <p> </p>
+          <p>为此，我们需要风化的旧印章。</p>
+          <p> </p>
+          <p>那是含有巨人记忆碎片的小碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是因为散落在英吉斯温各地，所以很难搜集。</p>
+          <p> </p>
+          <p>即使能搜集到很多的印章，可以得到的信息也很少，而且现在我们根本没有人手去搜集。</p>
+          <p> </p>
+          <p>这件事您能帮帮我们吗？</p>
+          <p> </p>
+          <p>作为报答，我会把我过去用过的戒指送给您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>风化的旧印章是受到风的影响的东西。</p>
+          <p> </p>
+          <p>在英吉斯温，只能在有风路和间歇泉的地方才能找到。</p>
+          <p> </p>
+          <p>请您去调查一下风路周围的动物和植物。</p>
+          <p> </p>
+          <p>帮我搜集88个风化的旧印章。</p>
+          <p> </p>
+          <p>愿主神的庇护与您同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就算了。</p>
+          <p> </p>
+          <p>如果您搜集到了风化的旧印章，请好好留着。</p>
+          <p> </p>
+          <p>有时间的话，请您一定要拿来给我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除了我之外，对巨人感兴趣的鸢族还有很多。</p>
+          <p> </p>
+          <p>很多人都说像这样搜集印章太笨了。</p>
+          <p> </p>
+          <p>但是我不会放弃。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出风化的旧印章。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>搜集再多的旧印章也还是会嫌不够。</p>
+          <p> </p>
+          <p>因为一旦失去风的力量，它就会很快消失。</p>
+          <p> </p>
+          <p>请您一定要帮我搜集到88个印章。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您搜集到88个风化的旧印章啦！</p>
+          <p> </p>
+          <p>谢谢您。这个戒指送给您。</p>
+          <p> </p>
+          <p>这是我心爱的戒指，我还是挺舍不得的。</p>
+          <p> </p>
+          <p>但是我想它对您来说也许更有用一些。</p>
+          <p> </p>
+          <p>愿主神的庇护与您同在！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_air_collection_treasure01]，然后交给[%dic:STR_DIC_N_Zaniah]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">把风化的旧印章交给扎尼亚，换取戒指。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>扎尼亚说研究巨人的力量需要风化的旧印章，让我帮她搜集。</p>
+          <p> </p>
+          <p>在风路和间歇泉周围搜集印章并交给了她，她按照约定把戒指送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

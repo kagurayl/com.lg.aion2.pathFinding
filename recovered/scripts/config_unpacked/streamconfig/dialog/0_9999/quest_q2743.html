@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看着那些无法回归奥德的流动，死了之后仍然游荡在这世界上的不死族，我的心里就会涌起很多感慨。</p>
+          <p> </p>
+          <p>死了之后还以不死的状态留在这个世界上，是多么不幸的事情啊。</p>
+          <p> </p>
+          <p>感谢主神，作为一名为人类服务的守护者享受充实的人生是一种幸福，消灭之后平静地回归奥德的流动也是一种幸福。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到那些漂浮在钢铁的坟墓的死了之后还不能死去的人，我的心里真的非常悲痛。</p>
+          <p> </p>
+          <p>看看周围的那些堕落战士吧。变成了那个样子，还不能抛开心中的欲望，还在孜孜不倦地渴求着什么。</p>
+          <p> </p>
+          <p>为害从这里经过的人，也是它们无法抛开欲望的一种表现。</p>
+          <p> </p>
+          <p>我想把它们从欲望的陷阱中解放出来，[%username]你能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就请你去把[%dic:STR_DIC_M_Ab1_1132_Graveknight_25_An]除掉，让它们回归奥德的流动。</p>
+          <p> </p>
+          <p>因为是强制把它们送回去，也许它们会激烈地反抗。但是这是救助它们的肉体和灵魂的唯一的方法。</p>
+          <p> </p>
+          <p>那就拜托你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是觉得强制地将堕落战士送回奥德的流动，对它们不会有任何帮助吗？</p>
+          <p> </p>
+          <p>有的时候，正义和慈悲会以普通的人无法理解的方式出现。</p>
+          <p> </p>
+          <p>如果你无法理解的话，那就没办法了。</p>
+          <p> </p>
+          <p>我不会强迫你的。你可以按自己的思想行动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果堕落战士在来到埃雷修兰塔之前的样子并不是这样的话，那它们一定是受到了什么的影响。</p>
+          <p> </p>
+          <p>如果能知道原因的话，不用使用这种强制的方法，也应该可以让它们回归奥德的流动。</p>
+          <p> </p>
+          <p>不过不管怎样，你把[%dic:STR_DIC_M_Ab1_1132_Graveknight_25_An]清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能把堕落战士从欲望中解放出来，让它们回归奥德的流动，真是太好了。</p>
+          <p> </p>
+          <p>今后必须得研究研究有没有更好的办法，可以让它们重新找回自由。</p>
+          <p> </p>
+          <p>不过还是要谢谢你帮我救助了它们。在奥德的流动中找回本来面目的堕落战士们，一定也会感谢你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1132_Graveknight_25_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Ganglot]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">冈格勒特说想让死了之后还无法死去的堕落战士找到平静。按照他的拜托，把堕落战士送回奥德的流动吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>冈格勒特说想让被欲望所支配，死了之后还无法死去的堕落战士得到安息。</p>
+          <p> </p>
+          <p>于是按照他的拜托，除掉了堕落战士，把它们送归了奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

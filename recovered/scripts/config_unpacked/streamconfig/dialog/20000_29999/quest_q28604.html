@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(环顾空地，周围可以看到几具尸体。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(从手上拿着的装备来看，好像是偷窃封印神殿宝物的盗掘犯。)</p>
+          <p> </p>
+          <p>(尸体穿着的衣服比其他尸体的要好，好像是盗掘犯的头目。) </p>
+          <p> </p>
+          <p>(仔细查看，一只手里拿着一只皮革背包。)</p>
+          <p> </p>
+          <p>(好像对死者来说是很珍贵的东西。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">查看盗掘犯背包里的东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(盗掘犯的背包里，装着一本小手册和一个轮子形状的小玩具。) </p>
+          <p> </p>
+          <p>(打开手册查看，上面记录着亚特雷亚的宝物和埋藏的位置，其中有几个打着‘X'。) </p>
+          <p> </p>
+          <p>(银色刀刃罗坦也打着‘X'。) </p>
+          <p> </p>
+          <p>(轮子模样的玩具好像是在空地上徘徊的罗坦的召唤物。) </p>
+          <p> </p>
+          <p>(说不定会有用，先把罗坦的召唤物收起来吧。)</p>
+          <p> </p>
+          <p>(从盗掘犯的背包中取出罗坦的召唤物，放进箱子。)</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从盗掘犯的尸体上搜集罗坦</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在石门前面的空地上，可以看到几具盗掘犯的尸体。确认一下是不是罗坦的主人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在通往封印神殿的通道上发现了几具尸体，在其中看上去像是盗掘犯头目的人身上获得了罗坦的召唤物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

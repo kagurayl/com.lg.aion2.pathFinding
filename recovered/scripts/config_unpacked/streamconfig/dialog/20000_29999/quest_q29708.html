@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看上去好象是魔法石的东西。)</p>
+          <p> </p>
+          <p>(外形小而坚硬，仔细看可以发现上面刻着纹样。)</p>
+          <p> </p>
+          <p>(好像是鸢族使用的纹样。)</p>
+          <p> </p>
+          <p>(应该拿去给对鸢族的纹样非常了解的炼金术师艾因看看。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近鸢族和天族及魔族的中立关系，可以说绷得非常紧。</p>
+          <p> </p>
+          <p>还会有什么原因呢。天族和魔族相互敌对，已经不是一天两天的事情了。</p>
+          <p> </p>
+          <p>现在，他们想把隐藏着的愤怒的火焰，重新烧向鸢族。</p>
+          <p> </p>
+          <p>他们制造出了很多和塔梅斯有关的阴谋论，妄图把鸢族变成敌人。对于天族和魔族的这种居心，我们鸢族并不是没有察觉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_thanks;HACTION_SELECT_QUEST_REWARD">拿出塔梅斯魔法石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>咦，这是！</p>
+          <p> </p>
+          <p>难道……！没想到那是真的……</p>
+          <p> </p>
+          <p>虽然我不想承认，但这个东西证明了塔梅斯的封印魔法中使用了鸢族的技术的传闻。</p>
+          <p> </p>
+          <p>你仔细看看这个。这是塔梅斯的封印魔法阵中使用的魔法石，但是上面却刻着鸢族的花纹。</p>
+          <p> </p>
+          <p>希望你能装作没看见这个东西，这将有助于维护鸢族和天魔族之间的和平。</p>
+          <p> </p>
+          <p>这个请您收下。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把塔梅斯魔法石交给[%dic:STR_DIC_N_Ein]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在塔梅斯偶然获得了一块魔法石，上面好像刻着鸢族的纹样。应该拿去问问艾因。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在塔梅斯偶然获得了一块魔法石，上面刻着好像是鸢族纹样的细小花纹。</p>
+          <p> </p>
+          <p>去向精通各种纹样的鸢族艾因询问，他说这是证明塔梅斯的封印中使用了鸢族技术的证据，让我当作没有看见。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

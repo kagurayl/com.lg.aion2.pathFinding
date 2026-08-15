@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你去过古代龙之坟墓吗？</p>
+          <p> </p>
+          <p>当然应该去过吧。因为就在不远的地方。</p>
+          <p> </p>
+          <p>古代龙的尸体现在还在流淌着红色的鲜血，浸染着大地。</p>
+          <p> </p>
+          <p>啊，没有必要那么吃惊。那只不过是比喻罢了。</p>
+          <p> </p>
+          <p>龙骨下面流淌着熔岩，我也没说错，对吧？</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙骨下面的火之精灵被称为血光火焰精灵，也是因为这个原因。</p>
+          <p> </p>
+          <p>虽然不知道确切的根据，但是我觉得就是这个原因。</p>
+          <p> </p>
+          <p>呵呵，重要的问题不是名字，听说血光火焰精灵聚集在前面。</p>
+          <p> </p>
+          <p>我看你好像挺闲的。你能帮我去把[%dic:STR_DIC_M_Ab1_1231_ElementalFire3_39_An]清除掉一些吗？</p>
+          <p> </p>
+          <p>虽然这是我的任务，但是我有点嫌麻烦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你居然毫不犹豫地答应了...看来你的性格还不够慎重。</p>
+          <p> </p>
+          <p>不过只要你愿意帮我就行了。</p>
+          <p> </p>
+          <p>请你去古代龙之坟墓，帮我清除10个[%dic:STR_DIC_M_Ab1_1231_ElementalFire3_39_An]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你竟然毫不犹豫地拒绝了...看来你的性格要比我想象得冷静。</p>
+          <p> </p>
+          <p>也是，要想在这个到处都是危险的战场上生存下去，就必须要那样。</p>
+          <p> </p>
+          <p>我明白你的意思了，请你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Ab1_1231_ElementalFire3_39_An]全都清除掉了吗？</p>
+          <p> </p>
+          <p>也许是温度太高，空气好像有些闷。</p>
+          <p> </p>
+          <p>看到军团士兵们的脸也觉得很郁闷，看见你在这里晃悠，我也很郁闷...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哦，真的把精灵们清除掉了啊？</p>
+          <p> </p>
+          <p>谢谢你。这是给你的报酬。</p>
+          <p> </p>
+          <p>干嘛一脸意外啊？难道是觉得我不会给你报酬？</p>
+          <p> </p>
+          <p>你看人的眼光不行啊。我可是知书达理的正直的人。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1231_ElementalFire3_39_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Reginlief]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">帮助懒惰的雷金莱普清除血光火焰精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雷金莱普说了一堆让人听不懂的话，让我帮他去清除血光火焰精灵。</p>
+          <p> </p>
+          <p>没办法帮他清除了火焰精灵，他说非常感谢，并意外地给了我谢礼。</p>         
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

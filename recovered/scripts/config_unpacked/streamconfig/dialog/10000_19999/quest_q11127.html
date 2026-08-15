@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在英吉斯温也有纽特存在，这是件让人吃惊的事情。但对于学者们来说，英吉斯温的纽特却是很好的研究对象。</p>
+          <p> </p>
+          <p>甚至还出现了新的假说，说纽特由于受到德拉纳的气息的影响而获得了新的力量。</p>
+          <p> </p>
+          <p>稍微进行一下研究，也许并不是坏事。</p>
+          <p> </p>
+          <p>这个地区的纽特在蜕皮变态的过程中，会出现一种奇特的现象。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>纽特到了蜕皮的时候，会躲进洞穴。</p>
+          <p> </p>
+          <p>现在，进入洞穴的纽特工人们正在进行脱皮的准备。</p>
+          <p> </p>
+          <p>我想有必要对它们的活体组织进行确认。这次您能再帮我一次吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>进入洞穴，消灭[%dic:STR_DIC_M_LF4_B7_Neut_Workerhigh_53_An]，应该就能得到[%dic:STR_DIC_I_QUEST_11127a]。</p>
+          <p> </p>
+          <p>因为它们在准备蜕皮，所以壳应该很容易掉下来。</p>
+          <p> </p>
+          <p>如果能搜集到14个左右，应该就能确认德拉纳对纽特产生了什么影响。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没办法，看来我只能自己去搜集了。</p>
+          <p> </p>
+          <p>但是我一直以来都在从事研究活动，在战斗方面完全不行。</p>
+          <p> </p>
+          <p>要想搜集到14个纽特壳，估计14天都不一定可以完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了从[%dic:STR_DIC_I_QUEST_11127a]中提取德拉纳成分，我正在准备材料。</p>
+          <p> </p>
+          <p>过去每次都要委托大城市进行成分分析，但是现在只要经过简单的准备，就可以直接提取了。</p>
+          <p> </p>
+          <p>特别是像纽特这样有几层壳的昆虫，分析成分相对比较简单。</p>
+          <p> </p>
+          <p>您帮我搜集到14个纽特壳了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出纽特壳。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_11127a]还没搜集到吗？</p>
+          <p> </p>
+          <p>我刚才说过了，现在洞穴里的[%dic:STR_DIC_M_LF4_B7_Neut_Workerhigh_53_An]正在准备蜕皮。</p>
+          <p> </p>
+          <p>消灭它们，应该很容易就能获得纽特壳。</p>
+          <p> </p>
+          <p>过了蜕皮的季节之后，就很难再搜集到了，请您抓紧时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是纽特的壳啊。果然很快就搜集到了。</p>
+          <p> </p>
+          <p>只要经过简单的确认，就能知道纽特在变态的过程中是如何受到德拉纳的影响了。</p>
+          <p> </p>
+          <p>真的非常感谢。请收下这个。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_B7_Neut_Workerhigh_53_An]的壳，然后交给[%dic:STR_DIC_N_Sarapion]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">萨拉皮安说想通过纽特壳确认德拉纳对纽特造成了什么样的影响。帮助萨拉皮安搜集纽特壳吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>萨拉皮安说想通过纽特壳确认德拉纳对纽特造成了什么样的影响。</p>
+          <p> </p>
+          <p>帮他搜集到了洞穴里的英吉斯温纽特侦察兵的壳，他对我表示感谢，说马上就可以确认德拉纳造成的影响了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

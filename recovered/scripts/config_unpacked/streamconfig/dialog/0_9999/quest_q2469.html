@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，等一下！</p>
+          <p> </p>
+          <p>请您别走，再帮我一个忙好吗？只要再帮我一次就行了。</p>
+          <p> </p>
+          <p>原先我不知道，去问了手工师才知道，要制作首饰的话，还需要亚德曼金属矿石。</p>
+          <p> </p>
+          <p>说必须有那个，才能制作出像样的首饰。而且，还需要一块高纯度的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就拜托您了。</p>
+          <p> </p>
+          <p>请您不要觉得麻烦。您能帮我搜集12个[%dic:STR_DIC_DG_metal_n_c_30a]和1个[%dic:STR_DIC_DG_metal_n_r_30a]吗？</p>
+          <p> </p>
+          <p>我一定会酬谢你的。怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人果然是个大好人！</p>
+          <p> </p>
+          <p>那就请您帮我搜集12个[%dic:STR_DIC_DG_metal_n_c_30a]和1个[%dic:STR_DIC_DG_metal_n_r_30a]吧。</p>
+          <p> </p>
+          <p>这段时间我会先把其他材料拿去交给手工师。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀，早知道这样的话，当初我就让您帮我一起搜集亚德曼金属矿石了...</p>
+          <p> </p>
+          <p>不过我确实对手工一无所知。</p>
+          <p> </p>
+          <p>您不能再考虑一下吗？除了守护者大人，我还能去找谁呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这次晚了一点。</p>
+          <p> </p>
+          <p>已经没有时间了，请您快把带回来的东西给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出亚德曼金属矿石和高纯度亚德曼金属矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>12个[%dic:STR_DIC_DG_metal_n_c_30a]和1个[%dic:STR_DIC_DG_metal_n_r_30a]还没搜集到吗？</p>
+          <p> </p>
+          <p>让人感觉挺失望的。您看我都急成什么样了。</p>
+          <p> </p>
+          <p>虽然我是求您的人，不应该催您。但是希望您能尽量快一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，材料总算搜集齐了。</p>
+          <p> </p>
+          <p>真是非常感谢。</p>
+          <p> </p>
+          <p>听说最近亚德曼金属非常不好搜集。高纯度亚德曼金属就更难找了。</p>
+          <p> </p>
+          <p>来，这是我的谢礼。虽然不多，但我已经竭尽所能了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">从[%dic:STR_DIC_DG_gb_source_metal_d_30a]里采集材料，然后交给[%dic:STR_DIC_N_Karina]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让卡利娜能够制作首饰，必须帮她搜集亚德曼金属矿石和高纯度亚德曼金属矿石。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>卡利娜说要制作首饰不仅需要白金，还需要亚德曼金属，请求我帮她搜集。</p>
+          <p> </p>
+          <p>按照她的要求，帮她搜集到了亚德曼金属矿石和高纯度亚德曼矿石。卡利娜表示非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

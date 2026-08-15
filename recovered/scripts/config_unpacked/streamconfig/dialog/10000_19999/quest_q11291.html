@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>这段时间的努力终于有了结果。</p>
+          <p></p>
+          <p>去调查亚龙的守卫终于有了消息。</p>
+          <p></p>
+          <p>他们找到了亚龙的洞穴。</p>
+          <p></p>
+          <p>继发现阿拉卡之后，又找到了亚龙，看来一定是永恒之塔在保佑我们。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我们应该趁这个好势头，把事情给解决掉。</p>
+          <p></p>
+          <p>[%username]，据说亚龙的洞穴在[%dic:STR_DIC_W_LF4_SZ_C3]。</p>
+          <p></p>
+          <p>你马上到那里去消灭亚龙。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>到了太古森林之后，你去见见[%dic:STR_DIC_N_Jamia]。</p>
+          <p></p>
+          <p>她会告诉你消灭亚龙所需的情报。</p>
+          <p></p>
+          <p>[%username]，你是获得了凯西内尔的祝福的人。</p>
+          <p></p>
+          <p>相信这次你一定会给我带来好消息。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>啧啧，你是害怕亚龙吗？</p>
+          <p></p>
+          <p>不管拥有神秘力量，她都是没有觉醒成龙的失败者。</p>
+          <p></p>
+          <p>只要几个人齐心协力，就一定可以对付她。</p>
+          <p></p>
+          <p>如果没有自信的话，你可以到[%dic:STR_DIC_W_Arena_L_Lobby]去锻炼一下。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>您是卡伊努斯代理人大人派来的吗？</p>
+          <p></p>
+          <p>果然没错。见到你很高兴，我叫杰米娅。</p>
+          <p></p>
+          <p>我正在按照代理人大人的命令，在提亚马特的领土上调查亚龙。</p>
+          <p></p>
+          <p>除了我之外，应该还有其他调查亚龙的人。当然，我幸运地第一个找到了亚龙。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">询问有关亚龙的情报。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>我刚想跟您说呢。一定经常有人说您性子急吧？</p>
+          <p></p>
+          <p>好的，拿着。</p>
+          <p></p>
+          <p>帕德玛夏，啊，就是这个洞穴里的亚龙的名字。</p>
+          <p></p>
+          <p>必须有这个才能进入帕德玛夏的洞穴。</p>
+          <p></p>
+          <p>这是魔法物品，只要使用一次就没用了，使用的时候最好小心一点。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">和[%dic:STR_DIC_N_Jamia]对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">据说在英吉斯温发现了亚龙的洞穴。去见见太古森林里的杰米娅，确认有关亚龙的情报吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>卡伊努斯代理人说发现了亚龙的洞穴，让我去见见太古森林里的杰米娅。</p>
+          <p></p>
+          <p>找到杰米娅之后，她把可以进入帕德玛夏的洞穴的钥匙给了我。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

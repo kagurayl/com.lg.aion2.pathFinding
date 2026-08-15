@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HtmlPages>
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>好了，现在开始训练！</p>
+          <p></p>
+          <p>必须马上到第3神庙训练所中去接受训练！</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>不管是孤独竞技场也好，混沌竞技场也好，哪个都可以。</p>
+          <p></p>
+          <p>如果你对和一个人决斗有自信的话，就去孤独竞技场，如果对混战有自信的话，就去混沌竞技场。</p>
+          <p></p>
+          <p>进入竞技场之后，只要打倒一个对手，最初的训练就完成了。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>竞技场必须有入场券才能进入。</p>
+          <p></p>
+          <p>如果没有入场券的话，就去问问行政官埃纽吧。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>胆小的家伙就不必去了！</p>
+          <p></p>
+          <p>连这种训练都害怕的人，你还是去乞求木浦斯吧。</p>
+          <p></p>
+          <p>也许，你能在第1、第2神庙中找到勇气。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>训练完成了吗？</p>
+          <p></p>
+          <p>只要打倒一个敌人，就能完成的简单训练。不是很难吧？</p>
+          <p></p>
+          <p>快向我报告一下。</p>
+        </body>
+      </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">说发现了奇怪的东西。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>对方掉落的东西？</p>
+          <p></p>
+          <p>怎么会呢……只是和实体接近罢了，怎么说对手也是幻影啊？</p>
+          <p></p>
+          <p>给我看看。我需要调查一下。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <steps>
+            <step>
+              <p visible="[%0]">
+                <font color="[%1]">去[%dic:STR_DIC_W_IDArena_pvp_L]打倒对手([%2]/1)</font>
+              </p>
+            </step>
+            <step>
+              <p visible="[%3]">
+                <font color="[%4]">和[%dic:STR_DIC_N_Junos]%对话</font>
+              </p>
+            </step>
+          </steps>
+          <p>
+            <font font_xml="quest_summary">去第3神庙训练所中进行最初的训练的时候到了。到竞技场去打倒对手吧。</font>
+          </p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+      <html>
+        <body>
+          <p>按照朱诺思所说，到第3神庙训练所中完成了最初的训练。</p>
+          <p></p>
+          <p>在训练中打倒的对手身上掉落了一个东西，把它交给了朱诺思。</p>
+          <p></p>
+          <p>朱诺思说幻影应该不会掉落东西，需要调查一下。</p>
+        </body>
+      </html>
+    </Contents>
+  </HtmlPage>
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>任务进行：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+</HtmlPages>

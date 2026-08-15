@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者大人，该怎么办才好呢？</p>
+          <p> </p>
+          <p>我在这里往下面看的时候，不小心把首饰掉下去了。</p>
+          <p> </p>
+          <p>本来我想把它当作在要塞定居的费用的...但是因为是丈夫送给我的礼物，所以正在犹豫该不该把它卖掉。</p>
+          <p> </p>
+          <p>正在犹豫的时候，就不小心掉到下面冰冻的湖面上去了。这可怎么办呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说会帮助她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的吗？啊，太感谢了！</p>
+          <p> </p>
+          <p>首饰掉下去之后，附近的路皮里尼、蛇颈龙和蜥蜴都跑了过去。</p>
+          <p> </p>
+          <p>它们消失之后，首饰就不见了。我的首饰应该是被那些家伙拿走了。</p>
+          <p> </p>
+          <p>要找回首饰的话，就必须飞到湖那边去，在它们身上寻找才行。您能帮我去找找看吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我掉下去的东西是欧帕尔项链、蓝宝石戒指和一对珍珠耳环。</p>
+          <p> </p>
+          <p>您去除掉冰湖路皮里尼、霜之蛇颈龙和冰之蜥蜴的话，应该就能找到那些东西。</p>
+          <p> </p>
+          <p>那是我的全部财产，请您一定要帮我找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才您还说要帮我，为什么现在又拒绝我啊？</p>
+          <p> </p>
+          <p>虽然对守护者大人来说不算什么，但是我以后的生活就全靠这些首饰了。</p>
+          <p> </p>
+          <p>和丈夫分开了之后，我也得想办法活下去啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>找到了吗？</p>
+          <p> </p>
+          <p>我的[%dic:STR_DIC_I_QUEST_2302a]、[%dic:STR_DIC_I_QUEST_2302b]和[%dic:STR_DIC_I_QUEST_2302c]全都找到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出首饰。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看样子...您还没找到啊。</p>
+          <p> </p>
+          <p>我知道您很忙，所以我也不来催您。</p>
+          <p> </p>
+          <p>只要您别忘了帮我找回来就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是我掉了的首饰！</p>
+          <p> </p>
+          <p>谢谢您，真的非常感谢。</p>
+          <p> </p>
+          <p>多亏您救了我一命。我都不知道该怎么感谢您...</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到[%dic:STR_DIC_I_QUEST_2302all]，然后交给[%dic:STR_DIC_N_Frenai]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">普雷那伊说把项链、戒指和耳环丢了，那是她的全部财产。除掉要塞周围的湖上的野兽，帮她找回首饰吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>普雷那伊因为首饰掉到了要塞下面的湖上而很伤心，说那是她的全部财产。</p>
+          <p> </p>
+          <p>于是除掉了湖上的动物，帮她找回了项链、戒指和耳环。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

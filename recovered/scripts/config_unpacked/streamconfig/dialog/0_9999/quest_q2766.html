@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>清除恐怖的冤魂的时候，在附近没有别的东西吗？</p>
+          <p> </p>
+          <p>我因为没去过贫瘠之岛，所以对那里的情况很不了解。</p>
+          <p> </p>
+          <p>[%username]大人已经去过一次，对那里的情况应该比较了解。怎么样？除了恐怖冤魂之外，没有别的了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说有流浪的古代士兵。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(脸色一下子变得苍白)流浪的古代士兵？啊，不会吧！</p>
+          <p> </p>
+          <p>它们在贫瘠之岛上？不喜欢的东西全都聚到那儿去了。</p>
+          <p> </p>
+          <p>我很胆小，看见古代士兵那种骨头都露出来的家伙的话，手脚就会发软。</p>
+          <p> </p>
+          <p>不好意思，[%username]大人您能再帮我一次吗？</p>
+          <p> </p>
+          <p>请您再去一趟贫瘠之岛，帮我把[%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您两次答应我的请求。</p>
+          <p> </p>
+          <p>您应该比我更了解贫瘠之岛，我就不另作说明了。</p>
+          <p> </p>
+          <p>请您注意安全，清除掉[%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]之后，帮我把他们的[%dic:STR_DIC_I_QUEST_2766a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我知道了。您帮我一次忙，我就已经很感谢了。</p>
+          <p> </p>
+          <p>当然，如果这次的事情您也能帮忙的话，我就会更加感激。不过相信您也有自己的事情，我也没办法。</p>
+          <p> </p>
+          <p>流浪的古代士兵嘛...虽然很抱歉，但是我要把它交给缪里卡去处理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您这么快就从贫瘠之岛上回来啦？</p>
+          <p> </p>
+          <p>比清除恐怖的冤魂花的时间还要少。</p>
+          <p> </p>
+          <p>详细的话以后慢慢再说，您先把古代士兵的[%dic:STR_DIC_I_QUEST_2766a]交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出古代士兵的骸骨装饰。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您还没去贫瘠之岛吗？</p>
+          <p> </p>
+          <p>虽然不着急，但是不管什么事情，如果时间拖得太久，就会被忘记或者不愿意去做了，不是吗？</p>
+          <p> </p>
+          <p>趁现在还没太晚，请您快去贫瘠之岛把[%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]清除掉，然后把[%dic:STR_DIC_I_QUEST_2766a]带回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个装饰不会也是用骨头做的吧？呃，想想就很讨厌。</p>
+          <p> </p>
+          <p>我得把它放到袋子里，找个看不见的地方埋起来。</p>
+          <p> </p>
+          <p>不管怎样，多亏了[%username]大人，我们终于可以安心地去贫瘠之岛了。</p>
+          <p> </p>
+          <p>真心地对您表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Ab1_1251_Skeleton_34_An]，搜集证据然后交给[%dic:STR_DIC_N_Arnora]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助害怕露出骨头的生命体的阿尔诺拉把贫瘠之岛上的流浪的古代士兵清除掉，然后搜集古代士兵的骸骨装饰作为证据交给他。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔诺拉问我贫瘠之岛上除了恐怖的冤魂之外，还有没有其他的生命体。告诉他还有流浪的古代士兵之后，他一脸害怕地说自己害怕露出骨头的东西，让我再帮他一次。</p>
+          <p> </p>
+          <p>为了他再次来到了贫瘠之岛，清除了流浪的古代士兵，并把骸骨装饰作为证据交给了他。他对我表示真心的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

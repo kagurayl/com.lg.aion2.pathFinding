@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>料理的第一步是处理食材。</p>
+          <p> </p>
+          <p>根据处理方法的不同，食物可以成为补药，也可以成为毒药。</p>
+          <p> </p>
+          <p>你说你决定踏上料理师之路，所以我要考考你。</p>
+          <p> </p>
+          <p>你知道处理食材的正确方法吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那我就来看看你今本的食材处理方法。</p>
+          <p> </p>
+          <p>去采集贝壳类的[%dic:STR_DIC_I_GB_SOURCE_SHELL_10A]，然后做成烧烤。</p>
+          <p> </p>
+          <p>烤雪莉是料理中最基础的东西。</p>
+          <p> </p>
+          <p>也许你会觉得很容易，但是很容易烤生或者烤焦，所以看一下烤的状态就能知道你料理的实力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>雪莉在贝尔特伦要塞周围的池塘里很容易找到。</p>
+          <p> </p>
+          <p>搜集到雪莉后，烤好3个拿过来。烤的时候就用旁边的料理台就可以了。</p>
+          <p> </p>
+          <p>对了，我说过一开始不容易调节火候，很容易烤坏，所以一定要多搜集一点雪莉回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就退却了？</p>
+          <p> </p>
+          <p>这种事情都不能做的话，就想要踏上料理师之路吗？</p>
+          <p> </p>
+          <p>你是把料理当成了好玩的东西。</p>
+          <p> </p>
+          <p>啧，愚蠢的守护者！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好，亲自做料理的感觉怎么样？</p>
+          <p> </p>
+          <p>烧烤食材应该并不会比想象的困难。</p>
+          <p> </p>
+          <p>但是希望你记住料理并不是那么容易的事情。</p>
+          <p> </p>
+          <p>好了，把你烤好的雪莉给我看看吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出烤好的雪莉。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？还没有把烤雪莉准备好？</p>
+          <p> </p>
+          <p>该不会是不知道怎么做烤雪莉吧。</p>
+          <p> </p>
+          <p>不管你知道多么珍贵的料理方法，但是如果连烧烤食材都困难的话，就根本不能开始料理师的生活！</p>
+          <p> </p>
+          <p>快去烤了雪莉拿过来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>天哪！居然把容易烤焦的雪莉烤得如此之好！</p>
+          <p> </p>
+          <p>只要看一下就知道烤得恰到好处。这种颜色是雪莉最美味的状态！</p>
+          <p> </p>
+          <p>一点都没有腥味！</p>
+          <p> </p>
+          <p>你应该是第一次做料理就能做到这种程度，真是了不起！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">将在料理台上烤好的[%dic:STR_DIC_I_GB_SOURCE_SHELL_10A]拿去交给[%dic:STR_DIC_N_Hestia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">赫斯蒂亚说要考考我的料理实力。需要去贝尔特伦的湿地寻找雪莉，并在料理台展示自己烧烤的能力。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>去向一直以来传授天人们料理技艺的赫斯蒂亚学习料理，她让我做料理中最基础的烤雪莉。</p>
+          <p> </p>
+          <p>在贝尔特伦的湿地上捕捉雪莉，烤好后给她送过去，她赞叹手艺不错。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

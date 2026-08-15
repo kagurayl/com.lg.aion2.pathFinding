@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>坎特雷，这个家伙什么时候才能长记性啊！</p>
+          <p> </p>
+          <p>坎特雷冒冒失失地冲进阿武拉乌巢穴打猎，结果被抓住了。</p>
+          <p> </p>
+          <p>因为不见他回来，所以我派人去看了一下，结果发现他被关在阿武拉乌部落中央的监狱里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道阿武拉乌是怎么把他关进监狱的，但是坎特雷竟然被他们抓住了，情况好像比想象的更加复杂。</p>
+          <p> </p>
+          <p>[%username]，你能去帮帮[%dic:STR_DIC_N_Kantele]吗？</p>
+          <p> </p>
+          <p>请你去阿武拉乌部落，把关在监狱里的坎特雷救出来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿武拉乌竟然会建造监狱，看来他们的智能还挺高的。</p>
+          <p> </p>
+          <p>靠近牢笼的时候，一定要小心不要被他们发现。</p>
+          <p> </p>
+          <p>希望坎特雷没出什么事。他虽然有点鲁莽，但是却是个很有能力的人。现在还没能逃出来，我担心他是不是受了很重的伤。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>也是，坎特雷不会轻易被阿武拉乌杀掉的。</p>
+          <p> </p>
+          <p>反正暂时死不了，等他头脑清醒一点之后再去救他也不失为一个好办法。</p>
+          <p> </p>
+          <p>就先放着吧。等他快饿死的时候，再去把他救出来。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是来救我的吗？</p>
+          <p> </p>
+          <p>你看上去好像是个很有能力的[%userclass]，应该可以帮到我。</p>
+          <p> </p>
+          <p>我因为走了一下神，才会变成这个样子的。请不要用那种眼神看我。</p>
+          <p> </p>
+          <p>你能把我救出去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">询问应该怎么帮他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>必须有[%dic:STR_DIC_I_QUEST_21027a]，才能把们打开。</p>
+          <p> </p>
+          <p>但问题是我也不知道钥匙在哪个家伙身上。它们看上去全都长得差不多……</p>
+          <p> </p>
+          <p>请你去[%dic:STR_DIC_M_DF4_Owllau_Fi_51_Ae]身上寻找钥匙，看到一个杀一个。</p>
+          <p> </p>
+          <p>竟敢把我关在这里，把钥匙藏起来。等我出去之后，我们走着瞧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_21027a]找到了吗？</p>
+          <p> </p>
+          <p>有没有去阿武拉乌精锐战士身上找找？</p>
+          <p> </p>
+          <p>只要我能出去，那些家伙，特别是阿武拉乌精锐战士，我一定要他们好看。</p>
+          <p> </p>
+          <p>我知道钥匙的使用方法，请把钥匙交给我吧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出钥匙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_ok">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没错，就是这把钥匙。</p>
+          <p> </p>
+          <p>我会自己打开出去的，不用担心。你先回去吧。</p>
+          <p> </p>
+          <p>什么？阿萨托尔？那个家伙担心我，所以才让你来的？</p>
+          <p> </p>
+          <p>你去帮我告诉他，我活得好好的。</p>
+          <p> </p>
+          <p>这次被阿武拉乌抓了起来，一定又会被他嘲笑了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="check_user_item_fail">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我看见就在某个[%dic:STR_DIC_M_DF4_Owllau_Fi_51_Ae]身上。</p>
+          <p> </p>
+          <p>你再去仔细找找看。</p>
+          <p> </p>
+          <p>虽说即使找不到钥匙我也不会一辈子关在这里，不过还是希望能快一点出去。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么一个人回来了？</p>
+          <p> </p>
+          <p>坎特雷该不会出什么事了吧？</p>
+          <p> </p>
+          <p>我还有很多话要跟他说……</p>
+          <p> </p>
+          <p>到底是怎么了？快说啊！</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来是我多操心了。坎特雷那个家伙现在都还没清醒过来……</p>
+          <p> </p>
+          <p>知道了。不管怎样，谢谢你能帮我。</p>
+          <p> </p>
+          <p>虽然坎特雷嘴上那么说，但被关了老半天，一定也挺受罪的。</p>
+          <p> </p>
+          <p>我代表坎特雷送你一件礼物吧。</p>
+         </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">找到被关在阿武拉乌部落的监狱中的[%dic:STR_DIC_N_Kantele]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">从[%dic:STR_DIC_M_DF4_Owllau_Fi_51_Ae]身上寻找钥匙，交给[%dic:STR_DIC_N_Kantele]</font></p>[%collectitem]</step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Asathor]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">阿萨托尔的朋友坎特雷去打猎阿武拉乌的时候，被阿武拉乌抓住关进了监狱。应该去把他救出来。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿萨托尔说自己的朋友坎特雷去打猎阿武拉乌，但是一直没有回来。</p>
+          <p> </p>
+          <p>他让人去看了看，结果发现他被关在阿武拉乌部落中间的监狱里，于是让我去把他救出来。</p>
+          <p> </p>
+          <p>于是从阿武拉乌精锐战士手上抢到了钥匙，救出了坎特雷，阿萨托尔帮他给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

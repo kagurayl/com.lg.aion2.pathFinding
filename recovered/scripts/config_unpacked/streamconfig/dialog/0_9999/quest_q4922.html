@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所需的技能书都拿到了吗？</p>
+          <p> </p>
+          <p>如果您现在没什么事，跟我聊一会儿吧。</p>
+          <p> </p>
+          <p>不是什么长篇大论的说教，别紧张。我是想问问您有没有兴趣参加神圣力测试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">神圣力测试？</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想必您也知道吧，神圣力技能是永恒之塔赐予我们守护者的独特能力。</p>
+          <p> </p>
+          <p>不过这种技能的限制条件很多，使用起来会相对不太方便。所以守护者中有很多人都不太会用这个技能。</p>
+          <p> </p>
+          <p>总司令特别针对这一问题，举办了神圣力测试以促进守护者对神圣力技能的重视。</p>
+          <p> </p>
+          <p>说起来是测试，其实是一种修练。使用10次指定技能就算完成测试。</p>
+          <p> </p>
+          <p>怎么样？要不要尝试一下神圣力测试？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>让我看看，剑星最近应该刚刚学完突进姿态，这是一种提高攻击力度和攻击速度的技能，实战中能派上大用场。</p>
+          <p> </p>
+          <p>那么就把这个技能作为[%username]你的神圣力测试对象吧。请使用10次[%dic:STR_DIC_E_DP_Fi]。</p>
+          <p> </p>
+          <p>那样的话，就算你考试合格。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意？这项测试可不是谁都可以参加的。</p>
+          <p> </p>
+          <p>难道说您还不知道如何积累神圣力？</p>
+          <p> </p>
+          <p>神圣力是在战斗的过程中，自然而然积累起来的。要想更快地积累神圣力，最好是去欧比斯。</p>
+          <p> </p>
+          <p>如果连这都嫌麻烦，也可以靠食用补充神圣力的果冻。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是挑战神圣力测试的人吧？</p>
+          <p> </p>
+          <p>剑星的话，测试内容应该是使用10次[%dic:STR_DIC_E_DP_Fi]。您做完了吗？</p>
+          <p> </p>
+          <p>让我确认一下您有没有认真完成测试。</p>
+          <p> </p>
+          <p>请走近一点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">走上前去。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(将手放在头上) 唔，神圣力的流动很平滑。看来您确实认真地练习过神圣力技能。</p>
+          <p> </p>
+          <p>(将手拿开) 辛苦您了，您通过了神圣力测试。</p>
+          <p> </p>
+          <p>想必您已经掌握了神圣力的使用方法，以后请继续磨练自己的技能。</p>
+          <p> </p>
+          <p>这是给通过测试守护者的奖励，是专门为剑星制作的东西，希望您能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">请使用[%dic:STR_DIC_E_DP_Fi]([%2]/10)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Traufnir]报告结果</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">总司令官主办的神圣力测试正在进行，使用10次神圣力技能突进姿态，便能通过测试。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉乌普尼尔表示神圣力测试是为了激励那些不太会使用神圣力的守护者熟悉相关技能，邀请我参加测试。</p>
+          <p> </p>
+          <p>按照特拉乌普尼尔的要求，使用了10次神圣力技能突进姿态。他对我表示祝贺，说我通过了考试。</p>
+	</body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

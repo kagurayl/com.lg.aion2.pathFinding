@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(望着天，叹了一口气)咳昂，好像越来越冷了。</p>
+          <p> </p>
+          <p>纳尔卡塔尔的感冒更严重了。早上的时候还吐了血，咳嗬。</p>
+          <p> </p>
+          <p>可能是因为身体太弱，吃了拉克夏提尔的药也没有用。</p>
+          <p> </p>
+          <p>拉克夏提尔让我把纳尔卡塔尔送到温暖的地方去疗养，但是我却不放心，咳昂。</p>
+          <p> </p>
+          <p>这里是最安全的地方……而且没有纳尔卡塔尔的话，我一天都活不下去。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你说要帮我，咳昂。</p>
+          <p> </p>
+          <p>我正想向魔人请求帮助呢。</p>
+          <p> </p>
+          <p>暴风雪变得这么厉害，全都是因为霜精灵峡谷里的精灵。</p>
+          <p> </p>
+          <p>那些精灵消失的话，暴风雪就会消失，天气就不会那么寒冷了，咳嗬。</p>
+          <p> </p>
+          <p>你能帮我消灭掉霜精灵峡谷里的精灵吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>沿着村子入口处的路一直走，就可以看到霜精灵峡谷了，咳昂。</p>
+          <p> </p>
+          <p>帮我把那里的[%dic:STR_DIC_M_ElementalEarth3SnowD_45_An]、[%dic:STR_DIC_M_ElementalEarth4SnowD_45_An]、[%dic:STR_DIC_M_Elementalair3D_45_An]和[%dic:STR_DIC_M_Elementalair4D_45_An]消灭掉。</p>
+          <p> </p>
+          <p>纳尔卡塔尔的身体不好，你最好快一点，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是害怕精灵吗，咳昂？</p>
+          <p> </p>
+          <p>那就没办法了。</p>
+          <p> </p>
+          <p>看来我只能找那个叫普雷伊亚还是什么的人了，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就从霜精灵峡谷回来啦，咳昂。</p>
+          <p> </p>
+          <p>感觉天气好像不那么冷了，你把精灵全部消灭掉了吗？</p>
+          <p> </p>
+          <p>我想知道是怎么回事，快跟我说说吧，咳嗬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>果然是因为你消灭了峡谷里的精灵啊，咳昂。</p>
+          <p> </p>
+          <p>谢谢。纳尔卡塔尔的状态好像好多了。</p>
+          <p> </p>
+          <p>我一定会记住你的恩惠的，咳昂。</p>
+          <p> </p>
+          <p>这是我的心意。你收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭引起暴风雪的霜精灵峡谷的精灵</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth3SnowD_45_An]([%2]/1)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ElementalEarth4SnowD_45_An]([%5]/2)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Elementalair3D_45_An]([%8]/8)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Elementalair4D_45_An]([%11]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_DF3_NPC_Akigatan]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">因为越来越严重的暴风雪，纳尔卡塔尔的健康不断恶化。必须按照族长阿吉卡坦的委托，消灭引起暴风雪的霜精灵峡谷的精灵。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>族长阿吉卡坦说夫人纳尔卡塔尔的健康因为暴风雪而变得更差了，让我去消灭引起暴风雪的霜精灵峡谷的精灵。</p>
+          <p> </p>
+          <p>按照族长的委托，消灭了精灵，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

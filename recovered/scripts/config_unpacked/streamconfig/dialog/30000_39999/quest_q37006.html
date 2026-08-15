@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>收件人：[%username]</p>
+          <p>发件人：极乐世界预备神庙，[%dic:STR_DIC_N_Vespasianus]</p>
+          <p> </p>
+          <p>极乐世界预备神庙的成员请注意。今天的任务是消灭潜入埃尔特内的[%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An]%。</p>
+          <p> </p>
+          <p>我们收到情报，说埃尔特内结界塔附近经常有[%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An]出现。经过调查，我们得知其利用一种名叫[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]的魔法物品隐藏了起来。</p>
+          <p> </p>
+          <p>要想把魔族情报员从隐身召唤体中召唤出来，必须要有导师的帮助，因此请务必和导师一同执行任务。</p>
+          <p> </p>
+          <p>愿极乐世界的祝福与你同在。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您到兰克斯高原去了吗？我很想知道[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]到底长成什么样子。</p>
+          <p> </p>
+          <p>据说魔族会将情报员们在欧比斯中搜集到的情报用于战斗，很多人都表示担忧。</p>
+          <p> </p>
+          <p>因此极乐世界认为消灭情报员是一切的重中之重。</p>
+          <p> </p>
+          <p>请向我报告任务结果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>魔族情报员在不断地威胁着天界。</p>
+          <p> </p>
+          <p>他们是为了自己的种族才会潜入这里，对于他们的命运，我感到一丝同情。</p>
+          <p> </p>
+          <p>但是他们的傲慢是不可原谅的，因为他们威胁到了我们的和平。</p>
+          <p> </p>
+          <p>谢谢您消除了我们对魔族情报活动的担忧。这是这次任务的奖励。</p>
+          <p> </p>
+          <p>愿您有一个光明的未来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_E_Mentor]一起消灭[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006]的 [%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An]([%2]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vespasianus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从极乐世界预备神庙的贝斯帕西亚努斯那里收到了一封信。按照指示，和导师一起消灭藏身在兰克斯高原的隐身召唤体里的魔族情报员。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从极乐世界预备神庙收到了一封信，让我去埃尔特内执行任务。</p>
+          <p> </p>
+          <p>按照信上的指示，和导师一起去兰克斯高原消灭了龙族情报员，向贝斯帕西亚努斯报告之后，获得了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

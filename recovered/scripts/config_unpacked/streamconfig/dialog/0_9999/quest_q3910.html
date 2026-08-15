@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希凯雅拜托你去参加的活动，其实也是一种考验。</p>
+          <p> </p>
+          <p>我们为了找出治愈星和护法星以外的能够践行生命教诲的人。</p>
+          <p> </p>
+          <p>尤斯迪埃大人教导我们要亲切对待天界的每一个人。</p>
+          <p> </p>
+          <p>我们这些负责传递生命力量的人在宣扬这些教诲的同时也在为需要的人注入生命的气息。</p>
+          <p> </p>
+          <p>不过，现在我们却遇到了麻烦。</p>
+          <p> </p> 
+          <p>魔族随时可能杀过来，时局一团混乱。许多人都在战斗中倒下了，急需生命的力量。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续倾听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>作为生命之神庙的一员，我觉得力不从心。</p>
+          <p> </p>
+          <p>现在的治愈星和护法星大多只救助自己小团体里的守护者。</p>
+          <p> </p>
+          <p>所以，我们才不得已向[%userclass]这样的守护者求援。</p>
+          <p> </p>
+          <p>尤斯迪埃主神的教诲永远向每一个人敞开，包括[%username]你。</p>
+          <p> </p>
+          <p>请你去战场上帮我们实践生命的教诲吧。</p>
+          <p> </p>
+          <p>向生命垂危的同族守护者伸出援助之手，向他们传递生命的光芒吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>像你这样的人不是神庙的一员，真是可惜。</p>
+          <p> </p>
+          <p>你的神圣力已经冻结在了[%userclass]上，没法学习复活技能了。</p>
+          <p> </p>
+          <p>请在箱子里常备一些[%dic:STR_DIC_I_SOULSTONE_RESURRECT]吧。</p>
+          <p> </p>
+          <p>这样你就能随时拯救那些需要帮助的天族守护者，大家一起并肩作战。</p>
+          <p> </p>
+          <p>对了，复活精灵石的使用是不被认可的。如果不是危急时刻，希望[%username]大人留着自己用。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我太过分了吗？拜托别的神庙的人去做这种事情。</p>
+          <p> </p>
+          <p>不过请一定记住。</p>
+          <p> </p>
+          <p>善有善报，越是在困难的时候生命的意义才越显得弥足珍贵……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+    <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实各个神庙的教义不过是侧重点不同而已，本质上并没有太多区别。</p>
+          <p> </p>
+          <p>有时候看到不同神庙的守护者之间因为无法宽容彼此而出现分歧争执，我都会觉得很遗憾。</p>
+          <p> </p>
+          <p>为什么大家就不明白，其实所有的神庙履行的都是永恒之塔的意志呢……</p>
+          <p> </p>
+          <p>好在[%username]你能理解我。</p>
+          <p> </p>
+          <p>我所拜托的事情，慢慢做没关系。做完了来找我就行。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>事情都做完了？</p>
+          <p> </p>
+          <p>希凯雅和我果然没有看错人。</p>
+          <p> </p>
+          <p>尤斯迪埃主神应该会很欣慰吧。真可惜，[%username]你不是我们生命之神庙的成员。</p>
+          <p> </p>
+          <p>以后请你以[%userclass]为目标继续努力，不要忘记生命的教诲。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">使用[%dic:STR_DIC_I_SOULSTONE_RESURRECT]救助生命垂危的同伴([%2]/100)</font></p></step>               
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Thrasymedes]对话</font></p></step>               
+    </steps>
+          <p><font font_xml="quest_summary">按特拉希梅德斯的嘱咐，使用复活精灵石实践生命之神庙的教诲。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>特拉希梅德斯表示生命之神庙的人手不够，希望我能帮忙履行生命之教诲。</p>
+          <p> </p>
+          <p>使用复活精灵石，拯救生命垂危的同伴后，得到了特拉希梅德斯的表扬和奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

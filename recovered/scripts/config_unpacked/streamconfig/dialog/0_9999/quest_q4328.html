@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4328</QuestId>    <QuestName>???</QuestName>    <QuestType>未输入</QuestType>  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，[%username]大人，您这是急着去哪儿啊？</p>
+          <p> </p>
+          <p>如果没什么急事的话，请听我说一说。</p>
+          <p> </p>
+          <p>整天在三尖树田里干活，生活也不见好转，真让人郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有很多张口在等着吃饭，但我却赚不到什么钱……</p>
+          <p> </p>
+          <p>要是能当上监工，也许会好一点，但是巴洛姆大人却一直不提拔我。</p>
+          <p> </p>
+          <p>这次我老婆又怀了孩子……哈，这样下去的话，我们一家人就都要饿死了。</p>
+          <p> </p>
+          <p>所以我说，您能帮我到[%dic:STR_DIC_W_DF2_SUB_C3]去搜集[%dic:STR_DIC_M_VespaReD_32_n]的结晶吗？</p>
+          <p> </p>
+          <p>那是非常值钱的东西，但是对于干农活的我来说，简直比摘天上的星星还要困难。</p>
+          <p> </p>
+          <p>当然，我一定会好好答谢您的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您到[%dic:STR_DIC_W_DF2_SUB_C3]去。到了那里的话，应该就能找到[%dic:STR_DIC_M_VespaReD_32_n]。</p>
+          <p> </p>
+          <p>[%username]大人，那我就全靠您了。我们一家人的生死全都攥在[%username]大人的手上。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果您没有一点负罪感，那您就走吧。</p>
+          <p> </p>
+          <p>您真是太过分了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么慢啊！</p>
+          <p> </p>
+          <p>去了这么久才回来，我还以为[%username]大人已经放弃了呢。</p>
+          <p> </p>
+          <p>对了……拜托您的东西怎么样了？维斯帕的结晶搜集到了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出维斯帕的结晶。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，怎么会这样……我说的是[%dic:STR_DIC_I_QUEST_4328A]。</p>
+          <p> </p>
+          <p>请您再确认一下。</p>
+          <p> </p>
+          <p>这些好像还不够。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哎呀！这真的是[%dic:STR_DIC_I_QUEST_4328A]吗？</p>
+          <p> </p>
+          <p>晶莹剔透的金色光彩！这下我发财了。这全都是托[%username]大人的福！</p>
+          <p> </p>
+          <p>[%username]大人，您是我们一家人的大恩人。</p>
+          <p> </p>
+          <p>这些虽然不多，但却是我的一份心意，请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_VespaReD_32_n]的结晶，然后交给[%dic:STR_DIC_N_Virashak]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">比拉夏克为了家人的生计，拜托我帮他搜集维斯帕的结晶。帮他去搜集琥珀翅维斯帕的结晶吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊拉西克村的比拉夏克说一家人的处境很困难，让我帮他搜集琥珀翅维斯帕的结晶。</p>
+          <p> </p>
+          <p>于是帮他搜集到了维斯帕的结晶，他对我表示感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

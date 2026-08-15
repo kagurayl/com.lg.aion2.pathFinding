@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看到你带来的灵魂碎片，我的心情变得非常复杂。</p>
+          <p> </p>
+          <p>我们是不是来得太晚了……“人们都已经死了，不用那么着急了。”我对自己曾经有这样的想法而感到万分羞愧。</p>
+          <p> </p>
+          <p>之前，我把注意力都放在结界塔的重建上。从现在开始，在复原泰奥勃莫斯的事情上，我也要投入更多的精力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>目前，对于泰奥勃莫斯的垦荒作业，有三个大绊脚石。</p>
+          <p> </p>
+          <p>卡里顿，干枯的大海，还有普雷奇温的火焰，其中，最大的问题是普雷奇温的火焰。</p>
+          <p> </p>
+          <p>说起来，另外两个问题，归根结底也是由普雷奇温的火焰引起的。由于那里的高温，大海才会干枯；人们无法安定生活，卡里顿才会越来越猖狂。</p>
+          <p> </p>
+          <p>所以，我打算最先解决普雷奇温的火焰。我认为你是最佳人选。</p>
+          <p> </p>
+          <p>怎么样？愿意接受这件任务吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你答应接受，让我安心了很多。</p>
+          <p> </p>
+          <p>你去过那里，应该知道，在那不灭的火焰周围，到处都是 [%dic:STR_DIC_M_LF2A_Evileye_46_An]和 [%dic:STR_DIC_M_LF2A_CyclopsLava_46_An]。</p>
+          <p> </p>
+          <p>那些家伙专门扩散火焰的力量。因此，请你先去消灭阿修拉赞和独眼巨人。</p>
+          <p> </p>
+          <p>先消灭它们，然后再熄灭火焰，我认为这是最合理的次序。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你既然都带来了灵魂碎片，怎么能一口回绝呢？</p>
+          <p> </p>
+          <p>看到那些被关在火焰中，痛苦挣扎的不死族，你没有任何感觉吗？现在看起来，你还真是个“冷静”的人。</p>
+          <p> </p>
+          <p>我已经知道你的想法了，你先回去好好考虑一下吧。以现在的气氛，再说下去，也只会让大家更不高兴。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正等着你回来呢。</p>
+          <p> </p>
+          <p>看样子你十分疲惫啊。告诉我结果后，就回去休息吧。</p>
+          <p> </p>
+          <p>我拜托的事情怎么样了？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿修拉赞和独眼巨人的数量减少了。这样的话，一段时间内就不用担心普雷奇温的火焰扩散了。</p>
+          <p> </p>
+          <p>这都多亏了 [%username] ，真是辛苦你了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭扩散普雷奇温的火焰的怪物。</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_Evileye_46_An]([%2]/13)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_LF2A_CyclopsLava_46_An]([%5]/15)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Atropos]报告结果。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">从普雷奇温的火焰中诞生的阿修拉赞和独眼巨人一直扩散着火焰的力量。为了让普雷奇温的火焰不再扩散，要消灭奸细阿修拉赞和熔岩独眼巨人。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护者阿特洛浦斯看到被关在不灭的火焰中的不死族的灵魂碎片后，对于自己只重视结界塔重建的事情，进行了反省。</p>
+          <p> </p>
+          <p>他表示，正式展开泰奥勃莫斯的垦荒作业，就要先解决最大问题——普雷奇温的火焰。</p>
+          <p> </p>
+          <p>他表示火焰周边的阿修拉赞和独眼巨人正在扩散火焰的力量，并请求先去消灭那些家伙们。</p>
+          <p> </p>
+          <p>接受他的请求消灭了阿修拉赞和独眼巨人。他对此表示感谢，认为这下一段时间内火焰不会再继续扩散了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

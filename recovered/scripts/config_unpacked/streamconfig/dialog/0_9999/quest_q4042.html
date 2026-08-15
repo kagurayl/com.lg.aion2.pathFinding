@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(这是一封很旧的信。)</p>
+          <p> </p>
+          <p>(被水浸湿，很难看清内容。)</p>
+          <p> </p>
+          <p>(仔细观察，发现收信人是“萨赫努”。)</p>
+          <p> </p>
+          <p>(要拿去交给[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束观察。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>妹妹离开已经很长时间了。</p>
+          <p> </p>
+          <p>其他姐妹们估计都认为努特阿姆已经死了，放弃了寻找。</p>
+          <p> </p>
+          <p>但是我相信她肯定还会活着，塞伊兰可不是什么脆弱的种族。</p>
+          <p> </p>
+          <p>就算她真的死了，我也要找到证据。</p>
+          <p> </p>
+          <p>我可怜的努特阿姆妹妹，到底在哪里呢，究竟在做什么呢……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">将信递给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是我的信吗？</p>
+          <p> </p>
+          <p>(拿着信的手颤抖起来。) 这肯定是努特阿姆的笔迹，啊，努特阿姆！</p>
+          <p> </p>
+          <p>必须要知道这封信的内容。</p>
+          <p> </p>
+          <p>守护者，你愿意帮助我吗？请帮我复原信里的内容。</p>
+          <p> </p>
+          <p>守护者们具有丰富的知识，也会知道复原旧信的方法吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很多人都来找我复原书信。</p>
+          <p> </p>
+          <p>一些古书，还有太破旧看不到字迹的日记，发霉的信等。</p>
+          <p> </p>
+          <p>复原这些是非常有意义的工作，因为我可以恢复一个人过去的记忆。</p>
+          <p> </p>
+          <p>[%username]大人也有事找我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">请求他复原旧信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，看来是很久以前写的信，看信纸的材质就可以知道。</p>
+          <p> </p>
+          <p>情况还不算太糟糕，看来保存的还算不错。</p>
+          <p> </p>
+          <p>虽然字体很模糊，不过信封整体保存完好，很容易就可以复原了。</p>
+          <p> </p>
+          <p>请坐在那里稍等一会。我现在就给您复原。很快就会好的。</p>
+          <p> </p>
+          <p>(在信上做了几道工序) 好了，已经完成了，现在可以看清内容了，请拿走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，正在等你呢！</p>
+          <p> </p>
+          <p>复原了信了吗？</p>
+          <p> </p>
+          <p>我亲爱的妹妹努特阿姆的信啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将复原的信交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(抢夺书信) 啊，努特阿姆！</p>
+          <p> </p>
+          <p>总有一天我会报答你的大恩大德。塞伊兰不是忘恩负义的种族。</p>
+          <p> </p>
+          <p>那么失陪……先让我一个人静一静。</p>
+          <p> </p>
+          <p>我需要一些时间来读一读寻找的妹妹的信。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">去[%dic:STR_DIC_N_Gunter]那里将信复原</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">与[%dic:STR_DIC_N_DF2a_Seiren_Sahnu]对话</font></p></step>          
+    </steps>
+          <p><font font_xml="quest_summary">发现了藏在瓶子里的信。把信交给收信人萨赫努。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在纳赫尔湖发现了一封装在旧瓶子里的信。</p>
+          <p> </p>
+          <p>交给了收信人萨赫努，萨赫努表示这是妹妹写给自己的信，请求去把信复原。</p>
+          <p> </p>
+          <p>去找古文书复原专家昆泰尔，复原信后再交给了萨赫努。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在阿斯特利亚湖西侧有一个剑之岛。之所以被叫做剑之岛，是因为那里竖立着一把巨大的剑。</p>
+          <p> </p>
+          <p>欧比斯中出现龙族之后不久，天族、魔族和龙族曾经在那里展开混战。</p>
+          <p> </p>
+          <p>天族和魔族暂时结成了同盟向龙族发动攻击。最后龙族战败逃走，那时龙族的队长沙特巴斯掉落的剑现在还插在那里。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>现在剑之岛落入了龙族的手中。由于没有要塞，我们和魔族都对那个岛并没有太多的关心。</p>
+          <p> </p>
+          <p>但是，也许是因为那把剑的原因，龙族却对那个岛比较执着。</p>
+          <p> </p>
+          <p>但是因为那里靠近阿斯特利亚湖要塞，所以龙族占据着那里对我们并没有好处。</p>
+          <p> </p>
+          <p>[%username]大人您能去剑之岛，把在那里游荡的德拉克纽特清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剑之岛现在由[%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]和[%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]占领着。</p>
+          <p> </p>
+          <p>请您把他们全部清除掉，让我们可以重新夺回剑之岛。</p>
+          <p> </p>
+          <p>[%username]大人的努力是夺回剑之岛的第一步。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在欧比斯中，最重要的是占领要塞。所以防止占领的要塞被敌人抢走也是非常重要的事。</p>
+          <p> </p>
+          <p>要想要塞不被夺走，必须把各种危险的因素事先清除掉，这非常重要。</p>
+          <p> </p>
+          <p>所以清除剑之岛上的德拉克纽特也同样非常重要。</p>
+          <p> </p>
+          <p>但是，[%username]大人好像觉得这并不重要，那我也没办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您从剑之岛回来了吗？</p>
+          <p> </p>
+          <p>虽然我没亲眼见过，听说龙帝的体型非常巨大。高级的德拉坎也和龙帝一样大。</p>
+          <p> </p>
+          <p>从剑之岛上插着的剑来看，沙特巴斯一定也是个体型巨大的德拉坎。</p>
+          <p> </p>
+          <p>不过话说回来，您把[%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]和[%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]全都清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您干的真不错。</p>
+          <p> </p>
+          <p>以前我经常听到[%username]大人的事迹，看来真是名不虚传啊。</p>
+          <p> </p>
+          <p>托[%username]大人的福，剑之岛上暂时会清静一点了。</p>
+          <p> </p>
+          <p>真的非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除占领剑之岛的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]([%2]/10)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]([%5]/2)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]([%8]/2)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]([%11]/2)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Sione]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">剑之岛被德拉克纽特占据着。为了阿斯特利亚湖要塞的安全，最好把他们除掉。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剑之岛在过去是天族、魔族和龙族混战过的地方，战败了的龙族的队长掉落的剑插在那里，所以有了这个名字。</p>
+          <p> </p>
+          <p>赫西奥内说为了附近的阿斯特利亚湖要塞的安全，必须把占领剑之岛的龙族清除掉。</p>
+          <p> </p>
+          <p>于是去岛上清除了德拉克纽特强袭兵、奇袭兵、侦察兵和治疗兵。他非常高兴，说这是迈出了夺回剑之岛的第一步。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者，你在找什么啊？</p>
+          <p> </p>
+          <p>如果你在急着找什么东西，最好仔细听我的话，呐呐。</p>
+          <p> </p>
+          <p>加布隆其实知道你想要什么东西。</p>
+          <p> </p>
+          <p>那是我的同伴在发掘的时候偶然发现的东西，听金刺军团的守护者们说那是很值钱的东西。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问找到了什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我不能告诉你更详细的情况，呐呐。</p>
+          <p> </p>
+          <p>我只能告诉你，在神殿有一块雕刻着雕像的石壁，那个东西和那个石壁有关。</p>
+          <p> </p>
+          <p>等你需要的时候，你就知道我说的是什么意思了，呐呐。</p>
+          <p> </p>
+          <p>协商也需要看时机。现在还不到那个时候。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要我告诉你吗？</p>
+          <p> </p>
+          <p>让我来猜猜你正在找什么东西吧？比如说，石壁的碎片，呐呐……</p>
+          <p> </p>
+          <p>呵呵呵，看你的表情，终于想到了吧？</p>
+          <p> </p>
+          <p>怎么样，我可以把石壁的碎片送给你，你能接受我一个委托吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。你也知道，我们术古既从事采掘，又从事发掘，呐呐。</p>
+          <p> </p>
+          <p>一般的家伙只要避开就行，但我们却受到了一些躲在沙漠里的该死的东西的攻击。</p>
+          <p> </p>
+          <p>如果你能帮我把该死的[%dic:STR_DIC_M_QUEST_3326]消灭掉，我就把石壁碎片送给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇，奇怪！据我所知，守护者们应该需要石壁碎片啊，呐呐。</p>
+          <p> </p>
+          <p>如果你不需要的话，我也没办法！</p>
+          <p> </p>
+          <p>我不想和不看重我的守护者交易。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把躲在沙漠里攻击无助的术古的赞特凯尔、食人花和阿斯科全部消灭掉了吗？</p>
+          <p> </p>
+          <p>虽然我不能亲自去确认，但我想应该没人愚蠢得跟术古撒谎吧，呐呐。</p>
+          <p> </p>
+          <p>而且你还想得到石壁碎片。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，这下我们术古终于可以放心地在沙漠行走了。</p>
+          <p> </p>
+          <p>但是现在还不能确定它们是不是全部消失了，呐呐</p>
+          <p> </p>
+          <p>不管怎样，这次辛苦你了。</p>
+          <p> </p>
+          <p>我不能全部送给你，只能给你一块。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭沙漠里的[%dic:STR_DIC_M_QUEST_3326]([%2]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_LF2_9]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">加布隆说知道我需要石壁的碎片，说如果我帮他消灭埋伏在沙漠里的生命体，他就把碎片送给我。应该接受他的建议。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不知道加布隆从什么地方弄到了石壁碎片，他说只要接受他的委托，就把石壁碎片送给我。</p>
+          <p> </p>
+          <p>于是帮他消灭掉了埋伏在沙漠里的生命体，他把其中一个碎片送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

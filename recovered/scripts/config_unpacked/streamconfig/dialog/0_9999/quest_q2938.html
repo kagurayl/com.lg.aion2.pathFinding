@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伏魔殿虽然是人人平等的地方，但只有一个地方不同，那就是秘密书库。</p>
+          <p> </p>
+          <p>知识的会堂虽然对守护者和人类全都开放，但是想要进入秘密书库的话需要特殊的资格。</p>
+          <p> </p>
+          <p>因为里面保存的都是非常贵重的资料。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不管在哪个领域，只要是取得巨大的成果的人，可以允许出入。</p>
+          <p> </p>
+          <p>但是这里并不是只允许学者们出入。我们也允许在伏魔殿立下大功的人出入。</p>
+          <p> </p>
+          <p>如果您想进入秘密书库，就必须证明您在伏魔殿立下了很大的功劳。比如说得到要塞队长的推荐信之类。</p>
+          <p> </p>
+          <p>[%username]大人您也想获得推荐信，获得进出的资格吗？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>听说[%username]大人您在阿尔特盖德做了很多事情？</p>
+          <p> </p>
+          <p>那您就去找阿尔特盖德的要塞队长[%dic:STR_DIC_N_Sueron]军团长要求推荐书。</p>
+          <p> </p>
+          <p>如果[%username]大人做了大事，他一定会马上给您推荐信的。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您对秘密书库里的珍贵资料不怎么感兴趣嘛。</p>
+          <p> </p>
+          <p>也是，没有必要的话，干嘛要大老远地跑到其他地方去索取要塞队长的推荐信呢。</p>
+          <p> </p>
+          <p>我知道了。您走吧。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，[%username]！</p>
+          <p> </p>
+          <p>每次见到你的时候你都是那么精神。</p>
+          <p> </p>
+          <p>对了，今天找我有什么事吗？</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">要求获得推荐信</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>推荐信？你是想进入知识的会堂里的秘密书库吗？</p>
+          <p> </p>
+          <p>[%userclass]你只要认真执行任务就行了，干嘛要没事干去秘密书库啊？</p>
+          <p> </p>
+          <p>但是你立了不少功劳，我就答应你的请求。你稍等一下。 </p>
+          <p> </p>
+          <p>（拿出写好的推荐信）给你。拿走吧。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SET_SUCCEED">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>推荐信？你是想进入知识的会堂里的秘密书库吗？</p>
+          <p> </p>
+          <p>你还没完成我给你的任务，就想来让我写推荐信？</p>
+          <p> </p>
+          <p>你完成了我给你的任务之后再来找我。到时我会给你推荐信的。 </p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您又来啦，[%username]大人。</p>
+          <p> </p>
+          <p>您获得苏埃伦军团长的推荐信了吗？</p>
+          <p> </p>
+          <p>如果您有推荐信的话，我就可以允许您进出秘密书库了。</p>
+         </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出推荐信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>（阅读推荐信）您做了不少事情嘛，[%username]大人。</p>
+          <p> </p>
+          <p>[%username]大人的名字在极乐世界传得沸沸扬扬也是当然的事情。 </p>
+          <p> </p>
+          <p>我知道了。以后您可以自由地进出秘密书库了。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">去找[%dic:STR_DIC_N_Sueron]获取推荐信</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Izwin]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">要进入秘密书库必须要有推荐信。去找贝尔特伦的苏埃伦军团长获取推荐信吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊兹文说想要进入秘密书库必须要有证明在极乐世界立了大功的推荐信。</p>
+          <p> </p>
+          <p>于是找到阿尔特盖德的苏埃伦军团长获得了推荐信，交给拉特利之后，他允许我以后自由出入秘密书库。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

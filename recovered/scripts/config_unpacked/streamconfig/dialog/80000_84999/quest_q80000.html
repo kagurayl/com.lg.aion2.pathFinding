@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是值得庆祝的一天！您愿意和我一起庆祝守护者日吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了庆祝守护者日，我一直在想我能做些什么，终于让我制作出了可以妆点节日气氛的漂亮高帽和烟花。</p>
+          <p> </p>
+          <p>您想知道我制作了多少吗？</p>
+          <p> </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">说想知道。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说不感兴趣。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哇！我猜您一定很想知道。</p>
+          <p></p>
+          <p>让我来为您揭晓答案吧。</p>
+          <p></p>
+          <p>等等，我要把礼物拿出来。请重新和我说话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">稍等一下。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不感兴趣？今天可是节日啊！</p>
+          <p> </p>
+          <p>如果您改变了主意，一定要再来找我。我会在这里等您。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>好了，我把礼物送给您！</p>
+          <p> </p>
+          <p>现在还不能看。</p>
+          <p> </p>
+          <p>请把手伸过来！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">伸出手。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>噔噔！高帽要比想象的漂亮吧？</p>
+          <p></p>
+          <p>我觉得很满意，所以几天前就开始戴着它了。</p>
+          <p> </p>
+          <p>而且这些烟花的质量都很好，一个次品都没有。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">领取伊亚斯给的守护者日礼物。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">据说在祝福的守护者[%dic:STR_DIC_N_Ias]那里，可以领取高帽和烟花作为礼物。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在守护者日到来的时候，找到了祝福的守护者伊亚斯，她把高帽和烟花送给了我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

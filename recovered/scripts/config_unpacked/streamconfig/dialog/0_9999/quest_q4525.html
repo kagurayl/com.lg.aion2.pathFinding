@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>想做的事情和需要做的事情并不总是一致的。</p>
+          <p> </p>
+          <p>老实说，对于我而言，两者完全不一致。</p>
+          <p> </p>
+          <p>虽然我现在是个普通的行政官，但我从小就想当个作家。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当然，我不是在抱怨行政官有什么不好。只是在想，如果能实现自己的梦想，那该有多好。</p>
+          <p> </p>
+          <p>所以我正在搜集各种冒险故事，准备写一本书。尤其想写消灭了军团长巴卡尔马的守护者的故事。</p>
+          <p> </p>
+          <p>冒险故事越多越好。就算对手是同一个，每次的过程和结果都会不同，因此可以写成完全不同的故事。</p>
+          <p> </p>
+          <p>[%username]大人，你能去和[%dic:STR_DIC_M_IDDF3_DrakanFiBossD_50_Ah]战斗，然后回来把冒险的经历告诉我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您马上到[%dic:STR_DIC_W_STR_DF3_SZ_H]去消灭[%dic:STR_DIC_M_IDDF3_DrakanFiBossD_50_Ah]。</p>
+          <p> </p>
+          <p>我会在这里等待您顺利完成任务，回来向我讲述精彩的故事。</p>
+          <p> </p>
+          <p>啊，当然，对于您付出的辛苦，我会给予丰厚的报酬。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您是不感兴趣啊。本来我想送您铸币作为报酬的……</p>
+          <p> </p>
+          <p>那就算了。不过我要写书的事情，请不要跟别人讲。</p>
+          <p> </p>
+          <p>如果事情传出去，别人就会骂我不务正业了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这段时间我一直都忙于行政业务，不知道笔头功夫有没有耽搁下来。</p>
+          <p> </p>
+          <p>但是不去做又怎么知道不行呢。虽然刚开始可能会有点生疏，但相信很快就会恢复以前的水平。</p>
+          <p> </p>
+          <p>现在只要搜集到素材，就可以动手写书了。</p>
+          <p> </p>
+          <p>好了，你把巴卡尔马消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦你了。</p>
+          <p> </p>
+          <p>您这么积极地帮我，让我感觉充满了力量。都说只要努力，就会有结果。我感觉自己的梦想不久应该就能实现。</p>
+          <p> </p>
+          <p>请收下。这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_IDDF3_DrakanFiBossD_50_Ah]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Art]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去德拉乌伯尼尔洞穴消灭军团长巴卡尔马。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>行政官阿尔特说想要以消灭军团长巴卡尔马的守护者的故事为题材写一本书。</p>
+          <p> </p>
+          <p>于是帮他去德拉乌伯尼尔洞穴消灭了巴卡尔马，回去说了之后，他非常高兴。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

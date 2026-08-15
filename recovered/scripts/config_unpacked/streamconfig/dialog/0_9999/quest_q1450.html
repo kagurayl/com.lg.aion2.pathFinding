@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是哈克内为什么偏偏要在这个时候请我帮忙呢，真让人为难。</p>
+          <p> </p>
+          <p>为了驱赶跑到神秘泉来的德雷克，我已经忙得不可开交了。</p>
+          <p> </p>
+          <p>而且还要照顾迷路的巡礼者。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，您能不能帮帮我啊？</p>
+          <p> </p>
+          <p>哈克内好不容易求我一次，我希望能帮助她。</p>
+          <p> </p>
+          <p>当然我会给您足够的报酬的。怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>请您帮我搜集20个[%dic:STR_DIC_E_metal_n_c_30b].</p>
+          <p> </p>
+          <p>那种矿石在周围以及通往库里乌鲁岩石山的小路上有很多，应该很容易找到。</p>
+          <p> </p>
+          <p>那就全靠您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的不行吗？</p>
+          <p> </p>
+          <p>我实在抽不出时间才拜托您的...</p>
+          <p> </p>
+          <p>呼，知道了。就算去拜托休美伦也必须弄到。</p>
+          <p> </p>
+          <p>虽然肯定会被黑，但是事情紧急，也顾不了那么多。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>快过来。我一直在等着您回来的呢。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_metal_n_c_30b]带回来了吗？</p>
+          <p> </p>
+          <p>以前那种矿石满地都是，现在好像不像以前那么多了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出亚德曼金属矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我明明告诉过您啊。是20个[%dic:STR_DIC_E_metal_n_c_30b]。</p>
+          <p> </p>
+          <p>难道是我催的您太急了？不好意思。</p>
+          <p> </p>
+          <p>慢一点也没关系，一定要搜集满20个。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不愧是[%username]，看来找您是找对了。</p>
+          <p> </p>
+          <p>事实上，虽然找休美伦买更方便，但是我不能相信他的东西。</p>
+          <p> </p>
+          <p>这么好的品质的话，哈克内也应该会满意的。这是您辛苦的答谢，请您收下吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_E_metal_n_c_30b]，然后交给[%dic:STR_DIC_N_Ophelos]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助忙碌的欧佩罗斯搜集哈克内需要的亚德曼金属矿石吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欧佩罗斯说很想帮助哈克内，但是因为事情太多而脱不开身，让我帮他去搜集亚德曼金属矿石。</p>
+          <p> </p>
+          <p>于是按照他的拜托把亚德曼金属矿石交给了他。他表示非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>根据手上的情报，敌人们想以占领拉米兰要塞为契机，计划在欧比斯各地展开总攻势。</p>
+          <p> </p>
+          <p>那样的话，天族就会遭受重大打击而很难再恢复元气。</p>
+          <p> </p>
+          <p>但是只要有我们灰风军团在，就绝对不会允许这样的事情发生。</p>
+          <p> </p>
+          <p>不管用什么手段，都必须夺回要塞，阻止他们的总攻势，逆转欧比斯的战事。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对方在大量地补充警备兵力，对要塞进行防御。</p>
+          <p> </p>
+          <p>所以我们需要集中攻击的对象非常明确，那就是要塞的驻军！</p>
+          <p> </p>
+          <p>但是，他们的数量实在太多，很难一次就对其造成致命的打击。必须通过反复的奇袭攻击来削弱他们。</p>
+          <p> </p>
+          <p>问题是谁能攻破敌阵...想来想去，我觉得如果没有普通守护者的帮助的话，是很难成功的。</p>    
+          <p> </p>
+          <p>怎么样，[%username]大人？您愿意为清除[%dic:STR_DIC_M_Lamiren_Guard]打头阵吗？</p>    
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。那就请您召集同伴，然后到拉米兰要塞去。清除那里的[%dic:STR_DIC_M_Lamiren_Guard]，然后回来。</p>
+          <p> </p>
+          <p>敌人的监视非常森严，行动时必须要隐秘。召集的同伴们必须是和[%username]大人能力接近的人才行。</p>
+          <p> </p>
+          <p>如果奇袭作战成功的话，请您回来向我报告。</p>
+          <p> </p>
+          <p>确认[%username]大人安然回来之后，我们会立即展开下一步作战计划。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在目前的情况下，夺回拉米兰要塞是最最紧急的事情。</p>
+          <p> </p>
+          <p>我还以为[%username]大人的话，一定会对我们的计划有所帮助...</p>
+          <p> </p>
+          <p>请不要这样，请您再考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我一直在等您回来，[%username]大人！</p>
+          <p> </p>
+          <p>对拉米兰要塞的奇袭作战成功了吗？</p>
+          <p> </p>
+          <p>要塞周围的情况怎么样？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，情况要比想象的严重。</p>
+          <p> </p>
+          <p>不过您顺利地完成了任务，执行下一步作战应该没有任何问题。</p>
+          <p> </p>
+          <p>我得马上向部下们下达进行下一步作战的指示。</p>
+          <p> </p>
+          <p>为了极乐世界的光荣！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除[%dic:STR_DIC_M_Lamiren_Guard]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Monerva]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助正在为夺回拉米兰要塞而准备进行奇袭作战的米内尔巴清除拉米兰要塞的驻军。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>米内尔巴说正在制定奇袭战略，希望能从敌军手里夺回拉米兰要塞。他的计划是袭击驻守拉米兰要塞的驻军，扰乱敌军。</p>
+          <p> </p>
+          <p>按照米内尔巴的拜托清除了拉米兰要塞的驻军，然后回去找到了他。他非常高兴，说会马上下令让部下们执行下一步的作战计划。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

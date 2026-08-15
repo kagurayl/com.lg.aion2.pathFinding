@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4330</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您看看这个。</p>
+          <p> </p>
+          <p>有个自卫团员捡到了这个东西。</p>
+          <p> </p>
+          <p>他说在野狼的尾巴上发现了这封信，我拆开看了一下，内容是警告我们村庄将会遇到危险！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然不知道是谁写的，感觉有点可疑，但这是非常重要的内容，必须拿去给[%dic:STR_DIC_N_Mirka]百夫长大人看看。</p>
+          <p> </p>
+          <p>我暂时无法离开这里，您能帮我把它交给[%dic:STR_DIC_N_Mirka]百夫长大人吗？</p>
+          <p> </p>
+          <p>当然，如果[%username]大人您不忙的话。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>希望村里不要发生什么事……真让人担心。</p>
+          <p> </p>
+          <p>这件事非常紧急，请您快一点！</p>
+          <p> </p>
+          <p>米尔卡百夫长应该在村子的奇柏隆前面。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能让我放心把信交给他的人并不多。</p>
+          <p> </p>
+          <p>这件事关系到整个村子的存亡，请您再考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>村子附近有很多危险的野兽，让我觉得很担心。</p>
+          <p> </p>
+          <p>您到这里来有什么事吗？</p>
+          <p> </p>
+          <p>村里发生什么问题了吗！？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="PLAYEMOTION_otl;HACTION_SELECT_QUEST_REWARD">拿出绑在野狼尾巴上的信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看了信之后，浑身发抖)这是！</p>
+          <p> </p>
+          <p>这封信绑在野狼的尾巴上？</p>
+          <p> </p>
+          <p>虽然我知道史匹格正在计划进攻村子，但没想到竟然这么周密……</p>
+          <p> </p>
+          <p>看来必须进一步加强村子的警戒才行。</p>
+          <p> </p>
+          <p>谢谢您给我送来了这么重要的情报。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把警告信交给[%dic:STR_DIC_N_Mirka]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮助阿德西斯，把绑在野狼尾巴上的信交给米尔卡百夫长。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿德西斯说自卫团员在野狼身上发现了一封信，内容是警告村子可能会遇到危险，让我帮她交给米尔卡百夫长。</p>
+          <p> </p>
+          <p>帮助忙碌的阿德西斯把绑在野狼尾巴上的信交给了米尔卡百夫长，她对我表示真心的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

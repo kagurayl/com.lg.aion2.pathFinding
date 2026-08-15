@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>欢迎光临，[%username]大人。</p>
+          <p> </p>
+          <p>这里的情况越来越困难，魔族在这里的活动要比想象的要活跃得多。。</p>
+          <p> </p>
+          <p>不过我跟您说，您也应该知道锡兰泰拉回廊的重要性吧？</p>
+          <p> </p>
+          <p>不管发生什么情况，天族都必须掌握这里的主导权。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>要想抓住主导权，最好的办法就是给予魔族直接的打击。</p>
+          <p> </p>
+          <p>都是些[%username]大人实力相当的一些家伙，光靠我们的力量是有些困难。</p>
+          <p> </p>
+          <p>[%username]大人，如果您能帮忙的话，将会对我有很大的帮助。</p>
+          <p> </p>
+          <p>您愿意去锡兰泰拉回廊那边消灭魔族吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然都是魔族，但消灭普通的魔族没什么大的用处。</p>
+          <p> </p>
+          <p>必须是和[%username]大人实力相当，或者更出色的魔族守护者才行。</p>
+          <p> </p>
+          <p>当然，是在锡兰泰拉回廊。</p>
+          <p> </p>
+          <p>如果能把锡兰泰拉回廊里的魔族全部消灭掉，就可以为占领整个格尔克马洛斯打下基础。</p>
+          <p> </p>
+          <p>那就辛苦您了！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>没想到[%username]大人会拒绝这个任务。</p>
+          <p> </p>
+          <p>我认为[%username]大人是这个任务最合适的人选。</p>
+          <p> </p>
+          <p>不过如果[%username]大人自己不愿意的话，我再怎么觉得合适也没用。</p>
+          <p> </p>
+          <p>我会找其他人负责这个任务，[%username]大人您走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 回来了呀。</p>
+          <p> </p>
+          <p>怎么样？任务完成了吗？</p>
+          <p> </p>
+          <p>消灭掉妄图通过锡兰泰拉回廊入侵的魔族了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]，果然名不虚传。</p>
+          <p> </p>
+          <p>这是个艰难的任务，真是辛苦你了。以你的能力，相信这个任务应该不算太难吧？</p>
+          <p> </p>
+          <p>你也知道，锡兰泰拉回廊还有很多魔族。</p>
+          <p> </p>
+          <p>希望你今后能继续执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">在锡兰泰拉回廊中消灭 [%dic:STR_DIC_E_Q30051]([%2]/7)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Asinelli]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">为了让天族掌握锡兰泰拉回廊的主导权，决定去消灭锡兰泰拉回廊里的魔族。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃努斯说锡兰泰拉回廊的魔族要比想象的多，为了让天族掌握主导权，必须把他们消灭掉。</p>
+          <p> </p>
+          <p>于是消灭了实力与自己相当的魔族，并向格力乌斯百夫长进行了报告。他说那里还有很多魔族，让我以后继续去执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

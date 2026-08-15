@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>自然，是由很多生物组成的。</p>
+          <p> </p>
+          <p>有的时候吃别的生物，有的时候被别人吃，所有的生物都一样。</p>
+          <p> </p>
+          <p>这是正理。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>当自然保持均衡的时候，椰林也属于这个正理。</p>
+          <p> </p>
+          <p>但是埃尔特内正在干涸，我们正处于危险。</p>
+          <p> </p>
+          <p>我们不能忍受野兽们的折磨，像以前一样。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_Cherubim2_23_n]在折磨椰林。</p>
+          <p> </p>
+          <p>椰林的生命很危险，它们折断了我们的树枝，剥下了我们的树皮。</p>
+          <p> </p>
+          <p>必须惩罚它们，椰林的敌人克鲁比安。</p>
+          <p> </p>
+          <p>你愿意帮助椰林吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>除掉克鲁比安采集工，把[%dic:STR_DIC_I_QUEST_1317a]带回来，作为惩罚它们的证据。</p>
+          <p> </p>
+          <p>在寂静沼泽的附近有它们的巢穴。</p>
+          <p> </p>
+          <p>除掉大概10个的话，就能让它们受到教训。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是默认了吗？任凭克鲁比安折磨椰林？</p>
+          <p> </p>
+          <p>你不是椰林这边的吗？</p>
+          <p> </p>
+          <p>我们需要你的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>回来啦，守护者？</p>
+          <p> </p>
+          <p>帮我们向克鲁比安复仇了吗？</p>
+          <p> </p>
+          <p>给我看看，带回的证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出克鲁比安的角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是不重视椰林的拜托吗？</p>
+          <p> </p>
+          <p>请遵守，和椰林的约定。</p>
+          <p> </p>
+          <p>快去惩罚克鲁比安，把[%dic:STR_DIC_I_QUEST_1317a]带回来作为证据。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是克鲁比安的角啊。</p>
+          <p> </p>
+          <p>它们应该知道了，椰林的愤怒。</p>
+          <p> </p>
+          <p>谢谢你，守护者。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_Cherubim2_23_n]，并把证据交给[%dic:STR_DIC_N_Tree_Move_Demro]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">清除折磨椰林族的克鲁比安，并把克鲁比安的角交给丹姆罗。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>丹姆罗说克鲁比安正在折磨椰林族，希望能够惩罚它们。</p>
+          <p> </p>
+          <p>于是按照丹姆罗的拜托除掉了它们，把克鲁比安的角作为证据交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

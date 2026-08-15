@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我曾经想试着去安抚那些海盗，看来是我太愚蠢了。</p>
+          <p> </p>
+          <p>那些可恶的家伙！</p> 
+          <p> </p>
+          <p>别被我抓住！我绝不会放过你们的！</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+         <Act href="HACTION_ASK_QUEST_ACCEPT">询问为什么发火。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body> 
+           <p>这次的万圣节庆祝活动全被搞砸了。</p>
+           <p> </p>
+           <p>没有砂糖的话，饼干和糖果全都没办法制作了。</p> 
+           <p> </p>   
+           <p>都被那些[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]抢走了。</p>
+           <p> </p>  
+           <p>他们搞砸了大家的万圣节，我一定要好好教训教训他们！</p>
+	   <p> </p>  
+           <p>你来的正好！你愿意和我一起去消灭[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]吗？</p>     
+       </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">帮助南瓜大王。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">说现在很忙。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>很好。</p>
+          <p> </p>
+          <p>听说那些忘恩负义的[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]逃到[%dic:STR_DIC_W_DF1A_1]附近去了。</p>
+          <p> </p>
+          <p>详细的情况我还在继续了解。</p>
+	  <p> </p>
+          <p>我不会再心慈手软了。如果发现了他们，帮我好好教训教训他们！</p>
+	  <p> </p>
+          <p>那就拜托你了！</p>
+          </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+
+        <html>
+        <body>
+         <p>忙？忙还来和我说话？</p>
+         <p> </p>
+         <p>你都没有一点万圣节精神吗？你不想吃糖果了吗？</p>
+         <p> </p>
+         <p>唉……好吧。就算你不帮我，还是有很多守护者愿意帮我的。你走吧！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>偷糖贼怎么样了？</p>
+          <p> </p>
+          <p>别想骗过我的眼睛！</p>        
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比我想象的还要能干嘛，[%username]。</p>
+          <p> </p>
+          <p>很好，虽然剩下的砂糖不多了，不过我还是要谢谢你。这是给你的一点心意。</p>
+	  <p> </p>
+          <p>虽然没有蝙蝠饼干和女巫扫帚，不过希望你能用我的礼物过一个愉快的万圣节。</p>
+	  <p> </p>
+          <p>真是谢谢你！正因为有你这样的守护者在，我不能把这个南瓜帽摘掉。</p>          
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_W_DF1A_1]周边的[%dic:STR_DIC_M_Branch_Event_Shulackwizard_99_n]([%2]/15)</font></p></step>
+                      <step><p visible="[%15]"><font color="[%16]">向南瓜大王[%dic:STR_DIC_N_event_Tali]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">塔尔利让我帮他消灭背叛自己，把万圣节搞砸的偷糖黑暗术古。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>塔尔利让我帮他消灭背叛自己，把万圣节搞砸的偷糖黑暗术古。</p>
+  	  <p> </p>
+	  <p>消灭了偷糖黑暗术古之后，他送给我一份小礼物，祝我度过一个快乐的万圣节。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

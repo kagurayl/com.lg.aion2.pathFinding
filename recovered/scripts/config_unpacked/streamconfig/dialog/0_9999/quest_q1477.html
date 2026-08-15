@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>曼杜里森林里有尤斯迪埃主神创造的神秘泉。</p>
+          <p> </p>
+          <p>因为会一直流出清水而不干涸，所以成为了要塞和经过这里的人们的重要的饮用水源。</p>
+          <p> </p>
+          <p>人类要维持生命，最重要的还是要有清洁的水源。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但是最近曼杜里森林里的神秘泉渐渐地变脏了。</p>
+          <p> </p>
+          <p>堆积了很多泥土、腐烂的树叶、吃剩下的果子，甚至野兽的排泄物。</p>
+          <p> </p>
+          <p>这样下去的话，神秘泉就会被完全污染，无法再用作饮用水源。</p>
+          <p> </p>
+          <p>我对这件事情进行了调查，并在几天之前终于让我发现了罪犯。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是谁。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>罪犯就是生活在神秘泉后面的曼杜里粮食储藏处的那些曼杜里。</p>
+          <p> </p>
+          <p>他们把各种脏东西从上面扔下来。</p>
+          <p> </p>
+          <p>为了防止神秘泉被继续污染，[%username]您能帮我去把他们除掉吗？</p>
+          <p> </p>
+          <p>虽然我有时间的时候一直去神秘泉那边打扫，但是必须从根本上把问题解决掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。</p>
+          <p> </p>
+          <p>那就请您去[%dic:STR_DIC_W_LF2_SZ_A1_SUB_1]，把[%dic:STR_DIC_M_ManduriT_23_An]和[%dic:STR_DIC_M_ManduriB_23_An]清除掉。</p>
+          <p> </p>
+          <p>他们就是污染神秘泉的罪犯。如果能把他们除掉的话，神秘泉应该就会恢复往日的洁净。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>如果没有什么冲突的事情的话，您最好能帮帮我。</p>
+          <p> </p>
+          <p>我一点都不擅长和野兽战斗。</p>
+          <p> </p>
+          <p>而且我还得忙着清扫神秘泉，没有时间去清除他们。</p>
+          <p> </p>
+          <p>请您再好好考虑一下吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>刚才我刚去神秘泉打扫。</p>
+          <p> </p>
+          <p>又堆满了脏东西，曼杜里那些家伙也不嫌累。</p>
+          <p> </p>
+          <p>这样下去的话，在神秘泉得到拯救之前，我就要先被累死了。</p>
+          <p> </p>
+          <p>对了，您把曼杜里的那些家伙清除掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您，[%username]大人。</p>
+          <p> </p>
+          <p>乱扔脏东西的家伙消失了，现在只要再清扫几次的话，神秘泉又会像以前一样清澈了。</p>
+          <p> </p>
+          <p>现在去要塞的人们又能喝上干净的水了。大部分人因为要穿过沙漠，所以都非常口渴。</p>
+          <p> </p>
+          <p>来，这是我的一点谢意。请您收下，不要谦让。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉污染神秘泉的曼杜里</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriT_23_An]([%2]/6)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ManduriB_23_An]([%5]/6)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Iandeus]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">曼杜里森林的神秘泉逐渐被污染，到了人们无法饮用的地步。去把将污染物扔进神秘泉的曼杜里掠夺者除掉吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>伊安德乌斯说曼杜里森林里的神秘泉里出现了很多泥土、吃剩的果实和排泄物之类的东西，到了人们无法饮用的地步，他为此很担心。</p>
+          <p> </p>
+          <p>之前一直不知道原因，经过仔细观察之后，发现那些脏东西原来是生活中神秘泉后面的曼杜里粮食储藏处的曼杜里扔下来的。</p>
+          <p> </p>
+          <p>于是按照伊安德乌斯的拜托，去曼杜里粮食储藏处除掉了曼杜里掠夺者。他表示非常感谢，说现在又可以喝到干净的水了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

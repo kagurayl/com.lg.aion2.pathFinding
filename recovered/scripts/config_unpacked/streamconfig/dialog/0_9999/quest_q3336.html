@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q3336</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我很想得到一样东西。</p>
+          <p> </p>
+          <p>虽然不是什么难弄到的东西，但问题是我要守卫村子，不能随便离开岗位。</p>
+          <p> </p>
+          <p>但是又找不到人帮忙……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是瘤角提波里德的[%dic:STR_DIC_I_QUEST_3336A]。</p>
+          <p> </p>
+          <p>您见到过吗？看上去只是普通的红色，但是在黑暗的地方，整个角会发出隐隐的光。</p>
+          <p> </p>
+          <p>之前我见过用它制作的装饰品，真的非常漂亮……</p>
+          <p> </p>
+          <p>刚好提波里德就在附近……[%username]大人，您能帮帮我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真的非常感谢。虽然我一直想得到，但是因为任务的原因，我不能离开这里，所以只能干着急。</p>
+          <p> </p>
+          <p>既然去搜集，就请您帮我多搜集一些[%dic:STR_DIC_I_QUEST_3336A]%。</p>
+          <p> </p>
+          <p>我想送几个给村里的村民。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_hippolizardRe_35_An]%的话，很容易就能搜集到。那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您也很忙啊。</p>
+          <p> </p>
+          <p>虽然我很想自己去，但是因为工作的原因，我没办法离开村子……</p>
+          <p> </p>
+          <p>真遗憾，不过没办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就回来啦。</p>
+          <p> </p>
+          <p>也是，对于[%username]大人来说，提波里德之类的应该只是小菜一碟。</p>
+          <p> </p>
+          <p>快把[%dic:STR_DIC_I_QUEST_3336A]给我看看吧。我非常期待。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出红色的角。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_I_QUEST_3336A]%还没搜集到吗？</p>
+          <p> </p>
+          <p>啊，[%dic:STR_DIC_M_hippolizardRe_35_An]%在库里乌鲁通道那边可以找到。</p>
+          <p> </p>
+          <p>一定要帮我搜集到哦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您把角拿回来啦。</p>
+          <p> </p>
+          <p>谢谢您。隐隐的红光真的很漂亮。</p>
+          <p> </p>
+          <p>给，请收下这个。这是我的答谢。</p>
+          <p> </p>
+          <p>我要用这个角做成装饰品。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_hippolizardRe_35_An]的角，然后交给[%dic:STR_DIC_N_Oreia]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">奥蕾妮娅说想用提波里德的角制作装饰品。帮她去消灭瘤角提波里德，搜集红色的角吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥蕾妮娅说想把提波里德的红色的角做成装饰。</p>
+          <p> </p>
+          <p>帮助因为守卫村庄而无法脱身的奥蕾妮娅搜集到了红色的角。</p>
+          <p> </p>
+          <p>她说会把角做成装饰品，送给村里的居民。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(把报告书揉成一团)什么！又有俘虏消失了！</p>
+          <p> </p>
+          <p>喂，你听我说。</p>
+          <p> </p>
+          <p>既没有遭到外部攻击，也没有遭到渗透，我们捉到的龙族俘虏却消失了。你是怎么想的？而且是在两个不同的地方发生了同样的事情。</p>
+          <p> </p>
+          <p>看你不说话，一定也觉得很荒唐吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我觉得他们可能是没有派人好好看守，所以才找了这个接口，于是我派了调查员过去调查。</p>
+          <p> </p>
+          <p>但是龙族俘虏却又不见了！</p>
+          <p> </p>
+          <p>原因无非是两者之一，要么就是调查员能力太差，要么就是那里的人耍了什么手段。</p>
+          <p> </p>
+          <p>要是可以的话，我真想自己亲自过去，但是你也看到了，我无法离开这里。</p>
+          <p> </p>
+          <p>你看这么办怎么样？你去帮我确认一下真相。当然，我会给予你相应的报答的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说了很多你的事情。很多人都说不管在何种压力下，你都能完成任务，希望这次也能如此。</p>
+          <p> </p>
+          <p>准备好了之后，你就到巴卡巴塔封印塔和红色大地神殿去一趟。</p>
+          <p> </p>
+          <p>你去见见那里的[%dic:STR_DIC_N_IDF4Re_Drana_Da_NPC]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为什么不愿意啊？是因为奖励太少了吗？</p>
+          <p> </p>
+          <p>你这个人还真是的，疑心这么重。</p>
+          <p> </p>
+          <p>如果你真要这样的话，就算了。</p>
+          <p> </p>
+          <p>看来那些传闻还是不能相信！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗？</p>
+          <p> </p>
+          <p>如果您是想了解这里的情况，请您去问其他人。</p>
+          <p> </p>
+          <p>我刚来这里没多久，对这里的情况还不是很熟悉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达德米特尔的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是德米特尔百夫长大人派您来的？</p>
+          <p> </p>
+          <p>唉，真搞不懂百夫长大人为什么要这样。</p>
+          <p> </p>
+          <p>这么不相信自己的部下……</p>
+          <p> </p>
+          <p>我不是在向[%username]大人发火。想必[%username]大人也不是自己愿意过来的吧？</p>
+          <p> </p>
+          <p>一定是百夫长大人强逼着您过来的。不用看我就知道。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_IDF4Re_Drana_Da_NPC]对话</font></p></step>
+
+    </steps>
+          <p><font font_xml="quest_summary">据说巴卡巴塔封印塔和红色大地神殿发生了龙族俘虏失踪时间。去见见伏魔殿远征军调查员，协助进行调查吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德米特尔百夫长说收到了报告，称巴卡巴塔封印塔和红色大地神殿有龙族俘虏失踪，于是他派遣了调查员前去调查。</p>
+          <p> </p>
+          <p>但还是发生了龙族俘虏失踪的事件，因此让我去协助伏魔殿远征军调查员进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

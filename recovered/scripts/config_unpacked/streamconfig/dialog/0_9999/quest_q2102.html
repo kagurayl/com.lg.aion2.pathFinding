@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近一段时间，松懈了一点儿，史匹格们的气焰慢慢开始抬头了。</p>
+          <p> </p>
+          <p>说来也是，兔子急了还咬人呢。</p>
+          <p> </p>
+          <p>不过，头说不管怎样，在还没有变得更为头疼之前，要把它们的锐气挫挫。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>得由你去告诉[%dic:STR_DIC_M_SpriggD_1_n]们，想要做对我们乌尔古伦盗团不利的事情是个什么样的下场。</p>
+          <p> </p>
+          <p>你不要想抵赖就算了。</p>
+          <p> </p>
+          <p>都是因为你，同样的事情我们才要做两遍。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">接受。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>那就先去[%dic:STR_DIC_M_SpriggD_1_n]消灭四只以后回来吧。</p>
+          <p> </p>
+          <p>给那些低级的史匹格们点儿颜色瞧瞧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？做不了？</p>
+          <p> </p>
+          <p>不是我听错了吧？</p>
+          <p> </p>
+          <p>这事儿变成现在这样，是因为谁呀？你怎么能这么好意思说做不到？</p>
+          <p> </p>
+          <p>你要是再这样的话，在不久的将来 也会被赶出盗团的。谁愿意把吃干饭的没有用的家伙留下来？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看见[%dic:STR_DIC_M_SpriggD_1_n]们往这边抱头鼠窜了。真是一道风景。</p>
+          <p> </p>
+          <p>我想，这回它们总算明白了跟我们乌尔古伦盗团对着干是什么下场了。</p>
+          <p> </p>
+          <p>啊，我让你做的事情，你都照做了吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>报告结果。</p>
+          <p> </p>
+          <p>通过这一次的教训，我想史匹格们也会消停一阵子了。</p>
+          <p> </p>
+          <p>辛苦了，给，这是你那一份。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭攻击乌尔古伦盗团的[%dic:STR_DIC_M_SpriggD_1_n]%([%2]/4)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Vandarnt]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按班达仁特的命令消灭史匹格.。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为我晕倒，史匹格突破包围圈跑了，因此班达仁特很是生气。</p>
+          <p> </p>
+          <p>于是按他的命令，我消灭了史匹格，他给了我报酬，说是我的那一份。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

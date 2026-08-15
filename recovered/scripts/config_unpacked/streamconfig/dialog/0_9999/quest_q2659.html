@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贝鲁斯兰的情况怎么样？结界塔都被龙族占领了，好像很严重的样子...</p>
+          <p> </p>
+          <p>呵呵，干嘛这幅表情？身为西风的守护者，难道连这些都不知道吗？</p>
+          <p> </p>
+          <p>也是，你是魔族，不知道西风的守护者是什么。简单的说，那是一个情报机关。</p>
+          <p> </p>
+          <p>好了，跟我说说那里的情况怎么样了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说还是很严峻。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，看来巴卡尔玛军团要比想象的强。可是他们最近好像没什么动作...</p>
+          <p> </p>
+          <p>呵，不管怎样！我得赶紧把这里的事情做完才行。</p>
+          <p> </p>
+          <p>[%username]，你能帮帮我吗？</p>
+          <p> </p>
+          <p>事实上我到这里来，是为了搜集英德拉图军团长及其他首脑的情报。但是你也看到了，因为那些纳加兰特，我根本无从下手。</p>
+          <p> </p>
+          <p>你能帮我把[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]除掉吗？那样的话，我就能潜入要塞了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你还真是好说话。不像其他魔族，还没说上话，就把刀子拔出来了...</p>
+          <p> </p>
+          <p>不管怎样，谢谢你。</p>
+          <p> </p>
+          <p>经过我的观察，他们由法师和战士组成一组行动。请你不要一个人去，一定要和同伴一起去。</p>
+          <p> </p>
+          <p>请你帮我把前面的[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]清除掉。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呵呵，看来你是不知道这件事的重要性。</p>
+          <p> </p>
+          <p>你知道我为什么要搜集英德拉图军团长和首脑们的情报吗？那是为了了解他们的弱点。</p>
+          <p> </p>
+          <p>这和魔族有什么关系？看来你还不知道。根据我得到的情报，巴卡尔玛军团已经向英德拉图军团请求支援。</p>
+          <p> </p>
+          <p>英德拉图军团应该很快就会像贝鲁斯兰派遣援军。那样的话，结果很明显！</p>
+          <p> </p>
+          <p>你以为我是光为我自己吗？还要我这么说明，真是郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，[%username]，原来是你啊。我还以为又被他们发现了呢。</p>
+          <p> </p>
+          <p>对了，你去办的事情怎么样了？</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_A_IDLF3CI_1517a]和[%dic:STR_DIC_A_IDLF3CI_1517b]现在少一些了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我就说在要塞周边巡逻的龙族好像少了。多亏了你，我总算可以开始做事了。</p>
+          <p> </p>
+          <p>不过现在还不能安心，希望你以后能继续帮我。</p>
+          <p> </p>
+          <p>我不想强迫你。你可以好好考虑一下，然后再来找我。</p>
+          <p> </p>
+          <p>啊，这是说好的报酬。如果你以后能继续帮我，我绝不会亏待你。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除守卫英德拉图要塞的龙族</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_A_IDLF3CI_1517a]([%2]/11)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_A_IDLF3CI_1517b]([%5]/20)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Erebos]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭驻守要塞的纳加法师和纳加兰特战士，让埃雷布斯可以进入要塞内部侦察。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃雷布斯向我询问贝鲁斯兰的情况，告诉他巴卡尔玛军团在那里站稳脚跟之后就不再有大的动作之后，他一脸严肃地说必须赶快把事情做完，并向我请求帮助。</p>
+          <p> </p>
+          <p>他让我帮他清除驻守要塞的纳加法师和纳加兰特战士，让他可以去要塞内部搜集英德拉图军团的五个首脑的情报。</p>
+          <p> </p>
+          <p>完成任务后回到他那里，他说多亏了我，终于可以潜入要塞内部，并让我今后继续去帮忙。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

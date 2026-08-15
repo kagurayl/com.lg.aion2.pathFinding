@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们家里的人只要一听到龙族，就会恨得咬牙切齿。</p>
+          <p> </p>
+          <p>那是因为高祖爷爷和曾祖爷爷，以及两位叔叔全都因为龙族而消灭了。</p>
+          <p> </p>
+          <p>所以很小的时候家里人就反复地跟我说，觉醒成为守护者之后，一定要向龙族复仇。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>后来我成了守护者，来到了龙族出没的埃雷修兰塔，但是却没有找到任何复仇的机会。</p>
+          <p> </p>
+          <p>我担任格拉巴克大人的护卫工作还没多久，所以有点忙不过来。</p>
+          <p> </p>
+          <p>啊，听说在离这里不远的剑之岛上有龙族，既然只能干看着！太郁闷了。</p>
+          <p> </p>
+          <p>现在如果有人可以帮我把他们干掉就好了。</p>
+          <p> </p>
+          <p>[%username]大人，您能帮我去把龙族清除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。听说在西边的剑之岛上，有龙族的第33军团。</p>
+          <p> </p>
+          <p>请您去那里，把[%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]、[%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]统统清除掉。</p>
+          <p> </p>
+          <p>那就全靠[%username]大人了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>龙族不仅仅是我们家的仇人，不是吗？</p>
+          <p> </p>
+          <p>从某种角度看，他们是全体魔族的仇人。您拒绝我，我感到很意外。</p>
+          <p> </p>
+          <p>我给您一点时间，您再好好想想。如果改变了想法的话，请您再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>剑之岛上真的有龙族吗？</p>
+          <p> </p>
+          <p>他们真的像传说中的那样既凶恶又残忍吗？</p>
+          <p> </p>
+          <p>我都紧张得快喘不过气来了。您快把结果告诉我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来如此。真是谢谢您。</p>
+          <p> </p>
+          <p>多亏了您，我的心情感觉好多了。</p>
+          <p> </p>
+          <p>我还担心会不会太勉强您呢。您帮我这么尽心尽力，实在是太感谢了。</p>
+          <p> </p>
+          <p>有机会的话，以后我一定会报答您的恩惠。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">清除剑之岛上的第33军团德拉克纽特</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]([%5]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]([%8]/3)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]([%11]/3)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Muirica]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">清除剑之岛上的第33军团德拉克纽特，帮缪里卡家族复仇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>缪里卡说她的高祖爷爷、曾祖爷爷，以及叔叔都是因龙族而消灭，因此想向龙族复仇。</p>
+          <p> </p>
+          <p>但是因为工作繁忙，无法离开岗位，让我帮她去附近的剑之岛上把第33军团德拉克纽特军团清除掉。</p>
+          <p> </p>
+          <p>于是帮助她清除了德拉克纽特士兵。听到结果之后，她高兴得跳了起来。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

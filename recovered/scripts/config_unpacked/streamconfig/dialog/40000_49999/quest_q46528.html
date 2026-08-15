@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>这次的委托和躲藏在格尔克马洛斯深处的怪兽有关。</p>
+          <p></p>
+          <p>会使用降低移动速度和禁止飞行的魔法，如果贸然靠近，可能会无法逃脱。</p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_D1_Od]</p>
+          <p></p>
+          <p> 3. 详情：格尔克马洛斯东西两面的绿色矿石由于受到奥德的影响而发生变异，变成了巨大的怪物。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]，将变异矿石带回来的人，将可以获得证物。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你见过[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]吗，呐呐？</p>
+          <p> </p>
+          <p>据说那是[%dic:STR_DIC_W_SZ_DF4_D1_Od]的绿色矿石发生变异而产生的怪物，你不觉得很可怕吗？</p>
+          <p> </p>
+          <p>很多守护者在那里遇到提诺思之后，只能回来接受灵魂治愈。</p>
+          <p> </p>
+          <p>所以有人委托我们消灭掉它，不知道能不能完成。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出变异矿石。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>按照规矩，我不能透露委托人的身份，但他是个守护者，呐呐。</p>
+          <p> </p>
+          <p>守护者们一直对术古很不信任，所以他说必须要有证据。</p>
+          <p> </p>
+          <p>消灭[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]之后，一定要把[%dic:STR_DIC_I_quest_46528a]拿回来，我才能把证物给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，你把变异矿石拿回来了吗？</p>
+          <p> </p>
+          <p>[%username]，我们侦探事务所真的不能没有你。</p>
+          <p> </p>
+          <p>这是给你的证物。</p>
+          <p> </p>
+          <p>如果你每天都能来帮我们，我们侦探事务所一定会很兴旺的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]的矿石，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭格尔克马洛斯的巨大提诺斯的委托。</p>
+          <p> </p>
+          <p>消灭那个怪物，把变异矿石带了回去，获得了证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然有很多人认为崇拜者的势力中，有龙族手下的介入，但准确的情况还不太清楚。</p>
+          <p> </p>
+          <p>我想到了一点什么……啊，现在还不能告诉您。</p>
+          <p> </p>
+          <p>对崇拜者们的物品进行调查，也许可以知道些什么。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">点头。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>邪恶的势力终究无法掩盖其本质。</p>
+          <p> </p>
+          <p>他们身上一定会有象征着什么的东西，或者含有重要情报的文件等等。</p>
+          <p> </p>
+          <p>既然已经掌握了崇拜者的战斗力，您能帮我去更深处搜集他们身上的持有品吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>原来我对革命团势力进行过调查，越是重视组织性的集团，持有的物品上雕刻的象征图案就越多。</p>
+          <p> </p>
+          <p>请您去消灭[%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae]，搜集10个他们的持有品回来。</p>
+          <p> </p>
+          <p>希望通过这次调查，能查明他们的身份。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是觉得和崇拜者的战斗太危险了吗？</p>
+          <p> </p>
+          <p>我可以理解。我的事情不是命令，只是委托，您完全有理由拒绝。</p>
+          <p> </p>
+          <p>但是如果您愿意帮助我查明崇拜者的身份，请再来找我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae]消灭掉了吗？</p>
+          <p> </p>
+          <p>他们身上有什么东西呢？</p>
+          <p> </p>
+          <p>有没有画着奇怪纹样的饰品或者防具呢？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出崇拜者的持有品。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您没能成功地进入乌达斯神殿深处吗？</p>
+          <p> </p>
+          <p>这也难怪。那里有为数众多的崇拜者，失败也是正常的。</p>
+          <p> </p>
+          <p>但是要想查明他们的身份，就必须对他们的持有品进行调查。</p>
+          <p> </p>
+          <p>请您快去消灭[%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae]，搜集持有品吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我得仔细查看才行。从表面上看，这些是普通的亲龙的证物。</p>
+          <p> </p>
+          <p>啊，这是什么？好像……现在还没经过确认，我不能断言……但是……</p>
+          <p> </p>
+          <p>嗯，谢谢[%username]大人帮我搜集到了崇拜者的持有品。</p>
+          <p> </p>
+          <p>剩下的事情就交给我吧。如果可以的话，希望您能继续帮我。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae]和[%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae]的持有品，然后交给[%dic:STR_DIC_N_Barus]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">巴鲁斯说要想确认崇拜者的身份，需要对他们的持有品进行调查。去乌达斯神殿的深处搜集他们的持有品吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>巴鲁斯说要想确认崇拜者的身份，首先要做的就是调查他们的持有品。</p>
+          <p> </p>
+          <p>前往乌达斯神殿深处，消灭了精锐破坏兵和精锐魔法师，把搜集到的持有品交给了他。</p>
+          <p> </p>
+          <p>巴鲁斯说虽然无法确定，但好像发现了某种特别的东西，并让我继续帮他进行调查。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人不挑食吧？</p>
+          <p> </p>
+          <p>我有点挑食，主要是因为肠胃不太好，多吃些蔬菜会舒服一些。</p>
+          <p> </p>
+          <p>可最近，总是碰到肉，吃了以后胃难受得要死。</p>
+          <p> </p>
+          <p>或许是因为难于储藏，要塞送来的补给品里几乎没有蔬菜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>总想在附近找一些合适的食用蔬菜。可是，在黑色平原，能找到的也只有赫西亚。</p>
+          <p> </p>
+          <p>赫西亚虽然也算是蔬菜，可对肠胃的刺激也不比肉类差，吃了也不舒服。</p>
+          <p> </p>
+          <p>尽管如此，别人都对送来的补给品没什么意见，我也总不能搞特殊化...</p>
+          <p> </p>
+          <p>真是让人发愁。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我听说，在雪原棕熊栖息地生长着 [%dic:STR_DIC_DF3_vegetable_d_n_c_30a]...那东西应该对我很合适，可我一直没机会去采。</p>
+          <p> </p>
+          <p>执行任务的时候也很不方便，要是溜出去被发现了，别人肯定会有意见。</p>
+          <p> </p>
+          <p>平常事务繁忙，也没有什么空闲时间。</p>
+          <p> </p>
+          <p>[%username] 大人能帮我这个忙吗？</p>
+          <p> </p>
+          <p>我知道，这个请求可能有点过分，但对我来说，适合的食物确实是个非常重要的问题。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢，多亏有您在，这下我可以放心了。</p>
+          <p> </p>
+          <p>在雪原棕熊栖息地，长着不少 [%dic:STR_DIC_DF3_vegetable_d_n_c_30a]，请您去那里帮我采一些来。</p>
+          <p> </p>
+          <p>不过，罗根是雪原棕熊的主要食物。您在去采集罗根的过程中，一旦被它们发现，肯定会遭到攻击。</p>
+          <p> </p>
+          <p>所以，请一定要小心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因为是私事，对您的拒绝我也无话可说。</p>
+          <p> </p>
+          <p>既然身为执政官，就要面对这些困难，我只好忍受了。</p>
+          <p> </p>
+          <p>不过，希望以后能找到其他人帮助我。</p>
+          <p> </p>
+          <p>虽然再严重的后果也就是便秘的次数增加，但毕竟很不好受。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username] 大人！我一直在等着您呢。</p>
+          <p> </p>
+          <p>肠胃又开始折腾，越来越难受，我快支持不住了。</p>
+          <p> </p>
+          <p>那么，您已经拿到罗根了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将罗根交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，您怎么空着手回来啊。</p>
+          <p> </p>
+          <p>[%username] 大人也许并没有把这事放在心上，可是对我来说，这是很重要的。</p>
+          <p> </p>
+          <p>只有身体好起来，才能更好地完成任务啊！</p>
+          <p> </p>
+          <p>请您抓紧时间去雪原棕熊的栖息地，帮我采集一些 [%dic:STR_DIC_DF3_vegetable_d_n_c_30a]吧。一定要快！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊，真是好运。有了这些蔬菜，肠胃不适的情况应该会好很多。</p>
+          <p> </p>
+          <p>看来也不是很多，我还是自己留着慢慢吃吧，虽然这样有点对不起吉格里泰大人和索尔格林。</p>
+          <p> </p>
+          <p>他们都能吃得惯赫西亚，应该没什么事。</p>
+          <p> </p>
+          <p>真是谢谢您了。多亏了 [%username] 大人，我才能用新鲜的蔬菜向这挑剔的胃交差，呵呵。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_DF3_vegetable_d_n_c_30a]，并交给 [%dic:STR_DIC_N_Alfgeir]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">采集生长在雪原棕熊栖息地的罗根，交给阿尔夫盖尔。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿尔夫盖尔称，自己的肠胃不好，由于无法吃到蔬菜，肠胃经常会很难受。</p>
+          <p> </p>
+          <p>可黑色平原附近只有赫西亚这一种蔬菜，而阿尔夫盖尔的胃显然对这唯一的蔬菜很过敏，他希望能得到帮助。</p>
+          <p> </p>
+          <p>帮助他去雪原棕熊栖息地采集罗根，并交给了他。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

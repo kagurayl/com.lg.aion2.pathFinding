@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(放下手中拿着的羽毛) 天啊……呜呜，我还以为这次肯定能找到凶手……</p>
+          <p> </p>
+          <p>(擦拭眼泪) 您什么时候来的？不好意思，让您看到我出丑的样子。</p>
+          <p> </p>
+          <p>您带来的羽毛中没有发现和凶手一致的。我还以为看错了，来来回回检查了三次……呜呜。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">安慰他，让他加油。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>开始我也很坚强，可随着时间的流逝，身心的疲惫，与目标的距离越来越远，性格也不知不觉脆弱起来。</p>
+          <p> </p>
+          <p>我现在好好多了，请您不要担心。为了能找到杀害阿林的凶手，我一定会重新振作起来的。</p>
+          <p> </p>
+          <p>[%username] 大人，不好意思，能再帮我一次吗？</p>
+          <p> </p>
+          <p>除了鸟妖外，还有其他值得怀疑的家伙，我希望您能帮助我起调查它们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是谢谢您，本来这应该是我自己的事情，可我现在连动根手指的力气都没了。</p>
+          <p> </p>
+          <p>据说 [%dic:STR_DIC_M_LF2A_Griffon_45_An]栖息在迪尔莫伊通道。请去收集它们的羽毛吧。</p>
+          <p> </p>
+          <p>顺便也收集 [%dic:STR_DIC_M_LF2A_Griffo_45_n]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您很忙，真是不好意思，我不要紧，您不用担心，去忙您的吧。</p>
+          <p> </p>
+          <p>对您之前的帮助，我表示由衷的感谢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>休息了一会，现在终于恢复了点力气。</p>
+          <p> </p>
+          <p>让[%username] 大人看到我脆弱的一面，真是不好意思。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">将羽毛交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>不过，我不是说让您收集格里芬的羽毛吗？</p>
+          <p> </p>
+          <p>我分明是让您去收集在迪尔莫伊通道的 [%dic:STR_DIC_I_QUEST_3078a]和 [%dic:STR_DIC_I_QUEST_3078b]了啊……</p>
+          <p> </p>
+          <p>您到现在还没有出发吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是，我让您去收集格里芬的羽毛了吗？</p>
+          <p> </p>
+          <p>哦，想起来了。我都有点糊涂了，上次鸟妖的事情已经给您添了够多的麻烦，这次竟然还拜托您收集格里芬的羽毛。</p>
+          <p> </p>
+          <p>(查看格里芬的羽毛) 这该怎么办呢？</p>
+          <p> </p>
+          <p>这好像也不是凶手的羽毛。颜色上就根本不同，用不着仔细看了。</p>
+          <p> </p>
+          <p>请收下吧，一连帮了我两次，总不能让您空手而回啊。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">收集[%dic:STR_DIC_M_LF2A_Griffo_45_n]和 [%dic:STR_DIC_M_LF2A_Griffon_45_An]的羽毛，并交给 [%dic:STR_DIC_N_Elektra]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">埃勒特拉表示，在鸟妖的羽毛中没有发现和凶手一致的。代替陷入悲伤的埃勒特拉，找到栖息在迪尔莫伊通道的铁嘴格里芬和格里普，并收集它们的羽毛。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在鸟妖偷猎者和鸟妖狩猎者的羽毛中没有发现和凶手一致的羽毛，对此埃勒特拉感到非常伤心。</p>
+          <p> </p>
+          <p>代替陷入悲伤的埃勒特拉，找到栖息在迪尔莫伊通道的铁嘴格里芬和格里普，并收集它们的羽毛交给了他。可还是一无所获。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

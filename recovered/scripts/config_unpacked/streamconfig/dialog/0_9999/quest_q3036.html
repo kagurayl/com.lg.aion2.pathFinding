@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(看着充了能的发动石)现在只要发动实体就行了。</p>
+          <p> </p>
+          <p>那样的话，就能知道是什么样的实体了。</p>
+          <p> </p>
+          <p>啊，我已经开始兴奋了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然只是我的期望，但我希望实体启动之后，能对泰奥勃莫斯的开发事业有所帮助。</p>
+          <p> </p>
+          <p>现在不是唠叨的时候。</p>
+          <p> </p>
+          <p>[%username]，我有件事想拜托你。请你用这个发动石去启动实体。</p>
+          <p> </p>
+          <p>你比这里所有的人都更熟悉实体，所以你是最合适的人选。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢。我把这个给你，请你马上去启动[%dic:STR_DIC_OBJ_LF2a_Artifact_Q3036]。</p>
+          <p> </p>
+          <p>然后立即回来，向我报告结果。</p>
+          <p> </p>
+          <p>我会在这里等你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你不想确认充了能的发动石能不能启动实体吗？</p>
+          <p> </p>
+          <p>付出了那么多的辛苦，到了现在再放弃，难道不觉得可惜吗？</p>
+          <p> </p>
+          <p>不过要是你不愿意，我也没有办法。不过既然是由你开始的，最好是由你来结束。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我正在等你呢。</p>
+          <p> </p>
+          <p>拉格托斯海岸的实体启动了吗？</p>
+          <p> </p>
+          <p>请你跟我详细地说一下。我很想知道。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>啊哈，这是真的吗？实体居然有这种力量，如果能妥善使用，就会对这里的人起到很大的帮助。</p>
+          <p> </p>
+          <p>必须马上把这件事通知极乐世界。那里还有更多的人在等着了解实体的功能。</p>
+          <p> </p>
+          <p>在这件事情上，[%username]你的功劳最大。</p>
+          <p> </p>
+          <p>内扎坎主神一定会祝福你的。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">用充了能的发动石启动[%dic:STR_DIC_OBJ_LF2a_Artifact_Q3036]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Atropos]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">用充了能的发动石启动拉格托斯海岸的实体，并把结果告诉阿特洛浦斯。</font></p>
+          <p></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿特洛浦斯让我去启动实体，于是拿着发动石来到了实体所在的地方。</p>
+          <p> </p>
+          <p>使用发动石之后，实体启动了，降下了特别的祝福。</p>
+          <p> </p>
+          <p>阿特洛浦斯知道这一事实之后非常高兴，说这一定会对开发泰奥勃莫斯起到帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

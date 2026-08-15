@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>因特尔蒂卡有很多西风的守护者。</p>
+          <p> </p>
+          <p>虽然也会做其他事情，但最主要的任务是搜集龙族和不死族的情报。</p>
+          <p> </p>
+          <p>负责对龙族进行调查的朋友们正在搜集对在欧比斯中和龙族战斗有帮助的情报。</p>
+          <p> </p>
+          <p>像我这样的负责对不死族进行调查的人，则负责了解不死族产生的原因，以及将他们送回奥德的流动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这附近是我负责的地区，但是由于太广阔，我一个人根本管不过来。</p>
+          <p> </p>
+          <p>但是上司却不会接受我的这种狡辩。</p>
+          <p> </p>
+          <p>所以我说，您能帮我去塔尔塔隆农场消灭[%dic:STR_DIC_M_Banshee_37_An]和[%dic:STR_DIC_M_Bookie_37_An]吗？</p>
+          <p> </p>
+          <p>最近他们闹出了不少事情，但是我却没空对付他们。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。 </Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您答应帮我。</p>
+          <p> </p>
+          <p>塔尔塔隆农场就在这里的东面。</p>
+          <p> </p>
+          <p>请您帮我去那里消灭[%dic:STR_DIC_M_Banshee_37_An]和[%dic:STR_DIC_M_Bookie_37_An]。</p>
+          <p> </p>
+          <p>那就拜托您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人没有什么事情束缚着您，因此无法理解我的心情。</p>
+          <p> </p>
+          <p>我也是觉得西风的守护者比较自由，才会选择这条道路的。没想到却没有想象的那么自由。</p>
+          <p> </p>
+          <p>不过，这件事我应该找谁呢……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>为了整理之前的调查资料，我都快忙死了。</p>
+          <p> </p>
+          <p>要是前线的守护者们能把情报送回来，然后由神殿负责整理就好了。</p>
+          <p> </p>
+          <p>对了，女妖和布奇消灭掉了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。 </Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是辛苦您了。</p>
+          <p> </p>
+          <p>送给要塞的报告书里又能多写一条了。</p>
+          <p> </p>
+          <p>这是给您的报答。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭塔尔塔隆农场的女妖和布奇</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Banshee_37_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_Bookie_37_An]([%5]/5)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Gamedes]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">去塔尔塔隆农场消灭呜咽的女妖和百衲衣布奇。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>贾梅德斯说必须消灭塔尔塔隆农场的不死族，但因为有很多其他的事要做，因此抽不出时间。</p>
+          <p> </p>
+          <p>于是帮助他去塔尔塔隆农场消灭了呜咽的女妖和百衲衣布奇。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

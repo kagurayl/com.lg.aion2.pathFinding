@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了消灭潜伏兵马里卡·杜卡的委托。</p>
+          <p> </p>
+          <p>查理隆侦探事务所成员请熟记并遵循以下内容。 </p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DaQ_FanaticRa_54] </p>
+          <p></p>
+          <p> 2. 位置：受到诅咒的地下城市附近</p>
+          <p></p>
+          <p> 3. 详情：在通往受到诅咒的地下城市的道路上设置陷阱，给执政官们造成伤害后，沿着风路逃往地下城市。目前鸢族和执政官两边都在追踪杜卡。</p>
+          <p> </p>
+          <p>如能提供潜伏兵马里卡·杜卡的下落，或直接将其杀死者，将可以得到委托费。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你又来啦，呐呐。</p>
+          <p> </p>
+          <p>这次你又完成了什么委托呢？</p>
+          <p> </p>
+          <p>如果你想快点得到委托费，就快点向我报告，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>据说他们设置的陷阱，和古代亚特雷亚人用来对抗龙族时使用的陷阱的原理是一样的。</p>
+          <p> </p>
+          <p>他们看起来应该没那么聪明，到底是从哪里学会的呢？</p>
+          <p> </p>
+          <p>听说鸢族和崇拜者之间有很深的渊源……就像我们和黑暗术古的关系一样。</p>
+          <p> </p>
+          <p>辛苦你了。这是为你准备的委托费，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">前往受到诅咒的地下城市，找到并消灭[%dic:STR_DIC_M_DF4_DaQ_FanaticRa_54]([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_E_46500]报告</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了消灭潜伏兵马里卡·杜卡的委托书。</p>
+          <p> </p>
+          <p>前往受到诅咒的地下城市，找到并消灭了潜伏兵马里卡·杜卡。回去向格尔克马洛斯管理部职员报告，他说辛苦了，并给了我委托费。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

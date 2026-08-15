@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(碰到水晶球后，上面出现了模糊的影像。)</p>
+          <p> </p>
+          <p>(看见长得很奇怪的怪物在破坏研究所。)</p>
+          <p> </p>
+          <p>([%dic:STR_DIC_M_DF4_W_C5_DrakanPr_Re_Nmd_55_An]好像在呼喊着什么。)</p>
+          <p> </p>
+          <p>(怪物靠近，影像中断了。) </p>
+          <p> </p>
+          <p>(应该拿去给亚龙追踪者[%dic:STR_DIC_N_Batalrion]看看。) </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>来的路上，有没有发现什么奇怪的东西？嗯，最近有点奇怪。</p>
+          <p> </p>
+          <p>怎么说呢？生活在龙界的所有生命体好像都躲了起来。</p>
+          <p> </p>
+          <p>从以前的经验来看，只有绝对的强者出现之后，才会出现这种现象……嗯，是我太敏感了吗？</p>
+          <p> </p>
+          <p>对了，[%username]，你到这里来有什么事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出萨克迪之水晶球。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(查看水晶球中的影像。)</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_DF4_Raid]……我的预感果然没错！</p>
+          <p> </p>
+          <p>纳塔拉孜，就是影像中出现的那个怪物，是纳杜卡活体研究所的野心之作。</p>
+          <p> </p>
+          <p>它是将古代龙和德拉坎，以及多种生命体的攻击力组合在一起创造出来的生命体……等等，现在不是说这些的时候。</p>
+          <p> </p>
+          <p>不好意思，你能帮我把这个消息告诉我的同事吗？</p>
+          <p> </p>
+          <p>帮我告诉潜入到大地之尖牙的[%dic:STR_DIC_N_Ducalis]，那里出现了突变纳塔拉孜，让他小心。</p>
+          <p> </p>
+          <p>如果可以的话，希望他能够回来。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来您好像很善于乘风。</p>
+          <p> </p>
+          <p>(凝视着前方)[%username]大人，你不用管我，做您自己的事情去吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达巴塔利安的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>简单地说，就是突变纳塔拉孜从纳杜卡活体研究所里逃了出来。</p>
+          <p> </p>
+          <p>巴塔利安说如果它在这里出现，我可能会有危险，让我小心一点。对吧？</p>
+          <p> </p>
+          <p>好的，我知道了。我会执行巴塔利安队长的命令。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把萨克迪之水晶球交给[%dic:STR_DIC_N_Batalrion]</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">向[%dic:STR_DIC_N_Ducalis]转达巴塔利安的话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在研究所长萨克迪身上发现了水晶球。应该拿去给巴塔利安看看，</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>把从研究所长萨克迪身上发现的水晶球交给了巴塔利安，他说突变纳塔拉孜逃出了纳杜卡活体研究所，今后必须更加注意。</p>
+          <p> </p>
+          <p>他让我把这个消息转告给潜入大地之尖牙的同事，于是帮他向亚龙追踪者杜卡里斯转告了纳塔拉孜逃出来的消息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

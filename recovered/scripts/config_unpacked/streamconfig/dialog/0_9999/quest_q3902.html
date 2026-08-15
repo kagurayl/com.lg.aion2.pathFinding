@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您知道有一部关于弓星和杀星技能相关的书吗？</p>
+          <p> </p>
+          <p>这是一部自由之神殿代代相传的密书，分为好几卷。目前由尤贝恩图斯大人保管。</p>
+          <p> </p>
+          <p>不久前我借了第一卷，现在也该到了归还的时候。</p>
+          <p> </p>
+          <p>但是，每天都有很多年轻的守护者需要帮忙，我实在无法离开这里。</p>
+          <p> </p>
+          <p>可我也不能把书随便交给别人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>但我完全信任 [%username]大人。</p>
+          <p> </p>
+          <p>因为您是忠实地追随白杰尔主神的[%userclass]。</p>
+          <p> </p>
+          <p>我这就把自由之秘典交给您，请您将书送到守护者殿堂的尤贝恩图斯大人那里吧。</p>
+          <p> </p>
+          <p>请您注意，密书一定不能丢失。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>尤贝恩图斯大人您应该见过几次吧？</p>
+          <p> </p>
+          <p>他对于毒药造诣很深，自由之神殿的知识也非常渊博。</p>
+          <p> </p>
+          <p>我目前只了解密书第一卷的内容，后面更高深和精髓的部分只有尤贝恩图斯大人才清楚。</p>
+          <p> </p>
+          <p>[%username] 大人如果想达到更高的境界，应该请尤贝恩图斯大人多多指点。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您为什么拒绝？</p>
+          <p> </p>
+          <p>这可不是随便找个人就能拜托的事情。</p>
+          <p> </p>
+          <p>[%username] 大人好像对这本密书的价值不以为然。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>选择弓星和杀星道路的守护者大多都有着自由奔放和豪爽的性格。</p>
+          <p> </p>
+          <p>因此不太喜欢做研究或教别人。</p>
+          <p> </p>
+          <p>但是，培养年轻的守护者是追随白杰尔主神的意志的重要事情。</p>
+          <p> </p>
+          <p>不过你找我有什么事情吗？仅仅是来听我教导的吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">将密书交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(拿着密书) 送来了令人意外的东西啊。</p>
+          <p> </p>
+          <p>这本密书对于弓星和杀星以外的人只不过是无法看懂的密码文。</p>
+          <p> </p>
+          <p>但是对于追随着自由之神殿的意志的人来说却记载着非常重要的内容。</p>
+          <p> </p>
+          <p>想要成为更加出色的守护者， [%username]，你也必须掌握密书的全部内容。</p>
+          <p> </p>
+          <p>确实，我比埃乌梅洛斯知道更多关于密书的内容。</p>
+          <p> </p>
+          <p>进入，如果你想学习新的技能，尽管来找我，我会根据适合你的实际情况，对你进行指点。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">与[%dic:STR_DIC_N_Juventus]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">将在埃乌梅洛斯处得到的密书，送到尤贝恩图斯那里。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>埃乌梅洛斯请求将记载着弓星和杀星技能的书，送到尤贝恩图斯那里。</p>
+          <p> </p>
+          <p>拿到密书的尤贝恩图斯表示，如果想成为更加出色的守护者，需要学习密书的全部内容，并承诺会给予帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

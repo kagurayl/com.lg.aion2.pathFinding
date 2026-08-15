@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>结界守护团的各位同仁。</p>
+          <p> </p>
+          <p>为了确保武器的供应，我们正在格尔克马洛斯地区搜集材料。</p>
+          <p> </p>
+          <p>如果能搜集到大量的[%dic:STR_DIC_G_QUEST_45047a]和[%dic:STR_DIC_G_QUEST_45047b]，希望能够缓解结界守护团的武器供应情况。</p>
+          <p> </p>
+          <p>请同志们搜集上述材料，然后交给[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把信收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在格尔克马洛斯活动，必须对付随时可能出现的龙族和奇怪生物，所以必须要有一件好武器。</p>
+          <p> </p>
+          <p>但是您也知道，对于守护者和结界守护团来说，武器并不是取之不尽的。</p>
+          <p> </p>
+          <p>听说守护团要搜集[%dic:STR_DIC_G_QUEST_45047a]和[%dic:STR_DIC_G_QUEST_45047b]制作武器发放给大家，但是好像在材料搜集方面遇到了问题。</p>
+          <p> </p>
+          <p>真让人担心。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出采集到的材料。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%username]大人，您收到信了吗？</p>
+          <p> </p>
+          <p>听说守护团给进出格尔克马洛斯的所有同志发出了协助信，要求大家搜集[%dic:STR_DIC_G_QUEST_45047a]和[%dic:STR_DIC_G_QUEST_45047b]。</p>
+          <p> </p>
+          <p>难道是搜集材料失败了吗？</p>
+          <p> </p>
+          <p>今天的时间还没结束，希望您继续努力。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这就是榉树和德雷尼矿石啊？</p>
+          <p> </p>
+          <p>很多收到信的同志们都已经把东西送来了。</p>
+          <p> </p>
+          <p>所有人都会得到证物，非常公平。</p>
+          <p> </p>
+          <p>今天的任务完成了，谢谢您。请收下这个证物。希望以后您能继续努力执行任务。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集[%dic:STR_DIC_G_QUEST_45047a]和[%dic:STR_DIC_G_QUEST_45047b]，然后交给[%dic:STR_DIC_N_Amphibia]或[%dic:STR_DIC_N_Mollusca]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了结界守护团的信。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从结界守护团那里收到的信上说，搜集用作武器材料的采集物，然后交给安皮比亚或穆鲁斯卡。</p>
+          <p> </p>
+          <p>按照信上的指示，把搜集到的榉树和德雷尼矿石送了过去，获得了作为奖励的证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

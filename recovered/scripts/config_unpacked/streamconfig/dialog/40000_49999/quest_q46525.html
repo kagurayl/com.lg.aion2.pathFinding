@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 委托书 - </p>
+          <p> </p>
+          <p>收到了寻找被盗的信的委托。</p>
+          <p></p>
+          <p>偷走信的人正在逃亡中，对于信的内容和本次委托，必须彻底保密。</p>
+          <p> </p>
+          <p> 1. 名字：[%dic:STR_DIC_M_DF4_DayQ_DFighter_54_An]</p>
+          <p></p>
+          <p> 2. 位置：[%dic:STR_DIC_W_SZ_DF4_B2_Od]</p>
+          <p></p>
+          <p> 3. 详情：必须找到偷走[%dic:STR_DIC_I_quest_46525a]的那个人，找回被盗的信。</p>
+          <p> </p>
+          <p>找到信的人，将获得证物作为奖励。</p>
+          <p> </p>
+          <p>- 查理隆侦探事务所，全体[%dic:STR_DIC_E_46500] -</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">把委托书收起来。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>城市里的守护者们好像有很多秘密，呐呐。</p>
+          <p> </p>
+          <p>经常有守护者为了掩盖事实而花大价钱委托我们。</p>
+          <p> </p>
+          <p>这次又有一个秘密任务……你是因为那件事而来吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>守护者们为了掩盖秘密花了很多钱，但秘密不可能永远都是秘密。</p>
+          <p> </p>
+          <p>每个人都会有失误，失误之后就想掩盖，不小心被人发现，就会很尴尬。在这一点上，人类和守护者都一样，呐呐。</p>
+          <p> </p>
+          <p>因为那些守护者，我们赚了不少钱。</p>
+          <p> </p>
+          <p>如果你接受了委托，难道不应该做出一点成果来吗？快去寻找[%dic:STR_DIC_I_quest_46525a]吧，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>什么？这就是那封信！</p>
+          <p> </p>
+          <p>看上去好像很普通，不知道是不是用暗号写成的。</p>
+          <p> </p>
+          <p>辛苦你了，这是给你的证物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">夺回被[%dic:STR_DIC_M_DF4_DayQ_DFighter_54_An]抢走的信，然后交给[%dic:STR_DIC_E_46500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">收到了查理隆侦探事务所的委托书。去执行委托吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从查理隆侦探事务所那里收到了新的委托书。</p>
+          <p> </p>
+          <p>委托的内容是消灭偷走秘密信件的卡兰乌尔，找回被盗的信。</p>
+          <p> </p>
+          <p>完成任务之后，获得了证物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

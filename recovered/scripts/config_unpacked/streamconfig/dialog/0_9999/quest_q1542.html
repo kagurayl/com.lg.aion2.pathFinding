@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其实[%username]大人不在的这段时间，龙蜥兽来袭击过。</p>
+          <p> </p>      
+          <p>不久前，我们曾经为了研究而偷了它的卵，就因为这个它们就追来了。</p>
+          <p> </p>
+          <p>幸亏其他人帮我阻挡了它们的袭击，我才没有受伤。不过这之前研究的资料和标本全都毁了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>材料么，再收集齐就好了，可是毕竟让人心存不安，很难集中精神研究。</p>
+          <p> </p>
+          <p>守护者大人千辛万苦带回的体液如果在培养的过程中又被这些家伙毁掉可怎么办呢？</p>
+          <p> </p>
+          <p>所以请您再帮我一个忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>请您帮我消灭周围的[%dic:STR_DIC_M_Frillfaimam1st_37_An]。</p>
+          <p> </p>
+          <p>也不是很多，只要抓到10只就差不多了。</p>
+          <p> </p>
+          <p>只要抓10只，他们就会害怕，不会动不动就来袭击了。</p>
+          <p> </p>
+          <p>请您一定要帮我这个忙。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是太感谢您了。</p>
+          <p> </p>
+          <p>不好意思，那就请您这就行动好吗？</p>
+          <p> </p>
+          <p>不知道他们什么时候会再来，我十分不安。请您尽快行动。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是吗。。。您也不用觉得太抱歉，本来我这个要求就有点过分了。</p>
+          <p> </p>
+          <p>那我就先用您带给我的体液再进行研究吧。</p>
+          <p> </p>
+          <p>不过如果到时候它们再来袭击，那可真是没有办法了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您抓到龙蜥兽了吗？</p>
+          <p> </p>
+          <p>我正好结束了第一轮培养，要开始第二轮呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>可算听到一个好消息。塞尔莫尔亚大人听到这个消息也会很高兴的。</p>
+          <p> </p>
+          <p>他这几天被困在野营地都不能动。</p>
+          <p> </p>
+          <p>区区谢礼，不成敬意，请您收下。真是太辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">抓住威胁到野营地安全的[%dic:STR_DIC_M_Frillfaimam1st_37_An]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">向[%dic:STR_DIC_N_Okonus]报告。</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">消灭龙蜥兽，使野营地的人们安心专著于研究。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥克努斯说龙蜥兽袭击了野营地，之前收集的资料都毁了。</p>
+          <p> </p>
+          <p>因此非常不安，不能继续研究。拜托你帮忙消灭周围的普披派曼。按他的要求，消灭了龙蜥兽。他向你表示感谢，不住向你表示感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

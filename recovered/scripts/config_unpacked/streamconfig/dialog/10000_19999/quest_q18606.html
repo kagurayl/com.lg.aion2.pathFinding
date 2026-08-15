@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我能问你一下吗？你是叫[%username]吗？</p>
+          <p> </p>
+          <p>那我就找对人了。</p>
+          <p> </p>
+          <p>忘了自我介绍了。我叫艾斯泰罗纳，是希埃尔之枪军团的成员。</p>
+          <p> </p>
+          <p>不知你知不知道，我们希埃尔之枪是希埃尔主神的直属军团。</p>
+          <p> </p>
+          <p>但是大崩溃的时候，大部分成员都死了，只有几个人活了下来。而且又分成了天界和魔界，唉……</p>
+          <p> </p>
+          <p>这些往事你不用知道也行，我找你，是有一件和我们军团有关的事情想交给你。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么事情。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近我经常梦到希艾斯神官在默默地流泪。他曾经是我侍奉的人，大崩溃之后就失去了踪迹。</p>
+          <p> </p>
+          <p>为了搞清楚是怎么回事，我进行了调查，据说希艾斯神官在梦中出现，和假烙印之石有关。</p>
+          <p> </p>
+          <p>这样我才终于明白。据我所知，他是个不喜欢别人说他坏话的人，不管是在梦中，还是在灵魂状态下。</p>
+          <p> </p>
+          <p>于是我找到了做这样的梦的人，让他们在梦中遇到他之后就把他打倒，让他可以永远地安息。</p>
+          <p> </p>
+          <p>但是所有的人都拒绝了我。[%username]，你呢？你会拒绝我吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>呼，太好了，真是太好了……</p>
+          <p> </p>
+          <p>以他的性格，就算是在梦中，一定也会待在封印神殿。因为他一向把守护封印在神殿中的邪恶遗物当作自己的天职。</p>
+          <p> </p>
+          <p>请你到[%dic:STR_DIC_W_IDCromede_Seal_Room]去，打倒[%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An]。手脚一定要利落，让他走的没有痛苦。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我已经习惯了拒绝。</p>
+          <p> </p>
+          <p>一开始被人拒绝的时候，我恨不得把那个人杀掉。不过现在我已经麻木了。</p>
+          <p> </p>
+          <p>知道了。你的意思我已经明白，你走吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在等你的时候，我小睡了一会儿，这次我又见到了希艾斯神官。</p>
+          <p> </p>
+          <p>但是和以往不同，这次他的脸上带着微笑。</p>
+          <p> </p>
+          <p>如果我的梦没错，你一定是成功完成了，对吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">讲述结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(低下头)希望您能在希埃尔主神的怀抱中永远地安息。</p>
+          <p> </p>
+          <p>(飞快地擦了擦眼角)眼睛里好像进了灰尘……</p>
+          <p> </p>
+          <p>谢谢你完成了我的请求。最近的人都只知道为自己考虑，而你不同。</p>
+          <p> </p>
+          <p>请收下。这是我对你的感谢，请不要拒绝。</p>
+          <p> </p>
+          <p>如果我说过什么无礼的话，希望你能理解。过去我不会这样，但是随着岁月的流逝，我已经变成了一个嘴巴刁钻的老头子了。</p>
+          <p> </p>
+          <p>不过吉格那个家伙，还是老样子。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">进入[%dic:STR_DIC_W_IDCromede]，让守护封印神殿的[%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An]安息([%2]/1)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Estenor]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">在恶梦中让守护封印神殿的希埃尔之枪神官希艾斯永远安息。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>艾斯泰罗纳说自己侍奉的希艾斯神官在梦中出现，默默地流泪。为了希艾斯神官的名誉，他让我消灭掉在恶梦中出现的希艾斯神官。</p>
+          <p> </p>
+          <p>消灭了恶梦中的希艾斯神官，回去之后，他对我表示感谢，说神官终于得到了安息。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

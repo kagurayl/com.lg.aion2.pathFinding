@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>本来，麻烦事就不断。现在可到好，就连武器也来折腾我了。</p>
+          <p> </p>
+          <p>由于拉米兰岛持续高温，武器出现了问题。</p>
+          <p> </p>
+          <p>啊，不是折断，而是总处于高温，刀箭等武器慢慢变得弯曲。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否有解决的方法。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我们向普利姆据点请求帮助。他们的答复是贪欲兽的心脏，说只要把那个融化掉，再涂在武器上，武器就不会再变形了。</p>
+          <p> </p>
+          <p>所以，突破口就是 [%dic:STR_DIC_I_QUEST_2824a]。正好，岛上有 [%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]，得到心脏应该不会很难。但问题是，派谁去好呢。</p>
+          <p> </p>
+          <p>您也知道，现在我们都忙得顾不上其他了。</p>
+          <p> </p>
+          <p>那个，您愿意帮我们做这件事吗？看上去您也没那么忙...</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您不要太轻敌。</p>
+          <p> </p>
+          <p>既然能在高温的熔岩地区生活，一般的攻击可能根本伤不了它们。</p>
+          <p> </p>
+          <p>在去之前请好好准备，不要因一时轻敌而吃大亏。</p>
+          <p> </p>
+          <p>那么，到时候再见。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>逃跑也是一种战略。</p>
+          <p> </p>
+          <p>害怕失败，现在放弃也不失为明智的选择。</p>
+          <p> </p>
+          <p>您的能力所不及的事情，我也不会强求。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>比预想的要快很多啊。</p>
+          <p> </p>
+          <p>快速固然很重要，但更重要的是结果。</p>
+          <p> </p>
+          <p>我希望的结果是您带来了全部的[%dic:STR_DIC_I_QUEST_2824a]。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">把拉米兰贪欲兽的心脏交给她。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>应该不会是箱子的底漏了吧，剩下的在哪里呢？</p>
+          <p> </p>
+          <p>我可不想听什么忘记了之类的辩解。</p>
+          <p> </p>
+          <p>就算那样也不会凭空多出心脏啊。</p>
+          <p> </p>
+          <p>哎，您的理解能力还真是差。别人到这个时候，都能听懂了啊。</p>
+          <p> </p>
+          <p>请把剩下的 [%dic:STR_DIC_I_QUEST_2824a]搜集全，知道了吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真是神奇，听说非常耐热，所以我还以为是很烫的，没想到会像冰一样凉。</p>
+          <p> </p>
+          <p>不过现在还不是感叹的时候。得在敌人攻击前赶紧融化后涂在武器上。</p>
+          <p> </p>
+          <p>这是您辛苦的报酬，请收下。</p>
+          <p> </p>
+          <p>去吃点东西，缓解下疲劳吧。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭[%dic:STR_DIC_M_Ab1_1241_Pretor_38_An]，并搜集心脏交给 [%dic:STR_DIC_N_Ab1_1241_Quest_Da]。</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">为了能够让武器耐热，搜集拉米兰贪欲兽的心脏，并交给德西提内。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德西提内表示，拉米兰岛的高温使武器发生了不同程度的变形，她担心这样下去的话士兵们会在战斗中无法发挥出实力。</p>
+          <p> </p>
+          <p>幸亏找到了解决方法，那就是融化耐热的贪欲兽的心脏，并涂在武器上。</p>
+          <p> </p>
+          <p>遵照德西提内的委托，消灭了德奇沙斯贪欲兽，并搜集它的心脏交给了德西提内。对此，她表示感谢，并馈赠了谢礼。 </p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

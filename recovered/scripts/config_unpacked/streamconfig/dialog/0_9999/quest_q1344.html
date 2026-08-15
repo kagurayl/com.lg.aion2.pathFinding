@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我有封信要送到很远的地方，您能帮助我吗，[%username]？</p>
+          <p> </p>
+          <p>这段时间您帮我们沙漠侦察队执行了很多任务，真是帮了我们的大忙。</p>
+          <p> </p>
+          <p>但是这次又要请您帮忙，我还真是没面子啊。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是否需要帮助。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我把这段时间在沙漠侦察基地执行的任务制作成了报告书。</p>
+          <p> </p>
+          <p>报告书必须先送给要塞，不过我想这些情报应该对在埃拉库斯前哨基地执行任务的金刺军团也会有所帮助。</p>
+          <p> </p>
+          <p>所以我想请您帮我把这份报告书送给金刺军团的军团长[%dic:STR_DIC_N_Castor]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您一直帮到最后。</p>
+          <p> </p>
+          <p>请您把这份报告书转交给埃拉库斯前哨基地的[%dic:STR_DIC_N_Castor]大人。</p>
+          <p> </p>
+          <p>守卫、金刺军团，以及生命的守护者都在努力工作，但我很怀疑是否能阻止埃尔特内的沙漠化。</p>
+          <p> </p>
+          <p>至少到现在为止，好像还没有什么看得见的成果。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您要是太忙的话就没办法了。</p>
+          <p> </p>
+          <p>这段时间您很努力地帮助我们，所以这次您拒绝我，我也不觉得难过。</p>
+          <p> </p>
+          <p>这段时间真是辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么看上去无精打采的，[%username]。</p>
+          <p> </p>
+          <p>不会这点热度就让你不行了吧？</p>
+          <p> </p>
+          <p>对了，找我有事吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">把侦察队的报告书转交给他。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(阅读报告书)谢谢你把侦察队的报告书送过来。</p>
+          <p> </p>
+          <p>嗯...还有这种事情啊。</p>
+          <p> </p>
+          <p>谢谢你把报告书送过来。也得感谢德莫克里托斯给我们送来这么好的情报。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把侦察队的报告书转交给[%dic:STR_DIC_N_Castor]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">把侦察队的报告书转交给金刺军团的军团长[%dic:STR_DIC_N_Castor]。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>德莫克里托斯说为了共享情报，想把侦察队报告书送给金刺军团。</p>
+          <p> </p>
+          <p>于是把报告书交给了卡斯特罗，他说那是重要的情报，表示非常感谢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

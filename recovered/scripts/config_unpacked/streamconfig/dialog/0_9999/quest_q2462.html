@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>最近恨不得能有三头六臂。</p>
+          <p> </p>
+          <p>为什么！当然是事情太多了。</p>
+          <p> </p>
+          <p>我不是光在这里站岗就行了。有时间还要去坎塔利部落和革命团野营地侦察。为了防止行人受伤，还得定期清除沙漠中的野兽。</p>       
+          <p> </p>
+          <p>您以为只有这些吗？还得补充缺少的物资。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>其中采集得最多的是赫西亚。赫西亚可以用来治疗伤口，效果很好。</p>
+          <p> </p>
+          <p>但是受伤的人非常多，我虽然经常抽空出去采集，但是还是经常不够。</p>
+          <p> </p>
+          <p>靠我一个人搜集根本忙不过来。所以我说，您能帮我采集20个[%dic:STR_DIC_E_herb_d_n_c_20b]吗？啊，当然我会给您谢礼的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。那就事不宜迟，请您马上出发吧。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_E_herb_d_n_c_20b]应该在这附近就能找到。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么这么无情啊，看你也不像啊。帮着挖几棵药草，有那么困难嘛？</p>
+          <p> </p>
+          <p>我一天到晚站岗侦察，还不是照样去。</p>
+          <p> </p>
+          <p>我知道了。请您走吧。药草的事情我会去拜托托帕的。</p>
+          <p> </p>
+          <p>他之前一直用我的，如果有良心的话，应该会帮我去找。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+  
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>对了，我让您帮我搜集的[%dic:STR_DIC_E_herb_d_n_c_20b]怎么样了？</p>
+          <p> </p>
+          <p>您应该不会把赫西亚果实带回来了吧？</p>
+          <p> </p>
+          <p>让我来确认一下您是不是找对了。请您先把药材交给我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出赫西亚。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还说呢。</p>
+          <p> </p>
+          <p>我让您去采集的是20个[%dic:STR_DIC_E_herb_d_n_c_20b]。</p>
+          <p> </p>
+          <p>赫西亚长着绿色的叶子和紫色的花，这次可千万别搞错了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您原来就认识药草吗？</p>
+          <p> </p>
+          <p>普通人很难区分赫西亚和赫西亚果实，因此经常有人搞错。但您采来的就没有任何问题。</p>
+          <p> </p>
+          <p>请您收下这个。您帮了我的大忙，这是我的一点心意。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">采集[%dic:STR_DIC_E_herb_d_n_c_20b]，然后交给[%dic:STR_DIC_N_Gelundorf]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">盖伦多普说需要采集给伤者治疗的药草。采集赫西亚，然后交给盖伦多普吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>盖伦多普说由于伤者太多，他自己采集的药草不够用，让我帮帮他。</p>
+          <p> </p>
+          <p>按照他的拜托，采集赫西亚交给了他。他说非常感谢，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

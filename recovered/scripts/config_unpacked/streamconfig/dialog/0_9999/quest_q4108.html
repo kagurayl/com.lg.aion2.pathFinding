@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来我把事情想得太简单了。</p>
+          <p> </p>
+          <p>我是说苏道尔开拓地的野兽。它们的数量好像并没有减少太多。</p>
+          <p> </p>
+          <p>反倒是上次好像惹毛了它们，现在变得更加凶恶了。</p>
+          <p> </p>
+          <p>早知道这样的话，我就在村子平静下来之后再开展大规模的打猎活动了。虽然那样可能需要一些时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>虽然现在事情的顺序好像颠倒了，但我还是决定继续执行打猎野兽的作战。</p>
+          <p> </p>
+          <p>[%username]大人，如果您愿意的话，请一定要帮帮我们。</p>
+          <p> </p>
+          <p>我们非常缺少人手，所以正在向过往的守护者请求帮助。</p>
+          <p> </p>
+          <p>报酬相当不错，只要花一点时间，赚点旅费还是可以的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>明智的决定。[%username]大人已经有过经验了，做起来应该比别人更简单。</p>
+          <p> </p>
+          <p>打猎的对象和以前一样。</p>
+          <p> </p>
+          <p>只要去打猎苏道尔开拓地的[%dic:STR_DIC_M_DF2A_CuresSpotD_45_An]和[%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An]就行。</p>
+          <p> </p>
+          <p>请您分别打猎20个和30个。</p>
+          <p> </p>
+          <p>那就辛苦您了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>真让人意外。我以为[%username]大人您一定会帮我们的呢。</p>
+          <p> </p>
+          <p>看来是还有别人请您帮忙吧？</p>
+          <p> </p>
+          <p>也是，以[%username]大人这样的实力，谁都希望得到您的帮助。</p>
+          <p> </p>
+          <p>不管怎样，您的意思我明白了。您去忙您的事情吧。我怕我耽误了您太多的时间。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这么快就把事情办完了？</p>
+          <p> </p> 
+          <p>真了不起。比[%username]大人先去的人都还没有回来呢。</p>
+          <p> </p>
+          <p>消灭库雷斯和剑齿豹的时候，没遇到什么问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看吧，我就说对[%username]大人来说，这不是什么难事。</p>
+          <p> </p>
+          <p>我得尽快把这个好消息告诉其他人才行。</p>
+          <p> </p>
+          <p>这是说好的报酬。希望您在布鲁斯特豪宁战斗的时候，能起到一些帮助。</p>
+          <p> </p>
+          <p>我们还有很多问题需要[%username]大人的帮助。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭对贝达扎尔村造成威胁的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF2A_CuresSpotD_45_An]([%2]/20)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An]([%5]/30)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Bielia]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照庇艾利亚的委托，消灭威胁贝达扎尔村的斑点库雷斯和癞癣剑齿豹</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>庇艾利亚说库雷斯和剑齿豹变得更凶恶了，他们决定进行大规模的作战。</p>
+          <p> </p>
+          <p>参加打猎作战，消灭了斑点库雷斯和癞癣剑齿豹。回去之后，庇艾利亚对我表示感谢，并给了我报酬。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

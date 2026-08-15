@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>阿斯科雷皮乌斯大人是我的救命恩人。</p>
+          <p> </p>
+          <p>我被刺魔的毒针刺中，倒在了阿盖伦神秘泉的时候，是他发现并救了我。</p>
+          <p> </p>
+          <p>我虽然想送他一样什么东西作为报答，但却没有合适的东西！奥黛尔粉末和封魂石的话，要塞那边送过来的东西比我的更好。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>所以我想到了亚德曼金属长剑。虽然现在因为力气不行不干了，但是我年轻的时候曾经从事过武器制作。</p>
+          <p> </p>
+          <p>但是想要制作的时候才发现，亚德曼金属不够。要找到亚德曼金属，必须要去[%dic:STR_DIC_W_LF2_SZ_I1]。但是这好像太危险了。</p>
+          <p> </p>
+          <p>刚好我认识一个住在拉塞宾神秘泉那边的人，所以想拜托他。年轻人，你能帮我把这封信送过去吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>年轻人，你的心地还挺不错。</p>
+          <p> </p>
+          <p>这就是那封信。你把它交给拉塞宾神秘泉的欧佩罗斯就行。</p>
+          <p> </p>
+          <p>你跟他说是我给他的信，他会帮我处理的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来你很忙啊。也是，这个时候是最忙的时候。</p>
+          <p> </p>
+          <p>你走吧，别为我这个老太婆担心。</p>
+          <p> </p>
+          <p>信我随便找个人送过去就行了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您是要去库里乌鲁岩石山吗？</p>
+          <p> </p>
+          <p>那样的话请您小心一点。最近山里的动态有些异常。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出哈克内的信。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是什么？啊，是哈克内的信啊。</p>
+          <p> </p>
+          <p>(打开信看了一遍，然后又折好。)</p>
+          <p> </p>
+          <p>真是意外。她居然会先来求我帮忙。</p>
+          <p> </p>
+          <p>我跟她说如果有什么困难的话就跟我说，不过却被她冷冷地拒绝了，说不用我操心。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">把哈克内的信交给[%dic:STR_DIC_N_Ophelos]</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">必须把哈克内的信送给[%dic:STR_DIC_N_Ophelos]。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈克内说她想为救命恩人阿斯科雷皮乌斯制作武器，但是却没有材料，她因此很着急。</p>
+          <p> </p>
+          <p>她让我帮她把请求帮助的信交给欧佩罗斯，于是答应了她的请求。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

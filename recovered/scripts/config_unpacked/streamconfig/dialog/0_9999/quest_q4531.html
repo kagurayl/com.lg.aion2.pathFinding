@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <QuestInfo>
+    <QuestId>Q4531</QuestId>
+
+    <QuestName>???</QuestName>
+
+    <QuestType>未输入</QuestType>
+
+  </QuestInfo>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>多亏了你，我们保住了盗掘到的东西，也赚到了钱，真是太幸福了。</p>
+          <p> </p>
+          <p>不过还有一件事让我有点担心。</p>
+          <p> </p>
+          <p>你力量又强，人又聪明，一定可以告诉我们解决的办法。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>就是那些[%dic:STR_DIC_M_MillipedeD_32_An]，呐呐。</p>
+          <p> </p>
+          <p>我们得把盗掘到的东西和宝石送到别的地方去卖掉，但是因为有那些东西在，我们没办法随便来往。</p>
+          <p> </p>
+          <p>对于我们来说，它们实在太强了，根本不知道该怎么对付它们，呐呐。</p>
+          <p> </p>
+          <p>再麻烦你一次的话，可能你会觉得我有点不知廉耻。但是，守护者，你能帮我把它们除掉吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你！</p>
+          <p> </p>
+          <p>从山坡往下走，应该可以看到很多。</p>
+          <p> </p>
+          <p>千万别忘了，是[%dic:STR_DIC_M_MillipedeD_32_An]，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>是因为我们麻烦你太多次，你觉得太烦人了吗？！</p>
+          <p> </p>
+          <p>还是因为有别的急事啊？</p>
+          <p> </p>
+          <p>我会好好酬谢你的，请帮帮我们吧，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>能再次见到你，真让人高兴，呐呐。</p>
+          <p> </p>
+          <p>我刚好打好了包袱，正在等着你回来呢。</p>
+          <p> </p>
+          <p>你把它们消灭掉了吗？我得快点把这些东西换成基纳才行！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你，呐呐！</p>
+          <p> </p>
+          <p>这下我终于可以放心地去卖东西了。真不知道该怎么感谢你。</p>
+          <p> </p>
+          <p>快收下吧。这是我们的心意！</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭挡住术古盗墓贼的道路的[%dic:STR_DIC_M_MillipedeD_32_An]%([%2]/14)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_DF3_11]%对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">古安灵说透明的格力玛挡住了来往的路，让他感到很头疼。去消灭掉它们，然后把消息告诉古安灵吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奇多伦盗墓团的古安灵说格力玛挡住了他们卖东西的路，他因此感到很头疼。</p>
+          <p> </p>
+          <p>他让我帮他消灭掉格力玛，说这是最后一次委托。于是帮他去消灭了一些，他非常高兴，并给了我谢礼。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

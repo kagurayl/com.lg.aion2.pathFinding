@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这个世界上，不管做什么都很难，呐。</p>
+          <p> </p>
+          <p>我以为有了你的帮助，就能放心地去采集了，没想到那些消失的高尔干和噬人虫又出现了。</p>
+          <p> </p>
+          <p>我以为这次可以安心地采集了，所以特地准备了很大的箱子……没想到又是一场空，呐呐。</p>
+          <p> </p>
+          <p>要是一直这样下去，我就要破产了，呐呐。</p>
+          <p> </p>
+          <p>上次你不是说事情都办完了吗？还拿了报酬。</p>
+          <p> </p>
+          <p>该不会是骗人吧……</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">说肯定完成了。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(缩起身子)干嘛那么凶嘛？</p>
+          <p> </p>
+          <p>我不是怀疑你，呐……高尔干和噬人虫的繁殖力本来就很强，呐呐。</p>
+          <p> </p>
+          <p>[%dic:STR_DIC_M_GorgonRe_21_An]和[%dic:STR_DIC_M_ClodwormRe2_21_An]还在给我造成麻烦，你能帮我去处理一下吗？</p>
+          <p> </p>
+          <p>我们术古出售的东西，如果买了不久就出现问题，我们就会帮客人修理……</p>
+          <p> </p>
+          <p>我想你一定会帮我的，呐呐！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你快到红色荒地去，帮我消灭[%dic:STR_DIC_M_GorgonRe_21_An]和[%dic:STR_DIC_M_ClodwormRe2_21_An]，呐呐。</p>
+          <p> </p>
+          <p>特别是采集物旁边的怪物，一定要帮我清理掉，知道了吗？</p>
+          <p> </p>
+          <p>那我就全靠你了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>怎么能这样呢？</p>
+          <p> </p>
+          <p>都是因为你之前没有把高尔干和噬人虫全部消灭掉，所以才会变成这样的，呐呐。</p>
+          <p> </p>
+          <p>你再好好想想，我会再送你一件东西的，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>高尔干和噬人虫清理掉了吗？</p>
+          <p> </p>
+          <p>我说的没错，又繁殖出了很多吧？</p>
+          <p> </p>
+          <p>如果你帮我清理掉了，我就送你一件礼物，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢你。这是说好的礼物。</p>
+          <p> </p>
+          <p>好的，希望能对你有用。</p>
+          <p> </p>
+          <p>虽然高尔干和噬人虫不会因此全部消失，但暂时应该会安静一些了。在他们繁殖出来之前，我得赶紧去采集料理材料了。</p>
+          <p> </p>
+          <p>对了，以后还要继续麻烦你，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">消灭毁坏料理材料的野兽</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_GorgonRe_21_An]([%2]/7)</font></p>
+                     <p visible="[%0]"><font color="[%1]">  [%dic:STR_DIC_M_ClodwormRe2_21_An]([%5]/11)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Shugo_LF2a_7]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">荒地高尔干和发出腥臭的噬人虫正在毁坏红色荒地的采集物。为了让格吉隆可以搜集到料理材料，必须消灭高尔干和噬人虫。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>格吉隆抱怨说荒地高尔干和发出腥臭的噬人虫正在破坏采集物，让他无法制作食物。</p>
+          <p> </p>
+          <p>帮他消灭了荒地高尔干和噬人虫，他对我表示感谢，并给了我一件小礼物。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

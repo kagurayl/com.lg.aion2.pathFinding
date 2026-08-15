@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(覆盖着金箔的昂贵的纸。)</p>
+          <p> </p>
+          <p>(上面盖着陌生的印章。)</p>
+          <p> </p>
+          <p>(“好像在什么地方见到过…？对了！这是乌云贸易团的印章！”)</p>
+          <p> </p>
+          <p>(应该把它交给[%dic:STR_DIC_N_Shugo_AB1_L7]。)</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">停止查看。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>有什么事吗，呐呐？</p>
+          <p> </p>
+          <p>有什么需要秘密采购的东西吗？</p>
+          <p> </p>
+          <p>请你悄悄地告诉我。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT2_1">拿出覆盖着金箔的纸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是我们贸易团使用的借据。</p>
+          <p> </p>
+          <p>(好像想起了什么不愉快的事情，皱起了眉头)</p>
+          <p> </p>
+          <p>不久前，我们遭到了黑暗术古的攻击，货物被全部抢走了！</p>
+          <p> </p>
+          <p>这好像是当时被一起抢走的借据！</p>
+          <p> </p>
+          <p>借据上有克奥伦的名字，你拿去交给[%dic:STR_DIC_N_Shugo_AB1_1]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO1">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(眼睛陷了下去，脸色看上去不太好。)</p>
+          <p> </p>
+          <p>(咕嘟咕嘟地喝水)克奥伦肚子饿了... </p>
+          <p> </p>
+          <p>不，不，克奥伦坚持得住，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT3_1">说捡到了覆盖着金箔的纸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select3_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>这是在龙族的巢穴里找到的？还见到其它东西了没有？</p>
+          <p> </p>
+          <p>呜呜，为了赔偿被黑暗术古抢走的货物钱，我连饭都吃不上，呐呐！</p>
+          <p> </p>
+          <p>因为他们，我受到了非常大的损失。</p>
+          <p> </p>
+          <p>但是借据的主人是齐亦隆，上面还写着送往极乐世界的货款的支付时间。</p>
+          <p> </p>
+          <p>看到了借据，克奥伦更难过了。请你赶快拿去交给[%dic:STR_DIC_N_Shugo_c16]吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SETPRO2">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你是上次来我这儿买奥黛尔拉的那个守护者吧？</p>
+          <p> </p>
+          <p>或者不是... </p>
+          <p> </p>
+          <p>守护者们都长得一个样，我完全分不清谁是谁。</p>
+          <p> </p>
+          <p>要是你们也和术古一样个性鲜明就好了，呐呐。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">拿出覆盖着金箔的纸。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>借据终于找到了！要是能早点找到就好了。</p>
+          <p> </p>
+          <p>因为货款，还发生了一些不愉快。</p>
+          <p> </p>
+          <p>还好写借据的时候有证人在，所以才能没事，呐呐。</p>
+          <p> </p>
+          <p>货物虽然被抢走了，不过反正有克奥伦负责，不是吗？</p>
+          <p> </p>
+          <p>做生意必须要讲信用。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">和[%dic:STR_DIC_N_Shugo_AB1_L7]对话</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">和[%dic:STR_DIC_N_Shugo_AB1_1]对话</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">和[%dic:STR_DIC_N_Shugo_c16]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">箱子里找到的覆盖着金箔的纸上，盖着乌云贸易团的印章。拿去给提安雄看看。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>在埃雷修兰塔上层要塞的隐藏场所的箱子里，发现了盖有乌云贸易团印章的、覆盖着金箔的纸。</p>
+          <p> </p>
+          <p>给提安雄看了之后，他说是乌云贸易团使用的借据，并说不久前克奥伦遭到了黑暗术古的攻击，货物全部被抢走了。</p>
+          <p> </p>
+          <p>而且借据上写着克奥伦的名字，让我拿去交给克奥伦。</p>
+          <p> </p>
+          <p>见到克奥伦之后，他说确实是自己丢失的东西，但一看到借据就浑身不舒服，让我帮他交给齐亦隆。</p>
+          <p> </p>
+          <p>齐亦隆收下了借据，说要是早点找到就好了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我还以为乌云贸易团的使节在极乐世界的话，买东西会更容易一些。</p>
+          <p> </p>
+          <p>但是说好的期限已经过了好久，却还是没有消息。</p>
+          <p> </p>
+          <p>找不到的话，就直说找不到好了。让我在这里干等着，真是郁闷。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">询问是什么东西。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>嗯，这个……是压缩德拉纳结晶……</p>
+          <p> </p>
+          <p>你只要知道是用来进行烙印之石研究的就行了。</p>
+          <p></p>
+          <p>这样下去可不行。我得去向库噜明确认一下。</p>
+          <p> </p>
+          <p>问问他什么时候能拿到订购的东西，问问他是不是忘记了。</p>
+          <p> </p>
+          <p>[%username]大人，可以的话，您能帮我去问问吗？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>谢谢您。</p>
+          <p> </p>
+          <p>虽然我可以自己去，但只要一看到[%dic:STR_DIC_N_Shugo_LC1_27]的脸，我也许就会忍不住发脾气。</p>
+          <p> </p>
+          <p>所以请[%username]大人帮我去问问具体的情况。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>您也看到了，我现在没办法离开这里。</p>
+          <p> </p>
+          <p>因为有很多人带着好不容易搜集到的烙印之石结晶和碎片来找我。</p>
+          <p> </p>
+          <p>也有很多人等着我帮他们把烙印之石装上去。让他们等着，不是名人应有的作风。</p>
+          <p> </p>
+          <p>希望您能重新考虑一下。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你需要我的帮助吗？</p>
+          <p> </p>
+          <p>有什么需要的话，就说吧。</p>
+          <p> </p>
+          <p>只要是和乌云贸易团有好的守护者，我很乐意为你提供帮助。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">转达奥尔佩的话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我刚想和奥尔佩联系呢。你来的正是时候。</p>
+          <p> </p>
+          <p>订单我已经下了，但是因为奥德风暴的原因，运送货物的船无法启航。</p>
+          <p> </p>
+          <p>本来以为再过一两天就可以了，没想到奥德风暴一直没有减轻的迹象，船暂时是过不来了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">向[%dic:STR_DIC_N_Shugo_LC1_27]转达奥尔佩的话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">帮奥尔佩去乌云贸易团使节团长库噜明那里确认一下东西什么时候能到。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>奥尔佩说她向乌云贸易团的使节团订购了东西，但说好的日期都已经过了，却还是没有消息，让我帮她去确认一下情况。</p>
+          <p> </p>
+          <p>向使节团长库噜明转达了奥尔佩的话之后，他说运货的船因为奥德风暴而不能出航，只能表示抱歉。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

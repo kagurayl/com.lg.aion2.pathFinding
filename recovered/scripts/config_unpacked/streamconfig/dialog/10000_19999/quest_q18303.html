@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select_none">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>准备工作终于全部完成了！</p>
+          <p> </p>
+          <p>破坏新型苏尔卡纳的炸弹准备好了，启动小型飞艇的启动钥匙也准备好了。</p>
+          <p> </p>
+          <p>现在只要潜入浮游岛上的指挥区域，消灭掉碍事的德拉坎，把新型苏尔卡纳破坏掉，我们的任务就完成了。</p>
+          <p> </p>
+          <p>没有德拉坎，也没有新型苏尔卡纳的话，空中要塞就只不过是个没用的浮游岛罢了。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我来告诉你要做的事情。从出口出去往右走，那里停泊着小型飞艇。</p>
+          <p> </p>
+          <p>[%username]%，用你找到的启动钥匙，可以启动飞艇。乘坐飞艇，可以到达指挥区域所在的浮游岛。</p>
+          <p> </p>
+          <p>怎么样？没问题吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>等等，我还没说完。</p>
+          <p> </p>
+          <p>指挥区域到处都是很强的德拉坎。[%username]%，你是孤身一人，战斗力存在很大差距。</p>
+          <p> </p>
+          <p>但是飞艇不光有飞行的功能，还可以进行攻击！</p>
+          <p> </p>
+          <p>到达指挥区域后，你可以重新搭乘飞艇。利用[%dic:STR_DIC_N_IDStation_ShulackAirplane]上搭载的武器，可以很轻易地把德拉坎打倒。</p>
+          <p> </p>
+          <p>之后进入动力室，把碍事的阿修纳塔打倒，然后用胡根的动力核炸毁新型苏尔卡纳。</p>
+          <p> </p>
+          <p>之前你一直做得很不错，这次一定没有问题。加油！</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>任务几乎就要完成了，到了这一步你还想放弃吗？</p>
+          <p> </p>
+          <p>你一定！一定会后悔的。</p>
+          <p> </p>
+          <p>为了所有人的幸福，这个任务是必须完成的。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+
+  <HtmlPage name="select_success">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>再次看到[%username]大人，真让人高兴。</p>
+          <p> </p>
+          <p>我想在阿图拉姆空中要塞的任务完成之后，申请到提亚玛兰塔那边去。</p>
+          <p> </p>
+          <p>希望那个时候能再见到[%username]大人。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>破坏新型苏尔卡纳的事情全部完成了吗？</p>
+          <p> </p>
+          <p>这是一项惊人的成果。</p>
+          <p> </p>
+          <p>我得马上写一份报告书，交给卡伦大人才行。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">移动到阿图拉姆 [%dic:STR_DIC_W_IDStation_SZ_03_B]后，用 [%dic:STR_DIC_N_IDStation_ShulackAirplane]%消灭掉 [%dic:STR_DIC_M_IDStation_DrakanBoss_58Re2]([%2]/1)</font></p></step>
+               <step><p visible="[%3]"><font color="[%4]">消灭[%dic:STR_DIC_M_IDStation_DrakanNinja_NM_58_An]([%5]/1)</font></p></step>
+               <step><p visible="[%6]"><font color="[%7]">破坏掉动力室的[%dic:STR_DIC_N_IDStation_FOBJ_POWER][%8]</font></p></step>
+               <step><p visible="[%9]"><font color="[%10]">和[%dic:STR_DIC_N_Silion]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">按照哈里肯的指示，潜入空中要塞指挥区域，利用飞艇消灭德拉坎，破坏新型苏尔卡纳。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>哈里肯说准备完成了，让我去启动飞艇，移动到指挥区域。</p>
+          <p> </p>
+          <p>利用飞艇的炮击功能，打倒了德拉坎，最后成功地破坏掉了动力室中的新型苏尔卡纳。</p>
+          <p> </p>
+          <p>向西里安报告结果之后，他非常激动，说要马上写成报告书交上去。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>使命进行: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

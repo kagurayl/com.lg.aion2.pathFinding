@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="select1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你来了真是太好了，守护者。听听卢高我的心里话吧。</p>
+          <p> </p>
+          <p>我刚才在看守农场的时候一时睡着了，可是突然我的身体就开始抖。</p>
+          <p> </p>
+          <p>我吓了一大跳赶紧起来，可是面前什么都没有。</p>
+          <p> </p>
+          <p>四处张望了好一会儿又睡着了，然后身体又开始抖起来。这次抖得更厉害了。</p> 
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT1_1">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select1_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我吃力地往脚下一看，居然是慢性子象鼻虫正在挖地。</p>
+          <p> </p>
+          <p>我想把它赶跑就大声叫了起来，谁知它根本就不听我的话，依然在那儿继续刨土。</p>
+          <p> </p>
+          <p>要是象鼻虫继续在我脚底下挖土的话，我迟早有一天会倒下的。</p>
+          <p> </p>
+          <p>那样的话，凶猛的库雷斯就会狠狠地啄我的。倒下的稻草人还会有谁怕呢。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_ASK_QUEST_ACCEPT">继续听。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我卢高要是这么倒下了，是不会腐烂的。</p>
+          <p> </p>
+          <p>因为我的任务就是守护这片田地。</p>
+          <p> </p>
+          <p>所以说，请你帮帮我。</p>
+          <p> </p>
+          <p>把在我脚下挖土的[%dic:STR_DIC_M_MerdionRedD_21_n]给我赶走</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_QUEST_ACCEPT_1">接受。</Act>
+      <Act href="HACTION_QUEST_REFUSE_1">拒绝。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_accept_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>[%dic:STR_DIC_M_MerdionRedD_21_n]在这附近有很多。</p>
+          <p> </p>
+          <p>虽然我除了高声喊叫之外什么也做不了，可是你却可以除掉象鼻虫，不是吗？</p>
+          <p> </p>
+          <p>为了使我可以守住这片地，你就帮帮我吧。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="quest_refuse_1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我全身上下只有脑袋可以动。</p>
+          <p> </p>
+          <p>所以，即使象鼻虫折磨我，我除了大喊大叫什么也做不了。</p>
+          <p> </p>
+          <p>这样下去我要是倒下的话，就会成为没用的垃圾。</p>
+          <p> </p>
+          <p>我不想就这样变成垃圾...所以，请你帮帮我，守护者。 </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select2">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我担心象鼻虫还会挖我脚下的土。</p>
+          <p> </p>
+          <p>我即使歪歪斜斜地站着，好歹还能把鸟赶走吧？</p>
+          <p> </p>
+          <p>要是倒下了的话，鸟儿飞过来狠狠地啄我的。</p>
+          <p> </p>
+          <p>我不愿意变成赶不走鸟的稻草人。所以请您务必帮我除掉象鼻虫。</p>
+          <p> </p>
+          <p>按照我的请求除掉象鼻虫了？ </p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_SELECT_QUEST_REWARD">报告结果。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>你把象鼻虫教训了一顿，那它现在不会再挖我脚下的土了吧？</p>
+          <p> </p>
+          <p>我脑子笨，不知道该如何感谢你才好。</p>
+          <p> </p>
+          <p>我能给你的就只有这个了。希望你能喜欢。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">除掉[%dic:STR_DIC_M_MerdionRedD_21_n]([%2]/10)</font></p></step>
+               <step><p visible="[%15]"><font color="[%16]">和[%dic:STR_DIC_N_Scarecrow_Lugo]对话</font></p></step>
+    </steps>
+          <p><font font_xml="quest_summary">除掉正在稻草人卢高脚下刨土的慢性子象鼻虫吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>稻草人卢高认为，因为象鼻虫一直在他脚下刨土，让他的身体抖个不停，所以总有一天他会倒下的。</p>
+          <p> </p>
+          <p>所以我刚为他除掉慢性子象鼻虫，他就高兴地说，现在就不会倒下了。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>执行中：[%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>

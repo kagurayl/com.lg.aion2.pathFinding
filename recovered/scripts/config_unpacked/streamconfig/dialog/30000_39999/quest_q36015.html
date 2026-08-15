@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<HtmlPages>
+
+  <HtmlPage name="ask_quest_accept">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p align="center"> - 悬赏公告 - </p>
+          <p> </p>
+          <p>悬赏采集英吉斯温的宝物普诺埃山参。</p>
+          <p></p>
+          <p>请赏金猎人协会成员熟记并遵循以下指示。 </p>
+          <p> </p>
+          <p> 1. 名字 : [%dic:STR_DIC_OBJ_FOBJ_Q36015a]</p>
+          <p></p>
+          <p> 2. 价值 : 只有[%dic:STR_DIC_W_LF4_SZ_A2]才能找到的珍贵的龙界山参</p>
+          <p></p>
+          <p> 3. 详情 : 只能在英吉斯温的普诺埃峡谷地区生长的珍贵山参，具有防止皮肤老化、提高集中力、防止脱发等多种功效。</p>
+          <p> </p>
+          <p>先搜集到连熟练的采集工都难以找到的宝物普诺埃山参者，将得到重谢。</p>
+          <p> </p>
+          <p>- 赏金猎人协会, [%dic:STR_DIC_E_36500] 敬上</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">折起传单。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select5">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>我也试着去采集过普诺埃山参。</p>
+          <p> </p>
+          <p>结果却不得不中途放弃。其他人都找到了，但可能是我运气太差，怎么都找不到！</p>
+          <p> </p>
+          <p>寻找宝物，光靠毅力好像是不行的。</p>
+          <p> </p>
+          <p>[%username]大人，您呢？[%username]大人的运气一向很好，我想应该可以找到不错的山参吧？</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">拿出普诺埃山参。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select6">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>看来就算是[%username]大人也没有办法。.</p>
+          <p> </p>
+          <p>请您去[%dic:STR_DIC_W_LF4_SZ_A2]那边仔细找找。</p>
+          <p> </p>
+          <p>山参确实就生长在那边。</p>
+        </body>
+        </html>
+    </Contents>
+    <Selects>
+      <Act href="HACTION_FINISH_DIALOG">结束对话。</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_quest_reward1">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>(感叹的表情)啊，这就是……</p>
+          <p> </p>
+          <p>我还是第一次亲眼看到山参。这就是花钱也买不到的普诺埃山参啊。</p>
+          <p> </p>
+          <p>唉，光顾着感叹，都忘了把赏金给您了。</p>
+          <p> </p>
+          <p>这是我准备好的赏金。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+
+   <HtmlPage name="quest_summary">
+    <Contents cdata="true">
+        <html>
+        <body>
+    <steps>
+               <step><p visible="[%0]"><font color="[%1]">搜集生长在[%dic:STR_DIC_W_LF4_SZ_A2]的 [%dic:STR_DIC_OBJ_FOBJ_Q36015a]，然后交给[%dic:STR_DIC_E_36500]</font></p>[%collectitem]</step>
+    </steps>
+          <p><font font_xml="quest_summary">从赏金猎人协会那里收到了悬赏通缉传单。按照指示执行吧。</font></p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="quest_complete">
+    <Contents cdata="true">
+        <html>
+        <body>
+          <p>从赏金猎人协会那里收到了悬赏通缉传单。</p>
+          <p> </p>
+          <p>采集到珍贵的普诺埃山参之后，向英吉斯温的赏金管理人报告。他说辛苦了，并给了奖励。</p>
+        </body>
+        </html>
+    </Contents>
+  </HtmlPage>
+
+  <HtmlPage name="select_acqusitive_quest_desc">
+    <Selects>
+      <Act>新任务: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+  <HtmlPage name="select_progressive_quest_desc">
+    <Selects>
+      <Act>进行中: [%questname]</Act>
+    </Selects>
+  </HtmlPage>
+
+</HtmlPages>
