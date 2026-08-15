@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aion2-pathfinding"
+version = "0.1.0"
+description = "Offline Unity collider extraction and Recast/Detour HTTP pathfinding"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0,<3",
+  "UnityPy>=1.25,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9,<10"]
+native = ["pybind11>=3,<4"]
+
+[project.scripts]
+aion-export-collision = "pathfinding.unity_export:main"
+aion-build-navmesh = "pathfinding.build_navmesh:main"
+aion-path-server = "pathfinding.serve:main"
+
+[tool.setuptools]
+packages = ["pathfinding"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+pathfinding = ["*.pyd", "*.so"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
